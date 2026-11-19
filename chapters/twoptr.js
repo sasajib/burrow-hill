@@ -4,8 +4,8 @@ window.CHAPTER = {
  "sub": "CHAPTER 5 · TWO POINTERS",
  "key": "burrow-ch-twoptr",
  "next": {
-  "href": "index.html#chapters",
-  "label": "All chapters"
+  "href": "chapter.html?c=window",
+  "label": "Chapter 6: Sliding window"
  },
  "prev": {
   "href": "chapter.html?c=prefix",

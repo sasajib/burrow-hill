@@ -1560,504 +1560,6 @@ window.BURROW = {
     }
    ]
   },
-  "sr1i": {
-   "src": "videos/sr1i.mp4",
-   "title": "The Mirror Word",
-   "duration": 19.19,
-   "lines": [
-    {
-     "id": "sr1i_1",
-     "text": "Some words are mirrors. Level reads the same forwards and backwards.",
-     "start": 0.2,
-     "end": 4.66
-    },
-    {
-     "id": "sr1i_2",
-     "text": "Write a function that returns true for a mirror word, and false for anything else.",
-     "start": 5.36,
-     "end": 10.32
-    },
-    {
-     "id": "sr1i_3",
-     "text": "Look at the two ends first. What must be true about them?",
-     "start": 11.02,
-     "end": 14.46
-    },
-    {
-     "id": "sr1i_4",
-     "text": "Then what about the next pair in? Your turn.",
-     "start": 15.16,
-     "end": 17.59
-    }
-   ],
-   "pauses": []
-  },
-  "sr1s": {
-   "src": "videos/sr1s.mp4",
-   "title": "Two ends, walking in",
-   "duration": 67.64,
-   "lines": [
-    {
-     "id": "sr1s_1",
-     "text": "A mirror word reads the same from both ends. So compare the two ends, then walk inward.",
-     "start": 0.2,
-     "end": 5.63
-    },
-    {
-     "id": "sr1s_2",
-     "text": "If any pair differs, it is not a mirror. If the two walkers meet, it is.",
-     "start": 6.38,
-     "end": 11.05
-    },
-    {
-     "id": "sr1s_3",
-     "text": "Lines two and three place the markers. Pip is left, at index zero. Moss is right, at index four.",
-     "start": 11.8,
-     "end": 18.42
-    },
-    {
-     "id": "sr1s_4",
-     "text": "Line four asks: is left still before right? Zero is less than four. Yes.",
-     "start": 19.17,
-     "end": 24.02
-    },
-    {
-     "id": "sr1s_5",
-     "text": "Line five compares the two letters. L and L. They match, so nothing is returned.",
-     "start": 24.77,
-     "end": 29.96
-    },
-    {
-     "id": "sr1s_6",
-     "text": "Lines eight and nine step both markers inward.",
-     "start": 30.71,
-     "end": 33.51
-    },
-    {
-     "id": "sr1s_7",
-     "text": "Check again. One is less than three. E and E match.",
-     "start": 34.26,
-     "end": 37.56
-    },
-    {
-     "id": "sr1s_8",
-     "text": "Step inward again. Now both stand on index two. Is two less than two?",
-     "start": 38.31,
-     "end": 43.04
-    },
-    {
-     "id": "sr1s_9",
-     "text": "No. The middle letter has no partner to disagree with. The loop ends.",
-     "start": 44.24,
-     "end": 48.73
-    },
-    {
-     "id": "sr1s_10",
-     "text": "Line eleven returns true. Level is a mirror word.",
-     "start": 49.48,
-     "end": 52.93
-    },
-    {
-     "id": "sr1s_11",
-     "text": "Each turn checks one pair, so at most half the letters. That is O of n time.",
-     "start": 54.03,
-     "end": 59.1
-    },
-    {
-     "id": "sr1s_12",
-     "text": "Two markers, and no copy of the word. O of one space. This is the two pointer pattern again.",
-     "start": 59.85,
-     "end": 66.04
-    }
-   ],
-   "pauses": [
-    {
-     "id": "sr1s-q",
-     "t": 43.24
-    }
-   ]
-  },
-  "sr2i": {
-   "src": "videos/sr2i.mp4",
-   "title": "The Odd One Out",
-   "duration": 19.83,
-   "lines": [
-    {
-     "id": "sr2i_1",
-     "text": "Every letter in this word has a twin. Except one.",
-     "start": 0.2,
-     "end": 3.31
-    },
-    {
-     "id": "sr2i_2",
-     "text": "Return the index of the first letter that appears only once. If there is none, return minus one.",
-     "start": 4.01,
-     "end": 10.46
-    },
-    {
-     "id": "sr2i_3",
-     "text": "You cannot know a letter is alone until you have seen the whole word.",
-     "start": 11.16,
-     "end": 15.09
-    },
-    {
-     "id": "sr2i_4",
-     "text": "So how many walks do you need? Your turn.",
-     "start": 15.79,
-     "end": 18.23
-    }
-   ],
-   "pauses": []
-  },
-  "sr2s": {
-   "src": "videos/sr2s.mp4",
-   "title": "Count first, then look",
-   "duration": 59.02,
-   "lines": [
-    {
-     "id": "sr2s_1",
-     "text": "To know a letter is alone, you must have seen the whole word. So this takes two walks.",
-     "start": 0.2,
-     "end": 5.69
-    },
-    {
-     "id": "sr2s_2",
-     "text": "On the first walk, a map counts every letter. On the second, we ask it for the first letter with a count of one.",
-     "start": 6.44,
-     "end": 13.17
-    },
-    {
-     "id": "sr2s_3",
-     "text": "Line two makes an empty map, called count.",
-     "start": 13.92,
-     "end": 16.33
-    },
-    {
-     "id": "sr2s_4",
-     "text": "The first walk. S. Never seen, so its count becomes one.",
-     "start": 17.08,
-     "end": 20.77
-    },
-    {
-     "id": "sr2s_5",
-     "text": "E. Count one.",
-     "start": 21.52,
-     "end": 22.54
-    },
-    {
-     "id": "sr2s_6",
-     "text": "E again. Its count goes up to two.",
-     "start": 23.29,
-     "end": 25.42
-    },
-    {
-     "id": "sr2s_7",
-     "text": "D. Count one.",
-     "start": 26.17,
-     "end": 27.18
-    },
-    {
-     "id": "sr2s_8",
-     "text": "S again. Two.",
-     "start": 27.93,
-     "end": 29.1
-    },
-    {
-     "id": "sr2s_9",
-     "text": "Now the second walk, from the start. Line seven asks: is this letter's count one? S has two. No.",
-     "start": 29.85,
-     "end": 36.15
-    },
-    {
-     "id": "sr2s_10",
-     "text": "E has two. No. The next E, no.",
-     "start": 36.9,
-     "end": 39.25
-    },
-    {
-     "id": "sr2s_11",
-     "text": "D. What does the map say?",
-     "start": 40,
-     "end": 41.42
-    },
-    {
-     "id": "sr2s_12",
-     "text": "One. Line eight returns its index. Three.",
-     "start": 42.62,
-     "end": 45.43
-    },
-    {
-     "id": "sr2s_13",
-     "text": "Two walks over n letters is two n steps. Drop the constant. O of n time.",
-     "start": 46.53,
-     "end": 52
-    },
-    {
-     "id": "sr2s_14",
-     "text": "The map holds one entry for each different letter. O of n space at most.",
-     "start": 52.75,
-     "end": 57.42
-    }
-   ],
-   "pauses": [
-    {
-     "id": "sr2s-q",
-     "t": 41.62
-    }
-   ]
-  },
-  "sr3i": {
-   "src": "videos/sr3i.mp4",
-   "title": "Same Letters",
-   "duration": 18.88,
-   "lines": [
-    {
-     "id": "sr3i_1",
-     "text": "Tea and eat. Different words, the same letters.",
-     "start": 0.2,
-     "end": 3.17
-    },
-    {
-     "id": "sr3i_2",
-     "text": "Return true when two words use exactly the same letters, the same number of times.",
-     "start": 3.87,
-     "end": 9.25
-    },
-    {
-     "id": "sr3i_3",
-     "text": "Sorting both words would work. Can you do it with one walk over each word?",
-     "start": 9.95,
-     "end": 14.45
-    },
-    {
-     "id": "sr3i_4",
-     "text": "What could keep count for you? Your turn.",
-     "start": 15.15,
-     "end": 17.28
-    }
-   ],
-   "pauses": []
-  },
-  "sr3s": {
-   "src": "videos/sr3s.mp4",
-   "title": "Count up, count down",
-   "duration": 60.08,
-   "lines": [
-    {
-     "id": "sr3s_1",
-     "text": "Two words are anagrams when they use the same letters, the same number of times.",
-     "start": 0.2,
-     "end": 5.14
-    },
-    {
-     "id": "sr3s_2",
-     "text": "So count the first word up, then count the second word down. Everything must land on zero.",
-     "start": 5.89,
-     "end": 11.62
-    },
-    {
-     "id": "sr3s_3",
-     "text": "Line two is a quick exit. Different lengths can never match. Three and three, so we go on.",
-     "start": 12.37,
-     "end": 18.07
-    },
-    {
-     "id": "sr3s_4",
-     "text": "Count the first word. T, one.",
-     "start": 18.82,
-     "end": 20.87
-    },
-    {
-     "id": "sr3s_5",
-     "text": "E, one.",
-     "start": 21.62,
-     "end": 22.41
-    },
-    {
-     "id": "sr3s_6",
-     "text": "A, one.",
-     "start": 23.16,
-     "end": 23.9
-    },
-    {
-     "id": "sr3s_7",
-     "text": "Now the second word. E. Line eight asks: is there an E left? Yes.",
-     "start": 24.65,
-     "end": 29.03
-    },
-    {
-     "id": "sr3s_8",
-     "text": "Line nine uses it up. E drops to zero.",
-     "start": 29.78,
-     "end": 32.66
-    },
-    {
-     "id": "sr3s_9",
-     "text": "A. One left. Use it.",
-     "start": 33.41,
-     "end": 34.95
-    },
-    {
-     "id": "sr3s_10",
-     "text": "T. Is there a T left in the map?",
-     "start": 35.7,
-     "end": 37.62
-    },
-    {
-     "id": "sr3s_11",
-     "text": "Yes, one. Use it. Now every count is zero.",
-     "start": 38.82,
-     "end": 41.84
-    },
-    {
-     "id": "sr3s_12",
-     "text": "Line eleven returns true. Tea and eat use the same letters.",
-     "start": 42.59,
-     "end": 46.7
-    },
-    {
-     "id": "sr3s_13",
-     "text": "One walk over each word. O of n time.",
-     "start": 47.8,
-     "end": 50.44
-    },
-    {
-     "id": "sr3s_14",
-     "text": "The map holds one entry per different letter. With lowercase letters only, at most twenty six. O of one space.",
-     "start": 51.19,
-     "end": 58.48
-    }
-   ],
-   "pauses": [
-    {
-     "id": "sr3s-q",
-     "t": 37.82
-    }
-   ]
-  },
-  "sr4i": {
-   "src": "videos/sr4i.mp4",
-   "title": "The Hidden Word",
-   "duration": 18.38,
-   "lines": [
-    {
-     "id": "sr4i_1",
-     "text": "Is the word ban hidden inside beacon?",
-     "start": 0.2,
-     "end": 2.49
-    },
-    {
-     "id": "sr4i_2",
-     "text": "Return true if the small word's letters appear in the big word in the same order. Other letters may sit in between.",
-     "start": 3.19,
-     "end": 10.22
-    },
-    {
-     "id": "sr4i_3",
-     "text": "You never need to go backwards, in either word.",
-     "start": 10.92,
-     "end": 13.44
-    },
-    {
-     "id": "sr4i_4",
-     "text": "What are you waiting for at each step? Your turn.",
-     "start": 14.14,
-     "end": 16.78
-    }
-   ],
-   "pauses": []
-  },
-  "sr4s": {
-   "src": "videos/sr4s.mp4",
-   "title": "Wait for the next letter",
-   "duration": 52.79,
-   "lines": [
-    {
-     "id": "sr4s_1",
-     "text": "The small word is hidden if its letters appear in the big word in the same order, with anything in between.",
-     "start": 0.2,
-     "end": 6.34
-    },
-    {
-     "id": "sr4s_2",
-     "text": "So walk the big word once. Each time you meet the letter you are waiting for, tick it off.",
-     "start": 7.09,
-     "end": 12.25
-    },
-    {
-     "id": "sr4s_3",
-     "text": "S marks the letter we are waiting for. It starts on B.",
-     "start": 13,
-     "end": 16.39
-    },
-    {
-     "id": "sr4s_4",
-     "text": "Moss reads B. That is the letter we want. Line five moves S to the next one.",
-     "start": 17.14,
-     "end": 22.42
-    },
-    {
-     "id": "sr4s_5",
-     "text": "E. We are waiting for A. Not it. Keep walking.",
-     "start": 23.17,
-     "end": 25.77
-    },
-    {
-     "id": "sr4s_6",
-     "text": "A. A match. S moves on to N.",
-     "start": 26.52,
-     "end": 28.56
-    },
-    {
-     "id": "sr4s_7",
-     "text": "C. Not N.",
-     "start": 29.31,
-     "end": 30.22
-    },
-    {
-     "id": "sr4s_8",
-     "text": "O. Not N.",
-     "start": 30.97,
-     "end": 31.87
-    },
-    {
-     "id": "sr4s_9",
-     "text": "N. Is this the letter we are waiting for?",
-     "start": 32.62,
-     "end": 34.85
-    },
-    {
-     "id": "sr4s_10",
-     "text": "Yes. S moves past the end of the small word.",
-     "start": 36.05,
-     "end": 38.95
-    },
-    {
-     "id": "sr4s_11",
-     "text": "Line eight asks: did S reach the end? Three equals three. True.",
-     "start": 39.7,
-     "end": 43.42
-    },
-    {
-     "id": "sr4s_12",
-     "text": "One walk through the big word. O of n time.",
-     "start": 44.52,
-     "end": 47.21
-    },
-    {
-     "id": "sr4s_13",
-     "text": "Two counters, and nothing else. O of one space.",
-     "start": 47.96,
-     "end": 51.19
-    }
-   ],
-   "pauses": [
-    {
-     "id": "sr4s-q",
-     "t": 35.05
-    }
-   ]
-  },
   "sr0": {
    "src": "videos/sr0.mp4",
    "title": "A Word Is a Row Too",
@@ -2619,6 +2121,1948 @@ window.BURROW = {
     {
      "id": "tpt2-q1",
      "t": 42.39
+    }
+   ]
+  },
+  "sw0": {
+   "src": "videos/sw0.mp4",
+   "title": "A Frame That Moves",
+   "duration": 29.15,
+   "lines": [
+    {
+     "id": "sv1",
+     "text": "Chapter six. The sliding window. A frame that moves along the row, and never starts over.",
+     "start": 0.2,
+     "end": 6.11
+    },
+    {
+     "id": "sv2",
+     "text": "Whenever a question asks about a stretch of neighbours, the longest, the shortest, the best, this is the tool.",
+     "start": 6.81,
+     "end": 13.2
+    },
+    {
+     "id": "sv3",
+     "text": "The trick is always the same. When the frame moves, only two doors change. One enters, and one leaves.",
+     "start": 14,
+     "end": 20.86
+    },
+    {
+     "id": "sv4",
+     "text": "First, a window of fixed size. Then one that grows and shrinks. Then six puzzles.",
+     "start": 21.75,
+     "end": 27.55
+    }
+   ],
+   "pauses": []
+  },
+  "swt1": {
+   "src": "videos/swt1.mp4",
+   "title": "A Window That Slides",
+   "duration": 67.13,
+   "lines": [
+    {
+     "id": "sx1",
+     "text": "Which three doors in a row hold the most seeds? Pip adds the first three. Then the next three. Then the next. The same doors, added again and again.",
+     "start": 0.2,
+     "end": 9.36
+    },
+    {
+     "id": "sx2",
+     "text": "With a window of size k, that is k additions for every position. n times k.",
+     "start": 10.26,
+     "end": 15.53
+    },
+    {
+     "id": "sx3",
+     "text": "But look at two neighbouring windows. They share almost everything.",
+     "start": 16.43,
+     "end": 20.36
+    },
+    {
+     "id": "sx4",
+     "text": "Only two doors differ. One door leaves on the left. One door enters on the right.",
+     "start": 21.26,
+     "end": 26.49
+    },
+    {
+     "id": "sx5",
+     "text": "So do not add again. Take the old sum, subtract the door that leaves, and add the door that enters.",
+     "start": 27.49,
+     "end": 33.89
+    },
+    {
+     "id": "sx6",
+     "text": "The first window is two, one, five. Eight.",
+     "start": 34.89,
+     "end": 37.39
+    },
+    {
+     "id": "sx7",
+     "text": "Slide one step. Two leaves, and one enters. What is the new sum?",
+     "start": 38.29,
+     "end": 42.26
+    },
+    {
+     "id": "sx8",
+     "text": "Seven. Eight, minus two, plus one.",
+     "start": 43.46,
+     "end": 45.51
+    },
+    {
+     "id": "sx9",
+     "text": "Slide again. One leaves, three enters. Nine. The best so far.",
+     "start": 46.51,
+     "end": 50.53
+    },
+    {
+     "id": "sx10",
+     "text": "Once more. Five leaves, two enters. Six.",
+     "start": 51.43,
+     "end": 54.17
+    },
+    {
+     "id": "sx11",
+     "text": "The best was nine. And each slide cost two steps, no matter how wide the window is.",
+     "start": 55.07,
+     "end": 60.4
+    },
+    {
+     "id": "sx12",
+     "text": "O of n, instead of n times k. That is a fixed sliding window.",
+     "start": 61.4,
+     "end": 65.53
+    }
+   ],
+   "pauses": [
+    {
+     "id": "swt1-q1",
+     "t": 42.46
+    }
+   ]
+  },
+  "swt2": {
+   "src": "videos/swt2.mp4",
+   "title": "A Window That Grows and Shrinks",
+   "duration": 72.25,
+   "lines": [
+    {
+     "id": "sy1",
+     "text": "A harder question. What is the longest stretch of doors whose seeds add up to six or less? Now the window has no fixed size.",
+     "start": 0.2,
+     "end": 8.18
+    },
+    {
+     "id": "sy2",
+     "text": "So it gets two edges that move on their own. Pip is the right edge, and only ever grows the window. Moss is the left edge, and only ever shrinks it.",
+     "start": 9.08,
+     "end": 18.49
+    },
+    {
+     "id": "sy3",
+     "text": "The rule has two lines. Grow on the right. While the window breaks the rule, shrink on the left.",
+     "start": 19.39,
+     "end": 24.84
+    },
+    {
+     "id": "sy4",
+     "text": "Two. Then one. The sum is three. Fine. The window is two wide.",
+     "start": 25.84,
+     "end": 29.59
+    },
+    {
+     "id": "sy5",
+     "text": "Five enters. The sum is eight. Too much. So Moss steps in, and the two leaves. Six. Fine again.",
+     "start": 30.49,
+     "end": 37.18
+    },
+    {
+     "id": "sy6",
+     "text": "One enters. Seven. Too much. The one on the left leaves. Six.",
+     "start": 38.18,
+     "end": 42.18
+    },
+    {
+     "id": "sy7",
+     "text": "Three enters. Nine. Too much. Which door leaves?",
+     "start": 43.18,
+     "end": 46.07
+    },
+    {
+     "id": "sy8",
+     "text": "The five, on the left edge. The sum is four. The window is one, and three.",
+     "start": 47.27,
+     "end": 51.67
+    },
+    {
+     "id": "sy9",
+     "text": "Two enters. Six. That is allowed. Three doors wide. The longest we have seen.",
+     "start": 52.67,
+     "end": 57.56
+    },
+    {
+     "id": "sy10",
+     "text": "Each door enters once, and leaves at most once. So even with a loop inside a loop, it is O of n.",
+     "start": 58.56,
+     "end": 65.02
+    },
+    {
+     "id": "sy11",
+     "text": "The longest or shortest stretch that keeps a rule? Grow on the right, shrink on the left.",
+     "start": 66.02,
+     "end": 70.65
+    }
+   ],
+   "pauses": [
+    {
+     "id": "swt2-q1",
+     "t": 46.27
+    }
+   ]
+  },
+  "sr1i": {
+   "src": "videos/sr1i.mp4",
+   "title": "The Mirror Word",
+   "duration": 19.19,
+   "lines": [
+    {
+     "id": "sr1i_1",
+     "text": "Some words are mirrors. Level reads the same forwards and backwards.",
+     "start": 0.2,
+     "end": 4.66
+    },
+    {
+     "id": "sr1i_2",
+     "text": "Write a function that returns true for a mirror word, and false for anything else.",
+     "start": 5.36,
+     "end": 10.32
+    },
+    {
+     "id": "sr1i_3",
+     "text": "Look at the two ends first. What must be true about them?",
+     "start": 11.02,
+     "end": 14.46
+    },
+    {
+     "id": "sr1i_4",
+     "text": "Then what about the next pair in? Your turn.",
+     "start": 15.16,
+     "end": 17.59
+    }
+   ],
+   "pauses": []
+  },
+  "sr1s": {
+   "src": "videos/sr1s.mp4",
+   "title": "Two ends, walking in",
+   "duration": 67.64,
+   "lines": [
+    {
+     "id": "sr1s_1",
+     "text": "A mirror word reads the same from both ends. So compare the two ends, then walk inward.",
+     "start": 0.2,
+     "end": 5.63
+    },
+    {
+     "id": "sr1s_2",
+     "text": "If any pair differs, it is not a mirror. If the two walkers meet, it is.",
+     "start": 6.38,
+     "end": 11.05
+    },
+    {
+     "id": "sr1s_3",
+     "text": "Lines two and three place the markers. Pip is left, at index zero. Moss is right, at index four.",
+     "start": 11.8,
+     "end": 18.42
+    },
+    {
+     "id": "sr1s_4",
+     "text": "Line four asks: is left still before right? Zero is less than four. Yes.",
+     "start": 19.17,
+     "end": 24.02
+    },
+    {
+     "id": "sr1s_5",
+     "text": "Line five compares the two letters. L and L. They match, so nothing is returned.",
+     "start": 24.77,
+     "end": 29.96
+    },
+    {
+     "id": "sr1s_6",
+     "text": "Lines eight and nine step both markers inward.",
+     "start": 30.71,
+     "end": 33.51
+    },
+    {
+     "id": "sr1s_7",
+     "text": "Check again. One is less than three. E and E match.",
+     "start": 34.26,
+     "end": 37.56
+    },
+    {
+     "id": "sr1s_8",
+     "text": "Step inward again. Now both stand on index two. Is two less than two?",
+     "start": 38.31,
+     "end": 43.04
+    },
+    {
+     "id": "sr1s_9",
+     "text": "No. The middle letter has no partner to disagree with. The loop ends.",
+     "start": 44.24,
+     "end": 48.73
+    },
+    {
+     "id": "sr1s_10",
+     "text": "Line eleven returns true. Level is a mirror word.",
+     "start": 49.48,
+     "end": 52.93
+    },
+    {
+     "id": "sr1s_11",
+     "text": "Each turn checks one pair, so at most half the letters. That is O of n time.",
+     "start": 54.03,
+     "end": 59.1
+    },
+    {
+     "id": "sr1s_12",
+     "text": "Two markers, and no copy of the word. O of one space. This is the two pointer pattern again.",
+     "start": 59.85,
+     "end": 66.04
+    }
+   ],
+   "pauses": [
+    {
+     "id": "sr1s-q",
+     "t": 43.24
+    }
+   ]
+  },
+  "sr2i": {
+   "src": "videos/sr2i.mp4",
+   "title": "The Odd One Out",
+   "duration": 19.83,
+   "lines": [
+    {
+     "id": "sr2i_1",
+     "text": "Every letter in this word has a twin. Except one.",
+     "start": 0.2,
+     "end": 3.31
+    },
+    {
+     "id": "sr2i_2",
+     "text": "Return the index of the first letter that appears only once. If there is none, return minus one.",
+     "start": 4.01,
+     "end": 10.46
+    },
+    {
+     "id": "sr2i_3",
+     "text": "You cannot know a letter is alone until you have seen the whole word.",
+     "start": 11.16,
+     "end": 15.09
+    },
+    {
+     "id": "sr2i_4",
+     "text": "So how many walks do you need? Your turn.",
+     "start": 15.79,
+     "end": 18.23
+    }
+   ],
+   "pauses": []
+  },
+  "sr2s": {
+   "src": "videos/sr2s.mp4",
+   "title": "Count first, then look",
+   "duration": 59.02,
+   "lines": [
+    {
+     "id": "sr2s_1",
+     "text": "To know a letter is alone, you must have seen the whole word. So this takes two walks.",
+     "start": 0.2,
+     "end": 5.69
+    },
+    {
+     "id": "sr2s_2",
+     "text": "On the first walk, a map counts every letter. On the second, we ask it for the first letter with a count of one.",
+     "start": 6.44,
+     "end": 13.17
+    },
+    {
+     "id": "sr2s_3",
+     "text": "Line two makes an empty map, called count.",
+     "start": 13.92,
+     "end": 16.33
+    },
+    {
+     "id": "sr2s_4",
+     "text": "The first walk. S. Never seen, so its count becomes one.",
+     "start": 17.08,
+     "end": 20.77
+    },
+    {
+     "id": "sr2s_5",
+     "text": "E. Count one.",
+     "start": 21.52,
+     "end": 22.54
+    },
+    {
+     "id": "sr2s_6",
+     "text": "E again. Its count goes up to two.",
+     "start": 23.29,
+     "end": 25.42
+    },
+    {
+     "id": "sr2s_7",
+     "text": "D. Count one.",
+     "start": 26.17,
+     "end": 27.18
+    },
+    {
+     "id": "sr2s_8",
+     "text": "S again. Two.",
+     "start": 27.93,
+     "end": 29.1
+    },
+    {
+     "id": "sr2s_9",
+     "text": "Now the second walk, from the start. Line seven asks: is this letter's count one? S has two. No.",
+     "start": 29.85,
+     "end": 36.15
+    },
+    {
+     "id": "sr2s_10",
+     "text": "E has two. No. The next E, no.",
+     "start": 36.9,
+     "end": 39.25
+    },
+    {
+     "id": "sr2s_11",
+     "text": "D. What does the map say?",
+     "start": 40,
+     "end": 41.42
+    },
+    {
+     "id": "sr2s_12",
+     "text": "One. Line eight returns its index. Three.",
+     "start": 42.62,
+     "end": 45.43
+    },
+    {
+     "id": "sr2s_13",
+     "text": "Two walks over n letters is two n steps. Drop the constant. O of n time.",
+     "start": 46.53,
+     "end": 52
+    },
+    {
+     "id": "sr2s_14",
+     "text": "The map holds one entry for each different letter. O of n space at most.",
+     "start": 52.75,
+     "end": 57.42
+    }
+   ],
+   "pauses": [
+    {
+     "id": "sr2s-q",
+     "t": 41.62
+    }
+   ]
+  },
+  "sr3i": {
+   "src": "videos/sr3i.mp4",
+   "title": "Same Letters",
+   "duration": 18.88,
+   "lines": [
+    {
+     "id": "sr3i_1",
+     "text": "Tea and eat. Different words, the same letters.",
+     "start": 0.2,
+     "end": 3.17
+    },
+    {
+     "id": "sr3i_2",
+     "text": "Return true when two words use exactly the same letters, the same number of times.",
+     "start": 3.87,
+     "end": 9.25
+    },
+    {
+     "id": "sr3i_3",
+     "text": "Sorting both words would work. Can you do it with one walk over each word?",
+     "start": 9.95,
+     "end": 14.45
+    },
+    {
+     "id": "sr3i_4",
+     "text": "What could keep count for you? Your turn.",
+     "start": 15.15,
+     "end": 17.28
+    }
+   ],
+   "pauses": []
+  },
+  "sr3s": {
+   "src": "videos/sr3s.mp4",
+   "title": "Count up, count down",
+   "duration": 60.08,
+   "lines": [
+    {
+     "id": "sr3s_1",
+     "text": "Two words are anagrams when they use the same letters, the same number of times.",
+     "start": 0.2,
+     "end": 5.14
+    },
+    {
+     "id": "sr3s_2",
+     "text": "So count the first word up, then count the second word down. Everything must land on zero.",
+     "start": 5.89,
+     "end": 11.62
+    },
+    {
+     "id": "sr3s_3",
+     "text": "Line two is a quick exit. Different lengths can never match. Three and three, so we go on.",
+     "start": 12.37,
+     "end": 18.07
+    },
+    {
+     "id": "sr3s_4",
+     "text": "Count the first word. T, one.",
+     "start": 18.82,
+     "end": 20.87
+    },
+    {
+     "id": "sr3s_5",
+     "text": "E, one.",
+     "start": 21.62,
+     "end": 22.41
+    },
+    {
+     "id": "sr3s_6",
+     "text": "A, one.",
+     "start": 23.16,
+     "end": 23.9
+    },
+    {
+     "id": "sr3s_7",
+     "text": "Now the second word. E. Line eight asks: is there an E left? Yes.",
+     "start": 24.65,
+     "end": 29.03
+    },
+    {
+     "id": "sr3s_8",
+     "text": "Line nine uses it up. E drops to zero.",
+     "start": 29.78,
+     "end": 32.66
+    },
+    {
+     "id": "sr3s_9",
+     "text": "A. One left. Use it.",
+     "start": 33.41,
+     "end": 34.95
+    },
+    {
+     "id": "sr3s_10",
+     "text": "T. Is there a T left in the map?",
+     "start": 35.7,
+     "end": 37.62
+    },
+    {
+     "id": "sr3s_11",
+     "text": "Yes, one. Use it. Now every count is zero.",
+     "start": 38.82,
+     "end": 41.84
+    },
+    {
+     "id": "sr3s_12",
+     "text": "Line eleven returns true. Tea and eat use the same letters.",
+     "start": 42.59,
+     "end": 46.7
+    },
+    {
+     "id": "sr3s_13",
+     "text": "One walk over each word. O of n time.",
+     "start": 47.8,
+     "end": 50.44
+    },
+    {
+     "id": "sr3s_14",
+     "text": "The map holds one entry per different letter. With lowercase letters only, at most twenty six. O of one space.",
+     "start": 51.19,
+     "end": 58.48
+    }
+   ],
+   "pauses": [
+    {
+     "id": "sr3s-q",
+     "t": 37.82
+    }
+   ]
+  },
+  "sr4i": {
+   "src": "videos/sr4i.mp4",
+   "title": "The Hidden Word",
+   "duration": 18.38,
+   "lines": [
+    {
+     "id": "sr4i_1",
+     "text": "Is the word ban hidden inside beacon?",
+     "start": 0.2,
+     "end": 2.49
+    },
+    {
+     "id": "sr4i_2",
+     "text": "Return true if the small word's letters appear in the big word in the same order. Other letters may sit in between.",
+     "start": 3.19,
+     "end": 10.22
+    },
+    {
+     "id": "sr4i_3",
+     "text": "You never need to go backwards, in either word.",
+     "start": 10.92,
+     "end": 13.44
+    },
+    {
+     "id": "sr4i_4",
+     "text": "What are you waiting for at each step? Your turn.",
+     "start": 14.14,
+     "end": 16.78
+    }
+   ],
+   "pauses": []
+  },
+  "sr4s": {
+   "src": "videos/sr4s.mp4",
+   "title": "Wait for the next letter",
+   "duration": 52.79,
+   "lines": [
+    {
+     "id": "sr4s_1",
+     "text": "The small word is hidden if its letters appear in the big word in the same order, with anything in between.",
+     "start": 0.2,
+     "end": 6.34
+    },
+    {
+     "id": "sr4s_2",
+     "text": "So walk the big word once. Each time you meet the letter you are waiting for, tick it off.",
+     "start": 7.09,
+     "end": 12.25
+    },
+    {
+     "id": "sr4s_3",
+     "text": "S marks the letter we are waiting for. It starts on B.",
+     "start": 13,
+     "end": 16.39
+    },
+    {
+     "id": "sr4s_4",
+     "text": "Moss reads B. That is the letter we want. Line five moves S to the next one.",
+     "start": 17.14,
+     "end": 22.42
+    },
+    {
+     "id": "sr4s_5",
+     "text": "E. We are waiting for A. Not it. Keep walking.",
+     "start": 23.17,
+     "end": 25.77
+    },
+    {
+     "id": "sr4s_6",
+     "text": "A. A match. S moves on to N.",
+     "start": 26.52,
+     "end": 28.56
+    },
+    {
+     "id": "sr4s_7",
+     "text": "C. Not N.",
+     "start": 29.31,
+     "end": 30.22
+    },
+    {
+     "id": "sr4s_8",
+     "text": "O. Not N.",
+     "start": 30.97,
+     "end": 31.87
+    },
+    {
+     "id": "sr4s_9",
+     "text": "N. Is this the letter we are waiting for?",
+     "start": 32.62,
+     "end": 34.85
+    },
+    {
+     "id": "sr4s_10",
+     "text": "Yes. S moves past the end of the small word.",
+     "start": 36.05,
+     "end": 38.95
+    },
+    {
+     "id": "sr4s_11",
+     "text": "Line eight asks: did S reach the end? Three equals three. True.",
+     "start": 39.7,
+     "end": 43.42
+    },
+    {
+     "id": "sr4s_12",
+     "text": "One walk through the big word. O of n time.",
+     "start": 44.52,
+     "end": 47.21
+    },
+    {
+     "id": "sr4s_13",
+     "text": "Two counters, and nothing else. O of one space.",
+     "start": 47.96,
+     "end": 51.19
+    }
+   ],
+   "pauses": [
+    {
+     "id": "sr4s-q",
+     "t": 35.05
+    }
+   ]
+  },
+  "ps1i": {
+   "src": "videos/ps1i.mp4",
+   "title": "The Running Total",
+   "duration": 21.13,
+   "lines": [
+    {
+     "id": "ps1i_1",
+     "text": "Pip counts seeds door by door, and wants the total so far at every door.",
+     "start": 0.2,
+     "end": 4.68
+    },
+    {
+     "id": "ps1i_2",
+     "text": "Return a new array. Position i holds the sum of everything up to and including door i.",
+     "start": 5.38,
+     "end": 11.09
+    },
+    {
+     "id": "ps1i_3",
+     "text": "To get the third total, do you really need to add three numbers again?",
+     "start": 11.79,
+     "end": 15.76
+    },
+    {
+     "id": "ps1i_4",
+     "text": "What single number could you carry along? Your turn.",
+     "start": 16.46,
+     "end": 19.53
+    }
+   ],
+   "pauses": []
+  },
+  "ps1s": {
+   "src": "videos/ps1s.mp4",
+   "title": "Carry the total along",
+   "duration": 56.5,
+   "lines": [
+    {
+     "id": "ps1s_1",
+     "text": "Each total is the total before it, plus one more number. So nothing needs to be added twice.",
+     "start": 0.2,
+     "end": 6.17
+    },
+    {
+     "id": "ps1s_2",
+     "text": "Carry one number, sum, from door to door. Write it down after every add.",
+     "start": 6.92,
+     "end": 11.52
+    },
+    {
+     "id": "ps1s_3",
+     "text": "Line two makes an empty row for the answers. Line three starts sum at zero.",
+     "start": 12.27,
+     "end": 17.15
+    },
+    {
+     "id": "ps1s_4",
+     "text": "I is zero. Line five adds the three to sum. Sum is three.",
+     "start": 17.9,
+     "end": 21.8
+    },
+    {
+     "id": "ps1s_5",
+     "text": "Line six writes that total into the answer row.",
+     "start": 22.55,
+     "end": 25.3
+    },
+    {
+     "id": "ps1s_6",
+     "text": "Next door. Add one. Sum is four. Write it down.",
+     "start": 26.05,
+     "end": 29.09
+    },
+    {
+     "id": "ps1s_7",
+     "text": "The next door holds four, and sum is four. What gets written?",
+     "start": 29.84,
+     "end": 33.49
+    },
+    {
+     "id": "ps1s_8",
+     "text": "Eight. The old total, plus one new number.",
+     "start": 34.69,
+     "end": 37.26
+    },
+    {
+     "id": "ps1s_9",
+     "text": "Last door. Add two. Ten.",
+     "start": 38.01,
+     "end": 39.85
+    },
+    {
+     "id": "ps1s_10",
+     "text": "The loop ends, and line eight returns the answer row.",
+     "start": 40.6,
+     "end": 43.87
+    },
+    {
+     "id": "ps1s_11",
+     "text": "One walk, and one add per door. O of n time.",
+     "start": 44.97,
+     "end": 48.02
+    },
+    {
+     "id": "ps1s_12",
+     "text": "The answer row holds n totals. O of n space. That row has a name: the prefix sums.",
+     "start": 48.77,
+     "end": 54.9
+    }
+   ],
+   "pauses": [
+    {
+     "id": "ps1s-q",
+     "t": 33.69
+    }
+   ]
+  },
+  "ps2i": {
+   "src": "videos/ps2i.mp4",
+   "title": "The Balance Point",
+   "duration": 23.62,
+   "lines": [
+    {
+     "id": "ps2i_1",
+     "text": "Moss wants a door where the left side and the right side weigh the same.",
+     "start": 0.2,
+     "end": 4.31
+    },
+    {
+     "id": "ps2i_2",
+     "text": "Return the first index where the sum to its left equals the sum to its right. If there is none, return minus one.",
+     "start": 5.01,
+     "end": 12.6
+    },
+    {
+     "id": "ps2i_3",
+     "text": "Adding up both sides again at every door is a lot of walking.",
+     "start": 13.3,
+     "end": 17.07
+    },
+    {
+     "id": "ps2i_4",
+     "text": "If you know the total, and the left side, what is the right side? Your turn.",
+     "start": 17.77,
+     "end": 22.02
+    }
+   ],
+   "pauses": []
+  },
+  "ps2s": {
+   "src": "videos/ps2s.mp4",
+   "title": "Total, minus left, minus this door",
+   "duration": 62.78,
+   "lines": [
+    {
+     "id": "ps2s_1",
+     "text": "The whole row is three parts. The left side, this door, and the right side.",
+     "start": 0.2,
+     "end": 4.52
+    },
+    {
+     "id": "ps2s_2",
+     "text": "So if we know the total and the left side, the right side is one subtraction.",
+     "start": 5.27,
+     "end": 9.93
+    },
+    {
+     "id": "ps2s_3",
+     "text": "Lines two and three add everything up, once. The total is ten.",
+     "start": 10.68,
+     "end": 14.59
+    },
+    {
+     "id": "ps2s_4",
+     "text": "Line four. Left starts at zero, because nothing is to the left of the first door.",
+     "start": 15.34,
+     "end": 20.54
+    },
+    {
+     "id": "ps2s_5",
+     "text": "Door zero. Line six works out the right side. Ten, minus zero, minus two. Eight.",
+     "start": 21.29,
+     "end": 26.83
+    },
+    {
+     "id": "ps2s_6",
+     "text": "Line seven compares. Zero is not eight. Not balanced.",
+     "start": 27.58,
+     "end": 31.23
+    },
+    {
+     "id": "ps2s_7",
+     "text": "Line eight moves this door into the left side. Left is two.",
+     "start": 31.98,
+     "end": 35.59
+    },
+    {
+     "id": "ps2s_8",
+     "text": "Door one. Ten, minus two, minus one. Seven. Two is not seven.",
+     "start": 36.34,
+     "end": 40.58
+    },
+    {
+     "id": "ps2s_9",
+     "text": "Left becomes three.",
+     "start": 41.33,
+     "end": 42.61
+    },
+    {
+     "id": "ps2s_10",
+     "text": "Door two holds four, and left is three. What is the right side?",
+     "start": 43.36,
+     "end": 47.04
+    },
+    {
+     "id": "ps2s_11",
+     "text": "Three. Left equals right. Line seven returns the index. Two.",
+     "start": 48.24,
+     "end": 52.48
+    },
+    {
+     "id": "ps2s_12",
+     "text": "One walk for the total, and one to search. O of n time.",
+     "start": 53.58,
+     "end": 57.02
+    },
+    {
+     "id": "ps2s_13",
+     "text": "Three numbers, and no extra row. O of one space.",
+     "start": 57.77,
+     "end": 61.18
+    }
+   ],
+   "pauses": [
+    {
+     "id": "ps2s-q",
+     "t": 47.24
+    }
+   ]
+  },
+  "ps3i": {
+   "src": "videos/ps3i.mp4",
+   "title": "Many Questions",
+   "duration": 23.74,
+   "lines": [
+    {
+     "id": "ps3i_1",
+     "text": "The same row of doors, and a long list of questions. What is the sum of doors one to two? Zero to three?",
+     "start": 0.2,
+     "end": 6.91
+    },
+    {
+     "id": "ps3i_2",
+     "text": "Return the answer to every query, in order. Each query is a pair, l and r.",
+     "start": 7.61,
+     "end": 12.79
+    },
+    {
+     "id": "ps3i_3",
+     "text": "With fifty thousand questions, walking every range is far too slow.",
+     "start": 13.49,
+     "end": 17.83
+    },
+    {
+     "id": "ps3i_4",
+     "text": "What could you work out once, before the first question? Your turn.",
+     "start": 18.53,
+     "end": 22.14
+    }
+   ],
+   "pauses": []
+  },
+  "ps3s": {
+   "src": "videos/ps3s.mp4",
+   "title": "One row of totals, many answers",
+   "duration": 67,
+   "lines": [
+    {
+     "id": "ps3s_1",
+     "text": "Walking every range repeats the same adding. So do the adding once, before any question.",
+     "start": 0.2,
+     "end": 5.51
+    },
+    {
+     "id": "ps3s_2",
+     "text": "Keep the total before every door. Then any range is one total minus another.",
+     "start": 6.26,
+     "end": 11.36
+    },
+    {
+     "id": "ps3s_3",
+     "text": "Line two starts the totals row with a zero. The sum of nothing.",
+     "start": 12.11,
+     "end": 16.16
+    },
+    {
+     "id": "ps3s_4",
+     "text": "Lines three to five fill it in. Each slot is the slot before, plus one number. Zero plus three is three.",
+     "start": 16.91,
+     "end": 23.81
+    },
+    {
+     "id": "ps3s_5",
+     "text": "Then four. Eight. And ten.",
+     "start": 24.56,
+     "end": 26.22
+    },
+    {
+     "id": "ps3s_6",
+     "text": "Now the questions. The first one asks for doors one to two.",
+     "start": 26.97,
+     "end": 30.64
+    },
+    {
+     "id": "ps3s_7",
+     "text": "Line eight takes the total after door two. That is pre at three. Eight.",
+     "start": 31.39,
+     "end": 35.57
+    },
+    {
+     "id": "ps3s_8",
+     "text": "Then it removes everything before door one. Pre at one. Three. Eight minus three is five.",
+     "start": 36.32,
+     "end": 42.04
+    },
+    {
+     "id": "ps3s_9",
+     "text": "The next question. Doors zero to three. Which two slots do we need?",
+     "start": 42.79,
+     "end": 47.07
+    },
+    {
+     "id": "ps3s_10",
+     "text": "Pre at four, minus pre at zero. Ten minus zero. Ten.",
+     "start": 48.27,
+     "end": 52.03
+    },
+    {
+     "id": "ps3s_11",
+     "text": "Line ten returns both answers.",
+     "start": 52.78,
+     "end": 54.96
+    },
+    {
+     "id": "ps3s_12",
+     "text": "Building the row costs n steps, once. After that, every question is one subtraction.",
+     "start": 56.06,
+     "end": 61.5
+    },
+    {
+     "id": "ps3s_13",
+     "text": "The price is one extra row. O of n space.",
+     "start": 62.25,
+     "end": 65.4
+    }
+   ],
+   "pauses": [
+    {
+     "id": "ps3s-q",
+     "t": 47.27
+    }
+   ]
+  },
+  "ps4i": {
+   "src": "videos/ps4i.mp4",
+   "title": "Stretches That Add Up",
+   "duration": 23.33,
+   "lines": [
+    {
+     "id": "ps4i_1",
+     "text": "How many unbroken stretches of these doors add up to exactly three?",
+     "start": 0.2,
+     "end": 4.44
+    },
+    {
+     "id": "ps4i_2",
+     "text": "Return the count. A stretch is any run of neighbours, even a single door.",
+     "start": 5.14,
+     "end": 9.64
+    },
+    {
+     "id": "ps4i_3",
+     "text": "Trying every start and every end is too slow for a long row.",
+     "start": 10.34,
+     "end": 14.21
+    },
+    {
+     "id": "ps4i_4",
+     "text": "Every stretch is a running total, minus an earlier total. What could remember the earlier ones? Your turn.",
+     "start": 14.91,
+     "end": 21.73
+    }
+   ],
+   "pauses": []
+  },
+  "ps4s": {
+   "src": "videos/ps4s.mp4",
+   "title": "Look back for sum \u2212 k",
+   "duration": 83.19,
+   "lines": [
+    {
+     "id": "ps4s_1",
+     "text": "Every stretch is the running total now, minus the running total at some earlier point.",
+     "start": 0.2,
+     "end": 5.51
+    },
+    {
+     "id": "ps4s_2",
+     "text": "So a stretch ending here adds up to k, when an earlier total equals sum minus k. A map remembers the earlier totals.",
+     "start": 6.26,
+     "end": 14.33
+    },
+    {
+     "id": "ps4s_3",
+     "text": "Line two makes the map of totals seen so far. It starts with zero, seen once. That is the total before the first door.",
+     "start": 15.08,
+     "end": 22.91
+    },
+    {
+     "id": "ps4s_4",
+     "text": "Sum and count both start at zero.",
+     "start": 23.66,
+     "end": 25.61
+    },
+    {
+     "id": "ps4s_5",
+     "text": "Door zero. Line six adds it. Sum is one.",
+     "start": 26.36,
+     "end": 29.25
+    },
+    {
+     "id": "ps4s_6",
+     "text": "Line seven looks for sum minus k. One minus three is minus two. Never seen. Count stays zero.",
+     "start": 30,
+     "end": 36.57
+    },
+    {
+     "id": "ps4s_7",
+     "text": "Line eight records the total, one, in the map.",
+     "start": 37.32,
+     "end": 39.96
+    },
+    {
+     "id": "ps4s_8",
+     "text": "Door one. Sum is three. We need three minus three. Zero.",
+     "start": 40.71,
+     "end": 44.37
+    },
+    {
+     "id": "ps4s_9",
+     "text": "Zero was seen once. So one stretch ends here. Doors zero and one. Count is one.",
+     "start": 45.12,
+     "end": 51.03
+    },
+    {
+     "id": "ps4s_10",
+     "text": "Record the three.",
+     "start": 51.78,
+     "end": 52.91
+    },
+    {
+     "id": "ps4s_11",
+     "text": "Door two. Sum is four. Which earlier total are we looking for?",
+     "start": 53.66,
+     "end": 57.71
+    },
+    {
+     "id": "ps4s_12",
+     "text": "One. Seen once. That stretch is doors one and two. Count is two.",
+     "start": 58.91,
+     "end": 62.98
+    },
+    {
+     "id": "ps4s_13",
+     "text": "Last door. Sum is seven. We need four. Seen once. The door on its own. Count is three.",
+     "start": 63.73,
+     "end": 69.48
+    },
+    {
+     "id": "ps4s_14",
+     "text": "Line ten returns the count. Three.",
+     "start": 70.23,
+     "end": 72.58
+    },
+    {
+     "id": "ps4s_15",
+     "text": "One walk, and each map lookup is one step. O of n time.",
+     "start": 73.68,
+     "end": 77.32
+    },
+    {
+     "id": "ps4s_16",
+     "text": "The map can hold one total per door. O of n space.",
+     "start": 78.07,
+     "end": 81.59
+    }
+   ],
+   "pauses": [
+    {
+     "id": "ps4s-q",
+     "t": 57.91
+    }
+   ]
+  },
+  "sw1i": {
+   "src": "videos/sw1i.mp4",
+   "title": "The Best Three",
+   "duration": 17.88,
+   "lines": [
+    {
+     "id": "sw1i_1",
+     "text": "Pip may open three doors in a row, and wants the most seeds.",
+     "start": 0.2,
+     "end": 4.02
+    },
+    {
+     "id": "sw1i_2",
+     "text": "Return the biggest sum of k neighbouring doors.",
+     "start": 4.72,
+     "end": 7.45
+    },
+    {
+     "id": "sw1i_3",
+     "text": "Adding up every window from the start repeats a lot of work.",
+     "start": 8.15,
+     "end": 11.82
+    },
+    {
+     "id": "sw1i_4",
+     "text": "When the window slides one step, what really changes? Your turn.",
+     "start": 12.52,
+     "end": 16.28
+    }
+   ],
+   "pauses": []
+  },
+  "sw1s": {
+   "src": "videos/sw1s.mp4",
+   "title": "One leaves, one enters",
+   "duration": 54.6,
+   "lines": [
+    {
+     "id": "sw1s_1",
+     "text": "Neighbouring windows share all their doors but two. One leaves, and one enters.",
+     "start": 0.2,
+     "end": 5.19
+    },
+    {
+     "id": "sw1s_2",
+     "text": "So keep one running sum. Subtract the door that leaves, and add the door that enters.",
+     "start": 5.94,
+     "end": 11.33
+    },
+    {
+     "id": "sw1s_3",
+     "text": "Lines two and three add up the first window. Two, one, five. Eight.",
+     "start": 12.08,
+     "end": 16.2
+    },
+    {
+     "id": "sw1s_4",
+     "text": "Line four. That is the best so far.",
+     "start": 16.95,
+     "end": 19.11
+    },
+    {
+     "id": "sw1s_5",
+     "text": "Right moves to door three. Line six adds the door that enters, one, and removes the door that left, two. Seven.",
+     "start": 19.86,
+     "end": 27.44
+    },
+    {
+     "id": "sw1s_6",
+     "text": "Line seven. Seven does not beat eight.",
+     "start": 28.19,
+     "end": 30.68
+    },
+    {
+     "id": "sw1s_7",
+     "text": "Slide again. Three enters, one leaves. What is the sum?",
+     "start": 31.43,
+     "end": 34.8
+    },
+    {
+     "id": "sw1s_8",
+     "text": "Nine. A new best.",
+     "start": 36,
+     "end": 37.27
+    },
+    {
+     "id": "sw1s_9",
+     "text": "The last slide. Two enters, five leaves. Six. Not better.",
+     "start": 38.02,
+     "end": 41.89
+    },
+    {
+     "id": "sw1s_10",
+     "text": "Line nine returns the best. Nine.",
+     "start": 42.64,
+     "end": 44.99
+    },
+    {
+     "id": "sw1s_11",
+     "text": "Each slide is two steps, however wide the window is. O of n time.",
+     "start": 46.09,
+     "end": 50.23
+    },
+    {
+     "id": "sw1s_12",
+     "text": "Two numbers. O of one space.",
+     "start": 50.98,
+     "end": 53
+    }
+   ],
+   "pauses": [
+    {
+     "id": "sw1s-q",
+     "t": 35
+    }
+   ]
+  },
+  "sw2i": {
+   "src": "videos/sw2i.mp4",
+   "title": "Buy Low, Sell High",
+   "duration": 21.71,
+   "lines": [
+    {
+     "id": "sw2i_1",
+     "text": "The price of seeds changes every day. Pip wants to buy low, and sell high.",
+     "start": 0.2,
+     "end": 4.68
+    },
+    {
+     "id": "sw2i_2",
+     "text": "Return the most profit from one buy and one later sell. If nothing makes money, return zero.",
+     "start": 5.38,
+     "end": 11.5
+    },
+    {
+     "id": "sw2i_3",
+     "text": "Trying every pair of days is O of n squared.",
+     "start": 12.2,
+     "end": 15.04
+    },
+    {
+     "id": "sw2i_4",
+     "text": "If you had to sell today, which earlier day would you have bought on? Your turn.",
+     "start": 15.74,
+     "end": 20.11
+    }
+   ],
+   "pauses": []
+  },
+  "sw2s": {
+   "src": "videos/sw2s.mp4",
+   "title": "Remember the lowest so far",
+   "duration": 54.16,
+   "lines": [
+    {
+     "id": "sw2s_1",
+     "text": "To sell on some day for the most profit, you want to have bought at the lowest price before it.",
+     "start": 0.2,
+     "end": 5.25
+    },
+    {
+     "id": "sw2s_2",
+     "text": "So walk once, remember the lowest price so far, and try selling on every day.",
+     "start": 6,
+     "end": 11.1
+    },
+    {
+     "id": "sw2s_3",
+     "text": "Low starts at infinity, so that any price beats it. Best starts at zero.",
+     "start": 11.85,
+     "end": 16.78
+    },
+    {
+     "id": "sw2s_4",
+     "text": "Day zero. Seven is lower than anything so far. Low is seven.",
+     "start": 17.53,
+     "end": 21.64
+    },
+    {
+     "id": "sw2s_5",
+     "text": "Day one. One is lower. Low becomes one.",
+     "start": 22.39,
+     "end": 25.16
+    },
+    {
+     "id": "sw2s_6",
+     "text": "Day two. Five is not lower. So line six asks: what if we sold today? Five minus one. Four.",
+     "start": 25.91,
+     "end": 32.59
+    },
+    {
+     "id": "sw2s_7",
+     "text": "Day three. Three. Sell today, and the profit is two. Does best change?",
+     "start": 33.34,
+     "end": 37.53
+    },
+    {
+     "id": "sw2s_8",
+     "text": "No. Two does not beat four.",
+     "start": 38.73,
+     "end": 40.4
+    },
+    {
+     "id": "sw2s_9",
+     "text": "Day four. Six minus one. Five. A new best.",
+     "start": 41.15,
+     "end": 44.18
+    },
+    {
+     "id": "sw2s_10",
+     "text": "Line eight returns the best. Five.",
+     "start": 44.93,
+     "end": 47.13
+    },
+    {
+     "id": "sw2s_11",
+     "text": "One walk. O of n time.",
+     "start": 48.23,
+     "end": 49.79
+    },
+    {
+     "id": "sw2s_12",
+     "text": "Two numbers. O of one space.",
+     "start": 50.54,
+     "end": 52.56
+    }
+   ],
+   "pauses": [
+    {
+     "id": "sw2s-q",
+     "t": 37.73
+    }
+   ]
+  },
+  "sw3i": {
+   "src": "videos/sw3i.mp4",
+   "title": "Light the Dark Lamps",
+   "duration": 21.92,
+   "lines": [
+    {
+     "id": "sw3i_1",
+     "text": "A row of lamps. Some are lit, some are dark. You may light one dark lamp.",
+     "start": 0.2,
+     "end": 4.83
+    },
+    {
+     "id": "sw3i_2",
+     "text": "Return the longest unbroken run of lit lamps you can get, lighting at most k dark ones.",
+     "start": 5.53,
+     "end": 11.52
+    },
+    {
+     "id": "sw3i_3",
+     "text": "Said another way: find the longest stretch with at most k zeros in it.",
+     "start": 12.22,
+     "end": 16.52
+    },
+    {
+     "id": "sw3i_4",
+     "text": "What do you need to count as the stretch grows? Your turn.",
+     "start": 17.22,
+     "end": 20.32
+    }
+   ],
+   "pauses": []
+  },
+  "sw3s": {
+   "src": "videos/sw3s.mp4",
+   "title": "At most k zeros inside",
+   "duration": 67.53,
+   "lines": [
+    {
+     "id": "sw3s_1",
+     "text": "Lighting at most k dark lamps is the same as finding the longest stretch with at most k zeros.",
+     "start": 0.2,
+     "end": 6.11
+    },
+    {
+     "id": "sw3s_2",
+     "text": "Grow on the right. When there are too many zeros, shrink on the left.",
+     "start": 6.86,
+     "end": 10.52
+    },
+    {
+     "id": "sw3s_3",
+     "text": "Moss holds the left edge at door zero. No dark lamps counted yet.",
+     "start": 11.27,
+     "end": 15.61
+    },
+    {
+     "id": "sw3s_4",
+     "text": "Pip grows the window to door zero. A lit lamp. The window is one wide.",
+     "start": 16.36,
+     "end": 20.98
+    },
+    {
+     "id": "sw3s_5",
+     "text": "Door one is dark. Zeros becomes one. We are allowed one, so the window is fine. Two wide.",
+     "start": 21.73,
+     "end": 27.76
+    },
+    {
+     "id": "sw3s_6",
+     "text": "Two more lit lamps. The window grows to four wide.",
+     "start": 28.51,
+     "end": 31.73
+    },
+    {
+     "id": "sw3s_7",
+     "text": "Door four is dark. Zeros is two. Too many.",
+     "start": 32.48,
+     "end": 35.38
+    },
+    {
+     "id": "sw3s_8",
+     "text": "Line seven shrinks from the left until the rule holds again. Where does Moss stop?",
+     "start": 36.13,
+     "end": 41.19
+    },
+    {
+     "id": "sw3s_9",
+     "text": "Door zero leaves. Then door one leaves, and it was dark, so zeros drops to one. Moss stops on door two.",
+     "start": 42.39,
+     "end": 49.34
+    },
+    {
+     "id": "sw3s_10",
+     "text": "Pip adds door five. Four wide again. That ties the best.",
+     "start": 50.09,
+     "end": 53.56
+    },
+    {
+     "id": "sw3s_11",
+     "text": "Line thirteen returns the best. Four.",
+     "start": 54.31,
+     "end": 56.91
+    },
+    {
+     "id": "sw3s_12",
+     "text": "Each door enters the window once, and leaves at most once. O of n time.",
+     "start": 58.01,
+     "end": 63.04
+    },
+    {
+     "id": "sw3s_13",
+     "text": "Three numbers. O of one space.",
+     "start": 63.79,
+     "end": 65.93
+    }
+   ],
+   "pauses": [
+    {
+     "id": "sw3s-q",
+     "t": 41.39
+    }
+   ]
+  },
+  "sw4i": {
+   "src": "videos/sw4i.mp4",
+   "title": "No Letter Twice",
+   "duration": 18.01,
+   "lines": [
+    {
+     "id": "sw4i_1",
+     "text": "Find a stretch of this word where every letter is different.",
+     "start": 0.2,
+     "end": 3.57
+    },
+    {
+     "id": "sw4i_2",
+     "text": "Return the length of the longest one.",
+     "start": 4.27,
+     "end": 6.32
+    },
+    {
+     "id": "sw4i_3",
+     "text": "A window can grow, until a letter shows up that is already inside it.",
+     "start": 7.02,
+     "end": 11.34
+    },
+    {
+     "id": "sw4i_4",
+     "text": "Then what has to leave? And what remembers what is inside? Your turn.",
+     "start": 12.04,
+     "end": 16.41
+    }
+   ],
+   "pauses": []
+  },
+  "sw4s": {
+   "src": "videos/sw4s.mp4",
+   "title": "Shrink until the repeat is gone",
+   "duration": 64.07,
+   "lines": [
+    {
+     "id": "sw4s_1",
+     "text": "Keep a window that never holds the same letter twice. A set remembers what is inside it.",
+     "start": 0.2,
+     "end": 5.73
+    },
+    {
+     "id": "sw4s_2",
+     "text": "Grow on the right. If the new letter is already inside, shrink on the left until it is gone.",
+     "start": 6.48,
+     "end": 12.23
+    },
+    {
+     "id": "sw4s_3",
+     "text": "An empty set, Moss on the left edge, and best at zero.",
+     "start": 12.98,
+     "end": 16.32
+    },
+    {
+     "id": "sw4s_4",
+     "text": "Pip reads A. Not in the set. Add it. The window is one wide.",
+     "start": 17.07,
+     "end": 20.96
+    },
+    {
+     "id": "sw4s_5",
+     "text": "B and C are new as well. The window grows to three.",
+     "start": 21.71,
+     "end": 25.07
+    },
+    {
+     "id": "sw4s_6",
+     "text": "Next is B. Line six checks the set. B is already inside the window.",
+     "start": 25.82,
+     "end": 30.3
+    },
+    {
+     "id": "sw4s_7",
+     "text": "So the window shrinks from the left until that B is gone. How many letters leave?",
+     "start": 31.05,
+     "end": 36.14
+    },
+    {
+     "id": "sw4s_8",
+     "text": "Two. A leaves, then the old B leaves. Moss stops on C.",
+     "start": 37.34,
+     "end": 40.99
+    },
+    {
+     "id": "sw4s_9",
+     "text": "Now the new B can enter. The window is C, B.",
+     "start": 41.74,
+     "end": 44.78
+    },
+    {
+     "id": "sw4s_10",
+     "text": "D is new. Three wide. That ties the best.",
+     "start": 45.53,
+     "end": 48.28
+    },
+    {
+     "id": "sw4s_11",
+     "text": "Line thirteen returns the best. Three.",
+     "start": 49.03,
+     "end": 51.6
+    },
+    {
+     "id": "sw4s_12",
+     "text": "Each door enters the window once, and leaves at most once. O of n time.",
+     "start": 52.7,
+     "end": 57.72
+    },
+    {
+     "id": "sw4s_13",
+     "text": "The set holds at most one of each letter. O of n space at most.",
+     "start": 58.47,
+     "end": 62.47
+    }
+   ],
+   "pauses": [
+    {
+     "id": "sw4s-q",
+     "t": 36.34
+    }
+   ]
+  },
+  "sw5i": {
+   "src": "videos/sw5i.mp4",
+   "title": "The Shortest That Reaches",
+   "duration": 23.46,
+   "lines": [
+    {
+     "id": "sw5i_1",
+     "text": "Pip needs at least seven seeds, from as few neighbouring doors as possible.",
+     "start": 0.2,
+     "end": 4.8
+    },
+    {
+     "id": "sw5i_2",
+     "text": "Return the length of the shortest stretch whose sum is at least the target. If none reaches it, return zero.",
+     "start": 5.5,
+     "end": 11.91
+    },
+    {
+     "id": "sw5i_3",
+     "text": "Last time the window shrank when it broke a rule. This time it is the other way round.",
+     "start": 12.61,
+     "end": 17.79
+    },
+    {
+     "id": "sw5i_4",
+     "text": "Once the window has enough, how do you make it shorter? Your turn.",
+     "start": 18.49,
+     "end": 21.86
+    }
+   ],
+   "pauses": []
+  },
+  "sw5s": {
+   "src": "videos/sw5s.mp4",
+   "title": "Grow until enough, then shrink",
+   "duration": 73.51,
+   "lines": [
+    {
+     "id": "sw5s_1",
+     "text": "Grow the window until the sum is big enough. Then shrink it from the left, for as long as it stays big enough.",
+     "start": 0.2,
+     "end": 6.74
+    },
+    {
+     "id": "sw5s_2",
+     "text": "Every time it is big enough, measure it. The smallest measurement wins.",
+     "start": 7.49,
+     "end": 11.78
+    },
+    {
+     "id": "sw5s_3",
+     "text": "Moss on the left edge. Sum is zero. Best starts at infinity, so that any real window beats it.",
+     "start": 12.53,
+     "end": 19.08
+    },
+    {
+     "id": "sw5s_4",
+     "text": "Pip adds two, then one. Sum is three. Not enough yet.",
+     "start": 19.83,
+     "end": 23.28
+    },
+    {
+     "id": "sw5s_5",
+     "text": "Five enters. Sum is eight. That reaches seven.",
+     "start": 24.03,
+     "end": 26.85
+    },
+    {
+     "id": "sw5s_6",
+     "text": "Line eight records the width. Three doors.",
+     "start": 27.6,
+     "end": 30.37
+    },
+    {
+     "id": "sw5s_7",
+     "text": "Now try to make it shorter. The left door leaves. Sum is six. Not enough any more.",
+     "start": 31.12,
+     "end": 36.53
+    },
+    {
+     "id": "sw5s_8",
+     "text": "So Pip grows again. Two enters. Eight. Three wide. No better.",
+     "start": 37.28,
+     "end": 41.05
+    },
+    {
+     "id": "sw5s_9",
+     "text": "Shrink. One leaves. Sum is seven. Is that still enough?",
+     "start": 41.8,
+     "end": 44.84
+    },
+    {
+     "id": "sw5s_10",
+     "text": "Yes. Seven reaches seven. And the window is only two wide. A new best.",
+     "start": 46.04,
+     "end": 50.76
+    },
+    {
+     "id": "sw5s_11",
+     "text": "Shrink once more. Five leaves. Sum is two. The inner loop stops.",
+     "start": 51.51,
+     "end": 55.64
+    },
+    {
+     "id": "sw5s_12",
+     "text": "Three enters. Five. Not enough, and the row is finished.",
+     "start": 56.39,
+     "end": 59.64
+    },
+    {
+     "id": "sw5s_13",
+     "text": "Line thirteen returns the best. Two.",
+     "start": 60.39,
+     "end": 62.88
+    },
+    {
+     "id": "sw5s_14",
+     "text": "Each door enters the window once, and leaves at most once. O of n time.",
+     "start": 63.98,
+     "end": 69.01
+    },
+    {
+     "id": "sw5s_15",
+     "text": "Three numbers. O of one space.",
+     "start": 69.76,
+     "end": 71.91
+    }
+   ],
+   "pauses": [
+    {
+     "id": "sw5s-q",
+     "t": 45.04
+    }
+   ]
+  },
+  "sw6i": {
+   "src": "videos/sw6i.mp4",
+   "title": "Two Kinds Only",
+   "duration": 19.67,
+   "lines": [
+    {
+     "id": "sw6i_1",
+     "text": "Hazel has two baskets, and each basket holds one kind of letter.",
+     "start": 0.2,
+     "end": 4.44
+    },
+    {
+     "id": "sw6i_2",
+     "text": "Return the length of the longest stretch that uses at most two different letters.",
+     "start": 5.14,
+     "end": 9.85
+    },
+    {
+     "id": "sw6i_3",
+     "text": "The window grows, until a third kind shows up.",
+     "start": 10.55,
+     "end": 13.49
+    },
+    {
+     "id": "sw6i_4",
+     "text": "How do you know when a kind has left the window completely? Your turn.",
+     "start": 14.19,
+     "end": 18.07
+    }
+   ],
+   "pauses": []
+  },
+  "sw6s": {
+   "src": "videos/sw6s.mp4",
+   "title": "Count the kinds inside",
+   "duration": 64.56,
+   "lines": [
+    {
+     "id": "sw6s_1",
+     "text": "Keep a window with at most two kinds of letter. A map counts how many of each kind are inside.",
+     "start": 0.2,
+     "end": 5.44
+    },
+    {
+     "id": "sw6s_2",
+     "text": "Grow on the right. With three kinds, shrink on the left until one kind is gone completely.",
+     "start": 6.19,
+     "end": 11.48
+    },
+    {
+     "id": "sw6s_3",
+     "text": "An empty count map, and Moss on the left edge.",
+     "start": 12.23,
+     "end": 15.28
+    },
+    {
+     "id": "sw6s_4",
+     "text": "A enters. One kind.",
+     "start": 16.03,
+     "end": 17.49
+    },
+    {
+     "id": "sw6s_5",
+     "text": "B enters. Two kinds. Still allowed.",
+     "start": 18.24,
+     "end": 20.51
+    },
+    {
+     "id": "sw6s_6",
+     "text": "Another A. Still two kinds. Three wide.",
+     "start": 21.26,
+     "end": 23.83
+    },
+    {
+     "id": "sw6s_7",
+     "text": "C enters. Now the map has three kinds. Too many.",
+     "start": 24.58,
+     "end": 27.91
+    },
+    {
+     "id": "sw6s_8",
+     "text": "So shrink. The left A leaves. Its count drops to one. Still three kinds.",
+     "start": 28.66,
+     "end": 33.07
+    },
+    {
+     "id": "sw6s_9",
+     "text": "B leaves next. Its count drops to zero. What must happen to B in the map?",
+     "start": 33.82,
+     "end": 38.57
+    },
+    {
+     "id": "sw6s_10",
+     "text": "It is deleted. Otherwise the map would still say three kinds. Now the window is A, C.",
+     "start": 39.77,
+     "end": 45.47
+    },
+    {
+     "id": "sw6s_11",
+     "text": "Another C. Three wide. That ties the best.",
+     "start": 46.22,
+     "end": 48.88
+    },
+    {
+     "id": "sw6s_12",
+     "text": "Line fifteen returns the best. Three.",
+     "start": 49.63,
+     "end": 52.19
+    },
+    {
+     "id": "sw6s_13",
+     "text": "Each door enters the window once, and leaves at most once. O of n time.",
+     "start": 53.29,
+     "end": 58.32
+    },
+    {
+     "id": "sw6s_14",
+     "text": "The map never holds more than three kinds. O of one space.",
+     "start": 59.07,
+     "end": 62.96
+    }
+   ],
+   "pauses": [
+    {
+     "id": "sw6s-q",
+     "t": 38.77
     }
    ]
   },
@@ -3363,542 +4807,6 @@ window.BURROW = {
     {
      "id": "tp6s-q",
      "t": 48.62
-    }
-   ]
-  },
-  "sw0": {
-   "src": "videos/sw0.mp4",
-   "title": "A Frame That Moves",
-   "duration": 29.15,
-   "lines": [
-    {
-     "id": "sv1",
-     "text": "Chapter six. The sliding window. A frame that moves along the row, and never starts over.",
-     "start": 0.2,
-     "end": 6.11
-    },
-    {
-     "id": "sv2",
-     "text": "Whenever a question asks about a stretch of neighbours, the longest, the shortest, the best, this is the tool.",
-     "start": 6.81,
-     "end": 13.2
-    },
-    {
-     "id": "sv3",
-     "text": "The trick is always the same. When the frame moves, only two doors change. One enters, and one leaves.",
-     "start": 14,
-     "end": 20.86
-    },
-    {
-     "id": "sv4",
-     "text": "First, a window of fixed size. Then one that grows and shrinks. Then six puzzles.",
-     "start": 21.75,
-     "end": 27.55
-    }
-   ],
-   "pauses": []
-  },
-  "ps1i": {
-   "src": "videos/ps1i.mp4",
-   "title": "The Running Total",
-   "duration": 21.13,
-   "lines": [
-    {
-     "id": "ps1i_1",
-     "text": "Pip counts seeds door by door, and wants the total so far at every door.",
-     "start": 0.2,
-     "end": 4.68
-    },
-    {
-     "id": "ps1i_2",
-     "text": "Return a new array. Position i holds the sum of everything up to and including door i.",
-     "start": 5.38,
-     "end": 11.09
-    },
-    {
-     "id": "ps1i_3",
-     "text": "To get the third total, do you really need to add three numbers again?",
-     "start": 11.79,
-     "end": 15.76
-    },
-    {
-     "id": "ps1i_4",
-     "text": "What single number could you carry along? Your turn.",
-     "start": 16.46,
-     "end": 19.53
-    }
-   ],
-   "pauses": []
-  },
-  "ps1s": {
-   "src": "videos/ps1s.mp4",
-   "title": "Carry the total along",
-   "duration": 56.5,
-   "lines": [
-    {
-     "id": "ps1s_1",
-     "text": "Each total is the total before it, plus one more number. So nothing needs to be added twice.",
-     "start": 0.2,
-     "end": 6.17
-    },
-    {
-     "id": "ps1s_2",
-     "text": "Carry one number, sum, from door to door. Write it down after every add.",
-     "start": 6.92,
-     "end": 11.52
-    },
-    {
-     "id": "ps1s_3",
-     "text": "Line two makes an empty row for the answers. Line three starts sum at zero.",
-     "start": 12.27,
-     "end": 17.15
-    },
-    {
-     "id": "ps1s_4",
-     "text": "I is zero. Line five adds the three to sum. Sum is three.",
-     "start": 17.9,
-     "end": 21.8
-    },
-    {
-     "id": "ps1s_5",
-     "text": "Line six writes that total into the answer row.",
-     "start": 22.55,
-     "end": 25.3
-    },
-    {
-     "id": "ps1s_6",
-     "text": "Next door. Add one. Sum is four. Write it down.",
-     "start": 26.05,
-     "end": 29.09
-    },
-    {
-     "id": "ps1s_7",
-     "text": "The next door holds four, and sum is four. What gets written?",
-     "start": 29.84,
-     "end": 33.49
-    },
-    {
-     "id": "ps1s_8",
-     "text": "Eight. The old total, plus one new number.",
-     "start": 34.69,
-     "end": 37.26
-    },
-    {
-     "id": "ps1s_9",
-     "text": "Last door. Add two. Ten.",
-     "start": 38.01,
-     "end": 39.85
-    },
-    {
-     "id": "ps1s_10",
-     "text": "The loop ends, and line eight returns the answer row.",
-     "start": 40.6,
-     "end": 43.87
-    },
-    {
-     "id": "ps1s_11",
-     "text": "One walk, and one add per door. O of n time.",
-     "start": 44.97,
-     "end": 48.02
-    },
-    {
-     "id": "ps1s_12",
-     "text": "The answer row holds n totals. O of n space. That row has a name: the prefix sums.",
-     "start": 48.77,
-     "end": 54.9
-    }
-   ],
-   "pauses": [
-    {
-     "id": "ps1s-q",
-     "t": 33.69
-    }
-   ]
-  },
-  "ps2i": {
-   "src": "videos/ps2i.mp4",
-   "title": "The Balance Point",
-   "duration": 23.62,
-   "lines": [
-    {
-     "id": "ps2i_1",
-     "text": "Moss wants a door where the left side and the right side weigh the same.",
-     "start": 0.2,
-     "end": 4.31
-    },
-    {
-     "id": "ps2i_2",
-     "text": "Return the first index where the sum to its left equals the sum to its right. If there is none, return minus one.",
-     "start": 5.01,
-     "end": 12.6
-    },
-    {
-     "id": "ps2i_3",
-     "text": "Adding up both sides again at every door is a lot of walking.",
-     "start": 13.3,
-     "end": 17.07
-    },
-    {
-     "id": "ps2i_4",
-     "text": "If you know the total, and the left side, what is the right side? Your turn.",
-     "start": 17.77,
-     "end": 22.02
-    }
-   ],
-   "pauses": []
-  },
-  "ps2s": {
-   "src": "videos/ps2s.mp4",
-   "title": "Total, minus left, minus this door",
-   "duration": 62.78,
-   "lines": [
-    {
-     "id": "ps2s_1",
-     "text": "The whole row is three parts. The left side, this door, and the right side.",
-     "start": 0.2,
-     "end": 4.52
-    },
-    {
-     "id": "ps2s_2",
-     "text": "So if we know the total and the left side, the right side is one subtraction.",
-     "start": 5.27,
-     "end": 9.93
-    },
-    {
-     "id": "ps2s_3",
-     "text": "Lines two and three add everything up, once. The total is ten.",
-     "start": 10.68,
-     "end": 14.59
-    },
-    {
-     "id": "ps2s_4",
-     "text": "Line four. Left starts at zero, because nothing is to the left of the first door.",
-     "start": 15.34,
-     "end": 20.54
-    },
-    {
-     "id": "ps2s_5",
-     "text": "Door zero. Line six works out the right side. Ten, minus zero, minus two. Eight.",
-     "start": 21.29,
-     "end": 26.83
-    },
-    {
-     "id": "ps2s_6",
-     "text": "Line seven compares. Zero is not eight. Not balanced.",
-     "start": 27.58,
-     "end": 31.23
-    },
-    {
-     "id": "ps2s_7",
-     "text": "Line eight moves this door into the left side. Left is two.",
-     "start": 31.98,
-     "end": 35.59
-    },
-    {
-     "id": "ps2s_8",
-     "text": "Door one. Ten, minus two, minus one. Seven. Two is not seven.",
-     "start": 36.34,
-     "end": 40.58
-    },
-    {
-     "id": "ps2s_9",
-     "text": "Left becomes three.",
-     "start": 41.33,
-     "end": 42.61
-    },
-    {
-     "id": "ps2s_10",
-     "text": "Door two holds four, and left is three. What is the right side?",
-     "start": 43.36,
-     "end": 47.04
-    },
-    {
-     "id": "ps2s_11",
-     "text": "Three. Left equals right. Line seven returns the index. Two.",
-     "start": 48.24,
-     "end": 52.48
-    },
-    {
-     "id": "ps2s_12",
-     "text": "One walk for the total, and one to search. O of n time.",
-     "start": 53.58,
-     "end": 57.02
-    },
-    {
-     "id": "ps2s_13",
-     "text": "Three numbers, and no extra row. O of one space.",
-     "start": 57.77,
-     "end": 61.18
-    }
-   ],
-   "pauses": [
-    {
-     "id": "ps2s-q",
-     "t": 47.24
-    }
-   ]
-  },
-  "ps3i": {
-   "src": "videos/ps3i.mp4",
-   "title": "Many Questions",
-   "duration": 23.74,
-   "lines": [
-    {
-     "id": "ps3i_1",
-     "text": "The same row of doors, and a long list of questions. What is the sum of doors one to two? Zero to three?",
-     "start": 0.2,
-     "end": 6.91
-    },
-    {
-     "id": "ps3i_2",
-     "text": "Return the answer to every query, in order. Each query is a pair, l and r.",
-     "start": 7.61,
-     "end": 12.79
-    },
-    {
-     "id": "ps3i_3",
-     "text": "With fifty thousand questions, walking every range is far too slow.",
-     "start": 13.49,
-     "end": 17.83
-    },
-    {
-     "id": "ps3i_4",
-     "text": "What could you work out once, before the first question? Your turn.",
-     "start": 18.53,
-     "end": 22.14
-    }
-   ],
-   "pauses": []
-  },
-  "ps3s": {
-   "src": "videos/ps3s.mp4",
-   "title": "One row of totals, many answers",
-   "duration": 67,
-   "lines": [
-    {
-     "id": "ps3s_1",
-     "text": "Walking every range repeats the same adding. So do the adding once, before any question.",
-     "start": 0.2,
-     "end": 5.51
-    },
-    {
-     "id": "ps3s_2",
-     "text": "Keep the total before every door. Then any range is one total minus another.",
-     "start": 6.26,
-     "end": 11.36
-    },
-    {
-     "id": "ps3s_3",
-     "text": "Line two starts the totals row with a zero. The sum of nothing.",
-     "start": 12.11,
-     "end": 16.16
-    },
-    {
-     "id": "ps3s_4",
-     "text": "Lines three to five fill it in. Each slot is the slot before, plus one number. Zero plus three is three.",
-     "start": 16.91,
-     "end": 23.81
-    },
-    {
-     "id": "ps3s_5",
-     "text": "Then four. Eight. And ten.",
-     "start": 24.56,
-     "end": 26.22
-    },
-    {
-     "id": "ps3s_6",
-     "text": "Now the questions. The first one asks for doors one to two.",
-     "start": 26.97,
-     "end": 30.64
-    },
-    {
-     "id": "ps3s_7",
-     "text": "Line eight takes the total after door two. That is pre at three. Eight.",
-     "start": 31.39,
-     "end": 35.57
-    },
-    {
-     "id": "ps3s_8",
-     "text": "Then it removes everything before door one. Pre at one. Three. Eight minus three is five.",
-     "start": 36.32,
-     "end": 42.04
-    },
-    {
-     "id": "ps3s_9",
-     "text": "The next question. Doors zero to three. Which two slots do we need?",
-     "start": 42.79,
-     "end": 47.07
-    },
-    {
-     "id": "ps3s_10",
-     "text": "Pre at four, minus pre at zero. Ten minus zero. Ten.",
-     "start": 48.27,
-     "end": 52.03
-    },
-    {
-     "id": "ps3s_11",
-     "text": "Line ten returns both answers.",
-     "start": 52.78,
-     "end": 54.96
-    },
-    {
-     "id": "ps3s_12",
-     "text": "Building the row costs n steps, once. After that, every question is one subtraction.",
-     "start": 56.06,
-     "end": 61.5
-    },
-    {
-     "id": "ps3s_13",
-     "text": "The price is one extra row. O of n space.",
-     "start": 62.25,
-     "end": 65.4
-    }
-   ],
-   "pauses": [
-    {
-     "id": "ps3s-q",
-     "t": 47.27
-    }
-   ]
-  },
-  "ps4i": {
-   "src": "videos/ps4i.mp4",
-   "title": "Stretches That Add Up",
-   "duration": 23.33,
-   "lines": [
-    {
-     "id": "ps4i_1",
-     "text": "How many unbroken stretches of these doors add up to exactly three?",
-     "start": 0.2,
-     "end": 4.44
-    },
-    {
-     "id": "ps4i_2",
-     "text": "Return the count. A stretch is any run of neighbours, even a single door.",
-     "start": 5.14,
-     "end": 9.64
-    },
-    {
-     "id": "ps4i_3",
-     "text": "Trying every start and every end is too slow for a long row.",
-     "start": 10.34,
-     "end": 14.21
-    },
-    {
-     "id": "ps4i_4",
-     "text": "Every stretch is a running total, minus an earlier total. What could remember the earlier ones? Your turn.",
-     "start": 14.91,
-     "end": 21.73
-    }
-   ],
-   "pauses": []
-  },
-  "ps4s": {
-   "src": "videos/ps4s.mp4",
-   "title": "Look back for sum \u2212 k",
-   "duration": 83.19,
-   "lines": [
-    {
-     "id": "ps4s_1",
-     "text": "Every stretch is the running total now, minus the running total at some earlier point.",
-     "start": 0.2,
-     "end": 5.51
-    },
-    {
-     "id": "ps4s_2",
-     "text": "So a stretch ending here adds up to k, when an earlier total equals sum minus k. A map remembers the earlier totals.",
-     "start": 6.26,
-     "end": 14.33
-    },
-    {
-     "id": "ps4s_3",
-     "text": "Line two makes the map of totals seen so far. It starts with zero, seen once. That is the total before the first door.",
-     "start": 15.08,
-     "end": 22.91
-    },
-    {
-     "id": "ps4s_4",
-     "text": "Sum and count both start at zero.",
-     "start": 23.66,
-     "end": 25.61
-    },
-    {
-     "id": "ps4s_5",
-     "text": "Door zero. Line six adds it. Sum is one.",
-     "start": 26.36,
-     "end": 29.25
-    },
-    {
-     "id": "ps4s_6",
-     "text": "Line seven looks for sum minus k. One minus three is minus two. Never seen. Count stays zero.",
-     "start": 30,
-     "end": 36.57
-    },
-    {
-     "id": "ps4s_7",
-     "text": "Line eight records the total, one, in the map.",
-     "start": 37.32,
-     "end": 39.96
-    },
-    {
-     "id": "ps4s_8",
-     "text": "Door one. Sum is three. We need three minus three. Zero.",
-     "start": 40.71,
-     "end": 44.37
-    },
-    {
-     "id": "ps4s_9",
-     "text": "Zero was seen once. So one stretch ends here. Doors zero and one. Count is one.",
-     "start": 45.12,
-     "end": 51.03
-    },
-    {
-     "id": "ps4s_10",
-     "text": "Record the three.",
-     "start": 51.78,
-     "end": 52.91
-    },
-    {
-     "id": "ps4s_11",
-     "text": "Door two. Sum is four. Which earlier total are we looking for?",
-     "start": 53.66,
-     "end": 57.71
-    },
-    {
-     "id": "ps4s_12",
-     "text": "One. Seen once. That stretch is doors one and two. Count is two.",
-     "start": 58.91,
-     "end": 62.98
-    },
-    {
-     "id": "ps4s_13",
-     "text": "Last door. Sum is seven. We need four. Seen once. The door on its own. Count is three.",
-     "start": 63.73,
-     "end": 69.48
-    },
-    {
-     "id": "ps4s_14",
-     "text": "Line ten returns the count. Three.",
-     "start": 70.23,
-     "end": 72.58
-    },
-    {
-     "id": "ps4s_15",
-     "text": "One walk, and each map lookup is one step. O of n time.",
-     "start": 73.68,
-     "end": 77.32
-    },
-    {
-     "id": "ps4s_16",
-     "text": "The map can hold one total per door. O of n space.",
-     "start": 78.07,
-     "end": 81.59
-    }
-   ],
-   "pauses": [
-    {
-     "id": "ps4s-q",
-     "t": 57.91
     }
    ]
   }
