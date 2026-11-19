@@ -207,7 +207,8 @@ function player(vkey, onEnd) {
     if (cue) { v.pause(); if (t > cue.t + 0.4) v.currentTime = cue.t; ask(cue); }
   });
   v.addEventListener('play', () => { if (open) v.pause(); });
-  v.addEventListener('ended', () => onEnd && onEnd());
+  // when the video ends, what comes next (the Done row with its button) is brought into view
+  v.addEventListener('ended', () => { if (!onEnd) return; onEnd(); requestAnimationFrame(() => { const sec = v.closest('section'); const row = sec && [...sec.querySelectorAll('.row')].find((r) => r.querySelector('button, a') && (v.compareDocumentPosition(r) & 4)); if (row) { const q = row.getBoundingClientRect(); if (q.bottom > innerHeight - 20 || q.top < 0) row.scrollIntoView({ behavior: 'smooth', block: 'center' }); } }); });
   setTimeout(() => { if (document.body.contains(v) && onEnd !== false) v.play().catch(() => {}); }, 300);
   const partStart = (t) => Math.max(0, ...(V.pauses || []).filter((p) => p.t < t - 1).map((p) => p.t));
   const jump = (to) => { if (open) { open.remove(); open = null; } v.currentTime = Math.max(0, to); v.play().catch(() => {}); };
