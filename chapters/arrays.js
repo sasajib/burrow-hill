@@ -249,6 +249,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "Why is the spare variable keep needed? What would the two doors hold after lines 6 and 7 without it?",
+   "world": "Flipping a photo left to right does exactly this, to every row of pixels.",
    "view": {
     "row": [
      1,
@@ -521,6 +522,23 @@ window.CHAPTER = {
      "box": null,
      "card": "in place → O(1) space",
      "arrows": null
+    },
+    {
+     "say": "Flipping a photo left to right does exactly this, to every row of pixels.",
+     "line": 0,
+     "ptr": null,
+     "hot": [],
+     "ok": [],
+     "bad": [],
+     "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
+     "vars": null,
+     "box": null,
+     "card": "mirroring a photo, row by row",
+     "arrows": null
     }
    ]
   },
@@ -630,6 +648,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "Why does best start as nums[0] and not as 0? Try the array [-3, -1, -7].",
+   "world": "A game keeps its high score this way. One number, replaced whenever a better score comes in.",
    "view": {
     "row": [
      3,
@@ -875,6 +894,23 @@ window.CHAPTER = {
      "box": null,
      "card": "1 number → O(1) space",
      "arrows": null
+    },
+    {
+     "say": "A game keeps its high score this way. One number, replaced whenever a better score comes in.",
+     "line": 0,
+     "ptr": null,
+     "hot": [],
+     "ok": [],
+     "bad": [],
+     "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
+     "vars": null,
+     "box": null,
+     "card": "a high score: the best so far",
+     "arrows": null
     }
    ]
   },
@@ -1008,6 +1044,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "Why does the loop run from the back towards i, and not from i towards the back?",
+   "world": "Type a letter in the middle of a line, and a simple text editor shifts the rest, just like this.",
    "view": {
     "row": [
      1,
@@ -1234,6 +1271,23 @@ window.CHAPTER = {
      "box": null,
      "card": "in place → O(1) space",
      "arrows": null
+    },
+    {
+     "say": "Type a letter in the middle of a line, and a simple text editor shifts the rest, just like this.",
+     "line": 0,
+     "ptr": null,
+     "hot": [],
+     "ok": [],
+     "bad": [],
+     "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
+     "vars": null,
+     "box": null,
+     "card": "typing in the middle of a line",
+     "arrows": null
     }
    ]
   },
@@ -1338,6 +1392,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "Line 5 adds i + 1, not i. Why? What numbers should be in a row of length 3?",
+   "world": "Checksums use the same trick. Add everything up, and compare it with what the total should be.",
    "view": {
     "row": [
      3,
@@ -1445,7 +1500,7 @@ window.CHAPTER = {
       "actual": 3
      },
      "box": null,
-     "card": "",
+     "card": "expected + 1 · actual + 3",
      "arrows": null
     },
     {
@@ -1469,7 +1524,7 @@ window.CHAPTER = {
       "actual": 3
      },
      "box": null,
-     "card": "",
+     "card": "expected + 2 · actual + 0",
      "arrows": null
     },
     {
@@ -1562,6 +1617,23 @@ window.CHAPTER = {
      "vars": null,
      "box": null,
      "card": "2 totals → O(1) space",
+     "arrows": null
+    },
+    {
+     "say": "Checksums use the same trick. Add everything up, and compare it with what the total should be.",
+     "line": 0,
+     "ptr": null,
+     "hot": [],
+     "ok": [],
+     "bad": [],
+     "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
+     "vars": null,
+     "box": null,
+     "card": "checksums: compare two totals",
      "arrows": null
     }
    ]
@@ -1680,6 +1752,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "When does the last line run? What do the digits look like at that moment?",
+   "world": "Numbers too big for one box are stored as a row of digits, and added with a carry, just like this.",
    "view": {
     "row": [
      1,
@@ -1799,7 +1872,7 @@ window.CHAPTER = {
      "show": [],
      "vars": null,
      "box": null,
-     "card": "",
+     "card": "9 → 0 · carry the 1",
      "arrows": null
     },
     {
@@ -1824,7 +1897,7 @@ window.CHAPTER = {
      "show": [],
      "vars": null,
      "box": null,
-     "card": "",
+     "card": "9 → 0 · carry again",
      "arrows": null
     },
     {
@@ -1901,6 +1974,23 @@ window.CHAPTER = {
      "vars": null,
      "box": null,
      "card": "in place → O(1) space, usually",
+     "arrows": null
+    },
+    {
+     "say": "Numbers too big for one box are stored as a row of digits, and added with a carry, just like this.",
+     "line": 0,
+     "ptr": null,
+     "hot": [],
+     "ok": [],
+     "bad": [],
+     "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
+     "vars": null,
+     "box": null,
+     "card": "huge numbers: digit by digit",
      "arrows": null
     }
    ]
@@ -2014,6 +2104,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "Why are two variables needed? What would be lost with only run?",
+   "world": "A habit app that shows your longest streak of days counts it exactly like this.",
    "view": {
     "row": [
      1,
@@ -2245,12 +2336,12 @@ window.CHAPTER = {
      "ptr": {
       "i": 5
      },
-     "hot": [
+     "hot": [],
+     "ok": [
       3,
       4,
       5
      ],
-     "ok": [],
      "bad": [],
      "set": null,
      "swap": null,
@@ -2262,7 +2353,7 @@ window.CHAPTER = {
       "best": 3
      },
      "box": null,
-     "card": "",
+     "card": "run 3 beats best 2",
      "arrows": null
     },
     {
@@ -2314,6 +2405,23 @@ window.CHAPTER = {
      "vars": null,
      "box": null,
      "card": "2 numbers → O(1) space",
+     "arrows": null
+    },
+    {
+     "say": "A habit app that shows your longest streak of days counts it exactly like this.",
+     "line": 0,
+     "ptr": null,
+     "hot": [],
+     "ok": [],
+     "bad": [],
+     "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
+     "vars": null,
+     "box": null,
+     "card": "your longest streak in an app",
      "arrows": null
     }
    ]

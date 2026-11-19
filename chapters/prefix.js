@@ -222,6 +222,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "Why is one variable enough? What would the code cost if it re-added from door 0 for every position?",
+   "world": "A bank statement works like this. Every line shows the balance so far. One running total.",
    "view": {
     "row": [
      3,
@@ -229,6 +230,11 @@ window.CHAPTER = {
      4,
      2
     ],
+    "tree": null,
+    "grid": null,
+    "graph": null,
+    "treeIndex": false,
+    "ghost": [],
     "row2": [
      "",
      "",
@@ -262,6 +268,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "new total = old total + one number",
@@ -275,6 +285,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "carry sum, write it at each door",
@@ -288,6 +302,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": {
       "sum": 0
      },
@@ -307,6 +325,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": {
       "sum": 3
      },
@@ -326,6 +348,10 @@ window.CHAPTER = {
      "set": {
       "d0": 3
      },
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "",
@@ -347,6 +373,10 @@ window.CHAPTER = {
      "set": {
       "d1": 4
      },
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": {
       "sum": 4
      },
@@ -366,6 +396,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "4 + 4 = ?",
@@ -383,6 +417,10 @@ window.CHAPTER = {
      "set": {
       "d2": 8
      },
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": {
       "sum": 8
      },
@@ -406,6 +444,10 @@ window.CHAPTER = {
      "set": {
       "d3": 10
      },
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": {
       "sum": 10
      },
@@ -421,6 +463,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "",
@@ -434,6 +480,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "1 walk → O(n) time",
@@ -447,9 +497,30 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "n totals → O(n) space",
+     "arrows": null
+    },
+    {
+     "say": "A bank statement works like this. Every line shows the balance so far. One running total.",
+     "line": 0,
+     "ptr": null,
+     "hot": [],
+     "ok": [],
+     "bad": [],
+     "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
+     "vars": null,
+     "box": null,
+     "card": "the balance on a bank statement",
      "arrows": null
     }
    ]
@@ -562,6 +633,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "Why is left updated after the comparison and not before it?",
+   "world": "Loading a truck or a ship uses the same check. Where is the weight on both sides equal?",
    "view": {
     "row": [
      2,
@@ -569,6 +641,11 @@ window.CHAPTER = {
      4,
      3
     ],
+    "tree": null,
+    "grid": null,
+    "graph": null,
+    "treeIndex": false,
+    "ghost": [],
     "row2": null,
     "rowLabel": "",
     "row2Label": "",
@@ -599,6 +676,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "left + this door + right = total",
@@ -612,6 +693,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "right = total − left − this door",
@@ -630,6 +715,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": {
       "total": 10
      },
@@ -645,6 +734,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": {
       "left": 0
      },
@@ -664,6 +757,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": {
       "right": 8
      },
@@ -681,6 +778,10 @@ window.CHAPTER = {
       0
      ],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "",
@@ -694,6 +795,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": {
       "left": 2
      },
@@ -713,6 +818,10 @@ window.CHAPTER = {
       1
      ],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": {
       "right": 7
      },
@@ -728,6 +837,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": {
       "left": 3
      },
@@ -747,6 +860,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "right = 10 − 3 − 4 = ?",
@@ -762,6 +879,10 @@ window.CHAPTER = {
      ],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": {
       "right": 3
      },
@@ -777,6 +898,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "2 walks → O(n) time",
@@ -790,9 +915,30 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "3 numbers → O(1) space",
+     "arrows": null
+    },
+    {
+     "say": "Loading a truck or a ship uses the same check. Where is the weight on both sides equal?",
+     "line": 0,
+     "ptr": null,
+     "hot": [],
+     "ok": [],
+     "bad": [],
+     "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
+     "vars": null,
+     "box": null,
+     "card": "balancing a load, left and right",
      "arrows": null
     }
    ]
@@ -952,6 +1098,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "Why does pre have one more slot than nums? What would go wrong for a query that starts at door 0 without it?",
+   "world": "A fitness app answers steps from Monday to Friday at once, because it keeps running totals.",
    "view": {
     "row": [
      3,
@@ -959,6 +1106,11 @@ window.CHAPTER = {
      4,
      2
     ],
+    "tree": null,
+    "grid": null,
+    "graph": null,
+    "treeIndex": false,
+    "ghost": [],
     "row2": [
      "0",
      "",
@@ -989,6 +1141,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "add once, before any question",
@@ -1002,6 +1158,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "range = total − earlier total",
@@ -1017,6 +1177,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "",
@@ -1034,6 +1198,10 @@ window.CHAPTER = {
      "set": {
       "d1": 3
      },
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "",
@@ -1051,6 +1219,10 @@ window.CHAPTER = {
       "d3": 8,
       "d4": 10
      },
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "",
@@ -1067,6 +1239,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": {
       "l": 1,
       "r": 2
@@ -1085,6 +1261,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "pre[r + 1] = pre[3] = 8",
@@ -1100,6 +1280,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "8 − 3 = 5",
@@ -1118,6 +1302,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": {
       "l": 0,
       "r": 3
@@ -1137,6 +1325,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "10 − 0 = 10",
@@ -1150,6 +1342,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "",
@@ -1163,6 +1359,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "build O(n), each answer O(1)",
@@ -1176,9 +1376,30 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "extra row → O(n) space",
+     "arrows": null
+    },
+    {
+     "say": "A fitness app answers steps from Monday to Friday at once, because it keeps running totals.",
+     "line": 0,
+     "ptr": null,
+     "hot": [],
+     "ok": [],
+     "bad": [],
+     "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
+     "vars": null,
+     "box": null,
+     "card": "steps between any two days",
      "arrows": null
     }
    ]
@@ -1309,6 +1530,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "Why does the map start with 0 → 1? Which stretches would be missed without it?",
+   "world": "A shop can ask: which stretches of days added up to exactly the sales target? This look back answers it in one pass.",
    "view": {
     "row": [
      1,
@@ -1316,6 +1538,11 @@ window.CHAPTER = {
      1,
      3
     ],
+    "tree": null,
+    "grid": null,
+    "graph": null,
+    "treeIndex": false,
+    "ghost": [],
     "row2": null,
     "rowLabel": "",
     "row2Label": "",
@@ -1343,6 +1570,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "stretch = total now − earlier total",
@@ -1356,6 +1587,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "look for sum − k in a map",
@@ -1369,6 +1604,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": [
       "0 → 1"
@@ -1384,6 +1623,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": {
       "sum": 0,
       "count": 0
@@ -1402,6 +1645,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": {
       "sum": 1
      },
@@ -1417,6 +1664,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "need 1 − 3 = −2 → not seen",
@@ -1430,6 +1681,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": [
       "0 → 1",
@@ -1448,6 +1703,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": {
       "sum": 3
      },
@@ -1466,6 +1725,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": {
       "count": 1
      },
@@ -1484,6 +1747,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": [
       "0 → 1",
@@ -1503,6 +1770,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": {
       "sum": 4
      },
@@ -1521,6 +1792,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": {
       "count": 2
      },
@@ -1543,6 +1818,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": {
       "sum": 7,
       "count": 3
@@ -1565,6 +1844,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "",
@@ -1578,6 +1861,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "1 walk → O(n) time",
@@ -1591,9 +1878,30 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "map of totals → O(n) space",
+     "arrows": null
+    },
+    {
+     "say": "A shop can ask: which stretches of days added up to exactly the sales target? This look back answers it in one pass.",
+     "line": 0,
+     "ptr": null,
+     "hot": [],
+     "ok": [],
+     "bad": [],
+     "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
+     "vars": null,
+     "box": null,
+     "card": "days that add up to a target",
      "arrows": null
     }
    ]
