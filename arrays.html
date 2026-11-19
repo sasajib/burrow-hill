@@ -13,7 +13,7 @@
 *{box-sizing:border-box}
 html{color-scheme:light}
 body{margin:0;background:var(--sky);color:var(--plum);font-family:var(--display);font-size:17px;line-height:1.45}
-.wrap{max-width:1080px;margin:0 auto;padding-block:22px 60px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.wrap{max-width:min(1560px,94vw);margin:0 auto;padding-block:22px 60px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
 header{display:flex;flex-wrap:wrap;align-items:center;gap:14px 22px;margin-bottom:18px}
 h1{font-size:34px;font-weight:800;letter-spacing:-1px;margin:0;line-height:1}
 .sub{font-family:var(--mono);font-size:12px;letter-spacing:3px;font-weight:700}
@@ -29,9 +29,9 @@ h1{font-size:34px;font-weight:800;letter-spacing:-1px;margin:0;line-height:1}
 .card{background:var(--cream);border:5px solid var(--plum);border-radius:22px;box-shadow:8px 10px 0 var(--plum);padding:20px;margin-bottom:22px}
 h2{font-size:28px;font-weight:800;letter-spacing:-.5px;margin:0 0 6px;text-wrap:balance}
 p{margin:0 0 12px;max-width:68ch}
-.vid{position:relative;border:5px solid var(--plum);border-radius:16px;overflow:hidden;background:var(--plum);aspect-ratio:16/9;max-width:100%}
+.vid{position:relative;border:5px solid var(--plum);border-radius:16px;overflow:hidden;background:var(--plum);aspect-ratio:16/9;width:min(100%,calc(76vh * 16 / 9));margin-inline:auto}
 .vid video{display:block;width:100%;height:100%}
-.cap{font-family:var(--mono);font-size:15px;min-height:46px;padding:10px 4px 0;font-weight:500}
+.cap{text-align:center;font-family:var(--mono);font-size:15px;min-height:46px;padding:10px 4px 0;font-weight:500}
 .quiz{position:absolute;inset:0;background:rgba(43,27,74,.88);display:flex;align-items:center;justify-content:center;padding:16px}
 .quiz .q{background:var(--cream);border:5px solid var(--plum);border-radius:18px;padding:18px 20px;max-width:560px;width:100%;box-shadow:6px 8px 0 var(--coral);max-height:100%;overflow:auto}
 .quiz h3{margin:0 0 4px;font-size:13px;font-family:var(--mono);letter-spacing:3px}
@@ -46,7 +46,7 @@ button{font:inherit;cursor:pointer}
 .why{margin-top:10px;font-size:15px}
 @keyframes shake{25%{transform:translateX(-6px)}75%{transform:translateX(6px)}}
 .row{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:12px}
-.cols{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px}
+.cols{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:24px;align-items:start}
 @media(max-width:860px){.cols{grid-template-columns:minmax(0,1fr)}.trail{grid-template-columns:repeat(2,minmax(0,1fr))}}
 textarea{width:100%;min-height:270px;font-family:var(--mono);font-size:14.500px;line-height:1.5;background:var(--plum);color:var(--cream);border:5px solid var(--plum);border-radius:14px;padding:14px;resize:vertical;tab-size:2}
 pre,code{font-family:var(--mono);font-size:14px}
@@ -61,7 +61,7 @@ pre,code{font-family:var(--mono);font-size:14px}
 .plan ol{margin:0 0 8px;padding-left:20px}
 .plan li{margin-bottom:5px}
 .plan span{font-family:var(--mono);font-size:12.500px;font-weight:700}
-.vctl{margin-top:6px}
+.vctl{margin-top:6px;justify-content:center}
 .vctl .btn{padding:6px 12px;font-size:14px}
 .hint{background:var(--mint);border:3px solid var(--plum);border-radius:10px;padding:8px 12px;margin-top:8px;font-size:15px}
 /* walkthrough stage */
@@ -92,6 +92,26 @@ pre,code{font-family:var(--mono);font-size:14px}
 .keys td:first-child{font-weight:700;background:var(--mint)}
 .keys td.slow{background:#FFC2BB}
 .mine{background:var(--plum);color:var(--cream);border-radius:14px;padding:12px 14px;white-space:pre-wrap;overflow-x:auto;font-family:var(--mono);font-size:13.500px;line-height:1.6;margin:0}
+/* phones: compact header, the stage trail becomes one swipeable row, questions sit under the video */
+@media(max-width:700px){
+  body{font-size:16px}
+  .wrap{padding-block:14px 40px}
+  header{gap:6px 12px;margin-bottom:12px}
+  h1{font-size:26px}
+  header nav{order:3;width:100%;margin-left:0!important}
+  .xp{margin-left:auto!important;padding:6px 12px;font-size:14px}
+  .trail{display:flex;overflow-x:auto;gap:8px;padding:2px 8px 10px 2px;margin-bottom:10px;scroll-snap-type:x proximity;-webkit-overflow-scrolling:touch}
+  .stop{flex:0 0 44%;scroll-snap-align:start;padding:8px 10px;box-shadow:3px 4px 0 var(--plum)}
+  .card{padding:14px;border-radius:18px;box-shadow:5px 6px 0 var(--plum)}
+  h2{font-size:23px}
+  .spec{white-space:pre-wrap;overflow-wrap:anywhere}
+  textarea{min-height:220px;font-size:13.500px}
+  .cap{min-height:0;padding-top:8px}
+  .vctl .btn,.row .btn{padding:9px 12px}
+  .quiz.below{position:static;background:none;padding:12px 0 0}
+  .quiz.below .q{max-width:none;max-height:none;box-shadow:4px 5px 0 var(--coral)}
+  .say{min-height:0}
+}
 @media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 </style>
 </head>
@@ -204,6 +224,7 @@ function drawTrail() {
     const b = h(`<button class="stop ${S.done[st.id] ? 'done' : ''}" ${unlocked(i) ? '' : 'disabled'} aria-current="${S.at === st.id}"><small>${st.label}${S.done[st.id] ? ' · DONE' : ''}</small><b>${st.name}</b></button>`);
     b.onclick = () => go(st.id); t.append(b);
   });
+  const cur = t.querySelector('[aria-current="true"]'); if (cur && t.scrollWidth > t.clientWidth) t.scrollLeft = cur.offsetLeft - 12;
 }
 function go(id) { S.at = id; save(); drawTrail(); const st = STAGES.find((s) => s.id === id) || STAGES[0]; ({ lesson, puzzle, solution })[st.kind](st); window.scrollTo({ top: 0 }); }
 function nextBtn(st) {
@@ -252,7 +273,8 @@ function player(vkey, onEnd) {
       };
       $('.opts', open).append(b);
     });
-    frame.append(open); $('.opt', open).focus();
+    if (window.innerWidth < 700) { open.classList.add('below'); frame.after(open); open.scrollIntoView({ behavior: 'smooth', block: 'nearest' }); } else frame.append(open);
+    $('.opt', open).focus({ preventScroll: true });
   }
   return box;
 }
@@ -270,7 +292,9 @@ function solution(st) {
   const c = h(`<section class="card"><h2>${st.label}: ${st.name}</h2><p>First the idea, then every line of the code, acted out. The video stops once to ask you about the loop test.</p></section>`);
   const tail = h('<div class="row"></div>'), more = h('<div></div>');
   const done = () => { if (!S.done[st.id]) { S.done[st.id] = true; gain(30); drawTrail(); } tail.innerHTML = ''; tail.append(h('<b>Done.</b>'), nextBtn(st)); };
-  c.append(player(st.video, done), tail, more); if (S.done[st.id]) done(); m.append(c);
+  const back = h('<div class="row" style="margin:0 0 12px"><button class="btn quiet">← Back to the puzzle</button><span class="sub">YOUR CODE IS SAVED</span></div>');
+  $('button', back).onclick = () => go('p1');
+  c.append(back, player(st.video, done), tail, more); if (S.done[st.id]) done(); m.append(c);
   walk('p1', more);
   const mine = S.code.p1 && S.code.p1 !== PUZZLE.p1.start ? S.code.p1 : '';
   more.append(h(`<div class="keys"><h3>Step through it yourself</h3><p>Use Step above to move one line at a time. Before each click, say what will change: left, right, or the row.</p>
@@ -401,7 +425,7 @@ function walk(id, host) {
     <div class="codeview">${SOLUTION[id].map((l) => `<div>${esc(l) || ' '}</div>`).join('')}</div></div></div>`);
   host.append(box); const stage = $('.stage-in', box), W = id === 'p1' ? input.length * 84 : input.length * 120 + 150;
   stage.style.width = W + 'px'; stage.style.marginLeft = -W / 2 + 'px';
-  const fit = () => { const s = Math.min(1, ($('.stage', box).clientWidth - 16) / W); stage.style.transform = `scale(${s})`; }; fit(); window.addEventListener('resize', fit);
+  const fit = () => { const s = Math.min(1.7, ($('.stage', box).clientWidth - 16) / W); stage.style.transform = `scale(${s})`; $('.stage', box).style.height = Math.round(250 * s) + 8 + 'px'; }; fit(); window.addEventListener('resize', fit);
   if (id === 'p1') {
     input.forEach((_, k) => stage.append(h(`<div class="cellx" style="left:${k * 84 + 5}px"></div>`), h(`<div class="ixx" style="left:${k * 84 + 5}px">${k}</div>`)));
     input.forEach((v, k) => stage.append(h(`<div class="valx" data-id="${k}">${v}</div>`)));
