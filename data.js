@@ -1975,152 +1975,152 @@ window.BURROW = {
   "tpt1": {
    "src": "videos/tpt1.mp4",
    "title": "Two Ends, Walking In",
-   "duration": 57.29,
+   "duration": 67.56,
    "lines": [
     {
-     "id": "ta1",
+     "id": "ua1",
      "text": "Find two doors that add up to nine. Trying every pair of five doors is ten checks. With a thousand doors, it is half a million.",
      "start": 0.2,
-     "end": 5.41
+     "end": 8.21
     },
     {
-     "id": "ta2",
+     "id": "ua2",
      "text": "But this row is sorted. And sorted order tells you which way to move.",
-     "start": 6.31,
-     "end": 10.5
+     "start": 9.11,
+     "end": 13.34
     },
     {
-     "id": "ta3",
+     "id": "ua3",
      "text": "Put Pip on the smallest number, and Moss on the biggest. Add them. One plus nine is ten.",
-     "start": 11.4,
-     "end": 16.82
+     "start": 14.24,
+     "end": 19.91
     },
     {
-     "id": "ta4",
+     "id": "ua4",
      "text": "Ten is too big. To make the sum smaller, the only useful move is Moss, one step left.",
-     "start": 17.72,
-     "end": 22.53
+     "start": 20.81,
+     "end": 26.86
     },
     {
-     "id": "ta5",
+     "id": "ua5",
      "text": "Here is why that is safe. Nine was too big, even with the smallest partner in the row. So nine can never be part of the answer. Cross it out.",
-     "start": 23.43,
-     "end": 28.12
+     "start": 27.76,
+     "end": 36.76
     },
     {
-     "id": "ta6",
+     "id": "ua6",
      "text": "One plus six is seven. Too small. Which walker moves now?",
-     "start": 29.22,
-     "end": 36.4
+     "start": 37.86,
+     "end": 41.62
     },
     {
-     "id": "ta7",
+     "id": "ua7",
      "text": "Pip. One was too small, even with the biggest partner that is left. So one is out too.",
-     "start": 37.6,
-     "end": 42.06
+     "start": 42.82,
+     "end": 48.59
     },
     {
-     "id": "ta8",
+     "id": "ua8",
      "text": "Three plus six. Nine. Found, in three checks instead of ten.",
-     "start": 43.06,
-     "end": 48.33
+     "start": 49.59,
+     "end": 53.76
     },
     {
-     "id": "ta9",
+     "id": "ua9",
      "text": "Every check throws one door away for good. So n doors take at most n checks. O of n.",
-     "start": 49.33,
-     "end": 51.68
+     "start": 54.76,
+     "end": 60.58
     },
     {
-     "id": "ta10",
+     "id": "ua10",
      "text": "A sorted row, and you are looking for a pair. Think two ends, walking in.",
-     "start": 52.68,
-     "end": 55.69
+     "start": 61.58,
+     "end": 65.96
     }
    ],
    "pauses": [
     {
      "id": "tpt1-q1",
-     "t": 36.6
+     "t": 41.82
     }
    ]
   },
   "tpt2": {
    "src": "videos/tpt2.mp4",
    "title": "The Reader and the Writer",
-   "duration": 63.13,
+   "duration": 66.62,
    "lines": [
     {
-     "id": "tb1",
+     "id": "ub1",
      "text": "This sorted row has repeats. Remove them, in place. No second array allowed.",
      "start": 0.2,
-     "end": 4.6
+     "end": 5.32
     },
     {
-     "id": "tb2",
+     "id": "ub2",
      "text": "Deleting from the middle of an array shifts everything after it. Do that for every repeat, and it is O of n squared.",
-     "start": 5.5,
-     "end": 10.07
+     "start": 6.22,
+     "end": 13.29
     },
     {
-     "id": "tb3",
+     "id": "ub3",
      "text": "So nothing gets deleted. Two walkers go the same way. Pip reads every door. Moss marks where the next new number should be written.",
-     "start": 11.07,
-     "end": 14.4
+     "start": 14.29,
+     "end": 22.48
     },
     {
-     "id": "tb4",
+     "id": "ub4",
      "text": "Pip reads a one. It is new, so it is written at Moss, and Moss steps forward.",
-     "start": 15.3,
-     "end": 22.83
+     "start": 23.38,
+     "end": 28.19
     },
     {
-     "id": "tb5",
+     "id": "ub5",
      "text": "The next one is a repeat. Pip walks on. Moss stays.",
-     "start": 23.73,
-     "end": 28.94
+     "start": 29.09,
+     "end": 32.34
     },
     {
-     "id": "tb6",
+     "id": "ub6",
      "text": "Two is new. Write it at Moss. Step.",
-     "start": 29.84,
-     "end": 35.27
+     "start": 33.24,
+     "end": 35.44
     },
     {
-     "id": "tb7",
+     "id": "ub7",
      "text": "Pip skips the other twos, and reaches three. Where does the three get written?",
-     "start": 36.27,
-     "end": 42.19
+     "start": 36.44,
+     "end": 40.69
     },
     {
-     "id": "tb8",
+     "id": "ub8",
      "text": "Index two. Right after the two. And Moss steps forward to index three.",
-     "start": 43.39,
-     "end": 45.53
+     "start": 41.89,
+     "end": 46.68
     },
     {
-     "id": "tb9",
+     "id": "ub9",
      "text": "Everything before Moss is the answer. One, two, three. And Moss's index is how many there are.",
-     "start": 46.53,
-     "end": 52.85
+     "start": 47.68,
+     "end": 53.82
     },
     {
-     "id": "tb10",
+     "id": "ub10",
      "text": "One pass, and no second array. O of n time, O of one space.",
-     "start": 53.85,
-     "end": 55.48
+     "start": 54.82,
+     "end": 59.19
     },
     {
-     "id": "tb11",
+     "id": "ub11",
      "text": "Change an array in place, and keep only some items? Think reader and writer.",
-     "start": 56.38,
-     "end": 61.53
+     "start": 60.09,
+     "end": 65.02
     }
    ],
    "pauses": [
     {
      "id": "tpt2-q1",
-     "t": 42.39
+     "t": 40.89
     }
    ]
   },
@@ -4607,6 +4607,178 @@ window.BURROW = {
     }
    ]
   },
+  "ll0": {
+   "src": "videos/ll0.mp4",
+   "title": "Boxes and Notes",
+   "duration": 27.04,
+   "lines": [
+    {
+     "id": "lw1",
+     "text": "Chapter nine. Linked lists. No doors in a row this time.",
+     "start": 0.2,
+     "end": 3.97
+    },
+    {
+     "id": "lw2",
+     "text": "Each parcel sits in its own box, anywhere in memory, and carries a note: the address of the next box.",
+     "start": 4.67,
+     "end": 11.36
+    },
+    {
+     "id": "lw3",
+     "text": "That makes some things slow, and other things wonderfully cheap. Interviews love the second kind.",
+     "start": 12.16,
+     "end": 18.09
+    },
+    {
+     "id": "lw4",
+     "text": "First, how a list works. Then, how to re-point its arrows without losing anything. Then six puzzles.",
+     "start": 18.99,
+     "end": 25.44
+    }
+   ],
+   "pauses": []
+  },
+  "llt1": {
+   "src": "videos/llt1.mp4",
+   "title": "Nodes and Arrows",
+   "duration": 67.62,
+   "lines": [
+    {
+     "id": "lq1",
+     "text": "An array keeps its items side by side. A linked list scatters them all over memory. So how does it stay in order?",
+     "start": 0.2,
+     "end": 7.16
+    },
+    {
+     "id": "lq2",
+     "text": "Each item lives in a node. A node holds two things. A value, and the address of the next node.",
+     "start": 8.06,
+     "end": 14.15
+    },
+    {
+     "id": "lq3",
+     "text": "Drawn tidily, that is a chain of boxes and arrows. The last node points to null. That means: nothing after me.",
+     "start": 15.05,
+     "end": 22.52
+    },
+    {
+     "id": "lq4",
+     "text": "And all you ever hold is the first node. The head.",
+     "start": 23.52,
+     "end": 26.71
+    },
+    {
+     "id": "lq5",
+     "text": "Want the fourth value? You cannot jump there. You follow the arrows, one by one. O of n.",
+     "start": 27.61,
+     "end": 33.41
+    },
+    {
+     "id": "lq6",
+     "text": "So what is a list good for? Watch. To add a node in the middle, how many arrows have to change?",
+     "start": 34.41,
+     "end": 40.49
+    },
+    {
+     "id": "lq7",
+     "text": "Two. The new node points to the next one. And the node before it points to the new node. Nothing shifts.",
+     "start": 41.69,
+     "end": 47.94
+    },
+    {
+     "id": "lq8",
+     "text": "Removing is even less. One arrow. Point the node before it, past it.",
+     "start": 48.94,
+     "end": 53.55
+    },
+    {
+     "id": "lq9",
+     "text": "In an array, both of those shift everything after. In a list, they are O of one, once you are standing at the right node.",
+     "start": 54.55,
+     "end": 61.83
+    },
+    {
+     "id": "lq10",
+     "text": "Slow to reach. Cheap to change. That is a linked list.",
+     "start": 62.83,
+     "end": 66.02
+    }
+   ],
+   "pauses": [
+    {
+     "id": "llt1-q1",
+     "t": 40.69
+    }
+   ]
+  },
+  "llt2": {
+   "src": "videos/llt2.mp4",
+   "title": "Never Lose the Rest",
+   "duration": 66.59,
+   "lines": [
+    {
+     "id": "lr1",
+     "text": "There is one mistake everyone makes with linked lists. Change one arrow too early, and the rest of the list is gone for good.",
+     "start": 0.2,
+     "end": 7.76
+    },
+    {
+     "id": "lr2",
+     "text": "Here is why. Nothing else points to those nodes. The only way to reach them was the arrow you just changed.",
+     "start": 8.66,
+     "end": 15.13
+    },
+    {
+     "id": "lr3",
+     "text": "So the rule is simple. Before you change an arrow, save where it pointed.",
+     "start": 16.13,
+     "end": 20.48
+    },
+    {
+     "id": "lr4",
+     "text": "One extra variable, usually called next. Now the rest is safe, and you can re-point freely.",
+     "start": 21.48,
+     "end": 27.62
+    },
+    {
+     "id": "lr5",
+     "text": "A second tool. The dummy node. A fake node, placed in front of the head.",
+     "start": 28.62,
+     "end": 33.16
+    },
+    {
+     "id": "lr6",
+     "text": "Without it, removing the first node is a special case, because nothing comes before it. With a dummy, every node has a node before it.",
+     "start": 34.06,
+     "end": 42.42
+    },
+    {
+     "id": "lr7",
+     "text": "And a third tool. Two walkers at different speeds. If fast takes two steps for each step of slow, where is slow when fast reaches the end?",
+     "start": 43.42,
+     "end": 52.11
+    },
+    {
+     "id": "lr8",
+     "text": "In the middle. You found the halfway point, without ever counting the length.",
+     "start": 53.31,
+     "end": 57.33
+    },
+    {
+     "id": "lr9",
+     "text": "Save next. Use a dummy. Send a fast and a slow walker. Those three tools solve most list problems.",
+     "start": 58.33,
+     "end": 64.99
+    }
+   ],
+   "pauses": [
+    {
+     "id": "llt2-q1",
+     "t": 52.31
+    }
+   ]
+  },
   "sw1i": {
    "src": "videos/sw1i.mp4",
    "title": "The Best Three",
@@ -6098,6 +6270,605 @@ window.BURROW = {
     {
      "id": "st6s-q",
      "t": 34.53
+    }
+   ]
+  },
+  "ll1i": {
+   "src": "videos/ll1i.mp4",
+   "title": "Turn the List Around",
+   "duration": 22.62,
+   "lines": [
+    {
+     "id": "ll1i_1",
+     "text": "Three nodes, each pointing to the next. Pip wants the whole list turned around.",
+     "start": 0.2,
+     "end": 4.53
+    },
+    {
+     "id": "ll1i_2",
+     "text": "Reverse the list and return its new head. Use the nodes you have, and only re-point their arrows.",
+     "start": 5.23,
+     "end": 11.74
+    },
+    {
+     "id": "ll1i_3",
+     "text": "Turn the first arrow around, and you can no longer reach the second node.",
+     "start": 12.44,
+     "end": 16.74
+    },
+    {
+     "id": "ll1i_4",
+     "text": "So what do you need to save, before you turn an arrow? Your turn.",
+     "start": 17.44,
+     "end": 21.02
+    }
+   ],
+   "pauses": []
+  },
+  "ll1s": {
+   "src": "videos/ll1s.mp4",
+   "title": "Save, flip, step",
+   "duration": 68.78,
+   "lines": [
+    {
+     "id": "ll1s_1",
+     "text": "Reversing a list does not move any node. It only turns every arrow around.",
+     "start": 0.2,
+     "end": 5
+    },
+    {
+     "id": "ll1s_2",
+     "text": "But the moment you turn an arrow, you lose the way forward. So save it first.",
+     "start": 5.75,
+     "end": 10.81
+    },
+    {
+     "id": "ll1s_3",
+     "text": "Prev starts as null, because nothing is behind the first node yet. Curr starts on the first node.",
+     "start": 11.56,
+     "end": 17.49
+    },
+    {
+     "id": "ll1s_4",
+     "text": "Line five saves the rest of the list in next, before we touch any arrow.",
+     "start": 18.24,
+     "end": 22.55
+    },
+    {
+     "id": "ll1s_5",
+     "text": "Line six flips the arrow. One now points back to prev, which is null.",
+     "start": 23.3,
+     "end": 27.75
+    },
+    {
+     "id": "ll1s_6",
+     "text": "Lines seven and eight step both markers forward.",
+     "start": 28.5,
+     "end": 31.24
+    },
+    {
+     "id": "ll1s_7",
+     "text": "Again. Save next. Then flip. Two now points back to one.",
+     "start": 31.99,
+     "end": 35.68
+    },
+    {
+     "id": "ll1s_8",
+     "text": "Step forward.",
+     "start": 36.43,
+     "end": 37.51
+    },
+    {
+     "id": "ll1s_9",
+     "text": "Curr is on three, the last node. Line five saves next. What is it?",
+     "start": 38.26,
+     "end": 42.93
+    },
+    {
+     "id": "ll1s_10",
+     "text": "Null. Nothing comes after three. Then line six flips its arrow back to two.",
+     "start": 44.13,
+     "end": 49.01
+    },
+    {
+     "id": "ll1s_11",
+     "text": "Step forward. Prev is three. Curr is null, so the loop ends.",
+     "start": 49.76,
+     "end": 53.8
+    },
+    {
+     "id": "ll1s_12",
+     "text": "Line ten returns prev. The old last node is the new head.",
+     "start": 54.55,
+     "end": 58.7
+    },
+    {
+     "id": "ll1s_13",
+     "text": "One pass, and a few steps per node. O of n time.",
+     "start": 59.8,
+     "end": 63.09
+    },
+    {
+     "id": "ll1s_14",
+     "text": "Three markers, and no new nodes. O of one space.",
+     "start": 63.84,
+     "end": 67.18
+    }
+   ],
+   "pauses": [
+    {
+     "id": "ll1s-q",
+     "t": 43.13
+    }
+   ]
+  },
+  "ll2i": {
+   "src": "videos/ll2i.mp4",
+   "title": "The Middle Node",
+   "duration": 20.04,
+   "lines": [
+    {
+     "id": "ll2i_1",
+     "text": "Pip needs the node in the middle of this list.",
+     "start": 0.2,
+     "end": 2.92
+    },
+    {
+     "id": "ll2i_2",
+     "text": "Return the middle node. With an even number of nodes, return the second of the two middle ones.",
+     "start": 3.62,
+     "end": 9.46
+    },
+    {
+     "id": "ll2i_3",
+     "text": "There is no index to jump to, and nobody told you the length.",
+     "start": 10.16,
+     "end": 13.88
+    },
+    {
+     "id": "ll2i_4",
+     "text": "What if one walker moves twice as fast as the other? Your turn.",
+     "start": 14.58,
+     "end": 18.44
+    }
+   ],
+   "pauses": []
+  },
+  "ll3i": {
+   "src": "videos/ll3i.mp4",
+   "title": "Round and Round",
+   "duration": 21.55,
+   "lines": [
+    {
+     "id": "ll3i_1",
+     "text": "The last node of this list points back into the middle. Follow the arrows, and you never stop.",
+     "start": 0.2,
+     "end": 5.5
+    },
+    {
+     "id": "ll3i_2",
+     "text": "Return true if the list has a loop, and false if it ends at null.",
+     "start": 6.2,
+     "end": 10.27
+    },
+    {
+     "id": "ll3i_3",
+     "text": "You could remember every node you visit. But that costs memory.",
+     "start": 10.97,
+     "end": 14.83
+    },
+    {
+     "id": "ll3i_4",
+     "text": "What happens to two runners on a round track, if one is faster? Your turn.",
+     "start": 15.53,
+     "end": 19.95
+    }
+   ],
+   "pauses": []
+  },
+  "ll3s": {
+   "src": "videos/ll3s.mp4",
+   "title": "The fast one catches up",
+   "duration": 54.49,
+   "lines": [
+    {
+     "id": "ll3s_1",
+     "text": "In a list with a loop, a walker never reaches null. It goes round for ever.",
+     "start": 0.2,
+     "end": 5.04
+    },
+    {
+     "id": "ll3s_2",
+     "text": "So send a slow walker and a fast one. Inside a loop, the fast one must catch the slow one from behind.",
+     "start": 5.79,
+     "end": 12.25
+    },
+    {
+     "id": "ll3s_3",
+     "text": "Both markers start on the first node.",
+     "start": 13,
+     "end": 15.09
+    },
+    {
+     "id": "ll3s_4",
+     "text": "Slow steps once, to two. Fast steps twice, to three. Not the same node.",
+     "start": 15.84,
+     "end": 20.66
+    },
+    {
+     "id": "ll3s_5",
+     "text": "Slow steps to three. Fast steps to four, and then follows the arrow back round, to two.",
+     "start": 21.41,
+     "end": 27.06
+    },
+    {
+     "id": "ll3s_6",
+     "text": "Once more. Slow moves to four. Fast takes two steps from two. Where does it land?",
+     "start": 27.81,
+     "end": 33.25
+    },
+    {
+     "id": "ll3s_7",
+     "text": "On four. Fast has caught slow from behind. Line seven sees the same node, and returns true.",
+     "start": 34.45,
+     "end": 40.51
+    },
+    {
+     "id": "ll3s_8",
+     "text": "Fast gains one node on slow at every step, so it catches up within one lap. O of n time.",
+     "start": 41.61,
+     "end": 48.15
+    },
+    {
+     "id": "ll3s_9",
+     "text": "Two markers, and no set of visited nodes. O of one space.",
+     "start": 48.9,
+     "end": 52.89
+    }
+   ],
+   "pauses": [
+    {
+     "id": "ll3s-q",
+     "t": 33.45
+    }
+   ]
+  },
+  "ll4i": {
+   "src": "videos/ll4i.mp4",
+   "title": "Zip Two Lists",
+   "duration": 20.01,
+   "lines": [
+    {
+     "id": "ll4i_1",
+     "text": "Two sorted lists. They should become one sorted list.",
+     "start": 0.2,
+     "end": 3.65
+    },
+    {
+     "id": "ll4i_2",
+     "text": "Join them by re-hooking the nodes, and return the head of the result.",
+     "start": 4.35,
+     "end": 8.3
+    },
+    {
+     "id": "ll4i_3",
+     "text": "You have merged two sorted arrays before. The idea is the same.",
+     "start": 9,
+     "end": 12.99
+    },
+    {
+     "id": "ll4i_4",
+     "text": "But which node is the head of the answer? Could a fake first node help? Your turn.",
+     "start": 13.69,
+     "end": 18.41
+    }
+   ],
+   "pauses": []
+  },
+  "ll4s": {
+   "src": "videos/ll4s.mp4",
+   "title": "Hook on the smaller front",
+   "duration": 64.46,
+   "lines": [
+    {
+     "id": "ll4s_1",
+     "text": "The same idea as merging two sorted arrays. The smallest unused node is at the front of one of the lists.",
+     "start": 0.2,
+     "end": 6.96
+    },
+    {
+     "id": "ll4s_2",
+     "text": "But nothing is copied. Each node is simply hooked onto the end of the new list.",
+     "start": 7.71,
+     "end": 12.62
+    },
+    {
+     "id": "ll4s_3",
+     "text": "Line two makes a dummy node. A fake first node, so that the real first node needs no special case. Tail marks the end of the new list.",
+     "start": 13.37,
+     "end": 22.12
+    },
+    {
+     "id": "ll4s_4",
+     "text": "Compare the two fronts. One and two. One is smaller. Line six hooks it onto tail, and a moves on.",
+     "start": 22.87,
+     "end": 29.2
+    },
+    {
+     "id": "ll4s_5",
+     "text": "Four against two. Two is hooked on, and b moves on.",
+     "start": 29.95,
+     "end": 33.37
+    },
+    {
+     "id": "ll4s_6",
+     "text": "Four against three. Which node is hooked on next?",
+     "start": 34.12,
+     "end": 37.32
+    },
+    {
+     "id": "ll4s_7",
+     "text": "Three. And now b has run out, so the loop stops.",
+     "start": 38.52,
+     "end": 41.46
+    },
+    {
+     "id": "ll4s_8",
+     "text": "Line fourteen hooks on whatever is left. The rest of a. Four and seven come along in one step, because they are already linked.",
+     "start": 42.21,
+     "end": 50.09
+    },
+    {
+     "id": "ll4s_9",
+     "text": "Line fifteen returns dummy dot next. The real first node.",
+     "start": 50.84,
+     "end": 54.8
+    },
+    {
+     "id": "ll4s_10",
+     "text": "One step per node. O of n plus m time.",
+     "start": 55.9,
+     "end": 58.93
+    },
+    {
+     "id": "ll4s_11",
+     "text": "No new nodes, except the dummy. O of one space.",
+     "start": 59.68,
+     "end": 62.86
+    }
+   ],
+   "pauses": [
+    {
+     "id": "ll4s-q",
+     "t": 37.52
+    }
+   ]
+  },
+  "ll5i": {
+   "src": "videos/ll5i.mp4",
+   "title": "Second From the End",
+   "duration": 20.33,
+   "lines": [
+    {
+     "id": "ll5i_1",
+     "text": "One node has to go. The second one, counted from the end.",
+     "start": 0.2,
+     "end": 3.69
+    },
+    {
+     "id": "ll5i_2",
+     "text": "Remove the k-th node from the end, and return the head. In one pass.",
+     "start": 4.39,
+     "end": 9.17
+    },
+    {
+     "id": "ll5i_3",
+     "text": "You cannot walk backwards. And you do not know how long the list is.",
+     "start": 9.87,
+     "end": 13.78
+    },
+    {
+     "id": "ll5i_4",
+     "text": "What if two markers walk together, a fixed distance apart? Your turn.",
+     "start": 14.48,
+     "end": 18.73
+    }
+   ],
+   "pauses": []
+  },
+  "ll5s": {
+   "src": "videos/ll5s.mp4",
+   "title": "Two markers, a fixed gap",
+   "duration": 61.1,
+   "lines": [
+    {
+     "id": "ll5s_1",
+     "text": "To remove a node, you must stand on the node just before it. But counting from the end needs the length.",
+     "start": 0.2,
+     "end": 6.33
+    },
+    {
+     "id": "ll5s_2",
+     "text": "So send one marker k nodes ahead, and then walk both together. When the leader reaches the end, the follower is in place.",
+     "start": 7.08,
+     "end": 14.83
+    },
+    {
+     "id": "ll5s_3",
+     "text": "A dummy node, D, goes in front, so that even the first real node has a node before it. Both markers start there.",
+     "start": 15.58,
+     "end": 23.09
+    },
+    {
+     "id": "ll5s_4",
+     "text": "Line five sends lead ahead by k nodes. K is two.",
+     "start": 23.84,
+     "end": 27.42
+    },
+    {
+     "id": "ll5s_5",
+     "text": "Now they walk together, one step each. The gap stays at two.",
+     "start": 28.17,
+     "end": 31.98
+    },
+    {
+     "id": "ll5s_6",
+     "text": "Another step. Lead is now on the last node. Where is trail?",
+     "start": 32.73,
+     "end": 36.43
+    },
+    {
+     "id": "ll5s_7",
+     "text": "Just before the node to remove. Exactly where we need to stand.",
+     "start": 37.63,
+     "end": 41.59
+    },
+    {
+     "id": "ll5s_8",
+     "text": "Line ten points trail past the next node, straight to the one after it. Three is no longer in the list.",
+     "start": 42.34,
+     "end": 48.77
+    },
+    {
+     "id": "ll5s_9",
+     "text": "Line eleven returns dummy dot next. The real head.",
+     "start": 49.52,
+     "end": 53.01
+    },
+    {
+     "id": "ll5s_10",
+     "text": "One pass. O of n time.",
+     "start": 54.11,
+     "end": 55.87
+    },
+    {
+     "id": "ll5s_11",
+     "text": "Two markers and a dummy. O of one space.",
+     "start": 56.62,
+     "end": 59.5
+    }
+   ],
+   "pauses": [
+    {
+     "id": "ll5s-q",
+     "t": 36.63
+    }
+   ]
+  },
+  "ll6i": {
+   "src": "videos/ll6i.mp4",
+   "title": "No Repeats",
+   "duration": 19.09,
+   "lines": [
+    {
+     "id": "ll6i_1",
+     "text": "A sorted list, with some values written twice.",
+     "start": 0.2,
+     "end": 3.18
+    },
+    {
+     "id": "ll6i_2",
+     "text": "Remove the repeats, so that each value appears once. Return the head.",
+     "start": 3.88,
+     "end": 8.2
+    },
+    {
+     "id": "ll6i_3",
+     "text": "Because the list is sorted, a repeat is always right behind its twin.",
+     "start": 8.9,
+     "end": 13.24
+    },
+    {
+     "id": "ll6i_4",
+     "text": "Standing on a node, how do you unhook the one after it? Your turn.",
+     "start": 13.94,
+     "end": 17.49
+    }
+   ],
+   "pauses": []
+  },
+  "ll6s": {
+   "src": "videos/ll6s.mp4",
+   "title": "Point past the repeat",
+   "duration": 53.81,
+   "lines": [
+    {
+     "id": "ll6s_1",
+     "text": "The list is sorted, so repeats sit right next to each other.",
+     "start": 0.2,
+     "end": 3.82
+    },
+    {
+     "id": "ll6s_2",
+     "text": "And removing a node from a list is one move. Point the node before it, past it.",
+     "start": 4.57,
+     "end": 9.38
+    },
+    {
+     "id": "ll6s_3",
+     "text": "Curr starts on the first node.",
+     "start": 10.13,
+     "end": 11.78
+    },
+    {
+     "id": "ll6s_4",
+     "text": "Line four compares this node with the next one. One and one. A repeat.",
+     "start": 12.53,
+     "end": 17.08
+    },
+    {
+     "id": "ll6s_5",
+     "text": "Line five points curr past the repeat. Curr itself does not move, because the node after might be a repeat too.",
+     "start": 17.83,
+     "end": 24.84
+    },
+    {
+     "id": "ll6s_6",
+     "text": "Now the next node holds two. Different. So line seven moves curr forward.",
+     "start": 25.59,
+     "end": 30.31
+    },
+    {
+     "id": "ll6s_7",
+     "text": "Two and three are different as well. Move on.",
+     "start": 31.06,
+     "end": 33.8
+    },
+    {
+     "id": "ll6s_8",
+     "text": "Three and three. What happens?",
+     "start": 34.55,
+     "end": 36.38
+    },
+    {
+     "id": "ll6s_9",
+     "text": "The arrow skips the repeat, and now points to null.",
+     "start": 37.59,
+     "end": 40.45
+    },
+    {
+     "id": "ll6s_10",
+     "text": "Curr has no next node, so the loop ends. Line ten returns the same head.",
+     "start": 41.2,
+     "end": 45.97
+    },
+    {
+     "id": "ll6s_11",
+     "text": "One pass. O of n time.",
+     "start": 47.07,
+     "end": 48.82
+    },
+    {
+     "id": "ll6s_12",
+     "text": "Nothing new is built. O of one space.",
+     "start": 49.57,
+     "end": 52.21
+    }
+   ],
+   "pauses": [
+    {
+     "id": "ll6s-q",
+     "t": 36.59
     }
    ]
   }
