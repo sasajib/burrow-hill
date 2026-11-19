@@ -4,7 +4,7 @@ window.CHAPTER = {
  "sub": "CHAPTER 2 · STRINGS",
  "key": "burrow-ch-strings",
  "next": {
-  "href": "hashmap.html",
+  "href": "chapter.html?c=hashmap",
   "label": "Chapter 3: Hash maps"
  },
  "prev": {

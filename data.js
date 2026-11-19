@@ -2959,507 +2959,181 @@ window.BURROW = {
     }
    ]
   },
-  "ps1i": {
-   "src": "videos/ps1i.mp4",
-   "title": "The Running Total",
-   "duration": 21.13,
+  "hw0": {
+   "src": "videos/hw0.mp4",
+   "title": "Meet Hazel",
+   "duration": 29.36,
    "lines": [
     {
-     "id": "ps1i_1",
-     "text": "Pip counts seeds door by door, and wants the total so far at every door.",
+     "id": "hq1",
+     "text": "Chapter three. Hash maps. The most useful tool in this whole course.",
      "start": 0.2,
-     "end": 4.68
+     "end": 4.51
     },
     {
-     "id": "ps1i_2",
-     "text": "Return a new array. Position i holds the sum of everything up to and including door i.",
-     "start": 5.38,
-     "end": 11.09
+     "id": "hq2",
+     "text": "Meet Hazel. Hazel never searches. Tell her a name, and she goes straight to the right door.",
+     "start": 5.21,
+     "end": 10.81
     },
     {
-     "id": "ps1i_3",
-     "text": "To get the third total, do you really need to add three numbers again?",
-     "start": 11.79,
-     "end": 15.76
+     "id": "hq3",
+     "text": "Arrays find a door by its number. But real questions come with names, words and values. Not door numbers.",
+     "start": 11.61,
+     "end": 18.83
     },
     {
-     "id": "ps1i_4",
-     "text": "What single number could you carry along? Your turn.",
-     "start": 16.46,
-     "end": 19.53
+     "id": "hq4",
+     "text": "A hash map turns any key into a door number. You will see how it works, learn the three questions it answers, and solve six puzzles.",
+     "start": 19.73,
+     "end": 27.76
     }
    ],
    "pauses": []
   },
-  "ps1s": {
-   "src": "videos/ps1s.mp4",
-   "title": "Carry the total along",
-   "duration": 56.5,
+  "hwt1": {
+   "src": "videos/hwt1.mp4",
+   "title": "From a Key to a Door",
+   "duration": 71.35,
    "lines": [
     {
-     "id": "ps1s_1",
-     "text": "Each total is the total before it, plus one more number. So nothing needs to be added twice.",
+     "id": "hx1",
+     "text": "Moss needs Fern's parcel. There are a thousand doors, and no index. That is a long walk. Hazel does it in one step.",
      "start": 0.2,
-     "end": 6.17
+     "end": 7.89
     },
     {
-     "id": "ps1s_2",
-     "text": "Carry one number, sum, from door to door. Write it down after every add.",
-     "start": 6.92,
-     "end": 11.52
+     "id": "hx2",
+     "text": "Her trick is a small machine, called a hash function. A key goes in. A number comes out.",
+     "start": 8.79,
+     "end": 14.52
     },
     {
-     "id": "ps1s_3",
-     "text": "Line two makes an empty row for the answers. Line three starts sum at zero.",
-     "start": 12.27,
-     "end": 17.15
+     "id": "hx3",
+     "text": "Here is a simple one. Add up the positions of the letters in the alphabet. Then take the remainder, after dividing by the number of doors.",
+     "start": 15.42,
+     "end": 24.01
     },
     {
-     "id": "ps1s_4",
-     "text": "I is zero. Line five adds the three to sum. Sum is three.",
-     "start": 17.9,
-     "end": 21.8
+     "id": "hx4",
+     "text": "Ant. One, plus fourteen, plus twenty. Thirty five. Thirty five divided by eight leaves three. Door three.",
+     "start": 25.01,
+     "end": 32.05
     },
     {
-     "id": "ps1s_5",
-     "text": "Line six writes that total into the answer row.",
-     "start": 22.55,
-     "end": 25.3
+     "id": "hx5",
+     "text": "The same key always gives the same door. So storing and finding use the same single calculation. O of one.",
+     "start": 33.05,
+     "end": 40.32
     },
     {
-     "id": "ps1s_6",
-     "text": "Next door. Add one. Sum is four. Write it down.",
-     "start": 26.05,
-     "end": 29.09
+     "id": "hx6",
+     "text": "Now the key is bee. Two, plus five, plus five. Twelve. Which door?",
+     "start": 41.32,
+     "end": 45.74
     },
     {
-     "id": "ps1s_7",
-     "text": "The next door holds four, and sum is four. What gets written?",
-     "start": 29.84,
-     "end": 33.49
+     "id": "hx7",
+     "text": "Door four. Twelve divided by eight leaves four.",
+     "start": 46.94,
+     "end": 49.93
     },
     {
-     "id": "ps1s_8",
-     "text": "Eight. The old total, plus one new number.",
-     "start": 34.69,
-     "end": 37.26
+     "id": "hx8",
+     "text": "Sometimes two keys land on the same door. That is called a collision. The door simply keeps a short list, and checks the key.",
+     "start": 50.93,
+     "end": 58.51
     },
     {
-     "id": "ps1s_9",
-     "text": "Last door. Add two. Ten.",
-     "start": 38.01,
-     "end": 39.85
+     "id": "hx9",
+     "text": "With a good hash function those lists stay tiny. So on average, a lookup is still O of one.",
+     "start": 59.51,
+     "end": 65.13
     },
     {
-     "id": "ps1s_10",
-     "text": "The loop ends, and line eight returns the answer row.",
-     "start": 40.6,
-     "end": 43.87
-    },
-    {
-     "id": "ps1s_11",
-     "text": "One walk, and one add per door. O of n time.",
-     "start": 44.97,
-     "end": 48.02
-    },
-    {
-     "id": "ps1s_12",
-     "text": "The answer row holds n totals. O of n space. That row has a name: the prefix sums.",
-     "start": 48.77,
-     "end": 54.9
+     "id": "hx10",
+     "text": "A key goes in. A door number comes out. That is a hash map.",
+     "start": 66.13,
+     "end": 69.75
     }
    ],
    "pauses": [
     {
-     "id": "ps1s-q",
-     "t": 33.69
+     "id": "hwt1-q1",
+     "t": 45.94
     }
    ]
   },
-  "ps2i": {
-   "src": "videos/ps2i.mp4",
-   "title": "The Balance Point",
-   "duration": 23.62,
+  "hwt2": {
+   "src": "videos/hwt2.mp4",
+   "title": "Three Questions a Map Answers",
+   "duration": 60.6,
    "lines": [
     {
-     "id": "ps2i_1",
-     "text": "Moss wants a door where the left side and the right side weigh the same.",
+     "id": "hy1",
+     "text": "Almost every slow loop inside a loop is asking a question that a hash map answers in one step.",
      "start": 0.2,
-     "end": 4.31
+     "end": 6.5
     },
     {
-     "id": "ps2i_2",
-     "text": "Return the first index where the sum to its left equals the sum to its right. If there is none, return minus one.",
-     "start": 5.01,
-     "end": 12.6
+     "id": "hy2",
+     "text": "Question one. Have I seen this before? Use a set. Check, then add.",
+     "start": 7.4,
+     "end": 11.24
     },
     {
-     "id": "ps2i_3",
-     "text": "Adding up both sides again at every door is a lot of walking.",
-     "start": 13.3,
-     "end": 17.07
+     "id": "hy3",
+     "text": "Question two. How many times? Use a map, from the item to its count.",
+     "start": 12.24,
+     "end": 16.54
     },
     {
-     "id": "ps2i_4",
-     "text": "If you know the total, and the left side, what is the right side? Your turn.",
-     "start": 17.77,
-     "end": 22.02
-    }
-   ],
-   "pauses": []
-  },
-  "ps2s": {
-   "src": "videos/ps2s.mp4",
-   "title": "Total, minus left, minus this door",
-   "duration": 62.78,
-   "lines": [
-    {
-     "id": "ps2s_1",
-     "text": "The whole row is three parts. The left side, this door, and the right side.",
-     "start": 0.2,
-     "end": 4.52
+     "id": "hy4",
+     "text": "Question three. Where was it? Use a map, from the item to its position.",
+     "start": 17.54,
+     "end": 21.97
     },
     {
-     "id": "ps2s_2",
-     "text": "So if we know the total and the left side, the right side is one subtraction.",
-     "start": 5.27,
-     "end": 9.93
+     "id": "hy5",
+     "text": "In JavaScript, a map has set, get and has. A set has add and has. All of them take one step on average.",
+     "start": 22.97,
+     "end": 30.16
     },
     {
-     "id": "ps2s_3",
-     "text": "Lines two and three add everything up, once. The total is ten.",
-     "start": 10.68,
-     "end": 14.59
+     "id": "hy6",
+     "text": "Ten thousand names. Does any name appear twice? Would you compare every pair, or use a set?",
+     "start": 31.16,
+     "end": 36.88
     },
     {
-     "id": "ps2s_4",
-     "text": "Line four. Left starts at zero, because nothing is to the left of the first door.",
-     "start": 15.34,
-     "end": 20.54
+     "id": "hy7",
+     "text": "A set. One pass, ten thousand steps. Comparing every pair is fifty million.",
+     "start": 38.08,
+     "end": 43.35
     },
     {
-     "id": "ps2s_5",
-     "text": "Door zero. Line six works out the right side. Ten, minus zero, minus two. Eight.",
-     "start": 21.29,
-     "end": 26.83
+     "id": "hy8",
+     "text": "The price is memory. The map can hold up to n entries. O of n space.",
+     "start": 44.35,
+     "end": 49.14
     },
     {
-     "id": "ps2s_6",
-     "text": "Line seven compares. Zero is not eight. Not balanced.",
-     "start": 27.58,
-     "end": 31.23
+     "id": "hy9",
+     "text": "Trading memory for time. That is the deal, and it is almost always worth it.",
+     "start": 50.14,
+     "end": 54.99
     },
     {
-     "id": "ps2s_7",
-     "text": "Line eight moves this door into the left side. Left is two.",
-     "start": 31.98,
-     "end": 35.59
-    },
-    {
-     "id": "ps2s_8",
-     "text": "Door one. Ten, minus two, minus one. Seven. Two is not seven.",
-     "start": 36.34,
-     "end": 40.58
-    },
-    {
-     "id": "ps2s_9",
-     "text": "Left becomes three.",
-     "start": 41.33,
-     "end": 42.61
-    },
-    {
-     "id": "ps2s_10",
-     "text": "Door two holds four, and left is three. What is the right side?",
-     "start": 43.36,
-     "end": 47.04
-    },
-    {
-     "id": "ps2s_11",
-     "text": "Three. Left equals right. Line seven returns the index. Two.",
-     "start": 48.24,
-     "end": 52.48
-    },
-    {
-     "id": "ps2s_12",
-     "text": "One walk for the total, and one to search. O of n time.",
-     "start": 53.58,
-     "end": 57.02
-    },
-    {
-     "id": "ps2s_13",
-     "text": "Three numbers, and no extra row. O of one space.",
-     "start": 57.77,
-     "end": 61.18
+     "id": "hy10",
+     "text": "Seen before? How many? Where was it? Think hash map.",
+     "start": 55.89,
+     "end": 59
     }
    ],
    "pauses": [
     {
-     "id": "ps2s-q",
-     "t": 47.24
-    }
-   ]
-  },
-  "ps3i": {
-   "src": "videos/ps3i.mp4",
-   "title": "Many Questions",
-   "duration": 23.74,
-   "lines": [
-    {
-     "id": "ps3i_1",
-     "text": "The same row of doors, and a long list of questions. What is the sum of doors one to two? Zero to three?",
-     "start": 0.2,
-     "end": 6.91
-    },
-    {
-     "id": "ps3i_2",
-     "text": "Return the answer to every query, in order. Each query is a pair, l and r.",
-     "start": 7.61,
-     "end": 12.79
-    },
-    {
-     "id": "ps3i_3",
-     "text": "With fifty thousand questions, walking every range is far too slow.",
-     "start": 13.49,
-     "end": 17.83
-    },
-    {
-     "id": "ps3i_4",
-     "text": "What could you work out once, before the first question? Your turn.",
-     "start": 18.53,
-     "end": 22.14
-    }
-   ],
-   "pauses": []
-  },
-  "ps3s": {
-   "src": "videos/ps3s.mp4",
-   "title": "One row of totals, many answers",
-   "duration": 67,
-   "lines": [
-    {
-     "id": "ps3s_1",
-     "text": "Walking every range repeats the same adding. So do the adding once, before any question.",
-     "start": 0.2,
-     "end": 5.51
-    },
-    {
-     "id": "ps3s_2",
-     "text": "Keep the total before every door. Then any range is one total minus another.",
-     "start": 6.26,
-     "end": 11.36
-    },
-    {
-     "id": "ps3s_3",
-     "text": "Line two starts the totals row with a zero. The sum of nothing.",
-     "start": 12.11,
-     "end": 16.16
-    },
-    {
-     "id": "ps3s_4",
-     "text": "Lines three to five fill it in. Each slot is the slot before, plus one number. Zero plus three is three.",
-     "start": 16.91,
-     "end": 23.81
-    },
-    {
-     "id": "ps3s_5",
-     "text": "Then four. Eight. And ten.",
-     "start": 24.56,
-     "end": 26.22
-    },
-    {
-     "id": "ps3s_6",
-     "text": "Now the questions. The first one asks for doors one to two.",
-     "start": 26.97,
-     "end": 30.64
-    },
-    {
-     "id": "ps3s_7",
-     "text": "Line eight takes the total after door two. That is pre at three. Eight.",
-     "start": 31.39,
-     "end": 35.57
-    },
-    {
-     "id": "ps3s_8",
-     "text": "Then it removes everything before door one. Pre at one. Three. Eight minus three is five.",
-     "start": 36.32,
-     "end": 42.04
-    },
-    {
-     "id": "ps3s_9",
-     "text": "The next question. Doors zero to three. Which two slots do we need?",
-     "start": 42.79,
-     "end": 47.07
-    },
-    {
-     "id": "ps3s_10",
-     "text": "Pre at four, minus pre at zero. Ten minus zero. Ten.",
-     "start": 48.27,
-     "end": 52.03
-    },
-    {
-     "id": "ps3s_11",
-     "text": "Line ten returns both answers.",
-     "start": 52.78,
-     "end": 54.96
-    },
-    {
-     "id": "ps3s_12",
-     "text": "Building the row costs n steps, once. After that, every question is one subtraction.",
-     "start": 56.06,
-     "end": 61.5
-    },
-    {
-     "id": "ps3s_13",
-     "text": "The price is one extra row. O of n space.",
-     "start": 62.25,
-     "end": 65.4
-    }
-   ],
-   "pauses": [
-    {
-     "id": "ps3s-q",
-     "t": 47.27
-    }
-   ]
-  },
-  "ps4i": {
-   "src": "videos/ps4i.mp4",
-   "title": "Stretches That Add Up",
-   "duration": 23.33,
-   "lines": [
-    {
-     "id": "ps4i_1",
-     "text": "How many unbroken stretches of these doors add up to exactly three?",
-     "start": 0.2,
-     "end": 4.44
-    },
-    {
-     "id": "ps4i_2",
-     "text": "Return the count. A stretch is any run of neighbours, even a single door.",
-     "start": 5.14,
-     "end": 9.64
-    },
-    {
-     "id": "ps4i_3",
-     "text": "Trying every start and every end is too slow for a long row.",
-     "start": 10.34,
-     "end": 14.21
-    },
-    {
-     "id": "ps4i_4",
-     "text": "Every stretch is a running total, minus an earlier total. What could remember the earlier ones? Your turn.",
-     "start": 14.91,
-     "end": 21.73
-    }
-   ],
-   "pauses": []
-  },
-  "ps4s": {
-   "src": "videos/ps4s.mp4",
-   "title": "Look back for sum \u2212 k",
-   "duration": 83.19,
-   "lines": [
-    {
-     "id": "ps4s_1",
-     "text": "Every stretch is the running total now, minus the running total at some earlier point.",
-     "start": 0.2,
-     "end": 5.51
-    },
-    {
-     "id": "ps4s_2",
-     "text": "So a stretch ending here adds up to k, when an earlier total equals sum minus k. A map remembers the earlier totals.",
-     "start": 6.26,
-     "end": 14.33
-    },
-    {
-     "id": "ps4s_3",
-     "text": "Line two makes the map of totals seen so far. It starts with zero, seen once. That is the total before the first door.",
-     "start": 15.08,
-     "end": 22.91
-    },
-    {
-     "id": "ps4s_4",
-     "text": "Sum and count both start at zero.",
-     "start": 23.66,
-     "end": 25.61
-    },
-    {
-     "id": "ps4s_5",
-     "text": "Door zero. Line six adds it. Sum is one.",
-     "start": 26.36,
-     "end": 29.25
-    },
-    {
-     "id": "ps4s_6",
-     "text": "Line seven looks for sum minus k. One minus three is minus two. Never seen. Count stays zero.",
-     "start": 30,
-     "end": 36.57
-    },
-    {
-     "id": "ps4s_7",
-     "text": "Line eight records the total, one, in the map.",
-     "start": 37.32,
-     "end": 39.96
-    },
-    {
-     "id": "ps4s_8",
-     "text": "Door one. Sum is three. We need three minus three. Zero.",
-     "start": 40.71,
-     "end": 44.37
-    },
-    {
-     "id": "ps4s_9",
-     "text": "Zero was seen once. So one stretch ends here. Doors zero and one. Count is one.",
-     "start": 45.12,
-     "end": 51.03
-    },
-    {
-     "id": "ps4s_10",
-     "text": "Record the three.",
-     "start": 51.78,
-     "end": 52.91
-    },
-    {
-     "id": "ps4s_11",
-     "text": "Door two. Sum is four. Which earlier total are we looking for?",
-     "start": 53.66,
-     "end": 57.71
-    },
-    {
-     "id": "ps4s_12",
-     "text": "One. Seen once. That stretch is doors one and two. Count is two.",
-     "start": 58.91,
-     "end": 62.98
-    },
-    {
-     "id": "ps4s_13",
-     "text": "Last door. Sum is seven. We need four. Seen once. The door on its own. Count is three.",
-     "start": 63.73,
-     "end": 69.48
-    },
-    {
-     "id": "ps4s_14",
-     "text": "Line ten returns the count. Three.",
-     "start": 70.23,
-     "end": 72.58
-    },
-    {
-     "id": "ps4s_15",
-     "text": "One walk, and each map lookup is one step. O of n time.",
-     "start": 73.68,
-     "end": 77.32
-    },
-    {
-     "id": "ps4s_16",
-     "text": "The map can hold one total per door. O of n space.",
-     "start": 78.07,
-     "end": 81.59
-    }
-   ],
-   "pauses": [
-    {
-     "id": "ps4s-q",
-     "t": 57.91
+     "id": "hwt2-q1",
+     "t": 37.08
     }
    ]
   },
@@ -6625,6 +6299,672 @@ window.BURROW = {
     }
    ]
   },
+  "hm1i": {
+   "src": "videos/hm1i.mp4",
+   "title": "The Pair That Adds Up",
+   "duration": 22.04,
+   "lines": [
+    {
+     "id": "hm1i_1",
+     "text": "Two parcels in this row weigh eleven together. Hazel wants to know which two.",
+     "start": 0.2,
+     "end": 5.03
+    },
+    {
+     "id": "hm1i_2",
+     "text": "Return the indexes of the two doors that add up to the target. If there are none, return minus one, minus one.",
+     "start": 5.73,
+     "end": 12.63
+    },
+    {
+     "id": "hm1i_3",
+     "text": "Checking every pair is a loop inside a loop.",
+     "start": 13.33,
+     "end": 15.83
+    },
+    {
+     "id": "hm1i_4",
+     "text": "Standing on one number, which partner are you hoping for? Your turn.",
+     "start": 16.53,
+     "end": 20.44
+    }
+   ],
+   "pauses": []
+  },
+  "hm1s": {
+   "src": "videos/hm1s.mp4",
+   "title": "Look up the partner",
+   "duration": 55.12,
+   "lines": [
+    {
+     "id": "hm1s_1",
+     "text": "For every number, exactly one partner would complete the pair. The target, minus that number.",
+     "start": 0.2,
+     "end": 6.2
+    },
+    {
+     "id": "hm1s_2",
+     "text": "So remember every number you pass, and where it was. Then ask the map for the partner.",
+     "start": 6.95,
+     "end": 12.21
+    },
+    {
+     "id": "hm1s_3",
+     "text": "Line two makes an empty map, called seen.",
+     "start": 12.96,
+     "end": 15.33
+    },
+    {
+     "id": "hm1s_4",
+     "text": "Door zero holds four. Line four works out the partner. Eleven minus four. Seven.",
+     "start": 16.08,
+     "end": 21.86
+    },
+    {
+     "id": "hm1s_5",
+     "text": "Seven has not been seen. So line six stores four, and its index.",
+     "start": 22.61,
+     "end": 27.06
+    },
+    {
+     "id": "hm1s_6",
+     "text": "Door one holds nine. The partner is two. Not seen. Store nine.",
+     "start": 27.81,
+     "end": 31.83
+    },
+    {
+     "id": "hm1s_7",
+     "text": "Door two holds two. The partner is nine. Is nine in the map?",
+     "start": 32.58,
+     "end": 36.27
+    },
+    {
+     "id": "hm1s_8",
+     "text": "Yes. At door one. Line five returns both indexes.",
+     "start": 37.47,
+     "end": 41.4
+    },
+    {
+     "id": "hm1s_9",
+     "text": "One pass, and every map operation is one step on average. O of n time.",
+     "start": 42.5,
+     "end": 48.06
+    },
+    {
+     "id": "hm1s_10",
+     "text": "The map can hold every number. O of n space. Memory, traded for time.",
+     "start": 48.81,
+     "end": 53.52
+    }
+   ],
+   "pauses": [
+    {
+     "id": "hm1s-q",
+     "t": 36.47
+    }
+   ]
+  },
+  "hm2i": {
+   "src": "videos/hm2i.mp4",
+   "title": "Seen It Before",
+   "duration": 19.75,
+   "lines": [
+    {
+     "id": "hm2i_1",
+     "text": "Someone posted the same parcel twice. Hazel wants to catch it.",
+     "start": 0.2,
+     "end": 4.26
+    },
+    {
+     "id": "hm2i_2",
+     "text": "Return true if any number appears more than once. Otherwise false.",
+     "start": 4.96,
+     "end": 9.34
+    },
+    {
+     "id": "hm2i_3",
+     "text": "You could compare every pair of doors. That is slow.",
+     "start": 10.04,
+     "end": 13.13
+    },
+    {
+     "id": "hm2i_4",
+     "text": "At each door you are really asking one question. Which one? Your turn.",
+     "start": 13.83,
+     "end": 18.15
+    }
+   ],
+   "pauses": []
+  },
+  "hm2s": {
+   "src": "videos/hm2s.mp4",
+   "title": "Ask before you add",
+   "duration": 40,
+   "lines": [
+    {
+     "id": "hm2s_1",
+     "text": "At every door, the question is the same. Have I seen this number before?",
+     "start": 0.2,
+     "end": 4.53
+    },
+    {
+     "id": "hm2s_2",
+     "text": "A set answers that in one step. Check first. Then add.",
+     "start": 5.28,
+     "end": 8.79
+    },
+    {
+     "id": "hm2s_3",
+     "text": "Line two makes an empty set.",
+     "start": 9.54,
+     "end": 11.29
+    },
+    {
+     "id": "hm2s_4",
+     "text": "Door zero. Three. Not in the set. Line five adds it.",
+     "start": 12.04,
+     "end": 15.29
+    },
+    {
+     "id": "hm2s_5",
+     "text": "Seven. Not in the set. Add it.",
+     "start": 16.05,
+     "end": 17.87
+    },
+    {
+     "id": "hm2s_6",
+     "text": "One. New. Add it.",
+     "start": 18.62,
+     "end": 19.98
+    },
+    {
+     "id": "hm2s_7",
+     "text": "Door three holds seven. What does the set say?",
+     "start": 20.73,
+     "end": 23.6
+    },
+    {
+     "id": "hm2s_8",
+     "text": "Seven is already there. Line four returns true.",
+     "start": 24.8,
+     "end": 27.95
+    },
+    {
+     "id": "hm2s_9",
+     "text": "One pass, and every map operation is one step on average. O of n time.",
+     "start": 29.05,
+     "end": 34.61
+    },
+    {
+     "id": "hm2s_10",
+     "text": "The set can hold every number. O of n space.",
+     "start": 35.36,
+     "end": 38.4
+    }
+   ],
+   "pauses": [
+    {
+     "id": "hm2s-q",
+     "t": 23.8
+    }
+   ]
+  },
+  "hm3i": {
+   "src": "videos/hm3i.mp4",
+   "title": "The Favourite",
+   "duration": 17.25,
+   "lines": [
+    {
+     "id": "hm3i_1",
+     "text": "Hazel wants to know which parcel number turns up most often.",
+     "start": 0.2,
+     "end": 4.05
+    },
+    {
+     "id": "hm3i_2",
+     "text": "Return the number that appears the most times.",
+     "start": 4.75,
+     "end": 7.38
+    },
+    {
+     "id": "hm3i_3",
+     "text": "Counting one number at a time means walking the row again and again.",
+     "start": 8.08,
+     "end": 12.28
+    },
+    {
+     "id": "hm3i_4",
+     "text": "What could keep every count at once? Your turn.",
+     "start": 12.97,
+     "end": 15.65
+    }
+   ],
+   "pauses": []
+  },
+  "hm3s": {
+   "src": "videos/hm3s.mp4",
+   "title": "Count as you go",
+   "duration": 53.99,
+   "lines": [
+    {
+     "id": "hm3s_1",
+     "text": "One walk is enough, if something keeps a count for every number at the same time.",
+     "start": 0.2,
+     "end": 4.88
+    },
+    {
+     "id": "hm3s_2",
+     "text": "And as the counts grow, remember which number is in the lead.",
+     "start": 5.63,
+     "end": 9.25
+    },
+    {
+     "id": "hm3s_3",
+     "text": "An empty count map. And the first number, five, starts as the best.",
+     "start": 10,
+     "end": 14.31
+    },
+    {
+     "id": "hm3s_4",
+     "text": "Door zero. Five. Line six gives it a count of one.",
+     "start": 15.06,
+     "end": 18.63
+    },
+    {
+     "id": "hm3s_5",
+     "text": "Two. Count one. Line seven asks: is one more than the best count, one? No.",
+     "start": 19.38,
+     "end": 24.98
+    },
+    {
+     "id": "hm3s_6",
+     "text": "Two again. Its count is now two. Is that more than the best count?",
+     "start": 25.73,
+     "end": 29.65
+    },
+    {
+     "id": "hm3s_7",
+     "text": "Yes. Two takes the lead.",
+     "start": 30.85,
+     "end": 32.3
+    },
+    {
+     "id": "hm3s_8",
+     "text": "Eight. Count one. No change.",
+     "start": 33.05,
+     "end": 34.97
+    },
+    {
+     "id": "hm3s_9",
+     "text": "Two once more. Three. It is already the best.",
+     "start": 35.72,
+     "end": 38.66
+    },
+    {
+     "id": "hm3s_10",
+     "text": "Line nine returns best. Two.",
+     "start": 39.41,
+     "end": 41.53
+    },
+    {
+     "id": "hm3s_11",
+     "text": "One pass, and every map operation is one step on average. O of n time.",
+     "start": 42.63,
+     "end": 48.18
+    },
+    {
+     "id": "hm3s_12",
+     "text": "One entry for each different number. O of n space.",
+     "start": 48.93,
+     "end": 52.39
+    }
+   ],
+   "pauses": [
+    {
+     "id": "hm3s-q",
+     "t": 29.85
+    }
+   ]
+  },
+  "hm4i": {
+   "src": "videos/hm4i.mp4",
+   "title": "Close Twins",
+   "duration": 20.23,
+   "lines": [
+    {
+     "id": "hm4i_1",
+     "text": "Two copies of the same parcel are only a problem if they sit close together.",
+     "start": 0.2,
+     "end": 5
+    },
+    {
+     "id": "hm4i_2",
+     "text": "Return true if the same number appears at two doors at most k apart.",
+     "start": 5.71,
+     "end": 10.17
+    },
+    {
+     "id": "hm4i_3",
+     "text": "The fours here are three doors apart. Too far. But keep looking.",
+     "start": 10.87,
+     "end": 14.77
+    },
+    {
+     "id": "hm4i_4",
+     "text": "For each number, which earlier door matters? Your turn.",
+     "start": 15.46,
+     "end": 18.63
+    }
+   ],
+   "pauses": []
+  },
+  "hm4s": {
+   "src": "videos/hm4s.mp4",
+   "title": "Where did I last see it?",
+   "duration": 49.94,
+   "lines": [
+    {
+     "id": "hm4s_1",
+     "text": "For each number, only the most recent copy matters. It is the closest one.",
+     "start": 0.2,
+     "end": 5.16
+    },
+    {
+     "id": "hm4s_2",
+     "text": "So keep a map from each number to the last door it was seen at.",
+     "start": 5.91,
+     "end": 9.27
+    },
+    {
+     "id": "hm4s_3",
+     "text": "An empty map, called last.",
+     "start": 10.02,
+     "end": 11.71
+    },
+    {
+     "id": "hm4s_4",
+     "text": "Four, one, and two are all new. Each is stored with its door.",
+     "start": 12.46,
+     "end": 16.16
+    },
+    {
+     "id": "hm4s_5",
+     "text": "Door three holds four. It was last seen at door zero. Three minus zero is three. More than k.",
+     "start": 16.91,
+     "end": 23.22
+    },
+    {
+     "id": "hm4s_6",
+     "text": "So line seven overwrites it. Four was last seen at door three.",
+     "start": 23.97,
+     "end": 28.02
+    },
+    {
+     "id": "hm4s_7",
+     "text": "Door four holds two. It was last seen at door two. How far apart?",
+     "start": 28.77,
+     "end": 33.22
+    },
+    {
+     "id": "hm4s_8",
+     "text": "Two. That is within k. Line five returns true.",
+     "start": 34.42,
+     "end": 37.47
+    },
+    {
+     "id": "hm4s_9",
+     "text": "One pass, and every map operation is one step on average. O of n time.",
+     "start": 38.57,
+     "end": 44.13
+    },
+    {
+     "id": "hm4s_10",
+     "text": "One entry for each different number. O of n space.",
+     "start": 44.88,
+     "end": 48.34
+    }
+   ],
+   "pauses": [
+    {
+     "id": "hm4s-q",
+     "t": 33.42
+    }
+   ]
+  },
+  "hm5i": {
+   "src": "videos/hm5i.mp4",
+   "title": "Same Letters, Same Group",
+   "duration": 19.89,
+   "lines": [
+    {
+     "id": "hm5i_1",
+     "text": "Eat. Tea. Ate. Three different words, made of the same three letters.",
+     "start": 0.2,
+     "end": 4.17
+    },
+    {
+     "id": "hm5i_2",
+     "text": "Group the words, so that words with exactly the same letters end up together.",
+     "start": 4.87,
+     "end": 9.54
+    },
+    {
+     "id": "hm5i_3",
+     "text": "Comparing every word with every other word is slow.",
+     "start": 10.24,
+     "end": 13.2
+    },
+    {
+     "id": "hm5i_4",
+     "text": "Could each word carry a label that is the same for its whole group? Your turn.",
+     "start": 13.9,
+     "end": 18.29
+    }
+   ],
+   "pauses": []
+  },
+  "hm5s": {
+   "src": "videos/hm5s.mp4",
+   "title": "Sorted letters are the label",
+   "duration": 58.9,
+   "lines": [
+    {
+     "id": "hm5s_1",
+     "text": "Words from the same group have the same letters. Sort the letters, and they all turn into the same string.",
+     "start": 0.2,
+     "end": 6.49
+    },
+    {
+     "id": "hm5s_2",
+     "text": "So a map from that label to a list collects each group in one pass.",
+     "start": 7.24,
+     "end": 11.54
+    },
+    {
+     "id": "hm5s_3",
+     "text": "Line two makes an empty map of groups.",
+     "start": 12.29,
+     "end": 14.75
+    },
+    {
+     "id": "hm5s_4",
+     "text": "Eat. Line four sorts its letters. A, E, T. That is the key.",
+     "start": 15.5,
+     "end": 19.35
+    },
+    {
+     "id": "hm5s_5",
+     "text": "The key is new, so line five starts an empty list for it. Line six adds the word.",
+     "start": 20.1,
+     "end": 25.46
+    },
+    {
+     "id": "hm5s_6",
+     "text": "Tea. Sorted, it is also A, E, T. The same key. So it joins the same list.",
+     "start": 26.21,
+     "end": 31.29
+    },
+    {
+     "id": "hm5s_7",
+     "text": "Tan. Sorted: A, N, T. A new key, so a new list.",
+     "start": 32.04,
+     "end": 35.42
+    },
+    {
+     "id": "hm5s_8",
+     "text": "Ate. What is its key, and which list does it join?",
+     "start": 36.17,
+     "end": 39.01
+    },
+    {
+     "id": "hm5s_9",
+     "text": "A, E, T. It joins eat and tea.",
+     "start": 40.21,
+     "end": 41.97
+    },
+    {
+     "id": "hm5s_10",
+     "text": "Line eight returns the lists. Two groups.",
+     "start": 42.72,
+     "end": 45.25
+    },
+    {
+     "id": "hm5s_11",
+     "text": "One pass over the words. Sorting the letters of a short word is a small, fixed cost. O of n words.",
+     "start": 46.35,
+     "end": 53.2
+    },
+    {
+     "id": "hm5s_12",
+     "text": "The map holds every word once. O of n space.",
+     "start": 53.95,
+     "end": 57.3
+    }
+   ],
+   "pauses": [
+    {
+     "id": "hm5s-q",
+     "t": 39.21
+    }
+   ]
+  },
+  "hm6i": {
+   "src": "videos/hm6i.mp4",
+   "title": "The Longest Chain",
+   "duration": 21.61,
+   "lines": [
+    {
+     "id": "hm6i_1",
+     "text": "These parcels are numbered, and scattered. Somewhere in there is a chain: two, three, four, five.",
+     "start": 0.2,
+     "end": 6
+    },
+    {
+     "id": "hm6i_2",
+     "text": "Return the length of the longest run of consecutive numbers. Without sorting.",
+     "start": 6.7,
+     "end": 11.34
+    },
+    {
+     "id": "hm6i_3",
+     "text": "With a set, asking is this number here takes one step.",
+     "start": 12.04,
+     "end": 15.25
+    },
+    {
+     "id": "hm6i_4",
+     "text": "So how can you tell that a number is the start of a chain? Your turn.",
+     "start": 15.95,
+     "end": 20.01
+    }
+   ],
+   "pauses": []
+  },
+  "hm6s": {
+   "src": "videos/hm6s.mp4",
+   "title": "Only count from a start",
+   "duration": 61.36,
+   "lines": [
+    {
+     "id": "hm6s_1",
+     "text": "Put every number in a set. Then asking, is this number here, takes one step.",
+     "start": 0.2,
+     "end": 5.02
+    },
+    {
+     "id": "hm6s_2",
+     "text": "A number starts a chain only if the number just below it is missing. Count upward from starts only.",
+     "start": 5.77,
+     "end": 11.9
+    },
+    {
+     "id": "hm6s_3",
+     "text": "Line two puts every number into a set.",
+     "start": 12.65,
+     "end": 15.14
+    },
+    {
+     "id": "hm6s_4",
+     "text": "Five. Is four in the set? Yes. So five is not a start. Line five skips it.",
+     "start": 15.89,
+     "end": 21.13
+    },
+    {
+     "id": "hm6s_5",
+     "text": "Two. Is one in the set? No. So two starts a chain.",
+     "start": 21.88,
+     "end": 25.12
+    },
+    {
+     "id": "hm6s_6",
+     "text": "Line seven counts upward. Three is here. Four is here. Five is here. Six is not. The chain is four long.",
+     "start": 25.87,
+     "end": 32.81
+    },
+    {
+     "id": "hm6s_7",
+     "text": "Line eight. Best is four.",
+     "start": 33.56,
+     "end": 35.02
+    },
+    {
+     "id": "hm6s_8",
+     "text": "Nine. Eight is not in the set, so nine is a start. How long is its chain?",
+     "start": 35.77,
+     "end": 40.06
+    },
+    {
+     "id": "hm6s_9",
+     "text": "One. Ten is not there. Best stays four.",
+     "start": 41.26,
+     "end": 43.87
+    },
+    {
+     "id": "hm6s_10",
+     "text": "Three and four are not starts, so both are skipped. Line ten returns four.",
+     "start": 44.62,
+     "end": 49.18
+    },
+    {
+     "id": "hm6s_11",
+     "text": "Each number is counted only inside the one chain it belongs to. So the total is O of n.",
+     "start": 50.28,
+     "end": 56.09
+    },
+    {
+     "id": "hm6s_12",
+     "text": "The set holds every number. O of n space.",
+     "start": 56.84,
+     "end": 59.76
+    }
+   ],
+   "pauses": [
+    {
+     "id": "hm6s-q",
+     "t": 40.26
+    }
+   ]
+  },
   "ll1i": {
    "src": "videos/ll1i.mp4",
    "title": "Turn the List Around",
@@ -7798,6 +8138,510 @@ window.BURROW = {
     {
      "id": "sr4s-q",
      "t": 35.05
+    }
+   ]
+  },
+  "ps1i": {
+   "src": "videos/ps1i.mp4",
+   "title": "The Running Total",
+   "duration": 21.13,
+   "lines": [
+    {
+     "id": "ps1i_1",
+     "text": "Pip counts seeds door by door, and wants the total so far at every door.",
+     "start": 0.2,
+     "end": 4.68
+    },
+    {
+     "id": "ps1i_2",
+     "text": "Return a new array. Position i holds the sum of everything up to and including door i.",
+     "start": 5.38,
+     "end": 11.09
+    },
+    {
+     "id": "ps1i_3",
+     "text": "To get the third total, do you really need to add three numbers again?",
+     "start": 11.79,
+     "end": 15.76
+    },
+    {
+     "id": "ps1i_4",
+     "text": "What single number could you carry along? Your turn.",
+     "start": 16.46,
+     "end": 19.53
+    }
+   ],
+   "pauses": []
+  },
+  "ps1s": {
+   "src": "videos/ps1s.mp4",
+   "title": "Carry the total along",
+   "duration": 56.5,
+   "lines": [
+    {
+     "id": "ps1s_1",
+     "text": "Each total is the total before it, plus one more number. So nothing needs to be added twice.",
+     "start": 0.2,
+     "end": 6.17
+    },
+    {
+     "id": "ps1s_2",
+     "text": "Carry one number, sum, from door to door. Write it down after every add.",
+     "start": 6.92,
+     "end": 11.52
+    },
+    {
+     "id": "ps1s_3",
+     "text": "Line two makes an empty row for the answers. Line three starts sum at zero.",
+     "start": 12.27,
+     "end": 17.15
+    },
+    {
+     "id": "ps1s_4",
+     "text": "I is zero. Line five adds the three to sum. Sum is three.",
+     "start": 17.9,
+     "end": 21.8
+    },
+    {
+     "id": "ps1s_5",
+     "text": "Line six writes that total into the answer row.",
+     "start": 22.55,
+     "end": 25.3
+    },
+    {
+     "id": "ps1s_6",
+     "text": "Next door. Add one. Sum is four. Write it down.",
+     "start": 26.05,
+     "end": 29.09
+    },
+    {
+     "id": "ps1s_7",
+     "text": "The next door holds four, and sum is four. What gets written?",
+     "start": 29.84,
+     "end": 33.49
+    },
+    {
+     "id": "ps1s_8",
+     "text": "Eight. The old total, plus one new number.",
+     "start": 34.69,
+     "end": 37.26
+    },
+    {
+     "id": "ps1s_9",
+     "text": "Last door. Add two. Ten.",
+     "start": 38.01,
+     "end": 39.85
+    },
+    {
+     "id": "ps1s_10",
+     "text": "The loop ends, and line eight returns the answer row.",
+     "start": 40.6,
+     "end": 43.87
+    },
+    {
+     "id": "ps1s_11",
+     "text": "One walk, and one add per door. O of n time.",
+     "start": 44.97,
+     "end": 48.02
+    },
+    {
+     "id": "ps1s_12",
+     "text": "The answer row holds n totals. O of n space. That row has a name: the prefix sums.",
+     "start": 48.77,
+     "end": 54.9
+    }
+   ],
+   "pauses": [
+    {
+     "id": "ps1s-q",
+     "t": 33.69
+    }
+   ]
+  },
+  "ps2i": {
+   "src": "videos/ps2i.mp4",
+   "title": "The Balance Point",
+   "duration": 23.62,
+   "lines": [
+    {
+     "id": "ps2i_1",
+     "text": "Moss wants a door where the left side and the right side weigh the same.",
+     "start": 0.2,
+     "end": 4.31
+    },
+    {
+     "id": "ps2i_2",
+     "text": "Return the first index where the sum to its left equals the sum to its right. If there is none, return minus one.",
+     "start": 5.01,
+     "end": 12.6
+    },
+    {
+     "id": "ps2i_3",
+     "text": "Adding up both sides again at every door is a lot of walking.",
+     "start": 13.3,
+     "end": 17.07
+    },
+    {
+     "id": "ps2i_4",
+     "text": "If you know the total, and the left side, what is the right side? Your turn.",
+     "start": 17.77,
+     "end": 22.02
+    }
+   ],
+   "pauses": []
+  },
+  "ps2s": {
+   "src": "videos/ps2s.mp4",
+   "title": "Total, minus left, minus this door",
+   "duration": 62.78,
+   "lines": [
+    {
+     "id": "ps2s_1",
+     "text": "The whole row is three parts. The left side, this door, and the right side.",
+     "start": 0.2,
+     "end": 4.52
+    },
+    {
+     "id": "ps2s_2",
+     "text": "So if we know the total and the left side, the right side is one subtraction.",
+     "start": 5.27,
+     "end": 9.93
+    },
+    {
+     "id": "ps2s_3",
+     "text": "Lines two and three add everything up, once. The total is ten.",
+     "start": 10.68,
+     "end": 14.59
+    },
+    {
+     "id": "ps2s_4",
+     "text": "Line four. Left starts at zero, because nothing is to the left of the first door.",
+     "start": 15.34,
+     "end": 20.54
+    },
+    {
+     "id": "ps2s_5",
+     "text": "Door zero. Line six works out the right side. Ten, minus zero, minus two. Eight.",
+     "start": 21.29,
+     "end": 26.83
+    },
+    {
+     "id": "ps2s_6",
+     "text": "Line seven compares. Zero is not eight. Not balanced.",
+     "start": 27.58,
+     "end": 31.23
+    },
+    {
+     "id": "ps2s_7",
+     "text": "Line eight moves this door into the left side. Left is two.",
+     "start": 31.98,
+     "end": 35.59
+    },
+    {
+     "id": "ps2s_8",
+     "text": "Door one. Ten, minus two, minus one. Seven. Two is not seven.",
+     "start": 36.34,
+     "end": 40.58
+    },
+    {
+     "id": "ps2s_9",
+     "text": "Left becomes three.",
+     "start": 41.33,
+     "end": 42.61
+    },
+    {
+     "id": "ps2s_10",
+     "text": "Door two holds four, and left is three. What is the right side?",
+     "start": 43.36,
+     "end": 47.04
+    },
+    {
+     "id": "ps2s_11",
+     "text": "Three. Left equals right. Line seven returns the index. Two.",
+     "start": 48.24,
+     "end": 52.48
+    },
+    {
+     "id": "ps2s_12",
+     "text": "One walk for the total, and one to search. O of n time.",
+     "start": 53.58,
+     "end": 57.02
+    },
+    {
+     "id": "ps2s_13",
+     "text": "Three numbers, and no extra row. O of one space.",
+     "start": 57.77,
+     "end": 61.18
+    }
+   ],
+   "pauses": [
+    {
+     "id": "ps2s-q",
+     "t": 47.24
+    }
+   ]
+  },
+  "ps3i": {
+   "src": "videos/ps3i.mp4",
+   "title": "Many Questions",
+   "duration": 23.74,
+   "lines": [
+    {
+     "id": "ps3i_1",
+     "text": "The same row of doors, and a long list of questions. What is the sum of doors one to two? Zero to three?",
+     "start": 0.2,
+     "end": 6.91
+    },
+    {
+     "id": "ps3i_2",
+     "text": "Return the answer to every query, in order. Each query is a pair, l and r.",
+     "start": 7.61,
+     "end": 12.79
+    },
+    {
+     "id": "ps3i_3",
+     "text": "With fifty thousand questions, walking every range is far too slow.",
+     "start": 13.49,
+     "end": 17.83
+    },
+    {
+     "id": "ps3i_4",
+     "text": "What could you work out once, before the first question? Your turn.",
+     "start": 18.53,
+     "end": 22.14
+    }
+   ],
+   "pauses": []
+  },
+  "ps3s": {
+   "src": "videos/ps3s.mp4",
+   "title": "One row of totals, many answers",
+   "duration": 67,
+   "lines": [
+    {
+     "id": "ps3s_1",
+     "text": "Walking every range repeats the same adding. So do the adding once, before any question.",
+     "start": 0.2,
+     "end": 5.51
+    },
+    {
+     "id": "ps3s_2",
+     "text": "Keep the total before every door. Then any range is one total minus another.",
+     "start": 6.26,
+     "end": 11.36
+    },
+    {
+     "id": "ps3s_3",
+     "text": "Line two starts the totals row with a zero. The sum of nothing.",
+     "start": 12.11,
+     "end": 16.16
+    },
+    {
+     "id": "ps3s_4",
+     "text": "Lines three to five fill it in. Each slot is the slot before, plus one number. Zero plus three is three.",
+     "start": 16.91,
+     "end": 23.81
+    },
+    {
+     "id": "ps3s_5",
+     "text": "Then four. Eight. And ten.",
+     "start": 24.56,
+     "end": 26.22
+    },
+    {
+     "id": "ps3s_6",
+     "text": "Now the questions. The first one asks for doors one to two.",
+     "start": 26.97,
+     "end": 30.64
+    },
+    {
+     "id": "ps3s_7",
+     "text": "Line eight takes the total after door two. That is pre at three. Eight.",
+     "start": 31.39,
+     "end": 35.57
+    },
+    {
+     "id": "ps3s_8",
+     "text": "Then it removes everything before door one. Pre at one. Three. Eight minus three is five.",
+     "start": 36.32,
+     "end": 42.04
+    },
+    {
+     "id": "ps3s_9",
+     "text": "The next question. Doors zero to three. Which two slots do we need?",
+     "start": 42.79,
+     "end": 47.07
+    },
+    {
+     "id": "ps3s_10",
+     "text": "Pre at four, minus pre at zero. Ten minus zero. Ten.",
+     "start": 48.27,
+     "end": 52.03
+    },
+    {
+     "id": "ps3s_11",
+     "text": "Line ten returns both answers.",
+     "start": 52.78,
+     "end": 54.96
+    },
+    {
+     "id": "ps3s_12",
+     "text": "Building the row costs n steps, once. After that, every question is one subtraction.",
+     "start": 56.06,
+     "end": 61.5
+    },
+    {
+     "id": "ps3s_13",
+     "text": "The price is one extra row. O of n space.",
+     "start": 62.25,
+     "end": 65.4
+    }
+   ],
+   "pauses": [
+    {
+     "id": "ps3s-q",
+     "t": 47.27
+    }
+   ]
+  },
+  "ps4i": {
+   "src": "videos/ps4i.mp4",
+   "title": "Stretches That Add Up",
+   "duration": 23.33,
+   "lines": [
+    {
+     "id": "ps4i_1",
+     "text": "How many unbroken stretches of these doors add up to exactly three?",
+     "start": 0.2,
+     "end": 4.44
+    },
+    {
+     "id": "ps4i_2",
+     "text": "Return the count. A stretch is any run of neighbours, even a single door.",
+     "start": 5.14,
+     "end": 9.64
+    },
+    {
+     "id": "ps4i_3",
+     "text": "Trying every start and every end is too slow for a long row.",
+     "start": 10.34,
+     "end": 14.21
+    },
+    {
+     "id": "ps4i_4",
+     "text": "Every stretch is a running total, minus an earlier total. What could remember the earlier ones? Your turn.",
+     "start": 14.91,
+     "end": 21.73
+    }
+   ],
+   "pauses": []
+  },
+  "ps4s": {
+   "src": "videos/ps4s.mp4",
+   "title": "Look back for sum \u2212 k",
+   "duration": 83.19,
+   "lines": [
+    {
+     "id": "ps4s_1",
+     "text": "Every stretch is the running total now, minus the running total at some earlier point.",
+     "start": 0.2,
+     "end": 5.51
+    },
+    {
+     "id": "ps4s_2",
+     "text": "So a stretch ending here adds up to k, when an earlier total equals sum minus k. A map remembers the earlier totals.",
+     "start": 6.26,
+     "end": 14.33
+    },
+    {
+     "id": "ps4s_3",
+     "text": "Line two makes the map of totals seen so far. It starts with zero, seen once. That is the total before the first door.",
+     "start": 15.08,
+     "end": 22.91
+    },
+    {
+     "id": "ps4s_4",
+     "text": "Sum and count both start at zero.",
+     "start": 23.66,
+     "end": 25.61
+    },
+    {
+     "id": "ps4s_5",
+     "text": "Door zero. Line six adds it. Sum is one.",
+     "start": 26.36,
+     "end": 29.25
+    },
+    {
+     "id": "ps4s_6",
+     "text": "Line seven looks for sum minus k. One minus three is minus two. Never seen. Count stays zero.",
+     "start": 30,
+     "end": 36.57
+    },
+    {
+     "id": "ps4s_7",
+     "text": "Line eight records the total, one, in the map.",
+     "start": 37.32,
+     "end": 39.96
+    },
+    {
+     "id": "ps4s_8",
+     "text": "Door one. Sum is three. We need three minus three. Zero.",
+     "start": 40.71,
+     "end": 44.37
+    },
+    {
+     "id": "ps4s_9",
+     "text": "Zero was seen once. So one stretch ends here. Doors zero and one. Count is one.",
+     "start": 45.12,
+     "end": 51.03
+    },
+    {
+     "id": "ps4s_10",
+     "text": "Record the three.",
+     "start": 51.78,
+     "end": 52.91
+    },
+    {
+     "id": "ps4s_11",
+     "text": "Door two. Sum is four. Which earlier total are we looking for?",
+     "start": 53.66,
+     "end": 57.71
+    },
+    {
+     "id": "ps4s_12",
+     "text": "One. Seen once. That stretch is doors one and two. Count is two.",
+     "start": 58.91,
+     "end": 62.98
+    },
+    {
+     "id": "ps4s_13",
+     "text": "Last door. Sum is seven. We need four. Seen once. The door on its own. Count is three.",
+     "start": 63.73,
+     "end": 69.48
+    },
+    {
+     "id": "ps4s_14",
+     "text": "Line ten returns the count. Three.",
+     "start": 70.23,
+     "end": 72.58
+    },
+    {
+     "id": "ps4s_15",
+     "text": "One walk, and each map lookup is one step. O of n time.",
+     "start": 73.68,
+     "end": 77.32
+    },
+    {
+     "id": "ps4s_16",
+     "text": "The map can hold one total per door. O of n space.",
+     "start": 78.07,
+     "end": 81.59
+    }
+   ],
+   "pauses": [
+    {
+     "id": "ps4s-q",
+     "t": 57.91
     }
    ]
   }

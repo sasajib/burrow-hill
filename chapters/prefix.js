@@ -8,7 +8,7 @@ window.CHAPTER = {
   "label": "Chapter 5: Two pointers"
  },
  "prev": {
-  "href": "hashmap.html",
+  "href": "chapter.html?c=hashmap",
   "label": "Chapter 3: Hash maps"
  },
  "stages": [

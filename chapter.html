@@ -284,7 +284,7 @@ async function runCode(P, code) {
   if (r.timeout) return { error: 'Your code ran for over 2 seconds, so I stopped it. A loop probably never ends.' };
   if (r.error || !r.out.every((t) => t.ok) || !P.big) return r;
   const b = await runWorker({ code, fn: P.fn, big: P.big, prep: P.prep }, P.big.limit || 1500);
-  r.out.push(b.timeout ? { input: P.big.label, want: 'an answer in time', got: 'still running', ok: false, msg: P.big.msg } : { input: P.big.label, want: '', got: 'fast enough', ok: true, msg: '' });
+  r.out.push(b.timeout || b.error ? { input: P.big.label, want: 'an answer in time', got: b.error ? 'it crashed: ' + String(b.error).slice(0, 80) : 'still running', ok: false, msg: P.big.msg } : { input: P.big.label, want: '', got: 'fast enough', ok: true, msg: '' });
   return r;
 }
 
