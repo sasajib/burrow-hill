@@ -12,6 +12,7 @@
 :root{--sky:#FFC83D;--sun:#FFD96B;--plum:#2B1B4A;--plum2:#45306E;--coral:#FF6B5E;--teal:#12A594;--mint:#9BE8D0;--cream:#FFF6E0;
   --display:"Outfit",system-ui,sans-serif;--mono:"JetBrains Mono",ui-monospace,Menlo,monospace}
 *{box-sizing:border-box}
+[hidden]{display:none!important}
 html{color-scheme:light;scroll-behavior:smooth}
 body{margin:0;background:var(--cream);color:var(--plum);font-family:var(--display);font-size:18px;line-height:1.5}
 .in{max-width:1080px;margin:0 auto;padding-left:max(18px,env(safe-area-inset-left,0px));padding-right:max(18px,env(safe-area-inset-right,0px))}
@@ -106,7 +107,8 @@ footer{padding-block:28px;font-family:var(--mono);font-size:13px}
 </svg></div>
     </div>
     <div>
-      <div class="frame" style="position:relative"><video id="hero" controls autoplay muted loop playsinline preload="auto" poster="posters/ht1.jpg" src="videos/ht1.mp4"></video><button id="snd" class="btn" style="position:absolute;left:14px;top:14px;font:inherit;font-weight:800;cursor:pointer">Turn sound on</button></div>
+      <div class="frame" style="position:relative"><video id="hero" controls autoplay muted loop playsinline preload="auto" poster="posters/ht1.jpg" src="videos/ht1.mp4"></video></div>
+      <div class="btns" style="margin-top:16px"><button id="snd" class="btn" style="font:inherit;font-weight:800;cursor:pointer">Turn sound on</button></div>
       <p class="cap">START HERE · 1 MIN 43 S · HOW A HASH MAP FINDS A NAME IN ONE STEP</p>
     </div>
   </div>
