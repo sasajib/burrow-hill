@@ -1019,6 +1019,546 @@ window.BURROW = {
      "t": 51.38
     }
    ]
+  },
+  "f1": {
+   "src": "videos/f1.mp4",
+   "title": "Inside the Machine",
+   "duration": 81.94,
+   "lines": [
+    {
+     "id": "fa1",
+     "text": "Every app you have ever used is built from three tiny moves. Read a box. Do one small sum. Write a box.",
+     "start": 0.2,
+     "end": 7.49
+    },
+    {
+     "id": "fa2",
+     "text": "Meet Tock. Tock is the processor. He can only do one tiny step at a time.",
+     "start": 8.19,
+     "end": 13.02
+    },
+    {
+     "id": "fa3",
+     "text": "But he is fast. Billions of steps, every single second.",
+     "start": 13.62,
+     "end": 17.32
+    },
+    {
+     "id": "fa4",
+     "text": "His workspace is memory. One long street of boxes. Every box has a number, called its address.",
+     "start": 18.32,
+     "end": 24.69
+    },
+    {
+     "id": "fa5",
+     "text": "Each box holds one small value. A number. A letter. True or false.",
+     "start": 25.49,
+     "end": 30.18
+    },
+    {
+     "id": "fa6",
+     "text": "A variable is a name you give to a box, so you never have to remember its address.",
+     "start": 31.08,
+     "end": 36.43
+    },
+    {
+     "id": "fa7",
+     "text": "Now watch one line of code. Score equals score plus one.",
+     "start": 37.43,
+     "end": 41.34
+    },
+    {
+     "id": "fa8",
+     "text": "Step one. Tock reads the box named score. Seven.",
+     "start": 42.04,
+     "end": 45.4
+    },
+    {
+     "id": "fa9",
+     "text": "Step two. He adds one. Eight.",
+     "start": 46,
+     "end": 47.99
+    },
+    {
+     "id": "fa10",
+     "text": "Step three. He writes eight back into the box.",
+     "start": 48.59,
+     "end": 51.28
+    },
+    {
+     "id": "fa11",
+     "text": "One line of code. Three tiny steps.",
+     "start": 52.28,
+     "end": 54.96
+    },
+    {
+     "id": "fa12",
+     "text": "Your turn. X starts at five. The line says x equals x times two. What is in the box afterwards?",
+     "start": 56.06,
+     "end": 62.95
+    },
+    {
+     "id": "fa13",
+     "text": "Ten. Read five, double it, write ten.",
+     "start": 64.15,
+     "end": 66.44
+    },
+    {
+     "id": "fa14",
+     "text": "Why does this matter? Because every algorithm is a count of these steps. Fewer steps, faster program.",
+     "start": 67.34,
+     "end": 73.88
+    },
+    {
+     "id": "fa15",
+     "text": "Next: what happens when a box holds, not a value, but the address of another box.",
+     "start": 74.88,
+     "end": 80.34
+    }
+   ],
+   "pauses": [
+    {
+     "id": "f1-q1",
+     "t": 63.15
+    }
+   ]
+  },
+  "f2": {
+   "src": "videos/f2.mp4",
+   "title": "The Thing and Its Address",
+   "duration": 74.3,
+   "lines": [
+    {
+     "id": "fb1",
+     "text": "You change b. And a changes too. Nobody touched a. Here is why.",
+     "start": 0.2,
+     "end": 4.31
+    },
+    {
+     "id": "fb2",
+     "text": "Small values live right inside their box. Put five in a.",
+     "start": 5.11,
+     "end": 9.04
+    },
+    {
+     "id": "fb3",
+     "text": "Copy a into b, and b gets its own five. Two boxes, two fives.",
+     "start": 9.64,
+     "end": 14.21
+    },
+    {
+     "id": "fb4",
+     "text": "Change b to nine. A is still five. They are separate.",
+     "start": 15.01,
+     "end": 18.01
+    },
+    {
+     "id": "fb5",
+     "text": "Big things are different. An array is too big for one box.",
+     "start": 19.11,
+     "end": 22.84
+    },
+    {
+     "id": "fb6",
+     "text": "So the array lives further down the street. The box only holds its address. That address is called a reference.",
+     "start": 23.54,
+     "end": 30.48
+    },
+    {
+     "id": "fb7",
+     "text": "Now copy a into b. Only the address gets copied. So how many arrays are there now?",
+     "start": 31.58,
+     "end": 36.94
+    },
+    {
+     "id": "fb8",
+     "text": "One array. Two names pointing at it.",
+     "start": 38.14,
+     "end": 40.31
+    },
+    {
+     "id": "fb9",
+     "text": "So when b changes the first item to ninety nine, a sees ninety nine too. It is the same array.",
+     "start": 41.31,
+     "end": 47.66
+    },
+    {
+     "id": "fb10",
+     "text": "This is not a bug. It is how arrays, objects and linked lists all work.",
+     "start": 48.76,
+     "end": 53.33
+    },
+    {
+     "id": "fb11",
+     "text": "To get a real second copy, you must build a new array and copy every item. One step per item.",
+     "start": 54.13,
+     "end": 60.52
+    },
+    {
+     "id": "fb12",
+     "text": "Keep this picture. A value sits in the box. A reference is an arrow to somewhere else.",
+     "start": 61.52,
+     "end": 67.21
+    },
+    {
+     "id": "fb13",
+     "text": "Arrows are how linked lists and trees are built. You will draw a lot of arrows.",
+     "start": 68.11,
+     "end": 72.7
+    }
+   ],
+   "pauses": [
+    {
+     "id": "f2-q1",
+     "t": 37.14
+    }
+   ]
+  },
+  "f3": {
+   "src": "videos/f3.mp4",
+   "title": "Loops, Functions and the Stack",
+   "duration": 80.86,
+   "lines": [
+    {
+     "id": "fc1",
+     "text": "A function calls a function, which calls another. How does the computer find its way back?",
+     "start": 0.2,
+     "end": 5.57
+    },
+    {
+     "id": "fc2",
+     "text": "First, the loop. A loop repeats the same lines. Moss walks the row, one door per turn.",
+     "start": 6.37,
+     "end": 12.26
+    },
+    {
+     "id": "fc3",
+     "text": "Every turn has three parts. Check the condition. Run the body. Step the counter.",
+     "start": 12.96,
+     "end": 18.37
+    },
+    {
+     "id": "fc4",
+     "text": "Four doors, four turns. A thousand doors, a thousand turns. Loops are where the work piles up.",
+     "start": 19.37,
+     "end": 25.5
+    },
+    {
+     "id": "fc5",
+     "text": "Now put a loop inside a loop. Four turns outside, four inside. How many times does the inner line run?",
+     "start": 26.5,
+     "end": 33.4
+    },
+    {
+     "id": "fc6",
+     "text": "Sixteen. Four times four. Nested loops multiply.",
+     "start": 34.6,
+     "end": 38.33
+    },
+    {
+     "id": "fc7",
+     "text": "Now functions. A function is a named block of steps you can call from anywhere.",
+     "start": 39.43,
+     "end": 44.41
+    },
+    {
+     "id": "fc8",
+     "text": "When you call one, the computer writes a note. Where to come back to, and the function's own variables. The note goes on a pile.",
+     "start": 45.11,
+     "end": 52.91
+    },
+    {
+     "id": "fc9",
+     "text": "That pile is the call stack. Main calls greet. Greet calls shout. Three notes on the pile.",
+     "start": 53.81,
+     "end": 59.61
+    },
+    {
+     "id": "fc10",
+     "text": "When shout finishes, its note comes off the top. Then greet. Then main. Last in, first out.",
+     "start": 60.61,
+     "end": 66.49
+    },
+    {
+     "id": "fc11",
+     "text": "Every note takes memory. Pile up too many, and the stack overflows. That is the famous error.",
+     "start": 67.59,
+     "end": 73.61
+    },
+    {
+     "id": "fc12",
+     "text": "Loops repeat. Functions stack. Count both, and you can count any program.",
+     "start": 74.61,
+     "end": 79.26
+    }
+   ],
+   "pauses": [
+    {
+     "id": "f3-q1",
+     "t": 33.6
+    }
+   ]
+  },
+  "f4": {
+   "src": "videos/f4.mp4",
+   "title": "Counting the Work",
+   "duration": 94,
+   "lines": [
+    {
+     "id": "fd1",
+     "text": "Two programs solve the same problem. One finishes before you blink. The other is still running when the sun burns out.",
+     "start": 0.2,
+     "end": 7.53
+    },
+    {
+     "id": "fd2",
+     "text": "The difference is not the computer. It is how the work grows when the input grows.",
+     "start": 8.43,
+     "end": 13.56
+    },
+    {
+     "id": "fd3",
+     "text": "We do not time programs. Clocks depend on the machine. We count steps.",
+     "start": 14.36,
+     "end": 19.05
+    },
+    {
+     "id": "fd4",
+     "text": "And we ask one question. When the input gets bigger, how fast does the step count grow? The answer is written with a big O.",
+     "start": 19.75,
+     "end": 27.47
+    },
+    {
+     "id": "fd5",
+     "text": "O of one. Constant. Pip jumps to a door. One step, however long the row.",
+     "start": 28.47,
+     "end": 33.38
+    },
+    {
+     "id": "fd6",
+     "text": "O of n. Linear. Moss walks every door. Double the doors, double the steps.",
+     "start": 34.28,
+     "end": 39.4
+    },
+    {
+     "id": "fd7",
+     "text": "O of n squared. Quadratic. Every door is paired with every door. Double the doors, four times the steps.",
+     "start": 40.3,
+     "end": 47.46
+    },
+    {
+     "id": "fd8",
+     "text": "O of log n. Logarithmic. Each step throws away half of what is left. A million doors need only twenty steps.",
+     "start": 48.46,
+     "end": 56.09
+    },
+    {
+     "id": "fd9",
+     "text": "O of n log n. A little worse than linear. This is what good sorting costs.",
+     "start": 57.09,
+     "end": 62.24
+    },
+    {
+     "id": "fd10",
+     "text": "O of two to the n. Exponential. Every extra item doubles the work.",
+     "start": 63.14,
+     "end": 67.65
+    },
+    {
+     "id": "fd11",
+     "text": "Thirty items, at two to the n. Roughly how many steps?",
+     "start": 68.45,
+     "end": 71.97
+    },
+    {
+     "id": "fd12",
+     "text": "About a billion. And one hundred items would outlast the sun. That was the second program.",
+     "start": 73.17,
+     "end": 78.91
+    },
+    {
+     "id": "fd13",
+     "text": "Here they are side by side, for one thousand items.",
+     "start": 80.11,
+     "end": 83.49
+    },
+    {
+     "id": "fd14",
+     "text": "Learn these six shapes. In an interview, naming the shape is half the answer.",
+     "start": 87.89,
+     "end": 92.4
+    }
+   ],
+   "pauses": [
+    {
+     "id": "f4-q1",
+     "t": 72.17
+    }
+   ]
+  },
+  "f5": {
+   "src": "videos/f5.mp4",
+   "title": "Big O: the Rules",
+   "duration": 74.5,
+   "lines": [
+    {
+     "id": "fe1",
+     "text": "Three n plus five. N squared plus n. A thousand n. Big O throws most of that away. Here is what it keeps.",
+     "start": 0.2,
+     "end": 7.79
+    },
+    {
+     "id": "fe2",
+     "text": "Rule one. Drop the constants. Three n steps and n steps are both O of n.",
+     "start": 8.59,
+     "end": 13.31
+    },
+    {
+     "id": "fe3",
+     "text": "Why? Because we care about growth. Double n, and both of them double.",
+     "start": 14.01,
+     "end": 18.22
+    },
+    {
+     "id": "fe4",
+     "text": "Rule two. Keep only the biggest term. N squared plus n is O of n squared.",
+     "start": 19.22,
+     "end": 24.59
+    },
+    {
+     "id": "fe5",
+     "text": "At a thousand items, n squared is a million. The extra n is one thousand. It barely shows.",
+     "start": 25.29,
+     "end": 31.88
+    },
+    {
+     "id": "fe6",
+     "text": "Rule three. Steps in a row add. Steps inside each other multiply.",
+     "start": 32.98,
+     "end": 37.71
+    },
+    {
+     "id": "fe7",
+     "text": "Try it. One loop over n. Then a loop inside a loop. What is the Big O of the whole thing?",
+     "start": 38.71,
+     "end": 43.98
+    },
+    {
+     "id": "fe8",
+     "text": "O of n squared. The single loop only adds n, and the biggest term wins.",
+     "start": 45.18,
+     "end": 50.28
+    },
+    {
+     "id": "fe9",
+     "text": "Rule four. Plan for the worst case. A search might find it at the first door, or the last.",
+     "start": 51.38,
+     "end": 56.88
+    },
+    {
+     "id": "fe10",
+     "text": "We say O of n, because the last door can happen. Unless someone says otherwise, Big O means the worst case.",
+     "start": 57.58,
+     "end": 65.12
+    },
+    {
+     "id": "fe11",
+     "text": "Four rules. Drop constants. Keep the biggest. Add in a row, multiply when nested. Assume the worst.",
+     "start": 66.22,
+     "end": 72.9
+    }
+   ],
+   "pauses": [
+    {
+     "id": "f5-q1",
+     "t": 44.18
+    }
+   ]
+  },
+  "f6": {
+   "src": "videos/f6.mp4",
+   "title": "Space, and Reading the Limits",
+   "duration": 86.08,
+   "lines": [
+    {
+     "id": "ff1",
+     "text": "The problem says: n is up to one hundred thousand. That one line tells you which solutions will fail, before you write any code.",
+     "start": 0.2,
+     "end": 8.3
+    },
+    {
+     "id": "ff2",
+     "text": "First, space. Time counts steps. Space counts the extra boxes your program needs while it runs.",
+     "start": 9.2,
+     "end": 15.76
+    },
+    {
+     "id": "ff3",
+     "text": "Reversing a row in place needs two markers. O of one space.",
+     "start": 16.56,
+     "end": 20.75
+    },
+    {
+     "id": "ff4",
+     "text": "Copying it into a second row needs n more boxes. O of n space.",
+     "start": 21.45,
+     "end": 26.12
+    },
+    {
+     "id": "ff5",
+     "text": "Often you can trade. Spend memory to save time. A hash map remembers what it saw, so it never searches again.",
+     "start": 27.12,
+     "end": 34.78
+    },
+    {
+     "id": "ff6",
+     "text": "Now the limits. A computer does, very roughly, a hundred million simple steps in one second.",
+     "start": 35.88,
+     "end": 41.9
+    },
+    {
+     "id": "ff7",
+     "text": "So read the size of n, and work backwards.",
+     "start": 42.8,
+     "end": 45.53
+    },
+    {
+     "id": "ff8",
+     "text": "N up to twenty: even two to the n is fine. N up to a few thousand: n squared is fine. N up to a hundred thousand: you need n log n, or better.",
+     "start": 46.13,
+     "end": 56.21
+    },
+    {
+     "id": "ff9",
+     "text": "Test yourself. N is up to one hundred thousand. Your idea is n squared. Will it pass?",
+     "start": 57.41,
+     "end": 63.62
+    },
+    {
+     "id": "ff10",
+     "text": "No. One hundred thousand squared is ten billion steps. About a hundred seconds. Far too slow.",
+     "start": 64.82,
+     "end": 70.96
+    },
+    {
+     "id": "ff11",
+     "text": "The limit is a hint from the person who wrote the problem. It tells you the shape of the answer they expect.",
+     "start": 72.06,
+     "end": 78.02
+    },
+    {
+     "id": "ff12",
+     "text": "That is the foundation. Steps, memory, growth. Now, the first structure: the array.",
+     "start": 79.02,
+     "end": 84.48
+    }
+   ],
+   "pauses": [
+    {
+     "id": "f6-q1",
+     "t": 63.82
+    }
+   ]
   }
  }
 };

@@ -107,9 +107,9 @@ footer{padding-block:28px;font-family:var(--mono);font-size:13px}
 </svg></div>
     </div>
     <div>
-      <div class="frame" style="position:relative"><video id="hero" controls autoplay muted loop playsinline preload="auto" poster="posters/ht1.jpg" src="videos/ht1.mp4"></video></div>
+      <div class="frame" style="position:relative"><video id="hero" controls autoplay muted loop playsinline preload="auto" poster="posters/f4.jpg" src="videos/f4.mp4"></video></div>
       <div class="btns" style="margin-top:16px"><button id="snd" class="btn" style="font:inherit;font-weight:800;cursor:pointer">Turn sound on</button></div>
-      <p class="cap">START HERE · 1 MIN 43 S · HOW A HASH MAP FINDS A NAME IN ONE STEP</p>
+      <p class="cap">START HERE · 1 MIN 34 S · WHY ONE PROGRAM FINISHES IN A BLINK AND ANOTHER OUTLASTS THE SUN</p>
     </div>
   </div>
 </header>
@@ -152,15 +152,31 @@ footer{padding-block:28px;font-family:var(--mono);font-size:13px}
   <div class="in">
     <p class="kick">Try it yourself</p>
     <h2>Pick a chapter.</h2>
-    <p>Each one runs in the browser: videos that stop for your guess, then a puzzle with a code editor. Start with chapter 1; it opens with the introduction to Burrow Hill and its characters.</p>
+    <p>Each one runs in the browser: videos that stop for your guess, then practice. Part 0 is the foundation; chapter 1 introduces Burrow Hill and its characters.</p>
     <div class="chap">
-      <a class="chcard" href="arrays.html"><img src="posters/intro.jpg" alt="" loading="lazy"><span class="kick">Start here · Chapter 1</span><b>Introduction and Arrays</b><span>Meet Pip and Moss, then learn what an array is, what it costs, and reverse one in place. About 5 minutes of video.</span><i>Open chapter 1 →</i></a>
+      <a class="chcard" href="foundations.html"><img src="posters/f4.jpg" alt="" loading="lazy"><span class="kick">Start here · Part 0</span><b>Foundations</b><span>How a computer works, loops and the call stack, the Big O shapes and rules, memory, and reading input limits. Six lessons and 28 practice questions. About 8 minutes of video.</span><i>Open Part 0 →</i></a>
+      <a class="chcard" href="arrays.html"><img src="posters/intro.jpg" alt="" loading="lazy"><span class="kick">Chapter 1</span><b>Introduction and Arrays</b><span>Meet Pip and Moss, then learn what an array is, what it costs, and reverse one in place. About 5 minutes of video.</span><i>Open chapter 1 →</i></a>
       <a class="chcard" href="hashmap.html"><img src="posters/ht2.jpg" alt="" loading="lazy"><span class="kick">Chapter 2</span><b>Hash Maps</b><span>Meet Hazel, turn a name into a door number, handle collisions, and solve the classic pair puzzle. About 6 minutes of video.</span><i>Open chapter 2 →</i></a>
     </div>
   </div>
 </section>
 
-<section class="band mint" id="watch">
+<section class="band" id="watch">
+  <div class="in">
+    <p class="kick">Part 0 · Foundations</p>
+    <h2>Steps, memory and growth: what every later chapter leans on.</h2>
+    <div class="grid">
+      <div class="vid"><div class="frame"><video controls playsinline preload="none" poster="posters/f1.jpg" src="videos/f1.mp4"></video></div><h3>1 · Inside the machine</h3><p>1 min 22 s. Every program is three tiny moves, repeated billions of times a second.</p></div>
+      <div class="vid"><div class="frame"><video controls playsinline preload="none" poster="posters/f2.jpg" src="videos/f2.mp4"></video></div><h3>2 · The thing and its address</h3><p>1 min 14 s. Why changing one variable can change another.</p></div>
+      <div class="vid"><div class="frame"><video controls playsinline preload="none" poster="posters/f3.jpg" src="videos/f3.mp4"></video></div><h3>3 · Loops, functions and the stack</h3><p>1 min 21 s. How work piles up, and how the computer finds its way back.</p></div>
+      <div class="vid"><div class="frame"><video controls playsinline preload="none" poster="posters/f4.jpg" src="videos/f4.mp4"></video></div><h3>4 · Counting the work</h3><p>1 min 34 s. The six Big O shapes on one graph.</p></div>
+      <div class="vid"><div class="frame"><video controls playsinline preload="none" poster="posters/f5.jpg" src="videos/f5.mp4"></video></div><h3>5 · Big O: the rules</h3><p>1 min 15 s. Four rules for reading the cost off a piece of code.</p></div>
+      <div class="vid"><div class="frame"><video controls playsinline preload="none" poster="posters/f6.jpg" src="videos/f6.mp4"></video></div><h3>6 · Space and the limits</h3><p>1 min 26 s. Counting memory, and ruling out slow ideas before coding.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="band mint">
   <div class="in">
     <p class="kick">Chapter 1 · Arrays</p>
     <h2>One jump to any door, and what that costs.</h2>
@@ -201,7 +217,7 @@ footer{padding-block:28px;font-family:var(--mono);font-size:13px}
       <p class="kick">Why that matters</p>
       <ul class="plain">
         <li><b>Chapters are cheap to produce and to fix.</b> A correction is an edit and a re-render.</li>
-        <li><b>The format is a template.</b> The second chapter reused the first one's engine, cast and page.</li>
+        <li><b>The format is a template.</b> Each new part reused the engine, cast and page of the one before.</li>
         <li><b>Other languages are a re-voice.</b> Timing follows the narration automatically.</li>
       </ul>
     </div>
@@ -213,8 +229,8 @@ footer{padding-block:28px;font-family:var(--mono);font-size:13px}
     <div>
       <p class="kick">What exists today</p>
       <h2>A working prototype.</h2>
-      <div class="stat"><div><b>2</b>chapters</div><div><b>10</b>videos</div><div><b>11 min</b>of animation</div><div><b>2</b>coding puzzles</div></div>
-      <p>Both chapters run in the browser with nothing to install: videos with guess-first pauses, a JavaScript code runner with tests, hints, and a step-through solution.</p>
+      <div class="stat"><div><b>3</b>parts</div><div><b>16</b>videos</div><div><b>19 min</b>of animation</div><div><b>2</b>coding puzzles</div><div><b>28</b>practice questions</div></div>
+      <p>Everything runs in the browser with nothing to install: videos with guess-first pauses, practice questions, a JavaScript code runner with tests, hints, and step-through solutions.</p>
     </div>
     <div>
       <p class="kick">What comes next</p>

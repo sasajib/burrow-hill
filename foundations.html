@@ -1,0 +1,507 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Burrow Hill Foundations</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;700;800&family=JetBrains+Mono:wght@500;700&display=swap">
+<style>
+/* layout: one column, a trail of four stops on top, one stage card below */
+:root{--sky:#FFC83D;--sun:#FFD96B;--plum:#2B1B4A;--plum2:#45306E;--coral:#FF6B5E;--coralD:#E24A3E;--teal:#12A594;--mint:#9BE8D0;--cream:#FFF6E0;--meadow:#8FDDBD;
+  --display:"Outfit",system-ui,sans-serif;--mono:"JetBrains Mono",ui-monospace,Menlo,monospace}
+*{box-sizing:border-box}
+html{color-scheme:light}
+body{margin:0;background:var(--sky);color:var(--plum);font-family:var(--display);font-size:17px;line-height:1.45}
+.wrap{max-width:min(1560px,94vw);margin:0 auto;padding-block:22px 60px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+header{display:flex;flex-wrap:wrap;align-items:center;gap:14px 22px;margin-bottom:18px}
+h1{font-size:34px;font-weight:800;letter-spacing:-1px;margin:0;line-height:1}
+.sub{font-family:var(--mono);font-size:12px;letter-spacing:3px;font-weight:700}
+.xp{margin-left:auto;font-family:var(--mono);font-weight:700;background:var(--plum);color:var(--cream);padding:8px 16px;border-radius:999px;font-variant-numeric:tabular-nums}
+.trail{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;margin-bottom:18px}
+.stop{font:inherit;text-align:left;border:4px solid var(--plum);background:var(--cream);color:var(--plum);border-radius:16px;padding:10px 14px;cursor:pointer;box-shadow:4px 5px 0 var(--plum);min-width:0}
+.stop small{display:block;font-family:var(--mono);font-size:11px;letter-spacing:2px;font-weight:700}
+.stop b{display:block;font-weight:800;font-size:17px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.stop[aria-current="true"]{background:var(--coral)}
+.stop.done{background:var(--mint)}
+.stop[aria-current="true"],.stop.done[aria-current="true"]{background:var(--coral)}
+.stop:disabled{opacity:.45;cursor:not-allowed;box-shadow:none}
+.stop:focus-visible,button:focus-visible,textarea:focus-visible{outline:4px solid var(--teal);outline-offset:2px}
+.card{background:var(--cream);border:5px solid var(--plum);border-radius:22px;box-shadow:8px 10px 0 var(--plum);padding:20px;margin-bottom:22px}
+h2{font-size:28px;font-weight:800;letter-spacing:-.5px;margin:0 0 6px;text-wrap:balance}
+p{margin:0 0 12px;max-width:68ch}
+.vid{position:relative;border:5px solid var(--plum);border-radius:16px;overflow:hidden;background:var(--plum);width:min(100%,calc(76vh * 16 / 9));margin-inline:auto}
+.vid video{display:block;width:100%;height:auto;aspect-ratio:16/9}
+.cap{text-align:center;font-family:var(--mono);font-size:15px;min-height:46px;padding:10px 4px 0;font-weight:500}
+.quiz{position:absolute;inset:0;background:rgba(43,27,74,.88);display:flex;align-items:center;justify-content:center;padding:16px}
+.quiz .q{background:var(--cream);border:5px solid var(--plum);border-radius:18px;padding:18px 20px;max-width:560px;width:100%;box-shadow:6px 8px 0 var(--coral);max-height:100%;overflow:auto}
+.quiz h3{margin:0 0 4px;font-size:13px;font-family:var(--mono);letter-spacing:3px}
+.quiz .ask{font-weight:700;font-size:20px;margin-bottom:12px}
+.opts{display:grid;gap:8px}
+button{font:inherit;cursor:pointer}
+.opt,.btn{border:4px solid var(--plum);background:var(--cream);color:var(--plum);border-radius:12px;padding:9px 14px;font-weight:700;text-align:left}
+.opt.right{background:var(--mint)} .opt.wrong{background:var(--coral);animation:shake .3s}
+.btn{background:var(--sky);box-shadow:3px 4px 0 var(--plum);text-align:center}
+.btn.go{background:var(--coral)} .btn.quiet{background:var(--cream);box-shadow:none}
+.btn:disabled{opacity:.45;cursor:not-allowed;box-shadow:none}
+.why{margin-top:10px;font-size:15px}
+@keyframes shake{25%{transform:translateX(-6px)}75%{transform:translateX(6px)}}
+.row{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:12px}
+.cols{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:24px;align-items:start}
+@media(max-width:860px){.cols{grid-template-columns:minmax(0,1fr)}.trail{grid-template-columns:repeat(2,minmax(0,1fr))}}
+textarea{width:100%;min-height:270px;font-family:var(--mono);font-size:14.500px;line-height:1.5;background:var(--plum);color:var(--cream);border:5px solid var(--plum);border-radius:14px;padding:14px;resize:vertical;tab-size:2}
+pre,code{font-family:var(--mono);font-size:14px}
+.spec{background:var(--sky);border:4px solid var(--plum);border-radius:12px;padding:10px 14px;font-family:var(--mono);font-size:14px;overflow-x:auto;margin:0 0 12px}
+.tests{list-style:none;margin:12px 0 0;padding:0;display:grid;gap:6px;font-family:var(--mono);font-size:13.500px}
+.tests li{border:3px solid var(--plum);border-radius:10px;padding:6px 10px;overflow-wrap:anywhere}
+.tests .ok{background:var(--mint)} .tests .bad{background:#FFC2BB}
+.note{border-left:6px solid var(--teal);padding:6px 12px;background:#fff;border-radius:0 10px 10px 0;margin-top:10px;font-size:15px}
+.note.warn{border-color:var(--coralD)}
+.plan{background:#fff;border:4px solid var(--plum);border-radius:12px;padding:12px 16px;margin:0 0 14px;font-size:15.500px}
+.plan b{display:block;font-size:17px;margin-bottom:4px}
+.plan ol{margin:0 0 8px;padding-left:20px}
+.plan li{margin-bottom:5px}
+.plan span{font-family:var(--mono);font-size:12.500px;font-weight:700}
+.vctl{display:flex;align-items:center;justify-content:center;margin-top:8px;font-family:var(--mono);font-weight:700;font-size:12.500px}
+.vctl span{margin-right:10px;letter-spacing:2px;text-transform:uppercase}
+.vctl button{font-family:var(--display);font-weight:700;font-size:14px;color:var(--plum);background:var(--cream);border:3px solid var(--plum);margin-left:-3px;padding:6px 16px;white-space:nowrap;min-height:38px}
+.vctl button:first-of-type{border-radius:10px 0 0 10px;margin-left:0}
+.vctl button:last-of-type{border-radius:0 10px 10px 0}
+.vctl button:active{background:var(--sky)}
+.stop .short,.stop .num{display:none}
+#dq{max-width:860px}
+.hint{background:var(--mint);border:3px solid var(--plum);border-radius:10px;padding:8px 12px;margin-top:8px;font-size:15px}
+/* walkthrough stage */
+.stage{position:relative;height:250px;background:var(--sky);border:4px solid var(--plum);border-radius:14px;overflow:hidden;margin-top:12px}
+.stage.meadow{background:var(--meadow)}
+.stage-in{position:absolute;left:50%;top:0;height:100%;transform-origin:50% 0}
+.cellx{position:absolute;top:130px;width:74px;height:74px;border:4px solid var(--plum);background:var(--plum);border-radius:37px 37px 0 0}
+.ixx{position:absolute;top:210px;width:74px;text-align:center;font-family:var(--mono);font-weight:700;font-size:15px}
+.valx{position:absolute;top:156px;width:46px;height:42px;line-height:34px;text-align:center;font-weight:800;font-size:20px;background:var(--cream);border:4px solid var(--plum);border-radius:8px;transition:left .45s cubic-bezier(.5,1.6,.5,1),top .45s}
+.valx.hot{background:var(--coral)}
+.ptr{position:absolute;top:44px;width:74px;text-align:center;transition:left .45s cubic-bezier(.5,1.4,.5,1)}
+.ptr svg{display:block;margin:0 auto}
+.ptr span,.tag{display:inline-block;font-family:var(--mono);font-size:12px;font-weight:700;background:var(--plum);color:var(--cream);border-radius:999px;padding:2px 9px}
+.tag{position:absolute;transition:left .4s,top .4s,opacity .2s}
+.codeview{background:var(--plum);color:var(--cream);border-radius:14px;padding:12px 0;margin:12px 0 0;overflow-x:auto}
+.codeview div{padding:0 14px;white-space:pre;font-family:var(--mono);font-size:13.500px;line-height:1.6}
+.codeview .on{background:var(--coral);color:var(--plum);font-weight:700}
+.say{font-weight:700;min-height:50px;margin-top:10px}
+.sum{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px;margin:12px 0}
+.sum div{border:4px solid var(--plum);border-radius:12px;padding:10px 12px;background:#fff}
+.seenbox{position:absolute;top:36px;width:150px;border:4px solid var(--plum);border-radius:12px;background:var(--cream);padding:6px 10px;font-family:var(--mono);font-weight:700;font-size:15px;line-height:1.7}
+.seenbox b{display:block;font-family:var(--display);font-size:17px}
+.seenbox .hit{background:var(--mint);border-radius:6px}
+.sum b{display:block;font-size:26px;font-weight:800;font-variant-numeric:tabular-nums}
+.keys{margin-top:16px;border-top:4px solid var(--plum);padding-top:14px}
+.keys h3{margin:0 0 8px;font-size:20px;font-weight:800}
+.keys ul{margin:0 0 10px;padding-left:20px;max-width:70ch}
+.keys li{margin-bottom:6px}
+.keys table{border-collapse:collapse;font-family:var(--mono);font-size:14px;margin-top:6px}
+.keys td{border:3px solid var(--plum);padding:6px 12px;background:#fff}
+.keys td:first-child{font-weight:700;background:var(--mint)}
+.keys td.slow{background:#FFC2BB}
+.mine{background:var(--plum);color:var(--cream);border-radius:14px;padding:12px 14px;white-space:pre-wrap;overflow-x:auto;font-family:var(--mono);font-size:13.500px;line-height:1.6;margin:0}
+/* phones: compact header, a slim five-step bar, clean video, questions under the video */
+@media(max-width:700px){
+  body{font-size:16px}
+  .wrap{padding-block:12px 36px;padding-left:max(12px,env(safe-area-inset-left,0px));padding-right:max(12px,env(safe-area-inset-right,0px))}
+  header{gap:4px 12px;margin-bottom:10px}
+  h1{font-size:24px}
+  .sub{font-size:10.500px;letter-spacing:2px}
+  header nav{order:3;width:100%;margin-left:0!important;font-size:12px!important;gap:4px 14px!important}
+  .xp{margin-left:auto!important;padding:5px 12px;font-size:13px}
+  .trail{grid-template-columns:repeat(5,minmax(0,1fr));gap:5px;margin-bottom:12px}
+  .stop{padding:7px 2px 6px;border-width:3px;border-radius:10px;box-shadow:none;text-align:center}
+  .stop b,.stop .full{display:none}
+  .stop .short{display:block;font-size:10.500px;letter-spacing:0;white-space:nowrap}
+  .stop .num{display:block;font-family:var(--display);font-weight:800;font-size:17px;line-height:1.1}
+  .card{padding:12px;border-width:4px;border-radius:16px;box-shadow:4px 5px 0 var(--plum);margin-bottom:16px}
+  h2{font-size:21px;margin-bottom:4px}
+  p{font-size:15.500px;margin-bottom:10px}
+  .vid{border-width:3px;border-radius:10px}
+  .cap{font-size:13px;line-height:1.4;min-height:40px;padding:8px 2px 0;letter-spacing:0}
+  .spec{white-space:pre-wrap;overflow-wrap:anywhere;font-size:13px}
+  textarea{min-height:220px;font-size:13.500px;border-width:4px}
+  .row .btn{padding:9px 14px}
+  .quiz.below{position:static;background:none;padding:10px 0 0}
+  .quiz.below .q{max-width:none;max-height:none;box-shadow:4px 5px 0 var(--coral);padding:14px}
+  .quiz .ask{font-size:17px}
+  .say{min-height:0}
+  .plan{padding:10px 12px;font-size:14.500px}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div><div class="sub">PART 0 · FOUNDATIONS</div><h1><a href="index.html" title="Back to the home page" style="color:inherit;text-decoration:none">Burrow Hill</a></h1></div>
+  <nav style="margin-left:auto;display:flex;flex-wrap:wrap;gap:6px 16px;font-family:var(--mono);font-weight:700;font-size:13px"><a href="index.html" style="color:var(--plum)">Home</a><a href="index.html#chapters" style="color:var(--plum)">All chapters</a><a href="arrays.html" style="color:var(--plum)">Chapter 1: Arrays →</a></nav>
+  <div class="xp" id="xp" aria-live="polite" style="margin-left:0">0 XP</div>
+</header>
+<nav class="trail" id="trail" aria-label="Stages"></nav>
+<main id="main"></main>
+</div>
+<script src="data.js"></script>
+<script>
+"use strict";
+const D = window.BURROW || { videos: {} };
+const $ = (s, el = document) => el.querySelector(s);
+const h = (html) => { const t = document.createElement('template'); t.innerHTML = html.trim(); return t.content.firstElementChild; };
+const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+
+// ---------- saved progress (this browser only) ----------
+const KEY = 'burrow-foundations-v1';
+let S = { xp: 0, done: {}, quiz: {}, code: {}, hints: {}, runs: {}, solvedAt: {}, seen: {}, at: 'v1', feel: null, why: '', drill: {} };
+try { Object.assign(S, JSON.parse(localStorage.getItem(KEY) || '{}')); } catch (e) {}
+const save = () => { try { localStorage.setItem(KEY, JSON.stringify(S)); } catch (e) {} $('#xp').textContent = S.xp + ' XP'; };
+const gain = (n) => { S.xp += n; save(); };
+
+const STAGES = [
+  { id: 'v1', kind: 'lesson', video: 'f1', label: 'Lesson 1', short: 'L1', name: 'Inside the machine', intro: 'What a computer actually does: three tiny moves, repeated very fast. One guess.' },
+  { id: 'v2', kind: 'lesson', video: 'f2', label: 'Lesson 2', short: 'L2', name: 'The thing and its address', intro: 'Why changing one variable can change another. One guess.' },
+  { id: 'd1', kind: 'drill', set: 'd1', label: 'Practice 1', short: 'P1', name: 'Trace it by hand' },
+  { id: 'v3', kind: 'lesson', video: 'f3', label: 'Lesson 3', short: 'L3', name: 'Loops, functions, the stack', intro: 'How loops pile up work and how the computer remembers its way back from a function. One guess.' },
+  { id: 'd2', kind: 'drill', set: 'd2', label: 'Practice 2', short: 'P2', name: 'Loops and calls' },
+  { id: 'v4', kind: 'lesson', video: 'f4', label: 'Lesson 4', short: 'L4', name: 'Counting the work', intro: 'The six Big O shapes, drawn on one graph. One guess.' },
+  { id: 'v5', kind: 'lesson', video: 'f5', label: 'Lesson 5', short: 'L5', name: 'Big O: the rules', intro: 'Four rules for reading the Big O off a piece of code. One guess.' },
+  { id: 'd3', kind: 'drill', set: 'd3', label: 'Practice 3', short: 'P3', name: 'What does it cost?' },
+  { id: 'v6', kind: 'lesson', video: 'f6', label: 'Lesson 6', short: 'L6', name: 'Space and the limits', intro: 'Counting memory, and using the size of n to rule out slow ideas before you code. One guess.' },
+  { id: 'd4', kind: 'drill', set: 'd4', label: 'Practice 4', short: 'P4', name: 'Space and limits' },
+];
+const unlocked = (i) => i === 0 || S.done[STAGES[i - 1].id];
+
+const NOTES = {
+  v1: `<h3>Key ideas</h3><ul><li><b>The processor does one tiny step at a time</b>: read a box, do one small sum, write a box. Billions per second.</li>
+    <li><b>Memory is a street of numbered boxes.</b> The number is the address.</li><li><b>A variable is a name for a box.</b></li>
+    <li><b>One line of code is several steps</b>: <code>score = score + 1</code> is read, add, write. Algorithms are judged by how many steps they need.</li></ul>`,
+  v2: `<h3>Key ideas</h3><ul><li><b>Small values live in the box.</b> Copying a number makes a second, separate number.</li>
+    <li><b>Arrays and objects live elsewhere.</b> The box holds a reference: the address of the real thing.</li>
+    <li><b>Copying a reference copies only the address</b>, so two names can point at one array. A change through one name shows through the other.</li>
+    <li><b>A real copy</b> (<code>[...a]</code>) builds a new array and costs one step per item.</li></ul>`,
+  v3: `<h3>Key ideas</h3><ul><li><b>A loop turn</b> is: check the condition, run the body, step the counter.</li><li><b>Nested loops multiply</b>: 4 turns outside and 4 inside is 16 runs of the inner line.</li>
+    <li><b>The call stack</b> is a pile of notes, one per running function, each holding where to come back to and the function's variables. Last in, first out.</li>
+    <li><b>Stack overflow</b> is the pile growing past its limit, usually from calls that never stop.</li></ul>`,
+  v4: `<h3>Key ideas</h3><ul><li><b>We count steps, not seconds</b>, and ask how the count grows as the input grows.</li></ul>
+    <table><tr><td>O(1)</td><td>constant: one step whatever the size</td></tr><tr><td>O(log n)</td><td>halve what is left each step: 1,000,000 items, about 20 steps</td></tr><tr><td>O(n)</td><td>linear: double the input, double the steps</td></tr><tr><td>O(n log n)</td><td>what good sorting costs</td></tr><tr><td class="slow">O(n²)</td><td>every item paired with every item: double the input, four times the steps</td></tr><tr><td class="slow">O(2ⁿ)</td><td>every extra item doubles the work</td></tr></table>`,
+  v5: `<h3>Key ideas</h3><ul><li><b>Drop the constants</b>: 3n and n are both O(n).</li><li><b>Keep the biggest term</b>: n² + n is O(n²).</li>
+    <li><b>In a row, add. Nested, multiply.</b> Two loops in a row are O(n); a loop inside a loop is O(n²).</li><li><b>Assume the worst case</b> unless told otherwise.</li></ul>`,
+  v6: `<h3>Key ideas</h3><ul><li><b>Space</b> counts the extra boxes a program needs while it runs. Two markers is O(1); a second copy is O(n).</li>
+    <li><b>Memory can buy time</b>, as a hash map does.</li><li><b>Read the limit on n and work backwards</b>, at very roughly 100,000,000 simple steps per second.</li></ul>
+    <table><tr><td>n ≤ 20</td><td>O(2ⁿ) is fine</td></tr><tr><td>n ≤ 5,000</td><td>O(n²) is fine</td></tr><tr><td>n ≤ 100,000</td><td>need O(n log n) or better</td></tr></table>`,
+};
+
+const QUIZ = {
+  'f1-q1': { ask: 'x starts at 5. The line is x = x * 2. What is in the box afterwards?', opts: ['5', '7', '10', '25'], right: 2, why: 'Read 5, double it, write 10 back into the same box.' },
+  'f2-q1': { ask: 'a holds a reference to the array [1, 2, 3]. Then: let b = a. How many arrays exist now?', opts: ['One array, with two names', 'Two separate arrays', 'Three'], right: 0, why: 'Only the address was copied. Both names point at the same array.' },
+  'f3-q1': { ask: 'A loop of 4 turns sits inside a loop of 4 turns. How many times does the inner line run?', opts: ['4', '8', '16', '64'], right: 2, why: 'The inner loop runs 4 times for each of the 4 outer turns: 4 × 4 = 16.' },
+  'f4-q1': { ask: 'An O(2ⁿ) program gets 30 items. Roughly how many steps?', opts: ['60', '900', 'About a billion', 'About 30,000'], right: 2, why: '2 doubled 30 times is 1,073,741,824.' },
+  'f5-q1': { ask: 'One loop over n, followed by a loop inside a loop over n. What is the Big O of the whole thing?', opts: ['O(n)', 'O(n²)', 'O(n³)', 'O(2n)'], right: 1, why: 'The steps are n + n². The biggest term wins, so it is O(n²).' },
+  'f6-q1': { ask: 'n can be up to 100,000 and your idea is O(n²). Will it pass?', opts: ['Yes, easily', 'No, far too slow'], right: 1, why: '100,000² is 10 billion steps, about 100 seconds at 100 million steps per second.' },
+};
+const O4 = ['O(1)', 'O(log n)', 'O(n)', 'O(n²)'];
+const DRILLS = {
+  d1: [
+    { code: 'let x = 3;\nx = x + 4;\nx = x * 2;', ask: 'What is in x at the end?', opts: ['7', '10', '14', '11'], right: 2, why: '3 + 4 is 7, then 7 × 2 is 14. Each line reads the box, works, and writes back.' },
+    { code: 'score = score + 1;', ask: 'How many tiny steps does Tock take for this one line?', opts: ['1', '2', '3'], right: 2, why: 'Read score, add one, write the result back.' },
+    { code: 'let a = 5;\nlet b = a;\nb = b + 1;', ask: 'What is a now?', opts: ['5', '6'], right: 0, why: 'A number is copied into b. Changing b leaves a alone.' },
+    { code: 'let a = [1, 2, 3];\nlet b = a;\nb.push(4);', ask: 'How many items does a have?', opts: ['3', '4'], right: 1, why: 'b holds the same address as a. There is one array, and it now has 4 items.' },
+    { code: 'let a = [1, 2, 3];\nlet b = [...a];\nb[0] = 99;', ask: 'What is a[0]?', opts: ['1', '99'], right: 0, why: '[...a] builds a new array. Changing the copy does not touch the original.' },
+    { code: 'let a = [1, 2];\nlet b = a;\na = [7, 8];', ask: 'What is b[0]?', opts: ['1', '7'], right: 0, why: 'The last line points a at a new array. b still holds the address of the old one.' },
+  ],
+  d2: [
+    { code: 'for (let i = 0; i < 5; i++) {\n  step();\n}', ask: 'How many times does step() run?', opts: ['4', '5', '6'], right: 1, why: 'i takes the values 0, 1, 2, 3, 4. That is 5 turns.' },
+    { code: 'let total = 0;\nfor (let i = 1; i <= 4; i++) {\n  total = total + i;\n}', ask: 'What is total at the end?', opts: ['4', '6', '10', '5'], right: 2, why: '1 + 2 + 3 + 4 = 10.' },
+    { code: 'for (let r = 0; r < 3; r++) {\n  for (let c = 0; c < 5; c++) {\n    visit();\n  }\n}', ask: 'How many times does visit() run?', opts: ['5', '8', '15', '3'], right: 2, why: 'Nested loops multiply: 3 × 5 = 15.' },
+    { code: 'let n = 16;\nlet steps = 0;\nwhile (n > 1) {\n  n = n / 2;\n  steps++;\n}', ask: 'What is steps at the end?', opts: ['4', '8', '15', '16'], right: 0, why: '16 → 8 → 4 → 2 → 1 is four halvings. Halving is what O(log n) looks like.' },
+    { code: 'function a() { b(); }\nfunction b() { c(); }\nfunction c() { /* running here */ }\na();', ask: 'While c is running, how many of these functions have a note on the pile?', opts: ['1', '2', '3'], right: 2, why: 'a is waiting for b, b is waiting for c, and c is running. Three notes.' },
+    { code: 'function a() { b(); }\nfunction b() { c(); }\nfunction c() { /* finishes */ }\na();', ask: 'When c finishes, whose note comes off the pile first?', opts: ['a', 'b', 'c'], right: 2, why: 'Last in, first out. c was added last, so it leaves first.' },
+  ],
+  d3: [
+    { code: 'function first(row) {\n  return row[0];\n}', ask: 'What is the Big O?', opts: O4, right: 0, why: 'One jump to a known position, whatever the size.' },
+    { code: 'let sum = 0;\nfor (const x of row) {\n  sum += x;\n}', ask: 'What is the Big O?', opts: O4, right: 2, why: 'One step per item.' },
+    { code: 'for (const a of row) {\n  for (const b of row) {\n    compare(a, b);\n  }\n}', ask: 'What is the Big O?', opts: O4, right: 3, why: 'Every item is paired with every item: n × n.' },
+    { code: 'for (const x of row) { a(x); }\nfor (const x of row) { b(x); }', ask: 'What is the Big O?', opts: O4, right: 2, why: 'Loops in a row add: n + n = 2n. Drop the constant: O(n).' },
+    { code: 'for (const x of row) { a(x); }\nfor (const x of row) {\n  for (const y of row) { b(x, y); }\n}', ask: 'What is the Big O?', opts: O4, right: 3, why: 'n + n². The biggest term wins.' },
+    { code: 'while (n > 1) {\n  n = Math.floor(n / 2);\n}', ask: 'What is the Big O?', opts: O4, right: 1, why: 'Each turn throws away half of what is left.' },
+    { code: 'for (const x of row) {\n  for (let k = 0; k < 10; k++) { work(x, k); }\n}', ask: 'What is the Big O?', opts: O4, right: 2, why: 'The inner loop always runs 10 times. 10n is still O(n).' },
+    { ask: 'A program takes 3n² + 100n + 7 steps. What is its Big O?', opts: O4, right: 3, why: 'Keep the biggest term and drop its constant.' },
+    { ask: 'A search checks items one by one until it finds the target. Best case 1 step, worst case n. What do we call its Big O?', opts: O4, right: 2, why: 'Unless told otherwise, Big O means the worst case.' },
+    { ask: 'An O(n²) program gets twice as much input. What happens to its step count?', opts: ['It doubles', 'It becomes 4 times bigger', 'It goes up by 2', 'It stays the same'], right: 1, why: '(2n)² is 4n².' },
+  ],
+  d4: [
+    { ask: 'Reversing a row in place with two markers. How much extra space?', opts: ['O(1)', 'O(n)', 'O(n²)'], right: 0, why: 'Two markers, however long the row is.' },
+    { code: 'const copy = [];\nfor (const x of row) copy.push(x);', ask: 'How much extra space?', opts: ['O(1)', 'O(n)', 'O(n²)'], right: 1, why: 'The copy holds one box per item.' },
+    { ask: 'A hash map that remembers every item you have seen, so you never search again. What is being traded?', opts: ['Memory is spent to save time', 'Time is spent to save memory', 'Nothing is traded'], right: 0, why: 'The map costs O(n) space and turns each search into one step.' },
+    { ask: 'The problem says n ≤ 100,000. Which idea is safe?', opts: ['O(n²)', 'O(n log n)', 'O(2ⁿ)'], right: 1, why: 'n log n is about 1.7 million steps. n² would be 10 billion.' },
+    { ask: 'The problem says n ≤ 20. Is an O(2ⁿ) idea acceptable?', opts: ['Yes: about a million steps', 'No: far too slow'], right: 0, why: '2 to the 20 is 1,048,576.' },
+    { ask: 'n ≤ 2,000 and your idea is O(n²). Roughly how many steps?', opts: ['2,000', '4,000,000: fine', '4,000,000,000: too slow'], right: 1, why: '2,000 × 2,000 = 4,000,000, well under 100 million.' },
+  ],
+};
+const PUZZLE = {
+  p1: { fn: 'findPair', title: 'The Balloon Pair',
+    plan: ['Say the goal in your own words: two different doors whose weights add up to the target.',
+      'Do it by hand on [4, 9, 6, 1] with target 10. Standing on the 4, which weight are you hoping to find?',
+      'The slow way compares every pair. Where is the wasted work? You keep re-reading parcels you already passed.',
+      'What could remember the parcels you passed, so that one question replaces a search?'],
+    ask: 'Two parcels must weigh exactly <b>target</b> together. Return the two door numbers as an array, like <code>[0, 2]</code>. A parcel cannot be used twice. Every test has an answer.',
+    spec: 'findPair([4, 9, 6, 1], 10)  →  [0, 2]     (4 + 6 = 10)',
+    start: '// weights is an array of numbers, target is a number.\n// Return the two door numbers whose weights add up to target.\nfunction findPair(weights, target) {\n  // your code here\n}\n',
+    tests: [[[4, 9, 6, 1], 10], [[2, 7, 11, 15], 9], [[3, 2, 4], 6], [[3, 3], 6], [[1, 5, 8, 3, 9, 2], 17]],
+    hints: ['Stand on one parcel. You already know exactly how much its partner must weigh: target minus this weight.',
+      'Walk the row once. Keep a Map of the weights you have passed, each with its door number. At every parcel, ask the map for the partner.',
+      'Ask first, store second. If seen.has(need), return [seen.get(need), i]. Otherwise seen.set(weights[i], i) and move on.'] },
+};
+const SOLUTION = {
+  p1: ['function findPair(weights, target) {', '  const seen = new Map();', '  for (let i = 0; i < weights.length; i++) {', '    const need = target - weights[i];', '    if (seen.has(need)) {', '      return [seen.get(need), i];', '    }', '    seen.set(weights[i], i);', '  }', '}'],
+};
+
+// ---------- trail ----------
+function drawTrail() {
+  const t = $('#trail'); t.innerHTML = '';
+  STAGES.forEach((st, i) => {
+    const b = h(`<button class="stop ${S.done[st.id] ? 'done' : ''}" ${unlocked(i) ? '' : 'disabled'} aria-current="${S.at === st.id}"><span class="num">${S.done[st.id] ? '✓' : i + 1}</span><small><span class="full">${st.label}${S.done[st.id] ? ' · DONE' : ''}</span><span class="short">${st.short || st.label}</span></small><b>${st.name}</b></button>`);
+    b.onclick = () => go(st.id); t.append(b);
+  });
+
+}
+function go(id) { S.at = id; save(); drawTrail(); const st = STAGES.find((s) => s.id === id) || STAGES[0]; ({ lesson, puzzle, solution, drill })[st.kind](st); window.scrollTo({ top: 0 }); }
+function nextBtn(st) {
+  const i = STAGES.indexOf(st), nx = STAGES[i + 1];
+  const b = h(`<button class="btn go">${nx ? 'Next: ' + nx.label + ' →' : 'See how it went →'}</button>`);
+  b.onclick = () => (nx ? go(nx.id) : finish()); return b;
+}
+
+// ---------- video with predict-the-next-step pauses ----------
+function player(vkey, onEnd) {
+  const V = D.videos[vkey]; const box = h(`<div><div class="vid"><video controls playsinline preload="metadata" src="${V ? V.src : ''}"></video></div><div class="vctl" role="group" aria-label="Replay"><span>Replay</span><button data-a="back" title="Go back 10 seconds">10 s</button><button data-a="line" title="Replay this sentence">Sentence</button><button data-a="part" title="Replay everything since the last question">Part</button></div><div class="cap" aria-live="off"></div></div>`);
+  const v = $('video', box), cap = $('.cap', box), frame = $('.vid', box);
+  if (!V) { cap.textContent = 'Video data is missing (data.js).'; return box; }
+  let open = null;
+  v.addEventListener('timeupdate', () => {
+    const t = v.currentTime, ln = V.lines.find((l) => t >= l.start - 0.1 && t <= l.end + 0.5); cap.textContent = ln ? ln.text : '';
+    if (open) return;
+    const cue = (V.pauses || []).find((p) => !(S.quiz[p.id] && S.quiz[p.id].ok) && t >= p.t);
+    if (cue) { v.pause(); if (t > cue.t + 0.4) v.currentTime = cue.t; ask(cue); }
+  });
+  v.addEventListener('play', () => { if (open) v.pause(); });
+  v.addEventListener('ended', () => onEnd && onEnd());
+  // replay: 10 seconds back, the current sentence, or everything since the last question
+  const partStart = (t) => Math.max(0, ...(V.pauses || []).filter((p) => p.t < t - 1).map((p) => p.t));
+  const jump = (to) => { if (open) { open.remove(); open = null; } v.currentTime = Math.max(0, to); v.play().catch(() => {}); };
+  box.querySelectorAll('.vctl button').forEach((b) => { b.onclick = () => {
+    const t = v.currentTime, ln = [...V.lines].reverse().find((l) => l.start <= t + 0.05) || V.lines[0];
+    if (b.dataset.a === 'back') jump(t - 10);
+    else if (b.dataset.a === 'line') jump((t - ln.start < 1.2 ? (V.lines[V.lines.indexOf(ln) - 1] || ln) : ln).start - 0.15);
+    else jump(partStart(t));
+  }; });
+  function ask(cue) {
+    const q = QUIZ[cue.id]; const rec = S.quiz[cue.id] || (S.quiz[cue.id] = { tries: 0, ok: false });
+    open = h(`<div class="quiz"><div class="q"><h3>YOUR GUESS FIRST</h3><div class="ask">${esc(q.ask)}</div><div class="opts"></div><div class="row"><button class="btn quiet" id="again">Not sure? Watch that part again</button></div><div class="why" hidden></div></div></div>`);
+    $('#again', open).onclick = () => jump(Math.max(partStart(cue.t), cue.t - 40));
+    q.opts.forEach((o, i) => {
+      const b = h(`<button class="opt">${esc(o)}</button>`);
+      b.onclick = () => {
+        if (rec.ok) return; rec.tries++;
+        if (i === q.right) {
+          rec.ok = true; b.classList.add('right'); const pts = rec.tries === 1 ? 20 : 5; gain(pts);
+          const w = $('.why', open); w.hidden = false; w.innerHTML = `<b>Yes. +${pts} XP.</b> ${esc(q.why)}<div class="row"><button class="btn go">Keep watching</button></div>`;
+          $('.btn', w).onclick = () => { open.remove(); open = null; v.play(); }; $('.btn', w).focus();
+        } else { b.classList.remove('wrong'); void b.offsetWidth; b.classList.add('wrong'); save(); }
+      };
+      $('.opts', open).append(b);
+    });
+    if (window.innerWidth < 700) { open.classList.add('below'); frame.after(open); open.scrollIntoView({ behavior: 'smooth', block: 'nearest' }); } else frame.append(open);
+    $('.opt', open).focus({ preventScroll: true });
+  }
+  return box;
+}
+
+function lesson(st) {
+  const m = $('#main'); m.innerHTML = '';
+  const c = h(`<section class="card"><h2>${st.label}: ${st.name}</h2><p>${st.intro}</p></section>`);
+  const tail = h('<div class="row"></div>'), keys = h('<div class="keys" hidden></div>');
+  const done = () => { if (!S.done[st.id]) { S.done[st.id] = true; gain(30); drawTrail(); } tail.innerHTML = ''; tail.append(h('<b>Done.</b>'), nextBtn(st)); if (NOTES[st.id]) { keys.innerHTML = NOTES[st.id]; keys.hidden = false; } };
+  c.append(player(st.video, done), tail, keys); if (S.done[st.id]) done(); m.append(c);
+}
+
+function drill(st) {
+  const Q = DRILLS[st.set], m = $('#main'); m.innerHTML = '';
+  const rec = S.drill[st.set] || (S.drill[st.set] = { i: 0, first: 0, tries: 0 });
+  const c = h(`<section class="card"><h2>${st.label}: ${st.name}</h2><p>No video here. Work each one out in your head or on paper before you pick.</p><div id="dq"></div><div class="row" id="tail"></div></section>`);
+  const show = () => {
+    const box = $('#dq', c); box.innerHTML = '';
+    if (rec.i >= Q.length) { if (!S.done[st.id]) { S.done[st.id] = true; gain(30); drawTrail(); } box.append(h(`<div class="note"><b>Practice complete.</b> ${rec.first} of ${Q.length} right on the first try.</div>`)); const t = $('#tail', c); t.innerHTML = ''; const again = h('<button class="btn quiet">Do them again</button>'); again.onclick = () => { rec.i = 0; rec.first = 0; rec.tries = 0; save(); show(); }; t.append(nextBtn(st), again); return; }
+    const q = Q[rec.i]; let tries = 0, ok = false;
+    const el = h(`<div><div class="sub" style="margin:10px 0 6px">QUESTION ${rec.i + 1} OF ${Q.length}</div>${q.code ? `<pre class="spec" style="white-space:pre;overflow-x:auto">${esc(q.code)}</pre>` : ''}<div class="ask" style="font-weight:700;font-size:19px;margin-bottom:10px">${esc(q.ask)}</div><div class="opts"></div><div class="why" hidden></div></div>`);
+    q.opts.forEach((o, i) => { const b = h(`<button class="opt">${esc(o)}</button>`); b.onclick = () => { if (ok) return; tries++; rec.tries++;
+      if (i === q.right) { ok = true; b.classList.add('right'); const pts = tries === 1 ? 15 : 5; if (tries === 1) rec.first++; gain(pts); const w = $('.why', el); w.hidden = false; w.innerHTML = `<b>Yes. +${pts} XP.</b> ${esc(q.why)}<div class="row"><button class="btn go">${rec.i + 1 < Q.length ? 'Next question' : 'Finish'}</button></div>`; $('.btn', w).onclick = () => { rec.i++; save(); show(); }; }
+      else { b.classList.remove('wrong'); void b.offsetWidth; b.classList.add('wrong'); save(); } }; $('.opts', el).append(b); });
+    box.append(el);
+  };
+  show(); m.append(c);
+}
+
+function solution(st) {
+  const m = $('#main'); m.innerHTML = '';
+  const c = h(`<section class="card"><h2>${st.label}: ${st.name}</h2><p>First the idea, then every line of the code, acted out. The video stops once to ask what the map will answer.</p></section>`);
+  const tail = h('<div class="row"></div>'), more = h('<div></div>');
+  const done = () => { if (!S.done[st.id]) { S.done[st.id] = true; gain(30); drawTrail(); } tail.innerHTML = ''; tail.append(h('<b>Done.</b>'), nextBtn(st)); };
+  const back = h('<div class="row" style="margin:0 0 12px"><button class="btn quiet">← Back to the puzzle</button><span class="sub">YOUR CODE IS SAVED</span></div>');
+  $('button', back).onclick = () => go('p1');
+  c.append(back, player(st.video, done), tail, more); if (S.done[st.id]) done(); m.append(c);
+  walk('p1', more);
+  const mine = S.code.p1 && S.code.p1 !== PUZZLE.p1.start ? S.code.p1 : '';
+  more.append(h(`<div class="keys"><h3>Step through it yourself</h3><p>Use Step above to move one line at a time. Before each click, say what the map will answer.</p>
+    ${mine ? `<h3>Your code</h3><pre class="mine">${esc(mine)}</pre><p style="margin-top:10px">Compare it with the standard solution. Different code that passes the tests is fine; check that you can say why yours stops.</p>` : ''}
+    <h3>Say it in your own words</h3><p>Why does the code ask the map <b>before</b> storing the current parcel, and not after? One or two sentences. Nobody grades this; writing it is the point.</p>
+    <textarea id="why" style="min-height:90px" spellcheck="false"></textarea></div>`));
+  const w = $('#why', more); w.value = S.why || ''; w.addEventListener('input', () => { S.why = w.value; save(); });
+}
+
+// ---------- sandbox: run the learner's code in a worker with a time limit ----------
+const WORKER = `
+const fmt = (v) => { try { return typeof v === 'string' ? v : JSON.stringify(v); } catch (e) { return String(v); } };
+self.onmessage = (ev) => {
+  const { code, fn, tests, big } = ev.data; const logs = []; const out = [];
+  console.log = (...a) => { if (logs.length < 40) logs.push(a.map(fmt).join(' ')); };
+  let f;
+  try { f = new Function(code + '\\n;return typeof ' + fn + ' === "function" ? ' + fn + ' : null;')(); } catch (e) { return postMessage({ error: String(e), logs }); }
+  if (!f) return postMessage({ error: 'I could not find a function called ' + fn + '. Keep its name.', logs });
+  const check = (w, target, r) => {
+    if (!Array.isArray(r) || r.length !== 2) return 'Return an array with two door numbers, like [0, 2].';
+    const [i, j] = r; if (!Number.isInteger(i) || !Number.isInteger(j) || i < 0 || j < 0 || i >= w.length || j >= w.length) return 'Those are not door numbers in this row.';
+    if (i === j) return 'You used the same parcel twice.';
+    if (w[i] + w[j] !== target) return 'Doors ' + i + ' and ' + j + ' weigh ' + (w[i] + w[j]) + ', not ' + target + '.';
+    return '';
+  };
+  if (big) { const n = 100000, w = []; for (let k = 0; k < n; k++) w.push(1000 + k * 2); w[n - 2] = 2; w[n - 1] = 4; const r = f(w.slice(), 6); return postMessage({ bigOk: check(w, 6, r) === '' }); }
+  for (const [w, target] of tests) {
+    let ok = false, got = '', msg = '';
+    try { const r = f(w.slice(), target); got = r === undefined ? 'nothing (undefined)' : fmt(r); msg = check(w, target, r); ok = msg === ''; } catch (e) { got = 'error: ' + (e && e.message || e); }
+    out.push({ input: fmt(w) + ', ' + target, want: 'two doors that add up to ' + target, got, ok, msg });
+  }
+  postMessage({ out, logs });
+};`;
+function runWorker(msg, limit) {
+  return new Promise((res) => {
+    let w; try { w = new Worker(URL.createObjectURL(new Blob([WORKER], { type: 'text/javascript' }))); } catch (e) { return res({ error: 'This browser blocked the code runner.' }); }
+    const kill = setTimeout(() => { w.terminate(); res({ timeout: true }); }, limit);
+    w.onmessage = (e) => { clearTimeout(kill); w.terminate(); res(e.data); };
+    w.onerror = (e) => { clearTimeout(kill); w.terminate(); res({ error: e.message || 'The code could not start.' }); };
+    w.postMessage(msg);
+  });
+}
+async function runCode(id, code) {
+  const P = PUZZLE[id], r = await runWorker({ code, fn: P.fn, tests: P.tests }, 2000);
+  if (r.timeout) return { error: 'Your code ran for over 2 seconds, so I stopped it. A loop probably never ends.' };
+  if (r.error || !r.out.every((t) => t.ok)) return r;
+  const b = await runWorker({ code, fn: P.fn, big: true }, 1500); // 100,000 parcels: fine with a Map, far too slow pair by pair
+  if (b.timeout) r.out.push({ input: 'a row of 100,000 parcels', want: 'an answer in under 1.5 seconds', got: 'still running after 1.5 seconds', ok: false, msg: 'Your answers are right, but this compares pairs one by one. Walk the row once and let a Map remember what you have seen.' });
+  else if (!b.bigOk) r.out.push({ input: 'a row of 100,000 parcels', want: 'two doors that add up to 6', got: 'a wrong pair', ok: false, msg: '' });
+  else r.out.push({ input: 'a row of 100,000 parcels', want: '', got: 'fast enough', ok: true, msg: '' });
+  return r;
+}
+
+function puzzle(st) {
+  const id = st.id, P = PUZZLE[id], m = $('#main'); m.innerHTML = '';
+  const review = S.solvedAt[id] && !S.seen['rev-' + id] && Date.now() - S.solvedAt[id] > 18 * 3600e3;
+  const c = h(`<section class="card"><h2>${st.label}: ${P.title}</h2><div class="cols"><div class="l"></div><div class="r">
+    <p>${P.ask}</p><pre class="spec">${esc(P.spec)}</pre>
+    ${P.plan ? `<div class="plan"><b>Before you code, think it through</b><ol>${P.plan.map((t) => `<li>${esc(t)}</li>`).join('')}</ol><span>Stuck after that? The first hint is free.</span></div>` : ''}
+    <label for="code-${id}" class="sub">YOUR CODE (JAVASCRIPT)</label>
+    <textarea id="code-${id}" spellcheck="false" autocapitalize="off" autocomplete="off"></textarea>
+    <div class="row"><button class="btn go" id="run">Run tests</button><button class="btn" id="hint">Hint</button><button class="btn quiet" id="reset">Start over</button><button class="btn quiet" id="show">Show me the solution</button></div>
+    <div id="hints"></div><div id="res" aria-live="polite"></div></div></div><div id="walk"></div><div class="row" id="tail"></div></section>`);
+  $('.l', c).append(player(st.video));
+  const ta = $('textarea', c); ta.value = review ? P.start : (S.code[id] || P.start);
+  if (review) $('.r', c).prepend(h('<div class="note"><b>Review day.</b> You solved this before. The editor is blank on purpose: solve it again from memory for double XP.</div>'));
+  ta.addEventListener('input', () => { S.code[id] = ta.value; save(); });
+  ta.addEventListener('keydown', (e) => { if (e.key === 'Tab') { e.preventDefault(); const a = ta.selectionStart; ta.setRangeText('  ', a, ta.selectionEnd, 'end'); S.code[id] = ta.value; } });
+  const used = () => S.hints[id] || 0;
+  const drawHints = () => { $('#hints', c).innerHTML = P.hints.slice(0, used()).map((t, i) => `<div class="hint"><b>Hint ${i + 1}.</b> ${esc(t)}</div>`).join(''); $('#hint', c).disabled = used() >= P.hints.length; $('#hint', c).textContent = used() >= P.hints.length ? 'No more hints' : (used() === 0 ? 'Hint (first one is free)' : `Hint (${P.hints.length - used()} left)`); };
+  $('#hint', c).onclick = () => { S.hints[id] = used() + 1; save(); drawHints(); };
+  $('#reset', c).onclick = () => { ta.value = P.start; S.code[id] = P.start; save(); $('#res', c).innerHTML = ''; ta.focus(); };
+  $('#show', c).onclick = () => { S.seen['sol-' + id] = true; save(); go('s1'); };
+  $('#run', c).onclick = async () => {
+    const code = ta.value, res = $('#res', c); S.runs[id] = (S.runs[id] || 0) + 1; save();
+    res.innerHTML = '<div class="note">Running…</div>';
+    const r = await runCode(id, code);
+    if (r.error) { res.innerHTML = `<div class="note warn"><b>It did not run.</b> ${esc(r.error)}</div>`; return; }
+    const all = r.out.every((t) => t.ok);
+    res.innerHTML = `<ul class="tests">${r.out.map((t) => `<li class="${t.ok ? 'ok' : 'bad'}">${t.ok ? 'PASS' : 'FAIL'} &nbsp; ${esc(t.input)} &nbsp;→&nbsp; got ${esc(t.got)}${t.ok ? '' : ' &nbsp;· wanted ' + esc(t.want)}${t.msg ? '<br>' + esc(t.msg) : ''}</li>`).join('')}</ul>` +
+      (r.logs.length ? `<pre class="spec" style="margin-top:10px">${esc(r.logs.join('\n'))}</pre>` : '');
+    if (all) solved(); else if ((S.runs[id] || 0) >= 3 && used() === 0) res.append(h('<div class="note">Three tries in. A hint costs a little XP and saves a lot of time.</div>'));
+  };
+  function solved() {
+    const first = !S.done[id]; let pts = 0;
+    if (first) { pts = S.seen['sol-' + id] ? 40 : Math.max(40, 100 - 15 * Math.max(0, used() - 1)); S.done[id] = true; S.solvedAt[id] = Date.now(); }
+    else if (review) { pts = 120; S.seen['rev-' + id] = true; }
+    if (pts) gain(pts); drawTrail();
+    $('#res', c).prepend(h(`<div class="note"><b>All tests pass.${pts ? ' +' + pts + ' XP.' : ''}</b> ${first ? 'Next, Moss and Hazel walk through the standard solution line by line. Come back tomorrow: the editor will be blank and a second solve from memory is worth more.' : ''}</div>`));
+    tail();
+  }
+  const tail = () => { const t = $('#tail', c); t.innerHTML = ''; if (S.done[id] || S.seen['sol-' + id]) t.append(nextBtn(st)); };
+  drawHints(); tail(); m.append(c);
+}
+
+// ---------- walkthroughs: each step comes from really running the reference solution ----------
+const PIP = '<svg width="46" height="50" viewBox="0 0 200 220"><g stroke="#2B1B4A" stroke-width="9" stroke-linejoin="round"><ellipse cx="98" cy="50" rx="14" ry="46" fill="#E24A3E" transform="rotate(-14 98 90)"/><ellipse cx="124" cy="48" rx="14" ry="48" fill="#FF6B5E" transform="rotate(4 124 90)"/><circle cx="26" cy="158" r="17" fill="#FFF6E0"/><ellipse cx="88" cy="160" rx="64" ry="50" fill="#FF6B5E"/><circle cx="130" cy="108" r="44" fill="#FF6B5E"/></g><circle cx="146" cy="100" r="9" fill="#2B1B4A"/></svg>';
+const MOSS = '<svg width="56" height="40" viewBox="0 0 260 185"><g stroke="#2B1B4A" stroke-width="9" stroke-linejoin="round"><rect x="52" y="122" width="34" height="56" rx="15" fill="#9BE8D0"/><rect x="150" y="122" width="34" height="56" rx="15" fill="#9BE8D0"/><circle cx="222" cy="100" r="28" fill="#9BE8D0"/><path d="M18 134 A100 96 0 0 1 204 134 Z" fill="#12A594"/></g><circle cx="232" cy="92" r="8" fill="#2B1B4A"/></svg>';
+function traceTwoSum(w, target) {
+  const steps = [], seen = new Map(); const snap = (i, line, say, hit = null) => steps.push({ i, line, say, seen: [...seen], hit });
+  snap(-1, 1, 'seen starts empty. It will remember each weight and the door it came from.');
+  for (let i = 0; i < w.length; i++) {
+    const need = target - w[i];
+    snap(i, 3, `Door ${i} weighs ${w[i]}. Its partner must weigh ${target} − ${w[i]} = ${need}.`);
+    if (seen.has(need)) { snap(i, 4, `Have we seen ${need}? Yes, at door ${seen.get(need)}.`, need); snap(i, 5, `Return both doors: [${seen.get(need)}, ${i}].`, need); return steps; }
+    snap(i, 4, `Have we seen ${need}? Not yet.`);
+    seen.set(w[i], i); snap(i, 7, `Store this parcel: ${w[i]} came from door ${i}. Then step to the next door.`);
+  }
+  return steps;
+}
+function walk(id, host) {
+  const input = [4, 9, 6, 1], target = 10, steps = traceTwoSum(input, target); let i = 0, timer = null;
+  host.innerHTML = '';
+  const box = h(`<div><h2 style="margin-top:22px">The standard solution, step by step</h2><p>Row [4, 9, 6, 1], target 10.</p><div class="cols"><div><div class="stage"><div class="stage-in"></div></div><div class="say" aria-live="polite"></div>
+    <div class="row"><button class="btn" id="prev">← Back</button><button class="btn go" id="nxt">Step →</button><button class="btn quiet" id="auto">Play</button><span class="sub" id="cnt"></span></div></div>
+    <div class="codeview">${SOLUTION[id].map((l) => `<div>${esc(l) || ' '}</div>`).join('')}</div></div></div>`);
+  host.append(box); const narrow = $('.stage', box).clientWidth < 480, stage = $('.stage-in', box), W = input.length * 84 + (narrow ? 10 : 190), HT = narrow ? 350 : 250;
+  stage.style.width = W + 'px'; stage.style.marginLeft = -W / 2 + 'px';
+  const fit = () => { const s = Math.min(1.7, ($('.stage', box).clientWidth - 16) / W); stage.style.transform = `scale(${s})`; $('.stage', box).style.height = Math.round(HT * s) + 8 + 'px'; }; fit(); window.addEventListener('resize', fit);
+  input.forEach((v, k) => stage.append(h(`<div class="cellx" style="left:${k * 84 + 5}px"></div>`), h(`<div class="ixx" style="left:${k * 84 + 5}px">${k}</div>`), h(`<div class="valx" data-id="${k}" style="left:${k * 84 + 19}px">${v}</div>`)));
+  stage.append(h(`<div class="ptr" id="pr">${MOSS}<span>i</span></div>`), h(`<div class="seenbox" style="${narrow ? `left:5px;top:240px;width:${W - 10}px` : `left:${input.length * 84 + 30}px`}"></div>`));
+  function draw() {
+    const s = steps[i]; $('.say', box).textContent = s.say; $('#cnt', box).textContent = `STEP ${i + 1} OF ${steps.length}`;
+    box.querySelectorAll('.codeview div').forEach((d, k) => d.classList.toggle('on', k === s.line));
+    $('#prev', box).disabled = i === 0; $('#nxt', box).disabled = i === steps.length - 1;
+    const pr = $('#pr', stage); pr.style.opacity = s.i < 0 ? 0 : 1; pr.style.left = Math.max(0, s.i) * 84 + 5 + 'px';
+    stage.querySelectorAll('.valx').forEach((el, k) => el.classList.toggle('hot', k === s.i || (s.hit !== null && input[k] === s.hit && k < s.i)));
+    $('.seenbox', stage).innerHTML = '<b>seen</b>' + (s.seen.length ? s.seen.map(([k, v]) => `<div class="${k === s.hit ? 'hit' : ''}">${k} → ${v}</div>`).join('') : '<div>(empty)</div>');
+  }
+  const stop = () => { clearInterval(timer); timer = null; $('#auto', box).textContent = 'Play'; };
+  $('#prev', box).onclick = () => { stop(); i = Math.max(0, i - 1); draw(); };
+  $('#nxt', box).onclick = () => { stop(); i = Math.min(steps.length - 1, i + 1); draw(); };
+  $('#auto', box).onclick = () => { if (timer) return stop(); if (i === steps.length - 1) i = 0; draw(); $('#auto', box).textContent = 'Pause'; timer = setInterval(() => { if (i >= steps.length - 1) return stop(); i++; draw(); }, 1900); };
+  draw();
+}
+
+// ---------- the answer to "did this format work for me?" ----------
+function finish() {
+  const m = $('#main'); m.innerHTML = ''; S.at = 'end'; save(); drawTrail();
+  const qs = Object.values(S.quiz), first = qs.filter((q) => q.ok && q.tries === 1).length;
+  const dAll = Object.values(DRILLS).reduce((n, q) => n + q.length, 0), dFirst = Object.values(S.drill || {}).reduce((n, r) => n + (r.first || 0), 0);
+  const c = h(`<section class="card"><h2>Foundations complete</h2><p>You now have the three things every later chapter leans on: steps, memory, and growth.</p>
+  <div class="sum"><div><b>${first} / 6</b>video guesses right first time</div><div><b>${dFirst} / ${dAll}</b>practice questions right first time</div><div><b>${S.xp}</b>XP</div></div>
+  <p><b>Did it click?</b></p><div class="row" id="feel"></div><div id="after"></div>
+  <div class="row" style="margin-top:16px"><a class="btn go" href="arrays.html" style="text-decoration:none">Continue to Chapter 1: Arrays →</a></div></section>`);
+  [['yes', 'Yes, it clicked'], ['partly', 'Partly'], ['no', 'Not really']].forEach(([k, t]) => { const b = h(`<button class="btn ${S.feel === k ? 'go' : ''}">${t}</button>`); b.onclick = () => { S.feel = k; save(); finish(); }; $('#feel', c).append(b); });
+  if (S.feel) $('#after', c).append(h(`<div class="note">Saved: “${S.feel}”. Tell Claude this answer plus the numbers above.</div>`));
+  m.append(c);
+}
+
+save(); drawTrail(); S.at === 'end' ? finish() : go(STAGES.some((s, i) => s.id === S.at && unlocked(i)) ? S.at : 'v1');
+</script>
+</body>
+</html>
