@@ -234,6 +234,7 @@ window.CHAPTER = {
      2,
      3
     ],
+    "tree": null,
     "row2": null,
     "rowLabel": "",
     "row2Label": "",
@@ -583,6 +584,7 @@ window.CHAPTER = {
      4,
      5
     ],
+    "tree": null,
     "row2": null,
     "rowLabel": "",
     "row2Label": "",
@@ -868,6 +870,7 @@ window.CHAPTER = {
      3,
      4
     ],
+    "tree": null,
     "row2": null,
     "rowLabel": "",
     "row2Label": "",
@@ -1157,6 +1160,7 @@ window.CHAPTER = {
      4,
      7
     ],
+    "tree": null,
     "row2": [
      2,
      3
@@ -1491,6 +1495,7 @@ window.CHAPTER = {
      3,
      4
     ],
+    "tree": null,
     "row2": null,
     "rowLabel": "",
     "row2Label": "",
@@ -1806,6 +1811,7 @@ window.CHAPTER = {
      3,
      3
     ],
+    "tree": null,
     "row2": null,
     "rowLabel": "",
     "row2Label": "",

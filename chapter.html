@@ -254,15 +254,17 @@ self.onmessage = (ev) => {
   const { code, fn, tests, mode, check, big, prep, post } = ev.data; const logs = []; const out = [];
   const toList = (a) => { let h = null; for (let i = a.length - 1; i >= 0; i--) h = { val: a[i], next: h }; return h; };
   const toArr = (h) => { const o = []; let n = 0; while (h && n++ < 100000) { o.push(h.val); h = h.next; } return o; };
-  const prepF = prep ? new Function('args', 'toList', 'toArr', prep) : null, postF = post ? new Function('got', 'toArr', 'args', post) : null;
+  const toTree = (a) => { const n = a.map((v) => (v === null || v === undefined ? null : { val: v, left: null, right: null })); n.forEach((x, i) => { if (x) { x.left = n[2 * i + 1] || null; x.right = n[2 * i + 2] || null; } }); return n[0] || null; };
+  const treeArr = (r) => { const o = []; const go = (x, i) => { if (!x || i > 4094) return; o[i] = x.val; go(x.left, 2 * i + 1); go(x.right, 2 * i + 2); }; go(r, 0); for (let i = 0; i < o.length; i++) if (o[i] === undefined) o[i] = null; return o; };
+  const prepF = prep ? new Function('args', 'toList', 'toArr', 'toTree', 'treeArr', prep) : null, postF = post ? new Function('got', 'toArr', 'args', 'treeArr', post) : null;
   console.log = (...a) => { if (logs.length < 40) logs.push(a.map((x) => typeof x === 'string' ? x : fmt(x)).join(' ')); };
   let f; try { f = new Function(code + '\\n;return typeof ' + fn + ' === "function" ? ' + fn + ' : null;')(); } catch (e) { return postMessage({ error: String(e), logs }); }
   if (!f) return postMessage({ error: 'I could not find a function called ' + fn + '. Keep its name.', logs });
   const chk = check ? new Function('args', 'got', 'want', check) : null;
-  if (big) { let args = new Function(big.gen)(); if (prepF) args = prepF(args, toList, toArr); const t0 = Date.now(); f(...args); return postMessage({ bigMs: Date.now() - t0 }); }
+  if (big) { let args = new Function(big.gen)(); if (prepF) args = prepF(args, toList, toArr, toTree, treeArr); const t0 = Date.now(); f(...args); return postMessage({ bigMs: Date.now() - t0 }); }
   for (const t of tests) {
     let ok = false, got = '', msg = '';
-    try { let args = JSON.parse(JSON.stringify(t.args)); if (prepF) args = prepF(args, toList, toArr); let r = f(...args); if (postF) r = postF(r, toArr, args); const val = mode === 'inplace' ? args[0] : r; got = val === undefined ? 'nothing (undefined)' : fmt(val);
+    try { let args = JSON.parse(JSON.stringify(t.args)); if (prepF) args = prepF(args, toList, toArr, toTree, treeArr); let r = f(...args); if (postF) r = postF(r, toArr, args, treeArr); const val = mode === 'inplace' ? args[0] : r; got = val === undefined ? 'nothing (undefined)' : fmt(val);
       if (chk) { msg = chk(JSON.parse(JSON.stringify(t.args)), val, t.want) || ''; ok = msg === ''; } else ok = fmt(val) === fmt(t.want);
       if (!ok && !msg && mode === 'inplace' && fmt(r) === fmt(t.want)) msg = 'You returned the right answer, but the input itself is unchanged. Change it in place.';
     } catch (e) { got = 'error: ' + (e && e.message || e); }
@@ -342,7 +344,9 @@ function problem(st) {
 // ---------- step-through: the same steps the solution video narrates ----------
 function walk(P, host) {
   const V = P.view, steps = P.steps.filter((s) => s.line || s.ptr || s.box || s.set || (s.hot && s.hot.length)), n = V.row.length; let i = 0, timer = null;
-  const LG = V.list ? 44 : 8, CW = 56 + LG, X0 = V.leftNull ? 100 : 10, W = Math.max(n, V.row2 ? V.row2.length : 0) * CW + 30 + (V.box ? 170 : 0) + (V.list ? X0 + 70 : 0), two = !!V.row2, HT = (two ? 250 : V.list ? 200 : 170) + V.ptrs.length * 22;
+  const TR = V.tree || null, TLV = TR ? Math.floor(Math.log2(TR.length)) + 1 : 0, TW = TR ? Math.max(360, 2 ** (TLV - 1) * 76) : 0;
+  const tpos = (k) => { const lv = Math.floor(Math.log2(k + 1)), j = k + 1 - 2 ** lv; return { x: 10 + (TW * (j + 0.5)) / 2 ** lv, y: 34 + lv * 74 }; }, thas = (k) => k >= 0 && k < TR.length && TR[k] !== null && TR[k] !== undefined;
+  const LG = V.list ? 44 : 8, CW = 56 + LG, X0 = V.leftNull ? 100 : 10, W = TR ? TW + 30 + (V.box ? 170 : 0) : Math.max(n, V.row2 ? V.row2.length : 0) * CW + 30 + (V.box ? 170 : 0) + (V.list ? X0 + 70 : 0), two = !!V.row2, HT = TR ? 34 + TLV * 74 + 30 + V.ptrs.length * 20 : (two ? 250 : V.list ? 200 : 170) + V.ptrs.length * 22;
   const box = h(`<div><h2 style="margin-top:22px">Step through it yourself</h2><p>Before each click, say what will change.</p><div class="cols"><div><div class="stage" style="height:${HT}px"><div class="stage-in" style="width:${W}px;margin-left:${-W / 2}px"></div></div><div id="vars" style="margin-top:10px;min-height:30px"></div><div class="say" aria-live="polite"></div>
     <div class="row"><button class="btn" id="prev">← Back</button><button class="btn go" id="nxt">Step →</button><button class="btn quiet" id="auto">Play</button><span class="sub" id="cnt"></span></div></div>
     <div class="codeview">${P.solution.map((l) => `<div>${esc(l) || ' '}</div>`).join('')}</div></div></div>`);
@@ -351,8 +355,13 @@ function walk(P, host) {
   let tries = 0; const fit = () => { const cw = $('.stage', box).clientWidth; if (cw < 60) { if (tries++ < 300) requestAnimationFrame(fit); return; } const s = Math.min(1.6, (cw - 16) / W); stage.style.transform = `scale(${s})`; $('.stage', box).style.height = Math.round(HT * s) + 8 + 'px'; };
   const cells = (arr, y, pre, ix) => arr.forEach((v, k) => { stage.append(h(`<div class="vc" id="${pre}${k}" style="left:${k * CW + X0}px;top:${y}px${String(v).length >= 3 ? ';font-size:' + (String(v).length >= 4 ? 15 : 18) + 'px' : ''}">${esc(v)}</div>`)); if (ix && !V.list) stage.append(h(`<div class="vi" style="left:${k * CW + X0}px;top:${y + 56}px">${k}</div>`)); });
   cells(V.row, y1, 'wc', true); if (two) cells(V.row2, y2, 'wd', false);
+  if (TR) { // a tree: lines first, then round nodes
+    let ln = ''; TR.forEach((v, k) => { if (k > 0 && thas(k)) { const a = tpos(Math.floor((k - 1) / 2)), b = tpos(k); ln += `<line x1="${a.x}" y1="${a.y}" x2="${b.x}" y2="${b.y}" stroke="#2B1B4A" stroke-width="3.5"/>`; } });
+    stage.append(h(`<svg style="position:absolute;left:0;top:0;overflow:visible" width="${TW + 20}" height="${HT}">${ln}</svg>`));
+    TR.forEach((v, k) => { if (thas(k)) { const q = tpos(k); stage.append(h(`<div class="vc" id="wc${k}" style="left:${q.x - 24}px;top:${q.y - 24}px;width:48px;height:48px;line-height:40px;border-radius:50%;font-size:${String(v).length >= 3 ? 14 : 20}px">${esc(v)}</div>`)); } });
+  }
   if (V.rowLabel) stage.append(h(`<div class="vl" style="left:${n * CW + 14}px;top:${y1 + 16}px">${esc(V.rowLabel)}</div>`)); if (two && V.row2Label) stage.append(h(`<div class="vl" style="left:${V.row2.length * CW + 14}px;top:${y2 + 16}px">${esc(V.row2Label)}</div>`));
-  V.ptrs.forEach((p, k) => stage.append(h(`<div class="vp" id="wp-${p.id}" style="top:${p.row === 2 ? y2 - 26 : y1 + 78 + k * 22}px;left:10px;opacity:0">${p.id}</div>`)));
+  V.ptrs.forEach((p, k) => stage.append(h(`<div class="vp" id="wp-${p.id}" style="top:${p.row === 2 ? y2 - 26 : y1 + 78 + k * 22}px;left:10px;opacity:0${TR ? ';transition:left .35s, top .35s' : ''}">${p.id}</div>`)));
   if (V.box) stage.append(h(`<div class="vbox" style="left:${Math.max(n, two ? V.row2.length : 0) * CW + 40}px;top:${y2}px"></div>`));
   if (V.list) { // arrows between the nodes; a step can show or hide each one
     const A = (id, txt, x, y, on) => stage.append(h(`<div class="va" id="w${id}" style="position:absolute;left:${x}px;top:${y}px;width:${LG}px;text-align:center;font-weight:800;font-size:24px;opacity:${on ? 1 : 0};transition:opacity .25s">${txt}</div>`));
@@ -372,7 +381,8 @@ function walk(P, host) {
       for (const a of s.ok || []) cls[typeof a === 'string' ? 'w' + a : 'wc' + a] = 'ok'; for (const a of s.bad || []) cls[typeof a === 'string' ? 'w' + a : 'wc' + a] = 'bad'; }
     const s = steps[i]; const hot = new Set((s.hot || []).map((a) => (typeof a === 'string' ? 'w' + a : 'wc' + a)));
     stage.querySelectorAll('.vc').forEach((el) => { el.className = 'vc ' + (hot.has(el.id) ? 'hot' : (cls[el.id] || '')); if (val[el.id] !== undefined) el.textContent = val[el.id]; });
-    V.ptrs.forEach((p) => { const el = $('#wp-' + p.id, stage); if (ptr[p.id] === undefined) { el.style.opacity = 0; return; } const named = V.list || V.nameOnly, isNull = named && (ptr[p.id] < 0 || ptr[p.id] >= (p.row === 2 ? V.row2.length : n)); el.style.opacity = 1; el.textContent = named ? (isNull ? p.id + ' = null' : p.id) : p.id + ' = ' + ptr[p.id]; el.style.left = (isNull && ptr[p.id] < 0 ? X0 - LG - 50 : Math.min(ptr[p.id], p.row === 2 ? V.row2.length : n) * CW + X0) + 'px'; });
+    V.ptrs.forEach((p, pk) => { const el = $('#wp-' + p.id, stage); if (ptr[p.id] === undefined) { el.style.opacity = 0; return; }
+      if (TR) { const k = ptr[p.id], ok = thas(k), q = tpos(Math.max(0, k)); el.style.opacity = 1; el.textContent = ok ? p.id : p.id + ' = null'; el.style.left = q.x - (ok ? 20 : 40) + 'px'; el.style.top = (ok ? q.y + 28 : q.y - 10) + pk * 18 + 'px'; return; } const named = V.list || V.nameOnly, isNull = named && (ptr[p.id] < 0 || ptr[p.id] >= (p.row === 2 ? V.row2.length : n)); el.style.opacity = 1; el.textContent = named ? (isNull ? p.id + ' = null' : p.id) : p.id + ' = ' + ptr[p.id]; el.style.left = (isNull && ptr[p.id] < 0 ? X0 - LG - 50 : Math.min(ptr[p.id], p.row === 2 ? V.row2.length : n) * CW + X0) + 'px'; });
     if (V.list) stage.querySelectorAll('.va, svg, #wnulL').forEach((el) => { const id = el.id.slice(1); if (id in arr) el.style.opacity = arr[id]; else el.style.opacity = el.dataset.on0 ?? (el.dataset.on0 = el.style.opacity); });
     if (V.box) $('.vbox', stage).innerHTML = `<b>${esc(V.box.title)}</b>` + (bx && bx.length ? bx.map((t) => `<div>${esc(t)}</div>`).join('') : '<div>(empty)</div>');
     $('#vars', box).innerHTML = Object.entries(vars).map(([a, b]) => `<span class="vvar">${esc(a)} = ${esc(b)}</span>`).join('');

@@ -4,8 +4,8 @@ window.CHAPTER = {
  "sub": "CHAPTER 10 · RECURSION",
  "key": "burrow-ch-recur",
  "next": {
-  "href": "index.html#chapters",
-  "label": "All chapters"
+  "href": "chapter.html?c=bsearch",
+  "label": "Chapter 11: Binary search"
  },
  "prev": {
   "href": "chapter.html?c=mixed1",
@@ -190,6 +190,7 @@ window.CHAPTER = {
      1,
      0
     ],
+    "tree": null,
     "row2": [
      "",
      "",
@@ -548,6 +549,7 @@ window.CHAPTER = {
      1,
      0
     ],
+    "tree": null,
     "row2": [
      "",
      "",
@@ -864,6 +866,7 @@ window.CHAPTER = {
      "e",
      "l"
     ],
+    "tree": null,
     "row2": null,
     "rowLabel": "",
     "row2Label": "",
@@ -1157,6 +1160,7 @@ window.CHAPTER = {
      1,
      0
     ],
+    "tree": null,
     "row2": [
      "",
      "",
