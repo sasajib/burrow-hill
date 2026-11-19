@@ -4,8 +4,8 @@ window.CHAPTER = {
  "sub": "CHAPTER 4 · PREFIX SUMS",
  "key": "burrow-ch-prefix",
  "next": {
-  "href": "index.html#chapters",
-  "label": "All chapters"
+  "href": "chapter.html?c=twoptr",
+  "label": "Chapter 5: Two pointers"
  },
  "prev": {
   "href": "hashmap.html",
