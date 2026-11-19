@@ -399,11 +399,11 @@ window.CHAPTER = {
       5
      ],
      "bad": [],
-     "set": {
-      "2": 1,
-      "5": 3
-     },
-     "swap": null,
+     "set": null,
+     "swap": [
+      5,
+      2
+     ],
      "move": null,
      "gone": [],
      "show": [],
@@ -446,11 +446,11 @@ window.CHAPTER = {
       0
      ],
      "bad": [],
-     "set": {
-      "0": 1,
-      "2": 2
-     },
-     "swap": null,
+     "set": null,
+     "swap": [
+      2,
+      0
+     ],
      "move": null,
      "gone": [],
      "show": [],
@@ -857,11 +857,11 @@ window.CHAPTER = {
       0
      ],
      "bad": [],
-     "set": {
-      "0": 2,
-      "2": 3
-     },
-     "swap": null,
+     "set": null,
+     "swap": [
+      0,
+      2
+     ],
      "move": null,
      "gone": [],
      "show": [],
