@@ -296,6 +296,7 @@ window.CHAPTER = {
     ],
     "box": null,
     "list": false,
+    "nameOnly": false,
     "leftNull": false,
     "cycle": null,
     "skips": []
@@ -662,6 +663,7 @@ window.CHAPTER = {
     "vars": [],
     "box": null,
     "list": false,
+    "nameOnly": false,
     "leftNull": false,
     "cycle": null,
     "skips": []
@@ -1053,6 +1055,7 @@ window.CHAPTER = {
     "vars": [],
     "box": null,
     "list": false,
+    "nameOnly": false,
     "leftNull": false,
     "cycle": null,
     "skips": []
@@ -1429,6 +1432,7 @@ window.CHAPTER = {
     ],
     "box": null,
     "list": false,
+    "nameOnly": false,
     "leftNull": false,
     "cycle": null,
     "skips": []
@@ -1813,6 +1817,7 @@ window.CHAPTER = {
      "rows": 2
     },
     "list": false,
+    "nameOnly": false,
     "leftNull": false,
     "cycle": null,
     "skips": []
@@ -2204,6 +2209,7 @@ window.CHAPTER = {
     ],
     "box": null,
     "list": false,
+    "nameOnly": false,
     "leftNull": false,
     "cycle": null,
     "skips": []

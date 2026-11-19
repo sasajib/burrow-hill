@@ -8,7 +8,7 @@ window.CHAPTER = {
   "label": "Chapter 3: Hash maps"
  },
  "prev": {
-  "href": "arrays.html",
+  "href": "chapter.html?c=arrays",
   "label": "Chapter 1: Arrays"
  },
  "stages": [
@@ -218,6 +218,7 @@ window.CHAPTER = {
     "vars": [],
     "box": null,
     "list": false,
+    "nameOnly": false,
     "leftNull": false,
     "cycle": null,
     "skips": []
@@ -508,6 +509,7 @@ window.CHAPTER = {
      "rows": 3
     },
     "list": false,
+    "nameOnly": false,
     "leftNull": false,
     "cycle": null,
     "skips": []
@@ -868,6 +870,7 @@ window.CHAPTER = {
      "rows": 3
     },
     "list": false,
+    "nameOnly": false,
     "leftNull": false,
     "cycle": null,
     "skips": []
@@ -1230,6 +1233,7 @@ window.CHAPTER = {
     "vars": [],
     "box": null,
     "list": false,
+    "nameOnly": false,
     "leftNull": false,
     "cycle": null,
     "skips": []

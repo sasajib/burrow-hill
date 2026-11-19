@@ -213,7 +213,7 @@ window.CHAPTER = {
    "forbid": [],
    "big": null,
    "prep": "return [toList(args[0])];",
-   "post": "return toArr(got);",
+   "post": "return got === undefined ? 'nothing was returned' : toArr(got);",
    "solution": [
     "function reverse(head) {",
     "  let prev = null;",
@@ -562,7 +562,7 @@ window.CHAPTER = {
    "forbid": [],
    "big": null,
    "prep": "return [toList(args[0])];",
-   "post": "return got ? got.val : null;",
+   "post": "return got === undefined ? 'nothing was returned' : (got ? got.val : null);",
    "solution": [
     "function middle(head) {",
     "  let slow = head;",
@@ -1131,7 +1131,7 @@ window.CHAPTER = {
    "forbid": [],
    "big": null,
    "prep": "return [toList(args[0]), toList(args[1])];",
-   "post": "return toArr(got);",
+   "post": "return got === undefined ? 'nothing was returned' : toArr(got);",
    "solution": [
     "function mergeLists(a, b) {",
     "  const dummy = { val: 0, next: null };",
@@ -1467,7 +1467,7 @@ window.CHAPTER = {
    "forbid": [],
    "big": null,
    "prep": "return [toList(args[0]), args[1]];",
-   "post": "return toArr(got);",
+   "post": "return got === undefined ? 'nothing was returned' : toArr(got);",
    "solution": [
     "function removeFromEnd(head, k) {",
     "  const dummy = { val: 0, next: head };",
@@ -1783,7 +1783,7 @@ window.CHAPTER = {
    "forbid": [],
    "big": null,
    "prep": "return [toList(args[0])];",
-   "post": "return toArr(got);",
+   "post": "return got === undefined ? 'nothing was returned' : toArr(got);",
    "solution": [
     "function removeRepeats(head) {",
     "  let curr = head;",

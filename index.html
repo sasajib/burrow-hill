@@ -137,12 +137,12 @@ footer{padding-block:28px;font-family:var(--mono);font-size:13px}
 <section class="band dark">
   <div class="in">
     <p class="kick">One chapter, start to finish</p>
-    <h2>Five short videos and one puzzle.</h2>
+    <h2>Three short lessons, then problems with their own videos.</h2>
     <div class="steps">
       <div class="step"><b>1 · WELCOME</b><p>Who the characters are and what the chapter will answer.</p></div>
       <div class="step"><b>2 · THEORY</b><p>The problem first, then the idea, worked out step by step. The video pauses for the learner's guess.</p></div>
-      <div class="step"><b>3 · PUZZLE</b><p>A classic interview problem told as a story, solved in a code editor on the page.</p></div>
-      <div class="step"><b>4 · SOLUTION</b><p>The answer narrated line by line while the characters act out each line.</p></div>
+      <div class="step"><b>3 · PROBLEMS</b><p>Four to eight interview problems. Each opens with a short story video and is solved in a code editor on the page.</p></div>
+      <div class="step"><b>4 · SOLUTIONS</b><p>Every problem has its own solution video: the idea, then each line of code acted out, then a step-through you click yourself.</p></div>
       <div class="step"><b>5 · REVIEW</b><p>The next day the editor is blank. Solving again from memory is what makes it stick.</p></div>
     </div>
   </div>
@@ -155,7 +155,7 @@ footer{padding-block:28px;font-family:var(--mono);font-size:13px}
     <p>Each one runs in the browser: videos that stop for your guess, then practice. Part 0 is the foundation; chapter 1 introduces Burrow Hill and its characters.</p>
     <div class="chap">
       <a class="chcard" href="foundations.html"><img src="posters/f4.jpg" alt="" loading="lazy"><span class="kick">Start here · Part 0</span><b>Foundations</b><span>How a computer works, loops and the call stack, the Big O shapes and rules, memory, and reading input limits. Six lessons and 28 practice questions. About 8 minutes of video.</span><i>Open Part 0 →</i></a>
-      <a class="chcard" href="arrays.html"><img src="posters/intro.jpg" alt="" loading="lazy"><span class="kick">Chapter 1</span><b>Introduction and Arrays</b><span>Meet Pip and Moss, then learn what an array is, what it costs, and reverse one in place. About 5 minutes of video.</span><i>Open chapter 1 →</i></a>
+      <a class="chcard" href="chapter.html?c=arrays"><img src="posters/art1.jpg" alt="" loading="lazy"><span class="kick">Chapter 1</span><b>Arrays</b><span>Meet Pip and Moss. Why any door is one jump away, what a row makes slow, and six problems, each with its own solution video. About 10 minutes of video.</span><i>Open chapter 1 →</i></a>
       <a class="chcard" href="chapter.html?c=strings"><img src="posters/srt2.jpg" alt="" loading="lazy"><span class="kick">Chapter 2</span><b>Strings</b><span>Why a word is a read-only row, why every change is a copy, and how letters become numbers you can count. Four problems, each with its own solution video. About 8 minutes of video.</span><i>Open chapter 2 →</i></a>
       <a class="chcard" href="hashmap.html"><img src="posters/ht2.jpg" alt="" loading="lazy"><span class="kick">Chapter 3</span><b>Hash Maps</b><span>Meet Hazel, turn a name into a door number, handle collisions, and solve the classic pair puzzle. About 6 minutes of video.</span><i>Open chapter 3 →</i></a>
       <a class="chcard" href="chapter.html?c=prefix"><img src="posters/pst1.jpg" alt="" loading="lazy"><span class="kick">Chapter 4</span><b>Prefix Sums</b><span>Add once, then answer any range sum with one subtraction. Then pair the totals with a map. Four problems, each with its own solution video. About 9 minutes of video.</span><i>Open chapter 4 →</i></a>
@@ -188,11 +188,11 @@ footer{padding-block:28px;font-family:var(--mono);font-size:13px}
     <p class="kick">Chapter 1 · Arrays</p>
     <h2>One jump to any door, and what that costs.</h2>
     <div class="grid">
-      <div class="vid"><div class="frame"><video controls playsinline preload="none" poster="posters/intro.jpg" src="videos/intro.mp4"></video></div><h3>Introduction</h3><p>44 s. Burrow Hill, Pip and Moss, and how a lesson works.</p></div>
-      <div class="vid"><div class="frame"><video controls playsinline preload="none" poster="posters/t1.jpg" src="videos/t1.mp4"></video></div><h3>Theory 1: What an array is</h3><p>1 min 17 s. Memory, same-width slots, and why counting starts at zero.</p></div>
-      <div class="vid"><div class="frame"><video controls playsinline preload="none" poster="posters/t2.jpg" src="videos/t2.mp4"></video></div><h3>Theory 2: What it costs</h3><p>1 min 8 s. Inserting, removing, adding at the end.</p></div>
-      <div class="vid"><div class="frame"><video controls playsinline preload="none" poster="posters/p1.jpg" src="videos/p1.mp4"></video></div><h3>Puzzle: The Backwards Parade</h3><p>19 s. Reverse the row where it stands.</p></div>
-      <div class="vid"><div class="frame"><video controls playsinline preload="none" poster="posters/s1.jpg" src="videos/s1.mp4"></video></div><h3>Solution: Two friends, one row</h3><p>1 min 7 s. The two-pointer idea, line by line.</p></div>
+      <div class="vid"><div class="frame"><video controls playsinline preload="none" poster="posters/ar0.jpg" src="videos/ar0.mp4"></video></div><h3>Welcome</h3><p>37 s. Burrow Hill, Pip and Moss, and what the chapter covers.</p></div>
+      <div class="vid"><div class="frame"><video controls playsinline preload="none" poster="posters/art1.jpg" src="videos/art1.mp4"></video></div><h3>Theory 1: A row of numbered doors</h3><p>1 min 3 s. Why indexes start at zero, and why any door is one jump away.</p></div>
+      <div class="vid"><div class="frame"><video controls playsinline preload="none" poster="posters/art2.jpg" src="videos/art2.mp4"></video></div><h3>Theory 2: What a row makes slow</h3><p>1 min 3 s. Inserting, removing and searching: where the walking comes from.</p></div>
+      <div class="vid"><div class="frame"><video controls playsinline preload="none" poster="posters/ar1i.jpg" src="videos/ar1i.mp4"></video></div><h3>Problem 1: Turn the Row Around</h3><p>20 s. The puzzle, told as a story. One nudge, never the method.</p></div>
+      <div class="vid"><div class="frame"><video controls playsinline preload="none" poster="posters/ar1s.jpg" src="videos/ar1s.mp4"></video></div><h3>Solution 1: The two ends trade places</h3><p>1 min 10 s. The idea first, then every line of the code acted out.</p></div>
     </div>
   </div>
 </section>
@@ -236,7 +236,7 @@ footer{padding-block:28px;font-family:var(--mono);font-size:13px}
     <div>
       <p class="kick">What exists today</p>
       <h2>A working prototype.</h2>
-      <div class="stat"><div><b>10</b>parts</div><div><b>104</b>videos</div><div><b>85 min</b>of animation</div><div><b>36</b>coding puzzles</div><div><b>28</b>practice questions</div></div>
+      <div class="stat"><div><b>10</b>parts</div><div><b>114</b>videos</div><div><b>90 min</b>of animation</div><div><b>41</b>coding puzzles</div><div><b>28</b>practice questions</div></div>
       <p>Everything runs in the browser with nothing to install: videos with guess-first pauses, practice questions, a JavaScript code runner with tests, hints, and step-through solutions.</p>
     </div>
     <div>
