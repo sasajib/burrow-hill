@@ -182,6 +182,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "What would happen if line 2 were removed?",
+   "world": "The size of a folder is worked out like this. Its own files, plus the size of every folder inside it.",
    "view": {
     "row": [
      4,
@@ -191,6 +192,10 @@ window.CHAPTER = {
      0
     ],
     "tree": null,
+    "grid": null,
+    "graph": null,
+    "treeIndex": false,
+    "ghost": [],
     "row2": [
      "",
      "",
@@ -226,6 +231,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "sumTo(4) = 4 + sumTo(3)",
@@ -239,6 +248,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "sumTo(0) = 0 → the base case",
@@ -256,6 +269,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": [
       "sumTo(4)"
@@ -275,6 +292,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": [
       "sumTo(4)",
@@ -296,6 +317,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": [
       "sumTo(4)",
@@ -322,6 +347,10 @@ window.CHAPTER = {
      "set": {
       "d4": 0
      },
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": [
       "sumTo(4)",
@@ -347,6 +376,10 @@ window.CHAPTER = {
      "set": {
       "d3": 1
      },
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": [
       "sumTo(4)",
@@ -369,6 +402,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": [
       "sumTo(4)",
@@ -390,6 +427,10 @@ window.CHAPTER = {
      "set": {
       "d2": 3
      },
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": [
       "sumTo(4)",
@@ -414,6 +455,10 @@ window.CHAPTER = {
       "d1": 6,
       "d0": 10
      },
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": [],
      "card": "3 + 3 = 6 · 4 + 6 = 10",
@@ -427,6 +472,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "n calls → O(n) time",
@@ -440,9 +489,30 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "n waiting calls → O(n) space",
+     "arrows": null
+    },
+    {
+     "say": "The size of a folder is worked out like this. Its own files, plus the size of every folder inside it.",
+     "line": 0,
+     "ptr": null,
+     "hot": [],
+     "ok": [],
+     "bad": [],
+     "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
+     "vars": null,
+     "box": null,
+     "card": "the size of a folder of folders",
      "arrows": null
     }
    ]
@@ -542,6 +612,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "Why is half worked out once and stored, instead of calling power(...) * power(...)?",
+   "world": "Fast powers like this are used every time your browser sets up a secure connection.",
    "view": {
     "row": [
      5,
@@ -550,6 +621,10 @@ window.CHAPTER = {
      0
     ],
     "tree": null,
+    "grid": null,
+    "graph": null,
+    "treeIndex": false,
+    "ghost": [],
     "row2": [
      "",
      "",
@@ -584,6 +659,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "half × half = the full power",
@@ -597,6 +676,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "odd exp → one extra × base",
@@ -614,6 +697,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": [
       "power(2, 5)"
@@ -634,6 +721,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": [
       "power(2, 5)",
@@ -659,6 +750,10 @@ window.CHAPTER = {
      "set": {
       "d3": 1
      },
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": [
       "power(2, 5)",
@@ -683,6 +778,10 @@ window.CHAPTER = {
      "set": {
       "d2": 2
      },
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": [
       "power(2, 5)",
@@ -704,6 +803,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": [
       "power(2, 5)",
@@ -724,6 +827,10 @@ window.CHAPTER = {
      "set": {
       "d1": 4
      },
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": [
       "power(2, 5)"
@@ -745,6 +852,10 @@ window.CHAPTER = {
      "set": {
       "d0": 32
      },
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": [],
      "card": "4 × 4 × 2 = 32",
@@ -758,6 +869,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "halving → O(log n) time",
@@ -771,9 +886,30 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "log n waiting calls → O(log n) space",
+     "arrows": null
+    },
+    {
+     "say": "Fast powers like this are used every time your browser sets up a secure connection.",
+     "line": 0,
+     "ptr": null,
+     "hot": [],
+     "ok": [],
+     "bad": [],
+     "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
+     "vars": null,
+     "box": null,
+     "card": "secure connections: fast powers",
      "arrows": null
     }
    ]
@@ -858,6 +994,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "There are two places where the function answers without calling itself. What are they, and why are both needed?",
+   "world": "Checking the outside, then asking about the inside, is how a program checks nested data.",
    "view": {
     "row": [
      "l",
@@ -867,6 +1004,10 @@ window.CHAPTER = {
      "l"
     ],
     "tree": null,
+    "grid": null,
+    "graph": null,
+    "treeIndex": false,
+    "ghost": [],
     "row2": null,
     "rowLabel": "",
     "row2Label": "",
@@ -900,6 +1041,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "ends match + the inside is a mirror",
@@ -913,6 +1058,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "the inside = a smaller question",
@@ -929,6 +1078,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": [
       "isMirror 0..4"
@@ -950,6 +1103,10 @@ window.CHAPTER = {
      ],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "\"l\" = \"l\" → ask the inside",
@@ -972,6 +1129,10 @@ window.CHAPTER = {
      ],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": [
       "isMirror 0..4",
@@ -993,6 +1154,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": [
       "isMirror 0..4",
@@ -1012,6 +1177,10 @@ window.CHAPTER = {
      ],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": [
       "isMirror 0..4",
@@ -1029,6 +1198,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": [],
      "card": "",
@@ -1042,6 +1215,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "n/2 calls → O(n) time",
@@ -1055,9 +1232,30 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "waiting calls → O(n) space",
+     "arrows": null
+    },
+    {
+     "say": "Checking the outside, then asking about the inside, is how a program checks nested data.",
+     "line": 0,
+     "ptr": null,
+     "hot": [],
+     "ok": [],
+     "bad": [],
+     "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
+     "vars": null,
+     "box": null,
+     "card": "checking nested data, outside in",
      "arrows": null
     }
    ]
@@ -1152,6 +1350,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "Why must the same memo be passed along to both inner calls?",
+   "world": "Counting ways with a memo is how an app counts the possible routes across a city grid.",
    "view": {
     "row": [
      4,
@@ -1161,6 +1360,10 @@ window.CHAPTER = {
      0
     ],
     "tree": null,
+    "grid": null,
+    "graph": null,
+    "treeIndex": false,
+    "ghost": [],
     "row2": [
      "",
      "",
@@ -1196,6 +1399,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "ways(n) = ways(n−1) + ways(n−2)",
@@ -1209,6 +1416,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "memo: write each answer down once",
@@ -1226,6 +1437,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": [],
      "card": "stairs(3) + stairs(2)",
@@ -1243,6 +1458,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "",
@@ -1268,6 +1487,10 @@ window.CHAPTER = {
       "d4": 1,
       "d2": 2
      },
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "1 + 1 = 2",
@@ -1281,6 +1504,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": [
       "2 → 2 ways"
@@ -1302,6 +1529,10 @@ window.CHAPTER = {
      "set": {
       "d1": 3
      },
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": [
       "2 → 2 ways",
@@ -1322,6 +1553,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "stairs(2) again → ?",
@@ -1335,6 +1570,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": [
       "2 → 2 ways",
@@ -1355,6 +1594,10 @@ window.CHAPTER = {
      "set": {
       "d0": 5
      },
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "3 + 2 = 5",
@@ -1368,6 +1611,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "with a memo → O(n) time",
@@ -1381,9 +1628,30 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "memo + stack → O(n) space",
+     "arrows": null
+    },
+    {
+     "say": "Counting ways with a memo is how an app counts the possible routes across a city grid.",
+     "line": 0,
+     "ptr": null,
+     "hot": [],
+     "ok": [],
+     "bad": [],
+     "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
+     "vars": null,
+     "box": null,
+     "card": "counting routes, with a memo",
      "arrows": null
     }
    ]

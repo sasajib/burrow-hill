@@ -240,6 +240,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "Why is nums[right - k] the door that leaves?",
+   "world": "A weather app finds the warmest three days in a row by sliding a window over the forecast, exactly like this.",
    "view": {
     "row": [
      2,
@@ -249,6 +250,11 @@ window.CHAPTER = {
      3,
      2
     ],
+    "tree": null,
+    "grid": null,
+    "graph": null,
+    "treeIndex": false,
+    "ghost": [],
     "row2": null,
     "rowLabel": "",
     "row2Label": "",
@@ -278,6 +284,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "windows share all doors but two",
@@ -291,6 +301,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "sum − leaving door + entering door",
@@ -308,6 +322,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": {
       "sum": 8
      },
@@ -323,6 +341,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": {
       "best": 8
      },
@@ -344,6 +366,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": {
       "sum": 7
      },
@@ -359,6 +385,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "best stays 8",
@@ -378,6 +408,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "7 + 3 − 1 = ?",
@@ -391,6 +425,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": {
       "sum": 9,
       "best": 9
@@ -413,6 +451,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": {
       "sum": 6
      },
@@ -428,6 +470,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "",
@@ -441,6 +487,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "each slide = 2 steps → O(n) time",
@@ -454,9 +504,30 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "2 numbers → O(1) space",
+     "arrows": null
+    },
+    {
+     "say": "A weather app finds the warmest three days in a row by sliding a window over the forecast, exactly like this.",
+     "line": 0,
+     "ptr": null,
+     "hot": [],
+     "ok": [],
+     "bad": [],
+     "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
+     "vars": null,
+     "box": null,
+     "card": "the warmest 3 days in a row",
      "arrows": null
     }
    ]
@@ -585,6 +656,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "Why is it enough to remember only the lowest price so far, and not every earlier price?",
+   "world": "This is the classic question about a price chart. The best day to buy, before the best day to sell.",
    "view": {
     "row": [
      7,
@@ -593,6 +665,11 @@ window.CHAPTER = {
      3,
      6
     ],
+    "tree": null,
+    "grid": null,
+    "graph": null,
+    "treeIndex": false,
+    "ghost": [],
     "row2": null,
     "rowLabel": "",
     "row2Label": "",
@@ -622,6 +699,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "best buy = lowest price so far",
@@ -635,6 +716,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "remember low, try selling each day",
@@ -648,6 +733,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": {
       "low": "∞",
       "best": 0
@@ -668,6 +757,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": {
       "low": 7
      },
@@ -687,6 +780,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": {
       "low": 1
      },
@@ -706,6 +803,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": {
       "best": 4
      },
@@ -725,6 +826,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "sell at 3 − buy at 1 = 2",
@@ -738,6 +843,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "best stays 4",
@@ -758,6 +867,10 @@ window.CHAPTER = {
      ],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": {
       "best": 5
      },
@@ -773,6 +886,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "",
@@ -786,6 +903,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "1 walk → O(n) time",
@@ -799,9 +920,30 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "2 numbers → O(1) space",
+     "arrows": null
+    },
+    {
+     "say": "This is the classic question about a price chart. The best day to buy, before the best day to sell.",
+     "line": 0,
+     "ptr": null,
+     "hot": [],
+     "ok": [],
+     "bad": [],
+     "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
+     "vars": null,
+     "box": null,
+     "card": "best buy and sell on a chart",
      "arrows": null
     }
    ]
@@ -946,6 +1088,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "Why does the code never actually change a 0 into a 1?",
+   "world": "A network tool finds the longest stretch of good signal the same way, allowing for a few dropped moments.",
    "view": {
     "row": [
      1,
@@ -955,6 +1098,11 @@ window.CHAPTER = {
      0,
      1
     ],
+    "tree": null,
+    "grid": null,
+    "graph": null,
+    "treeIndex": false,
+    "ghost": [],
     "row2": null,
     "rowLabel": "",
     "row2Label": "",
@@ -988,6 +1136,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "longest stretch with ≤ k zeros",
@@ -1001,6 +1153,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "grow right, shrink left",
@@ -1016,6 +1172,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": {
       "zeros": 0,
       "best": 0
@@ -1036,6 +1196,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": {
       "best": 1
      },
@@ -1056,6 +1220,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": {
       "zeros": 1,
       "best": 2
@@ -1079,6 +1247,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": {
       "best": 4
      },
@@ -1102,6 +1274,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": {
       "zeros": 2
      },
@@ -1117,6 +1293,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "shrink until zeros = 1",
@@ -1136,6 +1316,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": {
       "zeros": 1
      },
@@ -1158,6 +1342,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "doors 2 to 5 → 4 wide",
@@ -1171,6 +1359,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "",
@@ -1184,6 +1376,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "in once, out once → O(n) time",
@@ -1197,9 +1393,30 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "3 numbers → O(1) space",
+     "arrows": null
+    },
+    {
+     "say": "A network tool finds the longest stretch of good signal the same way, allowing for a few dropped moments.",
+     "line": 0,
+     "ptr": null,
+     "hot": [],
+     "ok": [],
+     "bad": [],
+     "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
+     "vars": null,
+     "box": null,
+     "card": "longest good stretch, k drops",
      "arrows": null
     }
    ]
@@ -1290,6 +1507,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "On \"abba\", the window must shrink twice in a row for the second b. Trace it. Why is \"while\" needed and not \"if\"?",
+   "world": "A playlist shuffler uses this idea. No song may repeat inside the window of recently played songs.",
    "view": {
     "row": [
      "a",
@@ -1298,6 +1516,11 @@ window.CHAPTER = {
      "b",
      "d"
     ],
+    "tree": null,
+    "grid": null,
+    "graph": null,
+    "treeIndex": false,
+    "ghost": [],
     "row2": null,
     "rowLabel": "",
     "row2Label": "",
@@ -1333,6 +1556,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "a window with no repeats + a set",
@@ -1346,6 +1573,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "repeat? shrink until it is gone",
@@ -1361,6 +1592,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": {
       "best": 0
      },
@@ -1380,6 +1615,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": {
       "best": 1
      },
@@ -1403,6 +1642,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": {
       "best": 3
      },
@@ -1425,6 +1668,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "\"b\" is already inside",
@@ -1438,6 +1685,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "shrink until \"b\" is gone",
@@ -1455,6 +1706,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": [
       "c"
@@ -1473,6 +1728,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": [
       "c, b"
@@ -1494,6 +1753,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": [
       "c, b, d"
@@ -1509,6 +1772,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "",
@@ -1522,6 +1789,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "in once, out once → O(n) time",
@@ -1535,9 +1806,30 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "set of letters → O(n) space",
+     "arrows": null
+    },
+    {
+     "say": "A playlist shuffler uses this idea. No song may repeat inside the window of recently played songs.",
+     "line": 0,
+     "ptr": null,
+     "hot": [],
+     "ok": [],
+     "bad": [],
+     "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
+     "vars": null,
+     "box": null,
+     "card": "no repeat among recent songs",
      "arrows": null
     }
    ]
@@ -1669,6 +1961,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "This only works because the numbers are positive. What breaks if a number can be negative?",
+   "world": "A sales dashboard asks this. What is the fewest days in a row that reached the target?",
    "view": {
     "row": [
      2,
@@ -1677,6 +1970,11 @@ window.CHAPTER = {
      2,
      3
     ],
+    "tree": null,
+    "grid": null,
+    "graph": null,
+    "treeIndex": false,
+    "ghost": [],
     "row2": null,
     "rowLabel": "",
     "row2Label": "",
@@ -1710,6 +2008,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "grow until enough, then shrink",
@@ -1723,6 +2025,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "measure each time it is enough",
@@ -1738,6 +2044,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": {
       "sum": 0,
       "best": "∞"
@@ -1759,6 +2069,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": {
       "sum": 3
      },
@@ -1780,6 +2094,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": {
       "sum": 8
      },
@@ -1795,6 +2113,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": {
       "best": 3
      },
@@ -1815,6 +2137,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": {
       "sum": 6
      },
@@ -1836,6 +2162,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": {
       "sum": 8
      },
@@ -1856,6 +2186,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": {
       "sum": 7
      },
@@ -1874,6 +2208,10 @@ window.CHAPTER = {
      ],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": {
       "best": 2
      },
@@ -1893,6 +2231,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": {
       "sum": 2
      },
@@ -1913,6 +2255,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": {
       "sum": 5
      },
@@ -1928,6 +2274,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "",
@@ -1941,6 +2291,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "in once, out once → O(n) time",
@@ -1954,9 +2308,30 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "3 numbers → O(1) space",
+     "arrows": null
+    },
+    {
+     "say": "A sales dashboard asks this. What is the fewest days in a row that reached the target?",
+     "line": 0,
+     "ptr": null,
+     "hot": [],
+     "ok": [],
+     "bad": [],
+     "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
+     "vars": null,
+     "box": null,
+     "card": "fewest days to hit a target",
      "arrows": null
     }
    ]
@@ -2055,6 +2430,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "Why must a letter be deleted from the map when its count reaches 0? What would count.size say otherwise?",
+   "world": "The same window finds the longest stretch of an activity log that involves at most two users.",
    "view": {
     "row": [
      "a",
@@ -2063,6 +2439,11 @@ window.CHAPTER = {
      "c",
      "c"
     ],
+    "tree": null,
+    "grid": null,
+    "graph": null,
+    "treeIndex": false,
+    "ghost": [],
     "row2": null,
     "rowLabel": "",
     "row2Label": "",
@@ -2098,6 +2479,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "window with ≤ 2 kinds + a count map",
@@ -2111,6 +2496,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "3 kinds? shrink until one is gone",
@@ -2126,6 +2515,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": {
       "best": 0
      },
@@ -2145,6 +2538,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": {
       "best": 1
      },
@@ -2167,6 +2564,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": {
       "best": 2
      },
@@ -2191,6 +2592,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": {
       "best": 3
      },
@@ -2216,6 +2621,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": [
       "a → 2",
@@ -2239,6 +2648,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": [
       "a → 1",
@@ -2256,6 +2669,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "\"b\" count is 0 → ?",
@@ -2274,6 +2691,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": [
       "a → 1",
@@ -2296,6 +2717,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": [
       "a → 1",
@@ -2312,6 +2737,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "",
@@ -2325,6 +2754,10 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "in once, out once → O(n) time",
@@ -2338,9 +2771,30 @@ window.CHAPTER = {
      "ok": [],
      "bad": [],
      "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "≤ 3 kinds in the map → O(1) space",
+     "arrows": null
+    },
+    {
+     "say": "The same window finds the longest stretch of an activity log that involves at most two users.",
+     "line": 0,
+     "ptr": null,
+     "hot": [],
+     "ok": [],
+     "bad": [],
+     "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [],
+     "vars": null,
+     "box": null,
+     "card": "a log stretch with 2 users",
      "arrows": null
     }
    ]
