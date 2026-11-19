@@ -4,8 +4,8 @@ window.CHAPTER = {
  "sub": "CHAPTER 9 · LINKED LISTS",
  "key": "burrow-ch-linked",
  "next": {
-  "href": "index.html#chapters",
-  "label": "All chapters"
+  "href": "chapter.html?c=mixed1",
+  "label": "Mixed set 1"
  },
  "prev": {
   "href": "chapter.html?c=queue",
