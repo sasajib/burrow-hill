@@ -225,6 +225,8 @@ window.CHAPTER = {
     "label": "200,000 doors, window of 100,000",
     "msg": "Correct on the small cases, but too slow on the big one. Adding up every window from scratch is O(n × k). Slide: one door leaves, one enters."
    },
+   "prep": null,
+   "post": null,
    "solution": [
     "function bestSum(nums, k) {",
     "  let sum = 0;",
@@ -260,7 +262,11 @@ window.CHAPTER = {
      "sum",
      "best"
     ],
-    "box": null
+    "box": null,
+    "list": false,
+    "leftNull": false,
+    "cycle": null,
+    "skips": []
    },
    "steps": [
     {
@@ -273,7 +279,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "windows share all doors but two"
+     "card": "windows share all doors but two",
+     "arrows": null
     },
     {
      "say": "So keep one running sum. Subtract the door that leaves, and add the door that enters.",
@@ -285,7 +292,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "sum − leaving door + entering door"
+     "card": "sum − leaving door + entering door",
+     "arrows": null
     },
     {
      "say": "Lines two and three add up the first window. Two, one, five. Eight.",
@@ -303,7 +311,8 @@ window.CHAPTER = {
       "sum": 8
      },
      "box": null,
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "Line four. That is the best so far.",
@@ -317,7 +326,8 @@ window.CHAPTER = {
       "best": 8
      },
      "box": null,
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "Right moves to door three. Line six adds the door that enters, one, and removes the door that left, two. Seven.",
@@ -337,7 +347,8 @@ window.CHAPTER = {
       "sum": 7
      },
      "box": null,
-     "card": "8 + 1 − 2 = 7"
+     "card": "8 + 1 − 2 = 7",
+     "arrows": null
     },
     {
      "say": "Line seven. Seven does not beat eight.",
@@ -349,7 +360,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "best stays 8"
+     "card": "best stays 8",
+     "arrows": null
     },
     {
      "say": "Slide again. Three enters, one leaves. What is the sum?",
@@ -367,7 +379,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "7 + 3 − 1 = ?"
+     "card": "7 + 3 − 1 = ?",
+     "arrows": null
     },
     {
      "say": "Nine. A new best.",
@@ -382,7 +395,8 @@ window.CHAPTER = {
       "best": 9
      },
      "box": null,
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "The last slide. Two enters, five leaves. Six. Not better.",
@@ -402,7 +416,8 @@ window.CHAPTER = {
       "sum": 6
      },
      "box": null,
-     "card": "9 + 2 − 5 = 6"
+     "card": "9 + 2 − 5 = 6",
+     "arrows": null
     },
     {
      "say": "Line nine returns the best. Nine.",
@@ -414,7 +429,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "Each slide is two steps, however wide the window is. O of n time.",
@@ -426,7 +442,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "each slide = 2 steps → O(n) time"
+     "card": "each slide = 2 steps → O(n) time",
+     "arrows": null
     },
     {
      "say": "Two numbers. O of one space.",
@@ -438,7 +455,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "2 numbers → O(1) space"
+     "card": "2 numbers → O(1) space",
+     "arrows": null
     }
    ]
   },
@@ -552,6 +570,8 @@ window.CHAPTER = {
     "label": "150,000 days",
     "msg": "Correct on the small cases, but too slow on the big one. Trying every pair of days is O(n²). Remember the lowest price so far."
    },
+   "prep": null,
+   "post": null,
    "solution": [
     "function bestTrade(prices) {",
     "  let low = Infinity;",
@@ -585,7 +605,11 @@ window.CHAPTER = {
      "low",
      "best"
     ],
-    "box": null
+    "box": null,
+    "list": false,
+    "leftNull": false,
+    "cycle": null,
+    "skips": []
    },
    "steps": [
     {
@@ -598,7 +622,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "best buy = lowest price so far"
+     "card": "best buy = lowest price so far",
+     "arrows": null
     },
     {
      "say": "So walk once, remember the lowest price so far, and try selling on every day.",
@@ -610,7 +635,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "remember low, try selling each day"
+     "card": "remember low, try selling each day",
+     "arrows": null
     },
     {
      "say": "Low starts at infinity, so that any price beats it. Best starts at zero.",
@@ -625,7 +651,8 @@ window.CHAPTER = {
       "best": 0
      },
      "box": null,
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "Day zero. Seven is lower than anything so far. Low is seven.",
@@ -643,7 +670,8 @@ window.CHAPTER = {
       "low": 7
      },
      "box": null,
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "Day one. One is lower. Low becomes one.",
@@ -661,7 +689,8 @@ window.CHAPTER = {
       "low": 1
      },
      "box": null,
-     "card": "1 < 7 → new low"
+     "card": "1 < 7 → new low",
+     "arrows": null
     },
     {
      "say": "Day two. Five is not lower. So line six asks: what if we sold today? Five minus one. Four.",
@@ -679,7 +708,8 @@ window.CHAPTER = {
       "best": 4
      },
      "box": null,
-     "card": "sell at 5 − buy at 1 = 4"
+     "card": "sell at 5 − buy at 1 = 4",
+     "arrows": null
     },
     {
      "say": "Day three. Three. Sell today, and the profit is two. Does best change?",
@@ -695,7 +725,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "sell at 3 − buy at 1 = 2"
+     "card": "sell at 3 − buy at 1 = 2",
+     "arrows": null
     },
     {
      "say": "No. Two does not beat four.",
@@ -707,7 +738,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "best stays 4"
+     "card": "best stays 4",
+     "arrows": null
     },
     {
      "say": "Day four. Six minus one. Five. A new best.",
@@ -728,7 +760,8 @@ window.CHAPTER = {
       "best": 5
      },
      "box": null,
-     "card": "sell at 6 − buy at 1 = 5"
+     "card": "sell at 6 − buy at 1 = 5",
+     "arrows": null
     },
     {
      "say": "Line eight returns the best. Five.",
@@ -740,7 +773,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "One walk. O of n time.",
@@ -752,7 +786,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "1 walk → O(n) time"
+     "card": "1 walk → O(n) time",
+     "arrows": null
     },
     {
      "say": "Two numbers. O of one space.",
@@ -764,7 +799,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "2 numbers → O(1) space"
+     "card": "2 numbers → O(1) space",
+     "arrows": null
     }
    ]
   },
@@ -889,6 +925,8 @@ window.CHAPTER = {
     "label": "150,000 lamps",
     "msg": "Correct on the small cases, but too slow on the big one. Restarting from every lamp is O(n²). Keep one window and move its two edges."
    },
+   "prep": null,
+   "post": null,
    "solution": [
     "function longestOnes(nums, k) {",
     "  let left = 0;",
@@ -932,7 +970,11 @@ window.CHAPTER = {
      "zeros",
      "best"
     ],
-    "box": null
+    "box": null,
+    "list": false,
+    "leftNull": false,
+    "cycle": null,
+    "skips": []
    },
    "steps": [
     {
@@ -945,7 +987,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "longest stretch with ≤ k zeros"
+     "card": "longest stretch with ≤ k zeros",
+     "arrows": null
     },
     {
      "say": "Grow on the right. When there are too many zeros, shrink on the left.",
@@ -957,7 +1000,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "grow right, shrink left"
+     "card": "grow right, shrink left",
+     "arrows": null
     },
     {
      "say": "Moss holds the left edge at door zero. No dark lamps counted yet.",
@@ -974,7 +1018,8 @@ window.CHAPTER = {
       "best": 0
      },
      "box": null,
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "Pip grows the window to door zero. A lit lamp. The window is one wide.",
@@ -992,7 +1037,8 @@ window.CHAPTER = {
       "best": 1
      },
      "box": null,
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "Door one is dark. Zeros becomes one. We are allowed one, so the window is fine. Two wide.",
@@ -1012,7 +1058,8 @@ window.CHAPTER = {
       "best": 2
      },
      "box": null,
-     "card": "zeros = 1 → allowed"
+     "card": "zeros = 1 → allowed",
+     "arrows": null
     },
     {
      "say": "Two more lit lamps. The window grows to four wide.",
@@ -1033,7 +1080,8 @@ window.CHAPTER = {
       "best": 4
      },
      "box": null,
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "Door four is dark. Zeros is two. Too many.",
@@ -1055,7 +1103,8 @@ window.CHAPTER = {
       "zeros": 2
      },
      "box": null,
-     "card": "zeros = 2 → too many"
+     "card": "zeros = 2 → too many",
+     "arrows": null
     },
     {
      "say": "Line seven shrinks from the left until the rule holds again. Where does Moss stop?",
@@ -1067,7 +1116,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "shrink until zeros = 1"
+     "card": "shrink until zeros = 1",
+     "arrows": null
     },
     {
      "say": "Door zero leaves. Then door one leaves, and it was dark, so zeros drops to one. Moss stops on door two.",
@@ -1087,7 +1137,8 @@ window.CHAPTER = {
       "zeros": 1
      },
      "box": null,
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "Pip adds door five. Four wide again. That ties the best.",
@@ -1106,7 +1157,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "doors 2 to 5 → 4 wide"
+     "card": "doors 2 to 5 → 4 wide",
+     "arrows": null
     },
     {
      "say": "Line thirteen returns the best. Four.",
@@ -1118,7 +1170,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "Each door enters the window once, and leaves at most once. O of n time.",
@@ -1130,7 +1183,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "in once, out once → O(n) time"
+     "card": "in once, out once → O(n) time",
+     "arrows": null
     },
     {
      "say": "Three numbers. O of one space.",
@@ -1142,7 +1196,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "3 numbers → O(1) space"
+     "card": "3 numbers → O(1) space",
+     "arrows": null
     }
    ]
   },
@@ -1213,6 +1268,8 @@ window.CHAPTER = {
    "check": null,
    "forbid": [],
    "big": null,
+   "prep": null,
+   "post": null,
    "solution": [
     "function longestUnique(word) {",
     "  const seen = new Set();",
@@ -1257,7 +1314,11 @@ window.CHAPTER = {
     "box": {
      "title": "seen",
      "rows": 1
-    }
+    },
+    "list": false,
+    "leftNull": false,
+    "cycle": null,
+    "skips": []
    },
    "steps": [
     {
@@ -1270,7 +1331,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "a window with no repeats + a set"
+     "card": "a window with no repeats + a set",
+     "arrows": null
     },
     {
      "say": "Grow on the right. If the new letter is already inside, shrink on the left until it is gone.",
@@ -1282,7 +1344,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "repeat? shrink until it is gone"
+     "card": "repeat? shrink until it is gone",
+     "arrows": null
     },
     {
      "say": "An empty set, Moss on the left edge, and best at zero.",
@@ -1298,7 +1361,8 @@ window.CHAPTER = {
       "best": 0
      },
      "box": [],
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "Pip reads A. Not in the set. Add it. The window is one wide.",
@@ -1318,7 +1382,8 @@ window.CHAPTER = {
      "box": [
       "a"
      ],
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "B and C are new as well. The window grows to three.",
@@ -1340,7 +1405,8 @@ window.CHAPTER = {
      "box": [
       "a, b, c"
      ],
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "Next is B. Line six checks the set. B is already inside the window.",
@@ -1357,7 +1423,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "\"b\" is already inside"
+     "card": "\"b\" is already inside",
+     "arrows": null
     },
     {
      "say": "So the window shrinks from the left until that B is gone. How many letters leave?",
@@ -1369,7 +1436,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "shrink until \"b\" is gone"
+     "card": "shrink until \"b\" is gone",
+     "arrows": null
     },
     {
      "say": "Two. A leaves, then the old B leaves. Moss stops on C.",
@@ -1387,7 +1455,8 @@ window.CHAPTER = {
      "box": [
       "c"
      ],
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "Now the new B can enter. The window is C, B.",
@@ -1404,7 +1473,8 @@ window.CHAPTER = {
      "box": [
       "c, b"
      ],
-     "card": "window \"cb\" → 2 wide"
+     "card": "window \"cb\" → 2 wide",
+     "arrows": null
     },
     {
      "say": "D is new. Three wide. That ties the best.",
@@ -1424,7 +1494,8 @@ window.CHAPTER = {
      "box": [
       "c, b, d"
      ],
-     "card": "window \"cbd\" → 3 wide"
+     "card": "window \"cbd\" → 3 wide",
+     "arrows": null
     },
     {
      "say": "Line thirteen returns the best. Three.",
@@ -1436,7 +1507,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "Each door enters the window once, and leaves at most once. O of n time.",
@@ -1448,7 +1520,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "in once, out once → O(n) time"
+     "card": "in once, out once → O(n) time",
+     "arrows": null
     },
     {
      "say": "The set holds at most one of each letter. O of n space at most.",
@@ -1460,7 +1533,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "set of letters → O(n) space"
+     "card": "set of letters → O(n) space",
+     "arrows": null
     }
    ]
   },
@@ -1572,6 +1646,8 @@ window.CHAPTER = {
     "label": "150,000 doors",
     "msg": "Correct on the small cases, but too slow on the big one. Restarting from every door is O(n²). Keep one window and move its two edges."
    },
+   "prep": null,
+   "post": null,
    "solution": [
     "function shortestReach(nums, target) {",
     "  let left = 0;",
@@ -1614,7 +1690,11 @@ window.CHAPTER = {
      "sum",
      "best"
     ],
-    "box": null
+    "box": null,
+    "list": false,
+    "leftNull": false,
+    "cycle": null,
+    "skips": []
    },
    "steps": [
     {
@@ -1627,7 +1707,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "grow until enough, then shrink"
+     "card": "grow until enough, then shrink",
+     "arrows": null
     },
     {
      "say": "Every time it is big enough, measure it. The smallest measurement wins.",
@@ -1639,7 +1720,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "measure each time it is enough"
+     "card": "measure each time it is enough",
+     "arrows": null
     },
     {
      "say": "Moss on the left edge. Sum is zero. Best starts at infinity, so that any real window beats it.",
@@ -1656,7 +1738,8 @@ window.CHAPTER = {
       "best": "∞"
      },
      "box": null,
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "Pip adds two, then one. Sum is three. Not enough yet.",
@@ -1675,7 +1758,8 @@ window.CHAPTER = {
       "sum": 3
      },
      "box": null,
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "Five enters. Sum is eight. That reaches seven.",
@@ -1695,7 +1779,8 @@ window.CHAPTER = {
       "sum": 8
      },
      "box": null,
-     "card": "8 ≥ 7 → enough"
+     "card": "8 ≥ 7 → enough",
+     "arrows": null
     },
     {
      "say": "Line eight records the width. Three doors.",
@@ -1709,7 +1794,8 @@ window.CHAPTER = {
       "best": 3
      },
      "box": null,
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "Now try to make it shorter. The left door leaves. Sum is six. Not enough any more.",
@@ -1728,7 +1814,8 @@ window.CHAPTER = {
       "sum": 6
      },
      "box": null,
-     "card": "try shorter: drop the left door"
+     "card": "try shorter: drop the left door",
+     "arrows": null
     },
     {
      "say": "So Pip grows again. Two enters. Eight. Three wide. No better.",
@@ -1748,7 +1835,8 @@ window.CHAPTER = {
       "sum": 8
      },
      "box": null,
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "Shrink. One leaves. Sum is seven. Is that still enough?",
@@ -1767,7 +1855,8 @@ window.CHAPTER = {
       "sum": 7
      },
      "box": null,
-     "card": "7 ≥ 7 → ?"
+     "card": "7 ≥ 7 → ?",
+     "arrows": null
     },
     {
      "say": "Yes. Seven reaches seven. And the window is only two wide. A new best.",
@@ -1784,7 +1873,8 @@ window.CHAPTER = {
       "best": 2
      },
      "box": null,
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "Shrink once more. Five leaves. Sum is two. The inner loop stops.",
@@ -1802,7 +1892,8 @@ window.CHAPTER = {
       "sum": 2
      },
      "box": null,
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "Three enters. Five. Not enough, and the row is finished.",
@@ -1821,7 +1912,8 @@ window.CHAPTER = {
       "sum": 5
      },
      "box": null,
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "Line thirteen returns the best. Two.",
@@ -1833,7 +1925,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "Each door enters the window once, and leaves at most once. O of n time.",
@@ -1845,7 +1938,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "in once, out once → O(n) time"
+     "card": "in once, out once → O(n) time",
+     "arrows": null
     },
     {
      "say": "Three numbers. O of one space.",
@@ -1857,7 +1951,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "3 numbers → O(1) space"
+     "card": "3 numbers → O(1) space",
+     "arrows": null
     }
    ]
   },
@@ -1934,6 +2029,8 @@ window.CHAPTER = {
    "check": null,
    "forbid": [],
    "big": null,
+   "prep": null,
+   "post": null,
    "solution": [
     "function longestTwoKinds(row) {",
     "  const count = new Map();",
@@ -1980,7 +2077,11 @@ window.CHAPTER = {
     "box": {
      "title": "count",
      "rows": 3
-    }
+    },
+    "list": false,
+    "leftNull": false,
+    "cycle": null,
+    "skips": []
    },
    "steps": [
     {
@@ -1993,7 +2094,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "window with ≤ 2 kinds + a count map"
+     "card": "window with ≤ 2 kinds + a count map",
+     "arrows": null
     },
     {
      "say": "Grow on the right. With three kinds, shrink on the left until one kind is gone completely.",
@@ -2005,7 +2107,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "3 kinds? shrink until one is gone"
+     "card": "3 kinds? shrink until one is gone",
+     "arrows": null
     },
     {
      "say": "An empty count map, and Moss on the left edge.",
@@ -2021,7 +2124,8 @@ window.CHAPTER = {
       "best": 0
      },
      "box": [],
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "A enters. One kind.",
@@ -2041,7 +2145,8 @@ window.CHAPTER = {
      "box": [
       "a → 1"
      ],
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "B enters. Two kinds. Still allowed.",
@@ -2063,7 +2168,8 @@ window.CHAPTER = {
       "a → 1",
       "b → 1"
      ],
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "Another A. Still two kinds. Three wide.",
@@ -2086,7 +2192,8 @@ window.CHAPTER = {
       "a → 2",
       "b → 1"
      ],
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "C enters. Now the map has three kinds. Too many.",
@@ -2109,7 +2216,8 @@ window.CHAPTER = {
       "b → 1",
       "c → 1"
      ],
-     "card": "3 kinds → too many"
+     "card": "3 kinds → too many",
+     "arrows": null
     },
     {
      "say": "So shrink. The left A leaves. Its count drops to one. Still three kinds.",
@@ -2131,7 +2239,8 @@ window.CHAPTER = {
       "b → 1",
       "c → 1"
      ],
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "B leaves next. Its count drops to zero. What must happen to B in the map?",
@@ -2143,7 +2252,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "\"b\" count is 0 → ?"
+     "card": "\"b\" count is 0 → ?",
+     "arrows": null
     },
     {
      "say": "It is deleted. Otherwise the map would still say three kinds. Now the window is A, C.",
@@ -2163,7 +2273,8 @@ window.CHAPTER = {
       "a → 1",
       "c → 1"
      ],
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "Another C. Three wide. That ties the best.",
@@ -2184,7 +2295,8 @@ window.CHAPTER = {
       "a → 1",
       "c → 2"
      ],
-     "card": "window \"acc\" → 3 wide"
+     "card": "window \"acc\" → 3 wide",
+     "arrows": null
     },
     {
      "say": "Line fifteen returns the best. Three.",
@@ -2196,7 +2308,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "Each door enters the window once, and leaves at most once. O of n time.",
@@ -2208,7 +2321,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "in once, out once → O(n) time"
+     "card": "in once, out once → O(n) time",
+     "arrows": null
     },
     {
      "say": "The map never holds more than three kinds. O of one space.",
@@ -2220,7 +2334,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "≤ 3 kinds in the map → O(1) space"
+     "card": "≤ 3 kinds in the map → O(1) space",
+     "arrows": null
     }
    ]
   }

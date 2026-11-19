@@ -208,6 +208,8 @@ window.CHAPTER = {
    "check": null,
    "forbid": [],
    "big": null,
+   "prep": null,
+   "post": null,
    "solution": [
     "function runningTotal(nums) {",
     "  const out = [];",
@@ -244,7 +246,11 @@ window.CHAPTER = {
     "vars": [
      "sum"
     ],
-    "box": null
+    "box": null,
+    "list": false,
+    "leftNull": false,
+    "cycle": null,
+    "skips": []
    },
    "steps": [
     {
@@ -257,7 +263,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "new total = old total + one number"
+     "card": "new total = old total + one number",
+     "arrows": null
     },
     {
      "say": "Carry one number, sum, from door to door. Write it down after every add.",
@@ -269,7 +276,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "carry sum, write it at each door"
+     "card": "carry sum, write it at each door",
+     "arrows": null
     },
     {
      "say": "Line two makes an empty row for the answers. Line three starts sum at zero.",
@@ -283,7 +291,8 @@ window.CHAPTER = {
       "sum": 0
      },
      "box": null,
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "I is zero. Line five adds the three to sum. Sum is three.",
@@ -301,7 +310,8 @@ window.CHAPTER = {
       "sum": 3
      },
      "box": null,
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "Line six writes that total into the answer row.",
@@ -317,7 +327,8 @@ window.CHAPTER = {
      },
      "vars": null,
      "box": null,
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "Next door. Add one. Sum is four. Write it down.",
@@ -339,7 +350,8 @@ window.CHAPTER = {
       "sum": 4
      },
      "box": null,
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "The next door holds four, and sum is four. What gets written?",
@@ -355,7 +367,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "4 + 4 = ?"
+     "card": "4 + 4 = ?",
+     "arrows": null
     },
     {
      "say": "Eight. The old total, plus one new number.",
@@ -373,7 +386,8 @@ window.CHAPTER = {
       "sum": 8
      },
      "box": null,
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "Last door. Add two. Ten.",
@@ -395,7 +409,8 @@ window.CHAPTER = {
       "sum": 10
      },
      "box": null,
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "The loop ends, and line eight returns the answer row.",
@@ -407,7 +422,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "One walk, and one add per door. O of n time.",
@@ -419,7 +435,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "1 walk → O(n) time"
+     "card": "1 walk → O(n) time",
+     "arrows": null
     },
     {
      "say": "The answer row holds n totals. O of n space. That row has a name: the prefix sums.",
@@ -431,7 +448,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "n totals → O(n) space"
+     "card": "n totals → O(n) space",
+     "arrows": null
     }
    ]
   },
@@ -527,6 +545,8 @@ window.CHAPTER = {
    "check": null,
    "forbid": [],
    "big": null,
+   "prep": null,
+   "post": null,
    "solution": [
     "function balancePoint(nums) {",
     "  let total = 0;",
@@ -562,7 +582,11 @@ window.CHAPTER = {
      "left",
      "right"
     ],
-    "box": null
+    "box": null,
+    "list": false,
+    "leftNull": false,
+    "cycle": null,
+    "skips": []
    },
    "steps": [
     {
@@ -575,7 +599,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "left + this door + right = total"
+     "card": "left + this door + right = total",
+     "arrows": null
     },
     {
      "say": "So if we know the total and the left side, the right side is one subtraction.",
@@ -587,7 +612,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "right = total − left − this door"
+     "card": "right = total − left − this door",
+     "arrows": null
     },
     {
      "say": "Lines two and three add everything up, once. The total is ten.",
@@ -606,7 +632,8 @@ window.CHAPTER = {
       "total": 10
      },
      "box": null,
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "Line four. Left starts at zero, because nothing is to the left of the first door.",
@@ -620,7 +647,8 @@ window.CHAPTER = {
       "left": 0
      },
      "box": null,
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "Door zero. Line six works out the right side. Ten, minus zero, minus two. Eight.",
@@ -638,7 +666,8 @@ window.CHAPTER = {
       "right": 8
      },
      "box": null,
-     "card": "right = 10 − 0 − 2 = 8"
+     "card": "right = 10 − 0 − 2 = 8",
+     "arrows": null
     },
     {
      "say": "Line seven compares. Zero is not eight. Not balanced.",
@@ -652,7 +681,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "Line eight moves this door into the left side. Left is two.",
@@ -666,7 +696,8 @@ window.CHAPTER = {
       "left": 2
      },
      "box": null,
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "Door one. Ten, minus two, minus one. Seven. Two is not seven.",
@@ -684,7 +715,8 @@ window.CHAPTER = {
       "right": 7
      },
      "box": null,
-     "card": "right = 10 − 2 − 1 = 7"
+     "card": "right = 10 − 2 − 1 = 7",
+     "arrows": null
     },
     {
      "say": "Left becomes three.",
@@ -698,7 +730,8 @@ window.CHAPTER = {
       "left": 3
      },
      "box": null,
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "Door two holds four, and left is three. What is the right side?",
@@ -714,7 +747,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "right = 10 − 3 − 4 = ?"
+     "card": "right = 10 − 3 − 4 = ?",
+     "arrows": null
     },
     {
      "say": "Three. Left equals right. Line seven returns the index. Two.",
@@ -730,7 +764,8 @@ window.CHAPTER = {
       "right": 3
      },
      "box": null,
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "One walk for the total, and one to search. O of n time.",
@@ -742,7 +777,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "2 walks → O(n) time"
+     "card": "2 walks → O(n) time",
+     "arrows": null
     },
     {
      "say": "Three numbers, and no extra row. O of one space.",
@@ -754,7 +790,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "3 numbers → O(1) space"
+     "card": "3 numbers → O(1) space",
+     "arrows": null
     }
    ]
   },
@@ -897,6 +934,8 @@ window.CHAPTER = {
     "label": "150,000 doors and 150,000 queries",
     "msg": "Correct on the small cases, but too slow on the big one. Walking each range costs O(n) per query. Build the totals row once."
    },
+   "prep": null,
+   "post": null,
    "solution": [
     "function rangeSums(nums, queries) {",
     "  const pre = [0];",
@@ -932,7 +971,11 @@ window.CHAPTER = {
      "l",
      "r"
     ],
-    "box": null
+    "box": null,
+    "list": false,
+    "leftNull": false,
+    "cycle": null,
+    "skips": []
    },
    "steps": [
     {
@@ -945,7 +988,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "add once, before any question"
+     "card": "add once, before any question",
+     "arrows": null
     },
     {
      "say": "Keep the total before every door. Then any range is one total minus another.",
@@ -957,7 +1001,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "range = total − earlier total"
+     "card": "range = total − earlier total",
+     "arrows": null
     },
     {
      "say": "Line two starts the totals row with a zero. The sum of nothing.",
@@ -971,7 +1016,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "Lines three to five fill it in. Each slot is the slot before, plus one number. Zero plus three is three.",
@@ -987,7 +1033,8 @@ window.CHAPTER = {
      },
      "vars": null,
      "box": null,
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "Then four. Eight. And ten.",
@@ -1003,7 +1050,8 @@ window.CHAPTER = {
      },
      "vars": null,
      "box": null,
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "Now the questions. The first one asks for doors one to two.",
@@ -1021,7 +1069,8 @@ window.CHAPTER = {
       "r": 2
      },
      "box": null,
-     "card": "sum of doors 1 to 2 ?"
+     "card": "sum of doors 1 to 2 ?",
+     "arrows": null
     },
     {
      "say": "Line eight takes the total after door two. That is pre at three. Eight.",
@@ -1035,7 +1084,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "pre[r + 1] = pre[3] = 8"
+     "card": "pre[r + 1] = pre[3] = 8",
+     "arrows": null
     },
     {
      "say": "Then it removes everything before door one. Pre at one. Three. Eight minus three is five.",
@@ -1049,7 +1099,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "8 − 3 = 5"
+     "card": "8 − 3 = 5",
+     "arrows": null
     },
     {
      "say": "The next question. Doors zero to three. Which two slots do we need?",
@@ -1069,7 +1120,8 @@ window.CHAPTER = {
       "r": 3
      },
      "box": null,
-     "card": "pre[?] − pre[?]"
+     "card": "pre[?] − pre[?]",
+     "arrows": null
     },
     {
      "say": "Pre at four, minus pre at zero. Ten minus zero. Ten.",
@@ -1084,7 +1136,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "10 − 0 = 10"
+     "card": "10 − 0 = 10",
+     "arrows": null
     },
     {
      "say": "Line ten returns both answers.",
@@ -1096,7 +1149,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "Building the row costs n steps, once. After that, every question is one subtraction.",
@@ -1108,7 +1162,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "build O(n), each answer O(1)"
+     "card": "build O(n), each answer O(1)",
+     "arrows": null
     },
     {
      "say": "The price is one extra row. O of n space.",
@@ -1120,7 +1175,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "extra row → O(n) space"
+     "card": "extra row → O(n) space",
+     "arrows": null
     }
    ]
   },
@@ -1234,6 +1290,8 @@ window.CHAPTER = {
     "label": "150,000 doors",
     "msg": "Correct on the small cases, but too slow on the big one. Trying every start and end is O(n²). Look up sum - k in a map of earlier totals."
    },
+   "prep": null,
+   "post": null,
    "solution": [
     "function countStretches(nums, k) {",
     "  const seen = new Map([[0, 1]]);",
@@ -1266,7 +1324,11 @@ window.CHAPTER = {
     "box": {
      "title": "seen",
      "rows": 5
-    }
+    },
+    "list": false,
+    "leftNull": false,
+    "cycle": null,
+    "skips": []
    },
    "steps": [
     {
@@ -1279,7 +1341,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "stretch = total now − earlier total"
+     "card": "stretch = total now − earlier total",
+     "arrows": null
     },
     {
      "say": "So a stretch ending here adds up to k, when an earlier total equals sum minus k. A map remembers the earlier totals.",
@@ -1291,7 +1354,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "look for sum − k in a map"
+     "card": "look for sum − k in a map",
+     "arrows": null
     },
     {
      "say": "Line two makes the map of totals seen so far. It starts with zero, seen once. That is the total before the first door.",
@@ -1305,7 +1369,8 @@ window.CHAPTER = {
      "box": [
       "0 → 1"
      ],
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "Sum and count both start at zero.",
@@ -1320,7 +1385,8 @@ window.CHAPTER = {
       "count": 0
      },
      "box": null,
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "Door zero. Line six adds it. Sum is one.",
@@ -1336,7 +1402,8 @@ window.CHAPTER = {
       "sum": 1
      },
      "box": null,
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "Line seven looks for sum minus k. One minus three is minus two. Never seen. Count stays zero.",
@@ -1348,7 +1415,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "need 1 − 3 = −2 → not seen"
+     "card": "need 1 − 3 = −2 → not seen",
+     "arrows": null
     },
     {
      "say": "Line eight records the total, one, in the map.",
@@ -1363,7 +1431,8 @@ window.CHAPTER = {
       "0 → 1",
       "1 → 1"
      ],
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "Door one. Sum is three. We need three minus three. Zero.",
@@ -1379,7 +1448,8 @@ window.CHAPTER = {
       "sum": 3
      },
      "box": null,
-     "card": "need 3 − 3 = 0"
+     "card": "need 3 − 3 = 0",
+     "arrows": null
     },
     {
      "say": "Zero was seen once. So one stretch ends here. Doors zero and one. Count is one.",
@@ -1399,7 +1469,8 @@ window.CHAPTER = {
       "0 → 1",
       "1 → 1"
      ],
-     "card": "need 0 → seen once"
+     "card": "need 0 → seen once",
+     "arrows": null
     },
     {
      "say": "Record the three.",
@@ -1415,7 +1486,8 @@ window.CHAPTER = {
       "1 → 1",
       "3 → 1"
      ],
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "Door two. Sum is four. Which earlier total are we looking for?",
@@ -1431,7 +1503,8 @@ window.CHAPTER = {
       "sum": 4
      },
      "box": null,
-     "card": "need 4 − 3 = ?"
+     "card": "need 4 − 3 = ?",
+     "arrows": null
     },
     {
      "say": "One. Seen once. That stretch is doors one and two. Count is two.",
@@ -1453,7 +1526,8 @@ window.CHAPTER = {
       "3 → 1",
       "4 → 1"
      ],
-     "card": "need 4 − 3 = 1 → seen once"
+     "card": "need 4 − 3 = 1 → seen once",
+     "arrows": null
     },
     {
      "say": "Last door. Sum is seven. We need four. Seen once. The door on its own. Count is three.",
@@ -1476,7 +1550,8 @@ window.CHAPTER = {
       "4 → 1",
       "7 → 1"
      ],
-     "card": "need 7 − 3 = 4 → seen once"
+     "card": "need 7 − 3 = 4 → seen once",
+     "arrows": null
     },
     {
      "say": "Line ten returns the count. Three.",
@@ -1488,7 +1563,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "One walk, and each map lookup is one step. O of n time.",
@@ -1500,7 +1576,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "1 walk → O(n) time"
+     "card": "1 walk → O(n) time",
+     "arrows": null
     },
     {
      "say": "The map can hold one total per door. O of n space.",
@@ -1512,7 +1589,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "map of totals → O(n) space"
+     "card": "map of totals → O(n) space",
+     "arrows": null
     }
    ]
   }

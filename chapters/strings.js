@@ -177,6 +177,8 @@ window.CHAPTER = {
     }
    ],
    "big": null,
+   "prep": null,
+   "post": null,
    "solution": [
     "function isMirror(word) {",
     "  let left = 0;",
@@ -214,7 +216,11 @@ window.CHAPTER = {
      }
     ],
     "vars": [],
-    "box": null
+    "box": null,
+    "list": false,
+    "leftNull": false,
+    "cycle": null,
+    "skips": []
    },
    "steps": [
     {
@@ -230,7 +236,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "compare the ends, walk inward"
+     "card": "compare the ends, walk inward",
+     "arrows": null
     },
     {
      "say": "If any pair differs, it is not a mirror. If the two walkers meet, it is.",
@@ -242,7 +249,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "one mismatch = not a mirror"
+     "card": "one mismatch = not a mirror",
+     "arrows": null
     },
     {
      "say": "Lines two and three place the markers. Pip is left, at index zero. Moss is right, at index four.",
@@ -257,7 +265,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "Line four asks: is left still before right? Zero is less than four. Yes.",
@@ -269,7 +278,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "0 < 4 → keep going"
+     "card": "0 < 4 → keep going",
+     "arrows": null
     },
     {
      "say": "Line five compares the two letters. L and L. They match, so nothing is returned.",
@@ -287,7 +297,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "\"l\" and \"l\" match"
+     "card": "\"l\" and \"l\" match",
+     "arrows": null
     },
     {
      "say": "Lines eight and nine step both markers inward.",
@@ -302,7 +313,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "Check again. One is less than three. E and E match.",
@@ -320,7 +332,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "\"e\" and \"e\" match"
+     "card": "\"e\" and \"e\" match",
+     "arrows": null
     },
     {
      "say": "Step inward again. Now both stand on index two. Is two less than two?",
@@ -335,7 +348,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "2 < 2 → ?"
+     "card": "2 < 2 → ?",
+     "arrows": null
     },
     {
      "say": "No. The middle letter has no partner to disagree with. The loop ends.",
@@ -349,7 +363,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "2 < 2 → no, stop"
+     "card": "2 < 2 → no, stop",
+     "arrows": null
     },
     {
      "say": "Line eleven returns true. Level is a mirror word.",
@@ -361,7 +376,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "Each turn checks one pair, so at most half the letters. That is O of n time.",
@@ -373,7 +389,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "n/2 checks → O(n) time"
+     "card": "n/2 checks → O(n) time",
+     "arrows": null
     },
     {
      "say": "Two markers, and no copy of the word. O of one space. This is the two pointer pattern again.",
@@ -385,7 +402,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "2 markers → O(1) space"
+     "card": "2 markers → O(1) space",
+     "arrows": null
     }
    ]
   },
@@ -450,6 +468,8 @@ window.CHAPTER = {
    "check": null,
    "forbid": [],
    "big": null,
+   "prep": null,
+   "post": null,
    "solution": [
     "function firstUnique(word) {",
     "  const count = new Map();",
@@ -486,7 +506,11 @@ window.CHAPTER = {
     "box": {
      "title": "count",
      "rows": 3
-    }
+    },
+    "list": false,
+    "leftNull": false,
+    "cycle": null,
+    "skips": []
    },
    "steps": [
     {
@@ -499,7 +523,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "walk 1: count · walk 2: find"
+     "card": "walk 1: count · walk 2: find",
+     "arrows": null
     },
     {
      "say": "On the first walk, a map counts every letter. On the second, we ask it for the first letter with a count of one.",
@@ -511,7 +536,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "a map remembers the counts"
+     "card": "a map remembers the counts",
+     "arrows": null
     },
     {
      "say": "Line two makes an empty map, called count.",
@@ -523,7 +549,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": [],
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "The first walk. S. Never seen, so its count becomes one.",
@@ -541,7 +568,8 @@ window.CHAPTER = {
      "box": [
       "s → 1"
      ],
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "E. Count one.",
@@ -560,7 +588,8 @@ window.CHAPTER = {
       "s → 1",
       "e → 1"
      ],
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "E again. Its count goes up to two.",
@@ -579,7 +608,8 @@ window.CHAPTER = {
       "s → 1",
       "e → 2"
      ],
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "D. Count one.",
@@ -599,7 +629,8 @@ window.CHAPTER = {
       "e → 2",
       "d → 1"
      ],
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "S again. Two.",
@@ -619,7 +650,8 @@ window.CHAPTER = {
       "e → 2",
       "d → 1"
      ],
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "Now the second walk, from the start. Line seven asks: is this letter's count one? S has two. No.",
@@ -635,7 +667,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "E has two. No. The next E, no.",
@@ -652,7 +685,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "D. What does the map say?",
@@ -668,7 +702,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "count of \"d\" = ?"
+     "card": "count of \"d\" = ?",
+     "arrows": null
     },
     {
      "say": "One. Line eight returns its index. Three.",
@@ -682,7 +717,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "Two walks over n letters is two n steps. Drop the constant. O of n time.",
@@ -694,7 +730,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "2 walks → O(n) time"
+     "card": "2 walks → O(n) time",
+     "arrows": null
     },
     {
      "say": "The map holds one entry for each different letter. O of n space at most.",
@@ -706,7 +743,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "the map → O(n) space"
+     "card": "the map → O(n) space",
+     "arrows": null
     }
    ]
   },
@@ -784,6 +822,8 @@ window.CHAPTER = {
    "check": null,
    "forbid": [],
    "big": null,
+   "prep": null,
+   "post": null,
    "solution": [
     "function sameLetters(a, b) {",
     "  if (a.length !== b.length) return false;",
@@ -826,7 +866,11 @@ window.CHAPTER = {
     "box": {
      "title": "count",
      "rows": 3
-    }
+    },
+    "list": false,
+    "leftNull": false,
+    "cycle": null,
+    "skips": []
    },
    "steps": [
     {
@@ -839,7 +883,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "same letters, same counts"
+     "card": "same letters, same counts",
+     "arrows": null
     },
     {
      "say": "So count the first word up, then count the second word down. Everything must land on zero.",
@@ -851,7 +896,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "count up, then count down"
+     "card": "count up, then count down",
+     "arrows": null
     },
     {
      "say": "Line two is a quick exit. Different lengths can never match. Three and three, so we go on.",
@@ -863,7 +909,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "3 = 3 → go on"
+     "card": "3 = 3 → go on",
+     "arrows": null
     },
     {
      "say": "Count the first word. T, one.",
@@ -881,7 +928,8 @@ window.CHAPTER = {
      "box": [
       "t → 1"
      ],
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "E, one.",
@@ -900,7 +948,8 @@ window.CHAPTER = {
       "t → 1",
       "e → 1"
      ],
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "A, one.",
@@ -920,7 +969,8 @@ window.CHAPTER = {
       "e → 1",
       "a → 1"
      ],
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "Now the second word. E. Line eight asks: is there an E left? Yes.",
@@ -936,7 +986,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "Line nine uses it up. E drops to zero.",
@@ -954,7 +1005,8 @@ window.CHAPTER = {
       "e → 0",
       "a → 1"
      ],
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "A. One left. Use it.",
@@ -974,7 +1026,8 @@ window.CHAPTER = {
       "e → 0",
       "a → 0"
      ],
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "T. Is there a T left in the map?",
@@ -990,7 +1043,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "\"t\" left = ?"
+     "card": "\"t\" left = ?",
+     "arrows": null
     },
     {
      "say": "Yes, one. Use it. Now every count is zero.",
@@ -1008,7 +1062,8 @@ window.CHAPTER = {
       "e → 0",
       "a → 0"
      ],
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "Line eleven returns true. Tea and eat use the same letters.",
@@ -1020,7 +1075,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "One walk over each word. O of n time.",
@@ -1032,7 +1088,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "2 walks → O(n) time"
+     "card": "2 walks → O(n) time",
+     "arrows": null
     },
     {
      "say": "The map holds one entry per different letter. With lowercase letters only, at most twenty six. O of one space.",
@@ -1044,7 +1101,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "≤ 26 entries → O(1) space"
+     "card": "≤ 26 entries → O(1) space",
+     "arrows": null
     }
    ]
   },
@@ -1129,6 +1187,8 @@ window.CHAPTER = {
    "check": null,
    "forbid": [],
    "big": null,
+   "prep": null,
+   "post": null,
    "solution": [
     "function isHidden(small, big) {",
     "  let s = 0;",
@@ -1168,7 +1228,11 @@ window.CHAPTER = {
      }
     ],
     "vars": [],
-    "box": null
+    "box": null,
+    "list": false,
+    "leftNull": false,
+    "cycle": null,
+    "skips": []
    },
    "steps": [
     {
@@ -1185,7 +1249,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "same order, gaps allowed"
+     "card": "same order, gaps allowed",
+     "arrows": null
     },
     {
      "say": "So walk the big word once. Each time you meet the letter you are waiting for, tick it off.",
@@ -1197,7 +1262,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "wait for the next letter"
+     "card": "wait for the next letter",
+     "arrows": null
     },
     {
      "say": "S marks the letter we are waiting for. It starts on B.",
@@ -1213,7 +1279,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "Moss reads B. That is the letter we want. Line five moves S to the next one.",
@@ -1231,7 +1298,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "E. We are waiting for A. Not it. Keep walking.",
@@ -1247,7 +1315,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "A. A match. S moves on to N.",
@@ -1265,7 +1334,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "C. Not N.",
@@ -1281,7 +1351,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "O. Not N.",
@@ -1297,7 +1368,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "N. Is this the letter we are waiting for?",
@@ -1314,7 +1386,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "waiting for \"n\""
+     "card": "waiting for \"n\"",
+     "arrows": null
     },
     {
      "say": "Yes. S moves past the end of the small word.",
@@ -1331,7 +1404,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "Line eight asks: did S reach the end? Three equals three. True.",
@@ -1343,7 +1417,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "One walk through the big word. O of n time.",
@@ -1355,7 +1430,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "1 walk → O(n) time"
+     "card": "1 walk → O(n) time",
+     "arrows": null
     },
     {
      "say": "Two counters, and nothing else. O of one space.",
@@ -1367,7 +1443,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "2 counters → O(1) space"
+     "card": "2 counters → O(1) space",
+     "arrows": null
     }
    ]
   }

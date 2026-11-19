@@ -254,6 +254,8 @@ window.CHAPTER = {
     "label": "200,000 doors, no pair",
     "msg": "Correct on the small cases, but too slow on the big one. Trying every pair is O(n²). Let the sorted order tell you which marker to move."
    },
+   "prep": null,
+   "post": null,
    "solution": [
     "function pairSorted(nums, target) {",
     "  let left = 0;",
@@ -292,7 +294,11 @@ window.CHAPTER = {
     "vars": [
      "sum"
     ],
-    "box": null
+    "box": null,
+    "list": false,
+    "leftNull": false,
+    "cycle": null,
+    "skips": []
    },
    "steps": [
     {
@@ -305,7 +311,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "sorted: smallest left, biggest right"
+     "card": "sorted: smallest left, biggest right",
+     "arrows": null
     },
     {
      "say": "Add the two ends. If the sum is too big, give up the biggest. If it is too small, give up the smallest.",
@@ -317,7 +324,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "each sum tells you who must move"
+     "card": "each sum tells you who must move",
+     "arrows": null
     },
     {
      "say": "Lines two and three place Pip on the first door, and Moss on the last.",
@@ -332,7 +340,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "Line five adds the two doors. One plus nine is ten.",
@@ -349,7 +358,8 @@ window.CHAPTER = {
       "sum": 10
      },
      "box": null,
-     "card": "1 + 9 = 10"
+     "card": "1 + 9 = 10",
+     "arrows": null
     },
     {
      "say": "Ten is more than nine. Too big. Line eight moves Moss one step left.",
@@ -363,7 +373,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "too big → right moves in"
+     "card": "too big → right moves in",
+     "arrows": null
     },
     {
      "say": "One plus six is seven.",
@@ -380,7 +391,8 @@ window.CHAPTER = {
       "sum": 7
      },
      "box": null,
-     "card": "1 + 6 = 7"
+     "card": "1 + 6 = 7",
+     "arrows": null
     },
     {
      "say": "Seven is less than nine. Too small. Who moves?",
@@ -392,7 +404,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "too small → who moves?"
+     "card": "too small → who moves?",
+     "arrows": null
     },
     {
      "say": "Pip. Moving the left marker forward is the only way to make the sum bigger.",
@@ -406,7 +419,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "Three plus six is nine.",
@@ -423,7 +437,8 @@ window.CHAPTER = {
       "sum": 9
      },
      "box": null,
-     "card": "3 + 6 = 9"
+     "card": "3 + 6 = 9",
+     "arrows": null
     },
     {
      "say": "That is the target. Line six returns both indexes.",
@@ -438,7 +453,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "Every step moves one walker inward, so there are at most n steps. O of n time.",
@@ -450,7 +466,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "n steps at most → O(n) time"
+     "card": "n steps at most → O(n) time",
+     "arrows": null
     },
     {
      "say": "No map, and no extra row. O of one space. That is what sorted order buys you.",
@@ -462,7 +479,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "sorted → O(1) space"
+     "card": "sorted → O(1) space",
+     "arrows": null
     }
    ]
   },
@@ -590,6 +608,8 @@ window.CHAPTER = {
     }
    ],
    "big": null,
+   "prep": null,
+   "post": null,
    "solution": [
     "function sortedSquares(nums) {",
     "  const out = new Array(nums.length);",
@@ -640,7 +660,11 @@ window.CHAPTER = {
      }
     ],
     "vars": [],
-    "box": null
+    "box": null,
+    "list": false,
+    "leftNull": false,
+    "cycle": null,
+    "skips": []
    },
    "steps": [
     {
@@ -656,7 +680,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "biggest squares are at the two ends"
+     "card": "biggest squares are at the two ends",
+     "arrows": null
     },
     {
      "say": "Compare the two ends, take the bigger square, and fill the answer from the back.",
@@ -668,7 +693,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "bigger end first, fill from the back"
+     "card": "bigger end first, fill from the back",
+     "arrows": null
     },
     {
      "say": "Pip stands on the left end. Moss on the right end.",
@@ -683,7 +709,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "K points at the last slot of the answer. We fill from the back, biggest first.",
@@ -699,7 +726,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "Line six compares the sizes, ignoring the sign. Four against five. Five is bigger.",
@@ -714,7 +742,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "size 4 against size 5"
+     "card": "size 4 against size 5",
+     "arrows": null
     },
     {
      "say": "So line ten writes five squared. Twenty five. And Moss steps in.",
@@ -732,7 +761,8 @@ window.CHAPTER = {
      },
      "vars": null,
      "box": null,
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "The next slot. Four against three. This time the left end wins.",
@@ -749,7 +779,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "size 4 against size 3"
+     "card": "size 4 against size 3",
+     "arrows": null
     },
     {
      "say": "Minus four squared is sixteen. Pip steps in.",
@@ -767,7 +798,8 @@ window.CHAPTER = {
      },
      "vars": null,
      "box": null,
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "The next slot. Minus one against three. Which square goes in?",
@@ -784,7 +816,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "size 1 against size 3"
+     "card": "size 1 against size 3",
+     "arrows": null
     },
     {
      "say": "Nine. Three is the bigger size.",
@@ -802,7 +835,8 @@ window.CHAPTER = {
      },
      "vars": null,
      "box": null,
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "Then minus one against zero. One goes in. And the last slot gets zero.",
@@ -823,7 +857,8 @@ window.CHAPTER = {
      },
      "vars": null,
      "box": null,
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "Line fourteen returns the answer row, already in order.",
@@ -835,7 +870,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "Each slot is filled once. O of n time. No sorting needed.",
@@ -847,7 +883,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "n slots, one pass → O(n) time"
+     "card": "n slots, one pass → O(n) time",
+     "arrows": null
     },
     {
      "say": "The answer row is the only extra space. O of n.",
@@ -859,7 +896,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "answer row → O(n) space"
+     "card": "answer row → O(n) space",
+     "arrows": null
     }
    ]
   },
@@ -975,6 +1013,8 @@ window.CHAPTER = {
     }
    ],
    "big": null,
+   "prep": null,
+   "post": null,
    "solution": [
     "function moveZeros(nums) {",
     "  let write = 0;",
@@ -1011,7 +1051,11 @@ window.CHAPTER = {
      }
     ],
     "vars": [],
-    "box": null
+    "box": null,
+    "list": false,
+    "leftNull": false,
+    "cycle": null,
+    "skips": []
    },
    "steps": [
     {
@@ -1024,7 +1068,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "a fast reader, a slow writer"
+     "card": "a fast reader, a slow writer",
+     "arrows": null
     },
     {
      "say": "The reader finds the real numbers. The writer marks where the next one belongs.",
@@ -1036,7 +1081,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "writer = where the next number goes"
+     "card": "writer = where the next number goes",
+     "arrows": null
     },
     {
      "say": "Line two. Moss marks the write position: the next door that should hold a real number.",
@@ -1050,7 +1096,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "Pip is the reader, and walks every door. Door zero holds a zero. Line four says skip it.",
@@ -1066,7 +1113,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "Door one holds three. Not a zero.",
@@ -1082,7 +1130,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "3 is not 0 → keep it"
+     "card": "3 is not 0 → keep it",
+     "arrows": null
     },
     {
      "say": "Lines five to seven swap it with the door Moss is on. Three goes to the front.",
@@ -1099,7 +1148,8 @@ window.CHAPTER = {
      },
      "vars": null,
      "box": null,
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "Line eight moves the write position forward.",
@@ -1113,7 +1163,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "Door two. A zero. Skip.",
@@ -1129,7 +1180,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "Door three holds one. Moss is on door one. What happens?",
@@ -1145,7 +1197,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "1 is not 0 → ?"
+     "card": "1 is not 0 → ?",
+     "arrows": null
     },
     {
      "say": "The one swaps into door one, and Moss steps forward.",
@@ -1164,7 +1217,8 @@ window.CHAPTER = {
      },
      "vars": null,
      "box": null,
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "The last door. Two. It swaps into door two.",
@@ -1184,7 +1238,8 @@ window.CHAPTER = {
      },
      "vars": null,
      "box": null,
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "The loop ends. Every real number is at the front, in the same order. The zeros are at the back.",
@@ -1196,7 +1251,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "The reader visits each door once. O of n time.",
@@ -1208,7 +1264,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "1 pass → O(n) time"
+     "card": "1 pass → O(n) time",
+     "arrows": null
     },
     {
      "say": "Everything happens inside the same array. O of one space.",
@@ -1220,7 +1277,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "in place → O(1) space"
+     "card": "in place → O(1) space",
+     "arrows": null
     }
    ]
   },
@@ -1327,6 +1385,8 @@ window.CHAPTER = {
     "label": "120,000 walls",
     "msg": "Correct on the small cases, but too slow on the big one. Trying every pair of walls is O(n²). Start wide and move the lower wall."
    },
+   "prep": null,
+   "post": null,
    "solution": [
     "function maxWater(heights) {",
     "  let left = 0;",
@@ -1367,7 +1427,11 @@ window.CHAPTER = {
     "vars": [
      "best"
     ],
-    "box": null
+    "box": null,
+    "list": false,
+    "leftNull": false,
+    "cycle": null,
+    "skips": []
    },
    "steps": [
     {
@@ -1380,7 +1444,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "water = width × lower wall"
+     "card": "water = width × lower wall",
+     "arrows": null
     },
     {
      "say": "Start as wide as possible. Then always give up the lower wall, because keeping it can never do better.",
@@ -1392,7 +1457,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "always move the lower wall"
+     "card": "always move the lower wall",
+     "arrows": null
     },
     {
      "say": "Pip and Moss start at the two ends, the widest tank possible. Best is zero.",
@@ -1409,7 +1475,8 @@ window.CHAPTER = {
       "best": 0
      },
      "box": null,
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "The tank is four wide. But water only rises to the lower wall, which is one. Four times one is four.",
@@ -1426,7 +1493,8 @@ window.CHAPTER = {
       "best": 4
      },
      "box": null,
-     "card": "width 4 × lower wall 1 = 4"
+     "card": "width 4 × lower wall 1 = 4",
+     "arrows": null
     },
     {
      "say": "Which wall to give up? The lower one. It is the limit, and any narrower tank that keeps it can only hold less.",
@@ -1440,7 +1508,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "move the lower wall"
+     "card": "move the lower wall",
+     "arrows": null
     },
     {
      "say": "Walls five and three. Three wide, three high. Nine. A new best.",
@@ -1457,7 +1526,8 @@ window.CHAPTER = {
       "best": 9
      },
      "box": null,
-     "card": "width 3 × lower wall 3 = 9"
+     "card": "width 3 × lower wall 3 = 9",
+     "arrows": null
     },
     {
      "say": "Five on the left, three on the right. Which walker moves?",
@@ -1469,7 +1539,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "walls 5 and 3 → who moves?"
+     "card": "walls 5 and 3 → who moves?",
+     "arrows": null
     },
     {
      "say": "Moss. The three is the limit.",
@@ -1483,7 +1554,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "Two wide, four high. Eight. Not better than nine.",
@@ -1498,7 +1570,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "width 2 × lower wall 4 = 8"
+     "card": "width 2 × lower wall 4 = 8",
+     "arrows": null
     },
     {
      "say": "Moss moves again. One wide, two high. Two. Then the walkers meet.",
@@ -1515,7 +1588,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "width 1 × lower wall 2 = 2"
+     "card": "width 1 × lower wall 2 = 2",
+     "arrows": null
     },
     {
      "say": "Line twelve returns the best. Nine.",
@@ -1527,7 +1601,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "One walker moves at every step. O of n time, instead of trying every pair.",
@@ -1539,7 +1614,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "n steps → O(n), not O(n²)"
+     "card": "n steps → O(n), not O(n²)",
+     "arrows": null
     },
     {
      "say": "Three numbers. O of one space.",
@@ -1551,7 +1627,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "3 numbers → O(1) space"
+     "card": "3 numbers → O(1) space",
+     "arrows": null
     }
    ]
   },
@@ -1690,6 +1767,8 @@ window.CHAPTER = {
     }
    ],
    "big": null,
+   "prep": null,
+   "post": null,
    "solution": [
     "function mergeSorted(a, b) {",
     "  const out = [];",
@@ -1732,7 +1811,11 @@ window.CHAPTER = {
     "box": {
      "title": "out",
      "rows": 2
-    }
+    },
+    "list": false,
+    "leftNull": false,
+    "cycle": null,
+    "skips": []
    },
    "steps": [
     {
@@ -1745,7 +1828,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "smallest left is at one of the fronts"
+     "card": "smallest left is at one of the fronts",
+     "arrows": null
     },
     {
      "say": "Compare the two fronts, take the smaller, and move that marker. Repeat.",
@@ -1757,7 +1841,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "take the smaller front, move on"
+     "card": "take the smaller front, move on",
+     "arrows": null
     },
     {
      "say": "An empty answer, and one marker at the front of each row.",
@@ -1772,7 +1857,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": [],
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "Compare the two fronts. One and two. One is smaller, so it goes out, and i moves on.",
@@ -1791,7 +1877,8 @@ window.CHAPTER = {
      "box": [
       "1"
      ],
-     "card": "1 against 2 → take 1"
+     "card": "1 against 2 → take 1",
+     "arrows": null
     },
     {
      "say": "Four against two. Two goes out, and j moves on.",
@@ -1810,7 +1897,8 @@ window.CHAPTER = {
      "box": [
       "1, 2"
      ],
-     "card": "4 against 2 → take 2"
+     "card": "4 against 2 → take 2",
+     "arrows": null
     },
     {
      "say": "Four against three. Three.",
@@ -1829,7 +1917,8 @@ window.CHAPTER = {
      "box": [
       "1, 2, 3"
      ],
-     "card": "4 against 3 → take 3"
+     "card": "4 against 3 → take 3",
+     "arrows": null
     },
     {
      "say": "Four against nine. Which one goes out, and which marker moves?",
@@ -1844,7 +1933,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "4 against 9 → ?"
+     "card": "4 against 9 → ?",
+     "arrows": null
     },
     {
      "say": "Four. And i moves on.",
@@ -1861,7 +1951,8 @@ window.CHAPTER = {
       "1, 2, 3",
       "4"
      ],
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "Seven against nine. Seven. Now the first row is used up, so the main loop stops.",
@@ -1881,7 +1972,8 @@ window.CHAPTER = {
       "1, 2, 3",
       "4, 7"
      ],
-     "card": "7 against 9 → take 7"
+     "card": "7 against 9 → take 7",
+     "arrows": null
     },
     {
      "say": "Line ten empties what is left of the other row. Nine.",
@@ -1900,7 +1992,8 @@ window.CHAPTER = {
       "1, 2, 3",
       "4, 7, 9"
      ],
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "Line eleven returns the merged row.",
@@ -1912,7 +2005,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "Every step sends one number out. So n plus m steps. O of n plus m.",
@@ -1924,7 +2018,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "one number per step → O(n + m)"
+     "card": "one number per step → O(n + m)",
+     "arrows": null
     },
     {
      "say": "The answer row holds everything. O of n plus m space.",
@@ -1936,7 +2031,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "answer row → O(n + m) space"
+     "card": "answer row → O(n + m) space",
+     "arrows": null
     }
    ]
   },
@@ -2060,6 +2156,8 @@ window.CHAPTER = {
     "label": "5,000 doors, no triple",
     "msg": "Correct on the small cases, but too slow on the big one. Three nested loops is O(n³). Hold one number and run two pointers over the rest."
    },
+   "prep": null,
+   "post": null,
    "solution": [
     "function hasTriple(nums, target) {",
     "  for (let i = 0; i < nums.length - 2; i++) {",
@@ -2104,7 +2202,11 @@ window.CHAPTER = {
     "vars": [
      "sum"
     ],
-    "box": null
+    "box": null,
+    "list": false,
+    "leftNull": false,
+    "cycle": null,
+    "skips": []
    },
    "steps": [
     {
@@ -2117,7 +2219,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "three = one held + a pair"
+     "card": "three = one held + a pair",
+     "arrows": null
     },
     {
      "say": "Hold the first number still. Then run two pointers over everything to its right.",
@@ -2129,7 +2232,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "hold one, sweep the rest"
+     "card": "hold one, sweep the rest",
+     "arrows": null
     },
     {
      "say": "I holds the first number still. Pip and Moss take the two ends of everything after it.",
@@ -2145,7 +2249,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "Line six adds all three. One, two, eight. Eleven.",
@@ -2163,7 +2268,8 @@ window.CHAPTER = {
       "sum": 11
      },
      "box": null,
-     "card": "1 + 2 + 8 = 11"
+     "card": "1 + 2 + 8 = 11",
+     "arrows": null
     },
     {
      "say": "Eleven is less than fifteen. Too small. Pip moves right.",
@@ -2177,7 +2283,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "too small → left moves in"
+     "card": "too small → left moves in",
+     "arrows": null
     },
     {
      "say": "One, four, eight. Thirteen. Still too small. Pip moves again.",
@@ -2197,7 +2304,8 @@ window.CHAPTER = {
       "sum": 13
      },
      "box": null,
-     "card": "1 + 4 + 8 = 13"
+     "card": "1 + 4 + 8 = 13",
+     "arrows": null
     },
     {
      "say": "One, five, eight. Fourteen. Too small. Pip moves, and meets Moss. No triple starts with one.",
@@ -2217,7 +2325,8 @@ window.CHAPTER = {
       "sum": 14
      },
      "box": null,
-     "card": "1 + 5 + 8 = 14"
+     "card": "1 + 5 + 8 = 14",
+     "arrows": null
     },
     {
      "say": "So i moves on to the next number, two. Pip and Moss reset to the ends of what follows.",
@@ -2235,7 +2344,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "next held number: 2"
+     "card": "next held number: 2",
+     "arrows": null
     },
     {
      "say": "Two, four, eight. Fourteen. The target is fifteen. Who moves?",
@@ -2253,7 +2363,8 @@ window.CHAPTER = {
       "sum": 14
      },
      "box": null,
-     "card": "2 + 4 + 8 = 14"
+     "card": "2 + 4 + 8 = 14",
+     "arrows": null
     },
     {
      "say": "Pip. Too small means the left walker moves.",
@@ -2267,7 +2378,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": ""
+     "card": "",
+     "arrows": null
     },
     {
      "say": "Two, five, eight. Fifteen. Line seven returns true.",
@@ -2289,7 +2401,8 @@ window.CHAPTER = {
       "sum": 15
      },
      "box": null,
-     "card": "2 + 5 + 8 = 15"
+     "card": "2 + 5 + 8 = 15",
+     "arrows": null
     },
     {
      "say": "One sweep for each held number. n times n. O of n squared. Trying every triple would be n cubed.",
@@ -2301,7 +2414,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "n sweeps × n steps → O(n²)"
+     "card": "n sweeps × n steps → O(n²)",
+     "arrows": null
     },
     {
      "say": "Only three markers. O of one space.",
@@ -2313,7 +2427,8 @@ window.CHAPTER = {
      "set": null,
      "vars": null,
      "box": null,
-     "card": "3 markers → O(1) space"
+     "card": "3 markers → O(1) space",
+     "arrows": null
     }
    ]
   }
