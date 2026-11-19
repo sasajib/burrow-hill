@@ -92,7 +92,7 @@ pre,code{font-family:var(--mono);font-size:14px}
 <div class="wrap">
 <header>
   <div><div class="sub">CHAPTER 1 · ARRAYS</div><h1>Burrow Hill</h1></div>
-  <a href="index.html" style="margin-left:auto;font-family:var(--mono);font-weight:700;font-size:13px;color:var(--plum)">← Overview</a>
+  <nav style="margin-left:auto;display:flex;flex-wrap:wrap;gap:6px 16px;font-family:var(--mono);font-weight:700;font-size:13px"><a href="index.html#chapters" style="color:var(--plum)">All chapters</a><a href="hashmap.html" style="color:var(--plum)">Chapter 2: Hash maps →</a></nav>
   <div class="xp" id="xp" aria-live="polite" style="margin-left:0">0 XP</div>
 </header>
 <nav class="trail" id="trail" aria-label="Stages"></nav>
@@ -114,7 +114,7 @@ const save = () => { try { localStorage.setItem(KEY, JSON.stringify(S)); } catch
 const gain = (n) => { S.xp += n; save(); };
 
 const STAGES = [
-  { id: 'w', kind: 'lesson', video: 'intro', label: 'Welcome', name: 'Meet Pip and Moss', intro: 'Two minutes of setup: who the characters are and how each lesson runs.' },
+  { id: 'w', kind: 'lesson', video: 'intro', label: 'Introduction', name: 'Meet Pip and Moss', intro: 'Two minutes of setup: who the characters are and how each lesson runs.' },
   { id: 't1', kind: 'lesson', video: 't1', label: 'Theory 1', name: 'What an array is', intro: 'The video stops twice and asks you to guess. Guess before it shows you; that is where the learning happens.' },
   { id: 't2', kind: 'lesson', video: 't2', label: 'Theory 2', name: 'What it costs', intro: 'Three guesses this time. Each one is about how many parcels have to move.' },
   { id: 'p1', kind: 'puzzle', video: 'p1', label: 'Puzzle', name: 'The Backwards Parade' },

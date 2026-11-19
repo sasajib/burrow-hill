@@ -46,6 +46,14 @@ p{margin:0 0 14px;max-width:64ch}
 .two{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:36px;align-items:start}
 ul.plain{list-style:none;margin:0;padding:0;display:grid;gap:10px}
 ul.plain li{border-left:6px solid var(--coral);padding:2px 0 2px 14px;max-width:60ch}
+.chap{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px;margin-top:22px}
+.chcard{display:flex;flex-direction:column;gap:6px;text-decoration:none;color:var(--plum);background:#fff;border:5px solid var(--plum);border-radius:20px;padding:0 20px 18px;box-shadow:8px 10px 0 var(--plum);overflow:hidden}
+.chcard img{display:block;width:calc(100% + 40px);max-width:none;margin:0 -20px 12px;aspect-ratio:16/9;object-fit:cover;border-bottom:5px solid var(--plum)}
+.chcard .kick{margin:0}
+.chcard b{font-size:30px;font-weight:800;line-height:1.1}
+.chcard span{font-size:16px}
+.chcard i{font-style:normal;font-weight:800;margin-top:8px;align-self:flex-start;background:var(--coral);border:4px solid var(--plum);border-radius:12px;padding:8px 16px}
+.chcard:focus-visible{outline:4px solid var(--teal);outline-offset:3px}
 .stat{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin:20px 0 6px}
 .stat div{border:4px solid var(--plum);border-radius:14px;background:#fff;padding:12px 14px;font-size:15px}
 .stat b{display:block;font-size:34px;font-weight:800;line-height:1.1;font-variant-numeric:tabular-nums}
@@ -65,7 +73,7 @@ footer{padding-block:28px;font-family:var(--mono);font-size:13px}
       <p class="kick">Prototype · Data structures and algorithms</p>
       <h1>Burrow Hill</h1>
       <p class="lede">Watch the idea happen. Guess what comes next. Then write the code.</p>
-      <div class="btns"><a class="btn" href="hashmap.html">Try a chapter</a><a class="btn alt" href="#watch">Watch the videos</a></div>
+      <div class="btns"><a class="btn" href="#chapters">Try a chapter</a><a class="btn alt" href="#watch">Watch the videos</a></div>
       <div class="cast" aria-hidden="true"><svg width="120" viewBox="0 0 200 220">
  <g><ellipse cx="98" cy="50" rx="14" ry="46" fill="#E24A3E" stroke="#2B1B4A" stroke-width="7" stroke-linejoin="round" stroke-linecap="round" transform="rotate(-14 98 90)"/>
  <ellipse cx="124" cy="48" rx="14" ry="48" fill="#FF6B5E" stroke="#2B1B4A" stroke-width="7" stroke-linejoin="round" stroke-linecap="round" transform="rotate(4 124 90)"/><ellipse cx="124" cy="50" rx="5" ry="30" fill="#FFF6E0" transform="rotate(4 124 90)"/></g>
@@ -135,11 +143,36 @@ footer{padding-block:28px;font-family:var(--mono);font-size:13px}
       <div class="step"><b>4 · SOLUTION</b><p>The answer narrated line by line while the characters act out each line.</p></div>
       <div class="step"><b>5 · REVIEW</b><p>The next day the editor is blank. Solving again from memory is what makes it stick.</p></div>
     </div>
-    <div class="btns"><a class="btn" href="hashmap.html">Open the hash map chapter</a><a class="btn alt" href="arrays.html">Open the arrays chapter</a></div>
   </div>
 </section>
 
-<section class="band" id="watch">
+<section class="band" id="chapters">
+  <div class="in">
+    <p class="kick">Try it yourself</p>
+    <h2>Pick a chapter.</h2>
+    <p>Each one runs in the browser: videos that stop for your guess, then a puzzle with a code editor. Start with chapter 1; it opens with the introduction to Burrow Hill and its characters.</p>
+    <div class="chap">
+      <a class="chcard" href="arrays.html"><img src="posters/intro.jpg" alt="" loading="lazy"><span class="kick">Start here · Chapter 1</span><b>Introduction and Arrays</b><span>Meet Pip and Moss, then learn what an array is, what it costs, and reverse one in place. About 5 minutes of video.</span><i>Open chapter 1 →</i></a>
+      <a class="chcard" href="hashmap.html"><img src="posters/ht2.jpg" alt="" loading="lazy"><span class="kick">Chapter 2</span><b>Hash Maps</b><span>Meet Hazel, turn a name into a door number, handle collisions, and solve the classic pair puzzle. About 6 minutes of video.</span><i>Open chapter 2 →</i></a>
+    </div>
+  </div>
+</section>
+
+<section class="band mint" id="watch">
+  <div class="in">
+    <p class="kick">Chapter 1 · Arrays</p>
+    <h2>One jump to any door, and what that costs.</h2>
+    <div class="grid">
+      <div class="vid"><div class="frame"><video controls playsinline preload="none" poster="posters/intro.jpg" src="videos/intro.mp4"></video></div><h3>Introduction</h3><p>44 s. Burrow Hill, Pip and Moss, and how a lesson works.</p></div>
+      <div class="vid"><div class="frame"><video controls playsinline preload="none" poster="posters/t1.jpg" src="videos/t1.mp4"></video></div><h3>Theory 1: What an array is</h3><p>1 min 17 s. Memory, same-width slots, and why counting starts at zero.</p></div>
+      <div class="vid"><div class="frame"><video controls playsinline preload="none" poster="posters/t2.jpg" src="videos/t2.mp4"></video></div><h3>Theory 2: What it costs</h3><p>1 min 8 s. Inserting, removing, adding at the end.</p></div>
+      <div class="vid"><div class="frame"><video controls playsinline preload="none" poster="posters/p1.jpg" src="videos/p1.mp4"></video></div><h3>Puzzle: The Backwards Parade</h3><p>19 s. Reverse the row where it stands.</p></div>
+      <div class="vid"><div class="frame"><video controls playsinline preload="none" poster="posters/s1.jpg" src="videos/s1.mp4"></video></div><h3>Solution: Two friends, one row</h3><p>1 min 7 s. The two-pointer idea, line by line.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="band">
   <div class="in">
     <p class="kick">Chapter 2 · Hash maps</p>
     <h2>Find anything by its name, in one step.</h2>
@@ -149,20 +182,6 @@ footer{padding-block:28px;font-family:var(--mono);font-size:13px}
       <div class="vid"><div class="frame"><video controls playsinline preload="none" poster="posters/ht2.jpg" src="videos/ht2.mp4"></video></div><h3>Theory 2: Store, find, collide</h3><p>2 min 10 s. Keys and values, collisions, growing, and what each operation costs.</p></div>
       <div class="vid"><div class="frame"><video controls playsinline preload="none" poster="posters/hp.jpg" src="videos/hp.mp4"></video></div><h3>Puzzle: The Balloon Pair</h3><p>27 s. Two parcels must weigh exactly ten together.</p></div>
       <div class="vid"><div class="frame"><video controls playsinline preload="none" poster="posters/hs.jpg" src="videos/hs.mp4"></video></div><h3>Solution: Search becomes ask</h3><p>1 min 19 s. Every line of the code, acted out.</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="band mint">
-  <div class="in">
-    <p class="kick">Chapter 1 · Arrays</p>
-    <h2>One jump to any door, and what that costs.</h2>
-    <div class="grid">
-      <div class="vid"><div class="frame"><video controls playsinline preload="none" poster="posters/intro.jpg" src="videos/intro.mp4"></video></div><h3>Welcome</h3><p>44 s. Burrow Hill, Pip and Moss.</p></div>
-      <div class="vid"><div class="frame"><video controls playsinline preload="none" poster="posters/t1.jpg" src="videos/t1.mp4"></video></div><h3>Theory 1: What an array is</h3><p>1 min 17 s. Memory, same-width slots, and why counting starts at zero.</p></div>
-      <div class="vid"><div class="frame"><video controls playsinline preload="none" poster="posters/t2.jpg" src="videos/t2.mp4"></video></div><h3>Theory 2: What it costs</h3><p>1 min 8 s. Inserting, removing, adding at the end.</p></div>
-      <div class="vid"><div class="frame"><video controls playsinline preload="none" poster="posters/p1.jpg" src="videos/p1.mp4"></video></div><h3>Puzzle: The Backwards Parade</h3><p>19 s. Reverse the row where it stands.</p></div>
-      <div class="vid"><div class="frame"><video controls playsinline preload="none" poster="posters/s1.jpg" src="videos/s1.mp4"></video></div><h3>Solution: Two friends, one row</h3><p>1 min 7 s. The two-pointer idea, line by line.</p></div>
     </div>
   </div>
 </section>
