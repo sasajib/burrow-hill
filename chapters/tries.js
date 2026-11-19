@@ -206,6 +206,8 @@ window.CHAPTER = {
      null,
      "t"
     ],
+    "grid": null,
+    "graph": null,
     "treeIndex": false,
     "ghost": [
      11
@@ -548,6 +550,8 @@ window.CHAPTER = {
      "r",
      "t"
     ],
+    "grid": null,
+    "graph": null,
     "treeIndex": false,
     "ghost": [],
     "row2": null,
@@ -889,6 +893,8 @@ window.CHAPTER = {
      "r",
      "t"
     ],
+    "grid": null,
+    "graph": null,
     "treeIndex": false,
     "ghost": [],
     "row2": null,

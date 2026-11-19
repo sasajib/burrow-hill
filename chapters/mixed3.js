@@ -222,6 +222,8 @@ window.CHAPTER = {
      2,
      3
     ],
+    "grid": null,
+    "graph": null,
     "treeIndex": false,
     "ghost": [],
     "row2": null,
@@ -537,6 +539,8 @@ window.CHAPTER = {
      1,
      4
     ],
+    "grid": null,
+    "graph": null,
     "treeIndex": false,
     "ghost": [],
     "row2": null,
@@ -874,6 +878,8 @@ window.CHAPTER = {
      null,
      14
     ],
+    "grid": null,
+    "graph": null,
     "treeIndex": false,
     "ghost": [],
     "row2": null,
@@ -1213,6 +1219,8 @@ window.CHAPTER = {
      4
     ],
     "tree": null,
+    "grid": null,
+    "graph": null,
     "treeIndex": false,
     "ghost": [],
     "row2": null,
@@ -1521,6 +1529,8 @@ window.CHAPTER = {
      "bat"
     ],
     "tree": null,
+    "grid": null,
+    "graph": null,
     "treeIndex": false,
     "ghost": [],
     "row2": null,
@@ -1877,6 +1887,8 @@ window.CHAPTER = {
      null,
      9
     ],
+    "grid": null,
+    "graph": null,
     "treeIndex": false,
     "ghost": [],
     "row2": null,
@@ -2204,6 +2216,8 @@ window.CHAPTER = {
      10
     ],
     "tree": null,
+    "grid": null,
+    "graph": null,
     "treeIndex": false,
     "ghost": [],
     "row2": null,
@@ -2522,6 +2536,8 @@ window.CHAPTER = {
      1
     ],
     "tree": null,
+    "grid": null,
+    "graph": null,
     "treeIndex": false,
     "ghost": [],
     "row2": null,
