@@ -4,8 +4,8 @@ window.CHAPTER = {
  "sub": "MIXED SET 1",
  "key": "burrow-ch-mixed1",
  "next": {
-  "href": "index.html#chapters",
-  "label": "All chapters"
+  "href": "chapter.html?c=recur",
+  "label": "Chapter 10: Recursion"
  },
  "prev": {
   "href": "chapter.html?c=linked",

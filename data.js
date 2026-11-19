@@ -7003,6 +7003,2597 @@ window.BURROW = {
     }
    ]
   },
+  "rc0": {
+   "src": "videos/rc0.mp4",
+   "title": "A Function That Calls Itself",
+   "duration": 27.17,
+   "lines": [
+    {
+     "id": "rw1",
+     "text": "Chapter ten. Recursion. A function that calls itself.",
+     "start": 0.2,
+     "end": 3.66
+    },
+    {
+     "id": "rw2",
+     "text": "It sounds like a trick. It is really one honest idea. To solve a big problem, solve a slightly smaller one first.",
+     "start": 4.36,
+     "end": 11.93
+    },
+    {
+     "id": "rw3",
+     "text": "Trees, graphs, and half of the hard interview questions are built on it. So this chapter is short, and important.",
+     "start": 12.83,
+     "end": 19.63
+    },
+    {
+     "id": "rw4",
+     "text": "Two ideas. The base case, and trusting the smaller answer. Then four puzzles.",
+     "start": 20.53,
+     "end": 25.57
+    }
+   ],
+   "pauses": []
+  },
+  "rct1": {
+   "src": "videos/rct1.mp4",
+   "title": "The Base Case and the Step",
+   "duration": 75.7,
+   "lines": [
+    {
+     "id": "rx1",
+     "text": "Pip stands in a long queue, and wants to know how many are in front. Pip cannot see the front. But Pip can ask the one ahead.",
+     "start": 0.2,
+     "end": 7.9
+    },
+    {
+     "id": "rx2",
+     "text": "That one does not know either. So they ask the one ahead of them. And so on, all the way down the line.",
+     "start": 8.8,
+     "end": 15.03
+    },
+    {
+     "id": "rx3",
+     "text": "At the front, somebody can answer without asking. Nobody is in front of me. Zero.",
+     "start": 15.93,
+     "end": 21.51
+    },
+    {
+     "id": "rx4",
+     "text": "Then the answers travel back. Zero. So one. So two. So three. Each one adds one, and passes it back.",
+     "start": 22.51,
+     "end": 29.59
+    },
+    {
+     "id": "rx5",
+     "text": "That is recursion. And it always has two parts.",
+     "start": 30.59,
+     "end": 33.68
+    },
+    {
+     "id": "rx6",
+     "text": "Part one. The base case. A version so small that the answer is simply known. Without it, the asking never stops.",
+     "start": 34.58,
+     "end": 41.94
+    },
+    {
+     "id": "rx7",
+     "text": "Part two. The step. Do a little work, and hand a smaller version of the same question to yourself.",
+     "start": 42.94,
+     "end": 48.96
+    },
+    {
+     "id": "rx8",
+     "text": "Every call waits on the call stack until its smaller question is answered. You met the call stack in the foundations.",
+     "start": 49.96,
+     "end": 56.81
+    },
+    {
+     "id": "rx9",
+     "text": "So. A function calls itself, and has no base case. What happens?",
+     "start": 57.81,
+     "end": 61.88
+    },
+    {
+     "id": "rx10",
+     "text": "The calls pile up until the stack is full. That is a stack overflow. So always write the base case first.",
+     "start": 63.08,
+     "end": 69.78
+    },
+    {
+     "id": "rx11",
+     "text": "A smaller copy of the same problem? Think recursion.",
+     "start": 70.78,
+     "end": 74.1
+    }
+   ],
+   "pauses": [
+    {
+     "id": "rct1-q1",
+     "t": 62.08
+    }
+   ]
+  },
+  "rct2": {
+   "src": "videos/rct2.mp4",
+   "title": "Trust the Smaller Answer",
+   "duration": 59.69,
+   "lines": [
+    {
+     "id": "ry1",
+     "text": "The hardest part of recursion is not the code. It is trying to follow every call in your head. So do not.",
+     "start": 0.2,
+     "end": 6.69
+    },
+    {
+     "id": "ry2",
+     "text": "Here is the trick. Assume the smaller call already works. Just trust it.",
+     "start": 7.59,
+     "end": 12.15
+    },
+    {
+     "id": "ry3",
+     "text": "To add up the numbers one to four, assume sum to three already gives six. Then your only job is four plus six.",
+     "start": 13.15,
+     "end": 20.36
+    },
+    {
+     "id": "ry4",
+     "text": "You write one step, and one base case. The trust does the rest.",
+     "start": 21.36,
+     "end": 25.33
+    },
+    {
+     "id": "ry5",
+     "text": "A second thing to know. Some recursions ask the same small question many times.",
+     "start": 26.33,
+     "end": 31.23
+    },
+    {
+     "id": "ry6",
+     "text": "Counting the ways up five stairs asks for three stairs twice, two stairs three times, and one stair five times.",
+     "start": 32.13,
+     "end": 39.17
+    },
+    {
+     "id": "ry7",
+     "text": "The same question, asked again and again. What could you do about that?",
+     "start": 40.17,
+     "end": 44.37
+    },
+    {
+     "id": "ry8",
+     "text": "Write each answer down the first time. That note is called a memo. It turns an exploding tree of calls into a short line.",
+     "start": 45.57,
+     "end": 52.95
+    },
+    {
+     "id": "ry9",
+     "text": "Trust the smaller call. And never answer the same question twice.",
+     "start": 53.95,
+     "end": 58.09
+    }
+   ],
+   "pauses": [
+    {
+     "id": "rct2-q1",
+     "t": 44.57
+    }
+   ]
+  },
+  "rc1i": {
+   "src": "videos/rc1i.mp4",
+   "title": "Add Them Up",
+   "duration": 20.93,
+   "lines": [
+    {
+     "id": "rc1i_1",
+     "text": "Add up the numbers from one to four. Easy with a loop. But this time, no loop.",
+     "start": 0.2,
+     "end": 5.11
+    },
+    {
+     "id": "rc1i_2",
+     "text": "Return one plus two, all the way up to n. The function must call itself.",
+     "start": 5.81,
+     "end": 10.45
+    },
+    {
+     "id": "rc1i_3",
+     "text": "Suppose somebody handed you the sum up to three. Six.",
+     "start": 11.15,
+     "end": 14.51
+    },
+    {
+     "id": "rc1i_4",
+     "text": "What would be left for you to do? And when does the asking stop? Your turn.",
+     "start": 15.21,
+     "end": 19.33
+    }
+   ],
+   "pauses": []
+  },
+  "rc1s": {
+   "src": "videos/rc1s.mp4",
+   "title": "Ask for the smaller sum",
+   "duration": 70.09,
+   "lines": [
+    {
+     "id": "rc1s_1",
+     "text": "The sum up to four is four, plus the sum up to three. The same question, one size smaller.",
+     "start": 0.2,
+     "end": 5.9
+    },
+    {
+     "id": "rc1s_2",
+     "text": "And the sum up to zero needs no thinking. It is zero. That is where the chain stops.",
+     "start": 6.65,
+     "end": 12.04
+    },
+    {
+     "id": "rc1s_3",
+     "text": "The first call. N is four. Not zero. So line three needs sum to three, and has to wait for it.",
+     "start": 12.79,
+     "end": 18.88
+    },
+    {
+     "id": "rc1s_4",
+     "text": "So a new call starts, with n three. It waits too, for sum to two.",
+     "start": 19.63,
+     "end": 23.76
+    },
+    {
+     "id": "rc1s_5",
+     "text": "Two waits for one. One waits for zero. Four calls are now waiting on the call stack.",
+     "start": 24.51,
+     "end": 29.76
+    },
+    {
+     "id": "rc1s_6",
+     "text": "N is zero. Line two. The base case. It returns zero straight away, without asking anyone.",
+     "start": 30.51,
+     "end": 36.69
+    },
+    {
+     "id": "rc1s_7",
+     "text": "Now the answers travel back up. The call with n one was waiting. One plus zero. It returns one.",
+     "start": 37.44,
+     "end": 44.08
+    },
+    {
+     "id": "rc1s_8",
+     "text": "The call with n two was waiting for that. What does it return?",
+     "start": 44.83,
+     "end": 48.47
+    },
+    {
+     "id": "rc1s_9",
+     "text": "Three. Two, plus the one that came back.",
+     "start": 49.67,
+     "end": 52.01
+    },
+    {
+     "id": "rc1s_10",
+     "text": "Three plus three is six. Four plus six is ten. Every waiting call has finished.",
+     "start": 52.76,
+     "end": 58.13
+    },
+    {
+     "id": "rc1s_11",
+     "text": "One call for each number from n down to zero. O of n time.",
+     "start": 59.23,
+     "end": 63.32
+    },
+    {
+     "id": "rc1s_12",
+     "text": "And all of them wait on the call stack at the same moment. O of n space.",
+     "start": 64.07,
+     "end": 68.5
+    }
+   ],
+   "pauses": [
+    {
+     "id": "rc1s-q",
+     "t": 48.67
+    }
+   ]
+  },
+  "rc2i": {
+   "src": "videos/rc2i.mp4",
+   "title": "Powers in a Hurry",
+   "duration": 21.44,
+   "lines": [
+    {
+     "id": "rc2i_1",
+     "text": "Two, times two, times two, times two, times two. Five twos.",
+     "start": 0.2,
+     "end": 4.38
+    },
+    {
+     "id": "rc2i_2",
+     "text": "Return base to the power exp. And it must stay fast when exp is in the billions.",
+     "start": 5.08,
+     "end": 10.01
+    },
+    {
+     "id": "rc2i_3",
+     "text": "Multiplying one at a time takes exp steps.",
+     "start": 10.71,
+     "end": 13.45
+    },
+    {
+     "id": "rc2i_4",
+     "text": "But if you knew two to the power two, how quickly could you reach the power four? Your turn.",
+     "start": 14.15,
+     "end": 19.84
+    }
+   ],
+   "pauses": []
+  },
+  "rc2s": {
+   "src": "videos/rc2s.mp4",
+   "title": "Half the exponent, then square",
+   "duration": 72.08,
+   "lines": [
+    {
+     "id": "rc2s_1",
+     "text": "Two to the power four is two squared, times two squared. So work out half the exponent once, and multiply it by itself.",
+     "start": 0.2,
+     "end": 8.12
+    },
+    {
+     "id": "rc2s_2",
+     "text": "An odd exponent leaves one extra base. Multiply it in at the end.",
+     "start": 8.87,
+     "end": 13.33
+    },
+    {
+     "id": "rc2s_3",
+     "text": "Power of two to the five. Line three asks for half the exponent. Five divided by two, rounded down. Two.",
+     "start": 14.08,
+     "end": 21.25
+    },
+    {
+     "id": "rc2s_4",
+     "text": "That call asks for half of two. One. And that one asks for half of one, which rounds down to zero.",
+     "start": 22,
+     "end": 28.46
+    },
+    {
+     "id": "rc2s_5",
+     "text": "Exponent zero. The base case. It returns one.",
+     "start": 29.21,
+     "end": 32.36
+    },
+    {
+     "id": "rc2s_6",
+     "text": "Back in the call with exponent one. Half is one. One is odd, so line five multiplies in a base. One times one times two. Two.",
+     "start": 33.11,
+     "end": 41.96
+    },
+    {
+     "id": "rc2s_7",
+     "text": "Back in the call with exponent two. Half is two, and two is even. What does line four return?",
+     "start": 42.71,
+     "end": 48.86
+    },
+    {
+     "id": "rc2s_8",
+     "text": "Four. Half times half.",
+     "start": 50.06,
+     "end": 51.38
+    },
+    {
+     "id": "rc2s_9",
+     "text": "And the first call. Half is four. Five is odd. Four times four times two. Thirty two.",
+     "start": 52.13,
+     "end": 58.27
+    },
+    {
+     "id": "rc2s_10",
+     "text": "The exponent halves at every call. So even two billion needs only about thirty calls. O of log n.",
+     "start": 59.37,
+     "end": 66.3
+    },
+    {
+     "id": "rc2s_11",
+     "text": "Those calls wait on the stack. O of log n space.",
+     "start": 67.05,
+     "end": 70.48
+    }
+   ],
+   "pauses": [
+    {
+     "id": "rc2s-q",
+     "t": 49.06
+    }
+   ]
+  },
+  "rc3i": {
+   "src": "videos/rc3i.mp4",
+   "title": "The Mirror, Again",
+   "duration": 18.25,
+   "lines": [
+    {
+     "id": "rc3i_1",
+     "text": "You have checked a mirror word before, with two markers and a loop.",
+     "start": 0.2,
+     "end": 3.89
+    },
+    {
+     "id": "rc3i_2",
+     "text": "Do it again. Return true for a mirror word. But this time, no loop.",
+     "start": 4.59,
+     "end": 8.85
+    },
+    {
+     "id": "rc3i_3",
+     "text": "If the two ends match, what is left is a smaller word.",
+     "start": 9.55,
+     "end": 12.99
+    },
+    {
+     "id": "rc3i_4",
+     "text": "What do you ask about that smaller word? Your turn.",
+     "start": 13.69,
+     "end": 16.65
+    }
+   ],
+   "pauses": []
+  },
+  "rc3s": {
+   "src": "videos/rc3s.mp4",
+   "title": "Match the ends, ask the inside",
+   "duration": 57.8,
+   "lines": [
+    {
+     "id": "rc3s_1",
+     "text": "A word is a mirror if its two ends match, and the part between them is a mirror too.",
+     "start": 0.2,
+     "end": 5.31
+    },
+    {
+     "id": "rc3s_2",
+     "text": "The part between them is a smaller copy of the same question. That is the recursive step.",
+     "start": 6.06,
+     "end": 11.68
+    },
+    {
+     "id": "rc3s_3",
+     "text": "The first call. Line one fills in left and right by itself. Zero, and four.",
+     "start": 12.43,
+     "end": 17.79
+    },
+    {
+     "id": "rc3s_4",
+     "text": "Line three compares the ends. L and L. They match. So line four asks about the inside.",
+     "start": 18.54,
+     "end": 24.25
+    },
+    {
+     "id": "rc3s_5",
+     "text": "A new call, with left one and right three. E and E match. Ask about the inside again.",
+     "start": 25,
+     "end": 30.47
+    },
+    {
+     "id": "rc3s_6",
+     "text": "Now left is two, and right is two. Which line answers?",
+     "start": 31.22,
+     "end": 34.73
+    },
+    {
+     "id": "rc3s_7",
+     "text": "Line two. Left has reached right. Nothing is left to compare. True.",
+     "start": 35.93,
+     "end": 40
+    },
+    {
+     "id": "rc3s_8",
+     "text": "That true travels straight back up. Each waiting call returns what it was given.",
+     "start": 40.75,
+     "end": 45.59
+    },
+    {
+     "id": "rc3s_9",
+     "text": "One call for every pair of letters. O of n time.",
+     "start": 46.69,
+     "end": 49.93
+    },
+    {
+     "id": "rc3s_10",
+     "text": "Those calls wait on the stack. O of n space. The loop version needed only O of one.",
+     "start": 50.68,
+     "end": 56.2
+    }
+   ],
+   "pauses": [
+    {
+     "id": "rc3s-q",
+     "t": 34.93
+    }
+   ]
+  },
+  "rc4i": {
+   "src": "videos/rc4i.mp4",
+   "title": "Up the Stairs",
+   "duration": 17.28,
+   "lines": [
+    {
+     "id": "rc4i_1",
+     "text": "Pip hops up a staircase. One step at a time, or two.",
+     "start": 0.2,
+     "end": 3.67
+    },
+    {
+     "id": "rc4i_2",
+     "text": "Return the number of different ways to reach step n.",
+     "start": 4.37,
+     "end": 7.03
+    },
+    {
+     "id": "rc4i_3",
+     "text": "Think about the very last hop onto the top step. It was a one, or a two.",
+     "start": 7.73,
+     "end": 12.06
+    },
+    {
+     "id": "rc4i_4",
+     "text": "So where could Pip have been, just before? Your turn.",
+     "start": 12.76,
+     "end": 15.68
+    }
+   ],
+   "pauses": []
+  },
+  "rc4s": {
+   "src": "videos/rc4s.mp4",
+   "title": "The last hop was 1 or 2",
+   "duration": 81,
+   "lines": [
+    {
+     "id": "rc4s_1",
+     "text": "The last hop onto step n was one step, or two. So the ways to reach n are the ways to reach n minus one, plus the ways to reach n minus two.",
+     "start": 0.2,
+     "end": 9.64
+    },
+    {
+     "id": "rc4s_2",
+     "text": "But the same small staircase gets asked about again and again. So write each answer down the first time. That note is a memo.",
+     "start": 10.39,
+     "end": 18.51
+    },
+    {
+     "id": "rc4s_3",
+     "text": "Stairs of four. Not a base case, and not in the memo. So line four asks for stairs of three, and stairs of two.",
+     "start": 19.26,
+     "end": 26.48
+    },
+    {
+     "id": "rc4s_4",
+     "text": "Stairs of three asks the same kind of question. Stairs of two, plus stairs of one.",
+     "start": 27.23,
+     "end": 32.63
+    },
+    {
+     "id": "rc4s_5",
+     "text": "Stairs of two. Stairs of one, plus stairs of zero. Both are base cases, one each. So two ways.",
+     "start": 33.38,
+     "end": 40.44
+    },
+    {
+     "id": "rc4s_6",
+     "text": "Line five writes that answer into the memo, before returning it.",
+     "start": 41.19,
+     "end": 45.12
+    },
+    {
+     "id": "rc4s_7",
+     "text": "Back in stairs of three. Two, plus stairs of one, which is one. Three. Into the memo.",
+     "start": 45.87,
+     "end": 51.94
+    },
+    {
+     "id": "rc4s_8",
+     "text": "Back in stairs of four. It still needs stairs of two. Does it work that out again?",
+     "start": 52.69,
+     "end": 57.69
+    },
+    {
+     "id": "rc4s_9",
+     "text": "No. Line three finds it in the memo. Two. No further calls at all.",
+     "start": 58.89,
+     "end": 63.14
+    },
+    {
+     "id": "rc4s_10",
+     "text": "Three plus two. Five ways.",
+     "start": 63.89,
+     "end": 65.98
+    },
+    {
+     "id": "rc4s_11",
+     "text": "With the memo, each n is worked out once. O of n time. Without it, the calls roughly double at every level.",
+     "start": 67.08,
+     "end": 74.14
+    },
+    {
+     "id": "rc4s_12",
+     "text": "The memo and the call stack each hold up to n entries. O of n space.",
+     "start": 74.89,
+     "end": 79.4
+    }
+   ],
+   "pauses": [
+    {
+     "id": "rc4s-q",
+     "t": 57.89
+    }
+   ]
+  },
+  "sr1i": {
+   "src": "videos/sr1i.mp4",
+   "title": "The Mirror Word",
+   "duration": 19.19,
+   "lines": [
+    {
+     "id": "sr1i_1",
+     "text": "Some words are mirrors. Level reads the same forwards and backwards.",
+     "start": 0.2,
+     "end": 4.66
+    },
+    {
+     "id": "sr1i_2",
+     "text": "Write a function that returns true for a mirror word, and false for anything else.",
+     "start": 5.36,
+     "end": 10.32
+    },
+    {
+     "id": "sr1i_3",
+     "text": "Look at the two ends first. What must be true about them?",
+     "start": 11.02,
+     "end": 14.46
+    },
+    {
+     "id": "sr1i_4",
+     "text": "Then what about the next pair in? Your turn.",
+     "start": 15.16,
+     "end": 17.59
+    }
+   ],
+   "pauses": []
+  },
+  "sr1s": {
+   "src": "videos/sr1s.mp4",
+   "title": "Two ends, walking in",
+   "duration": 67.64,
+   "lines": [
+    {
+     "id": "sr1s_1",
+     "text": "A mirror word reads the same from both ends. So compare the two ends, then walk inward.",
+     "start": 0.2,
+     "end": 5.63
+    },
+    {
+     "id": "sr1s_2",
+     "text": "If any pair differs, it is not a mirror. If the two walkers meet, it is.",
+     "start": 6.38,
+     "end": 11.05
+    },
+    {
+     "id": "sr1s_3",
+     "text": "Lines two and three place the markers. Pip is left, at index zero. Moss is right, at index four.",
+     "start": 11.8,
+     "end": 18.42
+    },
+    {
+     "id": "sr1s_4",
+     "text": "Line four asks: is left still before right? Zero is less than four. Yes.",
+     "start": 19.17,
+     "end": 24.02
+    },
+    {
+     "id": "sr1s_5",
+     "text": "Line five compares the two letters. L and L. They match, so nothing is returned.",
+     "start": 24.77,
+     "end": 29.96
+    },
+    {
+     "id": "sr1s_6",
+     "text": "Lines eight and nine step both markers inward.",
+     "start": 30.71,
+     "end": 33.51
+    },
+    {
+     "id": "sr1s_7",
+     "text": "Check again. One is less than three. E and E match.",
+     "start": 34.26,
+     "end": 37.56
+    },
+    {
+     "id": "sr1s_8",
+     "text": "Step inward again. Now both stand on index two. Is two less than two?",
+     "start": 38.31,
+     "end": 43.04
+    },
+    {
+     "id": "sr1s_9",
+     "text": "No. The middle letter has no partner to disagree with. The loop ends.",
+     "start": 44.24,
+     "end": 48.73
+    },
+    {
+     "id": "sr1s_10",
+     "text": "Line eleven returns true. Level is a mirror word.",
+     "start": 49.48,
+     "end": 52.93
+    },
+    {
+     "id": "sr1s_11",
+     "text": "Each turn checks one pair, so at most half the letters. That is O of n time.",
+     "start": 54.03,
+     "end": 59.1
+    },
+    {
+     "id": "sr1s_12",
+     "text": "Two markers, and no copy of the word. O of one space. This is the two pointer pattern again.",
+     "start": 59.85,
+     "end": 66.04
+    }
+   ],
+   "pauses": [
+    {
+     "id": "sr1s-q",
+     "t": 43.24
+    }
+   ]
+  },
+  "sr2i": {
+   "src": "videos/sr2i.mp4",
+   "title": "The Odd One Out",
+   "duration": 19.83,
+   "lines": [
+    {
+     "id": "sr2i_1",
+     "text": "Every letter in this word has a twin. Except one.",
+     "start": 0.2,
+     "end": 3.31
+    },
+    {
+     "id": "sr2i_2",
+     "text": "Return the index of the first letter that appears only once. If there is none, return minus one.",
+     "start": 4.01,
+     "end": 10.46
+    },
+    {
+     "id": "sr2i_3",
+     "text": "You cannot know a letter is alone until you have seen the whole word.",
+     "start": 11.16,
+     "end": 15.09
+    },
+    {
+     "id": "sr2i_4",
+     "text": "So how many walks do you need? Your turn.",
+     "start": 15.79,
+     "end": 18.23
+    }
+   ],
+   "pauses": []
+  },
+  "sr2s": {
+   "src": "videos/sr2s.mp4",
+   "title": "Count first, then look",
+   "duration": 59.02,
+   "lines": [
+    {
+     "id": "sr2s_1",
+     "text": "To know a letter is alone, you must have seen the whole word. So this takes two walks.",
+     "start": 0.2,
+     "end": 5.69
+    },
+    {
+     "id": "sr2s_2",
+     "text": "On the first walk, a map counts every letter. On the second, we ask it for the first letter with a count of one.",
+     "start": 6.44,
+     "end": 13.17
+    },
+    {
+     "id": "sr2s_3",
+     "text": "Line two makes an empty map, called count.",
+     "start": 13.92,
+     "end": 16.33
+    },
+    {
+     "id": "sr2s_4",
+     "text": "The first walk. S. Never seen, so its count becomes one.",
+     "start": 17.08,
+     "end": 20.77
+    },
+    {
+     "id": "sr2s_5",
+     "text": "E. Count one.",
+     "start": 21.52,
+     "end": 22.54
+    },
+    {
+     "id": "sr2s_6",
+     "text": "E again. Its count goes up to two.",
+     "start": 23.29,
+     "end": 25.42
+    },
+    {
+     "id": "sr2s_7",
+     "text": "D. Count one.",
+     "start": 26.17,
+     "end": 27.18
+    },
+    {
+     "id": "sr2s_8",
+     "text": "S again. Two.",
+     "start": 27.93,
+     "end": 29.1
+    },
+    {
+     "id": "sr2s_9",
+     "text": "Now the second walk, from the start. Line seven asks: is this letter's count one? S has two. No.",
+     "start": 29.85,
+     "end": 36.15
+    },
+    {
+     "id": "sr2s_10",
+     "text": "E has two. No. The next E, no.",
+     "start": 36.9,
+     "end": 39.25
+    },
+    {
+     "id": "sr2s_11",
+     "text": "D. What does the map say?",
+     "start": 40,
+     "end": 41.42
+    },
+    {
+     "id": "sr2s_12",
+     "text": "One. Line eight returns its index. Three.",
+     "start": 42.62,
+     "end": 45.43
+    },
+    {
+     "id": "sr2s_13",
+     "text": "Two walks over n letters is two n steps. Drop the constant. O of n time.",
+     "start": 46.53,
+     "end": 52
+    },
+    {
+     "id": "sr2s_14",
+     "text": "The map holds one entry for each different letter. O of n space at most.",
+     "start": 52.75,
+     "end": 57.42
+    }
+   ],
+   "pauses": [
+    {
+     "id": "sr2s-q",
+     "t": 41.62
+    }
+   ]
+  },
+  "sr3i": {
+   "src": "videos/sr3i.mp4",
+   "title": "Same Letters",
+   "duration": 18.88,
+   "lines": [
+    {
+     "id": "sr3i_1",
+     "text": "Tea and eat. Different words, the same letters.",
+     "start": 0.2,
+     "end": 3.17
+    },
+    {
+     "id": "sr3i_2",
+     "text": "Return true when two words use exactly the same letters, the same number of times.",
+     "start": 3.87,
+     "end": 9.25
+    },
+    {
+     "id": "sr3i_3",
+     "text": "Sorting both words would work. Can you do it with one walk over each word?",
+     "start": 9.95,
+     "end": 14.45
+    },
+    {
+     "id": "sr3i_4",
+     "text": "What could keep count for you? Your turn.",
+     "start": 15.15,
+     "end": 17.28
+    }
+   ],
+   "pauses": []
+  },
+  "sr3s": {
+   "src": "videos/sr3s.mp4",
+   "title": "Count up, count down",
+   "duration": 60.08,
+   "lines": [
+    {
+     "id": "sr3s_1",
+     "text": "Two words are anagrams when they use the same letters, the same number of times.",
+     "start": 0.2,
+     "end": 5.14
+    },
+    {
+     "id": "sr3s_2",
+     "text": "So count the first word up, then count the second word down. Everything must land on zero.",
+     "start": 5.89,
+     "end": 11.62
+    },
+    {
+     "id": "sr3s_3",
+     "text": "Line two is a quick exit. Different lengths can never match. Three and three, so we go on.",
+     "start": 12.37,
+     "end": 18.07
+    },
+    {
+     "id": "sr3s_4",
+     "text": "Count the first word. T, one.",
+     "start": 18.82,
+     "end": 20.87
+    },
+    {
+     "id": "sr3s_5",
+     "text": "E, one.",
+     "start": 21.62,
+     "end": 22.41
+    },
+    {
+     "id": "sr3s_6",
+     "text": "A, one.",
+     "start": 23.16,
+     "end": 23.9
+    },
+    {
+     "id": "sr3s_7",
+     "text": "Now the second word. E. Line eight asks: is there an E left? Yes.",
+     "start": 24.65,
+     "end": 29.03
+    },
+    {
+     "id": "sr3s_8",
+     "text": "Line nine uses it up. E drops to zero.",
+     "start": 29.78,
+     "end": 32.66
+    },
+    {
+     "id": "sr3s_9",
+     "text": "A. One left. Use it.",
+     "start": 33.41,
+     "end": 34.95
+    },
+    {
+     "id": "sr3s_10",
+     "text": "T. Is there a T left in the map?",
+     "start": 35.7,
+     "end": 37.62
+    },
+    {
+     "id": "sr3s_11",
+     "text": "Yes, one. Use it. Now every count is zero.",
+     "start": 38.82,
+     "end": 41.84
+    },
+    {
+     "id": "sr3s_12",
+     "text": "Line eleven returns true. Tea and eat use the same letters.",
+     "start": 42.59,
+     "end": 46.7
+    },
+    {
+     "id": "sr3s_13",
+     "text": "One walk over each word. O of n time.",
+     "start": 47.8,
+     "end": 50.44
+    },
+    {
+     "id": "sr3s_14",
+     "text": "The map holds one entry per different letter. With lowercase letters only, at most twenty six. O of one space.",
+     "start": 51.19,
+     "end": 58.48
+    }
+   ],
+   "pauses": [
+    {
+     "id": "sr3s-q",
+     "t": 37.82
+    }
+   ]
+  },
+  "sr4i": {
+   "src": "videos/sr4i.mp4",
+   "title": "The Hidden Word",
+   "duration": 18.38,
+   "lines": [
+    {
+     "id": "sr4i_1",
+     "text": "Is the word ban hidden inside beacon?",
+     "start": 0.2,
+     "end": 2.49
+    },
+    {
+     "id": "sr4i_2",
+     "text": "Return true if the small word's letters appear in the big word in the same order. Other letters may sit in between.",
+     "start": 3.19,
+     "end": 10.22
+    },
+    {
+     "id": "sr4i_3",
+     "text": "You never need to go backwards, in either word.",
+     "start": 10.92,
+     "end": 13.44
+    },
+    {
+     "id": "sr4i_4",
+     "text": "What are you waiting for at each step? Your turn.",
+     "start": 14.14,
+     "end": 16.78
+    }
+   ],
+   "pauses": []
+  },
+  "sr4s": {
+   "src": "videos/sr4s.mp4",
+   "title": "Wait for the next letter",
+   "duration": 52.79,
+   "lines": [
+    {
+     "id": "sr4s_1",
+     "text": "The small word is hidden if its letters appear in the big word in the same order, with anything in between.",
+     "start": 0.2,
+     "end": 6.34
+    },
+    {
+     "id": "sr4s_2",
+     "text": "So walk the big word once. Each time you meet the letter you are waiting for, tick it off.",
+     "start": 7.09,
+     "end": 12.25
+    },
+    {
+     "id": "sr4s_3",
+     "text": "S marks the letter we are waiting for. It starts on B.",
+     "start": 13,
+     "end": 16.39
+    },
+    {
+     "id": "sr4s_4",
+     "text": "Moss reads B. That is the letter we want. Line five moves S to the next one.",
+     "start": 17.14,
+     "end": 22.42
+    },
+    {
+     "id": "sr4s_5",
+     "text": "E. We are waiting for A. Not it. Keep walking.",
+     "start": 23.17,
+     "end": 25.77
+    },
+    {
+     "id": "sr4s_6",
+     "text": "A. A match. S moves on to N.",
+     "start": 26.52,
+     "end": 28.56
+    },
+    {
+     "id": "sr4s_7",
+     "text": "C. Not N.",
+     "start": 29.31,
+     "end": 30.22
+    },
+    {
+     "id": "sr4s_8",
+     "text": "O. Not N.",
+     "start": 30.97,
+     "end": 31.87
+    },
+    {
+     "id": "sr4s_9",
+     "text": "N. Is this the letter we are waiting for?",
+     "start": 32.62,
+     "end": 34.85
+    },
+    {
+     "id": "sr4s_10",
+     "text": "Yes. S moves past the end of the small word.",
+     "start": 36.05,
+     "end": 38.95
+    },
+    {
+     "id": "sr4s_11",
+     "text": "Line eight asks: did S reach the end? Three equals three. True.",
+     "start": 39.7,
+     "end": 43.42
+    },
+    {
+     "id": "sr4s_12",
+     "text": "One walk through the big word. O of n time.",
+     "start": 44.52,
+     "end": 47.21
+    },
+    {
+     "id": "sr4s_13",
+     "text": "Two counters, and nothing else. O of one space.",
+     "start": 47.96,
+     "end": 51.19
+    }
+   ],
+   "pauses": [
+    {
+     "id": "sr4s-q",
+     "t": 35.05
+    }
+   ]
+  },
+  "ps1i": {
+   "src": "videos/ps1i.mp4",
+   "title": "The Running Total",
+   "duration": 21.13,
+   "lines": [
+    {
+     "id": "ps1i_1",
+     "text": "Pip counts seeds door by door, and wants the total so far at every door.",
+     "start": 0.2,
+     "end": 4.68
+    },
+    {
+     "id": "ps1i_2",
+     "text": "Return a new array. Position i holds the sum of everything up to and including door i.",
+     "start": 5.38,
+     "end": 11.09
+    },
+    {
+     "id": "ps1i_3",
+     "text": "To get the third total, do you really need to add three numbers again?",
+     "start": 11.79,
+     "end": 15.76
+    },
+    {
+     "id": "ps1i_4",
+     "text": "What single number could you carry along? Your turn.",
+     "start": 16.46,
+     "end": 19.53
+    }
+   ],
+   "pauses": []
+  },
+  "ps1s": {
+   "src": "videos/ps1s.mp4",
+   "title": "Carry the total along",
+   "duration": 56.5,
+   "lines": [
+    {
+     "id": "ps1s_1",
+     "text": "Each total is the total before it, plus one more number. So nothing needs to be added twice.",
+     "start": 0.2,
+     "end": 6.17
+    },
+    {
+     "id": "ps1s_2",
+     "text": "Carry one number, sum, from door to door. Write it down after every add.",
+     "start": 6.92,
+     "end": 11.52
+    },
+    {
+     "id": "ps1s_3",
+     "text": "Line two makes an empty row for the answers. Line three starts sum at zero.",
+     "start": 12.27,
+     "end": 17.15
+    },
+    {
+     "id": "ps1s_4",
+     "text": "I is zero. Line five adds the three to sum. Sum is three.",
+     "start": 17.9,
+     "end": 21.8
+    },
+    {
+     "id": "ps1s_5",
+     "text": "Line six writes that total into the answer row.",
+     "start": 22.55,
+     "end": 25.3
+    },
+    {
+     "id": "ps1s_6",
+     "text": "Next door. Add one. Sum is four. Write it down.",
+     "start": 26.05,
+     "end": 29.09
+    },
+    {
+     "id": "ps1s_7",
+     "text": "The next door holds four, and sum is four. What gets written?",
+     "start": 29.84,
+     "end": 33.49
+    },
+    {
+     "id": "ps1s_8",
+     "text": "Eight. The old total, plus one new number.",
+     "start": 34.69,
+     "end": 37.26
+    },
+    {
+     "id": "ps1s_9",
+     "text": "Last door. Add two. Ten.",
+     "start": 38.01,
+     "end": 39.85
+    },
+    {
+     "id": "ps1s_10",
+     "text": "The loop ends, and line eight returns the answer row.",
+     "start": 40.6,
+     "end": 43.87
+    },
+    {
+     "id": "ps1s_11",
+     "text": "One walk, and one add per door. O of n time.",
+     "start": 44.97,
+     "end": 48.02
+    },
+    {
+     "id": "ps1s_12",
+     "text": "The answer row holds n totals. O of n space. That row has a name: the prefix sums.",
+     "start": 48.77,
+     "end": 54.9
+    }
+   ],
+   "pauses": [
+    {
+     "id": "ps1s-q",
+     "t": 33.69
+    }
+   ]
+  },
+  "ps2i": {
+   "src": "videos/ps2i.mp4",
+   "title": "The Balance Point",
+   "duration": 23.62,
+   "lines": [
+    {
+     "id": "ps2i_1",
+     "text": "Moss wants a door where the left side and the right side weigh the same.",
+     "start": 0.2,
+     "end": 4.31
+    },
+    {
+     "id": "ps2i_2",
+     "text": "Return the first index where the sum to its left equals the sum to its right. If there is none, return minus one.",
+     "start": 5.01,
+     "end": 12.6
+    },
+    {
+     "id": "ps2i_3",
+     "text": "Adding up both sides again at every door is a lot of walking.",
+     "start": 13.3,
+     "end": 17.07
+    },
+    {
+     "id": "ps2i_4",
+     "text": "If you know the total, and the left side, what is the right side? Your turn.",
+     "start": 17.77,
+     "end": 22.02
+    }
+   ],
+   "pauses": []
+  },
+  "ps2s": {
+   "src": "videos/ps2s.mp4",
+   "title": "Total, minus left, minus this door",
+   "duration": 62.78,
+   "lines": [
+    {
+     "id": "ps2s_1",
+     "text": "The whole row is three parts. The left side, this door, and the right side.",
+     "start": 0.2,
+     "end": 4.52
+    },
+    {
+     "id": "ps2s_2",
+     "text": "So if we know the total and the left side, the right side is one subtraction.",
+     "start": 5.27,
+     "end": 9.93
+    },
+    {
+     "id": "ps2s_3",
+     "text": "Lines two and three add everything up, once. The total is ten.",
+     "start": 10.68,
+     "end": 14.59
+    },
+    {
+     "id": "ps2s_4",
+     "text": "Line four. Left starts at zero, because nothing is to the left of the first door.",
+     "start": 15.34,
+     "end": 20.54
+    },
+    {
+     "id": "ps2s_5",
+     "text": "Door zero. Line six works out the right side. Ten, minus zero, minus two. Eight.",
+     "start": 21.29,
+     "end": 26.83
+    },
+    {
+     "id": "ps2s_6",
+     "text": "Line seven compares. Zero is not eight. Not balanced.",
+     "start": 27.58,
+     "end": 31.23
+    },
+    {
+     "id": "ps2s_7",
+     "text": "Line eight moves this door into the left side. Left is two.",
+     "start": 31.98,
+     "end": 35.59
+    },
+    {
+     "id": "ps2s_8",
+     "text": "Door one. Ten, minus two, minus one. Seven. Two is not seven.",
+     "start": 36.34,
+     "end": 40.58
+    },
+    {
+     "id": "ps2s_9",
+     "text": "Left becomes three.",
+     "start": 41.33,
+     "end": 42.61
+    },
+    {
+     "id": "ps2s_10",
+     "text": "Door two holds four, and left is three. What is the right side?",
+     "start": 43.36,
+     "end": 47.04
+    },
+    {
+     "id": "ps2s_11",
+     "text": "Three. Left equals right. Line seven returns the index. Two.",
+     "start": 48.24,
+     "end": 52.48
+    },
+    {
+     "id": "ps2s_12",
+     "text": "One walk for the total, and one to search. O of n time.",
+     "start": 53.58,
+     "end": 57.02
+    },
+    {
+     "id": "ps2s_13",
+     "text": "Three numbers, and no extra row. O of one space.",
+     "start": 57.77,
+     "end": 61.18
+    }
+   ],
+   "pauses": [
+    {
+     "id": "ps2s-q",
+     "t": 47.24
+    }
+   ]
+  },
+  "ps3i": {
+   "src": "videos/ps3i.mp4",
+   "title": "Many Questions",
+   "duration": 23.74,
+   "lines": [
+    {
+     "id": "ps3i_1",
+     "text": "The same row of doors, and a long list of questions. What is the sum of doors one to two? Zero to three?",
+     "start": 0.2,
+     "end": 6.91
+    },
+    {
+     "id": "ps3i_2",
+     "text": "Return the answer to every query, in order. Each query is a pair, l and r.",
+     "start": 7.61,
+     "end": 12.79
+    },
+    {
+     "id": "ps3i_3",
+     "text": "With fifty thousand questions, walking every range is far too slow.",
+     "start": 13.49,
+     "end": 17.83
+    },
+    {
+     "id": "ps3i_4",
+     "text": "What could you work out once, before the first question? Your turn.",
+     "start": 18.53,
+     "end": 22.14
+    }
+   ],
+   "pauses": []
+  },
+  "ps3s": {
+   "src": "videos/ps3s.mp4",
+   "title": "One row of totals, many answers",
+   "duration": 67,
+   "lines": [
+    {
+     "id": "ps3s_1",
+     "text": "Walking every range repeats the same adding. So do the adding once, before any question.",
+     "start": 0.2,
+     "end": 5.51
+    },
+    {
+     "id": "ps3s_2",
+     "text": "Keep the total before every door. Then any range is one total minus another.",
+     "start": 6.26,
+     "end": 11.36
+    },
+    {
+     "id": "ps3s_3",
+     "text": "Line two starts the totals row with a zero. The sum of nothing.",
+     "start": 12.11,
+     "end": 16.16
+    },
+    {
+     "id": "ps3s_4",
+     "text": "Lines three to five fill it in. Each slot is the slot before, plus one number. Zero plus three is three.",
+     "start": 16.91,
+     "end": 23.81
+    },
+    {
+     "id": "ps3s_5",
+     "text": "Then four. Eight. And ten.",
+     "start": 24.56,
+     "end": 26.22
+    },
+    {
+     "id": "ps3s_6",
+     "text": "Now the questions. The first one asks for doors one to two.",
+     "start": 26.97,
+     "end": 30.64
+    },
+    {
+     "id": "ps3s_7",
+     "text": "Line eight takes the total after door two. That is pre at three. Eight.",
+     "start": 31.39,
+     "end": 35.57
+    },
+    {
+     "id": "ps3s_8",
+     "text": "Then it removes everything before door one. Pre at one. Three. Eight minus three is five.",
+     "start": 36.32,
+     "end": 42.04
+    },
+    {
+     "id": "ps3s_9",
+     "text": "The next question. Doors zero to three. Which two slots do we need?",
+     "start": 42.79,
+     "end": 47.07
+    },
+    {
+     "id": "ps3s_10",
+     "text": "Pre at four, minus pre at zero. Ten minus zero. Ten.",
+     "start": 48.27,
+     "end": 52.03
+    },
+    {
+     "id": "ps3s_11",
+     "text": "Line ten returns both answers.",
+     "start": 52.78,
+     "end": 54.96
+    },
+    {
+     "id": "ps3s_12",
+     "text": "Building the row costs n steps, once. After that, every question is one subtraction.",
+     "start": 56.06,
+     "end": 61.5
+    },
+    {
+     "id": "ps3s_13",
+     "text": "The price is one extra row. O of n space.",
+     "start": 62.25,
+     "end": 65.4
+    }
+   ],
+   "pauses": [
+    {
+     "id": "ps3s-q",
+     "t": 47.27
+    }
+   ]
+  },
+  "ps4i": {
+   "src": "videos/ps4i.mp4",
+   "title": "Stretches That Add Up",
+   "duration": 23.33,
+   "lines": [
+    {
+     "id": "ps4i_1",
+     "text": "How many unbroken stretches of these doors add up to exactly three?",
+     "start": 0.2,
+     "end": 4.44
+    },
+    {
+     "id": "ps4i_2",
+     "text": "Return the count. A stretch is any run of neighbours, even a single door.",
+     "start": 5.14,
+     "end": 9.64
+    },
+    {
+     "id": "ps4i_3",
+     "text": "Trying every start and every end is too slow for a long row.",
+     "start": 10.34,
+     "end": 14.21
+    },
+    {
+     "id": "ps4i_4",
+     "text": "Every stretch is a running total, minus an earlier total. What could remember the earlier ones? Your turn.",
+     "start": 14.91,
+     "end": 21.73
+    }
+   ],
+   "pauses": []
+  },
+  "ps4s": {
+   "src": "videos/ps4s.mp4",
+   "title": "Look back for sum \u2212 k",
+   "duration": 83.19,
+   "lines": [
+    {
+     "id": "ps4s_1",
+     "text": "Every stretch is the running total now, minus the running total at some earlier point.",
+     "start": 0.2,
+     "end": 5.51
+    },
+    {
+     "id": "ps4s_2",
+     "text": "So a stretch ending here adds up to k, when an earlier total equals sum minus k. A map remembers the earlier totals.",
+     "start": 6.26,
+     "end": 14.33
+    },
+    {
+     "id": "ps4s_3",
+     "text": "Line two makes the map of totals seen so far. It starts with zero, seen once. That is the total before the first door.",
+     "start": 15.08,
+     "end": 22.91
+    },
+    {
+     "id": "ps4s_4",
+     "text": "Sum and count both start at zero.",
+     "start": 23.66,
+     "end": 25.61
+    },
+    {
+     "id": "ps4s_5",
+     "text": "Door zero. Line six adds it. Sum is one.",
+     "start": 26.36,
+     "end": 29.25
+    },
+    {
+     "id": "ps4s_6",
+     "text": "Line seven looks for sum minus k. One minus three is minus two. Never seen. Count stays zero.",
+     "start": 30,
+     "end": 36.57
+    },
+    {
+     "id": "ps4s_7",
+     "text": "Line eight records the total, one, in the map.",
+     "start": 37.32,
+     "end": 39.96
+    },
+    {
+     "id": "ps4s_8",
+     "text": "Door one. Sum is three. We need three minus three. Zero.",
+     "start": 40.71,
+     "end": 44.37
+    },
+    {
+     "id": "ps4s_9",
+     "text": "Zero was seen once. So one stretch ends here. Doors zero and one. Count is one.",
+     "start": 45.12,
+     "end": 51.03
+    },
+    {
+     "id": "ps4s_10",
+     "text": "Record the three.",
+     "start": 51.78,
+     "end": 52.91
+    },
+    {
+     "id": "ps4s_11",
+     "text": "Door two. Sum is four. Which earlier total are we looking for?",
+     "start": 53.66,
+     "end": 57.71
+    },
+    {
+     "id": "ps4s_12",
+     "text": "One. Seen once. That stretch is doors one and two. Count is two.",
+     "start": 58.91,
+     "end": 62.98
+    },
+    {
+     "id": "ps4s_13",
+     "text": "Last door. Sum is seven. We need four. Seen once. The door on its own. Count is three.",
+     "start": 63.73,
+     "end": 69.48
+    },
+    {
+     "id": "ps4s_14",
+     "text": "Line ten returns the count. Three.",
+     "start": 70.23,
+     "end": 72.58
+    },
+    {
+     "id": "ps4s_15",
+     "text": "One walk, and each map lookup is one step. O of n time.",
+     "start": 73.68,
+     "end": 77.32
+    },
+    {
+     "id": "ps4s_16",
+     "text": "The map can hold one total per door. O of n space.",
+     "start": 78.07,
+     "end": 81.59
+    }
+   ],
+   "pauses": [
+    {
+     "id": "ps4s-q",
+     "t": 57.91
+    }
+   ]
+  },
+  "bs0": {
+   "src": "videos/bs0.mp4",
+   "title": "Twenty Looks for a Million Doors",
+   "duration": 27.56,
+   "lines": [
+    {
+     "id": "bw1",
+     "text": "Chapter eleven. Binary search. The fastest idea in this course.",
+     "start": 0.2,
+     "end": 4.43
+    },
+    {
+     "id": "bw2",
+     "text": "A million sorted doors, and one number to find. A walk takes a million steps. Binary search takes twenty.",
+     "start": 5.13,
+     "end": 12.31
+    },
+    {
+     "id": "bw3",
+     "text": "The trick is to throw away half of what is left, with every single look.",
+     "start": 13.21,
+     "end": 17.46
+    },
+    {
+     "id": "bw4",
+     "text": "First, the classic search. Then a surprise: searching for an answer that is not in any row. Then seven puzzles.",
+     "start": 18.36,
+     "end": 25.96
+    }
+   ],
+   "pauses": []
+  },
+  "bst1": {
+   "src": "videos/bst1.mp4",
+   "title": "Halve What Is Left",
+   "duration": 64.25,
+   "lines": [
+    {
+     "id": "bx1",
+     "text": "I am thinking of a number between one and a hundred. You guess fifty. I say, higher. With one guess, you have thrown away half the numbers.",
+     "start": 0.2,
+     "end": 8.63
+    },
+    {
+     "id": "bx2",
+     "text": "That is binary search. And it needs one thing. The row must be sorted.",
+     "start": 9.53,
+     "end": 13.79
+    },
+    {
+     "id": "bx3",
+     "text": "Keep two markers. Low, and high. The number, if it is here, is somewhere between them.",
+     "start": 14.69,
+     "end": 20.11
+    },
+    {
+     "id": "bx4",
+     "text": "Look at the door in the middle. Twelve. We want sixteen. Twelve is too small.",
+     "start": 21.01,
+     "end": 25.6
+    },
+    {
+     "id": "bx5",
+     "text": "And because the row is sorted, everything to the left of twelve is too small as well. So low jumps past the middle.",
+     "start": 26.5,
+     "end": 33.64
+    },
+    {
+     "id": "bx6",
+     "text": "Half the row is gone. Now the middle is twenty three. Too big. Which marker moves?",
+     "start": 34.64,
+     "end": 40.2
+    },
+    {
+     "id": "bx7",
+     "text": "High. Everything from twenty three to the right is too big. High moves to just left of the middle.",
+     "start": 41.4,
+     "end": 47.02
+    },
+    {
+     "id": "bx8",
+     "text": "One door is left. Sixteen. Found, in three looks.",
+     "start": 48.02,
+     "end": 51.47
+    },
+    {
+     "id": "bx9",
+     "text": "Each look halves what is left. A million doors need about twenty looks. That is O of log n.",
+     "start": 52.47,
+     "end": 58.4
+    },
+    {
+     "id": "bx10",
+     "text": "Sorted, and looking for one thing? Think binary search.",
+     "start": 59.4,
+     "end": 62.65
+    }
+   ],
+   "pauses": [
+    {
+     "id": "bst1-q1",
+     "t": 40.4
+    }
+   ]
+  },
+  "bst2": {
+   "src": "videos/bst2.mp4",
+   "title": "Search the Answer",
+   "duration": 78.71,
+   "lines": [
+    {
+     "id": "by1",
+     "text": "Here is the surprise. Binary search does not need a row of data. It only needs a question whose answer flips once, from no, to yes.",
+     "start": 0.2,
+     "end": 8.98
+    },
+    {
+     "id": "by2",
+     "text": "Pip must eat every pile of seeds within eight hours. Each hour, Pip eats from one pile, at a fixed speed. What is the slowest speed that works?",
+     "start": 9.88,
+     "end": 18.73
+    },
+    {
+     "id": "by3",
+     "text": "Try speed one. Far too slow. Speed two. Too slow. Keep going, and at some speed the answer becomes yes. And it stays yes for every faster speed.",
+     "start": 19.73,
+     "end": 29.45
+    },
+    {
+     "id": "by4",
+     "text": "No, no, no, yes, yes, yes. That row of answers is sorted. So you can binary search it.",
+     "start": 30.45,
+     "end": 36.33
+    },
+    {
+     "id": "by5",
+     "text": "Pick the middle speed. Six. Does it work? Yes. So the answer is six, or something slower. Throw away everything faster.",
+     "start": 37.33,
+     "end": 45.11
+    },
+    {
+     "id": "by6",
+     "text": "The middle of what is left is three. Speed three needs ten hours. No. Which speeds do we throw away now?",
+     "start": 46.11,
+     "end": 52.6
+    },
+    {
+     "id": "by7",
+     "text": "Three, and everything slower. They fail too.",
+     "start": 53.8,
+     "end": 56.45
+    },
+    {
+     "id": "by8",
+     "text": "A few more checks, and the two markers meet on four. The slowest speed that works.",
+     "start": 57.45,
+     "end": 62.61
+    },
+    {
+     "id": "by9",
+     "text": "You never searched a list. You searched the possible answers. All you needed was a test: is this one good enough?",
+     "start": 63.61,
+     "end": 70.58
+    },
+    {
+     "id": "by10",
+     "text": "The smallest value that works? The largest that still fits? Binary search the answer.",
+     "start": 71.58,
+     "end": 77.11
+    }
+   ],
+   "pauses": [
+    {
+     "id": "bst2-q1",
+     "t": 52.8
+    }
+   ]
+  },
+  "bs1i": {
+   "src": "videos/bs1i.mp4",
+   "title": "Find the Door",
+   "duration": 21.34,
+   "lines": [
+    {
+     "id": "bs1i_1",
+     "text": "Seven sorted doors. Behind one of them is sixteen.",
+     "start": 0.2,
+     "end": 3.73
+    },
+    {
+     "id": "bs1i_2",
+     "text": "Return the index of the target, or minus one if it is not there.",
+     "start": 4.43,
+     "end": 8.55
+    },
+    {
+     "id": "bs1i_3",
+     "text": "Walking door by door works. But the row is sorted, and that is worth a lot.",
+     "start": 9.25,
+     "end": 14.04
+    },
+    {
+     "id": "bs1i_4",
+     "text": "Look at the middle door first. What does it tell you about half the row? Your turn.",
+     "start": 14.74,
+     "end": 19.74
+    }
+   ],
+   "pauses": []
+  },
+  "bs1s": {
+   "src": "videos/bs1s.mp4",
+   "title": "Throw away half",
+   "duration": 64.55,
+   "lines": [
+    {
+     "id": "bs1s_1",
+     "text": "The row is sorted. So one look at the middle door tells you which half the target cannot be in.",
+     "start": 0.2,
+     "end": 6.01
+    },
+    {
+     "id": "bs1s_2",
+     "text": "Keep two markers around the part that is still possible, and halve it until the target is found.",
+     "start": 6.76,
+     "end": 12.28
+    },
+    {
+     "id": "bs1s_3",
+     "text": "Lines two and three. Low is the first door. High is the last. The target is somewhere between them.",
+     "start": 13.03,
+     "end": 19.28
+    },
+    {
+     "id": "bs1s_4",
+     "text": "Line five finds the middle. Zero plus six, divided by two. Door three.",
+     "start": 20.03,
+     "end": 25.46
+    },
+    {
+     "id": "bs1s_5",
+     "text": "Door three holds twelve. Too small. And so is everything to its left. Line seven moves low past the middle.",
+     "start": 26.21,
+     "end": 33.37
+    },
+    {
+     "id": "bs1s_6",
+     "text": "The middle of four and six is five. Door five holds twenty three. Which marker moves?",
+     "start": 34.12,
+     "end": 39.93
+    },
+    {
+     "id": "bs1s_7",
+     "text": "High. Twenty three is too big, and so is everything to its right. Line eight moves high to door four.",
+     "start": 41.13,
+     "end": 47.2
+    },
+    {
+     "id": "bs1s_8",
+     "text": "Low and high are both on door four. The middle is door four. Sixteen. Line six returns its index.",
+     "start": 47.95,
+     "end": 54.61
+    },
+    {
+     "id": "bs1s_9",
+     "text": "Every look halves what is left. O of log n time.",
+     "start": 55.71,
+     "end": 58.96
+    },
+    {
+     "id": "bs1s_10",
+     "text": "Three markers, and nothing else. O of one space.",
+     "start": 59.71,
+     "end": 62.95
+    }
+   ],
+   "pauses": [
+    {
+     "id": "bs1s-q",
+     "t": 40.13
+    }
+   ]
+  },
+  "ll1i": {
+   "src": "videos/ll1i.mp4",
+   "title": "Turn the List Around",
+   "duration": 22.62,
+   "lines": [
+    {
+     "id": "ll1i_1",
+     "text": "Three nodes, each pointing to the next. Pip wants the whole list turned around.",
+     "start": 0.2,
+     "end": 4.53
+    },
+    {
+     "id": "ll1i_2",
+     "text": "Reverse the list and return its new head. Use the nodes you have, and only re-point their arrows.",
+     "start": 5.23,
+     "end": 11.74
+    },
+    {
+     "id": "ll1i_3",
+     "text": "Turn the first arrow around, and you can no longer reach the second node.",
+     "start": 12.44,
+     "end": 16.74
+    },
+    {
+     "id": "ll1i_4",
+     "text": "So what do you need to save, before you turn an arrow? Your turn.",
+     "start": 17.44,
+     "end": 21.02
+    }
+   ],
+   "pauses": []
+  },
+  "ll1s": {
+   "src": "videos/ll1s.mp4",
+   "title": "Save, flip, step",
+   "duration": 68.78,
+   "lines": [
+    {
+     "id": "ll1s_1",
+     "text": "Reversing a list does not move any node. It only turns every arrow around.",
+     "start": 0.2,
+     "end": 5
+    },
+    {
+     "id": "ll1s_2",
+     "text": "But the moment you turn an arrow, you lose the way forward. So save it first.",
+     "start": 5.75,
+     "end": 10.81
+    },
+    {
+     "id": "ll1s_3",
+     "text": "Prev starts as null, because nothing is behind the first node yet. Curr starts on the first node.",
+     "start": 11.56,
+     "end": 17.49
+    },
+    {
+     "id": "ll1s_4",
+     "text": "Line five saves the rest of the list in next, before we touch any arrow.",
+     "start": 18.24,
+     "end": 22.55
+    },
+    {
+     "id": "ll1s_5",
+     "text": "Line six flips the arrow. One now points back to prev, which is null.",
+     "start": 23.3,
+     "end": 27.75
+    },
+    {
+     "id": "ll1s_6",
+     "text": "Lines seven and eight step both markers forward.",
+     "start": 28.5,
+     "end": 31.24
+    },
+    {
+     "id": "ll1s_7",
+     "text": "Again. Save next. Then flip. Two now points back to one.",
+     "start": 31.99,
+     "end": 35.68
+    },
+    {
+     "id": "ll1s_8",
+     "text": "Step forward.",
+     "start": 36.43,
+     "end": 37.51
+    },
+    {
+     "id": "ll1s_9",
+     "text": "Curr is on three, the last node. Line five saves next. What is it?",
+     "start": 38.26,
+     "end": 42.93
+    },
+    {
+     "id": "ll1s_10",
+     "text": "Null. Nothing comes after three. Then line six flips its arrow back to two.",
+     "start": 44.13,
+     "end": 49.01
+    },
+    {
+     "id": "ll1s_11",
+     "text": "Step forward. Prev is three. Curr is null, so the loop ends.",
+     "start": 49.76,
+     "end": 53.8
+    },
+    {
+     "id": "ll1s_12",
+     "text": "Line ten returns prev. The old last node is the new head.",
+     "start": 54.55,
+     "end": 58.7
+    },
+    {
+     "id": "ll1s_13",
+     "text": "One pass, and a few steps per node. O of n time.",
+     "start": 59.8,
+     "end": 63.09
+    },
+    {
+     "id": "ll1s_14",
+     "text": "Three markers, and no new nodes. O of one space.",
+     "start": 63.84,
+     "end": 67.18
+    }
+   ],
+   "pauses": [
+    {
+     "id": "ll1s-q",
+     "t": 43.13
+    }
+   ]
+  },
+  "ll2i": {
+   "src": "videos/ll2i.mp4",
+   "title": "The Middle Node",
+   "duration": 20.04,
+   "lines": [
+    {
+     "id": "ll2i_1",
+     "text": "Pip needs the node in the middle of this list.",
+     "start": 0.2,
+     "end": 2.92
+    },
+    {
+     "id": "ll2i_2",
+     "text": "Return the middle node. With an even number of nodes, return the second of the two middle ones.",
+     "start": 3.62,
+     "end": 9.46
+    },
+    {
+     "id": "ll2i_3",
+     "text": "There is no index to jump to, and nobody told you the length.",
+     "start": 10.16,
+     "end": 13.88
+    },
+    {
+     "id": "ll2i_4",
+     "text": "What if one walker moves twice as fast as the other? Your turn.",
+     "start": 14.58,
+     "end": 18.44
+    }
+   ],
+   "pauses": []
+  },
+  "ll2s": {
+   "src": "videos/ll2s.mp4",
+   "title": "Two walkers, two speeds",
+   "duration": 47.83,
+   "lines": [
+    {
+     "id": "ll2s_1",
+     "text": "You cannot jump to the middle of a list. And you do not know its length without walking it.",
+     "start": 0.2,
+     "end": 4.78
+    },
+    {
+     "id": "ll2s_2",
+     "text": "So send two walkers. One at double speed. When the fast one finishes, the slow one is halfway.",
+     "start": 5.53,
+     "end": 11.8
+    },
+    {
+     "id": "ll2s_3",
+     "text": "Both markers start on the first node.",
+     "start": 12.55,
+     "end": 14.64
+    },
+    {
+     "id": "ll2s_4",
+     "text": "Line four checks that fast can take two more steps. It can.",
+     "start": 15.39,
+     "end": 19.18
+    },
+    {
+     "id": "ll2s_5",
+     "text": "Slow takes one step. Fast takes two.",
+     "start": 19.93,
+     "end": 22.43
+    },
+    {
+     "id": "ll2s_6",
+     "text": "Again. Slow takes one step, and fast takes two. Where is fast now?",
+     "start": 23.18,
+     "end": 27.36
+    },
+    {
+     "id": "ll2s_7",
+     "text": "On the last node. And slow is on three.",
+     "start": 28.56,
+     "end": 31.23
+    },
+    {
+     "id": "ll2s_8",
+     "text": "Line four again. Fast has no next node. So the loop stops.",
+     "start": 31.98,
+     "end": 36.1
+    },
+    {
+     "id": "ll2s_9",
+     "text": "Line eight returns slow. The node holding three. The middle.",
+     "start": 36.85,
+     "end": 40.66
+    },
+    {
+     "id": "ll2s_10",
+     "text": "One pass. O of n time.",
+     "start": 41.76,
+     "end": 43.52
+    },
+    {
+     "id": "ll2s_11",
+     "text": "Two markers. O of one space.",
+     "start": 44.27,
+     "end": 46.23
+    }
+   ],
+   "pauses": [
+    {
+     "id": "ll2s-q",
+     "t": 27.56
+    }
+   ]
+  },
+  "ll3i": {
+   "src": "videos/ll3i.mp4",
+   "title": "Round and Round",
+   "duration": 21.55,
+   "lines": [
+    {
+     "id": "ll3i_1",
+     "text": "The last node of this list points back into the middle. Follow the arrows, and you never stop.",
+     "start": 0.2,
+     "end": 5.5
+    },
+    {
+     "id": "ll3i_2",
+     "text": "Return true if the list has a loop, and false if it ends at null.",
+     "start": 6.2,
+     "end": 10.27
+    },
+    {
+     "id": "ll3i_3",
+     "text": "You could remember every node you visit. But that costs memory.",
+     "start": 10.97,
+     "end": 14.83
+    },
+    {
+     "id": "ll3i_4",
+     "text": "What happens to two runners on a round track, if one is faster? Your turn.",
+     "start": 15.53,
+     "end": 19.95
+    }
+   ],
+   "pauses": []
+  },
+  "ll3s": {
+   "src": "videos/ll3s.mp4",
+   "title": "The fast one catches up",
+   "duration": 54.49,
+   "lines": [
+    {
+     "id": "ll3s_1",
+     "text": "In a list with a loop, a walker never reaches null. It goes round for ever.",
+     "start": 0.2,
+     "end": 5.04
+    },
+    {
+     "id": "ll3s_2",
+     "text": "So send a slow walker and a fast one. Inside a loop, the fast one must catch the slow one from behind.",
+     "start": 5.79,
+     "end": 12.25
+    },
+    {
+     "id": "ll3s_3",
+     "text": "Both markers start on the first node.",
+     "start": 13,
+     "end": 15.09
+    },
+    {
+     "id": "ll3s_4",
+     "text": "Slow steps once, to two. Fast steps twice, to three. Not the same node.",
+     "start": 15.84,
+     "end": 20.66
+    },
+    {
+     "id": "ll3s_5",
+     "text": "Slow steps to three. Fast steps to four, and then follows the arrow back round, to two.",
+     "start": 21.41,
+     "end": 27.06
+    },
+    {
+     "id": "ll3s_6",
+     "text": "Once more. Slow moves to four. Fast takes two steps from two. Where does it land?",
+     "start": 27.81,
+     "end": 33.25
+    },
+    {
+     "id": "ll3s_7",
+     "text": "On four. Fast has caught slow from behind. Line seven sees the same node, and returns true.",
+     "start": 34.45,
+     "end": 40.51
+    },
+    {
+     "id": "ll3s_8",
+     "text": "Fast gains one node on slow at every step, so it catches up within one lap. O of n time.",
+     "start": 41.61,
+     "end": 48.15
+    },
+    {
+     "id": "ll3s_9",
+     "text": "Two markers, and no set of visited nodes. O of one space.",
+     "start": 48.9,
+     "end": 52.89
+    }
+   ],
+   "pauses": [
+    {
+     "id": "ll3s-q",
+     "t": 33.45
+    }
+   ]
+  },
+  "ll4i": {
+   "src": "videos/ll4i.mp4",
+   "title": "Zip Two Lists",
+   "duration": 20.01,
+   "lines": [
+    {
+     "id": "ll4i_1",
+     "text": "Two sorted lists. They should become one sorted list.",
+     "start": 0.2,
+     "end": 3.65
+    },
+    {
+     "id": "ll4i_2",
+     "text": "Join them by re-hooking the nodes, and return the head of the result.",
+     "start": 4.35,
+     "end": 8.3
+    },
+    {
+     "id": "ll4i_3",
+     "text": "You have merged two sorted arrays before. The idea is the same.",
+     "start": 9,
+     "end": 12.99
+    },
+    {
+     "id": "ll4i_4",
+     "text": "But which node is the head of the answer? Could a fake first node help? Your turn.",
+     "start": 13.69,
+     "end": 18.41
+    }
+   ],
+   "pauses": []
+  },
+  "ll4s": {
+   "src": "videos/ll4s.mp4",
+   "title": "Hook on the smaller front",
+   "duration": 64.46,
+   "lines": [
+    {
+     "id": "ll4s_1",
+     "text": "The same idea as merging two sorted arrays. The smallest unused node is at the front of one of the lists.",
+     "start": 0.2,
+     "end": 6.96
+    },
+    {
+     "id": "ll4s_2",
+     "text": "But nothing is copied. Each node is simply hooked onto the end of the new list.",
+     "start": 7.71,
+     "end": 12.62
+    },
+    {
+     "id": "ll4s_3",
+     "text": "Line two makes a dummy node. A fake first node, so that the real first node needs no special case. Tail marks the end of the new list.",
+     "start": 13.37,
+     "end": 22.12
+    },
+    {
+     "id": "ll4s_4",
+     "text": "Compare the two fronts. One and two. One is smaller. Line six hooks it onto tail, and a moves on.",
+     "start": 22.87,
+     "end": 29.2
+    },
+    {
+     "id": "ll4s_5",
+     "text": "Four against two. Two is hooked on, and b moves on.",
+     "start": 29.95,
+     "end": 33.37
+    },
+    {
+     "id": "ll4s_6",
+     "text": "Four against three. Which node is hooked on next?",
+     "start": 34.12,
+     "end": 37.32
+    },
+    {
+     "id": "ll4s_7",
+     "text": "Three. And now b has run out, so the loop stops.",
+     "start": 38.52,
+     "end": 41.46
+    },
+    {
+     "id": "ll4s_8",
+     "text": "Line fourteen hooks on whatever is left. The rest of a. Four and seven come along in one step, because they are already linked.",
+     "start": 42.21,
+     "end": 50.09
+    },
+    {
+     "id": "ll4s_9",
+     "text": "Line fifteen returns dummy dot next. The real first node.",
+     "start": 50.84,
+     "end": 54.8
+    },
+    {
+     "id": "ll4s_10",
+     "text": "One step per node. O of n plus m time.",
+     "start": 55.9,
+     "end": 58.93
+    },
+    {
+     "id": "ll4s_11",
+     "text": "No new nodes, except the dummy. O of one space.",
+     "start": 59.68,
+     "end": 62.86
+    }
+   ],
+   "pauses": [
+    {
+     "id": "ll4s-q",
+     "t": 37.52
+    }
+   ]
+  },
+  "ll5i": {
+   "src": "videos/ll5i.mp4",
+   "title": "Second From the End",
+   "duration": 20.33,
+   "lines": [
+    {
+     "id": "ll5i_1",
+     "text": "One node has to go. The second one, counted from the end.",
+     "start": 0.2,
+     "end": 3.69
+    },
+    {
+     "id": "ll5i_2",
+     "text": "Remove the k-th node from the end, and return the head. In one pass.",
+     "start": 4.39,
+     "end": 9.17
+    },
+    {
+     "id": "ll5i_3",
+     "text": "You cannot walk backwards. And you do not know how long the list is.",
+     "start": 9.87,
+     "end": 13.78
+    },
+    {
+     "id": "ll5i_4",
+     "text": "What if two markers walk together, a fixed distance apart? Your turn.",
+     "start": 14.48,
+     "end": 18.73
+    }
+   ],
+   "pauses": []
+  },
+  "ll5s": {
+   "src": "videos/ll5s.mp4",
+   "title": "Two markers, a fixed gap",
+   "duration": 61.1,
+   "lines": [
+    {
+     "id": "ll5s_1",
+     "text": "To remove a node, you must stand on the node just before it. But counting from the end needs the length.",
+     "start": 0.2,
+     "end": 6.33
+    },
+    {
+     "id": "ll5s_2",
+     "text": "So send one marker k nodes ahead, and then walk both together. When the leader reaches the end, the follower is in place.",
+     "start": 7.08,
+     "end": 14.83
+    },
+    {
+     "id": "ll5s_3",
+     "text": "A dummy node, D, goes in front, so that even the first real node has a node before it. Both markers start there.",
+     "start": 15.58,
+     "end": 23.09
+    },
+    {
+     "id": "ll5s_4",
+     "text": "Line five sends lead ahead by k nodes. K is two.",
+     "start": 23.84,
+     "end": 27.42
+    },
+    {
+     "id": "ll5s_5",
+     "text": "Now they walk together, one step each. The gap stays at two.",
+     "start": 28.17,
+     "end": 31.98
+    },
+    {
+     "id": "ll5s_6",
+     "text": "Another step. Lead is now on the last node. Where is trail?",
+     "start": 32.73,
+     "end": 36.43
+    },
+    {
+     "id": "ll5s_7",
+     "text": "Just before the node to remove. Exactly where we need to stand.",
+     "start": 37.63,
+     "end": 41.59
+    },
+    {
+     "id": "ll5s_8",
+     "text": "Line ten points trail past the next node, straight to the one after it. Three is no longer in the list.",
+     "start": 42.34,
+     "end": 48.77
+    },
+    {
+     "id": "ll5s_9",
+     "text": "Line eleven returns dummy dot next. The real head.",
+     "start": 49.52,
+     "end": 53.01
+    },
+    {
+     "id": "ll5s_10",
+     "text": "One pass. O of n time.",
+     "start": 54.11,
+     "end": 55.87
+    },
+    {
+     "id": "ll5s_11",
+     "text": "Two markers and a dummy. O of one space.",
+     "start": 56.62,
+     "end": 59.5
+    }
+   ],
+   "pauses": [
+    {
+     "id": "ll5s-q",
+     "t": 36.63
+    }
+   ]
+  },
+  "ll6i": {
+   "src": "videos/ll6i.mp4",
+   "title": "No Repeats",
+   "duration": 19.09,
+   "lines": [
+    {
+     "id": "ll6i_1",
+     "text": "A sorted list, with some values written twice.",
+     "start": 0.2,
+     "end": 3.18
+    },
+    {
+     "id": "ll6i_2",
+     "text": "Remove the repeats, so that each value appears once. Return the head.",
+     "start": 3.88,
+     "end": 8.2
+    },
+    {
+     "id": "ll6i_3",
+     "text": "Because the list is sorted, a repeat is always right behind its twin.",
+     "start": 8.9,
+     "end": 13.24
+    },
+    {
+     "id": "ll6i_4",
+     "text": "Standing on a node, how do you unhook the one after it? Your turn.",
+     "start": 13.94,
+     "end": 17.49
+    }
+   ],
+   "pauses": []
+  },
+  "ll6s": {
+   "src": "videos/ll6s.mp4",
+   "title": "Point past the repeat",
+   "duration": 53.81,
+   "lines": [
+    {
+     "id": "ll6s_1",
+     "text": "The list is sorted, so repeats sit right next to each other.",
+     "start": 0.2,
+     "end": 3.82
+    },
+    {
+     "id": "ll6s_2",
+     "text": "And removing a node from a list is one move. Point the node before it, past it.",
+     "start": 4.57,
+     "end": 9.38
+    },
+    {
+     "id": "ll6s_3",
+     "text": "Curr starts on the first node.",
+     "start": 10.13,
+     "end": 11.78
+    },
+    {
+     "id": "ll6s_4",
+     "text": "Line four compares this node with the next one. One and one. A repeat.",
+     "start": 12.53,
+     "end": 17.08
+    },
+    {
+     "id": "ll6s_5",
+     "text": "Line five points curr past the repeat. Curr itself does not move, because the node after might be a repeat too.",
+     "start": 17.83,
+     "end": 24.84
+    },
+    {
+     "id": "ll6s_6",
+     "text": "Now the next node holds two. Different. So line seven moves curr forward.",
+     "start": 25.59,
+     "end": 30.31
+    },
+    {
+     "id": "ll6s_7",
+     "text": "Two and three are different as well. Move on.",
+     "start": 31.06,
+     "end": 33.8
+    },
+    {
+     "id": "ll6s_8",
+     "text": "Three and three. What happens?",
+     "start": 34.55,
+     "end": 36.38
+    },
+    {
+     "id": "ll6s_9",
+     "text": "The arrow skips the repeat, and now points to null.",
+     "start": 37.59,
+     "end": 40.45
+    },
+    {
+     "id": "ll6s_10",
+     "text": "Curr has no next node, so the loop ends. Line ten returns the same head.",
+     "start": 41.2,
+     "end": 45.97
+    },
+    {
+     "id": "ll6s_11",
+     "text": "One pass. O of n time.",
+     "start": 47.07,
+     "end": 48.82
+    },
+    {
+     "id": "ll6s_12",
+     "text": "Nothing new is built. O of one space.",
+     "start": 49.57,
+     "end": 52.21
+    }
+   ],
+   "pauses": [
+    {
+     "id": "ll6s-q",
+     "t": 36.59
+    }
+   ]
+  },
   "mx1i": {
    "src": "videos/mx1i.mp4",
    "title": "In Both Rows",
@@ -8152,1686 +10743,6 @@ window.BURROW = {
     {
      "id": "mx10s-q",
      "t": 41.15
-    }
-   ]
-  },
-  "sr1i": {
-   "src": "videos/sr1i.mp4",
-   "title": "The Mirror Word",
-   "duration": 19.19,
-   "lines": [
-    {
-     "id": "sr1i_1",
-     "text": "Some words are mirrors. Level reads the same forwards and backwards.",
-     "start": 0.2,
-     "end": 4.66
-    },
-    {
-     "id": "sr1i_2",
-     "text": "Write a function that returns true for a mirror word, and false for anything else.",
-     "start": 5.36,
-     "end": 10.32
-    },
-    {
-     "id": "sr1i_3",
-     "text": "Look at the two ends first. What must be true about them?",
-     "start": 11.02,
-     "end": 14.46
-    },
-    {
-     "id": "sr1i_4",
-     "text": "Then what about the next pair in? Your turn.",
-     "start": 15.16,
-     "end": 17.59
-    }
-   ],
-   "pauses": []
-  },
-  "sr1s": {
-   "src": "videos/sr1s.mp4",
-   "title": "Two ends, walking in",
-   "duration": 67.64,
-   "lines": [
-    {
-     "id": "sr1s_1",
-     "text": "A mirror word reads the same from both ends. So compare the two ends, then walk inward.",
-     "start": 0.2,
-     "end": 5.63
-    },
-    {
-     "id": "sr1s_2",
-     "text": "If any pair differs, it is not a mirror. If the two walkers meet, it is.",
-     "start": 6.38,
-     "end": 11.05
-    },
-    {
-     "id": "sr1s_3",
-     "text": "Lines two and three place the markers. Pip is left, at index zero. Moss is right, at index four.",
-     "start": 11.8,
-     "end": 18.42
-    },
-    {
-     "id": "sr1s_4",
-     "text": "Line four asks: is left still before right? Zero is less than four. Yes.",
-     "start": 19.17,
-     "end": 24.02
-    },
-    {
-     "id": "sr1s_5",
-     "text": "Line five compares the two letters. L and L. They match, so nothing is returned.",
-     "start": 24.77,
-     "end": 29.96
-    },
-    {
-     "id": "sr1s_6",
-     "text": "Lines eight and nine step both markers inward.",
-     "start": 30.71,
-     "end": 33.51
-    },
-    {
-     "id": "sr1s_7",
-     "text": "Check again. One is less than three. E and E match.",
-     "start": 34.26,
-     "end": 37.56
-    },
-    {
-     "id": "sr1s_8",
-     "text": "Step inward again. Now both stand on index two. Is two less than two?",
-     "start": 38.31,
-     "end": 43.04
-    },
-    {
-     "id": "sr1s_9",
-     "text": "No. The middle letter has no partner to disagree with. The loop ends.",
-     "start": 44.24,
-     "end": 48.73
-    },
-    {
-     "id": "sr1s_10",
-     "text": "Line eleven returns true. Level is a mirror word.",
-     "start": 49.48,
-     "end": 52.93
-    },
-    {
-     "id": "sr1s_11",
-     "text": "Each turn checks one pair, so at most half the letters. That is O of n time.",
-     "start": 54.03,
-     "end": 59.1
-    },
-    {
-     "id": "sr1s_12",
-     "text": "Two markers, and no copy of the word. O of one space. This is the two pointer pattern again.",
-     "start": 59.85,
-     "end": 66.04
-    }
-   ],
-   "pauses": [
-    {
-     "id": "sr1s-q",
-     "t": 43.24
-    }
-   ]
-  },
-  "sr2i": {
-   "src": "videos/sr2i.mp4",
-   "title": "The Odd One Out",
-   "duration": 19.83,
-   "lines": [
-    {
-     "id": "sr2i_1",
-     "text": "Every letter in this word has a twin. Except one.",
-     "start": 0.2,
-     "end": 3.31
-    },
-    {
-     "id": "sr2i_2",
-     "text": "Return the index of the first letter that appears only once. If there is none, return minus one.",
-     "start": 4.01,
-     "end": 10.46
-    },
-    {
-     "id": "sr2i_3",
-     "text": "You cannot know a letter is alone until you have seen the whole word.",
-     "start": 11.16,
-     "end": 15.09
-    },
-    {
-     "id": "sr2i_4",
-     "text": "So how many walks do you need? Your turn.",
-     "start": 15.79,
-     "end": 18.23
-    }
-   ],
-   "pauses": []
-  },
-  "sr2s": {
-   "src": "videos/sr2s.mp4",
-   "title": "Count first, then look",
-   "duration": 59.02,
-   "lines": [
-    {
-     "id": "sr2s_1",
-     "text": "To know a letter is alone, you must have seen the whole word. So this takes two walks.",
-     "start": 0.2,
-     "end": 5.69
-    },
-    {
-     "id": "sr2s_2",
-     "text": "On the first walk, a map counts every letter. On the second, we ask it for the first letter with a count of one.",
-     "start": 6.44,
-     "end": 13.17
-    },
-    {
-     "id": "sr2s_3",
-     "text": "Line two makes an empty map, called count.",
-     "start": 13.92,
-     "end": 16.33
-    },
-    {
-     "id": "sr2s_4",
-     "text": "The first walk. S. Never seen, so its count becomes one.",
-     "start": 17.08,
-     "end": 20.77
-    },
-    {
-     "id": "sr2s_5",
-     "text": "E. Count one.",
-     "start": 21.52,
-     "end": 22.54
-    },
-    {
-     "id": "sr2s_6",
-     "text": "E again. Its count goes up to two.",
-     "start": 23.29,
-     "end": 25.42
-    },
-    {
-     "id": "sr2s_7",
-     "text": "D. Count one.",
-     "start": 26.17,
-     "end": 27.18
-    },
-    {
-     "id": "sr2s_8",
-     "text": "S again. Two.",
-     "start": 27.93,
-     "end": 29.1
-    },
-    {
-     "id": "sr2s_9",
-     "text": "Now the second walk, from the start. Line seven asks: is this letter's count one? S has two. No.",
-     "start": 29.85,
-     "end": 36.15
-    },
-    {
-     "id": "sr2s_10",
-     "text": "E has two. No. The next E, no.",
-     "start": 36.9,
-     "end": 39.25
-    },
-    {
-     "id": "sr2s_11",
-     "text": "D. What does the map say?",
-     "start": 40,
-     "end": 41.42
-    },
-    {
-     "id": "sr2s_12",
-     "text": "One. Line eight returns its index. Three.",
-     "start": 42.62,
-     "end": 45.43
-    },
-    {
-     "id": "sr2s_13",
-     "text": "Two walks over n letters is two n steps. Drop the constant. O of n time.",
-     "start": 46.53,
-     "end": 52
-    },
-    {
-     "id": "sr2s_14",
-     "text": "The map holds one entry for each different letter. O of n space at most.",
-     "start": 52.75,
-     "end": 57.42
-    }
-   ],
-   "pauses": [
-    {
-     "id": "sr2s-q",
-     "t": 41.62
-    }
-   ]
-  },
-  "sr3i": {
-   "src": "videos/sr3i.mp4",
-   "title": "Same Letters",
-   "duration": 18.88,
-   "lines": [
-    {
-     "id": "sr3i_1",
-     "text": "Tea and eat. Different words, the same letters.",
-     "start": 0.2,
-     "end": 3.17
-    },
-    {
-     "id": "sr3i_2",
-     "text": "Return true when two words use exactly the same letters, the same number of times.",
-     "start": 3.87,
-     "end": 9.25
-    },
-    {
-     "id": "sr3i_3",
-     "text": "Sorting both words would work. Can you do it with one walk over each word?",
-     "start": 9.95,
-     "end": 14.45
-    },
-    {
-     "id": "sr3i_4",
-     "text": "What could keep count for you? Your turn.",
-     "start": 15.15,
-     "end": 17.28
-    }
-   ],
-   "pauses": []
-  },
-  "sr3s": {
-   "src": "videos/sr3s.mp4",
-   "title": "Count up, count down",
-   "duration": 60.08,
-   "lines": [
-    {
-     "id": "sr3s_1",
-     "text": "Two words are anagrams when they use the same letters, the same number of times.",
-     "start": 0.2,
-     "end": 5.14
-    },
-    {
-     "id": "sr3s_2",
-     "text": "So count the first word up, then count the second word down. Everything must land on zero.",
-     "start": 5.89,
-     "end": 11.62
-    },
-    {
-     "id": "sr3s_3",
-     "text": "Line two is a quick exit. Different lengths can never match. Three and three, so we go on.",
-     "start": 12.37,
-     "end": 18.07
-    },
-    {
-     "id": "sr3s_4",
-     "text": "Count the first word. T, one.",
-     "start": 18.82,
-     "end": 20.87
-    },
-    {
-     "id": "sr3s_5",
-     "text": "E, one.",
-     "start": 21.62,
-     "end": 22.41
-    },
-    {
-     "id": "sr3s_6",
-     "text": "A, one.",
-     "start": 23.16,
-     "end": 23.9
-    },
-    {
-     "id": "sr3s_7",
-     "text": "Now the second word. E. Line eight asks: is there an E left? Yes.",
-     "start": 24.65,
-     "end": 29.03
-    },
-    {
-     "id": "sr3s_8",
-     "text": "Line nine uses it up. E drops to zero.",
-     "start": 29.78,
-     "end": 32.66
-    },
-    {
-     "id": "sr3s_9",
-     "text": "A. One left. Use it.",
-     "start": 33.41,
-     "end": 34.95
-    },
-    {
-     "id": "sr3s_10",
-     "text": "T. Is there a T left in the map?",
-     "start": 35.7,
-     "end": 37.62
-    },
-    {
-     "id": "sr3s_11",
-     "text": "Yes, one. Use it. Now every count is zero.",
-     "start": 38.82,
-     "end": 41.84
-    },
-    {
-     "id": "sr3s_12",
-     "text": "Line eleven returns true. Tea and eat use the same letters.",
-     "start": 42.59,
-     "end": 46.7
-    },
-    {
-     "id": "sr3s_13",
-     "text": "One walk over each word. O of n time.",
-     "start": 47.8,
-     "end": 50.44
-    },
-    {
-     "id": "sr3s_14",
-     "text": "The map holds one entry per different letter. With lowercase letters only, at most twenty six. O of one space.",
-     "start": 51.19,
-     "end": 58.48
-    }
-   ],
-   "pauses": [
-    {
-     "id": "sr3s-q",
-     "t": 37.82
-    }
-   ]
-  },
-  "sr4i": {
-   "src": "videos/sr4i.mp4",
-   "title": "The Hidden Word",
-   "duration": 18.38,
-   "lines": [
-    {
-     "id": "sr4i_1",
-     "text": "Is the word ban hidden inside beacon?",
-     "start": 0.2,
-     "end": 2.49
-    },
-    {
-     "id": "sr4i_2",
-     "text": "Return true if the small word's letters appear in the big word in the same order. Other letters may sit in between.",
-     "start": 3.19,
-     "end": 10.22
-    },
-    {
-     "id": "sr4i_3",
-     "text": "You never need to go backwards, in either word.",
-     "start": 10.92,
-     "end": 13.44
-    },
-    {
-     "id": "sr4i_4",
-     "text": "What are you waiting for at each step? Your turn.",
-     "start": 14.14,
-     "end": 16.78
-    }
-   ],
-   "pauses": []
-  },
-  "sr4s": {
-   "src": "videos/sr4s.mp4",
-   "title": "Wait for the next letter",
-   "duration": 52.79,
-   "lines": [
-    {
-     "id": "sr4s_1",
-     "text": "The small word is hidden if its letters appear in the big word in the same order, with anything in between.",
-     "start": 0.2,
-     "end": 6.34
-    },
-    {
-     "id": "sr4s_2",
-     "text": "So walk the big word once. Each time you meet the letter you are waiting for, tick it off.",
-     "start": 7.09,
-     "end": 12.25
-    },
-    {
-     "id": "sr4s_3",
-     "text": "S marks the letter we are waiting for. It starts on B.",
-     "start": 13,
-     "end": 16.39
-    },
-    {
-     "id": "sr4s_4",
-     "text": "Moss reads B. That is the letter we want. Line five moves S to the next one.",
-     "start": 17.14,
-     "end": 22.42
-    },
-    {
-     "id": "sr4s_5",
-     "text": "E. We are waiting for A. Not it. Keep walking.",
-     "start": 23.17,
-     "end": 25.77
-    },
-    {
-     "id": "sr4s_6",
-     "text": "A. A match. S moves on to N.",
-     "start": 26.52,
-     "end": 28.56
-    },
-    {
-     "id": "sr4s_7",
-     "text": "C. Not N.",
-     "start": 29.31,
-     "end": 30.22
-    },
-    {
-     "id": "sr4s_8",
-     "text": "O. Not N.",
-     "start": 30.97,
-     "end": 31.87
-    },
-    {
-     "id": "sr4s_9",
-     "text": "N. Is this the letter we are waiting for?",
-     "start": 32.62,
-     "end": 34.85
-    },
-    {
-     "id": "sr4s_10",
-     "text": "Yes. S moves past the end of the small word.",
-     "start": 36.05,
-     "end": 38.95
-    },
-    {
-     "id": "sr4s_11",
-     "text": "Line eight asks: did S reach the end? Three equals three. True.",
-     "start": 39.7,
-     "end": 43.42
-    },
-    {
-     "id": "sr4s_12",
-     "text": "One walk through the big word. O of n time.",
-     "start": 44.52,
-     "end": 47.21
-    },
-    {
-     "id": "sr4s_13",
-     "text": "Two counters, and nothing else. O of one space.",
-     "start": 47.96,
-     "end": 51.19
-    }
-   ],
-   "pauses": [
-    {
-     "id": "sr4s-q",
-     "t": 35.05
-    }
-   ]
-  },
-  "ps1i": {
-   "src": "videos/ps1i.mp4",
-   "title": "The Running Total",
-   "duration": 21.13,
-   "lines": [
-    {
-     "id": "ps1i_1",
-     "text": "Pip counts seeds door by door, and wants the total so far at every door.",
-     "start": 0.2,
-     "end": 4.68
-    },
-    {
-     "id": "ps1i_2",
-     "text": "Return a new array. Position i holds the sum of everything up to and including door i.",
-     "start": 5.38,
-     "end": 11.09
-    },
-    {
-     "id": "ps1i_3",
-     "text": "To get the third total, do you really need to add three numbers again?",
-     "start": 11.79,
-     "end": 15.76
-    },
-    {
-     "id": "ps1i_4",
-     "text": "What single number could you carry along? Your turn.",
-     "start": 16.46,
-     "end": 19.53
-    }
-   ],
-   "pauses": []
-  },
-  "ps1s": {
-   "src": "videos/ps1s.mp4",
-   "title": "Carry the total along",
-   "duration": 56.5,
-   "lines": [
-    {
-     "id": "ps1s_1",
-     "text": "Each total is the total before it, plus one more number. So nothing needs to be added twice.",
-     "start": 0.2,
-     "end": 6.17
-    },
-    {
-     "id": "ps1s_2",
-     "text": "Carry one number, sum, from door to door. Write it down after every add.",
-     "start": 6.92,
-     "end": 11.52
-    },
-    {
-     "id": "ps1s_3",
-     "text": "Line two makes an empty row for the answers. Line three starts sum at zero.",
-     "start": 12.27,
-     "end": 17.15
-    },
-    {
-     "id": "ps1s_4",
-     "text": "I is zero. Line five adds the three to sum. Sum is three.",
-     "start": 17.9,
-     "end": 21.8
-    },
-    {
-     "id": "ps1s_5",
-     "text": "Line six writes that total into the answer row.",
-     "start": 22.55,
-     "end": 25.3
-    },
-    {
-     "id": "ps1s_6",
-     "text": "Next door. Add one. Sum is four. Write it down.",
-     "start": 26.05,
-     "end": 29.09
-    },
-    {
-     "id": "ps1s_7",
-     "text": "The next door holds four, and sum is four. What gets written?",
-     "start": 29.84,
-     "end": 33.49
-    },
-    {
-     "id": "ps1s_8",
-     "text": "Eight. The old total, plus one new number.",
-     "start": 34.69,
-     "end": 37.26
-    },
-    {
-     "id": "ps1s_9",
-     "text": "Last door. Add two. Ten.",
-     "start": 38.01,
-     "end": 39.85
-    },
-    {
-     "id": "ps1s_10",
-     "text": "The loop ends, and line eight returns the answer row.",
-     "start": 40.6,
-     "end": 43.87
-    },
-    {
-     "id": "ps1s_11",
-     "text": "One walk, and one add per door. O of n time.",
-     "start": 44.97,
-     "end": 48.02
-    },
-    {
-     "id": "ps1s_12",
-     "text": "The answer row holds n totals. O of n space. That row has a name: the prefix sums.",
-     "start": 48.77,
-     "end": 54.9
-    }
-   ],
-   "pauses": [
-    {
-     "id": "ps1s-q",
-     "t": 33.69
-    }
-   ]
-  },
-  "ps2i": {
-   "src": "videos/ps2i.mp4",
-   "title": "The Balance Point",
-   "duration": 23.62,
-   "lines": [
-    {
-     "id": "ps2i_1",
-     "text": "Moss wants a door where the left side and the right side weigh the same.",
-     "start": 0.2,
-     "end": 4.31
-    },
-    {
-     "id": "ps2i_2",
-     "text": "Return the first index where the sum to its left equals the sum to its right. If there is none, return minus one.",
-     "start": 5.01,
-     "end": 12.6
-    },
-    {
-     "id": "ps2i_3",
-     "text": "Adding up both sides again at every door is a lot of walking.",
-     "start": 13.3,
-     "end": 17.07
-    },
-    {
-     "id": "ps2i_4",
-     "text": "If you know the total, and the left side, what is the right side? Your turn.",
-     "start": 17.77,
-     "end": 22.02
-    }
-   ],
-   "pauses": []
-  },
-  "ps2s": {
-   "src": "videos/ps2s.mp4",
-   "title": "Total, minus left, minus this door",
-   "duration": 62.78,
-   "lines": [
-    {
-     "id": "ps2s_1",
-     "text": "The whole row is three parts. The left side, this door, and the right side.",
-     "start": 0.2,
-     "end": 4.52
-    },
-    {
-     "id": "ps2s_2",
-     "text": "So if we know the total and the left side, the right side is one subtraction.",
-     "start": 5.27,
-     "end": 9.93
-    },
-    {
-     "id": "ps2s_3",
-     "text": "Lines two and three add everything up, once. The total is ten.",
-     "start": 10.68,
-     "end": 14.59
-    },
-    {
-     "id": "ps2s_4",
-     "text": "Line four. Left starts at zero, because nothing is to the left of the first door.",
-     "start": 15.34,
-     "end": 20.54
-    },
-    {
-     "id": "ps2s_5",
-     "text": "Door zero. Line six works out the right side. Ten, minus zero, minus two. Eight.",
-     "start": 21.29,
-     "end": 26.83
-    },
-    {
-     "id": "ps2s_6",
-     "text": "Line seven compares. Zero is not eight. Not balanced.",
-     "start": 27.58,
-     "end": 31.23
-    },
-    {
-     "id": "ps2s_7",
-     "text": "Line eight moves this door into the left side. Left is two.",
-     "start": 31.98,
-     "end": 35.59
-    },
-    {
-     "id": "ps2s_8",
-     "text": "Door one. Ten, minus two, minus one. Seven. Two is not seven.",
-     "start": 36.34,
-     "end": 40.58
-    },
-    {
-     "id": "ps2s_9",
-     "text": "Left becomes three.",
-     "start": 41.33,
-     "end": 42.61
-    },
-    {
-     "id": "ps2s_10",
-     "text": "Door two holds four, and left is three. What is the right side?",
-     "start": 43.36,
-     "end": 47.04
-    },
-    {
-     "id": "ps2s_11",
-     "text": "Three. Left equals right. Line seven returns the index. Two.",
-     "start": 48.24,
-     "end": 52.48
-    },
-    {
-     "id": "ps2s_12",
-     "text": "One walk for the total, and one to search. O of n time.",
-     "start": 53.58,
-     "end": 57.02
-    },
-    {
-     "id": "ps2s_13",
-     "text": "Three numbers, and no extra row. O of one space.",
-     "start": 57.77,
-     "end": 61.18
-    }
-   ],
-   "pauses": [
-    {
-     "id": "ps2s-q",
-     "t": 47.24
-    }
-   ]
-  },
-  "ps3i": {
-   "src": "videos/ps3i.mp4",
-   "title": "Many Questions",
-   "duration": 23.74,
-   "lines": [
-    {
-     "id": "ps3i_1",
-     "text": "The same row of doors, and a long list of questions. What is the sum of doors one to two? Zero to three?",
-     "start": 0.2,
-     "end": 6.91
-    },
-    {
-     "id": "ps3i_2",
-     "text": "Return the answer to every query, in order. Each query is a pair, l and r.",
-     "start": 7.61,
-     "end": 12.79
-    },
-    {
-     "id": "ps3i_3",
-     "text": "With fifty thousand questions, walking every range is far too slow.",
-     "start": 13.49,
-     "end": 17.83
-    },
-    {
-     "id": "ps3i_4",
-     "text": "What could you work out once, before the first question? Your turn.",
-     "start": 18.53,
-     "end": 22.14
-    }
-   ],
-   "pauses": []
-  },
-  "ps3s": {
-   "src": "videos/ps3s.mp4",
-   "title": "One row of totals, many answers",
-   "duration": 67,
-   "lines": [
-    {
-     "id": "ps3s_1",
-     "text": "Walking every range repeats the same adding. So do the adding once, before any question.",
-     "start": 0.2,
-     "end": 5.51
-    },
-    {
-     "id": "ps3s_2",
-     "text": "Keep the total before every door. Then any range is one total minus another.",
-     "start": 6.26,
-     "end": 11.36
-    },
-    {
-     "id": "ps3s_3",
-     "text": "Line two starts the totals row with a zero. The sum of nothing.",
-     "start": 12.11,
-     "end": 16.16
-    },
-    {
-     "id": "ps3s_4",
-     "text": "Lines three to five fill it in. Each slot is the slot before, plus one number. Zero plus three is three.",
-     "start": 16.91,
-     "end": 23.81
-    },
-    {
-     "id": "ps3s_5",
-     "text": "Then four. Eight. And ten.",
-     "start": 24.56,
-     "end": 26.22
-    },
-    {
-     "id": "ps3s_6",
-     "text": "Now the questions. The first one asks for doors one to two.",
-     "start": 26.97,
-     "end": 30.64
-    },
-    {
-     "id": "ps3s_7",
-     "text": "Line eight takes the total after door two. That is pre at three. Eight.",
-     "start": 31.39,
-     "end": 35.57
-    },
-    {
-     "id": "ps3s_8",
-     "text": "Then it removes everything before door one. Pre at one. Three. Eight minus three is five.",
-     "start": 36.32,
-     "end": 42.04
-    },
-    {
-     "id": "ps3s_9",
-     "text": "The next question. Doors zero to three. Which two slots do we need?",
-     "start": 42.79,
-     "end": 47.07
-    },
-    {
-     "id": "ps3s_10",
-     "text": "Pre at four, minus pre at zero. Ten minus zero. Ten.",
-     "start": 48.27,
-     "end": 52.03
-    },
-    {
-     "id": "ps3s_11",
-     "text": "Line ten returns both answers.",
-     "start": 52.78,
-     "end": 54.96
-    },
-    {
-     "id": "ps3s_12",
-     "text": "Building the row costs n steps, once. After that, every question is one subtraction.",
-     "start": 56.06,
-     "end": 61.5
-    },
-    {
-     "id": "ps3s_13",
-     "text": "The price is one extra row. O of n space.",
-     "start": 62.25,
-     "end": 65.4
-    }
-   ],
-   "pauses": [
-    {
-     "id": "ps3s-q",
-     "t": 47.27
-    }
-   ]
-  },
-  "ps4i": {
-   "src": "videos/ps4i.mp4",
-   "title": "Stretches That Add Up",
-   "duration": 23.33,
-   "lines": [
-    {
-     "id": "ps4i_1",
-     "text": "How many unbroken stretches of these doors add up to exactly three?",
-     "start": 0.2,
-     "end": 4.44
-    },
-    {
-     "id": "ps4i_2",
-     "text": "Return the count. A stretch is any run of neighbours, even a single door.",
-     "start": 5.14,
-     "end": 9.64
-    },
-    {
-     "id": "ps4i_3",
-     "text": "Trying every start and every end is too slow for a long row.",
-     "start": 10.34,
-     "end": 14.21
-    },
-    {
-     "id": "ps4i_4",
-     "text": "Every stretch is a running total, minus an earlier total. What could remember the earlier ones? Your turn.",
-     "start": 14.91,
-     "end": 21.73
-    }
-   ],
-   "pauses": []
-  },
-  "ps4s": {
-   "src": "videos/ps4s.mp4",
-   "title": "Look back for sum \u2212 k",
-   "duration": 83.19,
-   "lines": [
-    {
-     "id": "ps4s_1",
-     "text": "Every stretch is the running total now, minus the running total at some earlier point.",
-     "start": 0.2,
-     "end": 5.51
-    },
-    {
-     "id": "ps4s_2",
-     "text": "So a stretch ending here adds up to k, when an earlier total equals sum minus k. A map remembers the earlier totals.",
-     "start": 6.26,
-     "end": 14.33
-    },
-    {
-     "id": "ps4s_3",
-     "text": "Line two makes the map of totals seen so far. It starts with zero, seen once. That is the total before the first door.",
-     "start": 15.08,
-     "end": 22.91
-    },
-    {
-     "id": "ps4s_4",
-     "text": "Sum and count both start at zero.",
-     "start": 23.66,
-     "end": 25.61
-    },
-    {
-     "id": "ps4s_5",
-     "text": "Door zero. Line six adds it. Sum is one.",
-     "start": 26.36,
-     "end": 29.25
-    },
-    {
-     "id": "ps4s_6",
-     "text": "Line seven looks for sum minus k. One minus three is minus two. Never seen. Count stays zero.",
-     "start": 30,
-     "end": 36.57
-    },
-    {
-     "id": "ps4s_7",
-     "text": "Line eight records the total, one, in the map.",
-     "start": 37.32,
-     "end": 39.96
-    },
-    {
-     "id": "ps4s_8",
-     "text": "Door one. Sum is three. We need three minus three. Zero.",
-     "start": 40.71,
-     "end": 44.37
-    },
-    {
-     "id": "ps4s_9",
-     "text": "Zero was seen once. So one stretch ends here. Doors zero and one. Count is one.",
-     "start": 45.12,
-     "end": 51.03
-    },
-    {
-     "id": "ps4s_10",
-     "text": "Record the three.",
-     "start": 51.78,
-     "end": 52.91
-    },
-    {
-     "id": "ps4s_11",
-     "text": "Door two. Sum is four. Which earlier total are we looking for?",
-     "start": 53.66,
-     "end": 57.71
-    },
-    {
-     "id": "ps4s_12",
-     "text": "One. Seen once. That stretch is doors one and two. Count is two.",
-     "start": 58.91,
-     "end": 62.98
-    },
-    {
-     "id": "ps4s_13",
-     "text": "Last door. Sum is seven. We need four. Seen once. The door on its own. Count is three.",
-     "start": 63.73,
-     "end": 69.48
-    },
-    {
-     "id": "ps4s_14",
-     "text": "Line ten returns the count. Three.",
-     "start": 70.23,
-     "end": 72.58
-    },
-    {
-     "id": "ps4s_15",
-     "text": "One walk, and each map lookup is one step. O of n time.",
-     "start": 73.68,
-     "end": 77.32
-    },
-    {
-     "id": "ps4s_16",
-     "text": "The map can hold one total per door. O of n space.",
-     "start": 78.07,
-     "end": 81.59
-    }
-   ],
-   "pauses": [
-    {
-     "id": "ps4s-q",
-     "t": 57.91
-    }
-   ]
-  },
-  "ll1i": {
-   "src": "videos/ll1i.mp4",
-   "title": "Turn the List Around",
-   "duration": 22.62,
-   "lines": [
-    {
-     "id": "ll1i_1",
-     "text": "Three nodes, each pointing to the next. Pip wants the whole list turned around.",
-     "start": 0.2,
-     "end": 4.53
-    },
-    {
-     "id": "ll1i_2",
-     "text": "Reverse the list and return its new head. Use the nodes you have, and only re-point their arrows.",
-     "start": 5.23,
-     "end": 11.74
-    },
-    {
-     "id": "ll1i_3",
-     "text": "Turn the first arrow around, and you can no longer reach the second node.",
-     "start": 12.44,
-     "end": 16.74
-    },
-    {
-     "id": "ll1i_4",
-     "text": "So what do you need to save, before you turn an arrow? Your turn.",
-     "start": 17.44,
-     "end": 21.02
-    }
-   ],
-   "pauses": []
-  },
-  "ll1s": {
-   "src": "videos/ll1s.mp4",
-   "title": "Save, flip, step",
-   "duration": 68.78,
-   "lines": [
-    {
-     "id": "ll1s_1",
-     "text": "Reversing a list does not move any node. It only turns every arrow around.",
-     "start": 0.2,
-     "end": 5
-    },
-    {
-     "id": "ll1s_2",
-     "text": "But the moment you turn an arrow, you lose the way forward. So save it first.",
-     "start": 5.75,
-     "end": 10.81
-    },
-    {
-     "id": "ll1s_3",
-     "text": "Prev starts as null, because nothing is behind the first node yet. Curr starts on the first node.",
-     "start": 11.56,
-     "end": 17.49
-    },
-    {
-     "id": "ll1s_4",
-     "text": "Line five saves the rest of the list in next, before we touch any arrow.",
-     "start": 18.24,
-     "end": 22.55
-    },
-    {
-     "id": "ll1s_5",
-     "text": "Line six flips the arrow. One now points back to prev, which is null.",
-     "start": 23.3,
-     "end": 27.75
-    },
-    {
-     "id": "ll1s_6",
-     "text": "Lines seven and eight step both markers forward.",
-     "start": 28.5,
-     "end": 31.24
-    },
-    {
-     "id": "ll1s_7",
-     "text": "Again. Save next. Then flip. Two now points back to one.",
-     "start": 31.99,
-     "end": 35.68
-    },
-    {
-     "id": "ll1s_8",
-     "text": "Step forward.",
-     "start": 36.43,
-     "end": 37.51
-    },
-    {
-     "id": "ll1s_9",
-     "text": "Curr is on three, the last node. Line five saves next. What is it?",
-     "start": 38.26,
-     "end": 42.93
-    },
-    {
-     "id": "ll1s_10",
-     "text": "Null. Nothing comes after three. Then line six flips its arrow back to two.",
-     "start": 44.13,
-     "end": 49.01
-    },
-    {
-     "id": "ll1s_11",
-     "text": "Step forward. Prev is three. Curr is null, so the loop ends.",
-     "start": 49.76,
-     "end": 53.8
-    },
-    {
-     "id": "ll1s_12",
-     "text": "Line ten returns prev. The old last node is the new head.",
-     "start": 54.55,
-     "end": 58.7
-    },
-    {
-     "id": "ll1s_13",
-     "text": "One pass, and a few steps per node. O of n time.",
-     "start": 59.8,
-     "end": 63.09
-    },
-    {
-     "id": "ll1s_14",
-     "text": "Three markers, and no new nodes. O of one space.",
-     "start": 63.84,
-     "end": 67.18
-    }
-   ],
-   "pauses": [
-    {
-     "id": "ll1s-q",
-     "t": 43.13
-    }
-   ]
-  },
-  "ll2i": {
-   "src": "videos/ll2i.mp4",
-   "title": "The Middle Node",
-   "duration": 20.04,
-   "lines": [
-    {
-     "id": "ll2i_1",
-     "text": "Pip needs the node in the middle of this list.",
-     "start": 0.2,
-     "end": 2.92
-    },
-    {
-     "id": "ll2i_2",
-     "text": "Return the middle node. With an even number of nodes, return the second of the two middle ones.",
-     "start": 3.62,
-     "end": 9.46
-    },
-    {
-     "id": "ll2i_3",
-     "text": "There is no index to jump to, and nobody told you the length.",
-     "start": 10.16,
-     "end": 13.88
-    },
-    {
-     "id": "ll2i_4",
-     "text": "What if one walker moves twice as fast as the other? Your turn.",
-     "start": 14.58,
-     "end": 18.44
-    }
-   ],
-   "pauses": []
-  },
-  "ll2s": {
-   "src": "videos/ll2s.mp4",
-   "title": "Two walkers, two speeds",
-   "duration": 47.83,
-   "lines": [
-    {
-     "id": "ll2s_1",
-     "text": "You cannot jump to the middle of a list. And you do not know its length without walking it.",
-     "start": 0.2,
-     "end": 4.78
-    },
-    {
-     "id": "ll2s_2",
-     "text": "So send two walkers. One at double speed. When the fast one finishes, the slow one is halfway.",
-     "start": 5.53,
-     "end": 11.8
-    },
-    {
-     "id": "ll2s_3",
-     "text": "Both markers start on the first node.",
-     "start": 12.55,
-     "end": 14.64
-    },
-    {
-     "id": "ll2s_4",
-     "text": "Line four checks that fast can take two more steps. It can.",
-     "start": 15.39,
-     "end": 19.18
-    },
-    {
-     "id": "ll2s_5",
-     "text": "Slow takes one step. Fast takes two.",
-     "start": 19.93,
-     "end": 22.43
-    },
-    {
-     "id": "ll2s_6",
-     "text": "Again. Slow takes one step, and fast takes two. Where is fast now?",
-     "start": 23.18,
-     "end": 27.36
-    },
-    {
-     "id": "ll2s_7",
-     "text": "On the last node. And slow is on three.",
-     "start": 28.56,
-     "end": 31.23
-    },
-    {
-     "id": "ll2s_8",
-     "text": "Line four again. Fast has no next node. So the loop stops.",
-     "start": 31.98,
-     "end": 36.1
-    },
-    {
-     "id": "ll2s_9",
-     "text": "Line eight returns slow. The node holding three. The middle.",
-     "start": 36.85,
-     "end": 40.66
-    },
-    {
-     "id": "ll2s_10",
-     "text": "One pass. O of n time.",
-     "start": 41.76,
-     "end": 43.52
-    },
-    {
-     "id": "ll2s_11",
-     "text": "Two markers. O of one space.",
-     "start": 44.27,
-     "end": 46.23
-    }
-   ],
-   "pauses": [
-    {
-     "id": "ll2s-q",
-     "t": 27.56
-    }
-   ]
-  },
-  "ll3i": {
-   "src": "videos/ll3i.mp4",
-   "title": "Round and Round",
-   "duration": 21.55,
-   "lines": [
-    {
-     "id": "ll3i_1",
-     "text": "The last node of this list points back into the middle. Follow the arrows, and you never stop.",
-     "start": 0.2,
-     "end": 5.5
-    },
-    {
-     "id": "ll3i_2",
-     "text": "Return true if the list has a loop, and false if it ends at null.",
-     "start": 6.2,
-     "end": 10.27
-    },
-    {
-     "id": "ll3i_3",
-     "text": "You could remember every node you visit. But that costs memory.",
-     "start": 10.97,
-     "end": 14.83
-    },
-    {
-     "id": "ll3i_4",
-     "text": "What happens to two runners on a round track, if one is faster? Your turn.",
-     "start": 15.53,
-     "end": 19.95
-    }
-   ],
-   "pauses": []
-  },
-  "ll3s": {
-   "src": "videos/ll3s.mp4",
-   "title": "The fast one catches up",
-   "duration": 54.49,
-   "lines": [
-    {
-     "id": "ll3s_1",
-     "text": "In a list with a loop, a walker never reaches null. It goes round for ever.",
-     "start": 0.2,
-     "end": 5.04
-    },
-    {
-     "id": "ll3s_2",
-     "text": "So send a slow walker and a fast one. Inside a loop, the fast one must catch the slow one from behind.",
-     "start": 5.79,
-     "end": 12.25
-    },
-    {
-     "id": "ll3s_3",
-     "text": "Both markers start on the first node.",
-     "start": 13,
-     "end": 15.09
-    },
-    {
-     "id": "ll3s_4",
-     "text": "Slow steps once, to two. Fast steps twice, to three. Not the same node.",
-     "start": 15.84,
-     "end": 20.66
-    },
-    {
-     "id": "ll3s_5",
-     "text": "Slow steps to three. Fast steps to four, and then follows the arrow back round, to two.",
-     "start": 21.41,
-     "end": 27.06
-    },
-    {
-     "id": "ll3s_6",
-     "text": "Once more. Slow moves to four. Fast takes two steps from two. Where does it land?",
-     "start": 27.81,
-     "end": 33.25
-    },
-    {
-     "id": "ll3s_7",
-     "text": "On four. Fast has caught slow from behind. Line seven sees the same node, and returns true.",
-     "start": 34.45,
-     "end": 40.51
-    },
-    {
-     "id": "ll3s_8",
-     "text": "Fast gains one node on slow at every step, so it catches up within one lap. O of n time.",
-     "start": 41.61,
-     "end": 48.15
-    },
-    {
-     "id": "ll3s_9",
-     "text": "Two markers, and no set of visited nodes. O of one space.",
-     "start": 48.9,
-     "end": 52.89
-    }
-   ],
-   "pauses": [
-    {
-     "id": "ll3s-q",
-     "t": 33.45
-    }
-   ]
-  },
-  "ll4i": {
-   "src": "videos/ll4i.mp4",
-   "title": "Zip Two Lists",
-   "duration": 20.01,
-   "lines": [
-    {
-     "id": "ll4i_1",
-     "text": "Two sorted lists. They should become one sorted list.",
-     "start": 0.2,
-     "end": 3.65
-    },
-    {
-     "id": "ll4i_2",
-     "text": "Join them by re-hooking the nodes, and return the head of the result.",
-     "start": 4.35,
-     "end": 8.3
-    },
-    {
-     "id": "ll4i_3",
-     "text": "You have merged two sorted arrays before. The idea is the same.",
-     "start": 9,
-     "end": 12.99
-    },
-    {
-     "id": "ll4i_4",
-     "text": "But which node is the head of the answer? Could a fake first node help? Your turn.",
-     "start": 13.69,
-     "end": 18.41
-    }
-   ],
-   "pauses": []
-  },
-  "ll4s": {
-   "src": "videos/ll4s.mp4",
-   "title": "Hook on the smaller front",
-   "duration": 64.46,
-   "lines": [
-    {
-     "id": "ll4s_1",
-     "text": "The same idea as merging two sorted arrays. The smallest unused node is at the front of one of the lists.",
-     "start": 0.2,
-     "end": 6.96
-    },
-    {
-     "id": "ll4s_2",
-     "text": "But nothing is copied. Each node is simply hooked onto the end of the new list.",
-     "start": 7.71,
-     "end": 12.62
-    },
-    {
-     "id": "ll4s_3",
-     "text": "Line two makes a dummy node. A fake first node, so that the real first node needs no special case. Tail marks the end of the new list.",
-     "start": 13.37,
-     "end": 22.12
-    },
-    {
-     "id": "ll4s_4",
-     "text": "Compare the two fronts. One and two. One is smaller. Line six hooks it onto tail, and a moves on.",
-     "start": 22.87,
-     "end": 29.2
-    },
-    {
-     "id": "ll4s_5",
-     "text": "Four against two. Two is hooked on, and b moves on.",
-     "start": 29.95,
-     "end": 33.37
-    },
-    {
-     "id": "ll4s_6",
-     "text": "Four against three. Which node is hooked on next?",
-     "start": 34.12,
-     "end": 37.32
-    },
-    {
-     "id": "ll4s_7",
-     "text": "Three. And now b has run out, so the loop stops.",
-     "start": 38.52,
-     "end": 41.46
-    },
-    {
-     "id": "ll4s_8",
-     "text": "Line fourteen hooks on whatever is left. The rest of a. Four and seven come along in one step, because they are already linked.",
-     "start": 42.21,
-     "end": 50.09
-    },
-    {
-     "id": "ll4s_9",
-     "text": "Line fifteen returns dummy dot next. The real first node.",
-     "start": 50.84,
-     "end": 54.8
-    },
-    {
-     "id": "ll4s_10",
-     "text": "One step per node. O of n plus m time.",
-     "start": 55.9,
-     "end": 58.93
-    },
-    {
-     "id": "ll4s_11",
-     "text": "No new nodes, except the dummy. O of one space.",
-     "start": 59.68,
-     "end": 62.86
-    }
-   ],
-   "pauses": [
-    {
-     "id": "ll4s-q",
-     "t": 37.52
-    }
-   ]
-  },
-  "ll5i": {
-   "src": "videos/ll5i.mp4",
-   "title": "Second From the End",
-   "duration": 20.33,
-   "lines": [
-    {
-     "id": "ll5i_1",
-     "text": "One node has to go. The second one, counted from the end.",
-     "start": 0.2,
-     "end": 3.69
-    },
-    {
-     "id": "ll5i_2",
-     "text": "Remove the k-th node from the end, and return the head. In one pass.",
-     "start": 4.39,
-     "end": 9.17
-    },
-    {
-     "id": "ll5i_3",
-     "text": "You cannot walk backwards. And you do not know how long the list is.",
-     "start": 9.87,
-     "end": 13.78
-    },
-    {
-     "id": "ll5i_4",
-     "text": "What if two markers walk together, a fixed distance apart? Your turn.",
-     "start": 14.48,
-     "end": 18.73
-    }
-   ],
-   "pauses": []
-  },
-  "ll5s": {
-   "src": "videos/ll5s.mp4",
-   "title": "Two markers, a fixed gap",
-   "duration": 61.1,
-   "lines": [
-    {
-     "id": "ll5s_1",
-     "text": "To remove a node, you must stand on the node just before it. But counting from the end needs the length.",
-     "start": 0.2,
-     "end": 6.33
-    },
-    {
-     "id": "ll5s_2",
-     "text": "So send one marker k nodes ahead, and then walk both together. When the leader reaches the end, the follower is in place.",
-     "start": 7.08,
-     "end": 14.83
-    },
-    {
-     "id": "ll5s_3",
-     "text": "A dummy node, D, goes in front, so that even the first real node has a node before it. Both markers start there.",
-     "start": 15.58,
-     "end": 23.09
-    },
-    {
-     "id": "ll5s_4",
-     "text": "Line five sends lead ahead by k nodes. K is two.",
-     "start": 23.84,
-     "end": 27.42
-    },
-    {
-     "id": "ll5s_5",
-     "text": "Now they walk together, one step each. The gap stays at two.",
-     "start": 28.17,
-     "end": 31.98
-    },
-    {
-     "id": "ll5s_6",
-     "text": "Another step. Lead is now on the last node. Where is trail?",
-     "start": 32.73,
-     "end": 36.43
-    },
-    {
-     "id": "ll5s_7",
-     "text": "Just before the node to remove. Exactly where we need to stand.",
-     "start": 37.63,
-     "end": 41.59
-    },
-    {
-     "id": "ll5s_8",
-     "text": "Line ten points trail past the next node, straight to the one after it. Three is no longer in the list.",
-     "start": 42.34,
-     "end": 48.77
-    },
-    {
-     "id": "ll5s_9",
-     "text": "Line eleven returns dummy dot next. The real head.",
-     "start": 49.52,
-     "end": 53.01
-    },
-    {
-     "id": "ll5s_10",
-     "text": "One pass. O of n time.",
-     "start": 54.11,
-     "end": 55.87
-    },
-    {
-     "id": "ll5s_11",
-     "text": "Two markers and a dummy. O of one space.",
-     "start": 56.62,
-     "end": 59.5
-    }
-   ],
-   "pauses": [
-    {
-     "id": "ll5s-q",
-     "t": 36.63
-    }
-   ]
-  },
-  "ll6i": {
-   "src": "videos/ll6i.mp4",
-   "title": "No Repeats",
-   "duration": 19.09,
-   "lines": [
-    {
-     "id": "ll6i_1",
-     "text": "A sorted list, with some values written twice.",
-     "start": 0.2,
-     "end": 3.18
-    },
-    {
-     "id": "ll6i_2",
-     "text": "Remove the repeats, so that each value appears once. Return the head.",
-     "start": 3.88,
-     "end": 8.2
-    },
-    {
-     "id": "ll6i_3",
-     "text": "Because the list is sorted, a repeat is always right behind its twin.",
-     "start": 8.9,
-     "end": 13.24
-    },
-    {
-     "id": "ll6i_4",
-     "text": "Standing on a node, how do you unhook the one after it? Your turn.",
-     "start": 13.94,
-     "end": 17.49
-    }
-   ],
-   "pauses": []
-  },
-  "ll6s": {
-   "src": "videos/ll6s.mp4",
-   "title": "Point past the repeat",
-   "duration": 53.81,
-   "lines": [
-    {
-     "id": "ll6s_1",
-     "text": "The list is sorted, so repeats sit right next to each other.",
-     "start": 0.2,
-     "end": 3.82
-    },
-    {
-     "id": "ll6s_2",
-     "text": "And removing a node from a list is one move. Point the node before it, past it.",
-     "start": 4.57,
-     "end": 9.38
-    },
-    {
-     "id": "ll6s_3",
-     "text": "Curr starts on the first node.",
-     "start": 10.13,
-     "end": 11.78
-    },
-    {
-     "id": "ll6s_4",
-     "text": "Line four compares this node with the next one. One and one. A repeat.",
-     "start": 12.53,
-     "end": 17.08
-    },
-    {
-     "id": "ll6s_5",
-     "text": "Line five points curr past the repeat. Curr itself does not move, because the node after might be a repeat too.",
-     "start": 17.83,
-     "end": 24.84
-    },
-    {
-     "id": "ll6s_6",
-     "text": "Now the next node holds two. Different. So line seven moves curr forward.",
-     "start": 25.59,
-     "end": 30.31
-    },
-    {
-     "id": "ll6s_7",
-     "text": "Two and three are different as well. Move on.",
-     "start": 31.06,
-     "end": 33.8
-    },
-    {
-     "id": "ll6s_8",
-     "text": "Three and three. What happens?",
-     "start": 34.55,
-     "end": 36.38
-    },
-    {
-     "id": "ll6s_9",
-     "text": "The arrow skips the repeat, and now points to null.",
-     "start": 37.59,
-     "end": 40.45
-    },
-    {
-     "id": "ll6s_10",
-     "text": "Curr has no next node, so the loop ends. Line ten returns the same head.",
-     "start": 41.2,
-     "end": 45.97
-    },
-    {
-     "id": "ll6s_11",
-     "text": "One pass. O of n time.",
-     "start": 47.07,
-     "end": 48.82
-    },
-    {
-     "id": "ll6s_12",
-     "text": "Nothing new is built. O of one space.",
-     "start": 49.57,
-     "end": 52.21
-    }
-   ],
-   "pauses": [
-    {
-     "id": "ll6s-q",
-     "t": 36.59
     }
    ]
   }
