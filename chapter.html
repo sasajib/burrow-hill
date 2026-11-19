@@ -345,7 +345,7 @@ function problem(st) {
 
 // ---------- step-through: the same steps the solution video narrates ----------
 function walk(P, host) {
-  const V = P.view, steps = P.steps.filter((s) => s.line || s.ptr || s.box || s.set || (s.hot && s.hot.length) || s.swap || (s.gone && s.gone.length) || (s.show && s.show.length)), n = V.row.length; let i = 0, timer = null;
+  const V = P.view, steps = P.steps.filter((s) => s.line || s.ptr || s.box || s.set || (s.hot && s.hot.length) || s.swap || s.move || (s.gone && s.gone.length) || (s.show && s.show.length)), n = V.row.length; let i = 0, timer = null;
   // "placed" views: a tree (level-order array), a grid (2-D array, flat positions) or a graph (nodes at given spots)
   const GRD = V.grid || null, GPH = V.graph || null, PK = GRD ? 'grid' : GPH ? 'graph' : 'tree', TR = V.tree || (GRD ? GRD.flat() : GPH ? GPH.nodes.map((q) => q[0]) : null);
   const TLV = TR && PK === 'tree' ? Math.floor(Math.log2(TR.length)) + 1 : 0, GC = GRD ? GRD[0].length : 0, TW = !TR ? 0 : PK === 'grid' ? GC * 50 : PK === 'graph' ? 400 : Math.max(360, 2 ** (TLV - 1) * 76), PH = !TR ? 0 : PK === 'grid' ? GRD.length * 50 + 24 : PK === 'graph' ? 290 : 34 + TLV * 74 + 30;
@@ -385,6 +385,7 @@ function walk(P, host) {
     const val = {}, cls = {}, ptr = {}, vars = {}, arr = {}, gone = {}; let bx = null; for (const a of V.ghost || []) gone['wc' + a] = 1;
     for (let k = 0; k <= i; k++) { const s = steps[k]; Object.assign(ptr, s.ptr || {}); Object.assign(vars, s.vars || {}); if (s.box) bx = s.box; for (const a of (s.arrows || {}).hide || []) arr[a] = 0; for (const a of (s.arrows || {}).show || []) arr[a] = 1;
       for (const [a, b] of (!s.swap ? [] : Array.isArray(s.swap[0]) ? s.swap : [s.swap])) { const va = val['wc' + a] ?? V.row[a], vb = val['wc' + b] ?? V.row[b]; val['wc' + a] = vb; val['wc' + b] = va; }
+      if (s.move) val['wc' + s.move[1]] = val['wc' + s.move[0]] ?? V.row[s.move[0]];
       for (const a of s.gone || []) gone['wc' + a] = 1; for (const a of s.show || []) delete gone['wc' + a];
       for (const [a, b] of Object.entries(s.set || {})) val[/^[a-z]/.test(a) ? 'w' + a : 'wc' + a] = b;
       for (const a of s.ok || []) cls[typeof a === 'string' ? 'w' + a : 'wc' + a] = 'ok'; for (const a of s.bad || []) cls[typeof a === 'string' ? 'w' + a : 'wc' + a] = 'bad'; }

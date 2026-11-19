@@ -14921,672 +14921,6 @@ window.BURROW = {
     }
    ]
   },
-  "ar1i": {
-   "src": "videos/ar1i.mp4",
-   "title": "Turn the Row Around",
-   "duration": 20.47,
-   "lines": [
-    {
-     "id": "ar1i_1",
-     "text": "Five parcels are in the wrong order. Back to front.",
-     "start": 0.2,
-     "end": 3.3
-    },
-    {
-     "id": "ar1i_2",
-     "text": "Reverse the row in place. Change this array, and do not build a second one.",
-     "start": 4,
-     "end": 8.77
-    },
-    {
-     "id": "ar1i_3",
-     "text": "The first parcel belongs in the last door. And the last one belongs in the first.",
-     "start": 9.47,
-     "end": 14.31
-    },
-    {
-     "id": "ar1i_4",
-     "text": "So which two doors trade places first? And then? Your turn.",
-     "start": 15.01,
-     "end": 18.87
-    }
-   ],
-   "pauses": []
-  },
-  "ar1s": {
-   "src": "videos/ar1s.mp4",
-   "title": "The two ends trade places",
-   "duration": 70.3,
-   "lines": [
-    {
-     "id": "ar1s_1",
-     "text": "In a reversed row, the first number and the last number have traded places. So have the second, and the second to last.",
-     "start": 0.2,
-     "end": 7.84
-    },
-    {
-     "id": "ar1s_2",
-     "text": "So put a marker on each end, swap, and walk both markers inward.",
-     "start": 8.59,
-     "end": 12.79
-    },
-    {
-     "id": "ar1s_3",
-     "text": "Lines two and three place the markers. Pip on the first door, Moss on the last.",
-     "start": 13.54,
-     "end": 18.36
-    },
-    {
-     "id": "ar1s_4",
-     "text": "Line five puts the left number aside, in keep. Otherwise the next line would destroy it.",
-     "start": 19.11,
-     "end": 24.32
-    },
-    {
-     "id": "ar1s_5",
-     "text": "Line six copies the right number into the left door. Line seven puts the kept number into the right door.",
-     "start": 25.07,
-     "end": 31.72
-    },
-    {
-     "id": "ar1s_6",
-     "text": "Lines eight and nine step both markers inward.",
-     "start": 32.47,
-     "end": 35.27
-    },
-    {
-     "id": "ar1s_7",
-     "text": "One is less than three, so the loop runs again. Which two doors swap now?",
-     "start": 36.02,
-     "end": 40.46
-    },
-    {
-     "id": "ar1s_8",
-     "text": "Doors one and three. Two and four trade places.",
-     "start": 41.66,
-     "end": 44.76
-    },
-    {
-     "id": "ar1s_9",
-     "text": "Step inward. Both markers stand on door two. Two is not less than two, so the loop ends.",
-     "start": 45.51,
-     "end": 51.4
-    },
-    {
-     "id": "ar1s_10",
-     "text": "The middle door has no partner, and stays where it is. The row is reversed.",
-     "start": 52.15,
-     "end": 56.74
-    },
-    {
-     "id": "ar1s_11",
-     "text": "Each round fixes two doors, so n over two rounds. O of n time.",
-     "start": 57.84,
-     "end": 62.35
-    },
-    {
-     "id": "ar1s_12",
-     "text": "Two markers and one spare variable. O of one space. That is what in place means.",
-     "start": 63.1,
-     "end": 68.7
-    }
-   ],
-   "pauses": [
-    {
-     "id": "ar1s-q",
-     "t": 40.66
-    }
-   ]
-  },
-  "ar2i": {
-   "src": "videos/ar2i.mp4",
-   "title": "The Biggest Parcel",
-   "duration": 16.28,
-   "lines": [
-    {
-     "id": "ar2i_1",
-     "text": "Five parcels, five weights. Moss wants the heaviest.",
-     "start": 0.2,
-     "end": 3.58
-    },
-    {
-     "id": "ar2i_2",
-     "text": "Return the largest number in the row.",
-     "start": 4.29,
-     "end": 6.47
-    },
-    {
-     "id": "ar2i_3",
-     "text": "You cannot know which is biggest without looking at every door once.",
-     "start": 7.17,
-     "end": 11.09
-    },
-    {
-     "id": "ar2i_4",
-     "text": "So what do you carry with you as you walk? Your turn.",
-     "start": 11.79,
-     "end": 14.68
-    }
-   ],
-   "pauses": []
-  },
-  "ar2s": {
-   "src": "videos/ar2s.mp4",
-   "title": "Remember the best so far",
-   "duration": 49.16,
-   "lines": [
-    {
-     "id": "ar2s_1",
-     "text": "The biggest number could be behind any door. So every door has to be looked at once.",
-     "start": 0.2,
-     "end": 5.57
-    },
-    {
-     "id": "ar2s_2",
-     "text": "Carry one number as you walk: the best so far. Replace it whenever you see a bigger one.",
-     "start": 6.32,
-     "end": 12.16
-    },
-    {
-     "id": "ar2s_3",
-     "text": "Line two takes the first number as the best so far. Three.",
-     "start": 12.91,
-     "end": 16.68
-    },
-    {
-     "id": "ar2s_4",
-     "text": "The walk starts at door one. Eight is bigger than three, so best becomes eight.",
-     "start": 17.43,
-     "end": 22.2
-    },
-    {
-     "id": "ar2s_5",
-     "text": "Door two. Two is not bigger than eight. Nothing changes.",
-     "start": 22.95,
-     "end": 26.44
-    },
-    {
-     "id": "ar2s_6",
-     "text": "Door three holds nine. What happens to best?",
-     "start": 27.19,
-     "end": 29.98
-    },
-    {
-     "id": "ar2s_7",
-     "text": "It becomes nine.",
-     "start": 31.18,
-     "end": 32.28
-    },
-    {
-     "id": "ar2s_8",
-     "text": "Door four. Four is not bigger. And the row is finished.",
-     "start": 33.03,
-     "end": 36.45
-    },
-    {
-     "id": "ar2s_9",
-     "text": "Line six returns best. Nine.",
-     "start": 37.2,
-     "end": 39.52
-    },
-    {
-     "id": "ar2s_10",
-     "text": "One walk, one comparison per door. O of n time.",
-     "start": 40.62,
-     "end": 43.98
-    },
-    {
-     "id": "ar2s_11",
-     "text": "One remembered number. O of one space.",
-     "start": 44.73,
-     "end": 47.56
-    }
-   ],
-   "pauses": [
-    {
-     "id": "ar2s-q",
-     "t": 30.18
-    }
-   ]
-  },
-  "ar3i": {
-   "src": "videos/ar3i.mp4",
-   "title": "Make Room",
-   "duration": 18.55,
-   "lines": [
-    {
-     "id": "ar3i_1",
-     "text": "A parcel arrived late. It belongs in the middle of the row.",
-     "start": 0.2,
-     "end": 3.82
-    },
-    {
-     "id": "ar3i_2",
-     "text": "Insert x at index i, and shift everything after it one door to the right.",
-     "start": 4.52,
-     "end": 9.27
-    },
-    {
-     "id": "ar3i_3",
-     "text": "If you start shifting at the wrong end, a parcel gets overwritten.",
-     "start": 9.97,
-     "end": 13.75
-    },
-    {
-     "id": "ar3i_4",
-     "text": "Which parcel must move first? Your turn.",
-     "start": 14.45,
-     "end": 16.95
-    }
-   ],
-   "pauses": []
-  },
-  "ar3s": {
-   "src": "videos/ar3s.mp4",
-   "title": "Shift from the back",
-   "duration": 55.45,
-   "lines": [
-    {
-     "id": "ar3s_1",
-     "text": "To open a gap, everything after it moves one door to the right.",
-     "start": 0.2,
-     "end": 4.13
-    },
-    {
-     "id": "ar3s_2",
-     "text": "Start from the back. Each number moves into a door that is already free, so nothing is lost.",
-     "start": 4.88,
-     "end": 10.99
-    },
-    {
-     "id": "ar3s_3",
-     "text": "Line two starts j on a new door at the end of the row. Door four. It is empty.",
-     "start": 11.74,
-     "end": 17.16
-    },
-    {
-     "id": "ar3s_4",
-     "text": "Line three copies the number from the door on its left. Five moves into door four.",
-     "start": 17.91,
-     "end": 23.26
-    },
-    {
-     "id": "ar3s_5",
-     "text": "J moves left, to door three. Four moves into it.",
-     "start": 24.01,
-     "end": 27.16
-    },
-    {
-     "id": "ar3s_6",
-     "text": "J moves to door two. The loop test is j greater than i. Is two greater than two?",
-     "start": 27.91,
-     "end": 33.42
-    },
-    {
-     "id": "ar3s_7",
-     "text": "No. The loop stops. Door two still shows the old four, but its copy is safe next door.",
-     "start": 34.62,
-     "end": 40.32
-    },
-    {
-     "id": "ar3s_8",
-     "text": "Line five writes x into door two. Three.",
-     "start": 41.07,
-     "end": 43.82
-    },
-    {
-     "id": "ar3s_9",
-     "text": "Inserting at the front moves every number. So in the worst case, O of n time.",
-     "start": 44.92,
-     "end": 50.05
-    },
-    {
-     "id": "ar3s_10",
-     "text": "No second array. O of one extra space.",
-     "start": 50.8,
-     "end": 53.85
-    }
-   ],
-   "pauses": [
-    {
-     "id": "ar3s-q",
-     "t": 33.62
-    }
-   ]
-  },
-  "ar4i": {
-   "src": "videos/ar4i.mp4",
-   "title": "The Missing Number",
-   "duration": 22.13,
-   "lines": [
-    {
-     "id": "ar4i_1",
-     "text": "Parcels numbered zero to three were posted. Only three of the four arrived.",
-     "start": 0.2,
-     "end": 4.73
-    },
-    {
-     "id": "ar4i_2",
-     "text": "The row holds the numbers zero to n, with one missing. Return the missing number.",
-     "start": 5.43,
-     "end": 10.71
-    },
-    {
-     "id": "ar4i_3",
-     "text": "Looking for each number in turn means walking the row again and again.",
-     "start": 11.41,
-     "end": 15.56
-    },
-    {
-     "id": "ar4i_4",
-     "text": "What should all the numbers add up to? And what do they add up to? Your turn.",
-     "start": 16.26,
-     "end": 20.53
-    }
-   ],
-   "pauses": []
-  },
-  "ar4s": {
-   "src": "videos/ar4s.mp4",
-   "title": "Expected minus actual",
-   "duration": 47.63,
-   "lines": [
-    {
-     "id": "ar4s_1",
-     "text": "If nothing were missing, the numbers would add up to a total we can work out in advance.",
-     "start": 0.2,
-     "end": 5.67
-    },
-    {
-     "id": "ar4s_2",
-     "text": "The real total is smaller, by exactly the number that is missing.",
-     "start": 6.42,
-     "end": 10.41
-    },
-    {
-     "id": "ar4s_3",
-     "text": "Two totals, both starting at zero. Expected, and actual.",
-     "start": 11.16,
-     "end": 15.07
-    },
-    {
-     "id": "ar4s_4",
-     "text": "Door zero. Line five adds i plus one to expected. One. Line six adds the door, three, to actual.",
-     "start": 15.82,
-     "end": 22.91
-    },
-    {
-     "id": "ar4s_5",
-     "text": "Door one. Expected gains two. Actual gains zero.",
-     "start": 23.66,
-     "end": 27.36
-    },
-    {
-     "id": "ar4s_6",
-     "text": "Door two. Expected gains three. Actual gains one. What are the two totals?",
-     "start": 28.11,
-     "end": 33.38
-    },
-    {
-     "id": "ar4s_7",
-     "text": "Six, and four.",
-     "start": 34.58,
-     "end": 35.67
-    },
-    {
-     "id": "ar4s_8",
-     "text": "Line eight subtracts. Six minus four. The missing number is two.",
-     "start": 36.42,
-     "end": 40.55
-    },
-    {
-     "id": "ar4s_9",
-     "text": "One walk. O of n time.",
-     "start": 41.65,
-     "end": 43.22
-    },
-    {
-     "id": "ar4s_10",
-     "text": "Two totals. O of one space.",
-     "start": 43.97,
-     "end": 46.03
-    }
-   ],
-   "pauses": [
-    {
-     "id": "ar4s-q",
-     "t": 33.58
-    }
-   ]
-  },
-  "ar5i": {
-   "src": "videos/ar5i.mp4",
-   "title": "Add One",
-   "duration": 16.58,
-   "lines": [
-    {
-     "id": "ar5i_1",
-     "text": "A number, written one digit per door. One hundred and ninety nine.",
-     "start": 0.2,
-     "end": 4.14
-    },
-    {
-     "id": "ar5i_2",
-     "text": "Add one to it, and return the digits of the answer.",
-     "start": 4.84,
-     "end": 7.99
-    },
-    {
-     "id": "ar5i_3",
-     "text": "On paper you start at the right, and a nine makes you carry.",
-     "start": 8.69,
-     "end": 12.15
-    },
-    {
-     "id": "ar5i_4",
-     "text": "Where does the carrying stop? Your turn.",
-     "start": 12.85,
-     "end": 14.98
-    }
-   ],
-   "pauses": []
-  },
-  "ar5s": {
-   "src": "videos/ar5s.mp4",
-   "title": "Carry from the back",
-   "duration": 52.23,
-   "lines": [
-    {
-     "id": "ar5s_1",
-     "text": "Adding one starts at the last digit, just like on paper.",
-     "start": 0.2,
-     "end": 3.71
-    },
-    {
-     "id": "ar5s_2",
-     "text": "A nine turns into zero and passes the one along. Any other digit takes the one, and we are finished.",
-     "start": 4.46,
-     "end": 10.91
-    },
-    {
-     "id": "ar5s_3",
-     "text": "Line two starts at the last door. Door two.",
-     "start": 11.66,
-     "end": 14.53
-    },
-    {
-     "id": "ar5s_4",
-     "text": "Line three asks: is this digit less than nine? No. It is a nine.",
-     "start": 15.28,
-     "end": 19.46
-    },
-    {
-     "id": "ar5s_5",
-     "text": "So line seven turns it into zero. The one is carried to the left.",
-     "start": 20.21,
-     "end": 24.2
-    },
-    {
-     "id": "ar5s_6",
-     "text": "Door one. Another nine. Zero again, and the carry moves on.",
-     "start": 24.95,
-     "end": 28.91
-    },
-    {
-     "id": "ar5s_7",
-     "text": "Door zero holds a one. Is one less than nine?",
-     "start": 29.66,
-     "end": 32.67
-    },
-    {
-     "id": "ar5s_8",
-     "text": "Yes. Line four makes it two, and line five returns straight away.",
-     "start": 33.88,
-     "end": 38.12
-    },
-    {
-     "id": "ar5s_9",
-     "text": "At most one visit per digit. O of n time. Usually far less, because the carry stops early.",
-     "start": 39.22,
-     "end": 45.32
-    },
-    {
-     "id": "ar5s_10",
-     "text": "The digits are changed in place. Only all nines need one extra door.",
-     "start": 46.07,
-     "end": 50.63
-    }
-   ],
-   "pauses": [
-    {
-     "id": "ar5s-q",
-     "t": 32.88
-    }
-   ]
-  },
-  "ar6i": {
-   "src": "videos/ar6i.mp4",
-   "title": "The Longest Streak",
-   "duration": 18.99,
-   "lines": [
-    {
-     "id": "ar6i_1",
-     "text": "Pip writes a one for every sunny day, and a zero for rain.",
-     "start": 0.2,
-     "end": 3.8
-    },
-    {
-     "id": "ar6i_2",
-     "text": "Return the length of the longest unbroken run of ones.",
-     "start": 4.5,
-     "end": 8.12
-    },
-    {
-     "id": "ar6i_3",
-     "text": "A zero ends the current streak. But an earlier streak might still be the longest.",
-     "start": 8.82,
-     "end": 13.65
-    },
-    {
-     "id": "ar6i_4",
-     "text": "So how many numbers do you need to keep? Your turn.",
-     "start": 14.35,
-     "end": 17.39
-    }
-   ],
-   "pauses": []
-  },
-  "ar6s": {
-   "src": "videos/ar6s.mp4",
-   "title": "Current streak, best streak",
-   "duration": 50.49,
-   "lines": [
-    {
-     "id": "ar6s_1",
-     "text": "Walk the row once, counting the current streak. A zero sets it back to nothing.",
-     "start": 0.2,
-     "end": 4.87
-    },
-    {
-     "id": "ar6s_2",
-     "text": "And remember the longest streak seen so far, because a later zero must not erase it.",
-     "start": 5.62,
-     "end": 10.94
-    },
-    {
-     "id": "ar6s_3",
-     "text": "Run and best both start at zero.",
-     "start": 11.69,
-     "end": 13.62
-    },
-    {
-     "id": "ar6s_4",
-     "text": "Door zero is a one. Run is one. Best is one.",
-     "start": 14.37,
-     "end": 17.66
-    },
-    {
-     "id": "ar6s_5",
-     "text": "Another one. Run is two. Best is two.",
-     "start": 18.41,
-     "end": 20.87
-    },
-    {
-     "id": "ar6s_6",
-     "text": "A zero. Line six sets run back to zero. But best keeps its two.",
-     "start": 21.62,
-     "end": 26.17
-    },
-    {
-     "id": "ar6s_7",
-     "text": "A one. Run is one. That does not beat two.",
-     "start": 26.92,
-     "end": 29.67
-    },
-    {
-     "id": "ar6s_8",
-     "text": "Another one. What are run and best now?",
-     "start": 30.42,
-     "end": 32.65
-    },
-    {
-     "id": "ar6s_9",
-     "text": "Run is two. Best stays two.",
-     "start": 33.85,
-     "end": 35.79
-    },
-    {
-     "id": "ar6s_10",
-     "text": "The last door. Run is three, and that beats two. Best is three.",
-     "start": 36.54,
-     "end": 40.54
-    },
-    {
-     "id": "ar6s_11",
-     "text": "Line nine returns best. Three.",
-     "start": 41.29,
-     "end": 43.46
-    },
-    {
-     "id": "ar6s_12",
-     "text": "One walk. O of n time.",
-     "start": 44.56,
-     "end": 46.12
-    },
-    {
-     "id": "ar6s_13",
-     "text": "Two numbers. O of one space.",
-     "start": 46.87,
-     "end": 48.89
-    }
-   ],
-   "pauses": [
-    {
-     "id": "ar6s-q",
-     "t": 32.85
-    }
-   ]
-  },
   "tp1i": {
    "src": "videos/tp1i.mp4",
    "title": "The Pair in Order",
@@ -17480,6 +16814,672 @@ window.BURROW = {
     {
      "id": "mx10s-q",
      "t": 41.15
+    }
+   ]
+  },
+  "ar1i": {
+   "src": "videos/ar1i.mp4",
+   "title": "Turn the Row Around",
+   "duration": 20.47,
+   "lines": [
+    {
+     "id": "ar1i_1",
+     "text": "Five parcels are in the wrong order. Back to front.",
+     "start": 0.2,
+     "end": 3.3
+    },
+    {
+     "id": "ar1i_2",
+     "text": "Reverse the row in place. Change this array, and do not build a second one.",
+     "start": 4,
+     "end": 8.77
+    },
+    {
+     "id": "ar1i_3",
+     "text": "The first parcel belongs in the last door. And the last one belongs in the first.",
+     "start": 9.47,
+     "end": 14.31
+    },
+    {
+     "id": "ar1i_4",
+     "text": "So which two doors trade places first? And then? Your turn.",
+     "start": 15.01,
+     "end": 18.87
+    }
+   ],
+   "pauses": []
+  },
+  "ar1s": {
+   "src": "videos/ar1s.mp4",
+   "title": "The two ends trade places",
+   "duration": 70.3,
+   "lines": [
+    {
+     "id": "ar1s_1",
+     "text": "In a reversed row, the first number and the last number have traded places. So have the second, and the second to last.",
+     "start": 0.2,
+     "end": 7.84
+    },
+    {
+     "id": "ar1s_2",
+     "text": "So put a marker on each end, swap, and walk both markers inward.",
+     "start": 8.59,
+     "end": 12.79
+    },
+    {
+     "id": "ar1s_3",
+     "text": "Lines two and three place the markers. Pip on the first door, Moss on the last.",
+     "start": 13.54,
+     "end": 18.36
+    },
+    {
+     "id": "ar1s_4",
+     "text": "Line five puts the left number aside, in keep. Otherwise the next line would destroy it.",
+     "start": 19.11,
+     "end": 24.32
+    },
+    {
+     "id": "ar1s_5",
+     "text": "Line six copies the right number into the left door. Line seven puts the kept number into the right door.",
+     "start": 25.07,
+     "end": 31.72
+    },
+    {
+     "id": "ar1s_6",
+     "text": "Lines eight and nine step both markers inward.",
+     "start": 32.47,
+     "end": 35.27
+    },
+    {
+     "id": "ar1s_7",
+     "text": "One is less than three, so the loop runs again. Which two doors swap now?",
+     "start": 36.02,
+     "end": 40.46
+    },
+    {
+     "id": "ar1s_8",
+     "text": "Doors one and three. Two and four trade places.",
+     "start": 41.66,
+     "end": 44.76
+    },
+    {
+     "id": "ar1s_9",
+     "text": "Step inward. Both markers stand on door two. Two is not less than two, so the loop ends.",
+     "start": 45.51,
+     "end": 51.4
+    },
+    {
+     "id": "ar1s_10",
+     "text": "The middle door has no partner, and stays where it is. The row is reversed.",
+     "start": 52.15,
+     "end": 56.74
+    },
+    {
+     "id": "ar1s_11",
+     "text": "Each round fixes two doors, so n over two rounds. O of n time.",
+     "start": 57.84,
+     "end": 62.35
+    },
+    {
+     "id": "ar1s_12",
+     "text": "Two markers and one spare variable. O of one space. That is what in place means.",
+     "start": 63.1,
+     "end": 68.7
+    }
+   ],
+   "pauses": [
+    {
+     "id": "ar1s-q",
+     "t": 40.66
+    }
+   ]
+  },
+  "ar2i": {
+   "src": "videos/ar2i.mp4",
+   "title": "The Biggest Parcel",
+   "duration": 16.28,
+   "lines": [
+    {
+     "id": "ar2i_1",
+     "text": "Five parcels, five weights. Moss wants the heaviest.",
+     "start": 0.2,
+     "end": 3.58
+    },
+    {
+     "id": "ar2i_2",
+     "text": "Return the largest number in the row.",
+     "start": 4.29,
+     "end": 6.47
+    },
+    {
+     "id": "ar2i_3",
+     "text": "You cannot know which is biggest without looking at every door once.",
+     "start": 7.17,
+     "end": 11.09
+    },
+    {
+     "id": "ar2i_4",
+     "text": "So what do you carry with you as you walk? Your turn.",
+     "start": 11.79,
+     "end": 14.68
+    }
+   ],
+   "pauses": []
+  },
+  "ar2s": {
+   "src": "videos/ar2s.mp4",
+   "title": "Remember the best so far",
+   "duration": 49.16,
+   "lines": [
+    {
+     "id": "ar2s_1",
+     "text": "The biggest number could be behind any door. So every door has to be looked at once.",
+     "start": 0.2,
+     "end": 5.57
+    },
+    {
+     "id": "ar2s_2",
+     "text": "Carry one number as you walk: the best so far. Replace it whenever you see a bigger one.",
+     "start": 6.32,
+     "end": 12.16
+    },
+    {
+     "id": "ar2s_3",
+     "text": "Line two takes the first number as the best so far. Three.",
+     "start": 12.91,
+     "end": 16.68
+    },
+    {
+     "id": "ar2s_4",
+     "text": "The walk starts at door one. Eight is bigger than three, so best becomes eight.",
+     "start": 17.43,
+     "end": 22.2
+    },
+    {
+     "id": "ar2s_5",
+     "text": "Door two. Two is not bigger than eight. Nothing changes.",
+     "start": 22.95,
+     "end": 26.44
+    },
+    {
+     "id": "ar2s_6",
+     "text": "Door three holds nine. What happens to best?",
+     "start": 27.19,
+     "end": 29.98
+    },
+    {
+     "id": "ar2s_7",
+     "text": "It becomes nine.",
+     "start": 31.18,
+     "end": 32.28
+    },
+    {
+     "id": "ar2s_8",
+     "text": "Door four. Four is not bigger. And the row is finished.",
+     "start": 33.03,
+     "end": 36.45
+    },
+    {
+     "id": "ar2s_9",
+     "text": "Line six returns best. Nine.",
+     "start": 37.2,
+     "end": 39.52
+    },
+    {
+     "id": "ar2s_10",
+     "text": "One walk, one comparison per door. O of n time.",
+     "start": 40.62,
+     "end": 43.98
+    },
+    {
+     "id": "ar2s_11",
+     "text": "One remembered number. O of one space.",
+     "start": 44.73,
+     "end": 47.56
+    }
+   ],
+   "pauses": [
+    {
+     "id": "ar2s-q",
+     "t": 30.18
+    }
+   ]
+  },
+  "ar3i": {
+   "src": "videos/ar3i.mp4",
+   "title": "Make Room",
+   "duration": 18.55,
+   "lines": [
+    {
+     "id": "ar3i_1",
+     "text": "A parcel arrived late. It belongs in the middle of the row.",
+     "start": 0.2,
+     "end": 3.82
+    },
+    {
+     "id": "ar3i_2",
+     "text": "Insert x at index i, and shift everything after it one door to the right.",
+     "start": 4.52,
+     "end": 9.27
+    },
+    {
+     "id": "ar3i_3",
+     "text": "If you start shifting at the wrong end, a parcel gets overwritten.",
+     "start": 9.97,
+     "end": 13.75
+    },
+    {
+     "id": "ar3i_4",
+     "text": "Which parcel must move first? Your turn.",
+     "start": 14.45,
+     "end": 16.95
+    }
+   ],
+   "pauses": []
+  },
+  "ar3s": {
+   "src": "videos/ar3s.mp4",
+   "title": "Shift from the back",
+   "duration": 55.45,
+   "lines": [
+    {
+     "id": "ar3s_1",
+     "text": "To open a gap, everything after it moves one door to the right.",
+     "start": 0.2,
+     "end": 4.13
+    },
+    {
+     "id": "ar3s_2",
+     "text": "Start from the back. Each number moves into a door that is already free, so nothing is lost.",
+     "start": 4.88,
+     "end": 10.99
+    },
+    {
+     "id": "ar3s_3",
+     "text": "Line two starts j on a new door at the end of the row. Door four. It is empty.",
+     "start": 11.74,
+     "end": 17.16
+    },
+    {
+     "id": "ar3s_4",
+     "text": "Line three copies the number from the door on its left. Five moves into door four.",
+     "start": 17.91,
+     "end": 23.26
+    },
+    {
+     "id": "ar3s_5",
+     "text": "J moves left, to door three. Four moves into it.",
+     "start": 24.01,
+     "end": 27.16
+    },
+    {
+     "id": "ar3s_6",
+     "text": "J moves to door two. The loop test is j greater than i. Is two greater than two?",
+     "start": 27.91,
+     "end": 33.42
+    },
+    {
+     "id": "ar3s_7",
+     "text": "No. The loop stops. Door two still shows the old four, but its copy is safe next door.",
+     "start": 34.62,
+     "end": 40.32
+    },
+    {
+     "id": "ar3s_8",
+     "text": "Line five writes x into door two. Three.",
+     "start": 41.07,
+     "end": 43.82
+    },
+    {
+     "id": "ar3s_9",
+     "text": "Inserting at the front moves every number. So in the worst case, O of n time.",
+     "start": 44.92,
+     "end": 50.05
+    },
+    {
+     "id": "ar3s_10",
+     "text": "No second array. O of one extra space.",
+     "start": 50.8,
+     "end": 53.85
+    }
+   ],
+   "pauses": [
+    {
+     "id": "ar3s-q",
+     "t": 33.62
+    }
+   ]
+  },
+  "ar4i": {
+   "src": "videos/ar4i.mp4",
+   "title": "The Missing Number",
+   "duration": 22.13,
+   "lines": [
+    {
+     "id": "ar4i_1",
+     "text": "Parcels numbered zero to three were posted. Only three of the four arrived.",
+     "start": 0.2,
+     "end": 4.73
+    },
+    {
+     "id": "ar4i_2",
+     "text": "The row holds the numbers zero to n, with one missing. Return the missing number.",
+     "start": 5.43,
+     "end": 10.71
+    },
+    {
+     "id": "ar4i_3",
+     "text": "Looking for each number in turn means walking the row again and again.",
+     "start": 11.41,
+     "end": 15.56
+    },
+    {
+     "id": "ar4i_4",
+     "text": "What should all the numbers add up to? And what do they add up to? Your turn.",
+     "start": 16.26,
+     "end": 20.53
+    }
+   ],
+   "pauses": []
+  },
+  "ar4s": {
+   "src": "videos/ar4s.mp4",
+   "title": "Expected minus actual",
+   "duration": 47.63,
+   "lines": [
+    {
+     "id": "ar4s_1",
+     "text": "If nothing were missing, the numbers would add up to a total we can work out in advance.",
+     "start": 0.2,
+     "end": 5.67
+    },
+    {
+     "id": "ar4s_2",
+     "text": "The real total is smaller, by exactly the number that is missing.",
+     "start": 6.42,
+     "end": 10.41
+    },
+    {
+     "id": "ar4s_3",
+     "text": "Two totals, both starting at zero. Expected, and actual.",
+     "start": 11.16,
+     "end": 15.07
+    },
+    {
+     "id": "ar4s_4",
+     "text": "Door zero. Line five adds i plus one to expected. One. Line six adds the door, three, to actual.",
+     "start": 15.82,
+     "end": 22.91
+    },
+    {
+     "id": "ar4s_5",
+     "text": "Door one. Expected gains two. Actual gains zero.",
+     "start": 23.66,
+     "end": 27.36
+    },
+    {
+     "id": "ar4s_6",
+     "text": "Door two. Expected gains three. Actual gains one. What are the two totals?",
+     "start": 28.11,
+     "end": 33.38
+    },
+    {
+     "id": "ar4s_7",
+     "text": "Six, and four.",
+     "start": 34.58,
+     "end": 35.67
+    },
+    {
+     "id": "ar4s_8",
+     "text": "Line eight subtracts. Six minus four. The missing number is two.",
+     "start": 36.42,
+     "end": 40.55
+    },
+    {
+     "id": "ar4s_9",
+     "text": "One walk. O of n time.",
+     "start": 41.65,
+     "end": 43.22
+    },
+    {
+     "id": "ar4s_10",
+     "text": "Two totals. O of one space.",
+     "start": 43.97,
+     "end": 46.03
+    }
+   ],
+   "pauses": [
+    {
+     "id": "ar4s-q",
+     "t": 33.58
+    }
+   ]
+  },
+  "ar5i": {
+   "src": "videos/ar5i.mp4",
+   "title": "Add One",
+   "duration": 16.58,
+   "lines": [
+    {
+     "id": "ar5i_1",
+     "text": "A number, written one digit per door. One hundred and ninety nine.",
+     "start": 0.2,
+     "end": 4.14
+    },
+    {
+     "id": "ar5i_2",
+     "text": "Add one to it, and return the digits of the answer.",
+     "start": 4.84,
+     "end": 7.99
+    },
+    {
+     "id": "ar5i_3",
+     "text": "On paper you start at the right, and a nine makes you carry.",
+     "start": 8.69,
+     "end": 12.15
+    },
+    {
+     "id": "ar5i_4",
+     "text": "Where does the carrying stop? Your turn.",
+     "start": 12.85,
+     "end": 14.98
+    }
+   ],
+   "pauses": []
+  },
+  "ar5s": {
+   "src": "videos/ar5s.mp4",
+   "title": "Carry from the back",
+   "duration": 52.23,
+   "lines": [
+    {
+     "id": "ar5s_1",
+     "text": "Adding one starts at the last digit, just like on paper.",
+     "start": 0.2,
+     "end": 3.71
+    },
+    {
+     "id": "ar5s_2",
+     "text": "A nine turns into zero and passes the one along. Any other digit takes the one, and we are finished.",
+     "start": 4.46,
+     "end": 10.91
+    },
+    {
+     "id": "ar5s_3",
+     "text": "Line two starts at the last door. Door two.",
+     "start": 11.66,
+     "end": 14.53
+    },
+    {
+     "id": "ar5s_4",
+     "text": "Line three asks: is this digit less than nine? No. It is a nine.",
+     "start": 15.28,
+     "end": 19.46
+    },
+    {
+     "id": "ar5s_5",
+     "text": "So line seven turns it into zero. The one is carried to the left.",
+     "start": 20.21,
+     "end": 24.2
+    },
+    {
+     "id": "ar5s_6",
+     "text": "Door one. Another nine. Zero again, and the carry moves on.",
+     "start": 24.95,
+     "end": 28.91
+    },
+    {
+     "id": "ar5s_7",
+     "text": "Door zero holds a one. Is one less than nine?",
+     "start": 29.66,
+     "end": 32.67
+    },
+    {
+     "id": "ar5s_8",
+     "text": "Yes. Line four makes it two, and line five returns straight away.",
+     "start": 33.88,
+     "end": 38.12
+    },
+    {
+     "id": "ar5s_9",
+     "text": "At most one visit per digit. O of n time. Usually far less, because the carry stops early.",
+     "start": 39.22,
+     "end": 45.32
+    },
+    {
+     "id": "ar5s_10",
+     "text": "The digits are changed in place. Only all nines need one extra door.",
+     "start": 46.07,
+     "end": 50.63
+    }
+   ],
+   "pauses": [
+    {
+     "id": "ar5s-q",
+     "t": 32.88
+    }
+   ]
+  },
+  "ar6i": {
+   "src": "videos/ar6i.mp4",
+   "title": "The Longest Streak",
+   "duration": 18.99,
+   "lines": [
+    {
+     "id": "ar6i_1",
+     "text": "Pip writes a one for every sunny day, and a zero for rain.",
+     "start": 0.2,
+     "end": 3.8
+    },
+    {
+     "id": "ar6i_2",
+     "text": "Return the length of the longest unbroken run of ones.",
+     "start": 4.5,
+     "end": 8.12
+    },
+    {
+     "id": "ar6i_3",
+     "text": "A zero ends the current streak. But an earlier streak might still be the longest.",
+     "start": 8.82,
+     "end": 13.65
+    },
+    {
+     "id": "ar6i_4",
+     "text": "So how many numbers do you need to keep? Your turn.",
+     "start": 14.35,
+     "end": 17.39
+    }
+   ],
+   "pauses": []
+  },
+  "ar6s": {
+   "src": "videos/ar6s.mp4",
+   "title": "Current streak, best streak",
+   "duration": 50.49,
+   "lines": [
+    {
+     "id": "ar6s_1",
+     "text": "Walk the row once, counting the current streak. A zero sets it back to nothing.",
+     "start": 0.2,
+     "end": 4.87
+    },
+    {
+     "id": "ar6s_2",
+     "text": "And remember the longest streak seen so far, because a later zero must not erase it.",
+     "start": 5.62,
+     "end": 10.94
+    },
+    {
+     "id": "ar6s_3",
+     "text": "Run and best both start at zero.",
+     "start": 11.69,
+     "end": 13.62
+    },
+    {
+     "id": "ar6s_4",
+     "text": "Door zero is a one. Run is one. Best is one.",
+     "start": 14.37,
+     "end": 17.66
+    },
+    {
+     "id": "ar6s_5",
+     "text": "Another one. Run is two. Best is two.",
+     "start": 18.41,
+     "end": 20.87
+    },
+    {
+     "id": "ar6s_6",
+     "text": "A zero. Line six sets run back to zero. But best keeps its two.",
+     "start": 21.62,
+     "end": 26.17
+    },
+    {
+     "id": "ar6s_7",
+     "text": "A one. Run is one. That does not beat two.",
+     "start": 26.92,
+     "end": 29.67
+    },
+    {
+     "id": "ar6s_8",
+     "text": "Another one. What are run and best now?",
+     "start": 30.42,
+     "end": 32.65
+    },
+    {
+     "id": "ar6s_9",
+     "text": "Run is two. Best stays two.",
+     "start": 33.85,
+     "end": 35.79
+    },
+    {
+     "id": "ar6s_10",
+     "text": "The last door. Run is three, and that beats two. Best is three.",
+     "start": 36.54,
+     "end": 40.54
+    },
+    {
+     "id": "ar6s_11",
+     "text": "Line nine returns best. Three.",
+     "start": 41.29,
+     "end": 43.46
+    },
+    {
+     "id": "ar6s_12",
+     "text": "One walk. O of n time.",
+     "start": 44.56,
+     "end": 46.12
+    },
+    {
+     "id": "ar6s_13",
+     "text": "Two numbers. O of one space.",
+     "start": 46.87,
+     "end": 48.89
+    }
+   ],
+   "pauses": [
+    {
+     "id": "ar6s-q",
+     "t": 32.85
     }
    ]
   }
