@@ -4349,264 +4349,6 @@ window.BURROW = {
     }
    ]
   },
-  "qu1i": {
-   "src": "videos/qu1i.mp4",
-   "title": "Recent Visitors",
-   "duration": 21.66,
-   "lines": [
-    {
-     "id": "qu1i_1",
-     "text": "Visitors arrive at the burrow, and Pip writes down the minute each one came.",
-     "start": 0.2,
-     "end": 4.57
-    },
-    {
-     "id": "qu1i_2",
-     "text": "For every visitor, return how many arrived within the last span minutes, counting that visitor too.",
-     "start": 5.27,
-     "end": 11.64
-    },
-    {
-     "id": "qu1i_3",
-     "text": "A visitor who is too old now, is too old for everyone who comes later.",
-     "start": 12.34,
-     "end": 16.86
-    },
-    {
-     "id": "qu1i_4",
-     "text": "So who stops counting first? Your turn.",
-     "start": 17.56,
-     "end": 20.06
-    }
-   ],
-   "pauses": []
-  },
-  "qu1s": {
-   "src": "videos/qu1s.mp4",
-   "title": "The oldest leaves first",
-   "duration": 78.45,
-   "lines": [
-    {
-     "id": "qu1s_1",
-     "text": "The visitors who still count form a line. They joined in order, and they stop counting in the same order.",
-     "start": 0.2,
-     "end": 6.24
-    },
-    {
-     "id": "qu1s_2",
-     "text": "So keep a marker, head, on the oldest one who still counts. It only ever moves forward.",
-     "start": 6.99,
-     "end": 12.61
-    },
-    {
-     "id": "qu1s_3",
-     "text": "Line three. Moss stands on head, the oldest visitor who still counts. Door zero.",
-     "start": 13.36,
-     "end": 18.98
-    },
-    {
-     "id": "qu1s_4",
-     "text": "The first arrival, at minute one. Nobody is too old. From head to here is one visitor.",
-     "start": 19.73,
-     "end": 25.5
-    },
-    {
-     "id": "qu1s_5",
-     "text": "Minute two. Is minute one too old? It would need to be before two minus three. No. Two visitors.",
-     "start": 26.25,
-     "end": 32.75
-    },
-    {
-     "id": "qu1s_6",
-     "text": "Minute six. Six minus three is three. Anything before minute three is too old.",
-     "start": 33.5,
-     "end": 38.44
-    },
-    {
-     "id": "qu1s_7",
-     "text": "Minute one is too old. Head moves. Minute two is too old as well. Head moves again.",
-     "start": 39.19,
-     "end": 45.05
-    },
-    {
-     "id": "qu1s_8",
-     "text": "From head to here is one visitor.",
-     "start": 45.8,
-     "end": 47.86
-    },
-    {
-     "id": "qu1s_9",
-     "text": "Minute seven. Too old means before four. Head is on six. Does head move?",
-     "start": 48.61,
-     "end": 53.41
-    },
-    {
-     "id": "qu1s_10",
-     "text": "No. Six still counts. Two visitors.",
-     "start": 54.61,
-     "end": 57.09
-    },
-    {
-     "id": "qu1s_11",
-     "text": "Minute eight. Too old means before five. Six still counts. Three visitors.",
-     "start": 57.84,
-     "end": 62.7
-    },
-    {
-     "id": "qu1s_12",
-     "text": "Line eight returns the counts.",
-     "start": 63.45,
-     "end": 65.28
-    },
-    {
-     "id": "qu1s_13",
-     "text": "Head only moves forward, so it moves at most n times in total. O of n.",
-     "start": 66.38,
-     "end": 71.75
-    },
-    {
-     "id": "qu1s_14",
-     "text": "Apart from the answer row, one marker. O of one extra space.",
-     "start": 72.5,
-     "end": 76.85
-    }
-   ],
-   "pauses": [
-    {
-     "id": "qu1s-q",
-     "t": 53.61
-    }
-   ]
-  },
-  "qu2i": {
-   "src": "videos/qu2i.mp4",
-   "title": "A Queue From Two Piles",
-   "duration": 24,
-   "lines": [
-    {
-     "id": "qu2i_1",
-     "text": "Pip has two piles, and can only touch the top of each. But the visitors want a fair line.",
-     "start": 0.2,
-     "end": 5.76
-    },
-    {
-     "id": "qu2i_2",
-     "text": "Run the operations, and return what every take removed. A take must remove the oldest item.",
-     "start": 6.46,
-     "end": 12.62
-    },
-    {
-     "id": "qu2i_3",
-     "text": "A pile hands back the newest item first. That is backwards.",
-     "start": 13.32,
-     "end": 17.49
-    },
-    {
-     "id": "qu2i_4",
-     "text": "What happens to the order, if you pour one pile into the other? Your turn.",
-     "start": 18.19,
-     "end": 22.4
-    }
-   ],
-   "pauses": []
-  },
-  "qu2s": {
-   "src": "videos/qu2s.mp4",
-   "title": "Pour one pile into the other",
-   "duration": 79.63,
-   "lines": [
-    {
-     "id": "qu2s_1",
-     "text": "A pile gives back the newest first. Pour it into a second pile, and the order flips. Now the oldest is on top.",
-     "start": 0.2,
-     "end": 7.44
-    },
-    {
-     "id": "qu2s_2",
-     "text": "So new items go onto the inbox. Items leave from the outbox. And we only pour when the outbox is empty.",
-     "start": 8.19,
-     "end": 15.18
-    },
-    {
-     "id": "qu2s_3",
-     "text": "Two empty piles. Inbox, and outbox.",
-     "start": 15.93,
-     "end": 18.87
-    },
-    {
-     "id": "qu2s_4",
-     "text": "Add one. Line seven pushes it onto the inbox.",
-     "start": 19.62,
-     "end": 22.98
-    },
-    {
-     "id": "qu2s_5",
-     "text": "Add two. Push. It sits on top of the one.",
-     "start": 23.73,
-     "end": 26.53
-    },
-    {
-     "id": "qu2s_6",
-     "text": "A take. The outbox is empty. So line ten pours the inbox across, one item at a time.",
-     "start": 27.28,
-     "end": 33.49
-    },
-    {
-     "id": "qu2s_7",
-     "text": "Two went across first, then one. So one, the oldest, is on top. Line twelve pops it.",
-     "start": 34.24,
-     "end": 40.03
-    },
-    {
-     "id": "qu2s_8",
-     "text": "Add three. It goes onto the inbox, as always.",
-     "start": 40.78,
-     "end": 43.96
-    },
-    {
-     "id": "qu2s_9",
-     "text": "A take. The outbox still holds two. Do we pour first?",
-     "start": 44.71,
-     "end": 48.13
-    },
-    {
-     "id": "qu2s_10",
-     "text": "No. The outbox is not empty, so line twelve just pops. Two.",
-     "start": 49.33,
-     "end": 53.41
-    },
-    {
-     "id": "qu2s_11",
-     "text": "The last take. Now the outbox is empty, so the three is poured across, and popped.",
-     "start": 54.16,
-     "end": 59.34
-    },
-    {
-     "id": "qu2s_12",
-     "text": "Line fifteen returns what was taken. One, two, three. In arrival order.",
-     "start": 60.09,
-     "end": 65.22
-    },
-    {
-     "id": "qu2s_13",
-     "text": "Each item is pushed twice and popped twice at most. So the average cost of an operation is O of one.",
-     "start": 66.32,
-     "end": 72.79
-    },
-    {
-     "id": "qu2s_14",
-     "text": "The two piles together hold every waiting item. O of n space.",
-     "start": 73.54,
-     "end": 78.03
-    }
-   ],
-   "pauses": [
-    {
-     "id": "qu2s-q",
-     "t": 48.33
-    }
-   ]
-  },
   "ll0": {
    "src": "videos/ll0.mp4",
    "title": "Boxes and Notes",
@@ -6434,6 +6176,85 @@ window.BURROW = {
    ],
    "pauses": []
   },
+  "ll2s": {
+   "src": "videos/ll2s.mp4",
+   "title": "Two walkers, two speeds",
+   "duration": 47.83,
+   "lines": [
+    {
+     "id": "ll2s_1",
+     "text": "You cannot jump to the middle of a list. And you do not know its length without walking it.",
+     "start": 0.2,
+     "end": 4.78
+    },
+    {
+     "id": "ll2s_2",
+     "text": "So send two walkers. One at double speed. When the fast one finishes, the slow one is halfway.",
+     "start": 5.53,
+     "end": 11.8
+    },
+    {
+     "id": "ll2s_3",
+     "text": "Both markers start on the first node.",
+     "start": 12.55,
+     "end": 14.64
+    },
+    {
+     "id": "ll2s_4",
+     "text": "Line four checks that fast can take two more steps. It can.",
+     "start": 15.39,
+     "end": 19.18
+    },
+    {
+     "id": "ll2s_5",
+     "text": "Slow takes one step. Fast takes two.",
+     "start": 19.93,
+     "end": 22.43
+    },
+    {
+     "id": "ll2s_6",
+     "text": "Again. Slow takes one step, and fast takes two. Where is fast now?",
+     "start": 23.18,
+     "end": 27.36
+    },
+    {
+     "id": "ll2s_7",
+     "text": "On the last node. And slow is on three.",
+     "start": 28.56,
+     "end": 31.23
+    },
+    {
+     "id": "ll2s_8",
+     "text": "Line four again. Fast has no next node. So the loop stops.",
+     "start": 31.98,
+     "end": 36.1
+    },
+    {
+     "id": "ll2s_9",
+     "text": "Line eight returns slow. The node holding three. The middle.",
+     "start": 36.85,
+     "end": 40.66
+    },
+    {
+     "id": "ll2s_10",
+     "text": "One pass. O of n time.",
+     "start": 41.76,
+     "end": 43.52
+    },
+    {
+     "id": "ll2s_11",
+     "text": "Two markers. O of one space.",
+     "start": 44.27,
+     "end": 46.23
+    }
+   ],
+   "pauses": [
+    {
+     "id": "ll2s-q",
+     "t": 27.56
+    }
+   ]
+  },
   "ll3i": {
    "src": "videos/ll3i.mp4",
    "title": "Round and Round",
@@ -6869,6 +6690,264 @@ window.BURROW = {
     {
      "id": "ll6s-q",
      "t": 36.59
+    }
+   ]
+  },
+  "qu1i": {
+   "src": "videos/qu1i.mp4",
+   "title": "Recent Visitors",
+   "duration": 21.66,
+   "lines": [
+    {
+     "id": "qu1i_1",
+     "text": "Visitors arrive at the burrow, and Pip writes down the minute each one came.",
+     "start": 0.2,
+     "end": 4.57
+    },
+    {
+     "id": "qu1i_2",
+     "text": "For every visitor, return how many arrived within the last span minutes, counting that visitor too.",
+     "start": 5.27,
+     "end": 11.64
+    },
+    {
+     "id": "qu1i_3",
+     "text": "A visitor who is too old now, is too old for everyone who comes later.",
+     "start": 12.34,
+     "end": 16.86
+    },
+    {
+     "id": "qu1i_4",
+     "text": "So who stops counting first? Your turn.",
+     "start": 17.56,
+     "end": 20.06
+    }
+   ],
+   "pauses": []
+  },
+  "qu1s": {
+   "src": "videos/qu1s.mp4",
+   "title": "The oldest leaves first",
+   "duration": 78.45,
+   "lines": [
+    {
+     "id": "qu1s_1",
+     "text": "The visitors who still count form a line. They joined in order, and they stop counting in the same order.",
+     "start": 0.2,
+     "end": 6.24
+    },
+    {
+     "id": "qu1s_2",
+     "text": "So keep a marker, head, on the oldest one who still counts. It only ever moves forward.",
+     "start": 6.99,
+     "end": 12.61
+    },
+    {
+     "id": "qu1s_3",
+     "text": "Line three. Moss stands on head, the oldest visitor who still counts. Door zero.",
+     "start": 13.36,
+     "end": 18.98
+    },
+    {
+     "id": "qu1s_4",
+     "text": "The first arrival, at minute one. Nobody is too old. From head to here is one visitor.",
+     "start": 19.73,
+     "end": 25.5
+    },
+    {
+     "id": "qu1s_5",
+     "text": "Minute two. Is minute one too old? It would need to be before two minus three. No. Two visitors.",
+     "start": 26.25,
+     "end": 32.75
+    },
+    {
+     "id": "qu1s_6",
+     "text": "Minute six. Six minus three is three. Anything before minute three is too old.",
+     "start": 33.5,
+     "end": 38.44
+    },
+    {
+     "id": "qu1s_7",
+     "text": "Minute one is too old. Head moves. Minute two is too old as well. Head moves again.",
+     "start": 39.19,
+     "end": 45.05
+    },
+    {
+     "id": "qu1s_8",
+     "text": "From head to here is one visitor.",
+     "start": 45.8,
+     "end": 47.86
+    },
+    {
+     "id": "qu1s_9",
+     "text": "Minute seven. Too old means before four. Head is on six. Does head move?",
+     "start": 48.61,
+     "end": 53.41
+    },
+    {
+     "id": "qu1s_10",
+     "text": "No. Six still counts. Two visitors.",
+     "start": 54.61,
+     "end": 57.09
+    },
+    {
+     "id": "qu1s_11",
+     "text": "Minute eight. Too old means before five. Six still counts. Three visitors.",
+     "start": 57.84,
+     "end": 62.7
+    },
+    {
+     "id": "qu1s_12",
+     "text": "Line eight returns the counts.",
+     "start": 63.45,
+     "end": 65.28
+    },
+    {
+     "id": "qu1s_13",
+     "text": "Head only moves forward, so it moves at most n times in total. O of n.",
+     "start": 66.38,
+     "end": 71.75
+    },
+    {
+     "id": "qu1s_14",
+     "text": "Apart from the answer row, one marker. O of one extra space.",
+     "start": 72.5,
+     "end": 76.85
+    }
+   ],
+   "pauses": [
+    {
+     "id": "qu1s-q",
+     "t": 53.61
+    }
+   ]
+  },
+  "qu2i": {
+   "src": "videos/qu2i.mp4",
+   "title": "A Queue From Two Piles",
+   "duration": 24,
+   "lines": [
+    {
+     "id": "qu2i_1",
+     "text": "Pip has two piles, and can only touch the top of each. But the visitors want a fair line.",
+     "start": 0.2,
+     "end": 5.76
+    },
+    {
+     "id": "qu2i_2",
+     "text": "Run the operations, and return what every take removed. A take must remove the oldest item.",
+     "start": 6.46,
+     "end": 12.62
+    },
+    {
+     "id": "qu2i_3",
+     "text": "A pile hands back the newest item first. That is backwards.",
+     "start": 13.32,
+     "end": 17.49
+    },
+    {
+     "id": "qu2i_4",
+     "text": "What happens to the order, if you pour one pile into the other? Your turn.",
+     "start": 18.19,
+     "end": 22.4
+    }
+   ],
+   "pauses": []
+  },
+  "qu2s": {
+   "src": "videos/qu2s.mp4",
+   "title": "Pour one pile into the other",
+   "duration": 79.63,
+   "lines": [
+    {
+     "id": "qu2s_1",
+     "text": "A pile gives back the newest first. Pour it into a second pile, and the order flips. Now the oldest is on top.",
+     "start": 0.2,
+     "end": 7.44
+    },
+    {
+     "id": "qu2s_2",
+     "text": "So new items go onto the inbox. Items leave from the outbox. And we only pour when the outbox is empty.",
+     "start": 8.19,
+     "end": 15.18
+    },
+    {
+     "id": "qu2s_3",
+     "text": "Two empty piles. Inbox, and outbox.",
+     "start": 15.93,
+     "end": 18.87
+    },
+    {
+     "id": "qu2s_4",
+     "text": "Add one. Line seven pushes it onto the inbox.",
+     "start": 19.62,
+     "end": 22.98
+    },
+    {
+     "id": "qu2s_5",
+     "text": "Add two. Push. It sits on top of the one.",
+     "start": 23.73,
+     "end": 26.53
+    },
+    {
+     "id": "qu2s_6",
+     "text": "A take. The outbox is empty. So line ten pours the inbox across, one item at a time.",
+     "start": 27.28,
+     "end": 33.49
+    },
+    {
+     "id": "qu2s_7",
+     "text": "Two went across first, then one. So one, the oldest, is on top. Line twelve pops it.",
+     "start": 34.24,
+     "end": 40.03
+    },
+    {
+     "id": "qu2s_8",
+     "text": "Add three. It goes onto the inbox, as always.",
+     "start": 40.78,
+     "end": 43.96
+    },
+    {
+     "id": "qu2s_9",
+     "text": "A take. The outbox still holds two. Do we pour first?",
+     "start": 44.71,
+     "end": 48.13
+    },
+    {
+     "id": "qu2s_10",
+     "text": "No. The outbox is not empty, so line twelve just pops. Two.",
+     "start": 49.33,
+     "end": 53.41
+    },
+    {
+     "id": "qu2s_11",
+     "text": "The last take. Now the outbox is empty, so the three is poured across, and popped.",
+     "start": 54.16,
+     "end": 59.34
+    },
+    {
+     "id": "qu2s_12",
+     "text": "Line fifteen returns what was taken. One, two, three. In arrival order.",
+     "start": 60.09,
+     "end": 65.22
+    },
+    {
+     "id": "qu2s_13",
+     "text": "Each item is pushed twice and popped twice at most. So the average cost of an operation is O of one.",
+     "start": 66.32,
+     "end": 72.79
+    },
+    {
+     "id": "qu2s_14",
+     "text": "The two piles together hold every waiting item. O of n space.",
+     "start": 73.54,
+     "end": 78.03
+    }
+   ],
+   "pauses": [
+    {
+     "id": "qu2s-q",
+     "t": 48.33
     }
    ]
   }

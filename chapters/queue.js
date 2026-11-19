@@ -4,8 +4,8 @@ window.CHAPTER = {
  "sub": "CHAPTER 8 · QUEUES",
  "key": "burrow-ch-queue",
  "next": {
-  "href": "index.html#chapters",
-  "label": "All chapters"
+  "href": "chapter.html?c=linked",
+  "label": "Chapter 9: Linked lists"
  },
  "prev": {
   "href": "chapter.html?c=stack",
@@ -240,6 +240,7 @@ window.CHAPTER = {
     "vars": [],
     "box": null,
     "list": false,
+    "nameOnly": false,
     "leftNull": false,
     "cycle": null,
     "skips": []
@@ -705,6 +706,7 @@ window.CHAPTER = {
      "rows": 2
     },
     "list": false,
+    "nameOnly": false,
     "leftNull": false,
     "cycle": null,
     "skips": []
