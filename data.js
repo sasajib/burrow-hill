@@ -1559,6 +1559,726 @@ window.BURROW = {
      "t": 63.82
     }
    ]
+  },
+  "sr1i": {
+   "src": "videos/sr1i.mp4",
+   "title": "The Mirror Word",
+   "duration": 19.19,
+   "lines": [
+    {
+     "id": "sr1i_1",
+     "text": "Some words are mirrors. Level reads the same forwards and backwards.",
+     "start": 0.2,
+     "end": 4.66
+    },
+    {
+     "id": "sr1i_2",
+     "text": "Write a function that returns true for a mirror word, and false for anything else.",
+     "start": 5.36,
+     "end": 10.32
+    },
+    {
+     "id": "sr1i_3",
+     "text": "Look at the two ends first. What must be true about them?",
+     "start": 11.02,
+     "end": 14.46
+    },
+    {
+     "id": "sr1i_4",
+     "text": "Then what about the next pair in? Your turn.",
+     "start": 15.16,
+     "end": 17.59
+    }
+   ],
+   "pauses": []
+  },
+  "sr1s": {
+   "src": "videos/sr1s.mp4",
+   "title": "Two ends, walking in",
+   "duration": 67.64,
+   "lines": [
+    {
+     "id": "sr1s_1",
+     "text": "A mirror word reads the same from both ends. So compare the two ends, then walk inward.",
+     "start": 0.2,
+     "end": 5.63
+    },
+    {
+     "id": "sr1s_2",
+     "text": "If any pair differs, it is not a mirror. If the two walkers meet, it is.",
+     "start": 6.38,
+     "end": 11.05
+    },
+    {
+     "id": "sr1s_3",
+     "text": "Lines two and three place the markers. Pip is left, at index zero. Moss is right, at index four.",
+     "start": 11.8,
+     "end": 18.42
+    },
+    {
+     "id": "sr1s_4",
+     "text": "Line four asks: is left still before right? Zero is less than four. Yes.",
+     "start": 19.17,
+     "end": 24.02
+    },
+    {
+     "id": "sr1s_5",
+     "text": "Line five compares the two letters. L and L. They match, so nothing is returned.",
+     "start": 24.77,
+     "end": 29.96
+    },
+    {
+     "id": "sr1s_6",
+     "text": "Lines eight and nine step both markers inward.",
+     "start": 30.71,
+     "end": 33.51
+    },
+    {
+     "id": "sr1s_7",
+     "text": "Check again. One is less than three. E and E match.",
+     "start": 34.26,
+     "end": 37.56
+    },
+    {
+     "id": "sr1s_8",
+     "text": "Step inward again. Now both stand on index two. Is two less than two?",
+     "start": 38.31,
+     "end": 43.04
+    },
+    {
+     "id": "sr1s_9",
+     "text": "No. The middle letter has no partner to disagree with. The loop ends.",
+     "start": 44.24,
+     "end": 48.73
+    },
+    {
+     "id": "sr1s_10",
+     "text": "Line eleven returns true. Level is a mirror word.",
+     "start": 49.48,
+     "end": 52.93
+    },
+    {
+     "id": "sr1s_11",
+     "text": "Each turn checks one pair, so at most half the letters. That is O of n time.",
+     "start": 54.03,
+     "end": 59.1
+    },
+    {
+     "id": "sr1s_12",
+     "text": "Two markers, and no copy of the word. O of one space. This is the two pointer pattern again.",
+     "start": 59.85,
+     "end": 66.04
+    }
+   ],
+   "pauses": [
+    {
+     "id": "sr1s-q",
+     "t": 43.24
+    }
+   ]
+  },
+  "sr2i": {
+   "src": "videos/sr2i.mp4",
+   "title": "The Odd One Out",
+   "duration": 19.83,
+   "lines": [
+    {
+     "id": "sr2i_1",
+     "text": "Every letter in this word has a twin. Except one.",
+     "start": 0.2,
+     "end": 3.31
+    },
+    {
+     "id": "sr2i_2",
+     "text": "Return the index of the first letter that appears only once. If there is none, return minus one.",
+     "start": 4.01,
+     "end": 10.46
+    },
+    {
+     "id": "sr2i_3",
+     "text": "You cannot know a letter is alone until you have seen the whole word.",
+     "start": 11.16,
+     "end": 15.09
+    },
+    {
+     "id": "sr2i_4",
+     "text": "So how many walks do you need? Your turn.",
+     "start": 15.79,
+     "end": 18.23
+    }
+   ],
+   "pauses": []
+  },
+  "sr2s": {
+   "src": "videos/sr2s.mp4",
+   "title": "Count first, then look",
+   "duration": 59.02,
+   "lines": [
+    {
+     "id": "sr2s_1",
+     "text": "To know a letter is alone, you must have seen the whole word. So this takes two walks.",
+     "start": 0.2,
+     "end": 5.69
+    },
+    {
+     "id": "sr2s_2",
+     "text": "On the first walk, a map counts every letter. On the second, we ask it for the first letter with a count of one.",
+     "start": 6.44,
+     "end": 13.17
+    },
+    {
+     "id": "sr2s_3",
+     "text": "Line two makes an empty map, called count.",
+     "start": 13.92,
+     "end": 16.33
+    },
+    {
+     "id": "sr2s_4",
+     "text": "The first walk. S. Never seen, so its count becomes one.",
+     "start": 17.08,
+     "end": 20.77
+    },
+    {
+     "id": "sr2s_5",
+     "text": "E. Count one.",
+     "start": 21.52,
+     "end": 22.54
+    },
+    {
+     "id": "sr2s_6",
+     "text": "E again. Its count goes up to two.",
+     "start": 23.29,
+     "end": 25.42
+    },
+    {
+     "id": "sr2s_7",
+     "text": "D. Count one.",
+     "start": 26.17,
+     "end": 27.18
+    },
+    {
+     "id": "sr2s_8",
+     "text": "S again. Two.",
+     "start": 27.93,
+     "end": 29.1
+    },
+    {
+     "id": "sr2s_9",
+     "text": "Now the second walk, from the start. Line seven asks: is this letter's count one? S has two. No.",
+     "start": 29.85,
+     "end": 36.15
+    },
+    {
+     "id": "sr2s_10",
+     "text": "E has two. No. The next E, no.",
+     "start": 36.9,
+     "end": 39.25
+    },
+    {
+     "id": "sr2s_11",
+     "text": "D. What does the map say?",
+     "start": 40,
+     "end": 41.42
+    },
+    {
+     "id": "sr2s_12",
+     "text": "One. Line eight returns its index. Three.",
+     "start": 42.62,
+     "end": 45.43
+    },
+    {
+     "id": "sr2s_13",
+     "text": "Two walks over n letters is two n steps. Drop the constant. O of n time.",
+     "start": 46.53,
+     "end": 52
+    },
+    {
+     "id": "sr2s_14",
+     "text": "The map holds one entry for each different letter. O of n space at most.",
+     "start": 52.75,
+     "end": 57.42
+    }
+   ],
+   "pauses": [
+    {
+     "id": "sr2s-q",
+     "t": 41.62
+    }
+   ]
+  },
+  "sr3i": {
+   "src": "videos/sr3i.mp4",
+   "title": "Same Letters",
+   "duration": 18.88,
+   "lines": [
+    {
+     "id": "sr3i_1",
+     "text": "Tea and eat. Different words, the same letters.",
+     "start": 0.2,
+     "end": 3.17
+    },
+    {
+     "id": "sr3i_2",
+     "text": "Return true when two words use exactly the same letters, the same number of times.",
+     "start": 3.87,
+     "end": 9.25
+    },
+    {
+     "id": "sr3i_3",
+     "text": "Sorting both words would work. Can you do it with one walk over each word?",
+     "start": 9.95,
+     "end": 14.45
+    },
+    {
+     "id": "sr3i_4",
+     "text": "What could keep count for you? Your turn.",
+     "start": 15.15,
+     "end": 17.28
+    }
+   ],
+   "pauses": []
+  },
+  "sr3s": {
+   "src": "videos/sr3s.mp4",
+   "title": "Count up, count down",
+   "duration": 60.08,
+   "lines": [
+    {
+     "id": "sr3s_1",
+     "text": "Two words are anagrams when they use the same letters, the same number of times.",
+     "start": 0.2,
+     "end": 5.14
+    },
+    {
+     "id": "sr3s_2",
+     "text": "So count the first word up, then count the second word down. Everything must land on zero.",
+     "start": 5.89,
+     "end": 11.62
+    },
+    {
+     "id": "sr3s_3",
+     "text": "Line two is a quick exit. Different lengths can never match. Three and three, so we go on.",
+     "start": 12.37,
+     "end": 18.07
+    },
+    {
+     "id": "sr3s_4",
+     "text": "Count the first word. T, one.",
+     "start": 18.82,
+     "end": 20.87
+    },
+    {
+     "id": "sr3s_5",
+     "text": "E, one.",
+     "start": 21.62,
+     "end": 22.41
+    },
+    {
+     "id": "sr3s_6",
+     "text": "A, one.",
+     "start": 23.16,
+     "end": 23.9
+    },
+    {
+     "id": "sr3s_7",
+     "text": "Now the second word. E. Line eight asks: is there an E left? Yes.",
+     "start": 24.65,
+     "end": 29.03
+    },
+    {
+     "id": "sr3s_8",
+     "text": "Line nine uses it up. E drops to zero.",
+     "start": 29.78,
+     "end": 32.66
+    },
+    {
+     "id": "sr3s_9",
+     "text": "A. One left. Use it.",
+     "start": 33.41,
+     "end": 34.95
+    },
+    {
+     "id": "sr3s_10",
+     "text": "T. Is there a T left in the map?",
+     "start": 35.7,
+     "end": 37.62
+    },
+    {
+     "id": "sr3s_11",
+     "text": "Yes, one. Use it. Now every count is zero.",
+     "start": 38.82,
+     "end": 41.84
+    },
+    {
+     "id": "sr3s_12",
+     "text": "Line eleven returns true. Tea and eat use the same letters.",
+     "start": 42.59,
+     "end": 46.7
+    },
+    {
+     "id": "sr3s_13",
+     "text": "One walk over each word. O of n time.",
+     "start": 47.8,
+     "end": 50.44
+    },
+    {
+     "id": "sr3s_14",
+     "text": "The map holds one entry per different letter. With lowercase letters only, at most twenty six. O of one space.",
+     "start": 51.19,
+     "end": 58.48
+    }
+   ],
+   "pauses": [
+    {
+     "id": "sr3s-q",
+     "t": 37.82
+    }
+   ]
+  },
+  "sr4i": {
+   "src": "videos/sr4i.mp4",
+   "title": "The Hidden Word",
+   "duration": 18.38,
+   "lines": [
+    {
+     "id": "sr4i_1",
+     "text": "Is the word ban hidden inside beacon?",
+     "start": 0.2,
+     "end": 2.49
+    },
+    {
+     "id": "sr4i_2",
+     "text": "Return true if the small word's letters appear in the big word in the same order. Other letters may sit in between.",
+     "start": 3.19,
+     "end": 10.22
+    },
+    {
+     "id": "sr4i_3",
+     "text": "You never need to go backwards, in either word.",
+     "start": 10.92,
+     "end": 13.44
+    },
+    {
+     "id": "sr4i_4",
+     "text": "What are you waiting for at each step? Your turn.",
+     "start": 14.14,
+     "end": 16.78
+    }
+   ],
+   "pauses": []
+  },
+  "sr4s": {
+   "src": "videos/sr4s.mp4",
+   "title": "Wait for the next letter",
+   "duration": 52.79,
+   "lines": [
+    {
+     "id": "sr4s_1",
+     "text": "The small word is hidden if its letters appear in the big word in the same order, with anything in between.",
+     "start": 0.2,
+     "end": 6.34
+    },
+    {
+     "id": "sr4s_2",
+     "text": "So walk the big word once. Each time you meet the letter you are waiting for, tick it off.",
+     "start": 7.09,
+     "end": 12.25
+    },
+    {
+     "id": "sr4s_3",
+     "text": "S marks the letter we are waiting for. It starts on B.",
+     "start": 13,
+     "end": 16.39
+    },
+    {
+     "id": "sr4s_4",
+     "text": "Moss reads B. That is the letter we want. Line five moves S to the next one.",
+     "start": 17.14,
+     "end": 22.42
+    },
+    {
+     "id": "sr4s_5",
+     "text": "E. We are waiting for A. Not it. Keep walking.",
+     "start": 23.17,
+     "end": 25.77
+    },
+    {
+     "id": "sr4s_6",
+     "text": "A. A match. S moves on to N.",
+     "start": 26.52,
+     "end": 28.56
+    },
+    {
+     "id": "sr4s_7",
+     "text": "C. Not N.",
+     "start": 29.31,
+     "end": 30.22
+    },
+    {
+     "id": "sr4s_8",
+     "text": "O. Not N.",
+     "start": 30.97,
+     "end": 31.87
+    },
+    {
+     "id": "sr4s_9",
+     "text": "N. Is this the letter we are waiting for?",
+     "start": 32.62,
+     "end": 34.85
+    },
+    {
+     "id": "sr4s_10",
+     "text": "Yes. S moves past the end of the small word.",
+     "start": 36.05,
+     "end": 38.95
+    },
+    {
+     "id": "sr4s_11",
+     "text": "Line eight asks: did S reach the end? Three equals three. True.",
+     "start": 39.7,
+     "end": 43.42
+    },
+    {
+     "id": "sr4s_12",
+     "text": "One walk through the big word. O of n time.",
+     "start": 44.52,
+     "end": 47.21
+    },
+    {
+     "id": "sr4s_13",
+     "text": "Two counters, and nothing else. O of one space.",
+     "start": 47.96,
+     "end": 51.19
+    }
+   ],
+   "pauses": [
+    {
+     "id": "sr4s-q",
+     "t": 35.05
+    }
+   ]
+  },
+  "sr0": {
+   "src": "videos/sr0.mp4",
+   "title": "A Word Is a Row Too",
+   "duration": 24.56,
+   "lines": [
+    {
+     "id": "sw1",
+     "text": "Chapter two. Strings. A word is a row of doors too, with one letter behind each.",
+     "start": 0.2,
+     "end": 6.05
+    },
+    {
+     "id": "sw2",
+     "text": "Everything you know about arrays still works. Pip jumps to any letter in one step.",
+     "start": 6.75,
+     "end": 11.57
+    },
+    {
+     "id": "sw3",
+     "text": "But strings have one rule of their own, and it trips people up in interviews.",
+     "start": 12.37,
+     "end": 17.07
+    },
+    {
+     "id": "sw4",
+     "text": "You will learn that rule, see how letters turn into numbers, and solve four puzzles.",
+     "start": 17.97,
+     "end": 22.96
+    }
+   ],
+   "pauses": []
+  },
+  "srt1": {
+   "src": "videos/srt1.mp4",
+   "title": "A Word Is a Row of Letters",
+   "duration": 69.64,
+   "lines": [
+    {
+     "id": "sa1",
+     "text": "Change one letter of this word, and JavaScript builds a whole new word. Every letter gets copied.",
+     "start": 0.2,
+     "end": 6.36
+    },
+    {
+     "id": "sa2",
+     "text": "A string is a row of characters. Each one has an index, starting at zero.",
+     "start": 7.26,
+     "end": 12.08
+    },
+    {
+     "id": "sa3",
+     "text": "Reading is the same as an array. Jump to index two. One step.",
+     "start": 12.88,
+     "end": 17.06
+    },
+    {
+     "id": "sa4",
+     "text": "Length works too. Three letters, so the last index is two.",
+     "start": 17.96,
+     "end": 21.67
+    },
+    {
+     "id": "sa5",
+     "text": "Here is the difference. A string is read only. You cannot write into it.",
+     "start": 22.57,
+     "end": 26.89
+    },
+    {
+     "id": "sa6",
+     "text": "Try it. Word at zero equals b. What is the word afterwards?",
+     "start": 27.89,
+     "end": 31.69
+    },
+    {
+     "id": "sa7",
+     "text": "Still cat. The line is ignored. No error, and no change.",
+     "start": 32.89,
+     "end": 36.74
+    },
+    {
+     "id": "sa8",
+     "text": "To change a word, you build a new one. That copies every letter. O of n.",
+     "start": 37.84,
+     "end": 42.1
+    },
+    {
+     "id": "sa9",
+     "text": "Now the trap. Build a long string one piece at a time, and each step may copy everything so far.",
+     "start": 43.1,
+     "end": 49.47
+    },
+    {
+     "id": "sa10",
+     "text": "One letter copied, then two, then three. For n pieces, that adds up to about n squared over two.",
+     "start": 50.27,
+     "end": 56.63
+    },
+    {
+     "id": "sa11",
+     "text": "The fix: collect the pieces in an array, and join them once at the end. O of n.",
+     "start": 57.83,
+     "end": 63.32
+    },
+    {
+     "id": "sa12",
+     "text": "Strings read like arrays. But every change is a copy.",
+     "start": 64.42,
+     "end": 68.04
+    }
+   ],
+   "pauses": [
+    {
+     "id": "srt1-q1",
+     "t": 31.89
+    }
+   ]
+  },
+  "srt2": {
+   "src": "videos/srt2.mp4",
+   "title": "Letters Are Numbers",
+   "duration": 62.21,
+   "lines": [
+    {
+     "id": "sb1",
+     "text": "To a computer, the letter a is the number ninety seven. And that turns words into something you can count.",
+     "start": 0.2,
+     "end": 6.67
+    },
+    {
+     "id": "sb2",
+     "text": "Every character has a code. Lowercase a is ninety seven, b is ninety eight, all the way to z, one hundred twenty two.",
+     "start": 7.57,
+     "end": 15.44
+    },
+    {
+     "id": "sb3",
+     "text": "Subtract ninety seven, and the letters become zero to twenty five. Twenty six slots.",
+     "start": 16.34,
+     "end": 22.22
+    },
+    {
+     "id": "sb4",
+     "text": "So which slot does the letter e use? Its code is one hundred and one.",
+     "start": 23.22,
+     "end": 27.57
+    },
+    {
+     "id": "sb5",
+     "text": "Four. One hundred and one, minus ninety seven.",
+     "start": 28.77,
+     "end": 31.82
+    },
+    {
+     "id": "sb6",
+     "text": "Now count a word. One counter per letter. Walk the word, and add one to the right slot.",
+     "start": 32.83,
+     "end": 38.41
+    },
+    {
+     "id": "sb7",
+     "text": "Banana. B, one. A, three. N, two.",
+     "start": 39.21,
+     "end": 41.51
+    },
+    {
+     "id": "sb8",
+     "text": "That table answers a lot of questions. Which letter appears once? Do two words use the same letters?",
+     "start": 42.71,
+     "end": 49.24
+    },
+    {
+     "id": "sb9",
+     "text": "A map does the same job, and handles any character, not only lowercase letters.",
+     "start": 50.24,
+     "end": 55.6
+    },
+    {
+     "id": "sb10",
+     "text": "Count first, then ask. You will use this in the puzzles that follow.",
+     "start": 56.5,
+     "end": 60.61
+    }
+   ],
+   "pauses": [
+    {
+     "id": "srt2-q1",
+     "t": 27.77
+    }
+   ]
+  },
+  "ps0": {
+   "src": "videos/ps0.mp4",
+   "title": "Add Once",
+   "duration": 25.84,
+   "lines": [
+    {
+     "id": "pw1",
+     "text": "Chapter four. Prefix sums. One row of running totals, that answers any sum question in a single step.",
+     "start": 0.2,
+     "end": 7.29
+    },
+    {
+     "id": "pw2",
+     "text": "Add up a stretch of doors by walking it, and a long stretch costs a long walk.",
+     "start": 7.99,
+     "end": 12.66
+    },
+    {
+     "id": "pw3",
+     "text": "Do the adding once, ahead of time, and every later question is one subtraction.",
+     "start": 13.46,
+     "end": 18.75
+    },
+    {
+     "id": "pw4",
+     "text": "You will build that row, use it, and then pair it with a map. Four puzzles.",
+     "start": 19.65,
+     "end": 24.24
+    }
+   ],
+   "pauses": []
   }
  }
 };
