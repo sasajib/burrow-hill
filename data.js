@@ -2320,6 +2320,289 @@ window.BURROW = {
     }
    ]
   },
+  "st0": {
+   "src": "videos/st0.mp4",
+   "title": "The Pile",
+   "duration": 26.21,
+   "lines": [
+    {
+     "id": "sk1",
+     "text": "Chapter seven. Stacks. A pile, where you can only touch the top.",
+     "start": 0.2,
+     "end": 4.1
+    },
+    {
+     "id": "sk2",
+     "text": "That sounds like a limit. But the top of the pile is always the most recent thing you have not finished yet.",
+     "start": 4.8,
+     "end": 11.1
+    },
+    {
+     "id": "sk3",
+     "text": "And a surprising number of problems only ever care about that. Brackets. Undo. Unfinished work.",
+     "start": 11.9,
+     "end": 18.31
+    },
+    {
+     "id": "sk4",
+     "text": "First, the plain stack. Then a stack that keeps itself in order. Then six puzzles.",
+     "start": 19.21,
+     "end": 24.61
+    }
+   ],
+   "pauses": []
+  },
+  "stt1": {
+   "src": "videos/stt1.mp4",
+   "title": "Last In, First Out",
+   "duration": 68.47,
+   "lines": [
+    {
+     "id": "sp1",
+     "text": "Is this line of brackets correct? Every opener needs its closer, and they must not cross. Hard to see by eye. Easy with a pile.",
+     "start": 0.2,
+     "end": 8.71
+    },
+    {
+     "id": "sp2",
+     "text": "A stack has two moves. Push puts a parcel on top. Pop takes the top parcel off.",
+     "start": 9.62,
+     "end": 14.9
+    },
+    {
+     "id": "sp3",
+     "text": "So the last parcel in, is the first parcel out. Three went in last. Three comes out first.",
+     "start": 15.8,
+     "end": 21.82
+    },
+    {
+     "id": "sp4",
+     "text": "In JavaScript, an array is already a stack. Push and pop both work on the end, and both take one step.",
+     "start": 22.82,
+     "end": 29.58
+    },
+    {
+     "id": "sp5",
+     "text": "Now the brackets. Read left to right. Every opener is pushed onto the pile.",
+     "start": 30.58,
+     "end": 35.44
+    },
+    {
+     "id": "sp6",
+     "text": "When a closer arrives, it must match the most recent opener. And that is exactly what is on top.",
+     "start": 36.34,
+     "end": 42.53
+    },
+    {
+     "id": "sp7",
+     "text": "Round opener, square opener. Then a round closer arrives. What happens?",
+     "start": 43.53,
+     "end": 48.22
+    },
+    {
+     "id": "sp8",
+     "text": "The top is a square opener. They do not match. The line is broken.",
+     "start": 49.42,
+     "end": 53.62
+    },
+    {
+     "id": "sp9",
+     "text": "If the closer does match, pop the opener, and carry on. At the end, the pile must be empty.",
+     "start": 54.62,
+     "end": 60.42
+    },
+    {
+     "id": "sp10",
+     "text": "Nesting, matching, undoing. Whenever the most recent unfinished thing matters, think stack.",
+     "start": 61.42,
+     "end": 66.87
+    }
+   ],
+   "pauses": [
+    {
+     "id": "stt1-q1",
+     "t": 48.42
+    }
+   ]
+  },
+  "stt2": {
+   "src": "videos/stt2.mp4",
+   "title": "A Stack That Stays in Order",
+   "duration": 75.15,
+   "lines": [
+    {
+     "id": "sq1",
+     "text": "Each parcel wants to know: how far away is the next taller parcel? Looking ahead from every parcel is O of n squared.",
+     "start": 0.2,
+     "end": 7.95
+    },
+    {
+     "id": "sq2",
+     "text": "So turn it round. Do not look ahead. Let each new parcel answer the ones that are still waiting.",
+     "start": 8.85,
+     "end": 14.66
+    },
+    {
+     "id": "sq3",
+     "text": "The waiting parcels sit on a stack. Five arrives first. Nobody is waiting, so it waits.",
+     "start": 15.56,
+     "end": 21.33
+    },
+    {
+     "id": "sq4",
+     "text": "Two arrives. It is not taller than five, so it answers nobody. It waits on top.",
+     "start": 22.23,
+     "end": 27.85
+    },
+    {
+     "id": "sq5",
+     "text": "Now four arrives. Which waiting parcels get their answer?",
+     "start": 28.75,
+     "end": 32.36
+    },
+    {
+     "id": "sq6",
+     "text": "Only the two. Four is taller than two, so two is popped, and its answer is: one step away.",
+     "start": 33.56,
+     "end": 39.54
+    },
+    {
+     "id": "sq7",
+     "text": "Four is not taller than five. So five keeps waiting, and four waits on top of it.",
+     "start": 40.54,
+     "end": 45.96
+    },
+    {
+     "id": "sq8",
+     "text": "Look at the pile. Five, then four. Always in order, tallest at the bottom. That is why it is called a monotonic stack.",
+     "start": 46.96,
+     "end": 54.51
+    },
+    {
+     "id": "sq9",
+     "text": "Seven arrives, and answers everyone. Four, then five. The pile is empty, and seven waits alone.",
+     "start": 55.61,
+     "end": 62.24
+    },
+    {
+     "id": "sq10",
+     "text": "Every parcel is pushed once, and popped at most once. So the whole thing is O of n.",
+     "start": 63.24,
+     "end": 68.47
+    },
+    {
+     "id": "sq11",
+     "text": "Next bigger, next smaller, how long until? Think monotonic stack.",
+     "start": 69.47,
+     "end": 73.55
+    }
+   ],
+   "pauses": [
+    {
+     "id": "stt2-q1",
+     "t": 32.56
+    }
+   ]
+  },
+  "qu0": {
+   "src": "videos/qu0.mp4",
+   "title": "The Line",
+   "duration": 16.39,
+   "lines": [
+    {
+     "id": "qw1",
+     "text": "Chapter eight. Queues. A short one.",
+     "start": 0.2,
+     "end": 2.27
+    },
+    {
+     "id": "qw2",
+     "text": "A queue is a line. You join at the back, and you leave from the front.",
+     "start": 2.97,
+     "end": 6.89
+    },
+    {
+     "id": "qw3",
+     "text": "It is the opposite of a stack. And in JavaScript, it hides one trap.",
+     "start": 7.69,
+     "end": 11.97
+    },
+    {
+     "id": "qw4",
+     "text": "One idea, and two puzzles.",
+     "start": 12.87,
+     "end": 14.79
+    }
+   ],
+   "pauses": []
+  },
+  "qut1": {
+   "src": "videos/qut1.mp4",
+   "title": "First In, First Out",
+   "duration": 55.04,
+   "lines": [
+    {
+     "id": "qa1",
+     "text": "Parcels arrive at the post office, and whoever came first should be served first. A stack would hand out the newest one. Unfair.",
+     "start": 0.2,
+     "end": 8.29
+    },
+    {
+     "id": "qa2",
+     "text": "A queue has two ends. New parcels join at the back. Parcels leave from the front.",
+     "start": 9.19,
+     "end": 14.34
+    },
+    {
+     "id": "qa3",
+     "text": "First in, first out. The opposite of a stack.",
+     "start": 15.24,
+     "end": 18.12
+    },
+    {
+     "id": "qa4",
+     "text": "In JavaScript, push adds to the back in one step. But shift, which removes the front, makes every other item slide down. O of n.",
+     "start": 19.12,
+     "end": 28.07
+    },
+    {
+     "id": "qa5",
+     "text": "So which is cheaper? Moving every item, or moving one marker?",
+     "start": 29.07,
+     "end": 32.99
+    },
+    {
+     "id": "qa6",
+     "text": "The marker. Keep an index called head. To leave the queue, head just moves forward. One step.",
+     "start": 34.19,
+     "end": 39.93
+    },
+    {
+     "id": "qa7",
+     "text": "Nothing is deleted. Everything before head is simply finished.",
+     "start": 40.93,
+     "end": 44.88
+    },
+    {
+     "id": "qa8",
+     "text": "You will need queues later, to search level by level, in trees and graphs.",
+     "start": 45.88,
+     "end": 50.37
+    },
+    {
+     "id": "qa9",
+     "text": "When arrival order matters, think queue.",
+     "start": 51.27,
+     "end": 53.44
+    }
+   ],
+   "pauses": [
+    {
+     "id": "qut1-q1",
+     "t": 33.19
+    }
+   ]
+  },
   "sr1i": {
    "src": "videos/sr1i.mp4",
    "title": "The Mirror Word",
@@ -3322,6 +3605,1008 @@ window.BURROW = {
     }
    ]
   },
+  "tp1i": {
+   "src": "videos/tp1i.mp4",
+   "title": "The Pair in Order",
+   "duration": 23.62,
+   "lines": [
+    {
+     "id": "tp1i_1",
+     "text": "Two doors in this row add up to nine. And the row is sorted.",
+     "start": 0.2,
+     "end": 3.93
+    },
+    {
+     "id": "tp1i_2",
+     "text": "Return the indexes of the two doors. If there is no such pair, return minus one, minus one.",
+     "start": 4.63,
+     "end": 10.99
+    },
+    {
+     "id": "tp1i_3",
+     "text": "A map would work. But sorted order lets you do it with no extra memory at all.",
+     "start": 11.69,
+     "end": 16.67
+    },
+    {
+     "id": "tp1i_4",
+     "text": "Start at the two ends. One plus nine. Too big, or too small? Your turn.",
+     "start": 17.37,
+     "end": 22.02
+    }
+   ],
+   "pauses": []
+  },
+  "tp1s": {
+   "src": "videos/tp1s.mp4",
+   "title": "Let the sum steer",
+   "duration": 60.9,
+   "lines": [
+    {
+     "id": "tp1s_1",
+     "text": "The row is sorted. So the smallest number is on the left, and the biggest is on the right.",
+     "start": 0.2,
+     "end": 5.73
+    },
+    {
+     "id": "tp1s_2",
+     "text": "Add the two ends. If the sum is too big, give up the biggest. If it is too small, give up the smallest.",
+     "start": 6.48,
+     "end": 13.06
+    },
+    {
+     "id": "tp1s_3",
+     "text": "Lines two and three place Pip on the first door, and Moss on the last.",
+     "start": 13.81,
+     "end": 17.88
+    },
+    {
+     "id": "tp1s_4",
+     "text": "Line five adds the two doors. One plus nine is ten.",
+     "start": 18.63,
+     "end": 22.24
+    },
+    {
+     "id": "tp1s_5",
+     "text": "Ten is more than nine. Too big. Line eight moves Moss one step left.",
+     "start": 22.99,
+     "end": 27.61
+    },
+    {
+     "id": "tp1s_6",
+     "text": "One plus six is seven.",
+     "start": 28.36,
+     "end": 29.94
+    },
+    {
+     "id": "tp1s_7",
+     "text": "Seven is less than nine. Too small. Who moves?",
+     "start": 30.69,
+     "end": 33.82
+    },
+    {
+     "id": "tp1s_8",
+     "text": "Pip. Moving the left marker forward is the only way to make the sum bigger.",
+     "start": 35.02,
+     "end": 39.73
+    },
+    {
+     "id": "tp1s_9",
+     "text": "Three plus six is nine.",
+     "start": 40.48,
+     "end": 41.96
+    },
+    {
+     "id": "tp1s_10",
+     "text": "That is the target. Line six returns both indexes.",
+     "start": 42.71,
+     "end": 46.35
+    },
+    {
+     "id": "tp1s_11",
+     "text": "Every step moves one walker inward, so there are at most n steps. O of n time.",
+     "start": 47.45,
+     "end": 53.16
+    },
+    {
+     "id": "tp1s_12",
+     "text": "No map, and no extra row. O of one space. That is what sorted order buys you.",
+     "start": 53.91,
+     "end": 59.3
+    }
+   ],
+   "pauses": [
+    {
+     "id": "tp1s-q",
+     "t": 34.02
+    }
+   ]
+  },
+  "tp2i": {
+   "src": "videos/tp2i.mp4",
+   "title": "Squares in Order",
+   "duration": 19.48,
+   "lines": [
+    {
+     "id": "tp2i_1",
+     "text": "A sorted row, with some negative numbers. Square every one, and the order breaks.",
+     "start": 0.2,
+     "end": 5.38
+    },
+    {
+     "id": "tp2i_2",
+     "text": "Return the squares in sorted order. And do not call sort.",
+     "start": 6.08,
+     "end": 9.63
+    },
+    {
+     "id": "tp2i_3",
+     "text": "Minus four squared is sixteen. Bigger than three squared.",
+     "start": 10.33,
+     "end": 13.89
+    },
+    {
+     "id": "tp2i_4",
+     "text": "So where does the biggest square always hide? Your turn.",
+     "start": 14.59,
+     "end": 17.88
+    }
+   ],
+   "pauses": []
+  },
+  "tp2s": {
+   "src": "videos/tp2s.mp4",
+   "title": "Biggest first, from the back",
+   "duration": 69.73,
+   "lines": [
+    {
+     "id": "tp2s_1",
+     "text": "Squaring a negative number makes it positive. So the biggest squares hide at the two ends of the row.",
+     "start": 0.2,
+     "end": 6
+    },
+    {
+     "id": "tp2s_2",
+     "text": "Compare the two ends, take the bigger square, and fill the answer from the back.",
+     "start": 6.75,
+     "end": 11.03
+    },
+    {
+     "id": "tp2s_3",
+     "text": "Pip stands on the left end. Moss on the right end.",
+     "start": 11.78,
+     "end": 14.78
+    },
+    {
+     "id": "tp2s_4",
+     "text": "K points at the last slot of the answer. We fill from the back, biggest first.",
+     "start": 15.53,
+     "end": 20.38
+    },
+    {
+     "id": "tp2s_5",
+     "text": "Line six compares the sizes, ignoring the sign. Four against five. Five is bigger.",
+     "start": 21.13,
+     "end": 27.27
+    },
+    {
+     "id": "tp2s_6",
+     "text": "So line ten writes five squared. Twenty five. And Moss steps in.",
+     "start": 28.02,
+     "end": 32.22
+    },
+    {
+     "id": "tp2s_7",
+     "text": "The next slot. Four against three. This time the left end wins.",
+     "start": 32.97,
+     "end": 37.35
+    },
+    {
+     "id": "tp2s_8",
+     "text": "Minus four squared is sixteen. Pip steps in.",
+     "start": 38.1,
+     "end": 41.14
+    },
+    {
+     "id": "tp2s_9",
+     "text": "The next slot. Minus one against three. Which square goes in?",
+     "start": 41.89,
+     "end": 45.65
+    },
+    {
+     "id": "tp2s_10",
+     "text": "Nine. Three is the bigger size.",
+     "start": 46.85,
+     "end": 48.89
+    },
+    {
+     "id": "tp2s_11",
+     "text": "Then minus one against zero. One goes in. And the last slot gets zero.",
+     "start": 49.64,
+     "end": 54.44
+    },
+    {
+     "id": "tp2s_12",
+     "text": "Line fourteen returns the answer row, already in order.",
+     "start": 55.19,
+     "end": 58.84
+    },
+    {
+     "id": "tp2s_13",
+     "text": "Each slot is filled once. O of n time. No sorting needed.",
+     "start": 59.94,
+     "end": 63.9
+    },
+    {
+     "id": "tp2s_14",
+     "text": "The answer row is the only extra space. O of n.",
+     "start": 64.65,
+     "end": 68.13
+    }
+   ],
+   "pauses": [
+    {
+     "id": "tp2s-q",
+     "t": 45.85
+    }
+   ]
+  },
+  "tp3i": {
+   "src": "videos/tp3i.mp4",
+   "title": "Zeros to the Back",
+   "duration": 21.53,
+   "lines": [
+    {
+     "id": "tp3i_1",
+     "text": "Zeros are scattered through this row. They belong at the back.",
+     "start": 0.2,
+     "end": 3.7
+    },
+    {
+     "id": "tp3i_2",
+     "text": "Move every zero to the end, and keep the other numbers in the same order. Change the array in place.",
+     "start": 4.4,
+     "end": 10.84
+    },
+    {
+     "id": "tp3i_3",
+     "text": "Deleting and re-adding would shift everything, again and again.",
+     "start": 11.54,
+     "end": 15.31
+    },
+    {
+     "id": "tp3i_4",
+     "text": "What if one walker reads, and another marks where to write? Your turn.",
+     "start": 16.01,
+     "end": 19.93
+    }
+   ],
+   "pauses": []
+  },
+  "tp3s": {
+   "src": "videos/tp3s.mp4",
+   "title": "One reads, one writes",
+   "duration": 66.86,
+   "lines": [
+    {
+     "id": "tp3s_1",
+     "text": "Two walkers, moving the same way. A fast reader, and a slow writer.",
+     "start": 0.2,
+     "end": 4.49
+    },
+    {
+     "id": "tp3s_2",
+     "text": "The reader finds the real numbers. The writer marks where the next one belongs.",
+     "start": 5.24,
+     "end": 10
+    },
+    {
+     "id": "tp3s_3",
+     "text": "Line two. Moss marks the write position: the next door that should hold a real number.",
+     "start": 10.75,
+     "end": 16.11
+    },
+    {
+     "id": "tp3s_4",
+     "text": "Pip is the reader, and walks every door. Door zero holds a zero. Line four says skip it.",
+     "start": 16.86,
+     "end": 22.66
+    },
+    {
+     "id": "tp3s_5",
+     "text": "Door one holds three. Not a zero.",
+     "start": 23.41,
+     "end": 25.8
+    },
+    {
+     "id": "tp3s_6",
+     "text": "Lines five to seven swap it with the door Moss is on. Three goes to the front.",
+     "start": 26.55,
+     "end": 31.51
+    },
+    {
+     "id": "tp3s_7",
+     "text": "Line eight moves the write position forward.",
+     "start": 32.26,
+     "end": 34.8
+    },
+    {
+     "id": "tp3s_8",
+     "text": "Door two. A zero. Skip.",
+     "start": 35.55,
+     "end": 37.22
+    },
+    {
+     "id": "tp3s_9",
+     "text": "Door three holds one. Moss is on door one. What happens?",
+     "start": 37.97,
+     "end": 41.72
+    },
+    {
+     "id": "tp3s_10",
+     "text": "The one swaps into door one, and Moss steps forward.",
+     "start": 42.92,
+     "end": 46.03
+    },
+    {
+     "id": "tp3s_11",
+     "text": "The last door. Two. It swaps into door two.",
+     "start": 46.78,
+     "end": 49.67
+    },
+    {
+     "id": "tp3s_12",
+     "text": "The loop ends. Every real number is at the front, in the same order. The zeros are at the back.",
+     "start": 50.42,
+     "end": 56.42
+    },
+    {
+     "id": "tp3s_13",
+     "text": "The reader visits each door once. O of n time.",
+     "start": 57.52,
+     "end": 60.55
+    },
+    {
+     "id": "tp3s_14",
+     "text": "Everything happens inside the same array. O of one space.",
+     "start": 61.3,
+     "end": 65.26
+    }
+   ],
+   "pauses": [
+    {
+     "id": "tp3s-q",
+     "t": 41.92
+    }
+   ]
+  },
+  "tp4i": {
+   "src": "videos/tp4i.mp4",
+   "title": "The Widest Tank",
+   "duration": 22.26,
+   "lines": [
+    {
+     "id": "tp4i_1",
+     "text": "Each door has a wall of some height. Pick two walls, and the space between them holds water.",
+     "start": 0.2,
+     "end": 5.48
+    },
+    {
+     "id": "tp4i_2",
+     "text": "Return the most water any two walls can hold. That is the width, times the lower of the two walls.",
+     "start": 6.18,
+     "end": 12.36
+    },
+    {
+     "id": "tp4i_3",
+     "text": "Trying every pair of walls is O of n squared.",
+     "start": 13.06,
+     "end": 15.92
+    },
+    {
+     "id": "tp4i_4",
+     "text": "Start with the widest tank. Which wall is holding it back? Your turn.",
+     "start": 16.62,
+     "end": 20.66
+    }
+   ],
+   "pauses": []
+  },
+  "tp4s": {
+   "src": "videos/tp4s.mp4",
+   "title": "Start wide, drop the lower wall",
+   "duration": 71.05,
+   "lines": [
+    {
+     "id": "tp4s_1",
+     "text": "Water between two walls rises only as high as the lower wall. So the amount is the width, times the lower wall.",
+     "start": 0.2,
+     "end": 7.57
+    },
+    {
+     "id": "tp4s_2",
+     "text": "Start as wide as possible. Then always give up the lower wall, because keeping it can never do better.",
+     "start": 8.32,
+     "end": 14.92
+    },
+    {
+     "id": "tp4s_3",
+     "text": "Pip and Moss start at the two ends, the widest tank possible. Best is zero.",
+     "start": 15.67,
+     "end": 20.67
+    },
+    {
+     "id": "tp4s_4",
+     "text": "The tank is four wide. But water only rises to the lower wall, which is one. Four times one is four.",
+     "start": 21.42,
+     "end": 28.19
+    },
+    {
+     "id": "tp4s_5",
+     "text": "Which wall to give up? The lower one. It is the limit, and any narrower tank that keeps it can only hold less.",
+     "start": 28.94,
+     "end": 36.07
+    },
+    {
+     "id": "tp4s_6",
+     "text": "Walls five and three. Three wide, three high. Nine. A new best.",
+     "start": 36.82,
+     "end": 40.77
+    },
+    {
+     "id": "tp4s_7",
+     "text": "Five on the left, three on the right. Which walker moves?",
+     "start": 41.52,
+     "end": 44.98
+    },
+    {
+     "id": "tp4s_8",
+     "text": "Moss. The three is the limit.",
+     "start": 46.19,
+     "end": 48.02
+    },
+    {
+     "id": "tp4s_9",
+     "text": "Two wide, four high. Eight. Not better than nine.",
+     "start": 48.77,
+     "end": 51.73
+    },
+    {
+     "id": "tp4s_10",
+     "text": "Moss moves again. One wide, two high. Two. Then the walkers meet.",
+     "start": 52.48,
+     "end": 56.92
+    },
+    {
+     "id": "tp4s_11",
+     "text": "Line twelve returns the best. Nine.",
+     "start": 57.67,
+     "end": 60.16
+    },
+    {
+     "id": "tp4s_12",
+     "text": "One walker moves at every step. O of n time, instead of trying every pair.",
+     "start": 61.26,
+     "end": 66.55
+    },
+    {
+     "id": "tp4s_13",
+     "text": "Three numbers. O of one space.",
+     "start": 67.3,
+     "end": 69.45
+    }
+   ],
+   "pauses": [
+    {
+     "id": "tp4s-q",
+     "t": 45.19
+    }
+   ]
+  },
+  "tp5i": {
+   "src": "videos/tp5i.mp4",
+   "title": "Two Rows Into One",
+   "duration": 19.77,
+   "lines": [
+    {
+     "id": "tp5i_1",
+     "text": "Two sorted rows. They need to become one sorted row.",
+     "start": 0.2,
+     "end": 3.67
+    },
+    {
+     "id": "tp5i_2",
+     "text": "Return a new array with every number from both rows, in order. Do not call sort.",
+     "start": 4.37,
+     "end": 9.74
+    },
+    {
+     "id": "tp5i_3",
+     "text": "Both rows are already in order. That is worth a lot.",
+     "start": 10.44,
+     "end": 13.85
+    },
+    {
+     "id": "tp5i_4",
+     "text": "Where is the smallest number that is still unused? Your turn.",
+     "start": 14.55,
+     "end": 18.17
+    }
+   ],
+   "pauses": []
+  },
+  "tp5s": {
+   "src": "videos/tp5s.mp4",
+   "title": "Take the smaller front",
+   "duration": 62.06,
+   "lines": [
+    {
+     "id": "tp5s_1",
+     "text": "Both rows are already sorted. So the smallest number left is always at the front of one of them.",
+     "start": 0.2,
+     "end": 6.07
+    },
+    {
+     "id": "tp5s_2",
+     "text": "Compare the two fronts, take the smaller, and move that marker. Repeat.",
+     "start": 6.82,
+     "end": 11.08
+    },
+    {
+     "id": "tp5s_3",
+     "text": "An empty answer, and one marker at the front of each row.",
+     "start": 11.83,
+     "end": 15.37
+    },
+    {
+     "id": "tp5s_4",
+     "text": "Compare the two fronts. One and two. One is smaller, so it goes out, and i moves on.",
+     "start": 16.12,
+     "end": 21.5
+    },
+    {
+     "id": "tp5s_5",
+     "text": "Four against two. Two goes out, and j moves on.",
+     "start": 22.25,
+     "end": 25.57
+    },
+    {
+     "id": "tp5s_6",
+     "text": "Four against three. Three.",
+     "start": 26.32,
+     "end": 28.05
+    },
+    {
+     "id": "tp5s_7",
+     "text": "Four against nine. Which one goes out, and which marker moves?",
+     "start": 28.8,
+     "end": 32.8
+    },
+    {
+     "id": "tp5s_8",
+     "text": "Four. And i moves on.",
+     "start": 34,
+     "end": 35.59
+    },
+    {
+     "id": "tp5s_9",
+     "text": "Seven against nine. Seven. Now the first row is used up, so the main loop stops.",
+     "start": 36.34,
+     "end": 42
+    },
+    {
+     "id": "tp5s_10",
+     "text": "Line ten empties what is left of the other row. Nine.",
+     "start": 42.75,
+     "end": 46.19
+    },
+    {
+     "id": "tp5s_11",
+     "text": "Line eleven returns the merged row.",
+     "start": 46.94,
+     "end": 49.25
+    },
+    {
+     "id": "tp5s_12",
+     "text": "Every step sends one number out. So n plus m steps. O of n plus m.",
+     "start": 50.35,
+     "end": 55.71
+    },
+    {
+     "id": "tp5s_13",
+     "text": "The answer row holds everything. O of n plus m space.",
+     "start": 56.46,
+     "end": 60.46
+    }
+   ],
+   "pauses": [
+    {
+     "id": "tp5s-q",
+     "t": 33
+    }
+   ]
+  },
+  "tp6i": {
+   "src": "videos/tp6i.mp4",
+   "title": "Three That Add Up",
+   "duration": 19.79,
+   "lines": [
+    {
+     "id": "tp6i_1",
+     "text": "Three doors in this sorted row add up to fifteen.",
+     "start": 0.2,
+     "end": 3.28
+    },
+    {
+     "id": "tp6i_2",
+     "text": "Return true if any three different doors add up to the target. Otherwise false.",
+     "start": 3.98,
+     "end": 9.25
+    },
+    {
+     "id": "tp6i_3",
+     "text": "Trying every triple is three nested loops. O of n cubed.",
+     "start": 9.95,
+     "end": 13.78
+    },
+    {
+     "id": "tp6i_4",
+     "text": "If you hold one number still, what problem is left? Your turn.",
+     "start": 14.48,
+     "end": 18.19
+    }
+   ],
+   "pauses": []
+  },
+  "tp6s": {
+   "src": "videos/tp6s.mp4",
+   "title": "Hold one, sweep the rest",
+   "duration": 69.3,
+   "lines": [
+    {
+     "id": "tp6s_1",
+     "text": "Three numbers is one number, plus a pair. And you already know how to find a pair in a sorted row.",
+     "start": 0.2,
+     "end": 5.91
+    },
+    {
+     "id": "tp6s_2",
+     "text": "Hold the first number still. Then run two pointers over everything to its right.",
+     "start": 6.66,
+     "end": 11.45
+    },
+    {
+     "id": "tp6s_3",
+     "text": "I holds the first number still. Pip and Moss take the two ends of everything after it.",
+     "start": 12.2,
+     "end": 17.29
+    },
+    {
+     "id": "tp6s_4",
+     "text": "Line six adds all three. One, two, eight. Eleven.",
+     "start": 18.04,
+     "end": 21.48
+    },
+    {
+     "id": "tp6s_5",
+     "text": "Eleven is less than fifteen. Too small. Pip moves right.",
+     "start": 22.23,
+     "end": 25.91
+    },
+    {
+     "id": "tp6s_6",
+     "text": "One, four, eight. Thirteen. Still too small. Pip moves again.",
+     "start": 26.66,
+     "end": 30.39
+    },
+    {
+     "id": "tp6s_7",
+     "text": "One, five, eight. Fourteen. Too small. Pip moves, and meets Moss. No triple starts with one.",
+     "start": 31.14,
+     "end": 37.29
+    },
+    {
+     "id": "tp6s_8",
+     "text": "So i moves on to the next number, two. Pip and Moss reset to the ends of what follows.",
+     "start": 38.04,
+     "end": 43.85
+    },
+    {
+     "id": "tp6s_9",
+     "text": "Two, four, eight. Fourteen. The target is fifteen. Who moves?",
+     "start": 44.6,
+     "end": 48.42
+    },
+    {
+     "id": "tp6s_10",
+     "text": "Pip. Too small means the left walker moves.",
+     "start": 49.62,
+     "end": 52.39
+    },
+    {
+     "id": "tp6s_11",
+     "text": "Two, five, eight. Fifteen. Line seven returns true.",
+     "start": 53.14,
+     "end": 56.68
+    },
+    {
+     "id": "tp6s_12",
+     "text": "One sweep for each held number. n times n. O of n squared. Trying every triple would be n cubed.",
+     "start": 57.78,
+     "end": 64.43
+    },
+    {
+     "id": "tp6s_13",
+     "text": "Only three markers. O of one space.",
+     "start": 65.18,
+     "end": 67.7
+    }
+   ],
+   "pauses": [
+    {
+     "id": "tp6s-q",
+     "t": 48.62
+    }
+   ]
+  },
+  "qu1i": {
+   "src": "videos/qu1i.mp4",
+   "title": "Recent Visitors",
+   "duration": 21.66,
+   "lines": [
+    {
+     "id": "qu1i_1",
+     "text": "Visitors arrive at the burrow, and Pip writes down the minute each one came.",
+     "start": 0.2,
+     "end": 4.57
+    },
+    {
+     "id": "qu1i_2",
+     "text": "For every visitor, return how many arrived within the last span minutes, counting that visitor too.",
+     "start": 5.27,
+     "end": 11.64
+    },
+    {
+     "id": "qu1i_3",
+     "text": "A visitor who is too old now, is too old for everyone who comes later.",
+     "start": 12.34,
+     "end": 16.86
+    },
+    {
+     "id": "qu1i_4",
+     "text": "So who stops counting first? Your turn.",
+     "start": 17.56,
+     "end": 20.06
+    }
+   ],
+   "pauses": []
+  },
+  "qu1s": {
+   "src": "videos/qu1s.mp4",
+   "title": "The oldest leaves first",
+   "duration": 78.45,
+   "lines": [
+    {
+     "id": "qu1s_1",
+     "text": "The visitors who still count form a line. They joined in order, and they stop counting in the same order.",
+     "start": 0.2,
+     "end": 6.24
+    },
+    {
+     "id": "qu1s_2",
+     "text": "So keep a marker, head, on the oldest one who still counts. It only ever moves forward.",
+     "start": 6.99,
+     "end": 12.61
+    },
+    {
+     "id": "qu1s_3",
+     "text": "Line three. Moss stands on head, the oldest visitor who still counts. Door zero.",
+     "start": 13.36,
+     "end": 18.98
+    },
+    {
+     "id": "qu1s_4",
+     "text": "The first arrival, at minute one. Nobody is too old. From head to here is one visitor.",
+     "start": 19.73,
+     "end": 25.5
+    },
+    {
+     "id": "qu1s_5",
+     "text": "Minute two. Is minute one too old? It would need to be before two minus three. No. Two visitors.",
+     "start": 26.25,
+     "end": 32.75
+    },
+    {
+     "id": "qu1s_6",
+     "text": "Minute six. Six minus three is three. Anything before minute three is too old.",
+     "start": 33.5,
+     "end": 38.44
+    },
+    {
+     "id": "qu1s_7",
+     "text": "Minute one is too old. Head moves. Minute two is too old as well. Head moves again.",
+     "start": 39.19,
+     "end": 45.05
+    },
+    {
+     "id": "qu1s_8",
+     "text": "From head to here is one visitor.",
+     "start": 45.8,
+     "end": 47.86
+    },
+    {
+     "id": "qu1s_9",
+     "text": "Minute seven. Too old means before four. Head is on six. Does head move?",
+     "start": 48.61,
+     "end": 53.41
+    },
+    {
+     "id": "qu1s_10",
+     "text": "No. Six still counts. Two visitors.",
+     "start": 54.61,
+     "end": 57.09
+    },
+    {
+     "id": "qu1s_11",
+     "text": "Minute eight. Too old means before five. Six still counts. Three visitors.",
+     "start": 57.84,
+     "end": 62.7
+    },
+    {
+     "id": "qu1s_12",
+     "text": "Line eight returns the counts.",
+     "start": 63.45,
+     "end": 65.28
+    },
+    {
+     "id": "qu1s_13",
+     "text": "Head only moves forward, so it moves at most n times in total. O of n.",
+     "start": 66.38,
+     "end": 71.75
+    },
+    {
+     "id": "qu1s_14",
+     "text": "Apart from the answer row, one marker. O of one extra space.",
+     "start": 72.5,
+     "end": 76.85
+    }
+   ],
+   "pauses": [
+    {
+     "id": "qu1s-q",
+     "t": 53.61
+    }
+   ]
+  },
+  "qu2i": {
+   "src": "videos/qu2i.mp4",
+   "title": "A Queue From Two Piles",
+   "duration": 24,
+   "lines": [
+    {
+     "id": "qu2i_1",
+     "text": "Pip has two piles, and can only touch the top of each. But the visitors want a fair line.",
+     "start": 0.2,
+     "end": 5.76
+    },
+    {
+     "id": "qu2i_2",
+     "text": "Run the operations, and return what every take removed. A take must remove the oldest item.",
+     "start": 6.46,
+     "end": 12.62
+    },
+    {
+     "id": "qu2i_3",
+     "text": "A pile hands back the newest item first. That is backwards.",
+     "start": 13.32,
+     "end": 17.49
+    },
+    {
+     "id": "qu2i_4",
+     "text": "What happens to the order, if you pour one pile into the other? Your turn.",
+     "start": 18.19,
+     "end": 22.4
+    }
+   ],
+   "pauses": []
+  },
+  "qu2s": {
+   "src": "videos/qu2s.mp4",
+   "title": "Pour one pile into the other",
+   "duration": 79.63,
+   "lines": [
+    {
+     "id": "qu2s_1",
+     "text": "A pile gives back the newest first. Pour it into a second pile, and the order flips. Now the oldest is on top.",
+     "start": 0.2,
+     "end": 7.44
+    },
+    {
+     "id": "qu2s_2",
+     "text": "So new items go onto the inbox. Items leave from the outbox. And we only pour when the outbox is empty.",
+     "start": 8.19,
+     "end": 15.18
+    },
+    {
+     "id": "qu2s_3",
+     "text": "Two empty piles. Inbox, and outbox.",
+     "start": 15.93,
+     "end": 18.87
+    },
+    {
+     "id": "qu2s_4",
+     "text": "Add one. Line seven pushes it onto the inbox.",
+     "start": 19.62,
+     "end": 22.98
+    },
+    {
+     "id": "qu2s_5",
+     "text": "Add two. Push. It sits on top of the one.",
+     "start": 23.73,
+     "end": 26.53
+    },
+    {
+     "id": "qu2s_6",
+     "text": "A take. The outbox is empty. So line ten pours the inbox across, one item at a time.",
+     "start": 27.28,
+     "end": 33.49
+    },
+    {
+     "id": "qu2s_7",
+     "text": "Two went across first, then one. So one, the oldest, is on top. Line twelve pops it.",
+     "start": 34.24,
+     "end": 40.03
+    },
+    {
+     "id": "qu2s_8",
+     "text": "Add three. It goes onto the inbox, as always.",
+     "start": 40.78,
+     "end": 43.96
+    },
+    {
+     "id": "qu2s_9",
+     "text": "A take. The outbox still holds two. Do we pour first?",
+     "start": 44.71,
+     "end": 48.13
+    },
+    {
+     "id": "qu2s_10",
+     "text": "No. The outbox is not empty, so line twelve just pops. Two.",
+     "start": 49.33,
+     "end": 53.41
+    },
+    {
+     "id": "qu2s_11",
+     "text": "The last take. Now the outbox is empty, so the three is poured across, and popped.",
+     "start": 54.16,
+     "end": 59.34
+    },
+    {
+     "id": "qu2s_12",
+     "text": "Line fifteen returns what was taken. One, two, three. In arrival order.",
+     "start": 60.09,
+     "end": 65.22
+    },
+    {
+     "id": "qu2s_13",
+     "text": "Each item is pushed twice and popped twice at most. So the average cost of an operation is O of one.",
+     "start": 66.32,
+     "end": 72.79
+    },
+    {
+     "id": "qu2s_14",
+     "text": "The two piles together hold every waiting item. O of n space.",
+     "start": 73.54,
+     "end": 78.03
+    }
+   ],
+   "pauses": [
+    {
+     "id": "qu2s-q",
+     "t": 48.33
+    }
+   ]
+  },
   "sw1i": {
    "src": "videos/sw1i.mp4",
    "title": "The Best Three",
@@ -4066,747 +5351,753 @@ window.BURROW = {
     }
    ]
   },
-  "tp1i": {
-   "src": "videos/tp1i.mp4",
-   "title": "The Pair in Order",
-   "duration": 23.62,
+  "st1i": {
+   "src": "videos/st1i.mp4",
+   "title": "Matching Brackets",
+   "duration": 20.17,
    "lines": [
     {
-     "id": "tp1i_1",
-     "text": "Two doors in this row add up to nine. And the row is sorted.",
+     "id": "st1i_1",
+     "text": "Brackets come in pairs. An opener, and later, its closer.",
      "start": 0.2,
-     "end": 3.93
+     "end": 3.88
     },
     {
-     "id": "tp1i_2",
-     "text": "Return the indexes of the two doors. If there is no such pair, return minus one, minus one.",
-     "start": 4.63,
-     "end": 10.99
+     "id": "st1i_2",
+     "text": "Return true if every bracket is closed by the right kind, in the right order.",
+     "start": 4.58,
+     "end": 9.31
     },
     {
-     "id": "tp1i_3",
-     "text": "A map would work. But sorted order lets you do it with no extra memory at all.",
-     "start": 11.69,
-     "end": 16.67
+     "id": "st1i_3",
+     "text": "When a closer arrives, it must match the most recent opener that is still open.",
+     "start": 10.01,
+     "end": 14.83
     },
     {
-     "id": "tp1i_4",
-     "text": "Start at the two ends. One plus nine. Too big, or too small? Your turn.",
-     "start": 17.37,
-     "end": 22.02
+     "id": "st1i_4",
+     "text": "What keeps the most recent thing on top? Your turn.",
+     "start": 15.53,
+     "end": 18.57
     }
    ],
    "pauses": []
   },
-  "tp1s": {
-   "src": "videos/tp1s.mp4",
-   "title": "Let the sum steer",
-   "duration": 60.9,
+  "st1s": {
+   "src": "videos/st1s.mp4",
+   "title": "The top is the most recent opener",
+   "duration": 70.4,
    "lines": [
     {
-     "id": "tp1s_1",
-     "text": "The row is sorted. So the smallest number is on the left, and the biggest is on the right.",
+     "id": "st1s_1",
+     "text": "A closer must match the most recent opener that is still open. A stack keeps exactly that on top.",
      "start": 0.2,
-     "end": 5.73
+     "end": 6.29
     },
     {
-     "id": "tp1s_2",
-     "text": "Add the two ends. If the sum is too big, give up the biggest. If it is too small, give up the smallest.",
-     "start": 6.48,
-     "end": 13.06
+     "id": "st1s_2",
+     "text": "Push every opener. For every closer, pop the top, and check that the two belong together.",
+     "start": 7.04,
+     "end": 12.6
     },
     {
-     "id": "tp1s_3",
-     "text": "Lines two and three place Pip on the first door, and Moss on the last.",
-     "start": 13.81,
-     "end": 17.88
+     "id": "st1s_3",
+     "text": "Line two is a lookup: for each closer, which opener it needs. Line three makes an empty stack.",
+     "start": 13.35,
+     "end": 19.43
     },
     {
-     "id": "tp1s_4",
-     "text": "Line five adds the two doors. One plus nine is ten.",
-     "start": 18.63,
-     "end": 22.24
+     "id": "st1s_4",
+     "text": "The first character is an opener. Line eight pushes it.",
+     "start": 20.18,
+     "end": 23.52
     },
     {
-     "id": "tp1s_5",
-     "text": "Ten is more than nine. Too big. Line eight moves Moss one step left.",
-     "start": 22.99,
-     "end": 27.61
+     "id": "st1s_5",
+     "text": "Another opener. Push. It now sits on top.",
+     "start": 24.27,
+     "end": 27.19
     },
     {
-     "id": "tp1s_6",
-     "text": "One plus six is seven.",
-     "start": 28.36,
-     "end": 29.94
+     "id": "st1s_6",
+     "text": "A closer. Line six pops the top, and checks it against what this closer needs.",
+     "start": 27.94,
+     "end": 33.01
     },
     {
-     "id": "tp1s_7",
-     "text": "Seven is less than nine. Too small. Who moves?",
-     "start": 30.69,
-     "end": 33.82
+     "id": "st1s_7",
+     "text": "They match. The pair is done, and the stack is back to one opener.",
+     "start": 33.76,
+     "end": 37.79
     },
     {
-     "id": "tp1s_8",
-     "text": "Pip. Moving the left marker forward is the only way to make the sum bigger.",
-     "start": 35.02,
-     "end": 39.73
+     "id": "st1s_8",
+     "text": "An opener. Push.",
+     "start": 38.54,
+     "end": 39.83
     },
     {
-     "id": "tp1s_9",
-     "text": "Three plus six is nine.",
-     "start": 40.48,
-     "end": 41.96
+     "id": "st1s_9",
+     "text": "A closer. It needs a curly opener. What is on top?",
+     "start": 40.58,
+     "end": 43.96
     },
     {
-     "id": "tp1s_10",
-     "text": "That is the target. Line six returns both indexes.",
-     "start": 42.71,
-     "end": 46.35
+     "id": "st1s_10",
+     "text": "The curly opener. A match.",
+     "start": 45.16,
+     "end": 47.07
     },
     {
-     "id": "tp1s_11",
-     "text": "Every step moves one walker inward, so there are at most n steps. O of n time.",
-     "start": 47.45,
-     "end": 53.16
+     "id": "st1s_11",
+     "text": "The last closer pops the round opener. A match, and the stack is empty.",
+     "start": 47.82,
+     "end": 52.55
     },
     {
-     "id": "tp1s_12",
-     "text": "No map, and no extra row. O of one space. That is what sorted order buys you.",
-     "start": 53.91,
-     "end": 59.3
+     "id": "st1s_12",
+     "text": "Line eleven checks that nothing is still open. True.",
+     "start": 53.3,
+     "end": 56.57
+    },
+    {
+     "id": "st1s_13",
+     "text": "One pass, and each push or pop is one step. O of n time.",
+     "start": 57.67,
+     "end": 61.58
+    },
+    {
+     "id": "st1s_14",
+     "text": "In the worst case every character is an opener, and all of them wait on the stack. O of n space.",
+     "start": 62.33,
+     "end": 68.8
     }
    ],
    "pauses": [
     {
-     "id": "tp1s-q",
-     "t": 34.02
+     "id": "st1s-q",
+     "t": 44.16
     }
    ]
   },
-  "tp2i": {
-   "src": "videos/tp2i.mp4",
-   "title": "Squares in Order",
-   "duration": 19.48,
+  "st2i": {
+   "src": "videos/st2i.mp4",
+   "title": "The Undo Key",
+   "duration": 18.82,
    "lines": [
     {
-     "id": "tp2i_1",
-     "text": "A sorted row, with some negative numbers. Square every one, and the order breaks.",
+     "id": "st2i_1",
+     "text": "Pip is typing, and keeps hitting the undo key.",
      "start": 0.2,
-     "end": 5.38
+     "end": 2.91
     },
     {
-     "id": "tp2i_2",
-     "text": "Return the squares in sorted order. And do not call sort.",
-     "start": 6.08,
-     "end": 9.63
+     "id": "st2i_2",
+     "text": "Every hash deletes the last letter typed. Return the text that is left at the end.",
+     "start": 3.61,
+     "end": 8.51
     },
     {
-     "id": "tp2i_3",
-     "text": "Minus four squared is sixteen. Bigger than three squared.",
-     "start": 10.33,
-     "end": 13.89
+     "id": "st2i_3",
+     "text": "Undo always removes the newest letter. Never an older one.",
+     "start": 9.21,
+     "end": 13.18
     },
     {
-     "id": "tp2i_4",
-     "text": "So where does the biggest square always hide? Your turn.",
-     "start": 14.59,
-     "end": 17.88
+     "id": "st2i_4",
+     "text": "Which structure hands you the newest thing first? Your turn.",
+     "start": 13.88,
+     "end": 17.22
     }
    ],
    "pauses": []
   },
-  "tp2s": {
-   "src": "videos/tp2s.mp4",
-   "title": "Biggest first, from the back",
-   "duration": 69.73,
+  "st2s": {
+   "src": "videos/st2s.mp4",
+   "title": "Undo pops the newest",
+   "duration": 43.2,
    "lines": [
     {
-     "id": "tp2s_1",
-     "text": "Squaring a negative number makes it positive. So the biggest squares hide at the two ends of the row.",
+     "id": "st2s_1",
+     "text": "Undo always removes the most recent letter. That is last in, first out.",
+     "start": 0.2,
+     "end": 4.86
+    },
+    {
+     "id": "st2s_2",
+     "text": "So letters are pushed, and every hash is a pop.",
+     "start": 5.61,
+     "end": 8.54
+    },
+    {
+     "id": "st2s_3",
+     "text": "Line two makes an empty stack.",
+     "start": 9.29,
+     "end": 11.12
+    },
+    {
+     "id": "st2s_4",
+     "text": "A. A letter. Line five pushes it.",
+     "start": 11.87,
+     "end": 14.08
+    },
+    {
+     "id": "st2s_5",
+     "text": "B. Push.",
+     "start": 14.83,
+     "end": 15.73
+    },
+    {
+     "id": "st2s_6",
+     "text": "A hash. Line four pops the top. B is gone.",
+     "start": 16.48,
+     "end": 19.45
+    },
+    {
+     "id": "st2s_7",
+     "text": "C. Push.",
+     "start": 20.2,
+     "end": 21.1
+    },
+    {
+     "id": "st2s_8",
+     "text": "Another hash. Which letter does it remove?",
+     "start": 21.85,
+     "end": 24.46
+    },
+    {
+     "id": "st2s_9",
+     "text": "C, the newest. A is left.",
+     "start": 25.66,
+     "end": 27.34
+    },
+    {
+     "id": "st2s_10",
+     "text": "D. Push.",
+     "start": 28.09,
+     "end": 28.98
+    },
+    {
+     "id": "st2s_11",
+     "text": "Line seven joins what is left into one string. A, D.",
+     "start": 29.73,
+     "end": 33.32
+    },
+    {
+     "id": "st2s_12",
+     "text": "One pass, one push or pop per key. O of n time.",
+     "start": 34.42,
+     "end": 37.77
+    },
+    {
+     "id": "st2s_13",
+     "text": "The stack can hold every letter. O of n space.",
+     "start": 38.52,
+     "end": 41.6
+    }
+   ],
+   "pauses": [
+    {
+     "id": "st2s-q",
+     "t": 24.66
+    }
+   ]
+  },
+  "st3i": {
+   "src": "videos/st3i.mp4",
+   "title": "Sums Without Brackets",
+   "duration": 18.31,
+   "lines": [
+    {
+     "id": "st3i_1",
+     "text": "This sum has no brackets. Each operator comes after its two numbers.",
+     "start": 0.2,
+     "end": 4.93
+    },
+    {
+     "id": "st3i_2",
+     "text": "Return the result. Two, three, plus, means two plus three.",
+     "start": 5.63,
+     "end": 9.37
+    },
+    {
+     "id": "st3i_3",
+     "text": "An operator always uses the two most recent values.",
+     "start": 10.07,
+     "end": 13.82
+    },
+    {
+     "id": "st3i_4",
+     "text": "Where should the values wait? Your turn.",
+     "start": 14.52,
+     "end": 16.71
+    }
+   ],
+   "pauses": []
+  },
+  "st3s": {
+   "src": "videos/st3s.mp4",
+   "title": "An operator takes the top two",
+   "duration": 52.16,
+   "lines": [
+    {
+     "id": "st3s_1",
+     "text": "An operator always works on the two most recent values. So values wait on a stack.",
+     "start": 0.2,
+     "end": 5.84
+    },
+    {
+     "id": "st3s_2",
+     "text": "A number is pushed. An operator pops two values, and pushes back one result.",
+     "start": 6.59,
+     "end": 11.73
+    },
+    {
+     "id": "st3s_3",
+     "text": "Line two makes an empty stack.",
+     "start": 12.48,
+     "end": 14.31
+    },
+    {
+     "id": "st3s_4",
+     "text": "Two is a number. Line eleven pushes it.",
+     "start": 15.06,
+     "end": 17.81
+    },
+    {
+     "id": "st3s_5",
+     "text": "Three. Push.",
+     "start": 18.56,
+     "end": 19.5
+    },
+    {
+     "id": "st3s_6",
+     "text": "A plus. Lines five and six pop the top two. B is three, and A is two.",
+     "start": 20.25,
+     "end": 25.17
+    },
+    {
+     "id": "st3s_7",
+     "text": "Line seven pushes A plus B. Five.",
+     "start": 25.92,
+     "end": 28.13
+    },
+    {
+     "id": "st3s_8",
+     "text": "Four. Push.",
+     "start": 28.88,
+     "end": 29.86
+    },
+    {
+     "id": "st3s_9",
+     "text": "A times. It pops four, then five. What gets pushed?",
+     "start": 30.61,
+     "end": 33.99
+    },
+    {
+     "id": "st3s_10",
+     "text": "Twenty.",
+     "start": 35.19,
+     "end": 35.98
+    },
+    {
+     "id": "st3s_11",
+     "text": "The tokens are finished. Line fourteen pops the one value left. Twenty.",
+     "start": 36.73,
+     "end": 41.48
+    },
+    {
+     "id": "st3s_12",
+     "text": "One pass, a few steps per token. O of n time.",
+     "start": 42.58,
+     "end": 45.81
+    },
+    {
+     "id": "st3s_13",
+     "text": "The stack holds the values that are still waiting. O of n space.",
+     "start": 46.56,
+     "end": 50.56
+    }
+   ],
+   "pauses": [
+    {
+     "id": "st3s-q",
+     "t": 34.19
+    }
+   ]
+  },
+  "st4i": {
+   "src": "videos/st4i.mp4",
+   "title": "The Smallest, Instantly",
+   "duration": 22.69,
+   "lines": [
+    {
+     "id": "st4i_1",
+     "text": "A stack of parcels. And at any moment, someone may ask: which is the smallest?",
+     "start": 0.2,
+     "end": 5.17
+    },
+    {
+     "id": "st4i_2",
+     "text": "Run the operations, and return the answer to every min question.",
+     "start": 5.87,
+     "end": 9.98
+    },
+    {
+     "id": "st4i_3",
+     "text": "Searching the whole pile each time is too slow. And one remembered number breaks when that parcel is popped.",
+     "start": 10.68,
+     "end": 16.84
+    },
+    {
+     "id": "st4i_4",
+     "text": "What could you write down at every level of the pile? Your turn.",
+     "start": 17.54,
+     "end": 21.09
+    }
+   ],
+   "pauses": []
+  },
+  "st4s": {
+   "src": "videos/st4s.mp4",
+   "title": "A second stack of minimums",
+   "duration": 62.66,
+   "lines": [
+    {
+     "id": "st4s_1",
+     "text": "One remembered minimum is not enough. When it is popped, you would not know the one before it.",
+     "start": 0.2,
+     "end": 5.69
+    },
+    {
+     "id": "st4s_2",
+     "text": "So keep a second stack. At every level, it holds the smallest value from there down.",
+     "start": 6.44,
+     "end": 11.73
+    },
+    {
+     "id": "st4s_3",
+     "text": "Two empty stacks. One for the values, one for the minimums.",
+     "start": 12.48,
+     "end": 16.23
+    },
+    {
+     "id": "st4s_4",
+     "text": "Push three. It is the first value, so it is also the smallest so far.",
+     "start": 16.98,
+     "end": 21.48
+    },
+    {
+     "id": "st4s_5",
+     "text": "Push five. The smallest is still three, so mins gets another three.",
+     "start": 22.23,
+     "end": 26.43
+    },
+    {
+     "id": "st4s_6",
+     "text": "Push one. One is smaller than three. Mins gets a one.",
+     "start": 27.18,
+     "end": 30.59
+    },
+    {
+     "id": "st4s_7",
+     "text": "A min question. Line thirteen reads the top of mins. One. No searching.",
+     "start": 31.34,
+     "end": 36.21
+    },
+    {
+     "id": "st4s_8",
+     "text": "Pop. Both stacks lose their top, together.",
+     "start": 36.96,
+     "end": 39.52
+    },
+    {
+     "id": "st4s_9",
+     "text": "Another min question. What is the answer now?",
+     "start": 40.27,
+     "end": 43.1
+    },
+    {
+     "id": "st4s_10",
+     "text": "Three. The answer was waiting one level down.",
+     "start": 44.3,
+     "end": 47
+    },
+    {
+     "id": "st4s_11",
+     "text": "Line sixteen returns both answers.",
+     "start": 47.75,
+     "end": 50.13
+    },
+    {
+     "id": "st4s_12",
+     "text": "Every operation is one push, one pop or one read. O of one each.",
+     "start": 51.23,
+     "end": 56.23
+    },
+    {
+     "id": "st4s_13",
+     "text": "The price is a second stack of the same size. O of n space.",
+     "start": 56.98,
+     "end": 61.06
+    }
+   ],
+   "pauses": [
+    {
+     "id": "st4s-q",
+     "t": 43.3
+    }
+   ]
+  },
+  "st5i": {
+   "src": "videos/st5i.mp4",
+   "title": "The Next Warmer Day",
+   "duration": 24.3,
+   "lines": [
+    {
+     "id": "st5i_1",
+     "text": "Five days of weather. On each day, Pip wonders how long until a warmer one.",
+     "start": 0.2,
+     "end": 5.11
+    },
+    {
+     "id": "st5i_2",
+     "text": "For every day, return how many days to wait for a warmer day. If none comes, zero.",
+     "start": 5.81,
+     "end": 11.36
+    },
+    {
+     "id": "st5i_3",
+     "text": "Looking ahead from every single day is O of n squared.",
+     "start": 12.06,
+     "end": 15.66
+    },
+    {
+     "id": "st5i_4",
+     "text": "Turn it round. When a warm day arrives, which earlier days has it just answered? Your turn.",
+     "start": 16.36,
+     "end": 22.7
+    }
+   ],
+   "pauses": []
+  },
+  "st5s": {
+   "src": "videos/st5s.mp4",
+   "title": "New days answer old days",
+   "duration": 82.46,
+   "lines": [
+    {
+     "id": "st5s_1",
+     "text": "Do not look ahead from each day. Let each new day answer the earlier days that were waiting for it.",
      "start": 0.2,
      "end": 6
     },
     {
-     "id": "tp2s_2",
-     "text": "Compare the two ends, take the bigger square, and fill the answer from the back.",
+     "id": "st5s_2",
+     "text": "The waiting days sit on a stack. A warm day pops every colder day off the top.",
      "start": 6.75,
-     "end": 11.03
+     "end": 11.65
     },
     {
-     "id": "tp2s_3",
-     "text": "Pip stands on the left end. Moss on the right end.",
-     "start": 11.78,
-     "end": 14.78
+     "id": "st5s_3",
+     "text": "Every answer starts at zero. The stack of waiting days is empty.",
+     "start": 12.4,
+     "end": 16.76
     },
     {
-     "id": "tp2s_4",
-     "text": "K points at the last slot of the answer. We fill from the back, biggest first.",
-     "start": 15.53,
-     "end": 20.38
+     "id": "st5s_4",
+     "text": "Day zero. Nothing is waiting, so line nine just pushes it.",
+     "start": 17.51,
+     "end": 21.31
     },
     {
-     "id": "tp2s_5",
-     "text": "Line six compares the sizes, ignoring the sign. Four against five. Five is bigger.",
-     "start": 21.13,
-     "end": 27.27
+     "id": "st5s_5",
+     "text": "Day one is two degrees. The day on top was four. Two is not warmer, so nobody is answered. Push.",
+     "start": 22.06,
+     "end": 28.74
     },
     {
-     "id": "tp2s_6",
-     "text": "So line ten writes five squared. Twenty five. And Moss steps in.",
-     "start": 28.02,
-     "end": 32.22
+     "id": "st5s_6",
+     "text": "Day two is three degrees. The top is day one, which was two. Three is warmer.",
+     "start": 29.49,
+     "end": 34.81
     },
     {
-     "id": "tp2s_7",
-     "text": "The next slot. Four against three. This time the left end wins.",
-     "start": 32.97,
-     "end": 37.35
+     "id": "st5s_7",
+     "text": "So day one is popped, and its answer is two minus one. One day.",
+     "start": 35.56,
+     "end": 39.69
     },
     {
-     "id": "tp2s_8",
-     "text": "Minus four squared is sixteen. Pip steps in.",
-     "start": 38.1,
-     "end": 41.14
+     "id": "st5s_8",
+     "text": "Next on top is day zero, which was four. Three is not warmer. Stop, and push day two.",
+     "start": 40.44,
+     "end": 46.4
     },
     {
-     "id": "tp2s_9",
-     "text": "The next slot. Minus one against three. Which square goes in?",
-     "start": 41.89,
-     "end": 45.65
+     "id": "st5s_9",
+     "text": "Day three is five degrees. Days two and zero are waiting. How many does it answer?",
+     "start": 47.15,
+     "end": 52.75
     },
     {
-     "id": "tp2s_10",
-     "text": "Nine. Three is the bigger size.",
-     "start": 46.85,
-     "end": 48.89
+     "id": "st5s_10",
+     "text": "Both. Day two waited one day. Day zero waited three.",
+     "start": 53.95,
+     "end": 57.61
     },
     {
-     "id": "tp2s_11",
-     "text": "Then minus one against zero. One goes in. And the last slot gets zero.",
-     "start": 49.64,
-     "end": 54.44
+     "id": "st5s_11",
+     "text": "Push day three. Day four is colder, so it is pushed too. Nobody answers them.",
+     "start": 58.36,
+     "end": 63.55
     },
     {
-     "id": "tp2s_12",
-     "text": "Line fourteen returns the answer row, already in order.",
-     "start": 55.19,
-     "end": 58.84
+     "id": "st5s_12",
+     "text": "Line eleven returns the answers. The days left on the stack keep their zero.",
+     "start": 64.3,
+     "end": 69.29
     },
     {
-     "id": "tp2s_13",
-     "text": "Each slot is filled once. O of n time. No sorting needed.",
-     "start": 59.94,
-     "end": 63.9
+     "id": "st5s_13",
+     "text": "Each day is pushed once, and popped at most once. So the inner loop runs n times in total. O of n.",
+     "start": 70.39,
+     "end": 77.07
     },
     {
-     "id": "tp2s_14",
-     "text": "The answer row is the only extra space. O of n.",
-     "start": 64.65,
-     "end": 68.13
+     "id": "st5s_14",
+     "text": "The stack can hold every day. O of n space.",
+     "start": 77.82,
+     "end": 80.86
     }
    ],
    "pauses": [
     {
-     "id": "tp2s-q",
-     "t": 45.85
+     "id": "st5s-q",
+     "t": 52.95
     }
    ]
   },
-  "tp3i": {
-   "src": "videos/tp3i.mp4",
-   "title": "Zeros to the Back",
-   "duration": 21.53,
+  "st6i": {
+   "src": "videos/st6i.mp4",
+   "title": "Rocks on a Line",
+   "duration": 20.5,
    "lines": [
     {
-     "id": "tp3i_1",
-     "text": "Zeros are scattered through this row. They belong at the back.",
+     "id": "st6i_1",
+     "text": "Rocks roll along a line. Positive ones roll right. Negative ones roll left.",
      "start": 0.2,
-     "end": 3.7
+     "end": 5.51
     },
     {
-     "id": "tp3i_2",
-     "text": "Move every zero to the end, and keep the other numbers in the same order. Change the array in place.",
-     "start": 4.4,
-     "end": 10.84
+     "id": "st6i_2",
+     "text": "When two meet, the smaller one breaks. Return the rocks that are left.",
+     "start": 6.21,
+     "end": 10.11
     },
     {
-     "id": "tp3i_3",
-     "text": "Deleting and re-adding would shift everything, again and again.",
-     "start": 11.54,
-     "end": 15.31
+     "id": "st6i_3",
+     "text": "A rock rolling left always meets the most recent survivor first.",
+     "start": 10.81,
+     "end": 14.8
     },
     {
-     "id": "tp3i_4",
-     "text": "What if one walker reads, and another marks where to write? Your turn.",
-     "start": 16.01,
-     "end": 19.93
+     "id": "st6i_4",
+     "text": "What keeps the most recent survivor on top? Your turn.",
+     "start": 15.5,
+     "end": 18.9
     }
    ],
    "pauses": []
   },
-  "tp3s": {
-   "src": "videos/tp3s.mp4",
-   "title": "One reads, one writes",
-   "duration": 66.86,
+  "st6s": {
+   "src": "videos/st6s.mp4",
+   "title": "The newest survivor fights first",
+   "duration": 64.37,
    "lines": [
     {
-     "id": "tp3s_1",
-     "text": "Two walkers, moving the same way. A fast reader, and a slow writer.",
+     "id": "st6s_1",
+     "text": "Only one kind of pair can crash. A rock moving right, followed by a rock moving left.",
      "start": 0.2,
-     "end": 4.49
+     "end": 5.61
     },
     {
-     "id": "tp3s_2",
-     "text": "The reader finds the real numbers. The writer marks where the next one belongs.",
-     "start": 5.24,
-     "end": 10
+     "id": "st6s_2",
+     "text": "A rock moving left meets the most recent survivor first. So the survivors wait on a stack.",
+     "start": 6.36,
+     "end": 12.04
     },
     {
-     "id": "tp3s_3",
-     "text": "Line two. Moss marks the write position: the next door that should hold a real number.",
-     "start": 10.75,
-     "end": 16.11
+     "id": "st6s_3",
+     "text": "Four moves right. Nothing to fight. Line eleven pushes it.",
+     "start": 12.79,
+     "end": 16.43
     },
     {
-     "id": "tp3s_4",
-     "text": "Pip is the reader, and walks every door. Door zero holds a zero. Line four says skip it.",
-     "start": 16.86,
-     "end": 22.66
+     "id": "st6s_4",
+     "text": "Two moves right as well. Push.",
+     "start": 17.18,
+     "end": 19.26
     },
     {
-     "id": "tp3s_5",
-     "text": "Door one holds three. Not a zero.",
-     "start": 23.41,
-     "end": 25.8
+     "id": "st6s_5",
+     "text": "Minus three moves left, and the top moves right. They crash. Size two against size three.",
+     "start": 20.01,
+     "end": 25.72
     },
     {
-     "id": "tp3s_6",
-     "text": "Lines five to seven swap it with the door Moss is on. Three goes to the front.",
-     "start": 26.55,
-     "end": 31.51
+     "id": "st6s_6",
+     "text": "Line eight. The top is smaller, so it breaks, and is popped.",
+     "start": 26.47,
+     "end": 29.62
     },
     {
-     "id": "tp3s_7",
-     "text": "Line eight moves the write position forward.",
-     "start": 32.26,
-     "end": 34.8
+     "id": "st6s_7",
+     "text": "The loop runs again. Now it is four against three. Who breaks?",
+     "start": 30.37,
+     "end": 34.33
     },
     {
-     "id": "tp3s_8",
-     "text": "Door two. A zero. Skip.",
-     "start": 35.55,
-     "end": 37.22
+     "id": "st6s_8",
+     "text": "The new rock. Line nine sets alive to false, so it is never pushed.",
+     "start": 35.53,
+     "end": 39.96
     },
     {
-     "id": "tp3s_9",
-     "text": "Door three holds one. Moss is on door one. What happens?",
-     "start": 37.97,
-     "end": 41.72
+     "id": "st6s_9",
+     "text": "Minus five. Four against five. The four breaks, and is popped.",
+     "start": 40.71,
+     "end": 44.57
     },
     {
-     "id": "tp3s_10",
-     "text": "The one swaps into door one, and Moss steps forward.",
-     "start": 42.92,
-     "end": 46.03
+     "id": "st6s_10",
+     "text": "The stack is empty, so the loop stops. Minus five is still alive, and is pushed.",
+     "start": 45.32,
+     "end": 50.36
     },
     {
-     "id": "tp3s_11",
-     "text": "The last door. Two. It swaps into door two.",
-     "start": 46.78,
-     "end": 49.67
+     "id": "st6s_11",
+     "text": "Line thirteen returns the survivors.",
+     "start": 51.11,
+     "end": 53.81
     },
     {
-     "id": "tp3s_12",
-     "text": "The loop ends. Every real number is at the front, in the same order. The zeros are at the back.",
-     "start": 50.42,
-     "end": 56.42
+     "id": "st6s_12",
+     "text": "Each rock is pushed once, and popped at most once. O of n time.",
+     "start": 54.91,
+     "end": 58.93
     },
     {
-     "id": "tp3s_13",
-     "text": "The reader visits each door once. O of n time.",
-     "start": 57.52,
-     "end": 60.55
-    },
-    {
-     "id": "tp3s_14",
-     "text": "Everything happens inside the same array. O of one space.",
-     "start": 61.3,
-     "end": 65.26
+     "id": "st6s_13",
+     "text": "The stack can hold every rock. O of n space.",
+     "start": 59.68,
+     "end": 62.77
     }
    ],
    "pauses": [
     {
-     "id": "tp3s-q",
-     "t": 41.92
-    }
-   ]
-  },
-  "tp4i": {
-   "src": "videos/tp4i.mp4",
-   "title": "The Widest Tank",
-   "duration": 22.26,
-   "lines": [
-    {
-     "id": "tp4i_1",
-     "text": "Each door has a wall of some height. Pick two walls, and the space between them holds water.",
-     "start": 0.2,
-     "end": 5.48
-    },
-    {
-     "id": "tp4i_2",
-     "text": "Return the most water any two walls can hold. That is the width, times the lower of the two walls.",
-     "start": 6.18,
-     "end": 12.36
-    },
-    {
-     "id": "tp4i_3",
-     "text": "Trying every pair of walls is O of n squared.",
-     "start": 13.06,
-     "end": 15.92
-    },
-    {
-     "id": "tp4i_4",
-     "text": "Start with the widest tank. Which wall is holding it back? Your turn.",
-     "start": 16.62,
-     "end": 20.66
-    }
-   ],
-   "pauses": []
-  },
-  "tp4s": {
-   "src": "videos/tp4s.mp4",
-   "title": "Start wide, drop the lower wall",
-   "duration": 71.05,
-   "lines": [
-    {
-     "id": "tp4s_1",
-     "text": "Water between two walls rises only as high as the lower wall. So the amount is the width, times the lower wall.",
-     "start": 0.2,
-     "end": 7.57
-    },
-    {
-     "id": "tp4s_2",
-     "text": "Start as wide as possible. Then always give up the lower wall, because keeping it can never do better.",
-     "start": 8.32,
-     "end": 14.92
-    },
-    {
-     "id": "tp4s_3",
-     "text": "Pip and Moss start at the two ends, the widest tank possible. Best is zero.",
-     "start": 15.67,
-     "end": 20.67
-    },
-    {
-     "id": "tp4s_4",
-     "text": "The tank is four wide. But water only rises to the lower wall, which is one. Four times one is four.",
-     "start": 21.42,
-     "end": 28.19
-    },
-    {
-     "id": "tp4s_5",
-     "text": "Which wall to give up? The lower one. It is the limit, and any narrower tank that keeps it can only hold less.",
-     "start": 28.94,
-     "end": 36.07
-    },
-    {
-     "id": "tp4s_6",
-     "text": "Walls five and three. Three wide, three high. Nine. A new best.",
-     "start": 36.82,
-     "end": 40.77
-    },
-    {
-     "id": "tp4s_7",
-     "text": "Five on the left, three on the right. Which walker moves?",
-     "start": 41.52,
-     "end": 44.98
-    },
-    {
-     "id": "tp4s_8",
-     "text": "Moss. The three is the limit.",
-     "start": 46.19,
-     "end": 48.02
-    },
-    {
-     "id": "tp4s_9",
-     "text": "Two wide, four high. Eight. Not better than nine.",
-     "start": 48.77,
-     "end": 51.73
-    },
-    {
-     "id": "tp4s_10",
-     "text": "Moss moves again. One wide, two high. Two. Then the walkers meet.",
-     "start": 52.48,
-     "end": 56.92
-    },
-    {
-     "id": "tp4s_11",
-     "text": "Line twelve returns the best. Nine.",
-     "start": 57.67,
-     "end": 60.16
-    },
-    {
-     "id": "tp4s_12",
-     "text": "One walker moves at every step. O of n time, instead of trying every pair.",
-     "start": 61.26,
-     "end": 66.55
-    },
-    {
-     "id": "tp4s_13",
-     "text": "Three numbers. O of one space.",
-     "start": 67.3,
-     "end": 69.45
-    }
-   ],
-   "pauses": [
-    {
-     "id": "tp4s-q",
-     "t": 45.19
-    }
-   ]
-  },
-  "tp5i": {
-   "src": "videos/tp5i.mp4",
-   "title": "Two Rows Into One",
-   "duration": 19.77,
-   "lines": [
-    {
-     "id": "tp5i_1",
-     "text": "Two sorted rows. They need to become one sorted row.",
-     "start": 0.2,
-     "end": 3.67
-    },
-    {
-     "id": "tp5i_2",
-     "text": "Return a new array with every number from both rows, in order. Do not call sort.",
-     "start": 4.37,
-     "end": 9.74
-    },
-    {
-     "id": "tp5i_3",
-     "text": "Both rows are already in order. That is worth a lot.",
-     "start": 10.44,
-     "end": 13.85
-    },
-    {
-     "id": "tp5i_4",
-     "text": "Where is the smallest number that is still unused? Your turn.",
-     "start": 14.55,
-     "end": 18.17
-    }
-   ],
-   "pauses": []
-  },
-  "tp5s": {
-   "src": "videos/tp5s.mp4",
-   "title": "Take the smaller front",
-   "duration": 62.06,
-   "lines": [
-    {
-     "id": "tp5s_1",
-     "text": "Both rows are already sorted. So the smallest number left is always at the front of one of them.",
-     "start": 0.2,
-     "end": 6.07
-    },
-    {
-     "id": "tp5s_2",
-     "text": "Compare the two fronts, take the smaller, and move that marker. Repeat.",
-     "start": 6.82,
-     "end": 11.08
-    },
-    {
-     "id": "tp5s_3",
-     "text": "An empty answer, and one marker at the front of each row.",
-     "start": 11.83,
-     "end": 15.37
-    },
-    {
-     "id": "tp5s_4",
-     "text": "Compare the two fronts. One and two. One is smaller, so it goes out, and i moves on.",
-     "start": 16.12,
-     "end": 21.5
-    },
-    {
-     "id": "tp5s_5",
-     "text": "Four against two. Two goes out, and j moves on.",
-     "start": 22.25,
-     "end": 25.57
-    },
-    {
-     "id": "tp5s_6",
-     "text": "Four against three. Three.",
-     "start": 26.32,
-     "end": 28.05
-    },
-    {
-     "id": "tp5s_7",
-     "text": "Four against nine. Which one goes out, and which marker moves?",
-     "start": 28.8,
-     "end": 32.8
-    },
-    {
-     "id": "tp5s_8",
-     "text": "Four. And i moves on.",
-     "start": 34,
-     "end": 35.59
-    },
-    {
-     "id": "tp5s_9",
-     "text": "Seven against nine. Seven. Now the first row is used up, so the main loop stops.",
-     "start": 36.34,
-     "end": 42
-    },
-    {
-     "id": "tp5s_10",
-     "text": "Line ten empties what is left of the other row. Nine.",
-     "start": 42.75,
-     "end": 46.19
-    },
-    {
-     "id": "tp5s_11",
-     "text": "Line eleven returns the merged row.",
-     "start": 46.94,
-     "end": 49.25
-    },
-    {
-     "id": "tp5s_12",
-     "text": "Every step sends one number out. So n plus m steps. O of n plus m.",
-     "start": 50.35,
-     "end": 55.71
-    },
-    {
-     "id": "tp5s_13",
-     "text": "The answer row holds everything. O of n plus m space.",
-     "start": 56.46,
-     "end": 60.46
-    }
-   ],
-   "pauses": [
-    {
-     "id": "tp5s-q",
-     "t": 33
-    }
-   ]
-  },
-  "tp6i": {
-   "src": "videos/tp6i.mp4",
-   "title": "Three That Add Up",
-   "duration": 19.79,
-   "lines": [
-    {
-     "id": "tp6i_1",
-     "text": "Three doors in this sorted row add up to fifteen.",
-     "start": 0.2,
-     "end": 3.28
-    },
-    {
-     "id": "tp6i_2",
-     "text": "Return true if any three different doors add up to the target. Otherwise false.",
-     "start": 3.98,
-     "end": 9.25
-    },
-    {
-     "id": "tp6i_3",
-     "text": "Trying every triple is three nested loops. O of n cubed.",
-     "start": 9.95,
-     "end": 13.78
-    },
-    {
-     "id": "tp6i_4",
-     "text": "If you hold one number still, what problem is left? Your turn.",
-     "start": 14.48,
-     "end": 18.19
-    }
-   ],
-   "pauses": []
-  },
-  "tp6s": {
-   "src": "videos/tp6s.mp4",
-   "title": "Hold one, sweep the rest",
-   "duration": 69.3,
-   "lines": [
-    {
-     "id": "tp6s_1",
-     "text": "Three numbers is one number, plus a pair. And you already know how to find a pair in a sorted row.",
-     "start": 0.2,
-     "end": 5.91
-    },
-    {
-     "id": "tp6s_2",
-     "text": "Hold the first number still. Then run two pointers over everything to its right.",
-     "start": 6.66,
-     "end": 11.45
-    },
-    {
-     "id": "tp6s_3",
-     "text": "I holds the first number still. Pip and Moss take the two ends of everything after it.",
-     "start": 12.2,
-     "end": 17.29
-    },
-    {
-     "id": "tp6s_4",
-     "text": "Line six adds all three. One, two, eight. Eleven.",
-     "start": 18.04,
-     "end": 21.48
-    },
-    {
-     "id": "tp6s_5",
-     "text": "Eleven is less than fifteen. Too small. Pip moves right.",
-     "start": 22.23,
-     "end": 25.91
-    },
-    {
-     "id": "tp6s_6",
-     "text": "One, four, eight. Thirteen. Still too small. Pip moves again.",
-     "start": 26.66,
-     "end": 30.39
-    },
-    {
-     "id": "tp6s_7",
-     "text": "One, five, eight. Fourteen. Too small. Pip moves, and meets Moss. No triple starts with one.",
-     "start": 31.14,
-     "end": 37.29
-    },
-    {
-     "id": "tp6s_8",
-     "text": "So i moves on to the next number, two. Pip and Moss reset to the ends of what follows.",
-     "start": 38.04,
-     "end": 43.85
-    },
-    {
-     "id": "tp6s_9",
-     "text": "Two, four, eight. Fourteen. The target is fifteen. Who moves?",
-     "start": 44.6,
-     "end": 48.42
-    },
-    {
-     "id": "tp6s_10",
-     "text": "Pip. Too small means the left walker moves.",
-     "start": 49.62,
-     "end": 52.39
-    },
-    {
-     "id": "tp6s_11",
-     "text": "Two, five, eight. Fifteen. Line seven returns true.",
-     "start": 53.14,
-     "end": 56.68
-    },
-    {
-     "id": "tp6s_12",
-     "text": "One sweep for each held number. n times n. O of n squared. Trying every triple would be n cubed.",
-     "start": 57.78,
-     "end": 64.43
-    },
-    {
-     "id": "tp6s_13",
-     "text": "Only three markers. O of one space.",
-     "start": 65.18,
-     "end": 67.7
-    }
-   ],
-   "pauses": [
-    {
-     "id": "tp6s-q",
-     "t": 48.62
+     "id": "st6s-q",
+     "t": 34.53
     }
    ]
   }

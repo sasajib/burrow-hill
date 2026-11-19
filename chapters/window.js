@@ -4,8 +4,8 @@ window.CHAPTER = {
  "sub": "CHAPTER 6 · SLIDING WINDOW",
  "key": "burrow-ch-window",
  "next": {
-  "href": "index.html#chapters",
-  "label": "All chapters"
+  "href": "chapter.html?c=stack",
+  "label": "Chapter 7: Stacks"
  },
  "prev": {
   "href": "chapter.html?c=twoptr",
@@ -264,6 +264,7 @@ window.CHAPTER = {
     ],
     "box": null,
     "list": false,
+    "nameOnly": false,
     "leftNull": false,
     "cycle": null,
     "skips": []
@@ -607,6 +608,7 @@ window.CHAPTER = {
     ],
     "box": null,
     "list": false,
+    "nameOnly": false,
     "leftNull": false,
     "cycle": null,
     "skips": []
@@ -972,6 +974,7 @@ window.CHAPTER = {
     ],
     "box": null,
     "list": false,
+    "nameOnly": false,
     "leftNull": false,
     "cycle": null,
     "skips": []
@@ -1316,6 +1319,7 @@ window.CHAPTER = {
      "rows": 1
     },
     "list": false,
+    "nameOnly": false,
     "leftNull": false,
     "cycle": null,
     "skips": []
@@ -1692,6 +1696,7 @@ window.CHAPTER = {
     ],
     "box": null,
     "list": false,
+    "nameOnly": false,
     "leftNull": false,
     "cycle": null,
     "skips": []
@@ -2079,6 +2084,7 @@ window.CHAPTER = {
      "rows": 3
     },
     "list": false,
+    "nameOnly": false,
     "leftNull": false,
     "cycle": null,
     "skips": []

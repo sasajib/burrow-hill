@@ -4,8 +4,8 @@ window.CHAPTER = {
  "sub": "CHAPTER 7 · STACKS",
  "key": "burrow-ch-stack",
  "next": {
-  "href": "index.html#chapters",
-  "label": "All chapters"
+  "href": "chapter.html?c=queue",
+  "label": "Chapter 8: Queues"
  },
  "prev": {
   "href": "chapter.html?c=window",
@@ -241,6 +241,7 @@ window.CHAPTER = {
      "rows": 1
     },
     "list": false,
+    "nameOnly": false,
     "leftNull": false,
     "cycle": null,
     "skips": []
@@ -575,6 +576,7 @@ window.CHAPTER = {
      "rows": 1
     },
     "list": false,
+    "nameOnly": false,
     "leftNull": false,
     "cycle": null,
     "skips": []
@@ -943,6 +945,7 @@ window.CHAPTER = {
      "rows": 1
     },
     "list": false,
+    "nameOnly": false,
     "leftNull": false,
     "cycle": null,
     "skips": []
@@ -1379,6 +1382,7 @@ window.CHAPTER = {
      "rows": 2
     },
     "list": false,
+    "nameOnly": false,
     "leftNull": false,
     "cycle": null,
     "skips": []
@@ -1774,6 +1778,7 @@ window.CHAPTER = {
      "rows": 1
     },
     "list": false,
+    "nameOnly": false,
     "leftNull": false,
     "cycle": null,
     "skips": []
@@ -2155,6 +2160,7 @@ window.CHAPTER = {
      "rows": 1
     },
     "list": false,
+    "nameOnly": false,
     "leftNull": false,
     "cycle": null,
     "skips": []
