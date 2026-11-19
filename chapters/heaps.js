@@ -4,8 +4,8 @@ window.CHAPTER = {
  "sub": "CHAPTER 16 · HEAPS",
  "key": "burrow-ch-heaps",
  "next": {
-  "href": "index.html#chapters",
-  "label": "All chapters"
+  "href": "chapter.html?c=tries",
+  "label": "Chapter 17: Tries"
  },
  "prev": {
   "href": "chapter.html?c=bst",
@@ -287,6 +287,7 @@ window.CHAPTER = {
      1
     ],
     "treeIndex": true,
+    "ghost": [],
     "row2": null,
     "rowLabel": "",
     "row2Label": "",
@@ -316,6 +317,7 @@ window.CHAPTER = {
      "bad": [],
      "set": null,
      "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "the new value goes at the end",
@@ -330,6 +332,7 @@ window.CHAPTER = {
      "bad": [],
      "set": null,
      "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "smaller than the parent → swap",
@@ -348,6 +351,7 @@ window.CHAPTER = {
      "bad": [],
      "set": null,
      "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "",
@@ -365,6 +369,7 @@ window.CHAPTER = {
      "bad": [],
      "set": null,
      "gone": [],
+     "show": [],
      "vars": {
       "parent": 2
      },
@@ -388,6 +393,7 @@ window.CHAPTER = {
       "5": 3
      },
      "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "3 > 1 → swap, i = 2",
@@ -405,6 +411,7 @@ window.CHAPTER = {
      "bad": [],
      "set": null,
      "gone": [],
+     "show": [],
      "vars": {
       "parent": 0
      },
@@ -429,6 +436,7 @@ window.CHAPTER = {
       "2": 2
      },
      "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "2 > 1 → swap, i = 0",
@@ -443,6 +451,7 @@ window.CHAPTER = {
      "bad": [],
      "set": null,
      "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "",
@@ -457,6 +466,7 @@ window.CHAPTER = {
      "bad": [],
      "set": null,
      "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "one swap per level → O(log n)",
@@ -471,6 +481,7 @@ window.CHAPTER = {
      "bad": [],
      "set": null,
      "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "2 numbers → O(1) space",
@@ -669,6 +680,7 @@ window.CHAPTER = {
      3
     ],
     "treeIndex": true,
+    "ghost": [],
     "row2": null,
     "rowLabel": "",
     "row2Label": "",
@@ -699,6 +711,7 @@ window.CHAPTER = {
      "bad": [],
      "set": null,
      "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "the last value fills the hole",
@@ -713,6 +726,7 @@ window.CHAPTER = {
      "bad": [],
      "set": null,
      "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "swap with the smaller child",
@@ -729,6 +743,7 @@ window.CHAPTER = {
      "bad": [],
      "set": null,
      "gone": [],
+     "show": [],
      "vars": {
       "top": 1
      },
@@ -751,6 +766,7 @@ window.CHAPTER = {
      "gone": [
       5
      ],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "the last value, 3, goes on top",
@@ -769,6 +785,7 @@ window.CHAPTER = {
      "bad": [],
      "set": null,
      "gone": [],
+     "show": [],
      "vars": {
       "small": 2
      },
@@ -792,6 +809,7 @@ window.CHAPTER = {
       "2": 3
      },
      "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "swap with the smaller child",
@@ -808,6 +826,7 @@ window.CHAPTER = {
      "bad": [],
      "set": null,
      "gone": [],
+     "show": [],
      "vars": {
       "small": 2
      },
@@ -829,6 +848,7 @@ window.CHAPTER = {
      "bad": [],
      "set": null,
      "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "",
@@ -843,6 +863,7 @@ window.CHAPTER = {
      "bad": [],
      "set": null,
      "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "one swap per level → O(log n)",
@@ -857,6 +878,7 @@ window.CHAPTER = {
      "bad": [],
      "set": null,
      "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "a few numbers → O(1) space",
@@ -994,6 +1016,7 @@ window.CHAPTER = {
     ],
     "tree": null,
     "treeIndex": false,
+    "ghost": [],
     "row2": null,
     "rowLabel": "",
     "row2Label": "",
@@ -1024,6 +1047,7 @@ window.CHAPTER = {
      "bad": [],
      "set": null,
      "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "keep the k largest so far",
@@ -1038,6 +1062,7 @@ window.CHAPTER = {
      "bad": [],
      "set": null,
      "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "one too many → pop the smallest",
@@ -1056,6 +1081,7 @@ window.CHAPTER = {
      "bad": [],
      "set": null,
      "gone": [],
+     "show": [],
      "vars": null,
      "box": [
       "5"
@@ -1076,6 +1102,7 @@ window.CHAPTER = {
      "bad": [],
      "set": null,
      "gone": [],
+     "show": [],
      "vars": null,
      "box": [
       "2",
@@ -1099,6 +1126,7 @@ window.CHAPTER = {
      ],
      "set": null,
      "gone": [],
+     "show": [],
      "vars": null,
      "box": [
       "5",
@@ -1120,6 +1148,7 @@ window.CHAPTER = {
      "bad": [],
      "set": null,
      "gone": [],
+     "show": [],
      "vars": null,
      "box": [
       "1",
@@ -1140,6 +1169,7 @@ window.CHAPTER = {
      ],
      "set": null,
      "gone": [],
+     "show": [],
      "vars": null,
      "box": [
       "5",
@@ -1163,6 +1193,7 @@ window.CHAPTER = {
      ],
      "set": null,
      "gone": [],
+     "show": [],
      "vars": null,
      "box": [
       "7",
@@ -1183,6 +1214,7 @@ window.CHAPTER = {
      "bad": [],
      "set": null,
      "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "",
@@ -1197,6 +1229,7 @@ window.CHAPTER = {
      "bad": [],
      "set": null,
      "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "n pushes × log k → O(n log k)",
@@ -1211,6 +1244,7 @@ window.CHAPTER = {
      "bad": [],
      "set": null,
      "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "the heap → O(k) space",
@@ -1328,6 +1362,7 @@ window.CHAPTER = {
     ],
     "tree": null,
     "treeIndex": false,
+    "ghost": [],
     "row2": null,
     "rowLabel": "",
     "row2Label": "",
@@ -1355,6 +1390,7 @@ window.CHAPTER = {
      "bad": [],
      "set": null,
      "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "short ropes first",
@@ -1369,6 +1405,7 @@ window.CHAPTER = {
      "bad": [],
      "set": null,
      "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "the 2 smallest, again and again",
@@ -1388,6 +1425,7 @@ window.CHAPTER = {
      "bad": [],
      "set": null,
      "gone": [],
+     "show": [],
      "vars": {
       "cost": 0
      },
@@ -1412,6 +1450,7 @@ window.CHAPTER = {
      ],
      "set": null,
      "gone": [],
+     "show": [],
      "vars": {
       "cost": 5
      },
@@ -1434,6 +1473,7 @@ window.CHAPTER = {
      "bad": [],
      "set": null,
      "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "4 + 5 = 9 · cost = 5 + ?",
@@ -1450,6 +1490,7 @@ window.CHAPTER = {
      ],
      "set": null,
      "gone": [],
+     "show": [],
      "vars": {
       "cost": 14
      },
@@ -1471,6 +1512,7 @@ window.CHAPTER = {
      ],
      "set": null,
      "gone": [],
+     "show": [],
      "vars": {
       "cost": 29
      },
@@ -1489,6 +1531,7 @@ window.CHAPTER = {
      "bad": [],
      "set": null,
      "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "",
@@ -1503,6 +1546,7 @@ window.CHAPTER = {
      "bad": [],
      "set": null,
      "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "n joins × log n → O(n log n)",
@@ -1517,6 +1561,7 @@ window.CHAPTER = {
      "bad": [],
      "set": null,
      "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "the heap → O(n) space",
@@ -1688,6 +1733,7 @@ window.CHAPTER = {
     ],
     "tree": null,
     "treeIndex": false,
+    "ghost": [],
     "row2": [
      2,
      3
@@ -1716,6 +1762,7 @@ window.CHAPTER = {
      "bad": [],
      "set": null,
      "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "one candidate per list",
@@ -1730,6 +1777,7 @@ window.CHAPTER = {
      "bad": [],
      "set": null,
      "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "pop one, push its neighbour",
@@ -1747,6 +1795,7 @@ window.CHAPTER = {
      "bad": [],
      "set": null,
      "gone": [],
+     "show": [],
      "vars": null,
      "box": [
       "1 · from A",
@@ -1768,6 +1817,7 @@ window.CHAPTER = {
      "bad": [],
      "set": null,
      "gone": [],
+     "show": [],
      "vars": null,
      "box": [
       "2 · from B",
@@ -1789,6 +1839,7 @@ window.CHAPTER = {
      "bad": [],
      "set": null,
      "gone": [],
+     "show": [],
      "vars": null,
      "box": [
       "3 · from B",
@@ -1808,6 +1859,7 @@ window.CHAPTER = {
      "bad": [],
      "set": null,
      "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "B has run out → ?",
@@ -1822,6 +1874,7 @@ window.CHAPTER = {
      "bad": [],
      "set": null,
      "gone": [],
+     "show": [],
      "vars": null,
      "box": [
       "6 · from A"
@@ -1840,6 +1893,7 @@ window.CHAPTER = {
      "bad": [],
      "set": null,
      "gone": [],
+     "show": [],
      "vars": null,
      "box": [],
      "card": "",
@@ -1854,6 +1908,7 @@ window.CHAPTER = {
      "bad": [],
      "set": null,
      "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "n numbers × log k",
@@ -1868,6 +1923,7 @@ window.CHAPTER = {
      "bad": [],
      "set": null,
      "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "heap: k · output: n",
@@ -2007,6 +2063,7 @@ window.CHAPTER = {
     ],
     "tree": null,
     "treeIndex": false,
+    "ghost": [],
     "row2": [
      "",
      "",
@@ -2042,6 +2099,7 @@ window.CHAPTER = {
      "bad": [],
      "set": null,
      "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "a small half and a big half",
@@ -2056,6 +2114,7 @@ window.CHAPTER = {
      "bad": [],
      "set": null,
      "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "the two tops are the middle",
@@ -2070,6 +2129,7 @@ window.CHAPTER = {
      "bad": [],
      "set": null,
      "gone": [],
+     "show": [],
      "vars": {
       "low": "–",
       "high": "–"
@@ -2091,6 +2151,7 @@ window.CHAPTER = {
      "bad": [],
      "set": null,
      "gone": [],
+     "show": [],
      "vars": {
       "low": "5",
       "high": "–"
@@ -2112,6 +2173,7 @@ window.CHAPTER = {
       "d0": 5
      },
      "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "low is bigger → its top: 5",
@@ -2134,6 +2196,7 @@ window.CHAPTER = {
       "d1": 3.5
      },
      "gone": [],
+     "show": [],
      "vars": {
       "low": "2",
       "high": "5"
@@ -2155,6 +2218,7 @@ window.CHAPTER = {
      "bad": [],
      "set": null,
      "gone": [],
+     "show": [],
      "vars": {
       "low": "2",
       "high": "5, 8"
@@ -2176,6 +2240,7 @@ window.CHAPTER = {
       "d2": 5
      },
      "gone": [],
+     "show": [],
      "vars": {
       "low": "5, 2",
       "high": "8"
@@ -2201,6 +2266,7 @@ window.CHAPTER = {
       "d3": 3.5
      },
      "gone": [],
+     "show": [],
      "vars": {
       "low": "2, 1",
       "high": "5, 8"
@@ -2218,6 +2284,7 @@ window.CHAPTER = {
      "bad": [],
      "set": null,
      "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "",
@@ -2232,6 +2299,7 @@ window.CHAPTER = {
      "bad": [],
      "set": null,
      "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "log n per arrival → O(n log n)",
@@ -2246,6 +2314,7 @@ window.CHAPTER = {
      "bad": [],
      "set": null,
      "gone": [],
+     "show": [],
      "vars": null,
      "box": null,
      "card": "2 heaps → O(n) space",

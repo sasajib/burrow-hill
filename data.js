@@ -12404,654 +12404,6 @@ window.BURROW = {
     }
    ]
   },
-  "hp1i": {
-   "src": "videos/hp1i.mp4",
-   "title": "A New Arrival",
-   "duration": 21.8,
-   "lines": [
-    {
-     "id": "hp1i_1",
-     "text": "This heap keeps its rule. Every parent is smaller than its children. Now a one arrives.",
-     "start": 0.2,
-     "end": 5.83
-    },
-    {
-     "id": "hp1i_2",
-     "text": "Add the value, keep the rule, and return the array.",
-     "start": 6.53,
-     "end": 9.38
-    },
-    {
-     "id": "hp1i_3",
-     "text": "There is only one spot that leaves no gap. The next free place, at the end.",
-     "start": 10.08,
-     "end": 14.39
-    },
-    {
-     "id": "hp1i_4",
-     "text": "But down there, the one is smaller than its parent. What would fix that? Your turn.",
-     "start": 15.09,
-     "end": 20.2
-    }
-   ],
-   "pauses": []
-  },
-  "hp1s": {
-   "src": "videos/hp1s.mp4",
-   "title": "Add at the end, sift up",
-   "duration": 60.51,
-   "lines": [
-    {
-     "id": "hp1s_1",
-     "text": "The new value goes in the next free spot, at the end of the array. Here, the one, at position five.",
-     "start": 0.2,
-     "end": 6.11
-    },
-    {
-     "id": "hp1s_2",
-     "text": "Then, while it is smaller than its parent, swap the two. It climbs until the rule holds.",
-     "start": 6.86,
-     "end": 12.24
-    },
-    {
-     "id": "hp1s_3",
-     "text": "Line two pushes the one. Line three remembers where it is. Position five.",
-     "start": 12.99,
-     "end": 18.1
-    },
-    {
-     "id": "hp1s_4",
-     "text": "Line five finds the parent. Five minus one, divided by two. Position two. That is the three.",
-     "start": 18.85,
-     "end": 25.64
-    },
-    {
-     "id": "hp1s_5",
-     "text": "Is three smaller than one? No. So line seven swaps them, and i moves up to position two.",
-     "start": 26.39,
-     "end": 32.82
-    },
-    {
-     "id": "hp1s_6",
-     "text": "Again. The parent of position two is position zero. The two. And the two is bigger than the one. What happens?",
-     "start": 33.57,
-     "end": 40.79
-    },
-    {
-     "id": "hp1s_7",
-     "text": "Another swap. The one is the root, and i is zero.",
-     "start": 41.99,
-     "end": 45.29
-    },
-    {
-     "id": "hp1s_8",
-     "text": "The loop needs i above zero. It ends, and line ten returns the heap.",
-     "start": 46.04,
-     "end": 50.55
-    },
-    {
-     "id": "hp1s_9",
-     "text": "At most one swap per level, and there are only log n levels.",
-     "start": 51.65,
-     "end": 55.51
-    },
-    {
-     "id": "hp1s_10",
-     "text": "Two numbers. O of one extra space.",
-     "start": 56.26,
-     "end": 58.91
-    }
-   ],
-   "pauses": [
-    {
-     "id": "hp1s-q",
-     "t": 40.99
-    }
-   ]
-  },
-  "hp2i": {
-   "src": "videos/hp2i.mp4",
-   "title": "Take the Smallest",
-   "duration": 21.87,
-   "lines": [
-    {
-     "id": "hp2i_1",
-     "text": "Hazel takes the smallest value. It is always on top.",
-     "start": 0.2,
-     "end": 3.77
-    },
-    {
-     "id": "hp2i_2",
-     "text": "Remove it, return it, and leave a valid heap behind.",
-     "start": 4.47,
-     "end": 7.65
-    },
-    {
-     "id": "hp2i_3",
-     "text": "Taking the top leaves a hole. Only one value can fill it without leaving a gap. The last one.",
-     "start": 8.35,
-     "end": 14.32
-    },
-    {
-     "id": "hp2i_4",
-     "text": "But the last one is big, and now it is on top. How does it get back down? Your turn.",
-     "start": 15.02,
-     "end": 20.27
-    }
-   ],
-   "pauses": []
-  },
-  "hp2s": {
-   "src": "videos/hp2s.mp4",
-   "title": "Last to the top, sift down",
-   "duration": 63.53,
-   "lines": [
-    {
-     "id": "hp2s_1",
-     "text": "The smallest is the root. Take it, and fill the hole with the last value in the array. The shape stays right.",
-     "start": 0.2,
-     "end": 6.8
-    },
-    {
-     "id": "hp2s_2",
-     "text": "Then let that value sink. Swap it with its smaller child, until no child is smaller.",
-     "start": 7.55,
-     "end": 13.08
-    },
-    {
-     "id": "hp2s_3",
-     "text": "Line two remembers the top. One.",
-     "start": 13.83,
-     "end": 16.12
-    },
-    {
-     "id": "hp2s_4",
-     "text": "Line three takes the last value, three, off the end. Line five puts it on top.",
-     "start": 16.87,
-     "end": 21.98
-    },
-    {
-     "id": "hp2s_5",
-     "text": "Small starts as i. Lines nine to twelve look at both children. Five, and two. Two is the smallest of the three.",
-     "start": 22.73,
-     "end": 29.99
-    },
-    {
-     "id": "hp2s_6",
-     "text": "Small is not i. So line fourteen swaps the three with the two, and i moves down to position two.",
-     "start": 30.74,
-     "end": 37.47
-    },
-    {
-     "id": "hp2s_7",
-     "text": "Again. The children of position two would be at positions five and six. But the array now has only five values. What happens?",
-     "start": 38.22,
-     "end": 46.52
-    },
-    {
-     "id": "hp2s_8",
-     "text": "No children. Small is still i. The three has found its place. Line thirteen returns the top. One.",
-     "start": 47.72,
-     "end": 54.37
-    },
-    {
-     "id": "hp2s_9",
-     "text": "At most one swap per level. O of log n.",
-     "start": 55.47,
-     "end": 58.29
-    },
-    {
-     "id": "hp2s_10",
-     "text": "A few numbers. O of one extra space.",
-     "start": 59.04,
-     "end": 61.93
-    }
-   ],
-   "pauses": [
-    {
-     "id": "hp2s-q",
-     "t": 46.72
-    }
-   ]
-  },
-  "hp3i": {
-   "src": "videos/hp3i.mp4",
-   "title": "The Runner-Up",
-   "duration": 20.18,
-   "lines": [
-    {
-     "id": "hp3i_1",
-     "text": "The numbers arrive one at a time. Pip wants the second largest.",
-     "start": 0.2,
-     "end": 4.14
-    },
-    {
-     "id": "hp3i_2",
-     "text": "Return the k-th largest number. Here, k is two.",
-     "start": 4.84,
-     "end": 8.33
-    },
-    {
-     "id": "hp3i_3",
-     "text": "You never need more than the k largest numbers seen so far.",
-     "start": 9.03,
-     "end": 12.83
-    },
-    {
-     "id": "hp3i_4",
-     "text": "When one more arrives, which one do you throw out? And what hands it to you? Your turn.",
-     "start": 13.53,
-     "end": 18.58
-    }
-   ],
-   "pauses": []
-  },
-  "hp3s": {
-   "src": "videos/hp3s.mp4",
-   "title": "A heap that holds only k",
-   "duration": 59.8,
-   "lines": [
-    {
-     "id": "hp3s_1",
-     "text": "Keep only the k largest numbers seen so far. The smallest of those is the k-th largest.",
-     "start": 0.2,
-     "end": 6.48
-    },
-    {
-     "id": "hp3s_2",
-     "text": "When there is one too many, the smallest must go. A min heap has it on top.",
-     "start": 7.23,
-     "end": 11.91
-    },
-    {
-     "id": "hp3s_3",
-     "text": "K is two. Line two makes a heap with the smallest on top. Five is pushed.",
-     "start": 12.66,
-     "end": 17.83
-    },
-    {
-     "id": "hp3s_4",
-     "text": "Two is pushed. The heap holds two values. That is not more than k.",
-     "start": 18.58,
-     "end": 22.82
-    },
-    {
-     "id": "hp3s_5",
-     "text": "Nine is pushed. Three values. One too many. Line five pops the smallest. The two.",
-     "start": 23.57,
-     "end": 29.56
-    },
-    {
-     "id": "hp3s_6",
-     "text": "One is pushed. The heap holds one, five, nine. Which value does line five pop?",
-     "start": 30.31,
-     "end": 35.41
-    },
-    {
-     "id": "hp3s_7",
-     "text": "The one. It went straight back out.",
-     "start": 36.61,
-     "end": 38.33
-    },
-    {
-     "id": "hp3s_8",
-     "text": "Seven is pushed. Five, seven, nine. The five is popped.",
-     "start": 39.08,
-     "end": 42.53
-    },
-    {
-     "id": "hp3s_9",
-     "text": "The heap holds the two largest. Seven and nine. Line seven returns the top.",
-     "start": 43.28,
-     "end": 48.31
-    },
-    {
-     "id": "hp3s_10",
-     "text": "n pushes, on a heap that never holds more than k plus one values. O of n log k.",
-     "start": 49.41,
-     "end": 55.73
-    },
-    {
-     "id": "hp3s_11",
-     "text": "The heap. O of k space.",
-     "start": 56.48,
-     "end": 58.2
-    }
-   ],
-   "pauses": [
-    {
-     "id": "hp3s-q",
-     "t": 35.61
-    }
-   ]
-  },
-  "hp4i": {
-   "src": "videos/hp4i.mp4",
-   "title": "Tying the Ropes",
-   "duration": 20.46,
-   "lines": [
-    {
-     "id": "hp4i_1",
-     "text": "Four ropes, to be tied into one. Tying two together costs their lengths, added up.",
-     "start": 0.2,
-     "end": 5.25
-    },
-    {
-     "id": "hp4i_2",
-     "text": "Return the smallest total cost of joining them all.",
-     "start": 5.95,
-     "end": 8.75
-    },
-    {
-     "id": "hp4i_3",
-     "text": "A rope that is tied in early is paid for again, in every join after that.",
-     "start": 9.45,
-     "end": 14.21
-    },
-    {
-     "id": "hp4i_4",
-     "text": "So which two should go first? And what about the new rope? Your turn.",
-     "start": 14.91,
-     "end": 18.86
-    }
-   ],
-   "pauses": []
-  },
-  "hp4s": {
-   "src": "videos/hp4s.mp4",
-   "title": "Always the two shortest",
-   "duration": 56.81,
-   "lines": [
-    {
-     "id": "hp4s_1",
-     "text": "A rope joined early is counted again in every later join. So the short ones should go first.",
-     "start": 0.2,
-     "end": 5.91
-    },
-    {
-     "id": "hp4s_2",
-     "text": "The two shortest, again and again, while new ropes keep arriving. That is the signal for a heap.",
-     "start": 6.66,
-     "end": 12.5
-    },
-    {
-     "id": "hp4s_3",
-     "text": "Line three pushes every rope into a min heap. Two is on top.",
-     "start": 13.25,
-     "end": 17.34
-    },
-    {
-     "id": "hp4s_4",
-     "text": "Line six pops the two shortest. Two and three. Joined, five. The cost is five. Line eight pushes the new rope back.",
-     "start": 18.09,
-     "end": 25.58
-    },
-    {
-     "id": "hp4s_5",
-     "text": "Again. The two shortest are now four, and the five we just made. What is the cost after this join?",
-     "start": 26.33,
-     "end": 32.61
-    },
-    {
-     "id": "hp4s_6",
-     "text": "Nine. The cost becomes fourteen. The nine goes back in.",
-     "start": 33.81,
-     "end": 37.57
-    },
-    {
-     "id": "hp4s_7",
-     "text": "Two ropes left. Six and nine. Fifteen. The cost is twenty nine.",
-     "start": 38.32,
-     "end": 42.72
-    },
-    {
-     "id": "hp4s_8",
-     "text": "One rope left. The loop ends, and line ten returns the cost.",
-     "start": 43.47,
-     "end": 47.62
-    },
-    {
-     "id": "hp4s_9",
-     "text": "About n joins, each a few heap operations. O of n log n.",
-     "start": 48.72,
-     "end": 52.82
-    },
-    {
-     "id": "hp4s_10",
-     "text": "The heap. O of n space.",
-     "start": 53.57,
-     "end": 55.21
-    }
-   ],
-   "pauses": [
-    {
-     "id": "hp4s-q",
-     "t": 32.81
-    }
-   ]
-  },
-  "hp5i": {
-   "src": "videos/hp5i.mp4",
-   "title": "Many Queues, One Line",
-   "duration": 20.99,
-   "lines": [
-    {
-     "id": "hp5i_1",
-     "text": "Several queues, each already in order, must become one line.",
-     "start": 0.2,
-     "end": 4
-    },
-    {
-     "id": "hp5i_2",
-     "text": "Return one sorted array with all the numbers. However many lists there are.",
-     "start": 4.7,
-     "end": 9.14
-    },
-    {
-     "id": "hp5i_3",
-     "text": "The next smallest number is always at the front of one of the lists.",
-     "start": 9.84,
-     "end": 13.73
-    },
-    {
-     "id": "hp5i_4",
-     "text": "So how many candidates do you ever need to compare? And what holds them? Your turn.",
-     "start": 14.43,
-     "end": 19.39
-    }
-   ],
-   "pauses": []
-  },
-  "hp5s": {
-   "src": "videos/hp5s.mp4",
-   "title": "One candidate per list",
-   "duration": 63.22,
-   "lines": [
-    {
-     "id": "hp5s_1",
-     "text": "The next smallest number is always at the front of one of the lists. So there is one candidate per list.",
-     "start": 0.2,
-     "end": 6.4
-    },
-    {
-     "id": "hp5s_2",
-     "text": "Keep the candidates in a min heap. Pop the smallest, and replace it with the next one from the same list.",
-     "start": 7.15,
-     "end": 13.42
-    },
-    {
-     "id": "hp5s_3",
-     "text": "Lines three to five push the front of every list. Each entry remembers its list, and its position.",
-     "start": 14.17,
-     "end": 20.36
-    },
-    {
-     "id": "hp5s_4",
-     "text": "Line eight pops the smallest. One, from list A. It goes to the output. And line twelve pushes the next of A. Six.",
-     "start": 21.11,
-     "end": 28.52
-    },
-    {
-     "id": "hp5s_5",
-     "text": "Pop again. Two, from list B. Output. The next of B is three.",
-     "start": 29.27,
-     "end": 33.32
-    },
-    {
-     "id": "hp5s_6",
-     "text": "The heap holds three and six. Three is popped. But list B has nothing after it. What does the heap hold now?",
-     "start": 34.07,
-     "end": 40.62
-    },
-    {
-     "id": "hp5s_7",
-     "text": "Only the six. Nothing is pushed when a list has run out.",
-     "start": 41.82,
-     "end": 45.23
-    },
-    {
-     "id": "hp5s_8",
-     "text": "Six is popped. The heap is empty, and line fifteen returns the output.",
-     "start": 45.98,
-     "end": 50.75
-    },
-    {
-     "id": "hp5s_9",
-     "text": "Every number is pushed and popped once, on a heap of k candidates. O of n log k.",
-     "start": 51.85,
-     "end": 57.74
-    },
-    {
-     "id": "hp5s_10",
-     "text": "The heap holds k entries. The output holds n.",
-     "start": 58.49,
-     "end": 61.62
-    }
-   ],
-   "pauses": [
-    {
-     "id": "hp5s-q",
-     "t": 40.82
-    }
-   ]
-  },
-  "hp6i": {
-   "src": "videos/hp6i.mp4",
-   "title": "The Middle, All the Time",
-   "duration": 22.29,
-   "lines": [
-    {
-     "id": "hp6i_1",
-     "text": "Numbers keep arriving, and after each one Moss wants the middle value.",
-     "start": 0.2,
-     "end": 4.49
-    },
-    {
-     "id": "hp6i_2",
-     "text": "Return the median after every arrival.",
-     "start": 5.19,
-     "end": 7.52
-    },
-    {
-     "id": "hp6i_3",
-     "text": "Sorting again each time is far too slow. And you only ever need the one or two values in the middle.",
-     "start": 8.22,
-     "end": 14.2
-    },
-    {
-     "id": "hp6i_4",
-     "text": "Cut the numbers into a small half and a big half. Which value of each half matters? Your turn.",
-     "start": 14.9,
-     "end": 20.69
-    }
-   ],
-   "pauses": []
-  },
-  "hp6s": {
-   "src": "videos/hp6s.mp4",
-   "title": "Two heaps, meeting in the middle",
-   "duration": 83.67,
-   "lines": [
-    {
-     "id": "hp6s_1",
-     "text": "Keep the small half of the numbers in one heap, and the big half in another.",
-     "start": 0.2,
-     "end": 4.57
-    },
-    {
-     "id": "hp6s_2",
-     "text": "Low keeps its biggest on top. High keeps its smallest on top. So the middle is always at the two tops.",
-     "start": 5.32,
-     "end": 12.03
-    },
-    {
-     "id": "hp6s_3",
-     "text": "Line two. Low is a max heap. The comparison is turned around, b minus a. Line three. High is an ordinary min heap.",
-     "start": 12.78,
-     "end": 20.81
-    },
-    {
-     "id": "hp6s_4",
-     "text": "Five arrives. It goes into low. Low hands its biggest to high. Then high is the bigger one, so it hands it back. Low holds the five.",
-     "start": 21.56,
-     "end": 30.17
-    },
-    {
-     "id": "hp6s_5",
-     "text": "Low is bigger. So the median is its top. Five.",
-     "start": 30.92,
-     "end": 33.99
-    },
-    {
-     "id": "hp6s_6",
-     "text": "Two arrives. Into low. Low hands its biggest, the five, to high. Now they are equal. The median is the average of the two tops.",
-     "start": 34.74,
-     "end": 43.41
-    },
-    {
-     "id": "hp6s_7",
-     "text": "Eight arrives. Into low. Low hands its biggest, the eight, to high. Now high holds two values, and low holds one. What does line eight do?",
-     "start": 44.16,
-     "end": 53.09
-    },
-    {
-     "id": "hp6s_8",
-     "text": "It moves the smallest of high, the five, back to low. Low is bigger again. The median is its top. Five.",
-     "start": 54.29,
-     "end": 61.2
-    },
-    {
-     "id": "hp6s_9",
-     "text": "One arrives. Into low. Low hands its biggest, the five, to high. Equal again. Two plus five, divided by two.",
-     "start": 61.95,
-     "end": 69.68
-    },
-    {
-     "id": "hp6s_10",
-     "text": "Line twelve returns the medians.",
-     "start": 70.43,
-     "end": 72.52
-    },
-    {
-     "id": "hp6s_11",
-     "text": "Each arrival is a few heap operations. O of n log n in total.",
-     "start": 73.62,
-     "end": 78.18
-    },
-    {
-     "id": "hp6s_12",
-     "text": "The two heaps hold every number. O of n space.",
-     "start": 78.93,
-     "end": 82.07
-    }
-   ],
-   "pauses": [
-    {
-     "id": "hp6s-q",
-     "t": 53.29
-    }
-   ]
-  },
   "hp0": {
    "src": "videos/hp0.mp4",
    "title": "Always the Smallest, Cheaply",
@@ -13221,6 +12573,432 @@ window.BURROW = {
     {
      "id": "hpt2-q1",
      "t": 19.61
+    }
+   ]
+  },
+  "tt1i": {
+   "src": "videos/tt1i.mp4",
+   "title": "A New Word",
+   "duration": 19.75,
+   "lines": [
+    {
+     "id": "tt1i_1",
+     "text": "This trie holds three words. Car, cat, and do. Now Hazel wants to add dot.",
+     "start": 0.2,
+     "end": 5.33
+    },
+    {
+     "id": "tt1i_2",
+     "text": "Add the word, and return the root.",
+     "start": 6.03,
+     "end": 7.98
+    },
+    {
+     "id": "tt1i_3",
+     "text": "Follow the letters from the top. The d is already there. So is the o.",
+     "start": 8.68,
+     "end": 12.96
+    },
+    {
+     "id": "tt1i_4",
+     "text": "What about the t? And how will anyone know that a word ends there? Your turn.",
+     "start": 13.66,
+     "end": 18.15
+    }
+   ],
+   "pauses": []
+  },
+  "tt1s": {
+   "src": "videos/tt1s.mp4",
+   "title": "Follow, or make the node",
+   "duration": 58.63,
+   "lines": [
+    {
+     "id": "tt1s_1",
+     "text": "Walk down the trie, letter by letter. If the letter already has a node, follow it.",
+     "start": 0.2,
+     "end": 5.21
+    },
+    {
+     "id": "tt1s_2",
+     "text": "If it does not, make the node. And after the last letter, mark that a word ends here.",
+     "start": 5.96,
+     "end": 11.01
+    },
+    {
+     "id": "tt1s_3",
+     "text": "Adding dot. The green nodes are where a word ends. Car, cat, and do. The marker starts on the root.",
+     "start": 11.76,
+     "end": 18.06
+    },
+    {
+     "id": "tt1s_4",
+     "text": "The letter d. The root already has a child d. So line seven just follows it.",
+     "start": 18.81,
+     "end": 23.94
+    },
+    {
+     "id": "tt1s_5",
+     "text": "The letter o. Already there, too. Follow it.",
+     "start": 24.69,
+     "end": 27.25
+    },
+    {
+     "id": "tt1s_6",
+     "text": "The letter t. There is a t in the trie, under the a. But does this node, the o, have a child t?",
+     "start": 28,
+     "end": 33.7
+    },
+    {
+     "id": "tt1s_7",
+     "text": "No. That other t belongs to cat. So line five makes a new node, under the o, and the marker moves into it.",
+     "start": 34.9,
+     "end": 41.95
+    },
+    {
+     "id": "tt1s_8",
+     "text": "The word is finished. Line nine marks the end of a word here.",
+     "start": 42.7,
+     "end": 46.39
+    },
+    {
+     "id": "tt1s_9",
+     "text": "Line ten returns the root. Dot is in the trie.",
+     "start": 47.14,
+     "end": 50.36
+    },
+    {
+     "id": "tt1s_10",
+     "text": "One step per letter. O of the length of the word.",
+     "start": 51.46,
+     "end": 54.33
+    },
+    {
+     "id": "tt1s_11",
+     "text": "At most one new node per letter.",
+     "start": 55.08,
+     "end": 57.02
+    }
+   ],
+   "pauses": [
+    {
+     "id": "tt1s-q",
+     "t": 33.9
+    }
+   ]
+  },
+  "tt2i": {
+   "src": "videos/tt2i.mp4",
+   "title": "Is It a Word?",
+   "duration": 19.7,
+   "lines": [
+    {
+     "id": "tt2i_1",
+     "text": "Moss asks the trie a question. Is c, a, a word?",
+     "start": 0.2,
+     "end": 3.58
+    },
+    {
+     "id": "tt2i_2",
+     "text": "Return true only if the word was added as a whole word.",
+     "start": 4.28,
+     "end": 7.63
+    },
+    {
+     "id": "tt2i_3",
+     "text": "Follow the letters down. C is there. A is there. The whole path exists.",
+     "start": 8.33,
+     "end": 12.78
+    },
+    {
+     "id": "tt2i_4",
+     "text": "So why should the answer still be false? And how can the code tell? Your turn.",
+     "start": 13.48,
+     "end": 18.09
+    }
+   ],
+   "pauses": []
+  },
+  "tt2s": {
+   "src": "videos/tt2s.mp4",
+   "title": "Walk down, then check the mark",
+   "duration": 54.06,
+   "lines": [
+    {
+     "id": "tt2s_1",
+     "text": "Walk down, one letter at a time. A missing letter means the word is not there.",
+     "start": 0.2,
+     "end": 5.17
+    },
+    {
+     "id": "tt2s_2",
+     "text": "And when every letter is found, one more check. Does a word end on this node?",
+     "start": 5.92,
+     "end": 10.6
+    },
+    {
+     "id": "tt2s_3",
+     "text": "Looking up c, a. The green nodes are where a word ends. The marker starts on the root.",
+     "start": 11.35,
+     "end": 16.57
+    },
+    {
+     "id": "tt2s_4",
+     "text": "The letter c. The root has a child c. Line five follows it.",
+     "start": 17.32,
+     "end": 20.88
+    },
+    {
+     "id": "tt2s_5",
+     "text": "The letter a. There too. Follow it.",
+     "start": 21.63,
+     "end": 23.72
+    },
+    {
+     "id": "tt2s_6",
+     "text": "The letters are used up. The marker is on the a. Car and cat both pass through here. What does line seven return?",
+     "start": 24.47,
+     "end": 31.12
+    },
+    {
+     "id": "tt2s_7",
+     "text": "False. The path exists, but no word ends on this node.",
+     "start": 32.32,
+     "end": 35.61
+    },
+    {
+     "id": "tt2s_8",
+     "text": "And for a word like dog, line four stops earlier. The o has no child g, so it returns false at once.",
+     "start": 36.71,
+     "end": 43.95
+    },
+    {
+     "id": "tt2s_9",
+     "text": "One step per letter. O of the length of the word, however many words are stored.",
+     "start": 44.7,
+     "end": 49.7
+    },
+    {
+     "id": "tt2s_10",
+     "text": "One marker. O of one space.",
+     "start": 50.45,
+     "end": 52.46
+    }
+   ],
+   "pauses": [
+    {
+     "id": "tt2s-q",
+     "t": 31.32
+    }
+   ]
+  },
+  "tt3i": {
+   "src": "videos/tt3i.mp4",
+   "title": "Finish My Word",
+   "duration": 21.63,
+   "lines": [
+    {
+     "id": "tt3i_1",
+     "text": "Pip types a c. The search box should offer every word that starts with it.",
+     "start": 0.2,
+     "end": 4.45
+    },
+    {
+     "id": "tt3i_2",
+     "text": "Return all the words in the trie that begin with the prefix, in alphabetical order.",
+     "start": 5.15,
+     "end": 10.53
+    },
+    {
+     "id": "tt3i_3",
+     "text": "Every one of those words passes through the same node. The one you reach by following the prefix.",
+     "start": 11.23,
+     "end": 16.89
+    },
+    {
+     "id": "tt3i_4",
+     "text": "So get there first. And then? Your turn.",
+     "start": 17.59,
+     "end": 20.03
+    }
+   ],
+   "pauses": []
+  },
+  "tt3s": {
+   "src": "videos/tt3s.mp4",
+   "title": "Down the prefix, then all below",
+   "duration": 66.89,
+   "lines": [
+    {
+     "id": "tt3s_1",
+     "text": "Every word that starts with the prefix lives below one node. The node you reach by following the prefix.",
+     "start": 0.2,
+     "end": 6.45
+    },
+    {
+     "id": "tt3s_2",
+     "text": "So walk down the prefix. Then visit everything below it, depth first, carrying the letters so far.",
+     "start": 7.2,
+     "end": 13.62
+    },
+    {
+     "id": "tt3s_3",
+     "text": "The prefix is c. Lines two to six walk down it, exactly like a lookup. The marker lands on the c.",
+     "start": 14.37,
+     "end": 21.08
+    },
+    {
+     "id": "tt3s_4",
+     "text": "Line fourteen starts the walk here, with the text c. No word ends on c. So line eleven goes to its child, a, with the text c, a.",
+     "start": 21.83,
+     "end": 30.64
+    },
+    {
+     "id": "tt3s_5",
+     "text": "No word ends on a, either. Its children, in sorted order, are r, and t. First r. The text is now car. What does line nine do?",
+     "start": 31.39,
+     "end": 40.14
+    },
+    {
+     "id": "tt3s_6",
+     "text": "A word ends here. So car goes into the output.",
+     "start": 41.34,
+     "end": 44.46
+    },
+    {
+     "id": "tt3s_7",
+     "text": "Back up, and into the t. The text is cat. A word ends here too.",
+     "start": 45.21,
+     "end": 49.27
+    },
+    {
+     "id": "tt3s_8",
+     "text": "Nothing is left below the c. The d side was never visited. Line fifteen returns the output.",
+     "start": 50.02,
+     "end": 56.47
+    },
+    {
+     "id": "tt3s_9",
+     "text": "The length of the prefix, plus every node below it.",
+     "start": 57.57,
+     "end": 60.59
+    },
+    {
+     "id": "tt3s_10",
+     "text": "The output, and the waiting calls, as deep as the longest word.",
+     "start": 61.34,
+     "end": 65.29
+    }
+   ],
+   "pauses": [
+    {
+     "id": "tt3s-q",
+     "t": 40.34
+    }
+   ]
+  },
+  "tt0": {
+   "src": "videos/tt0.mp4",
+   "title": "A Tree for Words",
+   "duration": 23.63,
+   "lines": [
+    {
+     "id": "jw1",
+     "text": "Chapter seventeen. Tries. A tree for words.",
+     "start": 0.2,
+     "end": 3.43
+    },
+    {
+     "id": "jw2",
+     "text": "Search boxes that finish your word. Spell checkers. Word games. They all ask the same thing. Which words start with these letters?",
+     "start": 4.13,
+     "end": 12.47
+    },
+    {
+     "id": "jw3",
+     "text": "A trie answers that by sharing the beginnings. Words that start the same way walk the same path.",
+     "start": 13.37,
+     "end": 19.1
+    },
+    {
+     "id": "jw4",
+     "text": "One idea, and three puzzles.",
+     "start": 20,
+     "end": 22.03
+    }
+   ],
+   "pauses": []
+  },
+  "ttt1": {
+   "src": "videos/ttt1.mp4",
+   "title": "Words That Share a Path",
+   "duration": 72.82,
+   "lines": [
+    {
+     "id": "jx1",
+     "text": "Pip types c, a. And the search box already offers car, and cat. How does it find them so fast, among a hundred thousand words?",
+     "start": 0.2,
+     "end": 8.49
+    },
+    {
+     "id": "jx2",
+     "text": "Not by checking every word. It keeps the words in a tree of letters. A trie.",
+     "start": 9.39,
+     "end": 14.24
+    },
+    {
+     "id": "jx3",
+     "text": "Each node is one letter. Start at the top, and follow the letters down. C. A. R. That path spells car.",
+     "start": 15.14,
+     "end": 21.68
+    },
+    {
+     "id": "jx4",
+     "text": "Cat starts the same way. So it shares the c and the a, and only adds a t.",
+     "start": 22.68,
+     "end": 27.55
+    },
+    {
+     "id": "jx5",
+     "text": "But there is a catch. Is c, a, a word? The path exists. So each node also carries a mark. A word ends here.",
+     "start": 28.55,
+     "end": 35.93
+    },
+    {
+     "id": "jx6",
+     "text": "In code, a node is small. An object of children, one per letter. And the end mark.",
+     "start": 36.93,
+     "end": 42.58
+    },
+    {
+     "id": "jx7",
+     "text": "To look up a word, walk down letter by letter. If a letter is missing, the word is not there. Now try d, o, g. What happens?",
+     "start": 43.58,
+     "end": 52.1
+    },
+    {
+     "id": "jx8",
+     "text": "D is there. O is there. But o has no child g. So dog is not in the trie.",
+     "start": 53.3,
+     "end": 58.56
+    },
+    {
+     "id": "jx9",
+     "text": "The cost depends only on the length of the word. Not on how many words are stored. That is the whole point.",
+     "start": 59.56,
+     "end": 65.83
+    },
+    {
+     "id": "jx10",
+     "text": "Words that share a beginning. Prefixes. Autocomplete. Think of a trie.",
+     "start": 66.83,
+     "end": 71.22
+    }
+   ],
+   "pauses": [
+    {
+     "id": "ttt1-q1",
+     "t": 52.3
     }
    ]
   },
@@ -13760,6 +13538,181 @@ window.BURROW = {
      "t": 39.08
     }
    ]
+  },
+  "mz0": {
+   "src": "videos/mz0.mp4",
+   "title": "The Signals of Part 3",
+   "duration": 35.8,
+   "lines": [
+    {
+     "id": "zw1",
+     "text": "Mixed set three. Eight puzzles, with no labels. Trees, heaps, tries, and everything before them.",
+     "start": 0.2,
+     "end": 6.64
+    },
+    {
+     "id": "zw2",
+     "text": "Part three gave you new signals. A node with children, and an answer built from its two sides. Go deep.",
+     "start": 7.44,
+     "end": 13.83
+    },
+    {
+     "id": "zw3",
+     "text": "Levels, or the nearest something. Go level by level, with a queue.",
+     "start": 14.73,
+     "end": 18.56
+    },
+    {
+     "id": "zw4",
+     "text": "An ordered tree. Compare, and throw a whole side away. And the smallest, again and again, while things keep arriving. A heap.",
+     "start": 19.46,
+     "end": 27.23
+    },
+    {
+     "id": "zw5",
+     "text": "Words by their beginnings. A trie. Or sometimes, just a set. Name the tool before you code.",
+     "start": 28.13,
+     "end": 34.2
+    }
+   ],
+   "pauses": []
+  },
+  "mz1i": {
+   "src": "videos/mz1i.mp4",
+   "title": "The Sum Tree",
+   "duration": 17.94,
+   "lines": [
+    {
+     "id": "mz1i_1",
+     "text": "A sum, written as a tree. The numbers are on the leaves. The signs are above them.",
+     "start": 0.2,
+     "end": 5.32
+    },
+    {
+     "id": "mz1i_2",
+     "text": "Return the value of the whole tree.",
+     "start": 6.02,
+     "end": 7.86
+    },
+    {
+     "id": "mz1i_3",
+     "text": "The plus at the top cannot be worked out yet. It needs to know what its left side is worth.",
+     "start": 8.56,
+     "end": 13.65
+    },
+    {
+     "id": "mz1i_4",
+     "text": "And who can tell it that? Your turn.",
+     "start": 14.35,
+     "end": 16.34
+    }
+   ],
+   "pauses": []
+  },
+  "mz1s": {
+   "src": "videos/mz1s.mp4",
+   "title": "Each side first, then the sign",
+   "duration": 57.22,
+   "lines": [
+    {
+     "id": "mz1s_1",
+     "text": "An operator needs the value of its two sides. And each side is a smaller tree of the same kind.",
+     "start": 0.2,
+     "end": 6.32
+    },
+    {
+     "id": "mz1s_2",
+     "text": "So ask the same function for each side, then apply the sign. A leaf is simply its number.",
+     "start": 7.07,
+     "end": 12.93
+    },
+    {
+     "id": "mz1s_3",
+     "text": "The first call stands on the plus. Not a number. So line three asks for the value of the left side.",
+     "start": 13.68,
+     "end": 19.62
+    },
+    {
+     "id": "mz1s_4",
+     "text": "The times node. Not a number either. It asks its own left side. The two is a leaf. Line two returns two.",
+     "start": 20.37,
+     "end": 27.57
+    },
+    {
+     "id": "mz1s_5",
+     "text": "Its right side. Three. A leaf. Back on the times node, left is two, and right is three. What does it return?",
+     "start": 28.32,
+     "end": 35.25
+    },
+    {
+     "id": "mz1s_6",
+     "text": "Six. This whole side is worth six.",
+     "start": 36.45,
+     "end": 38.61
+    },
+    {
+     "id": "mz1s_7",
+     "text": "Back on the plus. Now the right side. Four. A leaf.",
+     "start": 39.36,
+     "end": 42.55
+    },
+    {
+     "id": "mz1s_8",
+     "text": "Left is six. Right is four. The sign is plus. Ten.",
+     "start": 43.3,
+     "end": 46.58
+    },
+    {
+     "id": "mz1s_9",
+     "text": "Every node is visited once. O of n time.",
+     "start": 47.68,
+     "end": 50.68
+    },
+    {
+     "id": "mz1s_10",
+     "text": "The waiting calls are as deep as the tree is tall. O of height space.",
+     "start": 51.43,
+     "end": 55.62
+    }
+   ],
+   "pauses": [
+    {
+     "id": "mz1s-q",
+     "t": 35.45
+    }
+   ]
+  },
+  "mz2i": {
+   "src": "videos/mz2i.mp4",
+   "title": "The Nearest Way Out",
+   "duration": 20.97,
+   "lines": [
+    {
+     "id": "mz2i_1",
+     "text": "Moss wants the nearest way out of the tree. The closest leaf to the root.",
+     "start": 0.2,
+     "end": 4.47
+    },
+    {
+     "id": "mz2i_2",
+     "text": "Return the number of nodes on the shortest path from the root to a leaf.",
+     "start": 5.17,
+     "end": 9.11
+    },
+    {
+     "id": "mz2i_3",
+     "text": "Going deep would find the leaves at the bottom left first. They are not the nearest.",
+     "start": 9.81,
+     "end": 14.66
+    },
+    {
+     "id": "mz2i_4",
+     "text": "Which way of walking a tree meets the nearest things first? Your turn.",
+     "start": 15.36,
+     "end": 19.37
+    }
+   ],
+   "pauses": []
   },
   "my1i": {
    "src": "videos/my1i.mp4",
@@ -16188,6 +16141,654 @@ window.BURROW = {
     {
      "id": "bt4s-q",
      "t": 29.22
+    }
+   ]
+  },
+  "hp1i": {
+   "src": "videos/hp1i.mp4",
+   "title": "A New Arrival",
+   "duration": 21.8,
+   "lines": [
+    {
+     "id": "hp1i_1",
+     "text": "This heap keeps its rule. Every parent is smaller than its children. Now a one arrives.",
+     "start": 0.2,
+     "end": 5.83
+    },
+    {
+     "id": "hp1i_2",
+     "text": "Add the value, keep the rule, and return the array.",
+     "start": 6.53,
+     "end": 9.38
+    },
+    {
+     "id": "hp1i_3",
+     "text": "There is only one spot that leaves no gap. The next free place, at the end.",
+     "start": 10.08,
+     "end": 14.39
+    },
+    {
+     "id": "hp1i_4",
+     "text": "But down there, the one is smaller than its parent. What would fix that? Your turn.",
+     "start": 15.09,
+     "end": 20.2
+    }
+   ],
+   "pauses": []
+  },
+  "hp1s": {
+   "src": "videos/hp1s.mp4",
+   "title": "Add at the end, sift up",
+   "duration": 60.51,
+   "lines": [
+    {
+     "id": "hp1s_1",
+     "text": "The new value goes in the next free spot, at the end of the array. Here, the one, at position five.",
+     "start": 0.2,
+     "end": 6.11
+    },
+    {
+     "id": "hp1s_2",
+     "text": "Then, while it is smaller than its parent, swap the two. It climbs until the rule holds.",
+     "start": 6.86,
+     "end": 12.24
+    },
+    {
+     "id": "hp1s_3",
+     "text": "Line two pushes the one. Line three remembers where it is. Position five.",
+     "start": 12.99,
+     "end": 18.1
+    },
+    {
+     "id": "hp1s_4",
+     "text": "Line five finds the parent. Five minus one, divided by two. Position two. That is the three.",
+     "start": 18.85,
+     "end": 25.64
+    },
+    {
+     "id": "hp1s_5",
+     "text": "Is three smaller than one? No. So line seven swaps them, and i moves up to position two.",
+     "start": 26.39,
+     "end": 32.82
+    },
+    {
+     "id": "hp1s_6",
+     "text": "Again. The parent of position two is position zero. The two. And the two is bigger than the one. What happens?",
+     "start": 33.57,
+     "end": 40.79
+    },
+    {
+     "id": "hp1s_7",
+     "text": "Another swap. The one is the root, and i is zero.",
+     "start": 41.99,
+     "end": 45.29
+    },
+    {
+     "id": "hp1s_8",
+     "text": "The loop needs i above zero. It ends, and line ten returns the heap.",
+     "start": 46.04,
+     "end": 50.55
+    },
+    {
+     "id": "hp1s_9",
+     "text": "At most one swap per level, and there are only log n levels.",
+     "start": 51.65,
+     "end": 55.51
+    },
+    {
+     "id": "hp1s_10",
+     "text": "Two numbers. O of one extra space.",
+     "start": 56.26,
+     "end": 58.91
+    }
+   ],
+   "pauses": [
+    {
+     "id": "hp1s-q",
+     "t": 40.99
+    }
+   ]
+  },
+  "hp2i": {
+   "src": "videos/hp2i.mp4",
+   "title": "Take the Smallest",
+   "duration": 21.87,
+   "lines": [
+    {
+     "id": "hp2i_1",
+     "text": "Hazel takes the smallest value. It is always on top.",
+     "start": 0.2,
+     "end": 3.77
+    },
+    {
+     "id": "hp2i_2",
+     "text": "Remove it, return it, and leave a valid heap behind.",
+     "start": 4.47,
+     "end": 7.65
+    },
+    {
+     "id": "hp2i_3",
+     "text": "Taking the top leaves a hole. Only one value can fill it without leaving a gap. The last one.",
+     "start": 8.35,
+     "end": 14.32
+    },
+    {
+     "id": "hp2i_4",
+     "text": "But the last one is big, and now it is on top. How does it get back down? Your turn.",
+     "start": 15.02,
+     "end": 20.27
+    }
+   ],
+   "pauses": []
+  },
+  "hp2s": {
+   "src": "videos/hp2s.mp4",
+   "title": "Last to the top, sift down",
+   "duration": 63.53,
+   "lines": [
+    {
+     "id": "hp2s_1",
+     "text": "The smallest is the root. Take it, and fill the hole with the last value in the array. The shape stays right.",
+     "start": 0.2,
+     "end": 6.8
+    },
+    {
+     "id": "hp2s_2",
+     "text": "Then let that value sink. Swap it with its smaller child, until no child is smaller.",
+     "start": 7.55,
+     "end": 13.08
+    },
+    {
+     "id": "hp2s_3",
+     "text": "Line two remembers the top. One.",
+     "start": 13.83,
+     "end": 16.12
+    },
+    {
+     "id": "hp2s_4",
+     "text": "Line three takes the last value, three, off the end. Line five puts it on top.",
+     "start": 16.87,
+     "end": 21.98
+    },
+    {
+     "id": "hp2s_5",
+     "text": "Small starts as i. Lines nine to twelve look at both children. Five, and two. Two is the smallest of the three.",
+     "start": 22.73,
+     "end": 29.99
+    },
+    {
+     "id": "hp2s_6",
+     "text": "Small is not i. So line fourteen swaps the three with the two, and i moves down to position two.",
+     "start": 30.74,
+     "end": 37.47
+    },
+    {
+     "id": "hp2s_7",
+     "text": "Again. The children of position two would be at positions five and six. But the array now has only five values. What happens?",
+     "start": 38.22,
+     "end": 46.52
+    },
+    {
+     "id": "hp2s_8",
+     "text": "No children. Small is still i. The three has found its place. Line thirteen returns the top. One.",
+     "start": 47.72,
+     "end": 54.37
+    },
+    {
+     "id": "hp2s_9",
+     "text": "At most one swap per level. O of log n.",
+     "start": 55.47,
+     "end": 58.29
+    },
+    {
+     "id": "hp2s_10",
+     "text": "A few numbers. O of one extra space.",
+     "start": 59.04,
+     "end": 61.93
+    }
+   ],
+   "pauses": [
+    {
+     "id": "hp2s-q",
+     "t": 46.72
+    }
+   ]
+  },
+  "hp3i": {
+   "src": "videos/hp3i.mp4",
+   "title": "The Runner-Up",
+   "duration": 20.18,
+   "lines": [
+    {
+     "id": "hp3i_1",
+     "text": "The numbers arrive one at a time. Pip wants the second largest.",
+     "start": 0.2,
+     "end": 4.14
+    },
+    {
+     "id": "hp3i_2",
+     "text": "Return the k-th largest number. Here, k is two.",
+     "start": 4.84,
+     "end": 8.33
+    },
+    {
+     "id": "hp3i_3",
+     "text": "You never need more than the k largest numbers seen so far.",
+     "start": 9.03,
+     "end": 12.83
+    },
+    {
+     "id": "hp3i_4",
+     "text": "When one more arrives, which one do you throw out? And what hands it to you? Your turn.",
+     "start": 13.53,
+     "end": 18.58
+    }
+   ],
+   "pauses": []
+  },
+  "hp3s": {
+   "src": "videos/hp3s.mp4",
+   "title": "A heap that holds only k",
+   "duration": 59.8,
+   "lines": [
+    {
+     "id": "hp3s_1",
+     "text": "Keep only the k largest numbers seen so far. The smallest of those is the k-th largest.",
+     "start": 0.2,
+     "end": 6.48
+    },
+    {
+     "id": "hp3s_2",
+     "text": "When there is one too many, the smallest must go. A min heap has it on top.",
+     "start": 7.23,
+     "end": 11.91
+    },
+    {
+     "id": "hp3s_3",
+     "text": "K is two. Line two makes a heap with the smallest on top. Five is pushed.",
+     "start": 12.66,
+     "end": 17.83
+    },
+    {
+     "id": "hp3s_4",
+     "text": "Two is pushed. The heap holds two values. That is not more than k.",
+     "start": 18.58,
+     "end": 22.82
+    },
+    {
+     "id": "hp3s_5",
+     "text": "Nine is pushed. Three values. One too many. Line five pops the smallest. The two.",
+     "start": 23.57,
+     "end": 29.56
+    },
+    {
+     "id": "hp3s_6",
+     "text": "One is pushed. The heap holds one, five, nine. Which value does line five pop?",
+     "start": 30.31,
+     "end": 35.41
+    },
+    {
+     "id": "hp3s_7",
+     "text": "The one. It went straight back out.",
+     "start": 36.61,
+     "end": 38.33
+    },
+    {
+     "id": "hp3s_8",
+     "text": "Seven is pushed. Five, seven, nine. The five is popped.",
+     "start": 39.08,
+     "end": 42.53
+    },
+    {
+     "id": "hp3s_9",
+     "text": "The heap holds the two largest. Seven and nine. Line seven returns the top.",
+     "start": 43.28,
+     "end": 48.31
+    },
+    {
+     "id": "hp3s_10",
+     "text": "n pushes, on a heap that never holds more than k plus one values. O of n log k.",
+     "start": 49.41,
+     "end": 55.73
+    },
+    {
+     "id": "hp3s_11",
+     "text": "The heap. O of k space.",
+     "start": 56.48,
+     "end": 58.2
+    }
+   ],
+   "pauses": [
+    {
+     "id": "hp3s-q",
+     "t": 35.61
+    }
+   ]
+  },
+  "hp4i": {
+   "src": "videos/hp4i.mp4",
+   "title": "Tying the Ropes",
+   "duration": 20.46,
+   "lines": [
+    {
+     "id": "hp4i_1",
+     "text": "Four ropes, to be tied into one. Tying two together costs their lengths, added up.",
+     "start": 0.2,
+     "end": 5.25
+    },
+    {
+     "id": "hp4i_2",
+     "text": "Return the smallest total cost of joining them all.",
+     "start": 5.95,
+     "end": 8.75
+    },
+    {
+     "id": "hp4i_3",
+     "text": "A rope that is tied in early is paid for again, in every join after that.",
+     "start": 9.45,
+     "end": 14.21
+    },
+    {
+     "id": "hp4i_4",
+     "text": "So which two should go first? And what about the new rope? Your turn.",
+     "start": 14.91,
+     "end": 18.86
+    }
+   ],
+   "pauses": []
+  },
+  "hp4s": {
+   "src": "videos/hp4s.mp4",
+   "title": "Always the two shortest",
+   "duration": 56.81,
+   "lines": [
+    {
+     "id": "hp4s_1",
+     "text": "A rope joined early is counted again in every later join. So the short ones should go first.",
+     "start": 0.2,
+     "end": 5.91
+    },
+    {
+     "id": "hp4s_2",
+     "text": "The two shortest, again and again, while new ropes keep arriving. That is the signal for a heap.",
+     "start": 6.66,
+     "end": 12.5
+    },
+    {
+     "id": "hp4s_3",
+     "text": "Line three pushes every rope into a min heap. Two is on top.",
+     "start": 13.25,
+     "end": 17.34
+    },
+    {
+     "id": "hp4s_4",
+     "text": "Line six pops the two shortest. Two and three. Joined, five. The cost is five. Line eight pushes the new rope back.",
+     "start": 18.09,
+     "end": 25.58
+    },
+    {
+     "id": "hp4s_5",
+     "text": "Again. The two shortest are now four, and the five we just made. What is the cost after this join?",
+     "start": 26.33,
+     "end": 32.61
+    },
+    {
+     "id": "hp4s_6",
+     "text": "Nine. The cost becomes fourteen. The nine goes back in.",
+     "start": 33.81,
+     "end": 37.57
+    },
+    {
+     "id": "hp4s_7",
+     "text": "Two ropes left. Six and nine. Fifteen. The cost is twenty nine.",
+     "start": 38.32,
+     "end": 42.72
+    },
+    {
+     "id": "hp4s_8",
+     "text": "One rope left. The loop ends, and line ten returns the cost.",
+     "start": 43.47,
+     "end": 47.62
+    },
+    {
+     "id": "hp4s_9",
+     "text": "About n joins, each a few heap operations. O of n log n.",
+     "start": 48.72,
+     "end": 52.82
+    },
+    {
+     "id": "hp4s_10",
+     "text": "The heap. O of n space.",
+     "start": 53.57,
+     "end": 55.21
+    }
+   ],
+   "pauses": [
+    {
+     "id": "hp4s-q",
+     "t": 32.81
+    }
+   ]
+  },
+  "hp5i": {
+   "src": "videos/hp5i.mp4",
+   "title": "Many Queues, One Line",
+   "duration": 20.99,
+   "lines": [
+    {
+     "id": "hp5i_1",
+     "text": "Several queues, each already in order, must become one line.",
+     "start": 0.2,
+     "end": 4
+    },
+    {
+     "id": "hp5i_2",
+     "text": "Return one sorted array with all the numbers. However many lists there are.",
+     "start": 4.7,
+     "end": 9.14
+    },
+    {
+     "id": "hp5i_3",
+     "text": "The next smallest number is always at the front of one of the lists.",
+     "start": 9.84,
+     "end": 13.73
+    },
+    {
+     "id": "hp5i_4",
+     "text": "So how many candidates do you ever need to compare? And what holds them? Your turn.",
+     "start": 14.43,
+     "end": 19.39
+    }
+   ],
+   "pauses": []
+  },
+  "hp5s": {
+   "src": "videos/hp5s.mp4",
+   "title": "One candidate per list",
+   "duration": 63.22,
+   "lines": [
+    {
+     "id": "hp5s_1",
+     "text": "The next smallest number is always at the front of one of the lists. So there is one candidate per list.",
+     "start": 0.2,
+     "end": 6.4
+    },
+    {
+     "id": "hp5s_2",
+     "text": "Keep the candidates in a min heap. Pop the smallest, and replace it with the next one from the same list.",
+     "start": 7.15,
+     "end": 13.42
+    },
+    {
+     "id": "hp5s_3",
+     "text": "Lines three to five push the front of every list. Each entry remembers its list, and its position.",
+     "start": 14.17,
+     "end": 20.36
+    },
+    {
+     "id": "hp5s_4",
+     "text": "Line eight pops the smallest. One, from list A. It goes to the output. And line twelve pushes the next of A. Six.",
+     "start": 21.11,
+     "end": 28.52
+    },
+    {
+     "id": "hp5s_5",
+     "text": "Pop again. Two, from list B. Output. The next of B is three.",
+     "start": 29.27,
+     "end": 33.32
+    },
+    {
+     "id": "hp5s_6",
+     "text": "The heap holds three and six. Three is popped. But list B has nothing after it. What does the heap hold now?",
+     "start": 34.07,
+     "end": 40.62
+    },
+    {
+     "id": "hp5s_7",
+     "text": "Only the six. Nothing is pushed when a list has run out.",
+     "start": 41.82,
+     "end": 45.23
+    },
+    {
+     "id": "hp5s_8",
+     "text": "Six is popped. The heap is empty, and line fifteen returns the output.",
+     "start": 45.98,
+     "end": 50.75
+    },
+    {
+     "id": "hp5s_9",
+     "text": "Every number is pushed and popped once, on a heap of k candidates. O of n log k.",
+     "start": 51.85,
+     "end": 57.74
+    },
+    {
+     "id": "hp5s_10",
+     "text": "The heap holds k entries. The output holds n.",
+     "start": 58.49,
+     "end": 61.62
+    }
+   ],
+   "pauses": [
+    {
+     "id": "hp5s-q",
+     "t": 40.82
+    }
+   ]
+  },
+  "hp6i": {
+   "src": "videos/hp6i.mp4",
+   "title": "The Middle, All the Time",
+   "duration": 22.29,
+   "lines": [
+    {
+     "id": "hp6i_1",
+     "text": "Numbers keep arriving, and after each one Moss wants the middle value.",
+     "start": 0.2,
+     "end": 4.49
+    },
+    {
+     "id": "hp6i_2",
+     "text": "Return the median after every arrival.",
+     "start": 5.19,
+     "end": 7.52
+    },
+    {
+     "id": "hp6i_3",
+     "text": "Sorting again each time is far too slow. And you only ever need the one or two values in the middle.",
+     "start": 8.22,
+     "end": 14.2
+    },
+    {
+     "id": "hp6i_4",
+     "text": "Cut the numbers into a small half and a big half. Which value of each half matters? Your turn.",
+     "start": 14.9,
+     "end": 20.69
+    }
+   ],
+   "pauses": []
+  },
+  "hp6s": {
+   "src": "videos/hp6s.mp4",
+   "title": "Two heaps, meeting in the middle",
+   "duration": 83.67,
+   "lines": [
+    {
+     "id": "hp6s_1",
+     "text": "Keep the small half of the numbers in one heap, and the big half in another.",
+     "start": 0.2,
+     "end": 4.57
+    },
+    {
+     "id": "hp6s_2",
+     "text": "Low keeps its biggest on top. High keeps its smallest on top. So the middle is always at the two tops.",
+     "start": 5.32,
+     "end": 12.03
+    },
+    {
+     "id": "hp6s_3",
+     "text": "Line two. Low is a max heap. The comparison is turned around, b minus a. Line three. High is an ordinary min heap.",
+     "start": 12.78,
+     "end": 20.81
+    },
+    {
+     "id": "hp6s_4",
+     "text": "Five arrives. It goes into low. Low hands its biggest to high. Then high is the bigger one, so it hands it back. Low holds the five.",
+     "start": 21.56,
+     "end": 30.17
+    },
+    {
+     "id": "hp6s_5",
+     "text": "Low is bigger. So the median is its top. Five.",
+     "start": 30.92,
+     "end": 33.99
+    },
+    {
+     "id": "hp6s_6",
+     "text": "Two arrives. Into low. Low hands its biggest, the five, to high. Now they are equal. The median is the average of the two tops.",
+     "start": 34.74,
+     "end": 43.41
+    },
+    {
+     "id": "hp6s_7",
+     "text": "Eight arrives. Into low. Low hands its biggest, the eight, to high. Now high holds two values, and low holds one. What does line eight do?",
+     "start": 44.16,
+     "end": 53.09
+    },
+    {
+     "id": "hp6s_8",
+     "text": "It moves the smallest of high, the five, back to low. Low is bigger again. The median is its top. Five.",
+     "start": 54.29,
+     "end": 61.2
+    },
+    {
+     "id": "hp6s_9",
+     "text": "One arrives. Into low. Low hands its biggest, the five, to high. Equal again. Two plus five, divided by two.",
+     "start": 61.95,
+     "end": 69.68
+    },
+    {
+     "id": "hp6s_10",
+     "text": "Line twelve returns the medians.",
+     "start": 70.43,
+     "end": 72.52
+    },
+    {
+     "id": "hp6s_11",
+     "text": "Each arrival is a few heap operations. O of n log n in total.",
+     "start": 73.62,
+     "end": 78.18
+    },
+    {
+     "id": "hp6s_12",
+     "text": "The two heaps hold every number. O of n space.",
+     "start": 78.93,
+     "end": 82.07
+    }
+   ],
+   "pauses": [
+    {
+     "id": "hp6s-q",
+     "t": 53.29
     }
    ]
   }
