@@ -4,8 +4,8 @@ window.CHAPTER = {
  "sub": "CHAPTER 17 · TRIES",
  "key": "burrow-ch-tries",
  "next": {
-  "href": "index.html#chapters",
-  "label": "All chapters"
+  "href": "chapter.html?c=mixed3",
+  "label": "Mixed set 3"
  },
  "prev": {
   "href": "chapter.html?c=heaps",
