@@ -4,8 +4,8 @@ window.CHAPTER = {
  "sub": "CHAPTER 12 · SORTING",
  "key": "burrow-ch-sorting",
  "next": {
-  "href": "index.html#chapters",
-  "label": "All chapters"
+  "href": "chapter.html?c=intervals",
+  "label": "Chapter 13: Intervals"
  },
  "prev": {
   "href": "chapter.html?c=bsearch",
@@ -228,6 +228,7 @@ window.CHAPTER = {
      8,
      1
     ],
+    "tree": null,
     "row2": [
      "",
      "",
@@ -551,6 +552,7 @@ window.CHAPTER = {
      13,
      5
     ],
+    "tree": null,
     "row2": null,
     "rowLabel": "",
     "row2Label": "",
@@ -868,6 +870,7 @@ window.CHAPTER = {
      "Moss",
      "Hazel"
     ],
+    "tree": null,
     "row2": [
      30,
      12,

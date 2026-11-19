@@ -7863,333 +7863,6 @@ window.BURROW = {
     }
    ]
   },
-  "sg1i": {
-   "src": "videos/sg1i.mp4",
-   "title": "Split, Sort, Merge",
-   "duration": 20.13,
-   "lines": [
-    {
-     "id": "sg1i_1",
-     "text": "Four parcels, out of order. And this once, you have to sort them yourself.",
-     "start": 0.2,
-     "end": 4.49
-    },
-    {
-     "id": "sg1i_2",
-     "text": "Return a new array with the numbers in order. No built-in sort.",
-     "start": 5.19,
-     "end": 9.27
-    },
-    {
-     "id": "sg1i_3",
-     "text": "Here is a thought. If each half of the row were already sorted, you would know what to do.",
-     "start": 9.97,
-     "end": 15.08
-    },
-    {
-     "id": "sg1i_4",
-     "text": "So how do you get two sorted halves? Your turn.",
-     "start": 15.78,
-     "end": 18.53
-    }
-   ],
-   "pauses": []
-  },
-  "sg1s": {
-   "src": "videos/sg1s.mp4",
-   "title": "Trust the halves, then merge",
-   "duration": 65.28,
-   "lines": [
-    {
-     "id": "sg1s_1",
-     "text": "Two sorted halves can be merged in one pass, with two markers. You have done that.",
-     "start": 0.2,
-     "end": 5.53
-    },
-    {
-     "id": "sg1s_2",
-     "text": "And each half gets sorted by the very same function. That is recursion. Trust it.",
-     "start": 6.28,
-     "end": 11.87
-    },
-    {
-     "id": "sg1s_3",
-     "text": "Line two is the base case. A row of one number is already sorted.",
-     "start": 12.62,
-     "end": 17.07
-    },
-    {
-     "id": "sg1s_4",
-     "text": "Line three finds the middle. The row splits into five, two. And eight, one.",
-     "start": 17.82,
-     "end": 22.58
-    },
-    {
-     "id": "sg1s_5",
-     "text": "Lines four and five sort each half, by calling merge sort on it. Trust the result. Two, five. And one, eight.",
-     "start": 23.33,
-     "end": 29.87
-    },
-    {
-     "id": "sg1s_6",
-     "text": "Now merge. A marker at the front of each half. Two against one. One is smaller, so it goes out first.",
-     "start": 30.62,
-     "end": 36.99
-    },
-    {
-     "id": "sg1s_7",
-     "text": "J moves on. Two against eight. Which one goes out?",
-     "start": 37.74,
-     "end": 40.86
-    },
-    {
-     "id": "sg1s_8",
-     "text": "Two. Then five against eight. Five.",
-     "start": 42.06,
-     "end": 44.13
-    },
-    {
-     "id": "sg1s_9",
-     "text": "The left half is used up. Line thirteen adds whatever is left of the other half. Eight.",
-     "start": 44.88,
-     "end": 50.49
-    },
-    {
-     "id": "sg1s_10",
-     "text": "The row is halved about log n times, and each level merges n numbers. O of n log n time.",
-     "start": 51.59,
-     "end": 58.31
-    },
-    {
-     "id": "sg1s_11",
-     "text": "The halves and the merged rows are new arrays. O of n extra space.",
-     "start": 59.06,
-     "end": 63.68
-    }
-   ],
-   "pauses": [
-    {
-     "id": "sg1s-q",
-     "t": 41.06
-    }
-   ]
-  },
-  "sg2i": {
-   "src": "videos/sg2i.mp4",
-   "title": "The Closest Two",
-   "duration": 20.39,
-   "lines": [
-    {
-     "id": "sg2i_1",
-     "text": "Which two parcels in this row are closest in weight?",
-     "start": 0.2,
-     "end": 3.09
-    },
-    {
-     "id": "sg2i_2",
-     "text": "Return the smallest difference between any two numbers.",
-     "start": 3.79,
-     "end": 6.97
-    },
-    {
-     "id": "sg2i_3",
-     "text": "In a jumbled row, the closest two could be anywhere. That means checking every pair.",
-     "start": 7.67,
-     "end": 12.77
-    },
-    {
-     "id": "sg2i_4",
-     "text": "Ask the sorting question. Would this be easy if the row were in order? Your turn.",
-     "start": 13.47,
-     "end": 18.79
-    }
-   ],
-   "pauses": []
-  },
-  "sg2s": {
-   "src": "videos/sg2s.mp4",
-   "title": "Sorted: the closest are neighbours",
-   "duration": 54.27,
-   "lines": [
-    {
-     "id": "sg2s_1",
-     "text": "In a jumbled row the closest two could be anywhere. In a sorted row they must be standing next to each other.",
-     "start": 0.2,
-     "end": 6.79
-    },
-    {
-     "id": "sg2s_2",
-     "text": "So sort first, then one walk over the neighbours is enough.",
-     "start": 7.54,
-     "end": 10.89
-    },
-    {
-     "id": "sg2s_3",
-     "text": "Line two sorts a copy of the row. With a compare function, a minus b, so that numbers are compared as numbers.",
-     "start": 11.64,
-     "end": 19.23
-    },
-    {
-     "id": "sg2s_4",
-     "text": "Best starts at infinity, so that any real gap beats it.",
-     "start": 19.98,
-     "end": 23.54
-    },
-    {
-     "id": "sg2s_5",
-     "text": "The walk starts at door one. Five minus one is four. Best is four.",
-     "start": 24.29,
-     "end": 28.6
-    },
-    {
-     "id": "sg2s_6",
-     "text": "Door two. Eight minus five. What is best now?",
-     "start": 29.35,
-     "end": 32.12
-    },
-    {
-     "id": "sg2s_7",
-     "text": "Three. A new best.",
-     "start": 33.32,
-     "end": 34.51
-    },
-    {
-     "id": "sg2s_8",
-     "text": "Door three. Thirteen minus eight is five. Not better.",
-     "start": 35.26,
-     "end": 38.7
-    },
-    {
-     "id": "sg2s_9",
-     "text": "Line seven returns the best. Three.",
-     "start": 39.45,
-     "end": 41.91
-    },
-    {
-     "id": "sg2s_10",
-     "text": "The sort costs n log n. The walk after it is only n. So the sort is the whole price. O of n log n.",
-     "start": 43.01,
-     "end": 49.55
-    },
-    {
-     "id": "sg2s_11",
-     "text": "The sorted copy. O of n space.",
-     "start": 50.3,
-     "end": 52.67
-    }
-   ],
-   "pauses": [
-    {
-     "id": "sg2s-q",
-     "t": 32.32
-    }
-   ]
-  },
-  "sg3i": {
-   "src": "videos/sg3i.mp4",
-   "title": "Tallest First",
-   "duration": 16.25,
-   "lines": [
-    {
-     "id": "sg3i_1",
-     "text": "Three friends, and how tall each one is.",
-     "start": 0.2,
-     "end": 2.51
-    },
-    {
-     "id": "sg3i_2",
-     "text": "Return the names, from tallest to shortest.",
-     "start": 3.21,
-     "end": 5.86
-    },
-    {
-     "id": "sg3i_3",
-     "text": "You are sorting by one row, but returning the other. They must not come apart.",
-     "start": 6.56,
-     "end": 11.38
-    },
-    {
-     "id": "sg3i_4",
-     "text": "So what exactly should you sort? Your turn.",
-     "start": 12.08,
-     "end": 14.65
-    }
-   ],
-   "pauses": []
-  },
-  "sg3s": {
-   "src": "videos/sg3s.mp4",
-   "title": "Sort the positions",
-   "duration": 61.13,
-   "lines": [
-    {
-     "id": "sg3s_1",
-     "text": "The names and the heights are tied together by position. So sort the positions, and both rows stay connected.",
-     "start": 0.2,
-     "end": 6.89
-    },
-    {
-     "id": "sg3s_2",
-     "text": "A compare function tells the sort which of two positions goes first. Here, the one with the bigger height.",
-     "start": 7.64,
-     "end": 13.65
-    },
-    {
-     "id": "sg3s_3",
-     "text": "Line two makes a list of positions. Zero, one, two.",
-     "start": 14.4,
-     "end": 17.8
-    },
-    {
-     "id": "sg3s_4",
-     "text": "Line three sorts them. The compare function takes two positions, a and b, and looks up their heights.",
-     "start": 18.55,
-     "end": 24.8
-    },
-    {
-     "id": "sg3s_5",
-     "text": "When that is positive, b is taller, and b goes first. For positions zero and one: twelve minus thirty. Is that positive?",
-     "start": 25.55,
-     "end": 33.43
-    },
-    {
-     "id": "sg3s_6",
-     "text": "No. It is negative. So position zero stays in front. The taller one.",
-     "start": 34.63,
-     "end": 39.2
-    },
-    {
-     "id": "sg3s_7",
-     "text": "The sort does that for every pair it needs. The order becomes zero, two, one. Thirty, twenty five, twelve.",
-     "start": 39.95,
-     "end": 46.8
-    },
-    {
-     "id": "sg3s_8",
-     "text": "Line four turns each position back into a name. Pip, Hazel, Moss.",
-     "start": 47.55,
-     "end": 52.26
-    },
-    {
-     "id": "sg3s_9",
-     "text": "The sort is the whole price. O of n log n.",
-     "start": 53.36,
-     "end": 56.26
-    },
-    {
-     "id": "sg3s_10",
-     "text": "The list of positions. O of n space.",
-     "start": 57.01,
-     "end": 59.53
-    }
-   ],
-   "pauses": [
-    {
-     "id": "sg3s-q",
-     "t": 33.63
-    }
-   ]
-  },
   "sg0": {
    "src": "videos/sg0.mp4",
    "title": "Sort So the Rest Is Easy",
@@ -8382,6 +8055,456 @@ window.BURROW = {
     }
    ]
   },
+  "iv2i": {
+   "src": "videos/iv2i.mp4",
+   "title": "Join the Overlaps",
+   "duration": 21.72,
+   "lines": [
+    {
+     "id": "iv2i_1",
+     "text": "Three bookings for the burrow hall. Two of them overlap.",
+     "start": 0.2,
+     "end": 3.51
+    },
+    {
+     "id": "iv2i_2",
+     "text": "Merge every group of overlapping intervals into one. Return them in order.",
+     "start": 4.21,
+     "end": 8.98
+    },
+    {
+     "id": "iv2i_3",
+     "text": "Once they are sorted by start, the next one either overlaps the one you are building, or it does not.",
+     "start": 9.68,
+     "end": 15.85
+    },
+    {
+     "id": "iv2i_4",
+     "text": "And if it does, where does the joined interval end? Your turn.",
+     "start": 16.55,
+     "end": 20.12
+    }
+   ],
+   "pauses": []
+  },
+  "iv2s": {
+   "src": "videos/iv2s.mp4",
+   "title": "Stretch it, or start anew",
+   "duration": 62.31,
+   "lines": [
+    {
+     "id": "iv2s_1",
+     "text": "In start order, the next interval can only overlap the last one you built.",
+     "start": 0.2,
+     "end": 4.74
+    },
+    {
+     "id": "iv2s_2",
+     "text": "If it overlaps, stretch the end. If not, that interval is finished, and a new one begins.",
+     "start": 5.49,
+     "end": 11.13
+    },
+    {
+     "id": "iv2s_3",
+     "text": "Line two sorts by start. One to three. Two to six. Eight to ten.",
+     "start": 11.88,
+     "end": 16.16
+    },
+    {
+     "id": "iv2s_4",
+     "text": "The first interval. The output is empty, so line nine pushes it.",
+     "start": 16.91,
+     "end": 21.16
+    },
+    {
+     "id": "iv2s_5",
+     "text": "Two to six. It starts at two, and the last one ends at three. Two is not after three. So they overlap.",
+     "start": 21.91,
+     "end": 29.01
+    },
+    {
+     "id": "iv2s_6",
+     "text": "Line seven stretches the end, to the bigger of three and six. The interval is now one to six.",
+     "start": 29.76,
+     "end": 36.03
+    },
+    {
+     "id": "iv2s_7",
+     "text": "Eight to ten. It starts at eight, and the last one ends at six. What happens?",
+     "start": 36.78,
+     "end": 41.67
+    },
+    {
+     "id": "iv2s_8",
+     "text": "No overlap. Line nine pushes it as a new interval.",
+     "start": 42.87,
+     "end": 46.53
+    },
+    {
+     "id": "iv2s_9",
+     "text": "Line twelve returns the two merged intervals.",
+     "start": 47.28,
+     "end": 50.09
+    },
+    {
+     "id": "iv2s_10",
+     "text": "The sort costs n log n, and the walk after it is one pass. O of n log n.",
+     "start": 51.19,
+     "end": 56.79
+    },
+    {
+     "id": "iv2s_11",
+     "text": "The sorted copy and the output. O of n space.",
+     "start": 57.54,
+     "end": 60.71
+    }
+   ],
+   "pauses": [
+    {
+     "id": "iv2s-q",
+     "t": 41.87
+    }
+   ]
+  },
+  "iv3i": {
+   "src": "videos/iv3i.mp4",
+   "title": "How Many Rooms?",
+   "duration": 20.43,
+   "lines": [
+    {
+     "id": "iv3i_1",
+     "text": "Three meetings, and the burrow has only so many rooms.",
+     "start": 0.2,
+     "end": 3.45
+    },
+    {
+     "id": "iv3i_2",
+     "text": "Return the smallest number of rooms, so that no two meetings share one at the same time.",
+     "start": 4.15,
+     "end": 9.36
+    },
+    {
+     "id": "iv3i_3",
+     "text": "Said another way. What is the most meetings going on at one moment?",
+     "start": 10.05,
+     "end": 14.02
+    },
+    {
+     "id": "iv3i_4",
+     "text": "Only two kinds of moment matter. A start, and an end. Your turn.",
+     "start": 14.72,
+     "end": 18.83
+    }
+   ],
+   "pauses": []
+  },
+  "iv3s": {
+   "src": "videos/iv3s.mp4",
+   "title": "Starts and ends, both sorted",
+   "duration": 66.19,
+   "lines": [
+    {
+     "id": "iv3s_1",
+     "text": "Only two kinds of moment matter. A meeting starts, and needs a room. A meeting ends, and frees one.",
+     "start": 0.2,
+     "end": 6.23
+    },
+    {
+     "id": "iv3s_2",
+     "text": "So sort all the starts, and all the ends. Then walk forward in time.",
+     "start": 6.98,
+     "end": 11.22
+    },
+    {
+     "id": "iv3s_3",
+     "text": "Lines three and four. The starts, sorted. Zero, five, fifteen. The ends, sorted. Ten, twenty, thirty.",
+     "start": 11.97,
+     "end": 19.24
+    },
+    {
+     "id": "iv3s_4",
+     "text": "Rooms is zero. And e marks the earliest end that has not been used yet. Ten.",
+     "start": 19.99,
+     "end": 25.61
+    },
+    {
+     "id": "iv3s_5",
+     "text": "A meeting starts at zero. Has anything ended by then? The earliest end is ten. No. So it needs a new room.",
+     "start": 26.36,
+     "end": 33.76
+    },
+    {
+     "id": "iv3s_6",
+     "text": "A meeting starts at five. The earliest end is still ten. Nothing is free. A second room.",
+     "start": 34.51,
+     "end": 40.61
+    },
+    {
+     "id": "iv3s_7",
+     "text": "A meeting starts at fifteen. The earliest end is ten. What happens?",
+     "start": 41.36,
+     "end": 45.95
+    },
+    {
+     "id": "iv3s_8",
+     "text": "Ten is before fifteen. A room is free. Line eight reuses it, and e moves on. Rooms stays at two.",
+     "start": 47.15,
+     "end": 54.05
+    },
+    {
+     "id": "iv3s_9",
+     "text": "Line eleven returns the rooms. Two.",
+     "start": 54.8,
+     "end": 57.23
+    },
+    {
+     "id": "iv3s_10",
+     "text": "Two sorts, and one walk. O of n log n.",
+     "start": 58.33,
+     "end": 61.17
+    },
+    {
+     "id": "iv3s_11",
+     "text": "The two sorted lists. O of n space.",
+     "start": 61.92,
+     "end": 64.59
+    }
+   ],
+   "pauses": [
+    {
+     "id": "iv3s-q",
+     "t": 46.15
+    }
+   ]
+  },
+  "iv4i": {
+   "src": "videos/iv4i.mp4",
+   "title": "Keep the Most",
+   "duration": 20.18,
+   "lines": [
+    {
+     "id": "iv4i_1",
+     "text": "Four bookings want the same room. Some of them clash.",
+     "start": 0.2,
+     "end": 3.47
+    },
+    {
+     "id": "iv4i_2",
+     "text": "Return the smallest number of bookings to cancel, so that the rest do not overlap.",
+     "start": 4.17,
+     "end": 9.29
+    },
+    {
+     "id": "iv4i_3",
+     "text": "Turn it round. Keep as many as you can.",
+     "start": 9.99,
+     "end": 12.7
+    },
+    {
+     "id": "iv4i_4",
+     "text": "If two clash, which one is safer to keep? The one that ends sooner, or later? Your turn.",
+     "start": 13.4,
+     "end": 18.58
+    }
+   ],
+   "pauses": []
+  },
+  "iv4s": {
+   "src": "videos/iv4s.mp4",
+   "title": "Keep the earliest finisher",
+   "duration": 69.6,
+   "lines": [
+    {
+     "id": "iv4s_1",
+     "text": "Removing the fewest is the same as keeping the most.",
+     "start": 0.2,
+     "end": 3.33
+    },
+    {
+     "id": "iv4s_2",
+     "text": "And the interval that ends first leaves the most room for the others. So sort by end, and keep whatever still fits.",
+     "start": 4.08,
+     "end": 11.2
+    },
+    {
+     "id": "iv4s_3",
+     "text": "Line two sorts by end time. One to two. Two to three. One to three. Three to four.",
+     "start": 11.95,
+     "end": 17.85
+    },
+    {
+     "id": "iv4s_4",
+     "text": "Nothing is kept yet, so last end starts at minus infinity. And nothing is removed.",
+     "start": 18.6,
+     "end": 24.29
+    },
+    {
+     "id": "iv4s_5",
+     "text": "One to two. It starts after last end. Keep it. Last end becomes two.",
+     "start": 25.04,
+     "end": 29.67
+    },
+    {
+     "id": "iv4s_6",
+     "text": "Two to three. It starts at two, exactly when the last one ends. That is allowed. Keep it. Last end is three.",
+     "start": 30.42,
+     "end": 37.78
+    },
+    {
+     "id": "iv4s_7",
+     "text": "One to three. It starts at one. Last end is three. What happens?",
+     "start": 38.53,
+     "end": 42.56
+    },
+    {
+     "id": "iv4s_8",
+     "text": "One is before three. It overlaps what we kept. Line seven removes it.",
+     "start": 43.76,
+     "end": 48.47
+    },
+    {
+     "id": "iv4s_9",
+     "text": "Three to four. It starts at three. That fits. Keep it.",
+     "start": 49.22,
+     "end": 52.58
+    },
+    {
+     "id": "iv4s_10",
+     "text": "Line nine returns the number removed. One.",
+     "start": 53.33,
+     "end": 56.18
+    },
+    {
+     "id": "iv4s_11",
+     "text": "The sort costs n log n, and the walk after it is one pass. O of n log n.",
+     "start": 57.28,
+     "end": 62.89
+    },
+    {
+     "id": "iv4s_12",
+     "text": "Apart from the sorted copy, two numbers. O of n space for the copy.",
+     "start": 63.64,
+     "end": 68
+    }
+   ],
+   "pauses": [
+    {
+     "id": "iv4s-q",
+     "t": 42.76
+    }
+   ]
+  },
+  "iv5i": {
+   "src": "videos/iv5i.mp4",
+   "title": "When Are Both Free?",
+   "duration": 20.62,
+   "lines": [
+    {
+     "id": "iv5i_1",
+     "text": "Pip and Moss want to meet. Each has a list of the times they are free.",
+     "start": 0.2,
+     "end": 4.33
+    },
+    {
+     "id": "iv5i_2",
+     "text": "Return every stretch of time when both are free.",
+     "start": 5.03,
+     "end": 7.85
+    },
+    {
+     "id": "iv5i_3",
+     "text": "Take one interval from each list. The shared part starts at the later start, and ends at the earlier end.",
+     "start": 8.55,
+     "end": 14.74
+    },
+    {
+     "id": "iv5i_4",
+     "text": "After that, which of the two intervals is used up? Your turn.",
+     "start": 15.44,
+     "end": 19.02
+    }
+   ],
+   "pauses": []
+  },
+  "iv5s": {
+   "src": "videos/iv5s.mp4",
+   "title": "Later start, earlier end",
+   "duration": 68.77,
+   "lines": [
+    {
+     "id": "iv5s_1",
+     "text": "Two intervals share the time from the later start, to the earlier end. If that start comes after that end, they share nothing.",
+     "start": 0.2,
+     "end": 7.76
+    },
+    {
+     "id": "iv5s_2",
+     "text": "Then the interval that ends first is used up. Move past it. That is two markers on two sorted lists.",
+     "start": 8.51,
+     "end": 14.93
+    },
+    {
+     "id": "iv5s_3",
+     "text": "An empty output, and one marker on each list.",
+     "start": 15.68,
+     "end": 18.72
+    },
+    {
+     "id": "iv5s_4",
+     "text": "Zero to two, and one to five. The later start is one. The earlier end is two. One to two is shared.",
+     "start": 19.47,
+     "end": 26.21
+    },
+    {
+     "id": "iv5s_5",
+     "text": "Zero to two ends first, so it is used up. Line nine moves i.",
+     "start": 26.96,
+     "end": 30.91
+    },
+    {
+     "id": "iv5s_6",
+     "text": "Five to ten, and one to five. The later start is five. The earlier end is five. Is that a shared stretch?",
+     "start": 31.66,
+     "end": 38.88
+    },
+    {
+     "id": "iv5s_7",
+     "text": "Yes. Five is not after five. They share that one moment.",
+     "start": 40.08,
+     "end": 43.65
+    },
+    {
+     "id": "iv5s_8",
+     "text": "One to five ends first. J moves. Now five to ten, and eight to twelve. Eight to ten is shared.",
+     "start": 44.4,
+     "end": 50.85
+    },
+    {
+     "id": "iv5s_9",
+     "text": "Five to ten ends first, and list a is finished. Line twelve returns the three shared stretches.",
+     "start": 51.6,
+     "end": 57.48
+    },
+    {
+     "id": "iv5s_10",
+     "text": "Every step moves one marker forward. O of n plus m.",
+     "start": 58.58,
+     "end": 62.36
+    },
+    {
+     "id": "iv5s_11",
+     "text": "Apart from the output, two markers. O of one extra space.",
+     "start": 63.11,
+     "end": 67.17
+    }
+   ],
+   "pauses": [
+    {
+     "id": "iv5s-q",
+     "t": 39.08
+    }
+   ]
+  },
   "iv0": {
    "src": "videos/iv0.mp4",
    "title": "Things With a Start and an End",
@@ -8413,6 +8536,85 @@ window.BURROW = {
     }
    ],
    "pauses": []
+  },
+  "ivt1": {
+   "src": "videos/ivt1.mp4",
+   "title": "Sort by Start, Then Sweep",
+   "duration": 68.72,
+   "lines": [
+    {
+     "id": "ix1",
+     "text": "Four bookings on one timeline, in a jumble. Which of them overlap? Compare every pair, and that is six checks.",
+     "start": 0.2,
+     "end": 7.4
+    },
+    {
+     "id": "ix2",
+     "text": "First, what does overlap mean? Two intervals overlap, when each one starts before the other one ends.",
+     "start": 8.3,
+     "end": 15.02
+    },
+    {
+     "id": "ix3",
+     "text": "Now sort them by start time. Something useful happens.",
+     "start": 16.02,
+     "end": 19.66
+    },
+    {
+     "id": "ix4",
+     "text": "Walking left to right, a new interval can only overlap the one you are building right now. Nothing further back can reach it.",
+     "start": 20.56,
+     "end": 28
+    },
+    {
+     "id": "ix5",
+     "text": "So merging is one walk. Keep the last interval. One to three.",
+     "start": 29,
+     "end": 32.89
+    },
+    {
+     "id": "ix6",
+     "text": "Next is two to six. It starts at two, before three. They overlap. So stretch the end. One to six.",
+     "start": 33.79,
+     "end": 40.9
+    },
+    {
+     "id": "ix7",
+     "text": "Next is five to eight. The last interval is one to six. What happens?",
+     "start": 41.9,
+     "end": 46.66
+    },
+    {
+     "id": "ix8",
+     "text": "Five is before six, so they overlap. The end stretches to eight.",
+     "start": 47.86,
+     "end": 51.88
+    },
+    {
+     "id": "ix9",
+     "text": "Next is ten to twelve. Ten is after eight. A gap. So the old interval is finished, and a new one begins.",
+     "start": 52.88,
+     "end": 60.26
+    },
+    {
+     "id": "ix10",
+     "text": "One sort, and one walk. O of n log n.",
+     "start": 61.26,
+     "end": 64.05
+    },
+    {
+     "id": "ix11",
+     "text": "Intervals? Sort by start, then sweep.",
+     "start": 64.95,
+     "end": 67.12
+    }
+   ],
+   "pauses": [
+    {
+     "id": "ivt1-q1",
+     "t": 46.86
+    }
+   ]
   },
   "ivt2": {
    "src": "videos/ivt2.mp4",
@@ -8480,6 +8682,44 @@ window.BURROW = {
      "t": 48.35
     }
    ]
+  },
+  "my0": {
+   "src": "videos/my0.mp4",
+   "title": "Four New Signals",
+   "duration": 33.97,
+   "lines": [
+    {
+     "id": "yw1",
+     "text": "Mixed set two. Ten more puzzles, with no labels. From everything you have learned so far.",
+     "start": 0.2,
+     "end": 6.19
+    },
+    {
+     "id": "yw2",
+     "text": "Part two gave you four new signals. A smaller copy of the same problem. That is recursion.",
+     "start": 6.99,
+     "end": 13.23
+    },
+    {
+     "id": "yw3",
+     "text": "Sorted, and looking for one thing. Binary search. And the smallest value that works. Search the answer.",
+     "start": 14.13,
+     "end": 20.68
+    },
+    {
+     "id": "yw4",
+     "text": "A start and an end. Sort, then sweep. And if order would make it easy, sort first.",
+     "start": 21.58,
+     "end": 26.83
+    },
+    {
+     "id": "yw5",
+     "text": "Some of these need two tools, one after the other. Name them before you code.",
+     "start": 27.73,
+     "end": 32.37
+    }
+   ],
+   "pauses": []
   },
   "mx1i": {
    "src": "videos/mx1i.mp4",
@@ -10809,6 +11049,123 @@ window.BURROW = {
     }
    ]
   },
+  "my1i": {
+   "src": "videos/my1i.mp4",
+   "title": "Boxes Inside Boxes",
+   "duration": 19.39,
+   "lines": [
+    {
+     "id": "my1i_1",
+     "text": "A box of parcels. But some of the parcels are boxes too, with more inside.",
+     "start": 0.2,
+     "end": 5.07
+    },
+    {
+     "id": "my1i_2",
+     "text": "Return the sum of every number, however deep it is.",
+     "start": 5.77,
+     "end": 9.1
+    },
+    {
+     "id": "my1i_3",
+     "text": "When you open an inner box, what you find looks just like what you started with.",
+     "start": 9.8,
+     "end": 14.38
+    },
+    {
+     "id": "my1i_4",
+     "text": "So what should the function do with it? Your turn.",
+     "start": 15.08,
+     "end": 17.79
+    }
+   ],
+   "pauses": []
+  },
+  "my1s": {
+   "src": "videos/my1s.mp4",
+   "title": "An inner box is the same problem",
+   "duration": 61.39,
+   "lines": [
+    {
+     "id": "my1s_1",
+     "text": "An inner array is a smaller copy of the same problem. So the function can call itself on it.",
+     "start": 0.2,
+     "end": 6.02
+    },
+    {
+     "id": "my1s_2",
+     "text": "A plain number is the simplest item. It needs no call at all. That is the base case, hiding in the else.",
+     "start": 6.77,
+     "end": 13.46
+    },
+    {
+     "id": "my1s_3",
+     "text": "The first call. Total is zero.",
+     "start": 14.21,
+     "end": 16.22
+    },
+    {
+     "id": "my1s_4",
+     "text": "The first item is one. A number. Line five adds it.",
+     "start": 16.97,
+     "end": 20.54
+    },
+    {
+     "id": "my1s_5",
+     "text": "The second item is an array. Line four calls nested sum on it, and waits.",
+     "start": 21.29,
+     "end": 26.12
+    },
+    {
+     "id": "my1s_6",
+     "text": "Inside that call, two is added. Then there is another array, three. One more call. What does that innermost call return?",
+     "start": 26.87,
+     "end": 34.47
+    },
+    {
+     "id": "my1s_7",
+     "text": "Three. So the middle call returns two plus three. Five.",
+     "start": 35.67,
+     "end": 39.12
+    },
+    {
+     "id": "my1s_8",
+     "text": "Back in the first call. One plus five is six.",
+     "start": 39.87,
+     "end": 43
+    },
+    {
+     "id": "my1s_9",
+     "text": "The last item is four. Ten.",
+     "start": 43.75,
+     "end": 45.77
+    },
+    {
+     "id": "my1s_10",
+     "text": "Line seven returns the total. Ten.",
+     "start": 46.52,
+     "end": 49.02
+    },
+    {
+     "id": "my1s_11",
+     "text": "Every number and every array is visited once. O of n, counting everything inside.",
+     "start": 50.12,
+     "end": 55.92
+    },
+    {
+     "id": "my1s_12",
+     "text": "The call stack is as deep as the nesting. O of depth.",
+     "start": 56.67,
+     "end": 59.79
+    }
+   ],
+   "pauses": [
+    {
+     "id": "my1s-q",
+     "t": 34.67
+    }
+   ]
+  },
   "rc1i": {
    "src": "videos/rc1i.mp4",
    "title": "Add Them Up",
@@ -12015,6 +12372,333 @@ window.BURROW = {
     {
      "id": "bs7s-q",
      "t": 52.42
+    }
+   ]
+  },
+  "sg1i": {
+   "src": "videos/sg1i.mp4",
+   "title": "Split, Sort, Merge",
+   "duration": 20.13,
+   "lines": [
+    {
+     "id": "sg1i_1",
+     "text": "Four parcels, out of order. And this once, you have to sort them yourself.",
+     "start": 0.2,
+     "end": 4.49
+    },
+    {
+     "id": "sg1i_2",
+     "text": "Return a new array with the numbers in order. No built-in sort.",
+     "start": 5.19,
+     "end": 9.27
+    },
+    {
+     "id": "sg1i_3",
+     "text": "Here is a thought. If each half of the row were already sorted, you would know what to do.",
+     "start": 9.97,
+     "end": 15.08
+    },
+    {
+     "id": "sg1i_4",
+     "text": "So how do you get two sorted halves? Your turn.",
+     "start": 15.78,
+     "end": 18.53
+    }
+   ],
+   "pauses": []
+  },
+  "sg1s": {
+   "src": "videos/sg1s.mp4",
+   "title": "Trust the halves, then merge",
+   "duration": 65.28,
+   "lines": [
+    {
+     "id": "sg1s_1",
+     "text": "Two sorted halves can be merged in one pass, with two markers. You have done that.",
+     "start": 0.2,
+     "end": 5.53
+    },
+    {
+     "id": "sg1s_2",
+     "text": "And each half gets sorted by the very same function. That is recursion. Trust it.",
+     "start": 6.28,
+     "end": 11.87
+    },
+    {
+     "id": "sg1s_3",
+     "text": "Line two is the base case. A row of one number is already sorted.",
+     "start": 12.62,
+     "end": 17.07
+    },
+    {
+     "id": "sg1s_4",
+     "text": "Line three finds the middle. The row splits into five, two. And eight, one.",
+     "start": 17.82,
+     "end": 22.58
+    },
+    {
+     "id": "sg1s_5",
+     "text": "Lines four and five sort each half, by calling merge sort on it. Trust the result. Two, five. And one, eight.",
+     "start": 23.33,
+     "end": 29.87
+    },
+    {
+     "id": "sg1s_6",
+     "text": "Now merge. A marker at the front of each half. Two against one. One is smaller, so it goes out first.",
+     "start": 30.62,
+     "end": 36.99
+    },
+    {
+     "id": "sg1s_7",
+     "text": "J moves on. Two against eight. Which one goes out?",
+     "start": 37.74,
+     "end": 40.86
+    },
+    {
+     "id": "sg1s_8",
+     "text": "Two. Then five against eight. Five.",
+     "start": 42.06,
+     "end": 44.13
+    },
+    {
+     "id": "sg1s_9",
+     "text": "The left half is used up. Line thirteen adds whatever is left of the other half. Eight.",
+     "start": 44.88,
+     "end": 50.49
+    },
+    {
+     "id": "sg1s_10",
+     "text": "The row is halved about log n times, and each level merges n numbers. O of n log n time.",
+     "start": 51.59,
+     "end": 58.31
+    },
+    {
+     "id": "sg1s_11",
+     "text": "The halves and the merged rows are new arrays. O of n extra space.",
+     "start": 59.06,
+     "end": 63.68
+    }
+   ],
+   "pauses": [
+    {
+     "id": "sg1s-q",
+     "t": 41.06
+    }
+   ]
+  },
+  "sg2i": {
+   "src": "videos/sg2i.mp4",
+   "title": "The Closest Two",
+   "duration": 20.39,
+   "lines": [
+    {
+     "id": "sg2i_1",
+     "text": "Which two parcels in this row are closest in weight?",
+     "start": 0.2,
+     "end": 3.09
+    },
+    {
+     "id": "sg2i_2",
+     "text": "Return the smallest difference between any two numbers.",
+     "start": 3.79,
+     "end": 6.97
+    },
+    {
+     "id": "sg2i_3",
+     "text": "In a jumbled row, the closest two could be anywhere. That means checking every pair.",
+     "start": 7.67,
+     "end": 12.77
+    },
+    {
+     "id": "sg2i_4",
+     "text": "Ask the sorting question. Would this be easy if the row were in order? Your turn.",
+     "start": 13.47,
+     "end": 18.79
+    }
+   ],
+   "pauses": []
+  },
+  "sg2s": {
+   "src": "videos/sg2s.mp4",
+   "title": "Sorted: the closest are neighbours",
+   "duration": 54.27,
+   "lines": [
+    {
+     "id": "sg2s_1",
+     "text": "In a jumbled row the closest two could be anywhere. In a sorted row they must be standing next to each other.",
+     "start": 0.2,
+     "end": 6.79
+    },
+    {
+     "id": "sg2s_2",
+     "text": "So sort first, then one walk over the neighbours is enough.",
+     "start": 7.54,
+     "end": 10.89
+    },
+    {
+     "id": "sg2s_3",
+     "text": "Line two sorts a copy of the row. With a compare function, a minus b, so that numbers are compared as numbers.",
+     "start": 11.64,
+     "end": 19.23
+    },
+    {
+     "id": "sg2s_4",
+     "text": "Best starts at infinity, so that any real gap beats it.",
+     "start": 19.98,
+     "end": 23.54
+    },
+    {
+     "id": "sg2s_5",
+     "text": "The walk starts at door one. Five minus one is four. Best is four.",
+     "start": 24.29,
+     "end": 28.6
+    },
+    {
+     "id": "sg2s_6",
+     "text": "Door two. Eight minus five. What is best now?",
+     "start": 29.35,
+     "end": 32.12
+    },
+    {
+     "id": "sg2s_7",
+     "text": "Three. A new best.",
+     "start": 33.32,
+     "end": 34.51
+    },
+    {
+     "id": "sg2s_8",
+     "text": "Door three. Thirteen minus eight is five. Not better.",
+     "start": 35.26,
+     "end": 38.7
+    },
+    {
+     "id": "sg2s_9",
+     "text": "Line seven returns the best. Three.",
+     "start": 39.45,
+     "end": 41.91
+    },
+    {
+     "id": "sg2s_10",
+     "text": "The sort costs n log n. The walk after it is only n. So the sort is the whole price. O of n log n.",
+     "start": 43.01,
+     "end": 49.55
+    },
+    {
+     "id": "sg2s_11",
+     "text": "The sorted copy. O of n space.",
+     "start": 50.3,
+     "end": 52.67
+    }
+   ],
+   "pauses": [
+    {
+     "id": "sg2s-q",
+     "t": 32.32
+    }
+   ]
+  },
+  "sg3i": {
+   "src": "videos/sg3i.mp4",
+   "title": "Tallest First",
+   "duration": 16.25,
+   "lines": [
+    {
+     "id": "sg3i_1",
+     "text": "Three friends, and how tall each one is.",
+     "start": 0.2,
+     "end": 2.51
+    },
+    {
+     "id": "sg3i_2",
+     "text": "Return the names, from tallest to shortest.",
+     "start": 3.21,
+     "end": 5.86
+    },
+    {
+     "id": "sg3i_3",
+     "text": "You are sorting by one row, but returning the other. They must not come apart.",
+     "start": 6.56,
+     "end": 11.38
+    },
+    {
+     "id": "sg3i_4",
+     "text": "So what exactly should you sort? Your turn.",
+     "start": 12.08,
+     "end": 14.65
+    }
+   ],
+   "pauses": []
+  },
+  "sg3s": {
+   "src": "videos/sg3s.mp4",
+   "title": "Sort the positions",
+   "duration": 61.13,
+   "lines": [
+    {
+     "id": "sg3s_1",
+     "text": "The names and the heights are tied together by position. So sort the positions, and both rows stay connected.",
+     "start": 0.2,
+     "end": 6.89
+    },
+    {
+     "id": "sg3s_2",
+     "text": "A compare function tells the sort which of two positions goes first. Here, the one with the bigger height.",
+     "start": 7.64,
+     "end": 13.65
+    },
+    {
+     "id": "sg3s_3",
+     "text": "Line two makes a list of positions. Zero, one, two.",
+     "start": 14.4,
+     "end": 17.8
+    },
+    {
+     "id": "sg3s_4",
+     "text": "Line three sorts them. The compare function takes two positions, a and b, and looks up their heights.",
+     "start": 18.55,
+     "end": 24.8
+    },
+    {
+     "id": "sg3s_5",
+     "text": "When that is positive, b is taller, and b goes first. For positions zero and one: twelve minus thirty. Is that positive?",
+     "start": 25.55,
+     "end": 33.43
+    },
+    {
+     "id": "sg3s_6",
+     "text": "No. It is negative. So position zero stays in front. The taller one.",
+     "start": 34.63,
+     "end": 39.2
+    },
+    {
+     "id": "sg3s_7",
+     "text": "The sort does that for every pair it needs. The order becomes zero, two, one. Thirty, twenty five, twelve.",
+     "start": 39.95,
+     "end": 46.8
+    },
+    {
+     "id": "sg3s_8",
+     "text": "Line four turns each position back into a name. Pip, Hazel, Moss.",
+     "start": 47.55,
+     "end": 52.26
+    },
+    {
+     "id": "sg3s_9",
+     "text": "The sort is the whole price. O of n log n.",
+     "start": 53.36,
+     "end": 56.26
+    },
+    {
+     "id": "sg3s_10",
+     "text": "The list of positions. O of n space.",
+     "start": 57.01,
+     "end": 59.53
+    }
+   ],
+   "pauses": [
+    {
+     "id": "sg3s-q",
+     "t": 33.63
     }
    ]
   }
