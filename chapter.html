@@ -252,6 +252,7 @@ const WORKER = `
 const fmt = (v) => { try { return typeof v === 'string' ? JSON.stringify(v) : JSON.stringify(v); } catch (e) { return String(v); } };
 self.onmessage = (ev) => {
   const { code, fn, tests, mode, check, big, prep, post } = ev.data; const logs = []; const out = [];
+  self.Heap = class Heap { constructor(cmp = (a, b) => a - b) { this.a = []; this.cmp = cmp; } get size() { return this.a.length; } peek() { return this.a[0]; } push(v) { const a = this.a; a.push(v); let i = a.length - 1; while (i > 0) { const p = (i - 1) >> 1; if (this.cmp(a[i], a[p]) >= 0) break; [a[i], a[p]] = [a[p], a[i]]; i = p; } } pop() { const a = this.a; if (a.length === 0) return undefined; const top = a[0], last = a.pop(); if (a.length > 0) { a[0] = last; let i = 0; for (;;) { let m = i; const l = 2 * i + 1, r = l + 1; if (l < a.length && this.cmp(a[l], a[m]) < 0) m = l; if (r < a.length && this.cmp(a[r], a[m]) < 0) m = r; if (m === i) break; [a[i], a[m]] = [a[m], a[i]]; i = m; } } return top; } };
   const toList = (a) => { let h = null; for (let i = a.length - 1; i >= 0; i--) h = { val: a[i], next: h }; return h; };
   const toArr = (h) => { const o = []; let n = 0; while (h && n++ < 100000) { o.push(h.val); h = h.next; } return o; };
   const toTree = (a) => { const n = a.map((v) => (v === null || v === undefined ? null : { val: v, left: null, right: null })); n.forEach((x, i) => { if (x) { x.left = n[2 * i + 1] || null; x.right = n[2 * i + 2] || null; } }); return n[0] || null; };
@@ -343,7 +344,7 @@ function problem(st) {
 
 // ---------- step-through: the same steps the solution video narrates ----------
 function walk(P, host) {
-  const V = P.view, steps = P.steps.filter((s) => s.line || s.ptr || s.box || s.set || (s.hot && s.hot.length)), n = V.row.length; let i = 0, timer = null;
+  const V = P.view, steps = P.steps.filter((s) => s.line || s.ptr || s.box || s.set || (s.hot && s.hot.length) || (s.gone && s.gone.length) || (s.show && s.show.length)), n = V.row.length; let i = 0, timer = null;
   const TR = V.tree || null, TLV = TR ? Math.floor(Math.log2(TR.length)) + 1 : 0, TW = TR ? Math.max(360, 2 ** (TLV - 1) * 76) : 0;
   const tpos = (k) => { const lv = Math.floor(Math.log2(k + 1)), j = k + 1 - 2 ** lv; return { x: 10 + (TW * (j + 0.5)) / 2 ** lv, y: 34 + lv * 74 }; }, thas = (k) => k >= 0 && k < TR.length && TR[k] !== null && TR[k] !== undefined;
   const LG = V.list ? 44 : 8, CW = 56 + LG, X0 = V.leftNull ? 100 : 10, W = TR ? TW + 30 + (V.box ? 170 : 0) : Math.max(n, V.row2 ? V.row2.length : 0) * CW + 30 + (V.box ? 170 : 0) + (V.list ? X0 + 70 : 0), two = !!V.row2, HT = TR ? 34 + TLV * 74 + 30 + V.ptrs.length * 20 : (two ? 250 : V.list ? 200 : 170) + V.ptrs.length * 22;
@@ -356,9 +357,9 @@ function walk(P, host) {
   const cells = (arr, y, pre, ix) => arr.forEach((v, k) => { stage.append(h(`<div class="vc" id="${pre}${k}" style="left:${k * CW + X0}px;top:${y}px${String(v).length >= 3 ? ';font-size:' + (String(v).length >= 4 ? 15 : 18) + 'px' : ''}">${esc(v)}</div>`)); if (ix && !V.list) stage.append(h(`<div class="vi" style="left:${k * CW + X0}px;top:${y + 56}px">${k}</div>`)); });
   cells(V.row, y1, 'wc', true); if (two) cells(V.row2, y2, 'wd', false);
   if (TR) { // a tree: lines first, then round nodes
-    let ln = ''; TR.forEach((v, k) => { if (k > 0 && thas(k)) { const a = tpos(Math.floor((k - 1) / 2)), b = tpos(k); ln += `<line x1="${a.x}" y1="${a.y}" x2="${b.x}" y2="${b.y}" stroke="#2B1B4A" stroke-width="3.5"/>`; } });
+    let ln = ''; TR.forEach((v, k) => { if (k > 0 && thas(k)) { const a = tpos(Math.floor((k - 1) / 2)), b = tpos(k); ln += `<line id="we${k}" x1="${a.x}" y1="${a.y}" x2="${b.x}" y2="${b.y}" stroke="#2B1B4A" stroke-width="3.5"/>`; } });
     stage.append(h(`<svg style="position:absolute;left:0;top:0;overflow:visible" width="${TW + 20}" height="${HT}">${ln}</svg>`));
-    TR.forEach((v, k) => { if (thas(k)) { const q = tpos(k); stage.append(h(`<div class="vc" id="wc${k}" style="left:${q.x - 24}px;top:${q.y - 24}px;width:48px;height:48px;line-height:40px;border-radius:50%;font-size:${String(v).length >= 3 ? 14 : 20}px">${esc(v)}</div>`)); } });
+    TR.forEach((v, k) => { if (thas(k)) { const q = tpos(k); if (V.treeIndex) stage.append(h(`<div style="position:absolute;left:${q.x - 38}px;top:${q.y - 34}px;font:700 12px 'JetBrains Mono',monospace;color:#2B1B4A">${k}</div>`)); stage.append(h(`<div class="vc" id="wc${k}" style="left:${q.x - 24}px;top:${q.y - 24}px;width:48px;height:48px;line-height:40px;border-radius:50%;font-size:${String(v).length >= 3 ? 14 : 20}px">${esc(v)}</div>`)); } });
   }
   if (V.rowLabel) stage.append(h(`<div class="vl" style="left:${n * CW + 14}px;top:${y1 + 16}px">${esc(V.rowLabel)}</div>`)); if (two && V.row2Label) stage.append(h(`<div class="vl" style="left:${V.row2.length * CW + 14}px;top:${y2 + 16}px">${esc(V.row2Label)}</div>`));
   V.ptrs.forEach((p, k) => stage.append(h(`<div class="vp" id="wp-${p.id}" style="top:${p.row === 2 ? y2 - 26 : y1 + 78 + k * 22}px;left:10px;opacity:0${TR ? ';transition:left .35s, top .35s' : ''}">${p.id}</div>`)));
@@ -375,14 +376,16 @@ function walk(P, host) {
   fit(); window.addEventListener('resize', fit);
   function draw() {
     // rebuild the state by replaying every step up to this one
-    const val = {}, cls = {}, ptr = {}, vars = {}, arr = {}; let bx = null;
+    const val = {}, cls = {}, ptr = {}, vars = {}, arr = {}, gone = {}; let bx = null; for (const a of V.ghost || []) gone['wc' + a] = 1;
     for (let k = 0; k <= i; k++) { const s = steps[k]; Object.assign(ptr, s.ptr || {}); Object.assign(vars, s.vars || {}); if (s.box) bx = s.box; for (const a of (s.arrows || {}).hide || []) arr[a] = 0; for (const a of (s.arrows || {}).show || []) arr[a] = 1;
+      for (const a of s.gone || []) gone['wc' + a] = 1; for (const a of s.show || []) delete gone['wc' + a];
       for (const [a, b] of Object.entries(s.set || {})) val[/^[a-z]/.test(a) ? 'w' + a : 'wc' + a] = b;
       for (const a of s.ok || []) cls[typeof a === 'string' ? 'w' + a : 'wc' + a] = 'ok'; for (const a of s.bad || []) cls[typeof a === 'string' ? 'w' + a : 'wc' + a] = 'bad'; }
     const s = steps[i]; const hot = new Set((s.hot || []).map((a) => (typeof a === 'string' ? 'w' + a : 'wc' + a)));
-    stage.querySelectorAll('.vc').forEach((el) => { el.className = 'vc ' + (hot.has(el.id) ? 'hot' : (cls[el.id] || '')); if (val[el.id] !== undefined) el.textContent = val[el.id]; });
+    stage.querySelectorAll('.vc').forEach((el) => { el.className = 'vc ' + (hot.has(el.id) ? 'hot' : (cls[el.id] || '')); if (val[el.id] !== undefined) el.textContent = val[el.id]; if (TR) el.style.opacity = gone[el.id] ? 0 : 1; });
+    if (TR) stage.querySelectorAll('line').forEach((l) => { l.style.opacity = gone['wc' + l.id.slice(2)] ? 0 : 1; });
     V.ptrs.forEach((p, pk) => { const el = $('#wp-' + p.id, stage); if (ptr[p.id] === undefined) { el.style.opacity = 0; return; }
-      if (TR) { const k = ptr[p.id], ok = thas(k), q = tpos(Math.max(0, k)); el.style.opacity = 1; el.textContent = ok ? p.id : p.id + ' = null'; el.style.left = q.x - (ok ? 20 : 40) + 'px'; el.style.top = (ok ? q.y + 28 : q.y - 10) + pk * 18 + 'px'; return; } const named = V.list || V.nameOnly, isNull = named && (ptr[p.id] < 0 || ptr[p.id] >= (p.row === 2 ? V.row2.length : n)); el.style.opacity = 1; el.textContent = named ? (isNull ? p.id + ' = null' : p.id) : p.id + ' = ' + ptr[p.id]; el.style.left = (isNull && ptr[p.id] < 0 ? X0 - LG - 50 : Math.min(ptr[p.id], p.row === 2 ? V.row2.length : n) * CW + X0) + 'px'; });
+      if (TR) { const k = ptr[p.id], ok = thas(k), q = tpos(Math.max(0, k)); el.style.opacity = 1; el.textContent = ok ? p.id : p.id + ' = null'; const above = V.ptrs.filter((z, n) => n < pk && ptr[z.id] === k).length; el.style.transform = 'translateX(-50%)'; el.style.left = q.x + 'px'; el.style.top = (ok ? q.y + 28 : q.y - 10) + above * 18 + 'px'; return; } const named = V.list || V.nameOnly, isNull = named && (ptr[p.id] < 0 || ptr[p.id] >= (p.row === 2 ? V.row2.length : n)); el.style.opacity = 1; el.textContent = named ? (isNull ? p.id + ' = null' : p.id) : p.id + ' = ' + ptr[p.id]; el.style.left = (isNull && ptr[p.id] < 0 ? X0 - LG - 50 : Math.min(ptr[p.id], p.row === 2 ? V.row2.length : n) * CW + X0) + 'px'; });
     if (V.list) stage.querySelectorAll('.va, svg, #wnulL').forEach((el) => { const id = el.id.slice(1); if (id in arr) el.style.opacity = arr[id]; else el.style.opacity = el.dataset.on0 ?? (el.dataset.on0 = el.style.opacity); });
     if (V.box) $('.vbox', stage).innerHTML = `<b>${esc(V.box.title)}</b>` + (bx && bx.length ? bx.map((t) => `<div>${esc(t)}</div>`).join('') : '<div>(empty)</div>');
     $('#vars', box).innerHTML = Object.entries(vars).map(([a, b]) => `<span class="vvar">${esc(a)} = ${esc(b)}</span>`).join('');
