@@ -11905,426 +11905,6 @@ window.BURROW = {
     }
    ]
   },
-  "bt1i": {
-   "src": "videos/bt1i.mp4",
-   "title": "Is It in the Tree?",
-   "duration": 18.61,
-   "lines": [
-    {
-     "id": "bt1i_1",
-     "text": "This tree keeps the rule. Smaller on the left, bigger on the right.",
-     "start": 0.2,
-     "end": 3.96
-    },
-    {
-     "id": "bt1i_2",
-     "text": "Return true if the target is somewhere in the tree. And look at very few nests.",
-     "start": 4.66,
-     "end": 9.57
-    },
-    {
-     "id": "bt1i_3",
-     "text": "Pip stands on the root. Eight. Pip wants six.",
-     "start": 10.27,
-     "end": 13.11
-    },
-    {
-     "id": "bt1i_4",
-     "text": "Which side of the eight is even worth a look? Your turn.",
-     "start": 13.81,
-     "end": 17
-    }
-   ],
-   "pauses": []
-  },
-  "bt1s": {
-   "src": "videos/bt1s.mp4",
-   "title": "Compare, pick a side, go down",
-   "duration": 55.98,
-   "lines": [
-    {
-     "id": "bt1s_1",
-     "text": "Left is smaller, right is bigger. So one comparison tells you which side the target must be on.",
-     "start": 0.2,
-     "end": 6.45
-    },
-    {
-     "id": "bt1s_2",
-     "text": "The other side is thrown away without a look. This is binary search, on a tree.",
-     "start": 7.2,
-     "end": 11.95
-    },
-    {
-     "id": "bt1s_3",
-     "text": "Looking for six. The marker starts on the root. Eight. Not equal.",
-     "start": 12.7,
-     "end": 16.74
-    },
-    {
-     "id": "bt1s_4",
-     "text": "Six is smaller than eight. So it can only be on the left. The whole right side is thrown away.",
-     "start": 17.49,
-     "end": 23.18
-    },
-    {
-     "id": "bt1s_5",
-     "text": "Now on three. Not equal. Six is bigger than three. Which way?",
-     "start": 23.93,
-     "end": 27.88
-    },
-    {
-     "id": "bt1s_6",
-     "text": "Right. Line six. The one, on the left, is thrown away.",
-     "start": 29.08,
-     "end": 32.39
-    },
-    {
-     "id": "bt1s_7",
-     "text": "The marker is on six. Equal. Line four returns true.",
-     "start": 33.14,
-     "end": 36.74
-    },
-    {
-     "id": "bt1s_8",
-     "text": "And for a value that is not there, the marker falls off the bottom, onto null. The loop ends, and line eight returns false.",
-     "start": 37.84,
-     "end": 45.69
-    },
-    {
-     "id": "bt1s_9",
-     "text": "Each look goes one level down. O of height. In a balanced tree, that is log n.",
-     "start": 46.44,
-     "end": 51.63
-    },
-    {
-     "id": "bt1s_10",
-     "text": "One marker. O of one space.",
-     "start": 52.38,
-     "end": 54.38
-    }
-   ],
-   "pauses": [
-    {
-     "id": "bt1s-q",
-     "t": 28.08
-    }
-   ]
-  },
-  "bt2i": {
-   "src": "videos/bt2i.mp4",
-   "title": "Does It Keep the Rule?",
-   "duration": 21.2,
-   "lines": [
-    {
-     "id": "bt2i_1",
-     "text": "Somebody built this tree, and says it keeps the rule. Hazel is not so sure.",
-     "start": 0.2,
-     "end": 4.93
-    },
-    {
-     "id": "bt2i_2",
-     "text": "Return true only if every node has smaller values on its whole left side, and bigger on its right.",
-     "start": 5.63,
-     "end": 11.98
-    },
-    {
-     "id": "bt2i_3",
-     "text": "Each nest here looks fine next to its own children.",
-     "start": 12.68,
-     "end": 15.66
-    },
-    {
-     "id": "bt2i_4",
-     "text": "But look at the nine. Whose left side is it in? Your turn.",
-     "start": 16.36,
-     "end": 19.59
-    }
-   ],
-   "pauses": []
-  },
-  "bt2s": {
-   "src": "videos/bt2s.mp4",
-   "title": "Every node has a range",
-   "duration": 65.72,
-   "lines": [
-    {
-     "id": "bt2s_1",
-     "text": "Comparing a node with its two children is not enough. A node must respect every ancestor above it.",
-     "start": 0.2,
-     "end": 6.43
-    },
-    {
-     "id": "bt2s_2",
-     "text": "So each call carries a range. The value must be above low, and below high. Going down narrows it.",
-     "start": 7.18,
-     "end": 13.6
-    },
-    {
-     "id": "bt2s_3",
-     "text": "The root. Eight. Its range is everything. Minus infinity, to infinity. Fine.",
-     "start": 14.35,
-     "end": 19.19
-    },
-    {
-     "id": "bt2s_4",
-     "text": "Line four goes left, and passes eight as the new high. Three must be below eight. It is.",
-     "start": 19.94,
-     "end": 25.88
-    },
-    {
-     "id": "bt2s_5",
-     "text": "Left again. The one must be below three. Fine. And its empty sides are fine.",
-     "start": 26.63,
-     "end": 31.59
-    },
-    {
-     "id": "bt2s_6",
-     "text": "Now the right child of three. Nine. Going right, three becomes the low. The high is still eight. Is nine allowed?",
-     "start": 32.34,
-     "end": 39.4
-    },
-    {
-     "id": "bt2s_7",
-     "text": "No. Nine is bigger than its parent, which looks right. But it sits on the left side of eight, and it is not below eight.",
-     "start": 40.6,
-     "end": 47.22
-    },
-    {
-     "id": "bt2s_8",
-     "text": "False travels back up. The and, on line five, stops at once. The right side of the root is never checked.",
-     "start": 47.97,
-     "end": 54.58
-    },
-    {
-     "id": "bt2s_9",
-     "text": "At worst, every node is visited once. O of n time.",
-     "start": 55.68,
-     "end": 59.19
-    },
-    {
-     "id": "bt2s_10",
-     "text": "The waiting calls are as deep as the tree is tall. O of height space.",
-     "start": 59.94,
-     "end": 64.12
-    }
-   ],
-   "pauses": [
-    {
-     "id": "bt2s-q",
-     "t": 39.6
-    }
-   ]
-  },
-  "bt3i": {
-   "src": "videos/bt3i.mp4",
-   "title": "The Third Smallest",
-   "duration": 19.39,
-   "lines": [
-    {
-     "id": "bt3i_1",
-     "text": "Hazel wants the third smallest number in the tree.",
-     "start": 0.2,
-     "end": 2.97
-    },
-    {
-     "id": "bt3i_2",
-     "text": "Return the k-th smallest value. The tree keeps the rule, so do not sort anything.",
-     "start": 3.67,
-     "end": 9.13
-    },
-    {
-     "id": "bt3i_3",
-     "text": "The smallest is easy to find. Keep going left until you cannot.",
-     "start": 9.83,
-     "end": 13.95
-    },
-    {
-     "id": "bt3i_4",
-     "text": "And then, which nest is the next smallest? Your turn.",
-     "start": 14.65,
-     "end": 17.79
-    }
-   ],
-   "pauses": []
-  },
-  "bt3s": {
-   "src": "videos/bt3s.mp4",
-   "title": "Left, node, right: count to k",
-   "duration": 66.23,
-   "lines": [
-    {
-     "id": "bt3s_1",
-     "text": "Left side, then the node, then the right side. On a search tree, that walk meets the values in sorted order.",
-     "start": 0.2,
-     "end": 6.91
-    },
-    {
-     "id": "bt3s_2",
-     "text": "So count the nodes as the walk meets them, and stop at number k.",
-     "start": 7.66,
-     "end": 11.62
-    },
-    {
-     "id": "bt3s_3",
-     "text": "K is three. The walk starts on the root, eight. Line six goes left first, and waits.",
-     "start": 12.37,
-     "end": 17.79
-    },
-    {
-     "id": "bt3s_4",
-     "text": "On three, left first again. On one, its left is empty. So one is the first node to be counted.",
-     "start": 18.54,
-     "end": 24.98
-    },
-    {
-     "id": "bt3s_5",
-     "text": "One has no right side. Back on three. Its left side is finished. So three is counted now.",
-     "start": 25.73,
-     "end": 31.76
-    },
-    {
-     "id": "bt3s_6",
-     "text": "Line nine goes to its right side. Six. Its left is empty, so six is counted. What happens on line eight?",
-     "start": 32.51,
-     "end": 39.76
-    },
-    {
-     "id": "bt3s_7",
-     "text": "Seen is three. That equals k. The answer is six.",
-     "start": 40.96,
-     "end": 44.25
-    },
-    {
-     "id": "bt3s_8",
-     "text": "From now on, line five stops every call at once. The eight, the ten, the fourteen are never counted.",
-     "start": 45,
-     "end": 51.54
-    },
-    {
-     "id": "bt3s_9",
-     "text": "Line twelve returns the answer.",
-     "start": 52.29,
-     "end": 54.24
-    },
-    {
-     "id": "bt3s_10",
-     "text": "The walk goes down the height, then counts k nodes. O of height plus k.",
-     "start": 55.34,
-     "end": 59.69
-    },
-    {
-     "id": "bt3s_11",
-     "text": "The waiting calls are as deep as the tree is tall. O of height space.",
-     "start": 60.44,
-     "end": 64.63
-    }
-   ],
-   "pauses": [
-    {
-     "id": "bt3s-q",
-     "t": 39.96
-    }
-   ]
-  },
-  "bt4i": {
-   "src": "videos/bt4i.mp4",
-   "title": "Where the Paths Split",
-   "duration": 24.11,
-   "lines": [
-    {
-     "id": "bt4i_1",
-     "text": "Pip is going to nest one. Moss is going to nest six. They start together, at the root.",
-     "start": 0.2,
-     "end": 5.66
-    },
-    {
-     "id": "bt4i_2",
-     "text": "Return the nest where their paths split. The lowest nest that has both below it.",
-     "start": 6.36,
-     "end": 11.05
-    },
-    {
-     "id": "bt4i_3",
-     "text": "In an ordinary tree, you had to search both sides. This tree keeps the rule.",
-     "start": 11.75,
-     "end": 16.75
-    },
-    {
-     "id": "bt4i_4",
-     "text": "Standing on the eight, can you tell where one and six are, without looking? Your turn.",
-     "start": 17.45,
-     "end": 22.51
-    }
-   ],
-   "pauses": []
-  },
-  "bt4s": {
-   "src": "videos/bt4s.mp4",
-   "title": "Walk until they part",
-   "duration": 48.07,
-   "lines": [
-    {
-     "id": "bt4s_1",
-     "text": "In a search tree, comparing with the node tells you which side each value is on. No searching needed.",
-     "start": 0.2,
-     "end": 6.34
-    },
-    {
-     "id": "bt4s_2",
-     "text": "While both are on the same side, walk that way. Where they part, that node is the answer.",
-     "start": 7.09,
-     "end": 12.47
-    },
-    {
-     "id": "bt4s_3",
-     "text": "Looking for one and six. The marker starts on the root. Eight.",
-     "start": 13.22,
-     "end": 16.8
-    },
-    {
-     "id": "bt4s_4",
-     "text": "One is smaller than eight. Six is smaller than eight. Both are on the left. So walk left.",
-     "start": 17.55,
-     "end": 23.3
-    },
-    {
-     "id": "bt4s_5",
-     "text": "Now on three. One is smaller than three. Six is bigger. What does the code do?",
-     "start": 24.05,
-     "end": 29.02
-    },
-    {
-     "id": "bt4s_6",
-     "text": "Not both smaller. Not both bigger. So they are on different sides, and the paths part here.",
-     "start": 30.22,
-     "end": 35.84
-    },
-    {
-     "id": "bt4s_7",
-     "text": "Line six returns the node three.",
-     "start": 36.59,
-     "end": 38.55
-    },
-    {
-     "id": "bt4s_8",
-     "text": "One walk down from the root. O of height.",
-     "start": 39.65,
-     "end": 42.23
-    },
-    {
-     "id": "bt4s_9",
-     "text": "One marker, and no waiting calls. O of one space.",
-     "start": 42.98,
-     "end": 46.47
-    }
-   ],
-   "pauses": [
-    {
-     "id": "bt4s-q",
-     "t": 29.22
-    }
-   ]
-  },
   "bt0": {
    "src": "videos/bt0.mp4",
    "title": "A Tree With One Rule",
@@ -12824,6 +12404,654 @@ window.BURROW = {
     }
    ]
   },
+  "hp1i": {
+   "src": "videos/hp1i.mp4",
+   "title": "A New Arrival",
+   "duration": 21.8,
+   "lines": [
+    {
+     "id": "hp1i_1",
+     "text": "This heap keeps its rule. Every parent is smaller than its children. Now a one arrives.",
+     "start": 0.2,
+     "end": 5.83
+    },
+    {
+     "id": "hp1i_2",
+     "text": "Add the value, keep the rule, and return the array.",
+     "start": 6.53,
+     "end": 9.38
+    },
+    {
+     "id": "hp1i_3",
+     "text": "There is only one spot that leaves no gap. The next free place, at the end.",
+     "start": 10.08,
+     "end": 14.39
+    },
+    {
+     "id": "hp1i_4",
+     "text": "But down there, the one is smaller than its parent. What would fix that? Your turn.",
+     "start": 15.09,
+     "end": 20.2
+    }
+   ],
+   "pauses": []
+  },
+  "hp1s": {
+   "src": "videos/hp1s.mp4",
+   "title": "Add at the end, sift up",
+   "duration": 60.51,
+   "lines": [
+    {
+     "id": "hp1s_1",
+     "text": "The new value goes in the next free spot, at the end of the array. Here, the one, at position five.",
+     "start": 0.2,
+     "end": 6.11
+    },
+    {
+     "id": "hp1s_2",
+     "text": "Then, while it is smaller than its parent, swap the two. It climbs until the rule holds.",
+     "start": 6.86,
+     "end": 12.24
+    },
+    {
+     "id": "hp1s_3",
+     "text": "Line two pushes the one. Line three remembers where it is. Position five.",
+     "start": 12.99,
+     "end": 18.1
+    },
+    {
+     "id": "hp1s_4",
+     "text": "Line five finds the parent. Five minus one, divided by two. Position two. That is the three.",
+     "start": 18.85,
+     "end": 25.64
+    },
+    {
+     "id": "hp1s_5",
+     "text": "Is three smaller than one? No. So line seven swaps them, and i moves up to position two.",
+     "start": 26.39,
+     "end": 32.82
+    },
+    {
+     "id": "hp1s_6",
+     "text": "Again. The parent of position two is position zero. The two. And the two is bigger than the one. What happens?",
+     "start": 33.57,
+     "end": 40.79
+    },
+    {
+     "id": "hp1s_7",
+     "text": "Another swap. The one is the root, and i is zero.",
+     "start": 41.99,
+     "end": 45.29
+    },
+    {
+     "id": "hp1s_8",
+     "text": "The loop needs i above zero. It ends, and line ten returns the heap.",
+     "start": 46.04,
+     "end": 50.55
+    },
+    {
+     "id": "hp1s_9",
+     "text": "At most one swap per level, and there are only log n levels.",
+     "start": 51.65,
+     "end": 55.51
+    },
+    {
+     "id": "hp1s_10",
+     "text": "Two numbers. O of one extra space.",
+     "start": 56.26,
+     "end": 58.91
+    }
+   ],
+   "pauses": [
+    {
+     "id": "hp1s-q",
+     "t": 40.99
+    }
+   ]
+  },
+  "hp2i": {
+   "src": "videos/hp2i.mp4",
+   "title": "Take the Smallest",
+   "duration": 21.87,
+   "lines": [
+    {
+     "id": "hp2i_1",
+     "text": "Hazel takes the smallest value. It is always on top.",
+     "start": 0.2,
+     "end": 3.77
+    },
+    {
+     "id": "hp2i_2",
+     "text": "Remove it, return it, and leave a valid heap behind.",
+     "start": 4.47,
+     "end": 7.65
+    },
+    {
+     "id": "hp2i_3",
+     "text": "Taking the top leaves a hole. Only one value can fill it without leaving a gap. The last one.",
+     "start": 8.35,
+     "end": 14.32
+    },
+    {
+     "id": "hp2i_4",
+     "text": "But the last one is big, and now it is on top. How does it get back down? Your turn.",
+     "start": 15.02,
+     "end": 20.27
+    }
+   ],
+   "pauses": []
+  },
+  "hp2s": {
+   "src": "videos/hp2s.mp4",
+   "title": "Last to the top, sift down",
+   "duration": 63.53,
+   "lines": [
+    {
+     "id": "hp2s_1",
+     "text": "The smallest is the root. Take it, and fill the hole with the last value in the array. The shape stays right.",
+     "start": 0.2,
+     "end": 6.8
+    },
+    {
+     "id": "hp2s_2",
+     "text": "Then let that value sink. Swap it with its smaller child, until no child is smaller.",
+     "start": 7.55,
+     "end": 13.08
+    },
+    {
+     "id": "hp2s_3",
+     "text": "Line two remembers the top. One.",
+     "start": 13.83,
+     "end": 16.12
+    },
+    {
+     "id": "hp2s_4",
+     "text": "Line three takes the last value, three, off the end. Line five puts it on top.",
+     "start": 16.87,
+     "end": 21.98
+    },
+    {
+     "id": "hp2s_5",
+     "text": "Small starts as i. Lines nine to twelve look at both children. Five, and two. Two is the smallest of the three.",
+     "start": 22.73,
+     "end": 29.99
+    },
+    {
+     "id": "hp2s_6",
+     "text": "Small is not i. So line fourteen swaps the three with the two, and i moves down to position two.",
+     "start": 30.74,
+     "end": 37.47
+    },
+    {
+     "id": "hp2s_7",
+     "text": "Again. The children of position two would be at positions five and six. But the array now has only five values. What happens?",
+     "start": 38.22,
+     "end": 46.52
+    },
+    {
+     "id": "hp2s_8",
+     "text": "No children. Small is still i. The three has found its place. Line thirteen returns the top. One.",
+     "start": 47.72,
+     "end": 54.37
+    },
+    {
+     "id": "hp2s_9",
+     "text": "At most one swap per level. O of log n.",
+     "start": 55.47,
+     "end": 58.29
+    },
+    {
+     "id": "hp2s_10",
+     "text": "A few numbers. O of one extra space.",
+     "start": 59.04,
+     "end": 61.93
+    }
+   ],
+   "pauses": [
+    {
+     "id": "hp2s-q",
+     "t": 46.72
+    }
+   ]
+  },
+  "hp3i": {
+   "src": "videos/hp3i.mp4",
+   "title": "The Runner-Up",
+   "duration": 20.18,
+   "lines": [
+    {
+     "id": "hp3i_1",
+     "text": "The numbers arrive one at a time. Pip wants the second largest.",
+     "start": 0.2,
+     "end": 4.14
+    },
+    {
+     "id": "hp3i_2",
+     "text": "Return the k-th largest number. Here, k is two.",
+     "start": 4.84,
+     "end": 8.33
+    },
+    {
+     "id": "hp3i_3",
+     "text": "You never need more than the k largest numbers seen so far.",
+     "start": 9.03,
+     "end": 12.83
+    },
+    {
+     "id": "hp3i_4",
+     "text": "When one more arrives, which one do you throw out? And what hands it to you? Your turn.",
+     "start": 13.53,
+     "end": 18.58
+    }
+   ],
+   "pauses": []
+  },
+  "hp3s": {
+   "src": "videos/hp3s.mp4",
+   "title": "A heap that holds only k",
+   "duration": 59.8,
+   "lines": [
+    {
+     "id": "hp3s_1",
+     "text": "Keep only the k largest numbers seen so far. The smallest of those is the k-th largest.",
+     "start": 0.2,
+     "end": 6.48
+    },
+    {
+     "id": "hp3s_2",
+     "text": "When there is one too many, the smallest must go. A min heap has it on top.",
+     "start": 7.23,
+     "end": 11.91
+    },
+    {
+     "id": "hp3s_3",
+     "text": "K is two. Line two makes a heap with the smallest on top. Five is pushed.",
+     "start": 12.66,
+     "end": 17.83
+    },
+    {
+     "id": "hp3s_4",
+     "text": "Two is pushed. The heap holds two values. That is not more than k.",
+     "start": 18.58,
+     "end": 22.82
+    },
+    {
+     "id": "hp3s_5",
+     "text": "Nine is pushed. Three values. One too many. Line five pops the smallest. The two.",
+     "start": 23.57,
+     "end": 29.56
+    },
+    {
+     "id": "hp3s_6",
+     "text": "One is pushed. The heap holds one, five, nine. Which value does line five pop?",
+     "start": 30.31,
+     "end": 35.41
+    },
+    {
+     "id": "hp3s_7",
+     "text": "The one. It went straight back out.",
+     "start": 36.61,
+     "end": 38.33
+    },
+    {
+     "id": "hp3s_8",
+     "text": "Seven is pushed. Five, seven, nine. The five is popped.",
+     "start": 39.08,
+     "end": 42.53
+    },
+    {
+     "id": "hp3s_9",
+     "text": "The heap holds the two largest. Seven and nine. Line seven returns the top.",
+     "start": 43.28,
+     "end": 48.31
+    },
+    {
+     "id": "hp3s_10",
+     "text": "n pushes, on a heap that never holds more than k plus one values. O of n log k.",
+     "start": 49.41,
+     "end": 55.73
+    },
+    {
+     "id": "hp3s_11",
+     "text": "The heap. O of k space.",
+     "start": 56.48,
+     "end": 58.2
+    }
+   ],
+   "pauses": [
+    {
+     "id": "hp3s-q",
+     "t": 35.61
+    }
+   ]
+  },
+  "hp4i": {
+   "src": "videos/hp4i.mp4",
+   "title": "Tying the Ropes",
+   "duration": 20.46,
+   "lines": [
+    {
+     "id": "hp4i_1",
+     "text": "Four ropes, to be tied into one. Tying two together costs their lengths, added up.",
+     "start": 0.2,
+     "end": 5.25
+    },
+    {
+     "id": "hp4i_2",
+     "text": "Return the smallest total cost of joining them all.",
+     "start": 5.95,
+     "end": 8.75
+    },
+    {
+     "id": "hp4i_3",
+     "text": "A rope that is tied in early is paid for again, in every join after that.",
+     "start": 9.45,
+     "end": 14.21
+    },
+    {
+     "id": "hp4i_4",
+     "text": "So which two should go first? And what about the new rope? Your turn.",
+     "start": 14.91,
+     "end": 18.86
+    }
+   ],
+   "pauses": []
+  },
+  "hp4s": {
+   "src": "videos/hp4s.mp4",
+   "title": "Always the two shortest",
+   "duration": 56.81,
+   "lines": [
+    {
+     "id": "hp4s_1",
+     "text": "A rope joined early is counted again in every later join. So the short ones should go first.",
+     "start": 0.2,
+     "end": 5.91
+    },
+    {
+     "id": "hp4s_2",
+     "text": "The two shortest, again and again, while new ropes keep arriving. That is the signal for a heap.",
+     "start": 6.66,
+     "end": 12.5
+    },
+    {
+     "id": "hp4s_3",
+     "text": "Line three pushes every rope into a min heap. Two is on top.",
+     "start": 13.25,
+     "end": 17.34
+    },
+    {
+     "id": "hp4s_4",
+     "text": "Line six pops the two shortest. Two and three. Joined, five. The cost is five. Line eight pushes the new rope back.",
+     "start": 18.09,
+     "end": 25.58
+    },
+    {
+     "id": "hp4s_5",
+     "text": "Again. The two shortest are now four, and the five we just made. What is the cost after this join?",
+     "start": 26.33,
+     "end": 32.61
+    },
+    {
+     "id": "hp4s_6",
+     "text": "Nine. The cost becomes fourteen. The nine goes back in.",
+     "start": 33.81,
+     "end": 37.57
+    },
+    {
+     "id": "hp4s_7",
+     "text": "Two ropes left. Six and nine. Fifteen. The cost is twenty nine.",
+     "start": 38.32,
+     "end": 42.72
+    },
+    {
+     "id": "hp4s_8",
+     "text": "One rope left. The loop ends, and line ten returns the cost.",
+     "start": 43.47,
+     "end": 47.62
+    },
+    {
+     "id": "hp4s_9",
+     "text": "About n joins, each a few heap operations. O of n log n.",
+     "start": 48.72,
+     "end": 52.82
+    },
+    {
+     "id": "hp4s_10",
+     "text": "The heap. O of n space.",
+     "start": 53.57,
+     "end": 55.21
+    }
+   ],
+   "pauses": [
+    {
+     "id": "hp4s-q",
+     "t": 32.81
+    }
+   ]
+  },
+  "hp5i": {
+   "src": "videos/hp5i.mp4",
+   "title": "Many Queues, One Line",
+   "duration": 20.99,
+   "lines": [
+    {
+     "id": "hp5i_1",
+     "text": "Several queues, each already in order, must become one line.",
+     "start": 0.2,
+     "end": 4
+    },
+    {
+     "id": "hp5i_2",
+     "text": "Return one sorted array with all the numbers. However many lists there are.",
+     "start": 4.7,
+     "end": 9.14
+    },
+    {
+     "id": "hp5i_3",
+     "text": "The next smallest number is always at the front of one of the lists.",
+     "start": 9.84,
+     "end": 13.73
+    },
+    {
+     "id": "hp5i_4",
+     "text": "So how many candidates do you ever need to compare? And what holds them? Your turn.",
+     "start": 14.43,
+     "end": 19.39
+    }
+   ],
+   "pauses": []
+  },
+  "hp5s": {
+   "src": "videos/hp5s.mp4",
+   "title": "One candidate per list",
+   "duration": 63.22,
+   "lines": [
+    {
+     "id": "hp5s_1",
+     "text": "The next smallest number is always at the front of one of the lists. So there is one candidate per list.",
+     "start": 0.2,
+     "end": 6.4
+    },
+    {
+     "id": "hp5s_2",
+     "text": "Keep the candidates in a min heap. Pop the smallest, and replace it with the next one from the same list.",
+     "start": 7.15,
+     "end": 13.42
+    },
+    {
+     "id": "hp5s_3",
+     "text": "Lines three to five push the front of every list. Each entry remembers its list, and its position.",
+     "start": 14.17,
+     "end": 20.36
+    },
+    {
+     "id": "hp5s_4",
+     "text": "Line eight pops the smallest. One, from list A. It goes to the output. And line twelve pushes the next of A. Six.",
+     "start": 21.11,
+     "end": 28.52
+    },
+    {
+     "id": "hp5s_5",
+     "text": "Pop again. Two, from list B. Output. The next of B is three.",
+     "start": 29.27,
+     "end": 33.32
+    },
+    {
+     "id": "hp5s_6",
+     "text": "The heap holds three and six. Three is popped. But list B has nothing after it. What does the heap hold now?",
+     "start": 34.07,
+     "end": 40.62
+    },
+    {
+     "id": "hp5s_7",
+     "text": "Only the six. Nothing is pushed when a list has run out.",
+     "start": 41.82,
+     "end": 45.23
+    },
+    {
+     "id": "hp5s_8",
+     "text": "Six is popped. The heap is empty, and line fifteen returns the output.",
+     "start": 45.98,
+     "end": 50.75
+    },
+    {
+     "id": "hp5s_9",
+     "text": "Every number is pushed and popped once, on a heap of k candidates. O of n log k.",
+     "start": 51.85,
+     "end": 57.74
+    },
+    {
+     "id": "hp5s_10",
+     "text": "The heap holds k entries. The output holds n.",
+     "start": 58.49,
+     "end": 61.62
+    }
+   ],
+   "pauses": [
+    {
+     "id": "hp5s-q",
+     "t": 40.82
+    }
+   ]
+  },
+  "hp6i": {
+   "src": "videos/hp6i.mp4",
+   "title": "The Middle, All the Time",
+   "duration": 22.29,
+   "lines": [
+    {
+     "id": "hp6i_1",
+     "text": "Numbers keep arriving, and after each one Moss wants the middle value.",
+     "start": 0.2,
+     "end": 4.49
+    },
+    {
+     "id": "hp6i_2",
+     "text": "Return the median after every arrival.",
+     "start": 5.19,
+     "end": 7.52
+    },
+    {
+     "id": "hp6i_3",
+     "text": "Sorting again each time is far too slow. And you only ever need the one or two values in the middle.",
+     "start": 8.22,
+     "end": 14.2
+    },
+    {
+     "id": "hp6i_4",
+     "text": "Cut the numbers into a small half and a big half. Which value of each half matters? Your turn.",
+     "start": 14.9,
+     "end": 20.69
+    }
+   ],
+   "pauses": []
+  },
+  "hp6s": {
+   "src": "videos/hp6s.mp4",
+   "title": "Two heaps, meeting in the middle",
+   "duration": 83.67,
+   "lines": [
+    {
+     "id": "hp6s_1",
+     "text": "Keep the small half of the numbers in one heap, and the big half in another.",
+     "start": 0.2,
+     "end": 4.57
+    },
+    {
+     "id": "hp6s_2",
+     "text": "Low keeps its biggest on top. High keeps its smallest on top. So the middle is always at the two tops.",
+     "start": 5.32,
+     "end": 12.03
+    },
+    {
+     "id": "hp6s_3",
+     "text": "Line two. Low is a max heap. The comparison is turned around, b minus a. Line three. High is an ordinary min heap.",
+     "start": 12.78,
+     "end": 20.81
+    },
+    {
+     "id": "hp6s_4",
+     "text": "Five arrives. It goes into low. Low hands its biggest to high. Then high is the bigger one, so it hands it back. Low holds the five.",
+     "start": 21.56,
+     "end": 30.17
+    },
+    {
+     "id": "hp6s_5",
+     "text": "Low is bigger. So the median is its top. Five.",
+     "start": 30.92,
+     "end": 33.99
+    },
+    {
+     "id": "hp6s_6",
+     "text": "Two arrives. Into low. Low hands its biggest, the five, to high. Now they are equal. The median is the average of the two tops.",
+     "start": 34.74,
+     "end": 43.41
+    },
+    {
+     "id": "hp6s_7",
+     "text": "Eight arrives. Into low. Low hands its biggest, the eight, to high. Now high holds two values, and low holds one. What does line eight do?",
+     "start": 44.16,
+     "end": 53.09
+    },
+    {
+     "id": "hp6s_8",
+     "text": "It moves the smallest of high, the five, back to low. Low is bigger again. The median is its top. Five.",
+     "start": 54.29,
+     "end": 61.2
+    },
+    {
+     "id": "hp6s_9",
+     "text": "One arrives. Into low. Low hands its biggest, the five, to high. Equal again. Two plus five, divided by two.",
+     "start": 61.95,
+     "end": 69.68
+    },
+    {
+     "id": "hp6s_10",
+     "text": "Line twelve returns the medians.",
+     "start": 70.43,
+     "end": 72.52
+    },
+    {
+     "id": "hp6s_11",
+     "text": "Each arrival is a few heap operations. O of n log n in total.",
+     "start": 73.62,
+     "end": 78.18
+    },
+    {
+     "id": "hp6s_12",
+     "text": "The two heaps hold every number. O of n space.",
+     "start": 78.93,
+     "end": 82.07
+    }
+   ],
+   "pauses": [
+    {
+     "id": "hp6s-q",
+     "t": 53.29
+    }
+   ]
+  },
   "hp0": {
    "src": "videos/hp0.mp4",
    "title": "Always the Smallest, Cheaply",
@@ -12855,6 +13083,146 @@ window.BURROW = {
     }
    ],
    "pauses": []
+  },
+  "hpt1": {
+   "src": "videos/hpt1.mp4",
+   "title": "A Tree in an Array",
+   "duration": 75.39,
+   "lines": [
+    {
+     "id": "vx1",
+     "text": "Hazel hands out tickets. The lowest number is served first. And new tickets keep arriving.",
+     "start": 0.2,
+     "end": 6.09
+    },
+    {
+     "id": "vx2",
+     "text": "A heap is a binary tree with one rule. Every parent is smaller than its children. So the smallest is always the root.",
+     "start": 7,
+     "end": 14.4
+    },
+    {
+     "id": "vx3",
+     "text": "Notice what the rule does not say. Left and right are in no order. A heap is only partly sorted. That is why it is cheap.",
+     "start": 15.3,
+     "end": 23.22
+    },
+    {
+     "id": "vx4",
+     "text": "And the tree is always filled level by level, from left to right. No gaps.",
+     "start": 24.22,
+     "end": 29.29
+    },
+    {
+     "id": "vx5",
+     "text": "No gaps means it fits in a plain array. Read the tree level by level. Position zero is the root.",
+     "start": 30.19,
+     "end": 36.55
+    },
+    {
+     "id": "vx6",
+     "text": "The children of position i are at two i plus one, and two i plus two. The parent is at i minus one, divided by two, rounded down.",
+     "start": 37.55,
+     "end": 46.48
+    },
+    {
+     "id": "vx7",
+     "text": "Now a one arrives. It goes in the next free spot, at the end. But it is smaller than its parent, the three. The rule is broken.",
+     "start": 47.48,
+     "end": 55.13
+    },
+    {
+     "id": "vx8",
+     "text": "So swap it with its parent. Now it sits under the two. What happens next?",
+     "start": 56.13,
+     "end": 60.82
+    },
+    {
+     "id": "vx9",
+     "text": "It swaps again. One is the root. This is called sifting up.",
+     "start": 62.02,
+     "end": 65.72
+    },
+    {
+     "id": "vx10",
+     "text": "At most one swap per level. And a heap of n values has only log n levels. So a push costs log n.",
+     "start": 66.72,
+     "end": 73.79
+    }
+   ],
+   "pauses": [
+    {
+     "id": "hpt1-q1",
+     "t": 61.02
+    }
+   ]
+  },
+  "hpt2": {
+   "src": "videos/hpt2.mp4",
+   "title": "Pop, and the Top K Pattern",
+   "duration": 69.29,
+   "lines": [
+    {
+     "id": "vy1",
+     "text": "Taking the smallest starts easily. It is the root. But that leaves a hole at the top.",
+     "start": 0.2,
+     "end": 5.23
+    },
+    {
+     "id": "vy2",
+     "text": "Fill the hole with the last value in the array. The shape is right again. But the rule is broken at the top.",
+     "start": 6.13,
+     "end": 12.48
+    },
+    {
+     "id": "vy3",
+     "text": "Three is on top. Its children are five and two. It has to swap with one of them. Which one?",
+     "start": 13.48,
+     "end": 19.41
+    },
+    {
+     "id": "vy4",
+     "text": "The smaller one. Two. Because two now becomes the parent of five, so it has to be the smaller.",
+     "start": 20.61,
+     "end": 26.78
+    },
+    {
+     "id": "vy5",
+     "text": "Keep going down until no child is smaller, or there are no children. That is sifting down. Log n again.",
+     "start": 27.78,
+     "end": 34.61
+    },
+    {
+     "id": "vy6",
+     "text": "JavaScript has no heap built in. In an interview, say so. Then write these two functions, or ask to assume a heap class.",
+     "start": 35.61,
+     "end": 43.33
+    },
+    {
+     "id": "vy7",
+     "text": "Now the pattern. You want the three largest of a million numbers. Keep a heap of only three, with the smallest of them on top.",
+     "start": 44.33,
+     "end": 52.09
+    },
+    {
+     "id": "vy8",
+     "text": "A new number arrives. Push it. If the heap now holds four, pop the smallest. The three that stay are the largest so far.",
+     "start": 53.09,
+     "end": 60.59
+    },
+    {
+     "id": "vy9",
+     "text": "The heap never grows past k. So the cost is n log k. Much better than sorting everything.",
+     "start": 61.59,
+     "end": 67.69
+    }
+   ],
+   "pauses": [
+    {
+     "id": "hpt2-q1",
+     "t": 19.61
+    }
+   ]
   },
   "iv1i": {
    "src": "videos/iv1i.mp4",
@@ -15400,6 +15768,426 @@ window.BURROW = {
     {
      "id": "tr8s-q",
      "t": 37.24
+    }
+   ]
+  },
+  "bt1i": {
+   "src": "videos/bt1i.mp4",
+   "title": "Is It in the Tree?",
+   "duration": 18.61,
+   "lines": [
+    {
+     "id": "bt1i_1",
+     "text": "This tree keeps the rule. Smaller on the left, bigger on the right.",
+     "start": 0.2,
+     "end": 3.96
+    },
+    {
+     "id": "bt1i_2",
+     "text": "Return true if the target is somewhere in the tree. And look at very few nests.",
+     "start": 4.66,
+     "end": 9.57
+    },
+    {
+     "id": "bt1i_3",
+     "text": "Pip stands on the root. Eight. Pip wants six.",
+     "start": 10.27,
+     "end": 13.11
+    },
+    {
+     "id": "bt1i_4",
+     "text": "Which side of the eight is even worth a look? Your turn.",
+     "start": 13.81,
+     "end": 17
+    }
+   ],
+   "pauses": []
+  },
+  "bt1s": {
+   "src": "videos/bt1s.mp4",
+   "title": "Compare, pick a side, go down",
+   "duration": 55.98,
+   "lines": [
+    {
+     "id": "bt1s_1",
+     "text": "Left is smaller, right is bigger. So one comparison tells you which side the target must be on.",
+     "start": 0.2,
+     "end": 6.45
+    },
+    {
+     "id": "bt1s_2",
+     "text": "The other side is thrown away without a look. This is binary search, on a tree.",
+     "start": 7.2,
+     "end": 11.95
+    },
+    {
+     "id": "bt1s_3",
+     "text": "Looking for six. The marker starts on the root. Eight. Not equal.",
+     "start": 12.7,
+     "end": 16.74
+    },
+    {
+     "id": "bt1s_4",
+     "text": "Six is smaller than eight. So it can only be on the left. The whole right side is thrown away.",
+     "start": 17.49,
+     "end": 23.18
+    },
+    {
+     "id": "bt1s_5",
+     "text": "Now on three. Not equal. Six is bigger than three. Which way?",
+     "start": 23.93,
+     "end": 27.88
+    },
+    {
+     "id": "bt1s_6",
+     "text": "Right. Line six. The one, on the left, is thrown away.",
+     "start": 29.08,
+     "end": 32.39
+    },
+    {
+     "id": "bt1s_7",
+     "text": "The marker is on six. Equal. Line four returns true.",
+     "start": 33.14,
+     "end": 36.74
+    },
+    {
+     "id": "bt1s_8",
+     "text": "And for a value that is not there, the marker falls off the bottom, onto null. The loop ends, and line eight returns false.",
+     "start": 37.84,
+     "end": 45.69
+    },
+    {
+     "id": "bt1s_9",
+     "text": "Each look goes one level down. O of height. In a balanced tree, that is log n.",
+     "start": 46.44,
+     "end": 51.63
+    },
+    {
+     "id": "bt1s_10",
+     "text": "One marker. O of one space.",
+     "start": 52.38,
+     "end": 54.38
+    }
+   ],
+   "pauses": [
+    {
+     "id": "bt1s-q",
+     "t": 28.08
+    }
+   ]
+  },
+  "bt2i": {
+   "src": "videos/bt2i.mp4",
+   "title": "Does It Keep the Rule?",
+   "duration": 21.2,
+   "lines": [
+    {
+     "id": "bt2i_1",
+     "text": "Somebody built this tree, and says it keeps the rule. Hazel is not so sure.",
+     "start": 0.2,
+     "end": 4.93
+    },
+    {
+     "id": "bt2i_2",
+     "text": "Return true only if every node has smaller values on its whole left side, and bigger on its right.",
+     "start": 5.63,
+     "end": 11.98
+    },
+    {
+     "id": "bt2i_3",
+     "text": "Each nest here looks fine next to its own children.",
+     "start": 12.68,
+     "end": 15.66
+    },
+    {
+     "id": "bt2i_4",
+     "text": "But look at the nine. Whose left side is it in? Your turn.",
+     "start": 16.36,
+     "end": 19.59
+    }
+   ],
+   "pauses": []
+  },
+  "bt2s": {
+   "src": "videos/bt2s.mp4",
+   "title": "Every node has a range",
+   "duration": 65.72,
+   "lines": [
+    {
+     "id": "bt2s_1",
+     "text": "Comparing a node with its two children is not enough. A node must respect every ancestor above it.",
+     "start": 0.2,
+     "end": 6.43
+    },
+    {
+     "id": "bt2s_2",
+     "text": "So each call carries a range. The value must be above low, and below high. Going down narrows it.",
+     "start": 7.18,
+     "end": 13.6
+    },
+    {
+     "id": "bt2s_3",
+     "text": "The root. Eight. Its range is everything. Minus infinity, to infinity. Fine.",
+     "start": 14.35,
+     "end": 19.19
+    },
+    {
+     "id": "bt2s_4",
+     "text": "Line four goes left, and passes eight as the new high. Three must be below eight. It is.",
+     "start": 19.94,
+     "end": 25.88
+    },
+    {
+     "id": "bt2s_5",
+     "text": "Left again. The one must be below three. Fine. And its empty sides are fine.",
+     "start": 26.63,
+     "end": 31.59
+    },
+    {
+     "id": "bt2s_6",
+     "text": "Now the right child of three. Nine. Going right, three becomes the low. The high is still eight. Is nine allowed?",
+     "start": 32.34,
+     "end": 39.4
+    },
+    {
+     "id": "bt2s_7",
+     "text": "No. Nine is bigger than its parent, which looks right. But it sits on the left side of eight, and it is not below eight.",
+     "start": 40.6,
+     "end": 47.22
+    },
+    {
+     "id": "bt2s_8",
+     "text": "False travels back up. The and, on line five, stops at once. The right side of the root is never checked.",
+     "start": 47.97,
+     "end": 54.58
+    },
+    {
+     "id": "bt2s_9",
+     "text": "At worst, every node is visited once. O of n time.",
+     "start": 55.68,
+     "end": 59.19
+    },
+    {
+     "id": "bt2s_10",
+     "text": "The waiting calls are as deep as the tree is tall. O of height space.",
+     "start": 59.94,
+     "end": 64.12
+    }
+   ],
+   "pauses": [
+    {
+     "id": "bt2s-q",
+     "t": 39.6
+    }
+   ]
+  },
+  "bt3i": {
+   "src": "videos/bt3i.mp4",
+   "title": "The Third Smallest",
+   "duration": 19.39,
+   "lines": [
+    {
+     "id": "bt3i_1",
+     "text": "Hazel wants the third smallest number in the tree.",
+     "start": 0.2,
+     "end": 2.97
+    },
+    {
+     "id": "bt3i_2",
+     "text": "Return the k-th smallest value. The tree keeps the rule, so do not sort anything.",
+     "start": 3.67,
+     "end": 9.13
+    },
+    {
+     "id": "bt3i_3",
+     "text": "The smallest is easy to find. Keep going left until you cannot.",
+     "start": 9.83,
+     "end": 13.95
+    },
+    {
+     "id": "bt3i_4",
+     "text": "And then, which nest is the next smallest? Your turn.",
+     "start": 14.65,
+     "end": 17.79
+    }
+   ],
+   "pauses": []
+  },
+  "bt3s": {
+   "src": "videos/bt3s.mp4",
+   "title": "Left, node, right: count to k",
+   "duration": 66.23,
+   "lines": [
+    {
+     "id": "bt3s_1",
+     "text": "Left side, then the node, then the right side. On a search tree, that walk meets the values in sorted order.",
+     "start": 0.2,
+     "end": 6.91
+    },
+    {
+     "id": "bt3s_2",
+     "text": "So count the nodes as the walk meets them, and stop at number k.",
+     "start": 7.66,
+     "end": 11.62
+    },
+    {
+     "id": "bt3s_3",
+     "text": "K is three. The walk starts on the root, eight. Line six goes left first, and waits.",
+     "start": 12.37,
+     "end": 17.79
+    },
+    {
+     "id": "bt3s_4",
+     "text": "On three, left first again. On one, its left is empty. So one is the first node to be counted.",
+     "start": 18.54,
+     "end": 24.98
+    },
+    {
+     "id": "bt3s_5",
+     "text": "One has no right side. Back on three. Its left side is finished. So three is counted now.",
+     "start": 25.73,
+     "end": 31.76
+    },
+    {
+     "id": "bt3s_6",
+     "text": "Line nine goes to its right side. Six. Its left is empty, so six is counted. What happens on line eight?",
+     "start": 32.51,
+     "end": 39.76
+    },
+    {
+     "id": "bt3s_7",
+     "text": "Seen is three. That equals k. The answer is six.",
+     "start": 40.96,
+     "end": 44.25
+    },
+    {
+     "id": "bt3s_8",
+     "text": "From now on, line five stops every call at once. The eight, the ten, the fourteen are never counted.",
+     "start": 45,
+     "end": 51.54
+    },
+    {
+     "id": "bt3s_9",
+     "text": "Line twelve returns the answer.",
+     "start": 52.29,
+     "end": 54.24
+    },
+    {
+     "id": "bt3s_10",
+     "text": "The walk goes down the height, then counts k nodes. O of height plus k.",
+     "start": 55.34,
+     "end": 59.69
+    },
+    {
+     "id": "bt3s_11",
+     "text": "The waiting calls are as deep as the tree is tall. O of height space.",
+     "start": 60.44,
+     "end": 64.63
+    }
+   ],
+   "pauses": [
+    {
+     "id": "bt3s-q",
+     "t": 39.96
+    }
+   ]
+  },
+  "bt4i": {
+   "src": "videos/bt4i.mp4",
+   "title": "Where the Paths Split",
+   "duration": 24.11,
+   "lines": [
+    {
+     "id": "bt4i_1",
+     "text": "Pip is going to nest one. Moss is going to nest six. They start together, at the root.",
+     "start": 0.2,
+     "end": 5.66
+    },
+    {
+     "id": "bt4i_2",
+     "text": "Return the nest where their paths split. The lowest nest that has both below it.",
+     "start": 6.36,
+     "end": 11.05
+    },
+    {
+     "id": "bt4i_3",
+     "text": "In an ordinary tree, you had to search both sides. This tree keeps the rule.",
+     "start": 11.75,
+     "end": 16.75
+    },
+    {
+     "id": "bt4i_4",
+     "text": "Standing on the eight, can you tell where one and six are, without looking? Your turn.",
+     "start": 17.45,
+     "end": 22.51
+    }
+   ],
+   "pauses": []
+  },
+  "bt4s": {
+   "src": "videos/bt4s.mp4",
+   "title": "Walk until they part",
+   "duration": 48.07,
+   "lines": [
+    {
+     "id": "bt4s_1",
+     "text": "In a search tree, comparing with the node tells you which side each value is on. No searching needed.",
+     "start": 0.2,
+     "end": 6.34
+    },
+    {
+     "id": "bt4s_2",
+     "text": "While both are on the same side, walk that way. Where they part, that node is the answer.",
+     "start": 7.09,
+     "end": 12.47
+    },
+    {
+     "id": "bt4s_3",
+     "text": "Looking for one and six. The marker starts on the root. Eight.",
+     "start": 13.22,
+     "end": 16.8
+    },
+    {
+     "id": "bt4s_4",
+     "text": "One is smaller than eight. Six is smaller than eight. Both are on the left. So walk left.",
+     "start": 17.55,
+     "end": 23.3
+    },
+    {
+     "id": "bt4s_5",
+     "text": "Now on three. One is smaller than three. Six is bigger. What does the code do?",
+     "start": 24.05,
+     "end": 29.02
+    },
+    {
+     "id": "bt4s_6",
+     "text": "Not both smaller. Not both bigger. So they are on different sides, and the paths part here.",
+     "start": 30.22,
+     "end": 35.84
+    },
+    {
+     "id": "bt4s_7",
+     "text": "Line six returns the node three.",
+     "start": 36.59,
+     "end": 38.55
+    },
+    {
+     "id": "bt4s_8",
+     "text": "One walk down from the root. O of height.",
+     "start": 39.65,
+     "end": 42.23
+    },
+    {
+     "id": "bt4s_9",
+     "text": "One marker, and no waiting calls. O of one space.",
+     "start": 42.98,
+     "end": 46.47
+    }
+   ],
+   "pauses": [
+    {
+     "id": "bt4s-q",
+     "t": 29.22
     }
    ]
   }
