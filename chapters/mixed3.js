@@ -2435,32 +2435,32 @@ window.CHAPTER = {
    "why": "Why does picking the middle value at every step keep the tree short?",
    "world": "A database builds a fresh index from sorted data this way, so that it starts out balanced.",
    "view": {
-    "row": [
-     1,
-     3,
+    "row": [],
+    "tree": [
      6,
+     1,
      8,
+     null,
+     3,
+     null,
      10
     ],
-    "tree": null,
     "grid": null,
     "graph": null,
     "treeIndex": false,
-    "ghost": [],
+    "ghost": [
+     0,
+     1,
+     2,
+     4,
+     6
+    ],
     "row2": null,
     "rowLabel": "",
     "row2Label": "",
     "ptrs": [
      {
-      "id": "lo",
-      "row": 1
-     },
-     {
-      "id": "hi",
-      "row": 1
-     },
-     {
-      "id": "mid",
+      "id": "node",
       "row": 1
      }
     ],
@@ -2487,7 +2487,7 @@ window.CHAPTER = {
      "show": [],
      "vars": null,
      "box": null,
-     "card": "the middle value goes on top",
+     "card": "1 3 6 8 10 → the 6 goes on top",
      "arrows": null
     },
     {
@@ -2511,32 +2511,7 @@ window.CHAPTER = {
      "say": "The first call covers the whole row. Low is zero, high is four. The middle is position two. Six becomes the root.",
      "line": 4,
      "ptr": {
-      "lo": 0,
-      "hi": 4,
-      "mid": 2
-     },
-     "hot": [],
-     "ok": [
-      2
-     ],
-     "bad": [],
-     "set": null,
-     "swap": null,
-     "move": null,
-     "gone": [],
-     "show": [],
-     "vars": null,
-     "box": null,
-     "card": "6 is the root",
-     "arrows": null
-    },
-    {
-     "say": "Line five builds its left side from the stretch before the middle. Positions zero to one. The middle is position zero. One becomes the left child of six.",
-     "line": 4,
-     "ptr": {
-      "lo": 0,
-      "hi": 1,
-      "mid": 0
+      "node": 0
      },
      "hot": [],
      "ok": [
@@ -2547,19 +2522,19 @@ window.CHAPTER = {
      "swap": null,
      "move": null,
      "gone": [],
-     "show": [],
+     "show": [
+      0
+     ],
      "vars": null,
      "box": null,
-     "card": "1: left child of 6",
+     "card": "middle of 1 3 6 8 10 → 6",
      "arrows": null
     },
     {
-     "say": "Left of the one, there is nothing. Low is above high. Line two returns null. To its right is the three.",
+     "say": "Line five builds its left side from the stretch before the middle. Positions zero to one. The middle is position zero. One becomes the left child of six.",
      "line": 4,
      "ptr": {
-      "lo": 1,
-      "hi": 1,
-      "mid": 1
+      "node": 1
      },
      "hot": [],
      "ok": [
@@ -2570,7 +2545,32 @@ window.CHAPTER = {
      "swap": null,
      "move": null,
      "gone": [],
-     "show": [],
+     "show": [
+      1
+     ],
+     "vars": null,
+     "box": null,
+     "card": "left side 1 3 → middle is 1",
+     "arrows": null
+    },
+    {
+     "say": "Left of the one, there is nothing. Low is above high. Line two returns null. To its right is the three.",
+     "line": 4,
+     "ptr": {
+      "node": 4
+     },
+     "hot": [],
+     "ok": [
+      4
+     ],
+     "bad": [],
+     "set": null,
+     "swap": null,
+     "move": null,
+     "gone": [],
+     "show": [
+      4
+     ],
      "vars": null,
      "box": null,
      "card": "3: right child of 1",
@@ -2580,12 +2580,10 @@ window.CHAPTER = {
      "say": "Back at the root. Line six builds the right side, from positions three to four. Which position is the middle?",
      "line": 3,
      "ptr": {
-      "lo": 3,
-      "hi": 4
+      "node": 0
      },
      "hot": [
-      3,
-      4
+      0
      ],
      "ok": [],
      "bad": [],
@@ -2596,26 +2594,29 @@ window.CHAPTER = {
      "show": [],
      "vars": null,
      "box": null,
-     "card": "lo = 3 · hi = 4 → mid = ?",
+     "card": "right side 8 10 → mid = ?",
      "arrows": null
     },
     {
      "say": "Three. So eight is the right child of six. And ten, to its right, becomes the right child of eight.",
      "line": 4,
      "ptr": {
-      "mid": 3
+      "node": 2
      },
      "hot": [],
      "ok": [
-      3,
-      4
+      2,
+      6
      ],
      "bad": [],
      "set": null,
      "swap": null,
      "move": null,
      "gone": [],
-     "show": [],
+     "show": [
+      2,
+      6
+     ],
      "vars": null,
      "box": null,
      "card": "8: right child of 6 · then 10",

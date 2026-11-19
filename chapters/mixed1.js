@@ -3630,13 +3630,13 @@ window.CHAPTER = {
      "say": "Four. Doors one to four. A new best.",
      "line": 8,
      "ptr": null,
-     "hot": [
+     "hot": [],
+     "ok": [
       1,
       2,
       3,
       4
      ],
-     "ok": [],
      "bad": [],
      "set": null,
      "swap": null,

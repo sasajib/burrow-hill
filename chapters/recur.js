@@ -1023,7 +1023,7 @@ window.CHAPTER = {
     ],
     "vars": [],
     "box": {
-     "title": "call stack",
+     "title": "isMirror calls",
      "rows": 3
     },
     "list": false,
@@ -1084,7 +1084,7 @@ window.CHAPTER = {
      "show": [],
      "vars": null,
      "box": [
-      "isMirror 0..4"
+      "(0 .. 4)"
      ],
      "card": "left = 0 · right = 4",
      "arrows": null
@@ -1135,8 +1135,8 @@ window.CHAPTER = {
      "show": [],
      "vars": null,
      "box": [
-      "isMirror 0..4",
-      "isMirror 1..3"
+      "(0 .. 4)",
+      "(1 .. 3)"
      ],
      "card": "",
      "arrows": null
@@ -1160,9 +1160,9 @@ window.CHAPTER = {
      "show": [],
      "vars": null,
      "box": [
-      "isMirror 0..4",
-      "isMirror 1..3",
-      "isMirror 2..2"
+      "(0 .. 4)",
+      "(1 .. 3)",
+      "(2 .. 2)"
      ],
      "card": "left = 2 · right = 2 → ?",
      "arrows": null
@@ -1183,9 +1183,9 @@ window.CHAPTER = {
      "show": [],
      "vars": null,
      "box": [
-      "isMirror 0..4",
-      "isMirror 1..3",
-      "isMirror 2..2"
+      "(0 .. 4)",
+      "(1 .. 3)",
+      "(2 .. 2)"
      ],
      "card": "the base case → true",
      "arrows": null
