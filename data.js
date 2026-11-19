@@ -1302,7 +1302,7 @@ window.BURROW = {
   "f4": {
    "src": "videos/f4.mp4",
    "title": "Counting the Work",
-   "duration": 94,
+   "duration": 96.2,
    "lines": [
     {
      "id": "fd1",
@@ -1385,8 +1385,8 @@ window.BURROW = {
     {
      "id": "fd14",
      "text": "Learn these six shapes. In an interview, naming the shape is half the answer.",
-     "start": 87.89,
-     "end": 92.4
+     "start": 90.09,
+     "end": 94.6
     }
    ],
    "pauses": [
@@ -2895,7 +2895,7 @@ window.BURROW = {
   "art2": {
    "src": "videos/art2.mp4",
    "title": "What a Row Makes Slow",
-   "duration": 62.78,
+   "duration": 63.97,
    "lines": [
     {
      "id": "ay1",
@@ -2911,51 +2911,51 @@ window.BURROW = {
     },
     {
      "id": "ay3",
-     "text": "One, two, three moves, just to make room for one parcel. For n doors, up to n moves. O of n.",
+     "text": "Two parcels shift, and then the new one goes in. Three moves, for one parcel. For n doors, up to n moves. O of n.",
      "start": 15.17,
-     "end": 21.79
+     "end": 22.98
     },
     {
      "id": "ay4",
      "text": "Removing from the middle is the same story. Everything after it shifts left, to close the gap.",
-     "start": 22.79,
-     "end": 28.71
+     "start": 23.98,
+     "end": 29.9
     },
     {
      "id": "ay5",
      "text": "And the end of the row? Nothing is behind it. Adding or removing there shifts nobody. O of one.",
-     "start": 29.71,
-     "end": 35.87
+     "start": 30.9,
+     "end": 37.06
     },
     {
      "id": "ay6",
      "text": "Now find a value, when you do not know its index. Say, the number nine. How many doors might Moss have to open?",
-     "start": 36.87,
-     "end": 43.65
+     "start": 38.06,
+     "end": 44.84
     },
     {
      "id": "ay7",
      "text": "All of them. Without an index there is nothing to jump to. So Moss walks. O of n.",
-     "start": 44.85,
-     "end": 50.5
+     "start": 46.04,
+     "end": 51.69
     },
     {
      "id": "ay8",
      "text": "So. By index, instant. At the end, instant. In the middle, or by value, a walk.",
-     "start": 51.5,
-     "end": 56.85
+     "start": 52.69,
+     "end": 58.04
     },
     {
      "id": "ay9",
      "text": "Most of this course is about getting rid of that walk.",
-     "start": 57.85,
-     "end": 61.18
+     "start": 59.04,
+     "end": 62.37
     }
    ],
    "pauses": [
     {
      "id": "art2-q1",
-     "t": 43.85
+     "t": 45.04
     }
    ]
   },
