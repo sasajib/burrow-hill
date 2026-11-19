@@ -1577,9 +1577,11 @@ window.CHAPTER = {
     "graph": null,
     "treeIndex": false,
     "ghost": [],
-    "row2": null,
-    "rowLabel": "",
-    "row2Label": "",
+    "row2": [
+     "2-5"
+    ],
+    "rowLabel": "old",
+    "row2Label": "new",
     "ptrs": [
      {
       "id": "i",
@@ -1704,7 +1706,9 @@ window.CHAPTER = {
      "bad": [
       0
      ],
-     "set": null,
+     "set": {
+      "d0": "1-5"
+     },
      "swap": null,
      "move": null,
      "gone": [],
