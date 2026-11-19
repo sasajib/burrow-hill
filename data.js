@@ -7895,6 +7895,301 @@ window.BURROW = {
    ],
    "pauses": []
   },
+  "sg1s": {
+   "src": "videos/sg1s.mp4",
+   "title": "Trust the halves, then merge",
+   "duration": 65.28,
+   "lines": [
+    {
+     "id": "sg1s_1",
+     "text": "Two sorted halves can be merged in one pass, with two markers. You have done that.",
+     "start": 0.2,
+     "end": 5.53
+    },
+    {
+     "id": "sg1s_2",
+     "text": "And each half gets sorted by the very same function. That is recursion. Trust it.",
+     "start": 6.28,
+     "end": 11.87
+    },
+    {
+     "id": "sg1s_3",
+     "text": "Line two is the base case. A row of one number is already sorted.",
+     "start": 12.62,
+     "end": 17.07
+    },
+    {
+     "id": "sg1s_4",
+     "text": "Line three finds the middle. The row splits into five, two. And eight, one.",
+     "start": 17.82,
+     "end": 22.58
+    },
+    {
+     "id": "sg1s_5",
+     "text": "Lines four and five sort each half, by calling merge sort on it. Trust the result. Two, five. And one, eight.",
+     "start": 23.33,
+     "end": 29.87
+    },
+    {
+     "id": "sg1s_6",
+     "text": "Now merge. A marker at the front of each half. Two against one. One is smaller, so it goes out first.",
+     "start": 30.62,
+     "end": 36.99
+    },
+    {
+     "id": "sg1s_7",
+     "text": "J moves on. Two against eight. Which one goes out?",
+     "start": 37.74,
+     "end": 40.86
+    },
+    {
+     "id": "sg1s_8",
+     "text": "Two. Then five against eight. Five.",
+     "start": 42.06,
+     "end": 44.13
+    },
+    {
+     "id": "sg1s_9",
+     "text": "The left half is used up. Line thirteen adds whatever is left of the other half. Eight.",
+     "start": 44.88,
+     "end": 50.49
+    },
+    {
+     "id": "sg1s_10",
+     "text": "The row is halved about log n times, and each level merges n numbers. O of n log n time.",
+     "start": 51.59,
+     "end": 58.31
+    },
+    {
+     "id": "sg1s_11",
+     "text": "The halves and the merged rows are new arrays. O of n extra space.",
+     "start": 59.06,
+     "end": 63.68
+    }
+   ],
+   "pauses": [
+    {
+     "id": "sg1s-q",
+     "t": 41.06
+    }
+   ]
+  },
+  "sg2i": {
+   "src": "videos/sg2i.mp4",
+   "title": "The Closest Two",
+   "duration": 20.39,
+   "lines": [
+    {
+     "id": "sg2i_1",
+     "text": "Which two parcels in this row are closest in weight?",
+     "start": 0.2,
+     "end": 3.09
+    },
+    {
+     "id": "sg2i_2",
+     "text": "Return the smallest difference between any two numbers.",
+     "start": 3.79,
+     "end": 6.97
+    },
+    {
+     "id": "sg2i_3",
+     "text": "In a jumbled row, the closest two could be anywhere. That means checking every pair.",
+     "start": 7.67,
+     "end": 12.77
+    },
+    {
+     "id": "sg2i_4",
+     "text": "Ask the sorting question. Would this be easy if the row were in order? Your turn.",
+     "start": 13.47,
+     "end": 18.79
+    }
+   ],
+   "pauses": []
+  },
+  "sg2s": {
+   "src": "videos/sg2s.mp4",
+   "title": "Sorted: the closest are neighbours",
+   "duration": 54.27,
+   "lines": [
+    {
+     "id": "sg2s_1",
+     "text": "In a jumbled row the closest two could be anywhere. In a sorted row they must be standing next to each other.",
+     "start": 0.2,
+     "end": 6.79
+    },
+    {
+     "id": "sg2s_2",
+     "text": "So sort first, then one walk over the neighbours is enough.",
+     "start": 7.54,
+     "end": 10.89
+    },
+    {
+     "id": "sg2s_3",
+     "text": "Line two sorts a copy of the row. With a compare function, a minus b, so that numbers are compared as numbers.",
+     "start": 11.64,
+     "end": 19.23
+    },
+    {
+     "id": "sg2s_4",
+     "text": "Best starts at infinity, so that any real gap beats it.",
+     "start": 19.98,
+     "end": 23.54
+    },
+    {
+     "id": "sg2s_5",
+     "text": "The walk starts at door one. Five minus one is four. Best is four.",
+     "start": 24.29,
+     "end": 28.6
+    },
+    {
+     "id": "sg2s_6",
+     "text": "Door two. Eight minus five. What is best now?",
+     "start": 29.35,
+     "end": 32.12
+    },
+    {
+     "id": "sg2s_7",
+     "text": "Three. A new best.",
+     "start": 33.32,
+     "end": 34.51
+    },
+    {
+     "id": "sg2s_8",
+     "text": "Door three. Thirteen minus eight is five. Not better.",
+     "start": 35.26,
+     "end": 38.7
+    },
+    {
+     "id": "sg2s_9",
+     "text": "Line seven returns the best. Three.",
+     "start": 39.45,
+     "end": 41.91
+    },
+    {
+     "id": "sg2s_10",
+     "text": "The sort costs n log n. The walk after it is only n. So the sort is the whole price. O of n log n.",
+     "start": 43.01,
+     "end": 49.55
+    },
+    {
+     "id": "sg2s_11",
+     "text": "The sorted copy. O of n space.",
+     "start": 50.3,
+     "end": 52.67
+    }
+   ],
+   "pauses": [
+    {
+     "id": "sg2s-q",
+     "t": 32.32
+    }
+   ]
+  },
+  "sg3i": {
+   "src": "videos/sg3i.mp4",
+   "title": "Tallest First",
+   "duration": 16.25,
+   "lines": [
+    {
+     "id": "sg3i_1",
+     "text": "Three friends, and how tall each one is.",
+     "start": 0.2,
+     "end": 2.51
+    },
+    {
+     "id": "sg3i_2",
+     "text": "Return the names, from tallest to shortest.",
+     "start": 3.21,
+     "end": 5.86
+    },
+    {
+     "id": "sg3i_3",
+     "text": "You are sorting by one row, but returning the other. They must not come apart.",
+     "start": 6.56,
+     "end": 11.38
+    },
+    {
+     "id": "sg3i_4",
+     "text": "So what exactly should you sort? Your turn.",
+     "start": 12.08,
+     "end": 14.65
+    }
+   ],
+   "pauses": []
+  },
+  "sg3s": {
+   "src": "videos/sg3s.mp4",
+   "title": "Sort the positions",
+   "duration": 61.13,
+   "lines": [
+    {
+     "id": "sg3s_1",
+     "text": "The names and the heights are tied together by position. So sort the positions, and both rows stay connected.",
+     "start": 0.2,
+     "end": 6.89
+    },
+    {
+     "id": "sg3s_2",
+     "text": "A compare function tells the sort which of two positions goes first. Here, the one with the bigger height.",
+     "start": 7.64,
+     "end": 13.65
+    },
+    {
+     "id": "sg3s_3",
+     "text": "Line two makes a list of positions. Zero, one, two.",
+     "start": 14.4,
+     "end": 17.8
+    },
+    {
+     "id": "sg3s_4",
+     "text": "Line three sorts them. The compare function takes two positions, a and b, and looks up their heights.",
+     "start": 18.55,
+     "end": 24.8
+    },
+    {
+     "id": "sg3s_5",
+     "text": "When that is positive, b is taller, and b goes first. For positions zero and one: twelve minus thirty. Is that positive?",
+     "start": 25.55,
+     "end": 33.43
+    },
+    {
+     "id": "sg3s_6",
+     "text": "No. It is negative. So position zero stays in front. The taller one.",
+     "start": 34.63,
+     "end": 39.2
+    },
+    {
+     "id": "sg3s_7",
+     "text": "The sort does that for every pair it needs. The order becomes zero, two, one. Thirty, twenty five, twelve.",
+     "start": 39.95,
+     "end": 46.8
+    },
+    {
+     "id": "sg3s_8",
+     "text": "Line four turns each position back into a name. Pip, Hazel, Moss.",
+     "start": 47.55,
+     "end": 52.26
+    },
+    {
+     "id": "sg3s_9",
+     "text": "The sort is the whole price. O of n log n.",
+     "start": 53.36,
+     "end": 56.26
+    },
+    {
+     "id": "sg3s_10",
+     "text": "The list of positions. O of n space.",
+     "start": 57.01,
+     "end": 59.53
+    }
+   ],
+   "pauses": [
+    {
+     "id": "sg3s-q",
+     "t": 33.63
+    }
+   ]
+  },
   "sg0": {
    "src": "videos/sg0.mp4",
    "title": "Sort So the Rest Is Easy",
@@ -7997,6 +8292,192 @@ window.BURROW = {
     {
      "id": "sgt1-q1",
      "t": 52.63
+    }
+   ]
+  },
+  "iv1i": {
+   "src": "videos/iv1i.mp4",
+   "title": "Can One Person Attend?",
+   "duration": 18.88,
+   "lines": [
+    {
+     "id": "iv1i_1",
+     "text": "Pip has three meetings today. Each one has a start, and an end.",
+     "start": 0.2,
+     "end": 3.88
+    },
+    {
+     "id": "iv1i_2",
+     "text": "Return true if Pip can attend them all, with no two overlapping.",
+     "start": 4.58,
+     "end": 8.55
+    },
+    {
+     "id": "iv1i_3",
+     "text": "In this order, the clash is hard to see.",
+     "start": 9.25,
+     "end": 11.58
+    },
+    {
+     "id": "iv1i_4",
+     "text": "Ask the sorting question. What if they were in order of start time? Your turn.",
+     "start": 12.28,
+     "end": 17.28
+    }
+   ],
+   "pauses": []
+  },
+  "iv1s": {
+   "src": "videos/iv1s.mp4",
+   "title": "Sort by start, check neighbours",
+   "duration": 44.02,
+   "lines": [
+    {
+     "id": "iv1s_1",
+     "text": "In start order, a meeting can only clash with the one just before it. If it does not, it cannot reach back any further.",
+     "start": 0.2,
+     "end": 7.39
+    },
+    {
+     "id": "iv1s_2",
+     "text": "So sort by start, and compare each start with the end before it.",
+     "start": 8.14,
+     "end": 12.09
+    },
+    {
+     "id": "iv1s_3",
+     "text": "Line two sorts a copy by start time. One to three. Two to four. Five to six.",
+     "start": 12.84,
+     "end": 18.53
+    },
+    {
+     "id": "iv1s_4",
+     "text": "The walk starts at door one. Its start is two. The meeting before it ends at three. Is two before three?",
+     "start": 19.28,
+     "end": 25.92
+    },
+    {
+     "id": "iv1s_5",
+     "text": "Yes. The second meeting starts before the first one has ended. Line four returns false.",
+     "start": 27.12,
+     "end": 32.59
+    },
+    {
+     "id": "iv1s_6",
+     "text": "The sort costs n log n, and the walk after it is one pass. O of n log n.",
+     "start": 33.69,
+     "end": 39.3
+    },
+    {
+     "id": "iv1s_7",
+     "text": "The sorted copy. O of n space.",
+     "start": 40.05,
+     "end": 42.42
+    }
+   ],
+   "pauses": [
+    {
+     "id": "iv1s-q",
+     "t": 26.12
+    }
+   ]
+  },
+  "iv0": {
+   "src": "videos/iv0.mp4",
+   "title": "Things With a Start and an End",
+   "duration": 24.63,
+   "lines": [
+    {
+     "id": "iw1",
+     "text": "Chapter thirteen. Intervals. Anything with a start, and an end.",
+     "start": 0.2,
+     "end": 4.06
+    },
+    {
+     "id": "iw2",
+     "text": "Meetings. Bookings. Time slots. Ranges of numbers. They all ask the same kinds of question.",
+     "start": 4.76,
+     "end": 10.89
+    },
+    {
+     "id": "iw3",
+     "text": "Do these overlap? Can they be joined? How many are going on at once?",
+     "start": 11.79,
+     "end": 15.91
+    },
+    {
+     "id": "iw4",
+     "text": "And nearly every answer begins the same way. Sort them. Then walk once. Five puzzles.",
+     "start": 16.81,
+     "end": 23.03
+    }
+   ],
+   "pauses": []
+  },
+  "ivt2": {
+   "src": "videos/ivt2.mp4",
+   "title": "How Many at Once?",
+   "duration": 64.84,
+   "lines": [
+    {
+     "id": "iy1",
+     "text": "Three meetings. How many rooms do we need? That is the same as asking: what is the most meetings going on at the same moment?",
+     "start": 0.2,
+     "end": 7.94
+    },
+    {
+     "id": "iy2",
+     "text": "Only two kinds of moment matter. A meeting starts, and takes a room. A meeting ends, and gives one back.",
+     "start": 8.84,
+     "end": 15.08
+    },
+    {
+     "id": "iy3",
+     "text": "So make two sorted lists. All the starts. And all the ends.",
+     "start": 16.08,
+     "end": 19.35
+    },
+    {
+     "id": "iy4",
+     "text": "Walk the starts. At zero, a meeting starts. Nothing has ended. One room.",
+     "start": 20.25,
+     "end": 24.71
+    },
+    {
+     "id": "iy5",
+     "text": "At five, another starts. The earliest end is ten. Still nothing free. Two rooms.",
+     "start": 25.61,
+     "end": 31.51
+    },
+    {
+     "id": "iy6",
+     "text": "At fifteen, a third one starts. But a meeting ended at ten. So that room is free, and we reuse it. Still two.",
+     "start": 32.51,
+     "end": 39.91
+    },
+    {
+     "id": "iy7",
+     "text": "A different question. You want to keep as many meetings as possible, with no overlaps. Which one do you keep first?",
+     "start": 40.91,
+     "end": 48.15
+    },
+    {
+     "id": "iy8",
+     "text": "The one that ends first. It leaves the most time for everything else. So sort by end, and keep each meeting that still fits.",
+     "start": 49.35,
+     "end": 57.26
+    },
+    {
+     "id": "iy9",
+     "text": "Count the overlaps with sorted starts and ends. Keep the most by sorting on the end.",
+     "start": 58.26,
+     "end": 63.24
+    }
+   ],
+   "pauses": [
+    {
+     "id": "ivt2-q1",
+     "t": 48.35
     }
    ]
   },
@@ -10328,6 +10809,456 @@ window.BURROW = {
     }
    ]
   },
+  "rc1i": {
+   "src": "videos/rc1i.mp4",
+   "title": "Add Them Up",
+   "duration": 20.93,
+   "lines": [
+    {
+     "id": "rc1i_1",
+     "text": "Add up the numbers from one to four. Easy with a loop. But this time, no loop.",
+     "start": 0.2,
+     "end": 5.11
+    },
+    {
+     "id": "rc1i_2",
+     "text": "Return one plus two, all the way up to n. The function must call itself.",
+     "start": 5.81,
+     "end": 10.45
+    },
+    {
+     "id": "rc1i_3",
+     "text": "Suppose somebody handed you the sum up to three. Six.",
+     "start": 11.15,
+     "end": 14.51
+    },
+    {
+     "id": "rc1i_4",
+     "text": "What would be left for you to do? And when does the asking stop? Your turn.",
+     "start": 15.21,
+     "end": 19.33
+    }
+   ],
+   "pauses": []
+  },
+  "rc1s": {
+   "src": "videos/rc1s.mp4",
+   "title": "Ask for the smaller sum",
+   "duration": 70.09,
+   "lines": [
+    {
+     "id": "rc1s_1",
+     "text": "The sum up to four is four, plus the sum up to three. The same question, one size smaller.",
+     "start": 0.2,
+     "end": 5.9
+    },
+    {
+     "id": "rc1s_2",
+     "text": "And the sum up to zero needs no thinking. It is zero. That is where the chain stops.",
+     "start": 6.65,
+     "end": 12.04
+    },
+    {
+     "id": "rc1s_3",
+     "text": "The first call. N is four. Not zero. So line three needs sum to three, and has to wait for it.",
+     "start": 12.79,
+     "end": 18.88
+    },
+    {
+     "id": "rc1s_4",
+     "text": "So a new call starts, with n three. It waits too, for sum to two.",
+     "start": 19.63,
+     "end": 23.76
+    },
+    {
+     "id": "rc1s_5",
+     "text": "Two waits for one. One waits for zero. Four calls are now waiting on the call stack.",
+     "start": 24.51,
+     "end": 29.76
+    },
+    {
+     "id": "rc1s_6",
+     "text": "N is zero. Line two. The base case. It returns zero straight away, without asking anyone.",
+     "start": 30.51,
+     "end": 36.69
+    },
+    {
+     "id": "rc1s_7",
+     "text": "Now the answers travel back up. The call with n one was waiting. One plus zero. It returns one.",
+     "start": 37.44,
+     "end": 44.08
+    },
+    {
+     "id": "rc1s_8",
+     "text": "The call with n two was waiting for that. What does it return?",
+     "start": 44.83,
+     "end": 48.47
+    },
+    {
+     "id": "rc1s_9",
+     "text": "Three. Two, plus the one that came back.",
+     "start": 49.67,
+     "end": 52.01
+    },
+    {
+     "id": "rc1s_10",
+     "text": "Three plus three is six. Four plus six is ten. Every waiting call has finished.",
+     "start": 52.76,
+     "end": 58.13
+    },
+    {
+     "id": "rc1s_11",
+     "text": "One call for each number from n down to zero. O of n time.",
+     "start": 59.23,
+     "end": 63.32
+    },
+    {
+     "id": "rc1s_12",
+     "text": "And all of them wait on the call stack at the same moment. O of n space.",
+     "start": 64.07,
+     "end": 68.5
+    }
+   ],
+   "pauses": [
+    {
+     "id": "rc1s-q",
+     "t": 48.67
+    }
+   ]
+  },
+  "rc2i": {
+   "src": "videos/rc2i.mp4",
+   "title": "Powers in a Hurry",
+   "duration": 21.44,
+   "lines": [
+    {
+     "id": "rc2i_1",
+     "text": "Two, times two, times two, times two, times two. Five twos.",
+     "start": 0.2,
+     "end": 4.38
+    },
+    {
+     "id": "rc2i_2",
+     "text": "Return base to the power exp. And it must stay fast when exp is in the billions.",
+     "start": 5.08,
+     "end": 10.01
+    },
+    {
+     "id": "rc2i_3",
+     "text": "Multiplying one at a time takes exp steps.",
+     "start": 10.71,
+     "end": 13.45
+    },
+    {
+     "id": "rc2i_4",
+     "text": "But if you knew two to the power two, how quickly could you reach the power four? Your turn.",
+     "start": 14.15,
+     "end": 19.84
+    }
+   ],
+   "pauses": []
+  },
+  "rc2s": {
+   "src": "videos/rc2s.mp4",
+   "title": "Half the exponent, then square",
+   "duration": 72.08,
+   "lines": [
+    {
+     "id": "rc2s_1",
+     "text": "Two to the power four is two squared, times two squared. So work out half the exponent once, and multiply it by itself.",
+     "start": 0.2,
+     "end": 8.12
+    },
+    {
+     "id": "rc2s_2",
+     "text": "An odd exponent leaves one extra base. Multiply it in at the end.",
+     "start": 8.87,
+     "end": 13.33
+    },
+    {
+     "id": "rc2s_3",
+     "text": "Power of two to the five. Line three asks for half the exponent. Five divided by two, rounded down. Two.",
+     "start": 14.08,
+     "end": 21.25
+    },
+    {
+     "id": "rc2s_4",
+     "text": "That call asks for half of two. One. And that one asks for half of one, which rounds down to zero.",
+     "start": 22,
+     "end": 28.46
+    },
+    {
+     "id": "rc2s_5",
+     "text": "Exponent zero. The base case. It returns one.",
+     "start": 29.21,
+     "end": 32.36
+    },
+    {
+     "id": "rc2s_6",
+     "text": "Back in the call with exponent one. Half is one. One is odd, so line five multiplies in a base. One times one times two. Two.",
+     "start": 33.11,
+     "end": 41.96
+    },
+    {
+     "id": "rc2s_7",
+     "text": "Back in the call with exponent two. Half is two, and two is even. What does line four return?",
+     "start": 42.71,
+     "end": 48.86
+    },
+    {
+     "id": "rc2s_8",
+     "text": "Four. Half times half.",
+     "start": 50.06,
+     "end": 51.38
+    },
+    {
+     "id": "rc2s_9",
+     "text": "And the first call. Half is four. Five is odd. Four times four times two. Thirty two.",
+     "start": 52.13,
+     "end": 58.27
+    },
+    {
+     "id": "rc2s_10",
+     "text": "The exponent halves at every call. So even two billion needs only about thirty calls. O of log n.",
+     "start": 59.37,
+     "end": 66.3
+    },
+    {
+     "id": "rc2s_11",
+     "text": "Those calls wait on the stack. O of log n space.",
+     "start": 67.05,
+     "end": 70.48
+    }
+   ],
+   "pauses": [
+    {
+     "id": "rc2s-q",
+     "t": 49.06
+    }
+   ]
+  },
+  "rc3i": {
+   "src": "videos/rc3i.mp4",
+   "title": "The Mirror, Again",
+   "duration": 18.25,
+   "lines": [
+    {
+     "id": "rc3i_1",
+     "text": "You have checked a mirror word before, with two markers and a loop.",
+     "start": 0.2,
+     "end": 3.89
+    },
+    {
+     "id": "rc3i_2",
+     "text": "Do it again. Return true for a mirror word. But this time, no loop.",
+     "start": 4.59,
+     "end": 8.85
+    },
+    {
+     "id": "rc3i_3",
+     "text": "If the two ends match, what is left is a smaller word.",
+     "start": 9.55,
+     "end": 12.99
+    },
+    {
+     "id": "rc3i_4",
+     "text": "What do you ask about that smaller word? Your turn.",
+     "start": 13.69,
+     "end": 16.65
+    }
+   ],
+   "pauses": []
+  },
+  "rc3s": {
+   "src": "videos/rc3s.mp4",
+   "title": "Match the ends, ask the inside",
+   "duration": 57.8,
+   "lines": [
+    {
+     "id": "rc3s_1",
+     "text": "A word is a mirror if its two ends match, and the part between them is a mirror too.",
+     "start": 0.2,
+     "end": 5.31
+    },
+    {
+     "id": "rc3s_2",
+     "text": "The part between them is a smaller copy of the same question. That is the recursive step.",
+     "start": 6.06,
+     "end": 11.68
+    },
+    {
+     "id": "rc3s_3",
+     "text": "The first call. Line one fills in left and right by itself. Zero, and four.",
+     "start": 12.43,
+     "end": 17.79
+    },
+    {
+     "id": "rc3s_4",
+     "text": "Line three compares the ends. L and L. They match. So line four asks about the inside.",
+     "start": 18.54,
+     "end": 24.25
+    },
+    {
+     "id": "rc3s_5",
+     "text": "A new call, with left one and right three. E and E match. Ask about the inside again.",
+     "start": 25,
+     "end": 30.47
+    },
+    {
+     "id": "rc3s_6",
+     "text": "Now left is two, and right is two. Which line answers?",
+     "start": 31.22,
+     "end": 34.73
+    },
+    {
+     "id": "rc3s_7",
+     "text": "Line two. Left has reached right. Nothing is left to compare. True.",
+     "start": 35.93,
+     "end": 40
+    },
+    {
+     "id": "rc3s_8",
+     "text": "That true travels straight back up. Each waiting call returns what it was given.",
+     "start": 40.75,
+     "end": 45.59
+    },
+    {
+     "id": "rc3s_9",
+     "text": "One call for every pair of letters. O of n time.",
+     "start": 46.69,
+     "end": 49.93
+    },
+    {
+     "id": "rc3s_10",
+     "text": "Those calls wait on the stack. O of n space. The loop version needed only O of one.",
+     "start": 50.68,
+     "end": 56.2
+    }
+   ],
+   "pauses": [
+    {
+     "id": "rc3s-q",
+     "t": 34.93
+    }
+   ]
+  },
+  "rc4i": {
+   "src": "videos/rc4i.mp4",
+   "title": "Up the Stairs",
+   "duration": 17.28,
+   "lines": [
+    {
+     "id": "rc4i_1",
+     "text": "Pip hops up a staircase. One step at a time, or two.",
+     "start": 0.2,
+     "end": 3.67
+    },
+    {
+     "id": "rc4i_2",
+     "text": "Return the number of different ways to reach step n.",
+     "start": 4.37,
+     "end": 7.03
+    },
+    {
+     "id": "rc4i_3",
+     "text": "Think about the very last hop onto the top step. It was a one, or a two.",
+     "start": 7.73,
+     "end": 12.06
+    },
+    {
+     "id": "rc4i_4",
+     "text": "So where could Pip have been, just before? Your turn.",
+     "start": 12.76,
+     "end": 15.68
+    }
+   ],
+   "pauses": []
+  },
+  "rc4s": {
+   "src": "videos/rc4s.mp4",
+   "title": "The last hop was 1 or 2",
+   "duration": 81,
+   "lines": [
+    {
+     "id": "rc4s_1",
+     "text": "The last hop onto step n was one step, or two. So the ways to reach n are the ways to reach n minus one, plus the ways to reach n minus two.",
+     "start": 0.2,
+     "end": 9.64
+    },
+    {
+     "id": "rc4s_2",
+     "text": "But the same small staircase gets asked about again and again. So write each answer down the first time. That note is a memo.",
+     "start": 10.39,
+     "end": 18.51
+    },
+    {
+     "id": "rc4s_3",
+     "text": "Stairs of four. Not a base case, and not in the memo. So line four asks for stairs of three, and stairs of two.",
+     "start": 19.26,
+     "end": 26.48
+    },
+    {
+     "id": "rc4s_4",
+     "text": "Stairs of three asks the same kind of question. Stairs of two, plus stairs of one.",
+     "start": 27.23,
+     "end": 32.63
+    },
+    {
+     "id": "rc4s_5",
+     "text": "Stairs of two. Stairs of one, plus stairs of zero. Both are base cases, one each. So two ways.",
+     "start": 33.38,
+     "end": 40.44
+    },
+    {
+     "id": "rc4s_6",
+     "text": "Line five writes that answer into the memo, before returning it.",
+     "start": 41.19,
+     "end": 45.12
+    },
+    {
+     "id": "rc4s_7",
+     "text": "Back in stairs of three. Two, plus stairs of one, which is one. Three. Into the memo.",
+     "start": 45.87,
+     "end": 51.94
+    },
+    {
+     "id": "rc4s_8",
+     "text": "Back in stairs of four. It still needs stairs of two. Does it work that out again?",
+     "start": 52.69,
+     "end": 57.69
+    },
+    {
+     "id": "rc4s_9",
+     "text": "No. Line three finds it in the memo. Two. No further calls at all.",
+     "start": 58.89,
+     "end": 63.14
+    },
+    {
+     "id": "rc4s_10",
+     "text": "Three plus two. Five ways.",
+     "start": 63.89,
+     "end": 65.98
+    },
+    {
+     "id": "rc4s_11",
+     "text": "With the memo, each n is worked out once. O of n time. Without it, the calls roughly double at every level.",
+     "start": 67.08,
+     "end": 74.14
+    },
+    {
+     "id": "rc4s_12",
+     "text": "The memo and the call stack each hold up to n entries. O of n space.",
+     "start": 74.89,
+     "end": 79.4
+    }
+   ],
+   "pauses": [
+    {
+     "id": "rc4s-q",
+     "t": 57.89
+    }
+   ]
+  },
   "bs1i": {
    "src": "videos/bs1i.mp4",
    "title": "Find the Door",
@@ -11084,456 +12015,6 @@ window.BURROW = {
     {
      "id": "bs7s-q",
      "t": 52.42
-    }
-   ]
-  },
-  "rc1i": {
-   "src": "videos/rc1i.mp4",
-   "title": "Add Them Up",
-   "duration": 20.93,
-   "lines": [
-    {
-     "id": "rc1i_1",
-     "text": "Add up the numbers from one to four. Easy with a loop. But this time, no loop.",
-     "start": 0.2,
-     "end": 5.11
-    },
-    {
-     "id": "rc1i_2",
-     "text": "Return one plus two, all the way up to n. The function must call itself.",
-     "start": 5.81,
-     "end": 10.45
-    },
-    {
-     "id": "rc1i_3",
-     "text": "Suppose somebody handed you the sum up to three. Six.",
-     "start": 11.15,
-     "end": 14.51
-    },
-    {
-     "id": "rc1i_4",
-     "text": "What would be left for you to do? And when does the asking stop? Your turn.",
-     "start": 15.21,
-     "end": 19.33
-    }
-   ],
-   "pauses": []
-  },
-  "rc1s": {
-   "src": "videos/rc1s.mp4",
-   "title": "Ask for the smaller sum",
-   "duration": 70.09,
-   "lines": [
-    {
-     "id": "rc1s_1",
-     "text": "The sum up to four is four, plus the sum up to three. The same question, one size smaller.",
-     "start": 0.2,
-     "end": 5.9
-    },
-    {
-     "id": "rc1s_2",
-     "text": "And the sum up to zero needs no thinking. It is zero. That is where the chain stops.",
-     "start": 6.65,
-     "end": 12.04
-    },
-    {
-     "id": "rc1s_3",
-     "text": "The first call. N is four. Not zero. So line three needs sum to three, and has to wait for it.",
-     "start": 12.79,
-     "end": 18.88
-    },
-    {
-     "id": "rc1s_4",
-     "text": "So a new call starts, with n three. It waits too, for sum to two.",
-     "start": 19.63,
-     "end": 23.76
-    },
-    {
-     "id": "rc1s_5",
-     "text": "Two waits for one. One waits for zero. Four calls are now waiting on the call stack.",
-     "start": 24.51,
-     "end": 29.76
-    },
-    {
-     "id": "rc1s_6",
-     "text": "N is zero. Line two. The base case. It returns zero straight away, without asking anyone.",
-     "start": 30.51,
-     "end": 36.69
-    },
-    {
-     "id": "rc1s_7",
-     "text": "Now the answers travel back up. The call with n one was waiting. One plus zero. It returns one.",
-     "start": 37.44,
-     "end": 44.08
-    },
-    {
-     "id": "rc1s_8",
-     "text": "The call with n two was waiting for that. What does it return?",
-     "start": 44.83,
-     "end": 48.47
-    },
-    {
-     "id": "rc1s_9",
-     "text": "Three. Two, plus the one that came back.",
-     "start": 49.67,
-     "end": 52.01
-    },
-    {
-     "id": "rc1s_10",
-     "text": "Three plus three is six. Four plus six is ten. Every waiting call has finished.",
-     "start": 52.76,
-     "end": 58.13
-    },
-    {
-     "id": "rc1s_11",
-     "text": "One call for each number from n down to zero. O of n time.",
-     "start": 59.23,
-     "end": 63.32
-    },
-    {
-     "id": "rc1s_12",
-     "text": "And all of them wait on the call stack at the same moment. O of n space.",
-     "start": 64.07,
-     "end": 68.5
-    }
-   ],
-   "pauses": [
-    {
-     "id": "rc1s-q",
-     "t": 48.67
-    }
-   ]
-  },
-  "rc2i": {
-   "src": "videos/rc2i.mp4",
-   "title": "Powers in a Hurry",
-   "duration": 21.44,
-   "lines": [
-    {
-     "id": "rc2i_1",
-     "text": "Two, times two, times two, times two, times two. Five twos.",
-     "start": 0.2,
-     "end": 4.38
-    },
-    {
-     "id": "rc2i_2",
-     "text": "Return base to the power exp. And it must stay fast when exp is in the billions.",
-     "start": 5.08,
-     "end": 10.01
-    },
-    {
-     "id": "rc2i_3",
-     "text": "Multiplying one at a time takes exp steps.",
-     "start": 10.71,
-     "end": 13.45
-    },
-    {
-     "id": "rc2i_4",
-     "text": "But if you knew two to the power two, how quickly could you reach the power four? Your turn.",
-     "start": 14.15,
-     "end": 19.84
-    }
-   ],
-   "pauses": []
-  },
-  "rc2s": {
-   "src": "videos/rc2s.mp4",
-   "title": "Half the exponent, then square",
-   "duration": 72.08,
-   "lines": [
-    {
-     "id": "rc2s_1",
-     "text": "Two to the power four is two squared, times two squared. So work out half the exponent once, and multiply it by itself.",
-     "start": 0.2,
-     "end": 8.12
-    },
-    {
-     "id": "rc2s_2",
-     "text": "An odd exponent leaves one extra base. Multiply it in at the end.",
-     "start": 8.87,
-     "end": 13.33
-    },
-    {
-     "id": "rc2s_3",
-     "text": "Power of two to the five. Line three asks for half the exponent. Five divided by two, rounded down. Two.",
-     "start": 14.08,
-     "end": 21.25
-    },
-    {
-     "id": "rc2s_4",
-     "text": "That call asks for half of two. One. And that one asks for half of one, which rounds down to zero.",
-     "start": 22,
-     "end": 28.46
-    },
-    {
-     "id": "rc2s_5",
-     "text": "Exponent zero. The base case. It returns one.",
-     "start": 29.21,
-     "end": 32.36
-    },
-    {
-     "id": "rc2s_6",
-     "text": "Back in the call with exponent one. Half is one. One is odd, so line five multiplies in a base. One times one times two. Two.",
-     "start": 33.11,
-     "end": 41.96
-    },
-    {
-     "id": "rc2s_7",
-     "text": "Back in the call with exponent two. Half is two, and two is even. What does line four return?",
-     "start": 42.71,
-     "end": 48.86
-    },
-    {
-     "id": "rc2s_8",
-     "text": "Four. Half times half.",
-     "start": 50.06,
-     "end": 51.38
-    },
-    {
-     "id": "rc2s_9",
-     "text": "And the first call. Half is four. Five is odd. Four times four times two. Thirty two.",
-     "start": 52.13,
-     "end": 58.27
-    },
-    {
-     "id": "rc2s_10",
-     "text": "The exponent halves at every call. So even two billion needs only about thirty calls. O of log n.",
-     "start": 59.37,
-     "end": 66.3
-    },
-    {
-     "id": "rc2s_11",
-     "text": "Those calls wait on the stack. O of log n space.",
-     "start": 67.05,
-     "end": 70.48
-    }
-   ],
-   "pauses": [
-    {
-     "id": "rc2s-q",
-     "t": 49.06
-    }
-   ]
-  },
-  "rc3i": {
-   "src": "videos/rc3i.mp4",
-   "title": "The Mirror, Again",
-   "duration": 18.25,
-   "lines": [
-    {
-     "id": "rc3i_1",
-     "text": "You have checked a mirror word before, with two markers and a loop.",
-     "start": 0.2,
-     "end": 3.89
-    },
-    {
-     "id": "rc3i_2",
-     "text": "Do it again. Return true for a mirror word. But this time, no loop.",
-     "start": 4.59,
-     "end": 8.85
-    },
-    {
-     "id": "rc3i_3",
-     "text": "If the two ends match, what is left is a smaller word.",
-     "start": 9.55,
-     "end": 12.99
-    },
-    {
-     "id": "rc3i_4",
-     "text": "What do you ask about that smaller word? Your turn.",
-     "start": 13.69,
-     "end": 16.65
-    }
-   ],
-   "pauses": []
-  },
-  "rc3s": {
-   "src": "videos/rc3s.mp4",
-   "title": "Match the ends, ask the inside",
-   "duration": 57.8,
-   "lines": [
-    {
-     "id": "rc3s_1",
-     "text": "A word is a mirror if its two ends match, and the part between them is a mirror too.",
-     "start": 0.2,
-     "end": 5.31
-    },
-    {
-     "id": "rc3s_2",
-     "text": "The part between them is a smaller copy of the same question. That is the recursive step.",
-     "start": 6.06,
-     "end": 11.68
-    },
-    {
-     "id": "rc3s_3",
-     "text": "The first call. Line one fills in left and right by itself. Zero, and four.",
-     "start": 12.43,
-     "end": 17.79
-    },
-    {
-     "id": "rc3s_4",
-     "text": "Line three compares the ends. L and L. They match. So line four asks about the inside.",
-     "start": 18.54,
-     "end": 24.25
-    },
-    {
-     "id": "rc3s_5",
-     "text": "A new call, with left one and right three. E and E match. Ask about the inside again.",
-     "start": 25,
-     "end": 30.47
-    },
-    {
-     "id": "rc3s_6",
-     "text": "Now left is two, and right is two. Which line answers?",
-     "start": 31.22,
-     "end": 34.73
-    },
-    {
-     "id": "rc3s_7",
-     "text": "Line two. Left has reached right. Nothing is left to compare. True.",
-     "start": 35.93,
-     "end": 40
-    },
-    {
-     "id": "rc3s_8",
-     "text": "That true travels straight back up. Each waiting call returns what it was given.",
-     "start": 40.75,
-     "end": 45.59
-    },
-    {
-     "id": "rc3s_9",
-     "text": "One call for every pair of letters. O of n time.",
-     "start": 46.69,
-     "end": 49.93
-    },
-    {
-     "id": "rc3s_10",
-     "text": "Those calls wait on the stack. O of n space. The loop version needed only O of one.",
-     "start": 50.68,
-     "end": 56.2
-    }
-   ],
-   "pauses": [
-    {
-     "id": "rc3s-q",
-     "t": 34.93
-    }
-   ]
-  },
-  "rc4i": {
-   "src": "videos/rc4i.mp4",
-   "title": "Up the Stairs",
-   "duration": 17.28,
-   "lines": [
-    {
-     "id": "rc4i_1",
-     "text": "Pip hops up a staircase. One step at a time, or two.",
-     "start": 0.2,
-     "end": 3.67
-    },
-    {
-     "id": "rc4i_2",
-     "text": "Return the number of different ways to reach step n.",
-     "start": 4.37,
-     "end": 7.03
-    },
-    {
-     "id": "rc4i_3",
-     "text": "Think about the very last hop onto the top step. It was a one, or a two.",
-     "start": 7.73,
-     "end": 12.06
-    },
-    {
-     "id": "rc4i_4",
-     "text": "So where could Pip have been, just before? Your turn.",
-     "start": 12.76,
-     "end": 15.68
-    }
-   ],
-   "pauses": []
-  },
-  "rc4s": {
-   "src": "videos/rc4s.mp4",
-   "title": "The last hop was 1 or 2",
-   "duration": 81,
-   "lines": [
-    {
-     "id": "rc4s_1",
-     "text": "The last hop onto step n was one step, or two. So the ways to reach n are the ways to reach n minus one, plus the ways to reach n minus two.",
-     "start": 0.2,
-     "end": 9.64
-    },
-    {
-     "id": "rc4s_2",
-     "text": "But the same small staircase gets asked about again and again. So write each answer down the first time. That note is a memo.",
-     "start": 10.39,
-     "end": 18.51
-    },
-    {
-     "id": "rc4s_3",
-     "text": "Stairs of four. Not a base case, and not in the memo. So line four asks for stairs of three, and stairs of two.",
-     "start": 19.26,
-     "end": 26.48
-    },
-    {
-     "id": "rc4s_4",
-     "text": "Stairs of three asks the same kind of question. Stairs of two, plus stairs of one.",
-     "start": 27.23,
-     "end": 32.63
-    },
-    {
-     "id": "rc4s_5",
-     "text": "Stairs of two. Stairs of one, plus stairs of zero. Both are base cases, one each. So two ways.",
-     "start": 33.38,
-     "end": 40.44
-    },
-    {
-     "id": "rc4s_6",
-     "text": "Line five writes that answer into the memo, before returning it.",
-     "start": 41.19,
-     "end": 45.12
-    },
-    {
-     "id": "rc4s_7",
-     "text": "Back in stairs of three. Two, plus stairs of one, which is one. Three. Into the memo.",
-     "start": 45.87,
-     "end": 51.94
-    },
-    {
-     "id": "rc4s_8",
-     "text": "Back in stairs of four. It still needs stairs of two. Does it work that out again?",
-     "start": 52.69,
-     "end": 57.69
-    },
-    {
-     "id": "rc4s_9",
-     "text": "No. Line three finds it in the memo. Two. No further calls at all.",
-     "start": 58.89,
-     "end": 63.14
-    },
-    {
-     "id": "rc4s_10",
-     "text": "Three plus two. Five ways.",
-     "start": 63.89,
-     "end": 65.98
-    },
-    {
-     "id": "rc4s_11",
-     "text": "With the memo, each n is worked out once. O of n time. Without it, the calls roughly double at every level.",
-     "start": 67.08,
-     "end": 74.14
-    },
-    {
-     "id": "rc4s_12",
-     "text": "The memo and the call stack each hold up to n entries. O of n space.",
-     "start": 74.89,
-     "end": 79.4
-    }
-   ],
-   "pauses": [
-    {
-     "id": "rc4s-q",
-     "t": 57.89
     }
    ]
   }

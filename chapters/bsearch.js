@@ -4,8 +4,8 @@ window.CHAPTER = {
  "sub": "CHAPTER 11 · BINARY SEARCH",
  "key": "burrow-ch-bsearch",
  "next": {
-  "href": "index.html#chapters",
-  "label": "All chapters"
+  "href": "chapter.html?c=sorting",
+  "label": "Chapter 12: Sorting"
  },
  "prev": {
   "href": "chapter.html?c=recur",
