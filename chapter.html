@@ -203,7 +203,7 @@ document.title = 'Burrow Hill ' + CH.title; $('#chsub').textContent = CH.sub;
 const KEY = CH.key;
 let S = { xp: 0, done: {}, quiz: {}, code: {}, hints: {}, runs: {}, solvedAt: {}, seen: {}, at: CH.stages[0].id, feel: null, why: {} };
 try { Object.assign(S, JSON.parse(localStorage.getItem(KEY) || '{}')); } catch (e) {}
-const save = () => { try { localStorage.setItem(KEY, JSON.stringify(S)); } catch (e) {} $('#xp').textContent = S.xp + ' XP'; };
+const save = () => { try { S.ts = Date.now(); localStorage.setItem(KEY, JSON.stringify(S)); } catch (e) {} $('#xp').textContent = S.xp + ' XP'; };
 const gain = (n) => { S.xp += n; save(); };
 const STAGES = [...CH.stages, ...CH.problems.map((p) => ({ id: p.id, kind: 'problem', label: 'Problem ' + p.num, short: 'P' + p.num, name: p.title, p }))];
 const passed = (st) => S.done[st.id] || (st.kind === 'problem' && S.seen['sol-' + st.id]);

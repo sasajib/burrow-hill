@@ -1,260 +1,135 @@
 <!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="noindex">
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex">
 <title>Burrow Hill</title>
 <meta name="description" content="A visual course in data structures and algorithms: watch the idea happen, guess what comes next, then write the code.">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;700;800&family=JetBrains+Mono:wght@500;700&display=swap">
 <style>
-/* layout: yellow hero with the cast, then alternating cream and plum bands, one idea per band */
-:root{--sky:#FFC83D;--sun:#FFD96B;--plum:#2B1B4A;--plum2:#45306E;--coral:#FF6B5E;--teal:#12A594;--mint:#9BE8D0;--cream:#FFF6E0;
-  --display:"Outfit",system-ui,sans-serif;--mono:"JetBrains Mono",ui-monospace,Menlo,monospace}
-*{box-sizing:border-box}
-[hidden]{display:none!important}
-html{color-scheme:light;scroll-behavior:smooth}
-body{margin:0;background:var(--cream);color:var(--plum);font-family:var(--display);font-size:18px;line-height:1.5}
-.in{max-width:1080px;margin:0 auto;padding-left:max(18px,env(safe-area-inset-left,0px));padding-right:max(18px,env(safe-area-inset-right,0px))}
-.band{padding-block:64px}
-.sky{background:var(--sky)} .dark{background:var(--plum);color:var(--cream)} .mint{background:var(--mint)}
-.kick{font-family:var(--mono);font-weight:700;font-size:13px;letter-spacing:3px;text-transform:uppercase;margin:0 0 10px}
-h1{font-size:clamp(56px,11vw,120px);font-weight:800;letter-spacing:-3px;line-height:.95;margin:0 0 18px}
-h2{font-size:clamp(30px,5vw,46px);font-weight:800;letter-spacing:-1px;line-height:1.05;margin:0 0 16px;text-wrap:balance}
-h3{font-size:22px;font-weight:800;margin:0 0 6px}
-p{margin:0 0 14px;max-width:64ch}
-.lede{font-size:clamp(20px,2.6vw,26px);font-weight:500;max-width:30ch;line-height:1.3}
-.hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);gap:36px;align-items:center}
-.cast{display:flex;align-items:flex-end;gap:6px;margin-top:22px}
-.cast svg{display:block;height:auto}
-.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px}
-.btn{display:inline-block;font-weight:800;text-decoration:none;color:var(--plum);background:var(--coral);border:4px solid var(--plum);border-radius:14px;padding:11px 20px;box-shadow:4px 5px 0 var(--plum)}
+/* Course home. Design: Doop canvas "Burrow Hill: course home redesign". Built by scripts/build_landing.py: do not edit by hand. */
+*{margin:0;box-sizing:border-box}[hidden]{display:none!important}
+:root{--sky:#FFC83D;--sun:#FFD96B;--hill:#F5B021;--plum:#2B1B4A;--plum2:#45306E;--coral:#FF6B5E;--teal:#12A594;--mint:#9BE8D0;--cream:#FFF6E0;--pad:clamp(16px,5vw,64px)}
+html{scroll-behavior:smooth}
+body{font-family:Outfit,system-ui,sans-serif;color:var(--plum);background:var(--cream);font-size:17px;line-height:1.45}
+.w{max-width:1280px;margin:0 auto;padding:0 var(--pad)}
+.mono{font-family:"JetBrains Mono",monospace;font-weight:700;letter-spacing:2px;text-transform:uppercase;font-size:12px}
+a{color:inherit;text-decoration:none}
+.btn{display:inline-block;font-weight:800;font-size:17px;background:var(--coral);border:4px solid var(--plum);border-radius:14px;padding:11px 22px;box-shadow:4px 5px 0 var(--plum);cursor:pointer;font-family:inherit;color:var(--plum)}
 .btn.alt{background:var(--cream)}
-.btn:focus-visible,a:focus-visible,video:focus-visible{outline:4px solid var(--teal);outline-offset:3px}
-.frame{border:5px solid var(--plum);border-radius:18px;overflow:hidden;background:var(--plum);box-shadow:9px 11px 0 var(--plum);aspect-ratio:16/9}
-.dark .frame{border-color:var(--cream);box-shadow:9px 11px 0 var(--coral)}
-.frame video{display:block;width:100%;height:100%}
-.cap{font-family:var(--mono);font-size:13.500px;font-weight:700;margin-top:14px}
-.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin-top:22px}
-.step{background:var(--cream);color:var(--plum);border:4px solid var(--plum);border-radius:18px;padding:18px;box-shadow:6px 7px 0 var(--plum)}
-.dark .step{box-shadow:6px 7px 0 var(--coral)}
-.step b{display:block;font-family:var(--mono);font-size:13px;letter-spacing:2px;margin-bottom:6px}
-.step p{font-size:15px;margin:0}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:22px;margin-top:22px}
-.vid h3{margin-top:14px;font-size:19px}
-.vid p{font-size:15.500px;margin:0}
-.vid .frame{box-shadow:6px 7px 0 var(--plum);border-width:4px;border-radius:14px}
-.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:36px;align-items:start}
-ul.plain{list-style:none;margin:0;padding:0;display:grid;gap:10px}
-ul.plain li{border-left:6px solid var(--coral);padding:2px 0 2px 14px;max-width:60ch}
-.parth{grid-column:1/-1;margin:34px 0 -2px;padding-top:22px;border-top:4px solid var(--plum);font-size:30px;line-height:1.1;color:var(--plum);scroll-margin-top:16px}.parth:first-child{margin-top:8px}.parth em{display:block;font-style:normal;font-family:var(--mono);font-size:13px;letter-spacing:3px;text-transform:uppercase;color:var(--teal);margin-bottom:6px}.parth span{display:block;font-weight:500;opacity:.8;font-size:16px;margin-top:6px}
-.chap{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:18px;margin-top:10px}
-.chcard{display:flex;flex-direction:column;gap:6px;text-decoration:none;color:var(--plum);background:#fff;border:4px solid var(--plum);border-radius:16px;padding:0 16px 14px;box-shadow:5px 6px 0 var(--plum);overflow:hidden;transition:transform .12s,box-shadow .12s}
-.chcard:hover{transform:translate(-2px,-2px);box-shadow:8px 9px 0 var(--plum)}
-.chcard img{display:block;width:calc(100% + 32px);max-width:none;margin:0 -16px 10px;aspect-ratio:16/9;object-fit:cover;border-bottom:4px solid var(--plum)}
-.chcard .kick{margin:0;font-size:12px;letter-spacing:2px;color:var(--teal)}
-.chcard b{font-size:22px;font-weight:800;line-height:1.15}
-.chcard span{font-size:14.5px;line-height:1.4}
-.chcard i{font-style:normal;font-weight:800;font-size:14px;margin-top:auto;align-self:flex-start;background:var(--coral);border:3px solid var(--plum);border-radius:10px;padding:6px 12px}
-.chcard span:not(.kick){margin-bottom:10px}
-.chcard:focus-visible{outline:4px solid var(--teal);outline-offset:3px}
-.strip{background:var(--plum);padding:18px 0}.strip .stat{margin:0;grid-template-columns:repeat(auto-fit,minmax(130px,1fr))}.strip .stat div{border:0;background:transparent;color:var(--cream);padding:4px 8px;font-family:var(--mono);font-size:13px;letter-spacing:1px;text-transform:uppercase}.strip .stat b{font-family:var(--display);color:var(--sky);letter-spacing:0;text-transform:none}
-.parts{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 0}.parts a{font-family:var(--mono);font-weight:700;font-size:13.5px;text-decoration:none;color:var(--plum);background:#fff;border:3px solid var(--plum);border-radius:999px;padding:7px 14px}.parts a:hover{background:var(--sky)}
-.stat{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin:20px 0 6px}
-.stat div{border:4px solid var(--plum);border-radius:14px;background:#fff;padding:12px 14px;font-size:15px}
-.stat b{display:block;font-size:34px;font-weight:800;line-height:1.1;font-variant-numeric:tabular-nums}
-.pipe{font-family:var(--mono);font-weight:700;font-size:15px;display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:18px 0}
-.pipe span{background:var(--cream);color:var(--plum);border:3px solid var(--cream);border-radius:999px;padding:6px 14px}
-.pipe i{font-style:normal;color:var(--coral)}
-footer{padding-block:28px;font-family:var(--mono);font-size:13px}
-@media(max-width:820px){.hero{grid-template-columns:minmax(0,1fr);gap:22px}.band{padding-block:40px}body{font-size:16.500px}.cast svg{width:84px}.cast svg:last-child{width:104px}.btn{padding:10px 16px}.two{gap:26px}.chcard b{font-size:21px}.parth{font-size:25px}.stat b{font-size:28px}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.chcard{transition:none}.chcard:hover{transform:none}}
-</style>
-</head>
-<body>
-
-<header class="band sky">
-  <div class="in hero">
-    <div>
-      <p class="kick">Data structures and algorithms · a visual course</p>
-      <h1>Burrow Hill</h1>
-      <p class="lede">Watch the idea happen. Guess what comes next. Then write the code.</p>
-      <div class="btns"><a class="btn" href="foundations.html">Start with Part 0</a><a class="btn alt" href="#chapters">All chapters</a></div>
-      <div class="cast" aria-hidden="true"><svg width="120" viewBox="0 0 200 220">
- <g><ellipse cx="98" cy="50" rx="14" ry="46" fill="#E24A3E" stroke="#2B1B4A" stroke-width="7" stroke-linejoin="round" stroke-linecap="round" transform="rotate(-14 98 90)"/>
- <ellipse cx="124" cy="48" rx="14" ry="48" fill="#FF6B5E" stroke="#2B1B4A" stroke-width="7" stroke-linejoin="round" stroke-linecap="round" transform="rotate(4 124 90)"/><ellipse cx="124" cy="50" rx="5" ry="30" fill="#FFF6E0" transform="rotate(4 124 90)"/></g>
- <ellipse cx="66" cy="206" rx="28" ry="11" fill="#E24A3E" stroke="#2B1B4A" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"/>
- <circle cx="26" cy="158" r="17" fill="#FFF6E0" stroke="#2B1B4A" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"/>
- <ellipse cx="88" cy="160" rx="64" ry="50" fill="#FF6B5E" stroke="#2B1B4A" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"/>
- <ellipse cx="122" cy="206" rx="24" ry="11" fill="#FF6B5E" stroke="#2B1B4A" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"/>
- <circle cx="130" cy="108" r="44" fill="#FF6B5E" stroke="#2B1B4A" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"/>
- <ellipse cx="134" cy="128" rx="11" ry="7" fill="#FF9C8F"/>
- <g><circle cx="146" cy="100" r="8" fill="#2B1B4A"/><circle cx="149" cy="97" r="2.6" fill="#FFF6E0"/></g>
- <ellipse cx="172" cy="112" rx="6" ry="5" fill="#2B1B4A"/>
-</svg><svg width="120" viewBox="0 0 220 240">
- <g><ellipse cx="46" cy="128" rx="40" ry="80" fill="#9A2F62" stroke="#2B1B4A" stroke-width="7" stroke-linejoin="round" stroke-linecap="round" transform="rotate(-10 46 128)"/><circle cx="58" cy="58" r="30" fill="#9A2F62" stroke="#2B1B4A" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"/><circle cx="62" cy="62" r="12" fill="#FFF6E0"/></g>
- <ellipse cx="128" cy="228" rx="32" ry="10" fill="#9A2F62" stroke="#2B1B4A" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"/>
- <ellipse cx="116" cy="172" rx="48" ry="56" fill="#C2457F" stroke="#2B1B4A" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"/><ellipse cx="132" cy="182" rx="22" ry="34" fill="#FFF6E0"/>
- <g><ellipse cx="120" cy="52" rx="12" ry="22" fill="#C2457F" stroke="#2B1B4A" stroke-width="7" stroke-linejoin="round" stroke-linecap="round" transform="rotate(-14 120 70)"/></g>
- <circle cx="140" cy="94" r="40" fill="#C2457F" stroke="#2B1B4A" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"/><ellipse cx="146" cy="112" rx="10" ry="6" fill="#E88AB0"/>
- <g><circle cx="154" cy="86" r="8" fill="#2B1B4A"/><circle cx="157" cy="83" r="2.6" fill="#FFF6E0"/></g>
- <ellipse cx="180" cy="100" rx="6" ry="5" fill="#2B1B4A"/>
- <ellipse cx="160" cy="160" rx="18" ry="10" fill="#C2457F" stroke="#2B1B4A" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"/>
-</svg><svg width="150" viewBox="0 0 260 185">
- <path d="M22 132 L4 142 L24 146 Z" fill="#9BE8D0" stroke="#2B1B4A" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"/>
- <rect x="52" y="122" width="34" height="56" rx="15" fill="#9BE8D0" stroke="#2B1B4A" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"/><rect x="150" y="122" width="34" height="56" rx="15" fill="#9BE8D0" stroke="#2B1B4A" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"/>
- <g><circle cx="222" cy="100" r="28" fill="#9BE8D0" stroke="#2B1B4A" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"/>
- <g><circle cx="232" cy="92" r="7" fill="#2B1B4A"/><circle cx="234.500" cy="89.500" r="2.300" fill="#FFF6E0"/></g>
- <path d="M226 112 Q236 118 244 110" fill="none" stroke="#2B1B4A" stroke-width="7" stroke-linejoin="round" stroke-linecap="round" stroke-width="5"/></g>
- <path d="M18 134 A100 96 0 0 1 204 134 Z" fill="#12A594" stroke="#2B1B4A" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"/>
- <path d="M70 130 L88 82 M111 132 L111 58 M152 130 L134 82 M52 104 Q111 64 170 104" fill="none" stroke="#2B1B4A" stroke-width="5" stroke-linecap="round" opacity=".55"/>
- <rect x="14" y="128" width="194" height="16" rx="8" fill="#FFF6E0" stroke="#2B1B4A" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"/>
-</svg></div>
-    </div>
-    <div>
-      <div class="frame" style="position:relative"><video id="hero" controls autoplay muted loop playsinline preload="auto" poster="posters/f4.jpg" src="videos/f4.mp4"></video></div>
-      <div class="btns" style="margin-top:16px"><button id="snd" class="btn" style="font:inherit;font-weight:800;cursor:pointer">Turn sound on</button></div>
-      <p class="cap">START HERE · 1 MIN 34 S · WHY ONE PROGRAM FINISHES IN A BLINK AND ANOTHER OUTLASTS THE SUN</p>
-    </div>
-  </div>
-</header>
-
-<div class="strip"><div class="in"><div class="stat"><div><b>6</b>parts</div><div><b>25</b>chapters</div><div><b>451</b>videos</div><div><b>358 min</b>of animation</div><div><b>180</b>coding puzzles</div><div><b>28</b>practice questions</div></div></div></div>
-
-<section class="band">
-  <div class="in two">
-    <div>
-      <p class="kick">The problem</p>
-      <h2>Explanations feel clear, then vanish at a blank editor.</h2>
-      <p>Learners watch a lecture, nod along, and still cannot solve the next problem. Practice sites assume the idea already clicked. People restart the same first topics again and again, and many give up.</p>
-    </div>
-    <div>
-      <p class="kick">The approach</p>
-      <h2>Make the learner do the thinking, in small steps.</h2>
-      <ul class="plain">
-        <li><b>Characters are the mechanism.</b> Pip jumps to any door number. Moss walks one step at a time. Hazel turns a name into a door. The story is the algorithm.</li>
-        <li><b>Nothing appears without a reason.</b> Every number on screen shows where it came from.</li>
-        <li><b>The video stops and asks.</b> The learner predicts the next step before seeing it.</li>
-        <li><b>Then real code.</b> A puzzle in the browser, checked by tests that catch shortcuts.</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<section class="band dark" id="how">
-  <div class="in">
-    <p class="kick">How a chapter works</p>
-    <h2>Watch, guess, code, step through.</h2>
-    <div class="steps">
-      <div class="step"><b>1 · WATCH</b><p>One to three short lessons. A problem first, then the idea, acted out by the characters.</p></div>
-      <div class="step"><b>2 · GUESS</b><p>Each lesson stops once and asks what comes next. You answer before you see it.</p></div>
-      <div class="step"><b>3 · CODE</b><p>Three to eight puzzles per chapter. Each opens with a 20-second story and is solved in an editor on the page, checked by tests.</p></div>
-      <div class="step"><b>4 · STEP THROUGH</b><p>Every puzzle has a solution video, line by line, where it is used in the real world, and a step-through you click yourself.</p></div>
-      <div class="step"><b>5 · MIX</b><p>Each part ends with a mixed set: puzzles from all its chapters, with no labels. Picking the tool is the test.</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="band" id="chapters">
-  <div class="in">
-    <p class="kick">The course</p>
-    <h2>Six parts, in order.</h2>
-    <p>Each part builds on the one before it. Start with Part 0 if this is new; jump ahead if it is not. Everything runs in the browser, and your progress is saved on this device.</p>
-    <nav class="parts" aria-label="Parts"><a href="#p0">0 · Foundations</a><a href="#pw">Warm-up · Thinking in code</a><a href="#p1">1 · Rows and chains</a><a href="#p2">2 · Recursion, search, sort</a><a href="#p3">3 · Trees, heaps, tries</a><a href="#p4">4 · Graphs</a><a href="#p5">5 · Backtracking, DP</a></nav>
-    <div class="chap">
-      <h3 class="parth" id="p0"><em>Part 0</em> Foundations <span>start here, no chapters</span></h3>
-      <a class="chcard" href="foundations.html"><img src="posters/f4.jpg" alt="" loading="lazy"><span class="kick">Six lessons</span><b>Foundations</b><span>How a computer works, loops and the call stack, the Big O shapes and rules, memory, and reading input limits. Six lessons and 28 practice questions. About 8 minutes of video.</span><i>Open Part 0 →</i></a>
-      <h3 class="parth" id="pw"><em>Optional warm-up</em>Thinking in code <span>for when the code itself gets in the way · four short chapters, no DSA</span></h3>
-      <a class="chcard" href="chapter.html?c=think1"><img src="posters/kat1.jpg" alt="" loading="lazy"><span class="kick">Warm-up A</span><b>Be the Computer</b><span>Run code in your head, one line at a time. The trace table, where loops begin and end, and the order of a condition. Four puzzles where the code is nearly right. About 10 minutes of video.</span><i>Open warm-up A →</i></a>
-      <a class="chcard" href="chapter.html?c=think2"><img src="posters/kbt1.jpg" alt="" loading="lazy"><span class="kick">Warm-up B</span><b>Values, Copies and Changes</b><span>You change one list and another changes too. What a name really is, real copies, and functions that change what you gave them. Four puzzles where something changes that should not. About 8 minutes of video.</span><i>Open warm-up b →</i></a>
-      <a class="chcard" href="chapter.html?c=think3"><img src="posters/kct1.jpg" alt="" loading="lazy"><span class="kick">Warm-up C</span><b>From Words to Code</b><span>The editor is blank. What goes in, what comes out, the rules, one example by hand, plain-word steps, and only then code. Four everyday multi-step tasks. About 8 minutes of video.</span><i>Open warm-up c →</i></a>
-      <a class="chcard" href="chapter.html?c=think4"><img src="posters/kdt1.jpg" alt="" loading="lazy"><span class="kick">Warm-up D</span><b>Test It, Break It, Fix It</b><span>It worked on the example. The inputs that break most code, and how to find a bug without guessing: look for the first wrong value. Four puzzles that pass their example and fail elsewhere. About 9 minutes of video.</span><i>Open warm-up d →</i></a>
-      <h3 class="parth" id="p1"><em>Part 1</em> Rows and chains <span>chapters 1 to 9, then a mixed set</span></h3>
-      <a class="chcard" href="chapter.html?c=arrays"><img src="posters/art1.jpg" alt="" loading="lazy"><span class="kick">Chapter 1</span><b>Arrays</b><span>Meet Pip and Moss. Why any door is one jump away, what a row makes slow, and six problems, each with its own solution video. About 10 minutes of video.</span><i>Open chapter 1 →</i></a>
-      <a class="chcard" href="chapter.html?c=strings"><img src="posters/srt2.jpg" alt="" loading="lazy"><span class="kick">Chapter 2</span><b>Strings</b><span>Why a word is a read-only row, why every change is a copy, and how letters become numbers you can count. Four problems, each with its own solution video. About 8 minutes of video.</span><i>Open chapter 2 →</i></a>
-      <a class="chcard" href="chapter.html?c=hashmap"><img src="posters/hwt1.jpg" alt="" loading="lazy"><span class="kick">Chapter 3</span><b>Hash Maps</b><span>Meet Hazel. How a key becomes a door number, and the three questions a map answers in one step. Six problems, each with its own solution video. About 10 minutes of video.</span><i>Open chapter 3 →</i></a>
-      <a class="chcard" href="chapter.html?c=prefix"><img src="posters/pst1.jpg" alt="" loading="lazy"><span class="kick">Chapter 4</span><b>Prefix Sums</b><span>Add once, then answer any range sum with one subtraction. Then pair the totals with a map. Four problems, each with its own solution video. About 9 minutes of video.</span><i>Open chapter 4 →</i></a>
-      <a class="chcard" href="chapter.html?c=twoptr"><img src="posters/tpt1.jpg" alt="" loading="lazy"><span class="kick">Chapter 5</span><b>Two Pointers</b><span>Two ends walking in on a sorted row, and a reader with a writer for changing an array in place. Six problems, each with its own solution video. About 11 minutes of video.</span><i>Open chapter 5 →</i></a>
-      <a class="chcard" href="chapter.html?c=window"><img src="posters/swt1.jpg" alt="" loading="lazy"><span class="kick">Chapter 6</span><b>Sliding Window</b><span>A frame that moves along the row and never starts over: first a fixed size, then one that grows and shrinks. Six problems, each with its own solution video. About 11 minutes of video.</span><i>Open chapter 6 →</i></a>
-      <a class="chcard" href="chapter.html?c=stack"><img src="posters/stt2.jpg" alt="" loading="lazy"><span class="kick">Chapter 7</span><b>Stacks</b><span>A pile where only the top can be touched: brackets, undo, and the monotonic stack that finds every "next bigger" in one pass. Six problems, each with its own solution video. About 11 minutes of video.</span><i>Open chapter 7 →</i></a>
-      <a class="chcard" href="chapter.html?c=queue"><img src="posters/qut1.jpg" alt="" loading="lazy"><span class="kick">Chapter 8</span><b>Queues</b><span>First in, first out, and the trap that makes a JavaScript queue slow. A short chapter: one lesson and two problems. About 5 minutes of video.</span><i>Open chapter 8 →</i></a>
-      <a class="chcard" href="chapter.html?c=linked"><img src="posters/llt1.jpg" alt="" loading="lazy"><span class="kick">Chapter 9</span><b>Linked Lists</b><span>Nodes and arrows: slow to reach, cheap to change. Save next, the dummy node, and fast and slow walkers. Six problems written with real node code. About 11 minutes of video.</span><i>Open chapter 9 →</i></a>
-      <a class="chcard" href="chapter.html?c=mixed1"><img src="posters/mx0.jpg" alt="" loading="lazy"><span class="kick">Part 1 · Mixed set</span><b>Mixed Set 1</b><span>Ten new puzzles from chapters 1 to 9, with no labels. Choosing the tool is the exercise; each solution video names it at the end. About 14 minutes of video.</span><i>Open mixed set 1 →</i></a>
-      <h3 class="parth" id="p2"><em>Part 2</em> Recursion, searching and sorting <span>chapters 10 to 13, then a mixed set</span></h3>
-      <a class="chcard" href="chapter.html?c=recur"><img src="posters/rct1.jpg" alt="" loading="lazy"><span class="kick">Chapter 10</span><b>Recursion</b><span>A function that calls itself: the base case, the step, the call stack, and why to trust the smaller answer. Four problems, the last one with a memo. About 9 minutes of video.</span><i>Open chapter 10 →</i></a>
-      <a class="chcard" href="chapter.html?c=bsearch"><img src="posters/bst1.jpg" alt="" loading="lazy"><span class="kick">Chapter 11</span><b>Binary Search</b><span>Halve what is left with every look: the exact loop, the first-that-fits edge, and searching the answer itself. Seven problems. About 17 minutes of video.</span><i>Open chapter 11 →</i></a>
-      <a class="chcard" href="chapter.html?c=sorting"><img src="posters/sgt1.jpg" alt="" loading="lazy"><span class="kick">Chapter 12</span><b>Sorting</b><span>What a sort costs, how to sort by your own rule, and how to spot the problems that become easy once the input is in order. Three problems. About 6 minutes of video.</span><i>Open chapter 12 →</i></a>
-      <a class="chcard" href="chapter.html?c=intervals"><img src="posters/ivt1.jpg" alt="" loading="lazy"><span class="kick">Chapter 13</span><b>Intervals</b><span>Things with a start and an end: sort them, sweep once, and merge, count or pick as you go. Five problems. About 11 minutes of video.</span><i>Open chapter 13 →</i></a>
-      <a class="chcard" href="chapter.html?c=mixed2"><img src="posters/my0.jpg" alt="" loading="lazy"><span class="kick">Part 2 · Mixed set</span><b>Mixed Set 2</b><span>Ten new puzzles from everything so far, with no chapter label: choosing the tool is the exercise. Each has an intro and a solution video. About 18 minutes of video.</span><i>Open mixed set 2 →</i></a>
-      <h3 class="parth" id="p3"><em>Part 3</em> Trees, heaps and tries <span>chapters 14 to 17, then a mixed set</span></h3>
-      <a class="chcard" href="chapter.html?c=trees"><img src="posters/trt1.jpg" alt="" loading="lazy"><span class="kick">Chapter 14</span><b>Binary Trees</b><span>A node with two children. Walk it deep first with recursion, or level by level with a queue, and know when to pick which. Eight problems. About 17 minutes of video.</span><i>Open chapter 14 →</i></a>
-      <a class="chcard" href="chapter.html?c=bst"><img src="posters/btt1.jpg" alt="" loading="lazy"><span class="kick">Chapter 15</span><b>Binary Search Trees</b><span>A tree with one rule: smaller on the left, bigger on the right. Search by picking a side, and read it in sorted order. Four problems. About 10 minutes of video.</span><i>Open chapter 15 →</i></a>
-      <a class="chcard" href="chapter.html?c=heaps"><img src="posters/hpt1.jpg" alt="" loading="lazy"><span class="kick">Chapter 16</span><b>Heaps</b><span>The smallest item on demand while new ones keep arriving. Write push and pop yourself, then use a heap for top-k, merging and the running median. Six problems. About 15 minutes of video.</span><i>Open chapter 16 →</i></a>
-      <a class="chcard" href="chapter.html?c=tries"><img src="posters/ttt1.jpg" alt="" loading="lazy"><span class="kick">Chapter 17</span><b>Tries</b><span>A tree for words: words that begin the same way share a path. Add a word, look one up, and finish a prefix. Three problems. About 7 minutes of video.</span><i>Open chapter 17 →</i></a>
-      <a class="chcard" href="chapter.html?c=mixed3"><img src="posters/mz0.jpg" alt="" loading="lazy"><span class="kick">Part 3 · Mixed set</span><b>Mixed Set 3</b><span>Eight new puzzles on trees, search trees, heaps, tries and everything before, with no chapter label. Each has an intro and a solution video. About 15 minutes of video.</span><i>Open mixed set 3 →</i></a>
-      <h3 class="parth" id="p4"><em>Part 4</em> Graphs <span>chapters 18 to 21, then a mixed set</span></h3>
-      <a class="chcard" href="chapter.html?c=graphs"><img src="posters/grt1.jpg" alt="" loading="lazy"><span class="kick">Chapter 18</span><b>Graphs and Grids</b><span>Things, and what joins them: maps, friends, mazes. Build neighbour lists, keep a seen set, walk deep to explore and level by level for the fewest steps. Seven problems. About 13 minutes of video.</span><i>Open chapter 18 →</i></a>
-      <a class="chcard" href="chapter.html?c=topo"><img src="posters/tot1.jpg" alt="" loading="lazy"><span class="kick">Chapter 19</span><b>Topological Sort</b><span>Rules of the kind "this before that". Count the arrows pointing in, take the jobs that wait for nothing, and spot a loop. Three problems. About 7 minutes of video.</span><i>Open chapter 19 →</i></a>
-      <a class="chcard" href="chapter.html?c=unionfind"><img src="posters/uft1.jpg" alt="" loading="lazy"><span class="kick">Chapter 20</span><b>Union-Find</b><span>Groups that only ever merge. One array of parents, find the leader, join two leaders, and answer "are these two together?" almost at once. Three problems. About 6 minutes of video.</span><i>Open chapter 20 →</i></a>
-      <a class="chcard" href="chapter.html?c=paths"><img src="posters/spt1.jpg" alt="" loading="lazy"><span class="kick">Chapter 21</span><b>Shortest Paths</b><span>When every tunnel has a cost, the fewest tunnels is not the cheapest walk. One number per burrow, always take the cheapest next, and a heap to make it fast. Three problems. About 7 minutes of video.</span><i>Open chapter 21 →</i></a>
-      <a class="chcard" href="chapter.html?c=mixed4"><img src="posters/mq0.jpg" alt="" loading="lazy"><span class="kick">Part 4 · Mixed set</span><b>Mixed Set 4</b><span>Eight new puzzles on graphs, grids, ordering, merging groups and cheapest ways, with no chapter label. Each has an intro and a solution video. About 13 minutes of video.</span><i>Open mixed set 4 →</i></a>
-      <h3 class="parth" id="p5"><em>Part 5</em> Backtracking and dynamic programming <span>chapters 22 to 25 so far, more on the way</span></h3>
-      <a class="chcard" href="chapter.html?c=backtrack"><img src="posters/bkt1.jpg" alt="" loading="lazy"><span class="kick">Chapter 22</span><b>Backtracking</b><span>When a puzzle asks for every possibility: try a choice, explore what follows, take it back. Decision trees, pruning, and seven problems from subsets to queens. About 14 minutes of video.</span><i>Open chapter 22 →</i></a>
-      <a class="chcard" href="chapter.html?c=greedy"><img src="posters/gdt1.jpg" alt="" loading="lazy"><span class="kick">Chapter 23</span><b>Greedy</b><span>Take what looks best right now and never go back. Fast, but only right when the choice is safe: one example where it works, one where it fails, and a test to tell them apart. Four problems. About 8 minutes of video.</span><i>Open chapter 23 →</i></a>
-      <a class="chcard" href="chapter.html?c=dp1"><img src="posters/dpt1.jpg" alt="" loading="lazy"><span class="kick">Chapter 24</span><b>Dynamic Programming: One Row</b><span>Answer the small questions first, write them in a table, and look back. A three-question recipe (meaning, choice, start) and eight problems from stairs to equal shares. About 14 minutes of video.</span><i>Open chapter 24 →</i></a>
-      <a class="chcard" href="chapter.html?c=dp2"><img src="posters/dqt1.jpg" alt="" loading="lazy"><span class="kick">Chapter 25</span><b>Dynamic Programming: Two Sides</b><span>When an answer depends on two things, the table becomes a grid. Routes across a field, what two words share, edit distance, and the best load for a cart. Seven problems. About 14 minutes of video.</span><i>Open chapter 25 →</i></a>
-    </div>
-  </div>
-</section>
-
-<section class="band dark">
-  <div class="in two">
-    <div>
-      <p class="kick">How it is made</p>
-      <h2>Every video is code, not footage.</h2>
-      <p>A chapter starts as a written script. The voice is generated from it, the animation is timed to the voice, and the video is rendered from code. There are no drawn frames and no generated images.</p>
-      <div class="pipe"><span>script</span><i>→</i><span>voice</span><i>→</i><span>animation</span><i>→</i><span>render</span><i>→</i><span>page</span></div>
-      <p>Changing a line, a number or the whole voice means re-running the pipeline, not re-shooting. The same cast and world carry across every chapter.</p>
-    </div>
-    <div>
-      <p class="kick">Why that matters</p>
-      <ul class="plain">
-        <li><b>Chapters are cheap to produce and to fix.</b> A correction is an edit and a re-render.</li>
-        <li><b>The format is a template.</b> Each new chapter reused the engine, cast and page of the one before.</li>
-        <li><b>Other languages are a re-voice.</b> Timing follows the narration automatically.</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<section class="band">
-  <div class="in two">
-    <div>
-      <p class="kick">Where it stands</p>
-      <h2>Parts 0 to 4 are complete. Part 5 is being built.</h2>
-      <p>Everything runs in the browser with nothing to install: videos with guess-first pauses, practice questions, a JavaScript code runner with tests, hints, and step-through solutions.</p>
-    </div>
-    <div>
-      <p class="kick">What comes next</p>
-      <ul class="plain">
-        <li>The rest of Part 5: bit tricks and combining tools.</li>
-        <li>Mock interviews: timed, and aloud.</li>
-        <li>Review scheduling, so solved puzzles come back at the right time.</li>
-        <li>More coding languages and narration languages.</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<footer class="dark"><div class="in">BURROW HILL · PROTOTYPE · SHARED PRIVATELY, PLEASE DO NOT FORWARD</div></footer>
+a:focus-visible,button:focus-visible,video:focus-visible{outline:4px solid var(--teal);outline-offset:3px}
+.top{background:var(--sky)}
+nav{display:flex;align-items:center;gap:clamp(12px,3vw,28px);padding-block:18px}
+nav .logo{font-weight:800;font-size:26px;letter-spacing:-.5px;margin-right:auto;display:flex;align-items:center;gap:10px}
+nav .logo i{width:30px;height:30px;border-radius:50%;background:var(--coral);border:4px solid var(--plum);display:block}
+nav a.l{font-weight:700;font-size:16px}
+nav .btn{padding:8px 16px;font-size:15px;box-shadow:3px 4px 0 var(--plum);border-width:3px;white-space:nowrap}
+.hero{position:relative;overflow:hidden;padding:26px 0 150px}
+.hero:before{content:"";position:absolute;left:-12%;right:36%;bottom:60px;height:230px;background:var(--hill);border-radius:50%/100% 100% 0 0}
+.hero:after{content:"";position:absolute;left:0;right:0;bottom:0;height:74px;background:var(--plum)}
+.sunb{position:absolute;right:8%;top:-70px;width:260px;height:260px;border-radius:50%;background:var(--sun)}
+.hg{position:relative;z-index:2;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,560px);gap:clamp(24px,5vw,56px);align-items:center}
+h1{font-size:clamp(40px,5.2vw,62px);font-weight:800;letter-spacing:-2px;line-height:1;margin:12px 0 18px}
+h1 em{font-style:normal;background:var(--mint);border:4px solid var(--plum);border-radius:14px;padding:0 12px;display:inline-block;transform:rotate(-2deg)}
+.lede{font-size:clamp(18px,2vw,22px);font-weight:500;max-width:30ch;line-height:1.3}
+.cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:26px;align-items:center}
+.facts{display:flex;flex-wrap:wrap;gap:12px 26px;margin-top:30px}
+.facts div{font-size:14px;font-weight:700}.facts b{display:block;font-size:30px;font-weight:800;line-height:1}
+.vid{border:5px solid var(--plum);border-radius:20px;box-shadow:10px 12px 0 var(--plum);overflow:hidden;aspect-ratio:16/9;background:var(--plum)}
+.vid video{width:100%;height:100%;display:block}
+.vcap{margin-top:16px;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.vcap button{font:inherit;font-family:"JetBrains Mono",monospace;font-weight:700;font-size:12px;letter-spacing:1px;text-transform:uppercase;background:var(--cream);border:3px solid var(--plum);border-radius:10px;padding:6px 12px;cursor:pointer;color:var(--plum)}
+.resume{background:var(--plum);color:var(--cream);padding:0 0 34px}
+.rz{display:grid;grid-template-columns:auto 1fr auto;gap:clamp(14px,3vw,28px);align-items:center;background:var(--plum2);border:4px solid var(--cream);border-radius:18px;padding:18px clamp(14px,3vw,24px)}
+.rz img{width:132px;aspect-ratio:16/9;object-fit:cover;border-radius:10px;border:3px solid var(--cream);display:block}
+.rz b{font-size:clamp(19px,2.4vw,24px);font-weight:800;display:block;margin:2px 0 8px;line-height:1.15}
+.bar{height:12px;border-radius:99px;background:rgba(255,246,224,.22);overflow:hidden}.bar i{display:block;height:100%;background:var(--mint);border-radius:99px;width:0}
+.rz small{font-size:14px;opacity:.85;display:block;margin-top:6px}
+.map{padding-block:56px 30px}
+h2{font-size:clamp(30px,4.4vw,44px);font-weight:800;letter-spacing:-1.2px;line-height:1.05;margin:8px 0 10px;text-wrap:balance}
+.sub{font-size:19px;max-width:60ch}
+.part{display:grid;grid-template-columns:250px minmax(0,1fr);gap:30px;padding:34px 0;border-top:4px solid var(--plum);margin-top:34px;scroll-margin-top:12px}
+.part.opt{background:#fff;border:4px dashed var(--plum);border-radius:20px;padding:24px}
+.pn{width:58px;height:58px;border-radius:50%;background:var(--sky);border:4px solid var(--plum);box-shadow:3px 4px 0 var(--plum);font-weight:800;font-size:28px;display:grid;place-items:center;margin-bottom:14px}
+.part.opt .pn{background:var(--mint)}
+.part h3{font-size:27px;font-weight:800;line-height:1.1;letter-spacing:-.5px}
+.part p{font-size:15.5px;margin:8px 0 14px}
+.meta{font-family:"JetBrains Mono",monospace;font-weight:700;font-size:12.5px;line-height:1.7}
+.pbar{height:10px;border-radius:99px;background:#fff;border:2px solid var(--plum);overflow:hidden;margin:12px 0 6px}.pbar i{display:block;height:100%;background:var(--teal);width:0}
+.pst.on{color:var(--teal)}
+.tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:14px;align-content:start}
+.t{background:#fff;border:4px solid var(--plum);border-radius:14px;overflow:hidden;box-shadow:4px 5px 0 var(--plum);display:block;position:relative;transition:transform .12s,box-shadow .12s}
+a.t:hover{transform:translate(-2px,-2px);box-shadow:7px 8px 0 var(--plum)}
+.t img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block;border-bottom:4px solid var(--plum);background:var(--sky)}
+.t div{padding:9px 12px 11px}
+.t s{text-decoration:none;font-family:"JetBrains Mono",monospace;font-weight:700;font-size:11.5px;letter-spacing:1.5px;color:var(--teal);display:block}
+.t b{font-size:16px;font-weight:800;line-height:1.15;display:block;margin:2px 0 3px}
+.t i{font-style:normal;font-size:13px;opacity:.8}
+.t.done:after{content:"✓";position:absolute;right:8px;top:8px;width:28px;height:28px;border-radius:50%;background:var(--mint);border:3px solid var(--plum);font-weight:800;font-size:15px;display:grid;place-items:center}
+.t.part2:after{content:attr(data-p);position:absolute;right:8px;top:8px;background:var(--cream);border:3px solid var(--plum);border-radius:8px;font-family:"JetBrains Mono",monospace;font-weight:700;font-size:11px;padding:2px 6px}
+.t.now{box-shadow:4px 5px 0 var(--coral)}.t.now:before{content:"YOU ARE HERE";position:absolute;left:8px;top:8px;background:var(--coral);border:3px solid var(--plum);border-radius:8px;font-family:"JetBrains Mono",monospace;font-weight:700;font-size:10.5px;letter-spacing:1px;padding:2px 7px;z-index:1}
+.t.mix{background:var(--plum);color:var(--cream)}.t.mix s{color:var(--sky)}
+.t.soon{background:transparent;border-style:dashed;box-shadow:none;display:grid;place-items:center;min-height:150px;text-align:center}.t.soon s{color:var(--plum);opacity:.7}
+.how{background:var(--plum);color:var(--cream);padding-block:64px;margin-top:40px}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:18px;margin-top:28px}
+.st{background:var(--cream);color:var(--plum);border-radius:18px;padding:22px;box-shadow:6px 7px 0 var(--coral)}
+.st u{text-decoration:none;display:grid;place-items:center;width:46px;height:46px;border-radius:50%;background:var(--sky);border:4px solid var(--plum);font-weight:800;font-size:22px;margin-bottom:14px}
+.st b{font-size:22px;font-weight:800;display:block;margin-bottom:6px}.st p{font-size:15.5px}
+.cast{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:22px}
+.cc{border:3px solid rgba(255,246,224,.35);border-radius:16px;padding:16px 20px;font-size:15.5px}.cc b{color:var(--sky);font-size:19px;display:block}
+footer{background:var(--plum);color:var(--cream);padding-bottom:34px}
+footer .w{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between;opacity:.9}
+@media(max-width:900px){.hg{grid-template-columns:minmax(0,1fr)}.hero{padding-bottom:120px}.part{grid-template-columns:minmax(0,1fr);gap:18px;padding:26px 0;margin-top:26px}.part.opt{padding:18px}.ph{display:grid;grid-template-columns:auto 1fr;column-gap:14px;align-items:center}.ph .pn{grid-row:span 2;margin:0}.ph p,.ph .meta,.ph .pbar{grid-column:1/-1}.ph p{margin-top:10px}.tiles{grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:12px}nav a.l{display:none}.rz{grid-template-columns:1fr}.rz img{display:none}body{font-size:16px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.t{transition:none}a.t:hover{transform:none}}
+</style></head><body>
+<div class="top"><nav class="w"><a class="logo" href="index.html"><i></i>Burrow Hill</a><a class="l" href="#course">The course</a><a class="l" href="#how">How it works</a><a class="btn" id="navgo" href="foundations.html">Start →</a></nav>
+<header class="hero"><div class="sunb"></div><div class="w hg">
+<div><p class="mono">Data structures and algorithms · a visual course</p>
+<h1>Watch it happen.<br>Guess the next step.<br>Then <em>write it.</em></h1>
+<p class="lede">Short animated lessons that stop and ask you what comes next, and a coding puzzle after every idea.</p>
+<div class="cta"><a class="btn" id="herogo" href="foundations.html">Start with Part 0</a><a class="btn alt" href="#course">See all 25 chapters</a></div>
+<div class="facts"><div><b>451</b>short videos</div><div><b>180</b>coding puzzles</div><div><b>0</b>things to install</div></div></div>
+<div><div class="vid"><video id="hero" controls muted loop playsinline preload="metadata" poster="posters/f4.jpg" src="videos/f4.mp4"></video></div>
+<div class="vcap mono"><span>Start here · 1 min 34 s</span><button id="snd">Play with sound ♪</button></div></div>
+</div></header></div>
+<section class="resume"><div class="w"><div class="rz" id="rz"><img id="rzi" src="posters/f4.jpg" alt="">
+<div><span class="mono" style="color:var(--sky)" id="rzk">New here?</span><b id="rzt">Part 0 · Foundations</b><div class="bar"><i id="rzb"></i></div><small id="rzs">Six short lessons on how a computer runs your code. About 8 minutes.</small></div>
+<a class="btn" id="rzgo" href="foundations.html">Start →</a></div></div></section>
+<main class="w map" id="course"><p class="mono">The course</p><h2>Six parts, one trail up the hill.</h2><p class="sub">Each part builds on the one before it and ends with a mixed set: puzzles from all its chapters, with no labels. Your progress is saved on this device.</p>
+<section class="part" id="p0"><div class="ph"><div class="pn">0</div><h3>Foundations</h3><p>How a computer runs your code, and how to count the work it does.</p><div class="meta">6 LESSONS · 28 QUESTIONS · 8 MIN</div><div class="pbar"><i></i></div><div class="meta pst">NOT STARTED</div></div><div class="tiles"><a class="t" href="foundations.html" data-key="burrow-foundations-v1" data-total="6"><img src="posters/f4.jpg" alt="" loading="lazy"><div><s>START HERE</s><b>Foundations</b><i>6 lessons · Big O, memory, the stack</i></div></a></div></section>
+<section class="part opt" id="pw"><div class="ph"><div class="pn">?</div><h3>Thinking in code</h3><p><b>Optional warm-up.</b> For when the code itself gets in the way: tracing, copies, turning words into steps, testing. No DSA.</p><div class="meta">4 SHORT CHAPTERS · 16 PUZZLES · 35 MIN</div><div class="pbar"><i></i></div><div class="meta pst">NOT STARTED</div></div><div class="tiles"><a class="t" href="chapter.html?c=think1" data-key="burrow-ch-think1" data-total="8"><img src="posters/kat1.jpg" alt="" loading="lazy"><div><s>WARM-UP A</s><b>Be the Computer</b><i>4 puzzles · 10 min</i></div></a><a class="t" href="chapter.html?c=think2" data-key="burrow-ch-think2" data-total="7"><img src="posters/kbt1.jpg" alt="" loading="lazy"><div><s>WARM-UP B</s><b>Values, Copies and Changes</b><i>4 puzzles · 8 min</i></div></a><a class="t" href="chapter.html?c=think3" data-key="burrow-ch-think3" data-total="7"><img src="posters/kct1.jpg" alt="" loading="lazy"><div><s>WARM-UP C</s><b>From Words to Code</b><i>4 puzzles · 8 min</i></div></a><a class="t" href="chapter.html?c=think4" data-key="burrow-ch-think4" data-total="7"><img src="posters/kdt1.jpg" alt="" loading="lazy"><div><s>WARM-UP D</s><b>Test It, Break It, Fix It</b><i>4 puzzles · 9 min</i></div></a></div></section>
+<section class="part" id="p1"><div class="ph"><div class="pn">1</div><h3>Rows and chains</h3><p>Arrays, strings, hash maps, and the patterns that walk a row once instead of many times.</p><div class="meta">9 CHAPTERS · 56 PUZZLES · 107 MIN</div><div class="pbar"><i></i></div><div class="meta pst">NOT STARTED</div></div><div class="tiles"><a class="t" href="chapter.html?c=arrays" data-key="burrow-ch-arrays" data-total="9"><img src="posters/art1.jpg" alt="" loading="lazy"><div><s>CHAPTER 1</s><b>Arrays</b><i>6 puzzles · 11 min</i></div></a><a class="t" href="chapter.html?c=strings" data-key="burrow-ch-strings" data-total="7"><img src="posters/srt1.jpg" alt="" loading="lazy"><div><s>CHAPTER 2</s><b>Strings</b><i>4 puzzles · 8 min</i></div></a><a class="t" href="chapter.html?c=hashmap" data-key="burrow-ch-hashmap" data-total="9"><img src="posters/hwt1.jpg" alt="" loading="lazy"><div><s>CHAPTER 3</s><b>Hash Maps</b><i>6 puzzles · 11 min</i></div></a><a class="t" href="chapter.html?c=prefix" data-key="burrow-ch-prefix" data-total="7"><img src="posters/pst1.jpg" alt="" loading="lazy"><div><s>CHAPTER 4</s><b>Prefix Sums</b><i>4 puzzles · 9 min</i></div></a><a class="t" href="chapter.html?c=twoptr" data-key="burrow-ch-twoptr" data-total="9"><img src="posters/tpt1.jpg" alt="" loading="lazy"><div><s>CHAPTER 5</s><b>Two Pointers</b><i>6 puzzles · 12 min</i></div></a><a class="t" href="chapter.html?c=window" data-key="burrow-ch-window" data-total="9"><img src="posters/swt1.jpg" alt="" loading="lazy"><div><s>CHAPTER 6</s><b>Sliding Window</b><i>6 puzzles · 12 min</i></div></a><a class="t" href="chapter.html?c=stack" data-key="burrow-ch-stack" data-total="9"><img src="posters/stt1.jpg" alt="" loading="lazy"><div><s>CHAPTER 7</s><b>Stacks</b><i>6 puzzles · 12 min</i></div></a><a class="t" href="chapter.html?c=queue" data-key="burrow-ch-queue" data-total="4"><img src="posters/qut1.jpg" alt="" loading="lazy"><div><s>CHAPTER 8</s><b>Queues</b><i>2 puzzles · 5 min</i></div></a><a class="t" href="chapter.html?c=linked" data-key="burrow-ch-linked" data-total="9"><img src="posters/llt1.jpg" alt="" loading="lazy"><div><s>CHAPTER 9</s><b>Linked Lists</b><i>6 puzzles · 11 min</i></div></a><a class="t mix" href="chapter.html?c=mixed1" data-key="burrow-ch-mixed1" data-total="11"><img src="posters/mx0.jpg" alt="" loading="lazy"><div><s>MIXED SET</s><b>Mixed Set 1</b><i>10 puzzles, no labels</i></div></a></div></section>
+<section class="part" id="p2"><div class="ph"><div class="pn">2</div><h3>Recursion, searching and sorting</h3><p>Trust the smaller call, halve the search, and sort so the rest is easy.</p><div class="meta">4 CHAPTERS · 29 PUZZLES · 55 MIN</div><div class="pbar"><i></i></div><div class="meta pst">NOT STARTED</div></div><div class="tiles"><a class="t" href="chapter.html?c=recur" data-key="burrow-ch-recur" data-total="7"><img src="posters/rct1.jpg" alt="" loading="lazy"><div><s>CHAPTER 10</s><b>Recursion</b><i>4 puzzles · 9 min</i></div></a><a class="t" href="chapter.html?c=bsearch" data-key="burrow-ch-bsearch" data-total="10"><img src="posters/bst1.jpg" alt="" loading="lazy"><div><s>CHAPTER 11</s><b>Binary Search</b><i>7 puzzles · 14 min</i></div></a><a class="t" href="chapter.html?c=sorting" data-key="burrow-ch-sorting" data-total="5"><img src="posters/sg0.jpg" alt="" loading="lazy"><div><s>CHAPTER 12</s><b>Sorting</b><i>3 puzzles · 6 min</i></div></a><a class="t" href="chapter.html?c=intervals" data-key="burrow-ch-intervals" data-total="8"><img src="posters/ivt1.jpg" alt="" loading="lazy"><div><s>CHAPTER 13</s><b>Intervals</b><i>5 puzzles · 10 min</i></div></a><a class="t mix" href="chapter.html?c=mixed2" data-key="burrow-ch-mixed2" data-total="11"><img src="posters/my0.jpg" alt="" loading="lazy"><div><s>MIXED SET</s><b>Mixed Set 2</b><i>10 puzzles, no labels</i></div></a></div></section>
+<section class="part" id="p3"><div class="ph"><div class="pn">3</div><h3>Trees, heaps and tries</h3><p>Things inside things: walk them deep or level by level, keep them ordered, or always take the smallest.</p><div class="meta">4 CHAPTERS · 29 PUZZLES · 54 MIN</div><div class="pbar"><i></i></div><div class="meta pst">NOT STARTED</div></div><div class="tiles"><a class="t" href="chapter.html?c=trees" data-key="burrow-ch-trees" data-total="11"><img src="posters/trt1.jpg" alt="" loading="lazy"><div><s>CHAPTER 14</s><b>Binary Trees</b><i>8 puzzles · 15 min</i></div></a><a class="t" href="chapter.html?c=bst" data-key="burrow-ch-bst" data-total="7"><img src="posters/btt1.jpg" alt="" loading="lazy"><div><s>CHAPTER 15</s><b>Binary Search Trees</b><i>4 puzzles · 8 min</i></div></a><a class="t" href="chapter.html?c=heaps" data-key="burrow-ch-heaps" data-total="9"><img src="posters/hpt1.jpg" alt="" loading="lazy"><div><s>CHAPTER 16</s><b>Heaps</b><i>6 puzzles · 12 min</i></div></a><a class="t" href="chapter.html?c=tries" data-key="burrow-ch-tries" data-total="5"><img src="posters/ttt1.jpg" alt="" loading="lazy"><div><s>CHAPTER 17</s><b>Tries</b><i>3 puzzles · 6 min</i></div></a><a class="t mix" href="chapter.html?c=mixed3" data-key="burrow-ch-mixed3" data-total="9"><img src="posters/mz0.jpg" alt="" loading="lazy"><div><s>MIXED SET</s><b>Mixed Set 3</b><i>8 puzzles, no labels</i></div></a></div></section>
+<section class="part" id="p4"><div class="ph"><div class="pn">4</div><h3>Graphs</h3><p>Things joined to things: explore, order, merge groups, and find the cheapest way.</p><div class="meta">4 CHAPTERS · 24 PUZZLES · 47 MIN</div><div class="pbar"><i></i></div><div class="meta pst">NOT STARTED</div></div><div class="tiles"><a class="t" href="chapter.html?c=graphs" data-key="burrow-ch-graphs" data-total="10"><img src="posters/grt1.jpg" alt="" loading="lazy"><div><s>CHAPTER 18</s><b>Graphs and Grids</b><i>7 puzzles · 13 min</i></div></a><a class="t" href="chapter.html?c=topo" data-key="burrow-ch-topo" data-total="5"><img src="posters/tot1.jpg" alt="" loading="lazy"><div><s>CHAPTER 19</s><b>Topological Sort</b><i>3 puzzles · 7 min</i></div></a><a class="t" href="chapter.html?c=unionfind" data-key="burrow-ch-unionfind" data-total="5"><img src="posters/uft1.jpg" alt="" loading="lazy"><div><s>CHAPTER 20</s><b>Union-Find</b><i>3 puzzles · 6 min</i></div></a><a class="t" href="chapter.html?c=paths" data-key="burrow-ch-paths" data-total="5"><img src="posters/spt1.jpg" alt="" loading="lazy"><div><s>CHAPTER 21</s><b>Shortest Paths</b><i>3 puzzles · 7 min</i></div></a><a class="t mix" href="chapter.html?c=mixed4" data-key="burrow-ch-mixed4" data-total="9"><img src="posters/mq0.jpg" alt="" loading="lazy"><div><s>MIXED SET</s><b>Mixed Set 4</b><i>8 puzzles, no labels</i></div></a></div></section>
+<section class="part" id="p5"><div class="ph"><div class="pn">5</div><h3>Backtracking and dynamic programming</h3><p>Try every choice and take it back, or answer the small questions first and reuse them.</p><div class="meta">4 CHAPTERS SO FAR · 26 PUZZLES · 50 MIN</div><div class="pbar"><i></i></div><div class="meta pst">NOT STARTED</div></div><div class="tiles"><a class="t" href="chapter.html?c=backtrack" data-key="burrow-ch-backtrack" data-total="10"><img src="posters/bkt1.jpg" alt="" loading="lazy"><div><s>CHAPTER 22</s><b>Backtracking</b><i>7 puzzles · 14 min</i></div></a><a class="t" href="chapter.html?c=greedy" data-key="burrow-ch-greedy" data-total="6"><img src="posters/gdt1.jpg" alt="" loading="lazy"><div><s>CHAPTER 23</s><b>Greedy</b><i>4 puzzles · 8 min</i></div></a><a class="t" href="chapter.html?c=dp1" data-key="burrow-ch-dp1" data-total="11"><img src="posters/dpt1.jpg" alt="" loading="lazy"><div><s>CHAPTER 24</s><b>DP: One Row</b><i>8 puzzles · 14 min</i></div></a><a class="t" href="chapter.html?c=dp2" data-key="burrow-ch-dp2" data-total="10"><img src="posters/dqt1.jpg" alt="" loading="lazy"><div><s>CHAPTER 25</s><b>DP: Two Sides</b><i>7 puzzles · 14 min</i></div></a><div class="t soon"><div><s>COMING NEXT</s><b>26 · Bit Tricks</b><i>then chapter 27 and mock interviews</i></div></div></div></section>
+</main>
+<section class="how" id="how"><div class="w"><p class="mono" style="color:var(--sky)">How a chapter works</p><h2>Watch, guess, code, step through.</h2>
+<div class="steps">
+<div class="st"><u>1</u><b>Watch</b><p>One to three short lessons. A problem first, then the idea, acted out by the characters.</p></div>
+<div class="st"><u>2</u><b>Guess</b><p>Each lesson stops once and asks what comes next. You answer before you see it, also in full screen.</p></div>
+<div class="st"><u>3</u><b>Code</b><p>Three to eight puzzles, each with a 20-second story, solved in an editor on the page and checked by tests.</p></div>
+<div class="st"><u>4</u><b>Step through</b><p>A solution video, line by line, where it is used in the real world, and steps you click yourself.</p></div>
+</div>
+<div class="cast"><div class="cc"><b>Pip jumps</b>to any door number in one step. Pip is the array index.</div><div class="cc"><b>Moss walks</b>one step at a time. Moss is the loop, and the second pointer.</div><div class="cc"><b>Hazel knows</b>where everything is by name. Hazel is the hash map.</div></div>
+</div></section>
+<footer><div class="w mono"><span>Burrow Hill · 356 minutes of animation</span><span>Shared privately, please do not forward</span></div></footer>
 <script>
-// The main video autoplays muted (browsers block autoplay with sound). One click restarts it with sound.
+// Progress lives in each chapter's own saved state (localStorage). Read it, mark the tiles, and offer "Continue".
+const ORDER = [["burrow-foundations-v1", "foundations.html", "Start Here \u00b7 Foundations", "f4", 6], ["burrow-ch-think1", "chapter.html?c=think1", "Warm-Up A \u00b7 Be the Computer", "kat1", 8], ["burrow-ch-think2", "chapter.html?c=think2", "Warm-Up B \u00b7 Values, Copies and Changes", "kbt1", 7], ["burrow-ch-think3", "chapter.html?c=think3", "Warm-Up C \u00b7 From Words to Code", "kct1", 7], ["burrow-ch-think4", "chapter.html?c=think4", "Warm-Up D \u00b7 Test It, Break It, Fix It", "kdt1", 7], ["burrow-ch-arrays", "chapter.html?c=arrays", "Chapter 1 \u00b7 Arrays", "art1", 9], ["burrow-ch-strings", "chapter.html?c=strings", "Chapter 2 \u00b7 Strings", "srt1", 7], ["burrow-ch-hashmap", "chapter.html?c=hashmap", "Chapter 3 \u00b7 Hash Maps", "hwt1", 9], ["burrow-ch-prefix", "chapter.html?c=prefix", "Chapter 4 \u00b7 Prefix Sums", "pst1", 7], ["burrow-ch-twoptr", "chapter.html?c=twoptr", "Chapter 5 \u00b7 Two Pointers", "tpt1", 9], ["burrow-ch-window", "chapter.html?c=window", "Chapter 6 \u00b7 Sliding Window", "swt1", 9], ["burrow-ch-stack", "chapter.html?c=stack", "Chapter 7 \u00b7 Stacks", "stt1", 9], ["burrow-ch-queue", "chapter.html?c=queue", "Chapter 8 \u00b7 Queues", "qut1", 4], ["burrow-ch-linked", "chapter.html?c=linked", "Chapter 9 \u00b7 Linked Lists", "llt1", 9], ["burrow-ch-mixed1", "chapter.html?c=mixed1", "Mixed Set \u00b7 Mixed Set 1", "mx0", 11], ["burrow-ch-recur", "chapter.html?c=recur", "Chapter 10 \u00b7 Recursion", "rct1", 7], ["burrow-ch-bsearch", "chapter.html?c=bsearch", "Chapter 11 \u00b7 Binary Search", "bst1", 10], ["burrow-ch-sorting", "chapter.html?c=sorting", "Chapter 12 \u00b7 Sorting", "sg0", 5], ["burrow-ch-intervals", "chapter.html?c=intervals", "Chapter 13 \u00b7 Intervals", "ivt1", 8], ["burrow-ch-mixed2", "chapter.html?c=mixed2", "Mixed Set \u00b7 Mixed Set 2", "my0", 11], ["burrow-ch-trees", "chapter.html?c=trees", "Chapter 14 \u00b7 Binary Trees", "trt1", 11], ["burrow-ch-bst", "chapter.html?c=bst", "Chapter 15 \u00b7 Binary Search Trees", "btt1", 7], ["burrow-ch-heaps", "chapter.html?c=heaps", "Chapter 16 \u00b7 Heaps", "hpt1", 9], ["burrow-ch-tries", "chapter.html?c=tries", "Chapter 17 \u00b7 Tries", "ttt1", 5], ["burrow-ch-mixed3", "chapter.html?c=mixed3", "Mixed Set \u00b7 Mixed Set 3", "mz0", 9], ["burrow-ch-graphs", "chapter.html?c=graphs", "Chapter 18 \u00b7 Graphs and Grids", "grt1", 10], ["burrow-ch-topo", "chapter.html?c=topo", "Chapter 19 \u00b7 Topological Sort", "tot1", 5], ["burrow-ch-unionfind", "chapter.html?c=unionfind", "Chapter 20 \u00b7 Union-Find", "uft1", 5], ["burrow-ch-paths", "chapter.html?c=paths", "Chapter 21 \u00b7 Shortest Paths", "spt1", 5], ["burrow-ch-mixed4", "chapter.html?c=mixed4", "Mixed Set \u00b7 Mixed Set 4", "mq0", 9], ["burrow-ch-backtrack", "chapter.html?c=backtrack", "Chapter 22 \u00b7 Backtracking", "bkt1", 10], ["burrow-ch-greedy", "chapter.html?c=greedy", "Chapter 23 \u00b7 Greedy", "gdt1", 6], ["burrow-ch-dp1", "chapter.html?c=dp1", "Chapter 24 \u00b7 DP: One Row", "dpt1", 11], ["burrow-ch-dp2", "chapter.html?c=dp2", "Chapter 25 \u00b7 DP: Two Sides", "dqt1", 10]];
+const read = (k) => { try { return JSON.parse(localStorage.getItem(k) || 'null'); } catch (e) { return null; } };
+let last = null, all = 0, allDone = 0, firstOpen = null;
+document.querySelectorAll('.part').forEach((part) => { let tot = 0, dn = 0;
+  part.querySelectorAll('a.t').forEach((t) => { const S = read(t.dataset.key), total = +t.dataset.total, n = S && S.done ? Math.min(total, Object.values(S.done).filter(Boolean).length) : 0; tot += total; dn += n;
+    if (n >= total) t.classList.add('done'); else { if (n > 0 || (S && S.ts)) { t.classList.add('part2'); t.dataset.p = n + ' / ' + total; } if (!firstOpen && !part.classList.contains('opt')) firstOpen = t; }
+    if (S && (S.ts || n > 0) && (!last || (S.ts || 0) >= (last.S.ts || 0)) && n < total) last = { t, S, n, total }; });
+  if (!part.classList.contains('opt')) { all += tot; allDone += dn; }
+  part.querySelector('.pbar i').style.width = (tot ? (dn / tot) * 100 : 0) + '%'; const st = part.querySelector('.pst'); if (dn > 0) { st.textContent = dn >= tot ? 'DONE' : dn + ' OF ' + tot + ' STEPS DONE'; st.classList.add('on'); } });
+const go = last || (allDone > 0 && firstOpen ? { t: firstOpen, n: 0, total: +firstOpen.dataset.total } : null);
+if (go) { const row = ORDER.find((r) => r[0] === go.t.dataset.key) || []; go.t.classList.add('now'); go.t.classList.remove('part2');
+  rzk.textContent = 'Pick up where you left off'; rzt.textContent = row[2] || 'Your chapter'; rzi.src = 'posters/' + (row[3] || 'f4') + '.jpg'; rzb.style.width = (go.n / go.total) * 100 + '%';
+  rzs.textContent = 'Step ' + Math.min(go.total, go.n + 1) + ' of ' + go.total + ' · ' + allDone + ' of ' + all + ' steps done in the whole course';
+  for (const a of [rzgo, navgo, herogo]) a.href = go.t.getAttribute('href'); rzgo.textContent = 'Continue →'; navgo.textContent = 'Continue →'; herogo.textContent = 'Continue where you left off'; }
+// the start video plays muted in place; one click restarts it with sound
 const hero = document.getElementById('hero'), snd = document.getElementById('snd');
-hero.play().catch(() => {});
 snd.addEventListener('click', () => { hero.muted = false; hero.loop = false; hero.currentTime = 0; hero.play().catch(() => {}); snd.hidden = true; });
 hero.addEventListener('volumechange', () => { if (!hero.muted) snd.hidden = true; });
-// Only one video plays at a time.
-document.querySelectorAll('video').forEach((v) => v.addEventListener('play', () => document.querySelectorAll('video').forEach((o) => { if (o !== v) o.pause(); })));
 </script>
-</body>
-</html>
+</body></html>
