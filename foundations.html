@@ -258,6 +258,18 @@ a{color:var(--plum)}
   .acts .btn{flex:1;white-space:nowrap;padding:12px 10px;font-size:15px}
   .acts #run{flex:1.3}
 }
+
+/* ---------- code editor (editor.js): the text box stays as the fallback ---------- */
+.edwrap{margin:0 0 4px}
+.edwrap .cm-editor{border-radius:20px}
+.edkeys{display:none;gap:6px;overflow-x:auto;padding:8px 2px 2px;-webkit-overflow-scrolling:touch}
+.edkeys button{flex:none;min-width:40px;height:40px;border-radius:10px;border:0;background:#fff;box-shadow:inset 0 0 0 1.5px var(--line);font-family:var(--mono);font-weight:700;font-size:16px;color:var(--plum);padding:0 8px}
+.edkeys button:active{background:var(--soft)}
+@media (pointer:coarse){.edkeys{display:flex}}
+.ednote{font-size:13.5px;color:var(--ink2);margin:6px 2px 0;min-height:20px}
+.ednote.bad{color:var(--berry);font-weight:700}
+.codeview .on span{color:inherit!important}
+@media(max-width:480px){.edwrap .cm-gutter-lint{display:none}.edwrap .cm-editor{font-size:13px}.edwrap .cm-lineNumbers .cm-gutterElement{padding:0 4px 0 8px;min-width:24px}}
 </style>
 </head>
 <body>
@@ -386,6 +398,25 @@ const SOLUTION = {
 
 // ---------- trail ----------
 // the line under the step bar, and the list of steps that opens from it
+// ---------- code editor: loaded only when a puzzle is opened; the text box is the fallback ----------
+const EDITOR_SUGGEST = false;
+let editorWait = null;
+function needEditor() {
+  if (window.BurrowEditor) return Promise.resolve(window.BurrowEditor);
+  if (!editorWait) editorWait = new Promise((ok) => { const s = document.createElement('script'); s.src = 'editor.js'; s.onload = () => { try { const st = document.createElement('style'); st.textContent = window.BurrowEditor.paintCSS(); document.head.append(st); } catch (e) {} ok(window.BurrowEditor || null); }; s.onerror = () => ok(null); document.head.append(s); });
+  return editorWait;
+}
+const paintCode = (s) => { try { if (window.BurrowEditor) return window.BurrowEditor.paint(s); } catch (e) {} return String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c])); };
+// replaces the text box `ta` with the editor; returns a promise of the editor (or null). onCode(v) is called on every change.
+function mountEditor(ta, onCode, suggest) {
+  return needEditor().then((BE) => { if (!BE || !ta.isConnected) return null;
+    const wrap = h('<div class="edwrap"><div class="edhost"></div><div class="edkeys" aria-label="Code keys"></div><div class="ednote" aria-live="polite"></div></div>'); ta.before(wrap); ta.style.display = 'none';
+    const note = wrap.querySelector('.ednote'); let t = 0;
+    const lint = (v) => { clearTimeout(t); t = setTimeout(() => { const r = BE.check(v); note.textContent = r ? 'Line ' + r.line + ': ' + r.message : ''; note.classList.toggle('bad', !!r); }, 600); };
+    const ed = BE.create(wrap.querySelector('.edhost'), { doc: ta.value, complete: !!suggest, onChange: (v) => { ta.value = v; onCode(v); lint(v); } }); lint(ta.value);
+    [['{', '{}', 1], ['}', '}', 0], ['(', '()', 1], [')', ')', 0], ['[', '[]', 1], [']', ']', 0], [';', ';', 0], ['=', ' = ', 0], ['<', ' < ', 0], ['>', ' > ', 0], ['!', '!', 0], ['&&', ' && ', 0], ['||', ' || ', 0], ['+', ' + ', 0], ['-', ' - ', 0], ['"', '""', 1], ['tab', '  ', 0]].forEach(([label, text, back]) => { const b = h('<button type="button"></button>'); b.textContent = label; b.onpointerdown = (e) => e.preventDefault(); b.onclick = () => ed.insert(text, back); wrap.querySelector('.edkeys').append(b); });
+    return ed; });
+}
 function drawSteps() {
   const safe = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
   const cur = Math.max(0, STAGES.findIndex((s) => s.id === S.at)), box = document.getElementById('steplist');
@@ -531,7 +562,7 @@ function solution(st) {
   walk('p1', more);
   const mine = S.code.p1 && S.code.p1 !== PUZZLE.p1.start ? S.code.p1 : '';
   more.append(h(`<div class="keys"><h3>Step through it yourself</h3><p>Use Step above to move one line at a time. Before each click, say what the map will answer.</p>
-    ${mine ? `<h3>Your code</h3><pre class="mine">${esc(mine)}</pre><p style="margin-top:10px">Compare it with the standard solution. Different code that passes the tests is fine; check that you can say why yours stops.</p>` : ''}
+    ${mine ? `<h3>Your code</h3><pre class="mine">${paintCode(mine)}</pre><p style="margin-top:10px">Compare it with the standard solution. Different code that passes the tests is fine; check that you can say why yours stops.</p>` : ''}
     <h3>Say it in your own words</h3><p>Why does the code ask the map <b>before</b> storing the current parcel, and not after? One or two sentences. Nobody grades this; writing it is the point.</p>
     <textarea id="why" style="min-height:90px" spellcheck="false"></textarea></div>`));
   const w = $('#why', more); w.value = S.why || ''; w.addEventListener('input', () => { S.why = w.value; save(); });
@@ -593,13 +624,14 @@ function puzzle(st) {
     <div id="hints"></div><div id="res" aria-live="polite"></div></div></div><div id="walk"></div><div class="row" id="tail"></div></section>`);
   $('.l', c).append(player(st.video));
   const ta = $('textarea', c); ta.value = review ? P.start : (S.code[id] || P.start);
+  let ed = null; mountEditor(ta, (v) => { S.code[id] = v; save(); }, EDITOR_SUGGEST && !(typeof CH !== 'undefined' && CH.mock)).then((e) => { ed = e; });
   if (review) $('.r', c).prepend(h('<div class="note"><b>Review day.</b> You solved this before. The editor is blank on purpose: solve it again from memory for double XP.</div>'));
   ta.addEventListener('input', () => { S.code[id] = ta.value; save(); });
   ta.addEventListener('keydown', (e) => { if (e.key === 'Tab') { e.preventDefault(); const a = ta.selectionStart; ta.setRangeText('  ', a, ta.selectionEnd, 'end'); S.code[id] = ta.value; } });
   const used = () => S.hints[id] || 0;
   const drawHints = () => { $('#hints', c).innerHTML = P.hints.slice(0, used()).map((t, i) => `<div class="hint"><b>Hint ${i + 1}.</b> ${esc(t)}</div>`).join(''); $('#hint', c).disabled = used() >= P.hints.length; $('#hint', c).textContent = used() >= P.hints.length ? 'No hints left' : (used() === 0 ? 'Hint' : `Hint (${P.hints.length - used()} left)`); };
   $('#hint', c).onclick = () => { S.hints[id] = used() + 1; save(); drawHints(); };
-  $('#reset', c).onclick = () => { ta.value = P.start; S.code[id] = P.start; save(); $('#res', c).innerHTML = ''; ta.focus(); };
+  $('#reset', c).onclick = () => { ta.value = P.start; if (ed) ed.set(P.start); S.code[id] = P.start; save(); $('#res', c).innerHTML = ''; (ed || ta).focus(); };
   $('#show', c).onclick = () => { S.seen['sol-' + id] = true; save(); go('s1'); };
   $('#run', c).onclick = async () => {
     const code = ta.value, res = $('#res', c); S.runs[id] = (S.runs[id] || 0) + 1; save();
@@ -643,7 +675,7 @@ function walk(id, host) {
   host.innerHTML = '';
   const box = h(`<div><h2 style="margin-top:22px">The standard solution, step by step</h2><p>Row [4, 9, 6, 1], target 10.</p><div class="cols"><div><div class="stage"><div class="stage-in"></div></div><div class="say" aria-live="polite"></div>
     <div class="row"><button class="btn" id="prev">← Back</button><button class="btn go" id="nxt">Step →</button><button class="btn quiet" id="auto">Play</button><span class="sub" id="cnt"></span></div></div>
-    <div class="codeview">${SOLUTION[id].map((l) => `<div>${esc(l) || ' '}</div>`).join('')}</div></div></div>`);
+    <div class="codeview">${SOLUTION[id].map((l) => `<div>${paintCode(l) || ' '}</div>`).join('')}</div></div></div>`);
   host.append(box); const narrow = $('.stage', box).clientWidth < 480, stage = $('.stage-in', box), W = input.length * 84 + (narrow ? 10 : 190), HT = narrow ? 350 : 250;
   stage.style.width = W + 'px'; stage.style.marginLeft = -W / 2 + 'px';
   const fit = () => { const s = Math.min(1.7, ($('.stage', box).clientWidth - 16) / W); stage.style.transform = `scale(${s})`; $('.stage', box).style.height = Math.round(HT * s) + 8 + 'px'; }; fit(); window.addEventListener('resize', fit);
