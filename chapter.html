@@ -369,7 +369,7 @@ function walk(P, host) {
   }
   if (V.rowLabel) stage.append(h(`<div class="vl" style="left:${n * CW + 14}px;top:${y1 + 16}px">${esc(V.rowLabel)}</div>`)); if (two && V.row2Label) stage.append(h(`<div class="vl" style="left:${V.row2.length * CW + 14}px;top:${y2 + 16}px">${esc(V.row2Label)}</div>`));
   V.ptrs.forEach((p, k) => stage.append(h(`<div class="vp" id="wp-${p.id}" style="top:${p.row === 2 ? y2 - 26 : y1 + 78 + k * 22}px;left:10px;opacity:0${TR ? ';transition:left .35s, top .35s' : ''}">${p.id}</div>`)));
-  if (V.box) stage.append(h(`<div class="vbox" style="left:${Math.max(n, two ? V.row2.length : 0) * CW + 40}px;top:${y2}px"></div>`));
+  if (V.box) stage.append(h(`<div class="vbox" style="left:${TR ? TW + 22 : Math.max(n, two ? V.row2.length : 0) * CW + 40}px;top:${TR ? 8 : y2}px"></div>`));
   if (V.list) { // arrows between the nodes; a step can show or hide each one
     const A = (id, txt, x, y, on) => stage.append(h(`<div class="va" id="w${id}" style="position:absolute;left:${x}px;top:${y}px;width:${LG}px;text-align:center;font-weight:800;font-size:24px;opacity:${on ? 1 : 0};transition:opacity .25s">${txt}</div>`));
     const arc = (id, a, b, on) => { const x1 = Math.min(a, b) * CW + X0 + 28, wd = Math.abs(b - a) * CW, back = b < a, tip = back ? 4 : wd - 4;
