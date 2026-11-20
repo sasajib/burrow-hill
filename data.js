@@ -20259,6 +20259,50 @@ window.BURROW = {
     }
    ]
   },
+  "mq0": {
+   "src": "videos/mq0.mp4",
+   "title": "The Signals of Part 4",
+   "duration": 46.77,
+   "lines": [
+    {
+     "id": "cw1",
+     "text": "Mixed set four. Eight puzzles, with no labels. Graphs, and everything before them.",
+     "start": 0.2,
+     "end": 5.64
+    },
+    {
+     "id": "cw2",
+     "text": "Part four gave you new signals. Things joined to things, to explore or to count. Walk the graph, with a seen set.",
+     "start": 6.44,
+     "end": 13.68
+    },
+    {
+     "id": "cw3",
+     "text": "The fewest steps, or something that spreads round by round. Go level by level.",
+     "start": 14.58,
+     "end": 19.71
+    },
+    {
+     "id": "cw4",
+     "text": "This before that. Count the arrows pointing in. And groups that keep merging. A parent array.",
+     "start": 20.61,
+     "end": 26.47
+    },
+    {
+     "id": "cw5",
+     "text": "The cheapest way, when every link has a cost. Smallest first, with a heap. Name the tool before you code.",
+     "start": 27.37,
+     "end": 33.94
+    },
+    {
+     "id": "cw6",
+     "text": "And all of part four is in your pocket. A map app finds the cheapest way. Friend suggestions come from groups that merge. And an update installs things in the right order.",
+     "start": 34.84,
+     "end": 45.17
+    }
+   ],
+   "pauses": []
+  },
   "sp1i": {
    "src": "videos/sp1i.mp4",
    "title": "The Cheapest Way",
@@ -20601,6 +20645,906 @@ window.BURROW = {
     {
      "id": "sp3s-q",
      "t": 37.01
+    }
+   ]
+  },
+  "mq1i": {
+   "src": "videos/mq1i.mp4",
+   "title": "The Damp Spreads",
+   "duration": 27.83,
+   "lines": [
+    {
+     "id": "mq1i_1",
+     "text": "A store room of sacks. A two is a damp sack. A one is dry. A zero is an empty spot.",
+     "start": 0.2,
+     "end": 6.19
+    },
+    {
+     "id": "mq1i_2",
+     "text": "Every minute, each damp sack makes the dry sacks next to it damp. Return the minutes until none is dry. Or minus one, if one stays dry for ever.",
+     "start": 6.89,
+     "end": 16.55
+    },
+    {
+     "id": "mq1i_3",
+     "text": "Here, the corner sack is the last to turn. After four minutes.",
+     "start": 17.25,
+     "end": 21.12
+    },
+    {
+     "id": "mq1i_4",
+     "text": "Everything spreads at the same time. So where does your walk start? Your turn.",
+     "start": 21.82,
+     "end": 26.23
+    }
+   ],
+   "pauses": []
+  },
+  "mq1s": {
+   "src": "videos/mq1s.mp4",
+   "title": "One level is one minute",
+   "duration": 67.43,
+   "lines": [
+    {
+     "id": "mq1s_1",
+     "text": "Every damp sack spreads at the same moment. So the walk starts from all of them at once.",
+     "start": 0.2,
+     "end": 5.24
+    },
+    {
+     "id": "mq1s_2",
+     "text": "Then go level by level. One level, is one minute.",
+     "start": 5.99,
+     "end": 9.08
+    },
+    {
+     "id": "mq1s_3",
+     "text": "Lines three to eight scan the grid. One damp sack goes into the first level. And six sacks are dry.",
+     "start": 9.83,
+     "end": 16.4
+    },
+    {
+     "id": "mq1s_4",
+     "text": "Minute one. The damp spreads to the right, and down. Four dry sacks are left.",
+     "start": 17.15,
+     "end": 21.98
+    },
+    {
+     "id": "mq1s_5",
+     "text": "Minute two. Two more sacks. Two are left.",
+     "start": 22.73,
+     "end": 25.25
+    },
+    {
+     "id": "mq1s_6",
+     "text": "The middle sack has an empty spot on its right. A zero. Does the damp spread into it?",
+     "start": 26,
+     "end": 31.44
+    },
+    {
+     "id": "mq1s_7",
+     "text": "No. Only a one can turn. Minute three reaches the sack below.",
+     "start": 32.64,
+     "end": 36.63
+    },
+    {
+     "id": "mq1s_8",
+     "text": "Minute four. The corner. No dry sack is left, so the loop ends. Line twenty two returns four.",
+     "start": 37.38,
+     "end": 43.61
+    },
+    {
+     "id": "mq1s_9",
+     "text": "And if a dry sack could never be reached, dry would stay above zero. Then the answer is minus one.",
+     "start": 44.71,
+     "end": 50.95
+    },
+    {
+     "id": "mq1s_10",
+     "text": "Every square is looked at a fixed number of times. O of R times C.",
+     "start": 51.7,
+     "end": 55.94
+    },
+    {
+     "id": "mq1s_11",
+     "text": "The levels hold at most every square.",
+     "start": 56.69,
+     "end": 58.79
+    },
+    {
+     "id": "mq1s_12",
+     "text": "A game times a spreading fire like this. Every burning square lights its neighbours, one round at a time.",
+     "start": 59.54,
+     "end": 65.83
+    }
+   ],
+   "pauses": [
+    {
+     "id": "mq1s-q",
+     "t": 31.64
+    }
+   ]
+  },
+  "mq2i": {
+   "src": "videos/mq2i.mp4",
+   "title": "Same or Different",
+   "duration": 25.38,
+   "lines": [
+    {
+     "id": "mq2i_1",
+     "text": "Four jars of seeds, and some notes. A line means: these two jars hold the same kind.",
+     "start": 0.2,
+     "end": 5.88
+    },
+    {
+     "id": "mq2i_2",
+     "text": "Other notes say that two jars are different. Here, jar zero and jar two. Return true if every note can be right.",
+     "start": 6.58,
+     "end": 13.61
+    },
+    {
+     "id": "mq2i_3",
+     "text": "Zero is the same as one. One is the same as two. So zero and two cannot be different.",
+     "start": 14.31,
+     "end": 20.04
+    },
+    {
+     "id": "mq2i_4",
+     "text": "What do all the same notes build, together? Your turn.",
+     "start": 20.74,
+     "end": 23.78
+    }
+   ],
+   "pauses": []
+  },
+  "mq2s": {
+   "src": "videos/mq2s.mp4",
+   "title": "Merge same, then check different",
+   "duration": 64.13,
+   "lines": [
+    {
+     "id": "mq2s_1",
+     "text": "Every note that says same, merges two groups of jars. Groups that only ever merge. That is the signal.",
+     "start": 0.2,
+     "end": 7.09
+    },
+    {
+     "id": "mq2s_2",
+     "text": "When all of them are merged, a note that says different is wrong, exactly if its two jars share a leader.",
+     "start": 7.84,
+     "end": 14.16
+    },
+    {
+     "id": "mq2s_3",
+     "text": "Every jar starts as its own group.",
+     "start": 14.91,
+     "end": 16.93
+    },
+    {
+     "id": "mq2s_4",
+     "text": "Line seven handles the same notes. Zero and one. Jar zero now points at one.",
+     "start": 17.68,
+     "end": 23.19
+    },
+    {
+     "id": "mq2s_5",
+     "text": "One and two. The leader of one, now points at two.",
+     "start": 23.94,
+     "end": 26.84
+    },
+    {
+     "id": "mq2s_6",
+     "text": "Now the notes that say different. Zero and two. Find zero climbs to one, then to two. Find two is two. What does that mean?",
+     "start": 27.59,
+     "end": 35.81
+    },
+    {
+     "id": "mq2s_7",
+     "text": "The same leader. So the same kind. But the note says different. Line nine returns false.",
+     "start": 37.01,
+     "end": 42.86
+    },
+    {
+     "id": "mq2s_8",
+     "text": "Why all the same notes first? Because a group is only complete after its last join.",
+     "start": 43.96,
+     "end": 49.05
+    },
+    {
+     "id": "mq2s_9",
+     "text": "One or two short climbs for every note.",
+     "start": 49.8,
+     "end": 52.03
+    },
+    {
+     "id": "mq2s_10",
+     "text": "One array of n numbers.",
+     "start": 52.78,
+     "end": 54.52
+    },
+    {
+     "id": "mq2s_11",
+     "text": "A compiler checks its rules like this. Things declared equal are merged, then every \"not equal\" rule is tested.",
+     "start": 55.27,
+     "end": 62.53
+    }
+   ],
+   "pauses": [
+    {
+     "id": "mq2s-q",
+     "t": 36.01
+    }
+   ]
+  },
+  "mq3i": {
+   "src": "videos/mq3i.mp4",
+   "title": "When Is It All Done?",
+   "duration": 27.42,
+   "lines": [
+    {
+     "id": "mq3i_1",
+     "text": "Four jobs. An arrow means: finish this one, before that one starts. And every job takes some hours.",
+     "start": 0.2,
+     "end": 7.08
+    },
+    {
+     "id": "mq3i_2",
+     "text": "There are plenty of helpers, so jobs can run side by side. Return the earliest hour at which everything is finished.",
+     "start": 7.78,
+     "end": 14.94
+    },
+    {
+     "id": "mq3i_3",
+     "text": "Job two has to wait for the slower of zero and one. Three hours. Then four more. Then one more. Eight.",
+     "start": 15.64,
+     "end": 22.5
+    },
+    {
+     "id": "mq3i_4",
+     "text": "So when can any one job start? Your turn.",
+     "start": 23.2,
+     "end": 25.82
+    }
+   ],
+   "pauses": []
+  },
+  "mq3s": {
+   "src": "videos/mq3s.mp4",
+   "title": "Start after the slowest need",
+   "duration": 73.8,
+   "lines": [
+    {
+     "id": "mq3s_1",
+     "text": "A job can start when the last of the jobs before it has ended. So it ends at that hour, plus its own time.",
+     "start": 0.2,
+     "end": 6.73
+    },
+    {
+     "id": "mq3s_2",
+     "text": "To know those ends first, take the jobs in an order that obeys the arrows.",
+     "start": 7.48,
+     "end": 12.26
+    },
+    {
+     "id": "mq3s_3",
+     "text": "Line nine. To begin, every job ends after just its own time. Three, two, four, one.",
+     "start": 13.01,
+     "end": 19.1
+    },
+    {
+     "id": "mq3s_4",
+     "text": "Jobs zero and one wait for nothing. They are ready.",
+     "start": 19.85,
+     "end": 22.99
+    },
+    {
+     "id": "mq3s_5",
+     "text": "Job one is taken. It ends at two. So job two cannot end before two plus four. Six.",
+     "start": 23.74,
+     "end": 29.98
+    },
+    {
+     "id": "mq3s_6",
+     "text": "Job zero is taken. It ends at three. That would let job two end at three plus four. Seven. It says six. Which one is kept?",
+     "start": 30.73,
+     "end": 39.42
+    },
+    {
+     "id": "mq3s_7",
+     "text": "Seven. Job two must wait for the slower one. Now its count is zero, and it is ready.",
+     "start": 40.62,
+     "end": 46.05
+    },
+    {
+     "id": "mq3s_8",
+     "text": "Job two is taken. Job three ends at seven plus one. Eight.",
+     "start": 46.8,
+     "end": 51.17
+    },
+    {
+     "id": "mq3s_9",
+     "text": "Line twenty two returns the largest end. Eight hours.",
+     "start": 51.92,
+     "end": 55.63
+    },
+    {
+     "id": "mq3s_10",
+     "text": "Every job and every arrow is handled once. O of jobs plus arrows.",
+     "start": 56.73,
+     "end": 61.75
+    },
+    {
+     "id": "mq3s_11",
+     "text": "The lists, the counts, and the ends.",
+     "start": 62.5,
+     "end": 64.53
+    },
+    {
+     "id": "mq3s_12",
+     "text": "A build system predicts how long a build will take this way. Each step starts when the slowest thing it needs is ready.",
+     "start": 65.28,
+     "end": 72.2
+    }
+   ],
+   "pauses": [
+    {
+     "id": "mq3s-q",
+     "t": 39.62
+    }
+   ]
+  },
+  "mq4i": {
+   "src": "videos/mq4i.mp4",
+   "title": "The Lowest Wall",
+   "duration": 24.25,
+   "lines": [
+    {
+     "id": "mq4i_1",
+     "text": "Four burrows. Every tunnel has a wall to climb over. The number is its height.",
+     "start": 0.2,
+     "end": 5.29
+    },
+    {
+     "id": "mq4i_2",
+     "text": "A way is only as easy as its highest wall. Return the smallest highest wall, from burrow zero to burrow three.",
+     "start": 5.99,
+     "end": 12.87
+    },
+    {
+     "id": "mq4i_3",
+     "text": "Through two, then one. Walls of three, four and two. The highest is four.",
+     "start": 13.57,
+     "end": 18.08
+    },
+    {
+     "id": "mq4i_4",
+     "text": "It is not a sum this time. So what does one way cost? Your turn.",
+     "start": 18.78,
+     "end": 22.65
+    }
+   ],
+   "pauses": []
+  },
+  "mq4s": {
+   "src": "videos/mq4s.mp4",
+   "title": "The same search, with max",
+   "duration": 64.35,
+   "lines": [
+    {
+     "id": "mq4s_1",
+     "text": "A way costs its highest wall. So keep, for every burrow, the lowest highest wall found so far.",
+     "start": 0.2,
+     "end": 6.31
+    },
+    {
+     "id": "mq4s_2",
+     "text": "Then it is the cheapest way search, with one change. Take the larger, instead of adding.",
+     "start": 7.06,
+     "end": 12.45
+    },
+    {
+     "id": "mq4s_3",
+     "text": "The start has climbed nothing. Zero. It goes on the heap.",
+     "start": 13.2,
+     "end": 16.7
+    },
+    {
+     "id": "mq4s_4",
+     "text": "Burrow zero comes out. The wall to one is seven. The wall to two is three.",
+     "start": 17.45,
+     "end": 22.06
+    },
+    {
+     "id": "mq4s_5",
+     "text": "The lowest is burrow two, at three. From two, the wall to burrow one is four. What is the highest wall on this way to one?",
+     "start": 22.81,
+     "end": 30.05
+    },
+    {
+     "id": "mq4s_6",
+     "text": "Four. The larger of the two. Not the sum. And four beats seven.",
+     "start": 31.25,
+     "end": 34.94
+    },
+    {
+     "id": "mq4s_7",
+     "text": "Burrow one, at four. The wall to three is only two. The highest stays four. That beats nine.",
+     "start": 35.69,
+     "end": 42.02
+    },
+    {
+     "id": "mq4s_8",
+     "text": "Burrow three comes out, at four. That is the target. Line thirteen returns four.",
+     "start": 42.77,
+     "end": 47.99
+    },
+    {
+     "id": "mq4s_9",
+     "text": "The same cost as the cheapest way search. O of tunnels, times log n.",
+     "start": 49.09,
+     "end": 53.66
+    },
+    {
+     "id": "mq4s_10",
+     "text": "The lists, the best values, and the heap.",
+     "start": 54.41,
+     "end": 56.65
+    },
+    {
+     "id": "mq4s_11",
+     "text": "A hiking app finds the route whose steepest climb is as gentle as possible, like this.",
+     "start": 57.4,
+     "end": 62.75
+    }
+   ],
+   "pauses": [
+    {
+     "id": "mq4s-q",
+     "t": 30.25
+    }
+   ]
+  },
+  "mq5i": {
+   "src": "videos/mq5i.mp4",
+   "title": "The Biggest Field",
+   "duration": 20.07,
+   "lines": [
+    {
+     "id": "mq5i_1",
+     "text": "Fields and paths. A one is a square of field. A zero is path.",
+     "start": 0.2,
+     "end": 4.04
+    },
+    {
+     "id": "mq5i_2",
+     "text": "Squares that touch side to side form one field. Return the size of the biggest field.",
+     "start": 4.74,
+     "end": 9.89
+    },
+    {
+     "id": "mq5i_3",
+     "text": "This one has four squares. The other has two.",
+     "start": 10.59,
+     "end": 13.36
+    },
+    {
+     "id": "mq5i_4",
+     "text": "You have counted groups like this before. What is new this time? Your turn.",
+     "start": 14.06,
+     "end": 18.47
+    }
+   ],
+   "pauses": []
+  },
+  "mq5s": {
+   "src": "videos/mq5s.mp4",
+   "title": "The walk reports a size",
+   "duration": 64.68,
+   "lines": [
+    {
+     "id": "mq5s_1",
+     "text": "Walk a whole field from one of its squares, deep first, removing it as you go. You know that walk.",
+     "start": 0.2,
+     "end": 6.52
+    },
+    {
+     "id": "mq5s_2",
+     "text": "The new part. Each call reports a number. One for its own square, plus what its four neighbours report.",
+     "start": 7.27,
+     "end": 13.56
+    },
+    {
+     "id": "mq5s_3",
+     "text": "The scan starts in the top left corner. A one. So line eleven calls size.",
+     "start": 14.31,
+     "end": 19.43
+    },
+    {
+     "id": "mq5s_4",
+     "text": "Size turns the square into path, and asks its four neighbours. They ask theirs. Four squares answer one each.",
+     "start": 20.18,
+     "end": 27.02
+    },
+    {
+     "id": "mq5s_5",
+     "text": "Four comes back. It is the best so far.",
+     "start": 27.77,
+     "end": 30.32
+    },
+    {
+     "id": "mq5s_6",
+     "text": "The scan moves on. The next squares are path now. What does size return for them?",
+     "start": 31.07,
+     "end": 36.37
+    },
+    {
+     "id": "mq5s_7",
+     "text": "Zero, at once. Then it meets new field. This one has two squares. Not better than four.",
+     "start": 37.57,
+     "end": 43.28
+    },
+    {
+     "id": "mq5s_8",
+     "text": "The scan ends. Line fourteen returns four.",
+     "start": 44.03,
+     "end": 47.11
+    },
+    {
+     "id": "mq5s_9",
+     "text": "Every square is turned to path at most once. O of R times C.",
+     "start": 48.21,
+     "end": 52.28
+    },
+    {
+     "id": "mq5s_10",
+     "text": "The waiting calls can be as many as the squares of one field.",
+     "start": 53.03,
+     "end": 56.49
+    },
+    {
+     "id": "mq5s_11",
+     "text": "A map tool finds the largest lake like this. And a photo app, the biggest object in a picture.",
+     "start": 57.24,
+     "end": 63.08
+    }
+   ],
+   "pauses": [
+    {
+     "id": "mq5s-q",
+     "t": 36.57
+    }
+   ]
+  },
+  "mq6i": {
+   "src": "videos/mq6i.mp4",
+   "title": "Not a Tunnel Too Many",
+   "duration": 22.91,
+   "lines": [
+    {
+     "id": "mq6i_1",
+     "text": "Four burrows, and three tunnels. Are they dug well?",
+     "start": 0.2,
+     "end": 3.24
+    },
+    {
+     "id": "mq6i_2",
+     "text": "Return true if every burrow can be reached from every other, and there is no loop anywhere.",
+     "start": 3.94,
+     "end": 9.17
+    },
+    {
+     "id": "mq6i_3",
+     "text": "Here there is a loop. And burrow three is left out. So the answer is false.",
+     "start": 9.87,
+     "end": 14.71
+    },
+    {
+     "id": "mq6i_4",
+     "text": "How many tunnels are just enough for four burrows? And what does one tunnel too many do? Your turn.",
+     "start": 15.41,
+     "end": 21.31
+    }
+   ],
+   "pauses": []
+  },
+  "mq6s": {
+   "src": "videos/mq6s.mp4",
+   "title": "Count tunnels, then catch a loop",
+   "duration": 62.26,
+   "lines": [
+    {
+     "id": "mq6s_1",
+     "text": "Four burrows need exactly three tunnels. Fewer leaves a burrow out. More closes a loop.",
+     "start": 0.2,
+     "end": 5.81
+    },
+    {
+     "id": "mq6s_2",
+     "text": "With the right number, only one thing can still be wrong. A tunnel that joins two burrows already connected.",
+     "start": 6.56,
+     "end": 12.76
+    },
+    {
+     "id": "mq6s_3",
+     "text": "Line two counts. Three tunnels, for four burrows. The right number. So far so good.",
+     "start": 13.51,
+     "end": 19.03
+    },
+    {
+     "id": "mq6s_4",
+     "text": "The first tunnel. Zero and one. Different leaders. Joined.",
+     "start": 19.78,
+     "end": 23.07
+    },
+    {
+     "id": "mq6s_5",
+     "text": "One and two. Different leaders. Joined.",
+     "start": 23.82,
+     "end": 26.17
+    },
+    {
+     "id": "mq6s_6",
+     "text": "Two and zero. Find two is two. Find zero climbs to two. What does that mean?",
+     "start": 26.92,
+     "end": 32.19
+    },
+    {
+     "id": "mq6s_7",
+     "text": "A loop. Line eleven returns false. And with only three tunnels, a loop means a burrow got none. Burrow three.",
+     "start": 33.39,
+     "end": 40.4
+    },
+    {
+     "id": "mq6s_8",
+     "text": "And if no tunnel closes a loop? Then n minus one tunnels reach every burrow. One way to each. That is a tree.",
+     "start": 41.5,
+     "end": 49.01
+    },
+    {
+     "id": "mq6s_9",
+     "text": "Two short climbs for every tunnel.",
+     "start": 49.76,
+     "end": 51.73
+    },
+    {
+     "id": "mq6s_10",
+     "text": "One array of n numbers.",
+     "start": 52.48,
+     "end": 54.22
+    },
+    {
+     "id": "mq6s_11",
+     "text": "A network designer checks this. Every office connected, and not one cable more than needed.",
+     "start": 54.97,
+     "end": 60.66
+    }
+   ],
+   "pauses": [
+    {
+     "id": "mq6s-q",
+     "t": 32.39
+    }
+   ]
+  },
+  "mq7i": {
+   "src": "videos/mq7i.mp4",
+   "title": "Two Teams",
+   "duration": 23.17,
+   "lines": [
+    {
+     "id": "mq7i_1",
+     "text": "Four burrows. A line joins two rivals.",
+     "start": 0.2,
+     "end": 3.15
+    },
+    {
+     "id": "mq7i_2",
+     "text": "Can they be split into two teams, so that no two rivals share a team? Return true or false.",
+     "start": 3.85,
+     "end": 9.89
+    },
+    {
+     "id": "mq7i_3",
+     "text": "Here, zero, one and two are all rivals of each other. Three of them, and only two teams. Impossible.",
+     "start": 10.59,
+     "end": 17.07
+    },
+    {
+     "id": "mq7i_4",
+     "text": "Let burrow zero pick a team. What does that force? Your turn.",
+     "start": 17.77,
+     "end": 21.57
+    }
+   ],
+   "pauses": []
+  },
+  "mq7s": {
+   "src": "videos/mq7s.mp4",
+   "title": "My rivals go in the other team",
+   "duration": 65.95,
+   "lines": [
+    {
+     "id": "mq7s_1",
+     "text": "Put the first burrow in team A. Then its rivals must all be in team B. And their rivals, in team A again.",
+     "start": 0.2,
+     "end": 6.73
+    },
+    {
+     "id": "mq7s_2",
+     "text": "Walk the graph like that. If two rivals ever land in the same team, it cannot be done.",
+     "start": 7.48,
+     "end": 13.04
+    },
+    {
+     "id": "mq7s_3",
+     "text": "Lines two to six build the lists of rivals.",
+     "start": 13.79,
+     "end": 16.38
+    },
+    {
+     "id": "mq7s_4",
+     "text": "Burrow zero has no team yet. Line ten puts it in team A.",
+     "start": 17.13,
+     "end": 20.94
+    },
+    {
+     "id": "mq7s_5",
+     "text": "Its rivals are one and two. Line sixteen gives both the other team. Team B.",
+     "start": 21.69,
+     "end": 27.27
+    },
+    {
+     "id": "mq7s_6",
+     "text": "Next in the queue is burrow one. It looks at its rival, two. Both are in team B. What does that mean?",
+     "start": 28.02,
+     "end": 34.42
+    },
+    {
+     "id": "mq7s_7",
+     "text": "It cannot be done. Every choice was forced, and two rivals still share a team. Line fourteen returns false.",
+     "start": 35.62,
+     "end": 42.83
+    },
+    {
+     "id": "mq7s_8",
+     "text": "And if the walk ends with no clash, for every group of burrows, two teams are enough.",
+     "start": 43.93,
+     "end": 49.11
+    },
+    {
+     "id": "mq7s_9",
+     "text": "Every burrow is visited once, and every line is looked at twice.",
+     "start": 49.86,
+     "end": 54.09
+    },
+    {
+     "id": "mq7s_10",
+     "text": "The lists, the teams, and the queue.",
+     "start": 54.84,
+     "end": 56.73
+    },
+    {
+     "id": "mq7s_11",
+     "text": "An exam planner does this. Two exams that share a student cannot be in the same slot. Are two slots enough?",
+     "start": 57.48,
+     "end": 64.35
+    }
+   ],
+   "pauses": [
+    {
+     "id": "mq7s-q",
+     "t": 34.62
+    }
+   ]
+  },
+  "mq8i": {
+   "src": "videos/mq8i.mp4",
+   "title": "Within Reach",
+   "duration": 24.34,
+   "lines": [
+    {
+     "id": "mq8i_1",
+     "text": "Five burrows, and tunnels with costs. Pip starts in burrow zero, with a budget of six.",
+     "start": 0.2,
+     "end": 5.75
+    },
+    {
+     "id": "mq8i_2",
+     "text": "Return how many burrows Pip can reach, without the total cost going over the budget. The start counts too.",
+     "start": 6.46,
+     "end": 13.08
+    },
+    {
+     "id": "mq8i_3",
+     "text": "Four of them. Only burrow three is too far. Its cheapest way costs nine.",
+     "start": 13.78,
+     "end": 18.6
+    },
+    {
+     "id": "mq8i_4",
+     "text": "So when exactly is one burrow within reach? Your turn.",
+     "start": 19.3,
+     "end": 22.73
+    }
+   ],
+   "pauses": []
+  },
+  "mq8s": {
+   "src": "videos/mq8s.mp4",
+   "title": "Cheapest to each, then count",
+   "duration": 60.38,
+   "lines": [
+    {
+     "id": "mq8s_1",
+     "text": "A burrow is within reach, if its cheapest cost from the start fits in the budget.",
+     "start": 0.2,
+     "end": 4.8
+    },
+    {
+     "id": "mq8s_2",
+     "text": "So find the cheapest cost to every burrow. Then count.",
+     "start": 5.55,
+     "end": 8.95
+    },
+    {
+     "id": "mq8s_3",
+     "text": "The start costs zero, and goes on the heap.",
+     "start": 9.7,
+     "end": 12.29
+    },
+    {
+     "id": "mq8s_4",
+     "text": "Burrow zero comes out. Burrow one gets two. Burrow two gets six.",
+     "start": 13.04,
+     "end": 17.54
+    },
+    {
+     "id": "mq8s_5",
+     "text": "Burrow one, at two. Burrow two improves to five. Burrow three gets nine.",
+     "start": 18.29,
+     "end": 23.15
+    },
+    {
+     "id": "mq8s_6",
+     "text": "Burrow two, at five. Burrow four gets six. The rest of the heap changes nothing.",
+     "start": 23.9,
+     "end": 29.04
+    },
+    {
+     "id": "mq8s_7",
+     "text": "The search ends with these costs. Zero, two, five, nine, six. The budget is six. How many burrows are within reach?",
+     "start": 29.79,
+     "end": 37.5
+    },
+    {
+     "id": "mq8s_8",
+     "text": "Four. Only burrow three, at nine, is too far. Line twenty one counts them.",
+     "start": 38.7,
+     "end": 43.28
+    },
+    {
+     "id": "mq8s_9",
+     "text": "The search costs O of tunnels, times log n. The count is one more pass.",
+     "start": 44.38,
+     "end": 49.1
+    },
+    {
+     "id": "mq8s_10",
+     "text": "The lists, the best costs, and the heap.",
+     "start": 49.85,
+     "end": 51.99
+    },
+    {
+     "id": "mq8s_11",
+     "text": "A delivery app shows every address it can reach within thirty minutes. It is this search, and a count.",
+     "start": 52.74,
+     "end": 58.78
+    }
+   ],
+   "pauses": [
+    {
+     "id": "mq8s-q",
+     "t": 37.7
     }
    ]
   }
