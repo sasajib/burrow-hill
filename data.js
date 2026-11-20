@@ -18465,6 +18465,117 @@ window.BURROW = {
     }
    ]
   },
+  "to0": {
+   "src": "videos/to0.mp4",
+   "title": "Some Things Must Come First",
+   "duration": 38.25,
+   "lines": [
+    {
+     "id": "nw1",
+     "text": "Chapter nineteen. Topological sort. A long name, for a simple idea.",
+     "start": 0.2,
+     "end": 4.94
+    },
+    {
+     "id": "nw2",
+     "text": "Some things must come first. Socks, before shoes. Dig the burrow, before you line it with moss.",
+     "start": 5.64,
+     "end": 11.72
+    },
+    {
+     "id": "nw3",
+     "text": "Draw every rule as an arrow. From before, to after. Now find an order in which no arrow points backwards.",
+     "start": 12.62,
+     "end": 19.61
+    },
+    {
+     "id": "nw4",
+     "text": "And if the arrows go round in a circle, no such order exists. One lesson, and three puzzles.",
+     "start": 20.51,
+     "end": 26.84
+    },
+    {
+     "id": "nw5",
+     "text": "This is how a build tool decides what to compile first. How a course plan orders your classes. How a spreadsheet knows which cell to work out first.",
+     "start": 27.74,
+     "end": 36.65
+    }
+   ],
+   "pauses": []
+  },
+  "tot1": {
+   "src": "videos/tot1.mp4",
+   "title": "Count the Arrows Pointing In",
+   "duration": 72.37,
+   "lines": [
+    {
+     "id": "nx1",
+     "text": "Five jobs, and arrows between them. An arrow means: this one first, then that one. In what order can Pip do them all?",
+     "start": 0.2,
+     "end": 7.98
+    },
+    {
+     "id": "nx2",
+     "text": "Look for a job with no arrow pointing at it. Nothing has to come before it. So it is safe to do now.",
+     "start": 8.88,
+     "end": 15.24
+    },
+    {
+     "id": "nx3",
+     "text": "So count, for every job, the arrows pointing in. Jobs zero and one have none. Job two has two. Three and four have one each.",
+     "start": 16.14,
+     "end": 24.55
+    },
+    {
+     "id": "nx4",
+     "text": "Start with a zero. Do job zero, and cross out its arrow. Job two now waits for only one.",
+     "start": 25.45,
+     "end": 31.52
+    },
+    {
+     "id": "nx5",
+     "text": "Do job one. Cross out its arrow. So what can Pip do next?",
+     "start": 32.42,
+     "end": 36.32
+    },
+    {
+     "id": "nx6",
+     "text": "Job two. Its count has reached zero, so everything before it is done.",
+     "start": 37.52,
+     "end": 42.02
+    },
+    {
+     "id": "nx7",
+     "text": "Doing two frees three and four. Zero, one, two, three, four. A valid order.",
+     "start": 42.92,
+     "end": 48.05
+    },
+    {
+     "id": "nx8",
+     "text": "Now add one arrow, from three back to two. Two waits for three. Three waits for two. Neither count ever reaches zero.",
+     "start": 49.05,
+     "end": 56.61
+    },
+    {
+     "id": "nx9",
+     "text": "So if the order comes out shorter than the number of jobs, there is a loop. And no order exists.",
+     "start": 57.61,
+     "end": 63.74
+    },
+    {
+     "id": "nx10",
+     "text": "Count the arrows in. Take the zeros. Cross out, and repeat. Every job and every arrow, once.",
+     "start": 64.64,
+     "end": 70.77
+    }
+   ],
+   "pauses": [
+    {
+     "id": "tot1-q1",
+     "t": 36.52
+    }
+   ]
+  },
   "gr1i": {
    "src": "videos/gr1i.mp4",
    "title": "Count the Islands",
@@ -19239,6 +19350,351 @@ window.BURROW = {
     {
      "id": "gr7s-q",
      "t": 45.14
+    }
+   ]
+  },
+  "to1i": {
+   "src": "videos/to1i.mp4",
+   "title": "Can It All Be Done?",
+   "duration": 23.97,
+   "lines": [
+    {
+     "id": "to1i_1",
+     "text": "Four jobs, and the arrows between them. An arrow means: this job first, then that one.",
+     "start": 0.2,
+     "end": 5.89
+    },
+    {
+     "id": "to1i_2",
+     "text": "Return true if every job can be done, in an order that obeys all the arrows.",
+     "start": 6.59,
+     "end": 11.83
+    },
+    {
+     "id": "to1i_3",
+     "text": "With a loop of arrows it would be impossible. Each job in the loop waits for another.",
+     "start": 12.53,
+     "end": 17.19
+    },
+    {
+     "id": "to1i_4",
+     "text": "Which job could you safely start with? And what changes after it? Your turn.",
+     "start": 17.89,
+     "end": 22.37
+    }
+   ],
+   "pauses": []
+  },
+  "to1s": {
+   "src": "videos/to1s.mp4",
+   "title": "Take what waits for nothing",
+   "duration": 78.18,
+   "lines": [
+    {
+     "id": "to1s_1",
+     "text": "A job with no arrow pointing at it waits for nothing. It is safe to do now.",
+     "start": 0.2,
+     "end": 4.82
+    },
+    {
+     "id": "to1s_2",
+     "text": "Doing it removes its arrows. That may free other jobs. Repeat until nothing is ready.",
+     "start": 5.57,
+     "end": 11.39
+    },
+    {
+     "id": "to1s_3",
+     "text": "Lines two to seven build two things. For each job, the jobs that come after it. And how many arrows point in.",
+     "start": 12.14,
+     "end": 19.15
+    },
+    {
+     "id": "to1s_4",
+     "text": "Line ten collects the jobs with a count of zero. Only job zero.",
+     "start": 19.9,
+     "end": 24.08
+    },
+    {
+     "id": "to1s_5",
+     "text": "The loop takes job zero, and counts it as done. Then it lowers the count of one, and of two. Both reach zero.",
+     "start": 24.83,
+     "end": 31.61
+    },
+    {
+     "id": "to1s_6",
+     "text": "It takes job two. Done. Job three drops from two, to one. Is three ready now?",
+     "start": 32.36,
+     "end": 37.92
+    },
+    {
+     "id": "to1s_7",
+     "text": "No. It still waits for job one. So job one is taken. Done. And three drops to zero.",
+     "start": 39.12,
+     "end": 44.81
+    },
+    {
+     "id": "to1s_8",
+     "text": "Job three. Done. Four jobs done, out of four. Line twenty one returns true.",
+     "start": 45.56,
+     "end": 50.96
+    },
+    {
+     "id": "to1s_9",
+     "text": "With a loop, the jobs inside it never reach zero. Done stays below n, and the answer is false.",
+     "start": 52.06,
+     "end": 58.29
+    },
+    {
+     "id": "to1s_10",
+     "text": "Every job is taken once, and every arrow is removed once. O of jobs plus arrows.",
+     "start": 59.04,
+     "end": 65.23
+    },
+    {
+     "id": "to1s_11",
+     "text": "The lists and the counts. O of jobs plus arrows.",
+     "start": 65.98,
+     "end": 69.31
+    },
+    {
+     "id": "to1s_12",
+     "text": "A build tool does this before it compiles anything. If two files need each other, it stops and tells you.",
+     "start": 70.06,
+     "end": 76.58
+    }
+   ],
+   "pauses": [
+    {
+     "id": "to1s-q",
+     "t": 38.12
+    }
+   ]
+  },
+  "to2i": {
+   "src": "videos/to2i.mp4",
+   "title": "A Valid Order",
+   "duration": 23.69,
+   "lines": [
+    {
+     "id": "to2i_1",
+     "text": "Five jobs this time. Zero and one must both be done before two. And two, before three and four.",
+     "start": 0.2,
+     "end": 6.72
+    },
+    {
+     "id": "to2i_2",
+     "text": "Return the jobs in an order that obeys every arrow. If there is a loop, return an empty array.",
+     "start": 7.42,
+     "end": 13.69
+    },
+    {
+     "id": "to2i_3",
+     "text": "Often several orders are right. Any one of them is accepted.",
+     "start": 14.39,
+     "end": 18.23
+    },
+    {
+     "id": "to2i_4",
+     "text": "Which jobs wait for nothing at the start? Your turn.",
+     "start": 18.93,
+     "end": 22.09
+    }
+   ],
+   "pauses": []
+  },
+  "to2s": {
+   "src": "videos/to2s.mp4",
+   "title": "Write each job down as it is taken",
+   "duration": 77.72,
+   "lines": [
+    {
+     "id": "to2s_1",
+     "text": "This is the same method. Count the arrows in, and take the jobs that wait for nothing.",
+     "start": 0.2,
+     "end": 5.64
+    },
+    {
+     "id": "to2s_2",
+     "text": "The only change. Each job is written into the order, at the moment it is taken.",
+     "start": 6.39,
+     "end": 11.3
+    },
+    {
+     "id": "to2s_3",
+     "text": "The same start as before. Lists of what comes after, and a count of the arrows pointing in. Jobs zero and one are ready.",
+     "start": 12.05,
+     "end": 19.98
+    },
+    {
+     "id": "to2s_4",
+     "text": "Line fourteen takes one from the ready pile. Job one. Line fifteen writes it into the order.",
+     "start": 20.73,
+     "end": 27.06
+    },
+    {
+     "id": "to2s_5",
+     "text": "Job two was waiting for two jobs. Now for one. Not ready. So job zero is next.",
+     "start": 27.81,
+     "end": 33.72
+    },
+    {
+     "id": "to2s_6",
+     "text": "That frees job two. It joins the order. And it frees both three and four.",
+     "start": 34.47,
+     "end": 39.23
+    },
+    {
+     "id": "to2s_7",
+     "text": "Three and four are both ready. Does it matter which one goes first?",
+     "start": 39.98,
+     "end": 44.01
+    },
+    {
+     "id": "to2s_8",
+     "text": "No. No arrow joins them. The pile gives four, then three.",
+     "start": 45.21,
+     "end": 48.74
+    },
+    {
+     "id": "to2s_9",
+     "text": "Five jobs in the order, out of five. Line twenty one returns it. With a loop it would be shorter, and the answer is an empty array.",
+     "start": 49.49,
+     "end": 57.67
+    },
+    {
+     "id": "to2s_10",
+     "text": "Every job is taken once, and every arrow is removed once. O of jobs plus arrows.",
+     "start": 58.77,
+     "end": 64.96
+    },
+    {
+     "id": "to2s_11",
+     "text": "The lists and the counts. O of jobs plus arrows.",
+     "start": 65.71,
+     "end": 69.05
+    },
+    {
+     "id": "to2s_12",
+     "text": "A course planner does this. It lists your classes so that each one comes after the classes it needs.",
+     "start": 69.8,
+     "end": 76.12
+    }
+   ],
+   "pauses": [
+    {
+     "id": "to2s-q",
+     "t": 44.21
+    }
+   ]
+  },
+  "to3i": {
+   "src": "videos/to3i.mp4",
+   "title": "How Many Rounds?",
+   "duration": 25.49,
+   "lines": [
+    {
+     "id": "to3i_1",
+     "text": "Six jobs, and now there are plenty of helpers. Every job that is ready can be done at the same time, in one round.",
+     "start": 0.2,
+     "end": 7.25
+    },
+    {
+     "id": "to3i_2",
+     "text": "Return the fewest rounds needed to finish everything. If there is a loop, return minus one.",
+     "start": 7.95,
+     "end": 13.79
+    },
+    {
+     "id": "to3i_3",
+     "text": "In the first round, zero and one. They wait for nothing.",
+     "start": 14.49,
+     "end": 17.82
+    },
+    {
+     "id": "to3i_4",
+     "text": "You have gone level by level before. Which jobs form the next round? Your turn.",
+     "start": 18.52,
+     "end": 23.89
+    }
+   ],
+   "pauses": []
+  },
+  "to3s": {
+   "src": "videos/to3s.mp4",
+   "title": "Round by round",
+   "duration": 69.52,
+   "lines": [
+    {
+     "id": "to3s_1",
+     "text": "Every job that waits for nothing can be done now. Together, they are round one.",
+     "start": 0.2,
+     "end": 5.02
+    },
+    {
+     "id": "to3s_2",
+     "text": "The jobs they free are round two. That is level by level, with the counts deciding who is next.",
+     "start": 5.77,
+     "end": 11.69
+    },
+    {
+     "id": "to3s_3",
+     "text": "Lists and counts, as before. The first round holds every job that waits for nothing. Zero and one.",
+     "start": 12.44,
+     "end": 19.13
+    },
+    {
+     "id": "to3s_4",
+     "text": "Both are done together. Their arrows are removed. Two and three reach zero. They form the next round.",
+     "start": 19.88,
+     "end": 26.04
+    },
+    {
+     "id": "to3s_5",
+     "text": "This is level by level, exactly like the fewest steps in a maze. Round two is done. Who is in round three?",
+     "start": 26.79,
+     "end": 33.68
+    },
+    {
+     "id": "to3s_6",
+     "text": "Only job four. Five still waits for four.",
+     "start": 34.88,
+     "end": 37.7
+    },
+    {
+     "id": "to3s_7",
+     "text": "Then job five, alone, in round four. After it, nothing is left.",
+     "start": 38.45,
+     "end": 42.59
+    },
+    {
+     "id": "to3s_8",
+     "text": "No job is still waiting. Line twenty two returns four rounds.",
+     "start": 43.34,
+     "end": 47.62
+    },
+    {
+     "id": "to3s_9",
+     "text": "Every job is taken once, and every arrow is removed once. O of jobs plus arrows.",
+     "start": 48.72,
+     "end": 54.91
+    },
+    {
+     "id": "to3s_10",
+     "text": "The lists and the counts. O of jobs plus arrows.",
+     "start": 55.66,
+     "end": 58.99
+    },
+    {
+     "id": "to3s_11",
+     "text": "A project plan works like this. Tasks that do not depend on each other run side by side, and the rounds give the shortest schedule.",
+     "start": 59.74,
+     "end": 67.92
+    }
+   ],
+   "pauses": [
+    {
+     "id": "to3s-q",
+     "t": 33.88
     }
    ]
   }

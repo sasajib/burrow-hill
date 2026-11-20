@@ -4,8 +4,8 @@ window.CHAPTER = {
  "sub": "CHAPTER 18 · GRAPHS",
  "key": "burrow-ch-graphs",
  "next": {
-  "href": "index.html#chapters",
-  "label": "All chapters"
+  "href": "chapter.html?c=topo",
+  "label": "Chapter 19: Topological Sort"
  },
  "prev": {
   "href": "chapter.html?c=mixed3",
