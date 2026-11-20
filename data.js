@@ -4643,6 +4643,184 @@ window.BURROW = {
    ],
    "pauses": []
   },
+  "gr0": {
+   "src": "videos/gr0.mp4",
+   "title": "Things, and What Joins Them",
+   "duration": 41.3,
+   "lines": [
+    {
+     "id": "ow1",
+     "text": "Chapter eighteen. Graphs. Part four starts here.",
+     "start": 0.2,
+     "end": 3.21
+    },
+    {
+     "id": "ow2",
+     "text": "A graph is just things, and what joins them. Burrows and tunnels. People and friendships. Towns and roads.",
+     "start": 3.91,
+     "end": 10.83
+    },
+    {
+     "id": "ow3",
+     "text": "A tree was a graph with strict rules. A graph has none. It can loop. It can be in pieces. So you need one new habit. Remember where you have been.",
+     "start": 11.73,
+     "end": 21.36
+    },
+    {
+     "id": "ow4",
+     "text": "Two ideas. Neighbour lists with a seen set. And grids, where going level by level finds the fewest steps. Then seven puzzles.",
+     "start": 22.26,
+     "end": 30.96
+    },
+    {
+     "id": "ow5",
+     "text": "Graphs are everywhere. A map of roads between towns. Your friends, and their friends. Web pages, and the links between them.",
+     "start": 31.86,
+     "end": 39.7
+    }
+   ],
+   "pauses": []
+  },
+  "grt1": {
+   "src": "videos/grt1.mp4",
+   "title": "Neighbour Lists and a Seen Set",
+   "duration": 71.97,
+   "lines": [
+    {
+     "id": "ox1",
+     "text": "Six burrows, and the tunnels between them. Pip is in burrow three, and wants to know which burrows can be reached.",
+     "start": 0.2,
+     "end": 7.02
+    },
+    {
+     "id": "ox2",
+     "text": "This is a graph. The burrows are called nodes. The tunnels are called edges.",
+     "start": 7.92,
+     "end": 12.45
+    },
+    {
+     "id": "ox3",
+     "text": "The tunnels usually arrive as a list of pairs. Zero and one. Zero and two. One and three. Four and five.",
+     "start": 13.35,
+     "end": 20.38
+    },
+    {
+     "id": "ox4",
+     "text": "A list of pairs is slow to walk through. So first, give every node a list of its neighbours. Zero is next to one and two.",
+     "start": 21.38,
+     "end": 29.11
+    },
+    {
+     "id": "ox5",
+     "text": "Now explore, deep first, just like a tree. From three, go to its neighbour, one. From one, go on to zero.",
+     "start": 30.11,
+     "end": 36.98
+    },
+    {
+     "id": "ox6",
+     "text": "But here is the trap. Zero is next to one. And we just came from one. A tree never led you back. A graph does.",
+     "start": 37.98,
+     "end": 45.41
+    },
+    {
+     "id": "ox7",
+     "text": "So what should happen, when the walk looks at one again?",
+     "start": 46.41,
+     "end": 49.42
+    },
+    {
+     "id": "ox8",
+     "text": "Skip it. Keep a set of every node you have visited, and never visit one twice.",
+     "start": 50.62,
+     "end": 55.49
+    },
+    {
+     "id": "ox9",
+     "text": "The walk goes on to two, and stops. Four and five were never reached. They are a separate group.",
+     "start": 56.49,
+     "end": 62.35
+    },
+    {
+     "id": "ox10",
+     "text": "Neighbour lists, a seen set, and a walk. Every node once, every edge twice. That is nodes plus edges.",
+     "start": 63.35,
+     "end": 70.37
+    }
+   ],
+   "pauses": [
+    {
+     "id": "grt1-q1",
+     "t": 49.62
+    }
+   ]
+  },
+  "grt2": {
+   "src": "videos/grt2.mp4",
+   "title": "A Grid Is a Graph",
+   "duration": 65.41,
+   "lines": [
+    {
+     "id": "oy1",
+     "text": "A maze. Pip is in one corner, and the star is in the other. What is the shortest way?",
+     "start": 0.2,
+     "end": 5.49
+    },
+    {
+     "id": "oy2",
+     "text": "No nodes and edges are drawn here. But look again. Every square is a node. And its neighbours are the squares above, below, left and right.",
+     "start": 6.39,
+     "end": 14.92
+    },
+    {
+     "id": "oy3",
+     "text": "So a grid is a graph. You do not even need neighbour lists. From the row and the column, the four neighbours are one step away.",
+     "start": 15.92,
+     "end": 23.66
+    },
+    {
+     "id": "oy4",
+     "text": "Now, the fewest steps. Going deep first finds a way. But it may be a long way round.",
+     "start": 24.66,
+     "end": 29.98
+    },
+    {
+     "id": "oy5",
+     "text": "So go level by level instead. Level zero is the start. Level one is every square one step away.",
+     "start": 30.98,
+     "end": 37.81
+    },
+    {
+     "id": "oy6",
+     "text": "Level one gives level two. Where exactly are the squares of level two?",
+     "start": 38.81,
+     "end": 43.32
+    },
+    {
+     "id": "oy7",
+     "text": "Two steps away, by the shortest route. Because each level is built only from squares not seen before.",
+     "start": 44.52,
+     "end": 50.77
+    },
+    {
+     "id": "oy8",
+     "text": "Keep going, and the numbers spread like water. The level that reaches the star is the answer. Five.",
+     "start": 51.77,
+     "end": 57.84
+    },
+    {
+     "id": "oy9",
+     "text": "So. To explore or to count, go deep. For the fewest steps, go level by level.",
+     "start": 58.84,
+     "end": 63.81
+    }
+   ],
+   "pauses": [
+    {
+     "id": "grt2-q1",
+     "t": 43.52
+    }
+   ]
+  },
   "ar1i": {
    "src": "videos/ar1i.mp4",
    "title": "Turn the Row Around",
@@ -15632,882 +15810,6 @@ window.BURROW = {
     }
    ]
   },
-  "mz1i": {
-   "src": "videos/mz1i.mp4",
-   "title": "The Sum Tree",
-   "duration": 17.94,
-   "lines": [
-    {
-     "id": "mz1i_1",
-     "text": "A sum, written as a tree. The numbers are on the leaves. The signs are above them.",
-     "start": 0.2,
-     "end": 5.32
-    },
-    {
-     "id": "mz1i_2",
-     "text": "Return the value of the whole tree.",
-     "start": 6.02,
-     "end": 7.86
-    },
-    {
-     "id": "mz1i_3",
-     "text": "The plus at the top cannot be worked out yet. It needs to know what its left side is worth.",
-     "start": 8.56,
-     "end": 13.65
-    },
-    {
-     "id": "mz1i_4",
-     "text": "And who can tell it that? Your turn.",
-     "start": 14.35,
-     "end": 16.34
-    }
-   ],
-   "pauses": []
-  },
-  "mz1s": {
-   "src": "videos/mz1s.mp4",
-   "title": "Each side first, then the sign",
-   "duration": 64.35,
-   "lines": [
-    {
-     "id": "mz1s_1",
-     "text": "An operator needs the value of its two sides. And each side is a smaller tree of the same kind.",
-     "start": 0.2,
-     "end": 6.32
-    },
-    {
-     "id": "mz1s_2",
-     "text": "So ask the same function for each side, then apply the sign. A leaf is simply its number.",
-     "start": 7.07,
-     "end": 12.93
-    },
-    {
-     "id": "mz1s_3",
-     "text": "The first call stands on the plus. Not a number. So line three asks for the value of the left side.",
-     "start": 13.68,
-     "end": 19.62
-    },
-    {
-     "id": "mz1s_4",
-     "text": "The times node. Not a number either. It asks its own left side. The two is a leaf. Line two returns two.",
-     "start": 20.37,
-     "end": 27.57
-    },
-    {
-     "id": "mz1s_5",
-     "text": "Its right side. Three. A leaf. Back on the times node, left is two, and right is three. What does it return?",
-     "start": 28.32,
-     "end": 35.25
-    },
-    {
-     "id": "mz1s_6",
-     "text": "Six. This whole side is worth six.",
-     "start": 36.45,
-     "end": 38.61
-    },
-    {
-     "id": "mz1s_7",
-     "text": "Back on the plus. Now the right side. Four. A leaf.",
-     "start": 39.36,
-     "end": 42.55
-    },
-    {
-     "id": "mz1s_8",
-     "text": "Left is six. Right is four. The sign is plus. Ten.",
-     "start": 43.3,
-     "end": 46.58
-    },
-    {
-     "id": "mz1s_9",
-     "text": "Every node is visited once. O of n time.",
-     "start": 47.68,
-     "end": 50.68
-    },
-    {
-     "id": "mz1s_10",
-     "text": "The waiting calls are as deep as the tree is tall. O of height space.",
-     "start": 51.43,
-     "end": 55.62
-    },
-    {
-     "id": "mz1s_11",
-     "text": "A spreadsheet works out a formula this way. Every formula is a small tree of numbers and signs.",
-     "start": 56.37,
-     "end": 62.75
-    }
-   ],
-   "pauses": [
-    {
-     "id": "mz1s-q",
-     "t": 35.45
-    }
-   ]
-  },
-  "mz2i": {
-   "src": "videos/mz2i.mp4",
-   "title": "The Nearest Way Out",
-   "duration": 20.97,
-   "lines": [
-    {
-     "id": "mz2i_1",
-     "text": "Moss wants the nearest way out of the tree. The closest leaf to the root.",
-     "start": 0.2,
-     "end": 4.47
-    },
-    {
-     "id": "mz2i_2",
-     "text": "Return the number of nodes on the shortest path from the root to a leaf.",
-     "start": 5.17,
-     "end": 9.11
-    },
-    {
-     "id": "mz2i_3",
-     "text": "Going deep would find the leaves at the bottom left first. They are not the nearest.",
-     "start": 9.81,
-     "end": 14.66
-    },
-    {
-     "id": "mz2i_4",
-     "text": "Which way of walking a tree meets the nearest things first? Your turn.",
-     "start": 15.36,
-     "end": 19.37
-    }
-   ],
-   "pauses": []
-  },
-  "mz2s": {
-   "src": "videos/mz2s.mp4",
-   "title": "The first leaf, level by level",
-   "duration": 56.29,
-   "lines": [
-    {
-     "id": "mz2s_1",
-     "text": "The nearest leaf. Nearest is the signal for going level by level.",
-     "start": 0.2,
-     "end": 4.55
-    },
-    {
-     "id": "mz2s_2",
-     "text": "Level by level meets the shallow nodes first. So the first leaf it meets is the answer.",
-     "start": 5.3,
-     "end": 10.65
-    },
-    {
-     "id": "mz2s_3",
-     "text": "The queue starts with the root. Depth is one.",
-     "start": 11.4,
-     "end": 14
-    },
-    {
-     "id": "mz2s_4",
-     "text": "Five has children, so it is not a leaf. Lines nine and ten line up three and eight for the next level.",
-     "start": 14.75,
-     "end": 21.42
-    },
-    {
-     "id": "mz2s_5",
-     "text": "Line twelve moves to that level. Depth is two. First the three. It has children. They are lined up.",
-     "start": 22.17,
-     "end": 28.66
-    },
-    {
-     "id": "mz2s_6",
-     "text": "Then the eight. It has no left child, and no right child. What does line eight do?",
-     "start": 29.41,
-     "end": 34.39
-    },
-    {
-     "id": "mz2s_7",
-     "text": "It returns the depth. Two. The one and the four were lined up, but never visited.",
-     "start": 35.59,
-     "end": 40.74
-    },
-    {
-     "id": "mz2s_8",
-     "text": "At worst every node. But it stops at the first leaf, which can be much sooner.",
-     "start": 41.84,
-     "end": 46.73
-    },
-    {
-     "id": "mz2s_9",
-     "text": "The queue holds one level at a time.",
-     "start": 47.48,
-     "end": 49.51
-    },
-    {
-     "id": "mz2s_10",
-     "text": "A game finds the nearest exit from where you stand by searching level by level.",
-     "start": 50.26,
-     "end": 54.69
-    }
-   ],
-   "pauses": [
-    {
-     "id": "mz2s-q",
-     "t": 34.59
-    }
-   ]
-  },
-  "mz3i": {
-   "src": "videos/mz3i.mp4",
-   "title": "Only the Middle Ones",
-   "duration": 22.92,
-   "lines": [
-    {
-     "id": "mz3i_1",
-     "text": "This tree keeps the rule. Smaller on the left, bigger on the right.",
-     "start": 0.2,
-     "end": 3.96
-    },
-    {
-     "id": "mz3i_2",
-     "text": "Return the sum of every value from low to high. Here, from five to ten.",
-     "start": 4.66,
-     "end": 9.27
-    },
-    {
-     "id": "mz3i_3",
-     "text": "Adding up the whole tree and filtering would work. But most of the tree cannot matter.",
-     "start": 9.97,
-     "end": 14.82
-    },
-    {
-     "id": "mz3i_4",
-     "text": "Stand on the three. It is too small. So what about everything on its left? Your turn.",
-     "start": 15.52,
-     "end": 21.32
-    }
-   ],
-   "pauses": []
-  },
-  "mz3s": {
-   "src": "videos/mz3s.mp4",
-   "title": "Skip the sides that cannot matter",
-   "duration": 61.85,
-   "lines": [
-    {
-     "id": "mz3s_1",
-     "text": "An ordered tree. So a node that is too small tells you its whole left side is too small as well.",
-     "start": 0.2,
-     "end": 6.25
-    },
-    {
-     "id": "mz3s_2",
-     "text": "Only a node inside the range needs both of its sides.",
-     "start": 7,
-     "end": 10.64
-    },
-    {
-     "id": "mz3s_3",
-     "text": "The range is five to ten. The root is eight. Inside. So it counts, and both sides are searched.",
-     "start": 11.39,
-     "end": 17.4
-    },
-    {
-     "id": "mz3s_4",
-     "text": "Left. Three. It is smaller than five. What does line three do?",
-     "start": 18.15,
-     "end": 21.89
-    },
-    {
-     "id": "mz3s_5",
-     "text": "It skips the three, and its whole left side. Only the right side can hold something big enough.",
-     "start": 23.09,
-     "end": 28.51
-    },
-    {
-     "id": "mz3s_6",
-     "text": "Six. Inside the range. It counts.",
-     "start": 29.26,
-     "end": 31.52
-    },
-    {
-     "id": "mz3s_7",
-     "text": "Now the right side of the root. Ten. Inside. It counts. Its right child, fourteen, is too big, so line four looks only to its left. Nothing there.",
-     "start": 32.27,
-     "end": 42.18
-    },
-    {
-     "id": "mz3s_8",
-     "text": "Back at the root. Eight, plus six, plus ten.",
-     "start": 42.93,
-     "end": 45.76
-    },
-    {
-     "id": "mz3s_9",
-     "text": "The height of the tree, plus the nodes that are inside the range.",
-     "start": 46.86,
-     "end": 50.66
-    },
-    {
-     "id": "mz3s_10",
-     "text": "The waiting calls. O of height space.",
-     "start": 51.41,
-     "end": 53.71
-    },
-    {
-     "id": "mz3s_11",
-     "text": "An ordered index sums the sales between two dates like this, without touching the other months.",
-     "start": 54.46,
-     "end": 60.25
-    }
-   ],
-   "pauses": [
-    {
-     "id": "mz3s-q",
-     "t": 22.09
-    }
-   ]
-  },
-  "mz4i": {
-   "src": "videos/mz4i.mp4",
-   "title": "The Most Popular",
-   "duration": 20.3,
-   "lines": [
-    {
-     "id": "mz4i_1",
-     "text": "Votes are coming in. Pip wants to know the two most popular numbers.",
-     "start": 0.2,
-     "end": 4.56
-    },
-    {
-     "id": "mz4i_2",
-     "text": "Return the k numbers that appear most often. The most frequent one first.",
-     "start": 5.26,
-     "end": 10.04
-    },
-    {
-     "id": "mz4i_3",
-     "text": "This needs two tools, one after the other.",
-     "start": 10.74,
-     "end": 13.42
-    },
-    {
-     "id": "mz4i_4",
-     "text": "First, something about every number. Then, the k biggest of those. Your turn.",
-     "start": 14.12,
-     "end": 18.7
-    }
-   ],
-   "pauses": []
-  },
-  "mz4s": {
-   "src": "videos/mz4s.mp4",
-   "title": "Count, then keep the k biggest",
-   "duration": 63.82,
-   "lines": [
-    {
-     "id": "mz4s_1",
-     "text": "How often does each number appear? That is a counting question. A map.",
-     "start": 0.2,
-     "end": 4.48
-    },
-    {
-     "id": "mz4s_2",
-     "text": "Then, the k pairs with the biggest counts. That is the heap of size k, with the smallest count on top.",
-     "start": 5.23,
-     "end": 11.62
-    },
-    {
-     "id": "mz4s_3",
-     "text": "Lines two and three count. Four appears three times. One, twice. Two, once.",
-     "start": 12.37,
-     "end": 17.52
-    },
-    {
-     "id": "mz4s_4",
-     "text": "Line four makes a heap of pairs, ordered by the count. The pair for four is pushed. Then the pair for one. Two pairs. That is k.",
-     "start": 18.27,
-     "end": 26.28
-    },
-    {
-     "id": "mz4s_5",
-     "text": "The pair for two is pushed. Three pairs. One too many. Which pair does line seven pop?",
-     "start": 27.03,
-     "end": 32.52
-    },
-    {
-     "id": "mz4s_6",
-     "text": "The pair for two. It has the smallest count.",
-     "start": 33.72,
-     "end": 36.27
-    },
-    {
-     "id": "mz4s_7",
-     "text": "Line ten empties the heap. The least frequent comes out first, so each number goes to the front. One. Then four, in front of it.",
-     "start": 37.02,
-     "end": 45.01
-    },
-    {
-     "id": "mz4s_8",
-     "text": "Line eleven returns the answer.",
-     "start": 45.76,
-     "end": 47.85
-    },
-    {
-     "id": "mz4s_9",
-     "text": "One pass to count. Then each different number goes through a heap of size k.",
-     "start": 48.95,
-     "end": 53.46
-    },
-    {
-     "id": "mz4s_10",
-     "text": "The map holds every different number.",
-     "start": 54.21,
-     "end": 56.27
-    },
-    {
-     "id": "mz4s_11",
-     "text": "A trending list is exactly this. Count everything, then keep only the top few.",
-     "start": 57.02,
-     "end": 62.22
-    }
-   ],
-   "pauses": [
-    {
-     "id": "mz4s-q",
-     "t": 32.72
-    }
-   ]
-  },
-  "mz5i": {
-   "src": "videos/mz5i.mp4",
-   "title": "Built Letter by Letter",
-   "duration": 21.23,
-   "lines": [
-    {
-     "id": "mz5i_1",
-     "text": "Hazel builds words one letter at a time. Every step on the way must be a word too.",
-     "start": 0.2,
-     "end": 5.33
-    },
-    {
-     "id": "mz5i_2",
-     "text": "Return the longest word that can be built like that.",
-     "start": 6.03,
-     "end": 9.18
-    },
-    {
-     "id": "mz5i_3",
-     "text": "A, then a p, then a p p. Every beginning is in the list.",
-     "start": 9.88,
-     "end": 13.61
-    },
-    {
-     "id": "mz5i_4",
-     "text": "But what about bat? What would have to be in the list? And how do you check quickly? Your turn.",
-     "start": 14.31,
-     "end": 19.63
-    }
-   ],
-   "pauses": []
-  },
-  "mz5s": {
-   "src": "videos/mz5s.mp4",
-   "title": "Every beginning must be known",
-   "duration": 63.64,
-   "lines": [
-    {
-     "id": "mz5s_1",
-     "text": "For each word, every shorter beginning must be in the list. That is a question of, have I got this?",
-     "start": 0.2,
-     "end": 6.03
-    },
-    {
-     "id": "mz5s_2",
-     "text": "So put the words in a set, and each check is instant. Beginnings made you think of a trie. Here, a set is enough.",
-     "start": 6.78,
-     "end": 13.47
-    },
-    {
-     "id": "mz5s_3",
-     "text": "Line two puts every word in a set. Best starts empty.",
-     "start": 14.22,
-     "end": 17.87
-    },
-    {
-     "id": "mz5s_4",
-     "text": "The word a. It has no shorter beginning, so it can be built. It is longer than nothing. Best is a.",
-     "start": 18.62,
-     "end": 25.03
-    },
-    {
-     "id": "mz5s_5",
-     "text": "A p. Its beginning, a, is in the set. Best is a p. Then a p p. A, and a p, are both there. Best is a p p.",
-     "start": 25.78,
-     "end": 33.34
-    },
-    {
-     "id": "mz5s_6",
-     "text": "The word b. It can be built. But it is shorter than the best. Line nine skips it.",
-     "start": 34.09,
-     "end": 39.18
-    },
-    {
-     "id": "mz5s_7",
-     "text": "Bat. Its beginnings are b, and b a. B is in the set. Is b a?",
-     "start": 39.93,
-     "end": 44.12
-    },
-    {
-     "id": "mz5s_8",
-     "text": "No. So bat cannot be built, and line nine skips it.",
-     "start": 45.32,
-     "end": 48.57
-    },
-    {
-     "id": "mz5s_9",
-     "text": "Line twelve returns the best.",
-     "start": 49.32,
-     "end": 51.18
-    },
-    {
-     "id": "mz5s_10",
-     "text": "Every beginning of every word is looked up once.",
-     "start": 52.28,
-     "end": 55.27
-    },
-    {
-     "id": "mz5s_11",
-     "text": "The set holds every word.",
-     "start": 56.02,
-     "end": 57.58
-    },
-    {
-     "id": "mz5s_12",
-     "text": "A word game checks this when you build a word one tile at a time.",
-     "start": 58.33,
-     "end": 62.04
-    }
-   ],
-   "pauses": [
-    {
-     "id": "mz5s-q",
-     "t": 44.32
-    }
-   ]
-  },
-  "mz6i": {
-   "src": "videos/mz6i.mp4",
-   "title": "Two Nests That Add Up",
-   "duration": 20.68,
-   "lines": [
-    {
-     "id": "mz6i_1",
-     "text": "Pip is looking for two nests whose numbers add up to twelve.",
-     "start": 0.2,
-     "end": 3.8
-    },
-    {
-     "id": "mz6i_2",
-     "text": "Return true if two different nodes add up to the target.",
-     "start": 4.5,
-     "end": 7.75
-    },
-    {
-     "id": "mz6i_3",
-     "text": "You have solved this before. On a row of doors, in the hash map chapter.",
-     "start": 8.45,
-     "end": 12.8
-    },
-    {
-     "id": "mz6i_4",
-     "text": "The numbers now sit in a tree. What stays the same, and what changes? Your turn.",
-     "start": 13.5,
-     "end": 19.08
-    }
-   ],
-   "pauses": []
-  },
-  "mz6s": {
-   "src": "videos/mz6s.mp4",
-   "title": "The partner I need: seen before?",
-   "duration": 56.65,
-   "lines": [
-    {
-     "id": "mz6s_1",
-     "text": "Have I seen the partner I need? That is the hash set question from chapter three.",
-     "start": 0.2,
-     "end": 5.01
-    },
-    {
-     "id": "mz6s_2",
-     "text": "The only new part is the walk. Visit every node, deep first, and ask the question at each one.",
-     "start": 5.76,
-     "end": 11.68
-    },
-    {
-     "id": "mz6s_3",
-     "text": "The target is twelve. The root is five. It needs a seven. Nothing is seen yet. So five is added.",
-     "start": 12.43,
-     "end": 18.79
-    },
-    {
-     "id": "mz6s_4",
-     "text": "Left. Three needs a nine. Not seen. Added.",
-     "start": 19.54,
-     "end": 22.15
-    },
-    {
-     "id": "mz6s_5",
-     "text": "One needs eleven. Four needs eight. Neither is seen. Both are added.",
-     "start": 22.9,
-     "end": 26.91
-    },
-    {
-     "id": "mz6s_6",
-     "text": "The left side found nothing. So the or, on line seven, tries the right side. Eight. It needs a four. What does line five do?",
-     "start": 27.66,
-     "end": 35.58
-    },
-    {
-     "id": "mz6s_7",
-     "text": "Four is in the set. Eight plus four is twelve. True. The nine is never visited.",
-     "start": 36.78,
-     "end": 42.09
-    },
-    {
-     "id": "mz6s_8",
-     "text": "At worst every node once. O of n time.",
-     "start": 43.19,
-     "end": 46.02
-    },
-    {
-     "id": "mz6s_9",
-     "text": "The set can hold every value. O of n space.",
-     "start": 46.77,
-     "end": 49.91
-    },
-    {
-     "id": "mz6s_10",
-     "text": "Do any two items in the basket add up to the voucher? One walk, and a set.",
-     "start": 50.66,
-     "end": 55.05
-    }
-   ],
-   "pauses": [
-    {
-     "id": "mz6s-q",
-     "t": 35.78
-    }
-   ]
-  },
-  "mz7i": {
-   "src": "videos/mz7i.mp4",
-   "title": "A Tree from a Sorted Row",
-   "duration": 22.64,
-   "lines": [
-    {
-     "id": "mz7i_1",
-     "text": "A sorted row of numbers. Hazel wants them in a search tree. A short, bushy one.",
-     "start": 0.2,
-     "end": 5.59
-    },
-    {
-     "id": "mz7i_2",
-     "text": "Build the shortest possible search tree, and return its root.",
-     "start": 6.29,
-     "end": 9.98
-    },
-    {
-     "id": "mz7i_3",
-     "text": "Whatever goes on top splits the rest in two. The smaller values to its left, the bigger to its right.",
-     "start": 10.68,
-     "end": 16.88
-    },
-    {
-     "id": "mz7i_4",
-     "text": "So which value should go on top? And then what? Your turn.",
-     "start": 17.58,
-     "end": 21.04
-    }
-   ],
-   "pauses": []
-  },
-  "mz7s": {
-   "src": "videos/mz7s.mp4",
-   "title": "The middle goes on top",
-   "duration": 79.32,
-   "lines": [
-    {
-     "id": "mz7s_1",
-     "text": "The root splits the rest in two. To keep the tree short, the two sides should be the same size. So the root is the middle value.",
-     "start": 0.2,
-     "end": 8.07
-    },
-    {
-     "id": "mz7s_2",
-     "text": "Each side is then a smaller sorted stretch. The same problem. So the function calls itself on each.",
-     "start": 8.82,
-     "end": 15.25
-    },
-    {
-     "id": "mz7s_3",
-     "text": "The first call covers the whole row. Low is zero, high is four. The middle is position two. Six becomes the root.",
-     "start": 16,
-     "end": 23.33
-    },
-    {
-     "id": "mz7s_4",
-     "text": "Line five builds its left side from the stretch before the middle. Positions zero to one. The middle is position zero. One becomes the left child of six.",
-     "start": 24.08,
-     "end": 34.1
-    },
-    {
-     "id": "mz7s_5",
-     "text": "Left of the one, there is nothing. Low is above high. Line two returns null. To its right is the three.",
-     "start": 34.85,
-     "end": 41.4
-    },
-    {
-     "id": "mz7s_6",
-     "text": "Back at the root. Line six builds the right side, from positions three to four. Which position is the middle?",
-     "start": 42.15,
-     "end": 49.04
-    },
-    {
-     "id": "mz7s_7",
-     "text": "Three. So eight is the right child of six. And ten, to its right, becomes the right child of eight.",
-     "start": 50.24,
-     "end": 56.06
-    },
-    {
-     "id": "mz7s_8",
-     "text": "Line seven returns the root. Six on top. Three levels for five values.",
-     "start": 56.81,
-     "end": 62.08
-    },
-    {
-     "id": "mz7s_9",
-     "text": "One node is made per value. O of n time.",
-     "start": 63.18,
-     "end": 65.97
-    },
-    {
-     "id": "mz7s_10",
-     "text": "The waiting calls are log n deep, because every call halves its stretch.",
-     "start": 66.72,
-     "end": 71.19
-    },
-    {
-     "id": "mz7s_11",
-     "text": "A database builds a fresh index from sorted data this way, so that it starts out balanced.",
-     "start": 71.94,
-     "end": 77.72
-    }
-   ],
-   "pauses": [
-    {
-     "id": "mz7s-q",
-     "t": 49.24
-    }
-   ]
-  },
-  "mz8i": {
-   "src": "videos/mz8i.mp4",
-   "title": "The Last Stone",
-   "duration": 20.42,
-   "lines": [
-    {
-     "id": "mz8i_1",
-     "text": "Moss smashes stones together. Always the two heaviest.",
-     "start": 0.2,
-     "end": 3.74
-    },
-    {
-     "id": "mz8i_2",
-     "text": "Return the weight of the last stone left, or zero if there is none.",
-     "start": 4.44,
-     "end": 8.37
-    },
-    {
-     "id": "mz8i_3",
-     "text": "After each smash, a smaller stone may come back into the pile.",
-     "start": 9.07,
-     "end": 12.93
-    },
-    {
-     "id": "mz8i_4",
-     "text": "So the two heaviest keep changing. What hands them to you each time? Your turn.",
-     "start": 13.63,
-     "end": 18.82
-    }
-   ],
-   "pauses": []
-  },
-  "mz8s": {
-   "src": "videos/mz8s.mp4",
-   "title": "The two heaviest, each time",
-   "duration": 55.95,
-   "lines": [
-    {
-     "id": "mz8s_1",
-     "text": "The two heaviest, again and again, while new stones come back. That is the signal for a heap.",
-     "start": 0.2,
-     "end": 5.7
-    },
-    {
-     "id": "mz8s_2",
-     "text": "This time the biggest must be on top. So the comparison is turned around. b minus a.",
-     "start": 6.45,
-     "end": 12.29
-    },
-    {
-     "id": "mz8s_3",
-     "text": "Line three pushes every stone. Seven is on top.",
-     "start": 13.04,
-     "end": 16.45
-    },
-    {
-     "id": "mz8s_4",
-     "text": "Lines five and six pop the two heaviest. Seven and four. They differ. So line seven pushes the difference. Three.",
-     "start": 17.2,
-     "end": 24.59
-    },
-    {
-     "id": "mz8s_5",
-     "text": "Again. The two heaviest are three, and three. What does line seven do?",
-     "start": 25.34,
-     "end": 29.58
-    },
-    {
-     "id": "mz8s_6",
-     "text": "Nothing. Equal stones destroy each other. Only the one is left.",
-     "start": 30.78,
-     "end": 34.64
-    },
-    {
-     "id": "mz8s_7",
-     "text": "One stone left. The loop ends, and line nine returns it.",
-     "start": 35.39,
-     "end": 39.21
-    },
-    {
-     "id": "mz8s_8",
-     "text": "Every smash removes at least one stone, and costs a few heap operations. O of n log n.",
-     "start": 40.31,
-     "end": 46.64
-    },
-    {
-     "id": "mz8s_9",
-     "text": "The heap. O of n space.",
-     "start": 47.39,
-     "end": 49.03
-    },
-    {
-     "id": "mz8s_10",
-     "text": "A tournament where the two strongest always play next is run with a max heap.",
-     "start": 49.78,
-     "end": 54.35
-    }
-   ],
-   "pauses": [
-    {
-     "id": "mz8s-q",
-     "t": 29.78
-    }
-   ]
-  },
   "mx1i": {
    "src": "videos/mx1i.mp4",
    "title": "In Both Rows",
@@ -18284,6 +17586,1659 @@ window.BURROW = {
     {
      "id": "iv5s-q",
      "t": 39.08
+    }
+   ]
+  },
+  "mz1i": {
+   "src": "videos/mz1i.mp4",
+   "title": "The Sum Tree",
+   "duration": 17.94,
+   "lines": [
+    {
+     "id": "mz1i_1",
+     "text": "A sum, written as a tree. The numbers are on the leaves. The signs are above them.",
+     "start": 0.2,
+     "end": 5.32
+    },
+    {
+     "id": "mz1i_2",
+     "text": "Return the value of the whole tree.",
+     "start": 6.02,
+     "end": 7.86
+    },
+    {
+     "id": "mz1i_3",
+     "text": "The plus at the top cannot be worked out yet. It needs to know what its left side is worth.",
+     "start": 8.56,
+     "end": 13.65
+    },
+    {
+     "id": "mz1i_4",
+     "text": "And who can tell it that? Your turn.",
+     "start": 14.35,
+     "end": 16.34
+    }
+   ],
+   "pauses": []
+  },
+  "mz1s": {
+   "src": "videos/mz1s.mp4",
+   "title": "Each side first, then the sign",
+   "duration": 64.35,
+   "lines": [
+    {
+     "id": "mz1s_1",
+     "text": "An operator needs the value of its two sides. And each side is a smaller tree of the same kind.",
+     "start": 0.2,
+     "end": 6.32
+    },
+    {
+     "id": "mz1s_2",
+     "text": "So ask the same function for each side, then apply the sign. A leaf is simply its number.",
+     "start": 7.07,
+     "end": 12.93
+    },
+    {
+     "id": "mz1s_3",
+     "text": "The first call stands on the plus. Not a number. So line three asks for the value of the left side.",
+     "start": 13.68,
+     "end": 19.62
+    },
+    {
+     "id": "mz1s_4",
+     "text": "The times node. Not a number either. It asks its own left side. The two is a leaf. Line two returns two.",
+     "start": 20.37,
+     "end": 27.57
+    },
+    {
+     "id": "mz1s_5",
+     "text": "Its right side. Three. A leaf. Back on the times node, left is two, and right is three. What does it return?",
+     "start": 28.32,
+     "end": 35.25
+    },
+    {
+     "id": "mz1s_6",
+     "text": "Six. This whole side is worth six.",
+     "start": 36.45,
+     "end": 38.61
+    },
+    {
+     "id": "mz1s_7",
+     "text": "Back on the plus. Now the right side. Four. A leaf.",
+     "start": 39.36,
+     "end": 42.55
+    },
+    {
+     "id": "mz1s_8",
+     "text": "Left is six. Right is four. The sign is plus. Ten.",
+     "start": 43.3,
+     "end": 46.58
+    },
+    {
+     "id": "mz1s_9",
+     "text": "Every node is visited once. O of n time.",
+     "start": 47.68,
+     "end": 50.68
+    },
+    {
+     "id": "mz1s_10",
+     "text": "The waiting calls are as deep as the tree is tall. O of height space.",
+     "start": 51.43,
+     "end": 55.62
+    },
+    {
+     "id": "mz1s_11",
+     "text": "A spreadsheet works out a formula this way. Every formula is a small tree of numbers and signs.",
+     "start": 56.37,
+     "end": 62.75
+    }
+   ],
+   "pauses": [
+    {
+     "id": "mz1s-q",
+     "t": 35.45
+    }
+   ]
+  },
+  "mz2i": {
+   "src": "videos/mz2i.mp4",
+   "title": "The Nearest Way Out",
+   "duration": 20.97,
+   "lines": [
+    {
+     "id": "mz2i_1",
+     "text": "Moss wants the nearest way out of the tree. The closest leaf to the root.",
+     "start": 0.2,
+     "end": 4.47
+    },
+    {
+     "id": "mz2i_2",
+     "text": "Return the number of nodes on the shortest path from the root to a leaf.",
+     "start": 5.17,
+     "end": 9.11
+    },
+    {
+     "id": "mz2i_3",
+     "text": "Going deep would find the leaves at the bottom left first. They are not the nearest.",
+     "start": 9.81,
+     "end": 14.66
+    },
+    {
+     "id": "mz2i_4",
+     "text": "Which way of walking a tree meets the nearest things first? Your turn.",
+     "start": 15.36,
+     "end": 19.37
+    }
+   ],
+   "pauses": []
+  },
+  "mz2s": {
+   "src": "videos/mz2s.mp4",
+   "title": "The first leaf, level by level",
+   "duration": 56.29,
+   "lines": [
+    {
+     "id": "mz2s_1",
+     "text": "The nearest leaf. Nearest is the signal for going level by level.",
+     "start": 0.2,
+     "end": 4.55
+    },
+    {
+     "id": "mz2s_2",
+     "text": "Level by level meets the shallow nodes first. So the first leaf it meets is the answer.",
+     "start": 5.3,
+     "end": 10.65
+    },
+    {
+     "id": "mz2s_3",
+     "text": "The queue starts with the root. Depth is one.",
+     "start": 11.4,
+     "end": 14
+    },
+    {
+     "id": "mz2s_4",
+     "text": "Five has children, so it is not a leaf. Lines nine and ten line up three and eight for the next level.",
+     "start": 14.75,
+     "end": 21.42
+    },
+    {
+     "id": "mz2s_5",
+     "text": "Line twelve moves to that level. Depth is two. First the three. It has children. They are lined up.",
+     "start": 22.17,
+     "end": 28.66
+    },
+    {
+     "id": "mz2s_6",
+     "text": "Then the eight. It has no left child, and no right child. What does line eight do?",
+     "start": 29.41,
+     "end": 34.39
+    },
+    {
+     "id": "mz2s_7",
+     "text": "It returns the depth. Two. The one and the four were lined up, but never visited.",
+     "start": 35.59,
+     "end": 40.74
+    },
+    {
+     "id": "mz2s_8",
+     "text": "At worst every node. But it stops at the first leaf, which can be much sooner.",
+     "start": 41.84,
+     "end": 46.73
+    },
+    {
+     "id": "mz2s_9",
+     "text": "The queue holds one level at a time.",
+     "start": 47.48,
+     "end": 49.51
+    },
+    {
+     "id": "mz2s_10",
+     "text": "A game finds the nearest exit from where you stand by searching level by level.",
+     "start": 50.26,
+     "end": 54.69
+    }
+   ],
+   "pauses": [
+    {
+     "id": "mz2s-q",
+     "t": 34.59
+    }
+   ]
+  },
+  "mz3i": {
+   "src": "videos/mz3i.mp4",
+   "title": "Only the Middle Ones",
+   "duration": 22.92,
+   "lines": [
+    {
+     "id": "mz3i_1",
+     "text": "This tree keeps the rule. Smaller on the left, bigger on the right.",
+     "start": 0.2,
+     "end": 3.96
+    },
+    {
+     "id": "mz3i_2",
+     "text": "Return the sum of every value from low to high. Here, from five to ten.",
+     "start": 4.66,
+     "end": 9.27
+    },
+    {
+     "id": "mz3i_3",
+     "text": "Adding up the whole tree and filtering would work. But most of the tree cannot matter.",
+     "start": 9.97,
+     "end": 14.82
+    },
+    {
+     "id": "mz3i_4",
+     "text": "Stand on the three. It is too small. So what about everything on its left? Your turn.",
+     "start": 15.52,
+     "end": 21.32
+    }
+   ],
+   "pauses": []
+  },
+  "mz3s": {
+   "src": "videos/mz3s.mp4",
+   "title": "Skip the sides that cannot matter",
+   "duration": 61.85,
+   "lines": [
+    {
+     "id": "mz3s_1",
+     "text": "An ordered tree. So a node that is too small tells you its whole left side is too small as well.",
+     "start": 0.2,
+     "end": 6.25
+    },
+    {
+     "id": "mz3s_2",
+     "text": "Only a node inside the range needs both of its sides.",
+     "start": 7,
+     "end": 10.64
+    },
+    {
+     "id": "mz3s_3",
+     "text": "The range is five to ten. The root is eight. Inside. So it counts, and both sides are searched.",
+     "start": 11.39,
+     "end": 17.4
+    },
+    {
+     "id": "mz3s_4",
+     "text": "Left. Three. It is smaller than five. What does line three do?",
+     "start": 18.15,
+     "end": 21.89
+    },
+    {
+     "id": "mz3s_5",
+     "text": "It skips the three, and its whole left side. Only the right side can hold something big enough.",
+     "start": 23.09,
+     "end": 28.51
+    },
+    {
+     "id": "mz3s_6",
+     "text": "Six. Inside the range. It counts.",
+     "start": 29.26,
+     "end": 31.52
+    },
+    {
+     "id": "mz3s_7",
+     "text": "Now the right side of the root. Ten. Inside. It counts. Its right child, fourteen, is too big, so line four looks only to its left. Nothing there.",
+     "start": 32.27,
+     "end": 42.18
+    },
+    {
+     "id": "mz3s_8",
+     "text": "Back at the root. Eight, plus six, plus ten.",
+     "start": 42.93,
+     "end": 45.76
+    },
+    {
+     "id": "mz3s_9",
+     "text": "The height of the tree, plus the nodes that are inside the range.",
+     "start": 46.86,
+     "end": 50.66
+    },
+    {
+     "id": "mz3s_10",
+     "text": "The waiting calls. O of height space.",
+     "start": 51.41,
+     "end": 53.71
+    },
+    {
+     "id": "mz3s_11",
+     "text": "An ordered index sums the sales between two dates like this, without touching the other months.",
+     "start": 54.46,
+     "end": 60.25
+    }
+   ],
+   "pauses": [
+    {
+     "id": "mz3s-q",
+     "t": 22.09
+    }
+   ]
+  },
+  "mz4i": {
+   "src": "videos/mz4i.mp4",
+   "title": "The Most Popular",
+   "duration": 20.3,
+   "lines": [
+    {
+     "id": "mz4i_1",
+     "text": "Votes are coming in. Pip wants to know the two most popular numbers.",
+     "start": 0.2,
+     "end": 4.56
+    },
+    {
+     "id": "mz4i_2",
+     "text": "Return the k numbers that appear most often. The most frequent one first.",
+     "start": 5.26,
+     "end": 10.04
+    },
+    {
+     "id": "mz4i_3",
+     "text": "This needs two tools, one after the other.",
+     "start": 10.74,
+     "end": 13.42
+    },
+    {
+     "id": "mz4i_4",
+     "text": "First, something about every number. Then, the k biggest of those. Your turn.",
+     "start": 14.12,
+     "end": 18.7
+    }
+   ],
+   "pauses": []
+  },
+  "mz4s": {
+   "src": "videos/mz4s.mp4",
+   "title": "Count, then keep the k biggest",
+   "duration": 63.82,
+   "lines": [
+    {
+     "id": "mz4s_1",
+     "text": "How often does each number appear? That is a counting question. A map.",
+     "start": 0.2,
+     "end": 4.48
+    },
+    {
+     "id": "mz4s_2",
+     "text": "Then, the k pairs with the biggest counts. That is the heap of size k, with the smallest count on top.",
+     "start": 5.23,
+     "end": 11.62
+    },
+    {
+     "id": "mz4s_3",
+     "text": "Lines two and three count. Four appears three times. One, twice. Two, once.",
+     "start": 12.37,
+     "end": 17.52
+    },
+    {
+     "id": "mz4s_4",
+     "text": "Line four makes a heap of pairs, ordered by the count. The pair for four is pushed. Then the pair for one. Two pairs. That is k.",
+     "start": 18.27,
+     "end": 26.28
+    },
+    {
+     "id": "mz4s_5",
+     "text": "The pair for two is pushed. Three pairs. One too many. Which pair does line seven pop?",
+     "start": 27.03,
+     "end": 32.52
+    },
+    {
+     "id": "mz4s_6",
+     "text": "The pair for two. It has the smallest count.",
+     "start": 33.72,
+     "end": 36.27
+    },
+    {
+     "id": "mz4s_7",
+     "text": "Line ten empties the heap. The least frequent comes out first, so each number goes to the front. One. Then four, in front of it.",
+     "start": 37.02,
+     "end": 45.01
+    },
+    {
+     "id": "mz4s_8",
+     "text": "Line eleven returns the answer.",
+     "start": 45.76,
+     "end": 47.85
+    },
+    {
+     "id": "mz4s_9",
+     "text": "One pass to count. Then each different number goes through a heap of size k.",
+     "start": 48.95,
+     "end": 53.46
+    },
+    {
+     "id": "mz4s_10",
+     "text": "The map holds every different number.",
+     "start": 54.21,
+     "end": 56.27
+    },
+    {
+     "id": "mz4s_11",
+     "text": "A trending list is exactly this. Count everything, then keep only the top few.",
+     "start": 57.02,
+     "end": 62.22
+    }
+   ],
+   "pauses": [
+    {
+     "id": "mz4s-q",
+     "t": 32.72
+    }
+   ]
+  },
+  "mz5i": {
+   "src": "videos/mz5i.mp4",
+   "title": "Built Letter by Letter",
+   "duration": 21.23,
+   "lines": [
+    {
+     "id": "mz5i_1",
+     "text": "Hazel builds words one letter at a time. Every step on the way must be a word too.",
+     "start": 0.2,
+     "end": 5.33
+    },
+    {
+     "id": "mz5i_2",
+     "text": "Return the longest word that can be built like that.",
+     "start": 6.03,
+     "end": 9.18
+    },
+    {
+     "id": "mz5i_3",
+     "text": "A, then a p, then a p p. Every beginning is in the list.",
+     "start": 9.88,
+     "end": 13.61
+    },
+    {
+     "id": "mz5i_4",
+     "text": "But what about bat? What would have to be in the list? And how do you check quickly? Your turn.",
+     "start": 14.31,
+     "end": 19.63
+    }
+   ],
+   "pauses": []
+  },
+  "mz5s": {
+   "src": "videos/mz5s.mp4",
+   "title": "Every beginning must be known",
+   "duration": 63.64,
+   "lines": [
+    {
+     "id": "mz5s_1",
+     "text": "For each word, every shorter beginning must be in the list. That is a question of, have I got this?",
+     "start": 0.2,
+     "end": 6.03
+    },
+    {
+     "id": "mz5s_2",
+     "text": "So put the words in a set, and each check is instant. Beginnings made you think of a trie. Here, a set is enough.",
+     "start": 6.78,
+     "end": 13.47
+    },
+    {
+     "id": "mz5s_3",
+     "text": "Line two puts every word in a set. Best starts empty.",
+     "start": 14.22,
+     "end": 17.87
+    },
+    {
+     "id": "mz5s_4",
+     "text": "The word a. It has no shorter beginning, so it can be built. It is longer than nothing. Best is a.",
+     "start": 18.62,
+     "end": 25.03
+    },
+    {
+     "id": "mz5s_5",
+     "text": "A p. Its beginning, a, is in the set. Best is a p. Then a p p. A, and a p, are both there. Best is a p p.",
+     "start": 25.78,
+     "end": 33.34
+    },
+    {
+     "id": "mz5s_6",
+     "text": "The word b. It can be built. But it is shorter than the best. Line nine skips it.",
+     "start": 34.09,
+     "end": 39.18
+    },
+    {
+     "id": "mz5s_7",
+     "text": "Bat. Its beginnings are b, and b a. B is in the set. Is b a?",
+     "start": 39.93,
+     "end": 44.12
+    },
+    {
+     "id": "mz5s_8",
+     "text": "No. So bat cannot be built, and line nine skips it.",
+     "start": 45.32,
+     "end": 48.57
+    },
+    {
+     "id": "mz5s_9",
+     "text": "Line twelve returns the best.",
+     "start": 49.32,
+     "end": 51.18
+    },
+    {
+     "id": "mz5s_10",
+     "text": "Every beginning of every word is looked up once.",
+     "start": 52.28,
+     "end": 55.27
+    },
+    {
+     "id": "mz5s_11",
+     "text": "The set holds every word.",
+     "start": 56.02,
+     "end": 57.58
+    },
+    {
+     "id": "mz5s_12",
+     "text": "A word game checks this when you build a word one tile at a time.",
+     "start": 58.33,
+     "end": 62.04
+    }
+   ],
+   "pauses": [
+    {
+     "id": "mz5s-q",
+     "t": 44.32
+    }
+   ]
+  },
+  "mz6i": {
+   "src": "videos/mz6i.mp4",
+   "title": "Two Nests That Add Up",
+   "duration": 20.68,
+   "lines": [
+    {
+     "id": "mz6i_1",
+     "text": "Pip is looking for two nests whose numbers add up to twelve.",
+     "start": 0.2,
+     "end": 3.8
+    },
+    {
+     "id": "mz6i_2",
+     "text": "Return true if two different nodes add up to the target.",
+     "start": 4.5,
+     "end": 7.75
+    },
+    {
+     "id": "mz6i_3",
+     "text": "You have solved this before. On a row of doors, in the hash map chapter.",
+     "start": 8.45,
+     "end": 12.8
+    },
+    {
+     "id": "mz6i_4",
+     "text": "The numbers now sit in a tree. What stays the same, and what changes? Your turn.",
+     "start": 13.5,
+     "end": 19.08
+    }
+   ],
+   "pauses": []
+  },
+  "mz6s": {
+   "src": "videos/mz6s.mp4",
+   "title": "The partner I need: seen before?",
+   "duration": 56.65,
+   "lines": [
+    {
+     "id": "mz6s_1",
+     "text": "Have I seen the partner I need? That is the hash set question from chapter three.",
+     "start": 0.2,
+     "end": 5.01
+    },
+    {
+     "id": "mz6s_2",
+     "text": "The only new part is the walk. Visit every node, deep first, and ask the question at each one.",
+     "start": 5.76,
+     "end": 11.68
+    },
+    {
+     "id": "mz6s_3",
+     "text": "The target is twelve. The root is five. It needs a seven. Nothing is seen yet. So five is added.",
+     "start": 12.43,
+     "end": 18.79
+    },
+    {
+     "id": "mz6s_4",
+     "text": "Left. Three needs a nine. Not seen. Added.",
+     "start": 19.54,
+     "end": 22.15
+    },
+    {
+     "id": "mz6s_5",
+     "text": "One needs eleven. Four needs eight. Neither is seen. Both are added.",
+     "start": 22.9,
+     "end": 26.91
+    },
+    {
+     "id": "mz6s_6",
+     "text": "The left side found nothing. So the or, on line seven, tries the right side. Eight. It needs a four. What does line five do?",
+     "start": 27.66,
+     "end": 35.58
+    },
+    {
+     "id": "mz6s_7",
+     "text": "Four is in the set. Eight plus four is twelve. True. The nine is never visited.",
+     "start": 36.78,
+     "end": 42.09
+    },
+    {
+     "id": "mz6s_8",
+     "text": "At worst every node once. O of n time.",
+     "start": 43.19,
+     "end": 46.02
+    },
+    {
+     "id": "mz6s_9",
+     "text": "The set can hold every value. O of n space.",
+     "start": 46.77,
+     "end": 49.91
+    },
+    {
+     "id": "mz6s_10",
+     "text": "Do any two items in the basket add up to the voucher? One walk, and a set.",
+     "start": 50.66,
+     "end": 55.05
+    }
+   ],
+   "pauses": [
+    {
+     "id": "mz6s-q",
+     "t": 35.78
+    }
+   ]
+  },
+  "mz7i": {
+   "src": "videos/mz7i.mp4",
+   "title": "A Tree from a Sorted Row",
+   "duration": 22.64,
+   "lines": [
+    {
+     "id": "mz7i_1",
+     "text": "A sorted row of numbers. Hazel wants them in a search tree. A short, bushy one.",
+     "start": 0.2,
+     "end": 5.59
+    },
+    {
+     "id": "mz7i_2",
+     "text": "Build the shortest possible search tree, and return its root.",
+     "start": 6.29,
+     "end": 9.98
+    },
+    {
+     "id": "mz7i_3",
+     "text": "Whatever goes on top splits the rest in two. The smaller values to its left, the bigger to its right.",
+     "start": 10.68,
+     "end": 16.88
+    },
+    {
+     "id": "mz7i_4",
+     "text": "So which value should go on top? And then what? Your turn.",
+     "start": 17.58,
+     "end": 21.04
+    }
+   ],
+   "pauses": []
+  },
+  "mz7s": {
+   "src": "videos/mz7s.mp4",
+   "title": "The middle goes on top",
+   "duration": 79.32,
+   "lines": [
+    {
+     "id": "mz7s_1",
+     "text": "The root splits the rest in two. To keep the tree short, the two sides should be the same size. So the root is the middle value.",
+     "start": 0.2,
+     "end": 8.07
+    },
+    {
+     "id": "mz7s_2",
+     "text": "Each side is then a smaller sorted stretch. The same problem. So the function calls itself on each.",
+     "start": 8.82,
+     "end": 15.25
+    },
+    {
+     "id": "mz7s_3",
+     "text": "The first call covers the whole row. Low is zero, high is four. The middle is position two. Six becomes the root.",
+     "start": 16,
+     "end": 23.33
+    },
+    {
+     "id": "mz7s_4",
+     "text": "Line five builds its left side from the stretch before the middle. Positions zero to one. The middle is position zero. One becomes the left child of six.",
+     "start": 24.08,
+     "end": 34.1
+    },
+    {
+     "id": "mz7s_5",
+     "text": "Left of the one, there is nothing. Low is above high. Line two returns null. To its right is the three.",
+     "start": 34.85,
+     "end": 41.4
+    },
+    {
+     "id": "mz7s_6",
+     "text": "Back at the root. Line six builds the right side, from positions three to four. Which position is the middle?",
+     "start": 42.15,
+     "end": 49.04
+    },
+    {
+     "id": "mz7s_7",
+     "text": "Three. So eight is the right child of six. And ten, to its right, becomes the right child of eight.",
+     "start": 50.24,
+     "end": 56.06
+    },
+    {
+     "id": "mz7s_8",
+     "text": "Line seven returns the root. Six on top. Three levels for five values.",
+     "start": 56.81,
+     "end": 62.08
+    },
+    {
+     "id": "mz7s_9",
+     "text": "One node is made per value. O of n time.",
+     "start": 63.18,
+     "end": 65.97
+    },
+    {
+     "id": "mz7s_10",
+     "text": "The waiting calls are log n deep, because every call halves its stretch.",
+     "start": 66.72,
+     "end": 71.19
+    },
+    {
+     "id": "mz7s_11",
+     "text": "A database builds a fresh index from sorted data this way, so that it starts out balanced.",
+     "start": 71.94,
+     "end": 77.72
+    }
+   ],
+   "pauses": [
+    {
+     "id": "mz7s-q",
+     "t": 49.24
+    }
+   ]
+  },
+  "mz8i": {
+   "src": "videos/mz8i.mp4",
+   "title": "The Last Stone",
+   "duration": 20.42,
+   "lines": [
+    {
+     "id": "mz8i_1",
+     "text": "Moss smashes stones together. Always the two heaviest.",
+     "start": 0.2,
+     "end": 3.74
+    },
+    {
+     "id": "mz8i_2",
+     "text": "Return the weight of the last stone left, or zero if there is none.",
+     "start": 4.44,
+     "end": 8.37
+    },
+    {
+     "id": "mz8i_3",
+     "text": "After each smash, a smaller stone may come back into the pile.",
+     "start": 9.07,
+     "end": 12.93
+    },
+    {
+     "id": "mz8i_4",
+     "text": "So the two heaviest keep changing. What hands them to you each time? Your turn.",
+     "start": 13.63,
+     "end": 18.82
+    }
+   ],
+   "pauses": []
+  },
+  "mz8s": {
+   "src": "videos/mz8s.mp4",
+   "title": "The two heaviest, each time",
+   "duration": 55.95,
+   "lines": [
+    {
+     "id": "mz8s_1",
+     "text": "The two heaviest, again and again, while new stones come back. That is the signal for a heap.",
+     "start": 0.2,
+     "end": 5.7
+    },
+    {
+     "id": "mz8s_2",
+     "text": "This time the biggest must be on top. So the comparison is turned around. b minus a.",
+     "start": 6.45,
+     "end": 12.29
+    },
+    {
+     "id": "mz8s_3",
+     "text": "Line three pushes every stone. Seven is on top.",
+     "start": 13.04,
+     "end": 16.45
+    },
+    {
+     "id": "mz8s_4",
+     "text": "Lines five and six pop the two heaviest. Seven and four. They differ. So line seven pushes the difference. Three.",
+     "start": 17.2,
+     "end": 24.59
+    },
+    {
+     "id": "mz8s_5",
+     "text": "Again. The two heaviest are three, and three. What does line seven do?",
+     "start": 25.34,
+     "end": 29.58
+    },
+    {
+     "id": "mz8s_6",
+     "text": "Nothing. Equal stones destroy each other. Only the one is left.",
+     "start": 30.78,
+     "end": 34.64
+    },
+    {
+     "id": "mz8s_7",
+     "text": "One stone left. The loop ends, and line nine returns it.",
+     "start": 35.39,
+     "end": 39.21
+    },
+    {
+     "id": "mz8s_8",
+     "text": "Every smash removes at least one stone, and costs a few heap operations. O of n log n.",
+     "start": 40.31,
+     "end": 46.64
+    },
+    {
+     "id": "mz8s_9",
+     "text": "The heap. O of n space.",
+     "start": 47.39,
+     "end": 49.03
+    },
+    {
+     "id": "mz8s_10",
+     "text": "A tournament where the two strongest always play next is run with a max heap.",
+     "start": 49.78,
+     "end": 54.35
+    }
+   ],
+   "pauses": [
+    {
+     "id": "mz8s-q",
+     "t": 29.78
+    }
+   ]
+  },
+  "gr1i": {
+   "src": "videos/gr1i.mp4",
+   "title": "Count the Islands",
+   "duration": 23.97,
+   "lines": [
+    {
+     "id": "gr1i_1",
+     "text": "Pip looks down at the sea. Ones are land. Zeros are water.",
+     "start": 0.2,
+     "end": 4.09
+    },
+    {
+     "id": "gr1i_2",
+     "text": "Return the number of islands. Land that touches side to side is one island.",
+     "start": 4.79,
+     "end": 9.48
+    },
+    {
+     "id": "gr1i_3",
+     "text": "Scan the squares one by one, and you will meet the same island many times.",
+     "start": 10.18,
+     "end": 15.02
+    },
+    {
+     "id": "gr1i_4",
+     "text": "So when you find a piece of land, what could you do, so that you never count that island again? Your turn.",
+     "start": 15.72,
+     "end": 22.37
+    }
+   ],
+   "pauses": []
+  },
+  "gr1s": {
+   "src": "videos/gr1s.mp4",
+   "title": "Find land, sink the island",
+   "duration": 73.79,
+   "lines": [
+    {
+     "id": "gr1s_1",
+     "text": "Scan every square. The first time you touch an island, count it.",
+     "start": 0.2,
+     "end": 4.09
+    },
+    {
+     "id": "gr1s_2",
+     "text": "Then sink the whole island, so no other square of it can be counted. Deep first, through the four neighbours.",
+     "start": 4.84,
+     "end": 11.31
+    },
+    {
+     "id": "gr1s_3",
+     "text": "The scan starts at the top left. It is land. Line twelve counts one island, and calls sink.",
+     "start": 12.06,
+     "end": 17.83
+    },
+    {
+     "id": "gr1s_4",
+     "text": "Sink turns this square into water, and calls itself on the four neighbours. The land to the right, and the land below, are sunk the same way.",
+     "start": 18.58,
+     "end": 26.76
+    },
+    {
+     "id": "gr1s_5",
+     "text": "For water, or a square outside the grid, lines three and four return at once. That is what stops the walk.",
+     "start": 27.51,
+     "end": 34.2
+    },
+    {
+     "id": "gr1s_6",
+     "text": "The scan goes on. Every square it meets is water now, until this one. Land. What happens to count?",
+     "start": 34.95,
+     "end": 41.82
+    },
+    {
+     "id": "gr1s_7",
+     "text": "Two. A second island. Sink removes it. This square, the one below it, and the one beside that.",
+     "start": 43.02,
+     "end": 48.95
+    },
+    {
+     "id": "gr1s_8",
+     "text": "The scan finishes. No land is left. Line fifteen returns two.",
+     "start": 49.7,
+     "end": 54.3
+    },
+    {
+     "id": "gr1s_9",
+     "text": "Every square is looked at by the scan, and sunk at most once. O of rows times columns.",
+     "start": 55.4,
+     "end": 61.27
+    },
+    {
+     "id": "gr1s_10",
+     "text": "The waiting calls can be as deep as one whole island.",
+     "start": 62.02,
+     "end": 64.89
+    },
+    {
+     "id": "gr1s_11",
+     "text": "A photo app finds the separate objects in a picture this way. Each blob of touching pixels is one island.",
+     "start": 65.64,
+     "end": 72.19
+    }
+   ],
+   "pauses": [
+    {
+     "id": "gr1s-q",
+     "t": 42.02
+    }
+   ]
+  },
+  "gr2i": {
+   "src": "videos/gr2i.mp4",
+   "title": "The Paint Bucket",
+   "duration": 20.7,
+   "lines": [
+    {
+     "id": "gr2i_1",
+     "text": "Hazel clicks the paint bucket on the top left square.",
+     "start": 0.2,
+     "end": 3.1
+    },
+    {
+     "id": "gr2i_2",
+     "text": "Give the new colour to that square, and to every connected square of the same old colour.",
+     "start": 3.79,
+     "end": 9.07
+    },
+    {
+     "id": "gr2i_3",
+     "text": "The one at the bottom has the same colour too. But it does not touch the others.",
+     "start": 9.77,
+     "end": 14.46
+    },
+    {
+     "id": "gr2i_4",
+     "text": "You sank an island a moment ago. What is different here? Your turn.",
+     "start": 15.16,
+     "end": 19.1
+    }
+   ],
+   "pauses": []
+  },
+  "gr2s": {
+   "src": "videos/gr2s.mp4",
+   "title": "Spread while the colour matches",
+   "duration": 65.35,
+   "lines": [
+    {
+     "id": "gr2s_1",
+     "text": "This is sinking an island again. The island is every connected square of the old colour.",
+     "start": 0.2,
+     "end": 5.58
+    },
+    {
+     "id": "gr2s_2",
+     "text": "Painting a square also marks it as done. It no longer has the old colour, so it is never visited twice.",
+     "start": 6.33,
+     "end": 13.22
+    },
+    {
+     "id": "gr2s_3",
+     "text": "Line two remembers the old colour of the starting square. One.",
+     "start": 13.97,
+     "end": 17.87
+    },
+    {
+     "id": "gr2s_4",
+     "text": "Line seven paints it nine. Then the four neighbours. Below is a one. It is painted too.",
+     "start": 18.62,
+     "end": 24.25
+    },
+    {
+     "id": "gr2s_5",
+     "text": "From there, below again. This square holds a three. What does line six do?",
+     "start": 25,
+     "end": 29.68
+    },
+    {
+     "id": "gr2s_6",
+     "text": "It returns. A different colour is a wall for the paint.",
+     "start": 30.88,
+     "end": 34.29
+    },
+    {
+     "id": "gr2s_7",
+     "text": "Back at the start, and to the right. A one. Painted. Its own neighbours are twos, or already nine.",
+     "start": 35.04,
+     "end": 41.02
+    },
+    {
+     "id": "gr2s_8",
+     "text": "The one at the bottom was never reached. It does not touch the others. Line twelve returns the grid.",
+     "start": 41.77,
+     "end": 47.76
+    },
+    {
+     "id": "gr2s_9",
+     "text": "Each square is painted at most once. O of rows times columns.",
+     "start": 48.86,
+     "end": 53.14
+    },
+    {
+     "id": "gr2s_10",
+     "text": "The waiting calls can be as deep as the painted region.",
+     "start": 53.89,
+     "end": 56.94
+    },
+    {
+     "id": "gr2s_11",
+     "text": "This is the paint bucket in every drawing program. Click, and the colour spreads to everything connected.",
+     "start": 57.69,
+     "end": 63.75
+    }
+   ],
+   "pauses": [
+    {
+     "id": "gr2s-q",
+     "t": 29.88
+    }
+   ]
+  },
+  "gr3i": {
+   "src": "videos/gr3i.mp4",
+   "title": "Out of the Maze",
+   "duration": 20.63,
+   "lines": [
+    {
+     "id": "gr3i_1",
+     "text": "Pip is in the top left corner of a maze. The way out is the bottom right.",
+     "start": 0.2,
+     "end": 4.66
+    },
+    {
+     "id": "gr3i_2",
+     "text": "Return the fewest steps to get there, or minus one if there is no way.",
+     "start": 5.36,
+     "end": 9.64
+    },
+    {
+     "id": "gr3i_3",
+     "text": "Going deep first would find some way out. Not always the shortest.",
+     "start": 10.34,
+     "end": 14.34
+    },
+    {
+     "id": "gr3i_4",
+     "text": "Which way of exploring reaches the nearest squares first? Your turn.",
+     "start": 15.04,
+     "end": 19.03
+    }
+   ],
+   "pauses": []
+  },
+  "gr3s": {
+   "src": "videos/gr3s.mp4",
+   "title": "Level by level counts the steps",
+   "duration": 70.93,
+   "lines": [
+    {
+     "id": "gr3s_1",
+     "text": "The fewest steps. That is the signal for going level by level.",
+     "start": 0.2,
+     "end": 4.09
+    },
+    {
+     "id": "gr3s_2",
+     "text": "Level zero is the start. Level one is every square one step away. The level that holds the goal is the answer.",
+     "start": 4.84,
+     "end": 12.41
+    },
+    {
+     "id": "gr3s_3",
+     "text": "Line four. The first level holds only the start. Line five marks it, so it is never added again. Steps is zero.",
+     "start": 13.16,
+     "end": 20.91
+    },
+    {
+     "id": "gr3s_4",
+     "text": "Lines eleven to fifteen look at its four neighbours. Below is a wall. To the right is open. It is marked, and goes into next.",
+     "start": 21.66,
+     "end": 29.78
+    },
+    {
+     "id": "gr3s_5",
+     "text": "That square has one open neighbour, below it. That is level two.",
+     "start": 30.53,
+     "end": 34.49
+    },
+    {
+     "id": "gr3s_6",
+     "text": "Now from that square. Left is a wall. Below is a wall. Above is already marked. Which squares make level three?",
+     "start": 35.24,
+     "end": 42.6
+    },
+    {
+     "id": "gr3s_7",
+     "text": "Only the square on its right. Level three.",
+     "start": 43.8,
+     "end": 46.39
+    },
+    {
+     "id": "gr3s_8",
+     "text": "Its open neighbour is the corner below. Level four. And when that square is taken out, line ten sees the goal, and returns steps.",
+     "start": 47.14,
+     "end": 55.46
+    },
+    {
+     "id": "gr3s_9",
+     "text": "Every square enters a level at most once. O of rows times columns.",
+     "start": 56.56,
+     "end": 61.24
+    },
+    {
+     "id": "gr3s_10",
+     "text": "Two levels are held at a time.",
+     "start": 61.99,
+     "end": 63.78
+    },
+    {
+     "id": "gr3s_11",
+     "text": "A game character finds the shortest way through a map like this, level by level.",
+     "start": 64.53,
+     "end": 69.33
+    }
+   ],
+   "pauses": [
+    {
+     "id": "gr3s-q",
+     "t": 42.8
+    }
+   ]
+  },
+  "gr4i": {
+   "src": "videos/gr4i.mp4",
+   "title": "Can You Get There?",
+   "duration": 23.59,
+   "lines": [
+    {
+     "id": "gr4i_1",
+     "text": "Six burrows, and the tunnels between them. Pip is in burrow three.",
+     "start": 0.2,
+     "end": 4.27
+    },
+    {
+     "id": "gr4i_2",
+     "text": "Return true if there is a way from one burrow to another. Here, from three to two.",
+     "start": 4.97,
+     "end": 9.92
+    },
+    {
+     "id": "gr4i_3",
+     "text": "The tunnels arrive as a list of pairs. That is awkward to walk through.",
+     "start": 10.62,
+     "end": 14.95
+    },
+    {
+     "id": "gr4i_4",
+     "text": "Standing in a burrow, what do you want to know at once? And how do you avoid going in circles? Your turn.",
+     "start": 15.65,
+     "end": 21.99
+    }
+   ],
+   "pauses": []
+  },
+  "gr4s": {
+   "src": "videos/gr4s.mp4",
+   "title": "Neighbour lists, then walk",
+   "duration": 73.37,
+   "lines": [
+    {
+     "id": "gr4s_1",
+     "text": "First, turn the list of pairs into neighbour lists. Then every node knows who is next door.",
+     "start": 0.2,
+     "end": 5.72
+    },
+    {
+     "id": "gr4s_2",
+     "text": "Then walk, deep first, like a tree. With one addition. A set of nodes already seen.",
+     "start": 6.47,
+     "end": 11.79
+    },
+    {
+     "id": "gr4s_3",
+     "text": "Lines two to six build the lists. Each edge is added both ways. Zero is next to one and two. One is next to zero and three.",
+     "start": 12.54,
+     "end": 21.13
+    },
+    {
+     "id": "gr4s_4",
+     "text": "Line fourteen starts on three. Not the target. Not seen. It is marked seen.",
+     "start": 21.88,
+     "end": 26.97
+    },
+    {
+     "id": "gr4s_5",
+     "text": "Its only neighbour is one. Marked seen.",
+     "start": 27.72,
+     "end": 30.02
+    },
+    {
+     "id": "gr4s_6",
+     "text": "One is next to zero, and three. Zero first. Marked seen.",
+     "start": 30.77,
+     "end": 34.58
+    },
+    {
+     "id": "gr4s_7",
+     "text": "Zero is next to one, and two. One first. But one is already seen. What does the call on one return?",
+     "start": 35.33,
+     "end": 42.02
+    },
+    {
+     "id": "gr4s_8",
+     "text": "False, at once. So the walk tries the next neighbour. Two. That is the target. Line nine returns true.",
+     "start": 43.22,
+     "end": 49.71
+    },
+    {
+     "id": "gr4s_9",
+     "text": "Four and five were never reached. From three, there is no way to them.",
+     "start": 50.81,
+     "end": 55.08
+    },
+    {
+     "id": "gr4s_10",
+     "text": "Every node is visited once, and every edge is looked at twice. O of nodes plus edges.",
+     "start": 55.83,
+     "end": 61.81
+    },
+    {
+     "id": "gr4s_11",
+     "text": "The lists, and the seen set. O of nodes plus edges.",
+     "start": 62.56,
+     "end": 66
+    },
+    {
+     "id": "gr4s_12",
+     "text": "Can this computer reach that server? A network tool asks exactly this question.",
+     "start": 66.75,
+     "end": 71.77
+    }
+   ],
+   "pauses": [
+    {
+     "id": "gr4s-q",
+     "t": 42.22
+    }
+   ]
+  },
+  "gr5i": {
+   "src": "videos/gr5i.mp4",
+   "title": "How Many Groups?",
+   "duration": 17.46,
+   "lines": [
+    {
+     "id": "gr5i_1",
+     "text": "Six burrows again. But this time, they are not all joined up.",
+     "start": 0.2,
+     "end": 3.84
+    },
+    {
+     "id": "gr5i_2",
+     "text": "Return the number of separate groups.",
+     "start": 4.54,
+     "end": 6.75
+    },
+    {
+     "id": "gr5i_3",
+     "text": "You counted separate pieces a moment ago. They were made of land.",
+     "start": 7.45,
+     "end": 11.2
+    },
+    {
+     "id": "gr5i_4",
+     "text": "What is the land here? And what does it mean to sink a group? Your turn.",
+     "start": 11.9,
+     "end": 15.86
+    }
+   ],
+   "pauses": []
+  },
+  "gr5s": {
+   "src": "videos/gr5s.mp4",
+   "title": "Islands, on a graph",
+   "duration": 61.81,
+   "lines": [
+    {
+     "id": "gr5s_1",
+     "text": "This is counting islands. A node that is not seen yet is new land.",
+     "start": 0.2,
+     "end": 4.34
+    },
+    {
+     "id": "gr5s_2",
+     "text": "Count it, then walk everything it is joined to, marking it seen. That sinks the whole group.",
+     "start": 5.09,
+     "end": 10.49
+    },
+    {
+     "id": "gr5s_3",
+     "text": "The loop on line fourteen starts at node zero. Not seen. So line fifteen counts one group, and visits it.",
+     "start": 11.24,
+     "end": 18.25
+    },
+    {
+     "id": "gr5s_4",
+     "text": "The visit spreads to its neighbours. One, and two. All three are seen now.",
+     "start": 19,
+     "end": 23.62
+    },
+    {
+     "id": "gr5s_5",
+     "text": "The loop moves on. One is seen. Two is seen. Then three. It is not seen, and it has no edges at all. What happens?",
+     "start": 24.37,
+     "end": 31.76
+    },
+    {
+     "id": "gr5s_6",
+     "text": "It counts. A group of one. Two groups.",
+     "start": 32.96,
+     "end": 35.5
+    },
+    {
+     "id": "gr5s_7",
+     "text": "Four is not seen. Three groups. The visit marks four, and five.",
+     "start": 36.25,
+     "end": 40.31
+    },
+    {
+     "id": "gr5s_8",
+     "text": "Five is seen. The loop ends, and line seventeen returns three.",
+     "start": 41.06,
+     "end": 45.23
+    },
+    {
+     "id": "gr5s_9",
+     "text": "Every node is visited once, every edge looked at twice. O of nodes plus edges.",
+     "start": 46.33,
+     "end": 51.91
+    },
+    {
+     "id": "gr5s_10",
+     "text": "The lists, and the seen set.",
+     "start": 52.66,
+     "end": 54.22
+    },
+    {
+     "id": "gr5s_11",
+     "text": "A social app finds separate circles of friends this way. Each group is one circle.",
+     "start": 54.97,
+     "end": 60.21
+    }
+   ],
+   "pauses": [
+    {
+     "id": "gr5s-q",
+     "t": 31.96
+    }
+   ]
+  },
+  "gr6i": {
+   "src": "videos/gr6i.mp4",
+   "title": "The Fewest Hops",
+   "duration": 17.36,
+   "lines": [
+    {
+     "id": "gr6i_1",
+     "text": "Pip is in burrow zero, and wants to reach burrow five.",
+     "start": 0.2,
+     "end": 3.45
+    },
+    {
+     "id": "gr6i_2",
+     "text": "Return the fewest tunnels Pip has to cross.",
+     "start": 4.15,
+     "end": 6.71
+    },
+    {
+     "id": "gr6i_3",
+     "text": "There is more than one way round. One of them is shorter.",
+     "start": 7.41,
+     "end": 10.6
+    },
+    {
+     "id": "gr6i_4",
+     "text": "You found the fewest steps in a maze. What changes on a graph? Your turn.",
+     "start": 11.3,
+     "end": 15.76
+    }
+   ],
+   "pauses": []
+  },
+  "gr6s": {
+   "src": "videos/gr6s.mp4",
+   "title": "Rings around the start",
+   "duration": 64.41,
+   "lines": [
+    {
+     "id": "gr6s_1",
+     "text": "The fewest hops. Level by level again. Exactly as in the maze.",
+     "start": 0.2,
+     "end": 4.73
+    },
+    {
+     "id": "gr6s_2",
+     "text": "The levels are rings around the start. Everything one hop away. Then two. The ring that holds the target is the answer.",
+     "start": 5.48,
+     "end": 12.99
+    },
+    {
+     "id": "gr6s_3",
+     "text": "The first level holds only the start. Zero. Hops is zero. Five is not in this level.",
+     "start": 13.74,
+     "end": 19.98
+    },
+    {
+     "id": "gr6s_4",
+     "text": "Lines eight to thirteen collect the unseen neighbours of zero. One, and two. That is the next level.",
+     "start": 20.73,
+     "end": 27.26
+    },
+    {
+     "id": "gr6s_5",
+     "text": "Five is not in it. So the next level. One is next to zero, three, and five. Two is next to zero, and four. Which nodes are added?",
+     "start": 28.01,
+     "end": 36.9
+    },
+    {
+     "id": "gr6s_6",
+     "text": "Three, five, and four. Zero is skipped, because it is seen.",
+     "start": 38.1,
+     "end": 41.81
+    },
+    {
+     "id": "gr6s_7",
+     "text": "Back to line six. This level includes five. So it returns hops. Two.",
+     "start": 42.56,
+     "end": 47.24
+    },
+    {
+     "id": "gr6s_8",
+     "text": "Every node enters a level once, every edge is looked at twice. O of nodes plus edges.",
+     "start": 48.34,
+     "end": 54.34
+    },
+    {
+     "id": "gr6s_9",
+     "text": "The seen set, and two levels.",
+     "start": 55.09,
+     "end": 56.9
+    },
+    {
+     "id": "gr6s_10",
+     "text": "How many introductions from you to a stranger? Social apps count the hops like this.",
+     "start": 57.65,
+     "end": 62.81
+    }
+   ],
+   "pauses": [
+    {
+     "id": "gr6s-q",
+     "t": 37.1
+    }
+   ]
+  },
+  "gr7i": {
+   "src": "videos/gr7i.mp4",
+   "title": "Is There a Loop?",
+   "duration": 24.62,
+   "lines": [
+    {
+     "id": "gr7i_1",
+     "text": "Moss is worried about walking in circles. Is there a loop in these tunnels?",
+     "start": 0.2,
+     "end": 4.79
+    },
+    {
+     "id": "gr7i_2",
+     "text": "Return true if you can leave a burrow and come back to it, without using a tunnel twice.",
+     "start": 5.49,
+     "end": 10.72
+    },
+    {
+     "id": "gr7i_3",
+     "text": "Walk deep first, and remember what you have seen. Sooner or later you look at a burrow you have seen before.",
+     "start": 11.42,
+     "end": 17.98
+    },
+    {
+     "id": "gr7i_4",
+     "text": "Is that always a loop? Think about the burrow you just came from. Your turn.",
+     "start": 18.68,
+     "end": 23.02
+    }
+   ],
+   "pauses": []
+  },
+  "gr7s": {
+   "src": "videos/gr7s.mp4",
+   "title": "Seen, and not where I came from",
+   "duration": 71.32,
+   "lines": [
+    {
+     "id": "gr7s_1",
+     "text": "Walk deep first. If a neighbour is already seen, the walk has found a second way to reach it. That is a loop.",
+     "start": 0.2,
+     "end": 7.02
+    },
+    {
+     "id": "gr7s_2",
+     "text": "With one exception. The node you just came from is always seen. So each call remembers it, and skips it.",
+     "start": 7.77,
+     "end": 14.09
+    },
+    {
+     "id": "gr7s_3",
+     "text": "Line seventeen starts on node zero, coming from nowhere. Zero is marked seen. Its only neighbour is one.",
+     "start": 14.84,
+     "end": 21.86
+    },
+    {
+     "id": "gr7s_4",
+     "text": "On one, coming from zero. Its neighbours are zero, two and three. Zero is where it came from. Skipped. Then two.",
+     "start": 22.61,
+     "end": 29.85
+    },
+    {
+     "id": "gr7s_5",
+     "text": "On two, coming from one. One is skipped. Its other neighbour is three.",
+     "start": 30.6,
+     "end": 34.97
+    },
+    {
+     "id": "gr7s_6",
+     "text": "On three, coming from two. Two is skipped. Its other neighbour is one. One is seen, and it is not where we came from. What does line twelve do?",
+     "start": 35.72,
+     "end": 44.94
+    },
+    {
+     "id": "gr7s_7",
+     "text": "It returns true. One, two, three, and back to one. A loop.",
+     "start": 46.14,
+     "end": 49.89
+    },
+    {
+     "id": "gr7s_8",
+     "text": "And true travels straight back up through every waiting call.",
+     "start": 50.99,
+     "end": 54.03
+    },
+    {
+     "id": "gr7s_9",
+     "text": "Every node is visited once, every edge looked at twice. O of nodes plus edges.",
+     "start": 54.78,
+     "end": 60.35
+    },
+    {
+     "id": "gr7s_10",
+     "text": "The lists, the seen set, and the waiting calls.",
+     "start": 61.1,
+     "end": 63.75
+    },
+    {
+     "id": "gr7s_11",
+     "text": "A spreadsheet warns you about a circular reference by finding a loop, just like this.",
+     "start": 64.5,
+     "end": 69.72
+    }
+   ],
+   "pauses": [
+    {
+     "id": "gr7s-q",
+     "t": 45.14
     }
    ]
   }

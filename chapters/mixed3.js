@@ -4,8 +4,8 @@ window.CHAPTER = {
  "sub": "MIXED SET 3",
  "key": "burrow-ch-mixed3",
  "next": {
-  "href": "index.html#chapters",
-  "label": "All chapters"
+  "href": "chapter.html?c=graphs",
+  "label": "Chapter 18: Graphs and Grids"
  },
  "prev": {
   "href": "chapter.html?c=tries",
