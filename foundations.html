@@ -131,6 +131,37 @@ pre,code{font-family:var(--mono);font-size:14px}
   .plan{padding:10px 12px;font-size:14.500px}
 }
 @media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+
+/* ---------- own video player: full screen keeps the question on screen ---------- */
+.vstage{position:relative;display:flex;flex-direction:column;min-width:0}
+.vstage video{cursor:pointer}
+.vbar{display:flex;align-items:center;gap:8px;padding:6px 10px;background:var(--plum);color:var(--cream);user-select:none;-webkit-user-select:none}
+.vbar button{flex:none;min-width:40px;height:40px;border-radius:10px;border:0;background:rgba(255,246,224,.14);color:var(--cream);font-family:var(--mono);font-weight:700;font-size:14px;display:grid;place-items:center;padding:0 8px;cursor:pointer}
+.vbar button:active{background:rgba(255,246,224,.3)}
+.vbar svg{width:20px;height:20px;display:block}
+.vtl{flex:1;height:28px;position:relative;cursor:pointer;touch-action:none;min-width:40px}
+.vtl:before{content:"";position:absolute;left:0;right:0;top:11px;height:6px;border-radius:9px;background:rgba(255,246,224,.25)}
+.vtl i{position:absolute;left:0;top:11px;height:6px;border-radius:9px;background:var(--sky);width:0}
+.vtl b{position:absolute;top:6px;width:16px;height:16px;border-radius:50%;background:var(--coral);border:3px solid var(--cream);margin-left:-8px;left:0}
+.vtl u{position:absolute;top:9px;width:4px;height:10px;border-radius:2px;background:var(--mint);margin-left:-2px}
+.vtime{font-family:var(--mono);font-weight:700;font-size:12px;white-space:nowrap}
+.vcapo{display:none}
+.vid.fs{position:fixed;inset:0;z-index:9999;width:100vw;height:100vh;height:100dvh;max-width:none;margin:0;border:0;border-radius:0;background:#000;display:flex}
+.vid.fs .vstage{flex:1 1 0;height:100%;background:#000}
+.vid.fs video{flex:1 1 0;min-height:0;width:100%;height:auto;aspect-ratio:auto;object-fit:contain;background:#000}
+.vid.fs .vcapo{display:block;position:absolute;left:10px;right:10px;bottom:62px;text-align:center;color:#fff;font-weight:700;font-size:clamp(13px,2.2vmin,22px);text-shadow:0 1px 4px #000,0 0 2px #000;pointer-events:none}
+.vid.fs .quiz{position:static;inset:auto;flex:0 0 min(46%,460px);background:var(--cream);padding:10px;align-items:flex-start;overflow:auto;border-left:5px solid var(--plum)}
+.vid.fs .quiz .q{border:0;box-shadow:none;padding:6px 6px 16px;max-width:none;max-height:none;overflow:visible}
+.vid.fs .quiz .opt{min-height:46px}
+@media (orientation:portrait){
+  .vid.fs:not(.fake){flex-direction:column}
+  .vid.fs:not(.fake) .vstage{flex:0 0 auto;height:auto}
+  .vid.fs:not(.fake) video{flex:none;aspect-ratio:16/9}
+  .vid.fs:not(.fake) .quiz{flex:1 1 auto;border-left:0;border-top:5px solid var(--plum)}
+  /* iPhone has no real full screen for a page: turn the player on its side so the video fills the screen */
+  .vid.fs.fake{width:100vh;width:100dvh;height:100vw;transform:rotate(90deg);transform-origin:top left;left:100vw;top:0;right:auto;bottom:auto}
+}
+body.vlock{overflow:hidden}
 </style>
 </head>
 <body>
@@ -274,11 +305,37 @@ function nextBtn(st) {
 }
 
 // ---------- video with predict-the-next-step pauses ----------
+// ---------- own video controls. Full screen is the whole player (video + question), never the bare <video> ----------
+function wirePlayer(v, frame, V) {
+  const $$ = (s) => frame.querySelector(s), bPlay = $$('[data-v=play]'), tl = $$('.vtl'), fill = $$('.vtl i'), knob = $$('.vtl b'), time = $$('.vtime'), bSp = $$('[data-v=speed]'), bFs = $$('[data-v=fs]'), capo = $$('.vcapo');
+  const PLAY = '<svg viewBox="0 0 24 24"><path d="M7 4l14 8-14 8z" fill="currentColor"/></svg>', PAUSE = '<svg viewBox="0 0 24 24"><path d="M6 4h4v16H6zM14 4h4v16h-4z" fill="currentColor"/></svg>';
+  const fmt = (s) => { s = Math.max(0, Math.floor(s || 0)); return Math.floor(s / 60) + ':' + String(s % 60).padStart(2, '0'); };
+  const api = { onChange: null, isFS: () => frame.classList.contains('fs') };
+  const draw = () => { const d = v.duration || V.duration || 0, p = d ? Math.min(1, v.currentTime / d) : 0; fill.style.width = p * 100 + '%'; knob.style.left = p * 100 + '%'; time.textContent = fmt(v.currentTime) + ' / ' + fmt(d); bPlay.innerHTML = v.paused ? PLAY : PAUSE; };
+  const marks = () => { const d = v.duration || V.duration || 0; if (!d || tl.dataset.m) return; tl.dataset.m = 1; (V.pauses || []).forEach((p) => { const u = document.createElement('u'); u.style.left = (p.t / d) * 100 + '%'; u.title = 'a question'; tl.insertBefore(u, knob); }); };
+  ['timeupdate', 'play', 'pause', 'loadedmetadata', 'seeked'].forEach((e) => v.addEventListener(e, () => { marks(); draw(); if (capo) { const ln = V.lines.find((l) => v.currentTime >= l.start - 0.1 && v.currentTime <= l.end + 0.5); capo.textContent = ln ? ln.text : ''; } }));
+  const toggle = () => { if (v.paused) v.play().catch(() => {}); else v.pause(); };
+  bPlay.onclick = toggle; v.addEventListener('click', toggle);
+  $$('[data-v=back]').onclick = () => { v.currentTime = Math.max(0, v.currentTime - 10); };
+  const SP = [1, 1.25, 1.5, 0.75]; bSp.onclick = () => { const n = SP[(SP.indexOf(v.playbackRate) + 1) % SP.length]; v.playbackRate = n; bSp.textContent = n + '×'; };
+  const seek = (e) => { const r = tl.getBoundingClientRect(), fake = frame.classList.contains('fake') && matchMedia('(orientation:portrait)').matches; const p = fake ? (e.clientY - r.top) / r.height : (e.clientX - r.left) / r.width; const d = v.duration || 0; if (d) v.currentTime = Math.max(0, Math.min(d - 0.05, p * d)); };
+  let drag = false; tl.addEventListener('pointerdown', (e) => { drag = true; tl.setPointerCapture(e.pointerId); seek(e); }); tl.addEventListener('pointermove', (e) => { if (drag) seek(e); }); ['pointerup', 'pointercancel'].forEach((n) => tl.addEventListener(n, () => { drag = false; }));
+  const set = (on, fake) => { frame.classList.toggle('fs', on); frame.classList.toggle('fake', on && !!fake); document.body.classList.toggle('vlock', on && !!fake); bFs.title = on ? 'Leave full screen' : 'Full screen'; if (api.onChange) api.onChange(); };
+  api.enterFS = () => { const rq = frame.requestFullscreen || frame.webkitRequestFullscreen; if (rq) { try { const pr = rq.call(frame); if (pr && pr.then) pr.then(() => { try { screen.orientation.lock('landscape').catch(() => {}); } catch (e) {} }).catch(() => set(true, true)); } catch (e) { set(true, true); } } else set(true, true); };
+  api.exitFS = () => { if (document.fullscreenElement || document.webkitFullscreenElement) { (document.exitFullscreen || document.webkitExitFullscreen).call(document); try { screen.orientation.unlock(); } catch (e) {} } else set(false); };
+  ['fullscreenchange', 'webkitfullscreenchange'].forEach((n) => document.addEventListener(n, () => { const el = document.fullscreenElement || document.webkitFullscreenElement; if (el === frame) set(true, false); else if (frame.classList.contains('fs') && !frame.classList.contains('fake')) set(false); }));
+  bFs.onclick = () => (api.isFS() ? api.exitFS() : api.enterFS());
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && frame.classList.contains('fake')) set(false); });
+  draw(); return api;
+}
 function player(vkey, onEnd) {
-  const V = D.videos[vkey]; const box = h(`<div><div class="vid"><video controls playsinline preload="metadata" src="${V ? V.src : ''}"></video></div><div class="vctl" role="group" aria-label="Replay"><span>Replay</span><button data-a="back" title="Go back 10 seconds">10 s</button><button data-a="line" title="Replay this sentence">Sentence</button><button data-a="part" title="Replay everything since the last question">Part</button></div><div class="cap" aria-live="off"></div></div>`);
+  const V = D.videos[vkey]; const box = h(`<div><div class="vid"><div class="vstage"><video playsinline disablepictureinpicture preload="metadata" src="${V ? V.src : ''}"></video><div class="vcapo" aria-hidden="true"></div><div class="vbar"><button data-v="play" title="Play or pause" aria-label="Play or pause"></button><button data-v="back" title="Back 10 seconds" aria-label="Back 10 seconds">−10</button><div class="vtl" role="slider" aria-label="Position in the video"><i></i><b></b></div><span class="vtime">0:00</span><button data-v="speed" title="Speed" aria-label="Speed">1×</button><button data-v="fs" title="Full screen" aria-label="Full screen"><svg viewBox="0 0 24 24"><path d="M4 9V4h5M15 4h5v5M20 15v5h-5M9 20H4v-5" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button></div></div></div><div class="vctl" role="group" aria-label="Replay"><span>Replay</span><button data-a="back" title="Go back 10 seconds">10 s</button><button data-a="line" title="Replay this sentence">Sentence</button><button data-a="part" title="Replay everything since the last question">Part</button></div><div class="cap" aria-live="off"></div></div>`);
   const v = $('video', box), cap = $('.cap', box), frame = $('.vid', box);
   if (!V) { cap.textContent = 'Video data is missing (data.js).'; return box; }
   let open = null;
+  const PL = wirePlayer(v, frame, V);
+  const place = () => { if (!open) return; if (PL.isFS()) { open.classList.remove('below'); frame.append(open); } else if (window.innerWidth < 700) { open.classList.add('below'); frame.after(open); open.scrollIntoView({ behavior: 'smooth', block: 'nearest' }); } else { open.classList.remove('below'); frame.append(open); } };
+  PL.onChange = place;
   v.addEventListener('timeupdate', () => {
     const t = v.currentTime, ln = V.lines.find((l) => t >= l.start - 0.1 && t <= l.end + 0.5); cap.textContent = ln ? ln.text : '';
     if (open) return;
@@ -287,7 +344,7 @@ function player(vkey, onEnd) {
   });
   v.addEventListener('play', () => { if (open) v.pause(); });
   // when the video ends, what comes next (the Done row with its button) is brought into view
-  v.addEventListener('ended', () => { if (!onEnd) return; onEnd(); requestAnimationFrame(() => { const sec = v.closest('section'); const row = sec && [...sec.querySelectorAll('.row')].find((r) => r.querySelector('button, a') && (v.compareDocumentPosition(r) & 4)); if (row) { const q = row.getBoundingClientRect(); if (q.bottom > innerHeight - 20 || q.top < 0) row.scrollIntoView({ behavior: 'smooth', block: 'center' }); } }); });
+  v.addEventListener('ended', () => { if (PL.isFS()) PL.exitFS(); if (!onEnd) return; onEnd(); requestAnimationFrame(() => { const sec = v.closest('section'); const row = sec && [...sec.querySelectorAll('.row')].find((r) => r.querySelector('button, a') && (v.compareDocumentPosition(r) & 4)); if (row) { const q = row.getBoundingClientRect(); if (q.bottom > innerHeight - 20 || q.top < 0) row.scrollIntoView({ behavior: 'smooth', block: 'center' }); } }); });
   // replay: 10 seconds back, the current sentence, or everything since the last question
   const partStart = (t) => Math.max(0, ...(V.pauses || []).filter((p) => p.t < t - 1).map((p) => p.t));
   const jump = (to) => { if (open) { open.remove(); open = null; } v.currentTime = Math.max(0, to); v.play().catch(() => {}); };
@@ -313,7 +370,7 @@ function player(vkey, onEnd) {
       };
       $('.opts', open).append(b);
     });
-    if (window.innerWidth < 700) { open.classList.add('below'); frame.after(open); open.scrollIntoView({ behavior: 'smooth', block: 'nearest' }); } else frame.append(open);
+    place();
     $('.opt', open).focus({ preventScroll: true });
   }
   return box;
