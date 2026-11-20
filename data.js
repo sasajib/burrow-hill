@@ -19464,345 +19464,6 @@ window.BURROW = {
     }
    ]
   },
-  "uf1i": {
-   "src": "videos/uf1i.mp4",
-   "title": "The Same Group?",
-   "duration": 25.04,
-   "lines": [
-    {
-     "id": "uf1i_1",
-     "text": "Five burrows. Tunnels are dug between them, one at a time. Zero to one. Three to four. One to two.",
-     "start": 0.2,
-     "end": 7.11
-    },
-    {
-     "id": "uf1i_2",
-     "text": "Return true if two burrows end up in the same group. Here, zero and two.",
-     "start": 7.81,
-     "end": 12.45
-    },
-    {
-     "id": "uf1i_3",
-     "text": "You could walk the tunnels. But there is a lighter way, when groups only ever merge.",
-     "start": 13.15,
-     "end": 18.3
-    },
-    {
-     "id": "uf1i_4",
-     "text": "What if every group had one leader, and every burrow could find it? Your turn.",
-     "start": 19,
-     "end": 23.43
-    }
-   ],
-   "pauses": []
-  },
-  "uf1s": {
-   "src": "videos/uf1s.mp4",
-   "title": "Find the leader of each",
-   "duration": 74.6,
-   "lines": [
-    {
-     "id": "uf1s_1",
-     "text": "Every burrow stores its parent. A burrow that is its own parent, is the leader of its group.",
-     "start": 0.2,
-     "end": 5.89
-    },
-    {
-     "id": "uf1s_2",
-     "text": "Find follows the parents up to the leader. Union points one leader at the other.",
-     "start": 6.64,
-     "end": 11.32
-    },
-    {
-     "id": "uf1s_3",
-     "text": "Line two. Every burrow starts as its own parent. Five groups of one.",
-     "start": 12.07,
-     "end": 16.84
-    },
-    {
-     "id": "uf1s_4",
-     "text": "The first tunnel joins zero and one. Both are leaders. Line eight points zero at one.",
-     "start": 17.59,
-     "end": 23.32
-    },
-    {
-     "id": "uf1s_5",
-     "text": "The second tunnel joins three and four. Three now points at four.",
-     "start": 24.07,
-     "end": 27.99
-    },
-    {
-     "id": "uf1s_6",
-     "text": "The third joins one and two. The leader of one is one itself. It now points at two.",
-     "start": 28.74,
-     "end": 34.47
-    },
-    {
-     "id": "uf1s_7",
-     "text": "Now the question. Are zero and two connected? Find zero. Its parent is one. Not a leader. Where does find go next?",
-     "start": 35.22,
-     "end": 42.66
-    },
-    {
-     "id": "uf1s_8",
-     "text": "It climbs. To one. Then to two. Two is its own parent. So the leader of zero is two.",
-     "start": 43.86,
-     "end": 49.52
-    },
-    {
-     "id": "uf1s_9",
-     "text": "The leader of two is two. The same leader. Line ten returns true.",
-     "start": 50.27,
-     "end": 54.56
-    },
-    {
-     "id": "uf1s_10",
-     "text": "Each find climbs a chain of parents. Short in practice. And with one small trick, two puzzles from now, almost a single step.",
-     "start": 55.66,
-     "end": 63.68
-    },
-    {
-     "id": "uf1s_11",
-     "text": "One array of n numbers. O of n space.",
-     "start": 64.43,
-     "end": 67.47
-    },
-    {
-     "id": "uf1s_12",
-     "text": "A social app answers \"do you two share a circle of friends\" exactly like this.",
-     "start": 68.22,
-     "end": 73
-    }
-   ],
-   "pauses": [
-    {
-     "id": "uf1s-q",
-     "t": 42.86
-    }
-   ]
-  },
-  "uf2i": {
-   "src": "videos/uf2i.mp4",
-   "title": "The Extra Tunnel",
-   "duration": 24.92,
-   "lines": [
-    {
-     "id": "uf2i_1",
-     "text": "Tunnels are dug one at a time. Zero to one. One to two. Zero to two. Two to three.",
-     "start": 0.2,
-     "end": 6.1
-    },
-    {
-     "id": "uf2i_2",
-     "text": "One of them was a waste. It joined two burrows that were already connected. Return the first such tunnel, or null.",
-     "start": 6.8,
-     "end": 13.69
-    },
-    {
-     "id": "uf2i_3",
-     "text": "Here it is zero to two. The tunnels through one had already joined them.",
-     "start": 14.39,
-     "end": 18.49
-    },
-    {
-     "id": "uf2i_4",
-     "text": "Just before a tunnel is dug, what do the two leaders tell you? Your turn.",
-     "start": 19.19,
-     "end": 23.32
-    }
-   ],
-   "pauses": []
-  },
-  "uf2s": {
-   "src": "videos/uf2s.mp4",
-   "title": "Same leader? Then it is extra",
-   "duration": 54.53,
-   "lines": [
-    {
-     "id": "uf2s_1",
-     "text": "Before digging, find the leader of each end.",
-     "start": 0.2,
-     "end": 2.7
-    },
-    {
-     "id": "uf2s_2",
-     "text": "The same leader means they are already connected. This tunnel adds nothing. Different leaders, join them.",
-     "start": 3.45,
-     "end": 9.6
-    },
-    {
-     "id": "uf2s_3",
-     "text": "Every burrow starts as its own leader.",
-     "start": 10.35,
-     "end": 12.54
-    },
-    {
-     "id": "uf2s_4",
-     "text": "Tunnel zero to one. The leaders are zero, and one. Different. So the tunnel is useful, and line eleven joins them.",
-     "start": 13.29,
-     "end": 20.99
-    },
-    {
-     "id": "uf2s_5",
-     "text": "Tunnel one to two. Leaders one, and two. Different. Joined.",
-     "start": 21.74,
-     "end": 25.4
-    },
-    {
-     "id": "uf2s_6",
-     "text": "Tunnel zero to two. Find zero climbs to one, then to two. Find two is two. What does that mean?",
-     "start": 26.15,
-     "end": 32.53
-    },
-    {
-     "id": "uf2s_7",
-     "text": "They were already connected. This tunnel is the extra one. Line ten returns it.",
-     "start": 33.73,
-     "end": 38.82
-    },
-    {
-     "id": "uf2s_8",
-     "text": "Two finds for every tunnel. Each one a short climb.",
-     "start": 39.92,
-     "end": 43.25
-    },
-    {
-     "id": "uf2s_9",
-     "text": "One array of n numbers.",
-     "start": 44,
-     "end": 45.74
-    },
-    {
-     "id": "uf2s_10",
-     "text": "A network planner uses this to spot a cable that adds nothing. Both of its ends were already connected.",
-     "start": 46.49,
-     "end": 52.93
-    }
-   ],
-   "pauses": [
-    {
-     "id": "uf2s-q",
-     "t": 32.73
-    }
-   ]
-  },
-  "uf3i": {
-   "src": "videos/uf3i.mp4",
-   "title": "Groups After Every Tunnel",
-   "duration": 18.92,
-   "lines": [
-    {
-     "id": "uf3i_1",
-     "text": "Four burrows, so four groups. Tunnels are dug one at a time.",
-     "start": 0.2,
-     "end": 4.08
-    },
-    {
-     "id": "uf3i_2",
-     "text": "After each tunnel, write down how many separate groups are left.",
-     "start": 4.78,
-     "end": 8.31
-    },
-    {
-     "id": "uf3i_3",
-     "text": "The first tunnel joins zero and one. Three groups are left.",
-     "start": 9.01,
-     "end": 12.73
-    },
-    {
-     "id": "uf3i_4",
-     "text": "Not every tunnel changes the count. Which ones do? Your turn.",
-     "start": 13.43,
-     "end": 17.32
-    }
-   ],
-   "pauses": []
-  },
-  "uf3s": {
-   "src": "videos/uf3s.mp4",
-   "title": "A join removes one group",
-   "duration": 72.4,
-   "lines": [
-    {
-     "id": "uf3s_1",
-     "text": "Start with n groups. Every tunnel that really joins two groups, removes one.",
-     "start": 0.2,
-     "end": 5.2
-    },
-    {
-     "id": "uf3s_2",
-     "text": "A tunnel inside one group changes nothing. The leaders tell the two cases apart.",
-     "start": 5.95,
-     "end": 10.82
-    },
-    {
-     "id": "uf3s_3",
-     "text": "Four burrows. Four groups. Line ten starts the counter at n.",
-     "start": 11.57,
-     "end": 15.53
-    },
-    {
-     "id": "uf3s_4",
-     "text": "Tunnel zero to one. Different leaders. Joined. One group fewer. Three.",
-     "start": 16.28,
-     "end": 20.49
-    },
-    {
-     "id": "uf3s_5",
-     "text": "Tunnel two to three. Different leaders. Joined. Two groups.",
-     "start": 21.24,
-     "end": 24.73
-    },
-    {
-     "id": "uf3s_6",
-     "text": "Tunnel one to zero. Find one is one. Find zero climbs to one. The same leader. What is written?",
-     "start": 25.48,
-     "end": 31.96
-    },
-    {
-     "id": "uf3s_7",
-     "text": "Two again. Nothing merged, so the counter did not move.",
-     "start": 33.16,
-     "end": 36.49
-    },
-    {
-     "id": "uf3s_8",
-     "text": "Tunnel one to three. Leaders one, and three. Joined. One group. Everything is connected.",
-     "start": 37.24,
-     "end": 42.87
-    },
-    {
-     "id": "uf3s_9",
-     "text": "One line is new. Line five. While climbing, each burrow is pointed at its grandparent. So chains get shorter, every time they are used.",
-     "start": 43.97,
-     "end": 53.11
-    },
-    {
-     "id": "uf3s_10",
-     "text": "With that shortcut, a find is almost a single step. All the tunnels together cost close to O of n.",
-     "start": 53.86,
-     "end": 60.13
-    },
-    {
-     "id": "uf3s_11",
-     "text": "The parent array, and the output.",
-     "start": 60.88,
-     "end": 62.79
-    },
-    {
-     "id": "uf3s_12",
-     "text": "An online game does this as players link up. After every new friendship, it knows how many separate teams are left.",
-     "start": 63.54,
-     "end": 70.8
-    }
-   ],
-   "pauses": [
-    {
-     "id": "uf3s-q",
-     "t": 32.16
-    }
-   ]
-  },
   "to1i": {
    "src": "videos/to1i.mp4",
    "title": "Can It All Be Done?",
@@ -20145,6 +19806,801 @@ window.BURROW = {
     {
      "id": "to3s-q",
      "t": 33.88
+    }
+   ]
+  },
+  "sp0": {
+   "src": "videos/sp0.mp4",
+   "title": "When Tunnels Have Different Lengths",
+   "duration": 39.62,
+   "lines": [
+    {
+     "id": "dw1",
+     "text": "Chapter twenty one. Shortest paths, when the tunnels have different lengths.",
+     "start": 0.2,
+     "end": 4.52
+    },
+    {
+     "id": "dw2",
+     "text": "Going level by level finds the fewest tunnels. But the fewest tunnels is not always the shortest walk. One long tunnel can cost more than three short ones.",
+     "start": 5.22,
+     "end": 15.01
+    },
+    {
+     "id": "dw3",
+     "text": "So every tunnel gets a number. Its cost. And the question becomes: what is the cheapest way from here to there?",
+     "start": 15.91,
+     "end": 22.81
+    },
+    {
+     "id": "dw4",
+     "text": "The answer is one rule, and a heap. One lesson, and three puzzles.",
+     "start": 23.71,
+     "end": 27.96
+    },
+    {
+     "id": "dw5",
+     "text": "A map app picks your route this way. A game character walks around a swamp instead of through it. And the internet sends your data along the fastest links.",
+     "start": 28.86,
+     "end": 38.02
+    }
+   ],
+   "pauses": []
+  },
+  "spt1": {
+   "src": "videos/spt1.mp4",
+   "title": "Always Take the Cheapest Next",
+   "duration": 81.67,
+   "lines": [
+    {
+     "id": "dx1",
+     "text": "Pip wants the cheapest way from burrow zero to burrow three. Every tunnel has a cost.",
+     "start": 0.2,
+     "end": 5.65
+    },
+    {
+     "id": "dx2",
+     "text": "Keep one number for each burrow. The cheapest cost found so far. Zero for the start. Unknown for the rest.",
+     "start": 6.55,
+     "end": 13.5
+    },
+    {
+     "id": "dx3",
+     "text": "Now the rule. Always take the unfinished burrow with the smallest cost. First, that is the start. Its tunnels give burrow one a cost of four, and burrow two a cost of one.",
+     "start": 14.4,
+     "end": 25.64
+    },
+    {
+     "id": "dx4",
+     "text": "The smallest is burrow two, at one. Take it. From two, burrow one costs one plus two. Three. Better than four. So the four is replaced.",
+     "start": 26.54,
+     "end": 35.56
+    },
+    {
+     "id": "dx5",
+     "text": "And burrow three costs one plus eight. Nine. So which burrow is taken next?",
+     "start": 36.46,
+     "end": 41.4
+    },
+    {
+     "id": "dx6",
+     "text": "Burrow one, at three. It is the smallest. From there, burrow three costs three plus five. Eight. Better than nine.",
+     "start": 42.6,
+     "end": 49.96
+    },
+    {
+     "id": "dx7",
+     "text": "Burrow three is next, at eight. And that number is final. Any other way there, would pass through something that already costs at least as much.",
+     "start": 50.86,
+     "end": 59.5
+    },
+    {
+     "id": "dx8",
+     "text": "To always get the smallest quickly, keep the costs in a heap. Push a burrow whenever its cost improves. Pop the smallest.",
+     "start": 60.5,
+     "end": 68.31
+    },
+    {
+     "id": "dx9",
+     "text": "This method is famous. Its name is on the screen. It needs one thing. No tunnel may have a negative cost.",
+     "start": 69.21,
+     "end": 76.3
+    },
+    {
+     "id": "dx10",
+     "text": "Smallest first. Improve the neighbours. Repeat.",
+     "start": 77.2,
+     "end": 80.07
+    }
+   ],
+   "pauses": [
+    {
+     "id": "spt1-q1",
+     "t": 41.6
+    }
+   ]
+  },
+  "uf1i": {
+   "src": "videos/uf1i.mp4",
+   "title": "The Same Group?",
+   "duration": 25.04,
+   "lines": [
+    {
+     "id": "uf1i_1",
+     "text": "Five burrows. Tunnels are dug between them, one at a time. Zero to one. Three to four. One to two.",
+     "start": 0.2,
+     "end": 7.11
+    },
+    {
+     "id": "uf1i_2",
+     "text": "Return true if two burrows end up in the same group. Here, zero and two.",
+     "start": 7.81,
+     "end": 12.45
+    },
+    {
+     "id": "uf1i_3",
+     "text": "You could walk the tunnels. But there is a lighter way, when groups only ever merge.",
+     "start": 13.15,
+     "end": 18.3
+    },
+    {
+     "id": "uf1i_4",
+     "text": "What if every group had one leader, and every burrow could find it? Your turn.",
+     "start": 19,
+     "end": 23.43
+    }
+   ],
+   "pauses": []
+  },
+  "uf1s": {
+   "src": "videos/uf1s.mp4",
+   "title": "Find the leader of each",
+   "duration": 74.6,
+   "lines": [
+    {
+     "id": "uf1s_1",
+     "text": "Every burrow stores its parent. A burrow that is its own parent, is the leader of its group.",
+     "start": 0.2,
+     "end": 5.89
+    },
+    {
+     "id": "uf1s_2",
+     "text": "Find follows the parents up to the leader. Union points one leader at the other.",
+     "start": 6.64,
+     "end": 11.32
+    },
+    {
+     "id": "uf1s_3",
+     "text": "Line two. Every burrow starts as its own parent. Five groups of one.",
+     "start": 12.07,
+     "end": 16.84
+    },
+    {
+     "id": "uf1s_4",
+     "text": "The first tunnel joins zero and one. Both are leaders. Line eight points zero at one.",
+     "start": 17.59,
+     "end": 23.32
+    },
+    {
+     "id": "uf1s_5",
+     "text": "The second tunnel joins three and four. Three now points at four.",
+     "start": 24.07,
+     "end": 27.99
+    },
+    {
+     "id": "uf1s_6",
+     "text": "The third joins one and two. The leader of one is one itself. It now points at two.",
+     "start": 28.74,
+     "end": 34.47
+    },
+    {
+     "id": "uf1s_7",
+     "text": "Now the question. Are zero and two connected? Find zero. Its parent is one. Not a leader. Where does find go next?",
+     "start": 35.22,
+     "end": 42.66
+    },
+    {
+     "id": "uf1s_8",
+     "text": "It climbs. To one. Then to two. Two is its own parent. So the leader of zero is two.",
+     "start": 43.86,
+     "end": 49.52
+    },
+    {
+     "id": "uf1s_9",
+     "text": "The leader of two is two. The same leader. Line ten returns true.",
+     "start": 50.27,
+     "end": 54.56
+    },
+    {
+     "id": "uf1s_10",
+     "text": "Each find climbs a chain of parents. Short in practice. And with one small trick, two puzzles from now, almost a single step.",
+     "start": 55.66,
+     "end": 63.68
+    },
+    {
+     "id": "uf1s_11",
+     "text": "One array of n numbers. O of n space.",
+     "start": 64.43,
+     "end": 67.47
+    },
+    {
+     "id": "uf1s_12",
+     "text": "A social app answers \"do you two share a circle of friends\" exactly like this.",
+     "start": 68.22,
+     "end": 73
+    }
+   ],
+   "pauses": [
+    {
+     "id": "uf1s-q",
+     "t": 42.86
+    }
+   ]
+  },
+  "uf2i": {
+   "src": "videos/uf2i.mp4",
+   "title": "The Extra Tunnel",
+   "duration": 24.92,
+   "lines": [
+    {
+     "id": "uf2i_1",
+     "text": "Tunnels are dug one at a time. Zero to one. One to two. Zero to two. Two to three.",
+     "start": 0.2,
+     "end": 6.1
+    },
+    {
+     "id": "uf2i_2",
+     "text": "One of them was a waste. It joined two burrows that were already connected. Return the first such tunnel, or null.",
+     "start": 6.8,
+     "end": 13.69
+    },
+    {
+     "id": "uf2i_3",
+     "text": "Here it is zero to two. The tunnels through one had already joined them.",
+     "start": 14.39,
+     "end": 18.49
+    },
+    {
+     "id": "uf2i_4",
+     "text": "Just before a tunnel is dug, what do the two leaders tell you? Your turn.",
+     "start": 19.19,
+     "end": 23.32
+    }
+   ],
+   "pauses": []
+  },
+  "uf2s": {
+   "src": "videos/uf2s.mp4",
+   "title": "Same leader? Then it is extra",
+   "duration": 54.53,
+   "lines": [
+    {
+     "id": "uf2s_1",
+     "text": "Before digging, find the leader of each end.",
+     "start": 0.2,
+     "end": 2.7
+    },
+    {
+     "id": "uf2s_2",
+     "text": "The same leader means they are already connected. This tunnel adds nothing. Different leaders, join them.",
+     "start": 3.45,
+     "end": 9.6
+    },
+    {
+     "id": "uf2s_3",
+     "text": "Every burrow starts as its own leader.",
+     "start": 10.35,
+     "end": 12.54
+    },
+    {
+     "id": "uf2s_4",
+     "text": "Tunnel zero to one. The leaders are zero, and one. Different. So the tunnel is useful, and line eleven joins them.",
+     "start": 13.29,
+     "end": 20.99
+    },
+    {
+     "id": "uf2s_5",
+     "text": "Tunnel one to two. Leaders one, and two. Different. Joined.",
+     "start": 21.74,
+     "end": 25.4
+    },
+    {
+     "id": "uf2s_6",
+     "text": "Tunnel zero to two. Find zero climbs to one, then to two. Find two is two. What does that mean?",
+     "start": 26.15,
+     "end": 32.53
+    },
+    {
+     "id": "uf2s_7",
+     "text": "They were already connected. This tunnel is the extra one. Line ten returns it.",
+     "start": 33.73,
+     "end": 38.82
+    },
+    {
+     "id": "uf2s_8",
+     "text": "Two finds for every tunnel. Each one a short climb.",
+     "start": 39.92,
+     "end": 43.25
+    },
+    {
+     "id": "uf2s_9",
+     "text": "One array of n numbers.",
+     "start": 44,
+     "end": 45.74
+    },
+    {
+     "id": "uf2s_10",
+     "text": "A network planner uses this to spot a cable that adds nothing. Both of its ends were already connected.",
+     "start": 46.49,
+     "end": 52.93
+    }
+   ],
+   "pauses": [
+    {
+     "id": "uf2s-q",
+     "t": 32.73
+    }
+   ]
+  },
+  "uf3i": {
+   "src": "videos/uf3i.mp4",
+   "title": "Groups After Every Tunnel",
+   "duration": 18.92,
+   "lines": [
+    {
+     "id": "uf3i_1",
+     "text": "Four burrows, so four groups. Tunnels are dug one at a time.",
+     "start": 0.2,
+     "end": 4.08
+    },
+    {
+     "id": "uf3i_2",
+     "text": "After each tunnel, write down how many separate groups are left.",
+     "start": 4.78,
+     "end": 8.31
+    },
+    {
+     "id": "uf3i_3",
+     "text": "The first tunnel joins zero and one. Three groups are left.",
+     "start": 9.01,
+     "end": 12.73
+    },
+    {
+     "id": "uf3i_4",
+     "text": "Not every tunnel changes the count. Which ones do? Your turn.",
+     "start": 13.43,
+     "end": 17.32
+    }
+   ],
+   "pauses": []
+  },
+  "uf3s": {
+   "src": "videos/uf3s.mp4",
+   "title": "A join removes one group",
+   "duration": 72.4,
+   "lines": [
+    {
+     "id": "uf3s_1",
+     "text": "Start with n groups. Every tunnel that really joins two groups, removes one.",
+     "start": 0.2,
+     "end": 5.2
+    },
+    {
+     "id": "uf3s_2",
+     "text": "A tunnel inside one group changes nothing. The leaders tell the two cases apart.",
+     "start": 5.95,
+     "end": 10.82
+    },
+    {
+     "id": "uf3s_3",
+     "text": "Four burrows. Four groups. Line ten starts the counter at n.",
+     "start": 11.57,
+     "end": 15.53
+    },
+    {
+     "id": "uf3s_4",
+     "text": "Tunnel zero to one. Different leaders. Joined. One group fewer. Three.",
+     "start": 16.28,
+     "end": 20.49
+    },
+    {
+     "id": "uf3s_5",
+     "text": "Tunnel two to three. Different leaders. Joined. Two groups.",
+     "start": 21.24,
+     "end": 24.73
+    },
+    {
+     "id": "uf3s_6",
+     "text": "Tunnel one to zero. Find one is one. Find zero climbs to one. The same leader. What is written?",
+     "start": 25.48,
+     "end": 31.96
+    },
+    {
+     "id": "uf3s_7",
+     "text": "Two again. Nothing merged, so the counter did not move.",
+     "start": 33.16,
+     "end": 36.49
+    },
+    {
+     "id": "uf3s_8",
+     "text": "Tunnel one to three. Leaders one, and three. Joined. One group. Everything is connected.",
+     "start": 37.24,
+     "end": 42.87
+    },
+    {
+     "id": "uf3s_9",
+     "text": "One line is new. Line five. While climbing, each burrow is pointed at its grandparent. So chains get shorter, every time they are used.",
+     "start": 43.97,
+     "end": 53.11
+    },
+    {
+     "id": "uf3s_10",
+     "text": "With that shortcut, a find is almost a single step. All the tunnels together cost close to O of n.",
+     "start": 53.86,
+     "end": 60.13
+    },
+    {
+     "id": "uf3s_11",
+     "text": "The parent array, and the output.",
+     "start": 60.88,
+     "end": 62.79
+    },
+    {
+     "id": "uf3s_12",
+     "text": "An online game does this as players link up. After every new friendship, it knows how many separate teams are left.",
+     "start": 63.54,
+     "end": 70.8
+    }
+   ],
+   "pauses": [
+    {
+     "id": "uf3s-q",
+     "t": 32.16
+    }
+   ]
+  },
+  "sp1i": {
+   "src": "videos/sp1i.mp4",
+   "title": "The Cheapest Way",
+   "duration": 26,
+   "lines": [
+    {
+     "id": "sp1i_1",
+     "text": "Four burrows. And now every tunnel has a number. What it costs to walk through it.",
+     "start": 0.2,
+     "end": 5.21
+    },
+    {
+     "id": "sp1i_2",
+     "text": "Return the smallest total cost, from one burrow to another. Here, from zero to three.",
+     "start": 5.91,
+     "end": 11.29
+    },
+    {
+     "id": "sp1i_3",
+     "text": "Three tunnels, costing one, two and five, beat two tunnels costing four and five. Eight, against nine.",
+     "start": 11.99,
+     "end": 18.32
+    },
+    {
+     "id": "sp1i_4",
+     "text": "So counting tunnels is not enough. Which burrow should you handle next? Your turn.",
+     "start": 19.02,
+     "end": 24.4
+    }
+   ],
+   "pauses": []
+  },
+  "sp1s": {
+   "src": "videos/sp1s.mp4",
+   "title": "Pop the cheapest, improve the rest",
+   "duration": 79.68,
+   "lines": [
+    {
+     "id": "sp1s_1",
+     "text": "Keep, for every burrow, the cheapest cost found so far. Then always handle the burrow with the smallest cost.",
+     "start": 0.2,
+     "end": 6.92
+    },
+    {
+     "id": "sp1s_2",
+     "text": "From it, try each tunnel. If that gives a neighbour a cheaper cost, write it down, and push it on a heap.",
+     "start": 7.67,
+     "end": 13.72
+    },
+    {
+     "id": "sp1s_3",
+     "text": "Lines two to six build the neighbour lists, with the costs. Then the start gets a cost of zero, and goes on the heap.",
+     "start": 14.47,
+     "end": 21.33
+    },
+    {
+     "id": "sp1s_4",
+     "text": "The heap gives burrow zero. Its tunnels give burrow one a cost of four, and burrow two a cost of one.",
+     "start": 22.08,
+     "end": 28.82
+    },
+    {
+     "id": "sp1s_5",
+     "text": "The smallest is burrow two, at one. From two, burrow one costs one plus two. Three. That beats four.",
+     "start": 29.57,
+     "end": 36.17
+    },
+    {
+     "id": "sp1s_6",
+     "text": "Burrow one, at three. From there, burrow three costs three plus five. Eight. That beats nine.",
+     "start": 36.92,
+     "end": 43.08
+    },
+    {
+     "id": "sp1s_7",
+     "text": "Now the heap gives four, for burrow one. But the best cost for one is already three. What should happen?",
+     "start": 43.83,
+     "end": 49.82
+    },
+    {
+     "id": "sp1s_8",
+     "text": "It is skipped. An old entry. Next comes eight, for burrow three. That is the target. Line thirteen returns eight.",
+     "start": 51.02,
+     "end": 58.19
+    },
+    {
+     "id": "sp1s_9",
+     "text": "Every tunnel can push one entry onto the heap, and each push or pop costs log n. O of tunnels, times log n.",
+     "start": 59.29,
+     "end": 66.42
+    },
+    {
+     "id": "sp1s_10",
+     "text": "The lists, the best costs, and the heap.",
+     "start": 67.17,
+     "end": 69.3
+    },
+    {
+     "id": "sp1s_11",
+     "text": "A map app finds your fastest route this way. Every road has a travel time, and the cheapest next road is always tried first.",
+     "start": 70.05,
+     "end": 78.08
+    }
+   ],
+   "pauses": [
+    {
+     "id": "sp1s-q",
+     "t": 50.02
+    }
+   ]
+  },
+  "sp2i": {
+   "src": "videos/sp2i.mp4",
+   "title": "When Does Everyone Know?",
+   "duration": 23.18,
+   "lines": [
+    {
+     "id": "sp2i_1",
+     "text": "Pip has news, in burrow zero. It travels through every tunnel at once. The number is how long a tunnel takes.",
+     "start": 0.2,
+     "end": 7.25
+    },
+    {
+     "id": "sp2i_2",
+     "text": "Return the moment at which the last burrow has heard it. Or minus one, if some burrow never does.",
+     "start": 7.95,
+     "end": 14.13
+    },
+    {
+     "id": "sp2i_3",
+     "text": "Burrow three hears it last. Two, plus seven. Nine.",
+     "start": 14.83,
+     "end": 18.02
+    },
+    {
+     "id": "sp2i_4",
+     "text": "When does any one burrow hear the news? Your turn.",
+     "start": 18.72,
+     "end": 21.58
+    }
+   ],
+   "pauses": []
+  },
+  "sp2s": {
+   "src": "videos/sp2s.mp4",
+   "title": "The largest of the cheapest",
+   "duration": 82.55,
+   "lines": [
+    {
+     "id": "sp2s_1",
+     "text": "A burrow hears the news at its cheapest cost from the start. So find the cheapest cost to every burrow.",
+     "start": 0.2,
+     "end": 5.95
+    },
+    {
+     "id": "sp2s_2",
+     "text": "It is the same search, with no target. Let it run until the heap is empty. The answer is the largest cost.",
+     "start": 6.7,
+     "end": 13.6
+    },
+    {
+     "id": "sp2s_3",
+     "text": "The same start. Lists with costs. Zero for the start, on the heap.",
+     "start": 14.35,
+     "end": 18.53
+    },
+    {
+     "id": "sp2s_4",
+     "text": "Burrow zero comes out. Burrow one gets two. Burrow two gets six.",
+     "start": 19.28,
+     "end": 23.78
+    },
+    {
+     "id": "sp2s_5",
+     "text": "Burrow one, at two. Burrow two improves, to two plus three. Five. And burrow three gets nine.",
+     "start": 24.53,
+     "end": 31.07
+    },
+    {
+     "id": "sp2s_6",
+     "text": "Burrow two, at five. Burrow four gets six. The old six for burrow two is skipped, when it comes out.",
+     "start": 31.82,
+     "end": 38.41
+    },
+    {
+     "id": "sp2s_7",
+     "text": "Burrow four, at six. Its tunnel to three would give six plus four. Ten. And three already has nine. What happens?",
+     "start": 39.16,
+     "end": 46.91
+    },
+    {
+     "id": "sp2s_8",
+     "text": "Nothing. Ten is not better. Burrow three comes out at nine, and the heap is empty.",
+     "start": 48.11,
+     "end": 53.47
+    },
+    {
+     "id": "sp2s_9",
+     "text": "Line twenty one takes the largest. Nine. If it were still infinity, a burrow was never reached, and the answer is minus one.",
+     "start": 54.22,
+     "end": 62.5
+    },
+    {
+     "id": "sp2s_10",
+     "text": "Every tunnel can push one entry onto the heap, and each push or pop costs log n. O of tunnels, times log n.",
+     "start": 63.6,
+     "end": 70.72
+    },
+    {
+     "id": "sp2s_11",
+     "text": "The lists, the best costs, and the heap.",
+     "start": 71.47,
+     "end": 73.61
+    },
+    {
+     "id": "sp2s_12",
+     "text": "Network engineers ask this. If one server sends an update, how long until every server has it?",
+     "start": 74.36,
+     "end": 80.95
+    }
+   ],
+   "pauses": [
+    {
+     "id": "sp2s-q",
+     "t": 47.11
+    }
+   ]
+  },
+  "sp3i": {
+   "src": "videos/sp3i.mp4",
+   "title": "Across the Field",
+   "duration": 24.27,
+   "lines": [
+    {
+     "id": "sp3i_1",
+     "text": "A field of nine squares. Each number is the effort it costs to stand on that square.",
+     "start": 0.2,
+     "end": 5.34
+    },
+    {
+     "id": "sp3i_2",
+     "text": "Walk from the top left to the bottom right. Up, down, left or right. Return the smallest total effort.",
+     "start": 6.04,
+     "end": 12.33
+    },
+    {
+     "id": "sp3i_3",
+     "text": "Along the top, then down the right side. One, three, one, one, one. Seven.",
+     "start": 13.03,
+     "end": 18.02
+    },
+    {
+     "id": "sp3i_4",
+     "text": "A grid is a graph. So which square should you handle next? Your turn.",
+     "start": 18.72,
+     "end": 22.67
+    }
+   ],
+   "pauses": []
+  },
+  "sp3s": {
+   "src": "videos/sp3s.mp4",
+   "title": "The same search, on squares",
+   "duration": 76.41,
+   "lines": [
+    {
+     "id": "sp3s_1",
+     "text": "A grid is a graph. Each square is a node. Stepping onto a neighbour costs the number on that neighbour.",
+     "start": 0.2,
+     "end": 6.3
+    },
+    {
+     "id": "sp3s_2",
+     "text": "So it is the same search. Always take the cheapest square known so far, and try its four neighbours.",
+     "start": 7.05,
+     "end": 13.28
+    },
+    {
+     "id": "sp3s_3",
+     "text": "The start costs its own number. One. It goes on the heap.",
+     "start": 14.03,
+     "end": 17.73
+    },
+    {
+     "id": "sp3s_4",
+     "text": "It comes out. The square below costs one plus one. Two. The square to the right, one plus three. Four.",
+     "start": 18.48,
+     "end": 25.26
+    },
+    {
+     "id": "sp3s_5",
+     "text": "The cheapest is the square below, at two. Its neighbours both cost eight. Two plus six.",
+     "start": 26.01,
+     "end": 31.58
+    },
+    {
+     "id": "sp3s_6",
+     "text": "Three entries on the heap. Four, eight, and eight. Which square is taken next?",
+     "start": 32.33,
+     "end": 36.81
+    },
+    {
+     "id": "sp3s_7",
+     "text": "The top middle, at four. It gives the top right corner a cost of five.",
+     "start": 38.01,
+     "end": 42.37
+    },
+    {
+     "id": "sp3s_8",
+     "text": "Then five. Then six, one square down. Then seven. That is the bottom right corner. Line nine returns seven.",
+     "start": 43.12,
+     "end": 50.39
+    },
+    {
+     "id": "sp3s_9",
+     "text": "The two eights were never taken. The search stopped before it needed them.",
+     "start": 51.49,
+     "end": 55.65
+    },
+    {
+     "id": "sp3s_10",
+     "text": "Each square can be pushed a few times, and each push costs log of the squares. O of squares, times log.",
+     "start": 56.4,
+     "end": 62.89
+    },
+    {
+     "id": "sp3s_11",
+     "text": "The best costs and the heap. O of R times C.",
+     "start": 63.64,
+     "end": 66.77
+    },
+    {
+     "id": "sp3s_12",
+     "text": "A game character crosses a map this way. Grass costs little, a swamp costs a lot, and the cheapest walk goes around.",
+     "start": 67.52,
+     "end": 74.81
+    }
+   ],
+   "pauses": [
+    {
+     "id": "sp3s-q",
+     "t": 37.01
     }
    ]
   }

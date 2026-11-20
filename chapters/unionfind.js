@@ -4,8 +4,8 @@ window.CHAPTER = {
  "sub": "CHAPTER 20 · UNION-FIND",
  "key": "burrow-ch-unionfind",
  "next": {
-  "href": "index.html#chapters",
-  "label": "All chapters"
+  "href": "chapter.html?c=paths",
+  "label": "Chapter 21: Shortest Paths"
  },
  "prev": {
   "href": "chapter.html?c=topo",
