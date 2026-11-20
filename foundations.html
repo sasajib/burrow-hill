@@ -5,7 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
 <title>Burrow Hill Foundations</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;700;800&family=JetBrains+Mono:wght@500;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@500;700;800&family=JetBrains+Mono:wght@500;700&display=swap">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23FFC629'/%3E%3Cellipse cx='26' cy='21' rx='4.2' ry='10' transform='rotate(-12 26 21)' fill='%232B2620'/%3E%3Cellipse cx='38' cy='21' rx='4.2' ry='10' transform='rotate(12 38 21)' fill='%232B2620'/%3E%3Cpath d='M6 64C6 40 20 26 32 26s26 14 26 38z' fill='%23FFFAEC'/%3E%3Cpath d='M23 64V51a9 9 0 0 1 18 0v13z' fill='%232B2620'/%3E%3C/svg%3E">
 <style>
 /* layout: one column, a trail of four stops on top, one stage card below */
 :root{--sky:#FFC83D;--sun:#FFD96B;--plum:#2B1B4A;--plum2:#45306E;--coral:#FF6B5E;--coralD:#E24A3E;--teal:#12A594;--mint:#9BE8D0;--cream:#FFF6E0;--meadow:#8FDDBD;
@@ -175,16 +176,98 @@ pre,code{font-family:var(--mono);font-size:14px}
 body.vlock{overflow:hidden}
 @media(max-width:480px){.vbar{gap:5px;padding:5px 6px}.vbar button{min-width:34px;height:36px;padding:0 5px;font-size:12.5px}.vbar svg{width:18px;height:18px}.vtime{font-size:11px}}
 .spec{white-space:pre-wrap}
+
+/* ================= friendly v2 skin (Doop canvas 42fbItqWJL): honey accent on a light page, soft cards ================= */
+:root{--sky:#FFC629;--sun:#FFE08A;--plum:#2B2620;--plum2:#4A4238;--coral:#FFC629;--coralD:#D9482F;--teal:#2C8F62;--mint:#CDEBD8;--cream:#FFFAEC;--meadow:#DDF2E5;
+  --line:#F0E4C4;--soft:#FFF0BF;--ink2:#6E6557;--deep:#E3A400;--leaf:#2C8F62;--berry:#D9482F;--display:"Nunito",system-ui,sans-serif;--head:"Fredoka","Nunito",system-ui,sans-serif}
+body{background:var(--cream);font-weight:500}
+b,strong{font-weight:800}
+h1,h2,h3,.btn,.xp,.sub{font-family:var(--head)}
+.wrap{max-width:min(1180px,94vw)}
+header{flex-wrap:nowrap;gap:12px;margin-bottom:14px}
+header .back{flex:none;width:40px;height:40px;border-radius:50%;background:#fff;box-shadow:inset 0 0 0 1.5px var(--line);display:grid;place-items:center}
+header .lg{flex:none;display:block;line-height:0}
+header .ttl{min-width:0}
+h1{font-size:20px;font-weight:600;letter-spacing:-.2px;line-height:1.15;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sub{font-size:11.5px;letter-spacing:.8px;font-weight:500;color:var(--ink2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.xp{background:var(--soft);color:var(--plum);font-weight:600;padding:8px 14px;white-space:nowrap}
+h2{font-weight:600;letter-spacing:-.2px}
+/* steps: a slim bar, plus a list that opens */
+.trail{display:flex!important;gap:5px;margin-bottom:8px}
+.stop{flex:1;height:10px;padding:0;border:0;border-radius:99px;background:var(--line);box-shadow:none;position:relative;min-width:0}
+.stop>*{display:none!important}
+.stop:after{content:"";position:absolute;inset:-12px 0}
+.stop.done{background:var(--leaf)}
+.stop[aria-current="true"],.stop.done[aria-current="true"]{background:var(--sky);box-shadow:0 0 0 2px var(--deep)}
+.stop:disabled{opacity:1}
+.steps{margin-bottom:16px;font-size:14px;color:var(--ink2)}
+.steps summary{display:flex;justify-content:space-between;gap:12px;cursor:pointer;list-style:none;padding:4px 0}
+.steps summary::-webkit-details-marker{display:none}
+.steps summary u{font-family:var(--head);font-weight:600;color:var(--plum);text-underline-offset:3px;white-space:nowrap}
+#steplist{background:#fff;border-radius:16px;box-shadow:inset 0 0 0 1.5px var(--line);padding:6px;margin-top:8px;display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:2px}
+.srow{display:flex;gap:10px;align-items:center;text-align:left;border:0;background:none;border-radius:12px;padding:9px 10px;color:var(--plum);font-size:15px;min-width:0}
+.srow i{flex:none;width:22px;height:22px;border-radius:50%;box-shadow:inset 0 0 0 2px var(--line);display:grid;place-items:center;font-style:normal;font-size:12px;font-weight:800;color:#fff}
+.srow.done i{background:var(--leaf);box-shadow:none}
+.srow[aria-current="true"]{background:var(--soft)}.srow[aria-current="true"] i{background:var(--sky);box-shadow:none}
+.srow span{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.srow b{font-family:var(--head);font-weight:600}
+.srow:disabled{opacity:.45;cursor:not-allowed}
+.card{background:#fff;border:0;border-radius:24px;box-shadow:inset 0 0 0 1.5px var(--line);padding:22px}
+.vid:not(.fs){border:0;border-radius:20px;box-shadow:0 10px 24px rgba(43,38,32,.16)}
+.cap{font-family:var(--display);font-size:16px;font-weight:700;color:var(--plum)}
+.vctl{gap:8px;font-family:var(--display);font-weight:500;font-size:14px;color:var(--ink2)}
+.vctl span{margin-right:2px;letter-spacing:0;text-transform:none}
+.vctl button,.vctl button:first-of-type,.vctl button:last-of-type{font-family:var(--head);font-weight:600;border:0;margin-left:0;border-radius:99px;background:#fff;box-shadow:inset 0 0 0 1.5px var(--line);padding:6px 14px}
+.vctl button:active{background:var(--soft)}
+.quiz{background:rgba(43,38,32,.78)}
+.quiz .q,.quiz.below .q{background:var(--soft);border:0;border-radius:24px;box-shadow:none}
+.quiz h3{font-family:var(--head);font-weight:600;letter-spacing:1.4px;color:var(--ink2)}
+.quiz .ask{font-family:var(--head);font-weight:600;line-height:1.2}
+.opt{border:0;background:#fff;border-radius:16px;box-shadow:inset 0 0 0 1.5px var(--line),0 3px 0 var(--line);padding:13px 16px;min-height:52px}
+.opt.right{background:var(--meadow);box-shadow:inset 0 0 0 2px var(--leaf)}
+.opt.wrong{background:#FBD9D2;box-shadow:inset 0 0 0 2px var(--berry)}
+.btn{border:0;border-radius:99px;background:var(--sky);box-shadow:0 3px 0 var(--deep);font-weight:600;padding:11px 20px;color:var(--plum)}
+.btn.go{background:var(--sky)}
+.btn.quiet{background:#fff;box-shadow:inset 0 0 0 1.5px var(--line),0 3px 0 var(--line)}
+.btn:disabled{box-shadow:none;background:var(--line);color:var(--ink2);opacity:1}
+.vid.fs .quiz{background:var(--soft);border-left:0}
+.vid.fs .quiz .btn{border-radius:16px}
+textarea{border:0;border-radius:20px;padding:16px}
+.spec{background:#fff;border:0;border-radius:16px;box-shadow:inset 0 0 0 1.5px var(--line)}
+.exs{background:#fff;border-radius:16px;box-shadow:inset 0 0 0 1.5px var(--line);padding:4px 16px;margin:0 0 12px;font-family:var(--mono);font-size:14px}
+.exs div{display:flex;justify-content:space-between;gap:14px;padding:9px 0;flex-wrap:wrap}.exs div+div{border-top:1.5px solid var(--line)}.exs b{font-weight:700;margin-left:auto;text-align:right}
+.tests li{border:0;border-radius:12px;box-shadow:inset 0 0 0 1.5px var(--line);padding:8px 12px}
+.tests .ok{background:var(--meadow)}.tests .bad{background:#FBD9D2}
+.note{background:#FFF7DD;border-radius:0 12px 12px 0}
+.plan{border:0;background:var(--soft);border-radius:16px;padding:14px 18px}
+.plan b{font-family:var(--head);font-weight:600}.plan span{font-family:var(--display);font-size:13.5px;color:var(--ink2)}
+.hint{border:0;border-radius:12px;background:var(--meadow)}
+.sol,.keys{border-top:1.5px solid var(--line)}
+.stage{border:0;box-shadow:inset 0 0 0 1.5px var(--line);background:var(--soft);border-radius:16px}
+.stage.meadow{background:var(--meadow)}
+.vc,.valx,.vbox,.seenbox{border-width:2px}
+.sum div{border:0;box-shadow:inset 0 0 0 1.5px var(--line);border-radius:16px}
+.keys td{border:1.5px solid var(--line)}
+.keys h3{font-weight:600}
+a{color:var(--plum)}
+@media(max-width:700px){
+  .card{padding:16px;border-radius:20px;box-shadow:inset 0 0 0 1.5px var(--line)}
+  h1{font-size:17px}
+  .vid:not(.fs){border-radius:16px}
+  .quiz.below .q{padding:16px}
+  .acts{position:sticky;bottom:0;z-index:6;background:#fff;margin:12px -16px 0;padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));box-shadow:0 -1.5px 0 var(--line);flex-wrap:nowrap}
+  .acts .btn{flex:1;white-space:nowrap;padding:12px 10px;font-size:15px}
+  .acts #run{flex:1.3}
+}
 </style>
 </head>
 <body>
 <div class="wrap">
 <header>
-  <div><div class="sub">PART 0 · FOUNDATIONS</div><h1><a href="index.html" title="Back to the home page" style="color:inherit;text-decoration:none">Burrow Hill</a></h1></div>
-  <nav style="margin-left:auto;display:flex;flex-wrap:wrap;gap:6px 16px;font-family:var(--mono);font-weight:700;font-size:13px"><a href="index.html" style="color:var(--plum)">Home</a><a href="index.html#chapters" style="color:var(--plum)">All chapters</a><a href="chapter.html?c=arrays" style="color:var(--plum)">Chapter 1: Arrays →</a></nav>
-  <div class="xp" id="xp" aria-live="polite" style="margin-left:0">0 XP</div>
+  <a class="back" href="index.html#course" aria-label="All chapters" title="All chapters"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2B2620" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg></a><a class="lg" href="index.html" title="Burrow Hill home"><svg viewBox="0 0 64 64" width="38" height="38" role="img" aria-label="Burrow Hill"><defs><clipPath id="bhc"><rect width="64" height="64" rx="18"/></clipPath></defs><g clip-path="url(#bhc)"><rect width="64" height="64" fill="#FFC629"/><ellipse cx="26" cy="21" rx="4.2" ry="10" transform="rotate(-12 26 21)" fill="#2B2620"/><ellipse cx="38" cy="21" rx="4.2" ry="10" transform="rotate(12 38 21)" fill="#2B2620"/><path d="M2 66C2 40 18 26 32 26s30 14 30 40z" fill="#FFFAEC"/><path d="M23 66V51a9 9 0 0 1 18 0v15z" fill="#2B2620"/></g></svg></a><div class="ttl"><h1>Foundations</h1><div class="sub">Part 0 · how code runs, and what it costs</div></div>
+  <div class="xp" id="xp" aria-live="polite">0 XP</div>
 </header>
 <nav class="trail" id="trail" aria-label="Stages"></nav>
+<details class="steps" id="steps"><summary><span id="steplab"></span><u>All steps</u></summary><div id="steplist"></div></details>
 <main id="main"></main>
 </div>
 <script src="data.js"></script>
@@ -302,12 +385,29 @@ const SOLUTION = {
 };
 
 // ---------- trail ----------
+// the line under the step bar, and the list of steps that opens from it
+function drawSteps() {
+  const safe = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  const cur = Math.max(0, STAGES.findIndex((s) => s.id === S.at)), box = document.getElementById('steplist');
+  document.getElementById('steplab').textContent = 'Step ' + (cur + 1) + ' of ' + STAGES.length + ' · ' + STAGES[cur].label;
+  box.innerHTML = '';
+  STAGES.forEach((st, i) => { const b = h(`<button class="srow ${S.done[st.id] ? 'done' : ''}" ${unlocked(i) ? '' : 'disabled'} aria-current="${S.at === st.id}"><i>${S.done[st.id] ? '✓' : ''}</i><span><b>${safe(st.label)}</b> · ${safe(st.name)}</span></button>`);
+    b.onclick = () => { document.getElementById('steps').open = false; go(st.id); }; box.append(b); });
+}
+// examples "f(1) → 2      f(3) → 4" become one row each
+function specHTML(spec) {
+  const safe = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  const parts = String(spec).split(/\n|\s{3,}/).map((s) => s.trim()).filter(Boolean);
+  if (!parts.length || !parts.every((p) => p.includes('→') || /^\(.*\)$/.test(p))) return `<pre class="spec">${safe(spec)}</pre>`;
+  return `<div class="exs">${parts.map((p) => { const k = p.indexOf('→'); return k < 0 ? `<div><span style="color:var(--ink2)">${safe(p)}</span></div>` : `<div><span>${safe(p.slice(0, k).trim())}</span><b>${safe(p.slice(k + 1).trim())}</b></div>`; }).join('')}</div>`;
+}
 function drawTrail() {
   const t = $('#trail'); t.innerHTML = '';
   STAGES.forEach((st, i) => {
     const b = h(`<button class="stop ${S.done[st.id] ? 'done' : ''}" ${unlocked(i) ? '' : 'disabled'} aria-current="${S.at === st.id}"><span class="num">${S.done[st.id] ? '✓' : i + 1}</span><small><span class="full">${st.label}${S.done[st.id] ? ' · DONE' : ''}</span><span class="short">${st.short || st.label}</span></small><b>${st.name}</b></button>`);
     b.onclick = () => go(st.id); t.append(b);
   });
+  drawSteps();
 
 }
 function go(id) { S.at = id; save(); drawTrail(); const st = STAGES.find((s) => s.id === id) || STAGES[0]; ({ lesson, puzzle, solution, drill })[st.kind](st); window.scrollTo({ top: 0 }); }
@@ -483,11 +583,11 @@ function puzzle(st) {
   const id = st.id, P = PUZZLE[id], m = $('#main'); m.innerHTML = '';
   const review = S.solvedAt[id] && !S.seen['rev-' + id] && Date.now() - S.solvedAt[id] > 18 * 3600e3;
   const c = h(`<section class="card"><h2>${st.label}: ${P.title}</h2><div class="cols"><div class="l"></div><div class="r">
-    <p>${P.ask}</p><pre class="spec">${esc(P.spec)}</pre>
+    <p>${P.ask}</p>${specHTML(P.spec)}
     ${P.plan ? `<div class="plan"><b>Before you code, think it through</b><ol>${P.plan.map((t) => `<li>${esc(t)}</li>`).join('')}</ol><span>Stuck after that? The first hint is free.</span></div>` : ''}
     <label for="code-${id}" class="sub">YOUR CODE (JAVASCRIPT)</label>
     <textarea id="code-${id}" spellcheck="false" autocapitalize="off" autocomplete="off"></textarea>
-    <div class="row"><button class="btn go" id="run">Run tests</button><button class="btn" id="hint">Hint</button><button class="btn quiet" id="reset">Start over</button><button class="btn quiet" id="show">Show me the solution</button></div>
+    <div class="row acts"><button class="btn go" id="run">Run tests</button><button class="btn quiet" id="hint">Hint</button><button class="btn quiet" id="show">Solution</button></div><div class="row" style="margin-top:8px"><button class="btn quiet" id="reset" style="box-shadow:none;text-decoration:underline;padding:6px 4px;background:none">Start over</button></div>
     <div id="hints"></div><div id="res" aria-live="polite"></div></div></div><div id="walk"></div><div class="row" id="tail"></div></section>`);
   $('.l', c).append(player(st.video));
   const ta = $('textarea', c); ta.value = review ? P.start : (S.code[id] || P.start);
@@ -495,7 +595,7 @@ function puzzle(st) {
   ta.addEventListener('input', () => { S.code[id] = ta.value; save(); });
   ta.addEventListener('keydown', (e) => { if (e.key === 'Tab') { e.preventDefault(); const a = ta.selectionStart; ta.setRangeText('  ', a, ta.selectionEnd, 'end'); S.code[id] = ta.value; } });
   const used = () => S.hints[id] || 0;
-  const drawHints = () => { $('#hints', c).innerHTML = P.hints.slice(0, used()).map((t, i) => `<div class="hint"><b>Hint ${i + 1}.</b> ${esc(t)}</div>`).join(''); $('#hint', c).disabled = used() >= P.hints.length; $('#hint', c).textContent = used() >= P.hints.length ? 'No more hints' : (used() === 0 ? 'Hint (first one is free)' : `Hint (${P.hints.length - used()} left)`); };
+  const drawHints = () => { $('#hints', c).innerHTML = P.hints.slice(0, used()).map((t, i) => `<div class="hint"><b>Hint ${i + 1}.</b> ${esc(t)}</div>`).join(''); $('#hint', c).disabled = used() >= P.hints.length; $('#hint', c).textContent = used() >= P.hints.length ? 'No hints left' : (used() === 0 ? 'Hint' : `Hint (${P.hints.length - used()} left)`); };
   $('#hint', c).onclick = () => { S.hints[id] = used() + 1; save(); drawHints(); };
   $('#reset', c).onclick = () => { ta.value = P.start; S.code[id] = P.start; save(); $('#res', c).innerHTML = ''; ta.focus(); };
   $('#show', c).onclick = () => { S.seen['sol-' + id] = true; save(); go('s1'); };
