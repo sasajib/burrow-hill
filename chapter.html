@@ -388,6 +388,7 @@ function walk(P, host) {
       if (s.move) val['wc' + s.move[1]] = val['wc' + s.move[0]] ?? V.row[s.move[0]];
       for (const a of s.gone || []) gone['wc' + a] = 1; for (const a of s.show || []) delete gone['wc' + a];
       for (const [a, b] of Object.entries(s.set || {})) val[/^[a-z]/.test(a) ? 'w' + a : 'wc' + a] = b;
+      for (const a of s.free || []) delete cls[typeof a === 'string' ? 'w' + a : 'wc' + a];
       for (const a of s.ok || []) cls[typeof a === 'string' ? 'w' + a : 'wc' + a] = 'ok'; for (const a of s.bad || []) cls[typeof a === 'string' ? 'w' + a : 'wc' + a] = 'bad'; }
     const s = steps[i]; const hot = new Set((s.hot || []).map((a) => (typeof a === 'string' ? 'w' + a : 'wc' + a)));
     stage.querySelectorAll('.vc').forEach((el) => { el.className = 'vc ' + (hot.has(el.id) ? 'hot' : (cls[el.id] || '')); if (val[el.id] !== undefined) el.textContent = val[el.id]; if (TR) el.style.opacity = gone[el.id] ? 0 : 1; if (GRD && el.style.background) el.className = 'vc'; });

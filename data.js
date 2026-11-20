@@ -20648,6 +20648,1039 @@ window.BURROW = {
     }
    ]
   },
+  "bk0": {
+   "src": "videos/bk0.mp4",
+   "title": "Try It, Then Take It Back",
+   "duration": 38.01,
+   "lines": [
+    {
+     "id": "cb1",
+     "text": "Chapter twenty two. Backtracking. Part five starts here.",
+     "start": 0.2,
+     "end": 3.65
+    },
+    {
+     "id": "cb2",
+     "text": "Some puzzles ask for every possibility. Every order. Every group. Every way to place the pieces.",
+     "start": 4.35,
+     "end": 11.05
+    },
+    {
+     "id": "cb3",
+     "text": "There is no clever shortcut. You try a choice. You explore everything that follows. Then you take the choice back, and try the next one.",
+     "start": 11.95,
+     "end": 20.35
+    },
+    {
+     "id": "cb4",
+     "text": "It is the deep first walk you already know. The tree is just made of choices. Two lessons, and seven puzzles.",
+     "start": 21.25,
+     "end": 27.86
+    },
+    {
+     "id": "cb5",
+     "text": "A sudoku solver works this way. So does a program that fills a timetable. And a chess engine, looking a few moves ahead.",
+     "start": 28.76,
+     "end": 36.41
+    }
+   ],
+   "pauses": []
+  },
+  "bkt1": {
+   "src": "videos/bkt1.mp4",
+   "title": "Choose, Explore, Un-choose",
+   "duration": 67.03,
+   "lines": [
+    {
+     "id": "cx1",
+     "text": "Pip has three seeds. One, two, and three. Which groups of seeds could go in a bag? List every one.",
+     "start": 0.2,
+     "end": 6.54
+    },
+    {
+     "id": "cx2",
+     "text": "For each seed there are two choices. Take it. Or skip it.",
+     "start": 7.44,
+     "end": 10.68
+    },
+    {
+     "id": "cx3",
+     "text": "Draw the choices as a tree. At the top, the bag is empty. Go left, to take seed one. Go right, to skip it.",
+     "start": 11.58,
+     "end": 18.76
+    },
+    {
+     "id": "cx4",
+     "text": "The next level decides seed two. The level after that, seed three. Eight leaves. Eight different bags.",
+     "start": 19.66,
+     "end": 26.33
+    },
+    {
+     "id": "cx5",
+     "text": "The code walks this tree, deep first. It keeps one list. The path. Take one. Take two. Take three. A leaf. Save a copy.",
+     "start": 27.33,
+     "end": 35.19
+    },
+    {
+     "id": "cx6",
+     "text": "Now the step that gives the method its name. Go back up. And undo the last choice.",
+     "start": 36.19,
+     "end": 41.42
+    },
+    {
+     "id": "cx7",
+     "text": "So after backing up from that leaf, what is in the path?",
+     "start": 42.32,
+     "end": 45.62
+    },
+    {
+     "id": "cx8",
+     "text": "One, and two. The three is out again. Now the other choice. Skip three. Another leaf. Save it.",
+     "start": 46.82,
+     "end": 52.79
+    },
+    {
+     "id": "cx9",
+     "text": "Every call does the same three things. Choose. Explore. Un-choose.",
+     "start": 53.69,
+     "end": 58.03
+    },
+    {
+     "id": "cx10",
+     "text": "That is backtracking. A deep first walk over a tree of choices, with one path that grows, and shrinks.",
+     "start": 58.93,
+     "end": 65.43
+    }
+   ],
+   "pauses": [
+    {
+     "id": "bkt1-q1",
+     "t": 45.82
+    }
+   ]
+  },
+  "bkt2": {
+   "src": "videos/bkt2.mp4",
+   "title": "Cut the Branch Early",
+   "duration": 54.44,
+   "lines": [
+    {
+     "id": "cy1",
+     "text": "Pip needs seeds that weigh exactly five. The seeds weigh three, two, and four. Which groups work?",
+     "start": 0.2,
+     "end": 6.05
+    },
+    {
+     "id": "cy2",
+     "text": "Take or skip, for each seed. This time, every spot in the tree shows the weight so far.",
+     "start": 6.95,
+     "end": 12.32
+    },
+    {
+     "id": "cy3",
+     "text": "Take the three. Take the two. Five. Exactly right. Save it.",
+     "start": 13.22,
+     "end": 16.89
+    },
+    {
+     "id": "cy4",
+     "text": "Below that, taking the four would give nine. Too heavy. And further down it can only get heavier. So what should the walk do with that branch?",
+     "start": 17.79,
+     "end": 25.82
+    },
+    {
+     "id": "cy5",
+     "text": "Cut it. Do not even go there. That is called pruning.",
+     "start": 27.02,
+     "end": 30.06
+    },
+    {
+     "id": "cy6",
+     "text": "Three, skip the two, take the four. Seven. Too heavy. Cut.",
+     "start": 30.96,
+     "end": 34.48
+    },
+    {
+     "id": "cy7",
+     "text": "On the right side, two plus four is six. Cut as well. And nothing else reaches five.",
+     "start": 35.38,
+     "end": 40.7
+    },
+    {
+     "id": "cy8",
+     "text": "One answer. And three branches that were never explored.",
+     "start": 41.6,
+     "end": 45.14
+    },
+    {
+     "id": "cy9",
+     "text": "Backtracking tries everything. Pruning skips what can no longer work. The earlier you cut, the more you save.",
+     "start": 46.04,
+     "end": 52.84
+    }
+   ],
+   "pauses": [
+    {
+     "id": "bkt2-q1",
+     "t": 26.02
+    }
+   ]
+  },
+  "bk1i": {
+   "src": "videos/bk1i.mp4",
+   "title": "Words from Keys",
+   "duration": 18.73,
+   "lines": [
+    {
+     "id": "bk1i_1",
+     "text": "Two keys. The first holds a, and b. The second holds c, and d.",
+     "start": 0.2,
+     "end": 4.59
+    },
+    {
+     "id": "bk1i_2",
+     "text": "A word takes one letter from each key, in order. Return every word that can be made.",
+     "start": 5.29,
+     "end": 10.52
+    },
+    {
+     "id": "bk1i_3",
+     "text": "A c. A d. B c. B d. Four words.",
+     "start": 11.22,
+     "end": 13.57
+    },
+    {
+     "id": "bk1i_4",
+     "text": "Say you picked a. What is left to do? Your turn.",
+     "start": 14.27,
+     "end": 17.13
+    }
+   ],
+   "pauses": []
+  },
+  "bk1s": {
+   "src": "videos/bk1s.mp4",
+   "title": "One letter per key",
+   "duration": 68.82,
+   "lines": [
+    {
+     "id": "bk1s_1",
+     "text": "Pick a letter from the first key. What is left, is the same problem, with one key fewer.",
+     "start": 0.2,
+     "end": 5.68
+    },
+    {
+     "id": "bk1s_2",
+     "text": "So the choices form a tree. Each level is one key. Each leaf is one finished word.",
+     "start": 6.43,
+     "end": 11.84
+    },
+    {
+     "id": "bk1s_3",
+     "text": "Line twelve starts at key zero, with an empty word.",
+     "start": 12.59,
+     "end": 15.85
+    },
+    {
+     "id": "bk1s_4",
+     "text": "The first key offers a, and b. The loop takes a, and calls build for the next key.",
+     "start": 16.6,
+     "end": 21.8
+    },
+    {
+     "id": "bk1s_5",
+     "text": "The second key offers c, and d. Take c. The word is a c.",
+     "start": 22.55,
+     "end": 26.13
+    },
+    {
+     "id": "bk1s_6",
+     "text": "No keys are left. Line five saves the word.",
+     "start": 26.88,
+     "end": 29.91
+    },
+    {
+     "id": "bk1s_7",
+     "text": "That call returns. Back in the loop over c and d. In this call, what is the word?",
+     "start": 30.66,
+     "end": 36.03
+    },
+    {
+     "id": "bk1s_8",
+     "text": "Still a. Each call was handed its own new word. So there is nothing to undo. The loop takes d. A d.",
+     "start": 37.23,
+     "end": 43.33
+    },
+    {
+     "id": "bk1s_9",
+     "text": "Back at the top, the loop takes b. And the same two words grow under it.",
+     "start": 44.08,
+     "end": 48.35
+    },
+    {
+     "id": "bk1s_10",
+     "text": "Line thirteen returns the four words.",
+     "start": 49.1,
+     "end": 51.71
+    },
+    {
+     "id": "bk1s_11",
+     "text": "Every key multiplies the number of words. Here, two times two.",
+     "start": 52.81,
+     "end": 56.97
+    },
+    {
+     "id": "bk1s_12",
+     "text": "The waiting calls are as deep as the number of keys.",
+     "start": 57.72,
+     "end": 60.89
+    },
+    {
+     "id": "bk1s_13",
+     "text": "Old phones did this. Press two keys, and they listed every word those keys could spell.",
+     "start": 61.64,
+     "end": 67.22
+    }
+   ],
+   "pauses": [
+    {
+     "id": "bk1s-q",
+     "t": 36.23
+    }
+   ]
+  },
+  "bk2i": {
+   "src": "videos/bk2i.mp4",
+   "title": "Every Bag of Seeds",
+   "duration": 21.96,
+   "lines": [
+    {
+     "id": "bk2i_1",
+     "text": "Three seeds. One, two, three. Pip wants to know every group that could go in a bag.",
+     "start": 0.2,
+     "end": 5.46
+    },
+    {
+     "id": "bk2i_2",
+     "text": "The empty bag counts. So does each seed alone, each pair, and all three. Return every group.",
+     "start": 6.16,
+     "end": 12.32
+    },
+    {
+     "id": "bk2i_3",
+     "text": "One and three, for example. There are eight groups in all.",
+     "start": 13.02,
+     "end": 16.24
+    },
+    {
+     "id": "bk2i_4",
+     "text": "Look at just one seed. What are the choices for it? Your turn.",
+     "start": 16.94,
+     "end": 20.36
+    }
+   ],
+   "pauses": []
+  },
+  "bk2s": {
+   "src": "videos/bk2s.mp4",
+   "title": "Take it, or skip it",
+   "duration": 76.14,
+   "lines": [
+    {
+     "id": "bk2s_1",
+     "text": "For every number there are two choices. Take it, or skip it.",
+     "start": 0.2,
+     "end": 3.67
+    },
+    {
+     "id": "bk2s_2",
+     "text": "Try one choice. Explore everything after it. Then undo it, and try the other.",
+     "start": 4.42,
+     "end": 9.59
+    },
+    {
+     "id": "bk2s_3",
+     "text": "Choose starts at the first number, with an empty path. Line nine takes it. The path is one.",
+     "start": 10.34,
+     "end": 16.06
+    },
+    {
+     "id": "bk2s_4",
+     "text": "The next call takes two. The one after, takes three.",
+     "start": 16.81,
+     "end": 19.81
+    },
+    {
+     "id": "bk2s_5",
+     "text": "No numbers are left. Line six saves a copy of the path. The first group.",
+     "start": 20.56,
+     "end": 25.32
+    },
+    {
+     "id": "bk2s_6",
+     "text": "Now line eleven. Pop. The three comes back out. And line twelve tries the other choice. Skip three. One, two.",
+     "start": 26.07,
+     "end": 33.19
+    },
+    {
+     "id": "bk2s_7",
+     "text": "Both choices for three are done. So that call returns, into the call that took two. What does line eleven do there?",
+     "start": 33.94,
+     "end": 41.34
+    },
+    {
+     "id": "bk2s_8",
+     "text": "It pops the two. Then it skips two, and decides about three again. One and three. And one alone.",
+     "start": 42.54,
+     "end": 48.8
+    },
+    {
+     "id": "bk2s_9",
+     "text": "Then all the way back to the top. Skip one. And the whole right half is explored in the same way.",
+     "start": 49.55,
+     "end": 55.47
+    },
+    {
+     "id": "bk2s_10",
+     "text": "Eight leaves. Eight groups. Line fifteen returns them.",
+     "start": 56.22,
+     "end": 59.65
+    },
+    {
+     "id": "bk2s_11",
+     "text": "Two choices for each of n numbers. Two to the power n groups.",
+     "start": 60.75,
+     "end": 64.95
+    },
+    {
+     "id": "bk2s_12",
+     "text": "And each group is copied. O of n, times two to the n.",
+     "start": 65.7,
+     "end": 69.09
+    },
+    {
+     "id": "bk2s_13",
+     "text": "A shop does this when it lists every bundle you could build from a few add-ons.",
+     "start": 69.84,
+     "end": 74.54
+    }
+   ],
+   "pauses": [
+    {
+     "id": "bk2s-q",
+     "t": 41.54
+    }
+   ]
+  },
+  "bk3i": {
+   "src": "videos/bk3i.mp4",
+   "title": "Every Order",
+   "duration": 18.85,
+   "lines": [
+    {
+     "id": "bk3i_1",
+     "text": "Three numbers. One, two, three. In how many orders can they line up?",
+     "start": 0.2,
+     "end": 4.6
+    },
+    {
+     "id": "bk3i_2",
+     "text": "Return every order. Each number is used exactly once.",
+     "start": 5.3,
+     "end": 9.4
+    },
+    {
+     "id": "bk3i_3",
+     "text": "Three, one, two is one of them. There are six.",
+     "start": 10.1,
+     "end": 12.85
+    },
+    {
+     "id": "bk3i_4",
+     "text": "Think about the first place. Who can go there? And then? Your turn.",
+     "start": 13.55,
+     "end": 17.25
+    }
+   ],
+   "pauses": []
+  },
+  "bk3s": {
+   "src": "videos/bk3s.mp4",
+   "title": "Take an unused one, then undo",
+   "duration": 82.93,
+   "lines": [
+    {
+     "id": "bk3s_1",
+     "text": "Any number can go first. Then any unused number can go second. And so on.",
+     "start": 0.2,
+     "end": 5.56
+    },
+    {
+     "id": "bk3s_2",
+     "text": "So remember which numbers are used. Take one, explore, and then un-mark it again.",
+     "start": 6.31,
+     "end": 11.57
+    },
+    {
+     "id": "bk3s_3",
+     "text": "The path is empty. The loop takes the first unused number. One. Marked used, and pushed.",
+     "start": 12.32,
+     "end": 18.4
+    },
+    {
+     "id": "bk3s_4",
+     "text": "In the next call, one is used. So the loop takes two. And in the call after that, only three is left.",
+     "start": 19.15,
+     "end": 25.4
+    },
+    {
+     "id": "bk3s_5",
+     "text": "The path is full. Line seven saves a copy.",
+     "start": 26.15,
+     "end": 29.15
+    },
+    {
+     "id": "bk3s_6",
+     "text": "Now the undoing. Lines fifteen and sixteen pop the three, and un-mark it. Then the same for the two.",
+     "start": 29.9,
+     "end": 36.31
+    },
+    {
+     "id": "bk3s_7",
+     "text": "The loop for the second place moves on, past two, to three. Is three still marked as used?",
+     "start": 37.06,
+     "end": 42.71
+    },
+    {
+     "id": "bk3s_8",
+     "text": "No. It was un-marked. So three goes second. And two is the only one left for the third place.",
+     "start": 43.91,
+     "end": 50.29
+    },
+    {
+     "id": "bk3s_9",
+     "text": "Everything is undone, back to the first place. The loop moves on to two. And the same happens under it. Then under three.",
+     "start": 51.04,
+     "end": 59.02
+    },
+    {
+     "id": "bk3s_10",
+     "text": "Six orders in all. Line twenty returns them.",
+     "start": 59.77,
+     "end": 62.77
+    },
+    {
+     "id": "bk3s_11",
+     "text": "n choices for the first place. n minus one for the second. And so on. n factorial orders.",
+     "start": 63.87,
+     "end": 70.38
+    },
+    {
+     "id": "bk3s_12",
+     "text": "Each one is copied. O of n, times n factorial.",
+     "start": 71.13,
+     "end": 74.63
+    },
+    {
+     "id": "bk3s_13",
+     "text": "A delivery planner with only a few stops can simply try every order of the stops, like this.",
+     "start": 75.38,
+     "end": 81.33
+    }
+   ],
+   "pauses": [
+    {
+     "id": "bk3s-q",
+     "t": 42.91
+    }
+   ]
+  },
+  "bk4i": {
+   "src": "videos/bk4i.mp4",
+   "title": "Exactly the Weight",
+   "duration": 19.7,
+   "lines": [
+    {
+     "id": "bk4i_1",
+     "text": "Two kinds of weight. A two, and a three. Pip may use each as often as needed.",
+     "start": 0.2,
+     "end": 5.21
+    },
+    {
+     "id": "bk4i_2",
+     "text": "Return every group of weights that adds up to exactly six.",
+     "start": 5.91,
+     "end": 9.68
+    },
+    {
+     "id": "bk4i_3",
+     "text": "Three and three. Or two, two and two. Those are the only groups.",
+     "start": 10.38,
+     "end": 14.31
+    },
+    {
+     "id": "bk4i_4",
+     "text": "Say you take one weight. What is left to fill? Your turn.",
+     "start": 15.01,
+     "end": 18.1
+    }
+   ],
+   "pauses": []
+  },
+  "bk4s": {
+   "src": "videos/bk4s.mp4",
+   "title": "Fill what is left, never overshoot",
+   "duration": 75.35,
+   "lines": [
+    {
+     "id": "bk4s_1",
+     "text": "Take a weight. What is left to fill gets smaller. That is the same problem again.",
+     "start": 0.2,
+     "end": 5.1
+    },
+    {
+     "id": "bk4s_2",
+     "text": "And a weight that is bigger than what is left can never work. So it is not even tried.",
+     "start": 5.85,
+     "end": 11
+    },
+    {
+     "id": "bk4s_3",
+     "text": "Line sixteen starts with six left to fill.",
+     "start": 11.75,
+     "end": 14.25
+    },
+    {
+     "id": "bk4s_4",
+     "text": "Take a two. Four left. Another two. Two left. Another. Nothing left.",
+     "start": 15,
+     "end": 19.21
+    },
+    {
+     "id": "bk4s_5",
+     "text": "Left is zero. Line six saves a copy of the path.",
+     "start": 19.96,
+     "end": 23.29
+    },
+    {
+     "id": "bk4s_6",
+     "text": "Pop. Two is left again. The loop moves on to the three. But three is more than two. What happens?",
+     "start": 24.04,
+     "end": 30.53
+    },
+    {
+     "id": "bk4s_7",
+     "text": "Skipped. That is pruning. Pop again. Four left. Take the three. One left. And nothing fits into one.",
+     "start": 31.73,
+     "end": 37.94
+    },
+    {
+     "id": "bk4s_8",
+     "text": "All the way back. The first choice is now the three. And three again. Nothing left. Saved.",
+     "start": 38.69,
+     "end": 44.38
+    },
+    {
+     "id": "bk4s_9",
+     "text": "Why was three, then two, never tried? Because each call only looks from its start position onwards. So no group comes twice.",
+     "start": 45.13,
+     "end": 53.13
+    },
+    {
+     "id": "bk4s_10",
+     "text": "Line seventeen returns the two groups.",
+     "start": 53.88,
+     "end": 56.6
+    },
+    {
+     "id": "bk4s_11",
+     "text": "It depends on how many branches survive the pruning. At worst, it grows very fast with the target.",
+     "start": 57.7,
+     "end": 63.9
+    },
+    {
+     "id": "bk4s_12",
+     "text": "The path is at most target divided by the smallest weight.",
+     "start": 64.65,
+     "end": 67.98
+    },
+    {
+     "id": "bk4s_13",
+     "text": "A cash machine lists the ways to pay out an amount with the notes it holds, like this.",
+     "start": 68.73,
+     "end": 73.75
+    }
+   ],
+   "pauses": [
+    {
+     "id": "bk4s-q",
+     "t": 30.73
+    }
+   ]
+  },
+  "bk5i": {
+   "src": "videos/bk5i.mp4",
+   "title": "Brackets That Close",
+   "duration": 21.96,
+   "lines": [
+    {
+     "id": "bk5i_1",
+     "text": "Two openers, and two closers. In which orders do they make a text that closes properly?",
+     "start": 0.2,
+     "end": 5.66
+    },
+    {
+     "id": "bk5i_2",
+     "text": "Return every such text, for n pairs.",
+     "start": 6.36,
+     "end": 8.88
+    },
+    {
+     "id": "bk5i_3",
+     "text": "Open, close, open, close works. So does open, open, close, close. Nothing else.",
+     "start": 9.58,
+     "end": 15.38
+    },
+    {
+     "id": "bk5i_4",
+     "text": "Building left to right. When may the next bracket be a closer? Your turn.",
+     "start": 16.08,
+     "end": 20.36
+    }
+   ],
+   "pauses": []
+  },
+  "bk5s": {
+   "src": "videos/bk5s.mp4",
+   "title": "Only add what can still work",
+   "duration": 76.83,
+   "lines": [
+    {
+     "id": "bk5s_1",
+     "text": "Build the text one bracket at a time. Each time there are two choices. An opener, or a closer.",
+     "start": 0.2,
+     "end": 6.23
+    },
+    {
+     "id": "bk5s_2",
+     "text": "But only if it can still work. An opener, while some are left. A closer, only if an opener is waiting for it.",
+     "start": 6.98,
+     "end": 13.93
+    },
+    {
+     "id": "bk5s_3",
+     "text": "The text is empty. No brackets used.",
+     "start": 14.68,
+     "end": 17.38
+    },
+    {
+     "id": "bk5s_4",
+     "text": "Fewer than two openers are used. So line eight adds one.",
+     "start": 18.13,
+     "end": 21.92
+    },
+    {
+     "id": "bk5s_5",
+     "text": "And another. Two openers. That is all of them.",
+     "start": 22.67,
+     "end": 25.37
+    },
+    {
+     "id": "bk5s_6",
+     "text": "Now line eight is not allowed. Line nine asks: are there fewer closers than openers? Zero, against two.",
+     "start": 26.12,
+     "end": 33.04
+    },
+    {
+     "id": "bk5s_7",
+     "text": "Yes. So a closer is added. And another. The text is full. Line five saves it.",
+     "start": 34.24,
+     "end": 39.47
+    },
+    {
+     "id": "bk5s_8",
+     "text": "Back to the text with one opener. This time, line nine. A closer. Open, close.",
+     "start": 40.22,
+     "end": 45.91
+    },
+    {
+     "id": "bk5s_9",
+     "text": "Then an opener, and its closer. Full again. Saved.",
+     "start": 46.66,
+     "end": 49.89
+    },
+    {
+     "id": "bk5s_10",
+     "text": "A closer is never added without an opener waiting. So a broken text is never built, and nothing has to be checked at the end.",
+     "start": 50.64,
+     "end": 58.64
+    },
+    {
+     "id": "bk5s_11",
+     "text": "Only valid texts are ever built. Their number grows fast with n, but far slower than all the texts.",
+     "start": 59.74,
+     "end": 66.27
+    },
+    {
+     "id": "bk5s_12",
+     "text": "The waiting calls are two n deep.",
+     "start": 67.02,
+     "end": 68.88
+    },
+    {
+     "id": "bk5s_13",
+     "text": "A code editor uses the same two rules when it decides whether it may close a bracket for you.",
+     "start": 69.63,
+     "end": 75.23
+    }
+   ],
+   "pauses": [
+    {
+     "id": "bk5s-q",
+     "t": 33.24
+    }
+   ]
+  },
+  "bk6i": {
+   "src": "videos/bk6i.mp4",
+   "title": "A Word in the Grid",
+   "duration": 21.9,
+   "lines": [
+    {
+     "id": "bk6i_1",
+     "text": "A grid of letters. Pip wants to trace the word cat. Step by step, to a neighbour each time.",
+     "start": 0.2,
+     "end": 6.01
+    },
+    {
+     "id": "bk6i_2",
+     "text": "Return true if the word can be traced. No square may be used twice.",
+     "start": 6.71,
+     "end": 11.4
+    },
+    {
+     "id": "bk6i_3",
+     "text": "Here it can. C, a, t, along the top.",
+     "start": 12.1,
+     "end": 14.49
+    },
+    {
+     "id": "bk6i_4",
+     "text": "But there are two letters a next to the c. What if you take the wrong one first? Your turn.",
+     "start": 15.19,
+     "end": 20.3
+    }
+   ],
+   "pauses": []
+  },
+  "bk6s": {
+   "src": "videos/bk6s.mp4",
+   "title": "Mark, walk, un-mark",
+   "duration": 71.16,
+   "lines": [
+    {
+     "id": "bk6s_1",
+     "text": "From a square that matches, try each neighbour for the next letter. Deep first.",
+     "start": 0.2,
+     "end": 4.76
+    },
+    {
+     "id": "bk6s_2",
+     "text": "Mark the square while it is on your path. And un-mark it when you back out.",
+     "start": 5.51,
+     "end": 9.8
+    },
+    {
+     "id": "bk6s_3",
+     "text": "The scan tries every square as a start. The top left holds a c. The first letter.",
+     "start": 10.55,
+     "end": 15.9
+    },
+    {
+     "id": "bk6s_4",
+     "text": "It matches. Line five marks the square, so the trace cannot step on it again.",
+     "start": 16.65,
+     "end": 21.57
+    },
+    {
+     "id": "bk6s_5",
+     "text": "Line six tries below first. An a. The second letter. Marked.",
+     "start": 22.32,
+     "end": 26.2
+    },
+    {
+     "id": "bk6s_6",
+     "text": "From this a, the next letter must be t. Its neighbours are an x, and the c that is already used. What does the walk return?",
+     "start": 26.95,
+     "end": 34.89
+    },
+    {
+     "id": "bk6s_7",
+     "text": "False. A dead end. And line eight puts the letter back. The square is free again.",
+     "start": 36.09,
+     "end": 41.1
+    },
+    {
+     "id": "bk6s_8",
+     "text": "Back on the c. The next direction that works is right. An a. And right again. A t.",
+     "start": 41.85,
+     "end": 47.41
+    },
+    {
+     "id": "bk6s_9",
+     "text": "Every letter is matched. Line three returns true, and it travels all the way up.",
+     "start": 48.16,
+     "end": 53.37
+    },
+    {
+     "id": "bk6s_10",
+     "text": "From every start, each letter has up to four ways to go on. It grows fast with the length of the word.",
+     "start": 54.47,
+     "end": 60.66
+    },
+    {
+     "id": "bk6s_11",
+     "text": "The waiting calls are as deep as the word is long.",
+     "start": 61.41,
+     "end": 64.33
+    },
+    {
+     "id": "bk6s_12",
+     "text": "A word game checks your swipe across the letter grid in exactly this way.",
+     "start": 65.08,
+     "end": 69.56
+    }
+   ],
+   "pauses": [
+    {
+     "id": "bk6s-q",
+     "t": 35.09
+    }
+   ]
+  },
+  "bk7i": {
+   "src": "videos/bk7i.mp4",
+   "title": "Queens That Keep the Peace",
+   "duration": 21.94,
+   "lines": [
+    {
+     "id": "bk7i_1",
+     "text": "A board of four by four. And four queens. A queen attacks along its row, its column, and both diagonals.",
+     "start": 0.2,
+     "end": 7.57
+    },
+    {
+     "id": "bk7i_2",
+     "text": "Return the number of ways to place them, so that no queen attacks another.",
+     "start": 8.27,
+     "end": 12.68
+    },
+    {
+     "id": "bk7i_3",
+     "text": "This is one way. There are two.",
+     "start": 13.38,
+     "end": 15.22
+    },
+    {
+     "id": "bk7i_4",
+     "text": "Four queens, four rows. How many queens can one row hold? Your turn.",
+     "start": 15.92,
+     "end": 20.34
+    }
+   ],
+   "pauses": []
+  },
+  "bk7s": {
+   "src": "videos/bk7s.mp4",
+   "title": "Place, check, take back",
+   "duration": 85.14,
+   "lines": [
+    {
+     "id": "bk7s_1",
+     "text": "Each row holds exactly one queen. So place them row by row. For each row, try every column.",
+     "start": 0.2,
+     "end": 6.54
+    },
+    {
+     "id": "bk7s_2",
+     "text": "A square is free if its column, and both of its diagonals, are unused. Three sets remember those.",
+     "start": 7.29,
+     "end": 13.79
+    },
+    {
+     "id": "bk7s_3",
+     "text": "Row zero. Column zero is free. Line twelve records the column, and the two diagonals.",
+     "start": 14.54,
+     "end": 20.47
+    },
+    {
+     "id": "bk7s_4",
+     "text": "Row one. Column zero is taken. Column one is on a diagonal. Column two is free.",
+     "start": 21.22,
+     "end": 27.1
+    },
+    {
+     "id": "bk7s_5",
+     "text": "Row two. Every one of its four squares is attacked. What does this call do?",
+     "start": 27.85,
+     "end": 32.42
+    },
+    {
+     "id": "bk7s_6",
+     "text": "It returns, with nothing placed. And line fourteen takes the queen of row one back off the board.",
+     "start": 33.62,
+     "end": 39.57
+    },
+    {
+     "id": "bk7s_7",
+     "text": "Row one moves on to column three. Now row two has a place. But row three does not. More undoing.",
+     "start": 40.32,
+     "end": 46.96
+    },
+    {
+     "id": "bk7s_8",
+     "text": "Everything is taken back. Even the queen in row zero moves on. To column one.",
+     "start": 47.71,
+     "end": 53.22
+    },
+    {
+     "id": "bk7s_9",
+     "text": "This time, every row finds a place. Row four does not exist. So line six counts one way.",
+     "start": 53.97,
+     "end": 60.12
+    },
+    {
+     "id": "bk7s_10",
+     "text": "The search goes on, and finds the mirror image. Line eighteen returns two.",
+     "start": 60.87,
+     "end": 65.5
+    },
+    {
+     "id": "bk7s_11",
+     "text": "Without the checks there would be four to the power four boards. The three sets cut almost all of them.",
+     "start": 66.6,
+     "end": 72.41
+    },
+    {
+     "id": "bk7s_12",
+     "text": "Three sets, and one waiting call per row.",
+     "start": 73.16,
+     "end": 75.54
+    },
+    {
+     "id": "bk7s_13",
+     "text": "A timetable planner works like this. Place a lesson, check the clashes, and take it back if a later one cannot fit.",
+     "start": 76.29,
+     "end": 83.54
+    }
+   ],
+   "pauses": [
+    {
+     "id": "bk7s-q",
+     "t": 32.62
+    }
+   ]
+  },
   "mq1i": {
    "src": "videos/mq1i.mp4",
    "title": "The Damp Spreads",
