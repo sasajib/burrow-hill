@@ -23326,6 +23326,997 @@ window.BURROW = {
     }
    ]
   },
+  "dq0": {
+   "src": "videos/dq0.mp4",
+   "title": "A Table with Two Sides",
+   "duration": 43.03,
+   "lines": [
+    {
+     "id": "ea1",
+     "text": "Chapter twenty five. Dynamic programming, with a table that has two sides.",
+     "start": 0.2,
+     "end": 5.16
+    },
+    {
+     "id": "ea2",
+     "text": "Some answers depend on two things at once. A row, and a column. Or a place in one word, and a place in another.",
+     "start": 5.86,
+     "end": 13.2
+    },
+    {
+     "id": "ea3",
+     "text": "Then the table becomes a grid. And every entry looks at its neighbours. Above. To the left. And sometimes, the diagonal.",
+     "start": 14.1,
+     "end": 22.04
+    },
+    {
+     "id": "ea4",
+     "text": "The recipe does not change. Meaning, choice, start. Two lessons, and seven puzzles.",
+     "start": 22.94,
+     "end": 28.36
+    },
+    {
+     "id": "ea5",
+     "text": "A spell checker counts the changes between your typo and a real word like this. A tool that compares two versions of a file finds the lines they share. And a game counts the routes across a board.",
+     "start": 29.26,
+     "end": 41.43
+    }
+   ],
+   "pauses": []
+  },
+  "dqt1": {
+   "src": "videos/dqt1.mp4",
+   "title": "From Above, and from the Left",
+   "duration": 62.44,
+   "lines": [
+    {
+     "id": "eb1",
+     "text": "Pip stands in the top left corner of a field, and wants to reach the bottom right. Pip may only step right, or down. How many different routes are there?",
+     "start": 0.2,
+     "end": 8.93
+    },
+    {
+     "id": "eb2",
+     "text": "Count them by hand, and you will lose track. So make a table. One entry for every square. The number of routes that reach it.",
+     "start": 9.83,
+     "end": 17.48
+    },
+    {
+     "id": "eb3",
+     "text": "The top row is easy. There is only one way. Straight along. And the left column is the same. Straight down.",
+     "start": 18.38,
+     "end": 25.02
+    },
+    {
+     "id": "eb4",
+     "text": "Now any other square. Pip arrives from above, or from the left. So its routes are the routes from above, plus the routes from the left.",
+     "start": 25.92,
+     "end": 33.77
+    },
+    {
+     "id": "eb5",
+     "text": "One plus one. Two. Then one plus two. Three. Then four.",
+     "start": 34.67,
+     "end": 38.55
+    },
+    {
+     "id": "eb6",
+     "text": "The next row. Three. Then three plus three. Six. So what goes in the last square?",
+     "start": 39.45,
+     "end": 44.64
+    },
+    {
+     "id": "eb7",
+     "text": "Ten. Four from above, and six from the left.",
+     "start": 45.84,
+     "end": 48.34
+    },
+    {
+     "id": "eb8",
+     "text": "It is the same recipe as before. Meaning, choice, start. The table just has two sides now.",
+     "start": 49.24,
+     "end": 55.08
+    },
+    {
+     "id": "eb9",
+     "text": "Fill it row by row. Every entry looks at its neighbours above, and to the left.",
+     "start": 55.98,
+     "end": 60.84
+    }
+   ],
+   "pauses": [
+    {
+     "id": "dqt1-q1",
+     "t": 44.84
+    }
+   ]
+  },
+  "dqt2": {
+   "src": "videos/dqt2.mp4",
+   "title": "Two Words, One Table",
+   "duration": 71.88,
+   "lines": [
+    {
+     "id": "ec1",
+     "text": "Two words. Tap, and apt. What is the longest run of letters they share, in the same order? Letters may be skipped.",
+     "start": 0.2,
+     "end": 7.29
+    },
+    {
+     "id": "ec2",
+     "text": "Make a table with two sides. The letters of tap run down the side. The letters of apt run along the top.",
+     "start": 8.19,
+     "end": 14.87
+    },
+    {
+     "id": "ec3",
+     "text": "One entry answers a smaller question. The longest shared part, of the two beginnings that end at this row, and at this column.",
+     "start": 15.77,
+     "end": 23.83
+    },
+    {
+     "id": "ec4",
+     "text": "When the two letters are the same, they extend whatever was shared before them. That is the entry up, and to the left. Plus one.",
+     "start": 24.73,
+     "end": 32.41
+    },
+    {
+     "id": "ec5",
+     "text": "When they differ, one of the two letters is not needed. So take the better of the entry above, and the entry on the left.",
+     "start": 33.31,
+     "end": 40.33
+    },
+    {
+     "id": "ec6",
+     "text": "The row for t. T matches only the last column. Zero, zero, one.",
+     "start": 41.23,
+     "end": 45.76
+    },
+    {
+     "id": "ec7",
+     "text": "The row for a. A matches the first column. One. And it stays one along the row.",
+     "start": 46.66,
+     "end": 52
+    },
+    {
+     "id": "ec8",
+     "text": "The row for p. First, a one from above. Then p against p. The same letter. So what goes here?",
+     "start": 52.9,
+     "end": 59.1
+    },
+    {
+     "id": "ec9",
+     "text": "Two. A, p. And the last entry keeps the two.",
+     "start": 60.3,
+     "end": 63.12
+    },
+    {
+     "id": "ec10",
+     "text": "Two words, one table. Same letters: the diagonal, plus one. Different letters: the better neighbour.",
+     "start": 64.02,
+     "end": 70.28
+    }
+   ],
+   "pauses": [
+    {
+     "id": "dqt2-q1",
+     "t": 59.3
+    }
+   ]
+  },
+  "dq1i": {
+   "src": "videos/dq1i.mp4",
+   "title": "Routes Across the Field",
+   "duration": 21.1,
+   "lines": [
+    {
+     "id": "dq1i_1",
+     "text": "A field of three by three squares. Pip starts in the top left, and wants to reach the bottom right.",
+     "start": 0.2,
+     "end": 6.01
+    },
+    {
+     "id": "dq1i_2",
+     "text": "Pip may only step right, or down. Return the number of different routes.",
+     "start": 6.71,
+     "end": 11.04
+    },
+    {
+     "id": "dq1i_3",
+     "text": "Along the top, then down the side, is one. There are six.",
+     "start": 11.74,
+     "end": 15.26
+    },
+    {
+     "id": "dq1i_4",
+     "text": "Pick any square. From where can Pip step onto it? Your turn.",
+     "start": 15.96,
+     "end": 19.5
+    }
+   ],
+   "pauses": []
+  },
+  "dq1s": {
+   "src": "videos/dq1s.mp4",
+   "title": "From above, plus from the left",
+   "duration": 56.45,
+   "lines": [
+    {
+     "id": "dq1s_1",
+     "text": "The entry for a square is the number of routes that reach it.",
+     "start": 0.2,
+     "end": 3.59
+    },
+    {
+     "id": "dq1s_2",
+     "text": "Pip arrives from above, or from the left. So add those two entries.",
+     "start": 4.34,
+     "end": 8.64
+    },
+    {
+     "id": "dq1s_3",
+     "text": "Line four starts every row with ones. For the top row and the left column, that is already right. There is only one way to reach them.",
+     "start": 9.39,
+     "end": 17.69
+    },
+    {
+     "id": "dq1s_4",
+     "text": "The middle square. One from above, one from the left. Two.",
+     "start": 18.44,
+     "end": 21.94
+    },
+    {
+     "id": "dq1s_5",
+     "text": "The square on its right. One from above. Two from the left. Three.",
+     "start": 22.69,
+     "end": 26.49
+    },
+    {
+     "id": "dq1s_6",
+     "text": "The bottom row. Two from above, one from the left. Three. And now the corner. Three from above, three from the left. How many routes?",
+     "start": 27.24,
+     "end": 35.42
+    },
+    {
+     "id": "dq1s_7",
+     "text": "Six.",
+     "start": 36.62,
+     "end": 37.35
+    },
+    {
+     "id": "dq1s_8",
+     "text": "Line nine returns the corner. Six routes.",
+     "start": 38.1,
+     "end": 40.98
+    },
+    {
+     "id": "dq1s_9",
+     "text": "One entry per square of the table. O of rows times columns.",
+     "start": 42.08,
+     "end": 46.27
+    },
+    {
+     "id": "dq1s_10",
+     "text": "The table itself. The same size.",
+     "start": 47.02,
+     "end": 49.2
+    },
+    {
+     "id": "dq1s_11",
+     "text": "A robot in a warehouse counts its possible routes between two shelves like this.",
+     "start": 49.95,
+     "end": 54.85
+    }
+   ],
+   "pauses": [
+    {
+     "id": "dq1s-q",
+     "t": 35.62
+    }
+   ]
+  },
+  "dq2i": {
+   "src": "videos/dq2i.mp4",
+   "title": "The Cheapest Way Down",
+   "duration": 22.75,
+   "lines": [
+    {
+     "id": "dq2i_1",
+     "text": "The field again. But now every square has a cost.",
+     "start": 0.2,
+     "end": 3.45
+    },
+    {
+     "id": "dq2i_2",
+     "text": "Pip steps right or down, from the top left to the bottom right. Return the smallest total cost.",
+     "start": 4.15,
+     "end": 10.06
+    },
+    {
+     "id": "dq2i_3",
+     "text": "Along the top, then down. One, three, one, one, one. Seven.",
+     "start": 10.76,
+     "end": 14.78
+    },
+    {
+     "id": "dq2i_4",
+     "text": "Pip arrives at a square from above, or from the left. Which one is better? Your turn.",
+     "start": 15.48,
+     "end": 21.15
+    }
+   ],
+   "pauses": []
+  },
+  "dq2s": {
+   "src": "videos/dq2s.mp4",
+   "title": "Cheaper neighbour, plus my own",
+   "duration": 68.58,
+   "lines": [
+    {
+     "id": "dq2s_1",
+     "text": "The entry for a square is the cheapest total to stand on it.",
+     "start": 0.2,
+     "end": 3.79
+    },
+    {
+     "id": "dq2s_2",
+     "text": "Pip arrives from above, or from the left. Take the cheaper of the two, and add the cost of the square itself.",
+     "start": 4.54,
+     "end": 10.99
+    },
+    {
+     "id": "dq2s_3",
+     "text": "The table starts as a copy of the grid. The first square keeps its own cost. One.",
+     "start": 11.74,
+     "end": 17.02
+    },
+    {
+     "id": "dq2s_4",
+     "text": "Along the top row, Pip can only come from the left. One plus three. Four. Then five.",
+     "start": 17.77,
+     "end": 23.76
+    },
+    {
+     "id": "dq2s_5",
+     "text": "Down the left column, only from above. Two. Then six.",
+     "start": 24.51,
+     "end": 28.16
+    },
+    {
+     "id": "dq2s_6",
+     "text": "The middle square costs five. Above it is four. On its left is two. Which one is added?",
+     "start": 28.91,
+     "end": 34.63
+    },
+    {
+     "id": "dq2s_7",
+     "text": "The two. Seven. And the square on its right. One, plus the cheaper of five and seven. Six.",
+     "start": 35.83,
+     "end": 41.68
+    },
+    {
+     "id": "dq2s_8",
+     "text": "The bottom row. Two, plus the cheaper of seven and six. Eight. And the corner. One, plus the cheaper of six and eight. Seven.",
+     "start": 42.43,
+     "end": 50.26
+    },
+    {
+     "id": "dq2s_9",
+     "text": "Line twelve returns the corner. Seven.",
+     "start": 51.01,
+     "end": 53.53
+    },
+    {
+     "id": "dq2s_10",
+     "text": "One entry per square of the table. O of rows times columns.",
+     "start": 54.63,
+     "end": 58.82
+    },
+    {
+     "id": "dq2s_11",
+     "text": "The table itself. The same size.",
+     "start": 59.57,
+     "end": 61.74
+    },
+    {
+     "id": "dq2s_12",
+     "text": "A printer plans the cheapest path of its head across a page in this way.",
+     "start": 62.49,
+     "end": 66.98
+    }
+   ],
+   "pauses": [
+    {
+     "id": "dq2s-q",
+     "t": 34.83
+    }
+   ]
+  },
+  "dq3i": {
+   "src": "videos/dq3i.mp4",
+   "title": "Rocks in the Field",
+   "duration": 18.88,
+   "lines": [
+    {
+     "id": "dq3i_1",
+     "text": "The same field. But now there is a rock in the middle.",
+     "start": 0.2,
+     "end": 3.33
+    },
+    {
+     "id": "dq3i_2",
+     "text": "Right or down only. Return the number of routes that do not touch a rock.",
+     "start": 4.03,
+     "end": 8.51
+    },
+    {
+     "id": "dq3i_3",
+     "text": "Around the top, or around the bottom. Two routes.",
+     "start": 9.21,
+     "end": 12.27
+    },
+    {
+     "id": "dq3i_4",
+     "text": "You know how to count routes. So what is the entry for a rock? Your turn.",
+     "start": 12.97,
+     "end": 17.28
+    }
+   ],
+   "pauses": []
+  },
+  "dq3s": {
+   "src": "videos/dq3s.mp4",
+   "title": "A rock has no routes",
+   "duration": 58.89,
+   "lines": [
+    {
+     "id": "dq3s_1",
+     "text": "It is the same table as before. Routes from above, plus routes from the left.",
+     "start": 0.2,
+     "end": 4.75
+    },
+    {
+     "id": "dq3s_2",
+     "text": "One change. A rock gets zero. So nothing can ever come through it.",
+     "start": 5.5,
+     "end": 9.68
+    },
+    {
+     "id": "dq3s_3",
+     "text": "The start gets one. And along the top row, and down the left column, the one is passed along.",
+     "start": 10.43,
+     "end": 15.96
+    },
+    {
+     "id": "dq3s_4",
+     "text": "The middle square is a rock. Line six skips it. Its entry stays zero.",
+     "start": 16.71,
+     "end": 21.41
+    },
+    {
+     "id": "dq3s_5",
+     "text": "The square to the right of the rock. One from above. And from the left, the rock. How many routes?",
+     "start": 22.16,
+     "end": 28.29
+    },
+    {
+     "id": "dq3s_6",
+     "text": "One. The rock adds nothing.",
+     "start": 29.49,
+     "end": 31.12
+    },
+    {
+     "id": "dq3s_7",
+     "text": "Below the rock, the same. Zero from above. One from the left. One.",
+     "start": 31.87,
+     "end": 35.98
+    },
+    {
+     "id": "dq3s_8",
+     "text": "And the corner. One from above. One from the left. Two.",
+     "start": 36.73,
+     "end": 39.99
+    },
+    {
+     "id": "dq3s_9",
+     "text": "Line twelve returns the corner. Two routes.",
+     "start": 40.74,
+     "end": 43.63
+    },
+    {
+     "id": "dq3s_10",
+     "text": "One entry per square of the table. O of rows times columns.",
+     "start": 44.73,
+     "end": 48.93
+    },
+    {
+     "id": "dq3s_11",
+     "text": "The table itself. The same size.",
+     "start": 49.68,
+     "end": 51.85
+    },
+    {
+     "id": "dq3s_12",
+     "text": "A delivery robot counts its routes around closed aisles in exactly this way.",
+     "start": 52.6,
+     "end": 57.29
+    }
+   ],
+   "pauses": [
+    {
+     "id": "dq3s-q",
+     "t": 28.49
+    }
+   ]
+  },
+  "dq4i": {
+   "src": "videos/dq4i.mp4",
+   "title": "What Two Words Share",
+   "duration": 21.05,
+   "lines": [
+    {
+     "id": "dq4i_1",
+     "text": "Two words. Sea, and eat.",
+     "start": 0.2,
+     "end": 1.57
+    },
+    {
+     "id": "dq4i_2",
+     "text": "Return the length of the longest run of letters that both contain, in the same order. Letters may be skipped.",
+     "start": 2.27,
+     "end": 8.93
+    },
+    {
+     "id": "dq4i_3",
+     "text": "E, a. It is in both. So the answer is two.",
+     "start": 9.63,
+     "end": 12.44
+    },
+    {
+     "id": "dq4i_4",
+     "text": "Compare the last letters of the two words. If they are the same, what follows? And if not? Your turn.",
+     "start": 13.14,
+     "end": 19.45
+    }
+   ],
+   "pauses": []
+  },
+  "dq4s": {
+   "src": "videos/dq4s.mp4",
+   "title": "Same letter: diagonal plus one",
+   "duration": 67.38,
+   "lines": [
+    {
+     "id": "dq4s_1",
+     "text": "One entry answers the question for two beginnings. The letters up to this row, and the letters up to this column.",
+     "start": 0.2,
+     "end": 7.14
+    },
+    {
+     "id": "dq4s_2",
+     "text": "Same letters extend the diagonal entry by one. Different letters take the better of above, and left.",
+     "start": 7.89,
+     "end": 13.95
+    },
+    {
+     "id": "dq4s_3",
+     "text": "Sea runs down the side. Eat runs along the top.",
+     "start": 14.7,
+     "end": 18.02
+    },
+    {
+     "id": "dq4s_4",
+     "text": "The row for s. S matches none of them. Zeros.",
+     "start": 18.77,
+     "end": 21.97
+    },
+    {
+     "id": "dq4s_5",
+     "text": "The row for e. E against e. The same letter. Diagonal, plus one. One.",
+     "start": 22.72,
+     "end": 27.67
+    },
+    {
+     "id": "dq4s_6",
+     "text": "The rest of that row has no match. Each takes the better of above, and left. One, and one.",
+     "start": 28.42,
+     "end": 34.34
+    },
+    {
+     "id": "dq4s_7",
+     "text": "The row for a. Against e, no match. One. Then a against a. The same letter. The diagonal holds one. What goes here?",
+     "start": 35.09,
+     "end": 42.88
+    },
+    {
+     "id": "dq4s_8",
+     "text": "Two. E, a.",
+     "start": 44.08,
+     "end": 45.04
+    },
+    {
+     "id": "dq4s_9",
+     "text": "The last entry has no match, and keeps the two. Line fifteen returns it.",
+     "start": 45.79,
+     "end": 50.39
+    },
+    {
+     "id": "dq4s_10",
+     "text": "One entry per square of the table. O of n times m.",
+     "start": 51.49,
+     "end": 55.03
+    },
+    {
+     "id": "dq4s_11",
+     "text": "The table itself. The same size.",
+     "start": 55.78,
+     "end": 57.95
+    },
+    {
+     "id": "dq4s_12",
+     "text": "A tool that compares two versions of a file finds the lines they share like this. Everything else is shown as changed.",
+     "start": 58.7,
+     "end": 65.78
+    }
+   ],
+   "pauses": [
+    {
+     "id": "dq4s-q",
+     "t": 43.08
+    }
+   ]
+  },
+  "dq5i": {
+   "src": "videos/dq5i.mp4",
+   "title": "How Far Apart?",
+   "duration": 21.6,
+   "lines": [
+    {
+     "id": "dq5i_1",
+     "text": "Two words. Cat, and cut. How far apart are they?",
+     "start": 0.2,
+     "end": 3.23
+    },
+    {
+     "id": "dq5i_2",
+     "text": "One change is: insert a letter, delete a letter, or replace one. Return the fewest changes from the first word to the second.",
+     "start": 3.93,
+     "end": 11.66
+    },
+    {
+     "id": "dq5i_3",
+     "text": "Replace the a with a u. One change.",
+     "start": 12.36,
+     "end": 14.64
+    },
+    {
+     "id": "dq5i_4",
+     "text": "Compare the last letters. If they are the same, what does that cost? Your turn.",
+     "start": 15.34,
+     "end": 20
+    }
+   ],
+   "pauses": []
+  },
+  "dq5s": {
+   "src": "videos/dq5s.mp4",
+   "title": "Same: copy. Different: 1 + min",
+   "duration": 73.2,
+   "lines": [
+    {
+     "id": "dq5s_1",
+     "text": "One entry is the fewest changes, from a beginning of the first word, to a beginning of the second.",
+     "start": 0.2,
+     "end": 6.3
+    },
+    {
+     "id": "dq5s_2",
+     "text": "Same letters cost nothing. Copy the diagonal. Different letters cost one, plus the smallest of the three neighbours.",
+     "start": 7.05,
+     "end": 14.38
+    },
+    {
+     "id": "dq5s_3",
+     "text": "The dash stands for an empty text. Turning nothing into c, u, t takes one, two, three insertions. And the first column is the same, with deletions.",
+     "start": 15.13,
+     "end": 24.79
+    },
+    {
+     "id": "dq5s_4",
+     "text": "C against c. The same letter. Nothing to change. Copy the diagonal. Zero.",
+     "start": 25.54,
+     "end": 31.22
+    },
+    {
+     "id": "dq5s_5",
+     "text": "The rest of that row costs one more each time.",
+     "start": 31.97,
+     "end": 34.53
+    },
+    {
+     "id": "dq5s_6",
+     "text": "The row for a. Against c, one. Then a against u. Different. The three neighbours hold zero, one, and one. What goes here?",
+     "start": 35.28,
+     "end": 43.16
+    },
+    {
+     "id": "dq5s_7",
+     "text": "One. Replace the a with a u.",
+     "start": 44.36,
+     "end": 46.09
+    },
+    {
+     "id": "dq5s_8",
+     "text": "The row for t. Two, two. Then t against t. The same letter. Copy the diagonal. One.",
+     "start": 46.84,
+     "end": 52.83
+    },
+    {
+     "id": "dq5s_9",
+     "text": "Line thirteen returns the corner. One change.",
+     "start": 53.58,
+     "end": 56.88
+    },
+    {
+     "id": "dq5s_10",
+     "text": "One entry per square of the table. O of n times m.",
+     "start": 57.98,
+     "end": 61.52
+    },
+    {
+     "id": "dq5s_11",
+     "text": "The table itself. The same size.",
+     "start": 62.27,
+     "end": 64.44
+    },
+    {
+     "id": "dq5s_12",
+     "text": "A spell checker ranks its suggestions this way. The word with the fewest changes from your typo comes first.",
+     "start": 65.19,
+     "end": 71.6
+    }
+   ],
+   "pauses": [
+    {
+     "id": "dq5s-q",
+     "t": 43.36
+    }
+   ]
+  },
+  "dq6i": {
+   "src": "videos/dq6i.mp4",
+   "title": "The Best Load",
+   "duration": 25.99,
+   "lines": [
+    {
+     "id": "dq6i_1",
+     "text": "Three parcels. Each has a weight, and a value. The cart carries a weight of four.",
+     "start": 0.2,
+     "end": 5.07
+    },
+    {
+     "id": "dq6i_2",
+     "text": "A parcel is taken whole, or not at all. Return the largest total value that fits.",
+     "start": 5.77,
+     "end": 11.18
+    },
+    {
+     "id": "dq6i_3",
+     "text": "The two lighter parcels. Weight four. Value thirty five. That beats the heavy one, at thirty.",
+     "start": 11.88,
+     "end": 17.68
+    },
+    {
+     "id": "dq6i_4",
+     "text": "So the most valuable parcel is not the answer. For one parcel, what are the choices? Your turn.",
+     "start": 18.38,
+     "end": 24.39
+    }
+   ],
+   "pauses": []
+  },
+  "dq6s": {
+   "src": "videos/dq6s.mp4",
+   "title": "Skip it, or take it and fill up",
+   "duration": 92.39,
+   "lines": [
+    {
+     "id": "dq6s_1",
+     "text": "The answer depends on two things. Which parcels are allowed so far. And how much room there is.",
+     "start": 0.2,
+     "end": 6.26
+    },
+    {
+     "id": "dq6s_2",
+     "text": "For each parcel. Skip it, and keep the entry above. Or take it, and add the best for the room that is left.",
+     "start": 7.01,
+     "end": 13.36
+    },
+    {
+     "id": "dq6s_3",
+     "text": "The columns are the room in the cart. Zero to four. Each row allows one more parcel. Weight one, worth fifteen. Weight three, worth twenty. Weight four, worth thirty.",
+     "start": 14.11,
+     "end": 24.79
+    },
+    {
+     "id": "dq6s_4",
+     "text": "The first row. Only the light parcel. With room for one or more, take it. Fifteen.",
+     "start": 25.54,
+     "end": 30.94
+    },
+    {
+     "id": "dq6s_5",
+     "text": "The second row adds the parcel of weight three. With less room than three, it cannot go in. Copy the row above.",
+     "start": 31.69,
+     "end": 38.81
+    },
+    {
+     "id": "dq6s_6",
+     "text": "Room three. Skipping keeps fifteen. Taking gives twenty, plus the best for the room that is left. None. Twenty.",
+     "start": 39.56,
+     "end": 46.85
+    },
+    {
+     "id": "dq6s_7",
+     "text": "Room four. Skipping keeps fifteen. Taking gives twenty, plus the best for a room of one, in the row above. What is that?",
+     "start": 47.6,
+     "end": 55.6
+    },
+    {
+     "id": "dq6s_8",
+     "text": "Fifteen. So thirty five. Both light parcels.",
+     "start": 56.8,
+     "end": 60.08
+    },
+    {
+     "id": "dq6s_9",
+     "text": "The last row adds the heavy parcel. It only fits with room four. Thirty, against thirty five. The table keeps thirty five.",
+     "start": 60.83,
+     "end": 68.95
+    },
+    {
+     "id": "dq6s_10",
+     "text": "Line eleven returns the last entry. Thirty five.",
+     "start": 69.7,
+     "end": 73.03
+    },
+    {
+     "id": "dq6s_11",
+     "text": "One entry for every parcel, and every amount of room. O of parcels, times room.",
+     "start": 74.13,
+     "end": 79.64
+    },
+    {
+     "id": "dq6s_12",
+     "text": "Only the row above is ever needed. So two rows are enough.",
+     "start": 80.39,
+     "end": 84.05
+    },
+    {
+     "id": "dq6s_13",
+     "text": "An airline loads cargo like this. The most valuable set of crates that stays under the weight limit.",
+     "start": 84.8,
+     "end": 90.79
+    }
+   ],
+   "pauses": [
+    {
+     "id": "dq6s-q",
+     "t": 55.8
+    }
+   ]
+  },
+  "dq7i": {
+   "src": "videos/dq7i.mp4",
+   "title": "The Biggest Square",
+   "duration": 21.37,
+   "lines": [
+    {
+     "id": "dq7i_1",
+     "text": "A grid of ones and zeros.",
+     "start": 0.2,
+     "end": 2.08
+    },
+    {
+     "id": "dq7i_2",
+     "text": "Return the side of the biggest square that contains only ones.",
+     "start": 2.78,
+     "end": 6.56
+    },
+    {
+     "id": "dq7i_3",
+     "text": "The top left four squares are all ones. Side two. Nothing bigger exists.",
+     "start": 7.26,
+     "end": 12.34
+    },
+    {
+     "id": "dq7i_4",
+     "text": "A square ends at its bottom right corner. What must be true just above it, and just to the left? Your turn.",
+     "start": 13.04,
+     "end": 19.77
+    }
+   ],
+   "pauses": []
+  },
+  "dq7s": {
+   "src": "videos/dq7s.mp4",
+   "title": "One more than the smallest",
+   "duration": 69.97,
+   "lines": [
+    {
+     "id": "dq7s_1",
+     "text": "One entry means: the side of the biggest square of ones, that has its bottom right corner on this square.",
+     "start": 0.2,
+     "end": 6.59
+    },
+    {
+     "id": "dq7s_2",
+     "text": "It can be one bigger than the smallest of its three neighbours. Above, left, and diagonal.",
+     "start": 7.34,
+     "end": 12.88
+    },
+    {
+     "id": "dq7s_3",
+     "text": "In the top row and the left column, a one can only end a square of side one. And a zero is zero.",
+     "start": 13.63,
+     "end": 20.16
+    },
+    {
+     "id": "dq7s_4",
+     "text": "The middle. Above, left and diagonal are all one. So a square of side two ends here.",
+     "start": 20.91,
+     "end": 26.46
+    },
+    {
+     "id": "dq7s_5",
+     "text": "The square on its right. Its left neighbour holds two. But above it is a zero. What is the biggest square ending here?",
+     "start": 27.21,
+     "end": 34.67
+    },
+    {
+     "id": "dq7s_6",
+     "text": "One. A single zero among the three neighbours blocks any bigger square.",
+     "start": 35.87,
+     "end": 39.98
+    },
+    {
+     "id": "dq7s_7",
+     "text": "The bottom row. The middle one has a zero on its left. One. And the corner. Above, one. Left, one. Diagonal, two. The smallest is one. Side two.",
+     "start": 40.73,
+     "end": 50.5
+    },
+    {
+     "id": "dq7s_8",
+     "text": "Line fifteen returns the biggest side seen. Two.",
+     "start": 51.25,
+     "end": 54.45
+    },
+    {
+     "id": "dq7s_9",
+     "text": "One entry per square of the table. O of rows times columns.",
+     "start": 55.55,
+     "end": 59.74
+    },
+    {
+     "id": "dq7s_10",
+     "text": "The table itself. The same size.",
+     "start": 60.49,
+     "end": 62.67
+    },
+    {
+     "id": "dq7s_11",
+     "text": "A map tool finds the largest square plot of free land on a grid map like this.",
+     "start": 63.42,
+     "end": 68.37
+    }
+   ],
+   "pauses": [
+    {
+     "id": "dq7s-q",
+     "t": 34.87
+    }
+   ]
+  },
   "dp1i": {
    "src": "videos/dp1i.mp4",
    "title": "The Cheapest Climb",
