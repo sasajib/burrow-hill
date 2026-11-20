@@ -4,8 +4,8 @@ window.CHAPTER = {
  "sub": "CHAPTER 19 · TOPOLOGICAL SORT",
  "key": "burrow-ch-topo",
  "next": {
-  "href": "index.html#chapters",
-  "label": "All chapters"
+  "href": "chapter.html?c=unionfind",
+  "label": "Chapter 20: Union-Find"
  },
  "prev": {
   "href": "chapter.html?c=graphs",

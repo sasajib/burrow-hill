@@ -19353,6 +19353,456 @@ window.BURROW = {
     }
    ]
   },
+  "uf0": {
+   "src": "videos/uf0.mp4",
+   "title": "Groups That Only Ever Merge",
+   "duration": 36.77,
+   "lines": [
+    {
+     "id": "uw1",
+     "text": "Chapter twenty. Union find.",
+     "start": 0.2,
+     "end": 2.26
+    },
+    {
+     "id": "uw2",
+     "text": "Friends form groups. And when two of them become friends, their two groups become one.",
+     "start": 2.96,
+     "end": 8.12
+    },
+    {
+     "id": "uw3",
+     "text": "Groups only ever merge. They never split. And the question is always the same. Are these two in the same group?",
+     "start": 9.02,
+     "end": 15.83
+    },
+    {
+     "id": "uw4",
+     "text": "For that, there is a tiny structure. One array, and two small moves. One lesson, and three puzzles.",
+     "start": 16.73,
+     "end": 23.05
+    },
+    {
+     "id": "uw5",
+     "text": "A social app uses it to tell you that you share a circle with a stranger. A network tool, to see which computers can reach each other. A photo app, to group pixels into objects.",
+     "start": 23.95,
+     "end": 35.17
+    }
+   ],
+   "pauses": []
+  },
+  "uft1": {
+   "src": "videos/uft1.mp4",
+   "title": "Every Group Has a Leader",
+   "duration": 77.66,
+   "lines": [
+    {
+     "id": "ux1",
+     "text": "Five burrows, and no tunnels yet. Tunnels will be dug one by one. And in between, Pip keeps asking: are these two connected?",
+     "start": 0.2,
+     "end": 8.49
+    },
+    {
+     "id": "ux2",
+     "text": "Walking all the tunnels for every question is slow. Here is a lighter idea. Every group picks one leader.",
+     "start": 9.39,
+     "end": 16.04
+    },
+    {
+     "id": "ux3",
+     "text": "Each burrow remembers one thing. Its parent. At the start, every burrow is its own parent. Five leaders, five groups of one.",
+     "start": 16.94,
+     "end": 25.19
+    },
+    {
+     "id": "ux4",
+     "text": "Dig a tunnel from zero to one. Join the two groups. The leader of zero, now points at the leader of one.",
+     "start": 26.09,
+     "end": 32.7
+    },
+    {
+     "id": "ux5",
+     "text": "Dig three to four. The same. Then one to two. The leader of one's group is one. It now points at two.",
+     "start": 33.6,
+     "end": 40.14
+    },
+    {
+     "id": "ux6",
+     "text": "Are zero and two connected? Follow the parents from zero. Zero, to one, to two. Two is its own parent. It is the leader.",
+     "start": 41.04,
+     "end": 48.94
+    },
+    {
+     "id": "ux7",
+     "text": "The leader of two, is two as well. The same leader, so the same group. And what about zero and four?",
+     "start": 49.94,
+     "end": 56.03
+    },
+    {
+     "id": "ux8",
+     "text": "Zero's leader is two. Four's leader is four. Different leaders. Not connected.",
+     "start": 57.23,
+     "end": 62.51
+    },
+    {
+     "id": "ux9",
+     "text": "Two moves. Find follows the parents up to the leader. Union points one leader at the other.",
+     "start": 63.41,
+     "end": 69.09
+    },
+    {
+     "id": "ux10",
+     "text": "That is union find. Groups that only ever merge, and questions answered almost at once.",
+     "start": 69.99,
+     "end": 76.06
+    }
+   ],
+   "pauses": [
+    {
+     "id": "uft1-q1",
+     "t": 56.23
+    }
+   ]
+  },
+  "uf1i": {
+   "src": "videos/uf1i.mp4",
+   "title": "The Same Group?",
+   "duration": 25.04,
+   "lines": [
+    {
+     "id": "uf1i_1",
+     "text": "Five burrows. Tunnels are dug between them, one at a time. Zero to one. Three to four. One to two.",
+     "start": 0.2,
+     "end": 7.11
+    },
+    {
+     "id": "uf1i_2",
+     "text": "Return true if two burrows end up in the same group. Here, zero and two.",
+     "start": 7.81,
+     "end": 12.45
+    },
+    {
+     "id": "uf1i_3",
+     "text": "You could walk the tunnels. But there is a lighter way, when groups only ever merge.",
+     "start": 13.15,
+     "end": 18.3
+    },
+    {
+     "id": "uf1i_4",
+     "text": "What if every group had one leader, and every burrow could find it? Your turn.",
+     "start": 19,
+     "end": 23.43
+    }
+   ],
+   "pauses": []
+  },
+  "uf1s": {
+   "src": "videos/uf1s.mp4",
+   "title": "Find the leader of each",
+   "duration": 74.6,
+   "lines": [
+    {
+     "id": "uf1s_1",
+     "text": "Every burrow stores its parent. A burrow that is its own parent, is the leader of its group.",
+     "start": 0.2,
+     "end": 5.89
+    },
+    {
+     "id": "uf1s_2",
+     "text": "Find follows the parents up to the leader. Union points one leader at the other.",
+     "start": 6.64,
+     "end": 11.32
+    },
+    {
+     "id": "uf1s_3",
+     "text": "Line two. Every burrow starts as its own parent. Five groups of one.",
+     "start": 12.07,
+     "end": 16.84
+    },
+    {
+     "id": "uf1s_4",
+     "text": "The first tunnel joins zero and one. Both are leaders. Line eight points zero at one.",
+     "start": 17.59,
+     "end": 23.32
+    },
+    {
+     "id": "uf1s_5",
+     "text": "The second tunnel joins three and four. Three now points at four.",
+     "start": 24.07,
+     "end": 27.99
+    },
+    {
+     "id": "uf1s_6",
+     "text": "The third joins one and two. The leader of one is one itself. It now points at two.",
+     "start": 28.74,
+     "end": 34.47
+    },
+    {
+     "id": "uf1s_7",
+     "text": "Now the question. Are zero and two connected? Find zero. Its parent is one. Not a leader. Where does find go next?",
+     "start": 35.22,
+     "end": 42.66
+    },
+    {
+     "id": "uf1s_8",
+     "text": "It climbs. To one. Then to two. Two is its own parent. So the leader of zero is two.",
+     "start": 43.86,
+     "end": 49.52
+    },
+    {
+     "id": "uf1s_9",
+     "text": "The leader of two is two. The same leader. Line ten returns true.",
+     "start": 50.27,
+     "end": 54.56
+    },
+    {
+     "id": "uf1s_10",
+     "text": "Each find climbs a chain of parents. Short in practice. And with one small trick, two puzzles from now, almost a single step.",
+     "start": 55.66,
+     "end": 63.68
+    },
+    {
+     "id": "uf1s_11",
+     "text": "One array of n numbers. O of n space.",
+     "start": 64.43,
+     "end": 67.47
+    },
+    {
+     "id": "uf1s_12",
+     "text": "A social app answers \"do you two share a circle of friends\" exactly like this.",
+     "start": 68.22,
+     "end": 73
+    }
+   ],
+   "pauses": [
+    {
+     "id": "uf1s-q",
+     "t": 42.86
+    }
+   ]
+  },
+  "uf2i": {
+   "src": "videos/uf2i.mp4",
+   "title": "The Extra Tunnel",
+   "duration": 24.92,
+   "lines": [
+    {
+     "id": "uf2i_1",
+     "text": "Tunnels are dug one at a time. Zero to one. One to two. Zero to two. Two to three.",
+     "start": 0.2,
+     "end": 6.1
+    },
+    {
+     "id": "uf2i_2",
+     "text": "One of them was a waste. It joined two burrows that were already connected. Return the first such tunnel, or null.",
+     "start": 6.8,
+     "end": 13.69
+    },
+    {
+     "id": "uf2i_3",
+     "text": "Here it is zero to two. The tunnels through one had already joined them.",
+     "start": 14.39,
+     "end": 18.49
+    },
+    {
+     "id": "uf2i_4",
+     "text": "Just before a tunnel is dug, what do the two leaders tell you? Your turn.",
+     "start": 19.19,
+     "end": 23.32
+    }
+   ],
+   "pauses": []
+  },
+  "uf2s": {
+   "src": "videos/uf2s.mp4",
+   "title": "Same leader? Then it is extra",
+   "duration": 54.53,
+   "lines": [
+    {
+     "id": "uf2s_1",
+     "text": "Before digging, find the leader of each end.",
+     "start": 0.2,
+     "end": 2.7
+    },
+    {
+     "id": "uf2s_2",
+     "text": "The same leader means they are already connected. This tunnel adds nothing. Different leaders, join them.",
+     "start": 3.45,
+     "end": 9.6
+    },
+    {
+     "id": "uf2s_3",
+     "text": "Every burrow starts as its own leader.",
+     "start": 10.35,
+     "end": 12.54
+    },
+    {
+     "id": "uf2s_4",
+     "text": "Tunnel zero to one. The leaders are zero, and one. Different. So the tunnel is useful, and line eleven joins them.",
+     "start": 13.29,
+     "end": 20.99
+    },
+    {
+     "id": "uf2s_5",
+     "text": "Tunnel one to two. Leaders one, and two. Different. Joined.",
+     "start": 21.74,
+     "end": 25.4
+    },
+    {
+     "id": "uf2s_6",
+     "text": "Tunnel zero to two. Find zero climbs to one, then to two. Find two is two. What does that mean?",
+     "start": 26.15,
+     "end": 32.53
+    },
+    {
+     "id": "uf2s_7",
+     "text": "They were already connected. This tunnel is the extra one. Line ten returns it.",
+     "start": 33.73,
+     "end": 38.82
+    },
+    {
+     "id": "uf2s_8",
+     "text": "Two finds for every tunnel. Each one a short climb.",
+     "start": 39.92,
+     "end": 43.25
+    },
+    {
+     "id": "uf2s_9",
+     "text": "One array of n numbers.",
+     "start": 44,
+     "end": 45.74
+    },
+    {
+     "id": "uf2s_10",
+     "text": "A network planner uses this to spot a cable that adds nothing. Both of its ends were already connected.",
+     "start": 46.49,
+     "end": 52.93
+    }
+   ],
+   "pauses": [
+    {
+     "id": "uf2s-q",
+     "t": 32.73
+    }
+   ]
+  },
+  "uf3i": {
+   "src": "videos/uf3i.mp4",
+   "title": "Groups After Every Tunnel",
+   "duration": 18.92,
+   "lines": [
+    {
+     "id": "uf3i_1",
+     "text": "Four burrows, so four groups. Tunnels are dug one at a time.",
+     "start": 0.2,
+     "end": 4.08
+    },
+    {
+     "id": "uf3i_2",
+     "text": "After each tunnel, write down how many separate groups are left.",
+     "start": 4.78,
+     "end": 8.31
+    },
+    {
+     "id": "uf3i_3",
+     "text": "The first tunnel joins zero and one. Three groups are left.",
+     "start": 9.01,
+     "end": 12.73
+    },
+    {
+     "id": "uf3i_4",
+     "text": "Not every tunnel changes the count. Which ones do? Your turn.",
+     "start": 13.43,
+     "end": 17.32
+    }
+   ],
+   "pauses": []
+  },
+  "uf3s": {
+   "src": "videos/uf3s.mp4",
+   "title": "A join removes one group",
+   "duration": 72.4,
+   "lines": [
+    {
+     "id": "uf3s_1",
+     "text": "Start with n groups. Every tunnel that really joins two groups, removes one.",
+     "start": 0.2,
+     "end": 5.2
+    },
+    {
+     "id": "uf3s_2",
+     "text": "A tunnel inside one group changes nothing. The leaders tell the two cases apart.",
+     "start": 5.95,
+     "end": 10.82
+    },
+    {
+     "id": "uf3s_3",
+     "text": "Four burrows. Four groups. Line ten starts the counter at n.",
+     "start": 11.57,
+     "end": 15.53
+    },
+    {
+     "id": "uf3s_4",
+     "text": "Tunnel zero to one. Different leaders. Joined. One group fewer. Three.",
+     "start": 16.28,
+     "end": 20.49
+    },
+    {
+     "id": "uf3s_5",
+     "text": "Tunnel two to three. Different leaders. Joined. Two groups.",
+     "start": 21.24,
+     "end": 24.73
+    },
+    {
+     "id": "uf3s_6",
+     "text": "Tunnel one to zero. Find one is one. Find zero climbs to one. The same leader. What is written?",
+     "start": 25.48,
+     "end": 31.96
+    },
+    {
+     "id": "uf3s_7",
+     "text": "Two again. Nothing merged, so the counter did not move.",
+     "start": 33.16,
+     "end": 36.49
+    },
+    {
+     "id": "uf3s_8",
+     "text": "Tunnel one to three. Leaders one, and three. Joined. One group. Everything is connected.",
+     "start": 37.24,
+     "end": 42.87
+    },
+    {
+     "id": "uf3s_9",
+     "text": "One line is new. Line five. While climbing, each burrow is pointed at its grandparent. So chains get shorter, every time they are used.",
+     "start": 43.97,
+     "end": 53.11
+    },
+    {
+     "id": "uf3s_10",
+     "text": "With that shortcut, a find is almost a single step. All the tunnels together cost close to O of n.",
+     "start": 53.86,
+     "end": 60.13
+    },
+    {
+     "id": "uf3s_11",
+     "text": "The parent array, and the output.",
+     "start": 60.88,
+     "end": 62.79
+    },
+    {
+     "id": "uf3s_12",
+     "text": "An online game does this as players link up. After every new friendship, it knows how many separate teams are left.",
+     "start": 63.54,
+     "end": 70.8
+    }
+   ],
+   "pauses": [
+    {
+     "id": "uf3s-q",
+     "t": 32.16
+    }
+   ]
+  },
   "to1i": {
    "src": "videos/to1i.mp4",
    "title": "Can It All Be Done?",
