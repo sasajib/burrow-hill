@@ -25222,6 +25222,707 @@ window.BURROW = {
      "t": 33.06
     }
    ]
+  },
+  "ka0": {
+   "src": "videos/ka0.mp4",
+   "title": "Be the Computer",
+   "duration": 41.3,
+   "lines": [
+    {
+     "id": "ja1",
+     "text": "Thinking in code. Warm up A. Be the computer.",
+     "start": 0.2,
+     "end": 3.2
+    },
+    {
+     "id": "ja2",
+     "text": "When code goes wrong, most people stare at it, and hope. There is a better habit. Run it in your head. One line at a time.",
+     "start": 3.9,
+     "end": 11.36
+    },
+    {
+     "id": "ja3",
+     "text": "The computer never guesses. It does exactly one small thing. Then the next. If you do the same, on paper, you see what it sees.",
+     "start": 12.26,
+     "end": 20.99
+    },
+    {
+     "id": "ja4",
+     "text": "Three lessons, and four puzzles. In every puzzle, the code is nearly right. Your job is to find out why it is not.",
+     "start": 21.89,
+     "end": 29.19
+    },
+    {
+     "id": "ja5",
+     "text": "Every working programmer does this. Reading a bug report. Reviewing a teammate's change. Or sitting in an interview, with no computer to run anything.",
+     "start": 30.09,
+     "end": 39.7
+    }
+   ],
+   "pauses": []
+  },
+  "kat1": {
+   "src": "videos/kat1.mp4",
+   "title": "The Trace Table",
+   "duration": 59.54,
+   "lines": [
+    {
+     "id": "jb1",
+     "text": "What does this code return? Do not guess. Become the computer.",
+     "start": 0.2,
+     "end": 3.92
+    },
+    {
+     "id": "jb2",
+     "text": "Make a table. One box for every variable. Total. And i.",
+     "start": 4.82,
+     "end": 8.56
+    },
+    {
+     "id": "jb3",
+     "text": "Line one. Total is zero. Write it down.",
+     "start": 9.46,
+     "end": 12.1
+    },
+    {
+     "id": "jb4",
+     "text": "Line two starts the loop. I is one. Is one at most three? Yes. So go in.",
+     "start": 13,
+     "end": 18.33
+    },
+    {
+     "id": "jb5",
+     "text": "Line three. One times two is two. Zero plus two. Total is two. Cross out the old value. Write the new one.",
+     "start": 19.23,
+     "end": 26.55
+    },
+    {
+     "id": "jb6",
+     "text": "Back to the top. I becomes two. Still at most three. Line three. Two times two is four. Total is six.",
+     "start": 27.55,
+     "end": 34.28
+    },
+    {
+     "id": "jb7",
+     "text": "I becomes three. Line three again. So what is total now?",
+     "start": 35.28,
+     "end": 38.58
+    },
+    {
+     "id": "jb8",
+     "text": "Twelve. Three times two is six, and six plus six is twelve. Now i becomes four. Is four at most three? No. The loop ends.",
+     "start": 39.78,
+     "end": 48.11
+    },
+    {
+     "id": "jb9",
+     "text": "Line five returns twelve. You did not guess. You know.",
+     "start": 49.11,
+     "end": 52.72
+    },
+    {
+     "id": "jb10",
+     "text": "One line at a time. Every change written down. That is a dry run.",
+     "start": 53.62,
+     "end": 57.94
+    }
+   ],
+   "pauses": [
+    {
+     "id": "kat1-q1",
+     "t": 38.78
+    }
+   ]
+  },
+  "kat2": {
+   "src": "videos/kat2.mp4",
+   "title": "Where Loops Begin and End",
+   "duration": 72.7,
+   "lines": [
+    {
+     "id": "jc1",
+     "text": "This loop should visit every door, in a row of four. On its last turn, it reads something that is not there. Why?",
+     "start": 0.2,
+     "end": 7.09
+    },
+    {
+     "id": "jc2",
+     "text": "Four doors. But look at their numbers. Zero, one, two, three. The last door is number three. Not four.",
+     "start": 8,
+     "end": 14.58
+    },
+    {
+     "id": "jc3",
+     "text": "The loop says: go on, while i is at most four. So i takes five values. Zero, one, two, three, four.",
+     "start": 15.48,
+     "end": 22.53
+    },
+    {
+     "id": "jc4",
+     "text": "Door four does not exist. Reading it gives undefined. This mistake is so common it has a name. Off by one.",
+     "start": 23.43,
+     "end": 30.92
+    },
+    {
+     "id": "jc5",
+     "text": "The fix. Go on while i is less than the length. Zero to three. Four turns.",
+     "start": 31.92,
+     "end": 37
+    },
+    {
+     "id": "jc6",
+     "text": "Before you trust any loop, ask three questions. Where does it start? When does it stop? And how many turns is that?",
+     "start": 37.9,
+     "end": 44.81
+    },
+    {
+     "id": "jc7",
+     "text": "Try it. I starts at one, and the loop goes on while i is less than four. How many turns?",
+     "start": 45.81,
+     "end": 51.81
+    },
+    {
+     "id": "jc8",
+     "text": "Three. One, two, three. And door zero was never visited.",
+     "start": 53.01,
+     "end": 56.79
+    },
+    {
+     "id": "jc9",
+     "text": "Going backwards, the same three questions. Start at length minus one. Go on while i is at least zero.",
+     "start": 57.69,
+     "end": 64.12
+    },
+    {
+     "id": "jc10",
+     "text": "Start. Stop. Count. And always check the first turn, and the last one. That is where loops break.",
+     "start": 65.02,
+     "end": 71.1
+    }
+   ],
+   "pauses": [
+    {
+     "id": "kat2-q1",
+     "t": 52.01
+    }
+   ]
+  },
+  "kat3": {
+   "src": "videos/kat3.mp4",
+   "title": "The Order of a Condition",
+   "duration": 72.1,
+   "lines": [
+    {
+     "id": "jd1",
+     "text": "Two checks, joined by and. Does it matter which one comes first? It can be the difference between working, and crashing.",
+     "start": 0.2,
+     "end": 7.45
+    },
+    {
+     "id": "jd2",
+     "text": "And means: both must be true. Or means: at least one.",
+     "start": 8.35,
+     "end": 11.8
+    },
+    {
+     "id": "jd3",
+     "text": "Here is the useful part. The computer reads left to right. And it stops, as soon as it knows the answer.",
+     "start": 12.7,
+     "end": 19.19
+    },
+    {
+     "id": "jd4",
+     "text": "With and, if the first check is false, the whole thing is false. So the second check is never run.",
+     "start": 20.09,
+     "end": 26.07
+    },
+    {
+     "id": "jd5",
+     "text": "Moss walks a row of words, looking for the first long one. Go on, while i is inside the row, and this word is short.",
+     "start": 26.97,
+     "end": 34.33
+    },
+    {
+     "id": "jd6",
+     "text": "No word here is long. So i reaches four. Is four inside the row? No. The computer stops right there. Word four is never touched.",
+     "start": 35.33,
+     "end": 43.83
+    },
+    {
+     "id": "jd7",
+     "text": "Now swap the two checks. Ask the word for its length first. Then ask whether it exists. When i is four, what happens?",
+     "start": 44.83,
+     "end": 52.41
+    },
+    {
+     "id": "jd8",
+     "text": "It asks for the length of a word that is not there. And the program crashes.",
+     "start": 53.61,
+     "end": 58.41
+    },
+    {
+     "id": "jd9",
+     "text": "So the check that keeps you safe, goes first. Is it inside? Is it not null? Only then, use it.",
+     "start": 59.31,
+     "end": 65.5
+    },
+    {
+     "id": "jd10",
+     "text": "Left to right. Stop when the answer is known. The guard goes first.",
+     "start": 66.4,
+     "end": 70.5
+    }
+   ],
+   "pauses": [
+    {
+     "id": "kat3-q1",
+     "t": 52.61
+    }
+   ]
+  },
+  "ka1i": {
+   "src": "videos/ka1i.mp4",
+   "title": "One Turn Short",
+   "duration": 22.63,
+   "lines": [
+    {
+     "id": "ka1i_1",
+     "text": "Pip wants every even number, from two, up to and including n. For six, that is two, four, and six.",
+     "start": 0.2,
+     "end": 6.54
+    },
+    {
+     "id": "ka1i_2",
+     "text": "The code is already written. But it is not quite right. Find the mistake, and fix it.",
+     "start": 7.24,
+     "end": 12.39
+    },
+    {
+     "id": "ka1i_3",
+     "text": "It returns two and four. The six is missing.",
+     "start": 13.09,
+     "end": 15.98
+    },
+    {
+     "id": "ka1i_4",
+     "text": "Do not stare at it. Trace it. What is i, when the loop stops? Your turn.",
+     "start": 16.68,
+     "end": 21.03
+    }
+   ],
+   "pauses": []
+  },
+  "ka1s": {
+   "src": "videos/ka1s.mp4",
+   "title": "The last turn never ran",
+   "duration": 61.55,
+   "lines": [
+    {
+     "id": "ka1s_1",
+     "text": "Do not guess where the bug is. Run the loop by hand, and watch i.",
+     "start": 0.2,
+     "end": 4.05
+    },
+    {
+     "id": "ka1s_2",
+     "text": "A missing last item usually means the loop stopped one turn too early.",
+     "start": 4.8,
+     "end": 9.3
+    },
+    {
+     "id": "ka1s_3",
+     "text": "N is six. Line three starts i at two. Push it.",
+     "start": 10.05,
+     "end": 13.47
+    },
+    {
+     "id": "ka1s_4",
+     "text": "I becomes four. Push it.",
+     "start": 14.22,
+     "end": 15.73
+    },
+    {
+     "id": "ka1s_5",
+     "text": "I becomes six. Now the check. The old code asked: is six less than six? What is the answer?",
+     "start": 16.48,
+     "end": 22.68
+    },
+    {
+     "id": "ka1s_6",
+     "text": "No. So the loop stopped, one turn too early. The six was never pushed.",
+     "start": 23.88,
+     "end": 28.35
+    },
+    {
+     "id": "ka1s_7",
+     "text": "The task said: up to, and including. So the check must be: at most. Six is at most six. Push it.",
+     "start": 29.1,
+     "end": 35.46
+    },
+    {
+     "id": "ka1s_8",
+     "text": "I becomes eight. Not at most six. The loop ends, and line six returns two, four, six.",
+     "start": 36.21,
+     "end": 42.03
+    },
+    {
+     "id": "ka1s_9",
+     "text": "The habit. Before you trust a loop, test its last turn by hand.",
+     "start": 43.13,
+     "end": 47.09
+    },
+    {
+     "id": "ka1s_10",
+     "text": "Including the end means, at most. Stopping before the end means, less than.",
+     "start": 47.84,
+     "end": 52.56
+    },
+    {
+     "id": "ka1s_11",
+     "text": "A report that should run from the first to the thirty first, and stops at the thirtieth, has exactly this bug.",
+     "start": 53.31,
+     "end": 59.95
+    }
+   ],
+   "pauses": [
+    {
+     "id": "ka1s-q",
+     "t": 22.88
+    }
+   ]
+  },
+  "ka2i": {
+   "src": "videos/ka2i.mp4",
+   "title": "Backwards",
+   "duration": 23.51,
+   "lines": [
+    {
+     "id": "ka2i_1",
+     "text": "Moss wants a word written backwards. Moss, becomes s, s, o, m.",
+     "start": 0.2,
+     "end": 4.39
+    },
+    {
+     "id": "ka2i_2",
+     "text": "The code walks the word from the end. But it has two small mistakes. Find them both.",
+     "start": 5.09,
+     "end": 10.63
+    },
+    {
+     "id": "ka2i_3",
+     "text": "Four letters. So the last one sits at position three. Not four.",
+     "start": 11.33,
+     "end": 15.49
+    },
+    {
+     "id": "ka2i_4",
+     "text": "Trace the first turn. Then the last turn. Which doors does the code open? Your turn.",
+     "start": 16.19,
+     "end": 21.91
+    }
+   ],
+   "pauses": []
+  },
+  "ka2s": {
+   "src": "videos/ka2s.mp4",
+   "title": "Both ends were wrong",
+   "duration": 71.93,
+   "lines": [
+    {
+     "id": "ka2s_1",
+     "text": "A loop has two ends. Its first turn, and its last turn. Check both by hand.",
+     "start": 0.2,
+     "end": 5.49
+    },
+    {
+     "id": "ka2s_2",
+     "text": "Going backwards, the first turn is the last position. Length minus one. And the last turn is position zero.",
+     "start": 6.24,
+     "end": 13.13
+    },
+    {
+     "id": "ka2s_3",
+     "text": "Four letters, at positions zero to three. The old code started at word dot length. Four. What is at position four?",
+     "start": 13.88,
+     "end": 21.67
+    },
+    {
+     "id": "ka2s_4",
+     "text": "Nothing. So the answer began with the word, undefined. The first fix. Start at length minus one. Three.",
+     "start": 22.87,
+     "end": 29.84
+    },
+    {
+     "id": "ka2s_5",
+     "text": "Position three. S. Then two. S. Then one. O.",
+     "start": 30.59,
+     "end": 33.84
+    },
+    {
+     "id": "ka2s_6",
+     "text": "Now i is zero. The old code asked: is zero greater than zero? No. It stopped, and the m was lost.",
+     "start": 34.59,
+     "end": 41.24
+    },
+    {
+     "id": "ka2s_7",
+     "text": "The second fix. Go on while i is at least zero. So position zero is read too. M.",
+     "start": 41.99,
+     "end": 48.1
+    },
+    {
+     "id": "ka2s_8",
+     "text": "I becomes minus one. The loop ends. Line six returns s, s, o, m.",
+     "start": 48.85,
+     "end": 53.83
+    },
+    {
+     "id": "ka2s_9",
+     "text": "Going backwards. Start at length minus one. Stop after zero.",
+     "start": 54.93,
+     "end": 58.79
+    },
+    {
+     "id": "ka2s_10",
+     "text": "Two mistakes, and both were at the ends. That is where to look first.",
+     "start": 59.54,
+     "end": 63.58
+    },
+    {
+     "id": "ka2s_11",
+     "text": "Your messages, newest first. Or an undo list. Both are a loop that walks backwards like this.",
+     "start": 64.33,
+     "end": 70.33
+    }
+   ],
+   "pauses": [
+    {
+     "id": "ka2s-q",
+     "t": 21.87
+    }
+   ]
+  },
+  "ka3i": {
+   "src": "videos/ka3i.mp4",
+   "title": "The First Long Word",
+   "duration": 24.57,
+   "lines": [
+    {
+     "id": "ka3i_1",
+     "text": "Pip is looking for the first word with more than three letters. Sun, and oak. Neither is long enough.",
+     "start": 0.2,
+     "end": 6.4
+    },
+    {
+     "id": "ka3i_2",
+     "text": "So the answer should be null. But this code crashes instead. Find out why.",
+     "start": 7.1,
+     "end": 11.84
+    },
+    {
+     "id": "ka3i_3",
+     "text": "It works fine when a long word exists. It only breaks when there is none.",
+     "start": 12.54,
+     "end": 16.93
+    },
+    {
+     "id": "ka3i_4",
+     "text": "Trace it. After two turns, i is two. What does the code ask first? Your turn.",
+     "start": 17.63,
+     "end": 22.97
+    }
+   ],
+   "pauses": []
+  },
+  "ka3s": {
+   "src": "videos/ka3s.mp4",
+   "title": "The guard goes first",
+   "duration": 66.64,
+   "lines": [
+    {
+     "id": "ka3s_1",
+     "text": "With and, the computer checks the left side first. If it is false, it never looks at the right side.",
+     "start": 0.2,
+     "end": 6.24
+    },
+    {
+     "id": "ka3s_2",
+     "text": "So the check that keeps you safe, must come first.",
+     "start": 6.99,
+     "end": 9.79
+    },
+    {
+     "id": "ka3s_3",
+     "text": "N is three. I starts at zero. Sun has three letters. Not more than three. So i moves on.",
+     "start": 10.54,
+     "end": 16.88
+    },
+    {
+     "id": "ka3s_4",
+     "text": "Oak. Three letters as well. I moves on, to two.",
+     "start": 17.63,
+     "end": 20.56
+    },
+    {
+     "id": "ka3s_5",
+     "text": "Now i is two. There is no word at position two. The old code asked for its length first. What happens?",
+     "start": 21.31,
+     "end": 28.16
+    },
+    {
+     "id": "ka3s_6",
+     "text": "It crashes. You cannot ask nothing, for its length.",
+     "start": 29.36,
+     "end": 32.3
+    },
+    {
+     "id": "ka3s_7",
+     "text": "The fix is only the order. First ask: is i still inside the row? Two is not less than two. The computer stops right there. The second check never runs.",
+     "start": 33.05,
+     "end": 43.53
+    },
+    {
+     "id": "ka3s_8",
+     "text": "Line six sees that i is past the end, and returns null.",
+     "start": 44.28,
+     "end": 48.02
+    },
+    {
+     "id": "ka3s_9",
+     "text": "Left to right. Stop when the answer is known. So the guard goes first.",
+     "start": 49.12,
+     "end": 53.6
+    },
+    {
+     "id": "ka3s_10",
+     "text": "The same order protects you from null, and from empty lists.",
+     "start": 54.35,
+     "end": 58.14
+    },
+    {
+     "id": "ka3s_11",
+     "text": "Real code is full of this. User, and user dot name. Check that it exists. Then use it.",
+     "start": 58.89,
+     "end": 65.04
+    }
+   ],
+   "pauses": [
+    {
+     "id": "ka3s-q",
+     "t": 28.36
+    }
+   ]
+  },
+  "ka4i": {
+   "src": "videos/ka4i.mp4",
+   "title": "One Too Many",
+   "duration": 24.27,
+   "lines": [
+    {
+     "id": "ka4i_1",
+     "text": "Three numbers in a row. Pip wants the gaps between neighbours. Five minus three. Then nine minus five.",
+     "start": 0.2,
+     "end": 6.99
+    },
+    {
+     "id": "ka4i_2",
+     "text": "Two, and four. But this code returns three items. And the last one is not even a number.",
+     "start": 7.69,
+     "end": 13.65
+    },
+    {
+     "id": "ka4i_3",
+     "text": "It is nearly right. One thing is off.",
+     "start": 14.35,
+     "end": 16.61
+    },
+    {
+     "id": "ka4i_4",
+     "text": "Three numbers. How many gaps? And how many turns does the loop make? Your turn.",
+     "start": 17.31,
+     "end": 22.67
+    }
+   ],
+   "pauses": []
+  },
+  "ka4s": {
+   "src": "videos/ka4s.mp4",
+   "title": "Looking ahead? Stop early",
+   "duration": 59.99,
+   "lines": [
+    {
+     "id": "ka4s_1",
+     "text": "Count first. Three numbers have two gaps. So the loop should make two turns.",
+     "start": 0.2,
+     "end": 5.05
+    },
+    {
+     "id": "ka4s_2",
+     "text": "The body reads the door after i. So on the very last door, there is nothing to read.",
+     "start": 5.8,
+     "end": 10.93
+    },
+    {
+     "id": "ka4s_3",
+     "text": "I is zero. Five minus three. Two.",
+     "start": 11.68,
+     "end": 13.95
+    },
+    {
+     "id": "ka4s_4",
+     "text": "I is one. Nine minus five. Four.",
+     "start": 14.7,
+     "end": 16.92
+    },
+    {
+     "id": "ka4s_5",
+     "text": "The old code went on, to i equals two. It asked for the number after the nine. What did it get?",
+     "start": 17.67,
+     "end": 23.59
+    },
+    {
+     "id": "ka4s_6",
+     "text": "Undefined. And undefined minus nine, is not a number. That was the extra item.",
+     "start": 24.79,
+     "end": 30.43
+    },
+    {
+     "id": "ka4s_7",
+     "text": "The body looks one door ahead. So the loop must stop one door early. Less than length, minus one.",
+     "start": 31.18,
+     "end": 37.23
+    },
+    {
+     "id": "ka4s_8",
+     "text": "Two turns. Line six returns two, and four.",
+     "start": 37.98,
+     "end": 41.03
+    },
+    {
+     "id": "ka4s_9",
+     "text": "Whenever the body reads i plus one, the loop stops at length minus one.",
+     "start": 42.13,
+     "end": 46.72
+    },
+    {
+     "id": "ka4s_10",
+     "text": "Count the turns you expect. Then check that the loop makes exactly that many.",
+     "start": 47.47,
+     "end": 52.09
+    },
+    {
+     "id": "ka4s_11",
+     "text": "A chart of daily change, today minus yesterday, has one bar fewer than there are days.",
+     "start": 52.84,
+     "end": 58.39
+    }
+   ],
+   "pauses": [
+    {
+     "id": "ka4s-q",
+     "t": 23.79
+    }
+   ]
   }
  }
 };
