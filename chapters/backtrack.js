@@ -4,8 +4,8 @@ window.CHAPTER = {
  "sub": "CHAPTER 22 · BACKTRACKING",
  "key": "burrow-ch-backtrack",
  "next": {
-  "href": "index.html#chapters",
-  "label": "All chapters"
+  "href": "chapter.html?c=greedy",
+  "label": "Chapter 23: Greedy"
  },
  "prev": {
   "href": "chapter.html?c=mixed4",
