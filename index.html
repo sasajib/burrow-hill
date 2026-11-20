@@ -3,11 +3,16 @@
 <title>Burrow Hill</title>
 <meta name="description" content="A visual course in data structures and algorithms: watch the idea happen, guess what comes next, then write the code.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23FFC629'/%3E%3Cellipse cx='26' cy='21' rx='4.2' ry='10' transform='rotate(-12 26 21)' fill='%232B2620'/%3E%3Cellipse cx='38' cy='21' rx='4.2' ry='10' transform='rotate(12 38 21)' fill='%232B2620'/%3E%3Cpath d='M6 64C6 40 20 26 32 26s26 14 26 38z' fill='%23FFFAEC'/%3E%3Cpath d='M23 64V51a9 9 0 0 1 18 0v13z' fill='%232B2620'/%3E%3C/svg%3E">
+<script id="th">try{var d=localStorage.getItem('burrow-dark');if(d==='1'||(d===null&&matchMedia('(prefers-color-scheme: dark)').matches))document.documentElement.dataset.dark='1'}catch(e){}</script>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@500;700;800&display=swap">
 <style>
 /* Course home, friendly v2. Design: Doop canvas 42fbItqWJL. Built by scripts/build_landing.py: do not edit by hand. */
 *{margin:0;box-sizing:border-box}[hidden]{display:none!important}
 :root{--ground:#FFFAEC;--surface:#fff;--ink:#2B2620;--ink2:#6E6557;--line:#F0E4C4;--brand:#FFC629;--deep:#E3A400;--soft:#FFF0BF;--leaf:#2C8F62;--leafsoft:#DDF2E5;--pad:clamp(20px,6vw,80px);--head:"Fredoka","Nunito",system-ui,sans-serif}
+html[data-dark]{--ground:#1D1A16;--surface:#2A2621;--ink:#F3EBDA;--ink2:#B5AA98;--line:#3D372F;--soft:#40371C;--leaf:#6FD3A2;--leafsoft:#1F3D2E;color-scheme:dark}
+html[data-dark] .ic{background:var(--brand)}html[data-dark] .how{background:#141210}html[data-dark] .t.done .tag{color:#12251B}html[data-dark] .part.alldone .num{color:#12251B}
+#dark{width:40px;height:40px;border-radius:50%;border:0;background:var(--surface);box-shadow:inset 0 0 0 1.5px var(--line);color:var(--ink);cursor:pointer;display:grid;place-items:center;flex:none}
+.sub a{color:var(--ink);font-weight:700;text-decoration:underline;text-underline-offset:3px}
 html{scroll-behavior:smooth}
 body{font-family:"Nunito",system-ui,sans-serif;font-weight:500;color:var(--ink);background:var(--ground);font-size:17px;line-height:1.5}
 .w{max-width:1280px;margin:0 auto;padding-inline:var(--pad)}
@@ -15,8 +20,8 @@ a{color:inherit;text-decoration:none}
 h1,h2,h3,.d{font-family:var(--head);font-weight:600;letter-spacing:-.3px;line-height:1.1}
 .soft{color:var(--ink2)}.sm{font-size:14px}
 .eye{font-family:var(--head);font-weight:600;font-size:13px;letter-spacing:1.4px;text-transform:uppercase;color:var(--ink2)}
-.btn{display:inline-flex;align-items:center;justify-content:center;font-family:var(--head);font-weight:600;font-size:17px;line-height:1;padding:14px 24px;border-radius:99px;background:var(--brand);box-shadow:0 3px 0 var(--deep);white-space:nowrap;cursor:pointer;border:0;color:var(--ink)}
-.btn.alt{background:var(--surface);box-shadow:inset 0 0 0 1.5px var(--line),0 3px 0 var(--line)}
+.btn{display:inline-flex;align-items:center;justify-content:center;font-family:var(--head);font-weight:600;font-size:17px;line-height:1;padding:14px 24px;border-radius:99px;background:var(--brand);box-shadow:0 3px 0 var(--deep);white-space:nowrap;cursor:pointer;border:0;color:#2B2620}
+.btn.alt{color:var(--ink);background:var(--surface);box-shadow:inset 0 0 0 1.5px var(--line),0 3px 0 var(--line)}
 .btn:active{transform:translateY(2px);box-shadow:0 1px 0 var(--deep)}
 a:focus-visible,button:focus-visible,summary:focus-visible,video:focus-visible{outline:3px solid var(--leaf);outline-offset:3px;border-radius:8px}
 .card{background:var(--surface);border-radius:24px;box-shadow:inset 0 0 0 1.5px var(--line)}
@@ -27,7 +32,7 @@ header.top a.l{font-family:var(--head);font-weight:600;font-size:16px}
 header.top .btn{padding:11px 18px;font-size:15px}
 .hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,540px);gap:clamp(24px,5vw,64px);align-items:center;padding-block:clamp(14px,3vw,36px) clamp(34px,5vw,56px)}
 h1{font-size:clamp(38px,5.4vw,60px);margin:12px 0 16px}
-h1 em{font-style:normal;background:var(--brand);border-radius:.25em;padding:0 .18em;display:inline-block}
+h1 em{font-style:normal;color:#2B2620;background:var(--brand);border-radius:.25em;padding:0 .18em;display:inline-block}
 .lede{font-size:clamp(18px,1.8vw,20px);max-width:30em}
 .cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:26px;align-items:center}
 .vid{border-radius:28px;overflow:hidden;box-shadow:0 18px 40px rgba(43,38,32,.16);aspect-ratio:16/9;background:var(--ink)}
@@ -54,7 +59,7 @@ a.pick:hover{transform:translateY(-2px)}
 .part summary{display:flex;gap:14px;align-items:center;padding:16px clamp(16px,2vw,22px);cursor:pointer;list-style:none}
 .part summary::-webkit-details-marker{display:none}
 .num{flex:none;width:46px;height:46px;border-radius:50%;background:var(--soft);font-family:var(--head);font-weight:700;font-size:21px;display:grid;place-items:center}
-.part.started .num{background:var(--brand)}.part.alldone .num{background:var(--leaf);color:#fff}.part.opt .num{background:var(--surface)}
+.part.started .num{background:var(--brand);color:#2B2620}.part.alldone .num{background:var(--leaf);color:#fff}.part.opt .num{background:var(--surface)}
 .pt{min-width:0}.pt b{font-family:var(--head);font-weight:600;font-size:clamp(19px,2vw,21px);display:block;line-height:1.15}.pt i{font-style:normal;font-size:14px;color:var(--ink2)}
 .chev{margin-left:auto;flex:none;width:10px;height:10px;border-right:2.5px solid var(--ink2);border-top:2.5px solid var(--ink2);transform:rotate(135deg);transition:transform .15s;margin-right:6px}
 .part[open] .chev{transform:rotate(-45deg)}
@@ -72,10 +77,10 @@ a.t:hover{transform:translateY(-2px)}
 .t.now{box-shadow:0 0 0 3px var(--brand)}
 .t.soon{box-shadow:none;border:2px dashed var(--line);display:grid;align-items:center;min-height:90px}
 .tag{position:absolute;left:8px;top:8px;font-family:var(--head);font-weight:600;font-size:12px;border-radius:99px;padding:4px 10px;background:var(--surface);white-space:nowrap}
-.t.now .tag{background:var(--brand)}.t.done .tag{background:var(--leaf);color:#fff}
-.how{background:var(--ink);color:var(--ground);border-radius:clamp(28px,4vw,40px) clamp(28px,4vw,40px) 0 0;padding-block:clamp(34px,5vw,56px) 34px}
+.t.now .tag{background:var(--brand);color:#2B2620}.t.done .tag{background:var(--leaf);color:#fff}
+.how{background:#2B2620;color:#FFFAEC;border-radius:clamp(28px,4vw,40px) clamp(28px,4vw,40px) 0 0;padding-block:clamp(34px,5vw,56px) 34px}
 .steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px;margin-top:24px}
-.sn{width:38px;height:38px;border-radius:50%;background:var(--brand);color:var(--ink);font-family:var(--head);font-weight:700;display:grid;place-items:center;margin-bottom:12px;flex:none}
+.sn{width:38px;height:38px;border-radius:50%;background:var(--brand);color:#2B2620;font-family:var(--head);font-weight:700;display:grid;place-items:center;margin-bottom:12px;flex:none}
 .steps b{font-family:var(--head);font-weight:600;font-size:21px;display:block}.steps p{opacity:.8;margin-top:6px}
 .foot{opacity:.6;margin-top:36px;font-size:14px;display:flex;flex-wrap:wrap;gap:6px 24px;justify-content:space-between}
 .rv a{display:flex;gap:12px;align-items:center;padding:12px 16px}.rv a+a{border-top:1.5px solid var(--line)}
@@ -96,7 +101,7 @@ a.t:hover{transform:translateY(-2px)}
   .t img{flex:none;width:76px;border-radius:10px}.t div{padding:0;min-width:0}.tag{position:static;margin-left:auto;flex:none;background:var(--soft)}.t.soon{border:0;min-height:0}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.t,.pick,.chev{transition:none}a.t:hover,a.pick:hover{transform:none}}
 </style></head><body>
-<header class="top w"><a class="logo" href="index.html"><svg class="mark" viewBox="0 0 64 64" role="img" aria-label=""><defs><clipPath id="bhc"><rect width="64" height="64" rx="18"/></clipPath></defs><g clip-path="url(#bhc)"><rect width="64" height="64" fill="#FFC629"/><ellipse cx="26" cy="21" rx="4.2" ry="10" transform="rotate(-12 26 21)" fill="#2B2620"/><ellipse cx="38" cy="21" rx="4.2" ry="10" transform="rotate(12 38 21)" fill="#2B2620"/><path d="M2 66C2 40 18 26 32 26s30 14 30 40z" fill="#FFFAEC"/><path d="M23 66V51a9 9 0 0 1 18 0v15z" fill="#2B2620"/></g></svg>Burrow Hill</a><a class="l" href="#course">The path</a><a class="l" href="#how">How it works</a><a class="btn" id="navgo" href="foundations.html">Start</a></header>
+<header class="top w"><a class="logo" href="index.html"><svg class="mark" viewBox="0 0 64 64" role="img" aria-label=""><defs><clipPath id="bhc"><rect width="64" height="64" rx="18"/></clipPath></defs><g clip-path="url(#bhc)"><rect width="64" height="64" fill="#FFC629"/><ellipse cx="26" cy="21" rx="4.2" ry="10" transform="rotate(-12 26 21)" fill="#2B2620"/><ellipse cx="38" cy="21" rx="4.2" ry="10" transform="rotate(12 38 21)" fill="#2B2620"/><path d="M2 66C2 40 18 26 32 26s30 14 30 40z" fill="#FFFAEC"/><path d="M23 66V51a9 9 0 0 1 18 0v15z" fill="#2B2620"/></g></svg>Burrow Hill</a><a class="l" href="#course">The path</a><a class="l" href="#how">How it works</a><a class="l" href="patterns.html">Patterns</a><button id="dark" title="Light or dark" aria-label="Switch between light and dark"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4 8.5 8.5 0 1 0 20 14.5z"/></svg></button><a class="btn" id="navgo" href="foundations.html">Start</a></header>
 <div class="w hero">
 <div><p class="eye">Data structures and algorithms, made visual</p>
 <h1>Watch it. Guess it. <em>Code it.</em></h1>
@@ -115,7 +120,7 @@ a.t:hover{transform:translateY(-2px)}
 <a class="pick card" href="foundations.html"><span class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2B2620" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h16M7 20V10M12 20V4M17 20v-7"/></svg></span><b>I can write loops and functions</b><span>Start at Part 0: how to count the work your code does.</span><u>Start Part 0</u></a>
 <a class="pick card" href="chapter.html?c=mixed1"><span class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2B2620" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 2M9 2h6"/></svg></span><b>I have an interview soon</b><span>Try a mixed set: 10 puzzles with no labels, like the real thing.</span><u>Try Mixed Set 1</u></a>
 </div></section>
-<section class="w" id="course"><h2>The path up the hill</h2><p class="sub">Six parts. Each builds on the one before. Go in order, or jump in anywhere. Your progress is saved on this device.</p>
+<section class="w" id="course"><h2>The path up the hill</h2><p class="sub">Six parts. Each builds on the one before. Go in order, or jump in anywhere. Looking for one pattern? <a href="patterns.html">Open the pattern index</a>.</p>
 <div class="parts">
 <details class="part" id="p0"><summary><span class="num">0</span><span class="pt"><b>Foundations</b><i class="pm" data-meta="6 lessons · 8 min">6 lessons · 8 min</i></span><span class="chev"></span></summary><div class="pb"><p>How a computer runs your code, and how to count the work it does.</p><div class="bar"><i></i></div><div class="tiles"><a class="t" href="foundations.html" data-key="burrow-foundations-v1" data-total="6"><img src="posters/f4.jpg" alt="" loading="lazy" width="320" height="180"><div><b>Foundations</b><i>6 lessons · Big O, memory, the stack</i></div><span class="tag" hidden></span></a></div></div></details>
 <details class="part" id="p1"><summary><span class="num">1</span><span class="pt"><b>Rows and chains</b><i class="pm" data-meta="9 chapters · 56 puzzles · 107 min">9 chapters · 56 puzzles · 107 min</i></span><span class="chev"></span></summary><div class="pb"><p>Arrays, strings, hash maps, and the tricks that walk a row once instead of many times.</p><div class="bar"><i></i></div><div class="tiles"><a class="t" href="chapter.html?c=arrays" data-key="burrow-ch-arrays" data-total="9"><img src="posters/art1.jpg" alt="" loading="lazy" width="320" height="180"><div><b>1 · Arrays</b><i>6 puzzles · 11 min</i></div><span class="tag" hidden></span></a><a class="t" href="chapter.html?c=strings" data-key="burrow-ch-strings" data-total="7"><img src="posters/srt1.jpg" alt="" loading="lazy" width="320" height="180"><div><b>2 · Strings</b><i>4 puzzles · 8 min</i></div><span class="tag" hidden></span></a><a class="t" href="chapter.html?c=hashmap" data-key="burrow-ch-hashmap" data-total="9"><img src="posters/hwt1.jpg" alt="" loading="lazy" width="320" height="180"><div><b>3 · Hash Maps</b><i>6 puzzles · 11 min</i></div><span class="tag" hidden></span></a><a class="t" href="chapter.html?c=prefix" data-key="burrow-ch-prefix" data-total="7"><img src="posters/pst1.jpg" alt="" loading="lazy" width="320" height="180"><div><b>4 · Prefix Sums</b><i>4 puzzles · 9 min</i></div><span class="tag" hidden></span></a><a class="t" href="chapter.html?c=twoptr" data-key="burrow-ch-twoptr" data-total="9"><img src="posters/tpt1.jpg" alt="" loading="lazy" width="320" height="180"><div><b>5 · Two Pointers</b><i>6 puzzles · 12 min</i></div><span class="tag" hidden></span></a><a class="t" href="chapter.html?c=window" data-key="burrow-ch-window" data-total="9"><img src="posters/swt1.jpg" alt="" loading="lazy" width="320" height="180"><div><b>6 · Sliding Window</b><i>6 puzzles · 12 min</i></div><span class="tag" hidden></span></a><a class="t" href="chapter.html?c=stack" data-key="burrow-ch-stack" data-total="9"><img src="posters/stt1.jpg" alt="" loading="lazy" width="320" height="180"><div><b>7 · Stacks</b><i>6 puzzles · 12 min</i></div><span class="tag" hidden></span></a><a class="t" href="chapter.html?c=queue" data-key="burrow-ch-queue" data-total="4"><img src="posters/qut1.jpg" alt="" loading="lazy" width="320" height="180"><div><b>8 · Queues</b><i>2 puzzles · 5 min</i></div><span class="tag" hidden></span></a><a class="t" href="chapter.html?c=linked" data-key="burrow-ch-linked" data-total="9"><img src="posters/llt1.jpg" alt="" loading="lazy" width="320" height="180"><div><b>9 · Linked Lists</b><i>6 puzzles · 11 min</i></div><span class="tag" hidden></span></a><a class="t mix" href="chapter.html?c=mixed1" data-key="burrow-ch-mixed1" data-total="11"><img src="posters/mx0.jpg" alt="" loading="lazy" width="320" height="180"><div><b>Mixed Set 1</b><i>10 puzzles, no labels</i></div><span class="tag" hidden></span></a></div></div></details>
@@ -153,6 +158,7 @@ if (go) { const row = ORDER.find((r) => r[0] === go.t.dataset.key) || [], tag = 
   const short = (row[2] || '').split(' · ').pop();
   for (const a of [rzgo, navgo, herogo]) a.href = go.t.getAttribute('href'); navgo.textContent = 'Continue'; herogo.textContent = 'Continue: ' + short;
 } else { document.getElementById('p0').open = true; document.getElementById('p1').open = true; }
+document.getElementById('dark').onclick = () => { const on = !document.documentElement.dataset.dark; if (on) document.documentElement.dataset.dark = '1'; else delete document.documentElement.dataset.dark; try { localStorage.setItem('burrow-dark', on ? '1' : '0'); } catch (e) {} };
 // a link to a part (index.html#p3) opens it
 const openHash = () => { const el = location.hash.length > 1 && document.getElementById(location.hash.slice(1)); if (el && el.tagName === 'DETAILS') el.open = true; }; addEventListener('hashchange', openHash); openHash();
 // ---- due for review: puzzles solved at least 18 hours ago and not yet solved a second time ----

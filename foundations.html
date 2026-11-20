@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
+<script id="th">try{var d=localStorage.getItem('burrow-dark');if(d==='1'||(d===null&&matchMedia('(prefers-color-scheme: dark)').matches))document.documentElement.dataset.dark='1'}catch(e){}</script>
 <title>Burrow Hill Foundations</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@500;700;800&family=JetBrains+Mono:wght@500;700&display=swap">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23FFC629'/%3E%3Cellipse cx='26' cy='21' rx='4.2' ry='10' transform='rotate(-12 26 21)' fill='%232B2620'/%3E%3Cellipse cx='38' cy='21' rx='4.2' ry='10' transform='rotate(12 38 21)' fill='%232B2620'/%3E%3Cpath d='M6 64C6 40 20 26 32 26s26 14 26 38z' fill='%23FFFAEC'/%3E%3Cpath d='M23 64V51a9 9 0 0 1 18 0v13z' fill='%232B2620'/%3E%3C/svg%3E">
@@ -270,12 +271,38 @@ a{color:var(--plum)}
 .ednote.bad{color:var(--berry);font-weight:700}
 .codeview .on span{color:inherit!important}
 @media(max-width:480px){.edwrap .cm-gutter-lint{display:none}.edwrap .cm-editor{font-size:13px}.edwrap .cm-lineNumbers .cm-gutterElement{padding:0 4px 0 8px;min-width:24px}}
+
+/* ---------- dark mode: html[data-dark]. Video, code panels and the step-through stage keep their own colours ---------- */
+#dark{width:40px;height:40px;border-radius:50%;border:0;background:#fff;box-shadow:inset 0 0 0 1.5px var(--line);color:var(--plum);cursor:pointer;display:grid;place-items:center;flex:none;margin-left:auto}
+#dark + .xp{margin-left:0}
+html[data-dark]{color-scheme:dark;--line:#3D372F;--soft:#40371C;--ink2:#B5AA98;--meadow:#1F3D2E;--mint:#2C5A44;--leaf:#4FB985;--tx:#F3EBDA;--pn:#2A2621}
+html[data-dark] body{background:#1D1A16;color:var(--tx)}
+html[data-dark] .card,html[data-dark] .opt,html[data-dark] .btn.quiet,html[data-dark] .spec,html[data-dark] .exs,html[data-dark] .vctl button,html[data-dark] #steplist,html[data-dark] .tests li,html[data-dark] .sum div,html[data-dark] .note,html[data-dark] .keys td,html[data-dark] .edkeys button,html[data-dark] #dark{background:var(--pn);color:var(--tx)}
+html[data-dark] .opt,html[data-dark] .btn.quiet{box-shadow:inset 0 0 0 1.5px var(--line),0 3px 0 #171512}
+html[data-dark] .srow,html[data-dark] .steps summary u,html[data-dark] .cap,html[data-dark] a,html[data-dark] .xp,html[data-dark] #reset{color:var(--tx)}
+html[data-dark] .btn:not(.quiet),html[data-dark] a.btn:not(.quiet){color:#2B2620}
+html[data-dark] .btn:disabled{background:var(--line);color:var(--ink2)}
+html[data-dark] .opt.right{background:var(--meadow)}html[data-dark] .opt.wrong,html[data-dark] .tests .bad,html[data-dark] .clock.over{background:#5A2A22}
+html[data-dark] .tests .ok{background:var(--meadow)}
+html[data-dark] .keys td:first-child{background:var(--mint)}html[data-dark] .keys td.slow{background:#5A2A22}
+html[data-dark] .stage,html[data-dark] .stage.meadow{background:#FFF0BF;color:#2B2620;box-shadow:none}
+html[data-dark] .stage.meadow{background:#DDF2E5}
+html[data-dark] .vid:not(.fs){box-shadow:0 10px 24px rgba(0,0,0,.5)}
+html[data-dark] .vid.fs .quiz{color:var(--tx)}
+html[data-dark] .pill.s{color:#BFF0D6}html[data-dark] .pill.w{background:#5A2A22;color:#FFD3CB}
+html[data-dark] .two div{background:var(--meadow)}html[data-dark] .two div+div{background:var(--soft)}
+html[data-dark] .ednote.bad{color:#FF9E8A}
+html[data-dark] .acts{background:var(--pn);box-shadow:0 -1.5px 0 var(--line)}
+html[data-dark] .note.warn{border-color:#FF7A66}
+html[data-dark] .codeview,html[data-dark] .mine,html[data-dark] textarea{background:#141210}
+html[data-dark] .edwrap .cm-editor,html[data-dark] .edwrap .cm-gutters{background-color:#141210}
 </style>
 </head>
 <body>
 <div class="wrap">
 <header>
   <a class="back" href="index.html#course" aria-label="All chapters" title="All chapters"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2B2620" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg></a><a class="lg" href="index.html" title="Burrow Hill home"><svg viewBox="0 0 64 64" width="38" height="38" role="img" aria-label="Burrow Hill"><defs><clipPath id="bhc"><rect width="64" height="64" rx="18"/></clipPath></defs><g clip-path="url(#bhc)"><rect width="64" height="64" fill="#FFC629"/><ellipse cx="26" cy="21" rx="4.2" ry="10" transform="rotate(-12 26 21)" fill="#2B2620"/><ellipse cx="38" cy="21" rx="4.2" ry="10" transform="rotate(12 38 21)" fill="#2B2620"/><path d="M2 66C2 40 18 26 32 26s30 14 30 40z" fill="#FFFAEC"/><path d="M23 66V51a9 9 0 0 1 18 0v15z" fill="#2B2620"/></g></svg></a><div class="ttl"><h1>Foundations</h1><div class="sub">Part 0 · how code runs, and what it costs</div></div>
+  <button id="dark" title="Light or dark" aria-label="Switch between light and dark"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4 8.5 8.5 0 1 0 20 14.5z"/></svg></button>
   <div class="xp" id="xp" aria-live="polite">0 XP</div>
 </header>
 <nav class="trail" id="trail" aria-label="Stages"></nav>
@@ -417,6 +444,8 @@ function mountEditor(ta, onCode, suggest) {
     [['{', '{}', 1], ['}', '}', 0], ['(', '()', 1], [')', ')', 0], ['[', '[]', 1], [']', ']', 0], [';', ';', 0], ['=', ' = ', 0], ['<', ' < ', 0], ['>', ' > ', 0], ['!', '!', 0], ['&&', ' && ', 0], ['||', ' || ', 0], ['+', ' + ', 0], ['-', ' - ', 0], ['"', '""', 1], ['tab', '  ', 0]].forEach(([label, text, back]) => { const b = h('<button type="button"></button>'); b.textContent = label; b.onpointerdown = (e) => e.preventDefault(); b.onclick = () => ed.insert(text, back); wrap.querySelector('.edkeys').append(b); });
     return ed; });
 }
+// light or dark: the moon button; until it is used the page follows the device
+document.getElementById('dark').onclick = () => { const on = !document.documentElement.dataset.dark; if (on) document.documentElement.dataset.dark = '1'; else delete document.documentElement.dataset.dark; try { localStorage.setItem('burrow-dark', on ? '1' : '0'); } catch (e) {} };
 function drawSteps() {
   const safe = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
   const cur = Math.max(0, STAGES.findIndex((s) => s.id === S.at)), box = document.getElementById('steplist');
