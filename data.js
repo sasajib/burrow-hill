@@ -25480,6 +25480,190 @@ window.BURROW = {
     }
    ]
   },
+  "kb0": {
+   "src": "videos/kb0.mp4",
+   "title": "Who Else Is Holding This?",
+   "duration": 42.52,
+   "lines": [
+    {
+     "id": "je1",
+     "text": "Thinking in code. Warm up B. Values, copies, and changes.",
+     "start": 0.2,
+     "end": 4.14
+    },
+    {
+     "id": "je2",
+     "text": "You change one list. And another list changes too. You never touched it. It is the most confusing bug there is. Until you see what a name really is.",
+     "start": 4.84,
+     "end": 14.26
+    },
+    {
+     "id": "je3",
+     "text": "A name is not the thing. A name is a label, tied to the thing. And two labels can be tied to the same thing.",
+     "start": 15.16,
+     "end": 21.91
+    },
+    {
+     "id": "je4",
+     "text": "Two lessons, and four puzzles. In each puzzle, something changes that should not. Or does not change, when it should.",
+     "start": 22.81,
+     "end": 29.73
+    },
+    {
+     "id": "je5",
+     "text": "This is why editing a draft can change your saved settings by accident. Why an undo button needs a real copy. And why two screens showing one shopping cart always agree.",
+     "start": 30.63,
+     "end": 40.92
+    }
+   ],
+   "pauses": []
+  },
+  "kbt1": {
+   "src": "videos/kbt1.mp4",
+   "title": "A Name Is a Label",
+   "duration": 69.51,
+   "lines": [
+    {
+     "id": "jf1",
+     "text": "Line three changes b. So what is in a, afterwards? Most people say one, two, three. Let us see.",
+     "start": 0.2,
+     "end": 6.78
+    },
+    {
+     "id": "jf2",
+     "text": "Line one makes one array, and ties the label a to it.",
+     "start": 7.68,
+     "end": 11.14
+    },
+    {
+     "id": "jf3",
+     "text": "Line two does not make a second array. It ties a second label to the same one. One array. Two labels.",
+     "start": 12.04,
+     "end": 18.99
+    },
+    {
+     "id": "jf4",
+     "text": "So line three pushes a four into the only array there is. A sees it. B sees it.",
+     "start": 19.89,
+     "end": 25.25
+    },
+    {
+     "id": "jf5",
+     "text": "To get a real second array, you have to ask for a copy. The three dots spread the items into a new one.",
+     "start": 26.15,
+     "end": 32.2
+    },
+    {
+     "id": "jf6",
+     "text": "Now c has its own array. Push a five to c, and a does not change.",
+     "start": 33.1,
+     "end": 37.33
+    },
+    {
+     "id": "jf7",
+     "text": "One warning. That copy is one level deep. If the items are arrays themselves, the copy holds the very same inner arrays. So change an inner item through c. Does a see it?",
+     "start": 38.23,
+     "end": 49.62
+    },
+    {
+     "id": "jf8",
+     "text": "Yes. The outer lists are separate. But the inner ones are still shared.",
+     "start": 50.82,
+     "end": 54.84
+    },
+    {
+     "id": "jf9",
+     "text": "Numbers, text, true and false are different. Copy one, and you get a separate value. Every time.",
+     "start": 55.74,
+     "end": 61.78
+    },
+    {
+     "id": "jf10",
+     "text": "So before you change anything, ask one question. Who else holds a label to this?",
+     "start": 62.68,
+     "end": 67.91
+    }
+   ],
+   "pauses": [
+    {
+     "id": "kbt1-q1",
+     "t": 49.82
+    }
+   ]
+  },
+  "kbt2": {
+   "src": "videos/kbt2.mp4",
+   "title": "Functions That Change Things",
+   "duration": 71.62,
+   "lines": [
+    {
+     "id": "jg1",
+     "text": "You hand your list to a function. When it comes back, is your list still the same? It depends on one thing.",
+     "start": 0.2,
+     "end": 6.39
+    },
+    {
+     "id": "jg2",
+     "text": "Passing an array to a function ties one more label to it. The function's own name for it. No copy is made.",
+     "start": 7.29,
+     "end": 14.42
+    },
+    {
+     "id": "jg3",
+     "text": "So if the function pushes, it pushes into your array. That is called a side effect. A change you can see from outside.",
+     "start": 15.32,
+     "end": 22.62
+    },
+    {
+     "id": "jg4",
+     "text": "Sometimes that is exactly what you want. Sort this list in place. Fill in this grid.",
+     "start": 23.52,
+     "end": 29.33
+    },
+    {
+     "id": "jg5",
+     "text": "And sometimes it is a bug. The task said: return a new list, and do not touch the input.",
+     "start": 30.23,
+     "end": 36
+    },
+    {
+     "id": "jg6",
+     "text": "The safe version makes a new array, and returns it. Your list is untouched.",
+     "start": 36.9,
+     "end": 41.68
+    },
+    {
+     "id": "jg7",
+     "text": "One trap. Inside a function, you write: list equals a new array. Does the caller's list change?",
+     "start": 42.58,
+     "end": 48.79
+    },
+    {
+     "id": "jg8",
+     "text": "No. That line moves the function's own label to a new array. The caller's label still points at the old one.",
+     "start": 49.99,
+     "end": 56.4
+    },
+    {
+     "id": "jg9",
+     "text": "So there are two different things. Changing the thing a label is tied to. And moving the label.",
+     "start": 57.3,
+     "end": 63.05
+    },
+    {
+     "id": "jg10",
+     "text": "Read every task for this. Change it in place? Or return a new one? Then do exactly that.",
+     "start": 63.95,
+     "end": 70.02
+    }
+   ],
+   "pauses": [
+    {
+     "id": "kbt2-q1",
+     "t": 48.99
+    }
+   ]
+  },
   "ka1i": {
    "src": "videos/ka1i.mp4",
    "title": "One Turn Short",
@@ -25921,6 +26105,432 @@ window.BURROW = {
     {
      "id": "ka4s-q",
      "t": 23.79
+    }
+   ]
+  },
+  "kb1i": {
+   "src": "videos/kb1i.mp4",
+   "title": "Sorted, Hands Off",
+   "duration": 21.58,
+   "lines": [
+    {
+     "id": "kb1i_1",
+     "text": "Pip has a row of numbers. Three, one, two. Moss wants them sorted.",
+     "start": 0.2,
+     "end": 4.58
+    },
+    {
+     "id": "kb1i_2",
+     "text": "Return a new, sorted row. And leave the row you were given exactly as it is.",
+     "start": 5.28,
+     "end": 10.36
+    },
+    {
+     "id": "kb1i_3",
+     "text": "The code returns one, two, three. That looks right. But the test still fails.",
+     "start": 11.06,
+     "end": 16.17
+    },
+    {
+     "id": "kb1i_4",
+     "text": "What happened to the row that was handed in? Your turn.",
+     "start": 16.87,
+     "end": 19.98
+    }
+   ],
+   "pauses": []
+  },
+  "kb1s": {
+   "src": "videos/kb1s.mp4",
+   "title": "Copy first, then change",
+   "duration": 55.13,
+   "lines": [
+    {
+     "id": "kb1s_1",
+     "text": "Sort does not make a new array. It re-orders the array it is called on.",
+     "start": 0.2,
+     "end": 4.6
+    },
+    {
+     "id": "kb1s_2",
+     "text": "And nums is the caller's array. So make a real copy first, and sort that.",
+     "start": 5.35,
+     "end": 10.02
+    },
+    {
+     "id": "kb1s_3",
+     "text": "The old code called sort on nums. Whose array is that?",
+     "start": 10.77,
+     "end": 14.25
+    },
+    {
+     "id": "kb1s_4",
+     "text": "The caller's. No copy was made. So their row became one, two, three, behind their back.",
+     "start": 15.45,
+     "end": 21.05
+    },
+    {
+     "id": "kb1s_5",
+     "text": "The fix starts on line two. The three dots spread the numbers into a new array.",
+     "start": 21.8,
+     "end": 26.55
+    },
+    {
+     "id": "kb1s_6",
+     "text": "Line three sorts the copy. Only the copy.",
+     "start": 27.3,
+     "end": 30.13
+    },
+    {
+     "id": "kb1s_7",
+     "text": "Line four returns it. And the original row is untouched.",
+     "start": 30.88,
+     "end": 34.6
+    },
+    {
+     "id": "kb1s_8",
+     "text": "Sort, reverse, push, pop and splice all change the array they are called on.",
+     "start": 35.7,
+     "end": 40.3
+    },
+    {
+     "id": "kb1s_9",
+     "text": "If you must not change the input, copy before you touch it.",
+     "start": 41.05,
+     "end": 44.64
+    },
+    {
+     "id": "kb1s_10",
+     "text": "A table on a web page that you sort by price. If the code sorts the original list, every other view of that list changes too.",
+     "start": 45.39,
+     "end": 53.53
+    }
+   ],
+   "pauses": [
+    {
+     "id": "kb1s-q",
+     "t": 14.45
+    }
+   ]
+  },
+  "kb2i": {
+   "src": "videos/kb2i.mp4",
+   "title": "A Grid of Zeros",
+   "duration": 19.41,
+   "lines": [
+    {
+     "id": "kb2i_1",
+     "text": "Pip needs a grid of zeros. Two rows, two columns.",
+     "start": 0.2,
+     "end": 3.82
+    },
+    {
+     "id": "kb2i_2",
+     "text": "The code builds it, and it looks perfect. Until someone writes a seven into the top left square.",
+     "start": 4.52,
+     "end": 10.29
+    },
+    {
+     "id": "kb2i_3",
+     "text": "Then the square below it turns into a seven as well.",
+     "start": 10.99,
+     "end": 14.04
+    },
+    {
+     "id": "kb2i_4",
+     "text": "How many rows did the code really make? Your turn.",
+     "start": 14.74,
+     "end": 17.81
+    }
+   ],
+   "pauses": []
+  },
+  "kb2s": {
+   "src": "videos/kb2s.mp4",
+   "title": "One row, shown twice",
+   "duration": 59.76,
+   "lines": [
+    {
+     "id": "kb2s_1",
+     "text": "The old code made one row. Then it filled the grid with that same row, again and again.",
+     "start": 0.2,
+     "end": 5.54
+    },
+    {
+     "id": "kb2s_2",
+     "text": "So the grid does not hold two rows. It holds two labels, tied to one row.",
+     "start": 6.29,
+     "end": 11.27
+    },
+    {
+     "id": "kb2s_3",
+     "text": "It looks like a grid of four zeros. Now write a seven into the top left square. What does the grid show?",
+     "start": 12.02,
+     "end": 18.19
+    },
+    {
+     "id": "kb2s_4",
+     "text": "Both rows show the seven. Because there is only one row.",
+     "start": 19.39,
+     "end": 22.95
+    },
+    {
+     "id": "kb2s_5",
+     "text": "The fix. A loop that runs once per row. And inside it, line four creates a brand new array, every turn.",
+     "start": 23.7,
+     "end": 30.58
+    },
+    {
+     "id": "kb2s_6",
+     "text": "The second turn makes a second, separate row.",
+     "start": 31.33,
+     "end": 33.98
+    },
+    {
+     "id": "kb2s_7",
+     "text": "Now the seven lands in one square only.",
+     "start": 34.73,
+     "end": 36.99
+    },
+    {
+     "id": "kb2s_8",
+     "text": "Fill with a number is fine. Numbers are copied. Fill with an array is a trap. The same array goes everywhere.",
+     "start": 38.09,
+     "end": 44.99
+    },
+    {
+     "id": "kb2s_9",
+     "text": "Anything that must be separate, has to be created separately. Once per turn.",
+     "start": 45.74,
+     "end": 50.45
+    },
+    {
+     "id": "kb2s_10",
+     "text": "A calendar that copies one empty week into every row. Add a meeting on Monday, and it shows up in every week.",
+     "start": 51.2,
+     "end": 58.16
+    }
+   ],
+   "pauses": [
+    {
+     "id": "kb2s-q",
+     "t": 18.39
+    }
+   ]
+  },
+  "kb3i": {
+   "src": "videos/kb3i.mp4",
+   "title": "One More Point",
+   "duration": 18.92,
+   "lines": [
+    {
+     "id": "kb3i_1",
+     "text": "A player card. Name, Pip. Score, two.",
+     "start": 0.2,
+     "end": 2.7
+    },
+    {
+     "id": "kb3i_2",
+     "text": "Return a new card, with the score one higher. And leave the old card as it was.",
+     "start": 3.4,
+     "end": 8.56
+    },
+    {
+     "id": "kb3i_3",
+     "text": "The code hands back a card with score three. But the old card says three as well.",
+     "start": 9.26,
+     "end": 14.12
+    },
+    {
+     "id": "kb3i_4",
+     "text": "How many cards are there, really? Your turn.",
+     "start": 14.81,
+     "end": 17.32
+    }
+   ],
+   "pauses": []
+  },
+  "kb3s": {
+   "src": "videos/kb3s.mp4",
+   "title": "A new card, not the old one",
+   "duration": 62,
+   "lines": [
+    {
+     "id": "kb3s_1",
+     "text": "The old code wrote into the card it was given. And handed the same card back.",
+     "start": 0.2,
+     "end": 5.11
+    },
+    {
+     "id": "kb3s_2",
+     "text": "Make a second card instead. Copy every field. Then set the one that changes.",
+     "start": 5.86,
+     "end": 11.15
+    },
+    {
+     "id": "kb3s_3",
+     "text": "The old code wrote the new score into player. So what does the caller's card say now?",
+     "start": 11.9,
+     "end": 16.85
+    },
+    {
+     "id": "kb3s_4",
+     "text": "Three. It is the same card. The old score is gone.",
+     "start": 18.05,
+     "end": 21.29
+    },
+    {
+     "id": "kb3s_5",
+     "text": "The fix. The curly brackets on line two make a new object. The three dots copy every field of the old one into it.",
+     "start": 22.04,
+     "end": 29.74
+    },
+    {
+     "id": "kb3s_6",
+     "text": "Then score is written again, after the copy. Two plus one. It replaces the copied two.",
+     "start": 30.49,
+     "end": 35.98
+    },
+    {
+     "id": "kb3s_7",
+     "text": "The new card is returned. And the old one still says two.",
+     "start": 36.73,
+     "end": 40.22
+    },
+    {
+     "id": "kb3s_8",
+     "text": "Curly brackets with three dots copy an object, one level deep. Just like the square brackets do for an array.",
+     "start": 41.32,
+     "end": 48.1
+    },
+    {
+     "id": "kb3s_9",
+     "text": "Later fields win. So the changed field goes after the spread.",
+     "start": 48.85,
+     "end": 52.83
+    },
+    {
+     "id": "kb3s_10",
+     "text": "An undo button depends on this. If every change makes a new object, the old one is still there to go back to.",
+     "start": 53.58,
+     "end": 60.4
+    }
+   ],
+   "pauses": [
+    {
+     "id": "kb3s-q",
+     "t": 17.05
+    }
+   ]
+  },
+  "kb4i": {
+   "src": "videos/kb4i.mp4",
+   "title": "Clear the Row",
+   "duration": 21.97,
+   "lines": [
+    {
+     "id": "kb4i_1",
+     "text": "A row of three numbers. This time, the task is to change the row itself.",
+     "start": 0.2,
+     "end": 4.79
+    },
+    {
+     "id": "kb4i_2",
+     "text": "Set every item to zero. Return nothing.",
+     "start": 5.49,
+     "end": 8.26
+    },
+    {
+     "id": "kb4i_3",
+     "text": "The code loops over the row, and sets x to zero each time. No error. And nothing changes.",
+     "start": 8.96,
+     "end": 15.22
+    },
+    {
+     "id": "kb4i_4",
+     "text": "So what is x? And what does x equals zero really change? Your turn.",
+     "start": 15.92,
+     "end": 20.37
+    }
+   ],
+   "pauses": []
+  },
+  "kb4s": {
+   "src": "videos/kb4s.mp4",
+   "title": "Write through the index",
+   "duration": 61.71,
+   "lines": [
+    {
+     "id": "kb4s_1",
+     "text": "In the old loop, x was not a door of the row. It was a new variable, holding a copy of the number.",
+     "start": 0.2,
+     "end": 6.58
+    },
+    {
+     "id": "kb4s_2",
+     "text": "To change the row, you have to write into the row. Through its index.",
+     "start": 7.33,
+     "end": 11.36
+    },
+    {
+     "id": "kb4s_3",
+     "text": "The old loop. X receives a copy of the first number. Four.",
+     "start": 12.11,
+     "end": 15.93
+    },
+    {
+     "id": "kb4s_4",
+     "text": "Then x is set to zero. What is in the row now?",
+     "start": 16.68,
+     "end": 19.84
+    },
+    {
+     "id": "kb4s_5",
+     "text": "Still four. Only the copy changed. The row was never written to.",
+     "start": 21.04,
+     "end": 25.17
+    },
+    {
+     "id": "kb4s_6",
+     "text": "The fix. Loop with an index. Line three writes zero into door i, of the row itself.",
+     "start": 25.92,
+     "end": 31.38
+    },
+    {
+     "id": "kb4s_7",
+     "text": "Then door one. And door two.",
+     "start": 32.13,
+     "end": 33.99
+    },
+    {
+     "id": "kb4s_8",
+     "text": "The function returns nothing. The caller's own row is now all zeros.",
+     "start": 34.74,
+     "end": 39.4
+    },
+    {
+     "id": "kb4s_9",
+     "text": "A loop variable holding a number is a copy. Assigning to it changes nothing outside.",
+     "start": 40.5,
+     "end": 45.86
+    },
+    {
+     "id": "kb4s_10",
+     "text": "In place means: write through the index, or call a method that changes the array.",
+     "start": 46.61,
+     "end": 51.52
+    },
+    {
+     "id": "kb4s_11",
+     "text": "Marking every notification as read. If the code only changes its own copies, the little red badge never goes away.",
+     "start": 52.27,
+     "end": 60.11
+    }
+   ],
+   "pauses": [
+    {
+     "id": "kb4s-q",
+     "t": 20.04
     }
    ]
   }
