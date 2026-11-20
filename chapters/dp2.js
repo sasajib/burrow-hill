@@ -4,8 +4,8 @@ window.CHAPTER = {
  "sub": "CHAPTER 25 · DYNAMIC PROGRAMMING",
  "key": "burrow-ch-dp2",
  "next": {
-  "href": "index.html#chapters",
-  "label": "All chapters"
+  "href": "chapter.html?c=bits",
+  "label": "Chapter 26: Bit Tricks"
  },
  "prev": {
   "href": "chapter.html?c=dp1",

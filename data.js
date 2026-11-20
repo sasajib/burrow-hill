@@ -23504,819 +23504,6 @@ window.BURROW = {
     }
    ]
   },
-  "dq1i": {
-   "src": "videos/dq1i.mp4",
-   "title": "Routes Across the Field",
-   "duration": 21.1,
-   "lines": [
-    {
-     "id": "dq1i_1",
-     "text": "A field of three by three squares. Pip starts in the top left, and wants to reach the bottom right.",
-     "start": 0.2,
-     "end": 6.01
-    },
-    {
-     "id": "dq1i_2",
-     "text": "Pip may only step right, or down. Return the number of different routes.",
-     "start": 6.71,
-     "end": 11.04
-    },
-    {
-     "id": "dq1i_3",
-     "text": "Along the top, then down the side, is one. There are six.",
-     "start": 11.74,
-     "end": 15.26
-    },
-    {
-     "id": "dq1i_4",
-     "text": "Pick any square. From where can Pip step onto it? Your turn.",
-     "start": 15.96,
-     "end": 19.5
-    }
-   ],
-   "pauses": []
-  },
-  "dq1s": {
-   "src": "videos/dq1s.mp4",
-   "title": "From above, plus from the left",
-   "duration": 56.45,
-   "lines": [
-    {
-     "id": "dq1s_1",
-     "text": "The entry for a square is the number of routes that reach it.",
-     "start": 0.2,
-     "end": 3.59
-    },
-    {
-     "id": "dq1s_2",
-     "text": "Pip arrives from above, or from the left. So add those two entries.",
-     "start": 4.34,
-     "end": 8.64
-    },
-    {
-     "id": "dq1s_3",
-     "text": "Line four starts every row with ones. For the top row and the left column, that is already right. There is only one way to reach them.",
-     "start": 9.39,
-     "end": 17.69
-    },
-    {
-     "id": "dq1s_4",
-     "text": "The middle square. One from above, one from the left. Two.",
-     "start": 18.44,
-     "end": 21.94
-    },
-    {
-     "id": "dq1s_5",
-     "text": "The square on its right. One from above. Two from the left. Three.",
-     "start": 22.69,
-     "end": 26.49
-    },
-    {
-     "id": "dq1s_6",
-     "text": "The bottom row. Two from above, one from the left. Three. And now the corner. Three from above, three from the left. How many routes?",
-     "start": 27.24,
-     "end": 35.42
-    },
-    {
-     "id": "dq1s_7",
-     "text": "Six.",
-     "start": 36.62,
-     "end": 37.35
-    },
-    {
-     "id": "dq1s_8",
-     "text": "Line nine returns the corner. Six routes.",
-     "start": 38.1,
-     "end": 40.98
-    },
-    {
-     "id": "dq1s_9",
-     "text": "One entry per square of the table. O of rows times columns.",
-     "start": 42.08,
-     "end": 46.27
-    },
-    {
-     "id": "dq1s_10",
-     "text": "The table itself. The same size.",
-     "start": 47.02,
-     "end": 49.2
-    },
-    {
-     "id": "dq1s_11",
-     "text": "A robot in a warehouse counts its possible routes between two shelves like this.",
-     "start": 49.95,
-     "end": 54.85
-    }
-   ],
-   "pauses": [
-    {
-     "id": "dq1s-q",
-     "t": 35.62
-    }
-   ]
-  },
-  "dq2i": {
-   "src": "videos/dq2i.mp4",
-   "title": "The Cheapest Way Down",
-   "duration": 22.75,
-   "lines": [
-    {
-     "id": "dq2i_1",
-     "text": "The field again. But now every square has a cost.",
-     "start": 0.2,
-     "end": 3.45
-    },
-    {
-     "id": "dq2i_2",
-     "text": "Pip steps right or down, from the top left to the bottom right. Return the smallest total cost.",
-     "start": 4.15,
-     "end": 10.06
-    },
-    {
-     "id": "dq2i_3",
-     "text": "Along the top, then down. One, three, one, one, one. Seven.",
-     "start": 10.76,
-     "end": 14.78
-    },
-    {
-     "id": "dq2i_4",
-     "text": "Pip arrives at a square from above, or from the left. Which one is better? Your turn.",
-     "start": 15.48,
-     "end": 21.15
-    }
-   ],
-   "pauses": []
-  },
-  "dq2s": {
-   "src": "videos/dq2s.mp4",
-   "title": "Cheaper neighbour, plus my own",
-   "duration": 68.58,
-   "lines": [
-    {
-     "id": "dq2s_1",
-     "text": "The entry for a square is the cheapest total to stand on it.",
-     "start": 0.2,
-     "end": 3.79
-    },
-    {
-     "id": "dq2s_2",
-     "text": "Pip arrives from above, or from the left. Take the cheaper of the two, and add the cost of the square itself.",
-     "start": 4.54,
-     "end": 10.99
-    },
-    {
-     "id": "dq2s_3",
-     "text": "The table starts as a copy of the grid. The first square keeps its own cost. One.",
-     "start": 11.74,
-     "end": 17.02
-    },
-    {
-     "id": "dq2s_4",
-     "text": "Along the top row, Pip can only come from the left. One plus three. Four. Then five.",
-     "start": 17.77,
-     "end": 23.76
-    },
-    {
-     "id": "dq2s_5",
-     "text": "Down the left column, only from above. Two. Then six.",
-     "start": 24.51,
-     "end": 28.16
-    },
-    {
-     "id": "dq2s_6",
-     "text": "The middle square costs five. Above it is four. On its left is two. Which one is added?",
-     "start": 28.91,
-     "end": 34.63
-    },
-    {
-     "id": "dq2s_7",
-     "text": "The two. Seven. And the square on its right. One, plus the cheaper of five and seven. Six.",
-     "start": 35.83,
-     "end": 41.68
-    },
-    {
-     "id": "dq2s_8",
-     "text": "The bottom row. Two, plus the cheaper of seven and six. Eight. And the corner. One, plus the cheaper of six and eight. Seven.",
-     "start": 42.43,
-     "end": 50.26
-    },
-    {
-     "id": "dq2s_9",
-     "text": "Line twelve returns the corner. Seven.",
-     "start": 51.01,
-     "end": 53.53
-    },
-    {
-     "id": "dq2s_10",
-     "text": "One entry per square of the table. O of rows times columns.",
-     "start": 54.63,
-     "end": 58.82
-    },
-    {
-     "id": "dq2s_11",
-     "text": "The table itself. The same size.",
-     "start": 59.57,
-     "end": 61.74
-    },
-    {
-     "id": "dq2s_12",
-     "text": "A printer plans the cheapest path of its head across a page in this way.",
-     "start": 62.49,
-     "end": 66.98
-    }
-   ],
-   "pauses": [
-    {
-     "id": "dq2s-q",
-     "t": 34.83
-    }
-   ]
-  },
-  "dq3i": {
-   "src": "videos/dq3i.mp4",
-   "title": "Rocks in the Field",
-   "duration": 18.88,
-   "lines": [
-    {
-     "id": "dq3i_1",
-     "text": "The same field. But now there is a rock in the middle.",
-     "start": 0.2,
-     "end": 3.33
-    },
-    {
-     "id": "dq3i_2",
-     "text": "Right or down only. Return the number of routes that do not touch a rock.",
-     "start": 4.03,
-     "end": 8.51
-    },
-    {
-     "id": "dq3i_3",
-     "text": "Around the top, or around the bottom. Two routes.",
-     "start": 9.21,
-     "end": 12.27
-    },
-    {
-     "id": "dq3i_4",
-     "text": "You know how to count routes. So what is the entry for a rock? Your turn.",
-     "start": 12.97,
-     "end": 17.28
-    }
-   ],
-   "pauses": []
-  },
-  "dq3s": {
-   "src": "videos/dq3s.mp4",
-   "title": "A rock has no routes",
-   "duration": 58.89,
-   "lines": [
-    {
-     "id": "dq3s_1",
-     "text": "It is the same table as before. Routes from above, plus routes from the left.",
-     "start": 0.2,
-     "end": 4.75
-    },
-    {
-     "id": "dq3s_2",
-     "text": "One change. A rock gets zero. So nothing can ever come through it.",
-     "start": 5.5,
-     "end": 9.68
-    },
-    {
-     "id": "dq3s_3",
-     "text": "The start gets one. And along the top row, and down the left column, the one is passed along.",
-     "start": 10.43,
-     "end": 15.96
-    },
-    {
-     "id": "dq3s_4",
-     "text": "The middle square is a rock. Line six skips it. Its entry stays zero.",
-     "start": 16.71,
-     "end": 21.41
-    },
-    {
-     "id": "dq3s_5",
-     "text": "The square to the right of the rock. One from above. And from the left, the rock. How many routes?",
-     "start": 22.16,
-     "end": 28.29
-    },
-    {
-     "id": "dq3s_6",
-     "text": "One. The rock adds nothing.",
-     "start": 29.49,
-     "end": 31.12
-    },
-    {
-     "id": "dq3s_7",
-     "text": "Below the rock, the same. Zero from above. One from the left. One.",
-     "start": 31.87,
-     "end": 35.98
-    },
-    {
-     "id": "dq3s_8",
-     "text": "And the corner. One from above. One from the left. Two.",
-     "start": 36.73,
-     "end": 39.99
-    },
-    {
-     "id": "dq3s_9",
-     "text": "Line twelve returns the corner. Two routes.",
-     "start": 40.74,
-     "end": 43.63
-    },
-    {
-     "id": "dq3s_10",
-     "text": "One entry per square of the table. O of rows times columns.",
-     "start": 44.73,
-     "end": 48.93
-    },
-    {
-     "id": "dq3s_11",
-     "text": "The table itself. The same size.",
-     "start": 49.68,
-     "end": 51.85
-    },
-    {
-     "id": "dq3s_12",
-     "text": "A delivery robot counts its routes around closed aisles in exactly this way.",
-     "start": 52.6,
-     "end": 57.29
-    }
-   ],
-   "pauses": [
-    {
-     "id": "dq3s-q",
-     "t": 28.49
-    }
-   ]
-  },
-  "dq4i": {
-   "src": "videos/dq4i.mp4",
-   "title": "What Two Words Share",
-   "duration": 21.05,
-   "lines": [
-    {
-     "id": "dq4i_1",
-     "text": "Two words. Sea, and eat.",
-     "start": 0.2,
-     "end": 1.57
-    },
-    {
-     "id": "dq4i_2",
-     "text": "Return the length of the longest run of letters that both contain, in the same order. Letters may be skipped.",
-     "start": 2.27,
-     "end": 8.93
-    },
-    {
-     "id": "dq4i_3",
-     "text": "E, a. It is in both. So the answer is two.",
-     "start": 9.63,
-     "end": 12.44
-    },
-    {
-     "id": "dq4i_4",
-     "text": "Compare the last letters of the two words. If they are the same, what follows? And if not? Your turn.",
-     "start": 13.14,
-     "end": 19.45
-    }
-   ],
-   "pauses": []
-  },
-  "dq4s": {
-   "src": "videos/dq4s.mp4",
-   "title": "Same letter: diagonal plus one",
-   "duration": 67.38,
-   "lines": [
-    {
-     "id": "dq4s_1",
-     "text": "One entry answers the question for two beginnings. The letters up to this row, and the letters up to this column.",
-     "start": 0.2,
-     "end": 7.14
-    },
-    {
-     "id": "dq4s_2",
-     "text": "Same letters extend the diagonal entry by one. Different letters take the better of above, and left.",
-     "start": 7.89,
-     "end": 13.95
-    },
-    {
-     "id": "dq4s_3",
-     "text": "Sea runs down the side. Eat runs along the top.",
-     "start": 14.7,
-     "end": 18.02
-    },
-    {
-     "id": "dq4s_4",
-     "text": "The row for s. S matches none of them. Zeros.",
-     "start": 18.77,
-     "end": 21.97
-    },
-    {
-     "id": "dq4s_5",
-     "text": "The row for e. E against e. The same letter. Diagonal, plus one. One.",
-     "start": 22.72,
-     "end": 27.67
-    },
-    {
-     "id": "dq4s_6",
-     "text": "The rest of that row has no match. Each takes the better of above, and left. One, and one.",
-     "start": 28.42,
-     "end": 34.34
-    },
-    {
-     "id": "dq4s_7",
-     "text": "The row for a. Against e, no match. One. Then a against a. The same letter. The diagonal holds one. What goes here?",
-     "start": 35.09,
-     "end": 42.88
-    },
-    {
-     "id": "dq4s_8",
-     "text": "Two. E, a.",
-     "start": 44.08,
-     "end": 45.04
-    },
-    {
-     "id": "dq4s_9",
-     "text": "The last entry has no match, and keeps the two. Line fifteen returns it.",
-     "start": 45.79,
-     "end": 50.39
-    },
-    {
-     "id": "dq4s_10",
-     "text": "One entry per square of the table. O of n times m.",
-     "start": 51.49,
-     "end": 55.03
-    },
-    {
-     "id": "dq4s_11",
-     "text": "The table itself. The same size.",
-     "start": 55.78,
-     "end": 57.95
-    },
-    {
-     "id": "dq4s_12",
-     "text": "A tool that compares two versions of a file finds the lines they share like this. Everything else is shown as changed.",
-     "start": 58.7,
-     "end": 65.78
-    }
-   ],
-   "pauses": [
-    {
-     "id": "dq4s-q",
-     "t": 43.08
-    }
-   ]
-  },
-  "dq5i": {
-   "src": "videos/dq5i.mp4",
-   "title": "How Far Apart?",
-   "duration": 21.6,
-   "lines": [
-    {
-     "id": "dq5i_1",
-     "text": "Two words. Cat, and cut. How far apart are they?",
-     "start": 0.2,
-     "end": 3.23
-    },
-    {
-     "id": "dq5i_2",
-     "text": "One change is: insert a letter, delete a letter, or replace one. Return the fewest changes from the first word to the second.",
-     "start": 3.93,
-     "end": 11.66
-    },
-    {
-     "id": "dq5i_3",
-     "text": "Replace the a with a u. One change.",
-     "start": 12.36,
-     "end": 14.64
-    },
-    {
-     "id": "dq5i_4",
-     "text": "Compare the last letters. If they are the same, what does that cost? Your turn.",
-     "start": 15.34,
-     "end": 20
-    }
-   ],
-   "pauses": []
-  },
-  "dq5s": {
-   "src": "videos/dq5s.mp4",
-   "title": "Same: copy. Different: 1 + min",
-   "duration": 73.2,
-   "lines": [
-    {
-     "id": "dq5s_1",
-     "text": "One entry is the fewest changes, from a beginning of the first word, to a beginning of the second.",
-     "start": 0.2,
-     "end": 6.3
-    },
-    {
-     "id": "dq5s_2",
-     "text": "Same letters cost nothing. Copy the diagonal. Different letters cost one, plus the smallest of the three neighbours.",
-     "start": 7.05,
-     "end": 14.38
-    },
-    {
-     "id": "dq5s_3",
-     "text": "The dash stands for an empty text. Turning nothing into c, u, t takes one, two, three insertions. And the first column is the same, with deletions.",
-     "start": 15.13,
-     "end": 24.79
-    },
-    {
-     "id": "dq5s_4",
-     "text": "C against c. The same letter. Nothing to change. Copy the diagonal. Zero.",
-     "start": 25.54,
-     "end": 31.22
-    },
-    {
-     "id": "dq5s_5",
-     "text": "The rest of that row costs one more each time.",
-     "start": 31.97,
-     "end": 34.53
-    },
-    {
-     "id": "dq5s_6",
-     "text": "The row for a. Against c, one. Then a against u. Different. The three neighbours hold zero, one, and one. What goes here?",
-     "start": 35.28,
-     "end": 43.16
-    },
-    {
-     "id": "dq5s_7",
-     "text": "One. Replace the a with a u.",
-     "start": 44.36,
-     "end": 46.09
-    },
-    {
-     "id": "dq5s_8",
-     "text": "The row for t. Two, two. Then t against t. The same letter. Copy the diagonal. One.",
-     "start": 46.84,
-     "end": 52.83
-    },
-    {
-     "id": "dq5s_9",
-     "text": "Line thirteen returns the corner. One change.",
-     "start": 53.58,
-     "end": 56.88
-    },
-    {
-     "id": "dq5s_10",
-     "text": "One entry per square of the table. O of n times m.",
-     "start": 57.98,
-     "end": 61.52
-    },
-    {
-     "id": "dq5s_11",
-     "text": "The table itself. The same size.",
-     "start": 62.27,
-     "end": 64.44
-    },
-    {
-     "id": "dq5s_12",
-     "text": "A spell checker ranks its suggestions this way. The word with the fewest changes from your typo comes first.",
-     "start": 65.19,
-     "end": 71.6
-    }
-   ],
-   "pauses": [
-    {
-     "id": "dq5s-q",
-     "t": 43.36
-    }
-   ]
-  },
-  "dq6i": {
-   "src": "videos/dq6i.mp4",
-   "title": "The Best Load",
-   "duration": 25.99,
-   "lines": [
-    {
-     "id": "dq6i_1",
-     "text": "Three parcels. Each has a weight, and a value. The cart carries a weight of four.",
-     "start": 0.2,
-     "end": 5.07
-    },
-    {
-     "id": "dq6i_2",
-     "text": "A parcel is taken whole, or not at all. Return the largest total value that fits.",
-     "start": 5.77,
-     "end": 11.18
-    },
-    {
-     "id": "dq6i_3",
-     "text": "The two lighter parcels. Weight four. Value thirty five. That beats the heavy one, at thirty.",
-     "start": 11.88,
-     "end": 17.68
-    },
-    {
-     "id": "dq6i_4",
-     "text": "So the most valuable parcel is not the answer. For one parcel, what are the choices? Your turn.",
-     "start": 18.38,
-     "end": 24.39
-    }
-   ],
-   "pauses": []
-  },
-  "dq6s": {
-   "src": "videos/dq6s.mp4",
-   "title": "Skip it, or take it and fill up",
-   "duration": 92.39,
-   "lines": [
-    {
-     "id": "dq6s_1",
-     "text": "The answer depends on two things. Which parcels are allowed so far. And how much room there is.",
-     "start": 0.2,
-     "end": 6.26
-    },
-    {
-     "id": "dq6s_2",
-     "text": "For each parcel. Skip it, and keep the entry above. Or take it, and add the best for the room that is left.",
-     "start": 7.01,
-     "end": 13.36
-    },
-    {
-     "id": "dq6s_3",
-     "text": "The columns are the room in the cart. Zero to four. Each row allows one more parcel. Weight one, worth fifteen. Weight three, worth twenty. Weight four, worth thirty.",
-     "start": 14.11,
-     "end": 24.79
-    },
-    {
-     "id": "dq6s_4",
-     "text": "The first row. Only the light parcel. With room for one or more, take it. Fifteen.",
-     "start": 25.54,
-     "end": 30.94
-    },
-    {
-     "id": "dq6s_5",
-     "text": "The second row adds the parcel of weight three. With less room than three, it cannot go in. Copy the row above.",
-     "start": 31.69,
-     "end": 38.81
-    },
-    {
-     "id": "dq6s_6",
-     "text": "Room three. Skipping keeps fifteen. Taking gives twenty, plus the best for the room that is left. None. Twenty.",
-     "start": 39.56,
-     "end": 46.85
-    },
-    {
-     "id": "dq6s_7",
-     "text": "Room four. Skipping keeps fifteen. Taking gives twenty, plus the best for a room of one, in the row above. What is that?",
-     "start": 47.6,
-     "end": 55.6
-    },
-    {
-     "id": "dq6s_8",
-     "text": "Fifteen. So thirty five. Both light parcels.",
-     "start": 56.8,
-     "end": 60.08
-    },
-    {
-     "id": "dq6s_9",
-     "text": "The last row adds the heavy parcel. It only fits with room four. Thirty, against thirty five. The table keeps thirty five.",
-     "start": 60.83,
-     "end": 68.95
-    },
-    {
-     "id": "dq6s_10",
-     "text": "Line eleven returns the last entry. Thirty five.",
-     "start": 69.7,
-     "end": 73.03
-    },
-    {
-     "id": "dq6s_11",
-     "text": "One entry for every parcel, and every amount of room. O of parcels, times room.",
-     "start": 74.13,
-     "end": 79.64
-    },
-    {
-     "id": "dq6s_12",
-     "text": "Only the row above is ever needed. So two rows are enough.",
-     "start": 80.39,
-     "end": 84.05
-    },
-    {
-     "id": "dq6s_13",
-     "text": "An airline loads cargo like this. The most valuable set of crates that stays under the weight limit.",
-     "start": 84.8,
-     "end": 90.79
-    }
-   ],
-   "pauses": [
-    {
-     "id": "dq6s-q",
-     "t": 55.8
-    }
-   ]
-  },
-  "dq7i": {
-   "src": "videos/dq7i.mp4",
-   "title": "The Biggest Square",
-   "duration": 21.37,
-   "lines": [
-    {
-     "id": "dq7i_1",
-     "text": "A grid of ones and zeros.",
-     "start": 0.2,
-     "end": 2.08
-    },
-    {
-     "id": "dq7i_2",
-     "text": "Return the side of the biggest square that contains only ones.",
-     "start": 2.78,
-     "end": 6.56
-    },
-    {
-     "id": "dq7i_3",
-     "text": "The top left four squares are all ones. Side two. Nothing bigger exists.",
-     "start": 7.26,
-     "end": 12.34
-    },
-    {
-     "id": "dq7i_4",
-     "text": "A square ends at its bottom right corner. What must be true just above it, and just to the left? Your turn.",
-     "start": 13.04,
-     "end": 19.77
-    }
-   ],
-   "pauses": []
-  },
-  "dq7s": {
-   "src": "videos/dq7s.mp4",
-   "title": "One more than the smallest",
-   "duration": 69.97,
-   "lines": [
-    {
-     "id": "dq7s_1",
-     "text": "One entry means: the side of the biggest square of ones, that has its bottom right corner on this square.",
-     "start": 0.2,
-     "end": 6.59
-    },
-    {
-     "id": "dq7s_2",
-     "text": "It can be one bigger than the smallest of its three neighbours. Above, left, and diagonal.",
-     "start": 7.34,
-     "end": 12.88
-    },
-    {
-     "id": "dq7s_3",
-     "text": "In the top row and the left column, a one can only end a square of side one. And a zero is zero.",
-     "start": 13.63,
-     "end": 20.16
-    },
-    {
-     "id": "dq7s_4",
-     "text": "The middle. Above, left and diagonal are all one. So a square of side two ends here.",
-     "start": 20.91,
-     "end": 26.46
-    },
-    {
-     "id": "dq7s_5",
-     "text": "The square on its right. Its left neighbour holds two. But above it is a zero. What is the biggest square ending here?",
-     "start": 27.21,
-     "end": 34.67
-    },
-    {
-     "id": "dq7s_6",
-     "text": "One. A single zero among the three neighbours blocks any bigger square.",
-     "start": 35.87,
-     "end": 39.98
-    },
-    {
-     "id": "dq7s_7",
-     "text": "The bottom row. The middle one has a zero on its left. One. And the corner. Above, one. Left, one. Diagonal, two. The smallest is one. Side two.",
-     "start": 40.73,
-     "end": 50.5
-    },
-    {
-     "id": "dq7s_8",
-     "text": "Line fifteen returns the biggest side seen. Two.",
-     "start": 51.25,
-     "end": 54.45
-    },
-    {
-     "id": "dq7s_9",
-     "text": "One entry per square of the table. O of rows times columns.",
-     "start": 55.55,
-     "end": 59.74
-    },
-    {
-     "id": "dq7s_10",
-     "text": "The table itself. The same size.",
-     "start": 60.49,
-     "end": 62.67
-    },
-    {
-     "id": "dq7s_11",
-     "text": "A map tool finds the largest square plot of free land on a grid map like this.",
-     "start": 63.42,
-     "end": 68.37
-    }
-   ],
-   "pauses": [
-    {
-     "id": "dq7s-q",
-     "t": 34.87
-    }
-   ]
-  },
   "dp1i": {
    "src": "videos/dp1i.mp4",
    "title": "The Cheapest Climb",
@@ -27769,6 +26956,1269 @@ window.BURROW = {
     {
      "id": "kc4s-q",
      "t": 29.2
+    }
+   ]
+  },
+  "bi1i": {
+   "src": "videos/bi1i.mp4",
+   "title": "The Odd One Out",
+   "duration": 20.7,
+   "lines": [
+    {
+     "id": "bi1i_1",
+     "text": "Three numbers. Four, seven, four. Every number has a twin. Except one.",
+     "start": 0.2,
+     "end": 4.72
+    },
+    {
+     "id": "bi1i_2",
+     "text": "Return the one without a twin. And use no extra memory. No set. No sorting.",
+     "start": 5.42,
+     "end": 10.99
+    },
+    {
+     "id": "bi1i_3",
+     "text": "The fours are a pair. So the answer is seven.",
+     "start": 11.69,
+     "end": 14.54
+    },
+    {
+     "id": "bi1i_4",
+     "text": "Which operation makes two equal numbers disappear? Your turn.",
+     "start": 15.24,
+     "end": 19.1
+    }
+   ],
+   "pauses": []
+  },
+  "bi1s": {
+   "src": "videos/bi1s.mp4",
+   "title": "Pairs cancel",
+   "duration": 61.86,
+   "lines": [
+    {
+     "id": "bi1s_1",
+     "text": "X or switches a lamp on only where two numbers differ. So a number, x or itself, is zero.",
+     "start": 0.2,
+     "end": 6.22
+    },
+    {
+     "id": "bi1s_2",
+     "text": "X or them all together. Every pair cancels. The one without a twin is left.",
+     "start": 6.97,
+     "end": 11.91
+    },
+    {
+     "id": "bi1s_3",
+     "text": "X starts at zero.",
+     "start": 12.66,
+     "end": 14
+    },
+    {
+     "id": "bi1s_4",
+     "text": "The four. In lamps, one, zero, zero. Zero x or four is four.",
+     "start": 14.75,
+     "end": 19.21
+    },
+    {
+     "id": "bi1s_5",
+     "text": "The seven. One, one, one. Where do one zero zero, and one one one, differ? In the last two lamps. So x is three.",
+     "start": 19.96,
+     "end": 27.78
+    },
+    {
+     "id": "bi1s_6",
+     "text": "X is three. That is neither of them. Now the second four arrives. What is zero one one, x or one zero zero?",
+     "start": 28.53,
+     "end": 35.98
+    },
+    {
+     "id": "bi1s_7",
+     "text": "One, one, one. Seven. The two fours have cancelled each other, even though the seven stood between them.",
+     "start": 37.18,
+     "end": 43.55
+    },
+    {
+     "id": "bi1s_8",
+     "text": "Line six returns seven.",
+     "start": 44.3,
+     "end": 45.94
+    },
+    {
+     "id": "bi1s_9",
+     "text": "One pass. O of n.",
+     "start": 47.04,
+     "end": 48.54
+    },
+    {
+     "id": "bi1s_10",
+     "text": "One number. O of one space. No set needed.",
+     "start": 49.29,
+     "end": 52.4
+    },
+    {
+     "id": "bi1s_11",
+     "text": "Storage systems use this to rebuild a lost disk. X or the disks that are left, and the missing one appears.",
+     "start": 53.15,
+     "end": 60.26
+    }
+   ],
+   "pauses": [
+    {
+     "id": "bi1s-q",
+     "t": 36.18
+    }
+   ]
+  },
+  "bi2i": {
+   "src": "videos/bi2i.mp4",
+   "title": "Count the Lamps",
+   "duration": 17.42,
+   "lines": [
+    {
+     "id": "bi2i_1",
+     "text": "The number six, as lamps. One, one, zero. The four lamp, and the two lamp.",
+     "start": 0.2,
+     "end": 5.13
+    },
+    {
+     "id": "bi2i_2",
+     "text": "Return how many lamps are on.",
+     "start": 5.83,
+     "end": 7.6
+    },
+    {
+     "id": "bi2i_3",
+     "text": "Two.",
+     "start": 8.3,
+     "end": 8.9
+    },
+    {
+     "id": "bi2i_4",
+     "text": "A program only sees the number six. How can it read the last lamp? And then the next? Your turn.",
+     "start": 9.6,
+     "end": 15.82
+    }
+   ],
+   "pauses": []
+  },
+  "bi2s": {
+   "src": "videos/bi2s.mp4",
+   "title": "Read the last lamp, then shift",
+   "duration": 60.92,
+   "lines": [
+    {
+     "id": "bi2s_1",
+     "text": "And with one, reads the last lamp. It gives one if the lamp is on, and zero if it is off.",
+     "start": 0.2,
+     "end": 5.94
+    },
+    {
+     "id": "bi2s_2",
+     "text": "Then shift everything one place to the right. The next lamp is now the last one.",
+     "start": 6.69,
+     "end": 11.32
+    },
+    {
+     "id": "bi2s_3",
+     "text": "N is six. One, one, zero. Count is zero.",
+     "start": 12.07,
+     "end": 14.99
+    },
+    {
+     "id": "bi2s_4",
+     "text": "The last lamp is off. So and with one gives zero. Count stays zero.",
+     "start": 15.74,
+     "end": 20.31
+    },
+    {
+     "id": "bi2s_5",
+     "text": "Line five shifts to the right. The last lamp drops off. N is one, one. That is three.",
+     "start": 21.06,
+     "end": 27.15
+    },
+    {
+     "id": "bi2s_6",
+     "text": "Now the last lamp is on. What does and with one give?",
+     "start": 27.9,
+     "end": 31.45
+    },
+    {
+     "id": "bi2s_7",
+     "text": "One. So count is one. Shift again. N is just one.",
+     "start": 32.66,
+     "end": 35.8
+    },
+    {
+     "id": "bi2s_8",
+     "text": "The last lamp is on again. Count is two. One more shift, and n is zero. The loop ends.",
+     "start": 36.55,
+     "end": 42.65
+    },
+    {
+     "id": "bi2s_9",
+     "text": "Line seven returns two.",
+     "start": 43.4,
+     "end": 45.02
+    },
+    {
+     "id": "bi2s_10",
+     "text": "One turn per lamp. A number n has about log n lamps.",
+     "start": 46.12,
+     "end": 50.08
+    },
+    {
+     "id": "bi2s_11",
+     "text": "One counter.",
+     "start": 50.83,
+     "end": 51.79
+    },
+    {
+     "id": "bi2s_12",
+     "text": "A file with permissions read, write and run stores them as three lamps. Counting the lamps says how much is allowed.",
+     "start": 52.54,
+     "end": 59.32
+    }
+   ],
+   "pauses": [
+    {
+     "id": "bi2s-q",
+     "t": 31.65
+    }
+   ]
+  },
+  "bi3i": {
+   "src": "videos/bi3i.mp4",
+   "title": "A Single Lamp",
+   "duration": 21.26,
+   "lines": [
+    {
+     "id": "bi3i_1",
+     "text": "The number eight, as lamps. One, zero, zero, zero.",
+     "start": 0.2,
+     "end": 3.65
+    },
+    {
+     "id": "bi3i_2",
+     "text": "Return true if a number is a power of two. One, two, four, eight, and so on.",
+     "start": 4.35,
+     "end": 9.22
+    },
+    {
+     "id": "bi3i_3",
+     "text": "In lamps, every one of them has exactly one lamp on.",
+     "start": 9.92,
+     "end": 13.38
+    },
+    {
+     "id": "bi3i_4",
+     "text": "Now take one away from eight. Seven. What does seven look like, in lamps? Your turn.",
+     "start": 14.08,
+     "end": 19.66
+    }
+   ],
+   "pauses": []
+  },
+  "bi3s": {
+   "src": "videos/bi3s.mp4",
+   "title": "One lamp on, and nothing else",
+   "duration": 61.3,
+   "lines": [
+    {
+     "id": "bi3s_1",
+     "text": "A power of two has exactly one lamp on.",
+     "start": 0.2,
+     "end": 2.92
+    },
+    {
+     "id": "bi3s_2",
+     "text": "Take one away. That lamp goes off. And every lamp to its right comes on. So the two rows share no lamp.",
+     "start": 3.67,
+     "end": 10.45
+    },
+    {
+     "id": "bi3s_3",
+     "text": "Eight. One, zero, zero, zero.",
+     "start": 11.2,
+     "end": 13.1
+    },
+    {
+     "id": "bi3s_4",
+     "text": "Eight minus one is seven. Zero, one, one, one.",
+     "start": 13.85,
+     "end": 17.16
+    },
+    {
+     "id": "bi3s_5",
+     "text": "Now and them. A lamp stays on only if it is on in both rows. Is there any such lamp?",
+     "start": 17.91,
+     "end": 23.97
+    },
+    {
+     "id": "bi3s_6",
+     "text": "None. The result is zero. So eight is a power of two.",
+     "start": 25.17,
+     "end": 28.63
+    },
+    {
+     "id": "bi3s_7",
+     "text": "Try six. One, one, zero. Six minus one is five. One, zero, one. The first lamp is on in both. Not zero. So six is not.",
+     "start": 29.73,
+     "end": 38.69
+    },
+    {
+     "id": "bi3s_8",
+     "text": "And the first check, n above zero, rules out zero and the negative numbers.",
+     "start": 39.44,
+     "end": 44.27
+    },
+    {
+     "id": "bi3s_9",
+     "text": "No loop at all. One subtraction, and one and. O of one.",
+     "start": 45.02,
+     "end": 48.82
+    },
+    {
+     "id": "bi3s_10",
+     "text": "No extra memory.",
+     "start": 49.57,
+     "end": 50.88
+    },
+    {
+     "id": "bi3s_11",
+     "text": "Memory sizes are powers of two. Sixteen, thirty two, sixty four. A program checks a size with exactly this line.",
+     "start": 51.63,
+     "end": 59.7
+    }
+   ],
+   "pauses": [
+    {
+     "id": "bi3s-q",
+     "t": 24.17
+    }
+   ]
+  },
+  "bi0": {
+   "src": "videos/bi0.mp4",
+   "title": "Switches Inside a Number",
+   "duration": 36.3,
+   "lines": [
+    {
+     "id": "bv1",
+     "text": "Chapter twenty six. Bit tricks.",
+     "start": 0.2,
+     "end": 2.41
+    },
+    {
+     "id": "bv2",
+     "text": "Under every number is a row of switches. Each one is on, or off. Here, they are lamps.",
+     "start": 3.11,
+     "end": 8.87
+    },
+    {
+     "id": "bv3",
+     "text": "Each lamp is worth double the one on its right. Eight, four, two, one. Five is the four lamp, and the one lamp.",
+     "start": 9.77,
+     "end": 16.79
+    },
+    {
+     "id": "bv4",
+     "text": "A few puzzles become a single line, once you look at the lamps. One lesson, and three puzzles.",
+     "start": 17.68,
+     "end": 24.01
+    },
+    {
+     "id": "bv5",
+     "text": "A file can be read, written, or run. Three lamps. An app keeps many on and off settings in one number. And every colour on your screen is twenty four lamps.",
+     "start": 24.91,
+     "end": 34.7
+    }
+   ],
+   "pauses": []
+  },
+  "bit1": {
+   "src": "videos/bit1.mp4",
+   "title": "Lamps, and Three Small Tools",
+   "duration": 69.25,
+   "lines": [
+    {
+     "id": "bz1",
+     "text": "Here is five. And here is three. As lamps. Three small tools compare two rows of lamps, one column at a time.",
+     "start": 0.2,
+     "end": 7.49
+    },
+    {
+     "id": "bz2",
+     "text": "And. A lamp comes on, only if it is on in both rows. That is just the one lamp. So five and three, is one.",
+     "start": 8.39,
+     "end": 15.73
+    },
+    {
+     "id": "bz3",
+     "text": "Or. A lamp comes on, if it is on in at least one row. Four, two, one. Seven.",
+     "start": 16.63,
+     "end": 22.34
+    },
+    {
+     "id": "bz4",
+     "text": "X or. A lamp comes on, only where the two rows differ. Four and two. Six.",
+     "start": 23.24,
+     "end": 28.72
+    },
+    {
+     "id": "bz5",
+     "text": "Now x or five, with five. The two rows are the same. So how many lamps come on?",
+     "start": 29.62,
+     "end": 35.08
+    },
+    {
+     "id": "bz6",
+     "text": "None. A number, x or itself, is always zero. Pairs cancel.",
+     "start": 36.28,
+     "end": 40.51
+    },
+    {
+     "id": "bz7",
+     "text": "Two more tools. And with one, keeps only the last lamp. If it is on, the number is odd.",
+     "start": 41.41,
+     "end": 47.08
+    },
+    {
+     "id": "bz8",
+     "text": "And shift right, moves every lamp one place to the right. The last one falls off. Five becomes two.",
+     "start": 47.98,
+     "end": 54.38
+    },
+    {
+     "id": "bz9",
+     "text": "So remember three things. X or cancels pairs. And with one reads the last lamp. Shift brings the next lamp in.",
+     "start": 55.28,
+     "end": 62.97
+    },
+    {
+     "id": "bz10",
+     "text": "When a puzzle says, use no extra memory. Look at the lamps.",
+     "start": 63.87,
+     "end": 67.65
+    }
+   ],
+   "pauses": [
+    {
+     "id": "bit1-q1",
+     "t": 35.28
+    }
+   ]
+  },
+  "dq1i": {
+   "src": "videos/dq1i.mp4",
+   "title": "Routes Across the Field",
+   "duration": 21.1,
+   "lines": [
+    {
+     "id": "dq1i_1",
+     "text": "A field of three by three squares. Pip starts in the top left, and wants to reach the bottom right.",
+     "start": 0.2,
+     "end": 6.01
+    },
+    {
+     "id": "dq1i_2",
+     "text": "Pip may only step right, or down. Return the number of different routes.",
+     "start": 6.71,
+     "end": 11.04
+    },
+    {
+     "id": "dq1i_3",
+     "text": "Along the top, then down the side, is one. There are six.",
+     "start": 11.74,
+     "end": 15.26
+    },
+    {
+     "id": "dq1i_4",
+     "text": "Pick any square. From where can Pip step onto it? Your turn.",
+     "start": 15.96,
+     "end": 19.5
+    }
+   ],
+   "pauses": []
+  },
+  "dq1s": {
+   "src": "videos/dq1s.mp4",
+   "title": "From above, plus from the left",
+   "duration": 56.45,
+   "lines": [
+    {
+     "id": "dq1s_1",
+     "text": "The entry for a square is the number of routes that reach it.",
+     "start": 0.2,
+     "end": 3.59
+    },
+    {
+     "id": "dq1s_2",
+     "text": "Pip arrives from above, or from the left. So add those two entries.",
+     "start": 4.34,
+     "end": 8.64
+    },
+    {
+     "id": "dq1s_3",
+     "text": "Line four starts every row with ones. For the top row and the left column, that is already right. There is only one way to reach them.",
+     "start": 9.39,
+     "end": 17.69
+    },
+    {
+     "id": "dq1s_4",
+     "text": "The middle square. One from above, one from the left. Two.",
+     "start": 18.44,
+     "end": 21.94
+    },
+    {
+     "id": "dq1s_5",
+     "text": "The square on its right. One from above. Two from the left. Three.",
+     "start": 22.69,
+     "end": 26.49
+    },
+    {
+     "id": "dq1s_6",
+     "text": "The bottom row. Two from above, one from the left. Three. And now the corner. Three from above, three from the left. How many routes?",
+     "start": 27.24,
+     "end": 35.42
+    },
+    {
+     "id": "dq1s_7",
+     "text": "Six.",
+     "start": 36.62,
+     "end": 37.35
+    },
+    {
+     "id": "dq1s_8",
+     "text": "Line nine returns the corner. Six routes.",
+     "start": 38.1,
+     "end": 40.98
+    },
+    {
+     "id": "dq1s_9",
+     "text": "One entry per square of the table. O of rows times columns.",
+     "start": 42.08,
+     "end": 46.27
+    },
+    {
+     "id": "dq1s_10",
+     "text": "The table itself. The same size.",
+     "start": 47.02,
+     "end": 49.2
+    },
+    {
+     "id": "dq1s_11",
+     "text": "A robot in a warehouse counts its possible routes between two shelves like this.",
+     "start": 49.95,
+     "end": 54.85
+    }
+   ],
+   "pauses": [
+    {
+     "id": "dq1s-q",
+     "t": 35.62
+    }
+   ]
+  },
+  "dq2i": {
+   "src": "videos/dq2i.mp4",
+   "title": "The Cheapest Way Down",
+   "duration": 22.75,
+   "lines": [
+    {
+     "id": "dq2i_1",
+     "text": "The field again. But now every square has a cost.",
+     "start": 0.2,
+     "end": 3.45
+    },
+    {
+     "id": "dq2i_2",
+     "text": "Pip steps right or down, from the top left to the bottom right. Return the smallest total cost.",
+     "start": 4.15,
+     "end": 10.06
+    },
+    {
+     "id": "dq2i_3",
+     "text": "Along the top, then down. One, three, one, one, one. Seven.",
+     "start": 10.76,
+     "end": 14.78
+    },
+    {
+     "id": "dq2i_4",
+     "text": "Pip arrives at a square from above, or from the left. Which one is better? Your turn.",
+     "start": 15.48,
+     "end": 21.15
+    }
+   ],
+   "pauses": []
+  },
+  "dq2s": {
+   "src": "videos/dq2s.mp4",
+   "title": "Cheaper neighbour, plus my own",
+   "duration": 68.58,
+   "lines": [
+    {
+     "id": "dq2s_1",
+     "text": "The entry for a square is the cheapest total to stand on it.",
+     "start": 0.2,
+     "end": 3.79
+    },
+    {
+     "id": "dq2s_2",
+     "text": "Pip arrives from above, or from the left. Take the cheaper of the two, and add the cost of the square itself.",
+     "start": 4.54,
+     "end": 10.99
+    },
+    {
+     "id": "dq2s_3",
+     "text": "The table starts as a copy of the grid. The first square keeps its own cost. One.",
+     "start": 11.74,
+     "end": 17.02
+    },
+    {
+     "id": "dq2s_4",
+     "text": "Along the top row, Pip can only come from the left. One plus three. Four. Then five.",
+     "start": 17.77,
+     "end": 23.76
+    },
+    {
+     "id": "dq2s_5",
+     "text": "Down the left column, only from above. Two. Then six.",
+     "start": 24.51,
+     "end": 28.16
+    },
+    {
+     "id": "dq2s_6",
+     "text": "The middle square costs five. Above it is four. On its left is two. Which one is added?",
+     "start": 28.91,
+     "end": 34.63
+    },
+    {
+     "id": "dq2s_7",
+     "text": "The two. Seven. And the square on its right. One, plus the cheaper of five and seven. Six.",
+     "start": 35.83,
+     "end": 41.68
+    },
+    {
+     "id": "dq2s_8",
+     "text": "The bottom row. Two, plus the cheaper of seven and six. Eight. And the corner. One, plus the cheaper of six and eight. Seven.",
+     "start": 42.43,
+     "end": 50.26
+    },
+    {
+     "id": "dq2s_9",
+     "text": "Line twelve returns the corner. Seven.",
+     "start": 51.01,
+     "end": 53.53
+    },
+    {
+     "id": "dq2s_10",
+     "text": "One entry per square of the table. O of rows times columns.",
+     "start": 54.63,
+     "end": 58.82
+    },
+    {
+     "id": "dq2s_11",
+     "text": "The table itself. The same size.",
+     "start": 59.57,
+     "end": 61.74
+    },
+    {
+     "id": "dq2s_12",
+     "text": "A printer plans the cheapest path of its head across a page in this way.",
+     "start": 62.49,
+     "end": 66.98
+    }
+   ],
+   "pauses": [
+    {
+     "id": "dq2s-q",
+     "t": 34.83
+    }
+   ]
+  },
+  "dq3i": {
+   "src": "videos/dq3i.mp4",
+   "title": "Rocks in the Field",
+   "duration": 18.88,
+   "lines": [
+    {
+     "id": "dq3i_1",
+     "text": "The same field. But now there is a rock in the middle.",
+     "start": 0.2,
+     "end": 3.33
+    },
+    {
+     "id": "dq3i_2",
+     "text": "Right or down only. Return the number of routes that do not touch a rock.",
+     "start": 4.03,
+     "end": 8.51
+    },
+    {
+     "id": "dq3i_3",
+     "text": "Around the top, or around the bottom. Two routes.",
+     "start": 9.21,
+     "end": 12.27
+    },
+    {
+     "id": "dq3i_4",
+     "text": "You know how to count routes. So what is the entry for a rock? Your turn.",
+     "start": 12.97,
+     "end": 17.28
+    }
+   ],
+   "pauses": []
+  },
+  "dq3s": {
+   "src": "videos/dq3s.mp4",
+   "title": "A rock has no routes",
+   "duration": 58.89,
+   "lines": [
+    {
+     "id": "dq3s_1",
+     "text": "It is the same table as before. Routes from above, plus routes from the left.",
+     "start": 0.2,
+     "end": 4.75
+    },
+    {
+     "id": "dq3s_2",
+     "text": "One change. A rock gets zero. So nothing can ever come through it.",
+     "start": 5.5,
+     "end": 9.68
+    },
+    {
+     "id": "dq3s_3",
+     "text": "The start gets one. And along the top row, and down the left column, the one is passed along.",
+     "start": 10.43,
+     "end": 15.96
+    },
+    {
+     "id": "dq3s_4",
+     "text": "The middle square is a rock. Line six skips it. Its entry stays zero.",
+     "start": 16.71,
+     "end": 21.41
+    },
+    {
+     "id": "dq3s_5",
+     "text": "The square to the right of the rock. One from above. And from the left, the rock. How many routes?",
+     "start": 22.16,
+     "end": 28.29
+    },
+    {
+     "id": "dq3s_6",
+     "text": "One. The rock adds nothing.",
+     "start": 29.49,
+     "end": 31.12
+    },
+    {
+     "id": "dq3s_7",
+     "text": "Below the rock, the same. Zero from above. One from the left. One.",
+     "start": 31.87,
+     "end": 35.98
+    },
+    {
+     "id": "dq3s_8",
+     "text": "And the corner. One from above. One from the left. Two.",
+     "start": 36.73,
+     "end": 39.99
+    },
+    {
+     "id": "dq3s_9",
+     "text": "Line twelve returns the corner. Two routes.",
+     "start": 40.74,
+     "end": 43.63
+    },
+    {
+     "id": "dq3s_10",
+     "text": "One entry per square of the table. O of rows times columns.",
+     "start": 44.73,
+     "end": 48.93
+    },
+    {
+     "id": "dq3s_11",
+     "text": "The table itself. The same size.",
+     "start": 49.68,
+     "end": 51.85
+    },
+    {
+     "id": "dq3s_12",
+     "text": "A delivery robot counts its routes around closed aisles in exactly this way.",
+     "start": 52.6,
+     "end": 57.29
+    }
+   ],
+   "pauses": [
+    {
+     "id": "dq3s-q",
+     "t": 28.49
+    }
+   ]
+  },
+  "dq4i": {
+   "src": "videos/dq4i.mp4",
+   "title": "What Two Words Share",
+   "duration": 21.05,
+   "lines": [
+    {
+     "id": "dq4i_1",
+     "text": "Two words. Sea, and eat.",
+     "start": 0.2,
+     "end": 1.57
+    },
+    {
+     "id": "dq4i_2",
+     "text": "Return the length of the longest run of letters that both contain, in the same order. Letters may be skipped.",
+     "start": 2.27,
+     "end": 8.93
+    },
+    {
+     "id": "dq4i_3",
+     "text": "E, a. It is in both. So the answer is two.",
+     "start": 9.63,
+     "end": 12.44
+    },
+    {
+     "id": "dq4i_4",
+     "text": "Compare the last letters of the two words. If they are the same, what follows? And if not? Your turn.",
+     "start": 13.14,
+     "end": 19.45
+    }
+   ],
+   "pauses": []
+  },
+  "dq4s": {
+   "src": "videos/dq4s.mp4",
+   "title": "Same letter: diagonal plus one",
+   "duration": 67.38,
+   "lines": [
+    {
+     "id": "dq4s_1",
+     "text": "One entry answers the question for two beginnings. The letters up to this row, and the letters up to this column.",
+     "start": 0.2,
+     "end": 7.14
+    },
+    {
+     "id": "dq4s_2",
+     "text": "Same letters extend the diagonal entry by one. Different letters take the better of above, and left.",
+     "start": 7.89,
+     "end": 13.95
+    },
+    {
+     "id": "dq4s_3",
+     "text": "Sea runs down the side. Eat runs along the top.",
+     "start": 14.7,
+     "end": 18.02
+    },
+    {
+     "id": "dq4s_4",
+     "text": "The row for s. S matches none of them. Zeros.",
+     "start": 18.77,
+     "end": 21.97
+    },
+    {
+     "id": "dq4s_5",
+     "text": "The row for e. E against e. The same letter. Diagonal, plus one. One.",
+     "start": 22.72,
+     "end": 27.67
+    },
+    {
+     "id": "dq4s_6",
+     "text": "The rest of that row has no match. Each takes the better of above, and left. One, and one.",
+     "start": 28.42,
+     "end": 34.34
+    },
+    {
+     "id": "dq4s_7",
+     "text": "The row for a. Against e, no match. One. Then a against a. The same letter. The diagonal holds one. What goes here?",
+     "start": 35.09,
+     "end": 42.88
+    },
+    {
+     "id": "dq4s_8",
+     "text": "Two. E, a.",
+     "start": 44.08,
+     "end": 45.04
+    },
+    {
+     "id": "dq4s_9",
+     "text": "The last entry has no match, and keeps the two. Line fifteen returns it.",
+     "start": 45.79,
+     "end": 50.39
+    },
+    {
+     "id": "dq4s_10",
+     "text": "One entry per square of the table. O of n times m.",
+     "start": 51.49,
+     "end": 55.03
+    },
+    {
+     "id": "dq4s_11",
+     "text": "The table itself. The same size.",
+     "start": 55.78,
+     "end": 57.95
+    },
+    {
+     "id": "dq4s_12",
+     "text": "A tool that compares two versions of a file finds the lines they share like this. Everything else is shown as changed.",
+     "start": 58.7,
+     "end": 65.78
+    }
+   ],
+   "pauses": [
+    {
+     "id": "dq4s-q",
+     "t": 43.08
+    }
+   ]
+  },
+  "dq5i": {
+   "src": "videos/dq5i.mp4",
+   "title": "How Far Apart?",
+   "duration": 21.6,
+   "lines": [
+    {
+     "id": "dq5i_1",
+     "text": "Two words. Cat, and cut. How far apart are they?",
+     "start": 0.2,
+     "end": 3.23
+    },
+    {
+     "id": "dq5i_2",
+     "text": "One change is: insert a letter, delete a letter, or replace one. Return the fewest changes from the first word to the second.",
+     "start": 3.93,
+     "end": 11.66
+    },
+    {
+     "id": "dq5i_3",
+     "text": "Replace the a with a u. One change.",
+     "start": 12.36,
+     "end": 14.64
+    },
+    {
+     "id": "dq5i_4",
+     "text": "Compare the last letters. If they are the same, what does that cost? Your turn.",
+     "start": 15.34,
+     "end": 20
+    }
+   ],
+   "pauses": []
+  },
+  "dq5s": {
+   "src": "videos/dq5s.mp4",
+   "title": "Same: copy. Different: 1 + min",
+   "duration": 73.2,
+   "lines": [
+    {
+     "id": "dq5s_1",
+     "text": "One entry is the fewest changes, from a beginning of the first word, to a beginning of the second.",
+     "start": 0.2,
+     "end": 6.3
+    },
+    {
+     "id": "dq5s_2",
+     "text": "Same letters cost nothing. Copy the diagonal. Different letters cost one, plus the smallest of the three neighbours.",
+     "start": 7.05,
+     "end": 14.38
+    },
+    {
+     "id": "dq5s_3",
+     "text": "The dash stands for an empty text. Turning nothing into c, u, t takes one, two, three insertions. And the first column is the same, with deletions.",
+     "start": 15.13,
+     "end": 24.79
+    },
+    {
+     "id": "dq5s_4",
+     "text": "C against c. The same letter. Nothing to change. Copy the diagonal. Zero.",
+     "start": 25.54,
+     "end": 31.22
+    },
+    {
+     "id": "dq5s_5",
+     "text": "The rest of that row costs one more each time.",
+     "start": 31.97,
+     "end": 34.53
+    },
+    {
+     "id": "dq5s_6",
+     "text": "The row for a. Against c, one. Then a against u. Different. The three neighbours hold zero, one, and one. What goes here?",
+     "start": 35.28,
+     "end": 43.16
+    },
+    {
+     "id": "dq5s_7",
+     "text": "One. Replace the a with a u.",
+     "start": 44.36,
+     "end": 46.09
+    },
+    {
+     "id": "dq5s_8",
+     "text": "The row for t. Two, two. Then t against t. The same letter. Copy the diagonal. One.",
+     "start": 46.84,
+     "end": 52.83
+    },
+    {
+     "id": "dq5s_9",
+     "text": "Line thirteen returns the corner. One change.",
+     "start": 53.58,
+     "end": 56.88
+    },
+    {
+     "id": "dq5s_10",
+     "text": "One entry per square of the table. O of n times m.",
+     "start": 57.98,
+     "end": 61.52
+    },
+    {
+     "id": "dq5s_11",
+     "text": "The table itself. The same size.",
+     "start": 62.27,
+     "end": 64.44
+    },
+    {
+     "id": "dq5s_12",
+     "text": "A spell checker ranks its suggestions this way. The word with the fewest changes from your typo comes first.",
+     "start": 65.19,
+     "end": 71.6
+    }
+   ],
+   "pauses": [
+    {
+     "id": "dq5s-q",
+     "t": 43.36
+    }
+   ]
+  },
+  "dq6i": {
+   "src": "videos/dq6i.mp4",
+   "title": "The Best Load",
+   "duration": 25.99,
+   "lines": [
+    {
+     "id": "dq6i_1",
+     "text": "Three parcels. Each has a weight, and a value. The cart carries a weight of four.",
+     "start": 0.2,
+     "end": 5.07
+    },
+    {
+     "id": "dq6i_2",
+     "text": "A parcel is taken whole, or not at all. Return the largest total value that fits.",
+     "start": 5.77,
+     "end": 11.18
+    },
+    {
+     "id": "dq6i_3",
+     "text": "The two lighter parcels. Weight four. Value thirty five. That beats the heavy one, at thirty.",
+     "start": 11.88,
+     "end": 17.68
+    },
+    {
+     "id": "dq6i_4",
+     "text": "So the most valuable parcel is not the answer. For one parcel, what are the choices? Your turn.",
+     "start": 18.38,
+     "end": 24.39
+    }
+   ],
+   "pauses": []
+  },
+  "dq6s": {
+   "src": "videos/dq6s.mp4",
+   "title": "Skip it, or take it and fill up",
+   "duration": 92.39,
+   "lines": [
+    {
+     "id": "dq6s_1",
+     "text": "The answer depends on two things. Which parcels are allowed so far. And how much room there is.",
+     "start": 0.2,
+     "end": 6.26
+    },
+    {
+     "id": "dq6s_2",
+     "text": "For each parcel. Skip it, and keep the entry above. Or take it, and add the best for the room that is left.",
+     "start": 7.01,
+     "end": 13.36
+    },
+    {
+     "id": "dq6s_3",
+     "text": "The columns are the room in the cart. Zero to four. Each row allows one more parcel. Weight one, worth fifteen. Weight three, worth twenty. Weight four, worth thirty.",
+     "start": 14.11,
+     "end": 24.79
+    },
+    {
+     "id": "dq6s_4",
+     "text": "The first row. Only the light parcel. With room for one or more, take it. Fifteen.",
+     "start": 25.54,
+     "end": 30.94
+    },
+    {
+     "id": "dq6s_5",
+     "text": "The second row adds the parcel of weight three. With less room than three, it cannot go in. Copy the row above.",
+     "start": 31.69,
+     "end": 38.81
+    },
+    {
+     "id": "dq6s_6",
+     "text": "Room three. Skipping keeps fifteen. Taking gives twenty, plus the best for the room that is left. None. Twenty.",
+     "start": 39.56,
+     "end": 46.85
+    },
+    {
+     "id": "dq6s_7",
+     "text": "Room four. Skipping keeps fifteen. Taking gives twenty, plus the best for a room of one, in the row above. What is that?",
+     "start": 47.6,
+     "end": 55.6
+    },
+    {
+     "id": "dq6s_8",
+     "text": "Fifteen. So thirty five. Both light parcels.",
+     "start": 56.8,
+     "end": 60.08
+    },
+    {
+     "id": "dq6s_9",
+     "text": "The last row adds the heavy parcel. It only fits with room four. Thirty, against thirty five. The table keeps thirty five.",
+     "start": 60.83,
+     "end": 68.95
+    },
+    {
+     "id": "dq6s_10",
+     "text": "Line eleven returns the last entry. Thirty five.",
+     "start": 69.7,
+     "end": 73.03
+    },
+    {
+     "id": "dq6s_11",
+     "text": "One entry for every parcel, and every amount of room. O of parcels, times room.",
+     "start": 74.13,
+     "end": 79.64
+    },
+    {
+     "id": "dq6s_12",
+     "text": "Only the row above is ever needed. So two rows are enough.",
+     "start": 80.39,
+     "end": 84.05
+    },
+    {
+     "id": "dq6s_13",
+     "text": "An airline loads cargo like this. The most valuable set of crates that stays under the weight limit.",
+     "start": 84.8,
+     "end": 90.79
+    }
+   ],
+   "pauses": [
+    {
+     "id": "dq6s-q",
+     "t": 55.8
+    }
+   ]
+  },
+  "dq7i": {
+   "src": "videos/dq7i.mp4",
+   "title": "The Biggest Square",
+   "duration": 21.37,
+   "lines": [
+    {
+     "id": "dq7i_1",
+     "text": "A grid of ones and zeros.",
+     "start": 0.2,
+     "end": 2.08
+    },
+    {
+     "id": "dq7i_2",
+     "text": "Return the side of the biggest square that contains only ones.",
+     "start": 2.78,
+     "end": 6.56
+    },
+    {
+     "id": "dq7i_3",
+     "text": "The top left four squares are all ones. Side two. Nothing bigger exists.",
+     "start": 7.26,
+     "end": 12.34
+    },
+    {
+     "id": "dq7i_4",
+     "text": "A square ends at its bottom right corner. What must be true just above it, and just to the left? Your turn.",
+     "start": 13.04,
+     "end": 19.77
+    }
+   ],
+   "pauses": []
+  },
+  "dq7s": {
+   "src": "videos/dq7s.mp4",
+   "title": "One more than the smallest",
+   "duration": 69.97,
+   "lines": [
+    {
+     "id": "dq7s_1",
+     "text": "One entry means: the side of the biggest square of ones, that has its bottom right corner on this square.",
+     "start": 0.2,
+     "end": 6.59
+    },
+    {
+     "id": "dq7s_2",
+     "text": "It can be one bigger than the smallest of its three neighbours. Above, left, and diagonal.",
+     "start": 7.34,
+     "end": 12.88
+    },
+    {
+     "id": "dq7s_3",
+     "text": "In the top row and the left column, a one can only end a square of side one. And a zero is zero.",
+     "start": 13.63,
+     "end": 20.16
+    },
+    {
+     "id": "dq7s_4",
+     "text": "The middle. Above, left and diagonal are all one. So a square of side two ends here.",
+     "start": 20.91,
+     "end": 26.46
+    },
+    {
+     "id": "dq7s_5",
+     "text": "The square on its right. Its left neighbour holds two. But above it is a zero. What is the biggest square ending here?",
+     "start": 27.21,
+     "end": 34.67
+    },
+    {
+     "id": "dq7s_6",
+     "text": "One. A single zero among the three neighbours blocks any bigger square.",
+     "start": 35.87,
+     "end": 39.98
+    },
+    {
+     "id": "dq7s_7",
+     "text": "The bottom row. The middle one has a zero on its left. One. And the corner. Above, one. Left, one. Diagonal, two. The smallest is one. Side two.",
+     "start": 40.73,
+     "end": 50.5
+    },
+    {
+     "id": "dq7s_8",
+     "text": "Line fifteen returns the biggest side seen. Two.",
+     "start": 51.25,
+     "end": 54.45
+    },
+    {
+     "id": "dq7s_9",
+     "text": "One entry per square of the table. O of rows times columns.",
+     "start": 55.55,
+     "end": 59.74
+    },
+    {
+     "id": "dq7s_10",
+     "text": "The table itself. The same size.",
+     "start": 60.49,
+     "end": 62.67
+    },
+    {
+     "id": "dq7s_11",
+     "text": "A map tool finds the largest square plot of free land on a grid map like this.",
+     "start": 63.42,
+     "end": 68.37
+    }
+   ],
+   "pauses": [
+    {
+     "id": "dq7s-q",
+     "t": 34.87
     }
    ]
   }
