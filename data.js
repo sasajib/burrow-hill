@@ -26712,6 +26712,628 @@ window.BURROW = {
     }
    ]
   },
+  "kd0": {
+   "src": "videos/kd0.mp4",
+   "title": "It Worked on the Example",
+   "duration": 39.55,
+   "lines": [
+    {
+     "id": "jk1",
+     "text": "Thinking in code. Warm up D. Test it, break it, fix it.",
+     "start": 0.2,
+     "end": 3.8
+    },
+    {
+     "id": "jk2",
+     "text": "Your code works on the example. So it is finished? Not yet. The example is the easy case.",
+     "start": 4.5,
+     "end": 10.45
+    },
+    {
+     "id": "jk3",
+     "text": "Good programmers try to break their own code, before someone else does. Empty input. A single item. The very ends.",
+     "start": 11.35,
+     "end": 19.18
+    },
+    {
+     "id": "jk4",
+     "text": "And when it does break, they do not guess. They find the first value that is wrong. Two lessons, and four puzzles.",
+     "start": 20.08,
+     "end": 27.21
+    },
+    {
+     "id": "jk5",
+     "text": "A cash machine, asked for zero. A form, sent with an empty name. A list with exactly one item. Real users find these cases on the first day.",
+     "start": 28.11,
+     "end": 37.95
+    }
+   ],
+   "pauses": []
+  },
+  "kdt1": {
+   "src": "videos/kdt1.mp4",
+   "title": "Try to Break It",
+   "duration": 66.97,
+   "lines": [
+    {
+     "id": "jl1",
+     "text": "This function returns the average of a list. Two, four, six. It says four. Correct. So are we done?",
+     "start": 0.2,
+     "end": 6.71
+    },
+    {
+     "id": "jl2",
+     "text": "One passing example proves very little. Now try to break it. There is a short list of inputs that break most code.",
+     "start": 7.61,
+     "end": 14.65
+    },
+    {
+     "id": "jl3",
+     "text": "First. Nothing at all. An empty list.",
+     "start": 15.55,
+     "end": 17.95
+    },
+    {
+     "id": "jl4",
+     "text": "Zero, divided by zero. The answer is, not a number. The function is broken. And the example never showed it.",
+     "start": 18.85,
+     "end": 26.11
+    },
+    {
+     "id": "jl5",
+     "text": "Second. Exactly one item. Third. The ends. The first item, the last item, and the limit itself.",
+     "start": 27.11,
+     "end": 33.48
+    },
+    {
+     "id": "jl6",
+     "text": "Fourth. Repeats, zeros, and negative numbers.",
+     "start": 34.38,
+     "end": 37.71
+    },
+    {
+     "id": "jl7",
+     "text": "Try one. This function finds the largest number. It starts with best equals zero. Which input breaks it?",
+     "start": 38.61,
+     "end": 45.52
+    },
+    {
+     "id": "jl8",
+     "text": "Only negative numbers. Every one of them is below zero. So it answers zero, which is not even in the list.",
+     "start": 46.72,
+     "end": 53.74
+    },
+    {
+     "id": "jl9",
+     "text": "The fix is to start with the first item, instead of a made up number.",
+     "start": 54.64,
+     "end": 58.8
+    },
+    {
+     "id": "jl10",
+     "text": "Empty. One. The ends. Repeats and negatives. Test those, before anyone else does.",
+     "start": 59.7,
+     "end": 65.37
+    }
+   ],
+   "pauses": [
+    {
+     "id": "kdt1-q1",
+     "t": 45.72
+    }
+   ]
+  },
+  "kdt2": {
+   "src": "videos/kdt2.mp4",
+   "title": "Find the First Wrong Value",
+   "duration": 65.39,
+   "lines": [
+    {
+     "id": "jm1",
+     "text": "This should return the last word, in capitals. Instead, it crashes on line three. So the bug is on line three. Right?",
+     "start": 0.2,
+     "end": 7.78
+    },
+    {
+     "id": "jm2",
+     "text": "Not necessarily. A crash only tells you where the damage showed up. Not where it started.",
+     "start": 8.68,
+     "end": 14.29
+    },
+    {
+     "id": "jm3",
+     "text": "So do not guess. Walk the values, from the top. And check each one against what you expect.",
+     "start": 15.19,
+     "end": 20.72
+    },
+    {
+     "id": "jm4",
+     "text": "Line one. The words. Pip, likes, seeds. Three words. Exactly what we expect. Good.",
+     "start": 21.62,
+     "end": 27.44
+    },
+    {
+     "id": "jm5",
+     "text": "Line two. Last should be seeds. What does it actually hold?",
+     "start": 28.34,
+     "end": 31.92
+    },
+    {
+     "id": "jm6",
+     "text": "Undefined. Three words sit at positions zero to two. Position three is empty.",
+     "start": 33.12,
+     "end": 38.64
+    },
+    {
+     "id": "jm7",
+     "text": "That is the first wrong value. So the bug is on line two. Line three was only where it blew up.",
+     "start": 39.54,
+     "end": 45.71
+    },
+    {
+     "id": "jm8",
+     "text": "Fix line two. Length, minus one. Now last is seeds. And line three works, without any change.",
+     "start": 46.61,
+     "end": 52.85
+    },
+    {
+     "id": "jm9",
+     "text": "The method. Say what each value should be. Look at what it is. Stop at the first one that differs.",
+     "start": 53.75,
+     "end": 59.69
+    },
+    {
+     "id": "jm10",
+     "text": "Do not fix the crash. Fix the first wrong value.",
+     "start": 60.59,
+     "end": 63.79
+    }
+   ],
+   "pauses": [
+    {
+     "id": "kdt2-q1",
+     "t": 32.12
+    }
+   ]
+  },
+  "kd1i": {
+   "src": "videos/kd1i.mp4",
+   "title": "The Average of Nothing",
+   "duration": 22.85,
+   "lines": [
+    {
+     "id": "kd1i_1",
+     "text": "The average of two, four and six. Twelve, divided by three. Four.",
+     "start": 0.2,
+     "end": 4.8
+    },
+    {
+     "id": "kd1i_2",
+     "text": "The code gets that right. And the task adds one sentence. For an empty list, the answer is zero.",
+     "start": 5.5,
+     "end": 11.72
+    },
+    {
+     "id": "kd1i_3",
+     "text": "So the example passes. That does not mean the code is finished.",
+     "start": 12.42,
+     "end": 16.39
+    },
+    {
+     "id": "kd1i_4",
+     "text": "Empty. One item. The ends. Which input have you not tried? Your turn.",
+     "start": 17.09,
+     "end": 21.25
+    }
+   ],
+   "pauses": []
+  },
+  "kd1s": {
+   "src": "videos/kd1s.mp4",
+   "title": "Answer the empty case first",
+   "duration": 61.91,
+   "lines": [
+    {
+     "id": "kd1s_1",
+     "text": "The example works. So try the inputs nobody thinks of. First on the list. Nothing at all.",
+     "start": 0.2,
+     "end": 6.69
+    },
+    {
+     "id": "kd1s_2",
+     "text": "Dividing by the length is the dangerous line. What if the length is zero?",
+     "start": 7.44,
+     "end": 11.97
+    },
+    {
+     "id": "kd1s_3",
+     "text": "With two, four and six, total reaches twelve, and twelve divided by three is four.",
+     "start": 12.72,
+     "end": 18.09
+    },
+    {
+     "id": "kd1s_4",
+     "text": "Now the empty list. The loop never runs. Total stays zero. And the length is zero. So what does the last line compute?",
+     "start": 18.84,
+     "end": 26.6
+    },
+    {
+     "id": "kd1s_5",
+     "text": "Not a number. No crash. No warning. Just a wrong answer, handed back quietly.",
+     "start": 27.8,
+     "end": 33.28
+    },
+    {
+     "id": "kd1s_6",
+     "text": "The fix goes at the very top. If the list is empty, answer zero, and stop there.",
+     "start": 34.03,
+     "end": 39.39
+    },
+    {
+     "id": "kd1s_7",
+     "text": "Every other input still takes the old path, unchanged.",
+     "start": 40.14,
+     "end": 43.71
+    },
+    {
+     "id": "kd1s_8",
+     "text": "Whenever you divide, ask whether the bottom can be zero.",
+     "start": 44.81,
+     "end": 48.22
+    },
+    {
+     "id": "kd1s_9",
+     "text": "Handle the odd case first, at the top. Then the main path stays simple.",
+     "start": 48.97,
+     "end": 53.52
+    },
+    {
+     "id": "kd1s_10",
+     "text": "A product page with no reviews yet. Without this check, it proudly shows a rating of, not a number.",
+     "start": 54.27,
+     "end": 60.31
+    }
+   ],
+   "pauses": [
+    {
+     "id": "kd1s-q",
+     "t": 26.8
+    }
+   ]
+  },
+  "kd2i": {
+   "src": "videos/kd2i.mp4",
+   "title": "The Largest",
+   "duration": 19.08,
+   "lines": [
+    {
+     "id": "kd2i_1",
+     "text": "Three numbers, all below zero. Minus five, minus two, minus nine.",
+     "start": 0.2,
+     "end": 4.49
+    },
+    {
+     "id": "kd2i_2",
+     "text": "Return the largest. That is minus two.",
+     "start": 5.19,
+     "end": 7.65
+    },
+    {
+     "id": "kd2i_3",
+     "text": "The code works for three, nine and two. For this list, it answers zero.",
+     "start": 8.35,
+     "end": 12.9
+    },
+    {
+     "id": "kd2i_4",
+     "text": "Zero is not even in the list. So where did it come from? Your turn.",
+     "start": 13.6,
+     "end": 17.48
+    }
+   ],
+   "pauses": []
+  },
+  "kd2s": {
+   "src": "videos/kd2s.mp4",
+   "title": "Start from real data",
+   "duration": 60.45,
+   "lines": [
+    {
+     "id": "kd2s_1",
+     "text": "The old code started with best equals zero. A number it made up.",
+     "start": 0.2,
+     "end": 4.32
+    },
+    {
+     "id": "kd2s_2",
+     "text": "A made up start is only safe if the data can never be on the other side of it.",
+     "start": 5.07,
+     "end": 9.67
+    },
+    {
+     "id": "kd2s_3",
+     "text": "Trace the old code. Best is zero. Is minus five bigger than zero? No.",
+     "start": 10.42,
+     "end": 15.24
+    },
+    {
+     "id": "kd2s_4",
+     "text": "Minus two. Bigger than zero? No. Minus nine? No. So what did the old code return?",
+     "start": 15.99,
+     "end": 21.7
+    },
+    {
+     "id": "kd2s_5",
+     "text": "Zero. The number it invented. Not a number from the list.",
+     "start": 22.9,
+     "end": 26.46
+    },
+    {
+     "id": "kd2s_6",
+     "text": "The fix. Start with the first number of the list. Minus five.",
+     "start": 27.21,
+     "end": 30.87
+    },
+    {
+     "id": "kd2s_7",
+     "text": "Minus two is bigger than minus five. Best becomes minus two. Minus nine is not bigger.",
+     "start": 31.62,
+     "end": 37.83
+    },
+    {
+     "id": "kd2s_8",
+     "text": "Line six returns minus two.",
+     "start": 38.58,
+     "end": 40.5
+    },
+    {
+     "id": "kd2s_9",
+     "text": "For a largest, or a smallest, start from the first item. Not from zero.",
+     "start": 41.6,
+     "end": 46.17
+    },
+    {
+     "id": "kd2s_10",
+     "text": "Always test with only negatives. And with a zero in the list.",
+     "start": 46.92,
+     "end": 50.8
+    },
+    {
+     "id": "kd2s_11",
+     "text": "A weather app that shows the warmest day of the week. In January, every day is below zero. And the app says zero.",
+     "start": 51.55,
+     "end": 58.85
+    }
+   ],
+   "pauses": [
+    {
+     "id": "kd2s-q",
+     "t": 21.9
+    }
+   ]
+  },
+  "kd3i": {
+   "src": "videos/kd3i.mp4",
+   "title": "Count the Word",
+   "duration": 20.77,
+   "lines": [
+    {
+     "id": "kd3i_1",
+     "text": "Three words. The, with a capital. Then. And the.",
+     "start": 0.2,
+     "end": 2.83
+    },
+    {
+     "id": "kd3i_2",
+     "text": "Count how often the word, the, appears. As a whole word. And ignoring capitals.",
+     "start": 3.53,
+     "end": 8.83
+    },
+    {
+     "id": "kd3i_3",
+     "text": "The first, and the third. Two. Then, does not count.",
+     "start": 9.53,
+     "end": 12.64
+    },
+    {
+     "id": "kd3i_4",
+     "text": "The task has two rules, hidden in two short phrases. Does the code obey both? Your turn.",
+     "start": 13.34,
+     "end": 19.17
+    }
+   ],
+   "pauses": []
+  },
+  "kd3s": {
+   "src": "videos/kd3s.mp4",
+   "title": "One test for each rule",
+   "duration": 68.7,
+   "lines": [
+    {
+     "id": "kd3s_1",
+     "text": "The task has two rules. Whole words. And capitals ignored. Each rule needs its own test.",
+     "start": 0.2,
+     "end": 6.02
+    },
+    {
+     "id": "kd3s_2",
+     "text": "The old code asked whether the word includes the letters. That obeys neither rule.",
+     "start": 6.77,
+     "end": 11.79
+    },
+    {
+     "id": "kd3s_3",
+     "text": "The first word. The, with a capital T. The old code looked for small t, h, e, inside it. Not found. So it was skipped.",
+     "start": 12.54,
+     "end": 20.91
+    },
+    {
+     "id": "kd3s_4",
+     "text": "The second word. Then. Does it include t, h, e?",
+     "start": 21.66,
+     "end": 24.82
+    },
+    {
+     "id": "kd3s_5",
+     "text": "Yes. So then was counted. One word missed, one word wrongly counted. And the total still came out as two.",
+     "start": 26.02,
+     "end": 32.71
+    },
+    {
+     "id": "kd3s_6",
+     "text": "The fix. Make both sides small letters. And compare whole words, with three equals signs.",
+     "start": 33.46,
+     "end": 39.3
+    },
+    {
+     "id": "kd3s_7",
+     "text": "Then is not equal to the. Skipped. The last word matches. Two.",
+     "start": 40.05,
+     "end": 44.04
+    },
+    {
+     "id": "kd3s_8",
+     "text": "Line seven returns two. This time, for the right reasons.",
+     "start": 44.79,
+     "end": 48.73
+    },
+    {
+     "id": "kd3s_9",
+     "text": "Write one small test for each rule in the task. On its own.",
+     "start": 49.83,
+     "end": 53.59
+    },
+    {
+     "id": "kd3s_10",
+     "text": "A right answer can hide two wrong steps. So test the steps, not just the total.",
+     "start": 54.34,
+     "end": 59.18
+    },
+    {
+     "id": "kd3s_11",
+     "text": "Search inside a document. Whole word, on or off. Match case, on or off. Those two switches are these two rules.",
+     "start": 59.93,
+     "end": 67.1
+    }
+   ],
+   "pauses": [
+    {
+     "id": "kd3s-q",
+     "t": 25.02
+    }
+   ]
+  },
+  "kd4i": {
+   "src": "videos/kd4i.mp4",
+   "title": "The Last Word, Loudly",
+   "duration": 22.1,
+   "lines": [
+    {
+     "id": "kd4i_1",
+     "text": "Pip likes seeds. Moss wants the last word, shouted. Seeds, in capitals, with an exclamation mark.",
+     "start": 0.2,
+     "end": 6.69
+    },
+    {
+     "id": "kd4i_2",
+     "text": "The code crashes. And the error message points at its last line.",
+     "start": 7.39,
+     "end": 11.37
+    },
+    {
+     "id": "kd4i_3",
+     "text": "But the last line looks fine.",
+     "start": 12.07,
+     "end": 13.74
+    },
+    {
+     "id": "kd4i_4",
+     "text": "So do not stare at the crash. Walk the values from the top. Which one goes wrong first? Your turn.",
+     "start": 14.44,
+     "end": 20.5
+    }
+   ],
+   "pauses": []
+  },
+  "kd4s": {
+   "src": "videos/kd4s.mp4",
+   "title": "Fix the first wrong value",
+   "duration": 69.64,
+   "lines": [
+    {
+     "id": "kd4s_1",
+     "text": "A crash tells you where the damage showed up. Not where it began.",
+     "start": 0.2,
+     "end": 3.9
+    },
+    {
+     "id": "kd4s_2",
+     "text": "So say what each value should be. Then look at what it is. Stop at the first difference.",
+     "start": 4.65,
+     "end": 9.92
+    },
+    {
+     "id": "kd4s_3",
+     "text": "Line two. The words. Pip, likes, seeds. That is what we expect. Good.",
+     "start": 10.67,
+     "end": 14.96
+    },
+    {
+     "id": "kd4s_4",
+     "text": "Line three. Last should be seeds. The old code read position words dot length. Three. What is there?",
+     "start": 15.71,
+     "end": 22.45
+    },
+    {
+     "id": "kd4s_5",
+     "text": "Undefined. Quietly. No error yet. That is the first wrong value. So the bug is here, on line three.",
+     "start": 23.65,
+     "end": 30.46
+    },
+    {
+     "id": "kd4s_6",
+     "text": "The fix. Length minus one. Position two. Seeds.",
+     "start": 31.21,
+     "end": 34.66
+    },
+    {
+     "id": "kd4s_7",
+     "text": "And line four, which crashed before, now works without a single change.",
+     "start": 35.41,
+     "end": 39.83
+    },
+    {
+     "id": "kd4s_8",
+     "text": "One more walk, with spaces around the sentence. Split then gives empty words at the ends. So line two trims the sentence first.",
+     "start": 40.93,
+     "end": 49.09
+    },
+    {
+     "id": "kd4s_9",
+     "text": "Do not fix the line that crashed. Fix the line that made the first wrong value.",
+     "start": 49.84,
+     "end": 54.44
+    },
+    {
+     "id": "kd4s_10",
+     "text": "After every fix, run all the tests again. One bug often hides another.",
+     "start": 55.19,
+     "end": 60.05
+    },
+    {
+     "id": "kd4s_11",
+     "text": "An error report from a real app names the line that blew up. The real mistake is usually a few lines above it.",
+     "start": 60.8,
+     "end": 68.04
+    }
+   ],
+   "pauses": [
+    {
+     "id": "kd4s-q",
+     "t": 22.65
+    }
+   ]
+  },
   "kc1i": {
    "src": "videos/kc1i.mp4",
    "title": "The Film Label",
