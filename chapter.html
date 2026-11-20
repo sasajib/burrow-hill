@@ -157,21 +157,34 @@ pre,code{font-family:var(--mono);font-size:14px}
 .vtime{font-family:var(--mono);font-weight:700;font-size:12px;white-space:nowrap}
 .vcapo{display:none}
 .vid.fs{position:fixed;inset:0;z-index:9999;width:100vw;height:100vh;height:100dvh;max-width:none;margin:0;border:0;border-radius:0;background:#000;display:flex}
-.vid.fs .vstage{flex:1 1 0;height:100%;background:#000}
-.vid.fs video{flex:1 1 0;min-height:0;width:100%;height:auto;aspect-ratio:auto;object-fit:contain;background:#000}
-.vid.fs .vcapo{display:block;position:absolute;left:10px;right:10px;bottom:62px;text-align:center;color:#fff;font-weight:700;font-size:clamp(13px,2.2vmin,22px);text-shadow:0 1px 4px #000,0 0 2px #000;pointer-events:none}
-.vid.fs .quiz{position:static;inset:auto;flex:0 0 min(46%,460px);background:var(--cream);padding:10px;align-items:flex-start;overflow:auto;border-left:5px solid var(--plum)}
-.vid.fs .quiz .q{border:0;box-shadow:none;padding:6px 6px 16px;max-width:none;max-height:none;overflow:visible}
-.vid.fs .quiz .opt{min-height:46px}
+.vbar [data-v=cc]{display:none}
+.vid.fs .vbar [data-v=cc]{display:grid}
+.vid.fs.nocc .vbar [data-v=cc]{opacity:.45}
+/* full screen: the video fills the screen; the controls and captions lie over it and the controls fade while it plays */
+.vid.fs .vstage{flex:1 1 0;height:100%;background:#000;display:block;min-width:0}
+.vid.fs video{position:absolute;inset:0;width:100%;height:100%;aspect-ratio:auto;object-fit:contain;background:#000}
+.vid.fs .vbar{position:absolute;left:0;right:0;bottom:0;background:linear-gradient(transparent,rgba(20,10,40,.88) 45%);padding:24px 12px 8px;transition:opacity .25s}
+.vid.fs.idle .vbar{opacity:0;pointer-events:none}
+.vid.fs .vcapo{display:block;position:absolute;left:50%;transform:translateX(-50%);width:max-content;max-width:min(94%,calc(100vh * 16 / 9 - 24px));bottom:66px;text-align:center;color:#fff;background:rgba(20,10,40,.72);padding:4px 12px;border-radius:10px;font-weight:600;line-height:1.25;font-size:clamp(13px,4vh,24px);pointer-events:none;transition:bottom .25s}
+.vid.fs.idle .vcapo{bottom:10px}
+.vid.fs .vcapo:empty,.vid.fs.nocc .vcapo,.vid.fs:has(.quiz) .vcapo{display:none}
+.vid.fs .quiz{position:static;inset:auto;flex:0 0 42%;background:var(--cream);padding:8px;align-items:flex-start;overflow:auto;border-left:5px solid var(--plum)}
+.vid.fs .quiz .q{border:0;box-shadow:none;padding:4px 6px 14px;max-width:none;max-height:none;overflow:visible}
+.vid.fs .quiz h3{font-size:11px}
+.vid.fs .quiz .ask{font-size:clamp(14px,4.4vh,22px);line-height:1.25;margin-bottom:8px}
+.vid.fs .quiz .opts{gap:6px}
+.vid.fs .quiz .opt,.vid.fs .quiz .btn{font-size:clamp(13px,4vh,19px);line-height:1.25;padding:6px 12px;min-height:40px}
 @media (orientation:portrait){
-  .vid.fs:not(.fake){flex-direction:column}
-  .vid.fs:not(.fake) .vstage{flex:0 0 auto;height:auto}
-  .vid.fs:not(.fake) video{flex:none;aspect-ratio:16/9}
+  .vid.fs:not(.fake):has(.quiz){flex-direction:column}
+  .vid.fs:not(.fake):has(.quiz) .vstage{flex:0 0 auto;height:auto;width:100%;aspect-ratio:16/9}
   .vid.fs:not(.fake) .quiz{flex:1 1 auto;border-left:0;border-top:5px solid var(--plum)}
+  .vid.fs .vcapo{max-width:94%}
   /* iPhone has no real full screen for a page: turn the player on its side so the video fills the screen */
   .vid.fs.fake{width:100vh;width:100dvh;height:100vw;transform:rotate(90deg);transform-origin:top left;left:100vw;top:0;right:auto;bottom:auto}
 }
 body.vlock{overflow:hidden}
+@media(max-width:480px){.vbar{gap:5px;padding:5px 6px}.vbar button{min-width:34px;height:36px;padding:0 5px;font-size:12.5px}.vbar svg{width:18px;height:18px}.vtime{font-size:11px}}
+.spec{white-space:pre-wrap}
 </style>
 </head>
 <body>
@@ -236,12 +249,16 @@ function wirePlayer(v, frame, V) {
   const marks = () => { const d = v.duration || V.duration || 0; if (!d || tl.dataset.m) return; tl.dataset.m = 1; (V.pauses || []).forEach((p) => { const u = document.createElement('u'); u.style.left = (p.t / d) * 100 + '%'; u.title = 'a question'; tl.insertBefore(u, knob); }); };
   ['timeupdate', 'play', 'pause', 'loadedmetadata', 'seeked'].forEach((e) => v.addEventListener(e, () => { marks(); draw(); if (capo) { const ln = V.lines.find((l) => v.currentTime >= l.start - 0.1 && v.currentTime <= l.end + 0.5); capo.textContent = ln ? ln.text : ''; } }));
   const toggle = () => { if (v.paused) v.play().catch(() => {}); else v.pause(); };
-  bPlay.onclick = toggle; v.addEventListener('click', toggle);
+  // in full screen the controls fade while the video plays; the first tap brings them back, the next one pauses
+  let idleT = 0; const wake = () => { frame.classList.remove('idle'); clearTimeout(idleT); if (api.isFS() && !v.paused) idleT = setTimeout(() => frame.classList.add('idle'), 2600); };
+  ['pointermove', 'pointerdown', 'keydown'].forEach((n) => frame.addEventListener(n, (e) => { if (!(n === 'pointerdown' && e.target === v && frame.classList.contains('idle'))) wake(); }, true)); ['play', 'pause'].forEach((n) => v.addEventListener(n, wake));
+  bPlay.onclick = toggle; v.addEventListener('click', () => { if (frame.classList.contains('idle')) wake(); else toggle(); });
+  const bCc = $$('[data-v=cc]'); try { if (localStorage.getItem('burrow-cc') === '0') frame.classList.add('nocc'); } catch (e) {} bCc.onclick = () => { const off = frame.classList.toggle('nocc'); try { localStorage.setItem('burrow-cc', off ? '0' : '1'); } catch (e) {} };
   $$('[data-v=back]').onclick = () => { v.currentTime = Math.max(0, v.currentTime - 10); };
   const SP = [1, 1.25, 1.5, 0.75]; bSp.onclick = () => { const n = SP[(SP.indexOf(v.playbackRate) + 1) % SP.length]; v.playbackRate = n; bSp.textContent = n + '×'; };
   const seek = (e) => { const r = tl.getBoundingClientRect(), fake = frame.classList.contains('fake') && matchMedia('(orientation:portrait)').matches; const p = fake ? (e.clientY - r.top) / r.height : (e.clientX - r.left) / r.width; const d = v.duration || 0; if (d) v.currentTime = Math.max(0, Math.min(d - 0.05, p * d)); };
   let drag = false; tl.addEventListener('pointerdown', (e) => { drag = true; tl.setPointerCapture(e.pointerId); seek(e); }); tl.addEventListener('pointermove', (e) => { if (drag) seek(e); }); ['pointerup', 'pointercancel'].forEach((n) => tl.addEventListener(n, () => { drag = false; }));
-  const set = (on, fake) => { frame.classList.toggle('fs', on); frame.classList.toggle('fake', on && !!fake); document.body.classList.toggle('vlock', on && !!fake); bFs.title = on ? 'Leave full screen' : 'Full screen'; if (api.onChange) api.onChange(); };
+  const set = (on, fake) => { frame.classList.toggle('fs', on); frame.classList.toggle('fake', on && !!fake); document.body.classList.toggle('vlock', on && !!fake); bFs.title = on ? 'Leave full screen' : 'Full screen'; wake(); if (api.onChange) api.onChange(); };
   api.enterFS = () => { const rq = frame.requestFullscreen || frame.webkitRequestFullscreen; if (rq) { try { const pr = rq.call(frame); if (pr && pr.then) pr.then(() => { try { screen.orientation.lock('landscape').catch(() => {}); } catch (e) {} }).catch(() => set(true, true)); } catch (e) { set(true, true); } } else set(true, true); };
   api.exitFS = () => { if (document.fullscreenElement || document.webkitFullscreenElement) { (document.exitFullscreen || document.webkitExitFullscreen).call(document); try { screen.orientation.unlock(); } catch (e) {} } else set(false); };
   ['fullscreenchange', 'webkitfullscreenchange'].forEach((n) => document.addEventListener(n, () => { const el = document.fullscreenElement || document.webkitFullscreenElement; if (el === frame) set(true, false); else if (frame.classList.contains('fs') && !frame.classList.contains('fake')) set(false); }));
@@ -250,7 +267,7 @@ function wirePlayer(v, frame, V) {
   draw(); return api;
 }
 function player(vkey, onEnd) {
-  const V = D.videos[vkey]; const box = h(`<div><div class="vid"><div class="vstage"><video playsinline disablepictureinpicture preload="metadata" src="${V ? V.src : ''}"></video><div class="vcapo" aria-hidden="true"></div><div class="vbar"><button data-v="play" title="Play or pause" aria-label="Play or pause"></button><button data-v="back" title="Back 10 seconds" aria-label="Back 10 seconds">−10</button><div class="vtl" role="slider" aria-label="Position in the video"><i></i><b></b></div><span class="vtime">0:00</span><button data-v="speed" title="Speed" aria-label="Speed">1×</button><button data-v="fs" title="Full screen" aria-label="Full screen"><svg viewBox="0 0 24 24"><path d="M4 9V4h5M15 4h5v5M20 15v5h-5M9 20H4v-5" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button></div></div></div><div class="vctl" role="group" aria-label="Replay"><span>Replay</span><button data-a="back" title="Go back 10 seconds">10 s</button><button data-a="line" title="Replay this sentence">Sentence</button><button data-a="part" title="Replay everything since the last question">Part</button></div><div class="cap" aria-live="off"></div></div>`);
+  const V = D.videos[vkey]; const box = h(`<div><div class="vid"><div class="vstage"><video playsinline disablepictureinpicture preload="metadata" src="${V ? V.src : ''}"></video><div class="vcapo" aria-hidden="true"></div><div class="vbar"><button data-v="play" title="Play or pause" aria-label="Play or pause"></button><button data-v="back" title="Back 10 seconds" aria-label="Back 10 seconds">−10</button><div class="vtl" role="slider" aria-label="Position in the video"><i></i><b></b></div><span class="vtime">0:00</span><button data-v="speed" title="Speed" aria-label="Speed">1×</button><button data-v="cc" title="Captions on or off" aria-label="Captions on or off">CC</button><button data-v="fs" title="Full screen" aria-label="Full screen"><svg viewBox="0 0 24 24"><path d="M4 9V4h5M15 4h5v5M20 15v5h-5M9 20H4v-5" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button></div></div></div><div class="vctl" role="group" aria-label="Replay"><span>Replay</span><button data-a="back" title="Go back 10 seconds">10 s</button><button data-a="line" title="Replay this sentence">Sentence</button><button data-a="part" title="Replay everything since the last question">Part</button></div><div class="cap" aria-live="off"></div></div>`);
   const v = $('video', box), cap = $('.cap', box), frame = $('.vid', box);
   if (!V) { cap.textContent = 'This video is not published yet.'; return box; }
   let open = null;
