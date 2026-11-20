@@ -4,8 +4,8 @@ window.CHAPTER = {
  "sub": "CHAPTER 23 · GREEDY",
  "key": "burrow-ch-greedy",
  "next": {
-  "href": "index.html#chapters",
-  "label": "All chapters"
+  "href": "chapter.html?c=dp1",
+  "label": "Chapter 24: Dynamic Programming"
  },
  "prev": {
   "href": "chapter.html?c=backtrack",

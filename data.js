@@ -21837,468 +21837,6 @@ window.BURROW = {
     }
    ]
   },
-  "gd1i": {
-   "src": "videos/gd1i.mp4",
-   "title": "Stepping Stones",
-   "duration": 21.42,
-   "lines": [
-    {
-     "id": "gd1i_1",
-     "text": "Five stepping stones. The number on a stone is the longest jump Pip may take from it.",
-     "start": 0.2,
-     "end": 5.67
-    },
-    {
-     "id": "gd1i_2",
-     "text": "Pip starts on the first stone. Return true if the last stone can be reached.",
-     "start": 6.37,
-     "end": 10.92
-    },
-    {
-     "id": "gd1i_3",
-     "text": "Here it cannot. Every way lands on the stone that says zero.",
-     "start": 11.62,
-     "end": 15.2
-    },
-    {
-     "id": "gd1i_4",
-     "text": "There are many ways to jump. Do you really have to try them all? Your turn.",
-     "start": 15.9,
-     "end": 19.82
-    }
-   ],
-   "pauses": []
-  },
-  "gd1s": {
-   "src": "videos/gd1s.mp4",
-   "title": "Keep the farthest reach",
-   "duration": 62.87,
-   "lines": [
-    {
-     "id": "gd1s_1",
-     "text": "Do not try the ways one by one. Keep a single number. The farthest stone that can be reached at all.",
-     "start": 0.2,
-     "end": 6.18
-    },
-    {
-     "id": "gd1s_2",
-     "text": "Every stone up to that point is reachable. Each of them may push the number further.",
-     "start": 6.93,
-     "end": 11.99
-    },
-    {
-     "id": "gd1s_3",
-     "text": "Far starts at zero. Only the first stone is reachable.",
-     "start": 12.74,
-     "end": 16.37
-    },
-    {
-     "id": "gd1s_4",
-     "text": "Stone zero allows a jump of three. So everything up to stone three is reachable.",
-     "start": 17.12,
-     "end": 22.3
-    },
-    {
-     "id": "gd1s_5",
-     "text": "Stone one allows two. One plus two is three. No further.",
-     "start": 23.05,
-     "end": 26.91
-    },
-    {
-     "id": "gd1s_6",
-     "text": "Stone two reaches three. Stone three allows nothing. So what is far, after stone three?",
-     "start": 27.66,
-     "end": 33.38
-    },
-    {
-     "id": "gd1s_7",
-     "text": "Still three. Now i is four. Four is beyond far. No stone can get there. Line four returns false.",
-     "start": 34.58,
-     "end": 41.49
-    },
-    {
-     "id": "gd1s_8",
-     "text": "Notice what never happened. No way was tried and taken back. One number was enough.",
-     "start": 42.59,
-     "end": 48.16
-    },
-    {
-     "id": "gd1s_9",
-     "text": "One pass over the stones. O of n.",
-     "start": 48.91,
-     "end": 51.32
-    },
-    {
-     "id": "gd1s_10",
-     "text": "One number. O of one space.",
-     "start": 52.07,
-     "end": 54.1
-    },
-    {
-     "id": "gd1s_11",
-     "text": "A chain of radio towers works like this. Each has its own range. Will the signal reach the last one?",
-     "start": 54.85,
-     "end": 61.27
-    }
-   ],
-   "pauses": [
-    {
-     "id": "gd1s-q",
-     "t": 33.58
-    }
-   ]
-  },
-  "gd2i": {
-   "src": "videos/gd2i.mp4",
-   "title": "Feed the Most",
-   "duration": 25.72,
-   "lines": [
-    {
-     "id": "gd2i_1",
-     "text": "Three hungry animals, and three snacks. The numbers are how hungry, and how big.",
-     "start": 0.2,
-     "end": 5.04
-    },
-    {
-     "id": "gd2i_2",
-     "text": "An animal is happy with one snack that is at least as big as its hunger. Return the most animals that can be fed.",
-     "start": 5.74,
-     "end": 12.87
-    },
-    {
-     "id": "gd2i_3",
-     "text": "The animal with hunger one is happy with a snack of one. Two can be fed in all.",
-     "start": 13.57,
-     "end": 18.97
-    },
-    {
-     "id": "gd2i_4",
-     "text": "Who is the easiest to please? And which snack should that one get? Your turn.",
-     "start": 19.67,
-     "end": 24.12
-    }
-   ],
-   "pauses": []
-  },
-  "gd2s": {
-   "src": "videos/gd2s.mp4",
-   "title": "The smallest snack that is enough",
-   "duration": 64.94,
-   "lines": [
-    {
-     "id": "gd2s_1",
-     "text": "The least hungry animal is the easiest to please. Give it the smallest snack that is enough.",
-     "start": 0.2,
-     "end": 5.58
-    },
-    {
-     "id": "gd2s_2",
-     "text": "And a snack that is too small for the least hungry, is too small for everyone. Skip it.",
-     "start": 6.33,
-     "end": 11.92
-    },
-    {
-     "id": "gd2s_3",
-     "text": "Lines two and three sort both. Hunger becomes one, two, three. The snacks are already in order.",
-     "start": 12.67,
-     "end": 18.84
-    },
-    {
-     "id": "gd2s_4",
-     "text": "The first snack is a one. The least hungry animal needs one. Enough. One animal is fed.",
-     "start": 19.59,
-     "end": 25.73
-    },
-    {
-     "id": "gd2s_5",
-     "text": "The next snack is also a one. The next animal needs two. Is that enough?",
-     "start": 26.48,
-     "end": 31.06
-    },
-    {
-     "id": "gd2s_6",
-     "text": "No. And everyone still waiting is at least that hungry. So this snack feeds no one.",
-     "start": 32.26,
-     "end": 37.32
-    },
-    {
-     "id": "gd2s_7",
-     "text": "The last snack is a three. Three is at least two. The second animal is fed.",
-     "start": 38.07,
-     "end": 42.91
-    },
-    {
-     "id": "gd2s_8",
-     "text": "The snacks are used up. Line eight returns two.",
-     "start": 43.66,
-     "end": 46.66
-    },
-    {
-     "id": "gd2s_9",
-     "text": "The two sorts cost the most. O of n log n. The walk is one pass.",
-     "start": 47.76,
-     "end": 52.25
-    },
-    {
-     "id": "gd2s_10",
-     "text": "One counter. O of one extra space.",
-     "start": 53,
-     "end": 55.65
-    },
-    {
-     "id": "gd2s_11",
-     "text": "A cloud service places jobs on machines like this. The smallest machine that is big enough gets the smallest job.",
-     "start": 56.4,
-     "end": 63.34
-    }
-   ],
-   "pauses": [
-    {
-     "id": "gd2s-q",
-     "t": 31.26
-    }
-   ]
-  },
-  "gd3i": {
-   "src": "videos/gd3i.mp4",
-   "title": "The Fewest Jumps",
-   "duration": 21.95,
-   "lines": [
-    {
-     "id": "gd3i_1",
-     "text": "The stepping stones again. The number is the longest jump from that stone.",
-     "start": 0.2,
-     "end": 4.65
-    },
-    {
-     "id": "gd3i_2",
-     "text": "This time the end can always be reached. Return the fewest jumps needed.",
-     "start": 5.35,
-     "end": 9.85
-    },
-    {
-     "id": "gd3i_3",
-     "text": "A short jump to stone one. Then one long jump to the end. Two jumps.",
-     "start": 10.55,
-     "end": 15.19
-    },
-    {
-     "id": "gd3i_4",
-     "text": "With one jump, which stones can Pip stand on? And with two? Your turn.",
-     "start": 15.89,
-     "end": 20.34
-    }
-   ],
-   "pauses": []
-  },
-  "gd3s": {
-   "src": "videos/gd3s.mp4",
-   "title": "One jump opens a stretch",
-   "duration": 71.07,
-   "lines": [
-    {
-     "id": "gd3s_1",
-     "text": "With one jump, a whole stretch of stones can be reached. With two jumps, a further stretch. Like levels.",
-     "start": 0.2,
-     "end": 6.72
-    },
-    {
-     "id": "gd3s_2",
-     "text": "So walk once. Remember how far the next stretch could go. At the edge of the current one, count a jump.",
-     "start": 7.47,
-     "end": 13.53
-    },
-    {
-     "id": "gd3s_3",
-     "text": "No jumps yet. The current stretch is just stone zero. So the edge is zero.",
-     "start": 14.28,
-     "end": 19.4
-    },
-    {
-     "id": "gd3s_4",
-     "text": "Stone zero allows two. So one more jump could reach stone two.",
-     "start": 20.15,
-     "end": 24.22
-    },
-    {
-     "id": "gd3s_5",
-     "text": "And i is at the edge. So a jump has to be taken here. One jump. The new stretch ends at stone two.",
-     "start": 24.97,
-     "end": 31.34
-    },
-    {
-     "id": "gd3s_6",
-     "text": "Stone one allows three. One plus three is four. The next stretch could reach the last stone.",
-     "start": 32.09,
-     "end": 37.69
-    },
-    {
-     "id": "gd3s_7",
-     "text": "Stone two only reaches three, so far stays four. But i is at the edge again. What happens?",
-     "start": 38.44,
-     "end": 44.69
-    },
-    {
-     "id": "gd3s_8",
-     "text": "A second jump is counted. And the edge moves to four. The last stone.",
-     "start": 45.89,
-     "end": 50.41
-    },
-    {
-     "id": "gd3s_9",
-     "text": "The loop stops before the last stone. Line twelve returns two.",
-     "start": 51.16,
-     "end": 55.07
-    },
-    {
-     "id": "gd3s_10",
-     "text": "One pass over the stones. O of n.",
-     "start": 56.17,
-     "end": 58.59
-    },
-    {
-     "id": "gd3s_11",
-     "text": "Three numbers. O of one space.",
-     "start": 59.34,
-     "end": 61.48
-    },
-    {
-     "id": "gd3s_12",
-     "text": "A long drive is planned like this. How far does one tank reach? And from anywhere in that range, how far the next?",
-     "start": 62.23,
-     "end": 69.47
-    }
-   ],
-   "pauses": [
-    {
-     "id": "gd3s-q",
-     "t": 44.89
-    }
-   ]
-  },
-  "gd4i": {
-   "src": "videos/gd4i.mp4",
-   "title": "Where to Start the Lap",
-   "duration": 27.15,
-   "lines": [
-    {
-     "id": "gd4i_1",
-     "text": "Three burrows in a circle. At each one Pip picks up some acorns. And the walk to the next burrow costs some.",
-     "start": 0.2,
-     "end": 6.78
-    },
-    {
-     "id": "gd4i_2",
-     "text": "Pip starts with an empty bag, and it may never go below zero. Return the burrow from which a full lap works.",
-     "start": 7.48,
-     "end": 14.31
-    },
-    {
-     "id": "gd4i_3",
-     "text": "Starting at the last burrow works. Four acorns in. Then one out.",
-     "start": 15.01,
-     "end": 19.31
-    },
-    {
-     "id": "gd4i_4",
-     "text": "Say Pip starts somewhere, and the bag runs empty. What does that tell you? Your turn.",
-     "start": 20.01,
-     "end": 25.55
-    }
-   ],
-   "pauses": []
-  },
-  "gd4s": {
-   "src": "videos/gd4s.mp4",
-   "title": "Empty bag? Start after it",
-   "duration": 80.52,
-   "lines": [
-    {
-     "id": "gd4s_1",
-     "text": "If the bag runs empty on the way from A to B, then starting anywhere in between fails as well. So skip them all.",
-     "start": 0.2,
-     "end": 7.76
-    },
-    {
-     "id": "gd4s_2",
-     "text": "And if the whole lap gives at least as much as it costs, some start must work.",
-     "start": 8.51,
-     "end": 13.09
-    },
-    {
-     "id": "gd4s_3",
-     "text": "Three numbers. The total for the whole lap. The bag since the current start. And the start itself. Burrow zero.",
-     "start": 13.84,
-     "end": 20.92
-    },
-    {
-     "id": "gd4s_4",
-     "text": "Burrow zero. Two acorns in. Three out. The bag would be at minus one.",
-     "start": 21.67,
-     "end": 26.29
-    },
-    {
-     "id": "gd4s_5",
-     "text": "The bag went below zero. So starting at burrow zero fails. Where should Pip try next?",
-     "start": 27.04,
-     "end": 32.78
-    },
-    {
-     "id": "gd4s_6",
-     "text": "The next burrow. Lines ten and eleven empty the bag, and set the start to one.",
-     "start": 33.98,
-     "end": 38.99
-    },
-    {
-     "id": "gd4s_7",
-     "text": "Burrow one. One in. Two out. Below zero again. So the start moves on to two.",
-     "start": 39.74,
-     "end": 44.98
-    },
-    {
-     "id": "gd4s_8",
-     "text": "Burrow two. Four in. One out. The bag holds three.",
-     "start": 45.73,
-     "end": 48.97
-    },
-    {
-     "id": "gd4s_9",
-     "text": "The total is plus one. So a lap is possible. And the last restart, burrow two, is the place. Line fourteen returns it.",
-     "start": 49.72,
-     "end": 57.94
-    },
-    {
-     "id": "gd4s_10",
-     "text": "And if the total were below zero? Then the whole lap costs more than it gives. No start can work.",
-     "start": 59.04,
-     "end": 64.92
-    },
-    {
-     "id": "gd4s_11",
-     "text": "One pass around the circle. O of n.",
-     "start": 65.67,
-     "end": 68.25
-    },
-    {
-     "id": "gd4s_12",
-     "text": "Three numbers. O of one space.",
-     "start": 69,
-     "end": 71.15
-    },
-    {
-     "id": "gd4s_13",
-     "text": "An electric delivery van on a round trip. At which stop should it begin, so that the battery never runs flat?",
-     "start": 71.9,
-     "end": 78.92
-    }
-   ],
-   "pauses": [
-    {
-     "id": "gd4s-q",
-     "t": 32.98
-    }
-   ]
-  },
   "bk1i": {
    "src": "videos/bk1i.mp4",
    "title": "Words from Keys",
@@ -23151,6 +22689,1546 @@ window.BURROW = {
     {
      "id": "bk7s-q",
      "t": 32.62
+    }
+   ]
+  },
+  "dp0": {
+   "src": "videos/dp0.mp4",
+   "title": "Small Answers First",
+   "duration": 43.48,
+   "lines": [
+    {
+     "id": "da1",
+     "text": "Chapter twenty four. Dynamic programming. The name is strange. The idea is not.",
+     "start": 0.2,
+     "end": 5.56
+    },
+    {
+     "id": "da2",
+     "text": "You have met it already. Counting the ways up the stairs, the same small questions came back again and again. A memo fixed that.",
+     "start": 6.26,
+     "end": 14.34
+    },
+    {
+     "id": "da3",
+     "text": "Dynamic programming turns that around. Answer the small questions first. Write each answer in a table. Then every bigger answer is one look back.",
+     "start": 15.24,
+     "end": 24.57
+    },
+    {
+     "id": "da4",
+     "text": "Two lessons, and eight puzzles. This is the pattern that interviews like the most.",
+     "start": 25.47,
+     "end": 30.63
+    },
+    {
+     "id": "da5",
+     "text": "A spell checker measures how far a typo is from a real word this way. A map adds up the best time to each corner. And a shop works out the best you can buy with what is left.",
+     "start": 31.53,
+     "end": 41.88
+    }
+   ],
+   "pauses": []
+  },
+  "dpt1": {
+   "src": "videos/dpt1.mp4",
+   "title": "From a Memo to a Table",
+   "duration": 57.98,
+   "lines": [
+    {
+     "id": "db1",
+     "text": "Six stairs. One or two steps at a time. How many ways to the top? You solved this with recursion, and a memo.",
+     "start": 0.2,
+     "end": 7.42
+    },
+    {
+     "id": "db2",
+     "text": "The memo was filled in a strange order. From the top call, down, and back up again.",
+     "start": 8.32,
+     "end": 13.19
+    },
+    {
+     "id": "db3",
+     "text": "Fill it in a plain order instead. Start with what you know. One way to stand at the bottom. One way to reach step one.",
+     "start": 14.09,
+     "end": 21.25
+    },
+    {
+     "id": "db4",
+     "text": "Step two. You arrive from step one, or from step zero. One plus one. Two ways.",
+     "start": 22.15,
+     "end": 27.91
+    },
+    {
+     "id": "db5",
+     "text": "Step three. From step two, or from step one. Two plus one. Three.",
+     "start": 28.81,
+     "end": 33.2
+    },
+    {
+     "id": "db6",
+     "text": "Step four. Three plus two. Five. So what goes under step five?",
+     "start": 34.1,
+     "end": 38.08
+    },
+    {
+     "id": "db7",
+     "text": "Eight. Five plus three. And step six. Thirteen.",
+     "start": 39.28,
+     "end": 42.43
+    },
+    {
+     "id": "db8",
+     "text": "No recursion. No waiting calls. One loop, and one row of numbers. Each entry looks back at the two before it.",
+     "start": 43.33,
+     "end": 50.41
+    },
+    {
+     "id": "db9",
+     "text": "That is dynamic programming. Small answers first. Written down. And reused.",
+     "start": 51.31,
+     "end": 56.38
+    }
+   ],
+   "pauses": [
+    {
+     "id": "dpt1-q1",
+     "t": 38.28
+    }
+   ]
+  },
+  "dpt2": {
+   "src": "videos/dpt2.mp4",
+   "title": "The Recipe: Meaning, Choice, Start",
+   "duration": 65.06,
+   "lines": [
+    {
+     "id": "dc1",
+     "text": "Four burrows in a row. Five, one, one, and five seeds. Moss may empty some of them. But never two that are side by side. What is the most Moss can collect?",
+     "start": 0.2,
+     "end": 10.44
+    },
+    {
+     "id": "dc2",
+     "text": "Here is a recipe. Question one. What does one entry of the table mean? Here: the most seeds, using only the burrows up to this one.",
+     "start": 11.34,
+     "end": 20.22
+    },
+    {
+     "id": "dc3",
+     "text": "Question two. The choice. For the last burrow, Moss either skips it, or takes it.",
+     "start": 21.12,
+     "end": 26.23
+    },
+    {
+     "id": "dc4",
+     "text": "Skip it, and the answer is the entry just before. Take it, and the answer is its seeds, plus the entry two before.",
+     "start": 27.13,
+     "end": 34.34
+    },
+    {
+     "id": "dc5",
+     "text": "Question three. The start. With one burrow, take it. Five. With two, take the bigger one. Still five.",
+     "start": 35.23,
+     "end": 41.58
+    },
+    {
+     "id": "dc6",
+     "text": "Burrow two. Skipping keeps five. Taking gives one, plus five. Six.",
+     "start": 42.48,
+     "end": 46.97
+    },
+    {
+     "id": "dc7",
+     "text": "Burrow three. Skipping keeps six. Taking gives five, plus five. So what goes in the table?",
+     "start": 47.87,
+     "end": 53.93
+    },
+    {
+     "id": "dc8",
+     "text": "Ten. The first burrow, and the last.",
+     "start": 55.13,
+     "end": 57.21
+    },
+    {
+     "id": "dc9",
+     "text": "What an entry means. The choice. The start. Get those three right, and the loop writes itself.",
+     "start": 58.11,
+     "end": 63.46
+    }
+   ],
+   "pauses": [
+    {
+     "id": "dpt2-q1",
+     "t": 54.13
+    }
+   ]
+  },
+  "gd1i": {
+   "src": "videos/gd1i.mp4",
+   "title": "Stepping Stones",
+   "duration": 21.42,
+   "lines": [
+    {
+     "id": "gd1i_1",
+     "text": "Five stepping stones. The number on a stone is the longest jump Pip may take from it.",
+     "start": 0.2,
+     "end": 5.67
+    },
+    {
+     "id": "gd1i_2",
+     "text": "Pip starts on the first stone. Return true if the last stone can be reached.",
+     "start": 6.37,
+     "end": 10.92
+    },
+    {
+     "id": "gd1i_3",
+     "text": "Here it cannot. Every way lands on the stone that says zero.",
+     "start": 11.62,
+     "end": 15.2
+    },
+    {
+     "id": "gd1i_4",
+     "text": "There are many ways to jump. Do you really have to try them all? Your turn.",
+     "start": 15.9,
+     "end": 19.82
+    }
+   ],
+   "pauses": []
+  },
+  "gd1s": {
+   "src": "videos/gd1s.mp4",
+   "title": "Keep the farthest reach",
+   "duration": 62.87,
+   "lines": [
+    {
+     "id": "gd1s_1",
+     "text": "Do not try the ways one by one. Keep a single number. The farthest stone that can be reached at all.",
+     "start": 0.2,
+     "end": 6.18
+    },
+    {
+     "id": "gd1s_2",
+     "text": "Every stone up to that point is reachable. Each of them may push the number further.",
+     "start": 6.93,
+     "end": 11.99
+    },
+    {
+     "id": "gd1s_3",
+     "text": "Far starts at zero. Only the first stone is reachable.",
+     "start": 12.74,
+     "end": 16.37
+    },
+    {
+     "id": "gd1s_4",
+     "text": "Stone zero allows a jump of three. So everything up to stone three is reachable.",
+     "start": 17.12,
+     "end": 22.3
+    },
+    {
+     "id": "gd1s_5",
+     "text": "Stone one allows two. One plus two is three. No further.",
+     "start": 23.05,
+     "end": 26.91
+    },
+    {
+     "id": "gd1s_6",
+     "text": "Stone two reaches three. Stone three allows nothing. So what is far, after stone three?",
+     "start": 27.66,
+     "end": 33.38
+    },
+    {
+     "id": "gd1s_7",
+     "text": "Still three. Now i is four. Four is beyond far. No stone can get there. Line four returns false.",
+     "start": 34.58,
+     "end": 41.49
+    },
+    {
+     "id": "gd1s_8",
+     "text": "Notice what never happened. No way was tried and taken back. One number was enough.",
+     "start": 42.59,
+     "end": 48.16
+    },
+    {
+     "id": "gd1s_9",
+     "text": "One pass over the stones. O of n.",
+     "start": 48.91,
+     "end": 51.32
+    },
+    {
+     "id": "gd1s_10",
+     "text": "One number. O of one space.",
+     "start": 52.07,
+     "end": 54.1
+    },
+    {
+     "id": "gd1s_11",
+     "text": "A chain of radio towers works like this. Each has its own range. Will the signal reach the last one?",
+     "start": 54.85,
+     "end": 61.27
+    }
+   ],
+   "pauses": [
+    {
+     "id": "gd1s-q",
+     "t": 33.58
+    }
+   ]
+  },
+  "gd2i": {
+   "src": "videos/gd2i.mp4",
+   "title": "Feed the Most",
+   "duration": 25.72,
+   "lines": [
+    {
+     "id": "gd2i_1",
+     "text": "Three hungry animals, and three snacks. The numbers are how hungry, and how big.",
+     "start": 0.2,
+     "end": 5.04
+    },
+    {
+     "id": "gd2i_2",
+     "text": "An animal is happy with one snack that is at least as big as its hunger. Return the most animals that can be fed.",
+     "start": 5.74,
+     "end": 12.87
+    },
+    {
+     "id": "gd2i_3",
+     "text": "The animal with hunger one is happy with a snack of one. Two can be fed in all.",
+     "start": 13.57,
+     "end": 18.97
+    },
+    {
+     "id": "gd2i_4",
+     "text": "Who is the easiest to please? And which snack should that one get? Your turn.",
+     "start": 19.67,
+     "end": 24.12
+    }
+   ],
+   "pauses": []
+  },
+  "gd2s": {
+   "src": "videos/gd2s.mp4",
+   "title": "The smallest snack that is enough",
+   "duration": 64.94,
+   "lines": [
+    {
+     "id": "gd2s_1",
+     "text": "The least hungry animal is the easiest to please. Give it the smallest snack that is enough.",
+     "start": 0.2,
+     "end": 5.58
+    },
+    {
+     "id": "gd2s_2",
+     "text": "And a snack that is too small for the least hungry, is too small for everyone. Skip it.",
+     "start": 6.33,
+     "end": 11.92
+    },
+    {
+     "id": "gd2s_3",
+     "text": "Lines two and three sort both. Hunger becomes one, two, three. The snacks are already in order.",
+     "start": 12.67,
+     "end": 18.84
+    },
+    {
+     "id": "gd2s_4",
+     "text": "The first snack is a one. The least hungry animal needs one. Enough. One animal is fed.",
+     "start": 19.59,
+     "end": 25.73
+    },
+    {
+     "id": "gd2s_5",
+     "text": "The next snack is also a one. The next animal needs two. Is that enough?",
+     "start": 26.48,
+     "end": 31.06
+    },
+    {
+     "id": "gd2s_6",
+     "text": "No. And everyone still waiting is at least that hungry. So this snack feeds no one.",
+     "start": 32.26,
+     "end": 37.32
+    },
+    {
+     "id": "gd2s_7",
+     "text": "The last snack is a three. Three is at least two. The second animal is fed.",
+     "start": 38.07,
+     "end": 42.91
+    },
+    {
+     "id": "gd2s_8",
+     "text": "The snacks are used up. Line eight returns two.",
+     "start": 43.66,
+     "end": 46.66
+    },
+    {
+     "id": "gd2s_9",
+     "text": "The two sorts cost the most. O of n log n. The walk is one pass.",
+     "start": 47.76,
+     "end": 52.25
+    },
+    {
+     "id": "gd2s_10",
+     "text": "One counter. O of one extra space.",
+     "start": 53,
+     "end": 55.65
+    },
+    {
+     "id": "gd2s_11",
+     "text": "A cloud service places jobs on machines like this. The smallest machine that is big enough gets the smallest job.",
+     "start": 56.4,
+     "end": 63.34
+    }
+   ],
+   "pauses": [
+    {
+     "id": "gd2s-q",
+     "t": 31.26
+    }
+   ]
+  },
+  "gd3i": {
+   "src": "videos/gd3i.mp4",
+   "title": "The Fewest Jumps",
+   "duration": 21.95,
+   "lines": [
+    {
+     "id": "gd3i_1",
+     "text": "The stepping stones again. The number is the longest jump from that stone.",
+     "start": 0.2,
+     "end": 4.65
+    },
+    {
+     "id": "gd3i_2",
+     "text": "This time the end can always be reached. Return the fewest jumps needed.",
+     "start": 5.35,
+     "end": 9.85
+    },
+    {
+     "id": "gd3i_3",
+     "text": "A short jump to stone one. Then one long jump to the end. Two jumps.",
+     "start": 10.55,
+     "end": 15.19
+    },
+    {
+     "id": "gd3i_4",
+     "text": "With one jump, which stones can Pip stand on? And with two? Your turn.",
+     "start": 15.89,
+     "end": 20.34
+    }
+   ],
+   "pauses": []
+  },
+  "gd3s": {
+   "src": "videos/gd3s.mp4",
+   "title": "One jump opens a stretch",
+   "duration": 71.07,
+   "lines": [
+    {
+     "id": "gd3s_1",
+     "text": "With one jump, a whole stretch of stones can be reached. With two jumps, a further stretch. Like levels.",
+     "start": 0.2,
+     "end": 6.72
+    },
+    {
+     "id": "gd3s_2",
+     "text": "So walk once. Remember how far the next stretch could go. At the edge of the current one, count a jump.",
+     "start": 7.47,
+     "end": 13.53
+    },
+    {
+     "id": "gd3s_3",
+     "text": "No jumps yet. The current stretch is just stone zero. So the edge is zero.",
+     "start": 14.28,
+     "end": 19.4
+    },
+    {
+     "id": "gd3s_4",
+     "text": "Stone zero allows two. So one more jump could reach stone two.",
+     "start": 20.15,
+     "end": 24.22
+    },
+    {
+     "id": "gd3s_5",
+     "text": "And i is at the edge. So a jump has to be taken here. One jump. The new stretch ends at stone two.",
+     "start": 24.97,
+     "end": 31.34
+    },
+    {
+     "id": "gd3s_6",
+     "text": "Stone one allows three. One plus three is four. The next stretch could reach the last stone.",
+     "start": 32.09,
+     "end": 37.69
+    },
+    {
+     "id": "gd3s_7",
+     "text": "Stone two only reaches three, so far stays four. But i is at the edge again. What happens?",
+     "start": 38.44,
+     "end": 44.69
+    },
+    {
+     "id": "gd3s_8",
+     "text": "A second jump is counted. And the edge moves to four. The last stone.",
+     "start": 45.89,
+     "end": 50.41
+    },
+    {
+     "id": "gd3s_9",
+     "text": "The loop stops before the last stone. Line twelve returns two.",
+     "start": 51.16,
+     "end": 55.07
+    },
+    {
+     "id": "gd3s_10",
+     "text": "One pass over the stones. O of n.",
+     "start": 56.17,
+     "end": 58.59
+    },
+    {
+     "id": "gd3s_11",
+     "text": "Three numbers. O of one space.",
+     "start": 59.34,
+     "end": 61.48
+    },
+    {
+     "id": "gd3s_12",
+     "text": "A long drive is planned like this. How far does one tank reach? And from anywhere in that range, how far the next?",
+     "start": 62.23,
+     "end": 69.47
+    }
+   ],
+   "pauses": [
+    {
+     "id": "gd3s-q",
+     "t": 44.89
+    }
+   ]
+  },
+  "gd4i": {
+   "src": "videos/gd4i.mp4",
+   "title": "Where to Start the Lap",
+   "duration": 27.15,
+   "lines": [
+    {
+     "id": "gd4i_1",
+     "text": "Three burrows in a circle. At each one Pip picks up some acorns. And the walk to the next burrow costs some.",
+     "start": 0.2,
+     "end": 6.78
+    },
+    {
+     "id": "gd4i_2",
+     "text": "Pip starts with an empty bag, and it may never go below zero. Return the burrow from which a full lap works.",
+     "start": 7.48,
+     "end": 14.31
+    },
+    {
+     "id": "gd4i_3",
+     "text": "Starting at the last burrow works. Four acorns in. Then one out.",
+     "start": 15.01,
+     "end": 19.31
+    },
+    {
+     "id": "gd4i_4",
+     "text": "Say Pip starts somewhere, and the bag runs empty. What does that tell you? Your turn.",
+     "start": 20.01,
+     "end": 25.55
+    }
+   ],
+   "pauses": []
+  },
+  "gd4s": {
+   "src": "videos/gd4s.mp4",
+   "title": "Empty bag? Start after it",
+   "duration": 80.52,
+   "lines": [
+    {
+     "id": "gd4s_1",
+     "text": "If the bag runs empty on the way from A to B, then starting anywhere in between fails as well. So skip them all.",
+     "start": 0.2,
+     "end": 7.76
+    },
+    {
+     "id": "gd4s_2",
+     "text": "And if the whole lap gives at least as much as it costs, some start must work.",
+     "start": 8.51,
+     "end": 13.09
+    },
+    {
+     "id": "gd4s_3",
+     "text": "Three numbers. The total for the whole lap. The bag since the current start. And the start itself. Burrow zero.",
+     "start": 13.84,
+     "end": 20.92
+    },
+    {
+     "id": "gd4s_4",
+     "text": "Burrow zero. Two acorns in. Three out. The bag would be at minus one.",
+     "start": 21.67,
+     "end": 26.29
+    },
+    {
+     "id": "gd4s_5",
+     "text": "The bag went below zero. So starting at burrow zero fails. Where should Pip try next?",
+     "start": 27.04,
+     "end": 32.78
+    },
+    {
+     "id": "gd4s_6",
+     "text": "The next burrow. Lines ten and eleven empty the bag, and set the start to one.",
+     "start": 33.98,
+     "end": 38.99
+    },
+    {
+     "id": "gd4s_7",
+     "text": "Burrow one. One in. Two out. Below zero again. So the start moves on to two.",
+     "start": 39.74,
+     "end": 44.98
+    },
+    {
+     "id": "gd4s_8",
+     "text": "Burrow two. Four in. One out. The bag holds three.",
+     "start": 45.73,
+     "end": 48.97
+    },
+    {
+     "id": "gd4s_9",
+     "text": "The total is plus one. So a lap is possible. And the last restart, burrow two, is the place. Line fourteen returns it.",
+     "start": 49.72,
+     "end": 57.94
+    },
+    {
+     "id": "gd4s_10",
+     "text": "And if the total were below zero? Then the whole lap costs more than it gives. No start can work.",
+     "start": 59.04,
+     "end": 64.92
+    },
+    {
+     "id": "gd4s_11",
+     "text": "One pass around the circle. O of n.",
+     "start": 65.67,
+     "end": 68.25
+    },
+    {
+     "id": "gd4s_12",
+     "text": "Three numbers. O of one space.",
+     "start": 69,
+     "end": 71.15
+    },
+    {
+     "id": "gd4s_13",
+     "text": "An electric delivery van on a round trip. At which stop should it begin, so that the battery never runs flat?",
+     "start": 71.9,
+     "end": 78.92
+    }
+   ],
+   "pauses": [
+    {
+     "id": "gd4s-q",
+     "t": 32.98
+    }
+   ]
+  },
+  "dp1i": {
+   "src": "videos/dp1i.mp4",
+   "title": "The Cheapest Climb",
+   "duration": 23.39,
+   "lines": [
+    {
+     "id": "dp1i_1",
+     "text": "Three steps, each with a price. Pip pays the price of a step when leaving it.",
+     "start": 0.2,
+     "end": 4.76
+    },
+    {
+     "id": "dp1i_2",
+     "text": "From a step Pip moves one or two up. And Pip may start on the first or the second step. Return the cheapest way past the top.",
+     "start": 5.46,
+     "end": 13.26
+    },
+    {
+     "id": "dp1i_3",
+     "text": "Start on the second step. Pay fifteen. Jump two. Done.",
+     "start": 13.96,
+     "end": 17.47
+    },
+    {
+     "id": "dp1i_4",
+     "text": "Think about arriving at a step. Where did you come from? Your turn.",
+     "start": 18.17,
+     "end": 21.79
+    }
+   ],
+   "pauses": []
+  },
+  "dp1s": {
+   "src": "videos/dp1s.mp4",
+   "title": "The cheaper of the two below",
+   "duration": 55.41,
+   "lines": [
+    {
+     "id": "dp1s_1",
+     "text": "One entry of the table means: the cheapest total to arrive at this step.",
+     "start": 0.2,
+     "end": 4.62
+    },
+    {
+     "id": "dp1s_2",
+     "text": "You arrive from one step below, or from two steps below. Take the cheaper of the two.",
+     "start": 5.37,
+     "end": 10.67
+    },
+    {
+     "id": "dp1s_3",
+     "text": "Arriving on step zero or step one is free. Pip may start on either.",
+     "start": 11.42,
+     "end": 15.68
+    },
+    {
+     "id": "dp1s_4",
+     "text": "Step two. From step one, that is zero plus fifteen. From step zero, zero plus ten. The cheaper is ten.",
+     "start": 16.43,
+     "end": 23.54
+    },
+    {
+     "id": "dp1s_5",
+     "text": "Now the top. From step two, ten plus twenty. From step one, zero plus fifteen. Which is written down?",
+     "start": 24.29,
+     "end": 31.3
+    },
+    {
+     "id": "dp1s_6",
+     "text": "Fifteen. The table is full.",
+     "start": 32.5,
+     "end": 34.39
+    },
+    {
+     "id": "dp1s_7",
+     "text": "Line nine returns the last entry. Fifteen.",
+     "start": 35.14,
+     "end": 38.16
+    },
+    {
+     "id": "dp1s_8",
+     "text": "One entry per step, and each looks back at two. O of n.",
+     "start": 39.26,
+     "end": 42.89
+    },
+    {
+     "id": "dp1s_9",
+     "text": "The table. O of n space.",
+     "start": 43.64,
+     "end": 45.42
+    },
+    {
+     "id": "dp1s_10",
+     "text": "A route planner prices a trip this way. The cheapest way to a stop, is the cheapest way to an earlier stop, plus one leg.",
+     "start": 46.17,
+     "end": 53.81
+    }
+   ],
+   "pauses": [
+    {
+     "id": "dp1s-q",
+     "t": 31.5
+    }
+   ]
+  },
+  "dp2i": {
+   "src": "videos/dp2i.mp4",
+   "title": "Never Two in a Row",
+   "duration": 22.42,
+   "lines": [
+    {
+     "id": "dp2i_1",
+     "text": "Five burrows in a row, each with some seeds. Moss wants as many as possible.",
+     "start": 0.2,
+     "end": 5.2
+    },
+    {
+     "id": "dp2i_2",
+     "text": "But two burrows side by side may never both be emptied. Return the most Moss can collect.",
+     "start": 5.9,
+     "end": 11.69
+    },
+    {
+     "id": "dp2i_3",
+     "text": "The first, the third and the fifth. Two, nine and one. Twelve.",
+     "start": 12.39,
+     "end": 16.13
+    },
+    {
+     "id": "dp2i_4",
+     "text": "Look only at the last burrow. What are the choices for it? Your turn.",
+     "start": 16.83,
+     "end": 20.82
+    }
+   ],
+   "pauses": []
+  },
+  "dp2s": {
+   "src": "videos/dp2s.mp4",
+   "title": "Skip it, or take it",
+   "duration": 63.57,
+   "lines": [
+    {
+     "id": "dp2s_1",
+     "text": "One entry means: the most seeds, using only the burrows up to this one.",
+     "start": 0.2,
+     "end": 4.83
+    },
+    {
+     "id": "dp2s_2",
+     "text": "For the last burrow, skip it, and keep the entry before. Or take it, and add the entry two before.",
+     "start": 5.58,
+     "end": 11.63
+    },
+    {
+     "id": "dp2s_3",
+     "text": "Burrow zero alone. Take it. Two.",
+     "start": 12.38,
+     "end": 14.51
+    },
+    {
+     "id": "dp2s_4",
+     "text": "Burrow one. Skipping keeps two. Taking gives seven. Seven is better.",
+     "start": 15.26,
+     "end": 19.48
+    },
+    {
+     "id": "dp2s_5",
+     "text": "Burrow two. Skipping keeps seven. Taking gives nine, plus the entry two back. Eleven.",
+     "start": 20.23,
+     "end": 25.92
+    },
+    {
+     "id": "dp2s_6",
+     "text": "Burrow three. Skipping keeps eleven. Taking gives three, plus seven. Which is written down?",
+     "start": 26.67,
+     "end": 32.63
+    },
+    {
+     "id": "dp2s_7",
+     "text": "Eleven. Skipping wins. And burrow four. Skip keeps eleven. Take gives one, plus eleven. Twelve.",
+     "start": 33.83,
+     "end": 40.24
+    },
+    {
+     "id": "dp2s_8",
+     "text": "Line eight returns the last entry. Twelve. From burrows zero, two and four.",
+     "start": 40.99,
+     "end": 46.1
+    },
+    {
+     "id": "dp2s_9",
+     "text": "One entry per burrow, each from two earlier entries. O of n.",
+     "start": 47.2,
+     "end": 51.32
+    },
+    {
+     "id": "dp2s_10",
+     "text": "The table. O of n. Two variables would also do.",
+     "start": 52.07,
+     "end": 55.26
+    },
+    {
+     "id": "dp2s_11",
+     "text": "A gardener plans beds like this, when plants in two beds side by side would crowd each other.",
+     "start": 56.01,
+     "end": 61.97
+    }
+   ],
+   "pauses": [
+    {
+     "id": "dp2s-q",
+     "t": 32.83
+    }
+   ]
+  },
+  "dp3i": {
+   "src": "videos/dp3i.mp4",
+   "title": "The Fewest Bags",
+   "duration": 27.07,
+   "lines": [
+    {
+     "id": "dp3i_1",
+     "text": "Bags of one, three and four seeds. Pip owes six, and wants to use as few bags as possible.",
+     "start": 0.2,
+     "end": 6.53
+    },
+    {
+     "id": "dp3i_2",
+     "text": "Each size may be used as often as needed. Return the fewest bags. Or minus one, if it cannot be done.",
+     "start": 7.23,
+     "end": 14.19
+    },
+    {
+     "id": "dp3i_3",
+     "text": "Three and three. Two bags. Taking the four first would need three.",
+     "start": 14.89,
+     "end": 18.71
+    },
+    {
+     "id": "dp3i_4",
+     "text": "So greedy is not safe here. Think about the last bag in the answer. Which could it be? Your turn.",
+     "start": 19.41,
+     "end": 25.47
+    }
+   ],
+   "pauses": []
+  },
+  "dp3s": {
+   "src": "videos/dp3s.mp4",
+   "title": "Try each bag as the last one",
+   "duration": 70.77,
+   "lines": [
+    {
+     "id": "dp3s_1",
+     "text": "The last bag is a one, a three, or a four. Take it away, and what is left is the same puzzle, for a smaller amount.",
+     "start": 0.2,
+     "end": 7.27
+    },
+    {
+     "id": "dp3s_2",
+     "text": "So answer every amount, from zero upwards. Each one looks back at smaller amounts.",
+     "start": 8.02,
+     "end": 13.28
+    },
+    {
+     "id": "dp3s_3",
+     "text": "The bottom row is the amount owed. The top row is the fewest bags for it. Owing nothing needs no bags.",
+     "start": 14.03,
+     "end": 20.72
+    },
+    {
+     "id": "dp3s_4",
+     "text": "One needs one bag. Two needs two bags of one.",
+     "start": 21.47,
+     "end": 24.66
+    },
+    {
+     "id": "dp3s_5",
+     "text": "Three and four each have a bag of exactly that size. One bag.",
+     "start": 25.41,
+     "end": 29.44
+    },
+    {
+     "id": "dp3s_6",
+     "text": "Five. A one, on top of the answer for four. Two bags.",
+     "start": 30.19,
+     "end": 33.81
+    },
+    {
+     "id": "dp3s_7",
+     "text": "Six. With a one last, it is three bags. With a three last, one plus the entry for three. With a four last, one plus the entry for two. Which is the fewest?",
+     "start": 34.56,
+     "end": 44.79
+    },
+    {
+     "id": "dp3s_8",
+     "text": "Two. A three, on top of the single bag that pays three.",
+     "start": 45.99,
+     "end": 49.64
+    },
+    {
+     "id": "dp3s_9",
+     "text": "Line eleven returns it. Two bags. The answer that greedy missed.",
+     "start": 50.39,
+     "end": 54.75
+    },
+    {
+     "id": "dp3s_10",
+     "text": "Every amount tries every bag. O of amount, times bags.",
+     "start": 55.85,
+     "end": 59.87
+    },
+    {
+     "id": "dp3s_11",
+     "text": "The table has one entry per amount.",
+     "start": 60.62,
+     "end": 62.7
+    },
+    {
+     "id": "dp3s_12",
+     "text": "A vending machine gives change with the fewest coins this way, whatever coins it happens to hold.",
+     "start": 63.45,
+     "end": 69.17
+    }
+   ],
+   "pauses": [
+    {
+     "id": "dp3s-q",
+     "t": 44.99
+    }
+   ]
+  },
+  "dp4i": {
+   "src": "videos/dp4i.mp4",
+   "title": "How Many Ways to Pay?",
+   "duration": 21.47,
+   "lines": [
+    {
+     "id": "dp4i_1",
+     "text": "Bags of one, and bags of two. In how many ways can Pip pay exactly four?",
+     "start": 0.2,
+     "end": 4.97
+    },
+    {
+     "id": "dp4i_2",
+     "text": "The order does not count. One, one, two is the same group as two, one, one.",
+     "start": 5.67,
+     "end": 10.51
+    },
+    {
+     "id": "dp4i_3",
+     "text": "Four ones. Or two ones and a two. Or two twos. Three ways.",
+     "start": 11.21,
+     "end": 15.04
+    },
+    {
+     "id": "dp4i_4",
+     "text": "Start with only the ones. Then allow the twos. What changes? Your turn.",
+     "start": 15.74,
+     "end": 19.87
+    }
+   ],
+   "pauses": []
+  },
+  "dp4s": {
+   "src": "videos/dp4s.mp4",
+   "title": "One kind of bag at a time",
+   "duration": 69.75,
+   "lines": [
+    {
+     "id": "dp4s_1",
+     "text": "Allow one kind of bag at a time. A new kind adds new ways. Use it once, and then pay what is left.",
+     "start": 0.2,
+     "end": 6.75
+    },
+    {
+     "id": "dp4s_2",
+     "text": "Because the kinds are added in a fixed order, a group can never be counted twice in a different order.",
+     "start": 7.5,
+     "end": 13.44
+    },
+    {
+     "id": "dp4s_3",
+     "text": "There is one way to pay nothing. Use no bags.",
+     "start": 14.19,
+     "end": 17.22
+    },
+    {
+     "id": "dp4s_4",
+     "text": "Only bags of one. Every amount has exactly one way.",
+     "start": 17.97,
+     "end": 21.72
+    },
+    {
+     "id": "dp4s_5",
+     "text": "Now allow twos. Amount two. Use a two, and pay the rest, which is nothing. One more way.",
+     "start": 22.47,
+     "end": 28.66
+    },
+    {
+     "id": "dp4s_6",
+     "text": "Amount three. Use a two, and pay the remaining one. One more way.",
+     "start": 29.41,
+     "end": 33.54
+    },
+    {
+     "id": "dp4s_7",
+     "text": "Amount four. Use a two, and pay the remaining two. How many ways were there to pay two?",
+     "start": 34.29,
+     "end": 39.67
+    },
+    {
+     "id": "dp4s_8",
+     "text": "Two. So four has three ways. Four ones. Two ones and a two. Two twos.",
+     "start": 40.87,
+     "end": 45.5
+    },
+    {
+     "id": "dp4s_9",
+     "text": "Line nine returns three.",
+     "start": 46.25,
+     "end": 47.84
+    },
+    {
+     "id": "dp4s_10",
+     "text": "And why is the loop over the kinds on the outside? So that every group is built in one fixed order of kinds.",
+     "start": 48.94,
+     "end": 55.41
+    },
+    {
+     "id": "dp4s_11",
+     "text": "Every kind of bag passes over every amount. O of amount, times bags.",
+     "start": 56.16,
+     "end": 61.1
+    },
+    {
+     "id": "dp4s_12",
+     "text": "One entry per amount.",
+     "start": 61.85,
+     "end": 63.44
+    },
+    {
+     "id": "dp4s_13",
+     "text": "A bank counts the ways to break a note into smaller ones like this.",
+     "start": 64.19,
+     "end": 68.15
+    }
+   ],
+   "pauses": [
+    {
+     "id": "dp4s-q",
+     "t": 39.87
+    }
+   ]
+  },
+  "dp5i": {
+   "src": "videos/dp5i.mp4",
+   "title": "The Longest Climb",
+   "duration": 20.57,
+   "lines": [
+    {
+     "id": "dp5i_1",
+     "text": "Five numbers. Pip wants to pick some of them, in order, so that they keep going up.",
+     "start": 0.2,
+     "end": 4.99
+    },
+    {
+     "id": "dp5i_2",
+     "text": "Numbers may be skipped. Return the most numbers that can be picked.",
+     "start": 5.69,
+     "end": 9.6
+    },
+    {
+     "id": "dp5i_3",
+     "text": "One, two, five. Three numbers. No climb is longer.",
+     "start": 10.3,
+     "end": 13.57
+    },
+    {
+     "id": "dp5i_4",
+     "text": "Say a climb ends on the five. What could have come just before it? Your turn.",
+     "start": 14.27,
+     "end": 18.97
+    }
+   ],
+   "pauses": []
+  },
+  "dp5s": {
+   "src": "videos/dp5s.mp4",
+   "title": "The longest climb ending here",
+   "duration": 61.37,
+   "lines": [
+    {
+     "id": "dp5s_1",
+     "text": "One entry means: the longest climb that ends exactly on this number.",
+     "start": 0.2,
+     "end": 4.68
+    },
+    {
+     "id": "dp5s_2",
+     "text": "It can follow any smaller number before it. So take the best of those entries, plus one.",
+     "start": 5.43,
+     "end": 10.7
+    },
+    {
+     "id": "dp5s_3",
+     "text": "Alone, every number is a climb of one. So the table starts with ones. The three and the one stay at one.",
+     "start": 11.45,
+     "end": 18.27
+    },
+    {
+     "id": "dp5s_4",
+     "text": "The four. Both numbers before it are smaller. Each has a one. So the four gets two.",
+     "start": 19.02,
+     "end": 24.44
+    },
+    {
+     "id": "dp5s_5",
+     "text": "The two. Only the one before it is smaller. So it gets two as well.",
+     "start": 25.19,
+     "end": 29.29
+    },
+    {
+     "id": "dp5s_6",
+     "text": "The five. Every number before it is smaller. The best entries among them are the two twos. What does the five get?",
+     "start": 30.04,
+     "end": 37.01
+    },
+    {
+     "id": "dp5s_7",
+     "text": "Three. One, two, five. Or one, four, five.",
+     "start": 38.21,
+     "end": 40.96
+    },
+    {
+     "id": "dp5s_8",
+     "text": "Line twelve returns the largest entry of the table. Three.",
+     "start": 41.71,
+     "end": 45.32
+    },
+    {
+     "id": "dp5s_9",
+     "text": "Each number looks back at every number before it. O of n squared.",
+     "start": 46.42,
+     "end": 50.58
+    },
+    {
+     "id": "dp5s_10",
+     "text": "The table. O of n space.",
+     "start": 51.33,
+     "end": 53.11
+    },
+    {
+     "id": "dp5s_11",
+     "text": "A fitness app finds your longest series of improving results this way, skipping the bad days.",
+     "start": 53.86,
+     "end": 59.77
+    }
+   ],
+   "pauses": [
+    {
+     "id": "dp5s-q",
+     "t": 37.21
+    }
+   ]
+  },
+  "dp6i": {
+   "src": "videos/dp6i.mp4",
+   "title": "Words Without Spaces",
+   "duration": 21.77,
+   "lines": [
+    {
+     "id": "dp6i_1",
+     "text": "A text without spaces. And a list of words. Cat, cats, and up.",
+     "start": 0.2,
+     "end": 4.43
+    },
+    {
+     "id": "dp6i_2",
+     "text": "Return true if the text can be cut into words from the list, with no letter left over.",
+     "start": 5.13,
+     "end": 10.41
+    },
+    {
+     "id": "dp6i_3",
+     "text": "Cats, and up. That works.",
+     "start": 11.11,
+     "end": 12.76
+    },
+    {
+     "id": "dp6i_4",
+     "text": "But cat fits at the start too. And then s, u, p is left over. How do you avoid that trap? Your turn.",
+     "start": 13.46,
+     "end": 20.17
+    }
+   ],
+   "pauses": []
+  },
+  "dp6s": {
+   "src": "videos/dp6s.mp4",
+   "title": "A good cut, then a word",
+   "duration": 63.89,
+   "lines": [
+    {
+     "id": "dp6s_1",
+     "text": "Mark every place where the text so far can be cut into words. Call that a good cut.",
+     "start": 0.2,
+     "end": 5.63
+    },
+    {
+     "id": "dp6s_2",
+     "text": "A place is a good cut, if an earlier good cut is followed by a word that ends exactly here.",
+     "start": 6.38,
+     "end": 12.13
+    },
+    {
+     "id": "dp6s_3",
+     "text": "Before the first letter there is nothing to cut. That is a good cut.",
+     "start": 12.88,
+     "end": 16.73
+    },
+    {
+     "id": "dp6s_4",
+     "text": "After three letters. From the start, c a t is a word. A good cut.",
+     "start": 17.48,
+     "end": 21.79
+    },
+    {
+     "id": "dp6s_5",
+     "text": "After four letters. From the start, cats is a word too. Another good cut.",
+     "start": 22.54,
+     "end": 27.19
+    },
+    {
+     "id": "dp6s_6",
+     "text": "Now the end. From the cut after three, s u p is not a word. From the cut after four, u p. What does that give?",
+     "start": 27.94,
+     "end": 35.39
+    },
+    {
+     "id": "dp6s_7",
+     "text": "A good cut at the very end. Line thirteen returns true.",
+     "start": 36.59,
+     "end": 40.22
+    },
+    {
+     "id": "dp6s_8",
+     "text": "The cut after cat led nowhere. But the table kept both cuts. So nothing had to be taken back.",
+     "start": 41.32,
+     "end": 47.5
+    },
+    {
+     "id": "dp6s_9",
+     "text": "Every end tries every start. O of n squared pairs, and each one slices a word.",
+     "start": 48.25,
+     "end": 53.72
+    },
+    {
+     "id": "dp6s_10",
+     "text": "The table, and the set of words.",
+     "start": 54.47,
+     "end": 56.43
+    },
+    {
+     "id": "dp6s_11",
+     "text": "A search box does this when you type without spaces. It works out where the words could end.",
+     "start": 57.18,
+     "end": 62.29
+    }
+   ],
+   "pauses": [
+    {
+     "id": "dp6s-q",
+     "t": 35.59
+    }
+   ]
+  },
+  "dp7i": {
+   "src": "videos/dp7i.mp4",
+   "title": "The Best Stretch",
+   "duration": 21.83,
+   "lines": [
+    {
+     "id": "dp7i_1",
+     "text": "Five numbers. Some of them are negative.",
+     "start": 0.2,
+     "end": 2.75
+    },
+    {
+     "id": "dp7i_2",
+     "text": "A stretch is a run of numbers side by side. Return the largest total of any stretch.",
+     "start": 3.45,
+     "end": 8.84
+    },
+    {
+     "id": "dp7i_3",
+     "text": "Four, minus one, plus two. Five. Nothing beats that.",
+     "start": 9.54,
+     "end": 12.87
+    },
+    {
+     "id": "dp7i_4",
+     "text": "Walk along the row. At each number, you either extend the stretch, or start a new one. When? Your turn.",
+     "start": 13.57,
+     "end": 20.23
+    }
+   ],
+   "pauses": []
+  },
+  "dp7s": {
+   "src": "videos/dp7s.mp4",
+   "title": "Extend, or start fresh",
+   "duration": 60.06,
+   "lines": [
+    {
+     "id": "dp7s_1",
+     "text": "One entry means: the best total of a stretch that ends exactly on this number.",
+     "start": 0.2,
+     "end": 5.23
+    },
+    {
+     "id": "dp7s_2",
+     "text": "Either it extends the stretch before it. Or it starts fresh. Starting fresh wins when the past is negative.",
+     "start": 5.98,
+     "end": 12.41
+    },
+    {
+     "id": "dp7s_3",
+     "text": "The first number. The only stretch ending here is the two itself.",
+     "start": 13.16,
+     "end": 16.95
+    },
+    {
+     "id": "dp7s_4",
+     "text": "Minus three. Extending gives two minus three. Minus one. That still beats minus three alone.",
+     "start": 17.7,
+     "end": 23.74
+    },
+    {
+     "id": "dp7s_5",
+     "text": "The four. Extending gives minus one plus four. Three. Starting fresh gives four. Which is kept?",
+     "start": 24.49,
+     "end": 30.86
+    },
+    {
+     "id": "dp7s_6",
+     "text": "Four. A negative past is dropped. And four is the best so far.",
+     "start": 32.06,
+     "end": 36.15
+    },
+    {
+     "id": "dp7s_7",
+     "text": "Minus one. Extend to three. Then the two. Extend to five. A new best.",
+     "start": 36.9,
+     "end": 41.52
+    },
+    {
+     "id": "dp7s_8",
+     "text": "Line eight returns five. The stretch from the four to the end.",
+     "start": 42.27,
+     "end": 46.01
+    },
+    {
+     "id": "dp7s_9",
+     "text": "One pass. O of n.",
+     "start": 47.11,
+     "end": 48.6
+    },
+    {
+     "id": "dp7s_10",
+     "text": "Only the last entry is ever needed. Two numbers. O of one space.",
+     "start": 49.35,
+     "end": 54
+    },
+    {
+     "id": "dp7s_11",
+     "text": "A trading app finds the best run of days in a row like this.",
+     "start": 54.75,
+     "end": 58.46
+    }
+   ],
+   "pauses": [
+    {
+     "id": "dp7s-q",
+     "t": 31.06
+    }
+   ]
+  },
+  "dp8i": {
+   "src": "videos/dp8i.mp4",
+   "title": "Two Equal Shares",
+   "duration": 21.07,
+   "lines": [
+    {
+     "id": "dp8i_1",
+     "text": "Four piles of seeds. Pip and Moss want to share them fairly.",
+     "start": 0.2,
+     "end": 3.98
+    },
+    {
+     "id": "dp8i_2",
+     "text": "Every pile goes to one of them, whole. Return true if both can end up with the same total.",
+     "start": 4.68,
+     "end": 10.19
+    },
+    {
+     "id": "dp8i_3",
+     "text": "Two and three for Pip. One and four for Moss. Five each.",
+     "start": 10.89,
+     "end": 14.7
+    },
+    {
+     "id": "dp8i_4",
+     "text": "The total is ten. So what must one share add up to? Your turn.",
+     "start": 15.4,
+     "end": 19.47
+    }
+   ],
+   "pauses": []
+  },
+  "dp8s": {
+   "src": "videos/dp8s.mp4",
+   "title": "Which sums can be made?",
+   "duration": 64.31,
+   "lines": [
+    {
+     "id": "dp8s_1",
+     "text": "Two equal shares means: some of the piles add up to exactly half of the total.",
+     "start": 0.2,
+     "end": 5.27
+    },
+    {
+     "id": "dp8s_2",
+     "text": "So keep a table of every sum that can be made so far. Each new pile makes more sums possible.",
+     "start": 6.02,
+     "end": 12.05
+    },
+    {
+     "id": "dp8s_3",
+     "text": "The total is ten. Even. So each share must be five.",
+     "start": 12.8,
+     "end": 16.35
+    },
+    {
+     "id": "dp8s_4",
+     "text": "A sum of zero can always be made. Take nothing.",
+     "start": 17.1,
+     "end": 20.14
+    },
+    {
+     "id": "dp8s_5",
+     "text": "The first pile is a two. Zero was possible. So zero plus two is possible.",
+     "start": 20.89,
+     "end": 26.16
+    },
+    {
+     "id": "dp8s_6",
+     "text": "The next pile is a three. Line eight starts at five, and asks: is five minus three possible?",
+     "start": 26.91,
+     "end": 32.86
+    },
+    {
+     "id": "dp8s_7",
+     "text": "Yes. Two plus three makes five. And three alone is possible as well.",
+     "start": 34.06,
+     "end": 38.63
+    },
+    {
+     "id": "dp8s_8",
+     "text": "Five can be made. Line twelve returns true.",
+     "start": 39.38,
+     "end": 42.32
+    },
+    {
+     "id": "dp8s_9",
+     "text": "Why does line eight count downwards? So that one pile is never used twice in the same pass.",
+     "start": 43.42,
+     "end": 49.18
+    },
+    {
+     "id": "dp8s_10",
+     "text": "Every pile passes over every sum up to half. O of n, times half.",
+     "start": 49.93,
+     "end": 54.48
+    },
+    {
+     "id": "dp8s_11",
+     "text": "One entry per sum.",
+     "start": 55.23,
+     "end": 56.7
+    },
+    {
+     "id": "dp8s_12",
+     "text": "Splitting a bill, or the chores, into two equal shares is exactly this question.",
+     "start": 57.45,
+     "end": 62.71
+    }
+   ],
+   "pauses": [
+    {
+     "id": "dp8s-q",
+     "t": 33.06
     }
    ]
   }
