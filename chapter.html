@@ -321,6 +321,19 @@ html[data-dark] .acts{background:var(--pn);box-shadow:0 -1.5px 0 var(--line)}
 html[data-dark] .note.warn{border-color:#FF7A66}
 html[data-dark] .codeview,html[data-dark] .mine,html[data-dark] textarea{background:#141210}
 html[data-dark] .edwrap .cm-editor,html[data-dark] .edwrap .cm-gutters{background-color:#141210}
+
+/* ---------- Run (debug, not counted) and Submit (every test, counted) ---------- */
+.own{margin-top:10px;font-size:14px;color:var(--ink2)}
+.own summary{cursor:pointer;font-family:var(--head);font-weight:600;color:var(--plum);text-decoration:underline;text-underline-offset:3px;list-style:none;padding:4px 0}
+.own summary::-webkit-details-marker{display:none}
+.own input{display:block;width:100%;margin:6px 0 4px;font-family:var(--mono);font-size:14px;padding:11px 14px;border-radius:12px;border:0;background:#fff;color:var(--plum);box-shadow:inset 0 0 0 1.5px var(--line)}
+.dbg{border-radius:16px;box-shadow:inset 0 0 0 1.5px var(--line);background:#fff;padding:12px 14px;margin-top:10px;font-size:14.5px;display:grid;gap:8px}
+.dbg b{display:block;font-family:var(--head);font-weight:600;font-size:12.5px;letter-spacing:.6px;text-transform:uppercase;color:var(--ink2)}
+.dbg code,.dbg pre{font-family:var(--mono);font-size:13.5px;white-space:pre-wrap;overflow-wrap:anywhere;margin:0}
+.dbg pre{background:var(--plum);color:var(--cream);border-radius:10px;padding:10px 12px;max-height:260px;overflow:auto}
+.dbg .yes{color:var(--leaf);font-weight:800}.dbg .no{color:var(--berry);font-weight:800}
+html[data-dark] .own summary{color:var(--tx)}html[data-dark] .own input,html[data-dark] .dbg{background:var(--pn);color:var(--tx)}html[data-dark] .dbg pre{background:#141210}html[data-dark] .dbg .no{color:#FF9E8A}
+@media(max-width:700px){.acts .btn{padding:12px 6px;font-size:14.5px}.acts #run{flex:1.2}}
 </style>
 </head>
 <body>
@@ -525,6 +538,22 @@ self.onmessage = (ev) => {
   }
   postMessage({ out, logs });
 };`;
+// ---------- Run: a debug run. Never counted, never marks the puzzle solved ----------
+async function debugRun(P, code, own, res) {
+  const safe = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  let tests = P.tests.slice(0, 2), mine = false;
+  if (own && own.trim()) { try { const a = JSON.parse('[' + own + ']'); tests = [{ args: a, want: null }]; mine = true; }
+    catch (e) { res.innerHTML = '<div class="note warn"><b>I could not read that input.</b> Write the arguments the way you would in a call, separated by commas, for example <code>[3, 8, 2], 9</code>. Text needs double quotes.</div>'; return; } }
+  res.innerHTML = '<div class="note">Running…</div>'; let html = '';
+  for (const t of tests) {
+    const r = await runWorker({ code, fn: P.fn, tests: [t], mode: P.mode, check: mine ? null : P.check, prep: P.prep, post: P.post }, 2000);
+    if (r.timeout) { html += '<div class="note warn"><b>Stopped after 2 seconds.</b> A loop probably never ends. A console.log inside the loop will show you where it goes round.</div>'; break; }
+    if (r.error) { html += `<div class="note warn"><b>It did not run.</b> ${safe(r.error)}</div>`; break; }
+    const o = r.out[0];
+    html += `<div class="dbg"><div><b>Input</b><code>${safe(o.input)}</code></div><div><b>${P.mode === 'inplace' ? 'The input after your code' : 'Your code returned'}</b><code>${safe(o.got)}</code>${mine ? '' : o.ok ? ' <span class="yes">· as expected</span>' : ` <span class="no">· expected ${safe(o.want)}</span>`}</div>${r.logs.length ? `<div><b>console.log${r.logs.length >= 40 ? ' (first 40 lines)' : ''}</b><pre>${safe(r.logs.join('\n'))}</pre></div>` : ''}</div>`;
+  }
+  res.innerHTML = `<div class="note"><b>Debug run, not counted.</b> ${mine ? 'This used your own input.' : 'This used the examples from the task.'} Add console.log lines to see what your code is doing. Press Submit when you want every test.</div>` + html;
+}
 function runWorker(msg, limit) {
   return new Promise((res) => {
     let w; try { w = new Worker(URL.createObjectURL(new Blob([WORKER], { type: 'text/javascript' }))); } catch (e) { return res({ error: 'This browser blocked the code runner.' }); }
@@ -548,11 +577,11 @@ function problem(st) {
   const review = S.solvedAt[id] && !S.seen['rev-' + id] && Date.now() - S.solvedAt[id] > 18 * 3600e3;
   const c = h(`<section class="card"><h2>${st.label}: ${esc(P.title)}</h2><div class="cols"><div class="l"></div><div class="r">
     ${CH.mock ? `<div class="clock" id="clock">Your time <b>0:00</b><span>· aim for ${CH.target || 20} min</span></div>` : ''}<p>${P.ask}</p>${specHTML(P.spec)}
-    ${CH.mock ? `<div class="plan"><b>Interview rules</b><ol><li>Say the task back in your own words.</li><li>Work one small example by hand.</li><li>Say your approach and what it costs, before you type.</li></ol><span>Nothing here names the pattern. Hints and the solution are allowed, but they are counted in your report.</span></div>`
+    ${CH.mock ? `<div class="plan"><b>Interview rules</b><ol><li>Say the task back in your own words.</li><li>Work one small example by hand.</li><li>Say your approach and what it costs, before you type.</li></ol><span>Nothing here names the pattern. Run is free: use it to debug. Submits, hints and the solution are counted in your report.</span></div>`
       : `<div class="plan"><b>Before you code, think it through</b><ol>${P.plan.map((t) => `<li>${esc(t)}</li>`).join('')}</ol><span>Stuck after that? The first hint is free.</span></div>`}
     <label for="code-${id}" class="sub">YOUR CODE (JAVASCRIPT)</label>
     <textarea id="code-${id}" spellcheck="false" autocapitalize="off" autocomplete="off"></textarea>
-    <div class="row acts"><button class="btn go" id="run">Run tests</button><button class="btn quiet" id="hint">Hint</button><button class="btn quiet" id="show">Solution</button></div><div class="row" style="margin-top:8px"><button class="btn quiet" id="reset" style="box-shadow:none;text-decoration:underline;padding:6px 4px;background:none">Start over</button></div>
+    <div class="row acts"><button class="btn quiet" id="try" title="A debug run: not counted">Run</button><button class="btn go" id="run" title="Every test: this is what counts">Submit</button><button class="btn quiet" id="hint">Hint</button><button class="btn quiet" id="show">Solution</button></div><details class="own"><summary>Run with your own input</summary><input id="own" type="text" spellcheck="false" autocapitalize="off" autocomplete="off" placeholder="for example: [3, 8, 2], 9" aria-label="Your own input for Run"><span>Leave it empty and Run uses the examples from the task. Run is free: only Submit counts.</span></details><div class="row" style="margin-top:8px"><button class="btn quiet" id="reset" style="box-shadow:none;text-decoration:underline;padding:6px 4px;background:none">Start over</button></div>
     <div id="hints"></div><div id="res" aria-live="polite"></div></div></div><div id="sol"></div><div class="row" id="tail"></div></section>`);
   $('.l', c).append(player(id + 'i', null));
   const ta = $('textarea', c); ta.value = review ? P.start : (S.code[id] || P.start);
@@ -565,7 +594,7 @@ function problem(st) {
   if (CH.mock) { S.secs = S.secs || {}; const ck = $('#clock', c), fmtT = (n) => Math.floor(n / 60) + ':' + String(n % 60).padStart(2, '0');
     const paint = () => { const n = S.secs[id] || 0; $('b', ck).textContent = fmtT(n); ck.classList.toggle('over', n > (CH.target || 20) * 60); }; paint();
     const tick = setInterval(() => { if (!c.isConnected) { clearInterval(tick); return; } if (S.done[id] || S.seen['sol-' + id] || document.visibilityState !== 'visible') return; S.secs[id] = (S.secs[id] || 0) + 1; paint(); if (S.secs[id] % 5 === 0) save(); }, 1000); }
-  const drawHints = () => { $('#hints', c).innerHTML = P.hints.slice(0, used()).map((t, i) => `<div class="hint"><b>Hint ${i + 1}.</b> ${esc(t)}</div>`).join(''); $('#hint', c).disabled = used() >= P.hints.length; $('#hint', c).textContent = used() >= P.hints.length ? 'No hints left' : (used() === 0 ? 'Hint' : `Hint (${P.hints.length - used()} left)`); };
+  const drawHints = () => { $('#hints', c).innerHTML = P.hints.slice(0, used()).map((t, i) => `<div class="hint"><b>Hint ${i + 1}.</b> ${esc(t)}</div>`).join(''); $('#hint', c).disabled = used() >= P.hints.length; $('#hint', c).textContent = used() >= P.hints.length ? 'No hints left' : (used() === 0 ? 'Hint' : `Hint (${P.hints.length - used()})`); };
   $('#hint', c).onclick = () => { S.hints[id] = used() + 1; save(); drawHints(); };
   $('#reset', c).onclick = () => { ta.value = P.start; if (ed) ed.set(P.start); S.code[id] = P.start; save(); $('#res', c).innerHTML = ''; (ed || ta).focus(); };
   const tail = () => { const t = $('#tail', c); t.innerHTML = ''; if (passed(st)) t.append(nextBtn(st)); };
@@ -580,6 +609,7 @@ function problem(st) {
     host.append(s); if (scroll) host.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
   $('#show', c).onclick = () => { if (!S.done[id]) { S.peek = S.peek || {}; S.peek[id] = true; } S.seen['sol-' + id] = true; save(); drawTrail(); tail(); showSol(true); };
+  $('#try', c).onclick = () => debugRun(P, ta.value, $('#own', c).value, $('#res', c));
   $('#run', c).onclick = async () => {
     const code = ta.value, res = $('#res', c); S.runs[id] = (S.runs[id] || 0) + 1; save();
     const plain = code.replace(/\/\/.*$/gm, ''); const hit = (P.forbid || []).find((f) => new RegExp(f.re).test(plain));
@@ -595,7 +625,7 @@ function problem(st) {
       if (pts) gain(pts); drawTrail();
       res.prepend(h(`<div class="note"><b>All tests pass.${pts ? ' +' + pts + ' XP.' : ''}</b> ${first ? 'The solution walk-through is open below. Come back tomorrow: the editor will be blank and a second solve from memory is worth more.' : ''}</div>`));
       tail(); showSol(false);
-    } else if ((S.runs[id] || 0) >= 3 && used() === 0) res.append(h('<div class="note">Three tries in. The first hint is free and saves a lot of time.</div>'));
+    } else if ((S.runs[id] || 0) >= 3 && used() === 0) res.append(h('<div class="note">Three submits in. The first hint is free and saves a lot of time. Run with a console.log or two also helps.</div>'));
   };
   drawHints(); tail(); if (passed(st) && !review) showSol(false); m.append(c);
 }
@@ -675,7 +705,7 @@ function mockReport() {
     const topic = p.topic ? `<a href="${p.topic.href}">${esc(p.topic.name)}</a>` : ''; if (grade[0] === 's' && topic) strong.push(topic); if (grade[0] === 'w' && topic) weak.push(topic);
     return `<tr><td>${esc(p.title)}</td><td>${grade[0] ? fmtT(secs) : ''}</td><td>${grade[0] ? hints + (peek ? ' + solution' : '') : ''}</td><td>${grade[0] ? runs : ''}</td><td>${grade[0] ? `<span class="pill ${grade[0]}">${grade[1]}</span>` : grade[1]}</td></tr>`; }).join('');
   const uniq = (a) => [...new Set(a)];
-  return `<h3 style="margin:18px 0 0">Your interview report</h3><table class="rep"><tr><th>Puzzle</th><th>Time</th><th>Hints</th><th>Runs</th><th>Result</th></tr>${rows}</table>
+  return `<h3 style="margin:18px 0 0">Your interview report</h3><table class="rep"><tr><th>Puzzle</th><th>Time</th><th>Hints</th><th>Submits</th><th>Result</th></tr>${rows}</table>
   <div class="two"><div><h3>Your strengths</h3>${strong.length ? `<ul>${uniq(strong).map((t) => `<li>${t}</li>`).join('')}</ul>` : '<p style="margin:0">Solve a puzzle with no hints, inside the time, and its topic shows up here.</p>'}</div>
   <div><h3>Practise next</h3>${weak.length ? `<ul>${uniq(weak).map((t) => `<li>${t}</li>`).join('')}</ul>` : '<p style="margin:0">Nothing yet. Topics where you needed two hints or the solution show up here.</p>'}</div></div>
   <p class="sub" style="white-space:normal">Strong: no hints, inside ${CH.target || 20} minutes. Nearly there: one hint, or over time. Needs work: two hints or more, or the solution.</p>`;
