@@ -26108,6 +26108,184 @@ window.BURROW = {
     }
    ]
   },
+  "kc0": {
+   "src": "videos/kc0.mp4",
+   "title": "Where Do You Even Start?",
+   "duration": 37.7,
+   "lines": [
+    {
+     "id": "jh1",
+     "text": "Thinking in code. Warm up C. From words, to code.",
+     "start": 0.2,
+     "end": 3.45
+    },
+    {
+     "id": "jh2",
+     "text": "A task arrives as a paragraph of words. And the blank editor just sits there. Where do you even start?",
+     "start": 4.15,
+     "end": 10.4
+    },
+    {
+     "id": "jh3",
+     "text": "Not with code. With three questions. What goes in? What comes out? And what are the rules?",
+     "start": 11.3,
+     "end": 16.65
+    },
+    {
+     "id": "jh4",
+     "text": "Then you solve one tiny example by hand, and write down the steps you took. Two lessons, and four puzzles.",
+     "start": 17.55,
+     "end": 24.48
+    },
+    {
+     "id": "jh5",
+     "text": "A cook reads the whole recipe before touching a pan. A builder draws the plan before buying bricks. And a programmer writes the steps in plain words, before writing code.",
+     "start": 25.38,
+     "end": 36.1
+    }
+   ],
+   "pauses": []
+  },
+  "kct1": {
+   "src": "videos/kct1.mp4",
+   "title": "In, Out, and the Rules",
+   "duration": 66.95,
+   "lines": [
+    {
+     "id": "ji1",
+     "text": "Here is a task. Given the minutes a film lasts, return a label, like two h, zero five, min. Do not write code yet.",
+     "start": 0.2,
+     "end": 7.65
+    },
+    {
+     "id": "ji2",
+     "text": "Question one. What goes in? One number. The minutes. Say, one hundred and twenty five.",
+     "start": 8.55,
+     "end": 14.09
+    },
+    {
+     "id": "ji3",
+     "text": "Question two. What comes out? A piece of text. Two h, zero five, min.",
+     "start": 14.99,
+     "end": 19.68
+    },
+    {
+     "id": "ji4",
+     "text": "Question three. What are the rules? Look closely at the example. The minutes always have two digits. Five is written as zero five.",
+     "start": 20.58,
+     "end": 28.76
+    },
+    {
+     "id": "ji5",
+     "text": "Now say the task back, in your own words. Split the minutes into whole hours, and what is left. Show what is left with two digits.",
+     "start": 29.76,
+     "end": 37.76
+    },
+    {
+     "id": "ji6",
+     "text": "Then do one example by hand. One hundred and twenty five. Sixty goes in twice. That is two hours. And five are left.",
+     "start": 38.76,
+     "end": 46.71
+    },
+    {
+     "id": "ji7",
+     "text": "Now a nasty one. Exactly sixty minutes. What should the label say?",
+     "start": 47.71,
+     "end": 52.06
+    },
+    {
+     "id": "ji8",
+     "text": "One h, zero zero, min. You found that case before writing a single line. That is the point.",
+     "start": 53.26,
+     "end": 59.17
+    },
+    {
+     "id": "ji9",
+     "text": "In. Out. Rules. Say it back. One example by hand. Then, and only then, code.",
+     "start": 60.07,
+     "end": 65.35
+    }
+   ],
+   "pauses": [
+    {
+     "id": "kct1-q1",
+     "t": 52.26
+    }
+   ]
+  },
+  "kct2": {
+   "src": "videos/kct2.mp4",
+   "title": "Steps First, Code Last",
+   "duration": 62.21,
+   "lines": [
+    {
+     "id": "jj1",
+     "text": "You understand the task. But the editor is still blank. Now what? Now you write the steps. In plain words.",
+     "start": 0.2,
+     "end": 7.01
+    },
+    {
+     "id": "jj2",
+     "text": "Step one. Work out the whole hours. Step two. Work out the minutes left over.",
+     "start": 7.91,
+     "end": 12.63
+    },
+    {
+     "id": "jj3",
+     "text": "Step three. Make the left over minutes two digits long. Step four. Join the pieces into the label.",
+     "start": 13.53,
+     "end": 19.62
+    },
+    {
+     "id": "jj4",
+     "text": "Each step is small enough that you already know how to do it. That is the test of a good step.",
+     "start": 20.52,
+     "end": 25.7
+    },
+    {
+     "id": "jj5",
+     "text": "And if a step still feels hard, break that step into smaller ones.",
+     "start": 26.6,
+     "end": 30.72
+    },
+    {
+     "id": "jj6",
+     "text": "Notice the order. Step three uses the result of step two. And step four? What does it need, before it can run?",
+     "start": 31.62,
+     "end": 38.85
+    },
+    {
+     "id": "jj7",
+     "text": "The hours, and the two digits. So it has to come last. The order comes from what each step needs.",
+     "start": 40.05,
+     "end": 45.99
+    },
+    {
+     "id": "jj8",
+     "text": "Now the code is almost a translation. One step. One line.",
+     "start": 46.89,
+     "end": 51.06
+    },
+    {
+     "id": "jj9",
+     "text": "And when something breaks, you know which step to look at.",
+     "start": 52.06,
+     "end": 55.01
+    },
+    {
+     "id": "jj10",
+     "text": "Words first. Small steps. In the order they need each other. Then translate.",
+     "start": 55.91,
+     "end": 60.61
+    }
+   ],
+   "pauses": [
+    {
+     "id": "kct2-q1",
+     "t": 39.05
+    }
+   ]
+  },
   "kb1i": {
    "src": "videos/kb1i.mp4",
    "title": "Sorted, Hands Off",
@@ -26531,6 +26709,444 @@ window.BURROW = {
     {
      "id": "kb4s-q",
      "t": 20.04
+    }
+   ]
+  },
+  "kc1i": {
+   "src": "videos/kc1i.mp4",
+   "title": "The Film Label",
+   "duration": 27.22,
+   "lines": [
+    {
+     "id": "kc1i_1",
+     "text": "A film lasts one hundred and twenty five minutes. Pip wants a label for the poster.",
+     "start": 0.2,
+     "end": 5.34
+    },
+    {
+     "id": "kc1i_2",
+     "text": "Two h, zero five, min. Whole hours first. Then the minutes that are left, always with two digits.",
+     "start": 6.04,
+     "end": 12.18
+    },
+    {
+     "id": "kc1i_3",
+     "text": "Sixty goes into one hundred and twenty five twice. Five are left. And five is written as zero five.",
+     "start": 12.88,
+     "end": 19.65
+    },
+    {
+     "id": "kc1i_4",
+     "text": "Do not start typing. What goes in? What comes out? What are the steps? Your turn.",
+     "start": 20.35,
+     "end": 25.62
+    }
+   ],
+   "pauses": []
+  },
+  "kc1s": {
+   "src": "videos/kc1s.mp4",
+   "title": "Four steps, four lines",
+   "duration": 58.73,
+   "lines": [
+    {
+     "id": "kc1s_1",
+     "text": "In, one number. Out, a text. The rule, two digits for the minutes.",
+     "start": 0.2,
+     "end": 4.48
+    },
+    {
+     "id": "kc1s_2",
+     "text": "Four steps. The hours. What is left. Make it two digits. Join.",
+     "start": 5.23,
+     "end": 9.05
+    },
+    {
+     "id": "kc1s_3",
+     "text": "Step one, on line two. How many whole sixties fit into one hundred and twenty five? Two.",
+     "start": 9.8,
+     "end": 15.66
+    },
+    {
+     "id": "kc1s_4",
+     "text": "Step two, on line three. What is left over? The percent sign gives the remainder. Five.",
+     "start": 16.41,
+     "end": 22.16
+    },
+    {
+     "id": "kc1s_5",
+     "text": "Step three. The rule said two digits. Five has only one. What does pad start do with it?",
+     "start": 22.91,
+     "end": 28.86
+    },
+    {
+     "id": "kc1s_6",
+     "text": "It puts a zero in front. Zero five.",
+     "start": 30.06,
+     "end": 32.7
+    },
+    {
+     "id": "kc1s_7",
+     "text": "Step four joins the pieces. It needs the hours from step one, and the two digits from step three. So it comes last.",
+     "start": 33.45,
+     "end": 41.28
+    },
+    {
+     "id": "kc1s_8",
+     "text": "Each step became one line. That is what good steps look like.",
+     "start": 42.38,
+     "end": 46.18
+    },
+    {
+     "id": "kc1s_9",
+     "text": "And the order came from need. Join needs the others. So join is last.",
+     "start": 46.93,
+     "end": 51.44
+    },
+    {
+     "id": "kc1s_10",
+     "text": "Every screen that shows a duration does this. A film. A flight. A song.",
+     "start": 52.19,
+     "end": 57.13
+    }
+   ],
+   "pauses": [
+    {
+     "id": "kc1s-q",
+     "t": 29.06
+    }
+   ]
+  },
+  "kc2i": {
+   "src": "videos/kc2i.mp4",
+   "title": "Initials",
+   "duration": 17.31,
+   "lines": [
+    {
+     "id": "kc2i_1",
+     "text": "A name, written in small letters. Pip the rabbit.",
+     "start": 0.2,
+     "end": 3.05
+    },
+    {
+     "id": "kc2i_2",
+     "text": "Return its initials. The first letter of each word, as a capital, with a dot after it.",
+     "start": 3.75,
+     "end": 9.36
+    },
+    {
+     "id": "kc2i_3",
+     "text": "P. T. R.",
+     "start": 10.06,
+     "end": 10.98
+    },
+    {
+     "id": "kc2i_4",
+     "text": "You just did it in your head. What was your very first move? Your turn.",
+     "start": 11.68,
+     "end": 15.71
+    }
+   ],
+   "pauses": []
+  },
+  "kc2s": {
+   "src": "videos/kc2s.mp4",
+   "title": "Split, then one word at a time",
+   "duration": 59.98,
+   "lines": [
+    {
+     "id": "kc2s_1",
+     "text": "By hand, you first saw three separate words. That is step one. Split the text into words.",
+     "start": 0.2,
+     "end": 6.24
+    },
+    {
+     "id": "kc2s_2",
+     "text": "Then the same small job for every word. First letter. Capital. Dot.",
+     "start": 6.99,
+     "end": 11.52
+    },
+    {
+     "id": "kc2s_3",
+     "text": "Line three splits the name at the spaces. Three words.",
+     "start": 12.27,
+     "end": 15.87
+    },
+    {
+     "id": "kc2s_4",
+     "text": "The first word. Its first letter is p. As a capital, P. Add a dot.",
+     "start": 16.62,
+     "end": 21.19
+    },
+    {
+     "id": "kc2s_5",
+     "text": "The second word. T, and a dot.",
+     "start": 21.94,
+     "end": 24.04
+    },
+    {
+     "id": "kc2s_6",
+     "text": "The third word. R, and a dot. Line eight returns the result.",
+     "start": 24.79,
+     "end": 29.17
+    },
+    {
+     "id": "kc2s_7",
+     "text": "Now the nasty input. An empty name. Splitting it gives one word, which is empty. What is the first letter of an empty word?",
+     "start": 29.92,
+     "end": 37.99
+    },
+    {
+     "id": "kc2s_8",
+     "text": "There is none. So line two answers the empty name, before anything else runs.",
+     "start": 39.19,
+     "end": 44.31
+    },
+    {
+     "id": "kc2s_9",
+     "text": "A big task became three small ones. Split. Loop. Build.",
+     "start": 45.41,
+     "end": 49.26
+    },
+    {
+     "id": "kc2s_10",
+     "text": "The nasty input was found by asking: what if there is nothing?",
+     "start": 50.01,
+     "end": 53.9
+    },
+    {
+     "id": "kc2s_11",
+     "text": "The circle with your initials in a chat app is made like this.",
+     "start": 54.65,
+     "end": 58.38
+    }
+   ],
+   "pauses": [
+    {
+     "id": "kc2s-q",
+     "t": 38.19
+    }
+   ]
+  },
+  "kc3i": {
+   "src": "videos/kc3i.mp4",
+   "title": "The Receipt",
+   "duration": 21.59,
+   "lines": [
+    {
+     "id": "kc3i_1",
+     "text": "A receipt with two lines. Two items at twenty. Three items at five.",
+     "start": 0.2,
+     "end": 4.65
+    },
+    {
+     "id": "kc3i_2",
+     "text": "Add everything up. And if the total is fifty or more, take one tenth off.",
+     "start": 5.35,
+     "end": 9.83
+    },
+    {
+     "id": "kc3i_3",
+     "text": "Forty, plus fifteen. Fifty five. One tenth is five. So fifty to pay.",
+     "start": 10.53,
+     "end": 15.19
+    },
+    {
+     "id": "kc3i_4",
+     "text": "Two rules, in one task. Which number do you need first? Your turn.",
+     "start": 15.89,
+     "end": 19.99
+    }
+   ],
+   "pauses": []
+  },
+  "kc3s": {
+   "src": "videos/kc3s.mp4",
+   "title": "First the total, then the rule",
+   "duration": 54.6,
+   "lines": [
+    {
+     "id": "kc3s_1",
+     "text": "Two tasks are hiding in one. Add up the lines. And decide about the discount.",
+     "start": 0.2,
+     "end": 5.12
+    },
+    {
+     "id": "kc3s_2",
+     "text": "The discount depends on the total. So the total comes first.",
+     "start": 5.87,
+     "end": 9.69
+    },
+    {
+     "id": "kc3s_3",
+     "text": "Total starts at zero.",
+     "start": 10.44,
+     "end": 11.93
+    },
+    {
+     "id": "kc3s_4",
+     "text": "The first line. Twenty times two. Forty.",
+     "start": 12.68,
+     "end": 15.25
+    },
+    {
+     "id": "kc3s_5",
+     "text": "The second line. Five times three. Fifteen. Total, fifty five.",
+     "start": 16,
+     "end": 20.11
+    },
+    {
+     "id": "kc3s_6",
+     "text": "The loop is finished. Only now, line six asks about the discount. Fifty five is at least fifty. What is one tenth, rounded down?",
+     "start": 20.86,
+     "end": 29.24
+    },
+    {
+     "id": "kc3s_7",
+     "text": "Five. So line seven takes five off. Fifty.",
+     "start": 30.44,
+     "end": 33.35
+    },
+    {
+     "id": "kc3s_8",
+     "text": "Line nine returns fifty.",
+     "start": 34.1,
+     "end": 35.78
+    },
+    {
+     "id": "kc3s_9",
+     "text": "When one rule depends on a number, work out that number completely first.",
+     "start": 36.88,
+     "end": 41.43
+    },
+    {
+     "id": "kc3s_10",
+     "text": "Test just below and just at the limit. Forty nine, and fifty.",
+     "start": 42.18,
+     "end": 46.14
+    },
+    {
+     "id": "kc3s_11",
+     "text": "Every online shop does these two steps at the checkout. Add up the basket. Then apply the offer.",
+     "start": 46.89,
+     "end": 53
+    }
+   ],
+   "pauses": [
+    {
+     "id": "kc3s-q",
+     "t": 29.44
+    }
+   ]
+  },
+  "kc4i": {
+   "src": "videos/kc4i.mp4",
+   "title": "The Report Card",
+   "duration": 20.34,
+   "lines": [
+    {
+     "id": "kc4i_1",
+     "text": "Three scores. Pip, seventy. Moss, forty. Hazel, ninety.",
+     "start": 0.2,
+     "end": 3.87
+    },
+    {
+     "id": "kc4i_2",
+     "text": "Return three things at once. How many passed. How many failed. And who was the best.",
+     "start": 4.57,
+     "end": 9.8
+    },
+    {
+     "id": "kc4i_3",
+     "text": "Two passed. One failed. And the best was Hazel.",
+     "start": 10.5,
+     "end": 13.62
+    },
+    {
+     "id": "kc4i_4",
+     "text": "That sounds like a lot. How many small tasks is it, really? Your turn.",
+     "start": 14.32,
+     "end": 18.74
+    }
+   ],
+   "pauses": []
+  },
+  "kc4s": {
+   "src": "videos/kc4s.mp4",
+   "title": "Three small tasks, one walk",
+   "duration": 59.54,
+   "lines": [
+    {
+     "id": "kc4s_1",
+     "text": "Three answers. So three small tasks. Count the passes. Count the fails. And remember the best.",
+     "start": 0.2,
+     "end": 6.03
+    },
+    {
+     "id": "kc4s_2",
+     "text": "Each one needs only one or two variables. And all three can be done in the same walk.",
+     "start": 6.78,
+     "end": 12.03
+    },
+    {
+     "id": "kc4s_3",
+     "text": "Lines two to five set up the memory. Two counters. And the best so far, which is nobody yet.",
+     "start": 12.78,
+     "end": 18.85
+    },
+    {
+     "id": "kc4s_4",
+     "text": "Pip, seventy. At least fifty. A pass. And seventy beats the best so far.",
+     "start": 19.6,
+     "end": 24.35
+    },
+    {
+     "id": "kc4s_5",
+     "text": "Moss, forty. Below fifty. A fail. Does forty beat seventy?",
+     "start": 25.1,
+     "end": 29
+    },
+    {
+     "id": "kc4s_6",
+     "text": "No. So the best stays Pip.",
+     "start": 30.2,
+     "end": 31.81
+    },
+    {
+     "id": "kc4s_7",
+     "text": "Hazel, ninety. A pass. And ninety beats seventy.",
+     "start": 32.56,
+     "end": 35.79
+    },
+    {
+     "id": "kc4s_8",
+     "text": "Line fourteen packs the three answers into one object.",
+     "start": 36.54,
+     "end": 40.15
+    },
+    {
+     "id": "kc4s_9",
+     "text": "A task that sounds big is often several small tasks, side by side.",
+     "start": 41.25,
+     "end": 45.89
+    },
+    {
+     "id": "kc4s_10",
+     "text": "For each small task, ask: what do I need to remember?",
+     "start": 46.64,
+     "end": 50.06
+    },
+    {
+     "id": "kc4s_11",
+     "text": "The summary at the top of any dashboard is built this way. A few counters, and a best, in one pass over the data.",
+     "start": 50.81,
+     "end": 57.94
+    }
+   ],
+   "pauses": [
+    {
+     "id": "kc4s-q",
+     "t": 29.2
     }
    ]
   }
