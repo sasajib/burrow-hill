@@ -4,13 +4,15 @@ window.CHAPTER = {
  "sub": "CHAPTER 27 · COMBINING TOOLS",
  "key": "burrow-ch-combine",
  "next": {
-  "href": "index.html#course",
-  "label": "All chapters"
+  "href": "chapter.html?c=mock",
+  "label": "Mock Interviews"
  },
  "prev": {
   "href": "chapter.html?c=bits",
   "label": "Chapter 26: Bit Tricks"
  },
+ "mock": false,
+ "target": null,
  "stages": [
   {
    "id": "w",
@@ -241,6 +243,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "What would [10, 9, 100] give if line 3 used sort() with no compare function?",
+   "topic": null,
    "world": "A leaderboard shows ranks, not raw scores. And databases shrink huge values into small ranks, the same way.",
    "view": {
     "row": [
@@ -645,6 +648,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "The binary search is only correct because every size is above 0. What breaks if a size could be negative?",
+   "topic": null,
    "world": "A video player knows the length of every chunk. It finds the chunk that holds minute forty, exactly like this.",
    "view": {
     "row": [
@@ -1107,6 +1111,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "Why do the lists inside the map not need to be sorted again?",
+   "topic": null,
    "world": "Your bank shows your balance on any past day. A wiki shows a page as it was last March. Group by key. Then search by time.",
    "view": {
     "row": [
@@ -1471,6 +1476,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "What would have to change if a count could have two digits, like 12[a]?",
+   "topic": null,
    "world": "A web page is boxes inside boxes. A browser reads its tags like this. Open, park. Close, pop, and attach.",
    "view": {
     "row": [
@@ -1917,6 +1923,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "For \"123\" and k = 1 the first loop never pops. Which lines remove the digit, and why from the end?",
+   "topic": null,
    "world": "A trading screen uses the same stack to find, for every day, the last day with a higher price. One pass.",
    "view": {
     "row": [
@@ -2421,6 +2428,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "Why does pre have one extra row and one extra column of zeros?",
+   "topic": null,
    "world": "A photo app blurs a picture by averaging the block around every pixel. With this table, each block costs four lookups.",
    "view": {
     "row": [],
@@ -2831,6 +2839,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "Line 14 deletes a word as soon as it is reached. Why can a later, longer route never need that word again?",
+   "topic": null,
    "world": "A spell checker suggests words that are one edit away. The graph is never stored. It is worked out on the way.",
    "view": {
     "row": [
@@ -3254,6 +3263,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "This walk needs no \"seen\" set, unlike the island walks. Which word in the task makes going round in a circle impossible?",
+   "topic": null,
    "world": "A build tool finds its longest chain of steps this way. And a ski map finds its longest run. Walk, and remember.",
    "view": {
     "row": [],

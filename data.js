@@ -28333,6 +28333,44 @@ window.BURROW = {
     }
    ]
   },
+  "mk0": {
+   "src": "videos/mk0.mp4",
+   "title": "How the Mock Interviews Work",
+   "duration": 42.16,
+   "lines": [
+    {
+     "id": "mv1",
+     "text": "The last stop. Mock interviews.",
+     "start": 0.2,
+     "end": 2.49
+    },
+    {
+     "id": "mv2",
+     "text": "Ten puzzles. No labels. No lesson first. Nothing tells you which tool to use.",
+     "start": 3.19,
+     "end": 8.41
+    },
+    {
+     "id": "mv3",
+     "text": "A clock runs for each one. Aim for twenty minutes. Hints, and the solution, are allowed. But they are counted.",
+     "start": 9.31,
+     "end": 15.98
+    },
+    {
+     "id": "mv4",
+     "text": "At the end, a report shows your strengths, and what to practise next. And before you type anything, say your plan out loud.",
+     "start": 16.88,
+     "end": 24.39
+    },
+    {
+     "id": "mv5",
+     "text": "A real interview goes like this. The first five minutes are talking. Say the task back. Ask about empty input. Then work an example by hand, and say your plan, and its cost. Only then, write the code. And test it with a tiny input.",
+     "start": 25.29,
+     "end": 40.56
+    }
+   ],
+   "pauses": []
+  },
   "cm1i": {
    "src": "videos/cm1i.mp4",
    "title": "Rank the Scores",
@@ -29230,6 +29268,1140 @@ window.BURROW = {
     {
      "id": "cm8s-q",
      "t": 35.22
+    }
+   ]
+  },
+  "mk1i": {
+   "src": "videos/mk1i.mp4",
+   "title": "The Same Pattern",
+   "duration": 24.04,
+   "lines": [
+    {
+     "id": "mk1i_1",
+     "text": "Four words. Nut, fig, fig, nut. And a pattern. A, b, b, a.",
+     "start": 0.2,
+     "end": 4.2
+    },
+    {
+     "id": "mk1i_2",
+     "text": "Return true, if the words follow the pattern. One letter always means the same word. And one word always belongs to the same letter.",
+     "start": 4.9,
+     "end": 13.33
+    },
+    {
+     "id": "mk1i_3",
+     "text": "Here it fits. A is nut, both times. B is fig, both times.",
+     "start": 14.03,
+     "end": 18.01
+    },
+    {
+     "id": "mk1i_4",
+     "text": "The clock is running. Say your plan out loud first. Your turn.",
+     "start": 18.71,
+     "end": 22.44
+    }
+   ],
+   "pauses": []
+  },
+  "mk1s": {
+   "src": "videos/mk1s.mp4",
+   "title": "Remember both directions",
+   "duration": 58.94,
+   "lines": [
+    {
+     "id": "mk1s_1",
+     "text": "Remember what each letter stood for. If it comes back with another word, the pattern is broken.",
+     "start": 0.2,
+     "end": 6.03
+    },
+    {
+     "id": "mk1s_2",
+     "text": "And remember the other direction too. One word must not serve two letters.",
+     "start": 6.78,
+     "end": 11.53
+    },
+    {
+     "id": "mk1s_3",
+     "text": "Line three makes both maps. Now try a list that ends in pea.",
+     "start": 12.28,
+     "end": 16.29
+    },
+    {
+     "id": "mk1s_4",
+     "text": "A, with nut. Nothing is stored yet. So lines eight and nine store the pair.",
+     "start": 17.04,
+     "end": 21.65
+    },
+    {
+     "id": "mk1s_5",
+     "text": "B, with fig. New again. Store it.",
+     "start": 22.4,
+     "end": 24.36
+    },
+    {
+     "id": "mk1s_6",
+     "text": "B, with fig. B already means fig. It agrees.",
+     "start": 25.11,
+     "end": 28.25
+    },
+    {
+     "id": "mk1s_7",
+     "text": "A, with pea. What does the map say about a?",
+     "start": 29,
+     "end": 31.56
+    },
+    {
+     "id": "mk1s_8",
+     "text": "A already means nut. Pea does not agree. Line six returns false.",
+     "start": 32.76,
+     "end": 37.23
+    },
+    {
+     "id": "mk1s_9",
+     "text": "The second map catches the opposite mistake. Two letters, sharing one word.",
+     "start": 38.34,
+     "end": 42.86
+    },
+    {
+     "id": "mk1s_10",
+     "text": "One pass, with two lookups per word. O of n.",
+     "start": 43.61,
+     "end": 46.79
+    },
+    {
+     "id": "mk1s_11",
+     "text": "The maps hold at most every word.",
+     "start": 47.54,
+     "end": 49.49
+    },
+    {
+     "id": "mk1s_12",
+     "text": "A sign-up form checks this. One username, one email. And one email, one username. Both directions.",
+     "start": 50.24,
+     "end": 57.34
+    }
+   ],
+   "pauses": [
+    {
+     "id": "mk1s-q",
+     "t": 31.76
+    }
+   ]
+  },
+  "mk2i": {
+   "src": "videos/mk2i.mp4",
+   "title": "Three Kinds, One Pass",
+   "duration": 18.55,
+   "lines": [
+    {
+     "id": "mk2i_1",
+     "text": "A row that holds only three kinds of number. Zero, one, and two.",
+     "start": 0.2,
+     "end": 4.53
+    },
+    {
+     "id": "mk2i_2",
+     "text": "Put them in order. In place. In one pass. And without calling sort.",
+     "start": 5.23,
+     "end": 9.2
+    },
+    {
+     "id": "mk2i_3",
+     "text": "Zeros first. Then ones. Then twos.",
+     "start": 9.9,
+     "end": 12.52
+    },
+    {
+     "id": "mk2i_4",
+     "text": "The clock is running. Say your plan out loud first. Your turn.",
+     "start": 13.22,
+     "end": 16.95
+    }
+   ],
+   "pauses": []
+  },
+  "mk2s": {
+   "src": "videos/mk2s.mp4",
+   "title": "Three markers, three zones",
+   "duration": 61.52,
+   "lines": [
+    {
+     "id": "mk2s_1",
+     "text": "Zeros belong at the front. Twos at the back. Ones are whatever is left in the middle.",
+     "start": 0.2,
+     "end": 5.57
+    },
+    {
+     "id": "mk2s_2",
+     "text": "So keep three markers. Low, for the next zero. High, for the next two. And mid reads.",
+     "start": 6.32,
+     "end": 12.26
+    },
+    {
+     "id": "mk2s_3",
+     "text": "Line two. Low and mid start at the front. High at the back.",
+     "start": 13.01,
+     "end": 16.47
+    },
+    {
+     "id": "mk2s_4",
+     "text": "Mid reads a two. It belongs at the back. Line nine swaps it with high. And high moves in.",
+     "start": 17.22,
+     "end": 23.36
+    },
+    {
+     "id": "mk2s_5",
+     "text": "Mid did not move. Why not?",
+     "start": 24.11,
+     "end": 26.05
+    },
+    {
+     "id": "mk2s_6",
+     "text": "Because the number that arrived has not been read yet. It is a zero. Swap with low, and both move.",
+     "start": 27.25,
+     "end": 33.3
+    },
+    {
+     "id": "mk2s_7",
+     "text": "Another zero. Swap with low, and both move again.",
+     "start": 34.05,
+     "end": 37.31
+    },
+    {
+     "id": "mk2s_8",
+     "text": "A one. It is already in the middle zone. Only mid moves.",
+     "start": 38.06,
+     "end": 41.72
+    },
+    {
+     "id": "mk2s_9",
+     "text": "Mid has passed high. Everything is read. The loop ends.",
+     "start": 42.47,
+     "end": 46.01
+    },
+    {
+     "id": "mk2s_10",
+     "text": "Every door is read once. O of n.",
+     "start": 47.11,
+     "end": 49.52
+    },
+    {
+     "id": "mk2s_11",
+     "text": "Three markers. No second array.",
+     "start": 50.27,
+     "end": 52.39
+    },
+    {
+     "id": "mk2s_12",
+     "text": "Quick sort uses this exact split. Smaller than the pivot, equal, and larger. Three zones, one pass.",
+     "start": 53.14,
+     "end": 59.91
+    }
+   ],
+   "pauses": [
+    {
+     "id": "mk2s-q",
+     "t": 26.25
+    }
+   ]
+  },
+  "mk3i": {
+   "src": "videos/mk3i.mp4",
+   "title": "The Short Way Home",
+   "duration": 21.01,
+   "lines": [
+    {
+     "id": "mk3i_1",
+     "text": "A path through folders. A. Dot. B. Dot dot. C.",
+     "start": 0.2,
+     "end": 3.44
+    },
+    {
+     "id": "mk3i_2",
+     "text": "One dot means, stay here. Two dots mean, go up one folder. Return the shortest path that means the same.",
+     "start": 4.14,
+     "end": 10.84
+    },
+    {
+     "id": "mk3i_3",
+     "text": "The two dots cancel the b. So only a, and c, are left.",
+     "start": 11.54,
+     "end": 14.98
+    },
+    {
+     "id": "mk3i_4",
+     "text": "The clock is running. Say your plan out loud first. Your turn.",
+     "start": 15.68,
+     "end": 19.41
+    }
+   ],
+   "pauses": []
+  },
+  "mk3s": {
+   "src": "videos/mk3s.mp4",
+   "title": "Two dots pop the last folder",
+   "duration": 49.14,
+   "lines": [
+    {
+     "id": "mk3s_1",
+     "text": "Two dots cancel the most recent folder you kept. The most recent one. That is a stack.",
+     "start": 0.2,
+     "end": 5.81
+    },
+    {
+     "id": "mk3s_2",
+     "text": "So push every folder name. Pop for two dots. And skip a single dot.",
+     "start": 6.56,
+     "end": 11.23
+    },
+    {
+     "id": "mk3s_3",
+     "text": "Line three splits the path at the slashes. The first part is a. A name. Push it.",
+     "start": 11.98,
+     "end": 17.59
+    },
+    {
+     "id": "mk3s_4",
+     "text": "A single dot. Stay here. Line four skips it.",
+     "start": 18.34,
+     "end": 21.31
+    },
+    {
+     "id": "mk3s_5",
+     "text": "B. A name. Push.",
+     "start": 22.06,
+     "end": 23.32
+    },
+    {
+     "id": "mk3s_6",
+     "text": "Two dots. What happens to the stack?",
+     "start": 24.07,
+     "end": 26.19
+    },
+    {
+     "id": "mk3s_7",
+     "text": "It pops the b. We are back in a.",
+     "start": 27.39,
+     "end": 29.26
+    },
+    {
+     "id": "mk3s_8",
+     "text": "C. Push. Then line eight joins the stack with slashes.",
+     "start": 30.01,
+     "end": 33.44
+    },
+    {
+     "id": "mk3s_9",
+     "text": "Each part is pushed and popped at most once. O of n.",
+     "start": 34.54,
+     "end": 37.89
+    },
+    {
+     "id": "mk3s_10",
+     "text": "The stack holds at most every folder.",
+     "start": 38.64,
+     "end": 40.88
+    },
+    {
+     "id": "mk3s_11",
+     "text": "Your browser does this with every link that contains two dots. Before it asks the server for anything.",
+     "start": 41.63,
+     "end": 47.54
+    }
+   ],
+   "pauses": [
+    {
+     "id": "mk3s-q",
+     "t": 26.39
+    }
+   ]
+  },
+  "mk4i": {
+   "src": "videos/mk4i.mp4",
+   "title": "The One Without a Twin",
+   "duration": 18.31,
+   "lines": [
+    {
+     "id": "mk4i_1",
+     "text": "A sorted row. One, one, two, three, three.",
+     "start": 0.2,
+     "end": 2.97
+    },
+    {
+     "id": "mk4i_2",
+     "text": "Every value appears twice. Except one. Return that one.",
+     "start": 3.67,
+     "end": 7.64
+    },
+    {
+     "id": "mk4i_3",
+     "text": "Here, it is the two.",
+     "start": 8.34,
+     "end": 9.5
+    },
+    {
+     "id": "mk4i_4",
+     "text": "But the real row holds a million numbers. And you may look at about twenty. The clock is running. Your turn.",
+     "start": 10.2,
+     "end": 16.71
+    }
+   ],
+   "pauses": []
+  },
+  "mk4s": {
+   "src": "videos/mk4s.mp4",
+   "title": "Where do the pairs break?",
+   "duration": 66.06,
+   "lines": [
+    {
+     "id": "mk4s_1",
+     "text": "Before the lone value, every pair starts on an even door. After it, every pair starts on an odd door.",
+     "start": 0.2,
+     "end": 6.73
+    },
+    {
+     "id": "mk4s_2",
+     "text": "So look at an even door in the middle. Is its twin right next to it? That rules out one half.",
+     "start": 7.48,
+     "end": 13.22
+    },
+    {
+     "id": "mk4s_3",
+     "text": "Line two. Low is door zero. High is door six.",
+     "start": 13.97,
+     "end": 17.16
+    },
+    {
+     "id": "mk4s_4",
+     "text": "The middle is door three. Odd. So line five steps back to door two.",
+     "start": 17.91,
+     "end": 22.32
+    },
+    {
+     "id": "mk4s_5",
+     "text": "Door two holds a two. Door three holds a three. Not a pair. So where is the lone value?",
+     "start": 23.07,
+     "end": 28.8
+    },
+    {
+     "id": "mk4s_6",
+     "text": "The pairs are already broken here. So it is at door two, or to the left. High moves to door two.",
+     "start": 30,
+     "end": 36.26
+    },
+    {
+     "id": "mk4s_7",
+     "text": "The middle is door one. Odd. Step back to door zero. Doors zero and one are a pair. Still intact. So go right. Low jumps to door two.",
+     "start": 37.01,
+     "end": 46.24
+    },
+    {
+     "id": "mk4s_8",
+     "text": "Low and high meet on door two. Line nine returns its value.",
+     "start": 46.99,
+     "end": 50.83
+    },
+    {
+     "id": "mk4s_9",
+     "text": "The part that is left halves on every turn. O of log n.",
+     "start": 51.93,
+     "end": 55.66
+    },
+    {
+     "id": "mk4s_10",
+     "text": "Three markers.",
+     "start": 56.41,
+     "end": 57.5
+    },
+    {
+     "id": "mk4s_11",
+     "text": "Finding the first place where a pattern breaks, by halving, is how tools find the change that broke a build.",
+     "start": 58.25,
+     "end": 64.46
+    }
+   ],
+   "pauses": [
+    {
+     "id": "mk4s-q",
+     "t": 29
+    }
+   ]
+  },
+  "mk5i": {
+   "src": "videos/mk5i.mp4",
+   "title": "Seats on the Cart",
+   "duration": 25.71,
+   "lines": [
+    {
+     "id": "mk5i_1",
+     "text": "A cart drives along eight stops. Two riders travel from stop one to stop five. Three riders travel from stop three to stop seven.",
+     "start": 0.2,
+     "end": 8.62
+    },
+    {
+     "id": "mk5i_2",
+     "text": "The cart has four seats. Return true, if it is never over full.",
+     "start": 9.32,
+     "end": 13.58
+    },
+    {
+     "id": "mk5i_3",
+     "text": "Between stops three and five, five riders are on board. Too many. So, false.",
+     "start": 14.28,
+     "end": 19.68
+    },
+    {
+     "id": "mk5i_4",
+     "text": "The clock is running. Say your plan out loud first. Your turn.",
+     "start": 20.38,
+     "end": 24.11
+    }
+   ],
+   "pauses": []
+  },
+  "mk5s": {
+   "src": "videos/mk5s.mp4",
+   "title": "Write the changes, then add up",
+   "duration": 65.35,
+   "lines": [
+    {
+     "id": "mk5s_1",
+     "text": "At each stop, the number of riders only changes. Plus where a trip starts. Minus where it ends.",
+     "start": 0.2,
+     "end": 6.46
+    },
+    {
+     "id": "mk5s_2",
+     "text": "Write the changes down, per stop. Then one walk with a running total tells you how full the cart is.",
+     "start": 7.21,
+     "end": 13.42
+    },
+    {
+     "id": "mk5s_3",
+     "text": "Line four makes one slot per stop. All zero.",
+     "start": 14.17,
+     "end": 17.38
+    },
+    {
+     "id": "mk5s_4",
+     "text": "The first trip. Two riders, from one to five. Plus two at stop one. Minus two at stop five.",
+     "start": 18.13,
+     "end": 24.23
+    },
+    {
+     "id": "mk5s_5",
+     "text": "The second trip. Three riders, from three to seven. Plus three, and minus three.",
+     "start": 24.98,
+     "end": 30.13
+    },
+    {
+     "id": "mk5s_6",
+     "text": "Now walk the stops. At stop one, two riders get on. Riding is two.",
+     "start": 30.88,
+     "end": 35.54
+    },
+    {
+     "id": "mk5s_7",
+     "text": "Stop two changes nothing. At stop three, three more get on. The cart has four seats. What happens?",
+     "start": 36.29,
+     "end": 42.84
+    },
+    {
+     "id": "mk5s_8",
+     "text": "Riding is five. More than four seats. Line twelve returns false.",
+     "start": 44.04,
+     "end": 48.49
+    },
+    {
+     "id": "mk5s_9",
+     "text": "One pass over the trips, and one over the stops.",
+     "start": 49.59,
+     "end": 52.71
+    },
+    {
+     "id": "mk5s_10",
+     "text": "One slot per stop.",
+     "start": 53.46,
+     "end": 54.76
+    },
+    {
+     "id": "mk5s_11",
+     "text": "A hotel counts rooms this way. Plus one on the arrival day. Minus one on the leaving day. Then one pass over the calendar.",
+     "start": 55.51,
+     "end": 63.75
+    }
+   ],
+   "pauses": [
+    {
+     "id": "mk5s-q",
+     "t": 43.04
+    }
+   ]
+  },
+  "mk6i": {
+   "src": "videos/mk6i.mp4",
+   "title": "The Longest Mirror",
+   "duration": 15.23,
+   "lines": [
+    {
+     "id": "mk6i_1",
+     "text": "A word. Banana.",
+     "start": 0.2,
+     "end": 1.46
+    },
+    {
+     "id": "mk6i_2",
+     "text": "Return the longest stretch that reads the same, forwards and backwards.",
+     "start": 2.16,
+     "end": 6.63
+    },
+    {
+     "id": "mk6i_3",
+     "text": "A, n, a, n, a. Five letters.",
+     "start": 7.33,
+     "end": 9.21
+    },
+    {
+     "id": "mk6i_4",
+     "text": "The clock is running. Say your plan out loud first. Your turn.",
+     "start": 9.9,
+     "end": 13.63
+    }
+   ],
+   "pauses": []
+  },
+  "mk6s": {
+   "src": "videos/mk6s.mp4",
+   "title": "Every mirror has a middle",
+   "duration": 63.4,
+   "lines": [
+    {
+     "id": "mk6s_1",
+     "text": "Every mirror has a middle. And around it, the letters match in pairs.",
+     "start": 0.2,
+     "end": 4.62
+    },
+    {
+     "id": "mk6s_2",
+     "text": "So try every middle. Grow outwards, while the two letters are equal.",
+     "start": 5.37,
+     "end": 9.69
+    },
+    {
+     "id": "mk6s_3",
+     "text": "Take the n at door two as the middle. Left and right both start on it.",
+     "start": 10.44,
+     "end": 14.66
+    },
+    {
+     "id": "mk6s_4",
+     "text": "One step outwards. A, and a. They match. One more step. B, and n. They do not. So this mirror is, a n a.",
+     "start": 15.41,
+     "end": 22.34
+    },
+    {
+     "id": "mk6s_5",
+     "text": "Now the a at door three. One step outwards. N, and n. They match.",
+     "start": 23.09,
+     "end": 27.53
+    },
+    {
+     "id": "mk6s_6",
+     "text": "One more step. Door one, and door five. What happens?",
+     "start": 28.28,
+     "end": 31.67
+    },
+    {
+     "id": "mk6s_7",
+     "text": "A, and a. They match. The next step would compare b with nothing. So it stops. A n a n a.",
+     "start": 32.87,
+     "end": 39.16
+    },
+    {
+     "id": "mk6s_8",
+     "text": "Line twelve does the same for a middle between two letters. That finds mirrors like, a b b a.",
+     "start": 40.26,
+     "end": 46.4
+    },
+    {
+     "id": "mk6s_9",
+     "text": "There are about two n middles. Each can grow up to n steps. O of n squared.",
+     "start": 47.15,
+     "end": 52.29
+    },
+    {
+     "id": "mk6s_10",
+     "text": "Only the best stretch is kept.",
+     "start": 53.04,
+     "end": 54.66
+    },
+    {
+     "id": "mk6s_11",
+     "text": "Growing outwards from one spot is how a text editor selects the whole word, when you double click inside it.",
+     "start": 55.41,
+     "end": 61.8
+    }
+   ],
+   "pauses": [
+    {
+     "id": "mk6s-q",
+     "t": 31.87
+    }
+   ]
+  },
+  "mk7i": {
+   "src": "videos/mk7i.mp4",
+   "title": "Round and Round",
+   "duration": 20.05,
+   "lines": [
+    {
+     "id": "mk7i_1",
+     "text": "A grid of numbers. One to nine.",
+     "start": 0.2,
+     "end": 2.34
+    },
+    {
+     "id": "mk7i_2",
+     "text": "Return them in spiral order. Start at the top left. Go right. And keep turning clockwise, towards the middle.",
+     "start": 3.04,
+     "end": 9.43
+    },
+    {
+     "id": "mk7i_3",
+     "text": "One, two, three. Six, nine. Eight, seven. Four. And five.",
+     "start": 10.13,
+     "end": 14.02
+    },
+    {
+     "id": "mk7i_4",
+     "text": "The clock is running. Say your plan out loud first. Your turn.",
+     "start": 14.72,
+     "end": 18.45
+    }
+   ],
+   "pauses": []
+  },
+  "mk7s": {
+   "src": "videos/mk7s.mp4",
+   "title": "Walk straight, turn when blocked",
+   "duration": 61.71,
+   "lines": [
+    {
+     "id": "mk7s_1",
+     "text": "You walk straight on. Until the next square is outside the grid. Or already taken.",
+     "start": 0.2,
+     "end": 5.45
+    },
+    {
+     "id": "mk7s_2",
+     "text": "Then you turn clockwise. Right, down, left, up. And again.",
+     "start": 6.2,
+     "end": 10
+    },
+    {
+     "id": "mk7s_3",
+     "text": "Line five. Start at the top left, heading right.",
+     "start": 10.75,
+     "end": 13.66
+    },
+    {
+     "id": "mk7s_4",
+     "text": "Take the one. The two. The three. Line eight marks each square as taken.",
+     "start": 14.41,
+     "end": 18.87
+    },
+    {
+     "id": "mk7s_5",
+     "text": "From the three, the next square to the right is outside the grid. What does line ten do?",
+     "start": 19.62,
+     "end": 24.79
+    },
+    {
+     "id": "mk7s_6",
+     "text": "It turns. Down. Six, and nine.",
+     "start": 25.98,
+     "end": 27.9
+    },
+    {
+     "id": "mk7s_7",
+     "text": "Outside again. Turn. Left. Eight, and seven.",
+     "start": 28.65,
+     "end": 31.44
+    },
+    {
+     "id": "mk7s_8",
+     "text": "Turn. Up. The four. Now the next square is the one. Not outside. But already taken. So turn again.",
+     "start": 32.19,
+     "end": 38.69
+    },
+    {
+     "id": "mk7s_9",
+     "text": "Right. The five. Nine squares are taken. The loop ends.",
+     "start": 39.44,
+     "end": 42.71
+    },
+    {
+     "id": "mk7s_10",
+     "text": "Every square is taken exactly once. O of R times C.",
+     "start": 43.81,
+     "end": 47.61
+    },
+    {
+     "id": "mk7s_11",
+     "text": "Apart from the answer, only a position and a heading.",
+     "start": 48.36,
+     "end": 51.4
+    },
+    {
+     "id": "mk7s_12",
+     "text": "A robot vacuum covers a room like this. Straight on, until a wall, or a spot it has already cleaned. Then it turns.",
+     "start": 52.15,
+     "end": 60.11
+    }
+   ],
+   "pauses": [
+    {
+     "id": "mk7s-q",
+     "t": 24.98
+    }
+   ]
+  },
+  "mk8i": {
+   "src": "videos/mk8i.mp4",
+   "title": "The Elder of the Hill",
+   "duration": 21.58,
+   "lines": [
+    {
+     "id": "mk8i_1",
+     "text": "Three animals. An arrow means, trusts. One trusts three. Two trusts three.",
+     "start": 0.2,
+     "end": 4.91
+    },
+    {
+     "id": "mk8i_2",
+     "text": "The elder is trusted by every other animal. And trusts nobody. Return the elder. Or minus one, if there is none.",
+     "start": 5.61,
+     "end": 13.27
+    },
+    {
+     "id": "mk8i_3",
+     "text": "Here, it is animal three.",
+     "start": 13.97,
+     "end": 15.55
+    },
+    {
+     "id": "mk8i_4",
+     "text": "The clock is running. Say your plan out loud first. Your turn.",
+     "start": 16.25,
+     "end": 19.98
+    }
+   ],
+   "pauses": []
+  },
+  "mk8s": {
+   "src": "videos/mk8s.mp4",
+   "title": "Count the arrows in and out",
+   "duration": 55.49,
+   "lines": [
+    {
+     "id": "mk8s_1",
+     "text": "The elder has an arrow in, from every other animal. And no arrow out.",
+     "start": 0.2,
+     "end": 4.59
+    },
+    {
+     "id": "mk8s_2",
+     "text": "So keep one score per animal. Plus one for an arrow in. Minus one for an arrow out.",
+     "start": 5.34,
+     "end": 10.88
+    },
+    {
+     "id": "mk8s_3",
+     "text": "Line two. Every score starts at zero.",
+     "start": 11.63,
+     "end": 14.23
+    },
+    {
+     "id": "mk8s_4",
+     "text": "One trusts three. An arrow out of one. An arrow into three.",
+     "start": 14.98,
+     "end": 18.79
+    },
+    {
+     "id": "mk8s_5",
+     "text": "Two trusts three. Minus one for two. Plus one for three.",
+     "start": 19.54,
+     "end": 23.55
+    },
+    {
+     "id": "mk8s_6",
+     "text": "There are three animals. Which score does the elder need?",
+     "start": 24.3,
+     "end": 27.68
+    },
+    {
+     "id": "mk8s_7",
+     "text": "Two. Animal three has it. Line eight returns three.",
+     "start": 28.88,
+     "end": 32.3
+    },
+    {
+     "id": "mk8s_8",
+     "text": "And if the elder trusted anyone, one point would be lost. Then nobody reaches two. Minus one.",
+     "start": 33.4,
+     "end": 39.68
+    },
+    {
+     "id": "mk8s_9",
+     "text": "One pass over the arrows, and one over the animals.",
+     "start": 40.43,
+     "end": 43.9
+    },
+    {
+     "id": "mk8s_10",
+     "text": "One score per animal.",
+     "start": 44.65,
+     "end": 46.04
+    },
+    {
+     "id": "mk8s_11",
+     "text": "A search engine began like this. Count the links pointing at a page. Many links in, means many people trust it.",
+     "start": 46.79,
+     "end": 53.89
+    }
+   ],
+   "pauses": [
+    {
+     "id": "mk8s-q",
+     "t": 27.88
+    }
+   ]
+  },
+  "mk9i": {
+   "src": "videos/mk9i.mp4",
+   "title": "Cut It Into Parts",
+   "duration": 21.77,
+   "lines": [
+    {
+     "id": "mk9i_1",
+     "text": "Six letters. A, b, a, c, d, d.",
+     "start": 0.2,
+     "end": 2.77
+    },
+    {
+     "id": "mk9i_2",
+     "text": "Cut the row into as many parts as possible. But every letter may appear in one part only.",
+     "start": 3.47,
+     "end": 9.1
+    },
+    {
+     "id": "mk9i_3",
+     "text": "A, b, a, must stay together. Then c, alone. Then the two d. Sizes three, one, two.",
+     "start": 9.8,
+     "end": 15.74
+    },
+    {
+     "id": "mk9i_4",
+     "text": "The clock is running. Say your plan out loud first. Your turn.",
+     "start": 16.44,
+     "end": 20.17
+    }
+   ],
+   "pauses": []
+  },
+  "mk9s": {
+   "src": "videos/mk9s.mp4",
+   "title": "A part ends where its letters end",
+   "duration": 62.32,
+   "lines": [
+    {
+     "id": "mk9s_1",
+     "text": "A part that contains a letter must reach at least to the last place of that letter.",
+     "start": 0.2,
+     "end": 4.87
+    },
+    {
+     "id": "mk9s_2",
+     "text": "So record every last place first. Then walk, and cut as soon as nothing reaches further.",
+     "start": 5.62,
+     "end": 11.14
+    },
+    {
+     "id": "mk9s_3",
+     "text": "Line three records the last place of every letter. A at two. B at one. C at three. D at five.",
+     "start": 11.89,
+     "end": 18.88
+    },
+    {
+     "id": "mk9s_4",
+     "text": "Door zero. An a. Its last place is two. So this part must reach door two.",
+     "start": 19.63,
+     "end": 24.48
+    },
+    {
+     "id": "mk9s_5",
+     "text": "Door one. A b. Its last place is one. That is not further. End stays two.",
+     "start": 25.23,
+     "end": 29.96
+    },
+    {
+     "id": "mk9s_6",
+     "text": "Door two. I is two. And end is two. What does that mean?",
+     "start": 30.71,
+     "end": 34.12
+    },
+    {
+     "id": "mk9s_7",
+     "text": "No letter of this part comes back. Cut. Size three.",
+     "start": 35.32,
+     "end": 38.5
+    },
+    {
+     "id": "mk9s_8",
+     "text": "The c ends where it stands. Cut. Size one. The d reaches door five. Cut there. Size two.",
+     "start": 39.25,
+     "end": 45.48
+    },
+    {
+     "id": "mk9s_9",
+     "text": "Two passes over the text. O of n.",
+     "start": 46.58,
+     "end": 49.11
+    },
+    {
+     "id": "mk9s_10",
+     "text": "One last place per different letter.",
+     "start": 49.86,
+     "end": 51.78
+    },
+    {
+     "id": "mk9s_11",
+     "text": "Work that shares nothing can run side by side. Splitting a job into such parts is what lets a computer use all its cores.",
+     "start": 52.53,
+     "end": 60.72
+    }
+   ],
+   "pauses": [
+    {
+     "id": "mk9s-q",
+     "t": 34.32
+    }
+   ]
+  },
+  "mk10i": {
+   "src": "videos/mk10i.mp4",
+   "title": "Paint the Doors",
+   "duration": 23.35,
+   "lines": [
+    {
+     "id": "mk10i_1",
+     "text": "Three doors, one per row. And three prices for each. Red, green, blue.",
+     "start": 0.2,
+     "end": 5.11
+    },
+    {
+     "id": "mk10i_2",
+     "text": "Paint every door. Two doors next to each other must not get the same colour. Return the lowest total price.",
+     "start": 5.81,
+     "end": 12.63
+    },
+    {
+     "id": "mk10i_3",
+     "text": "Green for two. Then blue for five. Then green for three. Ten.",
+     "start": 13.33,
+     "end": 17.32
+    },
+    {
+     "id": "mk10i_4",
+     "text": "The clock is running. Say your plan out loud first. Your turn.",
+     "start": 18.02,
+     "end": 21.75
+    }
+   ],
+   "pauses": []
+  },
+  "mk10s": {
+   "src": "videos/mk10s.mp4",
+   "title": "Three running bests",
+   "duration": 70.28,
+   "lines": [
+    {
+     "id": "mk10s_1",
+     "text": "For the doors so far, keep three totals. The cheapest way that ends in red. In green. And in blue.",
+     "start": 0.2,
+     "end": 6.74
+    },
+    {
+     "id": "mk10s_2",
+     "text": "A new red door goes after the cheaper of green and blue. Never after red.",
+     "start": 7.49,
+     "end": 12.33
+    },
+    {
+     "id": "mk10s_3",
+     "text": "Line two. All three totals start at zero.",
+     "start": 13.08,
+     "end": 15.9
+    },
+    {
+     "id": "mk10s_4",
+     "text": "The first door. Nothing comes before it. So the totals are just its prices.",
+     "start": 16.65,
+     "end": 21.37
+    },
+    {
+     "id": "mk10s_5",
+     "text": "The second door, in red. Sixteen. Plus the cheaper of green and blue so far. That is two. Eighteen.",
+     "start": 22.12,
+     "end": 28.7
+    },
+    {
+     "id": "mk10s_6",
+     "text": "The second door, in blue. Five. Plus the cheaper of red and green so far. What is the total?",
+     "start": 29.45,
+     "end": 35.68
+    },
+    {
+     "id": "mk10s_7",
+     "text": "Seven. And green is sixteen, plus seventeen. Thirty three.",
+     "start": 36.88,
+     "end": 40.63
+    },
+    {
+     "id": "mk10s_8",
+     "text": "The third door. Red is twenty one. Green is three, plus seven. Ten. Blue is thirty seven.",
+     "start": 41.38,
+     "end": 47.41
+    },
+    {
+     "id": "mk10s_9",
+     "text": "Line eleven returns the smallest. Ten. Green, blue, green.",
+     "start": 48.16,
+     "end": 52.73
+    },
+    {
+     "id": "mk10s_10",
+     "text": "One pass. Three small sums per door. O of n.",
+     "start": 53.83,
+     "end": 57.17
+    },
+    {
+     "id": "mk10s_11",
+     "text": "Three numbers, however long the row is.",
+     "start": 57.92,
+     "end": 60.36
+    },
+    {
+     "id": "mk10s_12",
+     "text": "A phone keyboard guesses your sentence like this. One best total for each possible word. Carried forward, word by word.",
+     "start": 61.11,
+     "end": 68.68
+    }
+   ],
+   "pauses": [
+    {
+     "id": "mk10s-q",
+     "t": 35.88
     }
    ]
   }

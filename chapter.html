@@ -268,6 +268,21 @@ a{color:var(--plum)}
   .acts .btn{flex:1;white-space:nowrap;padding:12px 10px;font-size:15px}
   .acts #run{flex:1.3}
 }
+
+/* ---------- interview mode (chapters with mock: true) ---------- */
+.clock{display:inline-flex;align-items:center;gap:8px;font-family:var(--head);font-weight:600;font-size:15px;background:var(--soft);border-radius:99px;padding:6px 14px;margin:0 0 12px}
+.clock b{font-family:var(--mono);font-weight:700;font-variant-numeric:tabular-nums}
+.clock.over{background:#FBD9D2}
+.rep{width:100%;border-collapse:collapse;margin:14px 0;font-size:15px}
+.rep th{font-family:var(--head);font-weight:600;font-size:13px;letter-spacing:.6px;color:var(--ink2);text-align:left;padding:6px 8px;border-bottom:1.5px solid var(--line)}
+.rep td{padding:9px 8px;border-bottom:1.5px solid var(--line);vertical-align:top}
+.rep td:first-child{font-weight:800}
+.pill{display:inline-block;font-family:var(--head);font-weight:600;font-size:13px;border-radius:99px;padding:3px 10px;white-space:nowrap}
+.pill.s{background:var(--meadow);color:#17603F}.pill.o{background:var(--soft)}.pill.w{background:#FBD9D2;color:#8E2A18}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin:12px 0}
+.two div{border-radius:16px;padding:14px 16px;background:var(--meadow)}.two div+div{background:#FFF0BF}
+.two h3{margin:0 0 6px;font-size:17px}.two ul{margin:0;padding-left:18px}
+@media(max-width:700px){.rep th:nth-child(4),.rep td:nth-child(4){display:none}.rep{font-size:14px}.rep th,.rep td{padding:8px 4px}.pill{white-space:normal;font-size:12px;padding:3px 8px}}
 </style>
 </head>
 <body>
@@ -470,8 +485,9 @@ function problem(st) {
   const P = st.p, id = P.id, m = $('#main'); m.innerHTML = '';
   const review = S.solvedAt[id] && !S.seen['rev-' + id] && Date.now() - S.solvedAt[id] > 18 * 3600e3;
   const c = h(`<section class="card"><h2>${st.label}: ${esc(P.title)}</h2><div class="cols"><div class="l"></div><div class="r">
-    <p>${P.ask}</p>${specHTML(P.spec)}
-    <div class="plan"><b>Before you code, think it through</b><ol>${P.plan.map((t) => `<li>${esc(t)}</li>`).join('')}</ol><span>Stuck after that? The first hint is free.</span></div>
+    ${CH.mock ? `<div class="clock" id="clock">Your time <b>0:00</b><span>· aim for ${CH.target || 20} min</span></div>` : ''}<p>${P.ask}</p>${specHTML(P.spec)}
+    ${CH.mock ? `<div class="plan"><b>Interview rules</b><ol><li>Say the task back in your own words.</li><li>Work one small example by hand.</li><li>Say your approach and what it costs, before you type.</li></ol><span>Nothing here names the pattern. Hints and the solution are allowed, but they are counted in your report.</span></div>`
+      : `<div class="plan"><b>Before you code, think it through</b><ol>${P.plan.map((t) => `<li>${esc(t)}</li>`).join('')}</ol><span>Stuck after that? The first hint is free.</span></div>`}
     <label for="code-${id}" class="sub">YOUR CODE (JAVASCRIPT)</label>
     <textarea id="code-${id}" spellcheck="false" autocapitalize="off" autocomplete="off"></textarea>
     <div class="row acts"><button class="btn go" id="run">Run tests</button><button class="btn quiet" id="hint">Hint</button><button class="btn quiet" id="show">Solution</button></div><div class="row" style="margin-top:8px"><button class="btn quiet" id="reset" style="box-shadow:none;text-decoration:underline;padding:6px 4px;background:none">Start over</button></div>
@@ -482,6 +498,10 @@ function problem(st) {
   ta.addEventListener('input', () => { S.code[id] = ta.value; save(); });
   ta.addEventListener('keydown', (e) => { if (e.key === 'Tab') { e.preventDefault(); const a = ta.selectionStart; ta.setRangeText('  ', a, ta.selectionEnd, 'end'); S.code[id] = ta.value; } });
   const used = () => S.hints[id] || 0;
+  // interview mode: the clock runs only while this puzzle is open, unsolved, and the tab is visible
+  if (CH.mock) { S.secs = S.secs || {}; const ck = $('#clock', c), fmtT = (n) => Math.floor(n / 60) + ':' + String(n % 60).padStart(2, '0');
+    const paint = () => { const n = S.secs[id] || 0; $('b', ck).textContent = fmtT(n); ck.classList.toggle('over', n > (CH.target || 20) * 60); }; paint();
+    const tick = setInterval(() => { if (!c.isConnected) { clearInterval(tick); return; } if (S.done[id] || S.seen['sol-' + id] || document.visibilityState !== 'visible') return; S.secs[id] = (S.secs[id] || 0) + 1; paint(); if (S.secs[id] % 5 === 0) save(); }, 1000); }
   const drawHints = () => { $('#hints', c).innerHTML = P.hints.slice(0, used()).map((t, i) => `<div class="hint"><b>Hint ${i + 1}.</b> ${esc(t)}</div>`).join(''); $('#hint', c).disabled = used() >= P.hints.length; $('#hint', c).textContent = used() >= P.hints.length ? 'No hints left' : (used() === 0 ? 'Hint' : `Hint (${P.hints.length - used()} left)`); };
   $('#hint', c).onclick = () => { S.hints[id] = used() + 1; save(); drawHints(); };
   $('#reset', c).onclick = () => { ta.value = P.start; S.code[id] = P.start; save(); $('#res', c).innerHTML = ''; ta.focus(); };
@@ -496,7 +516,7 @@ function problem(st) {
     const w = $('#why', s); if (w) { w.value = S.why[id] || ''; w.addEventListener('input', () => { S.why[id] = w.value; save(); }); }
     host.append(s); if (scroll) host.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
-  $('#show', c).onclick = () => { S.seen['sol-' + id] = true; save(); drawTrail(); tail(); showSol(true); };
+  $('#show', c).onclick = () => { if (!S.done[id]) { S.peek = S.peek || {}; S.peek[id] = true; } S.seen['sol-' + id] = true; save(); drawTrail(); tail(); showSol(true); };
   $('#run', c).onclick = async () => {
     const code = ta.value, res = $('#res', c); S.runs[id] = (S.runs[id] || 0) + 1; save();
     const plain = code.replace(/\/\/.*$/gm, ''); const hit = (P.forbid || []).find((f) => new RegExp(f.re).test(plain));
@@ -584,13 +604,26 @@ function walk(P, host) {
 }
 
 // ---------- end of chapter ----------
+// interview mode: one row per puzzle, then what went well and what to practise, by topic
+function mockReport() {
+  const T = (CH.target || 20) * 60, fmtT = (n) => Math.floor(n / 60) + ':' + String(n % 60).padStart(2, '0'), strong = [], weak = [];
+  const rows = CH.problems.map((p) => { const secs = (S.secs || {})[p.id] || 0, hints = S.hints[p.id] || 0, runs = S.runs[p.id] || 0, peek = (S.peek || {})[p.id], done = S.done[p.id];
+    const grade = !done && !peek ? ['', 'not tried yet'] : peek || hints >= 2 ? ['w', 'needs work'] : hints === 1 || secs > T ? ['o', 'nearly there'] : ['s', 'strong'];
+    const topic = p.topic ? `<a href="${p.topic.href}">${esc(p.topic.name)}</a>` : ''; if (grade[0] === 's' && topic) strong.push(topic); if (grade[0] === 'w' && topic) weak.push(topic);
+    return `<tr><td>${esc(p.title)}</td><td>${grade[0] ? fmtT(secs) : ''}</td><td>${grade[0] ? hints + (peek ? ' + solution' : '') : ''}</td><td>${grade[0] ? runs : ''}</td><td>${grade[0] ? `<span class="pill ${grade[0]}">${grade[1]}</span>` : grade[1]}</td></tr>`; }).join('');
+  const uniq = (a) => [...new Set(a)];
+  return `<h3 style="margin:18px 0 0">Your interview report</h3><table class="rep"><tr><th>Puzzle</th><th>Time</th><th>Hints</th><th>Runs</th><th>Result</th></tr>${rows}</table>
+  <div class="two"><div><h3>Your strengths</h3>${strong.length ? `<ul>${uniq(strong).map((t) => `<li>${t}</li>`).join('')}</ul>` : '<p style="margin:0">Solve a puzzle with no hints, inside the time, and its topic shows up here.</p>'}</div>
+  <div><h3>Practise next</h3>${weak.length ? `<ul>${uniq(weak).map((t) => `<li>${t}</li>`).join('')}</ul>` : '<p style="margin:0">Nothing yet. Topics where you needed two hints or the solution show up here.</p>'}</div></div>
+  <p class="sub" style="white-space:normal">Strong: no hints, inside ${CH.target || 20} minutes. Nearly there: one hint, or over time. Needs work: two hints or more, or the solution.</p>`;
+}
 function finish() {
   const m = $('#main'); m.innerHTML = ''; S.at = 'end'; save(); drawTrail();
   const ids = Object.keys(QUIZ), first = ids.filter((k) => S.quiz[k] && S.quiz[k].ok && S.quiz[k].tries === 1).length;
   const solved = CH.problems.filter((p) => S.done[p.id]).length, hints = CH.problems.reduce((a, p) => a + (S.hints[p.id] || 0), 0);
   const c = h(`<section class="card"><h2>${esc(CH.title)}: chapter complete</h2>
   <div class="sum"><div><b>${first} / ${ids.length}</b>video guesses right first time</div><div><b>${solved} / ${CH.problems.length}</b>problems solved</div><div><b>${hints}</b>hints used</div><div><b>${S.xp}</b>XP</div></div>
-  <p>Come back tomorrow and solve the problems again from a blank editor. That second solve is what makes them stick.</p>
+  ${CH.mock ? mockReport() : ''}<p>Come back tomorrow and solve the problems again from a blank editor. That second solve is what makes them stick.</p>
   <div class="row">${CH.next ? `<a class="btn go" href="${CH.next.href}" style="text-decoration:none">Continue: ${esc(CH.next.label)} →</a>` : ''}<a class="btn quiet" href="index.html#chapters" style="text-decoration:none">All chapters</a></div></section>`);
   m.append(c);
 }
