@@ -393,6 +393,8 @@ function drawSteps() {
   box.innerHTML = '';
   STAGES.forEach((st, i) => { const b = h(`<button class="srow ${S.done[st.id] ? 'done' : ''}" ${unlocked(i) ? '' : 'disabled'} aria-current="${S.at === st.id}"><i>${S.done[st.id] ? '✓' : ''}</i><span><b>${safe(st.label)}</b> · ${safe(st.name)}</span></button>`);
     b.onclick = () => { document.getElementById('steps').open = false; go(st.id); }; box.append(b); });
+  const rs = h('<button class="srow" style="grid-column:1/-1;justify-content:center;text-decoration:underline;color:var(--ink2);font-size:14px">Start this chapter again (clears its progress)</button>');
+  rs.onclick = () => { if (confirm('Clear your progress, code and XP for this chapter on this device? This cannot be undone.')) { try { localStorage.removeItem(KEY); } catch (e) {} location.href = location.pathname + location.search; } }; box.append(rs);
 }
 // examples "f(1) → 2      f(3) → 4" become one row each
 function specHTML(spec) {

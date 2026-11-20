@@ -330,6 +330,8 @@ function drawSteps() {
   box.innerHTML = '';
   STAGES.forEach((st, i) => { const b = h(`<button class="srow ${S.done[st.id] ? 'done' : ''}" ${unlocked(i) ? '' : 'disabled'} aria-current="${S.at === st.id}"><i>${S.done[st.id] ? '✓' : ''}</i><span><b>${safe(st.label)}</b> · ${safe(st.name)}</span></button>`);
     b.onclick = () => { document.getElementById('steps').open = false; go(st.id); }; box.append(b); });
+  const rs = h('<button class="srow" style="grid-column:1/-1;justify-content:center;text-decoration:underline;color:var(--ink2);font-size:14px">Start this chapter again (clears its progress)</button>');
+  rs.onclick = () => { if (confirm('Clear your progress, code and XP for this chapter on this device? This cannot be undone.')) { try { localStorage.removeItem(KEY); } catch (e) {} location.href = location.pathname + location.search; } }; box.append(rs);
 }
 // examples "f(1) → 2      f(3) → 4" become one row each
 function specHTML(spec) {
@@ -621,15 +623,17 @@ function finish() {
   const m = $('#main'); m.innerHTML = ''; S.at = 'end'; save(); drawTrail();
   const ids = Object.keys(QUIZ), first = ids.filter((k) => S.quiz[k] && S.quiz[k].ok && S.quiz[k].tries === 1).length;
   const solved = CH.problems.filter((p) => S.done[p.id]).length, hints = CH.problems.reduce((a, p) => a + (S.hints[p.id] || 0), 0);
-  const c = h(`<section class="card"><h2>${esc(CH.title)}: chapter complete</h2>
+  const c = h(`<section class="card"><h2>${CH.mock ? 'Mock interviews: how it went' : esc(CH.title) + ': chapter complete'}</h2>
   <div class="sum"><div><b>${first} / ${ids.length}</b>video guesses right first time</div><div><b>${solved} / ${CH.problems.length}</b>problems solved</div><div><b>${hints}</b>hints used</div><div><b>${S.xp}</b>XP</div></div>
   ${CH.mock ? mockReport() : ''}<p>Come back tomorrow and solve the problems again from a blank editor. That second solve is what makes them stick.</p>
-  <div class="row">${CH.next ? `<a class="btn go" href="${CH.next.href}" style="text-decoration:none">Continue: ${esc(CH.next.label)} →</a>` : ''}<a class="btn quiet" href="index.html#chapters" style="text-decoration:none">All chapters</a></div></section>`);
+  <div class="row">${CH.next ? `<a class="btn go" href="${CH.next.href}" style="text-decoration:none">Continue: ${esc(CH.next.label)} →</a>` : ''}<a class="btn quiet" href="index.html#course" style="text-decoration:none">All chapters</a></div></section>`);
   m.append(c);
 }
 
 window.addEventListener('resize', () => { if (S.at !== 'end') drawTrail(); });
-save(); drawTrail(); S.at === 'end' ? finish() : go(STAGES.some((s, i) => s.id === S.at && unlocked(i)) ? S.at : STAGES[0].id);
+// a link can name a step: chapter.html?c=arrays#ar3 opens that puzzle if it is unlocked
+const WANT = location.hash.slice(1), wantOk = STAGES.some((s, i) => s.id === WANT && unlocked(i));
+save(); drawTrail(); S.at === 'end' && !wantOk ? finish() : go(wantOk ? WANT : STAGES.some((s, i) => s.id === S.at && unlocked(i)) ? S.at : STAGES[0].id);
 </script>
 </body>
 </html>
