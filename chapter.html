@@ -336,7 +336,7 @@ const NOTES = CH.notes || {}, QUIZ = CH.quiz || {};
 // ---------- trail ----------
 // the line under the step bar, and the list of steps that opens from it
 // ---------- code editor: loaded only when a puzzle is opened; the text box is the fallback ----------
-const EDITOR_SUGGEST = false;
+const EDITOR_SUGGEST = true; // suggestions; always off in the mock interviews
 let editorWait = null;
 function needEditor() {
   if (window.BurrowEditor) return Promise.resolve(window.BurrowEditor);
