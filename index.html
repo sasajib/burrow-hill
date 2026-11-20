@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
 <title>Burrow Hill</title>
-<meta name="description" content="A prototype for learning data structures and algorithms: watch the idea happen, guess what comes next, then write the code.">
+<meta name="description" content="A visual course in data structures and algorithms: watch the idea happen, guess what comes next, then write the code.">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;700;800&family=JetBrains+Mono:wght@500;700&display=swap">
 <style>
 /* layout: yellow hero with the cast, then alternating cream and plum bands, one idea per band */
@@ -35,11 +35,11 @@ p{margin:0 0 14px;max-width:64ch}
 .dark .frame{border-color:var(--cream);box-shadow:9px 11px 0 var(--coral)}
 .frame video{display:block;width:100%;height:100%}
 .cap{font-family:var(--mono);font-size:13.500px;font-weight:700;margin-top:14px}
-.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:22px}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin-top:22px}
 .step{background:var(--cream);color:var(--plum);border:4px solid var(--plum);border-radius:18px;padding:18px;box-shadow:6px 7px 0 var(--plum)}
 .dark .step{box-shadow:6px 7px 0 var(--coral)}
 .step b{display:block;font-family:var(--mono);font-size:13px;letter-spacing:2px;margin-bottom:6px}
-.step p{font-size:16px;margin:0}
+.step p{font-size:15px;margin:0}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:22px;margin-top:22px}
 .vid h3{margin-top:14px;font-size:19px}
 .vid p{font-size:15.500px;margin:0}
@@ -47,15 +47,19 @@ p{margin:0 0 14px;max-width:64ch}
 .two{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:36px;align-items:start}
 ul.plain{list-style:none;margin:0;padding:0;display:grid;gap:10px}
 ul.plain li{border-left:6px solid var(--coral);padding:2px 0 2px 14px;max-width:60ch}
-.parth{grid-column:1/-1;margin:18px 0 -6px;font-size:1.25rem;color:var(--plum)}.parth span{font-weight:400;opacity:.75;font-size:1rem}
-.chap{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px;margin-top:22px}
-.chcard{display:flex;flex-direction:column;gap:6px;text-decoration:none;color:var(--plum);background:#fff;border:5px solid var(--plum);border-radius:20px;padding:0 20px 18px;box-shadow:8px 10px 0 var(--plum);overflow:hidden}
-.chcard img{display:block;width:calc(100% + 40px);max-width:none;margin:0 -20px 12px;aspect-ratio:16/9;object-fit:cover;border-bottom:5px solid var(--plum)}
-.chcard .kick{margin:0}
-.chcard b{font-size:30px;font-weight:800;line-height:1.1}
-.chcard span{font-size:16px}
-.chcard i{font-style:normal;font-weight:800;margin-top:8px;align-self:flex-start;background:var(--coral);border:4px solid var(--plum);border-radius:12px;padding:8px 16px}
+.parth{grid-column:1/-1;margin:34px 0 -2px;padding-top:22px;border-top:4px solid var(--plum);font-size:30px;line-height:1.1;color:var(--plum);scroll-margin-top:16px}.parth:first-child{margin-top:8px}.parth em{display:block;font-style:normal;font-family:var(--mono);font-size:13px;letter-spacing:3px;text-transform:uppercase;color:var(--teal);margin-bottom:6px}.parth span{display:block;font-weight:500;opacity:.8;font-size:16px;margin-top:6px}
+.chap{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:18px;margin-top:10px}
+.chcard{display:flex;flex-direction:column;gap:6px;text-decoration:none;color:var(--plum);background:#fff;border:4px solid var(--plum);border-radius:16px;padding:0 16px 14px;box-shadow:5px 6px 0 var(--plum);overflow:hidden;transition:transform .12s,box-shadow .12s}
+.chcard:hover{transform:translate(-2px,-2px);box-shadow:8px 9px 0 var(--plum)}
+.chcard img{display:block;width:calc(100% + 32px);max-width:none;margin:0 -16px 10px;aspect-ratio:16/9;object-fit:cover;border-bottom:4px solid var(--plum)}
+.chcard .kick{margin:0;font-size:12px;letter-spacing:2px;color:var(--teal)}
+.chcard b{font-size:22px;font-weight:800;line-height:1.15}
+.chcard span{font-size:14.5px;line-height:1.4}
+.chcard i{font-style:normal;font-weight:800;font-size:14px;margin-top:auto;align-self:flex-start;background:var(--coral);border:3px solid var(--plum);border-radius:10px;padding:6px 12px}
+.chcard span:not(.kick){margin-bottom:10px}
 .chcard:focus-visible{outline:4px solid var(--teal);outline-offset:3px}
+.strip{background:var(--plum);padding:18px 0}.strip .stat{margin:0;grid-template-columns:repeat(auto-fit,minmax(130px,1fr))}.strip .stat div{border:0;background:transparent;color:var(--cream);padding:4px 8px;font-family:var(--mono);font-size:13px;letter-spacing:1px;text-transform:uppercase}.strip .stat b{font-family:var(--display);color:var(--sky);letter-spacing:0;text-transform:none}
+.parts{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 0}.parts a{font-family:var(--mono);font-weight:700;font-size:13.5px;text-decoration:none;color:var(--plum);background:#fff;border:3px solid var(--plum);border-radius:999px;padding:7px 14px}.parts a:hover{background:var(--sky)}
 .stat{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin:20px 0 6px}
 .stat div{border:4px solid var(--plum);border-radius:14px;background:#fff;padding:12px 14px;font-size:15px}
 .stat b{display:block;font-size:34px;font-weight:800;line-height:1.1;font-variant-numeric:tabular-nums}
@@ -63,8 +67,8 @@ ul.plain li{border-left:6px solid var(--coral);padding:2px 0 2px 14px;max-width:
 .pipe span{background:var(--cream);color:var(--plum);border:3px solid var(--cream);border-radius:999px;padding:6px 14px}
 .pipe i{font-style:normal;color:var(--coral)}
 footer{padding-block:28px;font-family:var(--mono);font-size:13px}
-@media(max-width:820px){.hero{grid-template-columns:minmax(0,1fr);gap:22px}.band{padding-block:40px}body{font-size:16.500px}.cast svg{width:84px}.cast svg:last-child{width:104px}.btn{padding:10px 16px}.two{gap:26px}.chcard b{font-size:25px}.stat b{font-size:28px}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media(max-width:820px){.hero{grid-template-columns:minmax(0,1fr);gap:22px}.band{padding-block:40px}body{font-size:16.500px}.cast svg{width:84px}.cast svg:last-child{width:104px}.btn{padding:10px 16px}.two{gap:26px}.chcard b{font-size:21px}.parth{font-size:25px}.stat b{font-size:28px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.chcard{transition:none}.chcard:hover{transform:none}}
 </style>
 </head>
 <body>
@@ -72,10 +76,10 @@ footer{padding-block:28px;font-family:var(--mono);font-size:13px}
 <header class="band sky">
   <div class="in hero">
     <div>
-      <p class="kick">Prototype · Data structures and algorithms</p>
+      <p class="kick">Data structures and algorithms · a visual course</p>
       <h1>Burrow Hill</h1>
       <p class="lede">Watch the idea happen. Guess what comes next. Then write the code.</p>
-      <div class="btns"><a class="btn" href="#chapters">Try a chapter</a><a class="btn alt" href="#watch">Watch the videos</a></div>
+      <div class="btns"><a class="btn" href="foundations.html">Start with Part 0</a><a class="btn alt" href="#chapters">All chapters</a></div>
       <div class="cast" aria-hidden="true"><svg width="120" viewBox="0 0 200 220">
  <g><ellipse cx="98" cy="50" rx="14" ry="46" fill="#E24A3E" stroke="#2B1B4A" stroke-width="7" stroke-linejoin="round" stroke-linecap="round" transform="rotate(-14 98 90)"/>
  <ellipse cx="124" cy="48" rx="14" ry="48" fill="#FF6B5E" stroke="#2B1B4A" stroke-width="7" stroke-linejoin="round" stroke-linecap="round" transform="rotate(4 124 90)"/><ellipse cx="124" cy="50" rx="5" ry="30" fill="#FFF6E0" transform="rotate(4 124 90)"/></g>
@@ -115,6 +119,8 @@ footer{padding-block:28px;font-family:var(--mono);font-size:13px}
   </div>
 </header>
 
+<div class="strip"><div class="in"><div class="stat"><div><b>6</b>parts</div><div><b>23</b>chapters</div><div><b>370</b>videos</div><div><b>295 min</b>of animation</div><div><b>149</b>coding puzzles</div><div><b>28</b>practice questions</div></div></div></div>
+
 <section class="band">
   <div class="in two">
     <div>
@@ -135,29 +141,30 @@ footer{padding-block:28px;font-family:var(--mono);font-size:13px}
   </div>
 </section>
 
-<section class="band dark">
+<section class="band dark" id="how">
   <div class="in">
-    <p class="kick">One chapter, start to finish</p>
-    <h2>Three short lessons, then problems with their own videos.</h2>
+    <p class="kick">How a chapter works</p>
+    <h2>Watch, guess, code, step through.</h2>
     <div class="steps">
-      <div class="step"><b>1 · WELCOME</b><p>Who the characters are and what the chapter will answer.</p></div>
-      <div class="step"><b>2 · THEORY</b><p>The problem first, then the idea, worked out step by step. The video pauses for the learner's guess.</p></div>
-      <div class="step"><b>3 · PROBLEMS</b><p>Four to eight interview problems. Each opens with a short story video and is solved in a code editor on the page.</p></div>
-      <div class="step"><b>4 · SOLUTIONS</b><p>Every problem has its own solution video: the idea, then each line of code acted out, then a step-through you click yourself.</p></div>
-      <div class="step"><b>5 · REVIEW</b><p>The next day the editor is blank. Solving again from memory is what makes it stick.</p></div>
+      <div class="step"><b>1 · WATCH</b><p>One to three short lessons. A problem first, then the idea, acted out by the characters.</p></div>
+      <div class="step"><b>2 · GUESS</b><p>Each lesson stops once and asks what comes next. You answer before you see it.</p></div>
+      <div class="step"><b>3 · CODE</b><p>Three to eight puzzles per chapter. Each opens with a 20-second story and is solved in an editor on the page, checked by tests.</p></div>
+      <div class="step"><b>4 · STEP THROUGH</b><p>Every puzzle has a solution video, line by line, where it is used in the real world, and a step-through you click yourself.</p></div>
+      <div class="step"><b>5 · MIX</b><p>Each part ends with a mixed set: puzzles from all its chapters, with no labels. Picking the tool is the test.</p></div>
     </div>
   </div>
 </section>
 
 <section class="band" id="chapters">
   <div class="in">
-    <p class="kick">Try it yourself</p>
-    <h2>Pick a chapter.</h2>
-    <p>The course is split into <b>parts</b>, and each part into numbered <b>chapters</b>. A part ends with a mixed set: puzzles from all its chapters with no labels. Everything runs in the browser: videos that stop for your guess, then practice. Start with Part 0; chapter 1 introduces Burrow Hill and its characters.</p>
+    <p class="kick">The course</p>
+    <h2>Six parts, in order.</h2>
+    <p>Each part builds on the one before it. Start with Part 0 if this is new; jump ahead if it is not. Everything runs in the browser, and your progress is saved on this device.</p>
+    <nav class="parts" aria-label="Parts"><a href="#p0">0 · Foundations</a><a href="#p1">1 · Rows and chains</a><a href="#p2">2 · Recursion, search, sort</a><a href="#p3">3 · Trees, heaps, tries</a><a href="#p4">4 · Graphs</a><a href="#p5">5 · Backtracking, DP</a></nav>
     <div class="chap">
-      <h3 class="parth">Part 0: Foundations <span>· start here, no chapters</span></h3>
+      <h3 class="parth" id="p0"><em>Part 0</em> Foundations <span>start here, no chapters</span></h3>
       <a class="chcard" href="foundations.html"><img src="posters/f4.jpg" alt="" loading="lazy"><span class="kick">Six lessons</span><b>Foundations</b><span>How a computer works, loops and the call stack, the Big O shapes and rules, memory, and reading input limits. Six lessons and 28 practice questions. About 8 minutes of video.</span><i>Open Part 0 →</i></a>
-      <h3 class="parth">Part 1: Rows and chains <span>· chapters 1 to 9, then a mixed set</span></h3>
+      <h3 class="parth" id="p1"><em>Part 1</em> Rows and chains <span>chapters 1 to 9, then a mixed set</span></h3>
       <a class="chcard" href="chapter.html?c=arrays"><img src="posters/art1.jpg" alt="" loading="lazy"><span class="kick">Chapter 1</span><b>Arrays</b><span>Meet Pip and Moss. Why any door is one jump away, what a row makes slow, and six problems, each with its own solution video. About 10 minutes of video.</span><i>Open chapter 1 →</i></a>
       <a class="chcard" href="chapter.html?c=strings"><img src="posters/srt2.jpg" alt="" loading="lazy"><span class="kick">Chapter 2</span><b>Strings</b><span>Why a word is a read-only row, why every change is a copy, and how letters become numbers you can count. Four problems, each with its own solution video. About 8 minutes of video.</span><i>Open chapter 2 →</i></a>
       <a class="chcard" href="chapter.html?c=hashmap"><img src="posters/hwt1.jpg" alt="" loading="lazy"><span class="kick">Chapter 3</span><b>Hash Maps</b><span>Meet Hazel. How a key becomes a door number, and the three questions a map answers in one step. Six problems, each with its own solution video. About 10 minutes of video.</span><i>Open chapter 3 →</i></a>
@@ -168,70 +175,27 @@ footer{padding-block:28px;font-family:var(--mono);font-size:13px}
       <a class="chcard" href="chapter.html?c=queue"><img src="posters/qut1.jpg" alt="" loading="lazy"><span class="kick">Chapter 8</span><b>Queues</b><span>First in, first out, and the trap that makes a JavaScript queue slow. A short chapter: one lesson and two problems. About 5 minutes of video.</span><i>Open chapter 8 →</i></a>
       <a class="chcard" href="chapter.html?c=linked"><img src="posters/llt1.jpg" alt="" loading="lazy"><span class="kick">Chapter 9</span><b>Linked Lists</b><span>Nodes and arrows: slow to reach, cheap to change. Save next, the dummy node, and fast and slow walkers. Six problems written with real node code. About 11 minutes of video.</span><i>Open chapter 9 →</i></a>
       <a class="chcard" href="chapter.html?c=mixed1"><img src="posters/mx0.jpg" alt="" loading="lazy"><span class="kick">Part 1 · Mixed set</span><b>Mixed Set 1</b><span>Ten new puzzles from chapters 1 to 9, with no labels. Choosing the tool is the exercise; each solution video names it at the end. About 14 minutes of video.</span><i>Open mixed set 1 →</i></a>
-      <h3 class="parth">Part 2: Recursion, searching and sorting <span>· chapters 10 to 13, then a mixed set</span></h3>
+      <h3 class="parth" id="p2"><em>Part 2</em> Recursion, searching and sorting <span>chapters 10 to 13, then a mixed set</span></h3>
       <a class="chcard" href="chapter.html?c=recur"><img src="posters/rct1.jpg" alt="" loading="lazy"><span class="kick">Chapter 10</span><b>Recursion</b><span>A function that calls itself: the base case, the step, the call stack, and why to trust the smaller answer. Four problems, the last one with a memo. About 9 minutes of video.</span><i>Open chapter 10 →</i></a>
       <a class="chcard" href="chapter.html?c=bsearch"><img src="posters/bst1.jpg" alt="" loading="lazy"><span class="kick">Chapter 11</span><b>Binary Search</b><span>Halve what is left with every look: the exact loop, the first-that-fits edge, and searching the answer itself. Seven problems. About 17 minutes of video.</span><i>Open chapter 11 →</i></a>
       <a class="chcard" href="chapter.html?c=sorting"><img src="posters/sgt1.jpg" alt="" loading="lazy"><span class="kick">Chapter 12</span><b>Sorting</b><span>What a sort costs, how to sort by your own rule, and how to spot the problems that become easy once the input is in order. Three problems. About 6 minutes of video.</span><i>Open chapter 12 →</i></a>
       <a class="chcard" href="chapter.html?c=intervals"><img src="posters/ivt1.jpg" alt="" loading="lazy"><span class="kick">Chapter 13</span><b>Intervals</b><span>Things with a start and an end: sort them, sweep once, and merge, count or pick as you go. Five problems. About 11 minutes of video.</span><i>Open chapter 13 →</i></a>
       <a class="chcard" href="chapter.html?c=mixed2"><img src="posters/my0.jpg" alt="" loading="lazy"><span class="kick">Part 2 · Mixed set</span><b>Mixed Set 2</b><span>Ten new puzzles from everything so far, with no chapter label: choosing the tool is the exercise. Each has an intro and a solution video. About 18 minutes of video.</span><i>Open mixed set 2 →</i></a>
-      <h3 class="parth">Part 3: Trees, heaps and tries <span>· chapters 14 to 17, then a mixed set</span></h3>
+      <h3 class="parth" id="p3"><em>Part 3</em> Trees, heaps and tries <span>chapters 14 to 17, then a mixed set</span></h3>
       <a class="chcard" href="chapter.html?c=trees"><img src="posters/trt1.jpg" alt="" loading="lazy"><span class="kick">Chapter 14</span><b>Binary Trees</b><span>A node with two children. Walk it deep first with recursion, or level by level with a queue, and know when to pick which. Eight problems. About 17 minutes of video.</span><i>Open chapter 14 →</i></a>
       <a class="chcard" href="chapter.html?c=bst"><img src="posters/btt1.jpg" alt="" loading="lazy"><span class="kick">Chapter 15</span><b>Binary Search Trees</b><span>A tree with one rule: smaller on the left, bigger on the right. Search by picking a side, and read it in sorted order. Four problems. About 10 minutes of video.</span><i>Open chapter 15 →</i></a>
       <a class="chcard" href="chapter.html?c=heaps"><img src="posters/hpt1.jpg" alt="" loading="lazy"><span class="kick">Chapter 16</span><b>Heaps</b><span>The smallest item on demand while new ones keep arriving. Write push and pop yourself, then use a heap for top-k, merging and the running median. Six problems. About 15 minutes of video.</span><i>Open chapter 16 →</i></a>
       <a class="chcard" href="chapter.html?c=tries"><img src="posters/ttt1.jpg" alt="" loading="lazy"><span class="kick">Chapter 17</span><b>Tries</b><span>A tree for words: words that begin the same way share a path. Add a word, look one up, and finish a prefix. Three problems. About 7 minutes of video.</span><i>Open chapter 17 →</i></a>
       <a class="chcard" href="chapter.html?c=mixed3"><img src="posters/mz0.jpg" alt="" loading="lazy"><span class="kick">Part 3 · Mixed set</span><b>Mixed Set 3</b><span>Eight new puzzles on trees, search trees, heaps, tries and everything before, with no chapter label. Each has an intro and a solution video. About 15 minutes of video.</span><i>Open mixed set 3 →</i></a>
-      <h3 class="parth">Part 4: Graphs <span>· chapters 18 to 21, then a mixed set</span></h3>
+      <h3 class="parth" id="p4"><em>Part 4</em> Graphs <span>chapters 18 to 21, then a mixed set</span></h3>
       <a class="chcard" href="chapter.html?c=graphs"><img src="posters/grt1.jpg" alt="" loading="lazy"><span class="kick">Chapter 18</span><b>Graphs and Grids</b><span>Things, and what joins them: maps, friends, mazes. Build neighbour lists, keep a seen set, walk deep to explore and level by level for the fewest steps. Seven problems. About 13 minutes of video.</span><i>Open chapter 18 →</i></a>
       <a class="chcard" href="chapter.html?c=topo"><img src="posters/tot1.jpg" alt="" loading="lazy"><span class="kick">Chapter 19</span><b>Topological Sort</b><span>Rules of the kind "this before that". Count the arrows pointing in, take the jobs that wait for nothing, and spot a loop. Three problems. About 7 minutes of video.</span><i>Open chapter 19 →</i></a>
       <a class="chcard" href="chapter.html?c=unionfind"><img src="posters/uft1.jpg" alt="" loading="lazy"><span class="kick">Chapter 20</span><b>Union-Find</b><span>Groups that only ever merge. One array of parents, find the leader, join two leaders, and answer "are these two together?" almost at once. Three problems. About 6 minutes of video.</span><i>Open chapter 20 →</i></a>
       <a class="chcard" href="chapter.html?c=paths"><img src="posters/spt1.jpg" alt="" loading="lazy"><span class="kick">Chapter 21</span><b>Shortest Paths</b><span>When every tunnel has a cost, the fewest tunnels is not the cheapest walk. One number per burrow, always take the cheapest next, and a heap to make it fast. Three problems. About 7 minutes of video.</span><i>Open chapter 21 →</i></a>
       <a class="chcard" href="chapter.html?c=mixed4"><img src="posters/mq0.jpg" alt="" loading="lazy"><span class="kick">Part 4 · Mixed set</span><b>Mixed Set 4</b><span>Eight new puzzles on graphs, grids, ordering, merging groups and cheapest ways, with no chapter label. Each has an intro and a solution video. About 13 minutes of video.</span><i>Open mixed set 4 →</i></a>
-      <h3 class="parth">Part 5: Backtracking and dynamic programming <span>· chapters 22 and 23 so far, more on the way</span></h3>
+      <h3 class="parth" id="p5"><em>Part 5</em> Backtracking and dynamic programming <span>chapters 22 and 23 so far, more on the way</span></h3>
       <a class="chcard" href="chapter.html?c=backtrack"><img src="posters/bkt1.jpg" alt="" loading="lazy"><span class="kick">Chapter 22</span><b>Backtracking</b><span>When a puzzle asks for every possibility: try a choice, explore what follows, take it back. Decision trees, pruning, and seven problems from subsets to queens. About 14 minutes of video.</span><i>Open chapter 22 →</i></a>
       <a class="chcard" href="chapter.html?c=greedy"><img src="posters/gdt1.jpg" alt="" loading="lazy"><span class="kick">Chapter 23</span><b>Greedy</b><span>Take what looks best right now and never go back. Fast, but only right when the choice is safe: one example where it works, one where it fails, and a test to tell them apart. Four problems. About 8 minutes of video.</span><i>Open chapter 23 →</i></a>
-    </div>
-  </div>
-</section>
-
-<section class="band" id="watch">
-  <div class="in">
-    <p class="kick">Part 0 · Foundations</p>
-    <h2>Steps, memory and growth: what every later chapter leans on.</h2>
-    <div class="grid">
-      <div class="vid"><div class="frame"><video controls playsinline preload="none" poster="posters/f1.jpg" src="videos/f1.mp4"></video></div><h3>1 · Inside the machine</h3><p>1 min 22 s. Every program is three tiny moves, repeated billions of times a second.</p></div>
-      <div class="vid"><div class="frame"><video controls playsinline preload="none" poster="posters/f2.jpg" src="videos/f2.mp4"></video></div><h3>2 · The thing and its address</h3><p>1 min 14 s. Why changing one variable can change another.</p></div>
-      <div class="vid"><div class="frame"><video controls playsinline preload="none" poster="posters/f3.jpg" src="videos/f3.mp4"></video></div><h3>3 · Loops, functions and the stack</h3><p>1 min 21 s. How work piles up, and how the computer finds its way back.</p></div>
-      <div class="vid"><div class="frame"><video controls playsinline preload="none" poster="posters/f4.jpg" src="videos/f4.mp4"></video></div><h3>4 · Counting the work</h3><p>1 min 34 s. The six Big O shapes on one graph.</p></div>
-      <div class="vid"><div class="frame"><video controls playsinline preload="none" poster="posters/f5.jpg" src="videos/f5.mp4"></video></div><h3>5 · Big O: the rules</h3><p>1 min 15 s. Four rules for reading the cost off a piece of code.</p></div>
-      <div class="vid"><div class="frame"><video controls playsinline preload="none" poster="posters/f6.jpg" src="videos/f6.mp4"></video></div><h3>6 · Space and the limits</h3><p>1 min 26 s. Counting memory, and ruling out slow ideas before coding.</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="band mint">
-  <div class="in">
-    <p class="kick">Chapter 1 · Arrays</p>
-    <h2>One jump to any door, and what that costs.</h2>
-    <div class="grid">
-      <div class="vid"><div class="frame"><video controls playsinline preload="none" poster="posters/ar0.jpg" src="videos/ar0.mp4"></video></div><h3>Welcome</h3><p>37 s. Burrow Hill, Pip and Moss, and what the chapter covers.</p></div>
-      <div class="vid"><div class="frame"><video controls playsinline preload="none" poster="posters/art1.jpg" src="videos/art1.mp4"></video></div><h3>Theory 1: A row of numbered doors</h3><p>1 min 3 s. Why indexes start at zero, and why any door is one jump away.</p></div>
-      <div class="vid"><div class="frame"><video controls playsinline preload="none" poster="posters/art2.jpg" src="videos/art2.mp4"></video></div><h3>Theory 2: What a row makes slow</h3><p>1 min 3 s. Inserting, removing and searching: where the walking comes from.</p></div>
-      <div class="vid"><div class="frame"><video controls playsinline preload="none" poster="posters/ar1i.jpg" src="videos/ar1i.mp4"></video></div><h3>Problem 1: Turn the Row Around</h3><p>20 s. The puzzle, told as a story. One nudge, never the method.</p></div>
-      <div class="vid"><div class="frame"><video controls playsinline preload="none" poster="posters/ar1s.jpg" src="videos/ar1s.mp4"></video></div><h3>Solution 1: The two ends trade places</h3><p>1 min 10 s. The idea first, then every line of the code acted out.</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="band">
-  <div class="in">
-    <p class="kick">Chapter 3 · Hash maps</p>
-    <h2>Find anything by its name, in one step.</h2>
-    <div class="grid">
-      <div class="vid"><div class="frame"><video controls playsinline preload="none" poster="posters/hw0.jpg" src="videos/hw0.mp4"></video></div><h3>Welcome</h3><p>29 s. Meet Hazel, who never searches.</p></div>
-      <div class="vid"><div class="frame"><video controls playsinline preload="none" poster="posters/hwt1.jpg" src="videos/hwt1.mp4"></video></div><h3>Theory 1: From a key to a door</h3><p>1 min 11 s. A hash function, worked by hand, and what a collision is.</p></div>
-      <div class="vid"><div class="frame"><video controls playsinline preload="none" poster="posters/hwt2.jpg" src="videos/hwt2.mp4"></video></div><h3>Theory 2: Three questions a map answers</h3><p>1 min 1 s. Seen before? How many? Where was it? And the price in memory.</p></div>
-      <div class="vid"><div class="frame"><video controls playsinline preload="none" poster="posters/hm1i.jpg" src="videos/hm1i.mp4"></video></div><h3>Problem 1: The Pair That Adds Up</h3><p>22 s. The puzzle, told as a story. One nudge, never the method.</p></div>
-      <div class="vid"><div class="frame"><video controls playsinline preload="none" poster="posters/hm1s.jpg" src="videos/hm1s.mp4"></video></div><h3>Solution 1: Look up the partner</h3><p>55 s. The idea first, then every line of the code acted out.</p></div>
     </div>
   </div>
 </section>
@@ -259,18 +223,17 @@ footer{padding-block:28px;font-family:var(--mono);font-size:13px}
 <section class="band">
   <div class="in two">
     <div>
-      <p class="kick">What exists today</p>
-      <h2>A working prototype.</h2>
-      <div class="stat"><div><b>6</b>parts</div><div><b>23</b>chapters</div><div><b>370</b>videos</div><div><b>295 min</b>of animation</div><div><b>149</b>coding puzzles</div><div><b>28</b>practice questions</div></div>
+      <p class="kick">Where it stands</p>
+      <h2>Parts 0 to 4 are complete. Part 5 is being built.</h2>
       <p>Everything runs in the browser with nothing to install: videos with guess-first pauses, practice questions, a JavaScript code runner with tests, hints, and step-through solutions.</p>
     </div>
     <div>
       <p class="kick">What comes next</p>
       <ul class="plain">
-        <li>More chapters: linked lists, stacks and queues, binary search, trees, graphs.</li>
+        <li>The rest of Part 5: dynamic programming, bit tricks, combining tools.</li>
+        <li>Mock interviews: timed, and aloud.</li>
         <li>Review scheduling, so solved puzzles come back at the right time.</li>
         <li>More coding languages and narration languages.</li>
-        <li>Testing with learners who have tried and stalled before.</li>
       </ul>
     </div>
   </div>
