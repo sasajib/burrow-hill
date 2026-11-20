@@ -4,8 +4,8 @@ window.CHAPTER = {
  "sub": "CHAPTER 26 · BIT TRICKS",
  "key": "burrow-ch-bits",
  "next": {
-  "href": "index.html#course",
-  "label": "All chapters"
+  "href": "chapter.html?c=combine",
+  "label": "Chapter 27: Combining Tools"
  },
  "prev": {
   "href": "chapter.html?c=dp2",

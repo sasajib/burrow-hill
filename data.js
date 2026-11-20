@@ -26959,345 +26959,6 @@ window.BURROW = {
     }
    ]
   },
-  "bi1i": {
-   "src": "videos/bi1i.mp4",
-   "title": "The Odd One Out",
-   "duration": 20.7,
-   "lines": [
-    {
-     "id": "bi1i_1",
-     "text": "Three numbers. Four, seven, four. Every number has a twin. Except one.",
-     "start": 0.2,
-     "end": 4.72
-    },
-    {
-     "id": "bi1i_2",
-     "text": "Return the one without a twin. And use no extra memory. No set. No sorting.",
-     "start": 5.42,
-     "end": 10.99
-    },
-    {
-     "id": "bi1i_3",
-     "text": "The fours are a pair. So the answer is seven.",
-     "start": 11.69,
-     "end": 14.54
-    },
-    {
-     "id": "bi1i_4",
-     "text": "Which operation makes two equal numbers disappear? Your turn.",
-     "start": 15.24,
-     "end": 19.1
-    }
-   ],
-   "pauses": []
-  },
-  "bi1s": {
-   "src": "videos/bi1s.mp4",
-   "title": "Pairs cancel",
-   "duration": 61.86,
-   "lines": [
-    {
-     "id": "bi1s_1",
-     "text": "X or switches a lamp on only where two numbers differ. So a number, x or itself, is zero.",
-     "start": 0.2,
-     "end": 6.22
-    },
-    {
-     "id": "bi1s_2",
-     "text": "X or them all together. Every pair cancels. The one without a twin is left.",
-     "start": 6.97,
-     "end": 11.91
-    },
-    {
-     "id": "bi1s_3",
-     "text": "X starts at zero.",
-     "start": 12.66,
-     "end": 14
-    },
-    {
-     "id": "bi1s_4",
-     "text": "The four. In lamps, one, zero, zero. Zero x or four is four.",
-     "start": 14.75,
-     "end": 19.21
-    },
-    {
-     "id": "bi1s_5",
-     "text": "The seven. One, one, one. Where do one zero zero, and one one one, differ? In the last two lamps. So x is three.",
-     "start": 19.96,
-     "end": 27.78
-    },
-    {
-     "id": "bi1s_6",
-     "text": "X is three. That is neither of them. Now the second four arrives. What is zero one one, x or one zero zero?",
-     "start": 28.53,
-     "end": 35.98
-    },
-    {
-     "id": "bi1s_7",
-     "text": "One, one, one. Seven. The two fours have cancelled each other, even though the seven stood between them.",
-     "start": 37.18,
-     "end": 43.55
-    },
-    {
-     "id": "bi1s_8",
-     "text": "Line six returns seven.",
-     "start": 44.3,
-     "end": 45.94
-    },
-    {
-     "id": "bi1s_9",
-     "text": "One pass. O of n.",
-     "start": 47.04,
-     "end": 48.54
-    },
-    {
-     "id": "bi1s_10",
-     "text": "One number. O of one space. No set needed.",
-     "start": 49.29,
-     "end": 52.4
-    },
-    {
-     "id": "bi1s_11",
-     "text": "Storage systems use this to rebuild a lost disk. X or the disks that are left, and the missing one appears.",
-     "start": 53.15,
-     "end": 60.26
-    }
-   ],
-   "pauses": [
-    {
-     "id": "bi1s-q",
-     "t": 36.18
-    }
-   ]
-  },
-  "bi2i": {
-   "src": "videos/bi2i.mp4",
-   "title": "Count the Lamps",
-   "duration": 17.42,
-   "lines": [
-    {
-     "id": "bi2i_1",
-     "text": "The number six, as lamps. One, one, zero. The four lamp, and the two lamp.",
-     "start": 0.2,
-     "end": 5.13
-    },
-    {
-     "id": "bi2i_2",
-     "text": "Return how many lamps are on.",
-     "start": 5.83,
-     "end": 7.6
-    },
-    {
-     "id": "bi2i_3",
-     "text": "Two.",
-     "start": 8.3,
-     "end": 8.9
-    },
-    {
-     "id": "bi2i_4",
-     "text": "A program only sees the number six. How can it read the last lamp? And then the next? Your turn.",
-     "start": 9.6,
-     "end": 15.82
-    }
-   ],
-   "pauses": []
-  },
-  "bi2s": {
-   "src": "videos/bi2s.mp4",
-   "title": "Read the last lamp, then shift",
-   "duration": 60.92,
-   "lines": [
-    {
-     "id": "bi2s_1",
-     "text": "And with one, reads the last lamp. It gives one if the lamp is on, and zero if it is off.",
-     "start": 0.2,
-     "end": 5.94
-    },
-    {
-     "id": "bi2s_2",
-     "text": "Then shift everything one place to the right. The next lamp is now the last one.",
-     "start": 6.69,
-     "end": 11.32
-    },
-    {
-     "id": "bi2s_3",
-     "text": "N is six. One, one, zero. Count is zero.",
-     "start": 12.07,
-     "end": 14.99
-    },
-    {
-     "id": "bi2s_4",
-     "text": "The last lamp is off. So and with one gives zero. Count stays zero.",
-     "start": 15.74,
-     "end": 20.31
-    },
-    {
-     "id": "bi2s_5",
-     "text": "Line five shifts to the right. The last lamp drops off. N is one, one. That is three.",
-     "start": 21.06,
-     "end": 27.15
-    },
-    {
-     "id": "bi2s_6",
-     "text": "Now the last lamp is on. What does and with one give?",
-     "start": 27.9,
-     "end": 31.45
-    },
-    {
-     "id": "bi2s_7",
-     "text": "One. So count is one. Shift again. N is just one.",
-     "start": 32.66,
-     "end": 35.8
-    },
-    {
-     "id": "bi2s_8",
-     "text": "The last lamp is on again. Count is two. One more shift, and n is zero. The loop ends.",
-     "start": 36.55,
-     "end": 42.65
-    },
-    {
-     "id": "bi2s_9",
-     "text": "Line seven returns two.",
-     "start": 43.4,
-     "end": 45.02
-    },
-    {
-     "id": "bi2s_10",
-     "text": "One turn per lamp. A number n has about log n lamps.",
-     "start": 46.12,
-     "end": 50.08
-    },
-    {
-     "id": "bi2s_11",
-     "text": "One counter.",
-     "start": 50.83,
-     "end": 51.79
-    },
-    {
-     "id": "bi2s_12",
-     "text": "A file with permissions read, write and run stores them as three lamps. Counting the lamps says how much is allowed.",
-     "start": 52.54,
-     "end": 59.32
-    }
-   ],
-   "pauses": [
-    {
-     "id": "bi2s-q",
-     "t": 31.65
-    }
-   ]
-  },
-  "bi3i": {
-   "src": "videos/bi3i.mp4",
-   "title": "A Single Lamp",
-   "duration": 21.26,
-   "lines": [
-    {
-     "id": "bi3i_1",
-     "text": "The number eight, as lamps. One, zero, zero, zero.",
-     "start": 0.2,
-     "end": 3.65
-    },
-    {
-     "id": "bi3i_2",
-     "text": "Return true if a number is a power of two. One, two, four, eight, and so on.",
-     "start": 4.35,
-     "end": 9.22
-    },
-    {
-     "id": "bi3i_3",
-     "text": "In lamps, every one of them has exactly one lamp on.",
-     "start": 9.92,
-     "end": 13.38
-    },
-    {
-     "id": "bi3i_4",
-     "text": "Now take one away from eight. Seven. What does seven look like, in lamps? Your turn.",
-     "start": 14.08,
-     "end": 19.66
-    }
-   ],
-   "pauses": []
-  },
-  "bi3s": {
-   "src": "videos/bi3s.mp4",
-   "title": "One lamp on, and nothing else",
-   "duration": 61.3,
-   "lines": [
-    {
-     "id": "bi3s_1",
-     "text": "A power of two has exactly one lamp on.",
-     "start": 0.2,
-     "end": 2.92
-    },
-    {
-     "id": "bi3s_2",
-     "text": "Take one away. That lamp goes off. And every lamp to its right comes on. So the two rows share no lamp.",
-     "start": 3.67,
-     "end": 10.45
-    },
-    {
-     "id": "bi3s_3",
-     "text": "Eight. One, zero, zero, zero.",
-     "start": 11.2,
-     "end": 13.1
-    },
-    {
-     "id": "bi3s_4",
-     "text": "Eight minus one is seven. Zero, one, one, one.",
-     "start": 13.85,
-     "end": 17.16
-    },
-    {
-     "id": "bi3s_5",
-     "text": "Now and them. A lamp stays on only if it is on in both rows. Is there any such lamp?",
-     "start": 17.91,
-     "end": 23.97
-    },
-    {
-     "id": "bi3s_6",
-     "text": "None. The result is zero. So eight is a power of two.",
-     "start": 25.17,
-     "end": 28.63
-    },
-    {
-     "id": "bi3s_7",
-     "text": "Try six. One, one, zero. Six minus one is five. One, zero, one. The first lamp is on in both. Not zero. So six is not.",
-     "start": 29.73,
-     "end": 38.69
-    },
-    {
-     "id": "bi3s_8",
-     "text": "And the first check, n above zero, rules out zero and the negative numbers.",
-     "start": 39.44,
-     "end": 44.27
-    },
-    {
-     "id": "bi3s_9",
-     "text": "No loop at all. One subtraction, and one and. O of one.",
-     "start": 45.02,
-     "end": 48.82
-    },
-    {
-     "id": "bi3s_10",
-     "text": "No extra memory.",
-     "start": 49.57,
-     "end": 50.88
-    },
-    {
-     "id": "bi3s_11",
-     "text": "Memory sizes are powers of two. Sixteen, thirty two, sixty four. A program checks a size with exactly this line.",
-     "start": 51.63,
-     "end": 59.7
-    }
-   ],
-   "pauses": [
-    {
-     "id": "bi3s-q",
-     "t": 24.17
-    }
-   ]
-  },
   "bi0": {
    "src": "videos/bi0.mp4",
    "title": "Switches Inside a Number",
@@ -28219,6 +27880,1356 @@ window.BURROW = {
     {
      "id": "dq7s-q",
      "t": 34.87
+    }
+   ]
+  },
+  "bi1i": {
+   "src": "videos/bi1i.mp4",
+   "title": "The Odd One Out",
+   "duration": 20.7,
+   "lines": [
+    {
+     "id": "bi1i_1",
+     "text": "Three numbers. Four, seven, four. Every number has a twin. Except one.",
+     "start": 0.2,
+     "end": 4.72
+    },
+    {
+     "id": "bi1i_2",
+     "text": "Return the one without a twin. And use no extra memory. No set. No sorting.",
+     "start": 5.42,
+     "end": 10.99
+    },
+    {
+     "id": "bi1i_3",
+     "text": "The fours are a pair. So the answer is seven.",
+     "start": 11.69,
+     "end": 14.54
+    },
+    {
+     "id": "bi1i_4",
+     "text": "Which operation makes two equal numbers disappear? Your turn.",
+     "start": 15.24,
+     "end": 19.1
+    }
+   ],
+   "pauses": []
+  },
+  "bi1s": {
+   "src": "videos/bi1s.mp4",
+   "title": "Pairs cancel",
+   "duration": 61.86,
+   "lines": [
+    {
+     "id": "bi1s_1",
+     "text": "X or switches a lamp on only where two numbers differ. So a number, x or itself, is zero.",
+     "start": 0.2,
+     "end": 6.22
+    },
+    {
+     "id": "bi1s_2",
+     "text": "X or them all together. Every pair cancels. The one without a twin is left.",
+     "start": 6.97,
+     "end": 11.91
+    },
+    {
+     "id": "bi1s_3",
+     "text": "X starts at zero.",
+     "start": 12.66,
+     "end": 14
+    },
+    {
+     "id": "bi1s_4",
+     "text": "The four. In lamps, one, zero, zero. Zero x or four is four.",
+     "start": 14.75,
+     "end": 19.21
+    },
+    {
+     "id": "bi1s_5",
+     "text": "The seven. One, one, one. Where do one zero zero, and one one one, differ? In the last two lamps. So x is three.",
+     "start": 19.96,
+     "end": 27.78
+    },
+    {
+     "id": "bi1s_6",
+     "text": "X is three. That is neither of them. Now the second four arrives. What is zero one one, x or one zero zero?",
+     "start": 28.53,
+     "end": 35.98
+    },
+    {
+     "id": "bi1s_7",
+     "text": "One, one, one. Seven. The two fours have cancelled each other, even though the seven stood between them.",
+     "start": 37.18,
+     "end": 43.55
+    },
+    {
+     "id": "bi1s_8",
+     "text": "Line six returns seven.",
+     "start": 44.3,
+     "end": 45.94
+    },
+    {
+     "id": "bi1s_9",
+     "text": "One pass. O of n.",
+     "start": 47.04,
+     "end": 48.54
+    },
+    {
+     "id": "bi1s_10",
+     "text": "One number. O of one space. No set needed.",
+     "start": 49.29,
+     "end": 52.4
+    },
+    {
+     "id": "bi1s_11",
+     "text": "Storage systems use this to rebuild a lost disk. X or the disks that are left, and the missing one appears.",
+     "start": 53.15,
+     "end": 60.26
+    }
+   ],
+   "pauses": [
+    {
+     "id": "bi1s-q",
+     "t": 36.18
+    }
+   ]
+  },
+  "bi2i": {
+   "src": "videos/bi2i.mp4",
+   "title": "Count the Lamps",
+   "duration": 17.42,
+   "lines": [
+    {
+     "id": "bi2i_1",
+     "text": "The number six, as lamps. One, one, zero. The four lamp, and the two lamp.",
+     "start": 0.2,
+     "end": 5.13
+    },
+    {
+     "id": "bi2i_2",
+     "text": "Return how many lamps are on.",
+     "start": 5.83,
+     "end": 7.6
+    },
+    {
+     "id": "bi2i_3",
+     "text": "Two.",
+     "start": 8.3,
+     "end": 8.9
+    },
+    {
+     "id": "bi2i_4",
+     "text": "A program only sees the number six. How can it read the last lamp? And then the next? Your turn.",
+     "start": 9.6,
+     "end": 15.82
+    }
+   ],
+   "pauses": []
+  },
+  "bi2s": {
+   "src": "videos/bi2s.mp4",
+   "title": "Read the last lamp, then shift",
+   "duration": 60.92,
+   "lines": [
+    {
+     "id": "bi2s_1",
+     "text": "And with one, reads the last lamp. It gives one if the lamp is on, and zero if it is off.",
+     "start": 0.2,
+     "end": 5.94
+    },
+    {
+     "id": "bi2s_2",
+     "text": "Then shift everything one place to the right. The next lamp is now the last one.",
+     "start": 6.69,
+     "end": 11.32
+    },
+    {
+     "id": "bi2s_3",
+     "text": "N is six. One, one, zero. Count is zero.",
+     "start": 12.07,
+     "end": 14.99
+    },
+    {
+     "id": "bi2s_4",
+     "text": "The last lamp is off. So and with one gives zero. Count stays zero.",
+     "start": 15.74,
+     "end": 20.31
+    },
+    {
+     "id": "bi2s_5",
+     "text": "Line five shifts to the right. The last lamp drops off. N is one, one. That is three.",
+     "start": 21.06,
+     "end": 27.15
+    },
+    {
+     "id": "bi2s_6",
+     "text": "Now the last lamp is on. What does and with one give?",
+     "start": 27.9,
+     "end": 31.45
+    },
+    {
+     "id": "bi2s_7",
+     "text": "One. So count is one. Shift again. N is just one.",
+     "start": 32.66,
+     "end": 35.8
+    },
+    {
+     "id": "bi2s_8",
+     "text": "The last lamp is on again. Count is two. One more shift, and n is zero. The loop ends.",
+     "start": 36.55,
+     "end": 42.65
+    },
+    {
+     "id": "bi2s_9",
+     "text": "Line seven returns two.",
+     "start": 43.4,
+     "end": 45.02
+    },
+    {
+     "id": "bi2s_10",
+     "text": "One turn per lamp. A number n has about log n lamps.",
+     "start": 46.12,
+     "end": 50.08
+    },
+    {
+     "id": "bi2s_11",
+     "text": "One counter.",
+     "start": 50.83,
+     "end": 51.79
+    },
+    {
+     "id": "bi2s_12",
+     "text": "A file with permissions read, write and run stores them as three lamps. Counting the lamps says how much is allowed.",
+     "start": 52.54,
+     "end": 59.32
+    }
+   ],
+   "pauses": [
+    {
+     "id": "bi2s-q",
+     "t": 31.65
+    }
+   ]
+  },
+  "bi3i": {
+   "src": "videos/bi3i.mp4",
+   "title": "A Single Lamp",
+   "duration": 21.26,
+   "lines": [
+    {
+     "id": "bi3i_1",
+     "text": "The number eight, as lamps. One, zero, zero, zero.",
+     "start": 0.2,
+     "end": 3.65
+    },
+    {
+     "id": "bi3i_2",
+     "text": "Return true if a number is a power of two. One, two, four, eight, and so on.",
+     "start": 4.35,
+     "end": 9.22
+    },
+    {
+     "id": "bi3i_3",
+     "text": "In lamps, every one of them has exactly one lamp on.",
+     "start": 9.92,
+     "end": 13.38
+    },
+    {
+     "id": "bi3i_4",
+     "text": "Now take one away from eight. Seven. What does seven look like, in lamps? Your turn.",
+     "start": 14.08,
+     "end": 19.66
+    }
+   ],
+   "pauses": []
+  },
+  "bi3s": {
+   "src": "videos/bi3s.mp4",
+   "title": "One lamp on, and nothing else",
+   "duration": 61.3,
+   "lines": [
+    {
+     "id": "bi3s_1",
+     "text": "A power of two has exactly one lamp on.",
+     "start": 0.2,
+     "end": 2.92
+    },
+    {
+     "id": "bi3s_2",
+     "text": "Take one away. That lamp goes off. And every lamp to its right comes on. So the two rows share no lamp.",
+     "start": 3.67,
+     "end": 10.45
+    },
+    {
+     "id": "bi3s_3",
+     "text": "Eight. One, zero, zero, zero.",
+     "start": 11.2,
+     "end": 13.1
+    },
+    {
+     "id": "bi3s_4",
+     "text": "Eight minus one is seven. Zero, one, one, one.",
+     "start": 13.85,
+     "end": 17.16
+    },
+    {
+     "id": "bi3s_5",
+     "text": "Now and them. A lamp stays on only if it is on in both rows. Is there any such lamp?",
+     "start": 17.91,
+     "end": 23.97
+    },
+    {
+     "id": "bi3s_6",
+     "text": "None. The result is zero. So eight is a power of two.",
+     "start": 25.17,
+     "end": 28.63
+    },
+    {
+     "id": "bi3s_7",
+     "text": "Try six. One, one, zero. Six minus one is five. One, zero, one. The first lamp is on in both. Not zero. So six is not.",
+     "start": 29.73,
+     "end": 38.69
+    },
+    {
+     "id": "bi3s_8",
+     "text": "And the first check, n above zero, rules out zero and the negative numbers.",
+     "start": 39.44,
+     "end": 44.27
+    },
+    {
+     "id": "bi3s_9",
+     "text": "No loop at all. One subtraction, and one and. O of one.",
+     "start": 45.02,
+     "end": 48.82
+    },
+    {
+     "id": "bi3s_10",
+     "text": "No extra memory.",
+     "start": 49.57,
+     "end": 50.88
+    },
+    {
+     "id": "bi3s_11",
+     "text": "Memory sizes are powers of two. Sixteen, thirty two, sixty four. A program checks a size with exactly this line.",
+     "start": 51.63,
+     "end": 59.7
+    }
+   ],
+   "pauses": [
+    {
+     "id": "bi3s-q",
+     "t": 24.17
+    }
+   ]
+  },
+  "cm0": {
+   "src": "videos/cm0.mp4",
+   "title": "One Tool Is Rarely Enough",
+   "duration": 35.01,
+   "lines": [
+    {
+     "id": "cv1",
+     "text": "Chapter twenty seven. Combining tools.",
+     "start": 0.2,
+     "end": 2.74
+    },
+    {
+     "id": "cv2",
+     "text": "So far, each puzzle needed one tool. A map. A stack. A binary search.",
+     "start": 3.44,
+     "end": 8.67
+    },
+    {
+     "id": "cv3",
+     "text": "Real problems rarely stop there. One tool gets the data ready. And a second tool answers the question.",
+     "start": 9.57,
+     "end": 16.21
+    },
+    {
+     "id": "cv4",
+     "text": "The skill is to see both steps. One lesson, and eight puzzles.",
+     "start": 17.11,
+     "end": 20.98
+    },
+    {
+     "id": "cv5",
+     "text": "A search box sorts its words once. Then it finds yours by halving. A bank groups payments by account. Then it looks up a day. A map app builds its roads once. Then it walks them.",
+     "start": 21.88,
+     "end": 33.41
+    }
+   ],
+   "pauses": []
+  },
+  "cmt1": {
+   "src": "videos/cmt1.mp4",
+   "title": "Prepare Once, Answer Fast",
+   "duration": 68.85,
+   "lines": [
+    {
+     "id": "cz1",
+     "text": "A thousand scores. And a thousand questions, each asking: how many scores are below this number? Checking every score, for every question, is a million looks.",
+     "start": 0.2,
+     "end": 10.45
+    },
+    {
+     "id": "cz2",
+     "text": "So split the work in two. First ask: what could I do once, so that every question becomes easy?",
+     "start": 11.35,
+     "end": 17.55
+    },
+    {
+     "id": "cz3",
+     "text": "Sort the scores. Once.",
+     "start": 18.45,
+     "end": 19.97
+    },
+    {
+     "id": "cz4",
+     "text": "Then ask: what answers one question fast? In a sorted row, a binary search. Ten looks, instead of a thousand.",
+     "start": 20.87,
+     "end": 28.26
+    },
+    {
+     "id": "cz5",
+     "text": "The same split shows up again and again. How many sacks fit in a budget? Running totals first. Then a binary search.",
+     "start": 29.16,
+     "end": 36.49
+    },
+    {
+     "id": "cz6",
+     "text": "What did a nut cost on day eight? Group the changes by name first. Then look up the nut, and search its days.",
+     "start": 37.39,
+     "end": 44.29
+    },
+    {
+     "id": "cz7",
+     "text": "Now you. Many questions ask for the sum of a block of a grid. Which pair of tools fits?",
+     "start": 45.19,
+     "end": 50.74
+    },
+    {
+     "id": "cz8",
+     "text": "Running totals, over the whole grid. After that, any block is four lookups.",
+     "start": 51.94,
+     "end": 56.77
+    },
+    {
+     "id": "cz9",
+     "text": "So, for every hard puzzle, ask two things. What do I prepare once? And what answers one question fast?",
+     "start": 57.67,
+     "end": 64.39
+    },
+    {
+     "id": "cz10",
+     "text": "Prepare once. Answer fast.",
+     "start": 65.29,
+     "end": 67.25
+    }
+   ],
+   "pauses": [
+    {
+     "id": "cmt1-q1",
+     "t": 50.94
+    }
+   ]
+  },
+  "cm1i": {
+   "src": "videos/cm1i.mp4",
+   "title": "Rank the Scores",
+   "duration": 21.75,
+   "lines": [
+    {
+     "id": "cm1i_1",
+     "text": "Four scores. Forty, ten, forty, twenty.",
+     "start": 0.2,
+     "end": 2.99
+    },
+    {
+     "id": "cm1i_2",
+     "text": "Replace each score with its rank. The smallest is rank one. And equal scores share a rank.",
+     "start": 3.69,
+     "end": 9.54
+    },
+    {
+     "id": "cm1i_3",
+     "text": "Ten is rank one. Twenty is rank two. Both forties are rank three.",
+     "start": 10.23,
+     "end": 14.89
+    },
+    {
+     "id": "cm1i_4",
+     "text": "One tool will not do it. Which two tools, one after the other? Your turn.",
+     "start": 15.59,
+     "end": 20.15
+    }
+   ],
+   "pauses": []
+  },
+  "cm1s": {
+   "src": "videos/cm1s.mp4",
+   "title": "Sort once, then look up",
+   "duration": 55.33,
+   "lines": [
+    {
+     "id": "cm1s_1",
+     "text": "In a sorted list with no repeats, the position of a score is its rank.",
+     "start": 0.2,
+     "end": 4.48
+    },
+    {
+     "id": "cm1s_2",
+     "text": "So sort once. Store each rank in a map. Then look every score up.",
+     "start": 5.23,
+     "end": 9.66
+    },
+    {
+     "id": "cm1s_3",
+     "text": "Line two. A set drops the second forty. Line three sorts. Ten, twenty, forty.",
+     "start": 10.41,
+     "end": 16.01
+    },
+    {
+     "id": "cm1s_4",
+     "text": "Lines five and six. Each score, with its position plus one.",
+     "start": 16.76,
+     "end": 20.76
+    },
+    {
+     "id": "cm1s_5",
+     "text": "Now line eight walks the original scores. The first one is forty. What does the map say?",
+     "start": 21.51,
+     "end": 27.15
+    },
+    {
+     "id": "cm1s_6",
+     "text": "Three. One lookup, no searching.",
+     "start": 28.35,
+     "end": 30.26
+    },
+    {
+     "id": "cm1s_7",
+     "text": "Ten is one. The second forty is three again. Twenty is two.",
+     "start": 31.01,
+     "end": 34.89
+    },
+    {
+     "id": "cm1s_8",
+     "text": "The sort is the expensive part. O of n log n. Every lookup after it is one step.",
+     "start": 35.99,
+     "end": 41.65
+    },
+    {
+     "id": "cm1s_9",
+     "text": "The sorted list and the map hold at most n scores.",
+     "start": 42.4,
+     "end": 45.7
+    },
+    {
+     "id": "cm1s_10",
+     "text": "A leaderboard shows ranks, not raw scores. And databases shrink huge values into small ranks, the same way.",
+     "start": 46.45,
+     "end": 53.73
+    }
+   ],
+   "pauses": [
+    {
+     "id": "cm1s-q",
+     "t": 27.35
+    }
+   ]
+  },
+  "cm2i": {
+   "src": "videos/cm2i.mp4",
+   "title": "How Many Sacks Fit",
+   "duration": 20.98,
+   "lines": [
+    {
+     "id": "cm2i_1",
+     "text": "Four sacks, in a row. Sizes two, three, one, and four.",
+     "start": 0.2,
+     "end": 3.74
+    },
+    {
+     "id": "cm2i_2",
+     "text": "They are loaded from the front, in order. For a budget, return how many sacks fit.",
+     "start": 4.44,
+     "end": 9.13
+    },
+    {
+     "id": "cm2i_3",
+     "text": "With a budget of six, three sacks fit. Two, plus three, plus one.",
+     "start": 9.83,
+     "end": 14.22
+    },
+    {
+     "id": "cm2i_4",
+     "text": "Now imagine a thousand budgets. What would you prepare first? Your turn.",
+     "start": 14.92,
+     "end": 19.38
+    }
+   ],
+   "pauses": []
+  },
+  "cm2s": {
+   "src": "videos/cm2s.mp4",
+   "title": "Totals once, then halve",
+   "duration": 60.77,
+   "lines": [
+    {
+     "id": "cm2s_1",
+     "text": "Running totals say how big the first sacks are, together. Build them once.",
+     "start": 0.2,
+     "end": 4.57
+    },
+    {
+     "id": "cm2s_2",
+     "text": "Sizes are above zero, so the totals only grow. A sorted list. So each budget is a binary search.",
+     "start": 5.32,
+     "end": 12.12
+    },
+    {
+     "id": "cm2s_3",
+     "text": "Lines four to seven build the totals. Two, five, six, ten.",
+     "start": 12.87,
+     "end": 16.85
+    },
+    {
+     "id": "cm2s_4",
+     "text": "Take the budget six. Low is zero. High is four.",
+     "start": 17.6,
+     "end": 20.71
+    },
+    {
+     "id": "cm2s_5",
+     "text": "The middle is two. That total is six. It fits. So the answer is further right. Low becomes three.",
+     "start": 21.46,
+     "end": 28.02
+    },
+    {
+     "id": "cm2s_6",
+     "text": "The middle is now three. That total is ten. Against a budget of six. Which marker moves?",
+     "start": 28.77,
+     "end": 34.98
+    },
+    {
+     "id": "cm2s_7",
+     "text": "Ten is too much. High comes down to three. Low and high meet.",
+     "start": 36.18,
+     "end": 40.03
+    },
+    {
+     "id": "cm2s_8",
+     "text": "Line fifteen returns low. Three sacks fit.",
+     "start": 40.78,
+     "end": 43.84
+    },
+    {
+     "id": "cm2s_9",
+     "text": "The totals cost O of n, once. Then every budget costs log n.",
+     "start": 44.94,
+     "end": 49.15
+    },
+    {
+     "id": "cm2s_10",
+     "text": "One list of totals.",
+     "start": 49.9,
+     "end": 51.3
+    },
+    {
+     "id": "cm2s_11",
+     "text": "A video player knows the length of every chunk. It finds the chunk that holds minute forty, exactly like this.",
+     "start": 52.05,
+     "end": 59.17
+    }
+   ],
+   "pauses": [
+    {
+     "id": "cm2s-q",
+     "t": 35.18
+    }
+   ]
+  },
+  "cm3i": {
+   "src": "videos/cm3i.mp4",
+   "title": "The Price on That Day",
+   "duration": 27.58,
+   "lines": [
+    {
+     "id": "cm3i_1",
+     "text": "The price of a nut changed three times. To five on day one. To seven on day four. To six on day nine.",
+     "start": 0.2,
+     "end": 7.32
+    },
+    {
+     "id": "cm3i_2",
+     "text": "Return the price on a given day. That is the latest change, on or before that day.",
+     "start": 8.02,
+     "end": 13.47
+    },
+    {
+     "id": "cm3i_3",
+     "text": "On day eight, the price is seven. The change of day nine has not happened yet.",
+     "start": 14.17,
+     "end": 18.73
+    },
+    {
+     "id": "cm3i_4",
+     "text": "The real log holds thousands of items, and thousands of questions. What do you prepare first? Your turn.",
+     "start": 19.43,
+     "end": 25.98
+    }
+   ],
+   "pauses": []
+  },
+  "cm3s": {
+   "src": "videos/cm3s.mp4",
+   "title": "Group first, then search by day",
+   "duration": 72.48,
+   "lines": [
+    {
+     "id": "cm3s_1",
+     "text": "A question is about one item. So first, group the changes by item, in a map.",
+     "start": 0.2,
+     "end": 5.25
+    },
+    {
+     "id": "cm3s_2",
+     "text": "Inside one item, the changes are still sorted by day. So the day can be found by halving.",
+     "start": 6,
+     "end": 11.75
+    },
+    {
+     "id": "cm3s_3",
+     "text": "Lines three to six fill the map. The nut gets three changes. The fig gets one.",
+     "start": 12.5,
+     "end": 17.99
+    },
+    {
+     "id": "cm3s_4",
+     "text": "The question. A nut, on day eight. Line eight fetches the nut list. Low is zero. High is three.",
+     "start": 18.74,
+     "end": 25.04
+    },
+    {
+     "id": "cm3s_5",
+     "text": "The middle is one. Day four. That is on or before day eight. So look further right. Low becomes two.",
+     "start": 25.79,
+     "end": 32.16
+    },
+    {
+     "id": "cm3s_6",
+     "text": "The middle is two. Day nine. Against day eight. Which marker moves?",
+     "start": 32.91,
+     "end": 36.91
+    },
+    {
+     "id": "cm3s_7",
+     "text": "Day nine is too late. High comes down to two. Low and high meet.",
+     "start": 38.11,
+     "end": 42.13
+    },
+    {
+     "id": "cm3s_8",
+     "text": "Low points at the first change that is too late. So the answer is the one just before it. Seven.",
+     "start": 42.88,
+     "end": 48.4
+    },
+    {
+     "id": "cm3s_9",
+     "text": "And if low is zero, nothing came before. Then the answer is minus one.",
+     "start": 49.5,
+     "end": 54.29
+    },
+    {
+     "id": "cm3s_10",
+     "text": "Grouping costs O of n, once. Then every question costs log n.",
+     "start": 55.04,
+     "end": 59.34
+    },
+    {
+     "id": "cm3s_11",
+     "text": "The map holds every change.",
+     "start": 60.09,
+     "end": 61.92
+    },
+    {
+     "id": "cm3s_12",
+     "text": "Your bank shows your balance on any past day. A wiki shows a page as it was last March. Group by key. Then search by time.",
+     "start": 62.67,
+     "end": 70.88
+    }
+   ],
+   "pauses": [
+    {
+     "id": "cm3s-q",
+     "t": 37.11
+    }
+   ]
+  },
+  "cm4i": {
+   "src": "videos/cm4i.mp4",
+   "title": "Unpack the Label",
+   "duration": 19.59,
+   "lines": [
+    {
+     "id": "cm4i_1",
+     "text": "A packed label. Two, bracket, a, b, bracket.",
+     "start": 0.2,
+     "end": 3.24
+    },
+    {
+     "id": "cm4i_2",
+     "text": "A digit, then text in brackets, means: repeat the text that many times.",
+     "start": 3.94,
+     "end": 8.99
+    },
+    {
+     "id": "cm4i_3",
+     "text": "So this is, a b, a b.",
+     "start": 9.69,
+     "end": 11.35
+    },
+    {
+     "id": "cm4i_4",
+     "text": "But a group can sit inside another group. What must you remember, when a bracket opens? Your turn.",
+     "start": 12.05,
+     "end": 17.99
+    }
+   ],
+   "pauses": []
+  },
+  "cm4s": {
+   "src": "videos/cm4s.mp4",
+   "title": "Park the outer text on a stack",
+   "duration": 66.99,
+   "lines": [
+    {
+     "id": "cm4s_1",
+     "text": "At an opening bracket, park the text so far, and the count, on a stack. Then start fresh.",
+     "start": 0.2,
+     "end": 5.94
+    },
+    {
+     "id": "cm4s_2",
+     "text": "At a closing bracket, pop them back. Repeat the inner text, and glue it on.",
+     "start": 6.69,
+     "end": 11.27
+    },
+    {
+     "id": "cm4s_3",
+     "text": "A digit. Line seven remembers it. Count is two.",
+     "start": 12.02,
+     "end": 15.2
+    },
+    {
+     "id": "cm4s_4",
+     "text": "An opening bracket. Line nine parks the empty text, and the two. Cur starts fresh.",
+     "start": 15.95,
+     "end": 21.53
+    },
+    {
+     "id": "cm4s_5",
+     "text": "A letter. Line fifteen adds it. Cur is a.",
+     "start": 22.28,
+     "end": 24.94
+    },
+    {
+     "id": "cm4s_6",
+     "text": "Another two, and another bracket. Park the a, and the two. Cur starts fresh again.",
+     "start": 25.69,
+     "end": 31.09
+    },
+    {
+     "id": "cm4s_7",
+     "text": "The letter b. Cur is b.",
+     "start": 31.84,
+     "end": 33.27
+    },
+    {
+     "id": "cm4s_8",
+     "text": "A closing bracket. Line twelve pops the a, and the two. What is cur, after line thirteen?",
+     "start": 34.02,
+     "end": 39.88
+    },
+    {
+     "id": "cm4s_9",
+     "text": "A, b, b. The inner group is done.",
+     "start": 41.08,
+     "end": 43.52
+    },
+    {
+     "id": "cm4s_10",
+     "text": "The last bracket. Pop the empty text, and the two. A b b, twice.",
+     "start": 44.27,
+     "end": 48.74
+    },
+    {
+     "id": "cm4s_11",
+     "text": "One pass over the label, plus the letters that are written.",
+     "start": 49.84,
+     "end": 53.16
+    },
+    {
+     "id": "cm4s_12",
+     "text": "The stack is as deep as the brackets are nested.",
+     "start": 53.91,
+     "end": 56.73
+    },
+    {
+     "id": "cm4s_13",
+     "text": "A web page is boxes inside boxes. A browser reads its tags like this. Open, park. Close, pop, and attach.",
+     "start": 57.48,
+     "end": 65.39
+    }
+   ],
+   "pauses": [
+    {
+     "id": "cm4s-q",
+     "t": 40.08
+    }
+   ]
+  },
+  "cm5i": {
+   "src": "videos/cm5i.mp4",
+   "title": "The Smallest Number Left",
+   "duration": 20.07,
+   "lines": [
+    {
+     "id": "cm5i_1",
+     "text": "A number. One, four, three, two.",
+     "start": 0.2,
+     "end": 2.07
+    },
+    {
+     "id": "cm5i_2",
+     "text": "Remove exactly two digits. The digits that are left keep their order. Make the number as small as you can.",
+     "start": 2.77,
+     "end": 9.29
+    },
+    {
+     "id": "cm5i_3",
+     "text": "Take out the four and the three. Twelve is left.",
+     "start": 9.99,
+     "end": 12.78
+    },
+    {
+     "id": "cm5i_4",
+     "text": "How do you decide, while walking left to right, which digit goes? Your turn.",
+     "start": 13.48,
+     "end": 18.47
+    }
+   ],
+   "pauses": []
+  },
+  "cm5s": {
+   "src": "videos/cm5s.mp4",
+   "title": "Small digits push big ones out",
+   "duration": 64.72,
+   "lines": [
+    {
+     "id": "cm5s_1",
+     "text": "Early digits matter most. So a big digit, right before a smaller one, should go.",
+     "start": 0.2,
+     "end": 5.48
+    },
+    {
+     "id": "cm5s_2",
+     "text": "Keep the digits in a stack. A new digit pops every bigger top, while removals are left.",
+     "start": 6.23,
+     "end": 11.82
+    },
+    {
+     "id": "cm5s_3",
+     "text": "The one. The stack is empty, so line eight pushes it.",
+     "start": 12.57,
+     "end": 15.84
+    },
+    {
+     "id": "cm5s_4",
+     "text": "The four. The top is one. Not bigger. Push.",
+     "start": 16.59,
+     "end": 19.45
+    },
+    {
+     "id": "cm5s_5",
+     "text": "The three. The top is four. Bigger than three. And one removal is still allowed. What happens?",
+     "start": 20.2,
+     "end": 26.55
+    },
+    {
+     "id": "cm5s_6",
+     "text": "The four is popped. K is one. Then the three is pushed.",
+     "start": 27.75,
+     "end": 31.11
+    },
+    {
+     "id": "cm5s_7",
+     "text": "The two. The top is three. Bigger. Pop it. K is zero. Push the two.",
+     "start": 31.86,
+     "end": 36.04
+    },
+    {
+     "id": "cm5s_8",
+     "text": "No removals are left. Line fourteen joins the stack. Twelve.",
+     "start": 36.79,
+     "end": 41.06
+    },
+    {
+     "id": "cm5s_9",
+     "text": "And if removals were left over, lines ten to thirteen would drop digits from the end.",
+     "start": 42.16,
+     "end": 47.34
+    },
+    {
+     "id": "cm5s_10",
+     "text": "Every digit is pushed once, and popped at most once. O of n.",
+     "start": 48.09,
+     "end": 51.97
+    },
+    {
+     "id": "cm5s_11",
+     "text": "The stack holds at most every digit.",
+     "start": 52.72,
+     "end": 54.87
+    },
+    {
+     "id": "cm5s_12",
+     "text": "A trading screen uses the same stack to find, for every day, the last day with a higher price. One pass.",
+     "start": 55.62,
+     "end": 63.12
+    }
+   ],
+   "pauses": [
+    {
+     "id": "cm5s-q",
+     "t": 26.75
+    }
+   ]
+  },
+  "cm6i": {
+   "src": "videos/cm6i.mp4",
+   "title": "Sums of Blocks",
+   "duration": 18.52,
+   "lines": [
+    {
+     "id": "cm6i_1",
+     "text": "A grid of numbers. One to nine.",
+     "start": 0.2,
+     "end": 2.34
+    },
+    {
+     "id": "cm6i_2",
+     "text": "Someone asks for the sum of a block. Here, the four squares at the bottom right.",
+     "start": 3.04,
+     "end": 7.87
+    },
+    {
+     "id": "cm6i_3",
+     "text": "Five, six, eight, nine. Twenty eight.",
+     "start": 8.57,
+     "end": 10.71
+    },
+    {
+     "id": "cm6i_4",
+     "text": "But there will be thousands of blocks. Some of them huge. What do you prepare once? Your turn.",
+     "start": 11.41,
+     "end": 16.92
+    }
+   ],
+   "pauses": []
+  },
+  "cm6s": {
+   "src": "videos/cm6s.mp4",
+   "title": "Corner sums, then four lookups",
+   "duration": 61.93,
+   "lines": [
+    {
+     "id": "cm6s_1",
+     "text": "For every square, store the sum of everything from the top left corner, down to that square.",
+     "start": 0.2,
+     "end": 5.94
+    },
+    {
+     "id": "cm6s_2",
+     "text": "Then a block is one big corner sum, minus the part above, minus the part on the left.",
+     "start": 6.69,
+     "end": 12.42
+    },
+    {
+     "id": "cm6s_3",
+     "text": "Lines four to eleven build the table. One pass over the grid.",
+     "start": 13.17,
+     "end": 17.18
+    },
+    {
+     "id": "cm6s_4",
+     "text": "The block. Start with the whole corner sum, down to the last square. Forty five.",
+     "start": 17.93,
+     "end": 22.97
+    },
+    {
+     "id": "cm6s_5",
+     "text": "Take away the part above the block. The first row. Six.",
+     "start": 23.72,
+     "end": 27.27
+    },
+    {
+     "id": "cm6s_6",
+     "text": "Take away the part on the left. The first column. Twelve. But look at the corner square. What went wrong?",
+     "start": 28.02,
+     "end": 34.17
+    },
+    {
+     "id": "cm6s_7",
+     "text": "The corner was taken away twice. So line sixteen adds it back. Forty five, minus six, minus twelve, plus one.",
+     "start": 35.37,
+     "end": 42.95
+    },
+    {
+     "id": "cm6s_8",
+     "text": "The table costs O of R times C, once. After that, any block is four lookups.",
+     "start": 44.05,
+     "end": 49.2
+    },
+    {
+     "id": "cm6s_9",
+     "text": "One table, the size of the grid.",
+     "start": 49.95,
+     "end": 51.86
+    },
+    {
+     "id": "cm6s_10",
+     "text": "A photo app blurs a picture by averaging the block around every pixel. With this table, each block costs four lookups.",
+     "start": 52.61,
+     "end": 60.33
+    }
+   ],
+   "pauses": [
+    {
+     "id": "cm6s-q",
+     "t": 34.37
+    }
+   ]
+  },
+  "cm7i": {
+   "src": "videos/cm7i.mp4",
+   "title": "One Letter at a Time",
+   "duration": 20.41,
+   "lines": [
+    {
+     "id": "cm7i_1",
+     "text": "Five words. Cat, cot, cog, dot, dog.",
+     "start": 0.2,
+     "end": 2.95
+    },
+    {
+     "id": "cm7i_2",
+     "text": "Turn cat into dog. Each step changes one letter. And every word on the way must be in the list.",
+     "start": 3.65,
+     "end": 9.84
+    },
+    {
+     "id": "cm7i_3",
+     "text": "Cat, cot, cog, dog. Three steps.",
+     "start": 10.54,
+     "end": 12.82
+    },
+    {
+     "id": "cm7i_4",
+     "text": "It asks for the fewest steps. But nobody gave you a graph. Where is it? Your turn.",
+     "start": 13.52,
+     "end": 18.81
+    }
+   ],
+   "pauses": []
+  },
+  "cm7s": {
+   "src": "videos/cm7s.mp4",
+   "title": "The graph is hidden in the words",
+   "duration": 69.52,
+   "lines": [
+    {
+     "id": "cm7s_1",
+     "text": "Every word is a place. Two words are joined, when they differ in exactly one letter.",
+     "start": 0.2,
+     "end": 5.53
+    },
+    {
+     "id": "cm7s_2",
+     "text": "Fewest steps means level by level. And a set of unused words stops you from going back.",
+     "start": 6.28,
+     "end": 11.6
+    },
+    {
+     "id": "cm7s_3",
+     "text": "Line three. The first level holds only cat. Steps is zero.",
+     "start": 12.35,
+     "end": 16.51
+    },
+    {
+     "id": "cm7s_4",
+     "text": "Which unused words are one letter from cat? Only cot. It leaves the set, and joins the next level.",
+     "start": 17.26,
+     "end": 23.68
+    },
+    {
+     "id": "cm7s_5",
+     "text": "Level two. Steps is one. From cot, two words are one letter away. Cog, and dot.",
+     "start": 24.43,
+     "end": 30.3
+    },
+    {
+     "id": "cm7s_6",
+     "text": "Level three. Steps is two. Cog reaches dog. Then dot is checked. Dot is also one letter from dog. Is dog added again?",
+     "start": 31.05,
+     "end": 39.33
+    },
+    {
+     "id": "cm7s_7",
+     "text": "No. Dog already left the set. Every word is reached once, by the shortest route.",
+     "start": 40.53,
+     "end": 45.32
+    },
+    {
+     "id": "cm7s_8",
+     "text": "Level four. Steps is three. The word is dog. Line seven returns three.",
+     "start": 46.07,
+     "end": 50.92
+    },
+    {
+     "id": "cm7s_9",
+     "text": "Each word is compared with the words still unused. About n squared, times the word length.",
+     "start": 52.02,
+     "end": 57.3
+    },
+    {
+     "id": "cm7s_10",
+     "text": "The set and the levels hold every word.",
+     "start": 58.05,
+     "end": 60.38
+    },
+    {
+     "id": "cm7s_11",
+     "text": "A spell checker suggests words that are one edit away. The graph is never stored. It is worked out on the way.",
+     "start": 61.13,
+     "end": 67.92
+    }
+   ],
+   "pauses": [
+    {
+     "id": "cm7s-q",
+     "t": 39.53
+    }
+   ]
+  },
+  "cm8i": {
+   "src": "videos/cm8i.mp4",
+   "title": "The Longest Way Down",
+   "duration": 21.84,
+   "lines": [
+    {
+     "id": "cm8i_1",
+     "text": "A hillside. Every square holds a height.",
+     "start": 0.2,
+     "end": 2.56
+    },
+    {
+     "id": "cm8i_2",
+     "text": "You may step to a neighbour, only if it is lower. Return the number of squares on the longest walk.",
+     "start": 3.26,
+     "end": 8.91
+    },
+    {
+     "id": "cm8i_3",
+     "text": "Start on the seven. Six, five, four, three, two, one. Seven squares.",
+     "start": 9.61,
+     "end": 14.38
+    },
+    {
+     "id": "cm8i_4",
+     "text": "Many walks cross the same squares. How do you avoid working them out again? Your turn.",
+     "start": 15.07,
+     "end": 20.24
+    }
+   ],
+   "pauses": []
+  },
+  "cm8s": {
+   "src": "videos/cm8s.mp4",
+   "title": "Walk down, and remember",
+   "duration": 68.67,
+   "lines": [
+    {
+     "id": "cm8s_1",
+     "text": "The longest walk from a square is one, plus the longest walk from its best lower neighbour.",
+     "start": 0.2,
+     "end": 5.59
+    },
+    {
+     "id": "cm8s_2",
+     "text": "Many walks share squares. So store every answer, and never work it out twice.",
+     "start": 6.34,
+     "end": 11.44
+    },
+    {
+     "id": "cm8s_3",
+     "text": "Line nineteen starts with the first square. The five. It can only go down to the four. Then the three, the two, the one.",
+     "start": 12.19,
+     "end": 19.59
+    },
+    {
+     "id": "cm8s_4",
+     "text": "On the way back, line thirteen stores every answer. One, two, three, four. And five, for the first square.",
+     "start": 20.34,
+     "end": 26.9
+    },
+    {
+     "id": "cm8s_5",
+     "text": "Later, the six. One of its lower neighbours is the five. The five was already worked out. What does that call cost now?",
+     "start": 27.65,
+     "end": 35.02
+    },
+    {
+     "id": "cm8s_6",
+     "text": "One lookup. So the six is one, plus five. Six squares.",
+     "start": 36.22,
+     "end": 40.17
+    },
+    {
+     "id": "cm8s_7",
+     "text": "And the seven is one, plus six. Seven squares.",
+     "start": 40.92,
+     "end": 43.94
+    },
+    {
+     "id": "cm8s_8",
+     "text": "The nine and the eight only reach the one. Shorter. Line twenty two returns seven.",
+     "start": 44.69,
+     "end": 49.81
+    },
+    {
+     "id": "cm8s_9",
+     "text": "Every square is worked out once, and looks at four neighbours. O of R times C.",
+     "start": 50.91,
+     "end": 56.04
+    },
+    {
+     "id": "cm8s_10",
+     "text": "The memo holds one answer per square.",
+     "start": 56.79,
+     "end": 59.04
+    },
+    {
+     "id": "cm8s_11",
+     "text": "A build tool finds its longest chain of steps this way. And a ski map finds its longest run. Walk, and remember.",
+     "start": 59.79,
+     "end": 67.07
+    }
+   ],
+   "pauses": [
+    {
+     "id": "cm8s-q",
+     "t": 35.22
     }
    ]
   }
