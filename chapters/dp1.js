@@ -11,6 +11,8 @@ window.CHAPTER = {
   "href": "chapter.html?c=greedy",
   "label": "Chapter 23: Greedy"
  },
+ "mock": false,
+ "target": null,
  "stages": [
   {
    "id": "w",
@@ -153,8 +155,8 @@ window.CHAPTER = {
    "num": 1,
    "title": "The Cheapest Climb",
    "fn": "cheapestClimb",
-   "ask": "Each step of the stairs has a price. You pay the price of a step when you <b>leave</b> it, and from it you may move <b>1 or 2 steps</b> up. You may start on step 0 or step 1. Return the <b>smallest total</b> needed to get past the last step.",
-   "spec": "cheapestClimb([10, 15, 20]) → 15      (start on step 1, pay 15, move 2 up: past the end)",
+   "ask": "Each step of the stairs has a price. You pay the price of a step when you <b>leave</b> it, and from it you may move <b>1 or 2 steps</b> up. You may start on step 0 or step 1. Return the <b>smallest total</b> needed to get past the last step. If there is only one step, starting on step 1 is already past it, so the answer is 0.",
+   "spec": "cheapestClimb([10, 15, 20]) → 15      (start on step 1, pay 15, move 2 up: past the end)      cheapestClimb([5]) → 0      (start on step 1: already past the end)",
    "start": "// cost[i] is the price of leaving step i.\nfunction cheapestClimb(cost) {\n  // your code here\n}\n",
    "plan": [
     "What should one entry of your table mean?",
@@ -261,6 +263,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "The table has one more entry than there are steps. What does the extra one stand for?",
+   "topic": null,
    "world": "A route planner prices a trip this way. The cheapest way to a stop, is the cheapest way to an earlier stop, plus one leg.",
    "view": {
     "row": [
@@ -606,6 +609,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "On [4, 9, 4], taking the biggest burrow first is right. Find three numbers for which \"biggest first\" is wrong.",
+   "topic": null,
    "world": "A gardener plans beds like this, when plants in two beds side by side would crowd each other.",
    "view": {
     "row": [
@@ -993,6 +997,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "Why does Infinity work as the starting value, even inside best[a - bag] + 1?",
+   "topic": null,
    "world": "A vending machine gives change with the fewest coins this way, whatever coins it happens to hold.",
    "view": {
     "row": [
@@ -1297,8 +1302,8 @@ window.CHAPTER = {
    "num": 4,
    "title": "How Many Ways to Pay?",
    "fn": "countWays",
-   "ask": "Return the <b>number of different groups of bags</b> that add up to exactly amount. Each bag size may be used as often as needed, and the <b>order does not count</b>: 1 + 2 and 2 + 1 are the same group.",
-   "spec": "countWays([1, 2], 4) → 3      (1+1+1+1, 1+1+2, 2+2)",
+   "ask": "Return the <b>number of different groups of bags</b> that add up to exactly amount. Each bag size may be used as often as needed, and the <b>order does not count</b>: 1 + 2 and 2 + 1 are the same group. If amount is 0, the answer is <b>1</b>: using no bags at all is the one way.",
+   "spec": "countWays([1, 2], 4) → 3      (1+1+1+1, 1+1+2, 2+2)      countWays([3], 0) → 1      (no bags at all)",
    "start": "// bags is an array of different bag sizes. amount is 0 or more.\nfunction countWays(bags, amount) {\n  // your code here\n}\n",
    "plan": [
     "How many ways are there with only the first bag size?",
@@ -1400,6 +1405,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "Swap the two loops (amounts outside, bags inside). The answer for [1, 2] and 4 becomes 5. Which groups are now counted more than once?",
+   "topic": null,
    "world": "A bank counts the ways to break a note into smaller ones like this.",
    "view": {
     "row": [
@@ -1825,6 +1831,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "Why is the answer the largest entry, and not simply the last one?",
+   "topic": null,
    "world": "A fitness app finds your longest series of improving results this way, skipping the bad days.",
    "view": {
     "row": [
@@ -2100,7 +2107,7 @@ window.CHAPTER = {
    "num": 6,
    "title": "Words Without Spaces",
    "fn": "canSplit",
-   "ask": "Someone typed a text without spaces. Return <b>true</b> if it can be cut into words from the list, so that <b>every letter belongs to a word</b>. A word may be used more than once.",
+   "ask": "Someone typed a text without spaces. Return <b>true</b> if it can be cut into words from the list, so that <b>every letter belongs to a word</b>. A word may be used more than once. An empty text counts as <b>true</b>: there is nothing left to cut.",
    "spec": "canSplit(\"catsup\", [\"cat\", \"cats\", \"up\"]) → true      (\"cats\" + \"up\")      canSplit(\"catsup\", [\"cat\", \"up\"]) → false",
    "start": "// text is a string. words is an array of strings.\nfunction canSplit(text, words) {\n  // your code here\n}\n",
    "plan": [
@@ -2208,6 +2215,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "Backtracking could also solve this. On which kind of input would it be far slower than the table?",
+   "topic": null,
    "world": "A search box does this when you type without spaces. It works out where the words could end.",
    "view": {
     "row": [
@@ -2581,6 +2589,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "With only negative numbers the answer is the least negative one. Which line makes sure of that?",
+   "topic": null,
    "world": "A trading app finds the best run of days in a row like this.",
    "view": {
     "row": [
@@ -2970,6 +2979,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "Run the inner loop upwards instead, on [2] with a half of 4 (pretend). Which sum becomes \"possible\" although it is not?",
+   "topic": null,
    "world": "Splitting a bill, or the chores, into two equal shares is exactly this question.",
    "view": {
     "row": [

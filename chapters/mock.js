@@ -135,8 +135,8 @@ window.CHAPTER = {
    "num": 1,
    "title": "The Same Pattern",
    "fn": "samePattern",
-   "ask": "Return <b>true</b> if the list of words follows the pattern: every letter of the pattern stands for <b>exactly one word</b>, and every word belongs to <b>exactly one letter</b>.",
-   "spec": "samePattern(\"abba\", [\"nut\", \"fig\", \"fig\", \"nut\"]) → true      samePattern(\"abba\", [\"nut\", \"fig\", \"fig\", \"pea\"]) → false",
+   "ask": "The first letter of <code>pattern</code> goes with the first word, the second letter with the second word, and so on. Return <b>true</b> if the same letter always goes with the <b>same word</b>, and two different letters never go with the same word. If the number of letters and the number of words differ, return <b>false</b>.",
+   "spec": "samePattern(\"abba\", [\"nut\", \"fig\", \"fig\", \"nut\"]) → true      samePattern(\"abba\", [\"nut\", \"fig\", \"fig\", \"pea\"]) → false      (a would be both \"nut\" and \"pea\")",
    "start": "function samePattern(pattern, words) {\n  // your code here\n}\n",
    "plan": [
     "Say the task back in your own words.",
@@ -1339,7 +1339,7 @@ window.CHAPTER = {
    "num": 4,
    "title": "The One Without a Twin",
    "fn": "loneValue",
-   "ask": "The array is <b>sorted</b>. Every value appears <b>exactly twice</b>, except one that appears once. Return that value. Aim for <b>O(log n)</b>: the array may hold millions of numbers.",
+   "ask": "The array is <b>sorted</b>. Every value appears <b>exactly twice</b>, except one that appears once. Return that value. The array may hold millions of numbers, so do not look at every one: aim for <b>O(log n)</b>, where n is the length of the array.",
    "spec": "loneValue([1, 1, 2, 3, 3]) → 2",
    "start": "function loneValue(nums) {\n  // your code here\n}\n",
    "plan": [
@@ -3427,8 +3427,8 @@ window.CHAPTER = {
    "num": 9,
    "title": "Cut It Into Parts",
    "fn": "cutParts",
-   "ask": "Cut the text into <b>as many parts as possible</b>, so that <b>every letter appears in one part only</b>. Return the sizes of the parts, in order.",
-   "spec": "cutParts(\"abacdd\") → [3, 1, 2]      (\"aba\" · \"c\" · \"dd\")",
+   "ask": "Cut the text into <b>as many parts as possible</b>, so that <b>no letter appears in two different parts</b>: all copies of a letter must end up in the same part. Return the sizes of the parts, in order.",
+   "spec": "cutParts(\"abacdd\") → [3, 1, 2]      (\"aba\" · \"c\" · \"dd\": both a's stay together)",
    "start": "function cutParts(s) {\n  // your code here\n}\n",
    "plan": [
     "Say the task back in your own words.",

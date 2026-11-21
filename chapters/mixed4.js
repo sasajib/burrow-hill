@@ -11,6 +11,8 @@ window.CHAPTER = {
   "href": "chapter.html?c=paths",
   "label": "Chapter 21: Shortest Paths"
  },
+ "mock": false,
+ "target": null,
  "stages": [
   {
    "id": "w",
@@ -255,6 +257,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "Why must every damp sack be in the first level, instead of running one walk per damp sack?",
+   "topic": null,
    "world": "A game times a spreading fire like this. Every burning square lights its neighbours, one round at a time.",
    "view": {
     "row": [],
@@ -737,6 +740,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "What could go wrong if you checked each \"different\" note as soon as you read it, before all the \"same\" notes were handled?",
+   "topic": null,
    "world": "A compiler checks its rules like this. Things declared equal are merged, then every \"not equal\" rule is tested.",
    "view": {
     "row": [
@@ -1172,6 +1176,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "Why is a job only pushed onto the ready pile when its count reaches 0, and not as soon as its end time is first set?",
+   "topic": null,
    "world": "A build system predicts how long a build will take this way. Each step starts when the slowest thing it needs is ready.",
    "view": {
     "row": [],
@@ -1503,9 +1508,9 @@ window.CHAPTER = {
    "num": 4,
    "title": "The Lowest Wall",
    "fn": "lowestWall",
-   "ask": "Every tunnel has a <b>wall</b> of some height that you must climb over. A way is only as easy as its <b>highest wall</b>. Return the smallest possible \"highest wall\" on a way from burrow <b>from</b> to burrow <b>to</b>. (A way always exists.)",
+   "ask": "There are <b>n burrows</b>, numbered 0 to n - 1. Every tunnel has a <b>wall</b> of some height that you must climb over. A way is only as easy as its <b>highest wall</b>. Return the smallest possible \"highest wall\" on a way from burrow <b>from</b> to burrow <b>to</b>. If from and to are the same burrow, return <b>0</b>. (A way always exists.)",
    "spec": "lowestWall(4, [[0, 1, 7], [0, 2, 3], [2, 1, 4], [1, 3, 2], [2, 3, 9]], 0, 3) → 4      (0 → 2 → 1 → 3: walls 3, 4, 2)",
-   "start": "// A Heap class is provided. new Heap((x, y) => x[0] - y[0]) keeps the pair with the SMALLEST first value on top.\n// heap.push(x) · heap.pop() removes and returns the top · heap.size\n// roads is a list of [a, b, wall]: a tunnel between a and b with a wall of that height, usable both ways.\nfunction lowestWall(n, roads, from, to) {\n  // your code here\n}\n",
+   "start": "// A Heap class is provided. new Heap((x, y) => x[0] - y[0]) keeps the pair with the SMALLEST first value on top.\n// heap.push(x) · heap.pop() removes and returns the top · heap.size\n// The burrows are numbered 0 to n - 1.\n// roads is a list of [a, b, wall]: a tunnel between a and b with a wall of that height, usable both ways.\nfunction lowestWall(n, roads, from, to) {\n  // your code here\n}\n",
    "plan": [
     "Before anything else: which signal do you see? Things joined to things (explore or count), \"the fewest steps\", \"this before that\", groups that keep merging, a cheapest way with costs, or a signal from an earlier part?",
     "What does one way \"cost\" here? It is not the sum.",
@@ -1724,6 +1729,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "With sums, the search is correct because adding a tunnel never makes a way cheaper. Is the same true for \"the highest wall so far\"?",
+   "topic": null,
    "world": "A hiking app finds the route whose steepest climb is as gentle as possible, like this.",
    "view": {
     "row": [],
@@ -2188,6 +2194,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "Line 4 changes the grid. What would happen to the count, and to the walk, without it?",
+   "topic": null,
    "world": "A map tool finds the largest lake like this. And a photo app, the biggest object in a picture.",
    "view": {
     "row": [],
@@ -2616,6 +2623,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "The code never checks that every burrow is reached. Why is that not needed?",
+   "topic": null,
    "world": "A network designer checks this. Every office connected, and not one cable more than needed.",
    "view": {
     "row": [
@@ -3050,6 +3058,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "Line 12 loops over a queue that grows while the loop runs. Why does every burrow of the group still get visited exactly once?",
+   "topic": null,
    "world": "An exam planner does this. Two exams that share a student cannot be in the same slot. Are two slots enough?",
    "view": {
     "row": [],
@@ -3333,9 +3342,9 @@ window.CHAPTER = {
    "num": 8,
    "title": "Within Reach",
    "fn": "withinReach",
-   "ask": "Every tunnel has a <b>cost</b>. Return <b>how many burrows</b> can be reached from burrow <b>from</b> with a total cost of <b>budget or less</b>. The starting burrow counts too.",
+   "ask": "There are <b>n burrows</b>, numbered 0 to n - 1, and every tunnel has a <b>cost</b>. Return <b>how many burrows</b> can be reached from burrow <b>from</b> with a total cost of <b>budget or less</b>. The starting burrow counts too.",
    "spec": "withinReach(5, [[0, 1, 2], [0, 2, 6], [1, 2, 3], [1, 3, 7], [2, 4, 1], [3, 4, 4]], 0, 6) → 4",
-   "start": "// A Heap class is provided. new Heap((x, y) => x[0] - y[0]) keeps the pair with the SMALLEST first value on top.\n// heap.push(x) · heap.pop() removes and returns the top · heap.size\n// roads is a list of [a, b, cost]: a tunnel between a and b, usable both ways.\nfunction withinReach(n, roads, from, budget) {\n  // your code here\n}\n",
+   "start": "// A Heap class is provided. new Heap((x, y) => x[0] - y[0]) keeps the pair with the SMALLEST first value on top.\n// heap.push(x) · heap.pop() removes and returns the top · heap.size\n// The burrows are numbered 0 to n - 1.\n// roads is a list of [a, b, cost]: a tunnel between a and b, usable both ways.\nfunction withinReach(n, roads, from, budget) {\n  // your code here\n}\n",
    "plan": [
     "Before anything else: which signal do you see? Things joined to things (explore or count), \"the fewest steps\", \"this before that\", groups that keep merging, a cheapest way with costs, or a signal from an earlier part?",
     "When exactly is one burrow within reach?",
@@ -3588,6 +3597,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "Could the search stop early, as soon as the heap gives a cost above the budget? Why?",
+   "topic": null,
    "world": "A delivery app shows every address it can reach within thirty minutes. It is this search, and a count.",
    "view": {
     "row": [],

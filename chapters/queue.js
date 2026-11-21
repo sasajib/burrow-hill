@@ -11,6 +11,8 @@ window.CHAPTER = {
   "href": "chapter.html?c=stack",
   "label": "Chapter 7: Stacks"
  },
+ "mock": false,
+ "target": null,
  "stages": [
   {
    "id": "w",
@@ -72,8 +74,8 @@ window.CHAPTER = {
    "num": 1,
    "title": "Recent Visitors",
    "fn": "recentCounts",
-   "ask": "Each number is the time a visitor arrived, in order. For every visitor, return how many visitors arrived in the last <b>span</b> minutes, <b>including</b> that visitor. A visitor at time t counts for a later time now if t ≥ now − span.",
-   "spec": "recentCounts([1, 2, 6, 7, 8], 3) → [1, 2, 1, 2, 3]",
+   "ask": "Each number is the minute a visitor arrived, earliest first. For every visitor, count the visitors <b>up to and including that one</b> in the list who arrived <b>no more than span minutes before</b> them. Exactly span minutes before still counts. Visitors further along the list never count, even if they arrived in the same minute. Return the counts in order.",
+   "spec": "recentCounts([1, 2, 6, 7, 8], 3) → [1, 2, 1, 2, 3]      (for the visitor at 8: 6, 7 and 8 count, 2 is too old)      recentCounts([2, 2, 2], 1) → [1, 2, 3]",
    "start": "// times is sorted, earliest first. span is a positive number.\nfunction recentCounts(times, span) {\n  // your code here\n}\n",
    "plan": [
     "Say the goal in your own words: for each arrival, the number of arrivals that are still recent.",
@@ -210,6 +212,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "Why does head never need to move backwards?",
+   "topic": null,
    "world": "A website counts its visitors in the last five minutes exactly like this. Old ones leave from the front of a queue.",
    "view": {
     "row": [
@@ -259,6 +262,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -276,6 +280,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -295,6 +300,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -318,6 +324,7 @@ window.CHAPTER = {
       "d0"
      ],
      "bad": [],
+     "free": [],
      "set": {
       "d0": 1
      },
@@ -344,6 +351,7 @@ window.CHAPTER = {
       "d1"
      ],
      "bad": [],
+     "free": [],
      "set": {
       "d1": 2
      },
@@ -367,6 +375,7 @@ window.CHAPTER = {
      ],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -389,6 +398,7 @@ window.CHAPTER = {
       0,
       1
      ],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -408,6 +418,7 @@ window.CHAPTER = {
       "d2"
      ],
      "bad": [],
+     "free": [],
      "set": {
       "d2": 1
      },
@@ -432,6 +443,7 @@ window.CHAPTER = {
      ],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -451,6 +463,7 @@ window.CHAPTER = {
       "d3"
      ],
      "bad": [],
+     "free": [],
      "set": {
       "d3": 2
      },
@@ -478,6 +491,7 @@ window.CHAPTER = {
       "d4"
      ],
      "bad": [],
+     "free": [],
      "set": {
       "d4": 3
      },
@@ -497,6 +511,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -514,6 +529,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -531,6 +547,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -548,6 +565,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -761,6 +779,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "Why are items only moved across when outbox is empty? What goes wrong if you move them on every take?",
+   "topic": null,
    "world": "It looks like a trick. But some programming languages really do build a fast queue from two simple stacks.",
    "view": {
     "row": [
@@ -804,6 +823,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -821,6 +841,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -838,6 +859,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -862,6 +884,7 @@ window.CHAPTER = {
      ],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -886,6 +909,7 @@ window.CHAPTER = {
      ],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -910,6 +934,7 @@ window.CHAPTER = {
      ],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -932,6 +957,7 @@ window.CHAPTER = {
       2
      ],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -956,6 +982,7 @@ window.CHAPTER = {
      ],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -980,6 +1007,7 @@ window.CHAPTER = {
      ],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -999,6 +1027,7 @@ window.CHAPTER = {
       4
      ],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -1025,6 +1054,7 @@ window.CHAPTER = {
       5
      ],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -1045,6 +1075,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -1062,6 +1093,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -1079,6 +1111,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -1096,6 +1129,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,

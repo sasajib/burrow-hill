@@ -11,6 +11,8 @@ window.CHAPTER = {
   "href": "chapter.html?c=mixed1",
   "label": "Mixed set 1"
  },
+ "mock": false,
+ "target": null,
  "stages": [
   {
    "id": "w",
@@ -182,6 +184,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "What would happen if line 2 were removed?",
+   "topic": null,
    "world": "The size of a folder is worked out like this. Its own files, plus the size of every folder inside it.",
    "view": {
     "row": [
@@ -230,6 +233,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -247,6 +251,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -268,6 +273,7 @@ window.CHAPTER = {
      ],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -291,6 +297,7 @@ window.CHAPTER = {
      ],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -316,6 +323,7 @@ window.CHAPTER = {
      ],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -344,6 +352,7 @@ window.CHAPTER = {
       "d4"
      ],
      "bad": [],
+     "free": [],
      "set": {
       "d4": 0
      },
@@ -373,6 +382,7 @@ window.CHAPTER = {
       "d3"
      ],
      "bad": [],
+     "free": [],
      "set": {
       "d3": 1
      },
@@ -401,6 +411,7 @@ window.CHAPTER = {
      ],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -424,6 +435,7 @@ window.CHAPTER = {
       "d2"
      ],
      "bad": [],
+     "free": [],
      "set": {
       "d2": 3
      },
@@ -451,6 +463,7 @@ window.CHAPTER = {
       "d0"
      ],
      "bad": [],
+     "free": [],
      "set": {
       "d1": 6,
       "d0": 10
@@ -471,6 +484,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -488,6 +502,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -505,6 +520,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -612,6 +628,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "Why is half worked out once and stored, instead of calling power(...) * power(...)?",
+   "topic": null,
    "world": "Fast powers like this are used every time your browser sets up a secure connection.",
    "view": {
     "row": [
@@ -658,6 +675,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -675,6 +693,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -696,6 +715,7 @@ window.CHAPTER = {
      ],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -720,6 +740,7 @@ window.CHAPTER = {
      ],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -747,6 +768,7 @@ window.CHAPTER = {
       "d3"
      ],
      "bad": [],
+     "free": [],
      "set": {
       "d3": 1
      },
@@ -775,6 +797,7 @@ window.CHAPTER = {
       "d2"
      ],
      "bad": [],
+     "free": [],
      "set": {
       "d2": 2
      },
@@ -802,6 +825,7 @@ window.CHAPTER = {
      ],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -824,6 +848,7 @@ window.CHAPTER = {
       "d1"
      ],
      "bad": [],
+     "free": [],
      "set": {
       "d1": 4
      },
@@ -849,6 +874,7 @@ window.CHAPTER = {
       "d0"
      ],
      "bad": [],
+     "free": [],
      "set": {
       "d0": 32
      },
@@ -868,6 +894,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -885,6 +912,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -902,6 +930,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -994,6 +1023,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "There are two places where the function answers without calling itself. What are they, and why are both needed?",
+   "topic": null,
    "world": "Checking the outside, then asking about the inside, is how a program checks nested data.",
    "view": {
     "row": [
@@ -1040,6 +1070,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -1057,6 +1088,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -1077,6 +1109,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -1102,6 +1135,7 @@ window.CHAPTER = {
       4
      ],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -1128,6 +1162,7 @@ window.CHAPTER = {
       3
      ],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -1153,6 +1188,7 @@ window.CHAPTER = {
      ],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -1176,6 +1212,7 @@ window.CHAPTER = {
       2
      ],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -1197,6 +1234,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -1214,6 +1252,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -1231,6 +1270,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -1248,6 +1288,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -1265,7 +1306,7 @@ window.CHAPTER = {
    "num": 4,
    "title": "Up the Stairs",
    "fn": "stairs",
-   "ask": "You climb a staircase taking <b>1 or 2</b> steps at a time. Return the number of <b>different ways</b> to reach step n. There is exactly one way to be on step 0 or step 1.",
+   "ask": "You start on <b>step 0</b> (the ground) and climb taking <b>1 or 2</b> steps at a time. Return the number of <b>different ways</b> to reach step n. There is exactly one way to be on step 0 (do nothing), and one way to reach step 1.",
    "spec": "stairs(4) → 5      (1111, 112, 121, 211, 22)",
    "start": "// n is a whole number, 0 or more.\nfunction stairs(n) {\n  // your code here\n}\n",
    "plan": [
@@ -1350,6 +1391,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "Why must the same memo be passed along to both inner calls?",
+   "topic": null,
    "world": "Counting ways with a memo is how an app counts the possible routes across a city grid.",
    "view": {
     "row": [
@@ -1398,6 +1440,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -1415,6 +1458,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -1436,6 +1480,7 @@ window.CHAPTER = {
      ],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -1457,6 +1502,7 @@ window.CHAPTER = {
      ],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -1482,6 +1528,7 @@ window.CHAPTER = {
       "d2"
      ],
      "bad": [],
+     "free": [],
      "set": {
       "d3": 1,
       "d4": 1,
@@ -1503,6 +1550,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -1526,6 +1574,7 @@ window.CHAPTER = {
       "d1"
      ],
      "bad": [],
+     "free": [],
      "set": {
       "d1": 3
      },
@@ -1552,6 +1601,7 @@ window.CHAPTER = {
      ],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -1569,6 +1619,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -1591,6 +1642,7 @@ window.CHAPTER = {
       "d0"
      ],
      "bad": [],
+     "free": [],
      "set": {
       "d0": 5
      },
@@ -1610,6 +1662,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -1627,6 +1680,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -1644,6 +1698,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,

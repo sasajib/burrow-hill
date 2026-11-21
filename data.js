@@ -5343,5367 +5343,6 @@ window.BURROW = {
     }
    ]
   },
-  "hm1i": {
-   "src": "videos/hm1i.mp4",
-   "title": "The Pair That Adds Up",
-   "duration": 22.04,
-   "lines": [
-    {
-     "id": "hm1i_1",
-     "text": "Two parcels in this row weigh eleven together. Hazel wants to know which two.",
-     "start": 0.2,
-     "end": 5.03
-    },
-    {
-     "id": "hm1i_2",
-     "text": "Return the indexes of the two doors that add up to the target. If there are none, return minus one, minus one.",
-     "start": 5.73,
-     "end": 12.63
-    },
-    {
-     "id": "hm1i_3",
-     "text": "Checking every pair is a loop inside a loop.",
-     "start": 13.33,
-     "end": 15.83
-    },
-    {
-     "id": "hm1i_4",
-     "text": "Standing on one number, which partner are you hoping for? Your turn.",
-     "start": 16.53,
-     "end": 20.44
-    }
-   ],
-   "pauses": []
-  },
-  "hm1s": {
-   "src": "videos/hm1s.mp4",
-   "title": "Look up the partner",
-   "duration": 63.36,
-   "lines": [
-    {
-     "id": "hm1s_1",
-     "text": "For every number, exactly one partner would complete the pair. The target, minus that number.",
-     "start": 0.2,
-     "end": 6.2
-    },
-    {
-     "id": "hm1s_2",
-     "text": "So remember every number you pass, and where it was. Then ask the map for the partner.",
-     "start": 6.95,
-     "end": 12.21
-    },
-    {
-     "id": "hm1s_3",
-     "text": "Line two makes an empty map, called seen.",
-     "start": 12.96,
-     "end": 15.33
-    },
-    {
-     "id": "hm1s_4",
-     "text": "Door zero holds four. Line four works out the partner. Eleven minus four. Seven.",
-     "start": 16.08,
-     "end": 21.86
-    },
-    {
-     "id": "hm1s_5",
-     "text": "Seven has not been seen. So line six stores four, and its index.",
-     "start": 22.61,
-     "end": 27.06
-    },
-    {
-     "id": "hm1s_6",
-     "text": "Door one holds nine. The partner is two. Not seen. Store nine.",
-     "start": 27.81,
-     "end": 31.83
-    },
-    {
-     "id": "hm1s_7",
-     "text": "Door two holds two. The partner is nine. Is nine in the map?",
-     "start": 32.58,
-     "end": 36.27
-    },
-    {
-     "id": "hm1s_8",
-     "text": "Yes. At door one. Line five returns both indexes.",
-     "start": 37.47,
-     "end": 41.4
-    },
-    {
-     "id": "hm1s_9",
-     "text": "One pass, and every map operation is one step on average. O of n time.",
-     "start": 42.5,
-     "end": 48.06
-    },
-    {
-     "id": "hm1s_10",
-     "text": "The map can hold every number. O of n space. Memory, traded for time.",
-     "start": 48.81,
-     "end": 53.52
-    },
-    {
-     "id": "hm1s_11",
-     "text": "Accounting software matches two payments to one bill like this. For each amount, it looks up the one that completes the total.",
-     "start": 54.27,
-     "end": 61.76
-    }
-   ],
-   "pauses": [
-    {
-     "id": "hm1s-q",
-     "t": 36.47
-    }
-   ]
-  },
-  "hm2i": {
-   "src": "videos/hm2i.mp4",
-   "title": "Seen It Before",
-   "duration": 19.75,
-   "lines": [
-    {
-     "id": "hm2i_1",
-     "text": "Someone posted the same parcel twice. Hazel wants to catch it.",
-     "start": 0.2,
-     "end": 4.26
-    },
-    {
-     "id": "hm2i_2",
-     "text": "Return true if any number appears more than once. Otherwise false.",
-     "start": 4.96,
-     "end": 9.34
-    },
-    {
-     "id": "hm2i_3",
-     "text": "You could compare every pair of doors. That is slow.",
-     "start": 10.04,
-     "end": 13.13
-    },
-    {
-     "id": "hm2i_4",
-     "text": "At each door you are really asking one question. Which one? Your turn.",
-     "start": 13.83,
-     "end": 18.15
-    }
-   ],
-   "pauses": []
-  },
-  "hm2s": {
-   "src": "videos/hm2s.mp4",
-   "title": "Ask before you add",
-   "duration": 45.85,
-   "lines": [
-    {
-     "id": "hm2s_1",
-     "text": "At every door, the question is the same. Have I seen this number before?",
-     "start": 0.2,
-     "end": 4.53
-    },
-    {
-     "id": "hm2s_2",
-     "text": "A set answers that in one step. Check first. Then add.",
-     "start": 5.28,
-     "end": 8.79
-    },
-    {
-     "id": "hm2s_3",
-     "text": "Line two makes an empty set.",
-     "start": 9.54,
-     "end": 11.29
-    },
-    {
-     "id": "hm2s_4",
-     "text": "Door zero. Three. Not in the set. Line five adds it.",
-     "start": 12.04,
-     "end": 15.29
-    },
-    {
-     "id": "hm2s_5",
-     "text": "Seven. Not in the set. Add it.",
-     "start": 16.05,
-     "end": 17.87
-    },
-    {
-     "id": "hm2s_6",
-     "text": "One. New. Add it.",
-     "start": 18.62,
-     "end": 19.98
-    },
-    {
-     "id": "hm2s_7",
-     "text": "Door three holds seven. What does the set say?",
-     "start": 20.73,
-     "end": 23.6
-    },
-    {
-     "id": "hm2s_8",
-     "text": "Seven is already there. Line four returns true.",
-     "start": 24.8,
-     "end": 27.95
-    },
-    {
-     "id": "hm2s_9",
-     "text": "One pass, and every map operation is one step on average. O of n time.",
-     "start": 29.05,
-     "end": 34.61
-    },
-    {
-     "id": "hm2s_10",
-     "text": "The set can hold every number. O of n space.",
-     "start": 35.36,
-     "end": 38.4
-    },
-    {
-     "id": "hm2s_11",
-     "text": "A sign-up form checks your username against a set of taken names, in one step.",
-     "start": 39.15,
-     "end": 44.25
-    }
-   ],
-   "pauses": [
-    {
-     "id": "hm2s-q",
-     "t": 23.8
-    }
-   ]
-  },
-  "hm3i": {
-   "src": "videos/hm3i.mp4",
-   "title": "The Favourite",
-   "duration": 17.25,
-   "lines": [
-    {
-     "id": "hm3i_1",
-     "text": "Hazel wants to know which parcel number turns up most often.",
-     "start": 0.2,
-     "end": 4.05
-    },
-    {
-     "id": "hm3i_2",
-     "text": "Return the number that appears the most times.",
-     "start": 4.75,
-     "end": 7.38
-    },
-    {
-     "id": "hm3i_3",
-     "text": "Counting one number at a time means walking the row again and again.",
-     "start": 8.08,
-     "end": 12.28
-    },
-    {
-     "id": "hm3i_4",
-     "text": "What could keep every count at once? Your turn.",
-     "start": 12.97,
-     "end": 15.65
-    }
-   ],
-   "pauses": []
-  },
-  "hm3s": {
-   "src": "videos/hm3s.mp4",
-   "title": "Count as you go",
-   "duration": 59.76,
-   "lines": [
-    {
-     "id": "hm3s_1",
-     "text": "One walk is enough, if something keeps a count for every number at the same time.",
-     "start": 0.2,
-     "end": 4.88
-    },
-    {
-     "id": "hm3s_2",
-     "text": "And as the counts grow, remember which number is in the lead.",
-     "start": 5.63,
-     "end": 9.25
-    },
-    {
-     "id": "hm3s_3",
-     "text": "An empty count map. And the first number, five, starts as the best.",
-     "start": 10,
-     "end": 14.31
-    },
-    {
-     "id": "hm3s_4",
-     "text": "Door zero. Five. Line six gives it a count of one.",
-     "start": 15.06,
-     "end": 18.63
-    },
-    {
-     "id": "hm3s_5",
-     "text": "Two. Count one. Line seven asks: is one more than the best count, one? No.",
-     "start": 19.38,
-     "end": 24.98
-    },
-    {
-     "id": "hm3s_6",
-     "text": "Two again. Its count is now two. Is that more than the best count?",
-     "start": 25.73,
-     "end": 29.65
-    },
-    {
-     "id": "hm3s_7",
-     "text": "Yes. Two takes the lead.",
-     "start": 30.85,
-     "end": 32.3
-    },
-    {
-     "id": "hm3s_8",
-     "text": "Eight. Count one. No change.",
-     "start": 33.05,
-     "end": 34.97
-    },
-    {
-     "id": "hm3s_9",
-     "text": "Two once more. Three. It is already the best.",
-     "start": 35.72,
-     "end": 38.66
-    },
-    {
-     "id": "hm3s_10",
-     "text": "Line nine returns best. Two.",
-     "start": 39.41,
-     "end": 41.53
-    },
-    {
-     "id": "hm3s_11",
-     "text": "One pass, and every map operation is one step on average. O of n time.",
-     "start": 42.63,
-     "end": 48.18
-    },
-    {
-     "id": "hm3s_12",
-     "text": "One entry for each different number. O of n space.",
-     "start": 48.93,
-     "end": 52.39
-    },
-    {
-     "id": "hm3s_13",
-     "text": "Counting in a map is how a shop finds its best seller, and how a poll counts votes.",
-     "start": 53.14,
-     "end": 58.16
-    }
-   ],
-   "pauses": [
-    {
-     "id": "hm3s-q",
-     "t": 29.85
-    }
-   ]
-  },
-  "hm4i": {
-   "src": "videos/hm4i.mp4",
-   "title": "Close Twins",
-   "duration": 20.23,
-   "lines": [
-    {
-     "id": "hm4i_1",
-     "text": "Two copies of the same parcel are only a problem if they sit close together.",
-     "start": 0.2,
-     "end": 5
-    },
-    {
-     "id": "hm4i_2",
-     "text": "Return true if the same number appears at two doors at most k apart.",
-     "start": 5.71,
-     "end": 10.17
-    },
-    {
-     "id": "hm4i_3",
-     "text": "The fours here are three doors apart. Too far. But keep looking.",
-     "start": 10.87,
-     "end": 14.77
-    },
-    {
-     "id": "hm4i_4",
-     "text": "For each number, which earlier door matters? Your turn.",
-     "start": 15.46,
-     "end": 18.63
-    }
-   ],
-   "pauses": []
-  },
-  "hm4s": {
-   "src": "videos/hm4s.mp4",
-   "title": "Where did I last see it?",
-   "duration": 56.92,
-   "lines": [
-    {
-     "id": "hm4s_1",
-     "text": "For each number, only the most recent copy matters. It is the closest one.",
-     "start": 0.2,
-     "end": 5.16
-    },
-    {
-     "id": "hm4s_2",
-     "text": "So keep a map from each number to the last door it was seen at.",
-     "start": 5.91,
-     "end": 9.27
-    },
-    {
-     "id": "hm4s_3",
-     "text": "An empty map, called last.",
-     "start": 10.02,
-     "end": 11.71
-    },
-    {
-     "id": "hm4s_4",
-     "text": "Four, one, and two are all new. Each is stored with its door.",
-     "start": 12.46,
-     "end": 16.16
-    },
-    {
-     "id": "hm4s_5",
-     "text": "Door three holds four. It was last seen at door zero. Three minus zero is three. More than k.",
-     "start": 16.91,
-     "end": 23.22
-    },
-    {
-     "id": "hm4s_6",
-     "text": "So line seven overwrites it. Four was last seen at door three.",
-     "start": 23.97,
-     "end": 28.02
-    },
-    {
-     "id": "hm4s_7",
-     "text": "Door four holds two. It was last seen at door two. How far apart?",
-     "start": 28.77,
-     "end": 33.22
-    },
-    {
-     "id": "hm4s_8",
-     "text": "Two. That is within k. Line five returns true.",
-     "start": 34.42,
-     "end": 37.47
-    },
-    {
-     "id": "hm4s_9",
-     "text": "One pass, and every map operation is one step on average. O of n time.",
-     "start": 38.57,
-     "end": 44.13
-    },
-    {
-     "id": "hm4s_10",
-     "text": "One entry for each different number. O of n space.",
-     "start": 44.88,
-     "end": 48.34
-    },
-    {
-     "id": "hm4s_11",
-     "text": "A chat app can block the same message sent twice within a few seconds. It remembers when it last saw it.",
-     "start": 49.09,
-     "end": 55.32
-    }
-   ],
-   "pauses": [
-    {
-     "id": "hm4s-q",
-     "t": 33.42
-    }
-   ]
-  },
-  "hm5i": {
-   "src": "videos/hm5i.mp4",
-   "title": "Same Letters, Same Group",
-   "duration": 19.89,
-   "lines": [
-    {
-     "id": "hm5i_1",
-     "text": "Eat. Tea. Ate. Three different words, made of the same three letters.",
-     "start": 0.2,
-     "end": 4.17
-    },
-    {
-     "id": "hm5i_2",
-     "text": "Group the words, so that words with exactly the same letters end up together.",
-     "start": 4.87,
-     "end": 9.54
-    },
-    {
-     "id": "hm5i_3",
-     "text": "Comparing every word with every other word is slow.",
-     "start": 10.24,
-     "end": 13.2
-    },
-    {
-     "id": "hm5i_4",
-     "text": "Could each word carry a label that is the same for its whole group? Your turn.",
-     "start": 13.9,
-     "end": 18.29
-    }
-   ],
-   "pauses": []
-  },
-  "hm5s": {
-   "src": "videos/hm5s.mp4",
-   "title": "Sorted letters are the label",
-   "duration": 66.45,
-   "lines": [
-    {
-     "id": "hm5s_1",
-     "text": "Words from the same group have the same letters. Sort the letters, and they all turn into the same string.",
-     "start": 0.2,
-     "end": 6.49
-    },
-    {
-     "id": "hm5s_2",
-     "text": "So a map from that label to a list collects each group in one pass.",
-     "start": 7.24,
-     "end": 11.54
-    },
-    {
-     "id": "hm5s_3",
-     "text": "Line two makes an empty map of groups.",
-     "start": 12.29,
-     "end": 14.75
-    },
-    {
-     "id": "hm5s_4",
-     "text": "Eat. Line four sorts its letters. A, E, T. That is the key.",
-     "start": 15.5,
-     "end": 19.35
-    },
-    {
-     "id": "hm5s_5",
-     "text": "The key is new, so line five starts an empty list for it. Line six adds the word.",
-     "start": 20.1,
-     "end": 25.46
-    },
-    {
-     "id": "hm5s_6",
-     "text": "Tea. Sorted, it is also A, E, T. The same key. So it joins the same list.",
-     "start": 26.21,
-     "end": 31.29
-    },
-    {
-     "id": "hm5s_7",
-     "text": "Tan. Sorted: A, N, T. A new key, so a new list.",
-     "start": 32.04,
-     "end": 35.42
-    },
-    {
-     "id": "hm5s_8",
-     "text": "Ate. What is its key, and which list does it join?",
-     "start": 36.17,
-     "end": 39.01
-    },
-    {
-     "id": "hm5s_9",
-     "text": "A, E, T. It joins eat and tea.",
-     "start": 40.21,
-     "end": 41.97
-    },
-    {
-     "id": "hm5s_10",
-     "text": "Line eight returns the lists. Two groups.",
-     "start": 42.72,
-     "end": 45.25
-    },
-    {
-     "id": "hm5s_11",
-     "text": "One pass over the words. Sorting the letters of a short word is a small, fixed cost. O of n words.",
-     "start": 46.35,
-     "end": 53.2
-    },
-    {
-     "id": "hm5s_12",
-     "text": "The map holds every word once. O of n space.",
-     "start": 53.95,
-     "end": 57.3
-    },
-    {
-     "id": "hm5s_13",
-     "text": "Your photo app groups pictures the same way. Each photo gets a label, its date, and a map collects the groups.",
-     "start": 58.05,
-     "end": 64.85
-    }
-   ],
-   "pauses": [
-    {
-     "id": "hm5s-q",
-     "t": 39.21
-    }
-   ]
-  },
-  "hm6i": {
-   "src": "videos/hm6i.mp4",
-   "title": "The Longest Chain",
-   "duration": 21.61,
-   "lines": [
-    {
-     "id": "hm6i_1",
-     "text": "These parcels are numbered, and scattered. Somewhere in there is a chain: two, three, four, five.",
-     "start": 0.2,
-     "end": 6
-    },
-    {
-     "id": "hm6i_2",
-     "text": "Return the length of the longest run of consecutive numbers. Without sorting.",
-     "start": 6.7,
-     "end": 11.34
-    },
-    {
-     "id": "hm6i_3",
-     "text": "With a set, asking is this number here takes one step.",
-     "start": 12.04,
-     "end": 15.25
-    },
-    {
-     "id": "hm6i_4",
-     "text": "So how can you tell that a number is the start of a chain? Your turn.",
-     "start": 15.95,
-     "end": 20.01
-    }
-   ],
-   "pauses": []
-  },
-  "hm6s": {
-   "src": "videos/hm6s.mp4",
-   "title": "Only count from a start",
-   "duration": 68.57,
-   "lines": [
-    {
-     "id": "hm6s_1",
-     "text": "Put every number in a set. Then asking, is this number here, takes one step.",
-     "start": 0.2,
-     "end": 5.02
-    },
-    {
-     "id": "hm6s_2",
-     "text": "A number starts a chain only if the number just below it is missing. Count upward from starts only.",
-     "start": 5.77,
-     "end": 11.9
-    },
-    {
-     "id": "hm6s_3",
-     "text": "Line two puts every number into a set.",
-     "start": 12.65,
-     "end": 15.14
-    },
-    {
-     "id": "hm6s_4",
-     "text": "Five. Is four in the set? Yes. So five is not a start. Line five skips it.",
-     "start": 15.89,
-     "end": 21.13
-    },
-    {
-     "id": "hm6s_5",
-     "text": "Two. Is one in the set? No. So two starts a chain.",
-     "start": 21.88,
-     "end": 25.12
-    },
-    {
-     "id": "hm6s_6",
-     "text": "Line seven counts upward. Three is here. Four is here. Five is here. Six is not. The chain is four long.",
-     "start": 25.87,
-     "end": 32.81
-    },
-    {
-     "id": "hm6s_7",
-     "text": "Line eight. Best is four.",
-     "start": 33.56,
-     "end": 35.02
-    },
-    {
-     "id": "hm6s_8",
-     "text": "Nine. Eight is not in the set, so nine is a start. How long is its chain?",
-     "start": 35.77,
-     "end": 40.06
-    },
-    {
-     "id": "hm6s_9",
-     "text": "One. Ten is not there. Best stays four.",
-     "start": 41.26,
-     "end": 43.87
-    },
-    {
-     "id": "hm6s_10",
-     "text": "Three and four are not starts, so both are skipped. Line ten returns four.",
-     "start": 44.62,
-     "end": 49.18
-    },
-    {
-     "id": "hm6s_11",
-     "text": "Each number is counted only inside the one chain it belongs to. So the total is O of n.",
-     "start": 50.28,
-     "end": 56.09
-    },
-    {
-     "id": "hm6s_12",
-     "text": "The set holds every number. O of n space.",
-     "start": 56.84,
-     "end": 59.76
-    },
-    {
-     "id": "hm6s_13",
-     "text": "A streaming app finds your longest run of days in a row like this, even when the days arrive out of order.",
-     "start": 60.51,
-     "end": 66.97
-    }
-   ],
-   "pauses": [
-    {
-     "id": "hm6s-q",
-     "t": 40.26
-    }
-   ]
-  },
-  "ps1i": {
-   "src": "videos/ps1i.mp4",
-   "title": "The Running Total",
-   "duration": 21.13,
-   "lines": [
-    {
-     "id": "ps1i_1",
-     "text": "Pip counts seeds door by door, and wants the total so far at every door.",
-     "start": 0.2,
-     "end": 4.68
-    },
-    {
-     "id": "ps1i_2",
-     "text": "Return a new array. Position i holds the sum of everything up to and including door i.",
-     "start": 5.38,
-     "end": 11.09
-    },
-    {
-     "id": "ps1i_3",
-     "text": "To get the third total, do you really need to add three numbers again?",
-     "start": 11.79,
-     "end": 15.76
-    },
-    {
-     "id": "ps1i_4",
-     "text": "What single number could you carry along? Your turn.",
-     "start": 16.46,
-     "end": 19.53
-    }
-   ],
-   "pauses": []
-  },
-  "ps1s": {
-   "src": "videos/ps1s.mp4",
-   "title": "Carry the total along",
-   "duration": 63.32,
-   "lines": [
-    {
-     "id": "ps1s_1",
-     "text": "Each total is the total before it, plus one more number. So nothing needs to be added twice.",
-     "start": 0.2,
-     "end": 6.17
-    },
-    {
-     "id": "ps1s_2",
-     "text": "Carry one number, sum, from door to door. Write it down after every add.",
-     "start": 6.92,
-     "end": 11.52
-    },
-    {
-     "id": "ps1s_3",
-     "text": "Line two makes an empty row for the answers. Line three starts sum at zero.",
-     "start": 12.27,
-     "end": 17.15
-    },
-    {
-     "id": "ps1s_4",
-     "text": "I is zero. Line five adds the three to sum. Sum is three.",
-     "start": 17.9,
-     "end": 21.8
-    },
-    {
-     "id": "ps1s_5",
-     "text": "Line six writes that total into the answer row.",
-     "start": 22.55,
-     "end": 25.3
-    },
-    {
-     "id": "ps1s_6",
-     "text": "Next door. Add one. Sum is four. Write it down.",
-     "start": 26.05,
-     "end": 29.09
-    },
-    {
-     "id": "ps1s_7",
-     "text": "The next door holds four, and sum is four. What gets written?",
-     "start": 29.84,
-     "end": 33.49
-    },
-    {
-     "id": "ps1s_8",
-     "text": "Eight. The old total, plus one new number.",
-     "start": 34.69,
-     "end": 37.26
-    },
-    {
-     "id": "ps1s_9",
-     "text": "Last door. Add two. Ten.",
-     "start": 38.01,
-     "end": 39.85
-    },
-    {
-     "id": "ps1s_10",
-     "text": "The loop ends, and line eight returns the answer row.",
-     "start": 40.6,
-     "end": 43.87
-    },
-    {
-     "id": "ps1s_11",
-     "text": "One walk, and one add per door. O of n time.",
-     "start": 44.97,
-     "end": 48.02
-    },
-    {
-     "id": "ps1s_12",
-     "text": "The answer row holds n totals. O of n space. That row has a name: the prefix sums.",
-     "start": 48.77,
-     "end": 54.9
-    },
-    {
-     "id": "ps1s_13",
-     "text": "A bank statement works like this. Every line shows the balance so far. One running total.",
-     "start": 55.65,
-     "end": 61.72
-    }
-   ],
-   "pauses": [
-    {
-     "id": "ps1s-q",
-     "t": 33.69
-    }
-   ]
-  },
-  "ps2i": {
-   "src": "videos/ps2i.mp4",
-   "title": "The Balance Point",
-   "duration": 23.62,
-   "lines": [
-    {
-     "id": "ps2i_1",
-     "text": "Moss wants a door where the left side and the right side weigh the same.",
-     "start": 0.2,
-     "end": 4.31
-    },
-    {
-     "id": "ps2i_2",
-     "text": "Return the first index where the sum to its left equals the sum to its right. If there is none, return minus one.",
-     "start": 5.01,
-     "end": 12.6
-    },
-    {
-     "id": "ps2i_3",
-     "text": "Adding up both sides again at every door is a lot of walking.",
-     "start": 13.3,
-     "end": 17.07
-    },
-    {
-     "id": "ps2i_4",
-     "text": "If you know the total, and the left side, what is the right side? Your turn.",
-     "start": 17.77,
-     "end": 22.02
-    }
-   ],
-   "pauses": []
-  },
-  "ps2s": {
-   "src": "videos/ps2s.mp4",
-   "title": "Total, minus left, minus this door",
-   "duration": 68.81,
-   "lines": [
-    {
-     "id": "ps2s_1",
-     "text": "The whole row is three parts. The left side, this door, and the right side.",
-     "start": 0.2,
-     "end": 4.52
-    },
-    {
-     "id": "ps2s_2",
-     "text": "So if we know the total and the left side, the right side is one subtraction.",
-     "start": 5.27,
-     "end": 9.93
-    },
-    {
-     "id": "ps2s_3",
-     "text": "Lines two and three add everything up, once. The total is ten.",
-     "start": 10.68,
-     "end": 14.59
-    },
-    {
-     "id": "ps2s_4",
-     "text": "Line four. Left starts at zero, because nothing is to the left of the first door.",
-     "start": 15.34,
-     "end": 20.54
-    },
-    {
-     "id": "ps2s_5",
-     "text": "Door zero. Line six works out the right side. Ten, minus zero, minus two. Eight.",
-     "start": 21.29,
-     "end": 26.83
-    },
-    {
-     "id": "ps2s_6",
-     "text": "Line seven compares. Zero is not eight. Not balanced.",
-     "start": 27.58,
-     "end": 31.23
-    },
-    {
-     "id": "ps2s_7",
-     "text": "Line eight moves this door into the left side. Left is two.",
-     "start": 31.98,
-     "end": 35.59
-    },
-    {
-     "id": "ps2s_8",
-     "text": "Door one. Ten, minus two, minus one. Seven. Two is not seven.",
-     "start": 36.34,
-     "end": 40.58
-    },
-    {
-     "id": "ps2s_9",
-     "text": "Left becomes three.",
-     "start": 41.33,
-     "end": 42.61
-    },
-    {
-     "id": "ps2s_10",
-     "text": "Door two holds four, and left is three. What is the right side?",
-     "start": 43.36,
-     "end": 47.04
-    },
-    {
-     "id": "ps2s_11",
-     "text": "Three. Left equals right. Line seven returns the index. Two.",
-     "start": 48.24,
-     "end": 52.48
-    },
-    {
-     "id": "ps2s_12",
-     "text": "One walk for the total, and one to search. O of n time.",
-     "start": 53.58,
-     "end": 57.02
-    },
-    {
-     "id": "ps2s_13",
-     "text": "Three numbers, and no extra row. O of one space.",
-     "start": 57.77,
-     "end": 61.18
-    },
-    {
-     "id": "ps2s_14",
-     "text": "Loading a truck or a ship uses the same check. Where is the weight on both sides equal?",
-     "start": 61.93,
-     "end": 67.21
-    }
-   ],
-   "pauses": [
-    {
-     "id": "ps2s-q",
-     "t": 47.24
-    }
-   ]
-  },
-  "ps3i": {
-   "src": "videos/ps3i.mp4",
-   "title": "Many Questions",
-   "duration": 23.74,
-   "lines": [
-    {
-     "id": "ps3i_1",
-     "text": "The same row of doors, and a long list of questions. What is the sum of doors one to two? Zero to three?",
-     "start": 0.2,
-     "end": 6.91
-    },
-    {
-     "id": "ps3i_2",
-     "text": "Return the answer to every query, in order. Each query is a pair, l and r.",
-     "start": 7.61,
-     "end": 12.79
-    },
-    {
-     "id": "ps3i_3",
-     "text": "With fifty thousand questions, walking every range is far too slow.",
-     "start": 13.49,
-     "end": 17.83
-    },
-    {
-     "id": "ps3i_4",
-     "text": "What could you work out once, before the first question? Your turn.",
-     "start": 18.53,
-     "end": 22.14
-    }
-   ],
-   "pauses": []
-  },
-  "ps3s": {
-   "src": "videos/ps3s.mp4",
-   "title": "One row of totals, many answers",
-   "duration": 73.37,
-   "lines": [
-    {
-     "id": "ps3s_1",
-     "text": "Walking every range repeats the same adding. So do the adding once, before any question.",
-     "start": 0.2,
-     "end": 5.51
-    },
-    {
-     "id": "ps3s_2",
-     "text": "Keep the total before every door. Then any range is one total minus another.",
-     "start": 6.26,
-     "end": 11.36
-    },
-    {
-     "id": "ps3s_3",
-     "text": "Line two starts the totals row with a zero. The sum of nothing.",
-     "start": 12.11,
-     "end": 16.16
-    },
-    {
-     "id": "ps3s_4",
-     "text": "Lines three to five fill it in. Each slot is the slot before, plus one number. Zero plus three is three.",
-     "start": 16.91,
-     "end": 23.81
-    },
-    {
-     "id": "ps3s_5",
-     "text": "Then four. Eight. And ten.",
-     "start": 24.56,
-     "end": 26.22
-    },
-    {
-     "id": "ps3s_6",
-     "text": "Now the questions. The first one asks for doors one to two.",
-     "start": 26.97,
-     "end": 30.64
-    },
-    {
-     "id": "ps3s_7",
-     "text": "Line eight takes the total after door two. That is pre at three. Eight.",
-     "start": 31.39,
-     "end": 35.57
-    },
-    {
-     "id": "ps3s_8",
-     "text": "Then it removes everything before door one. Pre at one. Three. Eight minus three is five.",
-     "start": 36.32,
-     "end": 42.04
-    },
-    {
-     "id": "ps3s_9",
-     "text": "The next question. Doors zero to three. Which two slots do we need?",
-     "start": 42.79,
-     "end": 47.07
-    },
-    {
-     "id": "ps3s_10",
-     "text": "Pre at four, minus pre at zero. Ten minus zero. Ten.",
-     "start": 48.27,
-     "end": 52.03
-    },
-    {
-     "id": "ps3s_11",
-     "text": "Line ten returns both answers.",
-     "start": 52.78,
-     "end": 54.96
-    },
-    {
-     "id": "ps3s_12",
-     "text": "Building the row costs n steps, once. After that, every question is one subtraction.",
-     "start": 56.06,
-     "end": 61.5
-    },
-    {
-     "id": "ps3s_13",
-     "text": "The price is one extra row. O of n space.",
-     "start": 62.25,
-     "end": 65.4
-    },
-    {
-     "id": "ps3s_14",
-     "text": "A fitness app answers steps from Monday to Friday at once, because it keeps running totals.",
-     "start": 66.15,
-     "end": 71.77
-    }
-   ],
-   "pauses": [
-    {
-     "id": "ps3s-q",
-     "t": 47.27
-    }
-   ]
-  },
-  "ps4i": {
-   "src": "videos/ps4i.mp4",
-   "title": "Stretches That Add Up",
-   "duration": 23.33,
-   "lines": [
-    {
-     "id": "ps4i_1",
-     "text": "How many unbroken stretches of these doors add up to exactly three?",
-     "start": 0.2,
-     "end": 4.44
-    },
-    {
-     "id": "ps4i_2",
-     "text": "Return the count. A stretch is any run of neighbours, even a single door.",
-     "start": 5.14,
-     "end": 9.64
-    },
-    {
-     "id": "ps4i_3",
-     "text": "Trying every start and every end is too slow for a long row.",
-     "start": 10.34,
-     "end": 14.21
-    },
-    {
-     "id": "ps4i_4",
-     "text": "Every stretch is a running total, minus an earlier total. What could remember the earlier ones? Your turn.",
-     "start": 14.91,
-     "end": 21.73
-    }
-   ],
-   "pauses": []
-  },
-  "ps4s": {
-   "src": "videos/ps4s.mp4",
-   "title": "Look back for sum \u2212 k",
-   "duration": 91.67,
-   "lines": [
-    {
-     "id": "ps4s_1",
-     "text": "Every stretch is the running total now, minus the running total at some earlier point.",
-     "start": 0.2,
-     "end": 5.51
-    },
-    {
-     "id": "ps4s_2",
-     "text": "So a stretch ending here adds up to k, when an earlier total equals sum minus k. A map remembers the earlier totals.",
-     "start": 6.26,
-     "end": 14.33
-    },
-    {
-     "id": "ps4s_3",
-     "text": "Line two makes the map of totals seen so far. It starts with zero, seen once. That is the total before the first door.",
-     "start": 15.08,
-     "end": 22.91
-    },
-    {
-     "id": "ps4s_4",
-     "text": "Sum and count both start at zero.",
-     "start": 23.66,
-     "end": 25.61
-    },
-    {
-     "id": "ps4s_5",
-     "text": "Door zero. Line six adds it. Sum is one.",
-     "start": 26.36,
-     "end": 29.25
-    },
-    {
-     "id": "ps4s_6",
-     "text": "Line seven looks for sum minus k. One minus three is minus two. Never seen. Count stays zero.",
-     "start": 30,
-     "end": 36.57
-    },
-    {
-     "id": "ps4s_7",
-     "text": "Line eight records the total, one, in the map.",
-     "start": 37.32,
-     "end": 39.96
-    },
-    {
-     "id": "ps4s_8",
-     "text": "Door one. Sum is three. We need three minus three. Zero.",
-     "start": 40.71,
-     "end": 44.37
-    },
-    {
-     "id": "ps4s_9",
-     "text": "Zero was seen once. So one stretch ends here. Doors zero and one. Count is one.",
-     "start": 45.12,
-     "end": 51.03
-    },
-    {
-     "id": "ps4s_10",
-     "text": "Record the three.",
-     "start": 51.78,
-     "end": 52.91
-    },
-    {
-     "id": "ps4s_11",
-     "text": "Door two. Sum is four. Which earlier total are we looking for?",
-     "start": 53.66,
-     "end": 57.71
-    },
-    {
-     "id": "ps4s_12",
-     "text": "One. Seen once. That stretch is doors one and two. Count is two.",
-     "start": 58.91,
-     "end": 62.98
-    },
-    {
-     "id": "ps4s_13",
-     "text": "Last door. Sum is seven. We need four. Seen once. The door on its own. Count is three.",
-     "start": 63.73,
-     "end": 69.48
-    },
-    {
-     "id": "ps4s_14",
-     "text": "Line ten returns the count. Three.",
-     "start": 70.23,
-     "end": 72.58
-    },
-    {
-     "id": "ps4s_15",
-     "text": "One walk, and each map lookup is one step. O of n time.",
-     "start": 73.68,
-     "end": 77.32
-    },
-    {
-     "id": "ps4s_16",
-     "text": "The map can hold one total per door. O of n space.",
-     "start": 78.07,
-     "end": 81.59
-    },
-    {
-     "id": "ps4s_17",
-     "text": "A shop can ask: which stretches of days added up to exactly the sales target? This look back answers it in one pass.",
-     "start": 82.34,
-     "end": 90.07
-    }
-   ],
-   "pauses": [
-    {
-     "id": "ps4s-q",
-     "t": 57.91
-    }
-   ]
-  },
-  "tp1i": {
-   "src": "videos/tp1i.mp4",
-   "title": "The Pair in Order",
-   "duration": 23.62,
-   "lines": [
-    {
-     "id": "tp1i_1",
-     "text": "Two doors in this row add up to nine. And the row is sorted.",
-     "start": 0.2,
-     "end": 3.93
-    },
-    {
-     "id": "tp1i_2",
-     "text": "Return the indexes of the two doors. If there is no such pair, return minus one, minus one.",
-     "start": 4.63,
-     "end": 10.99
-    },
-    {
-     "id": "tp1i_3",
-     "text": "A map would work. But sorted order lets you do it with no extra memory at all.",
-     "start": 11.69,
-     "end": 16.67
-    },
-    {
-     "id": "tp1i_4",
-     "text": "Start at the two ends. One plus nine. Too big, or too small? Your turn.",
-     "start": 17.37,
-     "end": 22.02
-    }
-   ],
-   "pauses": []
-  },
-  "tp1s": {
-   "src": "videos/tp1s.mp4",
-   "title": "Let the sum steer",
-   "duration": 68,
-   "lines": [
-    {
-     "id": "tp1s_1",
-     "text": "The row is sorted. So the smallest number is on the left, and the biggest is on the right.",
-     "start": 0.2,
-     "end": 5.73
-    },
-    {
-     "id": "tp1s_2",
-     "text": "Add the two ends. If the sum is too big, give up the biggest. If it is too small, give up the smallest.",
-     "start": 6.48,
-     "end": 13.06
-    },
-    {
-     "id": "tp1s_3",
-     "text": "Lines two and three place Pip on the first door, and Moss on the last.",
-     "start": 13.81,
-     "end": 17.88
-    },
-    {
-     "id": "tp1s_4",
-     "text": "Line five adds the two doors. One plus nine is ten.",
-     "start": 18.63,
-     "end": 22.24
-    },
-    {
-     "id": "tp1s_5",
-     "text": "Ten is more than nine. Too big. Line eight moves Moss one step left.",
-     "start": 22.99,
-     "end": 27.61
-    },
-    {
-     "id": "tp1s_6",
-     "text": "One plus six is seven.",
-     "start": 28.36,
-     "end": 29.94
-    },
-    {
-     "id": "tp1s_7",
-     "text": "Seven is less than nine. Too small. Who moves?",
-     "start": 30.69,
-     "end": 33.82
-    },
-    {
-     "id": "tp1s_8",
-     "text": "Pip. Moving the left marker forward is the only way to make the sum bigger.",
-     "start": 35.02,
-     "end": 39.73
-    },
-    {
-     "id": "tp1s_9",
-     "text": "Three plus six is nine.",
-     "start": 40.48,
-     "end": 41.96
-    },
-    {
-     "id": "tp1s_10",
-     "text": "That is the target. Line six returns both indexes.",
-     "start": 42.71,
-     "end": 46.35
-    },
-    {
-     "id": "tp1s_11",
-     "text": "Every step moves one walker inward, so there are at most n steps. O of n time.",
-     "start": 47.45,
-     "end": 53.16
-    },
-    {
-     "id": "tp1s_12",
-     "text": "No map, and no extra row. O of one space. That is what sorted order buys you.",
-     "start": 53.91,
-     "end": 59.3
-    },
-    {
-     "id": "tp1s_13",
-     "text": "A shop app finds two items that use up a voucher exactly, by walking a price list from both ends.",
-     "start": 60.05,
-     "end": 66.4
-    }
-   ],
-   "pauses": [
-    {
-     "id": "tp1s-q",
-     "t": 34.02
-    }
-   ]
-  },
-  "tp2i": {
-   "src": "videos/tp2i.mp4",
-   "title": "Squares in Order",
-   "duration": 19.48,
-   "lines": [
-    {
-     "id": "tp2i_1",
-     "text": "A sorted row, with some negative numbers. Square every one, and the order breaks.",
-     "start": 0.2,
-     "end": 5.38
-    },
-    {
-     "id": "tp2i_2",
-     "text": "Return the squares in sorted order. And do not call sort.",
-     "start": 6.08,
-     "end": 9.63
-    },
-    {
-     "id": "tp2i_3",
-     "text": "Minus four squared is sixteen. Bigger than three squared.",
-     "start": 10.33,
-     "end": 13.89
-    },
-    {
-     "id": "tp2i_4",
-     "text": "So where does the biggest square always hide? Your turn.",
-     "start": 14.59,
-     "end": 17.88
-    }
-   ],
-   "pauses": []
-  },
-  "tp2s": {
-   "src": "videos/tp2s.mp4",
-   "title": "Biggest first, from the back",
-   "duration": 77.01,
-   "lines": [
-    {
-     "id": "tp2s_1",
-     "text": "Squaring a negative number makes it positive. So the biggest squares hide at the two ends of the row.",
-     "start": 0.2,
-     "end": 6
-    },
-    {
-     "id": "tp2s_2",
-     "text": "Compare the two ends, take the bigger square, and fill the answer from the back.",
-     "start": 6.75,
-     "end": 11.03
-    },
-    {
-     "id": "tp2s_3",
-     "text": "Pip stands on the left end. Moss on the right end.",
-     "start": 11.78,
-     "end": 14.78
-    },
-    {
-     "id": "tp2s_4",
-     "text": "K points at the last slot of the answer. We fill from the back, biggest first.",
-     "start": 15.53,
-     "end": 20.38
-    },
-    {
-     "id": "tp2s_5",
-     "text": "Line six compares the sizes, ignoring the sign. Four against five. Five is bigger.",
-     "start": 21.13,
-     "end": 27.27
-    },
-    {
-     "id": "tp2s_6",
-     "text": "So line ten writes five squared. Twenty five. And Moss steps in.",
-     "start": 28.02,
-     "end": 32.22
-    },
-    {
-     "id": "tp2s_7",
-     "text": "The next slot. Four against three. This time the left end wins.",
-     "start": 32.97,
-     "end": 37.35
-    },
-    {
-     "id": "tp2s_8",
-     "text": "Minus four squared is sixteen. Pip steps in.",
-     "start": 38.1,
-     "end": 41.14
-    },
-    {
-     "id": "tp2s_9",
-     "text": "The next slot. Minus one against three. Which square goes in?",
-     "start": 41.89,
-     "end": 45.65
-    },
-    {
-     "id": "tp2s_10",
-     "text": "Nine. Three is the bigger size.",
-     "start": 46.85,
-     "end": 48.89
-    },
-    {
-     "id": "tp2s_11",
-     "text": "Then minus one against zero. One goes in. And the last slot gets zero.",
-     "start": 49.64,
-     "end": 54.44
-    },
-    {
-     "id": "tp2s_12",
-     "text": "Line fourteen returns the answer row, already in order.",
-     "start": 55.19,
-     "end": 58.84
-    },
-    {
-     "id": "tp2s_13",
-     "text": "Each slot is filled once. O of n time. No sorting needed.",
-     "start": 59.94,
-     "end": 63.9
-    },
-    {
-     "id": "tp2s_14",
-     "text": "The answer row is the only extra space. O of n.",
-     "start": 64.65,
-     "end": 68.13
-    },
-    {
-     "id": "tp2s_15",
-     "text": "Ranking things by how far they are from a point, on either side, uses the same walk from both ends.",
-     "start": 68.88,
-     "end": 75.41
-    }
-   ],
-   "pauses": [
-    {
-     "id": "tp2s-q",
-     "t": 45.85
-    }
-   ]
-  },
-  "tp3i": {
-   "src": "videos/tp3i.mp4",
-   "title": "Zeros to the Back",
-   "duration": 21.53,
-   "lines": [
-    {
-     "id": "tp3i_1",
-     "text": "Zeros are scattered through this row. They belong at the back.",
-     "start": 0.2,
-     "end": 3.7
-    },
-    {
-     "id": "tp3i_2",
-     "text": "Move every zero to the end, and keep the other numbers in the same order. Change the array in place.",
-     "start": 4.4,
-     "end": 10.84
-    },
-    {
-     "id": "tp3i_3",
-     "text": "Deleting and re-adding would shift everything, again and again.",
-     "start": 11.54,
-     "end": 15.31
-    },
-    {
-     "id": "tp3i_4",
-     "text": "What if one walker reads, and another marks where to write? Your turn.",
-     "start": 16.01,
-     "end": 19.93
-    }
-   ],
-   "pauses": []
-  },
-  "tp3s": {
-   "src": "videos/tp3s.mp4",
-   "title": "One reads, one writes",
-   "duration": 74.25,
-   "lines": [
-    {
-     "id": "tp3s_1",
-     "text": "Two walkers, moving the same way. A fast reader, and a slow writer.",
-     "start": 0.2,
-     "end": 4.49
-    },
-    {
-     "id": "tp3s_2",
-     "text": "The reader finds the real numbers. The writer marks where the next one belongs.",
-     "start": 5.24,
-     "end": 10
-    },
-    {
-     "id": "tp3s_3",
-     "text": "Line two. Moss marks the write position: the next door that should hold a real number.",
-     "start": 10.75,
-     "end": 16.11
-    },
-    {
-     "id": "tp3s_4",
-     "text": "Pip is the reader, and walks every door. Door zero holds a zero. Line four says skip it.",
-     "start": 16.86,
-     "end": 22.66
-    },
-    {
-     "id": "tp3s_5",
-     "text": "Door one holds three. Not a zero.",
-     "start": 23.41,
-     "end": 25.8
-    },
-    {
-     "id": "tp3s_6",
-     "text": "Lines five to seven swap it with the door Moss is on. Three goes to the front.",
-     "start": 26.55,
-     "end": 31.51
-    },
-    {
-     "id": "tp3s_7",
-     "text": "Line eight moves the write position forward.",
-     "start": 32.26,
-     "end": 34.8
-    },
-    {
-     "id": "tp3s_8",
-     "text": "Door two. A zero. Skip.",
-     "start": 35.55,
-     "end": 37.22
-    },
-    {
-     "id": "tp3s_9",
-     "text": "Door three holds one. Moss is on door one. What happens?",
-     "start": 37.97,
-     "end": 41.72
-    },
-    {
-     "id": "tp3s_10",
-     "text": "The one swaps into door one, and Moss steps forward.",
-     "start": 42.92,
-     "end": 46.03
-    },
-    {
-     "id": "tp3s_11",
-     "text": "The last door. Two. It swaps into door two.",
-     "start": 46.78,
-     "end": 49.67
-    },
-    {
-     "id": "tp3s_12",
-     "text": "The loop ends. Every real number is at the front, in the same order. The zeros are at the back.",
-     "start": 50.42,
-     "end": 56.42
-    },
-    {
-     "id": "tp3s_13",
-     "text": "The reader visits each door once. O of n time.",
-     "start": 57.52,
-     "end": 60.55
-    },
-    {
-     "id": "tp3s_14",
-     "text": "Everything happens inside the same array. O of one space.",
-     "start": 61.3,
-     "end": 65.26
-    },
-    {
-     "id": "tp3s_15",
-     "text": "Deleting photos works like this. The ones you keep slide forward in order, and the free space collects at the end.",
-     "start": 66.01,
-     "end": 72.65
-    }
-   ],
-   "pauses": [
-    {
-     "id": "tp3s-q",
-     "t": 41.92
-    }
-   ]
-  },
-  "tp4i": {
-   "src": "videos/tp4i.mp4",
-   "title": "The Widest Tank",
-   "duration": 22.26,
-   "lines": [
-    {
-     "id": "tp4i_1",
-     "text": "Each door has a wall of some height. Pick two walls, and the space between them holds water.",
-     "start": 0.2,
-     "end": 5.48
-    },
-    {
-     "id": "tp4i_2",
-     "text": "Return the most water any two walls can hold. That is the width, times the lower of the two walls.",
-     "start": 6.18,
-     "end": 12.36
-    },
-    {
-     "id": "tp4i_3",
-     "text": "Trying every pair of walls is O of n squared.",
-     "start": 13.06,
-     "end": 15.92
-    },
-    {
-     "id": "tp4i_4",
-     "text": "Start with the widest tank. Which wall is holding it back? Your turn.",
-     "start": 16.62,
-     "end": 20.66
-    }
-   ],
-   "pauses": []
-  },
-  "tp4s": {
-   "src": "videos/tp4s.mp4",
-   "title": "Start wide, drop the lower wall",
-   "duration": 78.39,
-   "lines": [
-    {
-     "id": "tp4s_1",
-     "text": "Water between two walls rises only as high as the lower wall. So the amount is the width, times the lower wall.",
-     "start": 0.2,
-     "end": 7.57
-    },
-    {
-     "id": "tp4s_2",
-     "text": "Start as wide as possible. Then always give up the lower wall, because keeping it can never do better.",
-     "start": 8.32,
-     "end": 14.92
-    },
-    {
-     "id": "tp4s_3",
-     "text": "Pip and Moss start at the two ends, the widest tank possible. Best is zero.",
-     "start": 15.67,
-     "end": 20.67
-    },
-    {
-     "id": "tp4s_4",
-     "text": "The tank is four wide. But water only rises to the lower wall, which is one. Four times one is four.",
-     "start": 21.42,
-     "end": 28.19
-    },
-    {
-     "id": "tp4s_5",
-     "text": "Which wall to give up? The lower one. It is the limit, and any narrower tank that keeps it can only hold less.",
-     "start": 28.94,
-     "end": 36.07
-    },
-    {
-     "id": "tp4s_6",
-     "text": "Walls five and three. Three wide, three high. Nine. A new best.",
-     "start": 36.82,
-     "end": 40.77
-    },
-    {
-     "id": "tp4s_7",
-     "text": "Five on the left, three on the right. Which walker moves?",
-     "start": 41.52,
-     "end": 44.98
-    },
-    {
-     "id": "tp4s_8",
-     "text": "Moss. The three is the limit.",
-     "start": 46.19,
-     "end": 48.02
-    },
-    {
-     "id": "tp4s_9",
-     "text": "Two wide, four high. Eight. Not better than nine.",
-     "start": 48.77,
-     "end": 51.73
-    },
-    {
-     "id": "tp4s_10",
-     "text": "Moss moves again. One wide, two high. Two. Then the walkers meet.",
-     "start": 52.48,
-     "end": 56.92
-    },
-    {
-     "id": "tp4s_11",
-     "text": "Line twelve returns the best. Nine.",
-     "start": 57.67,
-     "end": 60.16
-    },
-    {
-     "id": "tp4s_12",
-     "text": "One walker moves at every step. O of n time, instead of trying every pair.",
-     "start": 61.26,
-     "end": 66.55
-    },
-    {
-     "id": "tp4s_13",
-     "text": "Three numbers. O of one space.",
-     "start": 67.3,
-     "end": 69.45
-    },
-    {
-     "id": "tp4s_14",
-     "text": "It is a puzzle, but the habit is real. Start with the widest choice, then give up whichever side limits you.",
-     "start": 70.2,
-     "end": 76.79
-    }
-   ],
-   "pauses": [
-    {
-     "id": "tp4s-q",
-     "t": 45.19
-    }
-   ]
-  },
-  "tp5i": {
-   "src": "videos/tp5i.mp4",
-   "title": "Two Rows Into One",
-   "duration": 19.77,
-   "lines": [
-    {
-     "id": "tp5i_1",
-     "text": "Two sorted rows. They need to become one sorted row.",
-     "start": 0.2,
-     "end": 3.67
-    },
-    {
-     "id": "tp5i_2",
-     "text": "Return a new array with every number from both rows, in order. Do not call sort.",
-     "start": 4.37,
-     "end": 9.74
-    },
-    {
-     "id": "tp5i_3",
-     "text": "Both rows are already in order. That is worth a lot.",
-     "start": 10.44,
-     "end": 13.85
-    },
-    {
-     "id": "tp5i_4",
-     "text": "Where is the smallest number that is still unused? Your turn.",
-     "start": 14.55,
-     "end": 18.17
-    }
-   ],
-   "pauses": []
-  },
-  "tp5s": {
-   "src": "videos/tp5s.mp4",
-   "title": "Take the smaller front",
-   "duration": 68.41,
-   "lines": [
-    {
-     "id": "tp5s_1",
-     "text": "Both rows are already sorted. So the smallest number left is always at the front of one of them.",
-     "start": 0.2,
-     "end": 6.07
-    },
-    {
-     "id": "tp5s_2",
-     "text": "Compare the two fronts, take the smaller, and move that marker. Repeat.",
-     "start": 6.82,
-     "end": 11.08
-    },
-    {
-     "id": "tp5s_3",
-     "text": "An empty answer, and one marker at the front of each row.",
-     "start": 11.83,
-     "end": 15.37
-    },
-    {
-     "id": "tp5s_4",
-     "text": "Compare the two fronts. One and two. One is smaller, so it goes out, and i moves on.",
-     "start": 16.12,
-     "end": 21.5
-    },
-    {
-     "id": "tp5s_5",
-     "text": "Four against two. Two goes out, and j moves on.",
-     "start": 22.25,
-     "end": 25.57
-    },
-    {
-     "id": "tp5s_6",
-     "text": "Four against three. Three.",
-     "start": 26.32,
-     "end": 28.05
-    },
-    {
-     "id": "tp5s_7",
-     "text": "Four against nine. Which one goes out, and which marker moves?",
-     "start": 28.8,
-     "end": 32.8
-    },
-    {
-     "id": "tp5s_8",
-     "text": "Four. And i moves on.",
-     "start": 34,
-     "end": 35.59
-    },
-    {
-     "id": "tp5s_9",
-     "text": "Seven against nine. Seven. Now the first row is used up, so the main loop stops.",
-     "start": 36.34,
-     "end": 42
-    },
-    {
-     "id": "tp5s_10",
-     "text": "Line ten empties what is left of the other row. Nine.",
-     "start": 42.75,
-     "end": 46.19
-    },
-    {
-     "id": "tp5s_11",
-     "text": "Line eleven returns the merged row.",
-     "start": 46.94,
-     "end": 49.25
-    },
-    {
-     "id": "tp5s_12",
-     "text": "Every step sends one number out. So n plus m steps. O of n plus m.",
-     "start": 50.35,
-     "end": 55.71
-    },
-    {
-     "id": "tp5s_13",
-     "text": "The answer row holds everything. O of n plus m space.",
-     "start": 56.46,
-     "end": 60.46
-    },
-    {
-     "id": "tp5s_14",
-     "text": "Your phone merges two sorted contact lists like this. And merge sort does it at every level.",
-     "start": 61.21,
-     "end": 66.81
-    }
-   ],
-   "pauses": [
-    {
-     "id": "tp5s-q",
-     "t": 33
-    }
-   ]
-  },
-  "tp6i": {
-   "src": "videos/tp6i.mp4",
-   "title": "Three That Add Up",
-   "duration": 19.79,
-   "lines": [
-    {
-     "id": "tp6i_1",
-     "text": "Three doors in this sorted row add up to fifteen.",
-     "start": 0.2,
-     "end": 3.28
-    },
-    {
-     "id": "tp6i_2",
-     "text": "Return true if any three different doors add up to the target. Otherwise false.",
-     "start": 3.98,
-     "end": 9.25
-    },
-    {
-     "id": "tp6i_3",
-     "text": "Trying every triple is three nested loops. O of n cubed.",
-     "start": 9.95,
-     "end": 13.78
-    },
-    {
-     "id": "tp6i_4",
-     "text": "If you hold one number still, what problem is left? Your turn.",
-     "start": 14.48,
-     "end": 18.19
-    }
-   ],
-   "pauses": []
-  },
-  "tp6s": {
-   "src": "videos/tp6s.mp4",
-   "title": "Hold one, sweep the rest",
-   "duration": 75.73,
-   "lines": [
-    {
-     "id": "tp6s_1",
-     "text": "Three numbers is one number, plus a pair. And you already know how to find a pair in a sorted row.",
-     "start": 0.2,
-     "end": 5.91
-    },
-    {
-     "id": "tp6s_2",
-     "text": "Hold the first number still. Then run two pointers over everything to its right.",
-     "start": 6.66,
-     "end": 11.45
-    },
-    {
-     "id": "tp6s_3",
-     "text": "I holds the first number still. Pip and Moss take the two ends of everything after it.",
-     "start": 12.2,
-     "end": 17.29
-    },
-    {
-     "id": "tp6s_4",
-     "text": "Line six adds all three. One, two, eight. Eleven.",
-     "start": 18.04,
-     "end": 21.48
-    },
-    {
-     "id": "tp6s_5",
-     "text": "Eleven is less than fifteen. Too small. Pip moves right.",
-     "start": 22.23,
-     "end": 25.91
-    },
-    {
-     "id": "tp6s_6",
-     "text": "One, four, eight. Thirteen. Still too small. Pip moves again.",
-     "start": 26.66,
-     "end": 30.39
-    },
-    {
-     "id": "tp6s_7",
-     "text": "One, five, eight. Fourteen. Too small. Pip moves, and meets Moss. No triple starts with one.",
-     "start": 31.14,
-     "end": 37.29
-    },
-    {
-     "id": "tp6s_8",
-     "text": "So i moves on to the next number, two. Pip and Moss reset to the ends of what follows.",
-     "start": 38.04,
-     "end": 43.85
-    },
-    {
-     "id": "tp6s_9",
-     "text": "Two, four, eight. Fourteen. The target is fifteen. Who moves?",
-     "start": 44.6,
-     "end": 48.42
-    },
-    {
-     "id": "tp6s_10",
-     "text": "Pip. Too small means the left walker moves.",
-     "start": 49.62,
-     "end": 52.39
-    },
-    {
-     "id": "tp6s_11",
-     "text": "Two, five, eight. Fifteen. Line seven returns true.",
-     "start": 53.14,
-     "end": 56.68
-    },
-    {
-     "id": "tp6s_12",
-     "text": "One sweep for each held number. n times n. O of n squared. Trying every triple would be n cubed.",
-     "start": 57.78,
-     "end": 64.43
-    },
-    {
-     "id": "tp6s_13",
-     "text": "Only three markers. O of one space.",
-     "start": 65.18,
-     "end": 67.7
-    },
-    {
-     "id": "tp6s_14",
-     "text": "A budgeting tool asks the same question. Do any three bills add up to exactly this payment?",
-     "start": 68.45,
-     "end": 74.13
-    }
-   ],
-   "pauses": [
-    {
-     "id": "tp6s-q",
-     "t": 48.62
-    }
-   ]
-  },
-  "sw1i": {
-   "src": "videos/sw1i.mp4",
-   "title": "The Best Three",
-   "duration": 17.88,
-   "lines": [
-    {
-     "id": "sw1i_1",
-     "text": "Pip may open three doors in a row, and wants the most seeds.",
-     "start": 0.2,
-     "end": 4.02
-    },
-    {
-     "id": "sw1i_2",
-     "text": "Return the biggest sum of k neighbouring doors.",
-     "start": 4.72,
-     "end": 7.45
-    },
-    {
-     "id": "sw1i_3",
-     "text": "Adding up every window from the start repeats a lot of work.",
-     "start": 8.15,
-     "end": 11.82
-    },
-    {
-     "id": "sw1i_4",
-     "text": "When the window slides one step, what really changes? Your turn.",
-     "start": 12.52,
-     "end": 16.28
-    }
-   ],
-   "pauses": []
-  },
-  "sw1s": {
-   "src": "videos/sw1s.mp4",
-   "title": "One leaves, one enters",
-   "duration": 62.45,
-   "lines": [
-    {
-     "id": "sw1s_1",
-     "text": "Neighbouring windows share all their doors but two. One leaves, and one enters.",
-     "start": 0.2,
-     "end": 5.19
-    },
-    {
-     "id": "sw1s_2",
-     "text": "So keep one running sum. Subtract the door that leaves, and add the door that enters.",
-     "start": 5.94,
-     "end": 11.33
-    },
-    {
-     "id": "sw1s_3",
-     "text": "Lines two and three add up the first window. Two, one, five. Eight.",
-     "start": 12.08,
-     "end": 16.2
-    },
-    {
-     "id": "sw1s_4",
-     "text": "Line four. That is the best so far.",
-     "start": 16.95,
-     "end": 19.11
-    },
-    {
-     "id": "sw1s_5",
-     "text": "Right moves to door three. Line six adds the door that enters, one, and removes the door that left, two. Seven.",
-     "start": 19.86,
-     "end": 27.44
-    },
-    {
-     "id": "sw1s_6",
-     "text": "Line seven. Seven does not beat eight.",
-     "start": 28.19,
-     "end": 30.68
-    },
-    {
-     "id": "sw1s_7",
-     "text": "Slide again. Three enters, one leaves. What is the sum?",
-     "start": 31.43,
-     "end": 34.8
-    },
-    {
-     "id": "sw1s_8",
-     "text": "Nine. A new best.",
-     "start": 36,
-     "end": 37.27
-    },
-    {
-     "id": "sw1s_9",
-     "text": "The last slide. Two enters, five leaves. Six. Not better.",
-     "start": 38.02,
-     "end": 41.89
-    },
-    {
-     "id": "sw1s_10",
-     "text": "Line nine returns the best. Nine.",
-     "start": 42.64,
-     "end": 44.99
-    },
-    {
-     "id": "sw1s_11",
-     "text": "Each slide is two steps, however wide the window is. O of n time.",
-     "start": 46.09,
-     "end": 50.23
-    },
-    {
-     "id": "sw1s_12",
-     "text": "Two numbers. O of one space.",
-     "start": 50.98,
-     "end": 53
-    },
-    {
-     "id": "sw1s_13",
-     "text": "A weather app finds the warmest three days in a row by sliding a window over the forecast, exactly like this.",
-     "start": 53.75,
-     "end": 60.85
-    }
-   ],
-   "pauses": [
-    {
-     "id": "sw1s-q",
-     "t": 35
-    }
-   ]
-  },
-  "sw2i": {
-   "src": "videos/sw2i.mp4",
-   "title": "Buy Low, Sell High",
-   "duration": 21.71,
-   "lines": [
-    {
-     "id": "sw2i_1",
-     "text": "The price of seeds changes every day. Pip wants to buy low, and sell high.",
-     "start": 0.2,
-     "end": 4.68
-    },
-    {
-     "id": "sw2i_2",
-     "text": "Return the most profit from one buy and one later sell. If nothing makes money, return zero.",
-     "start": 5.38,
-     "end": 11.5
-    },
-    {
-     "id": "sw2i_3",
-     "text": "Trying every pair of days is O of n squared.",
-     "start": 12.2,
-     "end": 15.04
-    },
-    {
-     "id": "sw2i_4",
-     "text": "If you had to sell today, which earlier day would you have bought on? Your turn.",
-     "start": 15.74,
-     "end": 20.11
-    }
-   ],
-   "pauses": []
-  },
-  "sw2s": {
-   "src": "videos/sw2s.mp4",
-   "title": "Remember the lowest so far",
-   "duration": 60.76,
-   "lines": [
-    {
-     "id": "sw2s_1",
-     "text": "To sell on some day for the most profit, you want to have bought at the lowest price before it.",
-     "start": 0.2,
-     "end": 5.25
-    },
-    {
-     "id": "sw2s_2",
-     "text": "So walk once, remember the lowest price so far, and try selling on every day.",
-     "start": 6,
-     "end": 11.1
-    },
-    {
-     "id": "sw2s_3",
-     "text": "Low starts at infinity, so that any price beats it. Best starts at zero.",
-     "start": 11.85,
-     "end": 16.78
-    },
-    {
-     "id": "sw2s_4",
-     "text": "Day zero. Seven is lower than anything so far. Low is seven.",
-     "start": 17.53,
-     "end": 21.64
-    },
-    {
-     "id": "sw2s_5",
-     "text": "Day one. One is lower. Low becomes one.",
-     "start": 22.39,
-     "end": 25.16
-    },
-    {
-     "id": "sw2s_6",
-     "text": "Day two. Five is not lower. So line six asks: what if we sold today? Five minus one. Four.",
-     "start": 25.91,
-     "end": 32.59
-    },
-    {
-     "id": "sw2s_7",
-     "text": "Day three. Three. Sell today, and the profit is two. Does best change?",
-     "start": 33.34,
-     "end": 37.53
-    },
-    {
-     "id": "sw2s_8",
-     "text": "No. Two does not beat four.",
-     "start": 38.73,
-     "end": 40.4
-    },
-    {
-     "id": "sw2s_9",
-     "text": "Day four. Six minus one. Five. A new best.",
-     "start": 41.15,
-     "end": 44.18
-    },
-    {
-     "id": "sw2s_10",
-     "text": "Line eight returns the best. Five.",
-     "start": 44.93,
-     "end": 47.13
-    },
-    {
-     "id": "sw2s_11",
-     "text": "One walk. O of n time.",
-     "start": 48.23,
-     "end": 49.79
-    },
-    {
-     "id": "sw2s_12",
-     "text": "Two numbers. O of one space.",
-     "start": 50.54,
-     "end": 52.56
-    },
-    {
-     "id": "sw2s_13",
-     "text": "This is the classic question about a price chart. The best day to buy, before the best day to sell.",
-     "start": 53.31,
-     "end": 59.16
-    }
-   ],
-   "pauses": [
-    {
-     "id": "sw2s-q",
-     "t": 37.73
-    }
-   ]
-  },
-  "sw3i": {
-   "src": "videos/sw3i.mp4",
-   "title": "Light the Dark Lamps",
-   "duration": 21.92,
-   "lines": [
-    {
-     "id": "sw3i_1",
-     "text": "A row of lamps. Some are lit, some are dark. You may light one dark lamp.",
-     "start": 0.2,
-     "end": 4.83
-    },
-    {
-     "id": "sw3i_2",
-     "text": "Return the longest unbroken run of lit lamps you can get, lighting at most k dark ones.",
-     "start": 5.53,
-     "end": 11.52
-    },
-    {
-     "id": "sw3i_3",
-     "text": "Said another way: find the longest stretch with at most k zeros in it.",
-     "start": 12.22,
-     "end": 16.52
-    },
-    {
-     "id": "sw3i_4",
-     "text": "What do you need to count as the stretch grows? Your turn.",
-     "start": 17.22,
-     "end": 20.32
-    }
-   ],
-   "pauses": []
-  },
-  "sw3s": {
-   "src": "videos/sw3s.mp4",
-   "title": "At most k zeros inside",
-   "duration": 74.62,
-   "lines": [
-    {
-     "id": "sw3s_1",
-     "text": "Lighting at most k dark lamps is the same as finding the longest stretch with at most k zeros.",
-     "start": 0.2,
-     "end": 6.11
-    },
-    {
-     "id": "sw3s_2",
-     "text": "Grow on the right. When there are too many zeros, shrink on the left.",
-     "start": 6.86,
-     "end": 10.52
-    },
-    {
-     "id": "sw3s_3",
-     "text": "Moss holds the left edge at door zero. No dark lamps counted yet.",
-     "start": 11.27,
-     "end": 15.61
-    },
-    {
-     "id": "sw3s_4",
-     "text": "Pip grows the window to door zero. A lit lamp. The window is one wide.",
-     "start": 16.36,
-     "end": 20.98
-    },
-    {
-     "id": "sw3s_5",
-     "text": "Door one is dark. Zeros becomes one. We are allowed one, so the window is fine. Two wide.",
-     "start": 21.73,
-     "end": 27.76
-    },
-    {
-     "id": "sw3s_6",
-     "text": "Two more lit lamps. The window grows to four wide.",
-     "start": 28.51,
-     "end": 31.73
-    },
-    {
-     "id": "sw3s_7",
-     "text": "Door four is dark. Zeros is two. Too many.",
-     "start": 32.48,
-     "end": 35.38
-    },
-    {
-     "id": "sw3s_8",
-     "text": "Line seven shrinks from the left until the rule holds again. Where does Moss stop?",
-     "start": 36.13,
-     "end": 41.19
-    },
-    {
-     "id": "sw3s_9",
-     "text": "Door zero leaves. Then door one leaves, and it was dark, so zeros drops to one. Moss stops on door two.",
-     "start": 42.39,
-     "end": 49.34
-    },
-    {
-     "id": "sw3s_10",
-     "text": "Pip adds door five. Four wide again. That ties the best.",
-     "start": 50.09,
-     "end": 53.56
-    },
-    {
-     "id": "sw3s_11",
-     "text": "Line thirteen returns the best. Four.",
-     "start": 54.31,
-     "end": 56.91
-    },
-    {
-     "id": "sw3s_12",
-     "text": "Each door enters the window once, and leaves at most once. O of n time.",
-     "start": 58.01,
-     "end": 63.04
-    },
-    {
-     "id": "sw3s_13",
-     "text": "Three numbers. O of one space.",
-     "start": 63.79,
-     "end": 65.93
-    },
-    {
-     "id": "sw3s_14",
-     "text": "A network tool finds the longest stretch of good signal the same way, allowing for a few dropped moments.",
-     "start": 66.68,
-     "end": 73.02
-    }
-   ],
-   "pauses": [
-    {
-     "id": "sw3s-q",
-     "t": 41.39
-    }
-   ]
-  },
-  "sw4i": {
-   "src": "videos/sw4i.mp4",
-   "title": "No Letter Twice",
-   "duration": 18.01,
-   "lines": [
-    {
-     "id": "sw4i_1",
-     "text": "Find a stretch of this word where every letter is different.",
-     "start": 0.2,
-     "end": 3.57
-    },
-    {
-     "id": "sw4i_2",
-     "text": "Return the length of the longest one.",
-     "start": 4.27,
-     "end": 6.32
-    },
-    {
-     "id": "sw4i_3",
-     "text": "A window can grow, until a letter shows up that is already inside it.",
-     "start": 7.02,
-     "end": 11.34
-    },
-    {
-     "id": "sw4i_4",
-     "text": "Then what has to leave? And what remembers what is inside? Your turn.",
-     "start": 12.04,
-     "end": 16.41
-    }
-   ],
-   "pauses": []
-  },
-  "sw4s": {
-   "src": "videos/sw4s.mp4",
-   "title": "Shrink until the repeat is gone",
-   "duration": 71.66,
-   "lines": [
-    {
-     "id": "sw4s_1",
-     "text": "Keep a window that never holds the same letter twice. A set remembers what is inside it.",
-     "start": 0.2,
-     "end": 5.73
-    },
-    {
-     "id": "sw4s_2",
-     "text": "Grow on the right. If the new letter is already inside, shrink on the left until it is gone.",
-     "start": 6.48,
-     "end": 12.23
-    },
-    {
-     "id": "sw4s_3",
-     "text": "An empty set, Moss on the left edge, and best at zero.",
-     "start": 12.98,
-     "end": 16.32
-    },
-    {
-     "id": "sw4s_4",
-     "text": "Pip reads A. Not in the set. Add it. The window is one wide.",
-     "start": 17.07,
-     "end": 20.96
-    },
-    {
-     "id": "sw4s_5",
-     "text": "B and C are new as well. The window grows to three.",
-     "start": 21.71,
-     "end": 25.07
-    },
-    {
-     "id": "sw4s_6",
-     "text": "Next is B. Line six checks the set. B is already inside the window.",
-     "start": 25.82,
-     "end": 30.3
-    },
-    {
-     "id": "sw4s_7",
-     "text": "So the window shrinks from the left until that B is gone. How many letters leave?",
-     "start": 31.05,
-     "end": 36.14
-    },
-    {
-     "id": "sw4s_8",
-     "text": "Two. A leaves, then the old B leaves. Moss stops on C.",
-     "start": 37.34,
-     "end": 40.99
-    },
-    {
-     "id": "sw4s_9",
-     "text": "Now the new B can enter. The window is C, B.",
-     "start": 41.74,
-     "end": 44.78
-    },
-    {
-     "id": "sw4s_10",
-     "text": "D is new. Three wide. That ties the best.",
-     "start": 45.53,
-     "end": 48.28
-    },
-    {
-     "id": "sw4s_11",
-     "text": "Line thirteen returns the best. Three.",
-     "start": 49.03,
-     "end": 51.6
-    },
-    {
-     "id": "sw4s_12",
-     "text": "Each door enters the window once, and leaves at most once. O of n time.",
-     "start": 52.7,
-     "end": 57.72
-    },
-    {
-     "id": "sw4s_13",
-     "text": "The set holds at most one of each letter. O of n space at most.",
-     "start": 58.47,
-     "end": 62.47
-    },
-    {
-     "id": "sw4s_14",
-     "text": "A playlist shuffler uses this idea. No song may repeat inside the window of recently played songs.",
-     "start": 63.22,
-     "end": 70.06
-    }
-   ],
-   "pauses": [
-    {
-     "id": "sw4s-q",
-     "t": 36.34
-    }
-   ]
-  },
-  "sw5i": {
-   "src": "videos/sw5i.mp4",
-   "title": "The Shortest That Reaches",
-   "duration": 23.46,
-   "lines": [
-    {
-     "id": "sw5i_1",
-     "text": "Pip needs at least seven seeds, from as few neighbouring doors as possible.",
-     "start": 0.2,
-     "end": 4.8
-    },
-    {
-     "id": "sw5i_2",
-     "text": "Return the length of the shortest stretch whose sum is at least the target. If none reaches it, return zero.",
-     "start": 5.5,
-     "end": 11.91
-    },
-    {
-     "id": "sw5i_3",
-     "text": "Last time the window shrank when it broke a rule. This time it is the other way round.",
-     "start": 12.61,
-     "end": 17.79
-    },
-    {
-     "id": "sw5i_4",
-     "text": "Once the window has enough, how do you make it shorter? Your turn.",
-     "start": 18.49,
-     "end": 21.86
-    }
-   ],
-   "pauses": []
-  },
-  "sw5s": {
-   "src": "videos/sw5s.mp4",
-   "title": "Grow until enough, then shrink",
-   "duration": 79.33,
-   "lines": [
-    {
-     "id": "sw5s_1",
-     "text": "Grow the window until the sum is big enough. Then shrink it from the left, for as long as it stays big enough.",
-     "start": 0.2,
-     "end": 6.74
-    },
-    {
-     "id": "sw5s_2",
-     "text": "Every time it is big enough, measure it. The smallest measurement wins.",
-     "start": 7.49,
-     "end": 11.78
-    },
-    {
-     "id": "sw5s_3",
-     "text": "Moss on the left edge. Sum is zero. Best starts at infinity, so that any real window beats it.",
-     "start": 12.53,
-     "end": 19.08
-    },
-    {
-     "id": "sw5s_4",
-     "text": "Pip adds two, then one. Sum is three. Not enough yet.",
-     "start": 19.83,
-     "end": 23.28
-    },
-    {
-     "id": "sw5s_5",
-     "text": "Five enters. Sum is eight. That reaches seven.",
-     "start": 24.03,
-     "end": 26.85
-    },
-    {
-     "id": "sw5s_6",
-     "text": "Line eight records the width. Three doors.",
-     "start": 27.6,
-     "end": 30.37
-    },
-    {
-     "id": "sw5s_7",
-     "text": "Now try to make it shorter. The left door leaves. Sum is six. Not enough any more.",
-     "start": 31.12,
-     "end": 36.53
-    },
-    {
-     "id": "sw5s_8",
-     "text": "So Pip grows again. Two enters. Eight. Three wide. No better.",
-     "start": 37.28,
-     "end": 41.05
-    },
-    {
-     "id": "sw5s_9",
-     "text": "Shrink. One leaves. Sum is seven. Is that still enough?",
-     "start": 41.8,
-     "end": 44.84
-    },
-    {
-     "id": "sw5s_10",
-     "text": "Yes. Seven reaches seven. And the window is only two wide. A new best.",
-     "start": 46.04,
-     "end": 50.76
-    },
-    {
-     "id": "sw5s_11",
-     "text": "Shrink once more. Five leaves. Sum is two. The inner loop stops.",
-     "start": 51.51,
-     "end": 55.64
-    },
-    {
-     "id": "sw5s_12",
-     "text": "Three enters. Five. Not enough, and the row is finished.",
-     "start": 56.39,
-     "end": 59.64
-    },
-    {
-     "id": "sw5s_13",
-     "text": "Line thirteen returns the best. Two.",
-     "start": 60.39,
-     "end": 62.88
-    },
-    {
-     "id": "sw5s_14",
-     "text": "Each door enters the window once, and leaves at most once. O of n time.",
-     "start": 63.98,
-     "end": 69.01
-    },
-    {
-     "id": "sw5s_15",
-     "text": "Three numbers. O of one space.",
-     "start": 69.76,
-     "end": 71.91
-    },
-    {
-     "id": "sw5s_16",
-     "text": "A sales dashboard asks this. What is the fewest days in a row that reached the target?",
-     "start": 72.66,
-     "end": 77.73
-    }
-   ],
-   "pauses": [
-    {
-     "id": "sw5s-q",
-     "t": 45.04
-    }
-   ]
-  },
-  "sw6i": {
-   "src": "videos/sw6i.mp4",
-   "title": "Two Kinds Only",
-   "duration": 19.67,
-   "lines": [
-    {
-     "id": "sw6i_1",
-     "text": "Hazel has two baskets, and each basket holds one kind of letter.",
-     "start": 0.2,
-     "end": 4.44
-    },
-    {
-     "id": "sw6i_2",
-     "text": "Return the length of the longest stretch that uses at most two different letters.",
-     "start": 5.14,
-     "end": 9.85
-    },
-    {
-     "id": "sw6i_3",
-     "text": "The window grows, until a third kind shows up.",
-     "start": 10.55,
-     "end": 13.49
-    },
-    {
-     "id": "sw6i_4",
-     "text": "How do you know when a kind has left the window completely? Your turn.",
-     "start": 14.19,
-     "end": 18.07
-    }
-   ],
-   "pauses": []
-  },
-  "sw6s": {
-   "src": "videos/sw6s.mp4",
-   "title": "Count the kinds inside",
-   "duration": 71.33,
-   "lines": [
-    {
-     "id": "sw6s_1",
-     "text": "Keep a window with at most two kinds of letter. A map counts how many of each kind are inside.",
-     "start": 0.2,
-     "end": 5.44
-    },
-    {
-     "id": "sw6s_2",
-     "text": "Grow on the right. With three kinds, shrink on the left until one kind is gone completely.",
-     "start": 6.19,
-     "end": 11.48
-    },
-    {
-     "id": "sw6s_3",
-     "text": "An empty count map, and Moss on the left edge.",
-     "start": 12.23,
-     "end": 15.28
-    },
-    {
-     "id": "sw6s_4",
-     "text": "A enters. One kind.",
-     "start": 16.03,
-     "end": 17.49
-    },
-    {
-     "id": "sw6s_5",
-     "text": "B enters. Two kinds. Still allowed.",
-     "start": 18.24,
-     "end": 20.51
-    },
-    {
-     "id": "sw6s_6",
-     "text": "Another A. Still two kinds. Three wide.",
-     "start": 21.26,
-     "end": 23.83
-    },
-    {
-     "id": "sw6s_7",
-     "text": "C enters. Now the map has three kinds. Too many.",
-     "start": 24.58,
-     "end": 27.91
-    },
-    {
-     "id": "sw6s_8",
-     "text": "So shrink. The left A leaves. Its count drops to one. Still three kinds.",
-     "start": 28.66,
-     "end": 33.07
-    },
-    {
-     "id": "sw6s_9",
-     "text": "B leaves next. Its count drops to zero. What must happen to B in the map?",
-     "start": 33.82,
-     "end": 38.57
-    },
-    {
-     "id": "sw6s_10",
-     "text": "It is deleted. Otherwise the map would still say three kinds. Now the window is A, C.",
-     "start": 39.77,
-     "end": 45.47
-    },
-    {
-     "id": "sw6s_11",
-     "text": "Another C. Three wide. That ties the best.",
-     "start": 46.22,
-     "end": 48.88
-    },
-    {
-     "id": "sw6s_12",
-     "text": "Line fifteen returns the best. Three.",
-     "start": 49.63,
-     "end": 52.19
-    },
-    {
-     "id": "sw6s_13",
-     "text": "Each door enters the window once, and leaves at most once. O of n time.",
-     "start": 53.29,
-     "end": 58.32
-    },
-    {
-     "id": "sw6s_14",
-     "text": "The map never holds more than three kinds. O of one space.",
-     "start": 59.07,
-     "end": 62.96
-    },
-    {
-     "id": "sw6s_15",
-     "text": "The same window finds the longest stretch of an activity log that involves at most two users.",
-     "start": 63.71,
-     "end": 69.73
-    }
-   ],
-   "pauses": [
-    {
-     "id": "sw6s-q",
-     "t": 38.77
-    }
-   ]
-  },
-  "st1i": {
-   "src": "videos/st1i.mp4",
-   "title": "Matching Brackets",
-   "duration": 20.17,
-   "lines": [
-    {
-     "id": "st1i_1",
-     "text": "Brackets come in pairs. An opener, and later, its closer.",
-     "start": 0.2,
-     "end": 3.88
-    },
-    {
-     "id": "st1i_2",
-     "text": "Return true if every bracket is closed by the right kind, in the right order.",
-     "start": 4.58,
-     "end": 9.31
-    },
-    {
-     "id": "st1i_3",
-     "text": "When a closer arrives, it must match the most recent opener that is still open.",
-     "start": 10.01,
-     "end": 14.83
-    },
-    {
-     "id": "st1i_4",
-     "text": "What keeps the most recent thing on top? Your turn.",
-     "start": 15.53,
-     "end": 18.57
-    }
-   ],
-   "pauses": []
-  },
-  "st1s": {
-   "src": "videos/st1s.mp4",
-   "title": "The top is the most recent opener",
-   "duration": 77.31,
-   "lines": [
-    {
-     "id": "st1s_1",
-     "text": "A closer must match the most recent opener that is still open. A stack keeps exactly that on top.",
-     "start": 0.2,
-     "end": 6.29
-    },
-    {
-     "id": "st1s_2",
-     "text": "Push every opener. For every closer, pop the top, and check that the two belong together.",
-     "start": 7.04,
-     "end": 12.6
-    },
-    {
-     "id": "st1s_3",
-     "text": "Line two is a lookup: for each closer, which opener it needs. Line three makes an empty stack.",
-     "start": 13.35,
-     "end": 19.43
-    },
-    {
-     "id": "st1s_4",
-     "text": "The first character is an opener. Line eight pushes it.",
-     "start": 20.18,
-     "end": 23.52
-    },
-    {
-     "id": "st1s_5",
-     "text": "Another opener. Push. It now sits on top.",
-     "start": 24.27,
-     "end": 27.19
-    },
-    {
-     "id": "st1s_6",
-     "text": "A closer. Line six pops the top, and checks it against what this closer needs.",
-     "start": 27.94,
-     "end": 33.01
-    },
-    {
-     "id": "st1s_7",
-     "text": "They match. The pair is done, and the stack is back to one opener.",
-     "start": 33.76,
-     "end": 37.79
-    },
-    {
-     "id": "st1s_8",
-     "text": "An opener. Push.",
-     "start": 38.54,
-     "end": 39.83
-    },
-    {
-     "id": "st1s_9",
-     "text": "A closer. It needs a curly opener. What is on top?",
-     "start": 40.58,
-     "end": 43.96
-    },
-    {
-     "id": "st1s_10",
-     "text": "The curly opener. A match.",
-     "start": 45.16,
-     "end": 47.07
-    },
-    {
-     "id": "st1s_11",
-     "text": "The last closer pops the round opener. A match, and the stack is empty.",
-     "start": 47.82,
-     "end": 52.55
-    },
-    {
-     "id": "st1s_12",
-     "text": "Line eleven checks that nothing is still open. True.",
-     "start": 53.3,
-     "end": 56.57
-    },
-    {
-     "id": "st1s_13",
-     "text": "One pass, and each push or pop is one step. O of n time.",
-     "start": 57.67,
-     "end": 61.58
-    },
-    {
-     "id": "st1s_14",
-     "text": "In the worst case every character is an opener, and all of them wait on the stack. O of n space.",
-     "start": 62.33,
-     "end": 68.8
-    },
-    {
-     "id": "st1s_15",
-     "text": "Your code editor does this on every key press. It is how it finds the bracket you forgot to close.",
-     "start": 69.55,
-     "end": 75.71
-    }
-   ],
-   "pauses": [
-    {
-     "id": "st1s-q",
-     "t": 44.16
-    }
-   ]
-  },
-  "st2i": {
-   "src": "videos/st2i.mp4",
-   "title": "The Undo Key",
-   "duration": 18.82,
-   "lines": [
-    {
-     "id": "st2i_1",
-     "text": "Pip is typing, and keeps hitting the undo key.",
-     "start": 0.2,
-     "end": 2.91
-    },
-    {
-     "id": "st2i_2",
-     "text": "Every hash deletes the last letter typed. Return the text that is left at the end.",
-     "start": 3.61,
-     "end": 8.51
-    },
-    {
-     "id": "st2i_3",
-     "text": "Undo always removes the newest letter. Never an older one.",
-     "start": 9.21,
-     "end": 13.18
-    },
-    {
-     "id": "st2i_4",
-     "text": "Which structure hands you the newest thing first? Your turn.",
-     "start": 13.88,
-     "end": 17.22
-    }
-   ],
-   "pauses": []
-  },
-  "st2s": {
-   "src": "videos/st2s.mp4",
-   "title": "Undo pops the newest",
-   "duration": 49.6,
-   "lines": [
-    {
-     "id": "st2s_1",
-     "text": "Undo always removes the most recent letter. That is last in, first out.",
-     "start": 0.2,
-     "end": 4.86
-    },
-    {
-     "id": "st2s_2",
-     "text": "So letters are pushed, and every hash is a pop.",
-     "start": 5.61,
-     "end": 8.54
-    },
-    {
-     "id": "st2s_3",
-     "text": "Line two makes an empty stack.",
-     "start": 9.29,
-     "end": 11.12
-    },
-    {
-     "id": "st2s_4",
-     "text": "A. A letter. Line five pushes it.",
-     "start": 11.87,
-     "end": 14.08
-    },
-    {
-     "id": "st2s_5",
-     "text": "B. Push.",
-     "start": 14.83,
-     "end": 15.73
-    },
-    {
-     "id": "st2s_6",
-     "text": "A hash. Line four pops the top. B is gone.",
-     "start": 16.48,
-     "end": 19.45
-    },
-    {
-     "id": "st2s_7",
-     "text": "C. Push.",
-     "start": 20.2,
-     "end": 21.1
-    },
-    {
-     "id": "st2s_8",
-     "text": "Another hash. Which letter does it remove?",
-     "start": 21.85,
-     "end": 24.46
-    },
-    {
-     "id": "st2s_9",
-     "text": "C, the newest. A is left.",
-     "start": 25.66,
-     "end": 27.34
-    },
-    {
-     "id": "st2s_10",
-     "text": "D. Push.",
-     "start": 28.09,
-     "end": 28.98
-    },
-    {
-     "id": "st2s_11",
-     "text": "Line seven joins what is left into one string. A, D.",
-     "start": 29.73,
-     "end": 33.32
-    },
-    {
-     "id": "st2s_12",
-     "text": "One pass, one push or pop per key. O of n time.",
-     "start": 34.42,
-     "end": 37.77
-    },
-    {
-     "id": "st2s_13",
-     "text": "The stack can hold every letter. O of n space.",
-     "start": 38.52,
-     "end": 41.6
-    },
-    {
-     "id": "st2s_14",
-     "text": "Every undo button works like this. Each action is pushed, and undo pops the newest one.",
-     "start": 42.35,
-     "end": 48
-    }
-   ],
-   "pauses": [
-    {
-     "id": "st2s-q",
-     "t": 24.66
-    }
-   ]
-  },
-  "st3i": {
-   "src": "videos/st3i.mp4",
-   "title": "Sums Without Brackets",
-   "duration": 18.31,
-   "lines": [
-    {
-     "id": "st3i_1",
-     "text": "This sum has no brackets. Each operator comes after its two numbers.",
-     "start": 0.2,
-     "end": 4.93
-    },
-    {
-     "id": "st3i_2",
-     "text": "Return the result. Two, three, plus, means two plus three.",
-     "start": 5.63,
-     "end": 9.37
-    },
-    {
-     "id": "st3i_3",
-     "text": "An operator always uses the two most recent values.",
-     "start": 10.07,
-     "end": 13.82
-    },
-    {
-     "id": "st3i_4",
-     "text": "Where should the values wait? Your turn.",
-     "start": 14.52,
-     "end": 16.71
-    }
-   ],
-   "pauses": []
-  },
-  "st3s": {
-   "src": "videos/st3s.mp4",
-   "title": "An operator takes the top two",
-   "duration": 59.64,
-   "lines": [
-    {
-     "id": "st3s_1",
-     "text": "An operator always works on the two most recent values. So values wait on a stack.",
-     "start": 0.2,
-     "end": 5.84
-    },
-    {
-     "id": "st3s_2",
-     "text": "A number is pushed. An operator pops two values, and pushes back one result.",
-     "start": 6.59,
-     "end": 11.73
-    },
-    {
-     "id": "st3s_3",
-     "text": "Line two makes an empty stack.",
-     "start": 12.48,
-     "end": 14.31
-    },
-    {
-     "id": "st3s_4",
-     "text": "Two is a number. Line eleven pushes it.",
-     "start": 15.06,
-     "end": 17.81
-    },
-    {
-     "id": "st3s_5",
-     "text": "Three. Push.",
-     "start": 18.56,
-     "end": 19.5
-    },
-    {
-     "id": "st3s_6",
-     "text": "A plus. Lines five and six pop the top two. B is three, and A is two.",
-     "start": 20.25,
-     "end": 25.17
-    },
-    {
-     "id": "st3s_7",
-     "text": "Line seven pushes A plus B. Five.",
-     "start": 25.92,
-     "end": 28.13
-    },
-    {
-     "id": "st3s_8",
-     "text": "Four. Push.",
-     "start": 28.88,
-     "end": 29.86
-    },
-    {
-     "id": "st3s_9",
-     "text": "A times. It pops four, then five. What gets pushed?",
-     "start": 30.61,
-     "end": 33.99
-    },
-    {
-     "id": "st3s_10",
-     "text": "Twenty.",
-     "start": 35.19,
-     "end": 35.98
-    },
-    {
-     "id": "st3s_11",
-     "text": "The tokens are finished. Line fourteen pops the one value left. Twenty.",
-     "start": 36.73,
-     "end": 41.48
-    },
-    {
-     "id": "st3s_12",
-     "text": "One pass, a few steps per token. O of n time.",
-     "start": 42.58,
-     "end": 45.81
-    },
-    {
-     "id": "st3s_13",
-     "text": "The stack holds the values that are still waiting. O of n space.",
-     "start": 46.56,
-     "end": 50.56
-    },
-    {
-     "id": "st3s_14",
-     "text": "Calculators and programming languages work out sums this way, after putting them in this bracket free order.",
-     "start": 51.31,
-     "end": 58.04
-    }
-   ],
-   "pauses": [
-    {
-     "id": "st3s-q",
-     "t": 34.19
-    }
-   ]
-  },
-  "st4i": {
-   "src": "videos/st4i.mp4",
-   "title": "The Smallest, Instantly",
-   "duration": 22.69,
-   "lines": [
-    {
-     "id": "st4i_1",
-     "text": "A stack of parcels. And at any moment, someone may ask: which is the smallest?",
-     "start": 0.2,
-     "end": 5.17
-    },
-    {
-     "id": "st4i_2",
-     "text": "Run the operations, and return the answer to every min question.",
-     "start": 5.87,
-     "end": 9.98
-    },
-    {
-     "id": "st4i_3",
-     "text": "Searching the whole pile each time is too slow. And one remembered number breaks when that parcel is popped.",
-     "start": 10.68,
-     "end": 16.84
-    },
-    {
-     "id": "st4i_4",
-     "text": "What could you write down at every level of the pile? Your turn.",
-     "start": 17.54,
-     "end": 21.09
-    }
-   ],
-   "pauses": []
-  },
-  "st4s": {
-   "src": "videos/st4s.mp4",
-   "title": "A second stack of minimums",
-   "duration": 70.31,
-   "lines": [
-    {
-     "id": "st4s_1",
-     "text": "One remembered minimum is not enough. When it is popped, you would not know the one before it.",
-     "start": 0.2,
-     "end": 5.69
-    },
-    {
-     "id": "st4s_2",
-     "text": "So keep a second stack. At every level, it holds the smallest value from there down.",
-     "start": 6.44,
-     "end": 11.73
-    },
-    {
-     "id": "st4s_3",
-     "text": "Two empty stacks. One for the values, one for the minimums.",
-     "start": 12.48,
-     "end": 16.23
-    },
-    {
-     "id": "st4s_4",
-     "text": "Push three. It is the first value, so it is also the smallest so far.",
-     "start": 16.98,
-     "end": 21.48
-    },
-    {
-     "id": "st4s_5",
-     "text": "Push five. The smallest is still three, so mins gets another three.",
-     "start": 22.23,
-     "end": 26.43
-    },
-    {
-     "id": "st4s_6",
-     "text": "Push one. One is smaller than three. Mins gets a one.",
-     "start": 27.18,
-     "end": 30.59
-    },
-    {
-     "id": "st4s_7",
-     "text": "A min question. Line thirteen reads the top of mins. One. No searching.",
-     "start": 31.34,
-     "end": 36.21
-    },
-    {
-     "id": "st4s_8",
-     "text": "Pop. Both stacks lose their top, together.",
-     "start": 36.96,
-     "end": 39.52
-    },
-    {
-     "id": "st4s_9",
-     "text": "Another min question. What is the answer now?",
-     "start": 40.27,
-     "end": 43.1
-    },
-    {
-     "id": "st4s_10",
-     "text": "Three. The answer was waiting one level down.",
-     "start": 44.3,
-     "end": 47
-    },
-    {
-     "id": "st4s_11",
-     "text": "Line sixteen returns both answers.",
-     "start": 47.75,
-     "end": 50.13
-    },
-    {
-     "id": "st4s_12",
-     "text": "Every operation is one push, one pop or one read. O of one each.",
-     "start": 51.23,
-     "end": 56.23
-    },
-    {
-     "id": "st4s_13",
-     "text": "The price is a second stack of the same size. O of n space.",
-     "start": 56.98,
-     "end": 61.06
-    },
-    {
-     "id": "st4s_14",
-     "text": "An undo history that must also know the smallest value so far keeps a second stack, just like this.",
-     "start": 61.81,
-     "end": 68.71
-    }
-   ],
-   "pauses": [
-    {
-     "id": "st4s-q",
-     "t": 43.3
-    }
-   ]
-  },
-  "st5i": {
-   "src": "videos/st5i.mp4",
-   "title": "The Next Warmer Day",
-   "duration": 24.3,
-   "lines": [
-    {
-     "id": "st5i_1",
-     "text": "Five days of weather. On each day, Pip wonders how long until a warmer one.",
-     "start": 0.2,
-     "end": 5.11
-    },
-    {
-     "id": "st5i_2",
-     "text": "For every day, return how many days to wait for a warmer day. If none comes, zero.",
-     "start": 5.81,
-     "end": 11.36
-    },
-    {
-     "id": "st5i_3",
-     "text": "Looking ahead from every single day is O of n squared.",
-     "start": 12.06,
-     "end": 15.66
-    },
-    {
-     "id": "st5i_4",
-     "text": "Turn it round. When a warm day arrives, which earlier days has it just answered? Your turn.",
-     "start": 16.36,
-     "end": 22.7
-    }
-   ],
-   "pauses": []
-  },
-  "st5s": {
-   "src": "videos/st5s.mp4",
-   "title": "New days answer old days",
-   "duration": 89.13,
-   "lines": [
-    {
-     "id": "st5s_1",
-     "text": "Do not look ahead from each day. Let each new day answer the earlier days that were waiting for it.",
-     "start": 0.2,
-     "end": 6
-    },
-    {
-     "id": "st5s_2",
-     "text": "The waiting days sit on a stack. A warm day pops every colder day off the top.",
-     "start": 6.75,
-     "end": 11.65
-    },
-    {
-     "id": "st5s_3",
-     "text": "Every answer starts at zero. The stack of waiting days is empty.",
-     "start": 12.4,
-     "end": 16.76
-    },
-    {
-     "id": "st5s_4",
-     "text": "Day zero. Nothing is waiting, so line nine just pushes it.",
-     "start": 17.51,
-     "end": 21.31
-    },
-    {
-     "id": "st5s_5",
-     "text": "Day one is two degrees. The day on top was four. Two is not warmer, so nobody is answered. Push.",
-     "start": 22.06,
-     "end": 28.74
-    },
-    {
-     "id": "st5s_6",
-     "text": "Day two is three degrees. The top is day one, which was two. Three is warmer.",
-     "start": 29.49,
-     "end": 34.81
-    },
-    {
-     "id": "st5s_7",
-     "text": "So day one is popped, and its answer is two minus one. One day.",
-     "start": 35.56,
-     "end": 39.69
-    },
-    {
-     "id": "st5s_8",
-     "text": "Next on top is day zero, which was four. Three is not warmer. Stop, and push day two.",
-     "start": 40.44,
-     "end": 46.4
-    },
-    {
-     "id": "st5s_9",
-     "text": "Day three is five degrees. Days two and zero are waiting. How many does it answer?",
-     "start": 47.15,
-     "end": 52.75
-    },
-    {
-     "id": "st5s_10",
-     "text": "Both. Day two waited one day. Day zero waited three.",
-     "start": 53.95,
-     "end": 57.61
-    },
-    {
-     "id": "st5s_11",
-     "text": "Push day three. Day four is colder, so it is pushed too. Nobody answers them.",
-     "start": 58.36,
-     "end": 63.55
-    },
-    {
-     "id": "st5s_12",
-     "text": "Line eleven returns the answers. The days left on the stack keep their zero.",
-     "start": 64.3,
-     "end": 69.29
-    },
-    {
-     "id": "st5s_13",
-     "text": "Each day is pushed once, and popped at most once. So the inner loop runs n times in total. O of n.",
-     "start": 70.39,
-     "end": 77.07
-    },
-    {
-     "id": "st5s_14",
-     "text": "The stack can hold every day. O of n space.",
-     "start": 77.82,
-     "end": 80.86
-    },
-    {
-     "id": "st5s_15",
-     "text": "A weather app can answer, when is the next warmer day, for every day in one pass like this.",
-     "start": 81.61,
-     "end": 87.53
-    }
-   ],
-   "pauses": [
-    {
-     "id": "st5s-q",
-     "t": 52.95
-    }
-   ]
-  },
-  "st6i": {
-   "src": "videos/st6i.mp4",
-   "title": "Rocks on a Line",
-   "duration": 20.5,
-   "lines": [
-    {
-     "id": "st6i_1",
-     "text": "Rocks roll along a line. Positive ones roll right. Negative ones roll left.",
-     "start": 0.2,
-     "end": 5.51
-    },
-    {
-     "id": "st6i_2",
-     "text": "When two meet, the smaller one breaks. Return the rocks that are left.",
-     "start": 6.21,
-     "end": 10.11
-    },
-    {
-     "id": "st6i_3",
-     "text": "A rock rolling left always meets the most recent survivor first.",
-     "start": 10.81,
-     "end": 14.8
-    },
-    {
-     "id": "st6i_4",
-     "text": "What keeps the most recent survivor on top? Your turn.",
-     "start": 15.5,
-     "end": 18.9
-    }
-   ],
-   "pauses": []
-  },
-  "st6s": {
-   "src": "videos/st6s.mp4",
-   "title": "The newest survivor fights first",
-   "duration": 71.76,
-   "lines": [
-    {
-     "id": "st6s_1",
-     "text": "Only one kind of pair can crash. A rock moving right, followed by a rock moving left.",
-     "start": 0.2,
-     "end": 5.61
-    },
-    {
-     "id": "st6s_2",
-     "text": "A rock moving left meets the most recent survivor first. So the survivors wait on a stack.",
-     "start": 6.36,
-     "end": 12.04
-    },
-    {
-     "id": "st6s_3",
-     "text": "Four moves right. Nothing to fight. Line eleven pushes it.",
-     "start": 12.79,
-     "end": 16.43
-    },
-    {
-     "id": "st6s_4",
-     "text": "Two moves right as well. Push.",
-     "start": 17.18,
-     "end": 19.26
-    },
-    {
-     "id": "st6s_5",
-     "text": "Minus three moves left, and the top moves right. They crash. Size two against size three.",
-     "start": 20.01,
-     "end": 25.72
-    },
-    {
-     "id": "st6s_6",
-     "text": "Line eight. The top is smaller, so it breaks, and is popped.",
-     "start": 26.47,
-     "end": 29.62
-    },
-    {
-     "id": "st6s_7",
-     "text": "The loop runs again. Now it is four against three. Who breaks?",
-     "start": 30.37,
-     "end": 34.33
-    },
-    {
-     "id": "st6s_8",
-     "text": "The new rock. Line nine sets alive to false, so it is never pushed.",
-     "start": 35.53,
-     "end": 39.96
-    },
-    {
-     "id": "st6s_9",
-     "text": "Minus five. Four against five. The four breaks, and is popped.",
-     "start": 40.71,
-     "end": 44.57
-    },
-    {
-     "id": "st6s_10",
-     "text": "The stack is empty, so the loop stops. Minus five is still alive, and is pushed.",
-     "start": 45.32,
-     "end": 50.36
-    },
-    {
-     "id": "st6s_11",
-     "text": "Line thirteen returns the survivors.",
-     "start": 51.11,
-     "end": 53.81
-    },
-    {
-     "id": "st6s_12",
-     "text": "Each rock is pushed once, and popped at most once. O of n time.",
-     "start": 54.91,
-     "end": 58.93
-    },
-    {
-     "id": "st6s_13",
-     "text": "The stack can hold every rock. O of n space.",
-     "start": 59.68,
-     "end": 62.77
-    },
-    {
-     "id": "st6s_14",
-     "text": "It is a puzzle, but the habit is real. A new arrival is settled against the most recent survivor first.",
-     "start": 63.52,
-     "end": 70.16
-    }
-   ],
-   "pauses": [
-    {
-     "id": "st6s-q",
-     "t": 34.53
-    }
-   ]
-  },
-  "qu1i": {
-   "src": "videos/qu1i.mp4",
-   "title": "Recent Visitors",
-   "duration": 21.66,
-   "lines": [
-    {
-     "id": "qu1i_1",
-     "text": "Visitors arrive at the burrow, and Pip writes down the minute each one came.",
-     "start": 0.2,
-     "end": 4.57
-    },
-    {
-     "id": "qu1i_2",
-     "text": "For every visitor, return how many arrived within the last span minutes, counting that visitor too.",
-     "start": 5.27,
-     "end": 11.64
-    },
-    {
-     "id": "qu1i_3",
-     "text": "A visitor who is too old now, is too old for everyone who comes later.",
-     "start": 12.34,
-     "end": 16.86
-    },
-    {
-     "id": "qu1i_4",
-     "text": "So who stops counting first? Your turn.",
-     "start": 17.56,
-     "end": 20.06
-    }
-   ],
-   "pauses": []
-  },
-  "qu1s": {
-   "src": "videos/qu1s.mp4",
-   "title": "The oldest leaves first",
-   "duration": 86.06,
-   "lines": [
-    {
-     "id": "qu1s_1",
-     "text": "The visitors who still count form a line. They joined in order, and they stop counting in the same order.",
-     "start": 0.2,
-     "end": 6.24
-    },
-    {
-     "id": "qu1s_2",
-     "text": "So keep a marker, head, on the oldest one who still counts. It only ever moves forward.",
-     "start": 6.99,
-     "end": 12.61
-    },
-    {
-     "id": "qu1s_3",
-     "text": "Line three. Moss stands on head, the oldest visitor who still counts. Door zero.",
-     "start": 13.36,
-     "end": 18.98
-    },
-    {
-     "id": "qu1s_4",
-     "text": "The first arrival, at minute one. Nobody is too old. From head to here is one visitor.",
-     "start": 19.73,
-     "end": 25.5
-    },
-    {
-     "id": "qu1s_5",
-     "text": "Minute two. Is minute one too old? It would need to be before two minus three. No. Two visitors.",
-     "start": 26.25,
-     "end": 32.75
-    },
-    {
-     "id": "qu1s_6",
-     "text": "Minute six. Six minus three is three. Anything before minute three is too old.",
-     "start": 33.5,
-     "end": 38.44
-    },
-    {
-     "id": "qu1s_7",
-     "text": "Minute one is too old. Head moves. Minute two is too old as well. Head moves again.",
-     "start": 39.19,
-     "end": 45.05
-    },
-    {
-     "id": "qu1s_8",
-     "text": "From head to here is one visitor.",
-     "start": 45.8,
-     "end": 47.86
-    },
-    {
-     "id": "qu1s_9",
-     "text": "Minute seven. Too old means before four. Head is on six. Does head move?",
-     "start": 48.61,
-     "end": 53.41
-    },
-    {
-     "id": "qu1s_10",
-     "text": "No. Six still counts. Two visitors.",
-     "start": 54.61,
-     "end": 57.09
-    },
-    {
-     "id": "qu1s_11",
-     "text": "Minute eight. Too old means before five. Six still counts. Three visitors.",
-     "start": 57.84,
-     "end": 62.7
-    },
-    {
-     "id": "qu1s_12",
-     "text": "Line eight returns the counts.",
-     "start": 63.45,
-     "end": 65.28
-    },
-    {
-     "id": "qu1s_13",
-     "text": "Head only moves forward, so it moves at most n times in total. O of n.",
-     "start": 66.38,
-     "end": 71.75
-    },
-    {
-     "id": "qu1s_14",
-     "text": "Apart from the answer row, one marker. O of one extra space.",
-     "start": 72.5,
-     "end": 76.85
-    },
-    {
-     "id": "qu1s_15",
-     "text": "A website counts its visitors in the last five minutes exactly like this. Old ones leave from the front of a queue.",
-     "start": 77.6,
-     "end": 84.46
-    }
-   ],
-   "pauses": [
-    {
-     "id": "qu1s-q",
-     "t": 53.61
-    }
-   ]
-  },
-  "qu2i": {
-   "src": "videos/qu2i.mp4",
-   "title": "A Queue From Two Piles",
-   "duration": 24,
-   "lines": [
-    {
-     "id": "qu2i_1",
-     "text": "Pip has two piles, and can only touch the top of each. But the visitors want a fair line.",
-     "start": 0.2,
-     "end": 5.76
-    },
-    {
-     "id": "qu2i_2",
-     "text": "Run the operations, and return what every take removed. A take must remove the oldest item.",
-     "start": 6.46,
-     "end": 12.62
-    },
-    {
-     "id": "qu2i_3",
-     "text": "A pile hands back the newest item first. That is backwards.",
-     "start": 13.32,
-     "end": 17.49
-    },
-    {
-     "id": "qu2i_4",
-     "text": "What happens to the order, if you pour one pile into the other? Your turn.",
-     "start": 18.19,
-     "end": 22.4
-    }
-   ],
-   "pauses": []
-  },
-  "qu2s": {
-   "src": "videos/qu2s.mp4",
-   "title": "Pour one pile into the other",
-   "duration": 87.3,
-   "lines": [
-    {
-     "id": "qu2s_1",
-     "text": "A pile gives back the newest first. Pour it into a second pile, and the order flips. Now the oldest is on top.",
-     "start": 0.2,
-     "end": 7.44
-    },
-    {
-     "id": "qu2s_2",
-     "text": "So new items go onto the inbox. Items leave from the outbox. And we only pour when the outbox is empty.",
-     "start": 8.19,
-     "end": 15.18
-    },
-    {
-     "id": "qu2s_3",
-     "text": "Two empty piles. Inbox, and outbox.",
-     "start": 15.93,
-     "end": 18.87
-    },
-    {
-     "id": "qu2s_4",
-     "text": "Add one. Line seven pushes it onto the inbox.",
-     "start": 19.62,
-     "end": 22.98
-    },
-    {
-     "id": "qu2s_5",
-     "text": "Add two. Push. It sits on top of the one.",
-     "start": 23.73,
-     "end": 26.53
-    },
-    {
-     "id": "qu2s_6",
-     "text": "A take. The outbox is empty. So line ten pours the inbox across, one item at a time.",
-     "start": 27.28,
-     "end": 33.49
-    },
-    {
-     "id": "qu2s_7",
-     "text": "Two went across first, then one. So one, the oldest, is on top. Line twelve pops it.",
-     "start": 34.24,
-     "end": 40.03
-    },
-    {
-     "id": "qu2s_8",
-     "text": "Add three. It goes onto the inbox, as always.",
-     "start": 40.78,
-     "end": 43.96
-    },
-    {
-     "id": "qu2s_9",
-     "text": "A take. The outbox still holds two. Do we pour first?",
-     "start": 44.71,
-     "end": 48.13
-    },
-    {
-     "id": "qu2s_10",
-     "text": "No. The outbox is not empty, so line twelve just pops. Two.",
-     "start": 49.33,
-     "end": 53.41
-    },
-    {
-     "id": "qu2s_11",
-     "text": "The last take. Now the outbox is empty, so the three is poured across, and popped.",
-     "start": 54.16,
-     "end": 59.34
-    },
-    {
-     "id": "qu2s_12",
-     "text": "Line fifteen returns what was taken. One, two, three. In arrival order.",
-     "start": 60.09,
-     "end": 65.22
-    },
-    {
-     "id": "qu2s_13",
-     "text": "Each item is pushed twice and popped twice at most. So the average cost of an operation is O of one.",
-     "start": 66.32,
-     "end": 72.79
-    },
-    {
-     "id": "qu2s_14",
-     "text": "The two piles together hold every waiting item. O of n space.",
-     "start": 73.54,
-     "end": 78.03
-    },
-    {
-     "id": "qu2s_15",
-     "text": "It looks like a trick. But some programming languages really do build a fast queue from two simple stacks.",
-     "start": 78.78,
-     "end": 85.7
-    }
-   ],
-   "pauses": [
-    {
-     "id": "qu2s-q",
-     "t": 48.33
-    }
-   ]
-  },
-  "ll1i": {
-   "src": "videos/ll1i.mp4",
-   "title": "Turn the List Around",
-   "duration": 22.62,
-   "lines": [
-    {
-     "id": "ll1i_1",
-     "text": "Three nodes, each pointing to the next. Pip wants the whole list turned around.",
-     "start": 0.2,
-     "end": 4.53
-    },
-    {
-     "id": "ll1i_2",
-     "text": "Reverse the list and return its new head. Use the nodes you have, and only re-point their arrows.",
-     "start": 5.23,
-     "end": 11.74
-    },
-    {
-     "id": "ll1i_3",
-     "text": "Turn the first arrow around, and you can no longer reach the second node.",
-     "start": 12.44,
-     "end": 16.74
-    },
-    {
-     "id": "ll1i_4",
-     "text": "So what do you need to save, before you turn an arrow? Your turn.",
-     "start": 17.44,
-     "end": 21.02
-    }
-   ],
-   "pauses": []
-  },
-  "ll1s": {
-   "src": "videos/ll1s.mp4",
-   "title": "Save, flip, step",
-   "duration": 76.02,
-   "lines": [
-    {
-     "id": "ll1s_1",
-     "text": "Reversing a list does not move any node. It only turns every arrow around.",
-     "start": 0.2,
-     "end": 5
-    },
-    {
-     "id": "ll1s_2",
-     "text": "But the moment you turn an arrow, you lose the way forward. So save it first.",
-     "start": 5.75,
-     "end": 10.81
-    },
-    {
-     "id": "ll1s_3",
-     "text": "Prev starts as null, because nothing is behind the first node yet. Curr starts on the first node.",
-     "start": 11.56,
-     "end": 17.49
-    },
-    {
-     "id": "ll1s_4",
-     "text": "Line five saves the rest of the list in next, before we touch any arrow.",
-     "start": 18.24,
-     "end": 22.55
-    },
-    {
-     "id": "ll1s_5",
-     "text": "Line six flips the arrow. One now points back to prev, which is null.",
-     "start": 23.3,
-     "end": 27.75
-    },
-    {
-     "id": "ll1s_6",
-     "text": "Lines seven and eight step both markers forward.",
-     "start": 28.5,
-     "end": 31.24
-    },
-    {
-     "id": "ll1s_7",
-     "text": "Again. Save next. Then flip. Two now points back to one.",
-     "start": 31.99,
-     "end": 35.68
-    },
-    {
-     "id": "ll1s_8",
-     "text": "Step forward.",
-     "start": 36.43,
-     "end": 37.51
-    },
-    {
-     "id": "ll1s_9",
-     "text": "Curr is on three, the last node. Line five saves next. What is it?",
-     "start": 38.26,
-     "end": 42.93
-    },
-    {
-     "id": "ll1s_10",
-     "text": "Null. Nothing comes after three. Then line six flips its arrow back to two.",
-     "start": 44.13,
-     "end": 49.01
-    },
-    {
-     "id": "ll1s_11",
-     "text": "Step forward. Prev is three. Curr is null, so the loop ends.",
-     "start": 49.76,
-     "end": 53.8
-    },
-    {
-     "id": "ll1s_12",
-     "text": "Line ten returns prev. The old last node is the new head.",
-     "start": 54.55,
-     "end": 58.7
-    },
-    {
-     "id": "ll1s_13",
-     "text": "One pass, and a few steps per node. O of n time.",
-     "start": 59.8,
-     "end": 63.09
-    },
-    {
-     "id": "ll1s_14",
-     "text": "Three markers, and no new nodes. O of one space.",
-     "start": 63.84,
-     "end": 67.18
-    },
-    {
-     "id": "ll1s_15",
-     "text": "A music player turns its play queue around like this when you ask for reverse order. No song is copied.",
-     "start": 67.93,
-     "end": 74.42
-    }
-   ],
-   "pauses": [
-    {
-     "id": "ll1s-q",
-     "t": 43.13
-    }
-   ]
-  },
-  "ll2i": {
-   "src": "videos/ll2i.mp4",
-   "title": "The Middle Node",
-   "duration": 20.04,
-   "lines": [
-    {
-     "id": "ll2i_1",
-     "text": "Pip needs the node in the middle of this list.",
-     "start": 0.2,
-     "end": 2.92
-    },
-    {
-     "id": "ll2i_2",
-     "text": "Return the middle node. With an even number of nodes, return the second of the two middle ones.",
-     "start": 3.62,
-     "end": 9.46
-    },
-    {
-     "id": "ll2i_3",
-     "text": "There is no index to jump to, and nobody told you the length.",
-     "start": 10.16,
-     "end": 13.88
-    },
-    {
-     "id": "ll2i_4",
-     "text": "What if one walker moves twice as fast as the other? Your turn.",
-     "start": 14.58,
-     "end": 18.44
-    }
-   ],
-   "pauses": []
-  },
-  "ll2s": {
-   "src": "videos/ll2s.mp4",
-   "title": "Two walkers, two speeds",
-   "duration": 53.3,
-   "lines": [
-    {
-     "id": "ll2s_1",
-     "text": "You cannot jump to the middle of a list. And you do not know its length without walking it.",
-     "start": 0.2,
-     "end": 4.78
-    },
-    {
-     "id": "ll2s_2",
-     "text": "So send two walkers. One at double speed. When the fast one finishes, the slow one is halfway.",
-     "start": 5.53,
-     "end": 11.8
-    },
-    {
-     "id": "ll2s_3",
-     "text": "Both markers start on the first node.",
-     "start": 12.55,
-     "end": 14.64
-    },
-    {
-     "id": "ll2s_4",
-     "text": "Line four checks that fast can take two more steps. It can.",
-     "start": 15.39,
-     "end": 19.18
-    },
-    {
-     "id": "ll2s_5",
-     "text": "Slow takes one step. Fast takes two.",
-     "start": 19.93,
-     "end": 22.43
-    },
-    {
-     "id": "ll2s_6",
-     "text": "Again. Slow takes one step, and fast takes two. Where is fast now?",
-     "start": 23.18,
-     "end": 27.36
-    },
-    {
-     "id": "ll2s_7",
-     "text": "On the last node. And slow is on three.",
-     "start": 28.56,
-     "end": 31.23
-    },
-    {
-     "id": "ll2s_8",
-     "text": "Line four again. Fast has no next node. So the loop stops.",
-     "start": 31.98,
-     "end": 36.1
-    },
-    {
-     "id": "ll2s_9",
-     "text": "Line eight returns slow. The node holding three. The middle.",
-     "start": 36.85,
-     "end": 40.66
-    },
-    {
-     "id": "ll2s_10",
-     "text": "One pass. O of n time.",
-     "start": 41.76,
-     "end": 43.52
-    },
-    {
-     "id": "ll2s_11",
-     "text": "Two markers. O of one space.",
-     "start": 44.27,
-     "end": 46.23
-    },
-    {
-     "id": "ll2s_12",
-     "text": "Finding the middle without counting is how merge sort splits a linked list in two.",
-     "start": 46.98,
-     "end": 51.7
-    }
-   ],
-   "pauses": [
-    {
-     "id": "ll2s-q",
-     "t": 27.56
-    }
-   ]
-  },
-  "ll3i": {
-   "src": "videos/ll3i.mp4",
-   "title": "Round and Round",
-   "duration": 21.55,
-   "lines": [
-    {
-     "id": "ll3i_1",
-     "text": "The last node of this list points back into the middle. Follow the arrows, and you never stop.",
-     "start": 0.2,
-     "end": 5.5
-    },
-    {
-     "id": "ll3i_2",
-     "text": "Return true if the list has a loop, and false if it ends at null.",
-     "start": 6.2,
-     "end": 10.27
-    },
-    {
-     "id": "ll3i_3",
-     "text": "You could remember every node you visit. But that costs memory.",
-     "start": 10.97,
-     "end": 14.83
-    },
-    {
-     "id": "ll3i_4",
-     "text": "What happens to two runners on a round track, if one is faster? Your turn.",
-     "start": 15.53,
-     "end": 19.95
-    }
-   ],
-   "pauses": []
-  },
-  "ll3s": {
-   "src": "videos/ll3s.mp4",
-   "title": "The fast one catches up",
-   "duration": 60.92,
-   "lines": [
-    {
-     "id": "ll3s_1",
-     "text": "In a list with a loop, a walker never reaches null. It goes round for ever.",
-     "start": 0.2,
-     "end": 5.04
-    },
-    {
-     "id": "ll3s_2",
-     "text": "So send a slow walker and a fast one. Inside a loop, the fast one must catch the slow one from behind.",
-     "start": 5.79,
-     "end": 12.25
-    },
-    {
-     "id": "ll3s_3",
-     "text": "Both markers start on the first node.",
-     "start": 13,
-     "end": 15.09
-    },
-    {
-     "id": "ll3s_4",
-     "text": "Slow steps once, to two. Fast steps twice, to three. Not the same node.",
-     "start": 15.84,
-     "end": 20.66
-    },
-    {
-     "id": "ll3s_5",
-     "text": "Slow steps to three. Fast steps to four, and then follows the arrow back round, to two.",
-     "start": 21.41,
-     "end": 27.06
-    },
-    {
-     "id": "ll3s_6",
-     "text": "Once more. Slow moves to four. Fast takes two steps from two. Where does it land?",
-     "start": 27.81,
-     "end": 33.25
-    },
-    {
-     "id": "ll3s_7",
-     "text": "On four. Fast has caught slow from behind. Line seven sees the same node, and returns true.",
-     "start": 34.45,
-     "end": 40.51
-    },
-    {
-     "id": "ll3s_8",
-     "text": "Fast gains one node on slow at every step, so it catches up within one lap. O of n time.",
-     "start": 41.61,
-     "end": 48.15
-    },
-    {
-     "id": "ll3s_9",
-     "text": "Two markers, and no set of visited nodes. O of one space.",
-     "start": 48.9,
-     "end": 52.89
-    },
-    {
-     "id": "ll3s_10",
-     "text": "This catches a real bug. A chain of redirects that leads back to itself would loop for ever.",
-     "start": 53.64,
-     "end": 59.32
-    }
-   ],
-   "pauses": [
-    {
-     "id": "ll3s-q",
-     "t": 33.45
-    }
-   ]
-  },
-  "ll4i": {
-   "src": "videos/ll4i.mp4",
-   "title": "Zip Two Lists",
-   "duration": 20.01,
-   "lines": [
-    {
-     "id": "ll4i_1",
-     "text": "Two sorted lists. They should become one sorted list.",
-     "start": 0.2,
-     "end": 3.65
-    },
-    {
-     "id": "ll4i_2",
-     "text": "Join them by re-hooking the nodes, and return the head of the result.",
-     "start": 4.35,
-     "end": 8.3
-    },
-    {
-     "id": "ll4i_3",
-     "text": "You have merged two sorted arrays before. The idea is the same.",
-     "start": 9,
-     "end": 12.99
-    },
-    {
-     "id": "ll4i_4",
-     "text": "But which node is the head of the answer? Could a fake first node help? Your turn.",
-     "start": 13.69,
-     "end": 18.41
-    }
-   ],
-   "pauses": []
-  },
-  "ll4s": {
-   "src": "videos/ll4s.mp4",
-   "title": "Hook on the smaller front",
-   "duration": 71.07,
-   "lines": [
-    {
-     "id": "ll4s_1",
-     "text": "The same idea as merging two sorted arrays. The smallest unused node is at the front of one of the lists.",
-     "start": 0.2,
-     "end": 6.96
-    },
-    {
-     "id": "ll4s_2",
-     "text": "But nothing is copied. Each node is simply hooked onto the end of the new list.",
-     "start": 7.71,
-     "end": 12.62
-    },
-    {
-     "id": "ll4s_3",
-     "text": "Line two makes a dummy node. A fake first node, so that the real first node needs no special case. Tail marks the end of the new list.",
-     "start": 13.37,
-     "end": 22.12
-    },
-    {
-     "id": "ll4s_4",
-     "text": "Compare the two fronts. One and two. One is smaller. Line six hooks it onto tail, and a moves on.",
-     "start": 22.87,
-     "end": 29.2
-    },
-    {
-     "id": "ll4s_5",
-     "text": "Four against two. Two is hooked on, and b moves on.",
-     "start": 29.95,
-     "end": 33.37
-    },
-    {
-     "id": "ll4s_6",
-     "text": "Four against three. Which node is hooked on next?",
-     "start": 34.12,
-     "end": 37.32
-    },
-    {
-     "id": "ll4s_7",
-     "text": "Three. And now b has run out, so the loop stops.",
-     "start": 38.52,
-     "end": 41.46
-    },
-    {
-     "id": "ll4s_8",
-     "text": "Line fourteen hooks on whatever is left. The rest of a. Four and seven come along in one step, because they are already linked.",
-     "start": 42.21,
-     "end": 50.09
-    },
-    {
-     "id": "ll4s_9",
-     "text": "Line fifteen returns dummy dot next. The real first node.",
-     "start": 50.84,
-     "end": 54.8
-    },
-    {
-     "id": "ll4s_10",
-     "text": "One step per node. O of n plus m time.",
-     "start": 55.9,
-     "end": 58.93
-    },
-    {
-     "id": "ll4s_11",
-     "text": "No new nodes, except the dummy. O of one space.",
-     "start": 59.68,
-     "end": 62.86
-    },
-    {
-     "id": "ll4s_12",
-     "text": "Re-hooking nodes like this is the heart of merge sort on a linked list. Nothing is copied.",
-     "start": 63.61,
-     "end": 69.47
-    }
-   ],
-   "pauses": [
-    {
-     "id": "ll4s-q",
-     "t": 37.52
-    }
-   ]
-  },
-  "ll5i": {
-   "src": "videos/ll5i.mp4",
-   "title": "Second From the End",
-   "duration": 20.33,
-   "lines": [
-    {
-     "id": "ll5i_1",
-     "text": "One node has to go. The second one, counted from the end.",
-     "start": 0.2,
-     "end": 3.69
-    },
-    {
-     "id": "ll5i_2",
-     "text": "Remove the k-th node from the end, and return the head. In one pass.",
-     "start": 4.39,
-     "end": 9.17
-    },
-    {
-     "id": "ll5i_3",
-     "text": "You cannot walk backwards. And you do not know how long the list is.",
-     "start": 9.87,
-     "end": 13.78
-    },
-    {
-     "id": "ll5i_4",
-     "text": "What if two markers walk together, a fixed distance apart? Your turn.",
-     "start": 14.48,
-     "end": 18.73
-    }
-   ],
-   "pauses": []
-  },
-  "ll5s": {
-   "src": "videos/ll5s.mp4",
-   "title": "Two markers, a fixed gap",
-   "duration": 68.6,
-   "lines": [
-    {
-     "id": "ll5s_1",
-     "text": "To remove a node, you must stand on the node just before it. But counting from the end needs the length.",
-     "start": 0.2,
-     "end": 6.33
-    },
-    {
-     "id": "ll5s_2",
-     "text": "So send one marker k nodes ahead, and then walk both together. When the leader reaches the end, the follower is in place.",
-     "start": 7.08,
-     "end": 14.83
-    },
-    {
-     "id": "ll5s_3",
-     "text": "A dummy node, D, goes in front, so that even the first real node has a node before it. Both markers start there.",
-     "start": 15.58,
-     "end": 23.09
-    },
-    {
-     "id": "ll5s_4",
-     "text": "Line five sends lead ahead by k nodes. K is two.",
-     "start": 23.84,
-     "end": 27.42
-    },
-    {
-     "id": "ll5s_5",
-     "text": "Now they walk together, one step each. The gap stays at two.",
-     "start": 28.17,
-     "end": 31.98
-    },
-    {
-     "id": "ll5s_6",
-     "text": "Another step. Lead is now on the last node. Where is trail?",
-     "start": 32.73,
-     "end": 36.43
-    },
-    {
-     "id": "ll5s_7",
-     "text": "Just before the node to remove. Exactly where we need to stand.",
-     "start": 37.63,
-     "end": 41.59
-    },
-    {
-     "id": "ll5s_8",
-     "text": "Line ten points trail past the next node, straight to the one after it. Three is no longer in the list.",
-     "start": 42.34,
-     "end": 48.77
-    },
-    {
-     "id": "ll5s_9",
-     "text": "Line eleven returns dummy dot next. The real head.",
-     "start": 49.52,
-     "end": 53.01
-    },
-    {
-     "id": "ll5s_10",
-     "text": "One pass. O of n time.",
-     "start": 54.11,
-     "end": 55.87
-    },
-    {
-     "id": "ll5s_11",
-     "text": "Two markers and a dummy. O of one space.",
-     "start": 56.62,
-     "end": 59.5
-    },
-    {
-     "id": "ll5s_12",
-     "text": "Keeping the last few lines of a long log works like this. One marker runs a fixed distance ahead of the other.",
-     "start": 60.25,
-     "end": 67
-    }
-   ],
-   "pauses": [
-    {
-     "id": "ll5s-q",
-     "t": 36.63
-    }
-   ]
-  },
-  "ll6i": {
-   "src": "videos/ll6i.mp4",
-   "title": "No Repeats",
-   "duration": 19.09,
-   "lines": [
-    {
-     "id": "ll6i_1",
-     "text": "A sorted list, with some values written twice.",
-     "start": 0.2,
-     "end": 3.18
-    },
-    {
-     "id": "ll6i_2",
-     "text": "Remove the repeats, so that each value appears once. Return the head.",
-     "start": 3.88,
-     "end": 8.2
-    },
-    {
-     "id": "ll6i_3",
-     "text": "Because the list is sorted, a repeat is always right behind its twin.",
-     "start": 8.9,
-     "end": 13.24
-    },
-    {
-     "id": "ll6i_4",
-     "text": "Standing on a node, how do you unhook the one after it? Your turn.",
-     "start": 13.94,
-     "end": 17.49
-    }
-   ],
-   "pauses": []
-  },
-  "ll6s": {
-   "src": "videos/ll6s.mp4",
-   "title": "Point past the repeat",
-   "duration": 59.91,
-   "lines": [
-    {
-     "id": "ll6s_1",
-     "text": "The list is sorted, so repeats sit right next to each other.",
-     "start": 0.2,
-     "end": 3.82
-    },
-    {
-     "id": "ll6s_2",
-     "text": "And removing a node from a list is one move. Point the node before it, past it.",
-     "start": 4.57,
-     "end": 9.38
-    },
-    {
-     "id": "ll6s_3",
-     "text": "Curr starts on the first node.",
-     "start": 10.13,
-     "end": 11.78
-    },
-    {
-     "id": "ll6s_4",
-     "text": "Line four compares this node with the next one. One and one. A repeat.",
-     "start": 12.53,
-     "end": 17.08
-    },
-    {
-     "id": "ll6s_5",
-     "text": "Line five points curr past the repeat. Curr itself does not move, because the node after might be a repeat too.",
-     "start": 17.83,
-     "end": 24.84
-    },
-    {
-     "id": "ll6s_6",
-     "text": "Now the next node holds two. Different. So line seven moves curr forward.",
-     "start": 25.59,
-     "end": 30.31
-    },
-    {
-     "id": "ll6s_7",
-     "text": "Two and three are different as well. Move on.",
-     "start": 31.06,
-     "end": 33.8
-    },
-    {
-     "id": "ll6s_8",
-     "text": "Three and three. What happens?",
-     "start": 34.55,
-     "end": 36.38
-    },
-    {
-     "id": "ll6s_9",
-     "text": "The arrow skips the repeat, and now points to null.",
-     "start": 37.59,
-     "end": 40.45
-    },
-    {
-     "id": "ll6s_10",
-     "text": "Curr has no next node, so the loop ends. Line ten returns the same head.",
-     "start": 41.2,
-     "end": 45.97
-    },
-    {
-     "id": "ll6s_11",
-     "text": "One pass. O of n time.",
-     "start": 47.07,
-     "end": 48.82
-    },
-    {
-     "id": "ll6s_12",
-     "text": "Nothing new is built. O of one space.",
-     "start": 49.57,
-     "end": 52.21
-    },
-    {
-     "id": "ll6s_13",
-     "text": "A sorted contact list is cleaned of repeats like this, just by re-pointing arrows.",
-     "start": 52.96,
-     "end": 58.31
-    }
-   ],
-   "pauses": [
-    {
-     "id": "ll6s-q",
-     "t": 36.59
-    }
-   ]
-  },
-  "bs1i": {
-   "src": "videos/bs1i.mp4",
-   "title": "Find the Door",
-   "duration": 21.34,
-   "lines": [
-    {
-     "id": "bs1i_1",
-     "text": "Seven sorted doors. Behind one of them is sixteen.",
-     "start": 0.2,
-     "end": 3.73
-    },
-    {
-     "id": "bs1i_2",
-     "text": "Return the index of the target, or minus one if it is not there.",
-     "start": 4.43,
-     "end": 8.55
-    },
-    {
-     "id": "bs1i_3",
-     "text": "Walking door by door works. But the row is sorted, and that is worth a lot.",
-     "start": 9.25,
-     "end": 14.04
-    },
-    {
-     "id": "bs1i_4",
-     "text": "Look at the middle door first. What does it tell you about half the row? Your turn.",
-     "start": 14.74,
-     "end": 19.74
-    }
-   ],
-   "pauses": []
-  },
-  "bs1s": {
-   "src": "videos/bs1s.mp4",
-   "title": "Throw away half",
-   "duration": 71.41,
-   "lines": [
-    {
-     "id": "bs1s_1",
-     "text": "The row is sorted. So one look at the middle door tells you which half the target cannot be in.",
-     "start": 0.2,
-     "end": 6.01
-    },
-    {
-     "id": "bs1s_2",
-     "text": "Keep two markers around the part that is still possible, and halve it until the target is found.",
-     "start": 6.76,
-     "end": 12.28
-    },
-    {
-     "id": "bs1s_3",
-     "text": "Lines two and three. Low is the first door. High is the last. The target is somewhere between them.",
-     "start": 13.03,
-     "end": 19.28
-    },
-    {
-     "id": "bs1s_4",
-     "text": "Line five finds the middle. Zero plus six, divided by two. Door three.",
-     "start": 20.03,
-     "end": 25.46
-    },
-    {
-     "id": "bs1s_5",
-     "text": "Door three holds twelve. Too small. And so is everything to its left. Line seven moves low past the middle.",
-     "start": 26.21,
-     "end": 33.37
-    },
-    {
-     "id": "bs1s_6",
-     "text": "The middle of four and six is five. Door five holds twenty three. Which marker moves?",
-     "start": 34.12,
-     "end": 39.93
-    },
-    {
-     "id": "bs1s_7",
-     "text": "High. Twenty three is too big, and so is everything to its right. Line eight moves high to door four.",
-     "start": 41.13,
-     "end": 47.2
-    },
-    {
-     "id": "bs1s_8",
-     "text": "Low and high are both on door four. The middle is door four. Sixteen. Line six returns its index.",
-     "start": 47.95,
-     "end": 54.61
-    },
-    {
-     "id": "bs1s_9",
-     "text": "Every look halves what is left. O of log n time.",
-     "start": 55.71,
-     "end": 58.96
-    },
-    {
-     "id": "bs1s_10",
-     "text": "Three markers, and nothing else. O of one space.",
-     "start": 59.71,
-     "end": 62.95
-    },
-    {
-     "id": "bs1s_11",
-     "text": "Your phone finds one name among thousands of sorted contacts like this. A handful of looks.",
-     "start": 63.7,
-     "end": 69.81
-    }
-   ],
-   "pauses": [
-    {
-     "id": "bs1s-q",
-     "t": 40.13
-    }
-   ]
-  },
-  "bs2i": {
-   "src": "videos/bs2i.mp4",
-   "title": "Where Would It Go?",
-   "duration": 20.69,
-   "lines": [
-    {
-     "id": "bs2i_1",
-     "text": "Three doors hold a five. Pip wants the first of them.",
-     "start": 0.2,
-     "end": 3.6
-    },
-    {
-     "id": "bs2i_2",
-     "text": "Return the first index whose number is the target, or more.",
-     "start": 4.3,
-     "end": 7.9
-    },
-    {
-     "id": "bs2i_3",
-     "text": "Finding a five is not enough. There may be another one to its left.",
-     "start": 8.6,
-     "end": 12.58
-    },
-    {
-     "id": "bs2i_4",
-     "text": "You are looking for a boundary. Too small on one side, big enough on the other. Your turn.",
-     "start": 13.28,
-     "end": 19.09
-    }
-   ],
-   "pauses": []
-  },
-  "bs2s": {
-   "src": "videos/bs2s.mp4",
-   "title": "Find the boundary",
-   "duration": 72.23,
-   "lines": [
-    {
-     "id": "bs2s_1",
-     "text": "The row splits into two parts. Numbers that are too small, and numbers that are big enough. We want the first of the second part.",
-     "start": 0.2,
-     "end": 8.05
-    },
-    {
-     "id": "bs2s_2",
-     "text": "So when the middle door is big enough, it might be the answer. Keep it. Only throw away what is certainly wrong.",
-     "start": 8.8,
-     "end": 15.06
-    },
-    {
-     "id": "bs2s_3",
-     "text": "Low starts at zero. High starts at seven, one past the last door, because the answer could be after everything.",
-     "start": 15.81,
-     "end": 23.08
-    },
-    {
-     "id": "bs2s_4",
-     "text": "The middle of zero and seven is three. Door three holds five. Not smaller than the target. So it might be the answer. High moves onto it.",
-     "start": 23.83,
-     "end": 32.44
-    },
-    {
-     "id": "bs2s_5",
-     "text": "The middle of zero and three is one. Door one holds three. Too small. Low moves past it.",
-     "start": 33.19,
-     "end": 39.25
-    },
-    {
-     "id": "bs2s_6",
-     "text": "The middle of two and three is two. Door two holds five. Which marker moves?",
-     "start": 40,
-     "end": 45.13
-    },
-    {
-     "id": "bs2s_7",
-     "text": "High. It moves onto door two. Now low and high are equal, and the loop ends.",
-     "start": 46.33,
-     "end": 51.13
-    },
-    {
-     "id": "bs2s_8",
-     "text": "Line nine returns low. Two. The first door that is big enough.",
-     "start": 51.88,
-     "end": 56
-    },
-    {
-     "id": "bs2s_9",
-     "text": "Every look halves what is left. O of log n time.",
-     "start": 57.1,
-     "end": 60.34
-    },
-    {
-     "id": "bs2s_10",
-     "text": "Three markers, and nothing else. O of one space.",
-     "start": 61.09,
-     "end": 64.34
-    },
-    {
-     "id": "bs2s_11",
-     "text": "A database finds where a new record belongs in a sorted index, exactly like this.",
-     "start": 65.09,
-     "end": 70.63
-    }
-   ],
-   "pauses": [
-    {
-     "id": "bs2s-q",
-     "t": 45.33
-    }
-   ]
-  },
-  "bs3i": {
-   "src": "videos/bs3i.mp4",
-   "title": "How Many of Them?",
-   "duration": 18.78,
-   "lines": [
-    {
-     "id": "bs3i_1",
-     "text": "The fives in this sorted row sit together in one block.",
-     "start": 0.2,
-     "end": 3.66
-    },
-    {
-     "id": "bs3i_2",
-     "text": "Return how many times the target appears.",
-     "start": 4.36,
-     "end": 7.01
-    },
-    {
-     "id": "bs3i_3",
-     "text": "Counting them one by one is a walk. In a million doors, the block could be huge.",
-     "start": 7.71,
-     "end": 12.69
-    },
-    {
-     "id": "bs3i_4",
-     "text": "What two positions would tell you the size of the block? Your turn.",
-     "start": 13.39,
-     "end": 17.18
-    }
-   ],
-   "pauses": []
-  },
-  "bs3s": {
-   "src": "videos/bs3s.mp4",
-   "title": "Two edges, one subtraction",
-   "duration": 62.16,
-   "lines": [
-    {
-     "id": "bs3s_1",
-     "text": "In a sorted row, the copies of a value form one block. So the count is where the block ends, minus where it starts.",
-     "start": 0.2,
-     "end": 7.46
-    },
-    {
-     "id": "bs3s_2",
-     "text": "Both edges are boundaries. And you already know how to find a boundary in a few looks.",
-     "start": 8.21,
-     "end": 13.39
-    },
-    {
-     "id": "bs3s_3",
-     "text": "Lines two to eleven are the boundary search from the last puzzle, as a helper. First of x: the first door holding x or more.",
-     "start": 14.14,
-     "end": 22.48
-    },
-    {
-     "id": "bs3s_4",
-     "text": "Line twelve calls it twice. First of five finds where the fives start. Door two.",
-     "start": 23.23,
-     "end": 28.67
-    },
-    {
-     "id": "bs3s_5",
-     "text": "Now first of six. No door holds six. So what does it return?",
-     "start": 29.42,
-     "end": 33.59
-    },
-    {
-     "id": "bs3s_6",
-     "text": "Five. The first door holding six or more is the eight. And that is exactly the door after the last five.",
-     "start": 34.79,
-     "end": 41.01
-    },
-    {
-     "id": "bs3s_7",
-     "text": "Five minus two. Three fives.",
-     "start": 41.76,
-     "end": 44
-    },
-    {
-     "id": "bs3s_8",
-     "text": "Two searches, each halving. O of log n, however big the block is.",
-     "start": 45.1,
-     "end": 49.42
-    },
-    {
-     "id": "bs3s_9",
-     "text": "Three markers, and nothing else. O of one space.",
-     "start": 50.17,
-     "end": 53.42
-    },
-    {
-     "id": "bs3s_10",
-     "text": "How many orders on one date? A sorted table answers with two binary searches and a subtraction.",
-     "start": 54.17,
-     "end": 60.56
-    }
-   ],
-   "pauses": [
-    {
-     "id": "bs3s-q",
-     "t": 33.79
-    }
-   ]
-  },
-  "bs4i": {
-   "src": "videos/bs4i.mp4",
-   "title": "The Square Root",
-   "duration": 22.83,
-   "lines": [
-    {
-     "id": "bs4i_1",
-     "text": "Which whole number, squared, comes closest to eight without going over?",
-     "start": 0.2,
-     "end": 4.19
-    },
-    {
-     "id": "bs4i_2",
-     "text": "Return the largest x whose square is n or less. No square root function.",
-     "start": 4.89,
-     "end": 9.44
-    },
-    {
-     "id": "bs4i_3",
-     "text": "There is no row of data here. But the possible answers, zero to eight, are in order.",
-     "start": 10.14,
-     "end": 15.19
-    },
-    {
-     "id": "bs4i_4",
-     "text": "For each one you can ask: does it fit? How do those answers line up? Your turn.",
-     "start": 15.89,
-     "end": 21.23
-    }
-   ],
-   "pauses": []
-  },
-  "bs4s": {
-   "src": "videos/bs4s.mp4",
-   "title": "Search the possible answers",
-   "duration": 68.38,
-   "lines": [
-    {
-     "id": "bs4s_1",
-     "text": "The answer is somewhere from zero to n. Small candidates fit, because their square is at most n. Big ones do not.",
-     "start": 0.2,
-     "end": 7.62
-    },
-    {
-     "id": "bs4s_2",
-     "text": "Yes, then no. That flips once. So binary search the candidates, for the last one that fits.",
-     "start": 8.37,
-     "end": 14.55
-    },
-    {
-     "id": "bs4s_3",
-     "text": "The candidates are zero to eight. Low is on zero. High is on eight.",
-     "start": 15.3,
-     "end": 19.69
-    },
-    {
-     "id": "bs4s_4",
-     "text": "The middle candidate is four. Four squared is sixteen. More than eight. Too big.",
-     "start": 20.44,
-     "end": 25.6
-    },
-    {
-     "id": "bs4s_5",
-     "text": "So four is out, and everything above it. Line seven moves high to three.",
-     "start": 26.35,
-     "end": 30.79
-    },
-    {
-     "id": "bs4s_6",
-     "text": "The middle of zero and three, rounded up, is two. Two squared is four. Does it fit?",
-     "start": 31.54,
-     "end": 36.78
-    },
-    {
-     "id": "bs4s_7",
-     "text": "It fits. So the answer is two, or more. Low moves onto two.",
-     "start": 37.98,
-     "end": 42.04
-    },
-    {
-     "id": "bs4s_8",
-     "text": "The middle of two and three, rounded up, is three. Nine. Too big. High moves to two.",
-     "start": 42.79,
-     "end": 48.15
-    },
-    {
-     "id": "bs4s_9",
-     "text": "Low and high have met. Line nine returns two.",
-     "start": 48.9,
-     "end": 51.84
-    },
-    {
-     "id": "bs4s_10",
-     "text": "The candidates halve at every test. O of log n time.",
-     "start": 52.94,
-     "end": 56.54
-    },
-    {
-     "id": "bs4s_11",
-     "text": "Three markers, and nothing else. O of one space.",
-     "start": 57.29,
-     "end": 60.54
-    },
-    {
-     "id": "bs4s_12",
-     "text": "Calculators find square roots by halving a range of possible answers, just like this.",
-     "start": 61.29,
-     "end": 66.78
-    }
-   ],
-   "pauses": [
-    {
-     "id": "bs4s-q",
-     "t": 36.98
-    }
-   ]
-  },
-  "bs5i": {
-   "src": "videos/bs5i.mp4",
-   "title": "The Top of the Hill",
-   "duration": 18.88,
-   "lines": [
-    {
-     "id": "bs5i_1",
-     "text": "Moss is climbing a hill. The path goes up, reaches one top, and then goes down.",
-     "start": 0.2,
-     "end": 5.18
-    },
-    {
-     "id": "bs5i_2",
-     "text": "Return the index of the top.",
-     "start": 5.88,
-     "end": 7.58
-    },
-    {
-     "id": "bs5i_3",
-     "text": "This row is not sorted. But it is not random either.",
-     "start": 8.28,
-     "end": 11.62
-    },
-    {
-     "id": "bs5i_4",
-     "text": "Stand on any door, and look at the next one. What does that tell you? Your turn.",
-     "start": 12.32,
-     "end": 17.28
-    }
-   ],
-   "pauses": []
-  },
-  "bs5s": {
-   "src": "videos/bs5s.mp4",
-   "title": "Uphill or downhill?",
-   "duration": 68.72,
-   "lines": [
-    {
-     "id": "bs5s_1",
-     "text": "Stand on a door and look at the next one. If it is higher, you are going uphill, and the top is to the right.",
-     "start": 0.2,
-     "end": 6.21
-    },
-    {
-     "id": "bs5s_2",
-     "text": "If it is lower, you are at the top, or past it. Uphill, then downhill. That flips once, so you can halve it.",
-     "start": 6.96,
-     "end": 13.42
-    },
-    {
-     "id": "bs5s_3",
-     "text": "Low on the first door. High on the last.",
-     "start": 14.17,
-     "end": 16.66
-    },
-    {
-     "id": "bs5s_4",
-     "text": "The middle is door two. It holds six, and the next door holds eight. Higher. So we are going uphill.",
-     "start": 17.41,
-     "end": 23.32
-    },
-    {
-     "id": "bs5s_5",
-     "text": "The top is to the right. Low moves past the middle, to door three.",
-     "start": 24.07,
-     "end": 28.01
-    },
-    {
-     "id": "bs5s_6",
-     "text": "The middle of three and five is four. It holds five, and the next door holds two. Which marker moves?",
-     "start": 28.76,
-     "end": 34.95
-    },
-    {
-     "id": "bs5s_7",
-     "text": "High. We are going downhill, so the top is here, or to the left. High moves onto door four.",
-     "start": 36.15,
-     "end": 42.05
-    },
-    {
-     "id": "bs5s_8",
-     "text": "The middle of three and four is three. Eight, then five. Downhill. High moves onto three, and meets low.",
-     "start": 42.8,
-     "end": 49.07
-    },
-    {
-     "id": "bs5s_9",
-     "text": "Line nine returns low. Door three. The top.",
-     "start": 49.82,
-     "end": 52.77
-    },
-    {
-     "id": "bs5s_10",
-     "text": "Every look halves what is left. O of log n time.",
-     "start": 53.87,
-     "end": 57.11
-    },
-    {
-     "id": "bs5s_11",
-     "text": "Three markers, and nothing else. O of one space.",
-     "start": 57.86,
-     "end": 61.11
-    },
-    {
-     "id": "bs5s_12",
-     "text": "Tuning a setting whose result rises and then falls uses this same uphill test.",
-     "start": 61.86,
-     "end": 67.12
-    }
-   ],
-   "pauses": [
-    {
-     "id": "bs5s-q",
-     "t": 35.15
-    }
-   ]
-  },
-  "bs6i": {
-   "src": "videos/bs6i.mp4",
-   "title": "The Turned Row",
-   "duration": 20.8,
-   "lines": [
-    {
-     "id": "bs6i_1",
-     "text": "This row was sorted. Then someone moved the front part to the back.",
-     "start": 0.2,
-     "end": 4.07
-    },
-    {
-     "id": "bs6i_2",
-     "text": "Return the smallest number.",
-     "start": 4.77,
-     "end": 6.37
-    },
-    {
-     "id": "bs6i_3",
-     "text": "It is two sorted pieces, stuck together. Every number in the first piece is bigger than every number in the second.",
-     "start": 7.07,
-     "end": 14.13
-    },
-    {
-     "id": "bs6i_4",
-     "text": "Compare the middle door with the last door. Which piece are you in? Your turn.",
-     "start": 14.82,
-     "end": 19.2
-    }
-   ],
-   "pauses": []
-  },
-  "bs6s": {
-   "src": "videos/bs6s.mp4",
-   "title": "Which piece am I in?",
-   "duration": 73.22,
-   "lines": [
-    {
-     "id": "bs6s_1",
-     "text": "The row is two sorted pieces. Every number in the left piece is bigger than the last door. Every number in the right piece is not.",
-     "start": 0.2,
-     "end": 8.28
-    },
-    {
-     "id": "bs6s_2",
-     "text": "So comparing the middle with the last door tells you which piece you are in. The smallest number is the first door of the right piece.",
-     "start": 9.03,
-     "end": 16.75
-    },
-    {
-     "id": "bs6s_3",
-     "text": "Low on the first door. High on the last.",
-     "start": 17.5,
-     "end": 19.99
-    },
-    {
-     "id": "bs6s_4",
-     "text": "The middle is door three. It holds seven. The last door holds three. Seven is bigger, so we are in the left piece.",
-     "start": 20.74,
-     "end": 27.97
-    },
-    {
-     "id": "bs6s_5",
-     "text": "The smallest number is to the right. Low moves past the middle, to door four.",
-     "start": 28.72,
-     "end": 33.38
-    },
-    {
-     "id": "bs6s_6",
-     "text": "The middle of four and six is five. It holds two. The last door holds three. Which piece is this, and who moves?",
-     "start": 34.13,
-     "end": 41.22
-    },
-    {
-     "id": "bs6s_7",
-     "text": "The right piece. Two might be the smallest, so high moves onto it.",
-     "start": 42.42,
-     "end": 46.47
-    },
-    {
-     "id": "bs6s_8",
-     "text": "The middle of four and five is four. One. Not bigger than two. High moves onto four, and meets low.",
-     "start": 47.22,
-     "end": 53.58
-    },
-    {
-     "id": "bs6s_9",
-     "text": "Line nine returns the number under low. One.",
-     "start": 54.33,
-     "end": 57.17
-    },
-    {
-     "id": "bs6s_10",
-     "text": "Every look halves what is left. O of log n time.",
-     "start": 58.27,
-     "end": 61.52
-    },
-    {
-     "id": "bs6s_11",
-     "text": "Three markers, and nothing else. O of one space.",
-     "start": 62.27,
-     "end": 65.51
-    },
-    {
-     "id": "bs6s_12",
-     "text": "A log that wraps around when it is full is a turned row. This finds where it begins.",
-     "start": 66.26,
-     "end": 71.62
-    }
-   ],
-   "pauses": [
-    {
-     "id": "bs6s-q",
-     "t": 41.42
-    }
-   ]
-  },
-  "bs7i": {
-   "src": "videos/bs7i.mp4",
-   "title": "Just Fast Enough",
-   "duration": 23.55,
-   "lines": [
-    {
-     "id": "bs7i_1",
-     "text": "Four piles of seeds, and eight hours before winter. Each hour, Pip eats from one pile.",
-     "start": 0.2,
-     "end": 5.78
-    },
-    {
-     "id": "bs7i_2",
-     "text": "Return the slowest eating speed that still finishes every pile in time.",
-     "start": 6.48,
-     "end": 10.86
-    },
-    {
-     "id": "bs7i_3",
-     "text": "You cannot read the answer off the piles. But you can test any speed you like.",
-     "start": 11.56,
-     "end": 15.96
-    },
-    {
-     "id": "bs7i_4",
-     "text": "Too slow, too slow, then fast enough. Where have you seen that pattern? Your turn.",
-     "start": 16.66,
-     "end": 21.95
-    }
-   ],
-   "pauses": []
-  },
-  "bs7s": {
-   "src": "videos/bs7s.mp4",
-   "title": "The slowest speed that fits",
-   "duration": 88.05,
-   "lines": [
-    {
-     "id": "bs7s_1",
-     "text": "The answer is a speed, somewhere from one up to the biggest pile. Slow speeds fail. Fast speeds work. And it flips only once.",
-     "start": 0.2,
-     "end": 8.54
-    },
-    {
-     "id": "bs7s_2",
-     "text": "So write a test, fits, and binary search the speeds for the first one that passes.",
-     "start": 9.29,
-     "end": 14.3
-    },
-    {
-     "id": "bs7s_3",
-     "text": "Lines two to six are the test. For a speed, add up the hours each pile takes, rounded up, and compare with the hours we have.",
-     "start": 15.05,
-     "end": 23.11
-    },
-    {
-     "id": "bs7s_4",
-     "text": "The speeds worth trying are one to eight, the biggest pile. Low is on one. High is on eight.",
-     "start": 23.86,
-     "end": 29.7
-    },
-    {
-     "id": "bs7s_5",
-     "text": "The middle speed is four. The piles of three, six, seven and eight take one, two, two and two hours. Seven hours. That fits in eight.",
-     "start": 30.45,
-     "end": 39.12
-    },
-    {
-     "id": "bs7s_6",
-     "text": "So the answer is four, or slower. High moves onto four.",
-     "start": 39.87,
-     "end": 43.58
-    },
-    {
-     "id": "bs7s_7",
-     "text": "The middle of one and four is two. At speed two, the piles take two, three, four and four hours. Thirteen. What happens?",
-     "start": 44.33,
-     "end": 52.22
-    },
-    {
-     "id": "bs7s_8",
-     "text": "Too slow. Two is out, and so is one. Low moves to three.",
-     "start": 53.42,
-     "end": 57.29
-    },
-    {
-     "id": "bs7s_9",
-     "text": "The middle of three and four is three. One, two, three and three hours. Nine. Still too slow. Low moves to four, and meets high.",
-     "start": 58.04,
-     "end": 66.26
-    },
-    {
-     "id": "bs7s_10",
-     "text": "Line fourteen returns low. Speed four.",
-     "start": 67.01,
-     "end": 69.72
-    },
-    {
-     "id": "bs7s_11",
-     "text": "About log of the biggest pile tests, and each test walks the piles once. O of n log m.",
-     "start": 70.82,
-     "end": 77.11
-    },
-    {
-     "id": "bs7s_12",
-     "text": "A few numbers. O of one space.",
-     "start": 77.86,
-     "end": 80.14
-    },
-    {
-     "id": "bs7s_13",
-     "text": "Programmers hunt a bug this way. Which version first broke? Test the middle one, and halve.",
-     "start": 80.89,
-     "end": 86.45
-    }
-   ],
-   "pauses": [
-    {
-     "id": "bs7s-q",
-     "t": 52.42
-    }
-   ]
-  },
   "sg1i": {
    "src": "videos/sg1i.mp4",
    "title": "Split, Sort, Merge",
@@ -11046,4065 +5685,6 @@ window.BURROW = {
     {
      "id": "sg3s-q",
      "t": 33.63
-    }
-   ]
-  },
-  "tr1i": {
-   "src": "videos/tr1i.mp4",
-   "title": "Count the Nests",
-   "duration": 18.27,
-   "lines": [
-    {
-     "id": "tr1i_1",
-     "text": "A tree of nests. Pip is handed only the top one, the root.",
-     "start": 0.2,
-     "end": 3.92
-    },
-    {
-     "id": "tr1i_2",
-     "text": "Return how many nests there are in the whole tree.",
-     "start": 4.62,
-     "end": 7.29
-    },
-    {
-     "id": "tr1i_3",
-     "text": "Look at the left child. It has nests below it too. It is the root of a smaller tree.",
-     "start": 8,
-     "end": 13.31
-    },
-    {
-     "id": "tr1i_4",
-     "text": "So who could count that side for you? Your turn.",
-     "start": 14.01,
-     "end": 16.67
-    }
-   ],
-   "pauses": []
-  },
-  "tr1s": {
-   "src": "videos/tr1s.mp4",
-   "title": "One, plus the two sides",
-   "duration": 72.13,
-   "lines": [
-    {
-     "id": "tr1s_1",
-     "text": "A child is the root of a smaller tree. So the same function can count each side.",
-     "start": 0.2,
-     "end": 4.92
-    },
-    {
-     "id": "tr1s_2",
-     "text": "The count is one, for this node, plus the count of the left side, plus the count of the right side.",
-     "start": 5.67,
-     "end": 11.4
-    },
-    {
-     "id": "tr1s_3",
-     "text": "The first call stands on the root. Five. It is not null. Line three asks for the count of the left side, and waits.",
-     "start": 12.15,
-     "end": 19.38
-    },
-    {
-     "id": "tr1s_4",
-     "text": "The call on three does the same. It goes left, to the one.",
-     "start": 20.13,
-     "end": 23.69
-    },
-    {
-     "id": "tr1s_5",
-     "text": "One has no children. Its left is null. What does the call on null return?",
-     "start": 24.44,
-     "end": 29.47
-    },
-    {
-     "id": "tr1s_6",
-     "text": "Zero. Line two. Both sides of the one are empty. So it returns one, plus zero, plus zero. One.",
-     "start": 30.67,
-     "end": 37.43
-    },
-    {
-     "id": "tr1s_7",
-     "text": "The four is the same. One. So the three returns one, plus one, plus one. Three.",
-     "start": 38.18,
-     "end": 44.46
-    },
-    {
-     "id": "tr1s_8",
-     "text": "The right side. Eight has no left child, and the nine counts one. So eight returns two.",
-     "start": 45.21,
-     "end": 50.94
-    },
-    {
-     "id": "tr1s_9",
-     "text": "Back at the root. One, plus three, plus two. Six.",
-     "start": 51.69,
-     "end": 55.06
-    },
-    {
-     "id": "tr1s_10",
-     "text": "Every node is visited once. O of n time.",
-     "start": 56.16,
-     "end": 59.17
-    },
-    {
-     "id": "tr1s_11",
-     "text": "The waiting calls go as deep as the tree is tall. O of height space.",
-     "start": 59.92,
-     "end": 64.22
-    },
-    {
-     "id": "tr1s_12",
-     "text": "Counting every file in a folder and all its subfolders is this exact recursion.",
-     "start": 64.97,
-     "end": 70.53
-    }
-   ],
-   "pauses": [
-    {
-     "id": "tr1s-q",
-     "t": 29.67
-    }
-   ]
-  },
-  "tr2i": {
-   "src": "videos/tr2i.mp4",
-   "title": "How Tall Is the Tree?",
-   "duration": 18.32,
-   "lines": [
-    {
-     "id": "tr2i_1",
-     "text": "Moss wants to know how tall this tree is.",
-     "start": 0.2,
-     "end": 2.58
-    },
-    {
-     "id": "tr2i_2",
-     "text": "Return the number of nodes on the longest path from the root down to a leaf.",
-     "start": 3.28,
-     "end": 7.65
-    },
-    {
-     "id": "tr2i_3",
-     "text": "Suppose somebody told you how tall the left side is, and how tall the right side is.",
-     "start": 8.35,
-     "end": 13.18
-    },
-    {
-     "id": "tr2i_4",
-     "text": "What would you do with those two numbers? Your turn.",
-     "start": 13.88,
-     "end": 16.71
-    }
-   ],
-   "pauses": []
-  },
-  "tr2s": {
-   "src": "videos/tr2s.mp4",
-   "title": "One, plus the taller side",
-   "duration": 62.65,
-   "lines": [
-    {
-     "id": "tr2s_1",
-     "text": "The height of a tree is one, for the root, plus the height of its taller side.",
-     "start": 0.2,
-     "end": 4.5
-    },
-    {
-     "id": "tr2s_2",
-     "text": "And each side is a smaller tree. So the same function measures it.",
-     "start": 5.25,
-     "end": 9.41
-    },
-    {
-     "id": "tr2s_3",
-     "text": "The first call stands on the root, five. Line three asks for the height of the left side, and waits.",
-     "start": 10.16,
-     "end": 16.04
-    },
-    {
-     "id": "tr2s_4",
-     "text": "Now on three. Its left side is empty. Line two answers zero.",
-     "start": 16.79,
-     "end": 21.13
-    },
-    {
-     "id": "tr2s_5",
-     "text": "Its right child is four. A leaf. Both of its sides are empty. One, plus the larger of zero and zero. One.",
-     "start": 21.88,
-     "end": 29.39
-    },
-    {
-     "id": "tr2s_6",
-     "text": "Back on three. Left is zero. Right is one. What does this call return?",
-     "start": 30.14,
-     "end": 34.75
-    },
-    {
-     "id": "tr2s_7",
-     "text": "Two. The three itself, plus its taller side.",
-     "start": 35.95,
-     "end": 38.57
-    },
-    {
-     "id": "tr2s_8",
-     "text": "The right side of the root. Eight is a leaf. One.",
-     "start": 39.32,
-     "end": 42.14
-    },
-    {
-     "id": "tr2s_9",
-     "text": "Back at the root. One, plus the larger of two and one. Three.",
-     "start": 42.89,
-     "end": 46.68
-    },
-    {
-     "id": "tr2s_10",
-     "text": "Every node is visited once. O of n time.",
-     "start": 47.78,
-     "end": 50.79
-    },
-    {
-     "id": "tr2s_11",
-     "text": "The waiting calls are as deep as the tree is tall. O of height space.",
-     "start": 51.54,
-     "end": 55.72
-    },
-    {
-     "id": "tr2s_12",
-     "text": "How deep is the deepest folder on a disk? The same function answers it.",
-     "start": 56.47,
-     "end": 61.05
-    }
-   ],
-   "pauses": [
-    {
-     "id": "tr2s-q",
-     "t": 34.95
-    }
-   ]
-  },
-  "tr3i": {
-   "src": "videos/tr3i.mp4",
-   "title": "The Tree in the Pond",
-   "duration": 19.78,
-   "lines": [
-    {
-     "id": "tr3i_1",
-     "text": "Hazel sees the tree in the pond. Everything on the left is on the right.",
-     "start": 0.2,
-     "end": 4.64
-    },
-    {
-     "id": "tr3i_2",
-     "text": "Mirror the tree. At every node, the two children swap places. Return the root.",
-     "start": 5.34,
-     "end": 10.72
-    },
-    {
-     "id": "tr3i_3",
-     "text": "Swapping the two children of the root is one small step.",
-     "start": 11.42,
-     "end": 14.65
-    },
-    {
-     "id": "tr3i_4",
-     "text": "What still has to happen below them? Your turn.",
-     "start": 15.35,
-     "end": 18.18
-    }
-   ],
-   "pauses": []
-  },
-  "tr3s": {
-   "src": "videos/tr3s.mp4",
-   "title": "Mirror each side, then swap",
-   "duration": 71.24,
-   "lines": [
-    {
-     "id": "tr3s_1",
-     "text": "To mirror a tree, mirror its left side, mirror its right side, and swap the two.",
-     "start": 0.2,
-     "end": 5.18
-    },
-    {
-     "id": "tr3s_2",
-     "text": "Each side is a smaller tree. The same function mirrors it. An empty spot is already its own mirror.",
-     "start": 5.93,
-     "end": 12.25
-    },
-    {
-     "id": "tr3s_3",
-     "text": "The first call stands on the root, five. Line three sends the left side off to be mirrored, and waits.",
-     "start": 13,
-     "end": 19.21
-    },
-    {
-     "id": "tr3s_4",
-     "text": "Now on three. Its children, one and four, are leaves. A leaf has nothing to swap. It comes back unchanged.",
-     "start": 19.96,
-     "end": 27.18
-    },
-    {
-     "id": "tr3s_5",
-     "text": "Lines five and six swap them. One and four become four and one.",
-     "start": 27.93,
-     "end": 32.01
-    },
-    {
-     "id": "tr3s_6",
-     "text": "The right side. On eight, the same thing. Seven and nine become nine and seven.",
-     "start": 32.76,
-     "end": 37.87
-    },
-    {
-     "id": "tr3s_7",
-     "text": "Back at the root. Both sides are mirrored inside. What do lines five and six do now?",
-     "start": 38.62,
-     "end": 43.87
-    },
-    {
-     "id": "tr3s_8",
-     "text": "They swap the two whole sides. The eight, with everything under it, goes left. The three goes right.",
-     "start": 45.07,
-     "end": 51.11
-    },
-    {
-     "id": "tr3s_9",
-     "text": "Line seven returns the root.",
-     "start": 51.86,
-     "end": 53.63
-    },
-    {
-     "id": "tr3s_10",
-     "text": "Every node is visited once. O of n time.",
-     "start": 54.73,
-     "end": 57.73
-    },
-    {
-     "id": "tr3s_11",
-     "text": "The waiting calls are as deep as the tree is tall. O of height space.",
-     "start": 58.48,
-     "end": 62.67
-    },
-    {
-     "id": "tr3s_12",
-     "text": "Flipping a page layout for a right to left language mirrors its tree of boxes, just like this.",
-     "start": 63.42,
-     "end": 69.64
-    }
-   ],
-   "pauses": [
-    {
-     "id": "tr3s-q",
-     "t": 44.07
-    }
-   ]
-  },
-  "tr4i": {
-   "src": "videos/tr4i.mp4",
-   "title": "Its Own Mirror?",
-   "duration": 19.73,
-   "lines": [
-    {
-     "id": "tr4i_1",
-     "text": "Fold this tree down the middle. Do the two halves match?",
-     "start": 0.2,
-     "end": 3.33
-    },
-    {
-     "id": "tr4i_2",
-     "text": "Return true if the left side is the mirror image of the right side.",
-     "start": 4.03,
-     "end": 8.16
-    },
-    {
-     "id": "tr4i_3",
-     "text": "One marker is not enough here. You need two, one on each side, moving together.",
-     "start": 8.86,
-     "end": 13.9
-    },
-    {
-     "id": "tr4i_4",
-     "text": "When one goes left, which way must the other go? Your turn.",
-     "start": 14.6,
-     "end": 18.13
-    }
-   ],
-   "pauses": []
-  },
-  "tr4s": {
-   "src": "videos/tr4s.mp4",
-   "title": "Two markers, opposite ways",
-   "duration": 68.57,
-   "lines": [
-    {
-     "id": "tr4s_1",
-     "text": "Two subtrees are mirrors when their roots hold the same value, and their children match crosswise.",
-     "start": 0.2,
-     "end": 5.78
-    },
-    {
-     "id": "tr4s_2",
-     "text": "So the recursion walks two nodes at once. When a goes left, b goes right.",
-     "start": 6.53,
-     "end": 11.25
-    },
-    {
-     "id": "tr4s_3",
-     "text": "Line eight starts the helper on the two children of the root. A on the left two. B on the right two. Equal.",
-     "start": 12,
-     "end": 18.67
-    },
-    {
-     "id": "tr4s_4",
-     "text": "Line six. First the outer pair. The left of a, with the right of b. Three and three.",
-     "start": 19.42,
-     "end": 24.82
-    },
-    {
-     "id": "tr4s_5",
-     "text": "Their children are all empty. Null and null. Line three says true.",
-     "start": 25.57,
-     "end": 29.82
-    },
-    {
-     "id": "tr4s_6",
-     "text": "Now the inner pair. The right of a, with the left of b. Four and four, and nothing below them. What does same return?",
-     "start": 30.57,
-     "end": 37.78
-    },
-    {
-     "id": "tr4s_7",
-     "text": "True. The values match, and the empty spots match.",
-     "start": 38.98,
-     "end": 42.19
-    },
-    {
-     "id": "tr4s_8",
-     "text": "Back on the two twos. The outer pair is true, and the inner pair is true.",
-     "start": 42.94,
-     "end": 47.25
-    },
-    {
-     "id": "tr4s_9",
-     "text": "Line eight returns true. The tree is its own mirror.",
-     "start": 48,
-     "end": 51.36
-    },
-    {
-     "id": "tr4s_10",
-     "text": "Every node is visited once. O of n time.",
-     "start": 52.46,
-     "end": 55.46
-    },
-    {
-     "id": "tr4s_11",
-     "text": "The waiting calls are as deep as the tree is tall. O of height space.",
-     "start": 56.21,
-     "end": 60.4
-    },
-    {
-     "id": "tr4s_12",
-     "text": "A design tool checks that a shape is symmetrical by comparing its two halves, node against node.",
-     "start": 61.15,
-     "end": 66.97
-    }
-   ],
-   "pauses": [
-    {
-     "id": "tr4s-q",
-     "t": 37.98
-    }
-   ]
-  },
-  "tr5i": {
-   "src": "videos/tr5i.mp4",
-   "title": "Floor by Floor",
-   "duration": 21.68,
-   "lines": [
-    {
-     "id": "tr5i_1",
-     "text": "Hazel is delivering letters to the tree, one floor at a time.",
-     "start": 0.2,
-     "end": 4.17
-    },
-    {
-     "id": "tr5i_2",
-     "text": "Return the values level by level. The top level first, each level from left to right.",
-     "start": 4.87,
-     "end": 10.54
-    },
-    {
-     "id": "tr5i_3",
-     "text": "Going deep first would mix the floors up.",
-     "start": 11.24,
-     "end": 13.5
-    },
-    {
-     "id": "tr5i_4",
-     "text": "But if you hold every nest on one floor, you can find the whole next floor. How? Your turn.",
-     "start": 14.2,
-     "end": 20.08
-    }
-   ],
-   "pauses": []
-  },
-  "tr5s": {
-   "src": "videos/tr5s.mp4",
-   "title": "One level lines up the next",
-   "duration": 68.85,
-   "lines": [
-    {
-     "id": "tr5s_1",
-     "text": "Level by level. That is the signal for breadth first search, with a queue.",
-     "start": 0.2,
-     "end": 4.56
-    },
-    {
-     "id": "tr5s_2",
-     "text": "The queue holds one whole level. Its nodes line up their children, and that is the next level.",
-     "start": 5.31,
-     "end": 10.98
-    },
-    {
-     "id": "tr5s_3",
-     "text": "Line three. The queue starts with just the root. Five.",
-     "start": 11.73,
-     "end": 14.94
-    },
-    {
-     "id": "tr5s_4",
-     "text": "Line six writes down the values in the queue. That is level one.",
-     "start": 15.69,
-     "end": 19.65
-    },
-    {
-     "id": "tr5s_5",
-     "text": "Lines seven to ten. Each node in the queue puts its children into next. Three, then eight.",
-     "start": 20.4,
-     "end": 26.44
-    },
-    {
-     "id": "tr5s_6",
-     "text": "Line eleven makes that the new queue. And line six writes level two.",
-     "start": 27.19,
-     "end": 31.41
-    },
-    {
-     "id": "tr5s_7",
-     "text": "Now the children. Three has one and four. Eight has no left child, only nine. What is the next level?",
-     "start": 32.16,
-     "end": 38.72
-    },
-    {
-     "id": "tr5s_8",
-     "text": "One, four, nine. The missing child is simply not added.",
-     "start": 39.92,
-     "end": 43.45
-    },
-    {
-     "id": "tr5s_9",
-     "text": "Line six writes level three.",
-     "start": 44.2,
-     "end": 45.99
-    },
-    {
-     "id": "tr5s_10",
-     "text": "None of them has a child. Next is empty, the loop ends, and line thirteen returns the answer.",
-     "start": 46.74,
-     "end": 52.89
-    },
-    {
-     "id": "tr5s_11",
-     "text": "Every node enters the queue once. O of n time.",
-     "start": 53.99,
-     "end": 57.16
-    },
-    {
-     "id": "tr5s_12",
-     "text": "The queue holds one level at a time. O of the widest level.",
-     "start": 57.91,
-     "end": 61.68
-    },
-    {
-     "id": "tr5s_13",
-     "text": "An org chart is read this way. The boss, then the managers, then their teams.",
-     "start": 62.43,
-     "end": 67.25
-    }
-   ],
-   "pauses": [
-    {
-     "id": "tr5s-q",
-     "t": 38.92
-    }
-   ]
-  },
-  "tr6i": {
-   "src": "videos/tr6i.mp4",
-   "title": "A Path That Adds Up",
-   "duration": 20.54,
-   "lines": [
-    {
-     "id": "tr6i_1",
-     "text": "Pip walks down from the root, picking up the number in every nest.",
-     "start": 0.2,
-     "end": 4.18
-    },
-    {
-     "id": "tr6i_2",
-     "text": "Return true if some path from the root to a leaf adds up to the target. Here, twelve.",
-     "start": 4.88,
-     "end": 10.46
-    },
-    {
-     "id": "tr6i_3",
-     "text": "Pip starts on the five. Twelve was needed. Five is in the bag.",
-     "start": 11.16,
-     "end": 15.2
-    },
-    {
-     "id": "tr6i_4",
-     "text": "So what should Pip ask the nests below? Your turn.",
-     "start": 15.9,
-     "end": 18.94
-    }
-   ],
-   "pauses": []
-  },
-  "tr6s": {
-   "src": "videos/tr6s.mp4",
-   "title": "Carry down what is still needed",
-   "duration": 66.74,
-   "lines": [
-    {
-     "id": "tr6s_1",
-     "text": "Each node takes its own value off the target, and passes the rest down to its children.",
-     "start": 0.2,
-     "end": 5.62
-    },
-    {
-     "id": "tr6s_2",
-     "text": "On a leaf, the path worked if nothing is left to find.",
-     "start": 6.37,
-     "end": 9.57
-    },
-    {
-     "id": "tr6s_3",
-     "text": "The root. Five. The target is twelve. So seven is still needed.",
-     "start": 10.32,
-     "end": 14.23
-    },
-    {
-     "id": "tr6s_4",
-     "text": "Five is not a leaf. Line six asks the left child for seven. On three, four is still needed.",
-     "start": 14.98,
-     "end": 21.1
-    },
-    {
-     "id": "tr6s_5",
-     "text": "Left again, to the one. Three is still needed. And one is a leaf. What does line five return?",
-     "start": 21.85,
-     "end": 27.84
-    },
-    {
-     "id": "tr6s_6",
-     "text": "False. The path ended, with three still needed.",
-     "start": 29.04,
-     "end": 31.65
-    },
-    {
-     "id": "tr6s_7",
-     "text": "So the or, on line six, tries the right child. Four. Nothing is left, and four is a leaf. True.",
-     "start": 32.4,
-     "end": 38.74
-    },
-    {
-     "id": "tr6s_8",
-     "text": "True travels back up. An or stops at the first true. The right side of the root is never visited.",
-     "start": 39.49,
-     "end": 45.74
-    },
-    {
-     "id": "tr6s_9",
-     "text": "The answer is true. Five, three, four.",
-     "start": 46.49,
-     "end": 48.98
-    },
-    {
-     "id": "tr6s_10",
-     "text": "At worst, every node is visited once. O of n time.",
-     "start": 50.08,
-     "end": 53.59
-    },
-    {
-     "id": "tr6s_11",
-     "text": "The waiting calls are as deep as the tree is tall. O of height space.",
-     "start": 54.34,
-     "end": 58.53
-    },
-    {
-     "id": "tr6s_12",
-     "text": "A route planner asks this. Does any route from the start to an exit cost exactly my budget?",
-     "start": 59.28,
-     "end": 65.14
-    }
-   ],
-   "pauses": [
-    {
-     "id": "tr6s-q",
-     "t": 28.04
-    }
-   ]
-  },
-  "tr7i": {
-   "src": "videos/tr7i.mp4",
-   "title": "The Longest Walk",
-   "duration": 21.32,
-   "lines": [
-    {
-     "id": "tr7i_1",
-     "text": "Moss wants the longest walk in the tree, from any nest to any other.",
-     "start": 0.2,
-     "end": 4.3
-    },
-    {
-     "id": "tr7i_2",
-     "text": "Return the number of steps on the longest path between two nodes.",
-     "start": 5,
-     "end": 8.77
-    },
-    {
-     "id": "tr7i_3",
-     "text": "Every path climbs up to one highest nest, and comes down the other side.",
-     "start": 9.47,
-     "end": 13.88
-    },
-    {
-     "id": "tr7i_4",
-     "text": "At that nest, how long is the path, if you know how tall each side is? Your turn.",
-     "start": 14.58,
-     "end": 19.72
-    }
-   ],
-   "pauses": []
-  },
-  "tr7s": {
-   "src": "videos/tr7s.mp4",
-   "title": "Left height plus right height",
-   "duration": 76.12,
-   "lines": [
-    {
-     "id": "tr7s_1",
-     "text": "Every path has a highest node, where it turns. The longest path turning there is the left height plus the right height.",
-     "start": 0.2,
-     "end": 7.03
-    },
-    {
-     "id": "tr7s_2",
-     "text": "The height function already visits every node, and knows both heights. So it can keep the best turn it sees.",
-     "start": 7.78,
-     "end": 14.1
-    },
-    {
-     "id": "tr7s_3",
-     "text": "Best starts at zero. Line ten starts the height helper on the root, and it goes down the left side.",
-     "start": 14.85,
-     "end": 20.85
-    },
-    {
-     "id": "tr7s_4",
-     "text": "The one is a leaf. Left is zero, right is zero. A turn here is zero steps. It returns height one.",
-     "start": 21.6,
-     "end": 28.51
-    },
-    {
-     "id": "tr7s_5",
-     "text": "The four is the same. Back on three. Left is one, right is one. A path turning here has two steps. Best is two.",
-     "start": 29.26,
-     "end": 36.77
-    },
-    {
-     "id": "tr7s_6",
-     "text": "And three returns its height. One, plus one. Two.",
-     "start": 37.52,
-     "end": 40.76
-    },
-    {
-     "id": "tr7s_7",
-     "text": "The right side. On eight, left is zero, and right is one, for the nine. A turn of one. Its height is two.",
-     "start": 41.51,
-     "end": 48.07
-    },
-    {
-     "id": "tr7s_8",
-     "text": "Back at the root. Left is two. Right is two. What does best become?",
-     "start": 48.82,
-     "end": 52.89
-    },
-    {
-     "id": "tr7s_9",
-     "text": "Four. One, three, five, eight, nine. Four steps.",
-     "start": 54.09,
-     "end": 57.04
-    },
-    {
-     "id": "tr7s_10",
-     "text": "Line eleven returns best.",
-     "start": 57.79,
-     "end": 59.64
-    },
-    {
-     "id": "tr7s_11",
-     "text": "One walk of the tree. O of n time.",
-     "start": 60.74,
-     "end": 63.16
-    },
-    {
-     "id": "tr7s_12",
-     "text": "The waiting calls are as deep as the tree is tall. O of height space.",
-     "start": 63.91,
-     "end": 68.1
-    },
-    {
-     "id": "tr7s_13",
-     "text": "Network engineers look for the longest path between two points. It tells them the worst delay.",
-     "start": 68.85,
-     "end": 74.52
-    }
-   ],
-   "pauses": [
-    {
-     "id": "tr7s-q",
-     "t": 53.09
-    }
-   ]
-  },
-  "tr8i": {
-   "src": "videos/tr8i.mp4",
-   "title": "Where Two Paths Meet",
-   "duration": 20.43,
-   "lines": [
-    {
-     "id": "tr8i_1",
-     "text": "Pip is in one nest. Moss is in another. Both climb up towards the root.",
-     "start": 0.2,
-     "end": 4.85
-    },
-    {
-     "id": "tr8i_2",
-     "text": "Return the nest where their two paths first meet. The lowest nest that has both below it.",
-     "start": 5.55,
-     "end": 10.29
-    },
-    {
-     "id": "tr8i_3",
-     "text": "Stand on any nest and ask each side one question. Did you find one of them?",
-     "start": 10.99,
-     "end": 15.62
-    },
-    {
-     "id": "tr8i_4",
-     "text": "What do the two answers tell you? Your turn.",
-     "start": 16.32,
-     "end": 18.83
-    }
-   ],
-   "pauses": []
-  },
-  "tr8s": {
-   "src": "videos/tr8s.mp4",
-   "title": "One found on each side",
-   "duration": 72.48,
-   "lines": [
-    {
-     "id": "tr8s_1",
-     "text": "Each call reports what it found in its subtree. One of the two nodes, the meeting point, or nothing.",
-     "start": 0.2,
-     "end": 5.87
-    },
-    {
-     "id": "tr8s_2",
-     "text": "If the left side found one, and the right side found the other, this node is where they meet.",
-     "start": 6.62,
-     "end": 11.97
-    },
-    {
-     "id": "tr8s_3",
-     "text": "Looking for one and four. The root is five. Neither of them. Line four searches the left side.",
-     "start": 12.72,
-     "end": 18.4
-    },
-    {
-     "id": "tr8s_4",
-     "text": "Three. Neither. It searches its own left side.",
-     "start": 19.15,
-     "end": 21.96
-    },
-    {
-     "id": "tr8s_5",
-     "text": "One. That is a. Line three returns this node.",
-     "start": 22.71,
-     "end": 25.39
-    },
-    {
-     "id": "tr8s_6",
-     "text": "Then the right side of three. Four. That is b. Reported too.",
-     "start": 26.14,
-     "end": 29.76
-    },
-    {
-     "id": "tr8s_7",
-     "text": "Back on three. The left side found something. The right side found something. What does line six return?",
-     "start": 30.51,
-     "end": 37.04
-    },
-    {
-     "id": "tr8s_8",
-     "text": "The three itself. One on each side. This is where the paths meet.",
-     "start": 38.24,
-     "end": 42.33
-    },
-    {
-     "id": "tr8s_9",
-     "text": "Back at the root. The left side reported three. The right side holds neither, and reports null. Line seven passes the three up.",
-     "start": 43.08,
-     "end": 51.35
-    },
-    {
-     "id": "tr8s_10",
-     "text": "The answer is the node three.",
-     "start": 52.1,
-     "end": 53.81
-    },
-    {
-     "id": "tr8s_11",
-     "text": "At worst, every node is visited once. O of n time.",
-     "start": 54.91,
-     "end": 58.42
-    },
-    {
-     "id": "tr8s_12",
-     "text": "The waiting calls are as deep as the tree is tall. O of height space.",
-     "start": 59.17,
-     "end": 63.36
-    },
-    {
-     "id": "tr8s_13",
-     "text": "In a family tree, this finds the closest common ancestor. In Git, it finds the commit two branches share.",
-     "start": 64.11,
-     "end": 70.89
-    }
-   ],
-   "pauses": [
-    {
-     "id": "tr8s-q",
-     "t": 37.24
-    }
-   ]
-  },
-  "bt1i": {
-   "src": "videos/bt1i.mp4",
-   "title": "Is It in the Tree?",
-   "duration": 18.61,
-   "lines": [
-    {
-     "id": "bt1i_1",
-     "text": "This tree keeps the rule. Smaller on the left, bigger on the right.",
-     "start": 0.2,
-     "end": 3.96
-    },
-    {
-     "id": "bt1i_2",
-     "text": "Return true if the target is somewhere in the tree. And look at very few nests.",
-     "start": 4.66,
-     "end": 9.57
-    },
-    {
-     "id": "bt1i_3",
-     "text": "Pip stands on the root. Eight. Pip wants six.",
-     "start": 10.27,
-     "end": 13.11
-    },
-    {
-     "id": "bt1i_4",
-     "text": "Which side of the eight is even worth a look? Your turn.",
-     "start": 13.81,
-     "end": 17
-    }
-   ],
-   "pauses": []
-  },
-  "bt1s": {
-   "src": "videos/bt1s.mp4",
-   "title": "Compare, pick a side, go down",
-   "duration": 63.73,
-   "lines": [
-    {
-     "id": "bt1s_1",
-     "text": "Left is smaller, right is bigger. So one comparison tells you which side the target must be on.",
-     "start": 0.2,
-     "end": 6.45
-    },
-    {
-     "id": "bt1s_2",
-     "text": "The other side is thrown away without a look. This is binary search, on a tree.",
-     "start": 7.2,
-     "end": 11.95
-    },
-    {
-     "id": "bt1s_3",
-     "text": "Looking for six. The marker starts on the root. Eight. Not equal.",
-     "start": 12.7,
-     "end": 16.74
-    },
-    {
-     "id": "bt1s_4",
-     "text": "Six is smaller than eight. So it can only be on the left. The whole right side is thrown away.",
-     "start": 17.49,
-     "end": 23.18
-    },
-    {
-     "id": "bt1s_5",
-     "text": "Now on three. Not equal. Six is bigger than three. Which way?",
-     "start": 23.93,
-     "end": 27.88
-    },
-    {
-     "id": "bt1s_6",
-     "text": "Right. Line six. The one, on the left, is thrown away.",
-     "start": 29.08,
-     "end": 32.39
-    },
-    {
-     "id": "bt1s_7",
-     "text": "The marker is on six. Equal. Line four returns true.",
-     "start": 33.14,
-     "end": 36.74
-    },
-    {
-     "id": "bt1s_8",
-     "text": "And for a value that is not there, the marker falls off the bottom, onto null. The loop ends, and line eight returns false.",
-     "start": 37.84,
-     "end": 45.69
-    },
-    {
-     "id": "bt1s_9",
-     "text": "Each look goes one level down. O of height. In a balanced tree, that is log n.",
-     "start": 46.44,
-     "end": 51.63
-    },
-    {
-     "id": "bt1s_10",
-     "text": "One marker. O of one space.",
-     "start": 52.38,
-     "end": 54.38
-    },
-    {
-     "id": "bt1s_11",
-     "text": "A database index is an ordered tree like this. That is how it finds one row among millions in a few steps.",
-     "start": 55.13,
-     "end": 62.13
-    }
-   ],
-   "pauses": [
-    {
-     "id": "bt1s-q",
-     "t": 28.08
-    }
-   ]
-  },
-  "bt2i": {
-   "src": "videos/bt2i.mp4",
-   "title": "Does It Keep the Rule?",
-   "duration": 21.2,
-   "lines": [
-    {
-     "id": "bt2i_1",
-     "text": "Somebody built this tree, and says it keeps the rule. Hazel is not so sure.",
-     "start": 0.2,
-     "end": 4.93
-    },
-    {
-     "id": "bt2i_2",
-     "text": "Return true only if every node has smaller values on its whole left side, and bigger on its right.",
-     "start": 5.63,
-     "end": 11.98
-    },
-    {
-     "id": "bt2i_3",
-     "text": "Each nest here looks fine next to its own children.",
-     "start": 12.68,
-     "end": 15.66
-    },
-    {
-     "id": "bt2i_4",
-     "text": "But look at the nine. Whose left side is it in? Your turn.",
-     "start": 16.36,
-     "end": 19.59
-    }
-   ],
-   "pauses": []
-  },
-  "bt2s": {
-   "src": "videos/bt2s.mp4",
-   "title": "Every node has a range",
-   "duration": 72.13,
-   "lines": [
-    {
-     "id": "bt2s_1",
-     "text": "Comparing a node with its two children is not enough. A node must respect every ancestor above it.",
-     "start": 0.2,
-     "end": 6.43
-    },
-    {
-     "id": "bt2s_2",
-     "text": "So each call carries a range. The value must be above low, and below high. Going down narrows it.",
-     "start": 7.18,
-     "end": 13.6
-    },
-    {
-     "id": "bt2s_3",
-     "text": "The root. Eight. Its range is everything. Minus infinity, to infinity. Fine.",
-     "start": 14.35,
-     "end": 19.19
-    },
-    {
-     "id": "bt2s_4",
-     "text": "Line four goes left, and passes eight as the new high. Three must be below eight. It is.",
-     "start": 19.94,
-     "end": 25.88
-    },
-    {
-     "id": "bt2s_5",
-     "text": "Left again. The one must be below three. Fine. And its empty sides are fine.",
-     "start": 26.63,
-     "end": 31.59
-    },
-    {
-     "id": "bt2s_6",
-     "text": "Now the right child of three. Nine. Going right, three becomes the low. The high is still eight. Is nine allowed?",
-     "start": 32.34,
-     "end": 39.4
-    },
-    {
-     "id": "bt2s_7",
-     "text": "No. Nine is bigger than its parent, which looks right. But it sits on the left side of eight, and it is not below eight.",
-     "start": 40.6,
-     "end": 47.22
-    },
-    {
-     "id": "bt2s_8",
-     "text": "False travels back up. The and, on line five, stops at once. The right side of the root is never checked.",
-     "start": 47.97,
-     "end": 54.58
-    },
-    {
-     "id": "bt2s_9",
-     "text": "At worst, every node is visited once. O of n time.",
-     "start": 55.68,
-     "end": 59.19
-    },
-    {
-     "id": "bt2s_10",
-     "text": "The waiting calls are as deep as the tree is tall. O of height space.",
-     "start": 59.94,
-     "end": 64.12
-    },
-    {
-     "id": "bt2s_11",
-     "text": "After a crash, a database checks its index this way, to be sure the order still holds.",
-     "start": 64.87,
-     "end": 70.53
-    }
-   ],
-   "pauses": [
-    {
-     "id": "bt2s-q",
-     "t": 39.6
-    }
-   ]
-  },
-  "bt3i": {
-   "src": "videos/bt3i.mp4",
-   "title": "The Third Smallest",
-   "duration": 19.39,
-   "lines": [
-    {
-     "id": "bt3i_1",
-     "text": "Hazel wants the third smallest number in the tree.",
-     "start": 0.2,
-     "end": 2.97
-    },
-    {
-     "id": "bt3i_2",
-     "text": "Return the k-th smallest value. The tree keeps the rule, so do not sort anything.",
-     "start": 3.67,
-     "end": 9.13
-    },
-    {
-     "id": "bt3i_3",
-     "text": "The smallest is easy to find. Keep going left until you cannot.",
-     "start": 9.83,
-     "end": 13.95
-    },
-    {
-     "id": "bt3i_4",
-     "text": "And then, which nest is the next smallest? Your turn.",
-     "start": 14.65,
-     "end": 17.79
-    }
-   ],
-   "pauses": []
-  },
-  "bt3s": {
-   "src": "videos/bt3s.mp4",
-   "title": "Left, node, right: count to k",
-   "duration": 72.68,
-   "lines": [
-    {
-     "id": "bt3s_1",
-     "text": "Left side, then the node, then the right side. On a search tree, that walk meets the values in sorted order.",
-     "start": 0.2,
-     "end": 6.91
-    },
-    {
-     "id": "bt3s_2",
-     "text": "So count the nodes as the walk meets them, and stop at number k.",
-     "start": 7.66,
-     "end": 11.62
-    },
-    {
-     "id": "bt3s_3",
-     "text": "K is three. The walk starts on the root, eight. Line six goes left first, and waits.",
-     "start": 12.37,
-     "end": 17.79
-    },
-    {
-     "id": "bt3s_4",
-     "text": "On three, left first again. On one, its left is empty. So one is the first node to be counted.",
-     "start": 18.54,
-     "end": 24.98
-    },
-    {
-     "id": "bt3s_5",
-     "text": "One has no right side. Back on three. Its left side is finished. So three is counted now.",
-     "start": 25.73,
-     "end": 31.76
-    },
-    {
-     "id": "bt3s_6",
-     "text": "Line nine goes to its right side. Six. Its left is empty, so six is counted. What happens on line eight?",
-     "start": 32.51,
-     "end": 39.76
-    },
-    {
-     "id": "bt3s_7",
-     "text": "Seen is three. That equals k. The answer is six.",
-     "start": 40.96,
-     "end": 44.25
-    },
-    {
-     "id": "bt3s_8",
-     "text": "From now on, line five stops every call at once. The eight, the ten, the fourteen are never counted.",
-     "start": 45,
-     "end": 51.54
-    },
-    {
-     "id": "bt3s_9",
-     "text": "Line twelve returns the answer.",
-     "start": 52.29,
-     "end": 54.24
-    },
-    {
-     "id": "bt3s_10",
-     "text": "The walk goes down the height, then counts k nodes. O of height plus k.",
-     "start": 55.34,
-     "end": 59.69
-    },
-    {
-     "id": "bt3s_11",
-     "text": "The waiting calls are as deep as the tree is tall. O of height space.",
-     "start": 60.44,
-     "end": 64.63
-    },
-    {
-     "id": "bt3s_12",
-     "text": "Who is in third place? A ranking kept in an ordered tree answers by walking it in order.",
-     "start": 65.38,
-     "end": 71.08
-    }
-   ],
-   "pauses": [
-    {
-     "id": "bt3s-q",
-     "t": 39.96
-    }
-   ]
-  },
-  "bt4i": {
-   "src": "videos/bt4i.mp4",
-   "title": "Where the Paths Split",
-   "duration": 24.11,
-   "lines": [
-    {
-     "id": "bt4i_1",
-     "text": "Pip is going to nest one. Moss is going to nest six. They start together, at the root.",
-     "start": 0.2,
-     "end": 5.66
-    },
-    {
-     "id": "bt4i_2",
-     "text": "Return the nest where their paths split. The lowest nest that has both below it.",
-     "start": 6.36,
-     "end": 11.05
-    },
-    {
-     "id": "bt4i_3",
-     "text": "In an ordinary tree, you had to search both sides. This tree keeps the rule.",
-     "start": 11.75,
-     "end": 16.75
-    },
-    {
-     "id": "bt4i_4",
-     "text": "Standing on the eight, can you tell where one and six are, without looking? Your turn.",
-     "start": 17.45,
-     "end": 22.51
-    }
-   ],
-   "pauses": []
-  },
-  "bt4s": {
-   "src": "videos/bt4s.mp4",
-   "title": "Walk until they part",
-   "duration": 53.29,
-   "lines": [
-    {
-     "id": "bt4s_1",
-     "text": "In a search tree, comparing with the node tells you which side each value is on. No searching needed.",
-     "start": 0.2,
-     "end": 6.34
-    },
-    {
-     "id": "bt4s_2",
-     "text": "While both are on the same side, walk that way. Where they part, that node is the answer.",
-     "start": 7.09,
-     "end": 12.47
-    },
-    {
-     "id": "bt4s_3",
-     "text": "Looking for one and six. The marker starts on the root. Eight.",
-     "start": 13.22,
-     "end": 16.8
-    },
-    {
-     "id": "bt4s_4",
-     "text": "One is smaller than eight. Six is smaller than eight. Both are on the left. So walk left.",
-     "start": 17.55,
-     "end": 23.3
-    },
-    {
-     "id": "bt4s_5",
-     "text": "Now on three. One is smaller than three. Six is bigger. What does the code do?",
-     "start": 24.05,
-     "end": 29.02
-    },
-    {
-     "id": "bt4s_6",
-     "text": "Not both smaller. Not both bigger. So they are on different sides, and the paths part here.",
-     "start": 30.22,
-     "end": 35.84
-    },
-    {
-     "id": "bt4s_7",
-     "text": "Line six returns the node three.",
-     "start": 36.59,
-     "end": 38.55
-    },
-    {
-     "id": "bt4s_8",
-     "text": "One walk down from the root. O of height.",
-     "start": 39.65,
-     "end": 42.23
-    },
-    {
-     "id": "bt4s_9",
-     "text": "One marker, and no waiting calls. O of one space.",
-     "start": 42.98,
-     "end": 46.47
-    },
-    {
-     "id": "bt4s_10",
-     "text": "In an ordered index, this finds the smallest branch that covers two keys.",
-     "start": 47.22,
-     "end": 51.69
-    }
-   ],
-   "pauses": [
-    {
-     "id": "bt4s-q",
-     "t": 29.22
-    }
-   ]
-  },
-  "tt1i": {
-   "src": "videos/tt1i.mp4",
-   "title": "A New Word",
-   "duration": 19.75,
-   "lines": [
-    {
-     "id": "tt1i_1",
-     "text": "This trie holds three words. Car, cat, and do. Now Hazel wants to add dot.",
-     "start": 0.2,
-     "end": 5.33
-    },
-    {
-     "id": "tt1i_2",
-     "text": "Add the word, and return the root.",
-     "start": 6.03,
-     "end": 7.98
-    },
-    {
-     "id": "tt1i_3",
-     "text": "Follow the letters from the top. The d is already there. So is the o.",
-     "start": 8.68,
-     "end": 12.96
-    },
-    {
-     "id": "tt1i_4",
-     "text": "What about the t? And how will anyone know that a word ends there? Your turn.",
-     "start": 13.66,
-     "end": 18.15
-    }
-   ],
-   "pauses": []
-  },
-  "tt1s": {
-   "src": "videos/tt1s.mp4",
-   "title": "Follow, or make the node",
-   "duration": 65.78,
-   "lines": [
-    {
-     "id": "tt1s_1",
-     "text": "Walk down the trie, letter by letter. If the letter already has a node, follow it.",
-     "start": 0.2,
-     "end": 5.21
-    },
-    {
-     "id": "tt1s_2",
-     "text": "If it does not, make the node. And after the last letter, mark that a word ends here.",
-     "start": 5.96,
-     "end": 11.01
-    },
-    {
-     "id": "tt1s_3",
-     "text": "Adding dot. The green nodes are where a word ends. Car, cat, and do. The marker starts on the root.",
-     "start": 11.76,
-     "end": 18.06
-    },
-    {
-     "id": "tt1s_4",
-     "text": "The letter d. The root already has a child d. So line seven just follows it.",
-     "start": 18.81,
-     "end": 23.94
-    },
-    {
-     "id": "tt1s_5",
-     "text": "The letter o. Already there, too. Follow it.",
-     "start": 24.69,
-     "end": 27.25
-    },
-    {
-     "id": "tt1s_6",
-     "text": "The letter t. There is a t in the trie, under the a. But does this node, the o, have a child t?",
-     "start": 28,
-     "end": 33.7
-    },
-    {
-     "id": "tt1s_7",
-     "text": "No. That other t belongs to cat. So line five makes a new node, under the o, and the marker moves into it.",
-     "start": 34.9,
-     "end": 41.95
-    },
-    {
-     "id": "tt1s_8",
-     "text": "The word is finished. Line nine marks the end of a word here.",
-     "start": 42.7,
-     "end": 46.39
-    },
-    {
-     "id": "tt1s_9",
-     "text": "Line ten returns the root. Dot is in the trie.",
-     "start": 47.14,
-     "end": 50.36
-    },
-    {
-     "id": "tt1s_10",
-     "text": "One step per letter. O of the length of the word.",
-     "start": 51.46,
-     "end": 54.33
-    },
-    {
-     "id": "tt1s_11",
-     "text": "At most one new node per letter.",
-     "start": 55.08,
-     "end": 57.02
-    },
-    {
-     "id": "tt1s_12",
-     "text": "Every contact you save is added to a structure like this, so your phone can search by first letters.",
-     "start": 57.77,
-     "end": 64.18
-    }
-   ],
-   "pauses": [
-    {
-     "id": "tt1s-q",
-     "t": 33.9
-    }
-   ]
-  },
-  "tt2i": {
-   "src": "videos/tt2i.mp4",
-   "title": "Is It a Word?",
-   "duration": 19.7,
-   "lines": [
-    {
-     "id": "tt2i_1",
-     "text": "Moss asks the trie a question. Is c, a, a word?",
-     "start": 0.2,
-     "end": 3.58
-    },
-    {
-     "id": "tt2i_2",
-     "text": "Return true only if the word was added as a whole word.",
-     "start": 4.28,
-     "end": 7.63
-    },
-    {
-     "id": "tt2i_3",
-     "text": "Follow the letters down. C is there. A is there. The whole path exists.",
-     "start": 8.33,
-     "end": 12.78
-    },
-    {
-     "id": "tt2i_4",
-     "text": "So why should the answer still be false? And how can the code tell? Your turn.",
-     "start": 13.48,
-     "end": 18.09
-    }
-   ],
-   "pauses": []
-  },
-  "tt2s": {
-   "src": "videos/tt2s.mp4",
-   "title": "Walk down, then check the mark",
-   "duration": 60.17,
-   "lines": [
-    {
-     "id": "tt2s_1",
-     "text": "Walk down, one letter at a time. A missing letter means the word is not there.",
-     "start": 0.2,
-     "end": 5.17
-    },
-    {
-     "id": "tt2s_2",
-     "text": "And when every letter is found, one more check. Does a word end on this node?",
-     "start": 5.92,
-     "end": 10.6
-    },
-    {
-     "id": "tt2s_3",
-     "text": "Looking up c, a. The green nodes are where a word ends. The marker starts on the root.",
-     "start": 11.35,
-     "end": 16.57
-    },
-    {
-     "id": "tt2s_4",
-     "text": "The letter c. The root has a child c. Line five follows it.",
-     "start": 17.32,
-     "end": 20.88
-    },
-    {
-     "id": "tt2s_5",
-     "text": "The letter a. There too. Follow it.",
-     "start": 21.63,
-     "end": 23.72
-    },
-    {
-     "id": "tt2s_6",
-     "text": "The letters are used up. The marker is on the a. Car and cat both pass through here. What does line seven return?",
-     "start": 24.47,
-     "end": 31.12
-    },
-    {
-     "id": "tt2s_7",
-     "text": "False. The path exists, but no word ends on this node.",
-     "start": 32.32,
-     "end": 35.61
-    },
-    {
-     "id": "tt2s_8",
-     "text": "And for a word like dog, line four stops earlier. The o has no child g, so it returns false at once.",
-     "start": 36.71,
-     "end": 43.95
-    },
-    {
-     "id": "tt2s_9",
-     "text": "One step per letter. O of the length of the word, however many words are stored.",
-     "start": 44.7,
-     "end": 49.7
-    },
-    {
-     "id": "tt2s_10",
-     "text": "One marker. O of one space.",
-     "start": 50.45,
-     "end": 52.46
-    },
-    {
-     "id": "tt2s_11",
-     "text": "A spell checker asks exactly this. The path may exist. But is it a whole word?",
-     "start": 53.21,
-     "end": 58.57
-    }
-   ],
-   "pauses": [
-    {
-     "id": "tt2s-q",
-     "t": 31.32
-    }
-   ]
-  },
-  "tt3i": {
-   "src": "videos/tt3i.mp4",
-   "title": "Finish My Word",
-   "duration": 21.63,
-   "lines": [
-    {
-     "id": "tt3i_1",
-     "text": "Pip types a c. The search box should offer every word that starts with it.",
-     "start": 0.2,
-     "end": 4.45
-    },
-    {
-     "id": "tt3i_2",
-     "text": "Return all the words in the trie that begin with the prefix, in alphabetical order.",
-     "start": 5.15,
-     "end": 10.53
-    },
-    {
-     "id": "tt3i_3",
-     "text": "Every one of those words passes through the same node. The one you reach by following the prefix.",
-     "start": 11.23,
-     "end": 16.89
-    },
-    {
-     "id": "tt3i_4",
-     "text": "So get there first. And then? Your turn.",
-     "start": 17.59,
-     "end": 20.03
-    }
-   ],
-   "pauses": []
-  },
-  "tt3s": {
-   "src": "videos/tt3s.mp4",
-   "title": "Down the prefix, then all below",
-   "duration": 73.41,
-   "lines": [
-    {
-     "id": "tt3s_1",
-     "text": "Every word that starts with the prefix lives below one node. The node you reach by following the prefix.",
-     "start": 0.2,
-     "end": 6.45
-    },
-    {
-     "id": "tt3s_2",
-     "text": "So walk down the prefix. Then visit everything below it, depth first, carrying the letters so far.",
-     "start": 7.2,
-     "end": 13.62
-    },
-    {
-     "id": "tt3s_3",
-     "text": "The prefix is c. Lines two to six walk down it, exactly like a lookup. The marker lands on the c.",
-     "start": 14.37,
-     "end": 21.08
-    },
-    {
-     "id": "tt3s_4",
-     "text": "Line fourteen starts the walk here, with the text c. No word ends on c. So line eleven goes to its child, a, with the text c, a.",
-     "start": 21.83,
-     "end": 30.64
-    },
-    {
-     "id": "tt3s_5",
-     "text": "No word ends on a, either. Its children, in sorted order, are r, and t. First r. The text is now car. What does line nine do?",
-     "start": 31.39,
-     "end": 40.14
-    },
-    {
-     "id": "tt3s_6",
-     "text": "A word ends here. So car goes into the output.",
-     "start": 41.34,
-     "end": 44.46
-    },
-    {
-     "id": "tt3s_7",
-     "text": "Back up, and into the t. The text is cat. A word ends here too.",
-     "start": 45.21,
-     "end": 49.27
-    },
-    {
-     "id": "tt3s_8",
-     "text": "Nothing is left below the c. The d side was never visited. Line fifteen returns the output.",
-     "start": 50.02,
-     "end": 56.47
-    },
-    {
-     "id": "tt3s_9",
-     "text": "The length of the prefix, plus every node below it.",
-     "start": 57.57,
-     "end": 60.59
-    },
-    {
-     "id": "tt3s_10",
-     "text": "The output, and the waiting calls, as deep as the longest word.",
-     "start": 61.34,
-     "end": 65.29
-    },
-    {
-     "id": "tt3s_11",
-     "text": "This is autocomplete. Type c, a, and your phone offers every word below that node.",
-     "start": 66.04,
-     "end": 71.81
-    }
-   ],
-   "pauses": [
-    {
-     "id": "tt3s-q",
-     "t": 40.34
-    }
-   ]
-  },
-  "hp1i": {
-   "src": "videos/hp1i.mp4",
-   "title": "A New Arrival",
-   "duration": 21.8,
-   "lines": [
-    {
-     "id": "hp1i_1",
-     "text": "This heap keeps its rule. Every parent is smaller than its children. Now a one arrives.",
-     "start": 0.2,
-     "end": 5.83
-    },
-    {
-     "id": "hp1i_2",
-     "text": "Add the value, keep the rule, and return the array.",
-     "start": 6.53,
-     "end": 9.38
-    },
-    {
-     "id": "hp1i_3",
-     "text": "There is only one spot that leaves no gap. The next free place, at the end.",
-     "start": 10.08,
-     "end": 14.39
-    },
-    {
-     "id": "hp1i_4",
-     "text": "But down there, the one is smaller than its parent. What would fix that? Your turn.",
-     "start": 15.09,
-     "end": 20.2
-    }
-   ],
-   "pauses": []
-  },
-  "hp1s": {
-   "src": "videos/hp1s.mp4",
-   "title": "Add at the end, sift up",
-   "duration": 66.86,
-   "lines": [
-    {
-     "id": "hp1s_1",
-     "text": "The new value goes in the next free spot, at the end of the array. Here, the one, at position five.",
-     "start": 0.2,
-     "end": 6.11
-    },
-    {
-     "id": "hp1s_2",
-     "text": "Then, while it is smaller than its parent, swap the two. It climbs until the rule holds.",
-     "start": 6.86,
-     "end": 12.24
-    },
-    {
-     "id": "hp1s_3",
-     "text": "Line two pushes the one. Line three remembers where it is. Position five.",
-     "start": 12.99,
-     "end": 18.1
-    },
-    {
-     "id": "hp1s_4",
-     "text": "Line five finds the parent. Five minus one, divided by two. Position two. That is the three.",
-     "start": 18.85,
-     "end": 25.64
-    },
-    {
-     "id": "hp1s_5",
-     "text": "Is three smaller than one? No. So line seven swaps them, and i moves up to position two.",
-     "start": 26.39,
-     "end": 32.82
-    },
-    {
-     "id": "hp1s_6",
-     "text": "Again. The parent of position two is position zero. The two. And the two is bigger than the one. What happens?",
-     "start": 33.57,
-     "end": 40.79
-    },
-    {
-     "id": "hp1s_7",
-     "text": "Another swap. The one is the root, and i is zero.",
-     "start": 41.99,
-     "end": 45.29
-    },
-    {
-     "id": "hp1s_8",
-     "text": "The loop needs i above zero. It ends, and line ten returns the heap.",
-     "start": 46.04,
-     "end": 50.55
-    },
-    {
-     "id": "hp1s_9",
-     "text": "At most one swap per level, and there are only log n levels.",
-     "start": 51.65,
-     "end": 55.51
-    },
-    {
-     "id": "hp1s_10",
-     "text": "Two numbers. O of one extra space.",
-     "start": 56.26,
-     "end": 58.91
-    },
-    {
-     "id": "hp1s_11",
-     "text": "Every new job handed to a task scheduler is pushed onto a heap, exactly like this.",
-     "start": 59.66,
-     "end": 65.26
-    }
-   ],
-   "pauses": [
-    {
-     "id": "hp1s-q",
-     "t": 40.99
-    }
-   ]
-  },
-  "hp2i": {
-   "src": "videos/hp2i.mp4",
-   "title": "Take the Smallest",
-   "duration": 21.87,
-   "lines": [
-    {
-     "id": "hp2i_1",
-     "text": "Hazel takes the smallest value. It is always on top.",
-     "start": 0.2,
-     "end": 3.77
-    },
-    {
-     "id": "hp2i_2",
-     "text": "Remove it, return it, and leave a valid heap behind.",
-     "start": 4.47,
-     "end": 7.65
-    },
-    {
-     "id": "hp2i_3",
-     "text": "Taking the top leaves a hole. Only one value can fill it without leaving a gap. The last one.",
-     "start": 8.35,
-     "end": 14.32
-    },
-    {
-     "id": "hp2i_4",
-     "text": "But the last one is big, and now it is on top. How does it get back down? Your turn.",
-     "start": 15.02,
-     "end": 20.27
-    }
-   ],
-   "pauses": []
-  },
-  "hp2s": {
-   "src": "videos/hp2s.mp4",
-   "title": "Last to the top, sift down",
-   "duration": 68.63,
-   "lines": [
-    {
-     "id": "hp2s_1",
-     "text": "The smallest is the root. Take it, and fill the hole with the last value in the array. The shape stays right.",
-     "start": 0.2,
-     "end": 6.8
-    },
-    {
-     "id": "hp2s_2",
-     "text": "Then let that value sink. Swap it with its smaller child, until no child is smaller.",
-     "start": 7.55,
-     "end": 13.08
-    },
-    {
-     "id": "hp2s_3",
-     "text": "Line two remembers the top. One.",
-     "start": 13.83,
-     "end": 16.12
-    },
-    {
-     "id": "hp2s_4",
-     "text": "Line three takes the last value, three, off the end. Line five puts it on top.",
-     "start": 16.87,
-     "end": 21.98
-    },
-    {
-     "id": "hp2s_5",
-     "text": "Small starts as i. Lines nine to twelve look at both children. Five, and two. Two is the smallest of the three.",
-     "start": 22.73,
-     "end": 29.99
-    },
-    {
-     "id": "hp2s_6",
-     "text": "Small is not i. So line fourteen swaps the three with the two, and i moves down to position two.",
-     "start": 30.74,
-     "end": 37.47
-    },
-    {
-     "id": "hp2s_7",
-     "text": "Again. The children of position two would be at positions five and six. But the array now has only five values. What happens?",
-     "start": 38.22,
-     "end": 46.52
-    },
-    {
-     "id": "hp2s_8",
-     "text": "No children. Small is still i. The three has found its place. Line thirteen returns the top. One.",
-     "start": 47.72,
-     "end": 54.37
-    },
-    {
-     "id": "hp2s_9",
-     "text": "At most one swap per level. O of log n.",
-     "start": 55.47,
-     "end": 58.29
-    },
-    {
-     "id": "hp2s_10",
-     "text": "A few numbers. O of one extra space.",
-     "start": 59.04,
-     "end": 61.93
-    },
-    {
-     "id": "hp2s_11",
-     "text": "A clinic calls its most urgent patient next. That is a pop from a heap.",
-     "start": 62.68,
-     "end": 67.03
-    }
-   ],
-   "pauses": [
-    {
-     "id": "hp2s-q",
-     "t": 46.72
-    }
-   ]
-  },
-  "hp3i": {
-   "src": "videos/hp3i.mp4",
-   "title": "The Runner-Up",
-   "duration": 20.18,
-   "lines": [
-    {
-     "id": "hp3i_1",
-     "text": "The numbers arrive one at a time. Pip wants the second largest.",
-     "start": 0.2,
-     "end": 4.14
-    },
-    {
-     "id": "hp3i_2",
-     "text": "Return the k-th largest number. Here, k is two.",
-     "start": 4.84,
-     "end": 8.33
-    },
-    {
-     "id": "hp3i_3",
-     "text": "You never need more than the k largest numbers seen so far.",
-     "start": 9.03,
-     "end": 12.83
-    },
-    {
-     "id": "hp3i_4",
-     "text": "When one more arrives, which one do you throw out? And what hands it to you? Your turn.",
-     "start": 13.53,
-     "end": 18.58
-    }
-   ],
-   "pauses": []
-  },
-  "hp3s": {
-   "src": "videos/hp3s.mp4",
-   "title": "A heap that holds only k",
-   "duration": 64.5,
-   "lines": [
-    {
-     "id": "hp3s_1",
-     "text": "Keep only the k largest numbers seen so far. The smallest of those is the k-th largest.",
-     "start": 0.2,
-     "end": 6.48
-    },
-    {
-     "id": "hp3s_2",
-     "text": "When there is one too many, the smallest must go. A min heap has it on top.",
-     "start": 7.23,
-     "end": 11.91
-    },
-    {
-     "id": "hp3s_3",
-     "text": "K is two. Line two makes a heap with the smallest on top. Five is pushed.",
-     "start": 12.66,
-     "end": 17.83
-    },
-    {
-     "id": "hp3s_4",
-     "text": "Two is pushed. The heap holds two values. That is not more than k.",
-     "start": 18.58,
-     "end": 22.82
-    },
-    {
-     "id": "hp3s_5",
-     "text": "Nine is pushed. Three values. One too many. Line five pops the smallest. The two.",
-     "start": 23.57,
-     "end": 29.56
-    },
-    {
-     "id": "hp3s_6",
-     "text": "One is pushed. The heap holds one, five, nine. Which value does line five pop?",
-     "start": 30.31,
-     "end": 35.41
-    },
-    {
-     "id": "hp3s_7",
-     "text": "The one. It went straight back out.",
-     "start": 36.61,
-     "end": 38.33
-    },
-    {
-     "id": "hp3s_8",
-     "text": "Seven is pushed. Five, seven, nine. The five is popped.",
-     "start": 39.08,
-     "end": 42.53
-    },
-    {
-     "id": "hp3s_9",
-     "text": "The heap holds the two largest. Seven and nine. Line seven returns the top.",
-     "start": 43.28,
-     "end": 48.31
-    },
-    {
-     "id": "hp3s_10",
-     "text": "n pushes, on a heap that never holds more than k plus one values. O of n log k.",
-     "start": 49.41,
-     "end": 55.73
-    },
-    {
-     "id": "hp3s_11",
-     "text": "The heap. O of k space.",
-     "start": 56.48,
-     "end": 58.2
-    },
-    {
-     "id": "hp3s_12",
-     "text": "A streaming site keeps its top ten of the day with a heap of size ten.",
-     "start": 58.95,
-     "end": 62.9
-    }
-   ],
-   "pauses": [
-    {
-     "id": "hp3s-q",
-     "t": 35.61
-    }
-   ]
-  },
-  "hp4i": {
-   "src": "videos/hp4i.mp4",
-   "title": "Tying the Ropes",
-   "duration": 20.46,
-   "lines": [
-    {
-     "id": "hp4i_1",
-     "text": "Four ropes, to be tied into one. Tying two together costs their lengths, added up.",
-     "start": 0.2,
-     "end": 5.25
-    },
-    {
-     "id": "hp4i_2",
-     "text": "Return the smallest total cost of joining them all.",
-     "start": 5.95,
-     "end": 8.75
-    },
-    {
-     "id": "hp4i_3",
-     "text": "A rope that is tied in early is paid for again, in every join after that.",
-     "start": 9.45,
-     "end": 14.21
-    },
-    {
-     "id": "hp4i_4",
-     "text": "So which two should go first? And what about the new rope? Your turn.",
-     "start": 14.91,
-     "end": 18.86
-    }
-   ],
-   "pauses": []
-  },
-  "hp4s": {
-   "src": "videos/hp4s.mp4",
-   "title": "Always the two shortest",
-   "duration": 63.42,
-   "lines": [
-    {
-     "id": "hp4s_1",
-     "text": "A rope joined early is counted again in every later join. So the short ones should go first.",
-     "start": 0.2,
-     "end": 5.91
-    },
-    {
-     "id": "hp4s_2",
-     "text": "The two shortest, again and again, while new ropes keep arriving. That is the signal for a heap.",
-     "start": 6.66,
-     "end": 12.5
-    },
-    {
-     "id": "hp4s_3",
-     "text": "Line three pushes every rope into a min heap. Two is on top.",
-     "start": 13.25,
-     "end": 17.34
-    },
-    {
-     "id": "hp4s_4",
-     "text": "Line six pops the two shortest. Two and three. Joined, five. The cost is five. Line eight pushes the new rope back.",
-     "start": 18.09,
-     "end": 25.58
-    },
-    {
-     "id": "hp4s_5",
-     "text": "Again. The two shortest are now four, and the five we just made. What is the cost after this join?",
-     "start": 26.33,
-     "end": 32.61
-    },
-    {
-     "id": "hp4s_6",
-     "text": "Nine. The cost becomes fourteen. The nine goes back in.",
-     "start": 33.81,
-     "end": 37.57
-    },
-    {
-     "id": "hp4s_7",
-     "text": "Two ropes left. Six and nine. Fifteen. The cost is twenty nine.",
-     "start": 38.32,
-     "end": 42.72
-    },
-    {
-     "id": "hp4s_8",
-     "text": "One rope left. The loop ends, and line ten returns the cost.",
-     "start": 43.47,
-     "end": 47.62
-    },
-    {
-     "id": "hp4s_9",
-     "text": "About n joins, each a few heap operations. O of n log n.",
-     "start": 48.72,
-     "end": 52.82
-    },
-    {
-     "id": "hp4s_10",
-     "text": "The heap. O of n space.",
-     "start": 53.57,
-     "end": 55.21
-    },
-    {
-     "id": "hp4s_11",
-     "text": "File compression starts like this. It joins the two rarest symbols first, again and again.",
-     "start": 55.96,
-     "end": 61.82
-    }
-   ],
-   "pauses": [
-    {
-     "id": "hp4s-q",
-     "t": 32.81
-    }
-   ]
-  },
-  "hp5i": {
-   "src": "videos/hp5i.mp4",
-   "title": "Many Queues, One Line",
-   "duration": 20.99,
-   "lines": [
-    {
-     "id": "hp5i_1",
-     "text": "Several queues, each already in order, must become one line.",
-     "start": 0.2,
-     "end": 4
-    },
-    {
-     "id": "hp5i_2",
-     "text": "Return one sorted array with all the numbers. However many lists there are.",
-     "start": 4.7,
-     "end": 9.14
-    },
-    {
-     "id": "hp5i_3",
-     "text": "The next smallest number is always at the front of one of the lists.",
-     "start": 9.84,
-     "end": 13.73
-    },
-    {
-     "id": "hp5i_4",
-     "text": "So how many candidates do you ever need to compare? And what holds them? Your turn.",
-     "start": 14.43,
-     "end": 19.39
-    }
-   ],
-   "pauses": []
-  },
-  "hp5s": {
-   "src": "videos/hp5s.mp4",
-   "title": "One candidate per list",
-   "duration": 69.21,
-   "lines": [
-    {
-     "id": "hp5s_1",
-     "text": "The next smallest number is always at the front of one of the lists. So there is one candidate per list.",
-     "start": 0.2,
-     "end": 6.4
-    },
-    {
-     "id": "hp5s_2",
-     "text": "Keep the candidates in a min heap. Pop the smallest, and replace it with the next one from the same list.",
-     "start": 7.15,
-     "end": 13.42
-    },
-    {
-     "id": "hp5s_3",
-     "text": "Lines three to five push the front of every list. Each entry remembers its list, and its position.",
-     "start": 14.17,
-     "end": 20.36
-    },
-    {
-     "id": "hp5s_4",
-     "text": "Line eight pops the smallest. One, from list A. It goes to the output. And line twelve pushes the next of A. Six.",
-     "start": 21.11,
-     "end": 28.52
-    },
-    {
-     "id": "hp5s_5",
-     "text": "Pop again. Two, from list B. Output. The next of B is three.",
-     "start": 29.27,
-     "end": 33.32
-    },
-    {
-     "id": "hp5s_6",
-     "text": "The heap holds three and six. Three is popped. But list B has nothing after it. What does the heap hold now?",
-     "start": 34.07,
-     "end": 40.62
-    },
-    {
-     "id": "hp5s_7",
-     "text": "Only the six. Nothing is pushed when a list has run out.",
-     "start": 41.82,
-     "end": 45.23
-    },
-    {
-     "id": "hp5s_8",
-     "text": "Six is popped. The heap is empty, and line fifteen returns the output.",
-     "start": 45.98,
-     "end": 50.75
-    },
-    {
-     "id": "hp5s_9",
-     "text": "Every number is pushed and popped once, on a heap of k candidates. O of n log k.",
-     "start": 51.85,
-     "end": 57.74
-    },
-    {
-     "id": "hp5s_10",
-     "text": "The heap holds k entries. The output holds n.",
-     "start": 58.49,
-     "end": 61.62
-    },
-    {
-     "id": "hp5s_11",
-     "text": "Merging many sorted log files into one timeline uses this heap of fronts.",
-     "start": 62.37,
-     "end": 67.61
-    }
-   ],
-   "pauses": [
-    {
-     "id": "hp5s-q",
-     "t": 40.82
-    }
-   ]
-  },
-  "hp6i": {
-   "src": "videos/hp6i.mp4",
-   "title": "The Middle, All the Time",
-   "duration": 22.29,
-   "lines": [
-    {
-     "id": "hp6i_1",
-     "text": "Numbers keep arriving, and after each one Moss wants the middle value.",
-     "start": 0.2,
-     "end": 4.49
-    },
-    {
-     "id": "hp6i_2",
-     "text": "Return the median after every arrival.",
-     "start": 5.19,
-     "end": 7.52
-    },
-    {
-     "id": "hp6i_3",
-     "text": "Sorting again each time is far too slow. And you only ever need the one or two values in the middle.",
-     "start": 8.22,
-     "end": 14.2
-    },
-    {
-     "id": "hp6i_4",
-     "text": "Cut the numbers into a small half and a big half. Which value of each half matters? Your turn.",
-     "start": 14.9,
-     "end": 20.69
-    }
-   ],
-   "pauses": []
-  },
-  "hp6s": {
-   "src": "videos/hp6s.mp4",
-   "title": "Two heaps, meeting in the middle",
-   "duration": 89.46,
-   "lines": [
-    {
-     "id": "hp6s_1",
-     "text": "Keep the small half of the numbers in one heap, and the big half in another.",
-     "start": 0.2,
-     "end": 4.57
-    },
-    {
-     "id": "hp6s_2",
-     "text": "Low keeps its biggest on top. High keeps its smallest on top. So the middle is always at the two tops.",
-     "start": 5.32,
-     "end": 12.03
-    },
-    {
-     "id": "hp6s_3",
-     "text": "Line two. Low is a max heap. The comparison is turned around, b minus a. Line three. High is an ordinary min heap.",
-     "start": 12.78,
-     "end": 20.81
-    },
-    {
-     "id": "hp6s_4",
-     "text": "Five arrives. It goes into low. Low hands its biggest to high. Then high is the bigger one, so it hands it back. Low holds the five.",
-     "start": 21.56,
-     "end": 30.17
-    },
-    {
-     "id": "hp6s_5",
-     "text": "Low is bigger. So the median is its top. Five.",
-     "start": 30.92,
-     "end": 33.99
-    },
-    {
-     "id": "hp6s_6",
-     "text": "Two arrives. Into low. Low hands its biggest, the five, to high. Now they are equal. The median is the average of the two tops.",
-     "start": 34.74,
-     "end": 43.41
-    },
-    {
-     "id": "hp6s_7",
-     "text": "Eight arrives. Into low. Low hands its biggest, the eight, to high. Now high holds two values, and low holds one. What does line eight do?",
-     "start": 44.16,
-     "end": 53.09
-    },
-    {
-     "id": "hp6s_8",
-     "text": "It moves the smallest of high, the five, back to low. Low is bigger again. The median is its top. Five.",
-     "start": 54.29,
-     "end": 61.2
-    },
-    {
-     "id": "hp6s_9",
-     "text": "One arrives. Into low. Low hands its biggest, the five, to high. Equal again. Two plus five, divided by two.",
-     "start": 61.95,
-     "end": 69.68
-    },
-    {
-     "id": "hp6s_10",
-     "text": "Line twelve returns the medians.",
-     "start": 70.43,
-     "end": 72.52
-    },
-    {
-     "id": "hp6s_11",
-     "text": "Each arrival is a few heap operations. O of n log n in total.",
-     "start": 73.62,
-     "end": 78.18
-    },
-    {
-     "id": "hp6s_12",
-     "text": "The two heaps hold every number. O of n space.",
-     "start": 78.93,
-     "end": 82.07
-    },
-    {
-     "id": "hp6s_13",
-     "text": "A dashboard that shows the median response time, live, keeps these two heaps.",
-     "start": 82.82,
-     "end": 87.86
-    }
-   ],
-   "pauses": [
-    {
-     "id": "hp6s-q",
-     "t": 53.29
-    }
-   ]
-  },
-  "my1i": {
-   "src": "videos/my1i.mp4",
-   "title": "Boxes Inside Boxes",
-   "duration": 19.39,
-   "lines": [
-    {
-     "id": "my1i_1",
-     "text": "A box of parcels. But some of the parcels are boxes too, with more inside.",
-     "start": 0.2,
-     "end": 5.07
-    },
-    {
-     "id": "my1i_2",
-     "text": "Return the sum of every number, however deep it is.",
-     "start": 5.77,
-     "end": 9.1
-    },
-    {
-     "id": "my1i_3",
-     "text": "When you open an inner box, what you find looks just like what you started with.",
-     "start": 9.8,
-     "end": 14.38
-    },
-    {
-     "id": "my1i_4",
-     "text": "So what should the function do with it? Your turn.",
-     "start": 15.08,
-     "end": 17.79
-    }
-   ],
-   "pauses": []
-  },
-  "my1s": {
-   "src": "videos/my1s.mp4",
-   "title": "An inner box is the same problem",
-   "duration": 68.1,
-   "lines": [
-    {
-     "id": "my1s_1",
-     "text": "An inner array is a smaller copy of the same problem. So the function can call itself on it.",
-     "start": 0.2,
-     "end": 6.02
-    },
-    {
-     "id": "my1s_2",
-     "text": "A plain number is the simplest item. It needs no call at all. That is the base case, hiding in the else.",
-     "start": 6.77,
-     "end": 13.46
-    },
-    {
-     "id": "my1s_3",
-     "text": "The first call. Total is zero.",
-     "start": 14.21,
-     "end": 16.22
-    },
-    {
-     "id": "my1s_4",
-     "text": "The first item is one. A number. Line five adds it.",
-     "start": 16.97,
-     "end": 20.54
-    },
-    {
-     "id": "my1s_5",
-     "text": "The second item is an array. Line four calls nested sum on it, and waits.",
-     "start": 21.29,
-     "end": 26.12
-    },
-    {
-     "id": "my1s_6",
-     "text": "Inside that call, two is added. Then there is another array, three. One more call. What does that innermost call return?",
-     "start": 26.87,
-     "end": 34.47
-    },
-    {
-     "id": "my1s_7",
-     "text": "Three. So the middle call returns two plus three. Five.",
-     "start": 35.67,
-     "end": 39.12
-    },
-    {
-     "id": "my1s_8",
-     "text": "Back in the first call. One plus five is six.",
-     "start": 39.87,
-     "end": 43
-    },
-    {
-     "id": "my1s_9",
-     "text": "The last item is four. Ten.",
-     "start": 43.75,
-     "end": 45.77
-    },
-    {
-     "id": "my1s_10",
-     "text": "Line seven returns the total. Ten.",
-     "start": 46.52,
-     "end": 49.02
-    },
-    {
-     "id": "my1s_11",
-     "text": "Every number and every array is visited once. O of n, counting everything inside.",
-     "start": 50.12,
-     "end": 55.92
-    },
-    {
-     "id": "my1s_12",
-     "text": "The call stack is as deep as the nesting. O of depth.",
-     "start": 56.67,
-     "end": 59.79
-    },
-    {
-     "id": "my1s_13",
-     "text": "The total size of a folder is worked out like this. Folders inside folders, to any depth.",
-     "start": 60.54,
-     "end": 66.5
-    }
-   ],
-   "pauses": [
-    {
-     "id": "my1s-q",
-     "t": 34.67
-    }
-   ]
-  },
-  "my2i": {
-   "src": "videos/my2i.mp4",
-   "title": "The Smallest Boat",
-   "duration": 22.88,
-   "lines": [
-    {
-     "id": "my2i_1",
-     "text": "Four parcels to ship, in this order, and only two days to do it.",
-     "start": 0.2,
-     "end": 4.2
-    },
-    {
-     "id": "my2i_2",
-     "text": "One boat sails each day. Return the smallest boat that gets everything shipped in time.",
-     "start": 4.9,
-     "end": 10.12
-    },
-    {
-     "id": "my2i_3",
-     "text": "You cannot read the answer off the parcels. But you can test any size of boat.",
-     "start": 10.82,
-     "end": 15.36
-    },
-    {
-     "id": "my2i_4",
-     "text": "Too small, too small, then big enough. What does that remind you of? Your turn.",
-     "start": 16.06,
-     "end": 21.28
-    }
-   ],
-   "pauses": []
-  },
-  "my2s": {
-   "src": "videos/my2s.mp4",
-   "title": "The first capacity that fits",
-   "duration": 82.97,
-   "lines": [
-    {
-     "id": "my2s_1",
-     "text": "The answer is a capacity. Small boats fail, big boats work, and it flips only once. That is the signal.",
-     "start": 0.2,
-     "end": 7.5
-    },
-    {
-     "id": "my2s_2",
-     "text": "So write a test, days for a capacity, and binary search the capacities.",
-     "start": 8.25,
-     "end": 12.79
-    },
-    {
-     "id": "my2s_3",
-     "text": "Lines two to ten are the test. Load the parcels in order. When the next one does not fit, start a new day.",
-     "start": 13.54,
-     "end": 20.18
-    },
-    {
-     "id": "my2s_4",
-     "text": "The smallest boat worth trying carries the heaviest parcel. Four. The largest carries everything. Ten.",
-     "start": 20.93,
-     "end": 27.51
-    },
-    {
-     "id": "my2s_5",
-     "text": "The middle is seven. Day one takes two and three. Four does not fit, so day two takes four and one. Two days. It fits.",
-     "start": 28.26,
-     "end": 35.95
-    },
-    {
-     "id": "my2s_6",
-     "text": "So the answer is seven, or smaller. High moves onto seven.",
-     "start": 36.7,
-     "end": 40.66
-    },
-    {
-     "id": "my2s_7",
-     "text": "The middle of four and seven is five. Two and three fill day one exactly. Four and one fill day two. Does five fit?",
-     "start": 41.41,
-     "end": 49.01
-    },
-    {
-     "id": "my2s_8",
-     "text": "Yes. Two days. High moves onto five.",
-     "start": 50.21,
-     "end": 52.89
-    },
-    {
-     "id": "my2s_9",
-     "text": "The middle of four and five is four. Two. Then three. Then four. Then one. Four days. Too many. Low moves to five, and meets high.",
-     "start": 53.64,
-     "end": 61.92
-    },
-    {
-     "id": "my2s_10",
-     "text": "Line eighteen returns low. Capacity five.",
-     "start": 62.67,
-     "end": 65.72
-    },
-    {
-     "id": "my2s_11",
-     "text": "About log of the total weight tests, and each test walks the parcels once.",
-     "start": 66.82,
-     "end": 71.62
-    },
-    {
-     "id": "my2s_12",
-     "text": "A few numbers. O of one space.",
-     "start": 72.37,
-     "end": 74.65
-    },
-    {
-     "id": "my2s_13",
-     "text": "A delivery company sizes its trucks this way. The smallest truck that still ships everything in time.",
-     "start": 75.4,
-     "end": 81.38
-    }
-   ],
-   "pauses": [
-    {
-     "id": "my2s-q",
-     "t": 49.21
-    }
-   ]
-  },
-  "my3i": {
-   "src": "videos/my3i.mp4",
-   "title": "Two to a Boat",
-   "duration": 20.71,
-   "lines": [
-    {
-     "id": "my3i_1",
-     "text": "Four animals want to cross the river. A boat takes two at most, and only so much weight.",
-     "start": 0.2,
-     "end": 5.76
-    },
-    {
-     "id": "my3i_2",
-     "text": "Return the fewest boats needed to carry everyone.",
-     "start": 6.46,
-     "end": 9.3
-    },
-    {
-     "id": "my3i_3",
-     "text": "Think about the heaviest animal. If anyone can share its boat, it is the lightest one.",
-     "start": 10,
-     "end": 15.27
-    },
-    {
-     "id": "my3i_4",
-     "text": "So what order should the animals be in? Your turn.",
-     "start": 15.97,
-     "end": 19.11
-    }
-   ],
-   "pauses": []
-  },
-  "my3s": {
-   "src": "videos/my3s.mp4",
-   "title": "Heaviest with lightest",
-   "duration": 66.97,
-   "lines": [
-    {
-     "id": "my3s_1",
-     "text": "The heaviest animal needs a boat anyway. If anyone can share it, the lightest one can. So try that pair.",
-     "start": 0.2,
-     "end": 6.88
-    },
-    {
-     "id": "my3s_2",
-     "text": "Heaviest and lightest are easy to find in a sorted row. So sort first, then walk in from both ends.",
-     "start": 7.63,
-     "end": 14.42
-    },
-    {
-     "id": "my3s_3",
-     "text": "Line two sorts the weights. One, two, two, three.",
-     "start": 15.17,
-     "end": 18.42
-    },
-    {
-     "id": "my3s_4",
-     "text": "Pip marks the lightest. Moss marks the heaviest. No boats yet.",
-     "start": 19.17,
-     "end": 23.07
-    },
-    {
-     "id": "my3s_5",
-     "text": "One plus three is four. Over the limit. So the three sails alone. Moss moves in. One boat.",
-     "start": 23.82,
-     "end": 30.28
-    },
-    {
-     "id": "my3s_6",
-     "text": "One plus two is three. Within the limit. What happens to the two markers?",
-     "start": 31.03,
-     "end": 35.8
-    },
-    {
-     "id": "my3s_7",
-     "text": "They share a boat. Both markers move in. Two boats.",
-     "start": 37,
-     "end": 40.18
-    },
-    {
-     "id": "my3s_8",
-     "text": "Both markers are on the last animal. Two plus two is over the limit, so it sails alone. Three boats.",
-     "start": 40.93,
-     "end": 47.63
-    },
-    {
-     "id": "my3s_9",
-     "text": "Light has passed heavy. Line eleven returns three.",
-     "start": 48.38,
-     "end": 51.64
-    },
-    {
-     "id": "my3s_10",
-     "text": "The sort costs n log n. The walk after it is one pass.",
-     "start": 52.74,
-     "end": 56.3
-    },
-    {
-     "id": "my3s_11",
-     "text": "The sorted copy. O of n space.",
-     "start": 57.05,
-     "end": 59.42
-    },
-    {
-     "id": "my3s_12",
-     "text": "A lift or a ferry is loaded like this. Pair the heaviest with the lightest that still fits.",
-     "start": 60.17,
-     "end": 65.37
-    }
-   ],
-   "pauses": [
-    {
-     "id": "my3s-q",
-     "t": 36
-    }
-   ]
-  },
-  "my4i": {
-   "src": "videos/my4i.mp4",
-   "title": "One More Booking",
-   "duration": 22.56,
-   "lines": [
-    {
-     "id": "my4i_1",
-     "text": "The booking list is tidy. Sorted, and nothing overlaps. Then one more booking arrives.",
-     "start": 0.2,
-     "end": 5.95
-    },
-    {
-     "id": "my4i_2",
-     "text": "Add it, merging it with anything it overlaps. Return the new tidy list.",
-     "start": 6.65,
-     "end": 11.1
-    },
-    {
-     "id": "my4i_3",
-     "text": "Compared with the new booking, every old one is in one of three groups.",
-     "start": 11.8,
-     "end": 16.26
-    },
-    {
-     "id": "my4i_4",
-     "text": "Entirely before it. Touching it. Or entirely after it. Your turn.",
-     "start": 16.96,
-     "end": 20.96
-    }
-   ],
-   "pauses": []
-  },
-  "my4s": {
-   "src": "videos/my4s.mp4",
-   "title": "Before, touching, after",
-   "duration": 70.39,
-   "lines": [
-    {
-     "id": "my4s_1",
-     "text": "Things with a start and an end, already sorted. So one sweep is enough.",
-     "start": 0.2,
-     "end": 4.58
-    },
-    {
-     "id": "my4s_2",
-     "text": "The old bookings come in three groups. Before the new one. Overlapping it. And after it.",
-     "start": 5.33,
-     "end": 10.85
-    },
-    {
-     "id": "my4s_3",
-     "text": "Line three unpacks the new booking. Start two, end five.",
-     "start": 11.6,
-     "end": 15.29
-    },
-    {
-     "id": "my4s_4",
-     "text": "The first loop copies bookings that end before the new one starts. One to three ends at three. That is not before two. So nothing is copied.",
-     "start": 16.04,
-     "end": 24.92
-    },
-    {
-     "id": "my4s_5",
-     "text": "The second loop takes bookings that start before the new one ends. One to three starts at one. Does it overlap?",
-     "start": 25.67,
-     "end": 32.56
-    },
-    {
-     "id": "my4s_6",
-     "text": "Yes. So the new booking swallows it. The start becomes one. The end stays five.",
-     "start": 33.76,
-     "end": 38.95
-    },
-    {
-     "id": "my4s_7",
-     "text": "Next, six to nine. It starts at six, after five. No overlap. The second loop stops.",
-     "start": 39.7,
-     "end": 45.84
-    },
-    {
-     "id": "my4s_8",
-     "text": "Line thirteen pushes the merged booking. One to five.",
-     "start": 46.59,
-     "end": 50.11
-    },
-    {
-     "id": "my4s_9",
-     "text": "Line fourteen copies everything that is left. Six to nine.",
-     "start": 50.86,
-     "end": 54.67
-    },
-    {
-     "id": "my4s_10",
-     "text": "Each booking is looked at once. No sorting needed. O of n.",
-     "start": 55.77,
-     "end": 59.69
-    },
-    {
-     "id": "my4s_11",
-     "text": "The output list. O of n space.",
-     "start": 60.44,
-     "end": 62.77
-    },
-    {
-     "id": "my4s_12",
-     "text": "Adding a meeting to a tidy calendar does exactly this. Before, touching, after.",
-     "start": 63.52,
-     "end": 68.79
-    }
-   ],
-   "pauses": [
-    {
-     "id": "my4s-q",
-     "t": 32.76
-    }
-   ]
-  },
-  "my5i": {
-   "src": "videos/my5i.mp4",
-   "title": "Most Common First",
-   "duration": 20.78,
-   "lines": [
-    {
-     "id": "my5i_1",
-     "text": "The letters of this word should be lined up by how often they appear.",
-     "start": 0.2,
-     "end": 3.79
-    },
-    {
-     "id": "my5i_2",
-     "text": "Return the letters, most frequent first. Copies of a letter stay together.",
-     "start": 4.49,
-     "end": 9.02
-    },
-    {
-     "id": "my5i_3",
-     "text": "This one needs two tools, one after the other.",
-     "start": 9.72,
-     "end": 12.64
-    },
-    {
-     "id": "my5i_4",
-     "text": "First you need to know something about each letter. Then you need to put something in order. Your turn.",
-     "start": 13.34,
-     "end": 19.18
-    }
-   ],
-   "pauses": []
-  },
-  "my5s": {
-   "src": "videos/my5s.mp4",
-   "title": "Count, then sort by the count",
-   "duration": 55.49,
-   "lines": [
-    {
-     "id": "my5s_1",
-     "text": "How often does each letter appear? That is a counting question. A map.",
-     "start": 0.2,
-     "end": 4.55
-    },
-    {
-     "id": "my5s_2",
-     "text": "Then the different letters need to be in order of their counts. That is a sort with a rule.",
-     "start": 5.3,
-     "end": 10.58
-    },
-    {
-     "id": "my5s_3",
-     "text": "Lines two to five count the letters. T, one. R, one. E, two.",
-     "start": 11.33,
-     "end": 15.84
-    },
-    {
-     "id": "my5s_4",
-     "text": "Line six lists the different letters. T, R, E. Only three things to sort, not four.",
-     "start": 16.59,
-     "end": 22.28
-    },
-    {
-     "id": "my5s_5",
-     "text": "Line seven sorts them with a rule. The count of b, minus the count of a. Which letter ends up first?",
-     "start": 23.03,
-     "end": 29.64
-    },
-    {
-     "id": "my5s_6",
-     "text": "E. It has the biggest count.",
-     "start": 30.84,
-     "end": 32.39
-    },
-    {
-     "id": "my5s_7",
-     "text": "Line eight repeats each letter by its count, and joins them. E, E, T, R.",
-     "start": 33.14,
-     "end": 38
-    },
-    {
-     "id": "my5s_8",
-     "text": "One pass to count, and a sort of the different letters. At most twenty six of those.",
-     "start": 39.1,
-     "end": 44.19
-    },
-    {
-     "id": "my5s_9",
-     "text": "The map and the answer. O of n space.",
-     "start": 44.94,
-     "end": 47.58
-    },
-    {
-     "id": "my5s_10",
-     "text": "A keyboard that suggests your most used emoji first counts them, then sorts by the count.",
-     "start": 48.33,
-     "end": 53.89
-    }
-   ],
-   "pauses": [
-    {
-     "id": "my5s-q",
-     "t": 29.84
-    }
-   ]
-  },
-  "my6i": {
-   "src": "videos/my6i.mp4",
-   "title": "Find It in the Turned Row",
-   "duration": 22.82,
-   "lines": [
-    {
-     "id": "my6i_1",
-     "text": "A sorted row, turned. The front part was moved to the back.",
-     "start": 0.2,
-     "end": 3.99
-    },
-    {
-     "id": "my6i_2",
-     "text": "Return the index of the target, or minus one. And open very few doors.",
-     "start": 4.69,
-     "end": 9.72
-    },
-    {
-     "id": "my6i_3",
-     "text": "Cut the row at the middle. One of the two halves is always properly sorted.",
-     "start": 10.42,
-     "end": 14.99
-    },
-    {
-     "id": "my6i_4",
-     "text": "And in a sorted half, you can tell at once whether the target is inside. Your turn.",
-     "start": 15.69,
-     "end": 21.22
-    }
-   ],
-   "pauses": []
-  },
-  "my6s": {
-   "src": "videos/my6s.mp4",
-   "title": "One half is always sorted",
-   "duration": 69.87,
-   "lines": [
-    {
-     "id": "my6s_1",
-     "text": "Nearly sorted, and looking for one thing. That is the binary search signal, even though the row is turned.",
-     "start": 0.2,
-     "end": 6.56
-    },
-    {
-     "id": "my6s_2",
-     "text": "Cut at the middle, and one half is always in order. In that half, the two end doors tell you whether the target is inside.",
-     "start": 7.31,
-     "end": 14.79
-    },
-    {
-     "id": "my6s_3",
-     "text": "Low on the first door. High on the last. The target is zero.",
-     "start": 15.54,
-     "end": 19.24
-    },
-    {
-     "id": "my6s_4",
-     "text": "The middle is door three. Seven. Not the target.",
-     "start": 19.99,
-     "end": 22.86
-    },
-    {
-     "id": "my6s_5",
-     "text": "Line seven. Is the left half sorted? Four is not more than seven. Yes. It runs from four to seven.",
-     "start": 23.61,
-     "end": 30.24
-    },
-    {
-     "id": "my6s_6",
-     "text": "Is the target, zero, between four and seven? No. So what do we throw away?",
-     "start": 30.99,
-     "end": 35.9
-    },
-    {
-     "id": "my6s_7",
-     "text": "The whole left half. Low moves to door four.",
-     "start": 37.1,
-     "end": 39.88
-    },
-    {
-     "id": "my6s_8",
-     "text": "The middle of four and six is five. One. Not the target. The left part, zero to one, is sorted, and zero is inside it. High moves to four.",
-     "start": 40.63,
-     "end": 49.82
-    },
-    {
-     "id": "my6s_9",
-     "text": "The middle is door four. Zero. Line six returns its index.",
-     "start": 50.57,
-     "end": 55.03
-    },
-    {
-     "id": "my6s_10",
-     "text": "Every look halves what is left. O of log n time.",
-     "start": 56.13,
-     "end": 59.37
-    },
-    {
-     "id": "my6s_11",
-     "text": "Three markers. O of one space.",
-     "start": 60.12,
-     "end": 62.18
-    },
-    {
-     "id": "my6s_12",
-     "text": "A log that wraps around is a turned row. Finding one entry in it uses this search.",
-     "start": 62.93,
-     "end": 68.27
-    }
-   ],
-   "pauses": [
-    {
-     "id": "my6s-q",
-     "t": 36.1
-    }
-   ]
-  },
-  "my7i": {
-   "src": "videos/my7i.mp4",
-   "title": "Zip, Without a Loop",
-   "duration": 18.85,
-   "lines": [
-    {
-     "id": "my7i_1",
-     "text": "Two sorted lists to zip together. You have done it before, with a loop.",
-     "start": 0.2,
-     "end": 4.3
-    },
-    {
-     "id": "my7i_2",
-     "text": "Do it again, and return the head. But this time, no loop.",
-     "start": 5,
-     "end": 8.47
-    },
-    {
-     "id": "my7i_3",
-     "text": "The first node of the answer is easy. It is the smaller of the two heads.",
-     "start": 9.17,
-     "end": 13.64
-    },
-    {
-     "id": "my7i_4",
-     "text": "And once you have taken it, what is left? Your turn.",
-     "start": 14.34,
-     "end": 17.25
-    }
-   ],
-   "pauses": []
-  },
-  "my7s": {
-   "src": "videos/my7s.mp4",
-   "title": "Pick one node, trust the rest",
-   "duration": 66.68,
-   "lines": [
-    {
-     "id": "my7s_1",
-     "text": "The head of the answer is the smaller of the two heads. After that, what is left is the same problem, one node smaller.",
-     "start": 0.2,
-     "end": 7.49
-    },
-    {
-     "id": "my7s_2",
-     "text": "A smaller copy of the same problem. That is recursion. And an empty list is the base case.",
-     "start": 8.23,
-     "end": 14.3
-    },
-    {
-     "id": "my7s_3",
-     "text": "The first call. One against two. One is smaller, so it will be the head. Line five asks the function to zip the rest, and waits.",
-     "start": 15.05,
-     "end": 23.43
-    },
-    {
-     "id": "my7s_4",
-     "text": "The next call. Four against two. Two is smaller. Line eight asks for the rest.",
-     "start": 24.18,
-     "end": 29.22
-    },
-    {
-     "id": "my7s_5",
-     "text": "Four against three. Three is taken. Now list b has run out. What does the next call return?",
-     "start": 29.97,
-     "end": 35.82
-    },
-    {
-     "id": "my7s_6",
-     "text": "Line three. When b is empty, the answer is simply the rest of a. The four.",
-     "start": 37.02,
-     "end": 41.86
-    },
-    {
-     "id": "my7s_7",
-     "text": "Each waiting call hooks that answer onto its node, and returns. The first call returns the head. One.",
-     "start": 42.61,
-     "end": 49.3
-    },
-    {
-     "id": "my7s_8",
-     "text": "One call per node. O of n plus m time.",
-     "start": 50.4,
-     "end": 53.34
-    },
-    {
-     "id": "my7s_9",
-     "text": "Every call waits on the stack. O of n plus m space. The loop version needed O of one.",
-     "start": 54.09,
-     "end": 60.05
-    },
-    {
-     "id": "my7s_10",
-     "text": "Merging two sorted streams of events, newest by newest, is this zip.",
-     "start": 60.8,
-     "end": 65.08
-    }
-   ],
-   "pauses": [
-    {
-     "id": "my7s-q",
-     "t": 36.02
-    }
-   ]
-  },
-  "my8i": {
-   "src": "videos/my8i.mp4",
-   "title": "Everyone But Me",
-   "duration": 22.29,
-   "lines": [
-    {
-     "id": "my8i_1",
-     "text": "For every door, Pip wants the product of all the other doors.",
-     "start": 0.2,
-     "end": 3.96
-    },
-    {
-     "id": "my8i_2",
-     "text": "Return that for every position. Without dividing.",
-     "start": 4.66,
-     "end": 7.83
-    },
-    {
-     "id": "my8i_3",
-     "text": "For any one door, the others are in two groups. Everything to its left, and everything to its right.",
-     "start": 8.53,
-     "end": 14.57
-    },
-    {
-     "id": "my8i_4",
-     "text": "Where have you seen everything before this door, kept as one running value? Your turn.",
-     "start": 15.27,
-     "end": 20.69
-    }
-   ],
-   "pauses": []
-  },
-  "my8s": {
-   "src": "videos/my8s.mp4",
-   "title": "Left product \u00d7 right product",
-   "duration": 68.52,
-   "lines": [
-    {
-     "id": "my8s_1",
-     "text": "Everything except me, is everything to my left, times everything to my right.",
-     "start": 0.2,
-     "end": 5.08
-    },
-    {
-     "id": "my8s_2",
-     "text": "Everything before this door, as a running value. That is the prefix idea. Here it runs once from each side.",
-     "start": 5.83,
-     "end": 12.7
-    },
-    {
-     "id": "my8s_3",
-     "text": "Before starts at one. It holds the product of everything to the left.",
-     "start": 13.45,
-     "end": 17.66
-    },
-    {
-     "id": "my8s_4",
-     "text": "The first walk writes before into each slot, then multiplies the door in. One. One. Two. Six.",
-     "start": 18.41,
-     "end": 24.86
-    },
-    {
-     "id": "my8s_5",
-     "text": "Now after starts at one, and the second walk comes back from the right.",
-     "start": 25.61,
-     "end": 29.81
-    },
-    {
-     "id": "my8s_6",
-     "text": "Door three. Six times one. Six. Then after takes in the four.",
-     "start": 30.56,
-     "end": 34.71
-    },
-    {
-     "id": "my8s_7",
-     "text": "Door two. Its slot holds two. After is four. What is written?",
-     "start": 35.46,
-     "end": 39.08
-    },
-    {
-     "id": "my8s_8",
-     "text": "Eight. Left times right. Then after becomes twelve.",
-     "start": 40.28,
-     "end": 43.35
-    },
-    {
-     "id": "my8s_9",
-     "text": "Door one. One times twelve. Twelve. And door zero. One times twenty four.",
-     "start": 44.1,
-     "end": 49.41
-    },
-    {
-     "id": "my8s_10",
-     "text": "Line thirteen returns the answer.",
-     "start": 50.16,
-     "end": 52.42
-    },
-    {
-     "id": "my8s_11",
-     "text": "Two walks. O of n time.",
-     "start": 53.52,
-     "end": 55.14
-    },
-    {
-     "id": "my8s_12",
-     "text": "Apart from the answer row, two numbers. O of one extra space.",
-     "start": 55.89,
-     "end": 60.28
-    },
-    {
-     "id": "my8s_13",
-     "text": "A spreadsheet works out each share of a total without dividing by using what is left and right of it.",
-     "start": 61.03,
-     "end": 66.92
-    }
-   ],
-   "pauses": [
-    {
-     "id": "my8s-q",
-     "t": 39.28
-    }
-   ]
-  },
-  "my9i": {
-   "src": "videos/my9i.mp4",
-   "title": "A Messy Mirror",
-   "duration": 20.82,
-   "lines": [
-    {
-     "id": "my9i_1",
-     "text": "A mirror word, with a mess in it. A capital here. A comma there.",
-     "start": 0.2,
-     "end": 4.03
-    },
-    {
-     "id": "my9i_2",
-     "text": "Return true if it reads the same both ways, ignoring capitals and anything that is not a letter.",
-     "start": 4.73,
-     "end": 11.21
-    },
-    {
-     "id": "my9i_3",
-     "text": "You have checked a mirror word before. Twice.",
-     "start": 11.91,
-     "end": 14.75
-    },
-    {
-     "id": "my9i_4",
-     "text": "What has to change, when a marker lands on a comma? Your turn.",
-     "start": 15.45,
-     "end": 19.22
-    }
-   ],
-   "pauses": []
-  },
-  "my9s": {
-   "src": "videos/my9s.mp4",
-   "title": "Skip the mess, compare the letters",
-   "duration": 62.16,
-   "lines": [
-    {
-     "id": "my9s_1",
-     "text": "Two ends, walking in. The same pattern as the mirror word in chapter two.",
-     "start": 0.2,
-     "end": 5.08
-    },
-    {
-     "id": "my9s_2",
-     "text": "With one addition. A marker standing on something that is not a letter just steps past it.",
-     "start": 5.83,
-     "end": 11.38
-    },
-    {
-     "id": "my9s_3",
-     "text": "Line two is a helper. A letter is something whose lower case and upper case differ. A comma has no case.",
-     "start": 12.13,
-     "end": 19.37
-    },
-    {
-     "id": "my9s_4",
-     "text": "Pip on the first character. Moss on the last.",
-     "start": 20.12,
-     "end": 22.99
-    },
-    {
-     "id": "my9s_5",
-     "text": "Both are letters. Capital A, and small a. In lower case they are the same. Both markers move in.",
-     "start": 23.74,
-     "end": 30.13
-    },
-    {
-     "id": "my9s_6",
-     "text": "B and b. The same. Both move in. Now Pip stands on the comma. What happens?",
-     "start": 30.88,
-     "end": 36.59
-    },
-    {
-     "id": "my9s_7",
-     "text": "The two markers have met. The loop ends before the comma is ever looked at. Every pair matched.",
-     "start": 37.79,
-     "end": 43.67
-    },
-    {
-     "id": "my9s_8",
-     "text": "Line fifteen returns true.",
-     "start": 44.42,
-     "end": 46.19
-    },
-    {
-     "id": "my9s_9",
-     "text": "Each character is passed once. O of n time.",
-     "start": 47.29,
-     "end": 50.31
-    },
-    {
-     "id": "my9s_10",
-     "text": "Two markers, and no copy of the text. O of one space.",
-     "start": 51.06,
-     "end": 54.85
-    },
-    {
-     "id": "my9s_11",
-     "text": "A phrase checker ignores spaces, commas and capitals, exactly like this.",
-     "start": 55.6,
-     "end": 60.56
-    }
-   ],
-   "pauses": [
-    {
-     "id": "my9s-q",
-     "t": 36.79
-    }
-   ]
-  },
-  "my10i": {
-   "src": "videos/my10i.mp4",
-   "title": "One Arrow, Many Balloons",
-   "duration": 21.51,
-   "lines": [
-    {
-     "id": "my10i_1",
-     "text": "Balloons are stuck along a wall. Each one covers a stretch of it.",
-     "start": 0.2,
-     "end": 4.25
-    },
-    {
-     "id": "my10i_2",
-     "text": "An arrow bursts every balloon it passes through. Return the fewest arrows that burst them all.",
-     "start": 4.95,
-     "end": 10.4
-    },
-    {
-     "id": "my10i_3",
-     "text": "Take the balloon that ends first. It has to be burst somewhere.",
-     "start": 11.1,
-     "end": 14.9
-    },
-    {
-     "id": "my10i_4",
-     "text": "Where along it should you shoot, to catch as many others as you can? Your turn.",
-     "start": 15.6,
-     "end": 19.91
-    }
-   ],
-   "pauses": []
-  },
-  "my10s": {
-   "src": "videos/my10s.mp4",
-   "title": "Shoot where the first one ends",
-   "duration": 72.19,
-   "lines": [
-    {
-     "id": "my10s_1",
-     "text": "Things with a start and an end. So sort them, and sweep. Here, by where they end.",
-     "start": 0.2,
-     "end": 5.02
-    },
-    {
-     "id": "my10s_2",
-     "text": "The balloon that ends first must be burst. Shooting at its very end catches the most other balloons.",
-     "start": 5.77,
-     "end": 11.82
-    },
-    {
-     "id": "my10s_3",
-     "text": "Line two sorts by end. One to six. Two to eight. Seven to twelve. Ten to sixteen.",
-     "start": 12.57,
-     "end": 18.4
-    },
-    {
-     "id": "my10s_4",
-     "text": "No arrows yet. At is the position of the last arrow. Minus infinity.",
-     "start": 19.15,
-     "end": 23.99
-    },
-    {
-     "id": "my10s_5",
-     "text": "One to six. It starts after the last arrow. So it needs a new one, shot at its end. Six.",
-     "start": 24.74,
-     "end": 30.9
-    },
-    {
-     "id": "my10s_6",
-     "text": "Two to eight. It starts at two. The arrow is at six. Does this balloon need a new arrow?",
-     "start": 31.65,
-     "end": 36.97
-    },
-    {
-     "id": "my10s_7",
-     "text": "No. Two is not after six. The arrow at six passes straight through it.",
-     "start": 38.17,
-     "end": 42.43
-    },
-    {
-     "id": "my10s_8",
-     "text": "Seven to twelve. It starts after six. A new arrow, at twelve.",
-     "start": 43.18,
-     "end": 47.4
-    },
-    {
-     "id": "my10s_9",
-     "text": "Ten to sixteen. Ten is not after twelve. Already burst.",
-     "start": 48.15,
-     "end": 52.18
-    },
-    {
-     "id": "my10s_10",
-     "text": "Line eleven returns the arrows. Two.",
-     "start": 52.93,
-     "end": 55.48
-    },
-    {
-     "id": "my10s_11",
-     "text": "The sort costs n log n. The sweep is one pass.",
-     "start": 56.58,
-     "end": 59.64
-    },
-    {
-     "id": "my10s_12",
-     "text": "The sorted copy. O of n space.",
-     "start": 60.39,
-     "end": 62.76
-    },
-    {
-     "id": "my10s_13",
-     "text": "A cleaner who must visit every booked room picks times this way. One visit, timed to cover as many as possible.",
-     "start": 63.51,
-     "end": 70.59
-    }
-   ],
-   "pauses": [
-    {
-     "id": "my10s-q",
-     "t": 37.17
-    }
-   ]
-  },
-  "rc1i": {
-   "src": "videos/rc1i.mp4",
-   "title": "Add Them Up",
-   "duration": 20.93,
-   "lines": [
-    {
-     "id": "rc1i_1",
-     "text": "Add up the numbers from one to four. Easy with a loop. But this time, no loop.",
-     "start": 0.2,
-     "end": 5.11
-    },
-    {
-     "id": "rc1i_2",
-     "text": "Return one plus two, all the way up to n. The function must call itself.",
-     "start": 5.81,
-     "end": 10.45
-    },
-    {
-     "id": "rc1i_3",
-     "text": "Suppose somebody handed you the sum up to three. Six.",
-     "start": 11.15,
-     "end": 14.51
-    },
-    {
-     "id": "rc1i_4",
-     "text": "What would be left for you to do? And when does the asking stop? Your turn.",
-     "start": 15.21,
-     "end": 19.33
-    }
-   ],
-   "pauses": []
-  },
-  "rc1s": {
-   "src": "videos/rc1s.mp4",
-   "title": "Ask for the smaller sum",
-   "duration": 77.57,
-   "lines": [
-    {
-     "id": "rc1s_1",
-     "text": "The sum up to four is four, plus the sum up to three. The same question, one size smaller.",
-     "start": 0.2,
-     "end": 5.9
-    },
-    {
-     "id": "rc1s_2",
-     "text": "And the sum up to zero needs no thinking. It is zero. That is where the chain stops.",
-     "start": 6.65,
-     "end": 12.04
-    },
-    {
-     "id": "rc1s_3",
-     "text": "The first call. N is four. Not zero. So line three needs sum to three, and has to wait for it.",
-     "start": 12.79,
-     "end": 18.88
-    },
-    {
-     "id": "rc1s_4",
-     "text": "So a new call starts, with n three. It waits too, for sum to two.",
-     "start": 19.63,
-     "end": 23.76
-    },
-    {
-     "id": "rc1s_5",
-     "text": "Two waits for one. One waits for zero. Four calls are now waiting on the call stack.",
-     "start": 24.51,
-     "end": 29.76
-    },
-    {
-     "id": "rc1s_6",
-     "text": "N is zero. Line two. The base case. It returns zero straight away, without asking anyone.",
-     "start": 30.51,
-     "end": 36.69
-    },
-    {
-     "id": "rc1s_7",
-     "text": "Now the answers travel back up. The call with n one was waiting. One plus zero. It returns one.",
-     "start": 37.44,
-     "end": 44.08
-    },
-    {
-     "id": "rc1s_8",
-     "text": "The call with n two was waiting for that. What does it return?",
-     "start": 44.83,
-     "end": 48.47
-    },
-    {
-     "id": "rc1s_9",
-     "text": "Three. Two, plus the one that came back.",
-     "start": 49.67,
-     "end": 52.01
-    },
-    {
-     "id": "rc1s_10",
-     "text": "Three plus three is six. Four plus six is ten. Every waiting call has finished.",
-     "start": 52.76,
-     "end": 58.13
-    },
-    {
-     "id": "rc1s_11",
-     "text": "One call for each number from n down to zero. O of n time.",
-     "start": 59.23,
-     "end": 63.32
-    },
-    {
-     "id": "rc1s_12",
-     "text": "And all of them wait on the call stack at the same moment. O of n space.",
-     "start": 64.07,
-     "end": 68.5
-    },
-    {
-     "id": "rc1s_13",
-     "text": "The size of a folder is worked out like this. Its own files, plus the size of every folder inside it.",
-     "start": 69.25,
-     "end": 75.97
-    }
-   ],
-   "pauses": [
-    {
-     "id": "rc1s-q",
-     "t": 48.67
-    }
-   ]
-  },
-  "rc2i": {
-   "src": "videos/rc2i.mp4",
-   "title": "Powers in a Hurry",
-   "duration": 21.44,
-   "lines": [
-    {
-     "id": "rc2i_1",
-     "text": "Two, times two, times two, times two, times two. Five twos.",
-     "start": 0.2,
-     "end": 4.38
-    },
-    {
-     "id": "rc2i_2",
-     "text": "Return base to the power exp. And it must stay fast when exp is in the billions.",
-     "start": 5.08,
-     "end": 10.01
-    },
-    {
-     "id": "rc2i_3",
-     "text": "Multiplying one at a time takes exp steps.",
-     "start": 10.71,
-     "end": 13.45
-    },
-    {
-     "id": "rc2i_4",
-     "text": "But if you knew two to the power two, how quickly could you reach the power four? Your turn.",
-     "start": 14.15,
-     "end": 19.84
-    }
-   ],
-   "pauses": []
-  },
-  "rc2s": {
-   "src": "videos/rc2s.mp4",
-   "title": "Half the exponent, then square",
-   "duration": 78.2,
-   "lines": [
-    {
-     "id": "rc2s_1",
-     "text": "Two to the power four is two squared, times two squared. So work out half the exponent once, and multiply it by itself.",
-     "start": 0.2,
-     "end": 8.12
-    },
-    {
-     "id": "rc2s_2",
-     "text": "An odd exponent leaves one extra base. Multiply it in at the end.",
-     "start": 8.87,
-     "end": 13.33
-    },
-    {
-     "id": "rc2s_3",
-     "text": "Power of two to the five. Line three asks for half the exponent. Five divided by two, rounded down. Two.",
-     "start": 14.08,
-     "end": 21.25
-    },
-    {
-     "id": "rc2s_4",
-     "text": "That call asks for half of two. One. And that one asks for half of one, which rounds down to zero.",
-     "start": 22,
-     "end": 28.46
-    },
-    {
-     "id": "rc2s_5",
-     "text": "Exponent zero. The base case. It returns one.",
-     "start": 29.21,
-     "end": 32.36
-    },
-    {
-     "id": "rc2s_6",
-     "text": "Back in the call with exponent one. Half is one. One is odd, so line five multiplies in a base. One times one times two. Two.",
-     "start": 33.11,
-     "end": 41.96
-    },
-    {
-     "id": "rc2s_7",
-     "text": "Back in the call with exponent two. Half is two, and two is even. What does line four return?",
-     "start": 42.71,
-     "end": 48.86
-    },
-    {
-     "id": "rc2s_8",
-     "text": "Four. Half times half.",
-     "start": 50.06,
-     "end": 51.38
-    },
-    {
-     "id": "rc2s_9",
-     "text": "And the first call. Half is four. Five is odd. Four times four times two. Thirty two.",
-     "start": 52.13,
-     "end": 58.27
-    },
-    {
-     "id": "rc2s_10",
-     "text": "The exponent halves at every call. So even two billion needs only about thirty calls. O of log n.",
-     "start": 59.37,
-     "end": 66.3
-    },
-    {
-     "id": "rc2s_11",
-     "text": "Those calls wait on the stack. O of log n space.",
-     "start": 67.05,
-     "end": 70.48
-    },
-    {
-     "id": "rc2s_12",
-     "text": "Fast powers like this are used every time your browser sets up a secure connection.",
-     "start": 71.23,
-     "end": 76.6
-    }
-   ],
-   "pauses": [
-    {
-     "id": "rc2s-q",
-     "t": 49.06
-    }
-   ]
-  },
-  "rc3i": {
-   "src": "videos/rc3i.mp4",
-   "title": "The Mirror, Again",
-   "duration": 18.25,
-   "lines": [
-    {
-     "id": "rc3i_1",
-     "text": "You have checked a mirror word before, with two markers and a loop.",
-     "start": 0.2,
-     "end": 3.89
-    },
-    {
-     "id": "rc3i_2",
-     "text": "Do it again. Return true for a mirror word. But this time, no loop.",
-     "start": 4.59,
-     "end": 8.85
-    },
-    {
-     "id": "rc3i_3",
-     "text": "If the two ends match, what is left is a smaller word.",
-     "start": 9.55,
-     "end": 12.99
-    },
-    {
-     "id": "rc3i_4",
-     "text": "What do you ask about that smaller word? Your turn.",
-     "start": 13.69,
-     "end": 16.65
-    }
-   ],
-   "pauses": []
-  },
-  "rc3s": {
-   "src": "videos/rc3s.mp4",
-   "title": "Match the ends, ask the inside",
-   "duration": 64.41,
-   "lines": [
-    {
-     "id": "rc3s_1",
-     "text": "A word is a mirror if its two ends match, and the part between them is a mirror too.",
-     "start": 0.2,
-     "end": 5.31
-    },
-    {
-     "id": "rc3s_2",
-     "text": "The part between them is a smaller copy of the same question. That is the recursive step.",
-     "start": 6.06,
-     "end": 11.68
-    },
-    {
-     "id": "rc3s_3",
-     "text": "The first call. Line one fills in left and right by itself. Zero, and four.",
-     "start": 12.43,
-     "end": 17.79
-    },
-    {
-     "id": "rc3s_4",
-     "text": "Line three compares the ends. L and L. They match. So line four asks about the inside.",
-     "start": 18.54,
-     "end": 24.25
-    },
-    {
-     "id": "rc3s_5",
-     "text": "A new call, with left one and right three. E and E match. Ask about the inside again.",
-     "start": 25,
-     "end": 30.47
-    },
-    {
-     "id": "rc3s_6",
-     "text": "Now left is two, and right is two. Which line answers?",
-     "start": 31.22,
-     "end": 34.73
-    },
-    {
-     "id": "rc3s_7",
-     "text": "Line two. Left has reached right. Nothing is left to compare. True.",
-     "start": 35.93,
-     "end": 40
-    },
-    {
-     "id": "rc3s_8",
-     "text": "That true travels straight back up. Each waiting call returns what it was given.",
-     "start": 40.75,
-     "end": 45.59
-    },
-    {
-     "id": "rc3s_9",
-     "text": "One call for every pair of letters. O of n time.",
-     "start": 46.69,
-     "end": 49.93
-    },
-    {
-     "id": "rc3s_10",
-     "text": "Those calls wait on the stack. O of n space. The loop version needed only O of one.",
-     "start": 50.68,
-     "end": 56.2
-    },
-    {
-     "id": "rc3s_11",
-     "text": "Checking the outside, then asking about the inside, is how a program checks nested data.",
-     "start": 56.95,
-     "end": 62.81
-    }
-   ],
-   "pauses": [
-    {
-     "id": "rc3s-q",
-     "t": 34.93
-    }
-   ]
-  },
-  "rc4i": {
-   "src": "videos/rc4i.mp4",
-   "title": "Up the Stairs",
-   "duration": 17.28,
-   "lines": [
-    {
-     "id": "rc4i_1",
-     "text": "Pip hops up a staircase. One step at a time, or two.",
-     "start": 0.2,
-     "end": 3.67
-    },
-    {
-     "id": "rc4i_2",
-     "text": "Return the number of different ways to reach step n.",
-     "start": 4.37,
-     "end": 7.03
-    },
-    {
-     "id": "rc4i_3",
-     "text": "Think about the very last hop onto the top step. It was a one, or a two.",
-     "start": 7.73,
-     "end": 12.06
-    },
-    {
-     "id": "rc4i_4",
-     "text": "So where could Pip have been, just before? Your turn.",
-     "start": 12.76,
-     "end": 15.68
-    }
-   ],
-   "pauses": []
-  },
-  "rc4s": {
-   "src": "videos/rc4s.mp4",
-   "title": "The last hop was 1 or 2",
-   "duration": 87.12,
-   "lines": [
-    {
-     "id": "rc4s_1",
-     "text": "The last hop onto step n was one step, or two. So the ways to reach n are the ways to reach n minus one, plus the ways to reach n minus two.",
-     "start": 0.2,
-     "end": 9.64
-    },
-    {
-     "id": "rc4s_2",
-     "text": "But the same small staircase gets asked about again and again. So write each answer down the first time. That note is a memo.",
-     "start": 10.39,
-     "end": 18.51
-    },
-    {
-     "id": "rc4s_3",
-     "text": "Stairs of four. Not a base case, and not in the memo. So line four asks for stairs of three, and stairs of two.",
-     "start": 19.26,
-     "end": 26.48
-    },
-    {
-     "id": "rc4s_4",
-     "text": "Stairs of three asks the same kind of question. Stairs of two, plus stairs of one.",
-     "start": 27.23,
-     "end": 32.63
-    },
-    {
-     "id": "rc4s_5",
-     "text": "Stairs of two. Stairs of one, plus stairs of zero. Both are base cases, one each. So two ways.",
-     "start": 33.38,
-     "end": 40.44
-    },
-    {
-     "id": "rc4s_6",
-     "text": "Line five writes that answer into the memo, before returning it.",
-     "start": 41.19,
-     "end": 45.12
-    },
-    {
-     "id": "rc4s_7",
-     "text": "Back in stairs of three. Two, plus stairs of one, which is one. Three. Into the memo.",
-     "start": 45.87,
-     "end": 51.94
-    },
-    {
-     "id": "rc4s_8",
-     "text": "Back in stairs of four. It still needs stairs of two. Does it work that out again?",
-     "start": 52.69,
-     "end": 57.69
-    },
-    {
-     "id": "rc4s_9",
-     "text": "No. Line three finds it in the memo. Two. No further calls at all.",
-     "start": 58.89,
-     "end": 63.14
-    },
-    {
-     "id": "rc4s_10",
-     "text": "Three plus two. Five ways.",
-     "start": 63.89,
-     "end": 65.98
-    },
-    {
-     "id": "rc4s_11",
-     "text": "With the memo, each n is worked out once. O of n time. Without it, the calls roughly double at every level.",
-     "start": 67.08,
-     "end": 74.14
-    },
-    {
-     "id": "rc4s_12",
-     "text": "The memo and the call stack each hold up to n entries. O of n space.",
-     "start": 74.89,
-     "end": 79.4
-    },
-    {
-     "id": "rc4s_13",
-     "text": "Counting ways with a memo is how an app counts the possible routes across a city grid.",
-     "start": 80.15,
-     "end": 85.52
-    }
-   ],
-   "pauses": [
-    {
-     "id": "rc4s-q",
-     "t": 57.89
     }
    ]
   },
@@ -16887,882 +7467,6 @@ window.BURROW = {
     }
    ]
   },
-  "mz1i": {
-   "src": "videos/mz1i.mp4",
-   "title": "The Sum Tree",
-   "duration": 17.94,
-   "lines": [
-    {
-     "id": "mz1i_1",
-     "text": "A sum, written as a tree. The numbers are on the leaves. The signs are above them.",
-     "start": 0.2,
-     "end": 5.32
-    },
-    {
-     "id": "mz1i_2",
-     "text": "Return the value of the whole tree.",
-     "start": 6.02,
-     "end": 7.86
-    },
-    {
-     "id": "mz1i_3",
-     "text": "The plus at the top cannot be worked out yet. It needs to know what its left side is worth.",
-     "start": 8.56,
-     "end": 13.65
-    },
-    {
-     "id": "mz1i_4",
-     "text": "And who can tell it that? Your turn.",
-     "start": 14.35,
-     "end": 16.34
-    }
-   ],
-   "pauses": []
-  },
-  "mz1s": {
-   "src": "videos/mz1s.mp4",
-   "title": "Each side first, then the sign",
-   "duration": 64.35,
-   "lines": [
-    {
-     "id": "mz1s_1",
-     "text": "An operator needs the value of its two sides. And each side is a smaller tree of the same kind.",
-     "start": 0.2,
-     "end": 6.32
-    },
-    {
-     "id": "mz1s_2",
-     "text": "So ask the same function for each side, then apply the sign. A leaf is simply its number.",
-     "start": 7.07,
-     "end": 12.93
-    },
-    {
-     "id": "mz1s_3",
-     "text": "The first call stands on the plus. Not a number. So line three asks for the value of the left side.",
-     "start": 13.68,
-     "end": 19.62
-    },
-    {
-     "id": "mz1s_4",
-     "text": "The times node. Not a number either. It asks its own left side. The two is a leaf. Line two returns two.",
-     "start": 20.37,
-     "end": 27.57
-    },
-    {
-     "id": "mz1s_5",
-     "text": "Its right side. Three. A leaf. Back on the times node, left is two, and right is three. What does it return?",
-     "start": 28.32,
-     "end": 35.25
-    },
-    {
-     "id": "mz1s_6",
-     "text": "Six. This whole side is worth six.",
-     "start": 36.45,
-     "end": 38.61
-    },
-    {
-     "id": "mz1s_7",
-     "text": "Back on the plus. Now the right side. Four. A leaf.",
-     "start": 39.36,
-     "end": 42.55
-    },
-    {
-     "id": "mz1s_8",
-     "text": "Left is six. Right is four. The sign is plus. Ten.",
-     "start": 43.3,
-     "end": 46.58
-    },
-    {
-     "id": "mz1s_9",
-     "text": "Every node is visited once. O of n time.",
-     "start": 47.68,
-     "end": 50.68
-    },
-    {
-     "id": "mz1s_10",
-     "text": "The waiting calls are as deep as the tree is tall. O of height space.",
-     "start": 51.43,
-     "end": 55.62
-    },
-    {
-     "id": "mz1s_11",
-     "text": "A spreadsheet works out a formula this way. Every formula is a small tree of numbers and signs.",
-     "start": 56.37,
-     "end": 62.75
-    }
-   ],
-   "pauses": [
-    {
-     "id": "mz1s-q",
-     "t": 35.45
-    }
-   ]
-  },
-  "mz2i": {
-   "src": "videos/mz2i.mp4",
-   "title": "The Nearest Way Out",
-   "duration": 20.97,
-   "lines": [
-    {
-     "id": "mz2i_1",
-     "text": "Moss wants the nearest way out of the tree. The closest leaf to the root.",
-     "start": 0.2,
-     "end": 4.47
-    },
-    {
-     "id": "mz2i_2",
-     "text": "Return the number of nodes on the shortest path from the root to a leaf.",
-     "start": 5.17,
-     "end": 9.11
-    },
-    {
-     "id": "mz2i_3",
-     "text": "Going deep would find the leaves at the bottom left first. They are not the nearest.",
-     "start": 9.81,
-     "end": 14.66
-    },
-    {
-     "id": "mz2i_4",
-     "text": "Which way of walking a tree meets the nearest things first? Your turn.",
-     "start": 15.36,
-     "end": 19.37
-    }
-   ],
-   "pauses": []
-  },
-  "mz2s": {
-   "src": "videos/mz2s.mp4",
-   "title": "The first leaf, level by level",
-   "duration": 56.29,
-   "lines": [
-    {
-     "id": "mz2s_1",
-     "text": "The nearest leaf. Nearest is the signal for going level by level.",
-     "start": 0.2,
-     "end": 4.55
-    },
-    {
-     "id": "mz2s_2",
-     "text": "Level by level meets the shallow nodes first. So the first leaf it meets is the answer.",
-     "start": 5.3,
-     "end": 10.65
-    },
-    {
-     "id": "mz2s_3",
-     "text": "The queue starts with the root. Depth is one.",
-     "start": 11.4,
-     "end": 14
-    },
-    {
-     "id": "mz2s_4",
-     "text": "Five has children, so it is not a leaf. Lines nine and ten line up three and eight for the next level.",
-     "start": 14.75,
-     "end": 21.42
-    },
-    {
-     "id": "mz2s_5",
-     "text": "Line twelve moves to that level. Depth is two. First the three. It has children. They are lined up.",
-     "start": 22.17,
-     "end": 28.66
-    },
-    {
-     "id": "mz2s_6",
-     "text": "Then the eight. It has no left child, and no right child. What does line eight do?",
-     "start": 29.41,
-     "end": 34.39
-    },
-    {
-     "id": "mz2s_7",
-     "text": "It returns the depth. Two. The one and the four were lined up, but never visited.",
-     "start": 35.59,
-     "end": 40.74
-    },
-    {
-     "id": "mz2s_8",
-     "text": "At worst every node. But it stops at the first leaf, which can be much sooner.",
-     "start": 41.84,
-     "end": 46.73
-    },
-    {
-     "id": "mz2s_9",
-     "text": "The queue holds one level at a time.",
-     "start": 47.48,
-     "end": 49.51
-    },
-    {
-     "id": "mz2s_10",
-     "text": "A game finds the nearest exit from where you stand by searching level by level.",
-     "start": 50.26,
-     "end": 54.69
-    }
-   ],
-   "pauses": [
-    {
-     "id": "mz2s-q",
-     "t": 34.59
-    }
-   ]
-  },
-  "mz3i": {
-   "src": "videos/mz3i.mp4",
-   "title": "Only the Middle Ones",
-   "duration": 22.92,
-   "lines": [
-    {
-     "id": "mz3i_1",
-     "text": "This tree keeps the rule. Smaller on the left, bigger on the right.",
-     "start": 0.2,
-     "end": 3.96
-    },
-    {
-     "id": "mz3i_2",
-     "text": "Return the sum of every value from low to high. Here, from five to ten.",
-     "start": 4.66,
-     "end": 9.27
-    },
-    {
-     "id": "mz3i_3",
-     "text": "Adding up the whole tree and filtering would work. But most of the tree cannot matter.",
-     "start": 9.97,
-     "end": 14.82
-    },
-    {
-     "id": "mz3i_4",
-     "text": "Stand on the three. It is too small. So what about everything on its left? Your turn.",
-     "start": 15.52,
-     "end": 21.32
-    }
-   ],
-   "pauses": []
-  },
-  "mz3s": {
-   "src": "videos/mz3s.mp4",
-   "title": "Skip the sides that cannot matter",
-   "duration": 61.85,
-   "lines": [
-    {
-     "id": "mz3s_1",
-     "text": "An ordered tree. So a node that is too small tells you its whole left side is too small as well.",
-     "start": 0.2,
-     "end": 6.25
-    },
-    {
-     "id": "mz3s_2",
-     "text": "Only a node inside the range needs both of its sides.",
-     "start": 7,
-     "end": 10.64
-    },
-    {
-     "id": "mz3s_3",
-     "text": "The range is five to ten. The root is eight. Inside. So it counts, and both sides are searched.",
-     "start": 11.39,
-     "end": 17.4
-    },
-    {
-     "id": "mz3s_4",
-     "text": "Left. Three. It is smaller than five. What does line three do?",
-     "start": 18.15,
-     "end": 21.89
-    },
-    {
-     "id": "mz3s_5",
-     "text": "It skips the three, and its whole left side. Only the right side can hold something big enough.",
-     "start": 23.09,
-     "end": 28.51
-    },
-    {
-     "id": "mz3s_6",
-     "text": "Six. Inside the range. It counts.",
-     "start": 29.26,
-     "end": 31.52
-    },
-    {
-     "id": "mz3s_7",
-     "text": "Now the right side of the root. Ten. Inside. It counts. Its right child, fourteen, is too big, so line four looks only to its left. Nothing there.",
-     "start": 32.27,
-     "end": 42.18
-    },
-    {
-     "id": "mz3s_8",
-     "text": "Back at the root. Eight, plus six, plus ten.",
-     "start": 42.93,
-     "end": 45.76
-    },
-    {
-     "id": "mz3s_9",
-     "text": "The height of the tree, plus the nodes that are inside the range.",
-     "start": 46.86,
-     "end": 50.66
-    },
-    {
-     "id": "mz3s_10",
-     "text": "The waiting calls. O of height space.",
-     "start": 51.41,
-     "end": 53.71
-    },
-    {
-     "id": "mz3s_11",
-     "text": "An ordered index sums the sales between two dates like this, without touching the other months.",
-     "start": 54.46,
-     "end": 60.25
-    }
-   ],
-   "pauses": [
-    {
-     "id": "mz3s-q",
-     "t": 22.09
-    }
-   ]
-  },
-  "mz4i": {
-   "src": "videos/mz4i.mp4",
-   "title": "The Most Popular",
-   "duration": 20.3,
-   "lines": [
-    {
-     "id": "mz4i_1",
-     "text": "Votes are coming in. Pip wants to know the two most popular numbers.",
-     "start": 0.2,
-     "end": 4.56
-    },
-    {
-     "id": "mz4i_2",
-     "text": "Return the k numbers that appear most often. The most frequent one first.",
-     "start": 5.26,
-     "end": 10.04
-    },
-    {
-     "id": "mz4i_3",
-     "text": "This needs two tools, one after the other.",
-     "start": 10.74,
-     "end": 13.42
-    },
-    {
-     "id": "mz4i_4",
-     "text": "First, something about every number. Then, the k biggest of those. Your turn.",
-     "start": 14.12,
-     "end": 18.7
-    }
-   ],
-   "pauses": []
-  },
-  "mz4s": {
-   "src": "videos/mz4s.mp4",
-   "title": "Count, then keep the k biggest",
-   "duration": 63.82,
-   "lines": [
-    {
-     "id": "mz4s_1",
-     "text": "How often does each number appear? That is a counting question. A map.",
-     "start": 0.2,
-     "end": 4.48
-    },
-    {
-     "id": "mz4s_2",
-     "text": "Then, the k pairs with the biggest counts. That is the heap of size k, with the smallest count on top.",
-     "start": 5.23,
-     "end": 11.62
-    },
-    {
-     "id": "mz4s_3",
-     "text": "Lines two and three count. Four appears three times. One, twice. Two, once.",
-     "start": 12.37,
-     "end": 17.52
-    },
-    {
-     "id": "mz4s_4",
-     "text": "Line four makes a heap of pairs, ordered by the count. The pair for four is pushed. Then the pair for one. Two pairs. That is k.",
-     "start": 18.27,
-     "end": 26.28
-    },
-    {
-     "id": "mz4s_5",
-     "text": "The pair for two is pushed. Three pairs. One too many. Which pair does line seven pop?",
-     "start": 27.03,
-     "end": 32.52
-    },
-    {
-     "id": "mz4s_6",
-     "text": "The pair for two. It has the smallest count.",
-     "start": 33.72,
-     "end": 36.27
-    },
-    {
-     "id": "mz4s_7",
-     "text": "Line ten empties the heap. The least frequent comes out first, so each number goes to the front. One. Then four, in front of it.",
-     "start": 37.02,
-     "end": 45.01
-    },
-    {
-     "id": "mz4s_8",
-     "text": "Line eleven returns the answer.",
-     "start": 45.76,
-     "end": 47.85
-    },
-    {
-     "id": "mz4s_9",
-     "text": "One pass to count. Then each different number goes through a heap of size k.",
-     "start": 48.95,
-     "end": 53.46
-    },
-    {
-     "id": "mz4s_10",
-     "text": "The map holds every different number.",
-     "start": 54.21,
-     "end": 56.27
-    },
-    {
-     "id": "mz4s_11",
-     "text": "A trending list is exactly this. Count everything, then keep only the top few.",
-     "start": 57.02,
-     "end": 62.22
-    }
-   ],
-   "pauses": [
-    {
-     "id": "mz4s-q",
-     "t": 32.72
-    }
-   ]
-  },
-  "mz5i": {
-   "src": "videos/mz5i.mp4",
-   "title": "Built Letter by Letter",
-   "duration": 21.23,
-   "lines": [
-    {
-     "id": "mz5i_1",
-     "text": "Hazel builds words one letter at a time. Every step on the way must be a word too.",
-     "start": 0.2,
-     "end": 5.33
-    },
-    {
-     "id": "mz5i_2",
-     "text": "Return the longest word that can be built like that.",
-     "start": 6.03,
-     "end": 9.18
-    },
-    {
-     "id": "mz5i_3",
-     "text": "A, then a p, then a p p. Every beginning is in the list.",
-     "start": 9.88,
-     "end": 13.61
-    },
-    {
-     "id": "mz5i_4",
-     "text": "But what about bat? What would have to be in the list? And how do you check quickly? Your turn.",
-     "start": 14.31,
-     "end": 19.63
-    }
-   ],
-   "pauses": []
-  },
-  "mz5s": {
-   "src": "videos/mz5s.mp4",
-   "title": "Every beginning must be known",
-   "duration": 63.64,
-   "lines": [
-    {
-     "id": "mz5s_1",
-     "text": "For each word, every shorter beginning must be in the list. That is a question of, have I got this?",
-     "start": 0.2,
-     "end": 6.03
-    },
-    {
-     "id": "mz5s_2",
-     "text": "So put the words in a set, and each check is instant. Beginnings made you think of a trie. Here, a set is enough.",
-     "start": 6.78,
-     "end": 13.47
-    },
-    {
-     "id": "mz5s_3",
-     "text": "Line two puts every word in a set. Best starts empty.",
-     "start": 14.22,
-     "end": 17.87
-    },
-    {
-     "id": "mz5s_4",
-     "text": "The word a. It has no shorter beginning, so it can be built. It is longer than nothing. Best is a.",
-     "start": 18.62,
-     "end": 25.03
-    },
-    {
-     "id": "mz5s_5",
-     "text": "A p. Its beginning, a, is in the set. Best is a p. Then a p p. A, and a p, are both there. Best is a p p.",
-     "start": 25.78,
-     "end": 33.34
-    },
-    {
-     "id": "mz5s_6",
-     "text": "The word b. It can be built. But it is shorter than the best. Line nine skips it.",
-     "start": 34.09,
-     "end": 39.18
-    },
-    {
-     "id": "mz5s_7",
-     "text": "Bat. Its beginnings are b, and b a. B is in the set. Is b a?",
-     "start": 39.93,
-     "end": 44.12
-    },
-    {
-     "id": "mz5s_8",
-     "text": "No. So bat cannot be built, and line nine skips it.",
-     "start": 45.32,
-     "end": 48.57
-    },
-    {
-     "id": "mz5s_9",
-     "text": "Line twelve returns the best.",
-     "start": 49.32,
-     "end": 51.18
-    },
-    {
-     "id": "mz5s_10",
-     "text": "Every beginning of every word is looked up once.",
-     "start": 52.28,
-     "end": 55.27
-    },
-    {
-     "id": "mz5s_11",
-     "text": "The set holds every word.",
-     "start": 56.02,
-     "end": 57.58
-    },
-    {
-     "id": "mz5s_12",
-     "text": "A word game checks this when you build a word one tile at a time.",
-     "start": 58.33,
-     "end": 62.04
-    }
-   ],
-   "pauses": [
-    {
-     "id": "mz5s-q",
-     "t": 44.32
-    }
-   ]
-  },
-  "mz6i": {
-   "src": "videos/mz6i.mp4",
-   "title": "Two Nests That Add Up",
-   "duration": 20.68,
-   "lines": [
-    {
-     "id": "mz6i_1",
-     "text": "Pip is looking for two nests whose numbers add up to twelve.",
-     "start": 0.2,
-     "end": 3.8
-    },
-    {
-     "id": "mz6i_2",
-     "text": "Return true if two different nodes add up to the target.",
-     "start": 4.5,
-     "end": 7.75
-    },
-    {
-     "id": "mz6i_3",
-     "text": "You have solved this before. On a row of doors, in the hash map chapter.",
-     "start": 8.45,
-     "end": 12.8
-    },
-    {
-     "id": "mz6i_4",
-     "text": "The numbers now sit in a tree. What stays the same, and what changes? Your turn.",
-     "start": 13.5,
-     "end": 19.08
-    }
-   ],
-   "pauses": []
-  },
-  "mz6s": {
-   "src": "videos/mz6s.mp4",
-   "title": "The partner I need: seen before?",
-   "duration": 56.65,
-   "lines": [
-    {
-     "id": "mz6s_1",
-     "text": "Have I seen the partner I need? That is the hash set question from chapter three.",
-     "start": 0.2,
-     "end": 5.01
-    },
-    {
-     "id": "mz6s_2",
-     "text": "The only new part is the walk. Visit every node, deep first, and ask the question at each one.",
-     "start": 5.76,
-     "end": 11.68
-    },
-    {
-     "id": "mz6s_3",
-     "text": "The target is twelve. The root is five. It needs a seven. Nothing is seen yet. So five is added.",
-     "start": 12.43,
-     "end": 18.79
-    },
-    {
-     "id": "mz6s_4",
-     "text": "Left. Three needs a nine. Not seen. Added.",
-     "start": 19.54,
-     "end": 22.15
-    },
-    {
-     "id": "mz6s_5",
-     "text": "One needs eleven. Four needs eight. Neither is seen. Both are added.",
-     "start": 22.9,
-     "end": 26.91
-    },
-    {
-     "id": "mz6s_6",
-     "text": "The left side found nothing. So the or, on line seven, tries the right side. Eight. It needs a four. What does line five do?",
-     "start": 27.66,
-     "end": 35.58
-    },
-    {
-     "id": "mz6s_7",
-     "text": "Four is in the set. Eight plus four is twelve. True. The nine is never visited.",
-     "start": 36.78,
-     "end": 42.09
-    },
-    {
-     "id": "mz6s_8",
-     "text": "At worst every node once. O of n time.",
-     "start": 43.19,
-     "end": 46.02
-    },
-    {
-     "id": "mz6s_9",
-     "text": "The set can hold every value. O of n space.",
-     "start": 46.77,
-     "end": 49.91
-    },
-    {
-     "id": "mz6s_10",
-     "text": "Do any two items in the basket add up to the voucher? One walk, and a set.",
-     "start": 50.66,
-     "end": 55.05
-    }
-   ],
-   "pauses": [
-    {
-     "id": "mz6s-q",
-     "t": 35.78
-    }
-   ]
-  },
-  "mz7i": {
-   "src": "videos/mz7i.mp4",
-   "title": "A Tree from a Sorted Row",
-   "duration": 22.64,
-   "lines": [
-    {
-     "id": "mz7i_1",
-     "text": "A sorted row of numbers. Hazel wants them in a search tree. A short, bushy one.",
-     "start": 0.2,
-     "end": 5.59
-    },
-    {
-     "id": "mz7i_2",
-     "text": "Build the shortest possible search tree, and return its root.",
-     "start": 6.29,
-     "end": 9.98
-    },
-    {
-     "id": "mz7i_3",
-     "text": "Whatever goes on top splits the rest in two. The smaller values to its left, the bigger to its right.",
-     "start": 10.68,
-     "end": 16.88
-    },
-    {
-     "id": "mz7i_4",
-     "text": "So which value should go on top? And then what? Your turn.",
-     "start": 17.58,
-     "end": 21.04
-    }
-   ],
-   "pauses": []
-  },
-  "mz7s": {
-   "src": "videos/mz7s.mp4",
-   "title": "The middle goes on top",
-   "duration": 79.32,
-   "lines": [
-    {
-     "id": "mz7s_1",
-     "text": "The root splits the rest in two. To keep the tree short, the two sides should be the same size. So the root is the middle value.",
-     "start": 0.2,
-     "end": 8.07
-    },
-    {
-     "id": "mz7s_2",
-     "text": "Each side is then a smaller sorted stretch. The same problem. So the function calls itself on each.",
-     "start": 8.82,
-     "end": 15.25
-    },
-    {
-     "id": "mz7s_3",
-     "text": "The first call covers the whole row. Low is zero, high is four. The middle is position two. Six becomes the root.",
-     "start": 16,
-     "end": 23.33
-    },
-    {
-     "id": "mz7s_4",
-     "text": "Line five builds its left side from the stretch before the middle. Positions zero to one. The middle is position zero. One becomes the left child of six.",
-     "start": 24.08,
-     "end": 34.1
-    },
-    {
-     "id": "mz7s_5",
-     "text": "Left of the one, there is nothing. Low is above high. Line two returns null. To its right is the three.",
-     "start": 34.85,
-     "end": 41.4
-    },
-    {
-     "id": "mz7s_6",
-     "text": "Back at the root. Line six builds the right side, from positions three to four. Which position is the middle?",
-     "start": 42.15,
-     "end": 49.04
-    },
-    {
-     "id": "mz7s_7",
-     "text": "Three. So eight is the right child of six. And ten, to its right, becomes the right child of eight.",
-     "start": 50.24,
-     "end": 56.06
-    },
-    {
-     "id": "mz7s_8",
-     "text": "Line seven returns the root. Six on top. Three levels for five values.",
-     "start": 56.81,
-     "end": 62.08
-    },
-    {
-     "id": "mz7s_9",
-     "text": "One node is made per value. O of n time.",
-     "start": 63.18,
-     "end": 65.97
-    },
-    {
-     "id": "mz7s_10",
-     "text": "The waiting calls are log n deep, because every call halves its stretch.",
-     "start": 66.72,
-     "end": 71.19
-    },
-    {
-     "id": "mz7s_11",
-     "text": "A database builds a fresh index from sorted data this way, so that it starts out balanced.",
-     "start": 71.94,
-     "end": 77.72
-    }
-   ],
-   "pauses": [
-    {
-     "id": "mz7s-q",
-     "t": 49.24
-    }
-   ]
-  },
-  "mz8i": {
-   "src": "videos/mz8i.mp4",
-   "title": "The Last Stone",
-   "duration": 20.42,
-   "lines": [
-    {
-     "id": "mz8i_1",
-     "text": "Moss smashes stones together. Always the two heaviest.",
-     "start": 0.2,
-     "end": 3.74
-    },
-    {
-     "id": "mz8i_2",
-     "text": "Return the weight of the last stone left, or zero if there is none.",
-     "start": 4.44,
-     "end": 8.37
-    },
-    {
-     "id": "mz8i_3",
-     "text": "After each smash, a smaller stone may come back into the pile.",
-     "start": 9.07,
-     "end": 12.93
-    },
-    {
-     "id": "mz8i_4",
-     "text": "So the two heaviest keep changing. What hands them to you each time? Your turn.",
-     "start": 13.63,
-     "end": 18.82
-    }
-   ],
-   "pauses": []
-  },
-  "mz8s": {
-   "src": "videos/mz8s.mp4",
-   "title": "The two heaviest, each time",
-   "duration": 55.95,
-   "lines": [
-    {
-     "id": "mz8s_1",
-     "text": "The two heaviest, again and again, while new stones come back. That is the signal for a heap.",
-     "start": 0.2,
-     "end": 5.7
-    },
-    {
-     "id": "mz8s_2",
-     "text": "This time the biggest must be on top. So the comparison is turned around. b minus a.",
-     "start": 6.45,
-     "end": 12.29
-    },
-    {
-     "id": "mz8s_3",
-     "text": "Line three pushes every stone. Seven is on top.",
-     "start": 13.04,
-     "end": 16.45
-    },
-    {
-     "id": "mz8s_4",
-     "text": "Lines five and six pop the two heaviest. Seven and four. They differ. So line seven pushes the difference. Three.",
-     "start": 17.2,
-     "end": 24.59
-    },
-    {
-     "id": "mz8s_5",
-     "text": "Again. The two heaviest are three, and three. What does line seven do?",
-     "start": 25.34,
-     "end": 29.58
-    },
-    {
-     "id": "mz8s_6",
-     "text": "Nothing. Equal stones destroy each other. Only the one is left.",
-     "start": 30.78,
-     "end": 34.64
-    },
-    {
-     "id": "mz8s_7",
-     "text": "One stone left. The loop ends, and line nine returns it.",
-     "start": 35.39,
-     "end": 39.21
-    },
-    {
-     "id": "mz8s_8",
-     "text": "Every smash removes at least one stone, and costs a few heap operations. O of n log n.",
-     "start": 40.31,
-     "end": 46.64
-    },
-    {
-     "id": "mz8s_9",
-     "text": "The heap. O of n space.",
-     "start": 47.39,
-     "end": 49.03
-    },
-    {
-     "id": "mz8s_10",
-     "text": "A tournament where the two strongest always play next is run with a max heap.",
-     "start": 49.78,
-     "end": 54.35
-    }
-   ],
-   "pauses": [
-    {
-     "id": "mz8s-q",
-     "t": 29.78
-    }
-   ]
-  },
   "to0": {
    "src": "videos/to0.mp4",
    "title": "Some Things Must Come First",
@@ -17871,783 +7575,6 @@ window.BURROW = {
     {
      "id": "tot1-q1",
      "t": 36.52
-    }
-   ]
-  },
-  "gr1i": {
-   "src": "videos/gr1i.mp4",
-   "title": "Count the Islands",
-   "duration": 23.97,
-   "lines": [
-    {
-     "id": "gr1i_1",
-     "text": "Pip looks down at the sea. Ones are land. Zeros are water.",
-     "start": 0.2,
-     "end": 4.09
-    },
-    {
-     "id": "gr1i_2",
-     "text": "Return the number of islands. Land that touches side to side is one island.",
-     "start": 4.79,
-     "end": 9.48
-    },
-    {
-     "id": "gr1i_3",
-     "text": "Scan the squares one by one, and you will meet the same island many times.",
-     "start": 10.18,
-     "end": 15.02
-    },
-    {
-     "id": "gr1i_4",
-     "text": "So when you find a piece of land, what could you do, so that you never count that island again? Your turn.",
-     "start": 15.72,
-     "end": 22.37
-    }
-   ],
-   "pauses": []
-  },
-  "gr1s": {
-   "src": "videos/gr1s.mp4",
-   "title": "Find land, sink the island",
-   "duration": 73.79,
-   "lines": [
-    {
-     "id": "gr1s_1",
-     "text": "Scan every square. The first time you touch an island, count it.",
-     "start": 0.2,
-     "end": 4.09
-    },
-    {
-     "id": "gr1s_2",
-     "text": "Then sink the whole island, so no other square of it can be counted. Deep first, through the four neighbours.",
-     "start": 4.84,
-     "end": 11.31
-    },
-    {
-     "id": "gr1s_3",
-     "text": "The scan starts at the top left. It is land. Line twelve counts one island, and calls sink.",
-     "start": 12.06,
-     "end": 17.83
-    },
-    {
-     "id": "gr1s_4",
-     "text": "Sink turns this square into water, and calls itself on the four neighbours. The land to the right, and the land below, are sunk the same way.",
-     "start": 18.58,
-     "end": 26.76
-    },
-    {
-     "id": "gr1s_5",
-     "text": "For water, or a square outside the grid, lines three and four return at once. That is what stops the walk.",
-     "start": 27.51,
-     "end": 34.2
-    },
-    {
-     "id": "gr1s_6",
-     "text": "The scan goes on. Every square it meets is water now, until this one. Land. What happens to count?",
-     "start": 34.95,
-     "end": 41.82
-    },
-    {
-     "id": "gr1s_7",
-     "text": "Two. A second island. Sink removes it. This square, the one below it, and the one beside that.",
-     "start": 43.02,
-     "end": 48.95
-    },
-    {
-     "id": "gr1s_8",
-     "text": "The scan finishes. No land is left. Line fifteen returns two.",
-     "start": 49.7,
-     "end": 54.3
-    },
-    {
-     "id": "gr1s_9",
-     "text": "Every square is looked at by the scan, and sunk at most once. O of rows times columns.",
-     "start": 55.4,
-     "end": 61.27
-    },
-    {
-     "id": "gr1s_10",
-     "text": "The waiting calls can be as deep as one whole island.",
-     "start": 62.02,
-     "end": 64.89
-    },
-    {
-     "id": "gr1s_11",
-     "text": "A photo app finds the separate objects in a picture this way. Each blob of touching pixels is one island.",
-     "start": 65.64,
-     "end": 72.19
-    }
-   ],
-   "pauses": [
-    {
-     "id": "gr1s-q",
-     "t": 42.02
-    }
-   ]
-  },
-  "gr2i": {
-   "src": "videos/gr2i.mp4",
-   "title": "The Paint Bucket",
-   "duration": 20.7,
-   "lines": [
-    {
-     "id": "gr2i_1",
-     "text": "Hazel clicks the paint bucket on the top left square.",
-     "start": 0.2,
-     "end": 3.1
-    },
-    {
-     "id": "gr2i_2",
-     "text": "Give the new colour to that square, and to every connected square of the same old colour.",
-     "start": 3.79,
-     "end": 9.07
-    },
-    {
-     "id": "gr2i_3",
-     "text": "The one at the bottom has the same colour too. But it does not touch the others.",
-     "start": 9.77,
-     "end": 14.46
-    },
-    {
-     "id": "gr2i_4",
-     "text": "You sank an island a moment ago. What is different here? Your turn.",
-     "start": 15.16,
-     "end": 19.1
-    }
-   ],
-   "pauses": []
-  },
-  "gr2s": {
-   "src": "videos/gr2s.mp4",
-   "title": "Spread while the colour matches",
-   "duration": 65.35,
-   "lines": [
-    {
-     "id": "gr2s_1",
-     "text": "This is sinking an island again. The island is every connected square of the old colour.",
-     "start": 0.2,
-     "end": 5.58
-    },
-    {
-     "id": "gr2s_2",
-     "text": "Painting a square also marks it as done. It no longer has the old colour, so it is never visited twice.",
-     "start": 6.33,
-     "end": 13.22
-    },
-    {
-     "id": "gr2s_3",
-     "text": "Line two remembers the old colour of the starting square. One.",
-     "start": 13.97,
-     "end": 17.87
-    },
-    {
-     "id": "gr2s_4",
-     "text": "Line seven paints it nine. Then the four neighbours. Below is a one. It is painted too.",
-     "start": 18.62,
-     "end": 24.25
-    },
-    {
-     "id": "gr2s_5",
-     "text": "From there, below again. This square holds a three. What does line six do?",
-     "start": 25,
-     "end": 29.68
-    },
-    {
-     "id": "gr2s_6",
-     "text": "It returns. A different colour is a wall for the paint.",
-     "start": 30.88,
-     "end": 34.29
-    },
-    {
-     "id": "gr2s_7",
-     "text": "Back at the start, and to the right. A one. Painted. Its own neighbours are twos, or already nine.",
-     "start": 35.04,
-     "end": 41.02
-    },
-    {
-     "id": "gr2s_8",
-     "text": "The one at the bottom was never reached. It does not touch the others. Line twelve returns the grid.",
-     "start": 41.77,
-     "end": 47.76
-    },
-    {
-     "id": "gr2s_9",
-     "text": "Each square is painted at most once. O of rows times columns.",
-     "start": 48.86,
-     "end": 53.14
-    },
-    {
-     "id": "gr2s_10",
-     "text": "The waiting calls can be as deep as the painted region.",
-     "start": 53.89,
-     "end": 56.94
-    },
-    {
-     "id": "gr2s_11",
-     "text": "This is the paint bucket in every drawing program. Click, and the colour spreads to everything connected.",
-     "start": 57.69,
-     "end": 63.75
-    }
-   ],
-   "pauses": [
-    {
-     "id": "gr2s-q",
-     "t": 29.88
-    }
-   ]
-  },
-  "gr3i": {
-   "src": "videos/gr3i.mp4",
-   "title": "Out of the Maze",
-   "duration": 20.63,
-   "lines": [
-    {
-     "id": "gr3i_1",
-     "text": "Pip is in the top left corner of a maze. The way out is the bottom right.",
-     "start": 0.2,
-     "end": 4.66
-    },
-    {
-     "id": "gr3i_2",
-     "text": "Return the fewest steps to get there, or minus one if there is no way.",
-     "start": 5.36,
-     "end": 9.64
-    },
-    {
-     "id": "gr3i_3",
-     "text": "Going deep first would find some way out. Not always the shortest.",
-     "start": 10.34,
-     "end": 14.34
-    },
-    {
-     "id": "gr3i_4",
-     "text": "Which way of exploring reaches the nearest squares first? Your turn.",
-     "start": 15.04,
-     "end": 19.03
-    }
-   ],
-   "pauses": []
-  },
-  "gr3s": {
-   "src": "videos/gr3s.mp4",
-   "title": "Level by level counts the steps",
-   "duration": 70.93,
-   "lines": [
-    {
-     "id": "gr3s_1",
-     "text": "The fewest steps. That is the signal for going level by level.",
-     "start": 0.2,
-     "end": 4.09
-    },
-    {
-     "id": "gr3s_2",
-     "text": "Level zero is the start. Level one is every square one step away. The level that holds the goal is the answer.",
-     "start": 4.84,
-     "end": 12.41
-    },
-    {
-     "id": "gr3s_3",
-     "text": "Line four. The first level holds only the start. Line five marks it, so it is never added again. Steps is zero.",
-     "start": 13.16,
-     "end": 20.91
-    },
-    {
-     "id": "gr3s_4",
-     "text": "Lines eleven to fifteen look at its four neighbours. Below is a wall. To the right is open. It is marked, and goes into next.",
-     "start": 21.66,
-     "end": 29.78
-    },
-    {
-     "id": "gr3s_5",
-     "text": "That square has one open neighbour, below it. That is level two.",
-     "start": 30.53,
-     "end": 34.49
-    },
-    {
-     "id": "gr3s_6",
-     "text": "Now from that square. Left is a wall. Below is a wall. Above is already marked. Which squares make level three?",
-     "start": 35.24,
-     "end": 42.6
-    },
-    {
-     "id": "gr3s_7",
-     "text": "Only the square on its right. Level three.",
-     "start": 43.8,
-     "end": 46.39
-    },
-    {
-     "id": "gr3s_8",
-     "text": "Its open neighbour is the corner below. Level four. And when that square is taken out, line ten sees the goal, and returns steps.",
-     "start": 47.14,
-     "end": 55.46
-    },
-    {
-     "id": "gr3s_9",
-     "text": "Every square enters a level at most once. O of rows times columns.",
-     "start": 56.56,
-     "end": 61.24
-    },
-    {
-     "id": "gr3s_10",
-     "text": "Two levels are held at a time.",
-     "start": 61.99,
-     "end": 63.78
-    },
-    {
-     "id": "gr3s_11",
-     "text": "A game character finds the shortest way through a map like this, level by level.",
-     "start": 64.53,
-     "end": 69.33
-    }
-   ],
-   "pauses": [
-    {
-     "id": "gr3s-q",
-     "t": 42.8
-    }
-   ]
-  },
-  "gr4i": {
-   "src": "videos/gr4i.mp4",
-   "title": "Can You Get There?",
-   "duration": 23.59,
-   "lines": [
-    {
-     "id": "gr4i_1",
-     "text": "Six burrows, and the tunnels between them. Pip is in burrow three.",
-     "start": 0.2,
-     "end": 4.27
-    },
-    {
-     "id": "gr4i_2",
-     "text": "Return true if there is a way from one burrow to another. Here, from three to two.",
-     "start": 4.97,
-     "end": 9.92
-    },
-    {
-     "id": "gr4i_3",
-     "text": "The tunnels arrive as a list of pairs. That is awkward to walk through.",
-     "start": 10.62,
-     "end": 14.95
-    },
-    {
-     "id": "gr4i_4",
-     "text": "Standing in a burrow, what do you want to know at once? And how do you avoid going in circles? Your turn.",
-     "start": 15.65,
-     "end": 21.99
-    }
-   ],
-   "pauses": []
-  },
-  "gr4s": {
-   "src": "videos/gr4s.mp4",
-   "title": "Neighbour lists, then walk",
-   "duration": 73.37,
-   "lines": [
-    {
-     "id": "gr4s_1",
-     "text": "First, turn the list of pairs into neighbour lists. Then every node knows who is next door.",
-     "start": 0.2,
-     "end": 5.72
-    },
-    {
-     "id": "gr4s_2",
-     "text": "Then walk, deep first, like a tree. With one addition. A set of nodes already seen.",
-     "start": 6.47,
-     "end": 11.79
-    },
-    {
-     "id": "gr4s_3",
-     "text": "Lines two to six build the lists. Each edge is added both ways. Zero is next to one and two. One is next to zero and three.",
-     "start": 12.54,
-     "end": 21.13
-    },
-    {
-     "id": "gr4s_4",
-     "text": "Line fourteen starts on three. Not the target. Not seen. It is marked seen.",
-     "start": 21.88,
-     "end": 26.97
-    },
-    {
-     "id": "gr4s_5",
-     "text": "Its only neighbour is one. Marked seen.",
-     "start": 27.72,
-     "end": 30.02
-    },
-    {
-     "id": "gr4s_6",
-     "text": "One is next to zero, and three. Zero first. Marked seen.",
-     "start": 30.77,
-     "end": 34.58
-    },
-    {
-     "id": "gr4s_7",
-     "text": "Zero is next to one, and two. One first. But one is already seen. What does the call on one return?",
-     "start": 35.33,
-     "end": 42.02
-    },
-    {
-     "id": "gr4s_8",
-     "text": "False, at once. So the walk tries the next neighbour. Two. That is the target. Line nine returns true.",
-     "start": 43.22,
-     "end": 49.71
-    },
-    {
-     "id": "gr4s_9",
-     "text": "Four and five were never reached. From three, there is no way to them.",
-     "start": 50.81,
-     "end": 55.08
-    },
-    {
-     "id": "gr4s_10",
-     "text": "Every node is visited once, and every edge is looked at twice. O of nodes plus edges.",
-     "start": 55.83,
-     "end": 61.81
-    },
-    {
-     "id": "gr4s_11",
-     "text": "The lists, and the seen set. O of nodes plus edges.",
-     "start": 62.56,
-     "end": 66
-    },
-    {
-     "id": "gr4s_12",
-     "text": "Can this computer reach that server? A network tool asks exactly this question.",
-     "start": 66.75,
-     "end": 71.77
-    }
-   ],
-   "pauses": [
-    {
-     "id": "gr4s-q",
-     "t": 42.22
-    }
-   ]
-  },
-  "gr5i": {
-   "src": "videos/gr5i.mp4",
-   "title": "How Many Groups?",
-   "duration": 17.46,
-   "lines": [
-    {
-     "id": "gr5i_1",
-     "text": "Six burrows again. But this time, they are not all joined up.",
-     "start": 0.2,
-     "end": 3.84
-    },
-    {
-     "id": "gr5i_2",
-     "text": "Return the number of separate groups.",
-     "start": 4.54,
-     "end": 6.75
-    },
-    {
-     "id": "gr5i_3",
-     "text": "You counted separate pieces a moment ago. They were made of land.",
-     "start": 7.45,
-     "end": 11.2
-    },
-    {
-     "id": "gr5i_4",
-     "text": "What is the land here? And what does it mean to sink a group? Your turn.",
-     "start": 11.9,
-     "end": 15.86
-    }
-   ],
-   "pauses": []
-  },
-  "gr5s": {
-   "src": "videos/gr5s.mp4",
-   "title": "Islands, on a graph",
-   "duration": 61.81,
-   "lines": [
-    {
-     "id": "gr5s_1",
-     "text": "This is counting islands. A node that is not seen yet is new land.",
-     "start": 0.2,
-     "end": 4.34
-    },
-    {
-     "id": "gr5s_2",
-     "text": "Count it, then walk everything it is joined to, marking it seen. That sinks the whole group.",
-     "start": 5.09,
-     "end": 10.49
-    },
-    {
-     "id": "gr5s_3",
-     "text": "The loop on line fourteen starts at node zero. Not seen. So line fifteen counts one group, and visits it.",
-     "start": 11.24,
-     "end": 18.25
-    },
-    {
-     "id": "gr5s_4",
-     "text": "The visit spreads to its neighbours. One, and two. All three are seen now.",
-     "start": 19,
-     "end": 23.62
-    },
-    {
-     "id": "gr5s_5",
-     "text": "The loop moves on. One is seen. Two is seen. Then three. It is not seen, and it has no edges at all. What happens?",
-     "start": 24.37,
-     "end": 31.76
-    },
-    {
-     "id": "gr5s_6",
-     "text": "It counts. A group of one. Two groups.",
-     "start": 32.96,
-     "end": 35.5
-    },
-    {
-     "id": "gr5s_7",
-     "text": "Four is not seen. Three groups. The visit marks four, and five.",
-     "start": 36.25,
-     "end": 40.31
-    },
-    {
-     "id": "gr5s_8",
-     "text": "Five is seen. The loop ends, and line seventeen returns three.",
-     "start": 41.06,
-     "end": 45.23
-    },
-    {
-     "id": "gr5s_9",
-     "text": "Every node is visited once, every edge looked at twice. O of nodes plus edges.",
-     "start": 46.33,
-     "end": 51.91
-    },
-    {
-     "id": "gr5s_10",
-     "text": "The lists, and the seen set.",
-     "start": 52.66,
-     "end": 54.22
-    },
-    {
-     "id": "gr5s_11",
-     "text": "A social app finds separate circles of friends this way. Each group is one circle.",
-     "start": 54.97,
-     "end": 60.21
-    }
-   ],
-   "pauses": [
-    {
-     "id": "gr5s-q",
-     "t": 31.96
-    }
-   ]
-  },
-  "gr6i": {
-   "src": "videos/gr6i.mp4",
-   "title": "The Fewest Hops",
-   "duration": 17.36,
-   "lines": [
-    {
-     "id": "gr6i_1",
-     "text": "Pip is in burrow zero, and wants to reach burrow five.",
-     "start": 0.2,
-     "end": 3.45
-    },
-    {
-     "id": "gr6i_2",
-     "text": "Return the fewest tunnels Pip has to cross.",
-     "start": 4.15,
-     "end": 6.71
-    },
-    {
-     "id": "gr6i_3",
-     "text": "There is more than one way round. One of them is shorter.",
-     "start": 7.41,
-     "end": 10.6
-    },
-    {
-     "id": "gr6i_4",
-     "text": "You found the fewest steps in a maze. What changes on a graph? Your turn.",
-     "start": 11.3,
-     "end": 15.76
-    }
-   ],
-   "pauses": []
-  },
-  "gr6s": {
-   "src": "videos/gr6s.mp4",
-   "title": "Rings around the start",
-   "duration": 64.41,
-   "lines": [
-    {
-     "id": "gr6s_1",
-     "text": "The fewest hops. Level by level again. Exactly as in the maze.",
-     "start": 0.2,
-     "end": 4.73
-    },
-    {
-     "id": "gr6s_2",
-     "text": "The levels are rings around the start. Everything one hop away. Then two. The ring that holds the target is the answer.",
-     "start": 5.48,
-     "end": 12.99
-    },
-    {
-     "id": "gr6s_3",
-     "text": "The first level holds only the start. Zero. Hops is zero. Five is not in this level.",
-     "start": 13.74,
-     "end": 19.98
-    },
-    {
-     "id": "gr6s_4",
-     "text": "Lines eight to thirteen collect the unseen neighbours of zero. One, and two. That is the next level.",
-     "start": 20.73,
-     "end": 27.26
-    },
-    {
-     "id": "gr6s_5",
-     "text": "Five is not in it. So the next level. One is next to zero, three, and five. Two is next to zero, and four. Which nodes are added?",
-     "start": 28.01,
-     "end": 36.9
-    },
-    {
-     "id": "gr6s_6",
-     "text": "Three, five, and four. Zero is skipped, because it is seen.",
-     "start": 38.1,
-     "end": 41.81
-    },
-    {
-     "id": "gr6s_7",
-     "text": "Back to line six. This level includes five. So it returns hops. Two.",
-     "start": 42.56,
-     "end": 47.24
-    },
-    {
-     "id": "gr6s_8",
-     "text": "Every node enters a level once, every edge is looked at twice. O of nodes plus edges.",
-     "start": 48.34,
-     "end": 54.34
-    },
-    {
-     "id": "gr6s_9",
-     "text": "The seen set, and two levels.",
-     "start": 55.09,
-     "end": 56.9
-    },
-    {
-     "id": "gr6s_10",
-     "text": "How many introductions from you to a stranger? Social apps count the hops like this.",
-     "start": 57.65,
-     "end": 62.81
-    }
-   ],
-   "pauses": [
-    {
-     "id": "gr6s-q",
-     "t": 37.1
-    }
-   ]
-  },
-  "gr7i": {
-   "src": "videos/gr7i.mp4",
-   "title": "Is There a Loop?",
-   "duration": 24.62,
-   "lines": [
-    {
-     "id": "gr7i_1",
-     "text": "Moss is worried about walking in circles. Is there a loop in these tunnels?",
-     "start": 0.2,
-     "end": 4.79
-    },
-    {
-     "id": "gr7i_2",
-     "text": "Return true if you can leave a burrow and come back to it, without using a tunnel twice.",
-     "start": 5.49,
-     "end": 10.72
-    },
-    {
-     "id": "gr7i_3",
-     "text": "Walk deep first, and remember what you have seen. Sooner or later you look at a burrow you have seen before.",
-     "start": 11.42,
-     "end": 17.98
-    },
-    {
-     "id": "gr7i_4",
-     "text": "Is that always a loop? Think about the burrow you just came from. Your turn.",
-     "start": 18.68,
-     "end": 23.02
-    }
-   ],
-   "pauses": []
-  },
-  "gr7s": {
-   "src": "videos/gr7s.mp4",
-   "title": "Seen, and not where I came from",
-   "duration": 71.32,
-   "lines": [
-    {
-     "id": "gr7s_1",
-     "text": "Walk deep first. If a neighbour is already seen, the walk has found a second way to reach it. That is a loop.",
-     "start": 0.2,
-     "end": 7.02
-    },
-    {
-     "id": "gr7s_2",
-     "text": "With one exception. The node you just came from is always seen. So each call remembers it, and skips it.",
-     "start": 7.77,
-     "end": 14.09
-    },
-    {
-     "id": "gr7s_3",
-     "text": "Line seventeen starts on node zero, coming from nowhere. Zero is marked seen. Its only neighbour is one.",
-     "start": 14.84,
-     "end": 21.86
-    },
-    {
-     "id": "gr7s_4",
-     "text": "On one, coming from zero. Its neighbours are zero, two and three. Zero is where it came from. Skipped. Then two.",
-     "start": 22.61,
-     "end": 29.85
-    },
-    {
-     "id": "gr7s_5",
-     "text": "On two, coming from one. One is skipped. Its other neighbour is three.",
-     "start": 30.6,
-     "end": 34.97
-    },
-    {
-     "id": "gr7s_6",
-     "text": "On three, coming from two. Two is skipped. Its other neighbour is one. One is seen, and it is not where we came from. What does line twelve do?",
-     "start": 35.72,
-     "end": 44.94
-    },
-    {
-     "id": "gr7s_7",
-     "text": "It returns true. One, two, three, and back to one. A loop.",
-     "start": 46.14,
-     "end": 49.89
-    },
-    {
-     "id": "gr7s_8",
-     "text": "And true travels straight back up through every waiting call.",
-     "start": 50.99,
-     "end": 54.03
-    },
-    {
-     "id": "gr7s_9",
-     "text": "Every node is visited once, every edge looked at twice. O of nodes plus edges.",
-     "start": 54.78,
-     "end": 60.35
-    },
-    {
-     "id": "gr7s_10",
-     "text": "The lists, the seen set, and the waiting calls.",
-     "start": 61.1,
-     "end": 63.75
-    },
-    {
-     "id": "gr7s_11",
-     "text": "A spreadsheet warns you about a circular reference by finding a loop, just like this.",
-     "start": 64.5,
-     "end": 69.72
-    }
-   ],
-   "pauses": [
-    {
-     "id": "gr7s-q",
-     "t": 45.14
     }
    ]
   },
@@ -20124,6 +9051,14082 @@ window.BURROW = {
     }
    ]
   },
+  "gd0": {
+   "src": "videos/gd0.mp4",
+   "title": "Take the Best, Right Now",
+   "duration": 36.56,
+   "lines": [
+    {
+     "id": "ga1",
+     "text": "Chapter twenty three. Greedy.",
+     "start": 0.2,
+     "end": 2.11
+    },
+    {
+     "id": "ga2",
+     "text": "Backtracking tries every choice, and takes it back. A greedy method never looks back. At each step, it takes what looks best right now.",
+     "start": 2.81,
+     "end": 11.06
+    },
+    {
+     "id": "ga3",
+     "text": "That is fast. One pass. But it is only correct, when the choice that looks best now can never hurt you later.",
+     "start": 11.96,
+     "end": 18.87
+    },
+    {
+     "id": "ga4",
+     "text": "So the real skill is knowing when it is safe. One lesson, and four puzzles.",
+     "start": 19.77,
+     "end": 24.41
+    },
+    {
+     "id": "ga5",
+     "text": "A cashier gives change this way, biggest coin first. A planner picks the meeting that ends first. And a file compressor always joins the two rarest symbols.",
+     "start": 25.31,
+     "end": 34.96
+    }
+   ],
+   "pauses": []
+  },
+  "gdt1": {
+   "src": "videos/gdt1.mp4",
+   "title": "When Is the Greedy Choice Safe?",
+   "duration": 69.46,
+   "lines": [
+    {
+     "id": "gb1",
+     "text": "Pip owes forty one seeds, and wants to pay with as few bags as possible. The bags hold twenty five, ten, five, and one.",
+     "start": 0.2,
+     "end": 8.29
+    },
+    {
+     "id": "gb2",
+     "text": "The greedy idea. Always take the biggest bag that still fits.",
+     "start": 9.19,
+     "end": 13.35
+    },
+    {
+     "id": "gb3",
+     "text": "Twenty five. Sixteen left. Ten. Six left. Five. One left. One. Four bags. And that really is the fewest.",
+     "start": 14.25,
+     "end": 21.64
+    },
+    {
+     "id": "gb4",
+     "text": "Now change the bags. Four, three, and one. And Pip owes six.",
+     "start": 22.64,
+     "end": 26.42
+    },
+    {
+     "id": "gb5",
+     "text": "Greedy takes the four. Then a one. And another one. Three bags. Can you do better?",
+     "start": 27.32,
+     "end": 32.5
+    },
+    {
+     "id": "gb6",
+     "text": "Three, and three. Two bags. Greedy was wrong.",
+     "start": 33.7,
+     "end": 36.43
+    },
+    {
+     "id": "gb7",
+     "text": "So when can you trust it? When the best looking choice can never block a better answer later.",
+     "start": 37.43,
+     "end": 43.1
+    },
+    {
+     "id": "gb8",
+     "text": "Here is a test. Take any answer that does not start with the greedy choice. Can you swap the greedy choice in, without making it worse? If you always can, greedy is safe.",
+     "start": 44,
+     "end": 54.25
+    },
+    {
+     "id": "gb9",
+     "text": "With meetings, the one that ends first leaves the most room for the rest. Swapping it in never hurts. So greedy works there.",
+     "start": 55.25,
+     "end": 62.77
+    },
+    {
+     "id": "gb10",
+     "text": "Greedy. One pass, and no going back. But only when the choice is safe.",
+     "start": 63.67,
+     "end": 67.86
+    }
+   ],
+   "pauses": [
+    {
+     "id": "gdt1-q1",
+     "t": 32.7
+    }
+   ]
+  },
+  "dp0": {
+   "src": "videos/dp0.mp4",
+   "title": "Small Answers First",
+   "duration": 43.48,
+   "lines": [
+    {
+     "id": "da1",
+     "text": "Chapter twenty four. Dynamic programming. The name is strange. The idea is not.",
+     "start": 0.2,
+     "end": 5.56
+    },
+    {
+     "id": "da2",
+     "text": "You have met it already. Counting the ways up the stairs, the same small questions came back again and again. A memo fixed that.",
+     "start": 6.26,
+     "end": 14.34
+    },
+    {
+     "id": "da3",
+     "text": "Dynamic programming turns that around. Answer the small questions first. Write each answer in a table. Then every bigger answer is one look back.",
+     "start": 15.24,
+     "end": 24.57
+    },
+    {
+     "id": "da4",
+     "text": "Two lessons, and eight puzzles. This is the pattern that interviews like the most.",
+     "start": 25.47,
+     "end": 30.63
+    },
+    {
+     "id": "da5",
+     "text": "A spell checker measures how far a typo is from a real word this way. A map adds up the best time to each corner. And a shop works out the best you can buy with what is left.",
+     "start": 31.53,
+     "end": 41.88
+    }
+   ],
+   "pauses": []
+  },
+  "dpt1": {
+   "src": "videos/dpt1.mp4",
+   "title": "From a Memo to a Table",
+   "duration": 57.98,
+   "lines": [
+    {
+     "id": "db1",
+     "text": "Six stairs. One or two steps at a time. How many ways to the top? You solved this with recursion, and a memo.",
+     "start": 0.2,
+     "end": 7.42
+    },
+    {
+     "id": "db2",
+     "text": "The memo was filled in a strange order. From the top call, down, and back up again.",
+     "start": 8.32,
+     "end": 13.19
+    },
+    {
+     "id": "db3",
+     "text": "Fill it in a plain order instead. Start with what you know. One way to stand at the bottom. One way to reach step one.",
+     "start": 14.09,
+     "end": 21.25
+    },
+    {
+     "id": "db4",
+     "text": "Step two. You arrive from step one, or from step zero. One plus one. Two ways.",
+     "start": 22.15,
+     "end": 27.91
+    },
+    {
+     "id": "db5",
+     "text": "Step three. From step two, or from step one. Two plus one. Three.",
+     "start": 28.81,
+     "end": 33.2
+    },
+    {
+     "id": "db6",
+     "text": "Step four. Three plus two. Five. So what goes under step five?",
+     "start": 34.1,
+     "end": 38.08
+    },
+    {
+     "id": "db7",
+     "text": "Eight. Five plus three. And step six. Thirteen.",
+     "start": 39.28,
+     "end": 42.43
+    },
+    {
+     "id": "db8",
+     "text": "No recursion. No waiting calls. One loop, and one row of numbers. Each entry looks back at the two before it.",
+     "start": 43.33,
+     "end": 50.41
+    },
+    {
+     "id": "db9",
+     "text": "That is dynamic programming. Small answers first. Written down. And reused.",
+     "start": 51.31,
+     "end": 56.38
+    }
+   ],
+   "pauses": [
+    {
+     "id": "dpt1-q1",
+     "t": 38.28
+    }
+   ]
+  },
+  "dpt2": {
+   "src": "videos/dpt2.mp4",
+   "title": "The Recipe: Meaning, Choice, Start",
+   "duration": 65.06,
+   "lines": [
+    {
+     "id": "dc1",
+     "text": "Four burrows in a row. Five, one, one, and five seeds. Moss may empty some of them. But never two that are side by side. What is the most Moss can collect?",
+     "start": 0.2,
+     "end": 10.44
+    },
+    {
+     "id": "dc2",
+     "text": "Here is a recipe. Question one. What does one entry of the table mean? Here: the most seeds, using only the burrows up to this one.",
+     "start": 11.34,
+     "end": 20.22
+    },
+    {
+     "id": "dc3",
+     "text": "Question two. The choice. For the last burrow, Moss either skips it, or takes it.",
+     "start": 21.12,
+     "end": 26.23
+    },
+    {
+     "id": "dc4",
+     "text": "Skip it, and the answer is the entry just before. Take it, and the answer is its seeds, plus the entry two before.",
+     "start": 27.13,
+     "end": 34.34
+    },
+    {
+     "id": "dc5",
+     "text": "Question three. The start. With one burrow, take it. Five. With two, take the bigger one. Still five.",
+     "start": 35.23,
+     "end": 41.58
+    },
+    {
+     "id": "dc6",
+     "text": "Burrow two. Skipping keeps five. Taking gives one, plus five. Six.",
+     "start": 42.48,
+     "end": 46.97
+    },
+    {
+     "id": "dc7",
+     "text": "Burrow three. Skipping keeps six. Taking gives five, plus five. So what goes in the table?",
+     "start": 47.87,
+     "end": 53.93
+    },
+    {
+     "id": "dc8",
+     "text": "Ten. The first burrow, and the last.",
+     "start": 55.13,
+     "end": 57.21
+    },
+    {
+     "id": "dc9",
+     "text": "What an entry means. The choice. The start. Get those three right, and the loop writes itself.",
+     "start": 58.11,
+     "end": 63.46
+    }
+   ],
+   "pauses": [
+    {
+     "id": "dpt2-q1",
+     "t": 54.13
+    }
+   ]
+  },
+  "dq0": {
+   "src": "videos/dq0.mp4",
+   "title": "A Table with Two Sides",
+   "duration": 43.03,
+   "lines": [
+    {
+     "id": "ea1",
+     "text": "Chapter twenty five. Dynamic programming, with a table that has two sides.",
+     "start": 0.2,
+     "end": 5.16
+    },
+    {
+     "id": "ea2",
+     "text": "Some answers depend on two things at once. A row, and a column. Or a place in one word, and a place in another.",
+     "start": 5.86,
+     "end": 13.2
+    },
+    {
+     "id": "ea3",
+     "text": "Then the table becomes a grid. And every entry looks at its neighbours. Above. To the left. And sometimes, the diagonal.",
+     "start": 14.1,
+     "end": 22.04
+    },
+    {
+     "id": "ea4",
+     "text": "The recipe does not change. Meaning, choice, start. Two lessons, and seven puzzles.",
+     "start": 22.94,
+     "end": 28.36
+    },
+    {
+     "id": "ea5",
+     "text": "A spell checker counts the changes between your typo and a real word like this. A tool that compares two versions of a file finds the lines they share. And a game counts the routes across a board.",
+     "start": 29.26,
+     "end": 41.43
+    }
+   ],
+   "pauses": []
+  },
+  "dqt1": {
+   "src": "videos/dqt1.mp4",
+   "title": "From Above, and from the Left",
+   "duration": 62.44,
+   "lines": [
+    {
+     "id": "eb1",
+     "text": "Pip stands in the top left corner of a field, and wants to reach the bottom right. Pip may only step right, or down. How many different routes are there?",
+     "start": 0.2,
+     "end": 8.93
+    },
+    {
+     "id": "eb2",
+     "text": "Count them by hand, and you will lose track. So make a table. One entry for every square. The number of routes that reach it.",
+     "start": 9.83,
+     "end": 17.48
+    },
+    {
+     "id": "eb3",
+     "text": "The top row is easy. There is only one way. Straight along. And the left column is the same. Straight down.",
+     "start": 18.38,
+     "end": 25.02
+    },
+    {
+     "id": "eb4",
+     "text": "Now any other square. Pip arrives from above, or from the left. So its routes are the routes from above, plus the routes from the left.",
+     "start": 25.92,
+     "end": 33.77
+    },
+    {
+     "id": "eb5",
+     "text": "One plus one. Two. Then one plus two. Three. Then four.",
+     "start": 34.67,
+     "end": 38.55
+    },
+    {
+     "id": "eb6",
+     "text": "The next row. Three. Then three plus three. Six. So what goes in the last square?",
+     "start": 39.45,
+     "end": 44.64
+    },
+    {
+     "id": "eb7",
+     "text": "Ten. Four from above, and six from the left.",
+     "start": 45.84,
+     "end": 48.34
+    },
+    {
+     "id": "eb8",
+     "text": "It is the same recipe as before. Meaning, choice, start. The table just has two sides now.",
+     "start": 49.24,
+     "end": 55.08
+    },
+    {
+     "id": "eb9",
+     "text": "Fill it row by row. Every entry looks at its neighbours above, and to the left.",
+     "start": 55.98,
+     "end": 60.84
+    }
+   ],
+   "pauses": [
+    {
+     "id": "dqt1-q1",
+     "t": 44.84
+    }
+   ]
+  },
+  "dqt2": {
+   "src": "videos/dqt2.mp4",
+   "title": "Two Words, One Table",
+   "duration": 71.88,
+   "lines": [
+    {
+     "id": "ec1",
+     "text": "Two words. Tap, and apt. What is the longest run of letters they share, in the same order? Letters may be skipped.",
+     "start": 0.2,
+     "end": 7.29
+    },
+    {
+     "id": "ec2",
+     "text": "Make a table with two sides. The letters of tap run down the side. The letters of apt run along the top.",
+     "start": 8.19,
+     "end": 14.87
+    },
+    {
+     "id": "ec3",
+     "text": "One entry answers a smaller question. The longest shared part, of the two beginnings that end at this row, and at this column.",
+     "start": 15.77,
+     "end": 23.83
+    },
+    {
+     "id": "ec4",
+     "text": "When the two letters are the same, they extend whatever was shared before them. That is the entry up, and to the left. Plus one.",
+     "start": 24.73,
+     "end": 32.41
+    },
+    {
+     "id": "ec5",
+     "text": "When they differ, one of the two letters is not needed. So take the better of the entry above, and the entry on the left.",
+     "start": 33.31,
+     "end": 40.33
+    },
+    {
+     "id": "ec6",
+     "text": "The row for t. T matches only the last column. Zero, zero, one.",
+     "start": 41.23,
+     "end": 45.76
+    },
+    {
+     "id": "ec7",
+     "text": "The row for a. A matches the first column. One. And it stays one along the row.",
+     "start": 46.66,
+     "end": 52
+    },
+    {
+     "id": "ec8",
+     "text": "The row for p. First, a one from above. Then p against p. The same letter. So what goes here?",
+     "start": 52.9,
+     "end": 59.1
+    },
+    {
+     "id": "ec9",
+     "text": "Two. A, p. And the last entry keeps the two.",
+     "start": 60.3,
+     "end": 63.12
+    },
+    {
+     "id": "ec10",
+     "text": "Two words, one table. Same letters: the diagonal, plus one. Different letters: the better neighbour.",
+     "start": 64.02,
+     "end": 70.28
+    }
+   ],
+   "pauses": [
+    {
+     "id": "dqt2-q1",
+     "t": 59.3
+    }
+   ]
+  },
+  "ka0": {
+   "src": "videos/ka0.mp4",
+   "title": "Be the Computer",
+   "duration": 41.3,
+   "lines": [
+    {
+     "id": "ja1",
+     "text": "Thinking in code. Warm up A. Be the computer.",
+     "start": 0.2,
+     "end": 3.2
+    },
+    {
+     "id": "ja2",
+     "text": "When code goes wrong, most people stare at it, and hope. There is a better habit. Run it in your head. One line at a time.",
+     "start": 3.9,
+     "end": 11.36
+    },
+    {
+     "id": "ja3",
+     "text": "The computer never guesses. It does exactly one small thing. Then the next. If you do the same, on paper, you see what it sees.",
+     "start": 12.26,
+     "end": 20.99
+    },
+    {
+     "id": "ja4",
+     "text": "Three lessons, and four puzzles. In every puzzle, the code is nearly right. Your job is to find out why it is not.",
+     "start": 21.89,
+     "end": 29.19
+    },
+    {
+     "id": "ja5",
+     "text": "Every working programmer does this. Reading a bug report. Reviewing a teammate's change. Or sitting in an interview, with no computer to run anything.",
+     "start": 30.09,
+     "end": 39.7
+    }
+   ],
+   "pauses": []
+  },
+  "kat1": {
+   "src": "videos/kat1.mp4",
+   "title": "The Trace Table",
+   "duration": 59.54,
+   "lines": [
+    {
+     "id": "jb1",
+     "text": "What does this code return? Do not guess. Become the computer.",
+     "start": 0.2,
+     "end": 3.92
+    },
+    {
+     "id": "jb2",
+     "text": "Make a table. One box for every variable. Total. And i.",
+     "start": 4.82,
+     "end": 8.56
+    },
+    {
+     "id": "jb3",
+     "text": "Line one. Total is zero. Write it down.",
+     "start": 9.46,
+     "end": 12.1
+    },
+    {
+     "id": "jb4",
+     "text": "Line two starts the loop. I is one. Is one at most three? Yes. So go in.",
+     "start": 13,
+     "end": 18.33
+    },
+    {
+     "id": "jb5",
+     "text": "Line three. One times two is two. Zero plus two. Total is two. Cross out the old value. Write the new one.",
+     "start": 19.23,
+     "end": 26.55
+    },
+    {
+     "id": "jb6",
+     "text": "Back to the top. I becomes two. Still at most three. Line three. Two times two is four. Total is six.",
+     "start": 27.55,
+     "end": 34.28
+    },
+    {
+     "id": "jb7",
+     "text": "I becomes three. Line three again. So what is total now?",
+     "start": 35.28,
+     "end": 38.58
+    },
+    {
+     "id": "jb8",
+     "text": "Twelve. Three times two is six, and six plus six is twelve. Now i becomes four. Is four at most three? No. The loop ends.",
+     "start": 39.78,
+     "end": 48.11
+    },
+    {
+     "id": "jb9",
+     "text": "Line five returns twelve. You did not guess. You know.",
+     "start": 49.11,
+     "end": 52.72
+    },
+    {
+     "id": "jb10",
+     "text": "One line at a time. Every change written down. That is a dry run.",
+     "start": 53.62,
+     "end": 57.94
+    }
+   ],
+   "pauses": [
+    {
+     "id": "kat1-q1",
+     "t": 38.78
+    }
+   ]
+  },
+  "kat2": {
+   "src": "videos/kat2.mp4",
+   "title": "Where Loops Begin and End",
+   "duration": 72.7,
+   "lines": [
+    {
+     "id": "jc1",
+     "text": "This loop should visit every door, in a row of four. On its last turn, it reads something that is not there. Why?",
+     "start": 0.2,
+     "end": 7.09
+    },
+    {
+     "id": "jc2",
+     "text": "Four doors. But look at their numbers. Zero, one, two, three. The last door is number three. Not four.",
+     "start": 8,
+     "end": 14.58
+    },
+    {
+     "id": "jc3",
+     "text": "The loop says: go on, while i is at most four. So i takes five values. Zero, one, two, three, four.",
+     "start": 15.48,
+     "end": 22.53
+    },
+    {
+     "id": "jc4",
+     "text": "Door four does not exist. Reading it gives undefined. This mistake is so common it has a name. Off by one.",
+     "start": 23.43,
+     "end": 30.92
+    },
+    {
+     "id": "jc5",
+     "text": "The fix. Go on while i is less than the length. Zero to three. Four turns.",
+     "start": 31.92,
+     "end": 37
+    },
+    {
+     "id": "jc6",
+     "text": "Before you trust any loop, ask three questions. Where does it start? When does it stop? And how many turns is that?",
+     "start": 37.9,
+     "end": 44.81
+    },
+    {
+     "id": "jc7",
+     "text": "Try it. I starts at one, and the loop goes on while i is less than four. How many turns?",
+     "start": 45.81,
+     "end": 51.81
+    },
+    {
+     "id": "jc8",
+     "text": "Three. One, two, three. And door zero was never visited.",
+     "start": 53.01,
+     "end": 56.79
+    },
+    {
+     "id": "jc9",
+     "text": "Going backwards, the same three questions. Start at length minus one. Go on while i is at least zero.",
+     "start": 57.69,
+     "end": 64.12
+    },
+    {
+     "id": "jc10",
+     "text": "Start. Stop. Count. And always check the first turn, and the last one. That is where loops break.",
+     "start": 65.02,
+     "end": 71.1
+    }
+   ],
+   "pauses": [
+    {
+     "id": "kat2-q1",
+     "t": 52.01
+    }
+   ]
+  },
+  "kat3": {
+   "src": "videos/kat3.mp4",
+   "title": "The Order of a Condition",
+   "duration": 72.1,
+   "lines": [
+    {
+     "id": "jd1",
+     "text": "Two checks, joined by and. Does it matter which one comes first? It can be the difference between working, and crashing.",
+     "start": 0.2,
+     "end": 7.45
+    },
+    {
+     "id": "jd2",
+     "text": "And means: both must be true. Or means: at least one.",
+     "start": 8.35,
+     "end": 11.8
+    },
+    {
+     "id": "jd3",
+     "text": "Here is the useful part. The computer reads left to right. And it stops, as soon as it knows the answer.",
+     "start": 12.7,
+     "end": 19.19
+    },
+    {
+     "id": "jd4",
+     "text": "With and, if the first check is false, the whole thing is false. So the second check is never run.",
+     "start": 20.09,
+     "end": 26.07
+    },
+    {
+     "id": "jd5",
+     "text": "Moss walks a row of words, looking for the first long one. Go on, while i is inside the row, and this word is short.",
+     "start": 26.97,
+     "end": 34.33
+    },
+    {
+     "id": "jd6",
+     "text": "No word here is long. So i reaches four. Is four inside the row? No. The computer stops right there. Word four is never touched.",
+     "start": 35.33,
+     "end": 43.83
+    },
+    {
+     "id": "jd7",
+     "text": "Now swap the two checks. Ask the word for its length first. Then ask whether it exists. When i is four, what happens?",
+     "start": 44.83,
+     "end": 52.41
+    },
+    {
+     "id": "jd8",
+     "text": "It asks for the length of a word that is not there. And the program crashes.",
+     "start": 53.61,
+     "end": 58.41
+    },
+    {
+     "id": "jd9",
+     "text": "So the check that keeps you safe, goes first. Is it inside? Is it not null? Only then, use it.",
+     "start": 59.31,
+     "end": 65.5
+    },
+    {
+     "id": "jd10",
+     "text": "Left to right. Stop when the answer is known. The guard goes first.",
+     "start": 66.4,
+     "end": 70.5
+    }
+   ],
+   "pauses": [
+    {
+     "id": "kat3-q1",
+     "t": 52.61
+    }
+   ]
+  },
+  "kb0": {
+   "src": "videos/kb0.mp4",
+   "title": "Who Else Is Holding This?",
+   "duration": 42.52,
+   "lines": [
+    {
+     "id": "je1",
+     "text": "Thinking in code. Warm up B. Values, copies, and changes.",
+     "start": 0.2,
+     "end": 4.14
+    },
+    {
+     "id": "je2",
+     "text": "You change one list. And another list changes too. You never touched it. It is the most confusing bug there is. Until you see what a name really is.",
+     "start": 4.84,
+     "end": 14.26
+    },
+    {
+     "id": "je3",
+     "text": "A name is not the thing. A name is a label, tied to the thing. And two labels can be tied to the same thing.",
+     "start": 15.16,
+     "end": 21.91
+    },
+    {
+     "id": "je4",
+     "text": "Two lessons, and four puzzles. In each puzzle, something changes that should not. Or does not change, when it should.",
+     "start": 22.81,
+     "end": 29.73
+    },
+    {
+     "id": "je5",
+     "text": "This is why editing a draft can change your saved settings by accident. Why an undo button needs a real copy. And why two screens showing one shopping cart always agree.",
+     "start": 30.63,
+     "end": 40.92
+    }
+   ],
+   "pauses": []
+  },
+  "kbt1": {
+   "src": "videos/kbt1.mp4",
+   "title": "A Name Is a Label",
+   "duration": 69.51,
+   "lines": [
+    {
+     "id": "jf1",
+     "text": "Line three changes b. So what is in a, afterwards? Most people say one, two, three. Let us see.",
+     "start": 0.2,
+     "end": 6.78
+    },
+    {
+     "id": "jf2",
+     "text": "Line one makes one array, and ties the label a to it.",
+     "start": 7.68,
+     "end": 11.14
+    },
+    {
+     "id": "jf3",
+     "text": "Line two does not make a second array. It ties a second label to the same one. One array. Two labels.",
+     "start": 12.04,
+     "end": 18.99
+    },
+    {
+     "id": "jf4",
+     "text": "So line three pushes a four into the only array there is. A sees it. B sees it.",
+     "start": 19.89,
+     "end": 25.25
+    },
+    {
+     "id": "jf5",
+     "text": "To get a real second array, you have to ask for a copy. The three dots spread the items into a new one.",
+     "start": 26.15,
+     "end": 32.2
+    },
+    {
+     "id": "jf6",
+     "text": "Now c has its own array. Push a five to c, and a does not change.",
+     "start": 33.1,
+     "end": 37.33
+    },
+    {
+     "id": "jf7",
+     "text": "One warning. That copy is one level deep. If the items are arrays themselves, the copy holds the very same inner arrays. So change an inner item through c. Does a see it?",
+     "start": 38.23,
+     "end": 49.62
+    },
+    {
+     "id": "jf8",
+     "text": "Yes. The outer lists are separate. But the inner ones are still shared.",
+     "start": 50.82,
+     "end": 54.84
+    },
+    {
+     "id": "jf9",
+     "text": "Numbers, text, true and false are different. Copy one, and you get a separate value. Every time.",
+     "start": 55.74,
+     "end": 61.78
+    },
+    {
+     "id": "jf10",
+     "text": "So before you change anything, ask one question. Who else holds a label to this?",
+     "start": 62.68,
+     "end": 67.91
+    }
+   ],
+   "pauses": [
+    {
+     "id": "kbt1-q1",
+     "t": 49.82
+    }
+   ]
+  },
+  "kbt2": {
+   "src": "videos/kbt2.mp4",
+   "title": "Functions That Change Things",
+   "duration": 71.62,
+   "lines": [
+    {
+     "id": "jg1",
+     "text": "You hand your list to a function. When it comes back, is your list still the same? It depends on one thing.",
+     "start": 0.2,
+     "end": 6.39
+    },
+    {
+     "id": "jg2",
+     "text": "Passing an array to a function ties one more label to it. The function's own name for it. No copy is made.",
+     "start": 7.29,
+     "end": 14.42
+    },
+    {
+     "id": "jg3",
+     "text": "So if the function pushes, it pushes into your array. That is called a side effect. A change you can see from outside.",
+     "start": 15.32,
+     "end": 22.62
+    },
+    {
+     "id": "jg4",
+     "text": "Sometimes that is exactly what you want. Sort this list in place. Fill in this grid.",
+     "start": 23.52,
+     "end": 29.33
+    },
+    {
+     "id": "jg5",
+     "text": "And sometimes it is a bug. The task said: return a new list, and do not touch the input.",
+     "start": 30.23,
+     "end": 36
+    },
+    {
+     "id": "jg6",
+     "text": "The safe version makes a new array, and returns it. Your list is untouched.",
+     "start": 36.9,
+     "end": 41.68
+    },
+    {
+     "id": "jg7",
+     "text": "One trap. Inside a function, you write: list equals a new array. Does the caller's list change?",
+     "start": 42.58,
+     "end": 48.79
+    },
+    {
+     "id": "jg8",
+     "text": "No. That line moves the function's own label to a new array. The caller's label still points at the old one.",
+     "start": 49.99,
+     "end": 56.4
+    },
+    {
+     "id": "jg9",
+     "text": "So there are two different things. Changing the thing a label is tied to. And moving the label.",
+     "start": 57.3,
+     "end": 63.05
+    },
+    {
+     "id": "jg10",
+     "text": "Read every task for this. Change it in place? Or return a new one? Then do exactly that.",
+     "start": 63.95,
+     "end": 70.02
+    }
+   ],
+   "pauses": [
+    {
+     "id": "kbt2-q1",
+     "t": 48.99
+    }
+   ]
+  },
+  "kc0": {
+   "src": "videos/kc0.mp4",
+   "title": "Where Do You Even Start?",
+   "duration": 37.7,
+   "lines": [
+    {
+     "id": "jh1",
+     "text": "Thinking in code. Warm up C. From words, to code.",
+     "start": 0.2,
+     "end": 3.45
+    },
+    {
+     "id": "jh2",
+     "text": "A task arrives as a paragraph of words. And the blank editor just sits there. Where do you even start?",
+     "start": 4.15,
+     "end": 10.4
+    },
+    {
+     "id": "jh3",
+     "text": "Not with code. With three questions. What goes in? What comes out? And what are the rules?",
+     "start": 11.3,
+     "end": 16.65
+    },
+    {
+     "id": "jh4",
+     "text": "Then you solve one tiny example by hand, and write down the steps you took. Two lessons, and four puzzles.",
+     "start": 17.55,
+     "end": 24.48
+    },
+    {
+     "id": "jh5",
+     "text": "A cook reads the whole recipe before touching a pan. A builder draws the plan before buying bricks. And a programmer writes the steps in plain words, before writing code.",
+     "start": 25.38,
+     "end": 36.1
+    }
+   ],
+   "pauses": []
+  },
+  "kct1": {
+   "src": "videos/kct1.mp4",
+   "title": "In, Out, and the Rules",
+   "duration": 66.95,
+   "lines": [
+    {
+     "id": "ji1",
+     "text": "Here is a task. Given the minutes a film lasts, return a label, like two h, zero five, min. Do not write code yet.",
+     "start": 0.2,
+     "end": 7.65
+    },
+    {
+     "id": "ji2",
+     "text": "Question one. What goes in? One number. The minutes. Say, one hundred and twenty five.",
+     "start": 8.55,
+     "end": 14.09
+    },
+    {
+     "id": "ji3",
+     "text": "Question two. What comes out? A piece of text. Two h, zero five, min.",
+     "start": 14.99,
+     "end": 19.68
+    },
+    {
+     "id": "ji4",
+     "text": "Question three. What are the rules? Look closely at the example. The minutes always have two digits. Five is written as zero five.",
+     "start": 20.58,
+     "end": 28.76
+    },
+    {
+     "id": "ji5",
+     "text": "Now say the task back, in your own words. Split the minutes into whole hours, and what is left. Show what is left with two digits.",
+     "start": 29.76,
+     "end": 37.76
+    },
+    {
+     "id": "ji6",
+     "text": "Then do one example by hand. One hundred and twenty five. Sixty goes in twice. That is two hours. And five are left.",
+     "start": 38.76,
+     "end": 46.71
+    },
+    {
+     "id": "ji7",
+     "text": "Now a nasty one. Exactly sixty minutes. What should the label say?",
+     "start": 47.71,
+     "end": 52.06
+    },
+    {
+     "id": "ji8",
+     "text": "One h, zero zero, min. You found that case before writing a single line. That is the point.",
+     "start": 53.26,
+     "end": 59.17
+    },
+    {
+     "id": "ji9",
+     "text": "In. Out. Rules. Say it back. One example by hand. Then, and only then, code.",
+     "start": 60.07,
+     "end": 65.35
+    }
+   ],
+   "pauses": [
+    {
+     "id": "kct1-q1",
+     "t": 52.26
+    }
+   ]
+  },
+  "kct2": {
+   "src": "videos/kct2.mp4",
+   "title": "Steps First, Code Last",
+   "duration": 62.21,
+   "lines": [
+    {
+     "id": "jj1",
+     "text": "You understand the task. But the editor is still blank. Now what? Now you write the steps. In plain words.",
+     "start": 0.2,
+     "end": 7.01
+    },
+    {
+     "id": "jj2",
+     "text": "Step one. Work out the whole hours. Step two. Work out the minutes left over.",
+     "start": 7.91,
+     "end": 12.63
+    },
+    {
+     "id": "jj3",
+     "text": "Step three. Make the left over minutes two digits long. Step four. Join the pieces into the label.",
+     "start": 13.53,
+     "end": 19.62
+    },
+    {
+     "id": "jj4",
+     "text": "Each step is small enough that you already know how to do it. That is the test of a good step.",
+     "start": 20.52,
+     "end": 25.7
+    },
+    {
+     "id": "jj5",
+     "text": "And if a step still feels hard, break that step into smaller ones.",
+     "start": 26.6,
+     "end": 30.72
+    },
+    {
+     "id": "jj6",
+     "text": "Notice the order. Step three uses the result of step two. And step four? What does it need, before it can run?",
+     "start": 31.62,
+     "end": 38.85
+    },
+    {
+     "id": "jj7",
+     "text": "The hours, and the two digits. So it has to come last. The order comes from what each step needs.",
+     "start": 40.05,
+     "end": 45.99
+    },
+    {
+     "id": "jj8",
+     "text": "Now the code is almost a translation. One step. One line.",
+     "start": 46.89,
+     "end": 51.06
+    },
+    {
+     "id": "jj9",
+     "text": "And when something breaks, you know which step to look at.",
+     "start": 52.06,
+     "end": 55.01
+    },
+    {
+     "id": "jj10",
+     "text": "Words first. Small steps. In the order they need each other. Then translate.",
+     "start": 55.91,
+     "end": 60.61
+    }
+   ],
+   "pauses": [
+    {
+     "id": "kct2-q1",
+     "t": 39.05
+    }
+   ]
+  },
+  "kd0": {
+   "src": "videos/kd0.mp4",
+   "title": "It Worked on the Example",
+   "duration": 39.55,
+   "lines": [
+    {
+     "id": "jk1",
+     "text": "Thinking in code. Warm up D. Test it, break it, fix it.",
+     "start": 0.2,
+     "end": 3.8
+    },
+    {
+     "id": "jk2",
+     "text": "Your code works on the example. So it is finished? Not yet. The example is the easy case.",
+     "start": 4.5,
+     "end": 10.45
+    },
+    {
+     "id": "jk3",
+     "text": "Good programmers try to break their own code, before someone else does. Empty input. A single item. The very ends.",
+     "start": 11.35,
+     "end": 19.18
+    },
+    {
+     "id": "jk4",
+     "text": "And when it does break, they do not guess. They find the first value that is wrong. Two lessons, and four puzzles.",
+     "start": 20.08,
+     "end": 27.21
+    },
+    {
+     "id": "jk5",
+     "text": "A cash machine, asked for zero. A form, sent with an empty name. A list with exactly one item. Real users find these cases on the first day.",
+     "start": 28.11,
+     "end": 37.95
+    }
+   ],
+   "pauses": []
+  },
+  "kdt1": {
+   "src": "videos/kdt1.mp4",
+   "title": "Try to Break It",
+   "duration": 66.97,
+   "lines": [
+    {
+     "id": "jl1",
+     "text": "This function returns the average of a list. Two, four, six. It says four. Correct. So are we done?",
+     "start": 0.2,
+     "end": 6.71
+    },
+    {
+     "id": "jl2",
+     "text": "One passing example proves very little. Now try to break it. There is a short list of inputs that break most code.",
+     "start": 7.61,
+     "end": 14.65
+    },
+    {
+     "id": "jl3",
+     "text": "First. Nothing at all. An empty list.",
+     "start": 15.55,
+     "end": 17.95
+    },
+    {
+     "id": "jl4",
+     "text": "Zero, divided by zero. The answer is, not a number. The function is broken. And the example never showed it.",
+     "start": 18.85,
+     "end": 26.11
+    },
+    {
+     "id": "jl5",
+     "text": "Second. Exactly one item. Third. The ends. The first item, the last item, and the limit itself.",
+     "start": 27.11,
+     "end": 33.48
+    },
+    {
+     "id": "jl6",
+     "text": "Fourth. Repeats, zeros, and negative numbers.",
+     "start": 34.38,
+     "end": 37.71
+    },
+    {
+     "id": "jl7",
+     "text": "Try one. This function finds the largest number. It starts with best equals zero. Which input breaks it?",
+     "start": 38.61,
+     "end": 45.52
+    },
+    {
+     "id": "jl8",
+     "text": "Only negative numbers. Every one of them is below zero. So it answers zero, which is not even in the list.",
+     "start": 46.72,
+     "end": 53.74
+    },
+    {
+     "id": "jl9",
+     "text": "The fix is to start with the first item, instead of a made up number.",
+     "start": 54.64,
+     "end": 58.8
+    },
+    {
+     "id": "jl10",
+     "text": "Empty. One. The ends. Repeats and negatives. Test those, before anyone else does.",
+     "start": 59.7,
+     "end": 65.37
+    }
+   ],
+   "pauses": [
+    {
+     "id": "kdt1-q1",
+     "t": 45.72
+    }
+   ]
+  },
+  "kdt2": {
+   "src": "videos/kdt2.mp4",
+   "title": "Find the First Wrong Value",
+   "duration": 65.39,
+   "lines": [
+    {
+     "id": "jm1",
+     "text": "This should return the last word, in capitals. Instead, it crashes on line three. So the bug is on line three. Right?",
+     "start": 0.2,
+     "end": 7.78
+    },
+    {
+     "id": "jm2",
+     "text": "Not necessarily. A crash only tells you where the damage showed up. Not where it started.",
+     "start": 8.68,
+     "end": 14.29
+    },
+    {
+     "id": "jm3",
+     "text": "So do not guess. Walk the values, from the top. And check each one against what you expect.",
+     "start": 15.19,
+     "end": 20.72
+    },
+    {
+     "id": "jm4",
+     "text": "Line one. The words. Pip, likes, seeds. Three words. Exactly what we expect. Good.",
+     "start": 21.62,
+     "end": 27.44
+    },
+    {
+     "id": "jm5",
+     "text": "Line two. Last should be seeds. What does it actually hold?",
+     "start": 28.34,
+     "end": 31.92
+    },
+    {
+     "id": "jm6",
+     "text": "Undefined. Three words sit at positions zero to two. Position three is empty.",
+     "start": 33.12,
+     "end": 38.64
+    },
+    {
+     "id": "jm7",
+     "text": "That is the first wrong value. So the bug is on line two. Line three was only where it blew up.",
+     "start": 39.54,
+     "end": 45.71
+    },
+    {
+     "id": "jm8",
+     "text": "Fix line two. Length, minus one. Now last is seeds. And line three works, without any change.",
+     "start": 46.61,
+     "end": 52.85
+    },
+    {
+     "id": "jm9",
+     "text": "The method. Say what each value should be. Look at what it is. Stop at the first one that differs.",
+     "start": 53.75,
+     "end": 59.69
+    },
+    {
+     "id": "jm10",
+     "text": "Do not fix the crash. Fix the first wrong value.",
+     "start": 60.59,
+     "end": 63.79
+    }
+   ],
+   "pauses": [
+    {
+     "id": "kdt2-q1",
+     "t": 32.12
+    }
+   ]
+  },
+  "kc1i": {
+   "src": "videos/kc1i.mp4",
+   "title": "The Film Label",
+   "duration": 27.22,
+   "lines": [
+    {
+     "id": "kc1i_1",
+     "text": "A film lasts one hundred and twenty five minutes. Pip wants a label for the poster.",
+     "start": 0.2,
+     "end": 5.34
+    },
+    {
+     "id": "kc1i_2",
+     "text": "Two h, zero five, min. Whole hours first. Then the minutes that are left, always with two digits.",
+     "start": 6.04,
+     "end": 12.18
+    },
+    {
+     "id": "kc1i_3",
+     "text": "Sixty goes into one hundred and twenty five twice. Five are left. And five is written as zero five.",
+     "start": 12.88,
+     "end": 19.65
+    },
+    {
+     "id": "kc1i_4",
+     "text": "Do not start typing. What goes in? What comes out? What are the steps? Your turn.",
+     "start": 20.35,
+     "end": 25.62
+    }
+   ],
+   "pauses": []
+  },
+  "kc1s": {
+   "src": "videos/kc1s.mp4",
+   "title": "Four steps, four lines",
+   "duration": 58.73,
+   "lines": [
+    {
+     "id": "kc1s_1",
+     "text": "In, one number. Out, a text. The rule, two digits for the minutes.",
+     "start": 0.2,
+     "end": 4.48
+    },
+    {
+     "id": "kc1s_2",
+     "text": "Four steps. The hours. What is left. Make it two digits. Join.",
+     "start": 5.23,
+     "end": 9.05
+    },
+    {
+     "id": "kc1s_3",
+     "text": "Step one, on line two. How many whole sixties fit into one hundred and twenty five? Two.",
+     "start": 9.8,
+     "end": 15.66
+    },
+    {
+     "id": "kc1s_4",
+     "text": "Step two, on line three. What is left over? The percent sign gives the remainder. Five.",
+     "start": 16.41,
+     "end": 22.16
+    },
+    {
+     "id": "kc1s_5",
+     "text": "Step three. The rule said two digits. Five has only one. What does pad start do with it?",
+     "start": 22.91,
+     "end": 28.86
+    },
+    {
+     "id": "kc1s_6",
+     "text": "It puts a zero in front. Zero five.",
+     "start": 30.06,
+     "end": 32.7
+    },
+    {
+     "id": "kc1s_7",
+     "text": "Step four joins the pieces. It needs the hours from step one, and the two digits from step three. So it comes last.",
+     "start": 33.45,
+     "end": 41.28
+    },
+    {
+     "id": "kc1s_8",
+     "text": "Each step became one line. That is what good steps look like.",
+     "start": 42.38,
+     "end": 46.18
+    },
+    {
+     "id": "kc1s_9",
+     "text": "And the order came from need. Join needs the others. So join is last.",
+     "start": 46.93,
+     "end": 51.44
+    },
+    {
+     "id": "kc1s_10",
+     "text": "Every screen that shows a duration does this. A film. A flight. A song.",
+     "start": 52.19,
+     "end": 57.13
+    }
+   ],
+   "pauses": [
+    {
+     "id": "kc1s-q",
+     "t": 29.06
+    }
+   ]
+  },
+  "kc2i": {
+   "src": "videos/kc2i.mp4",
+   "title": "Initials",
+   "duration": 17.31,
+   "lines": [
+    {
+     "id": "kc2i_1",
+     "text": "A name, written in small letters. Pip the rabbit.",
+     "start": 0.2,
+     "end": 3.05
+    },
+    {
+     "id": "kc2i_2",
+     "text": "Return its initials. The first letter of each word, as a capital, with a dot after it.",
+     "start": 3.75,
+     "end": 9.36
+    },
+    {
+     "id": "kc2i_3",
+     "text": "P. T. R.",
+     "start": 10.06,
+     "end": 10.98
+    },
+    {
+     "id": "kc2i_4",
+     "text": "You just did it in your head. What was your very first move? Your turn.",
+     "start": 11.68,
+     "end": 15.71
+    }
+   ],
+   "pauses": []
+  },
+  "kc2s": {
+   "src": "videos/kc2s.mp4",
+   "title": "Split, then one word at a time",
+   "duration": 59.98,
+   "lines": [
+    {
+     "id": "kc2s_1",
+     "text": "By hand, you first saw three separate words. That is step one. Split the text into words.",
+     "start": 0.2,
+     "end": 6.24
+    },
+    {
+     "id": "kc2s_2",
+     "text": "Then the same small job for every word. First letter. Capital. Dot.",
+     "start": 6.99,
+     "end": 11.52
+    },
+    {
+     "id": "kc2s_3",
+     "text": "Line three splits the name at the spaces. Three words.",
+     "start": 12.27,
+     "end": 15.87
+    },
+    {
+     "id": "kc2s_4",
+     "text": "The first word. Its first letter is p. As a capital, P. Add a dot.",
+     "start": 16.62,
+     "end": 21.19
+    },
+    {
+     "id": "kc2s_5",
+     "text": "The second word. T, and a dot.",
+     "start": 21.94,
+     "end": 24.04
+    },
+    {
+     "id": "kc2s_6",
+     "text": "The third word. R, and a dot. Line eight returns the result.",
+     "start": 24.79,
+     "end": 29.17
+    },
+    {
+     "id": "kc2s_7",
+     "text": "Now the nasty input. An empty name. Splitting it gives one word, which is empty. What is the first letter of an empty word?",
+     "start": 29.92,
+     "end": 37.99
+    },
+    {
+     "id": "kc2s_8",
+     "text": "There is none. So line two answers the empty name, before anything else runs.",
+     "start": 39.19,
+     "end": 44.31
+    },
+    {
+     "id": "kc2s_9",
+     "text": "A big task became three small ones. Split. Loop. Build.",
+     "start": 45.41,
+     "end": 49.26
+    },
+    {
+     "id": "kc2s_10",
+     "text": "The nasty input was found by asking: what if there is nothing?",
+     "start": 50.01,
+     "end": 53.9
+    },
+    {
+     "id": "kc2s_11",
+     "text": "The circle with your initials in a chat app is made like this.",
+     "start": 54.65,
+     "end": 58.38
+    }
+   ],
+   "pauses": [
+    {
+     "id": "kc2s-q",
+     "t": 38.19
+    }
+   ]
+  },
+  "kc3i": {
+   "src": "videos/kc3i.mp4",
+   "title": "The Receipt",
+   "duration": 21.59,
+   "lines": [
+    {
+     "id": "kc3i_1",
+     "text": "A receipt with two lines. Two items at twenty. Three items at five.",
+     "start": 0.2,
+     "end": 4.65
+    },
+    {
+     "id": "kc3i_2",
+     "text": "Add everything up. And if the total is fifty or more, take one tenth off.",
+     "start": 5.35,
+     "end": 9.83
+    },
+    {
+     "id": "kc3i_3",
+     "text": "Forty, plus fifteen. Fifty five. One tenth is five. So fifty to pay.",
+     "start": 10.53,
+     "end": 15.19
+    },
+    {
+     "id": "kc3i_4",
+     "text": "Two rules, in one task. Which number do you need first? Your turn.",
+     "start": 15.89,
+     "end": 19.99
+    }
+   ],
+   "pauses": []
+  },
+  "kc3s": {
+   "src": "videos/kc3s.mp4",
+   "title": "First the total, then the rule",
+   "duration": 54.6,
+   "lines": [
+    {
+     "id": "kc3s_1",
+     "text": "Two tasks are hiding in one. Add up the lines. And decide about the discount.",
+     "start": 0.2,
+     "end": 5.12
+    },
+    {
+     "id": "kc3s_2",
+     "text": "The discount depends on the total. So the total comes first.",
+     "start": 5.87,
+     "end": 9.69
+    },
+    {
+     "id": "kc3s_3",
+     "text": "Total starts at zero.",
+     "start": 10.44,
+     "end": 11.93
+    },
+    {
+     "id": "kc3s_4",
+     "text": "The first line. Twenty times two. Forty.",
+     "start": 12.68,
+     "end": 15.25
+    },
+    {
+     "id": "kc3s_5",
+     "text": "The second line. Five times three. Fifteen. Total, fifty five.",
+     "start": 16,
+     "end": 20.11
+    },
+    {
+     "id": "kc3s_6",
+     "text": "The loop is finished. Only now, line six asks about the discount. Fifty five is at least fifty. What is one tenth, rounded down?",
+     "start": 20.86,
+     "end": 29.24
+    },
+    {
+     "id": "kc3s_7",
+     "text": "Five. So line seven takes five off. Fifty.",
+     "start": 30.44,
+     "end": 33.35
+    },
+    {
+     "id": "kc3s_8",
+     "text": "Line nine returns fifty.",
+     "start": 34.1,
+     "end": 35.78
+    },
+    {
+     "id": "kc3s_9",
+     "text": "When one rule depends on a number, work out that number completely first.",
+     "start": 36.88,
+     "end": 41.43
+    },
+    {
+     "id": "kc3s_10",
+     "text": "Test just below and just at the limit. Forty nine, and fifty.",
+     "start": 42.18,
+     "end": 46.14
+    },
+    {
+     "id": "kc3s_11",
+     "text": "Every online shop does these two steps at the checkout. Add up the basket. Then apply the offer.",
+     "start": 46.89,
+     "end": 53
+    }
+   ],
+   "pauses": [
+    {
+     "id": "kc3s-q",
+     "t": 29.44
+    }
+   ]
+  },
+  "kc4i": {
+   "src": "videos/kc4i.mp4",
+   "title": "The Report Card",
+   "duration": 20.34,
+   "lines": [
+    {
+     "id": "kc4i_1",
+     "text": "Three scores. Pip, seventy. Moss, forty. Hazel, ninety.",
+     "start": 0.2,
+     "end": 3.87
+    },
+    {
+     "id": "kc4i_2",
+     "text": "Return three things at once. How many passed. How many failed. And who was the best.",
+     "start": 4.57,
+     "end": 9.8
+    },
+    {
+     "id": "kc4i_3",
+     "text": "Two passed. One failed. And the best was Hazel.",
+     "start": 10.5,
+     "end": 13.62
+    },
+    {
+     "id": "kc4i_4",
+     "text": "That sounds like a lot. How many small tasks is it, really? Your turn.",
+     "start": 14.32,
+     "end": 18.74
+    }
+   ],
+   "pauses": []
+  },
+  "kc4s": {
+   "src": "videos/kc4s.mp4",
+   "title": "Three small tasks, one walk",
+   "duration": 59.54,
+   "lines": [
+    {
+     "id": "kc4s_1",
+     "text": "Three answers. So three small tasks. Count the passes. Count the fails. And remember the best.",
+     "start": 0.2,
+     "end": 6.03
+    },
+    {
+     "id": "kc4s_2",
+     "text": "Each one needs only one or two variables. And all three can be done in the same walk.",
+     "start": 6.78,
+     "end": 12.03
+    },
+    {
+     "id": "kc4s_3",
+     "text": "Lines two to five set up the memory. Two counters. And the best so far, which is nobody yet.",
+     "start": 12.78,
+     "end": 18.85
+    },
+    {
+     "id": "kc4s_4",
+     "text": "Pip, seventy. At least fifty. A pass. And seventy beats the best so far.",
+     "start": 19.6,
+     "end": 24.35
+    },
+    {
+     "id": "kc4s_5",
+     "text": "Moss, forty. Below fifty. A fail. Does forty beat seventy?",
+     "start": 25.1,
+     "end": 29
+    },
+    {
+     "id": "kc4s_6",
+     "text": "No. So the best stays Pip.",
+     "start": 30.2,
+     "end": 31.81
+    },
+    {
+     "id": "kc4s_7",
+     "text": "Hazel, ninety. A pass. And ninety beats seventy.",
+     "start": 32.56,
+     "end": 35.79
+    },
+    {
+     "id": "kc4s_8",
+     "text": "Line fourteen packs the three answers into one object.",
+     "start": 36.54,
+     "end": 40.15
+    },
+    {
+     "id": "kc4s_9",
+     "text": "A task that sounds big is often several small tasks, side by side.",
+     "start": 41.25,
+     "end": 45.89
+    },
+    {
+     "id": "kc4s_10",
+     "text": "For each small task, ask: what do I need to remember?",
+     "start": 46.64,
+     "end": 50.06
+    },
+    {
+     "id": "kc4s_11",
+     "text": "The summary at the top of any dashboard is built this way. A few counters, and a best, in one pass over the data.",
+     "start": 50.81,
+     "end": 57.94
+    }
+   ],
+   "pauses": [
+    {
+     "id": "kc4s-q",
+     "t": 29.2
+    }
+   ]
+  },
+  "bi0": {
+   "src": "videos/bi0.mp4",
+   "title": "Switches Inside a Number",
+   "duration": 36.3,
+   "lines": [
+    {
+     "id": "bv1",
+     "text": "Chapter twenty six. Bit tricks.",
+     "start": 0.2,
+     "end": 2.41
+    },
+    {
+     "id": "bv2",
+     "text": "Under every number is a row of switches. Each one is on, or off. Here, they are lamps.",
+     "start": 3.11,
+     "end": 8.87
+    },
+    {
+     "id": "bv3",
+     "text": "Each lamp is worth double the one on its right. Eight, four, two, one. Five is the four lamp, and the one lamp.",
+     "start": 9.77,
+     "end": 16.79
+    },
+    {
+     "id": "bv4",
+     "text": "A few puzzles become a single line, once you look at the lamps. One lesson, and three puzzles.",
+     "start": 17.68,
+     "end": 24.01
+    },
+    {
+     "id": "bv5",
+     "text": "A file can be read, written, or run. Three lamps. An app keeps many on and off settings in one number. And every colour on your screen is twenty four lamps.",
+     "start": 24.91,
+     "end": 34.7
+    }
+   ],
+   "pauses": []
+  },
+  "bit1": {
+   "src": "videos/bit1.mp4",
+   "title": "Lamps, and Three Small Tools",
+   "duration": 69.25,
+   "lines": [
+    {
+     "id": "bz1",
+     "text": "Here is five. And here is three. As lamps. Three small tools compare two rows of lamps, one column at a time.",
+     "start": 0.2,
+     "end": 7.49
+    },
+    {
+     "id": "bz2",
+     "text": "And. A lamp comes on, only if it is on in both rows. That is just the one lamp. So five and three, is one.",
+     "start": 8.39,
+     "end": 15.73
+    },
+    {
+     "id": "bz3",
+     "text": "Or. A lamp comes on, if it is on in at least one row. Four, two, one. Seven.",
+     "start": 16.63,
+     "end": 22.34
+    },
+    {
+     "id": "bz4",
+     "text": "X or. A lamp comes on, only where the two rows differ. Four and two. Six.",
+     "start": 23.24,
+     "end": 28.72
+    },
+    {
+     "id": "bz5",
+     "text": "Now x or five, with five. The two rows are the same. So how many lamps come on?",
+     "start": 29.62,
+     "end": 35.08
+    },
+    {
+     "id": "bz6",
+     "text": "None. A number, x or itself, is always zero. Pairs cancel.",
+     "start": 36.28,
+     "end": 40.51
+    },
+    {
+     "id": "bz7",
+     "text": "Two more tools. And with one, keeps only the last lamp. If it is on, the number is odd.",
+     "start": 41.41,
+     "end": 47.08
+    },
+    {
+     "id": "bz8",
+     "text": "And shift right, moves every lamp one place to the right. The last one falls off. Five becomes two.",
+     "start": 47.98,
+     "end": 54.38
+    },
+    {
+     "id": "bz9",
+     "text": "So remember three things. X or cancels pairs. And with one reads the last lamp. Shift brings the next lamp in.",
+     "start": 55.28,
+     "end": 62.97
+    },
+    {
+     "id": "bz10",
+     "text": "When a puzzle says, use no extra memory. Look at the lamps.",
+     "start": 63.87,
+     "end": 67.65
+    }
+   ],
+   "pauses": [
+    {
+     "id": "bit1-q1",
+     "t": 35.28
+    }
+   ]
+  },
+  "bi1i": {
+   "src": "videos/bi1i.mp4",
+   "title": "The Odd One Out",
+   "duration": 20.7,
+   "lines": [
+    {
+     "id": "bi1i_1",
+     "text": "Three numbers. Four, seven, four. Every number has a twin. Except one.",
+     "start": 0.2,
+     "end": 4.72
+    },
+    {
+     "id": "bi1i_2",
+     "text": "Return the one without a twin. And use no extra memory. No set. No sorting.",
+     "start": 5.42,
+     "end": 10.99
+    },
+    {
+     "id": "bi1i_3",
+     "text": "The fours are a pair. So the answer is seven.",
+     "start": 11.69,
+     "end": 14.54
+    },
+    {
+     "id": "bi1i_4",
+     "text": "Which operation makes two equal numbers disappear? Your turn.",
+     "start": 15.24,
+     "end": 19.1
+    }
+   ],
+   "pauses": []
+  },
+  "bi1s": {
+   "src": "videos/bi1s.mp4",
+   "title": "Pairs cancel",
+   "duration": 61.86,
+   "lines": [
+    {
+     "id": "bi1s_1",
+     "text": "X or switches a lamp on only where two numbers differ. So a number, x or itself, is zero.",
+     "start": 0.2,
+     "end": 6.22
+    },
+    {
+     "id": "bi1s_2",
+     "text": "X or them all together. Every pair cancels. The one without a twin is left.",
+     "start": 6.97,
+     "end": 11.91
+    },
+    {
+     "id": "bi1s_3",
+     "text": "X starts at zero.",
+     "start": 12.66,
+     "end": 14
+    },
+    {
+     "id": "bi1s_4",
+     "text": "The four. In lamps, one, zero, zero. Zero x or four is four.",
+     "start": 14.75,
+     "end": 19.21
+    },
+    {
+     "id": "bi1s_5",
+     "text": "The seven. One, one, one. Where do one zero zero, and one one one, differ? In the last two lamps. So x is three.",
+     "start": 19.96,
+     "end": 27.78
+    },
+    {
+     "id": "bi1s_6",
+     "text": "X is three. That is neither of them. Now the second four arrives. What is zero one one, x or one zero zero?",
+     "start": 28.53,
+     "end": 35.98
+    },
+    {
+     "id": "bi1s_7",
+     "text": "One, one, one. Seven. The two fours have cancelled each other, even though the seven stood between them.",
+     "start": 37.18,
+     "end": 43.55
+    },
+    {
+     "id": "bi1s_8",
+     "text": "Line six returns seven.",
+     "start": 44.3,
+     "end": 45.94
+    },
+    {
+     "id": "bi1s_9",
+     "text": "One pass. O of n.",
+     "start": 47.04,
+     "end": 48.54
+    },
+    {
+     "id": "bi1s_10",
+     "text": "One number. O of one space. No set needed.",
+     "start": 49.29,
+     "end": 52.4
+    },
+    {
+     "id": "bi1s_11",
+     "text": "Storage systems use this to rebuild a lost disk. X or the disks that are left, and the missing one appears.",
+     "start": 53.15,
+     "end": 60.26
+    }
+   ],
+   "pauses": [
+    {
+     "id": "bi1s-q",
+     "t": 36.18
+    }
+   ]
+  },
+  "bi2i": {
+   "src": "videos/bi2i.mp4",
+   "title": "Count the Lamps",
+   "duration": 17.42,
+   "lines": [
+    {
+     "id": "bi2i_1",
+     "text": "The number six, as lamps. One, one, zero. The four lamp, and the two lamp.",
+     "start": 0.2,
+     "end": 5.13
+    },
+    {
+     "id": "bi2i_2",
+     "text": "Return how many lamps are on.",
+     "start": 5.83,
+     "end": 7.6
+    },
+    {
+     "id": "bi2i_3",
+     "text": "Two.",
+     "start": 8.3,
+     "end": 8.9
+    },
+    {
+     "id": "bi2i_4",
+     "text": "A program only sees the number six. How can it read the last lamp? And then the next? Your turn.",
+     "start": 9.6,
+     "end": 15.82
+    }
+   ],
+   "pauses": []
+  },
+  "bi2s": {
+   "src": "videos/bi2s.mp4",
+   "title": "Read the last lamp, then shift",
+   "duration": 60.92,
+   "lines": [
+    {
+     "id": "bi2s_1",
+     "text": "And with one, reads the last lamp. It gives one if the lamp is on, and zero if it is off.",
+     "start": 0.2,
+     "end": 5.94
+    },
+    {
+     "id": "bi2s_2",
+     "text": "Then shift everything one place to the right. The next lamp is now the last one.",
+     "start": 6.69,
+     "end": 11.32
+    },
+    {
+     "id": "bi2s_3",
+     "text": "N is six. One, one, zero. Count is zero.",
+     "start": 12.07,
+     "end": 14.99
+    },
+    {
+     "id": "bi2s_4",
+     "text": "The last lamp is off. So and with one gives zero. Count stays zero.",
+     "start": 15.74,
+     "end": 20.31
+    },
+    {
+     "id": "bi2s_5",
+     "text": "Line five shifts to the right. The last lamp drops off. N is one, one. That is three.",
+     "start": 21.06,
+     "end": 27.15
+    },
+    {
+     "id": "bi2s_6",
+     "text": "Now the last lamp is on. What does and with one give?",
+     "start": 27.9,
+     "end": 31.45
+    },
+    {
+     "id": "bi2s_7",
+     "text": "One. So count is one. Shift again. N is just one.",
+     "start": 32.66,
+     "end": 35.8
+    },
+    {
+     "id": "bi2s_8",
+     "text": "The last lamp is on again. Count is two. One more shift, and n is zero. The loop ends.",
+     "start": 36.55,
+     "end": 42.65
+    },
+    {
+     "id": "bi2s_9",
+     "text": "Line seven returns two.",
+     "start": 43.4,
+     "end": 45.02
+    },
+    {
+     "id": "bi2s_10",
+     "text": "One turn per lamp. A number n has about log n lamps.",
+     "start": 46.12,
+     "end": 50.08
+    },
+    {
+     "id": "bi2s_11",
+     "text": "One counter.",
+     "start": 50.83,
+     "end": 51.79
+    },
+    {
+     "id": "bi2s_12",
+     "text": "A file with permissions read, write and run stores them as three lamps. Counting the lamps says how much is allowed.",
+     "start": 52.54,
+     "end": 59.32
+    }
+   ],
+   "pauses": [
+    {
+     "id": "bi2s-q",
+     "t": 31.65
+    }
+   ]
+  },
+  "bi3i": {
+   "src": "videos/bi3i.mp4",
+   "title": "A Single Lamp",
+   "duration": 21.26,
+   "lines": [
+    {
+     "id": "bi3i_1",
+     "text": "The number eight, as lamps. One, zero, zero, zero.",
+     "start": 0.2,
+     "end": 3.65
+    },
+    {
+     "id": "bi3i_2",
+     "text": "Return true if a number is a power of two. One, two, four, eight, and so on.",
+     "start": 4.35,
+     "end": 9.22
+    },
+    {
+     "id": "bi3i_3",
+     "text": "In lamps, every one of them has exactly one lamp on.",
+     "start": 9.92,
+     "end": 13.38
+    },
+    {
+     "id": "bi3i_4",
+     "text": "Now take one away from eight. Seven. What does seven look like, in lamps? Your turn.",
+     "start": 14.08,
+     "end": 19.66
+    }
+   ],
+   "pauses": []
+  },
+  "bi3s": {
+   "src": "videos/bi3s.mp4",
+   "title": "One lamp on, and nothing else",
+   "duration": 61.3,
+   "lines": [
+    {
+     "id": "bi3s_1",
+     "text": "A power of two has exactly one lamp on.",
+     "start": 0.2,
+     "end": 2.92
+    },
+    {
+     "id": "bi3s_2",
+     "text": "Take one away. That lamp goes off. And every lamp to its right comes on. So the two rows share no lamp.",
+     "start": 3.67,
+     "end": 10.45
+    },
+    {
+     "id": "bi3s_3",
+     "text": "Eight. One, zero, zero, zero.",
+     "start": 11.2,
+     "end": 13.1
+    },
+    {
+     "id": "bi3s_4",
+     "text": "Eight minus one is seven. Zero, one, one, one.",
+     "start": 13.85,
+     "end": 17.16
+    },
+    {
+     "id": "bi3s_5",
+     "text": "Now and them. A lamp stays on only if it is on in both rows. Is there any such lamp?",
+     "start": 17.91,
+     "end": 23.97
+    },
+    {
+     "id": "bi3s_6",
+     "text": "None. The result is zero. So eight is a power of two.",
+     "start": 25.17,
+     "end": 28.63
+    },
+    {
+     "id": "bi3s_7",
+     "text": "Try six. One, one, zero. Six minus one is five. One, zero, one. The first lamp is on in both. Not zero. So six is not.",
+     "start": 29.73,
+     "end": 38.69
+    },
+    {
+     "id": "bi3s_8",
+     "text": "And the first check, n above zero, rules out zero and the negative numbers.",
+     "start": 39.44,
+     "end": 44.27
+    },
+    {
+     "id": "bi3s_9",
+     "text": "No loop at all. One subtraction, and one and. O of one.",
+     "start": 45.02,
+     "end": 48.82
+    },
+    {
+     "id": "bi3s_10",
+     "text": "No extra memory.",
+     "start": 49.57,
+     "end": 50.88
+    },
+    {
+     "id": "bi3s_11",
+     "text": "Memory sizes are powers of two. Sixteen, thirty two, sixty four. A program checks a size with exactly this line.",
+     "start": 51.63,
+     "end": 59.7
+    }
+   ],
+   "pauses": [
+    {
+     "id": "bi3s-q",
+     "t": 24.17
+    }
+   ]
+  },
+  "cm0": {
+   "src": "videos/cm0.mp4",
+   "title": "One Tool Is Rarely Enough",
+   "duration": 35.01,
+   "lines": [
+    {
+     "id": "cv1",
+     "text": "Chapter twenty seven. Combining tools.",
+     "start": 0.2,
+     "end": 2.74
+    },
+    {
+     "id": "cv2",
+     "text": "So far, each puzzle needed one tool. A map. A stack. A binary search.",
+     "start": 3.44,
+     "end": 8.67
+    },
+    {
+     "id": "cv3",
+     "text": "Real problems rarely stop there. One tool gets the data ready. And a second tool answers the question.",
+     "start": 9.57,
+     "end": 16.21
+    },
+    {
+     "id": "cv4",
+     "text": "The skill is to see both steps. One lesson, and eight puzzles.",
+     "start": 17.11,
+     "end": 20.98
+    },
+    {
+     "id": "cv5",
+     "text": "A search box sorts its words once. Then it finds yours by halving. A bank groups payments by account. Then it looks up a day. A map app builds its roads once. Then it walks them.",
+     "start": 21.88,
+     "end": 33.41
+    }
+   ],
+   "pauses": []
+  },
+  "cmt1": {
+   "src": "videos/cmt1.mp4",
+   "title": "Prepare Once, Answer Fast",
+   "duration": 68.85,
+   "lines": [
+    {
+     "id": "cz1",
+     "text": "A thousand scores. And a thousand questions, each asking: how many scores are below this number? Checking every score, for every question, is a million looks.",
+     "start": 0.2,
+     "end": 10.45
+    },
+    {
+     "id": "cz2",
+     "text": "So split the work in two. First ask: what could I do once, so that every question becomes easy?",
+     "start": 11.35,
+     "end": 17.55
+    },
+    {
+     "id": "cz3",
+     "text": "Sort the scores. Once.",
+     "start": 18.45,
+     "end": 19.97
+    },
+    {
+     "id": "cz4",
+     "text": "Then ask: what answers one question fast? In a sorted row, a binary search. Ten looks, instead of a thousand.",
+     "start": 20.87,
+     "end": 28.26
+    },
+    {
+     "id": "cz5",
+     "text": "The same split shows up again and again. How many sacks fit in a budget? Running totals first. Then a binary search.",
+     "start": 29.16,
+     "end": 36.49
+    },
+    {
+     "id": "cz6",
+     "text": "What did a nut cost on day eight? Group the changes by name first. Then look up the nut, and search its days.",
+     "start": 37.39,
+     "end": 44.29
+    },
+    {
+     "id": "cz7",
+     "text": "Now you. Many questions ask for the sum of a block of a grid. Which pair of tools fits?",
+     "start": 45.19,
+     "end": 50.74
+    },
+    {
+     "id": "cz8",
+     "text": "Running totals, over the whole grid. After that, any block is four lookups.",
+     "start": 51.94,
+     "end": 56.77
+    },
+    {
+     "id": "cz9",
+     "text": "So, for every hard puzzle, ask two things. What do I prepare once? And what answers one question fast?",
+     "start": 57.67,
+     "end": 64.39
+    },
+    {
+     "id": "cz10",
+     "text": "Prepare once. Answer fast.",
+     "start": 65.29,
+     "end": 67.25
+    }
+   ],
+   "pauses": [
+    {
+     "id": "cmt1-q1",
+     "t": 50.94
+    }
+   ]
+  },
+  "mk0": {
+   "src": "videos/mk0.mp4",
+   "title": "How the Mock Interviews Work",
+   "duration": 42.16,
+   "lines": [
+    {
+     "id": "mv1",
+     "text": "The last stop. Mock interviews.",
+     "start": 0.2,
+     "end": 2.49
+    },
+    {
+     "id": "mv2",
+     "text": "Ten puzzles. No labels. No lesson first. Nothing tells you which tool to use.",
+     "start": 3.19,
+     "end": 8.41
+    },
+    {
+     "id": "mv3",
+     "text": "A clock runs for each one. Aim for twenty minutes. Hints, and the solution, are allowed. But they are counted.",
+     "start": 9.31,
+     "end": 15.98
+    },
+    {
+     "id": "mv4",
+     "text": "At the end, a report shows your strengths, and what to practise next. And before you type anything, say your plan out loud.",
+     "start": 16.88,
+     "end": 24.39
+    },
+    {
+     "id": "mv5",
+     "text": "A real interview goes like this. The first five minutes are talking. Say the task back. Ask about empty input. Then work an example by hand, and say your plan, and its cost. Only then, write the code. And test it with a tiny input.",
+     "start": 25.29,
+     "end": 40.56
+    }
+   ],
+   "pauses": []
+  },
+  "ar1i": {
+   "src": "videos/ar1i.mp4",
+   "title": "Turn the Row Around",
+   "duration": 20.47,
+   "lines": [
+    {
+     "id": "ar1i_1",
+     "text": "Five parcels are in the wrong order. Back to front.",
+     "start": 0.2,
+     "end": 3.3
+    },
+    {
+     "id": "ar1i_2",
+     "text": "Reverse the row in place. Change this array, and do not build a second one.",
+     "start": 4,
+     "end": 8.77
+    },
+    {
+     "id": "ar1i_3",
+     "text": "The first parcel belongs in the last door. And the last one belongs in the first.",
+     "start": 9.47,
+     "end": 14.31
+    },
+    {
+     "id": "ar1i_4",
+     "text": "So which two doors trade places first? And then? Your turn.",
+     "start": 15.01,
+     "end": 18.87
+    }
+   ],
+   "pauses": []
+  },
+  "ar1s": {
+   "src": "videos/ar1s.mp4",
+   "title": "The two ends trade places",
+   "duration": 75.75,
+   "lines": [
+    {
+     "id": "ar1s_1",
+     "text": "In a reversed row, the first number and the last number have traded places. So have the second, and the second to last.",
+     "start": 0.2,
+     "end": 7.84
+    },
+    {
+     "id": "ar1s_2",
+     "text": "So put a marker on each end, swap, and walk both markers inward.",
+     "start": 8.59,
+     "end": 12.79
+    },
+    {
+     "id": "ar1s_3",
+     "text": "Lines two and three place the markers. Pip on the first door, Moss on the last.",
+     "start": 13.54,
+     "end": 18.36
+    },
+    {
+     "id": "ar1s_4",
+     "text": "Line five puts the left number aside, in keep. Otherwise the next line would destroy it.",
+     "start": 19.11,
+     "end": 24.32
+    },
+    {
+     "id": "ar1s_5",
+     "text": "Line six copies the right number into the left door. Line seven puts the kept number into the right door.",
+     "start": 25.07,
+     "end": 31.72
+    },
+    {
+     "id": "ar1s_6",
+     "text": "Lines eight and nine step both markers inward.",
+     "start": 32.47,
+     "end": 35.27
+    },
+    {
+     "id": "ar1s_7",
+     "text": "One is less than three, so the loop runs again. Which two doors swap now?",
+     "start": 36.02,
+     "end": 40.46
+    },
+    {
+     "id": "ar1s_8",
+     "text": "Doors one and three. Two and four trade places.",
+     "start": 41.66,
+     "end": 44.76
+    },
+    {
+     "id": "ar1s_9",
+     "text": "Step inward. Both markers stand on door two. Two is not less than two, so the loop ends.",
+     "start": 45.51,
+     "end": 51.4
+    },
+    {
+     "id": "ar1s_10",
+     "text": "The middle door has no partner, and stays where it is. The row is reversed.",
+     "start": 52.15,
+     "end": 56.74
+    },
+    {
+     "id": "ar1s_11",
+     "text": "Each round fixes two doors, so n over two rounds. O of n time.",
+     "start": 57.84,
+     "end": 62.35
+    },
+    {
+     "id": "ar1s_12",
+     "text": "Two markers and one spare variable. O of one space. That is what in place means.",
+     "start": 63.1,
+     "end": 68.7
+    },
+    {
+     "id": "ar1s_13",
+     "text": "Flipping a photo left to right does exactly this, to every row of pixels.",
+     "start": 69.45,
+     "end": 74.15
+    }
+   ],
+   "pauses": [
+    {
+     "id": "ar1s-q",
+     "t": 40.66
+    }
+   ]
+  },
+  "ar2i": {
+   "src": "videos/ar2i.mp4",
+   "title": "The Biggest Parcel",
+   "duration": 16.28,
+   "lines": [
+    {
+     "id": "ar2i_1",
+     "text": "Five parcels, five weights. Moss wants the heaviest.",
+     "start": 0.2,
+     "end": 3.58
+    },
+    {
+     "id": "ar2i_2",
+     "text": "Return the largest number in the row.",
+     "start": 4.29,
+     "end": 6.47
+    },
+    {
+     "id": "ar2i_3",
+     "text": "You cannot know which is biggest without looking at every door once.",
+     "start": 7.17,
+     "end": 11.09
+    },
+    {
+     "id": "ar2i_4",
+     "text": "So what do you carry with you as you walk? Your turn.",
+     "start": 11.79,
+     "end": 14.68
+    }
+   ],
+   "pauses": []
+  },
+  "ar2s": {
+   "src": "videos/ar2s.mp4",
+   "title": "Remember the best so far",
+   "duration": 55.67,
+   "lines": [
+    {
+     "id": "ar2s_1",
+     "text": "The biggest number could be behind any door. So every door has to be looked at once.",
+     "start": 0.2,
+     "end": 5.57
+    },
+    {
+     "id": "ar2s_2",
+     "text": "Carry one number as you walk: the best so far. Replace it whenever you see a bigger one.",
+     "start": 6.32,
+     "end": 12.16
+    },
+    {
+     "id": "ar2s_3",
+     "text": "Line two takes the first number as the best so far. Three.",
+     "start": 12.91,
+     "end": 16.68
+    },
+    {
+     "id": "ar2s_4",
+     "text": "The walk starts at door one. Eight is bigger than three, so best becomes eight.",
+     "start": 17.43,
+     "end": 22.2
+    },
+    {
+     "id": "ar2s_5",
+     "text": "Door two. Two is not bigger than eight. Nothing changes.",
+     "start": 22.95,
+     "end": 26.44
+    },
+    {
+     "id": "ar2s_6",
+     "text": "Door three holds nine. What happens to best?",
+     "start": 27.19,
+     "end": 29.98
+    },
+    {
+     "id": "ar2s_7",
+     "text": "It becomes nine.",
+     "start": 31.18,
+     "end": 32.28
+    },
+    {
+     "id": "ar2s_8",
+     "text": "Door four. Four is not bigger. And the row is finished.",
+     "start": 33.03,
+     "end": 36.45
+    },
+    {
+     "id": "ar2s_9",
+     "text": "Line six returns best. Nine.",
+     "start": 37.2,
+     "end": 39.52
+    },
+    {
+     "id": "ar2s_10",
+     "text": "One walk, one comparison per door. O of n time.",
+     "start": 40.62,
+     "end": 43.98
+    },
+    {
+     "id": "ar2s_11",
+     "text": "One remembered number. O of one space.",
+     "start": 44.73,
+     "end": 47.56
+    },
+    {
+     "id": "ar2s_12",
+     "text": "A game keeps its high score this way. One number, replaced whenever a better score comes in.",
+     "start": 48.31,
+     "end": 54.07
+    }
+   ],
+   "pauses": [
+    {
+     "id": "ar2s-q",
+     "t": 30.18
+    }
+   ]
+  },
+  "ar3i": {
+   "src": "videos/ar3i.mp4",
+   "title": "Make Room",
+   "duration": 18.55,
+   "lines": [
+    {
+     "id": "ar3i_1",
+     "text": "A parcel arrived late. It belongs in the middle of the row.",
+     "start": 0.2,
+     "end": 3.82
+    },
+    {
+     "id": "ar3i_2",
+     "text": "Insert x at index i, and shift everything after it one door to the right.",
+     "start": 4.52,
+     "end": 9.27
+    },
+    {
+     "id": "ar3i_3",
+     "text": "If you start shifting at the wrong end, a parcel gets overwritten.",
+     "start": 9.97,
+     "end": 13.75
+    },
+    {
+     "id": "ar3i_4",
+     "text": "Which parcel must move first? Your turn.",
+     "start": 14.45,
+     "end": 16.95
+    }
+   ],
+   "pauses": []
+  },
+  "ar3s": {
+   "src": "videos/ar3s.mp4",
+   "title": "Shift from the back",
+   "duration": 62.1,
+   "lines": [
+    {
+     "id": "ar3s_1",
+     "text": "To open a gap, everything after it moves one door to the right.",
+     "start": 0.2,
+     "end": 4.13
+    },
+    {
+     "id": "ar3s_2",
+     "text": "Start from the back. Each number moves into a door that is already free, so nothing is lost.",
+     "start": 4.88,
+     "end": 10.99
+    },
+    {
+     "id": "ar3s_3",
+     "text": "Line two starts j on a new door at the end of the row. Door four. It is empty.",
+     "start": 11.74,
+     "end": 17.16
+    },
+    {
+     "id": "ar3s_4",
+     "text": "Line three copies the number from the door on its left. Five moves into door four.",
+     "start": 17.91,
+     "end": 23.26
+    },
+    {
+     "id": "ar3s_5",
+     "text": "J moves left, to door three. Four moves into it.",
+     "start": 24.01,
+     "end": 27.16
+    },
+    {
+     "id": "ar3s_6",
+     "text": "J moves to door two. The loop test is j greater than i. Is two greater than two?",
+     "start": 27.91,
+     "end": 33.42
+    },
+    {
+     "id": "ar3s_7",
+     "text": "No. The loop stops. Door two still shows the old four, but its copy is safe next door.",
+     "start": 34.62,
+     "end": 40.32
+    },
+    {
+     "id": "ar3s_8",
+     "text": "Line five writes x into door two. Three.",
+     "start": 41.07,
+     "end": 43.82
+    },
+    {
+     "id": "ar3s_9",
+     "text": "Inserting at the front moves every number. So in the worst case, O of n time.",
+     "start": 44.92,
+     "end": 50.05
+    },
+    {
+     "id": "ar3s_10",
+     "text": "No second array. O of one extra space.",
+     "start": 50.8,
+     "end": 53.85
+    },
+    {
+     "id": "ar3s_11",
+     "text": "Type a letter in the middle of a line, and a simple text editor shifts the rest, just like this.",
+     "start": 54.6,
+     "end": 60.5
+    }
+   ],
+   "pauses": [
+    {
+     "id": "ar3s-q",
+     "t": 33.62
+    }
+   ]
+  },
+  "ar4i": {
+   "src": "videos/ar4i.mp4",
+   "title": "The Missing Number",
+   "duration": 22.13,
+   "lines": [
+    {
+     "id": "ar4i_1",
+     "text": "Parcels numbered zero to three were posted. Only three of the four arrived.",
+     "start": 0.2,
+     "end": 4.73
+    },
+    {
+     "id": "ar4i_2",
+     "text": "The row holds the numbers zero to n, with one missing. Return the missing number.",
+     "start": 5.43,
+     "end": 10.71
+    },
+    {
+     "id": "ar4i_3",
+     "text": "Looking for each number in turn means walking the row again and again.",
+     "start": 11.41,
+     "end": 15.56
+    },
+    {
+     "id": "ar4i_4",
+     "text": "What should all the numbers add up to? And what do they add up to? Your turn.",
+     "start": 16.26,
+     "end": 20.53
+    }
+   ],
+   "pauses": []
+  },
+  "ar4s": {
+   "src": "videos/ar4s.mp4",
+   "title": "Expected minus actual",
+   "duration": 54.16,
+   "lines": [
+    {
+     "id": "ar4s_1",
+     "text": "If nothing were missing, the numbers would add up to a total we can work out in advance.",
+     "start": 0.2,
+     "end": 5.67
+    },
+    {
+     "id": "ar4s_2",
+     "text": "The real total is smaller, by exactly the number that is missing.",
+     "start": 6.42,
+     "end": 10.41
+    },
+    {
+     "id": "ar4s_3",
+     "text": "Two totals, both starting at zero. Expected, and actual.",
+     "start": 11.16,
+     "end": 15.07
+    },
+    {
+     "id": "ar4s_4",
+     "text": "Door zero. Line five adds i plus one to expected. One. Line six adds the door, three, to actual.",
+     "start": 15.82,
+     "end": 22.91
+    },
+    {
+     "id": "ar4s_5",
+     "text": "Door one. Expected gains two. Actual gains zero.",
+     "start": 23.66,
+     "end": 27.36
+    },
+    {
+     "id": "ar4s_6",
+     "text": "Door two. Expected gains three. Actual gains one. What are the two totals?",
+     "start": 28.11,
+     "end": 33.38
+    },
+    {
+     "id": "ar4s_7",
+     "text": "Six, and four.",
+     "start": 34.58,
+     "end": 35.67
+    },
+    {
+     "id": "ar4s_8",
+     "text": "Line eight subtracts. Six minus four. The missing number is two.",
+     "start": 36.42,
+     "end": 40.55
+    },
+    {
+     "id": "ar4s_9",
+     "text": "One walk. O of n time.",
+     "start": 41.65,
+     "end": 43.22
+    },
+    {
+     "id": "ar4s_10",
+     "text": "Two totals. O of one space.",
+     "start": 43.97,
+     "end": 46.03
+    },
+    {
+     "id": "ar4s_11",
+     "text": "Checksums use the same trick. Add everything up, and compare it with what the total should be.",
+     "start": 46.78,
+     "end": 52.56
+    }
+   ],
+   "pauses": [
+    {
+     "id": "ar4s-q",
+     "t": 33.58
+    }
+   ]
+  },
+  "ar5i": {
+   "src": "videos/ar5i.mp4",
+   "title": "Add One",
+   "duration": 16.58,
+   "lines": [
+    {
+     "id": "ar5i_1",
+     "text": "A number, written one digit per door. One hundred and ninety nine.",
+     "start": 0.2,
+     "end": 4.14
+    },
+    {
+     "id": "ar5i_2",
+     "text": "Add one to it, and return the digits of the answer.",
+     "start": 4.84,
+     "end": 7.99
+    },
+    {
+     "id": "ar5i_3",
+     "text": "On paper you start at the right, and a nine makes you carry.",
+     "start": 8.69,
+     "end": 12.15
+    },
+    {
+     "id": "ar5i_4",
+     "text": "Where does the carrying stop? Your turn.",
+     "start": 12.85,
+     "end": 14.98
+    }
+   ],
+   "pauses": []
+  },
+  "ar5s": {
+   "src": "videos/ar5s.mp4",
+   "title": "Carry from the back",
+   "duration": 59.38,
+   "lines": [
+    {
+     "id": "ar5s_1",
+     "text": "Adding one starts at the last digit, just like on paper.",
+     "start": 0.2,
+     "end": 3.71
+    },
+    {
+     "id": "ar5s_2",
+     "text": "A nine turns into zero and passes the one along. Any other digit takes the one, and we are finished.",
+     "start": 4.46,
+     "end": 10.91
+    },
+    {
+     "id": "ar5s_3",
+     "text": "Line two starts at the last door. Door two.",
+     "start": 11.66,
+     "end": 14.53
+    },
+    {
+     "id": "ar5s_4",
+     "text": "Line three asks: is this digit less than nine? No. It is a nine.",
+     "start": 15.28,
+     "end": 19.46
+    },
+    {
+     "id": "ar5s_5",
+     "text": "So line seven turns it into zero. The one is carried to the left.",
+     "start": 20.21,
+     "end": 24.2
+    },
+    {
+     "id": "ar5s_6",
+     "text": "Door one. Another nine. Zero again, and the carry moves on.",
+     "start": 24.95,
+     "end": 28.91
+    },
+    {
+     "id": "ar5s_7",
+     "text": "Door zero holds a one. Is one less than nine?",
+     "start": 29.66,
+     "end": 32.67
+    },
+    {
+     "id": "ar5s_8",
+     "text": "Yes. Line four makes it two, and line five returns straight away.",
+     "start": 33.88,
+     "end": 38.12
+    },
+    {
+     "id": "ar5s_9",
+     "text": "At most one visit per digit. O of n time. Usually far less, because the carry stops early.",
+     "start": 39.22,
+     "end": 45.32
+    },
+    {
+     "id": "ar5s_10",
+     "text": "The digits are changed in place. Only all nines need one extra door.",
+     "start": 46.07,
+     "end": 50.63
+    },
+    {
+     "id": "ar5s_11",
+     "text": "Numbers too big for one box are stored as a row of digits, and added with a carry, just like this.",
+     "start": 51.38,
+     "end": 57.78
+    }
+   ],
+   "pauses": [
+    {
+     "id": "ar5s-q",
+     "t": 32.88
+    }
+   ]
+  },
+  "ar6i": {
+   "src": "videos/ar6i.mp4",
+   "title": "The Longest Streak",
+   "duration": 18.99,
+   "lines": [
+    {
+     "id": "ar6i_1",
+     "text": "Pip writes a one for every sunny day, and a zero for rain.",
+     "start": 0.2,
+     "end": 3.8
+    },
+    {
+     "id": "ar6i_2",
+     "text": "Return the length of the longest unbroken run of ones.",
+     "start": 4.5,
+     "end": 8.12
+    },
+    {
+     "id": "ar6i_3",
+     "text": "A zero ends the current streak. But an earlier streak might still be the longest.",
+     "start": 8.82,
+     "end": 13.65
+    },
+    {
+     "id": "ar6i_4",
+     "text": "So how many numbers do you need to keep? Your turn.",
+     "start": 14.35,
+     "end": 17.39
+    }
+   ],
+   "pauses": []
+  },
+  "ar6s": {
+   "src": "videos/ar6s.mp4",
+   "title": "Current streak, best streak",
+   "duration": 56.13,
+   "lines": [
+    {
+     "id": "ar6s_1",
+     "text": "Walk the row once, counting the current streak. A zero sets it back to nothing.",
+     "start": 0.2,
+     "end": 4.87
+    },
+    {
+     "id": "ar6s_2",
+     "text": "And remember the longest streak seen so far, because a later zero must not erase it.",
+     "start": 5.62,
+     "end": 10.94
+    },
+    {
+     "id": "ar6s_3",
+     "text": "Run and best both start at zero.",
+     "start": 11.69,
+     "end": 13.62
+    },
+    {
+     "id": "ar6s_4",
+     "text": "Door zero is a one. Run is one. Best is one.",
+     "start": 14.37,
+     "end": 17.66
+    },
+    {
+     "id": "ar6s_5",
+     "text": "Another one. Run is two. Best is two.",
+     "start": 18.41,
+     "end": 20.87
+    },
+    {
+     "id": "ar6s_6",
+     "text": "A zero. Line six sets run back to zero. But best keeps its two.",
+     "start": 21.62,
+     "end": 26.17
+    },
+    {
+     "id": "ar6s_7",
+     "text": "A one. Run is one. That does not beat two.",
+     "start": 26.92,
+     "end": 29.67
+    },
+    {
+     "id": "ar6s_8",
+     "text": "Another one. What are run and best now?",
+     "start": 30.42,
+     "end": 32.65
+    },
+    {
+     "id": "ar6s_9",
+     "text": "Run is two. Best stays two.",
+     "start": 33.85,
+     "end": 35.79
+    },
+    {
+     "id": "ar6s_10",
+     "text": "The last door. Run is three, and that beats two. Best is three.",
+     "start": 36.54,
+     "end": 40.54
+    },
+    {
+     "id": "ar6s_11",
+     "text": "Line nine returns best. Three.",
+     "start": 41.29,
+     "end": 43.46
+    },
+    {
+     "id": "ar6s_12",
+     "text": "One walk. O of n time.",
+     "start": 44.56,
+     "end": 46.12
+    },
+    {
+     "id": "ar6s_13",
+     "text": "Two numbers. O of one space.",
+     "start": 46.87,
+     "end": 48.89
+    },
+    {
+     "id": "ar6s_14",
+     "text": "A habit app that shows your longest streak of days counts it exactly like this.",
+     "start": 49.64,
+     "end": 54.53
+    }
+   ],
+   "pauses": [
+    {
+     "id": "ar6s-q",
+     "t": 32.85
+    }
+   ]
+  },
+  "qu1i": {
+   "src": "videos/qu1i.mp4",
+   "title": "Recent Visitors",
+   "duration": 21.66,
+   "lines": [
+    {
+     "id": "qu1i_1",
+     "text": "Visitors arrive at the burrow, and Pip writes down the minute each one came.",
+     "start": 0.2,
+     "end": 4.57
+    },
+    {
+     "id": "qu1i_2",
+     "text": "For every visitor, return how many arrived within the last span minutes, counting that visitor too.",
+     "start": 5.27,
+     "end": 11.64
+    },
+    {
+     "id": "qu1i_3",
+     "text": "A visitor who is too old now, is too old for everyone who comes later.",
+     "start": 12.34,
+     "end": 16.86
+    },
+    {
+     "id": "qu1i_4",
+     "text": "So who stops counting first? Your turn.",
+     "start": 17.56,
+     "end": 20.06
+    }
+   ],
+   "pauses": []
+  },
+  "qu1s": {
+   "src": "videos/qu1s.mp4",
+   "title": "The oldest leaves first",
+   "duration": 86.06,
+   "lines": [
+    {
+     "id": "qu1s_1",
+     "text": "The visitors who still count form a line. They joined in order, and they stop counting in the same order.",
+     "start": 0.2,
+     "end": 6.24
+    },
+    {
+     "id": "qu1s_2",
+     "text": "So keep a marker, head, on the oldest one who still counts. It only ever moves forward.",
+     "start": 6.99,
+     "end": 12.61
+    },
+    {
+     "id": "qu1s_3",
+     "text": "Line three. Moss stands on head, the oldest visitor who still counts. Door zero.",
+     "start": 13.36,
+     "end": 18.98
+    },
+    {
+     "id": "qu1s_4",
+     "text": "The first arrival, at minute one. Nobody is too old. From head to here is one visitor.",
+     "start": 19.73,
+     "end": 25.5
+    },
+    {
+     "id": "qu1s_5",
+     "text": "Minute two. Is minute one too old? It would need to be before two minus three. No. Two visitors.",
+     "start": 26.25,
+     "end": 32.75
+    },
+    {
+     "id": "qu1s_6",
+     "text": "Minute six. Six minus three is three. Anything before minute three is too old.",
+     "start": 33.5,
+     "end": 38.44
+    },
+    {
+     "id": "qu1s_7",
+     "text": "Minute one is too old. Head moves. Minute two is too old as well. Head moves again.",
+     "start": 39.19,
+     "end": 45.05
+    },
+    {
+     "id": "qu1s_8",
+     "text": "From head to here is one visitor.",
+     "start": 45.8,
+     "end": 47.86
+    },
+    {
+     "id": "qu1s_9",
+     "text": "Minute seven. Too old means before four. Head is on six. Does head move?",
+     "start": 48.61,
+     "end": 53.41
+    },
+    {
+     "id": "qu1s_10",
+     "text": "No. Six still counts. Two visitors.",
+     "start": 54.61,
+     "end": 57.09
+    },
+    {
+     "id": "qu1s_11",
+     "text": "Minute eight. Too old means before five. Six still counts. Three visitors.",
+     "start": 57.84,
+     "end": 62.7
+    },
+    {
+     "id": "qu1s_12",
+     "text": "Line eight returns the counts.",
+     "start": 63.45,
+     "end": 65.28
+    },
+    {
+     "id": "qu1s_13",
+     "text": "Head only moves forward, so it moves at most n times in total. O of n.",
+     "start": 66.38,
+     "end": 71.75
+    },
+    {
+     "id": "qu1s_14",
+     "text": "Apart from the answer row, one marker. O of one extra space.",
+     "start": 72.5,
+     "end": 76.85
+    },
+    {
+     "id": "qu1s_15",
+     "text": "A website counts its visitors in the last five minutes exactly like this. Old ones leave from the front of a queue.",
+     "start": 77.6,
+     "end": 84.46
+    }
+   ],
+   "pauses": [
+    {
+     "id": "qu1s-q",
+     "t": 53.61
+    }
+   ]
+  },
+  "qu2i": {
+   "src": "videos/qu2i.mp4",
+   "title": "A Queue From Two Piles",
+   "duration": 24,
+   "lines": [
+    {
+     "id": "qu2i_1",
+     "text": "Pip has two piles, and can only touch the top of each. But the visitors want a fair line.",
+     "start": 0.2,
+     "end": 5.76
+    },
+    {
+     "id": "qu2i_2",
+     "text": "Run the operations, and return what every take removed. A take must remove the oldest item.",
+     "start": 6.46,
+     "end": 12.62
+    },
+    {
+     "id": "qu2i_3",
+     "text": "A pile hands back the newest item first. That is backwards.",
+     "start": 13.32,
+     "end": 17.49
+    },
+    {
+     "id": "qu2i_4",
+     "text": "What happens to the order, if you pour one pile into the other? Your turn.",
+     "start": 18.19,
+     "end": 22.4
+    }
+   ],
+   "pauses": []
+  },
+  "qu2s": {
+   "src": "videos/qu2s.mp4",
+   "title": "Pour one pile into the other",
+   "duration": 87.3,
+   "lines": [
+    {
+     "id": "qu2s_1",
+     "text": "A pile gives back the newest first. Pour it into a second pile, and the order flips. Now the oldest is on top.",
+     "start": 0.2,
+     "end": 7.44
+    },
+    {
+     "id": "qu2s_2",
+     "text": "So new items go onto the inbox. Items leave from the outbox. And we only pour when the outbox is empty.",
+     "start": 8.19,
+     "end": 15.18
+    },
+    {
+     "id": "qu2s_3",
+     "text": "Two empty piles. Inbox, and outbox.",
+     "start": 15.93,
+     "end": 18.87
+    },
+    {
+     "id": "qu2s_4",
+     "text": "Add one. Line seven pushes it onto the inbox.",
+     "start": 19.62,
+     "end": 22.98
+    },
+    {
+     "id": "qu2s_5",
+     "text": "Add two. Push. It sits on top of the one.",
+     "start": 23.73,
+     "end": 26.53
+    },
+    {
+     "id": "qu2s_6",
+     "text": "A take. The outbox is empty. So line ten pours the inbox across, one item at a time.",
+     "start": 27.28,
+     "end": 33.49
+    },
+    {
+     "id": "qu2s_7",
+     "text": "Two went across first, then one. So one, the oldest, is on top. Line twelve pops it.",
+     "start": 34.24,
+     "end": 40.03
+    },
+    {
+     "id": "qu2s_8",
+     "text": "Add three. It goes onto the inbox, as always.",
+     "start": 40.78,
+     "end": 43.96
+    },
+    {
+     "id": "qu2s_9",
+     "text": "A take. The outbox still holds two. Do we pour first?",
+     "start": 44.71,
+     "end": 48.13
+    },
+    {
+     "id": "qu2s_10",
+     "text": "No. The outbox is not empty, so line twelve just pops. Two.",
+     "start": 49.33,
+     "end": 53.41
+    },
+    {
+     "id": "qu2s_11",
+     "text": "The last take. Now the outbox is empty, so the three is poured across, and popped.",
+     "start": 54.16,
+     "end": 59.34
+    },
+    {
+     "id": "qu2s_12",
+     "text": "Line fifteen returns what was taken. One, two, three. In arrival order.",
+     "start": 60.09,
+     "end": 65.22
+    },
+    {
+     "id": "qu2s_13",
+     "text": "Each item is pushed twice and popped twice at most. So the average cost of an operation is O of one.",
+     "start": 66.32,
+     "end": 72.79
+    },
+    {
+     "id": "qu2s_14",
+     "text": "The two piles together hold every waiting item. O of n space.",
+     "start": 73.54,
+     "end": 78.03
+    },
+    {
+     "id": "qu2s_15",
+     "text": "It looks like a trick. But some programming languages really do build a fast queue from two simple stacks.",
+     "start": 78.78,
+     "end": 85.7
+    }
+   ],
+   "pauses": [
+    {
+     "id": "qu2s-q",
+     "t": 48.33
+    }
+   ]
+  },
+  "ps1i": {
+   "src": "videos/ps1i.mp4",
+   "title": "The Running Total",
+   "duration": 21.13,
+   "lines": [
+    {
+     "id": "ps1i_1",
+     "text": "Pip counts seeds door by door, and wants the total so far at every door.",
+     "start": 0.2,
+     "end": 4.68
+    },
+    {
+     "id": "ps1i_2",
+     "text": "Return a new array. Position i holds the sum of everything up to and including door i.",
+     "start": 5.38,
+     "end": 11.09
+    },
+    {
+     "id": "ps1i_3",
+     "text": "To get the third total, do you really need to add three numbers again?",
+     "start": 11.79,
+     "end": 15.76
+    },
+    {
+     "id": "ps1i_4",
+     "text": "What single number could you carry along? Your turn.",
+     "start": 16.46,
+     "end": 19.53
+    }
+   ],
+   "pauses": []
+  },
+  "ps1s": {
+   "src": "videos/ps1s.mp4",
+   "title": "Carry the total along",
+   "duration": 63.32,
+   "lines": [
+    {
+     "id": "ps1s_1",
+     "text": "Each total is the total before it, plus one more number. So nothing needs to be added twice.",
+     "start": 0.2,
+     "end": 6.17
+    },
+    {
+     "id": "ps1s_2",
+     "text": "Carry one number, sum, from door to door. Write it down after every add.",
+     "start": 6.92,
+     "end": 11.52
+    },
+    {
+     "id": "ps1s_3",
+     "text": "Line two makes an empty row for the answers. Line three starts sum at zero.",
+     "start": 12.27,
+     "end": 17.15
+    },
+    {
+     "id": "ps1s_4",
+     "text": "I is zero. Line five adds the three to sum. Sum is three.",
+     "start": 17.9,
+     "end": 21.8
+    },
+    {
+     "id": "ps1s_5",
+     "text": "Line six writes that total into the answer row.",
+     "start": 22.55,
+     "end": 25.3
+    },
+    {
+     "id": "ps1s_6",
+     "text": "Next door. Add one. Sum is four. Write it down.",
+     "start": 26.05,
+     "end": 29.09
+    },
+    {
+     "id": "ps1s_7",
+     "text": "The next door holds four, and sum is four. What gets written?",
+     "start": 29.84,
+     "end": 33.49
+    },
+    {
+     "id": "ps1s_8",
+     "text": "Eight. The old total, plus one new number.",
+     "start": 34.69,
+     "end": 37.26
+    },
+    {
+     "id": "ps1s_9",
+     "text": "Last door. Add two. Ten.",
+     "start": 38.01,
+     "end": 39.85
+    },
+    {
+     "id": "ps1s_10",
+     "text": "The loop ends, and line eight returns the answer row.",
+     "start": 40.6,
+     "end": 43.87
+    },
+    {
+     "id": "ps1s_11",
+     "text": "One walk, and one add per door. O of n time.",
+     "start": 44.97,
+     "end": 48.02
+    },
+    {
+     "id": "ps1s_12",
+     "text": "The answer row holds n totals. O of n space. That row has a name: the prefix sums.",
+     "start": 48.77,
+     "end": 54.9
+    },
+    {
+     "id": "ps1s_13",
+     "text": "A bank statement works like this. Every line shows the balance so far. One running total.",
+     "start": 55.65,
+     "end": 61.72
+    }
+   ],
+   "pauses": [
+    {
+     "id": "ps1s-q",
+     "t": 33.69
+    }
+   ]
+  },
+  "ps2i": {
+   "src": "videos/ps2i.mp4",
+   "title": "The Balance Point",
+   "duration": 23.62,
+   "lines": [
+    {
+     "id": "ps2i_1",
+     "text": "Moss wants a door where the left side and the right side weigh the same.",
+     "start": 0.2,
+     "end": 4.31
+    },
+    {
+     "id": "ps2i_2",
+     "text": "Return the first index where the sum to its left equals the sum to its right. If there is none, return minus one.",
+     "start": 5.01,
+     "end": 12.6
+    },
+    {
+     "id": "ps2i_3",
+     "text": "Adding up both sides again at every door is a lot of walking.",
+     "start": 13.3,
+     "end": 17.07
+    },
+    {
+     "id": "ps2i_4",
+     "text": "If you know the total, and the left side, what is the right side? Your turn.",
+     "start": 17.77,
+     "end": 22.02
+    }
+   ],
+   "pauses": []
+  },
+  "ps2s": {
+   "src": "videos/ps2s.mp4",
+   "title": "Total, minus left, minus this door",
+   "duration": 68.81,
+   "lines": [
+    {
+     "id": "ps2s_1",
+     "text": "The whole row is three parts. The left side, this door, and the right side.",
+     "start": 0.2,
+     "end": 4.52
+    },
+    {
+     "id": "ps2s_2",
+     "text": "So if we know the total and the left side, the right side is one subtraction.",
+     "start": 5.27,
+     "end": 9.93
+    },
+    {
+     "id": "ps2s_3",
+     "text": "Lines two and three add everything up, once. The total is ten.",
+     "start": 10.68,
+     "end": 14.59
+    },
+    {
+     "id": "ps2s_4",
+     "text": "Line four. Left starts at zero, because nothing is to the left of the first door.",
+     "start": 15.34,
+     "end": 20.54
+    },
+    {
+     "id": "ps2s_5",
+     "text": "Door zero. Line six works out the right side. Ten, minus zero, minus two. Eight.",
+     "start": 21.29,
+     "end": 26.83
+    },
+    {
+     "id": "ps2s_6",
+     "text": "Line seven compares. Zero is not eight. Not balanced.",
+     "start": 27.58,
+     "end": 31.23
+    },
+    {
+     "id": "ps2s_7",
+     "text": "Line eight moves this door into the left side. Left is two.",
+     "start": 31.98,
+     "end": 35.59
+    },
+    {
+     "id": "ps2s_8",
+     "text": "Door one. Ten, minus two, minus one. Seven. Two is not seven.",
+     "start": 36.34,
+     "end": 40.58
+    },
+    {
+     "id": "ps2s_9",
+     "text": "Left becomes three.",
+     "start": 41.33,
+     "end": 42.61
+    },
+    {
+     "id": "ps2s_10",
+     "text": "Door two holds four, and left is three. What is the right side?",
+     "start": 43.36,
+     "end": 47.04
+    },
+    {
+     "id": "ps2s_11",
+     "text": "Three. Left equals right. Line seven returns the index. Two.",
+     "start": 48.24,
+     "end": 52.48
+    },
+    {
+     "id": "ps2s_12",
+     "text": "One walk for the total, and one to search. O of n time.",
+     "start": 53.58,
+     "end": 57.02
+    },
+    {
+     "id": "ps2s_13",
+     "text": "Three numbers, and no extra row. O of one space.",
+     "start": 57.77,
+     "end": 61.18
+    },
+    {
+     "id": "ps2s_14",
+     "text": "Loading a truck or a ship uses the same check. Where is the weight on both sides equal?",
+     "start": 61.93,
+     "end": 67.21
+    }
+   ],
+   "pauses": [
+    {
+     "id": "ps2s-q",
+     "t": 47.24
+    }
+   ]
+  },
+  "ps3i": {
+   "src": "videos/ps3i.mp4",
+   "title": "Many Questions",
+   "duration": 23.74,
+   "lines": [
+    {
+     "id": "ps3i_1",
+     "text": "The same row of doors, and a long list of questions. What is the sum of doors one to two? Zero to three?",
+     "start": 0.2,
+     "end": 6.91
+    },
+    {
+     "id": "ps3i_2",
+     "text": "Return the answer to every query, in order. Each query is a pair, l and r.",
+     "start": 7.61,
+     "end": 12.79
+    },
+    {
+     "id": "ps3i_3",
+     "text": "With fifty thousand questions, walking every range is far too slow.",
+     "start": 13.49,
+     "end": 17.83
+    },
+    {
+     "id": "ps3i_4",
+     "text": "What could you work out once, before the first question? Your turn.",
+     "start": 18.53,
+     "end": 22.14
+    }
+   ],
+   "pauses": []
+  },
+  "ps3s": {
+   "src": "videos/ps3s.mp4",
+   "title": "One row of totals, many answers",
+   "duration": 73.37,
+   "lines": [
+    {
+     "id": "ps3s_1",
+     "text": "Walking every range repeats the same adding. So do the adding once, before any question.",
+     "start": 0.2,
+     "end": 5.51
+    },
+    {
+     "id": "ps3s_2",
+     "text": "Keep the total before every door. Then any range is one total minus another.",
+     "start": 6.26,
+     "end": 11.36
+    },
+    {
+     "id": "ps3s_3",
+     "text": "Line two starts the totals row with a zero. The sum of nothing.",
+     "start": 12.11,
+     "end": 16.16
+    },
+    {
+     "id": "ps3s_4",
+     "text": "Lines three to five fill it in. Each slot is the slot before, plus one number. Zero plus three is three.",
+     "start": 16.91,
+     "end": 23.81
+    },
+    {
+     "id": "ps3s_5",
+     "text": "Then four. Eight. And ten.",
+     "start": 24.56,
+     "end": 26.22
+    },
+    {
+     "id": "ps3s_6",
+     "text": "Now the questions. The first one asks for doors one to two.",
+     "start": 26.97,
+     "end": 30.64
+    },
+    {
+     "id": "ps3s_7",
+     "text": "Line eight takes the total after door two. That is pre at three. Eight.",
+     "start": 31.39,
+     "end": 35.57
+    },
+    {
+     "id": "ps3s_8",
+     "text": "Then it removes everything before door one. Pre at one. Three. Eight minus three is five.",
+     "start": 36.32,
+     "end": 42.04
+    },
+    {
+     "id": "ps3s_9",
+     "text": "The next question. Doors zero to three. Which two slots do we need?",
+     "start": 42.79,
+     "end": 47.07
+    },
+    {
+     "id": "ps3s_10",
+     "text": "Pre at four, minus pre at zero. Ten minus zero. Ten.",
+     "start": 48.27,
+     "end": 52.03
+    },
+    {
+     "id": "ps3s_11",
+     "text": "Line ten returns both answers.",
+     "start": 52.78,
+     "end": 54.96
+    },
+    {
+     "id": "ps3s_12",
+     "text": "Building the row costs n steps, once. After that, every question is one subtraction.",
+     "start": 56.06,
+     "end": 61.5
+    },
+    {
+     "id": "ps3s_13",
+     "text": "The price is one extra row. O of n space.",
+     "start": 62.25,
+     "end": 65.4
+    },
+    {
+     "id": "ps3s_14",
+     "text": "A fitness app answers steps from Monday to Friday at once, because it keeps running totals.",
+     "start": 66.15,
+     "end": 71.77
+    }
+   ],
+   "pauses": [
+    {
+     "id": "ps3s-q",
+     "t": 47.27
+    }
+   ]
+  },
+  "ps4i": {
+   "src": "videos/ps4i.mp4",
+   "title": "Stretches That Add Up",
+   "duration": 23.33,
+   "lines": [
+    {
+     "id": "ps4i_1",
+     "text": "How many unbroken stretches of these doors add up to exactly three?",
+     "start": 0.2,
+     "end": 4.44
+    },
+    {
+     "id": "ps4i_2",
+     "text": "Return the count. A stretch is any run of neighbours, even a single door.",
+     "start": 5.14,
+     "end": 9.64
+    },
+    {
+     "id": "ps4i_3",
+     "text": "Trying every start and every end is too slow for a long row.",
+     "start": 10.34,
+     "end": 14.21
+    },
+    {
+     "id": "ps4i_4",
+     "text": "Every stretch is a running total, minus an earlier total. What could remember the earlier ones? Your turn.",
+     "start": 14.91,
+     "end": 21.73
+    }
+   ],
+   "pauses": []
+  },
+  "ps4s": {
+   "src": "videos/ps4s.mp4",
+   "title": "Look back for sum \u2212 k",
+   "duration": 91.67,
+   "lines": [
+    {
+     "id": "ps4s_1",
+     "text": "Every stretch is the running total now, minus the running total at some earlier point.",
+     "start": 0.2,
+     "end": 5.51
+    },
+    {
+     "id": "ps4s_2",
+     "text": "So a stretch ending here adds up to k, when an earlier total equals sum minus k. A map remembers the earlier totals.",
+     "start": 6.26,
+     "end": 14.33
+    },
+    {
+     "id": "ps4s_3",
+     "text": "Line two makes the map of totals seen so far. It starts with zero, seen once. That is the total before the first door.",
+     "start": 15.08,
+     "end": 22.91
+    },
+    {
+     "id": "ps4s_4",
+     "text": "Sum and count both start at zero.",
+     "start": 23.66,
+     "end": 25.61
+    },
+    {
+     "id": "ps4s_5",
+     "text": "Door zero. Line six adds it. Sum is one.",
+     "start": 26.36,
+     "end": 29.25
+    },
+    {
+     "id": "ps4s_6",
+     "text": "Line seven looks for sum minus k. One minus three is minus two. Never seen. Count stays zero.",
+     "start": 30,
+     "end": 36.57
+    },
+    {
+     "id": "ps4s_7",
+     "text": "Line eight records the total, one, in the map.",
+     "start": 37.32,
+     "end": 39.96
+    },
+    {
+     "id": "ps4s_8",
+     "text": "Door one. Sum is three. We need three minus three. Zero.",
+     "start": 40.71,
+     "end": 44.37
+    },
+    {
+     "id": "ps4s_9",
+     "text": "Zero was seen once. So one stretch ends here. Doors zero and one. Count is one.",
+     "start": 45.12,
+     "end": 51.03
+    },
+    {
+     "id": "ps4s_10",
+     "text": "Record the three.",
+     "start": 51.78,
+     "end": 52.91
+    },
+    {
+     "id": "ps4s_11",
+     "text": "Door two. Sum is four. Which earlier total are we looking for?",
+     "start": 53.66,
+     "end": 57.71
+    },
+    {
+     "id": "ps4s_12",
+     "text": "One. Seen once. That stretch is doors one and two. Count is two.",
+     "start": 58.91,
+     "end": 62.98
+    },
+    {
+     "id": "ps4s_13",
+     "text": "Last door. Sum is seven. We need four. Seen once. The door on its own. Count is three.",
+     "start": 63.73,
+     "end": 69.48
+    },
+    {
+     "id": "ps4s_14",
+     "text": "Line ten returns the count. Three.",
+     "start": 70.23,
+     "end": 72.58
+    },
+    {
+     "id": "ps4s_15",
+     "text": "One walk, and each map lookup is one step. O of n time.",
+     "start": 73.68,
+     "end": 77.32
+    },
+    {
+     "id": "ps4s_16",
+     "text": "The map can hold one total per door. O of n space.",
+     "start": 78.07,
+     "end": 81.59
+    },
+    {
+     "id": "ps4s_17",
+     "text": "A shop can ask: which stretches of days added up to exactly the sales target? This look back answers it in one pass.",
+     "start": 82.34,
+     "end": 90.07
+    }
+   ],
+   "pauses": [
+    {
+     "id": "ps4s-q",
+     "t": 57.91
+    }
+   ]
+  },
+  "st1i": {
+   "src": "videos/st1i.mp4",
+   "title": "Matching Brackets",
+   "duration": 20.17,
+   "lines": [
+    {
+     "id": "st1i_1",
+     "text": "Brackets come in pairs. An opener, and later, its closer.",
+     "start": 0.2,
+     "end": 3.88
+    },
+    {
+     "id": "st1i_2",
+     "text": "Return true if every bracket is closed by the right kind, in the right order.",
+     "start": 4.58,
+     "end": 9.31
+    },
+    {
+     "id": "st1i_3",
+     "text": "When a closer arrives, it must match the most recent opener that is still open.",
+     "start": 10.01,
+     "end": 14.83
+    },
+    {
+     "id": "st1i_4",
+     "text": "What keeps the most recent thing on top? Your turn.",
+     "start": 15.53,
+     "end": 18.57
+    }
+   ],
+   "pauses": []
+  },
+  "st1s": {
+   "src": "videos/st1s.mp4",
+   "title": "The top is the most recent opener",
+   "duration": 77.31,
+   "lines": [
+    {
+     "id": "st1s_1",
+     "text": "A closer must match the most recent opener that is still open. A stack keeps exactly that on top.",
+     "start": 0.2,
+     "end": 6.29
+    },
+    {
+     "id": "st1s_2",
+     "text": "Push every opener. For every closer, pop the top, and check that the two belong together.",
+     "start": 7.04,
+     "end": 12.6
+    },
+    {
+     "id": "st1s_3",
+     "text": "Line two is a lookup: for each closer, which opener it needs. Line three makes an empty stack.",
+     "start": 13.35,
+     "end": 19.43
+    },
+    {
+     "id": "st1s_4",
+     "text": "The first character is an opener. Line eight pushes it.",
+     "start": 20.18,
+     "end": 23.52
+    },
+    {
+     "id": "st1s_5",
+     "text": "Another opener. Push. It now sits on top.",
+     "start": 24.27,
+     "end": 27.19
+    },
+    {
+     "id": "st1s_6",
+     "text": "A closer. Line six pops the top, and checks it against what this closer needs.",
+     "start": 27.94,
+     "end": 33.01
+    },
+    {
+     "id": "st1s_7",
+     "text": "They match. The pair is done, and the stack is back to one opener.",
+     "start": 33.76,
+     "end": 37.79
+    },
+    {
+     "id": "st1s_8",
+     "text": "An opener. Push.",
+     "start": 38.54,
+     "end": 39.83
+    },
+    {
+     "id": "st1s_9",
+     "text": "A closer. It needs a curly opener. What is on top?",
+     "start": 40.58,
+     "end": 43.96
+    },
+    {
+     "id": "st1s_10",
+     "text": "The curly opener. A match.",
+     "start": 45.16,
+     "end": 47.07
+    },
+    {
+     "id": "st1s_11",
+     "text": "The last closer pops the round opener. A match, and the stack is empty.",
+     "start": 47.82,
+     "end": 52.55
+    },
+    {
+     "id": "st1s_12",
+     "text": "Line eleven checks that nothing is still open. True.",
+     "start": 53.3,
+     "end": 56.57
+    },
+    {
+     "id": "st1s_13",
+     "text": "One pass, and each push or pop is one step. O of n time.",
+     "start": 57.67,
+     "end": 61.58
+    },
+    {
+     "id": "st1s_14",
+     "text": "In the worst case every character is an opener, and all of them wait on the stack. O of n space.",
+     "start": 62.33,
+     "end": 68.8
+    },
+    {
+     "id": "st1s_15",
+     "text": "Your code editor does this on every key press. It is how it finds the bracket you forgot to close.",
+     "start": 69.55,
+     "end": 75.71
+    }
+   ],
+   "pauses": [
+    {
+     "id": "st1s-q",
+     "t": 44.16
+    }
+   ]
+  },
+  "st2i": {
+   "src": "videos/st2i.mp4",
+   "title": "The Undo Key",
+   "duration": 18.82,
+   "lines": [
+    {
+     "id": "st2i_1",
+     "text": "Pip is typing, and keeps hitting the undo key.",
+     "start": 0.2,
+     "end": 2.91
+    },
+    {
+     "id": "st2i_2",
+     "text": "Every hash deletes the last letter typed. Return the text that is left at the end.",
+     "start": 3.61,
+     "end": 8.51
+    },
+    {
+     "id": "st2i_3",
+     "text": "Undo always removes the newest letter. Never an older one.",
+     "start": 9.21,
+     "end": 13.18
+    },
+    {
+     "id": "st2i_4",
+     "text": "Which structure hands you the newest thing first? Your turn.",
+     "start": 13.88,
+     "end": 17.22
+    }
+   ],
+   "pauses": []
+  },
+  "st2s": {
+   "src": "videos/st2s.mp4",
+   "title": "Undo pops the newest",
+   "duration": 49.6,
+   "lines": [
+    {
+     "id": "st2s_1",
+     "text": "Undo always removes the most recent letter. That is last in, first out.",
+     "start": 0.2,
+     "end": 4.86
+    },
+    {
+     "id": "st2s_2",
+     "text": "So letters are pushed, and every hash is a pop.",
+     "start": 5.61,
+     "end": 8.54
+    },
+    {
+     "id": "st2s_3",
+     "text": "Line two makes an empty stack.",
+     "start": 9.29,
+     "end": 11.12
+    },
+    {
+     "id": "st2s_4",
+     "text": "A. A letter. Line five pushes it.",
+     "start": 11.87,
+     "end": 14.08
+    },
+    {
+     "id": "st2s_5",
+     "text": "B. Push.",
+     "start": 14.83,
+     "end": 15.73
+    },
+    {
+     "id": "st2s_6",
+     "text": "A hash. Line four pops the top. B is gone.",
+     "start": 16.48,
+     "end": 19.45
+    },
+    {
+     "id": "st2s_7",
+     "text": "C. Push.",
+     "start": 20.2,
+     "end": 21.1
+    },
+    {
+     "id": "st2s_8",
+     "text": "Another hash. Which letter does it remove?",
+     "start": 21.85,
+     "end": 24.46
+    },
+    {
+     "id": "st2s_9",
+     "text": "C, the newest. A is left.",
+     "start": 25.66,
+     "end": 27.34
+    },
+    {
+     "id": "st2s_10",
+     "text": "D. Push.",
+     "start": 28.09,
+     "end": 28.98
+    },
+    {
+     "id": "st2s_11",
+     "text": "Line seven joins what is left into one string. A, D.",
+     "start": 29.73,
+     "end": 33.32
+    },
+    {
+     "id": "st2s_12",
+     "text": "One pass, one push or pop per key. O of n time.",
+     "start": 34.42,
+     "end": 37.77
+    },
+    {
+     "id": "st2s_13",
+     "text": "The stack can hold every letter. O of n space.",
+     "start": 38.52,
+     "end": 41.6
+    },
+    {
+     "id": "st2s_14",
+     "text": "Every undo button works like this. Each action is pushed, and undo pops the newest one.",
+     "start": 42.35,
+     "end": 48
+    }
+   ],
+   "pauses": [
+    {
+     "id": "st2s-q",
+     "t": 24.66
+    }
+   ]
+  },
+  "st3i": {
+   "src": "videos/st3i.mp4",
+   "title": "Sums Without Brackets",
+   "duration": 18.31,
+   "lines": [
+    {
+     "id": "st3i_1",
+     "text": "This sum has no brackets. Each operator comes after its two numbers.",
+     "start": 0.2,
+     "end": 4.93
+    },
+    {
+     "id": "st3i_2",
+     "text": "Return the result. Two, three, plus, means two plus three.",
+     "start": 5.63,
+     "end": 9.37
+    },
+    {
+     "id": "st3i_3",
+     "text": "An operator always uses the two most recent values.",
+     "start": 10.07,
+     "end": 13.82
+    },
+    {
+     "id": "st3i_4",
+     "text": "Where should the values wait? Your turn.",
+     "start": 14.52,
+     "end": 16.71
+    }
+   ],
+   "pauses": []
+  },
+  "st3s": {
+   "src": "videos/st3s.mp4",
+   "title": "An operator takes the top two",
+   "duration": 59.64,
+   "lines": [
+    {
+     "id": "st3s_1",
+     "text": "An operator always works on the two most recent values. So values wait on a stack.",
+     "start": 0.2,
+     "end": 5.84
+    },
+    {
+     "id": "st3s_2",
+     "text": "A number is pushed. An operator pops two values, and pushes back one result.",
+     "start": 6.59,
+     "end": 11.73
+    },
+    {
+     "id": "st3s_3",
+     "text": "Line two makes an empty stack.",
+     "start": 12.48,
+     "end": 14.31
+    },
+    {
+     "id": "st3s_4",
+     "text": "Two is a number. Line eleven pushes it.",
+     "start": 15.06,
+     "end": 17.81
+    },
+    {
+     "id": "st3s_5",
+     "text": "Three. Push.",
+     "start": 18.56,
+     "end": 19.5
+    },
+    {
+     "id": "st3s_6",
+     "text": "A plus. Lines five and six pop the top two. B is three, and A is two.",
+     "start": 20.25,
+     "end": 25.17
+    },
+    {
+     "id": "st3s_7",
+     "text": "Line seven pushes A plus B. Five.",
+     "start": 25.92,
+     "end": 28.13
+    },
+    {
+     "id": "st3s_8",
+     "text": "Four. Push.",
+     "start": 28.88,
+     "end": 29.86
+    },
+    {
+     "id": "st3s_9",
+     "text": "A times. It pops four, then five. What gets pushed?",
+     "start": 30.61,
+     "end": 33.99
+    },
+    {
+     "id": "st3s_10",
+     "text": "Twenty.",
+     "start": 35.19,
+     "end": 35.98
+    },
+    {
+     "id": "st3s_11",
+     "text": "The tokens are finished. Line fourteen pops the one value left. Twenty.",
+     "start": 36.73,
+     "end": 41.48
+    },
+    {
+     "id": "st3s_12",
+     "text": "One pass, a few steps per token. O of n time.",
+     "start": 42.58,
+     "end": 45.81
+    },
+    {
+     "id": "st3s_13",
+     "text": "The stack holds the values that are still waiting. O of n space.",
+     "start": 46.56,
+     "end": 50.56
+    },
+    {
+     "id": "st3s_14",
+     "text": "Calculators and programming languages work out sums this way, after putting them in this bracket free order.",
+     "start": 51.31,
+     "end": 58.04
+    }
+   ],
+   "pauses": [
+    {
+     "id": "st3s-q",
+     "t": 34.19
+    }
+   ]
+  },
+  "st4i": {
+   "src": "videos/st4i.mp4",
+   "title": "The Smallest, Instantly",
+   "duration": 22.69,
+   "lines": [
+    {
+     "id": "st4i_1",
+     "text": "A stack of parcels. And at any moment, someone may ask: which is the smallest?",
+     "start": 0.2,
+     "end": 5.17
+    },
+    {
+     "id": "st4i_2",
+     "text": "Run the operations, and return the answer to every min question.",
+     "start": 5.87,
+     "end": 9.98
+    },
+    {
+     "id": "st4i_3",
+     "text": "Searching the whole pile each time is too slow. And one remembered number breaks when that parcel is popped.",
+     "start": 10.68,
+     "end": 16.84
+    },
+    {
+     "id": "st4i_4",
+     "text": "What could you write down at every level of the pile? Your turn.",
+     "start": 17.54,
+     "end": 21.09
+    }
+   ],
+   "pauses": []
+  },
+  "st4s": {
+   "src": "videos/st4s.mp4",
+   "title": "A second stack of minimums",
+   "duration": 70.31,
+   "lines": [
+    {
+     "id": "st4s_1",
+     "text": "One remembered minimum is not enough. When it is popped, you would not know the one before it.",
+     "start": 0.2,
+     "end": 5.69
+    },
+    {
+     "id": "st4s_2",
+     "text": "So keep a second stack. At every level, it holds the smallest value from there down.",
+     "start": 6.44,
+     "end": 11.73
+    },
+    {
+     "id": "st4s_3",
+     "text": "Two empty stacks. One for the values, one for the minimums.",
+     "start": 12.48,
+     "end": 16.23
+    },
+    {
+     "id": "st4s_4",
+     "text": "Push three. It is the first value, so it is also the smallest so far.",
+     "start": 16.98,
+     "end": 21.48
+    },
+    {
+     "id": "st4s_5",
+     "text": "Push five. The smallest is still three, so mins gets another three.",
+     "start": 22.23,
+     "end": 26.43
+    },
+    {
+     "id": "st4s_6",
+     "text": "Push one. One is smaller than three. Mins gets a one.",
+     "start": 27.18,
+     "end": 30.59
+    },
+    {
+     "id": "st4s_7",
+     "text": "A min question. Line thirteen reads the top of mins. One. No searching.",
+     "start": 31.34,
+     "end": 36.21
+    },
+    {
+     "id": "st4s_8",
+     "text": "Pop. Both stacks lose their top, together.",
+     "start": 36.96,
+     "end": 39.52
+    },
+    {
+     "id": "st4s_9",
+     "text": "Another min question. What is the answer now?",
+     "start": 40.27,
+     "end": 43.1
+    },
+    {
+     "id": "st4s_10",
+     "text": "Three. The answer was waiting one level down.",
+     "start": 44.3,
+     "end": 47
+    },
+    {
+     "id": "st4s_11",
+     "text": "Line sixteen returns both answers.",
+     "start": 47.75,
+     "end": 50.13
+    },
+    {
+     "id": "st4s_12",
+     "text": "Every operation is one push, one pop or one read. O of one each.",
+     "start": 51.23,
+     "end": 56.23
+    },
+    {
+     "id": "st4s_13",
+     "text": "The price is a second stack of the same size. O of n space.",
+     "start": 56.98,
+     "end": 61.06
+    },
+    {
+     "id": "st4s_14",
+     "text": "An undo history that must also know the smallest value so far keeps a second stack, just like this.",
+     "start": 61.81,
+     "end": 68.71
+    }
+   ],
+   "pauses": [
+    {
+     "id": "st4s-q",
+     "t": 43.3
+    }
+   ]
+  },
+  "st5i": {
+   "src": "videos/st5i.mp4",
+   "title": "The Next Warmer Day",
+   "duration": 24.3,
+   "lines": [
+    {
+     "id": "st5i_1",
+     "text": "Five days of weather. On each day, Pip wonders how long until a warmer one.",
+     "start": 0.2,
+     "end": 5.11
+    },
+    {
+     "id": "st5i_2",
+     "text": "For every day, return how many days to wait for a warmer day. If none comes, zero.",
+     "start": 5.81,
+     "end": 11.36
+    },
+    {
+     "id": "st5i_3",
+     "text": "Looking ahead from every single day is O of n squared.",
+     "start": 12.06,
+     "end": 15.66
+    },
+    {
+     "id": "st5i_4",
+     "text": "Turn it round. When a warm day arrives, which earlier days has it just answered? Your turn.",
+     "start": 16.36,
+     "end": 22.7
+    }
+   ],
+   "pauses": []
+  },
+  "st5s": {
+   "src": "videos/st5s.mp4",
+   "title": "New days answer old days",
+   "duration": 89.13,
+   "lines": [
+    {
+     "id": "st5s_1",
+     "text": "Do not look ahead from each day. Let each new day answer the earlier days that were waiting for it.",
+     "start": 0.2,
+     "end": 6
+    },
+    {
+     "id": "st5s_2",
+     "text": "The waiting days sit on a stack. A warm day pops every colder day off the top.",
+     "start": 6.75,
+     "end": 11.65
+    },
+    {
+     "id": "st5s_3",
+     "text": "Every answer starts at zero. The stack of waiting days is empty.",
+     "start": 12.4,
+     "end": 16.76
+    },
+    {
+     "id": "st5s_4",
+     "text": "Day zero. Nothing is waiting, so line nine just pushes it.",
+     "start": 17.51,
+     "end": 21.31
+    },
+    {
+     "id": "st5s_5",
+     "text": "Day one is two degrees. The day on top was four. Two is not warmer, so nobody is answered. Push.",
+     "start": 22.06,
+     "end": 28.74
+    },
+    {
+     "id": "st5s_6",
+     "text": "Day two is three degrees. The top is day one, which was two. Three is warmer.",
+     "start": 29.49,
+     "end": 34.81
+    },
+    {
+     "id": "st5s_7",
+     "text": "So day one is popped, and its answer is two minus one. One day.",
+     "start": 35.56,
+     "end": 39.69
+    },
+    {
+     "id": "st5s_8",
+     "text": "Next on top is day zero, which was four. Three is not warmer. Stop, and push day two.",
+     "start": 40.44,
+     "end": 46.4
+    },
+    {
+     "id": "st5s_9",
+     "text": "Day three is five degrees. Days two and zero are waiting. How many does it answer?",
+     "start": 47.15,
+     "end": 52.75
+    },
+    {
+     "id": "st5s_10",
+     "text": "Both. Day two waited one day. Day zero waited three.",
+     "start": 53.95,
+     "end": 57.61
+    },
+    {
+     "id": "st5s_11",
+     "text": "Push day three. Day four is colder, so it is pushed too. Nobody answers them.",
+     "start": 58.36,
+     "end": 63.55
+    },
+    {
+     "id": "st5s_12",
+     "text": "Line eleven returns the answers. The days left on the stack keep their zero.",
+     "start": 64.3,
+     "end": 69.29
+    },
+    {
+     "id": "st5s_13",
+     "text": "Each day is pushed once, and popped at most once. So the inner loop runs n times in total. O of n.",
+     "start": 70.39,
+     "end": 77.07
+    },
+    {
+     "id": "st5s_14",
+     "text": "The stack can hold every day. O of n space.",
+     "start": 77.82,
+     "end": 80.86
+    },
+    {
+     "id": "st5s_15",
+     "text": "A weather app can answer, when is the next warmer day, for every day in one pass like this.",
+     "start": 81.61,
+     "end": 87.53
+    }
+   ],
+   "pauses": [
+    {
+     "id": "st5s-q",
+     "t": 52.95
+    }
+   ]
+  },
+  "st6i": {
+   "src": "videos/st6i.mp4",
+   "title": "Rocks on a Line",
+   "duration": 20.5,
+   "lines": [
+    {
+     "id": "st6i_1",
+     "text": "Rocks roll along a line. Positive ones roll right. Negative ones roll left.",
+     "start": 0.2,
+     "end": 5.51
+    },
+    {
+     "id": "st6i_2",
+     "text": "When two meet, the smaller one breaks. Return the rocks that are left.",
+     "start": 6.21,
+     "end": 10.11
+    },
+    {
+     "id": "st6i_3",
+     "text": "A rock rolling left always meets the most recent survivor first.",
+     "start": 10.81,
+     "end": 14.8
+    },
+    {
+     "id": "st6i_4",
+     "text": "What keeps the most recent survivor on top? Your turn.",
+     "start": 15.5,
+     "end": 18.9
+    }
+   ],
+   "pauses": []
+  },
+  "st6s": {
+   "src": "videos/st6s.mp4",
+   "title": "The newest survivor fights first",
+   "duration": 71.76,
+   "lines": [
+    {
+     "id": "st6s_1",
+     "text": "Only one kind of pair can crash. A rock moving right, followed by a rock moving left.",
+     "start": 0.2,
+     "end": 5.61
+    },
+    {
+     "id": "st6s_2",
+     "text": "A rock moving left meets the most recent survivor first. So the survivors wait on a stack.",
+     "start": 6.36,
+     "end": 12.04
+    },
+    {
+     "id": "st6s_3",
+     "text": "Four moves right. Nothing to fight. Line eleven pushes it.",
+     "start": 12.79,
+     "end": 16.43
+    },
+    {
+     "id": "st6s_4",
+     "text": "Two moves right as well. Push.",
+     "start": 17.18,
+     "end": 19.26
+    },
+    {
+     "id": "st6s_5",
+     "text": "Minus three moves left, and the top moves right. They crash. Size two against size three.",
+     "start": 20.01,
+     "end": 25.72
+    },
+    {
+     "id": "st6s_6",
+     "text": "Line eight. The top is smaller, so it breaks, and is popped.",
+     "start": 26.47,
+     "end": 29.62
+    },
+    {
+     "id": "st6s_7",
+     "text": "The loop runs again. Now it is four against three. Who breaks?",
+     "start": 30.37,
+     "end": 34.33
+    },
+    {
+     "id": "st6s_8",
+     "text": "The new rock. Line nine sets alive to false, so it is never pushed.",
+     "start": 35.53,
+     "end": 39.96
+    },
+    {
+     "id": "st6s_9",
+     "text": "Minus five. Four against five. The four breaks, and is popped.",
+     "start": 40.71,
+     "end": 44.57
+    },
+    {
+     "id": "st6s_10",
+     "text": "The stack is empty, so the loop stops. Minus five is still alive, and is pushed.",
+     "start": 45.32,
+     "end": 50.36
+    },
+    {
+     "id": "st6s_11",
+     "text": "Line thirteen returns the survivors.",
+     "start": 51.11,
+     "end": 53.81
+    },
+    {
+     "id": "st6s_12",
+     "text": "Each rock is pushed once, and popped at most once. O of n time.",
+     "start": 54.91,
+     "end": 58.93
+    },
+    {
+     "id": "st6s_13",
+     "text": "The stack can hold every rock. O of n space.",
+     "start": 59.68,
+     "end": 62.77
+    },
+    {
+     "id": "st6s_14",
+     "text": "It is a puzzle, but the habit is real. A new arrival is settled against the most recent survivor first.",
+     "start": 63.52,
+     "end": 70.16
+    }
+   ],
+   "pauses": [
+    {
+     "id": "st6s-q",
+     "t": 34.53
+    }
+   ]
+  },
+  "tp1i": {
+   "src": "videos/tp1i.mp4",
+   "title": "The Pair in Order",
+   "duration": 23.62,
+   "lines": [
+    {
+     "id": "tp1i_1",
+     "text": "Two doors in this row add up to nine. And the row is sorted.",
+     "start": 0.2,
+     "end": 3.93
+    },
+    {
+     "id": "tp1i_2",
+     "text": "Return the indexes of the two doors. If there is no such pair, return minus one, minus one.",
+     "start": 4.63,
+     "end": 10.99
+    },
+    {
+     "id": "tp1i_3",
+     "text": "A map would work. But sorted order lets you do it with no extra memory at all.",
+     "start": 11.69,
+     "end": 16.67
+    },
+    {
+     "id": "tp1i_4",
+     "text": "Start at the two ends. One plus nine. Too big, or too small? Your turn.",
+     "start": 17.37,
+     "end": 22.02
+    }
+   ],
+   "pauses": []
+  },
+  "tp1s": {
+   "src": "videos/tp1s.mp4",
+   "title": "Let the sum steer",
+   "duration": 68,
+   "lines": [
+    {
+     "id": "tp1s_1",
+     "text": "The row is sorted. So the smallest number is on the left, and the biggest is on the right.",
+     "start": 0.2,
+     "end": 5.73
+    },
+    {
+     "id": "tp1s_2",
+     "text": "Add the two ends. If the sum is too big, give up the biggest. If it is too small, give up the smallest.",
+     "start": 6.48,
+     "end": 13.06
+    },
+    {
+     "id": "tp1s_3",
+     "text": "Lines two and three place Pip on the first door, and Moss on the last.",
+     "start": 13.81,
+     "end": 17.88
+    },
+    {
+     "id": "tp1s_4",
+     "text": "Line five adds the two doors. One plus nine is ten.",
+     "start": 18.63,
+     "end": 22.24
+    },
+    {
+     "id": "tp1s_5",
+     "text": "Ten is more than nine. Too big. Line eight moves Moss one step left.",
+     "start": 22.99,
+     "end": 27.61
+    },
+    {
+     "id": "tp1s_6",
+     "text": "One plus six is seven.",
+     "start": 28.36,
+     "end": 29.94
+    },
+    {
+     "id": "tp1s_7",
+     "text": "Seven is less than nine. Too small. Who moves?",
+     "start": 30.69,
+     "end": 33.82
+    },
+    {
+     "id": "tp1s_8",
+     "text": "Pip. Moving the left marker forward is the only way to make the sum bigger.",
+     "start": 35.02,
+     "end": 39.73
+    },
+    {
+     "id": "tp1s_9",
+     "text": "Three plus six is nine.",
+     "start": 40.48,
+     "end": 41.96
+    },
+    {
+     "id": "tp1s_10",
+     "text": "That is the target. Line six returns both indexes.",
+     "start": 42.71,
+     "end": 46.35
+    },
+    {
+     "id": "tp1s_11",
+     "text": "Every step moves one walker inward, so there are at most n steps. O of n time.",
+     "start": 47.45,
+     "end": 53.16
+    },
+    {
+     "id": "tp1s_12",
+     "text": "No map, and no extra row. O of one space. That is what sorted order buys you.",
+     "start": 53.91,
+     "end": 59.3
+    },
+    {
+     "id": "tp1s_13",
+     "text": "A shop app finds two items that use up a voucher exactly, by walking a price list from both ends.",
+     "start": 60.05,
+     "end": 66.4
+    }
+   ],
+   "pauses": [
+    {
+     "id": "tp1s-q",
+     "t": 34.02
+    }
+   ]
+  },
+  "tp2i": {
+   "src": "videos/tp2i.mp4",
+   "title": "Squares in Order",
+   "duration": 19.48,
+   "lines": [
+    {
+     "id": "tp2i_1",
+     "text": "A sorted row, with some negative numbers. Square every one, and the order breaks.",
+     "start": 0.2,
+     "end": 5.38
+    },
+    {
+     "id": "tp2i_2",
+     "text": "Return the squares in sorted order. And do not call sort.",
+     "start": 6.08,
+     "end": 9.63
+    },
+    {
+     "id": "tp2i_3",
+     "text": "Minus four squared is sixteen. Bigger than three squared.",
+     "start": 10.33,
+     "end": 13.89
+    },
+    {
+     "id": "tp2i_4",
+     "text": "So where does the biggest square always hide? Your turn.",
+     "start": 14.59,
+     "end": 17.88
+    }
+   ],
+   "pauses": []
+  },
+  "tp2s": {
+   "src": "videos/tp2s.mp4",
+   "title": "Biggest first, from the back",
+   "duration": 77.01,
+   "lines": [
+    {
+     "id": "tp2s_1",
+     "text": "Squaring a negative number makes it positive. So the biggest squares hide at the two ends of the row.",
+     "start": 0.2,
+     "end": 6
+    },
+    {
+     "id": "tp2s_2",
+     "text": "Compare the two ends, take the bigger square, and fill the answer from the back.",
+     "start": 6.75,
+     "end": 11.03
+    },
+    {
+     "id": "tp2s_3",
+     "text": "Pip stands on the left end. Moss on the right end.",
+     "start": 11.78,
+     "end": 14.78
+    },
+    {
+     "id": "tp2s_4",
+     "text": "K points at the last slot of the answer. We fill from the back, biggest first.",
+     "start": 15.53,
+     "end": 20.38
+    },
+    {
+     "id": "tp2s_5",
+     "text": "Line six compares the sizes, ignoring the sign. Four against five. Five is bigger.",
+     "start": 21.13,
+     "end": 27.27
+    },
+    {
+     "id": "tp2s_6",
+     "text": "So line ten writes five squared. Twenty five. And Moss steps in.",
+     "start": 28.02,
+     "end": 32.22
+    },
+    {
+     "id": "tp2s_7",
+     "text": "The next slot. Four against three. This time the left end wins.",
+     "start": 32.97,
+     "end": 37.35
+    },
+    {
+     "id": "tp2s_8",
+     "text": "Minus four squared is sixteen. Pip steps in.",
+     "start": 38.1,
+     "end": 41.14
+    },
+    {
+     "id": "tp2s_9",
+     "text": "The next slot. Minus one against three. Which square goes in?",
+     "start": 41.89,
+     "end": 45.65
+    },
+    {
+     "id": "tp2s_10",
+     "text": "Nine. Three is the bigger size.",
+     "start": 46.85,
+     "end": 48.89
+    },
+    {
+     "id": "tp2s_11",
+     "text": "Then minus one against zero. One goes in. And the last slot gets zero.",
+     "start": 49.64,
+     "end": 54.44
+    },
+    {
+     "id": "tp2s_12",
+     "text": "Line fourteen returns the answer row, already in order.",
+     "start": 55.19,
+     "end": 58.84
+    },
+    {
+     "id": "tp2s_13",
+     "text": "Each slot is filled once. O of n time. No sorting needed.",
+     "start": 59.94,
+     "end": 63.9
+    },
+    {
+     "id": "tp2s_14",
+     "text": "The answer row is the only extra space. O of n.",
+     "start": 64.65,
+     "end": 68.13
+    },
+    {
+     "id": "tp2s_15",
+     "text": "Ranking things by how far they are from a point, on either side, uses the same walk from both ends.",
+     "start": 68.88,
+     "end": 75.41
+    }
+   ],
+   "pauses": [
+    {
+     "id": "tp2s-q",
+     "t": 45.85
+    }
+   ]
+  },
+  "tp3i": {
+   "src": "videos/tp3i.mp4",
+   "title": "Zeros to the Back",
+   "duration": 21.53,
+   "lines": [
+    {
+     "id": "tp3i_1",
+     "text": "Zeros are scattered through this row. They belong at the back.",
+     "start": 0.2,
+     "end": 3.7
+    },
+    {
+     "id": "tp3i_2",
+     "text": "Move every zero to the end, and keep the other numbers in the same order. Change the array in place.",
+     "start": 4.4,
+     "end": 10.84
+    },
+    {
+     "id": "tp3i_3",
+     "text": "Deleting and re-adding would shift everything, again and again.",
+     "start": 11.54,
+     "end": 15.31
+    },
+    {
+     "id": "tp3i_4",
+     "text": "What if one walker reads, and another marks where to write? Your turn.",
+     "start": 16.01,
+     "end": 19.93
+    }
+   ],
+   "pauses": []
+  },
+  "tp3s": {
+   "src": "videos/tp3s.mp4",
+   "title": "One reads, one writes",
+   "duration": 74.25,
+   "lines": [
+    {
+     "id": "tp3s_1",
+     "text": "Two walkers, moving the same way. A fast reader, and a slow writer.",
+     "start": 0.2,
+     "end": 4.49
+    },
+    {
+     "id": "tp3s_2",
+     "text": "The reader finds the real numbers. The writer marks where the next one belongs.",
+     "start": 5.24,
+     "end": 10
+    },
+    {
+     "id": "tp3s_3",
+     "text": "Line two. Moss marks the write position: the next door that should hold a real number.",
+     "start": 10.75,
+     "end": 16.11
+    },
+    {
+     "id": "tp3s_4",
+     "text": "Pip is the reader, and walks every door. Door zero holds a zero. Line four says skip it.",
+     "start": 16.86,
+     "end": 22.66
+    },
+    {
+     "id": "tp3s_5",
+     "text": "Door one holds three. Not a zero.",
+     "start": 23.41,
+     "end": 25.8
+    },
+    {
+     "id": "tp3s_6",
+     "text": "Lines five to seven swap it with the door Moss is on. Three goes to the front.",
+     "start": 26.55,
+     "end": 31.51
+    },
+    {
+     "id": "tp3s_7",
+     "text": "Line eight moves the write position forward.",
+     "start": 32.26,
+     "end": 34.8
+    },
+    {
+     "id": "tp3s_8",
+     "text": "Door two. A zero. Skip.",
+     "start": 35.55,
+     "end": 37.22
+    },
+    {
+     "id": "tp3s_9",
+     "text": "Door three holds one. Moss is on door one. What happens?",
+     "start": 37.97,
+     "end": 41.72
+    },
+    {
+     "id": "tp3s_10",
+     "text": "The one swaps into door one, and Moss steps forward.",
+     "start": 42.92,
+     "end": 46.03
+    },
+    {
+     "id": "tp3s_11",
+     "text": "The last door. Two. It swaps into door two.",
+     "start": 46.78,
+     "end": 49.67
+    },
+    {
+     "id": "tp3s_12",
+     "text": "The loop ends. Every real number is at the front, in the same order. The zeros are at the back.",
+     "start": 50.42,
+     "end": 56.42
+    },
+    {
+     "id": "tp3s_13",
+     "text": "The reader visits each door once. O of n time.",
+     "start": 57.52,
+     "end": 60.55
+    },
+    {
+     "id": "tp3s_14",
+     "text": "Everything happens inside the same array. O of one space.",
+     "start": 61.3,
+     "end": 65.26
+    },
+    {
+     "id": "tp3s_15",
+     "text": "Deleting photos works like this. The ones you keep slide forward in order, and the free space collects at the end.",
+     "start": 66.01,
+     "end": 72.65
+    }
+   ],
+   "pauses": [
+    {
+     "id": "tp3s-q",
+     "t": 41.92
+    }
+   ]
+  },
+  "tp4i": {
+   "src": "videos/tp4i.mp4",
+   "title": "The Widest Tank",
+   "duration": 22.26,
+   "lines": [
+    {
+     "id": "tp4i_1",
+     "text": "Each door has a wall of some height. Pick two walls, and the space between them holds water.",
+     "start": 0.2,
+     "end": 5.48
+    },
+    {
+     "id": "tp4i_2",
+     "text": "Return the most water any two walls can hold. That is the width, times the lower of the two walls.",
+     "start": 6.18,
+     "end": 12.36
+    },
+    {
+     "id": "tp4i_3",
+     "text": "Trying every pair of walls is O of n squared.",
+     "start": 13.06,
+     "end": 15.92
+    },
+    {
+     "id": "tp4i_4",
+     "text": "Start with the widest tank. Which wall is holding it back? Your turn.",
+     "start": 16.62,
+     "end": 20.66
+    }
+   ],
+   "pauses": []
+  },
+  "tp4s": {
+   "src": "videos/tp4s.mp4",
+   "title": "Start wide, drop the lower wall",
+   "duration": 78.39,
+   "lines": [
+    {
+     "id": "tp4s_1",
+     "text": "Water between two walls rises only as high as the lower wall. So the amount is the width, times the lower wall.",
+     "start": 0.2,
+     "end": 7.57
+    },
+    {
+     "id": "tp4s_2",
+     "text": "Start as wide as possible. Then always give up the lower wall, because keeping it can never do better.",
+     "start": 8.32,
+     "end": 14.92
+    },
+    {
+     "id": "tp4s_3",
+     "text": "Pip and Moss start at the two ends, the widest tank possible. Best is zero.",
+     "start": 15.67,
+     "end": 20.67
+    },
+    {
+     "id": "tp4s_4",
+     "text": "The tank is four wide. But water only rises to the lower wall, which is one. Four times one is four.",
+     "start": 21.42,
+     "end": 28.19
+    },
+    {
+     "id": "tp4s_5",
+     "text": "Which wall to give up? The lower one. It is the limit, and any narrower tank that keeps it can only hold less.",
+     "start": 28.94,
+     "end": 36.07
+    },
+    {
+     "id": "tp4s_6",
+     "text": "Walls five and three. Three wide, three high. Nine. A new best.",
+     "start": 36.82,
+     "end": 40.77
+    },
+    {
+     "id": "tp4s_7",
+     "text": "Five on the left, three on the right. Which walker moves?",
+     "start": 41.52,
+     "end": 44.98
+    },
+    {
+     "id": "tp4s_8",
+     "text": "Moss. The three is the limit.",
+     "start": 46.19,
+     "end": 48.02
+    },
+    {
+     "id": "tp4s_9",
+     "text": "Two wide, four high. Eight. Not better than nine.",
+     "start": 48.77,
+     "end": 51.73
+    },
+    {
+     "id": "tp4s_10",
+     "text": "Moss moves again. One wide, two high. Two. Then the walkers meet.",
+     "start": 52.48,
+     "end": 56.92
+    },
+    {
+     "id": "tp4s_11",
+     "text": "Line twelve returns the best. Nine.",
+     "start": 57.67,
+     "end": 60.16
+    },
+    {
+     "id": "tp4s_12",
+     "text": "One walker moves at every step. O of n time, instead of trying every pair.",
+     "start": 61.26,
+     "end": 66.55
+    },
+    {
+     "id": "tp4s_13",
+     "text": "Three numbers. O of one space.",
+     "start": 67.3,
+     "end": 69.45
+    },
+    {
+     "id": "tp4s_14",
+     "text": "It is a puzzle, but the habit is real. Start with the widest choice, then give up whichever side limits you.",
+     "start": 70.2,
+     "end": 76.79
+    }
+   ],
+   "pauses": [
+    {
+     "id": "tp4s-q",
+     "t": 45.19
+    }
+   ]
+  },
+  "tp5i": {
+   "src": "videos/tp5i.mp4",
+   "title": "Two Rows Into One",
+   "duration": 19.77,
+   "lines": [
+    {
+     "id": "tp5i_1",
+     "text": "Two sorted rows. They need to become one sorted row.",
+     "start": 0.2,
+     "end": 3.67
+    },
+    {
+     "id": "tp5i_2",
+     "text": "Return a new array with every number from both rows, in order. Do not call sort.",
+     "start": 4.37,
+     "end": 9.74
+    },
+    {
+     "id": "tp5i_3",
+     "text": "Both rows are already in order. That is worth a lot.",
+     "start": 10.44,
+     "end": 13.85
+    },
+    {
+     "id": "tp5i_4",
+     "text": "Where is the smallest number that is still unused? Your turn.",
+     "start": 14.55,
+     "end": 18.17
+    }
+   ],
+   "pauses": []
+  },
+  "tp5s": {
+   "src": "videos/tp5s.mp4",
+   "title": "Take the smaller front",
+   "duration": 68.41,
+   "lines": [
+    {
+     "id": "tp5s_1",
+     "text": "Both rows are already sorted. So the smallest number left is always at the front of one of them.",
+     "start": 0.2,
+     "end": 6.07
+    },
+    {
+     "id": "tp5s_2",
+     "text": "Compare the two fronts, take the smaller, and move that marker. Repeat.",
+     "start": 6.82,
+     "end": 11.08
+    },
+    {
+     "id": "tp5s_3",
+     "text": "An empty answer, and one marker at the front of each row.",
+     "start": 11.83,
+     "end": 15.37
+    },
+    {
+     "id": "tp5s_4",
+     "text": "Compare the two fronts. One and two. One is smaller, so it goes out, and i moves on.",
+     "start": 16.12,
+     "end": 21.5
+    },
+    {
+     "id": "tp5s_5",
+     "text": "Four against two. Two goes out, and j moves on.",
+     "start": 22.25,
+     "end": 25.57
+    },
+    {
+     "id": "tp5s_6",
+     "text": "Four against three. Three.",
+     "start": 26.32,
+     "end": 28.05
+    },
+    {
+     "id": "tp5s_7",
+     "text": "Four against nine. Which one goes out, and which marker moves?",
+     "start": 28.8,
+     "end": 32.8
+    },
+    {
+     "id": "tp5s_8",
+     "text": "Four. And i moves on.",
+     "start": 34,
+     "end": 35.59
+    },
+    {
+     "id": "tp5s_9",
+     "text": "Seven against nine. Seven. Now the first row is used up, so the main loop stops.",
+     "start": 36.34,
+     "end": 42
+    },
+    {
+     "id": "tp5s_10",
+     "text": "Line ten empties what is left of the other row. Nine.",
+     "start": 42.75,
+     "end": 46.19
+    },
+    {
+     "id": "tp5s_11",
+     "text": "Line eleven returns the merged row.",
+     "start": 46.94,
+     "end": 49.25
+    },
+    {
+     "id": "tp5s_12",
+     "text": "Every step sends one number out. So n plus m steps. O of n plus m.",
+     "start": 50.35,
+     "end": 55.71
+    },
+    {
+     "id": "tp5s_13",
+     "text": "The answer row holds everything. O of n plus m space.",
+     "start": 56.46,
+     "end": 60.46
+    },
+    {
+     "id": "tp5s_14",
+     "text": "Your phone merges two sorted contact lists like this. And merge sort does it at every level.",
+     "start": 61.21,
+     "end": 66.81
+    }
+   ],
+   "pauses": [
+    {
+     "id": "tp5s-q",
+     "t": 33
+    }
+   ]
+  },
+  "tp6i": {
+   "src": "videos/tp6i.mp4",
+   "title": "Three That Add Up",
+   "duration": 19.79,
+   "lines": [
+    {
+     "id": "tp6i_1",
+     "text": "Three doors in this sorted row add up to fifteen.",
+     "start": 0.2,
+     "end": 3.28
+    },
+    {
+     "id": "tp6i_2",
+     "text": "Return true if any three different doors add up to the target. Otherwise false.",
+     "start": 3.98,
+     "end": 9.25
+    },
+    {
+     "id": "tp6i_3",
+     "text": "Trying every triple is three nested loops. O of n cubed.",
+     "start": 9.95,
+     "end": 13.78
+    },
+    {
+     "id": "tp6i_4",
+     "text": "If you hold one number still, what problem is left? Your turn.",
+     "start": 14.48,
+     "end": 18.19
+    }
+   ],
+   "pauses": []
+  },
+  "tp6s": {
+   "src": "videos/tp6s.mp4",
+   "title": "Hold one, sweep the rest",
+   "duration": 75.73,
+   "lines": [
+    {
+     "id": "tp6s_1",
+     "text": "Three numbers is one number, plus a pair. And you already know how to find a pair in a sorted row.",
+     "start": 0.2,
+     "end": 5.91
+    },
+    {
+     "id": "tp6s_2",
+     "text": "Hold the first number still. Then run two pointers over everything to its right.",
+     "start": 6.66,
+     "end": 11.45
+    },
+    {
+     "id": "tp6s_3",
+     "text": "I holds the first number still. Pip and Moss take the two ends of everything after it.",
+     "start": 12.2,
+     "end": 17.29
+    },
+    {
+     "id": "tp6s_4",
+     "text": "Line six adds all three. One, two, eight. Eleven.",
+     "start": 18.04,
+     "end": 21.48
+    },
+    {
+     "id": "tp6s_5",
+     "text": "Eleven is less than fifteen. Too small. Pip moves right.",
+     "start": 22.23,
+     "end": 25.91
+    },
+    {
+     "id": "tp6s_6",
+     "text": "One, four, eight. Thirteen. Still too small. Pip moves again.",
+     "start": 26.66,
+     "end": 30.39
+    },
+    {
+     "id": "tp6s_7",
+     "text": "One, five, eight. Fourteen. Too small. Pip moves, and meets Moss. No triple starts with one.",
+     "start": 31.14,
+     "end": 37.29
+    },
+    {
+     "id": "tp6s_8",
+     "text": "So i moves on to the next number, two. Pip and Moss reset to the ends of what follows.",
+     "start": 38.04,
+     "end": 43.85
+    },
+    {
+     "id": "tp6s_9",
+     "text": "Two, four, eight. Fourteen. The target is fifteen. Who moves?",
+     "start": 44.6,
+     "end": 48.42
+    },
+    {
+     "id": "tp6s_10",
+     "text": "Pip. Too small means the left walker moves.",
+     "start": 49.62,
+     "end": 52.39
+    },
+    {
+     "id": "tp6s_11",
+     "text": "Two, five, eight. Fifteen. Line seven returns true.",
+     "start": 53.14,
+     "end": 56.68
+    },
+    {
+     "id": "tp6s_12",
+     "text": "One sweep for each held number. n times n. O of n squared. Trying every triple would be n cubed.",
+     "start": 57.78,
+     "end": 64.43
+    },
+    {
+     "id": "tp6s_13",
+     "text": "Only three markers. O of one space.",
+     "start": 65.18,
+     "end": 67.7
+    },
+    {
+     "id": "tp6s_14",
+     "text": "A budgeting tool asks the same question. Do any three bills add up to exactly this payment?",
+     "start": 68.45,
+     "end": 74.13
+    }
+   ],
+   "pauses": [
+    {
+     "id": "tp6s-q",
+     "t": 48.62
+    }
+   ]
+  },
+  "hm1i": {
+   "src": "videos/hm1i.mp4",
+   "title": "The Pair That Adds Up",
+   "duration": 22.04,
+   "lines": [
+    {
+     "id": "hm1i_1",
+     "text": "Two parcels in this row weigh eleven together. Hazel wants to know which two.",
+     "start": 0.2,
+     "end": 5.03
+    },
+    {
+     "id": "hm1i_2",
+     "text": "Return the indexes of the two doors that add up to the target. If there are none, return minus one, minus one.",
+     "start": 5.73,
+     "end": 12.63
+    },
+    {
+     "id": "hm1i_3",
+     "text": "Checking every pair is a loop inside a loop.",
+     "start": 13.33,
+     "end": 15.83
+    },
+    {
+     "id": "hm1i_4",
+     "text": "Standing on one number, which partner are you hoping for? Your turn.",
+     "start": 16.53,
+     "end": 20.44
+    }
+   ],
+   "pauses": []
+  },
+  "hm1s": {
+   "src": "videos/hm1s.mp4",
+   "title": "Look up the partner",
+   "duration": 63.36,
+   "lines": [
+    {
+     "id": "hm1s_1",
+     "text": "For every number, exactly one partner would complete the pair. The target, minus that number.",
+     "start": 0.2,
+     "end": 6.2
+    },
+    {
+     "id": "hm1s_2",
+     "text": "So remember every number you pass, and where it was. Then ask the map for the partner.",
+     "start": 6.95,
+     "end": 12.21
+    },
+    {
+     "id": "hm1s_3",
+     "text": "Line two makes an empty map, called seen.",
+     "start": 12.96,
+     "end": 15.33
+    },
+    {
+     "id": "hm1s_4",
+     "text": "Door zero holds four. Line four works out the partner. Eleven minus four. Seven.",
+     "start": 16.08,
+     "end": 21.86
+    },
+    {
+     "id": "hm1s_5",
+     "text": "Seven has not been seen. So line six stores four, and its index.",
+     "start": 22.61,
+     "end": 27.06
+    },
+    {
+     "id": "hm1s_6",
+     "text": "Door one holds nine. The partner is two. Not seen. Store nine.",
+     "start": 27.81,
+     "end": 31.83
+    },
+    {
+     "id": "hm1s_7",
+     "text": "Door two holds two. The partner is nine. Is nine in the map?",
+     "start": 32.58,
+     "end": 36.27
+    },
+    {
+     "id": "hm1s_8",
+     "text": "Yes. At door one. Line five returns both indexes.",
+     "start": 37.47,
+     "end": 41.4
+    },
+    {
+     "id": "hm1s_9",
+     "text": "One pass, and every map operation is one step on average. O of n time.",
+     "start": 42.5,
+     "end": 48.06
+    },
+    {
+     "id": "hm1s_10",
+     "text": "The map can hold every number. O of n space. Memory, traded for time.",
+     "start": 48.81,
+     "end": 53.52
+    },
+    {
+     "id": "hm1s_11",
+     "text": "Accounting software matches two payments to one bill like this. For each amount, it looks up the one that completes the total.",
+     "start": 54.27,
+     "end": 61.76
+    }
+   ],
+   "pauses": [
+    {
+     "id": "hm1s-q",
+     "t": 36.47
+    }
+   ]
+  },
+  "hm2i": {
+   "src": "videos/hm2i.mp4",
+   "title": "Seen It Before",
+   "duration": 19.75,
+   "lines": [
+    {
+     "id": "hm2i_1",
+     "text": "Someone posted the same parcel twice. Hazel wants to catch it.",
+     "start": 0.2,
+     "end": 4.26
+    },
+    {
+     "id": "hm2i_2",
+     "text": "Return true if any number appears more than once. Otherwise false.",
+     "start": 4.96,
+     "end": 9.34
+    },
+    {
+     "id": "hm2i_3",
+     "text": "You could compare every pair of doors. That is slow.",
+     "start": 10.04,
+     "end": 13.13
+    },
+    {
+     "id": "hm2i_4",
+     "text": "At each door you are really asking one question. Which one? Your turn.",
+     "start": 13.83,
+     "end": 18.15
+    }
+   ],
+   "pauses": []
+  },
+  "hm2s": {
+   "src": "videos/hm2s.mp4",
+   "title": "Ask before you add",
+   "duration": 45.85,
+   "lines": [
+    {
+     "id": "hm2s_1",
+     "text": "At every door, the question is the same. Have I seen this number before?",
+     "start": 0.2,
+     "end": 4.53
+    },
+    {
+     "id": "hm2s_2",
+     "text": "A set answers that in one step. Check first. Then add.",
+     "start": 5.28,
+     "end": 8.79
+    },
+    {
+     "id": "hm2s_3",
+     "text": "Line two makes an empty set.",
+     "start": 9.54,
+     "end": 11.29
+    },
+    {
+     "id": "hm2s_4",
+     "text": "Door zero. Three. Not in the set. Line five adds it.",
+     "start": 12.04,
+     "end": 15.29
+    },
+    {
+     "id": "hm2s_5",
+     "text": "Seven. Not in the set. Add it.",
+     "start": 16.05,
+     "end": 17.87
+    },
+    {
+     "id": "hm2s_6",
+     "text": "One. New. Add it.",
+     "start": 18.62,
+     "end": 19.98
+    },
+    {
+     "id": "hm2s_7",
+     "text": "Door three holds seven. What does the set say?",
+     "start": 20.73,
+     "end": 23.6
+    },
+    {
+     "id": "hm2s_8",
+     "text": "Seven is already there. Line four returns true.",
+     "start": 24.8,
+     "end": 27.95
+    },
+    {
+     "id": "hm2s_9",
+     "text": "One pass, and every map operation is one step on average. O of n time.",
+     "start": 29.05,
+     "end": 34.61
+    },
+    {
+     "id": "hm2s_10",
+     "text": "The set can hold every number. O of n space.",
+     "start": 35.36,
+     "end": 38.4
+    },
+    {
+     "id": "hm2s_11",
+     "text": "A sign-up form checks your username against a set of taken names, in one step.",
+     "start": 39.15,
+     "end": 44.25
+    }
+   ],
+   "pauses": [
+    {
+     "id": "hm2s-q",
+     "t": 23.8
+    }
+   ]
+  },
+  "hm3i": {
+   "src": "videos/hm3i.mp4",
+   "title": "The Favourite",
+   "duration": 17.25,
+   "lines": [
+    {
+     "id": "hm3i_1",
+     "text": "Hazel wants to know which parcel number turns up most often.",
+     "start": 0.2,
+     "end": 4.05
+    },
+    {
+     "id": "hm3i_2",
+     "text": "Return the number that appears the most times.",
+     "start": 4.75,
+     "end": 7.38
+    },
+    {
+     "id": "hm3i_3",
+     "text": "Counting one number at a time means walking the row again and again.",
+     "start": 8.08,
+     "end": 12.28
+    },
+    {
+     "id": "hm3i_4",
+     "text": "What could keep every count at once? Your turn.",
+     "start": 12.97,
+     "end": 15.65
+    }
+   ],
+   "pauses": []
+  },
+  "hm3s": {
+   "src": "videos/hm3s.mp4",
+   "title": "Count as you go",
+   "duration": 59.76,
+   "lines": [
+    {
+     "id": "hm3s_1",
+     "text": "One walk is enough, if something keeps a count for every number at the same time.",
+     "start": 0.2,
+     "end": 4.88
+    },
+    {
+     "id": "hm3s_2",
+     "text": "And as the counts grow, remember which number is in the lead.",
+     "start": 5.63,
+     "end": 9.25
+    },
+    {
+     "id": "hm3s_3",
+     "text": "An empty count map. And the first number, five, starts as the best.",
+     "start": 10,
+     "end": 14.31
+    },
+    {
+     "id": "hm3s_4",
+     "text": "Door zero. Five. Line six gives it a count of one.",
+     "start": 15.06,
+     "end": 18.63
+    },
+    {
+     "id": "hm3s_5",
+     "text": "Two. Count one. Line seven asks: is one more than the best count, one? No.",
+     "start": 19.38,
+     "end": 24.98
+    },
+    {
+     "id": "hm3s_6",
+     "text": "Two again. Its count is now two. Is that more than the best count?",
+     "start": 25.73,
+     "end": 29.65
+    },
+    {
+     "id": "hm3s_7",
+     "text": "Yes. Two takes the lead.",
+     "start": 30.85,
+     "end": 32.3
+    },
+    {
+     "id": "hm3s_8",
+     "text": "Eight. Count one. No change.",
+     "start": 33.05,
+     "end": 34.97
+    },
+    {
+     "id": "hm3s_9",
+     "text": "Two once more. Three. It is already the best.",
+     "start": 35.72,
+     "end": 38.66
+    },
+    {
+     "id": "hm3s_10",
+     "text": "Line nine returns best. Two.",
+     "start": 39.41,
+     "end": 41.53
+    },
+    {
+     "id": "hm3s_11",
+     "text": "One pass, and every map operation is one step on average. O of n time.",
+     "start": 42.63,
+     "end": 48.18
+    },
+    {
+     "id": "hm3s_12",
+     "text": "One entry for each different number. O of n space.",
+     "start": 48.93,
+     "end": 52.39
+    },
+    {
+     "id": "hm3s_13",
+     "text": "Counting in a map is how a shop finds its best seller, and how a poll counts votes.",
+     "start": 53.14,
+     "end": 58.16
+    }
+   ],
+   "pauses": [
+    {
+     "id": "hm3s-q",
+     "t": 29.85
+    }
+   ]
+  },
+  "hm4i": {
+   "src": "videos/hm4i.mp4",
+   "title": "Close Twins",
+   "duration": 20.23,
+   "lines": [
+    {
+     "id": "hm4i_1",
+     "text": "Two copies of the same parcel are only a problem if they sit close together.",
+     "start": 0.2,
+     "end": 5
+    },
+    {
+     "id": "hm4i_2",
+     "text": "Return true if the same number appears at two doors at most k apart.",
+     "start": 5.71,
+     "end": 10.17
+    },
+    {
+     "id": "hm4i_3",
+     "text": "The fours here are three doors apart. Too far. But keep looking.",
+     "start": 10.87,
+     "end": 14.77
+    },
+    {
+     "id": "hm4i_4",
+     "text": "For each number, which earlier door matters? Your turn.",
+     "start": 15.46,
+     "end": 18.63
+    }
+   ],
+   "pauses": []
+  },
+  "hm4s": {
+   "src": "videos/hm4s.mp4",
+   "title": "Where did I last see it?",
+   "duration": 56.92,
+   "lines": [
+    {
+     "id": "hm4s_1",
+     "text": "For each number, only the most recent copy matters. It is the closest one.",
+     "start": 0.2,
+     "end": 5.16
+    },
+    {
+     "id": "hm4s_2",
+     "text": "So keep a map from each number to the last door it was seen at.",
+     "start": 5.91,
+     "end": 9.27
+    },
+    {
+     "id": "hm4s_3",
+     "text": "An empty map, called last.",
+     "start": 10.02,
+     "end": 11.71
+    },
+    {
+     "id": "hm4s_4",
+     "text": "Four, one, and two are all new. Each is stored with its door.",
+     "start": 12.46,
+     "end": 16.16
+    },
+    {
+     "id": "hm4s_5",
+     "text": "Door three holds four. It was last seen at door zero. Three minus zero is three. More than k.",
+     "start": 16.91,
+     "end": 23.22
+    },
+    {
+     "id": "hm4s_6",
+     "text": "So line seven overwrites it. Four was last seen at door three.",
+     "start": 23.97,
+     "end": 28.02
+    },
+    {
+     "id": "hm4s_7",
+     "text": "Door four holds two. It was last seen at door two. How far apart?",
+     "start": 28.77,
+     "end": 33.22
+    },
+    {
+     "id": "hm4s_8",
+     "text": "Two. That is within k. Line five returns true.",
+     "start": 34.42,
+     "end": 37.47
+    },
+    {
+     "id": "hm4s_9",
+     "text": "One pass, and every map operation is one step on average. O of n time.",
+     "start": 38.57,
+     "end": 44.13
+    },
+    {
+     "id": "hm4s_10",
+     "text": "One entry for each different number. O of n space.",
+     "start": 44.88,
+     "end": 48.34
+    },
+    {
+     "id": "hm4s_11",
+     "text": "A chat app can block the same message sent twice within a few seconds. It remembers when it last saw it.",
+     "start": 49.09,
+     "end": 55.32
+    }
+   ],
+   "pauses": [
+    {
+     "id": "hm4s-q",
+     "t": 33.42
+    }
+   ]
+  },
+  "hm5i": {
+   "src": "videos/hm5i.mp4",
+   "title": "Same Letters, Same Group",
+   "duration": 19.89,
+   "lines": [
+    {
+     "id": "hm5i_1",
+     "text": "Eat. Tea. Ate. Three different words, made of the same three letters.",
+     "start": 0.2,
+     "end": 4.17
+    },
+    {
+     "id": "hm5i_2",
+     "text": "Group the words, so that words with exactly the same letters end up together.",
+     "start": 4.87,
+     "end": 9.54
+    },
+    {
+     "id": "hm5i_3",
+     "text": "Comparing every word with every other word is slow.",
+     "start": 10.24,
+     "end": 13.2
+    },
+    {
+     "id": "hm5i_4",
+     "text": "Could each word carry a label that is the same for its whole group? Your turn.",
+     "start": 13.9,
+     "end": 18.29
+    }
+   ],
+   "pauses": []
+  },
+  "hm5s": {
+   "src": "videos/hm5s.mp4",
+   "title": "Sorted letters are the label",
+   "duration": 66.45,
+   "lines": [
+    {
+     "id": "hm5s_1",
+     "text": "Words from the same group have the same letters. Sort the letters, and they all turn into the same string.",
+     "start": 0.2,
+     "end": 6.49
+    },
+    {
+     "id": "hm5s_2",
+     "text": "So a map from that label to a list collects each group in one pass.",
+     "start": 7.24,
+     "end": 11.54
+    },
+    {
+     "id": "hm5s_3",
+     "text": "Line two makes an empty map of groups.",
+     "start": 12.29,
+     "end": 14.75
+    },
+    {
+     "id": "hm5s_4",
+     "text": "Eat. Line four sorts its letters. A, E, T. That is the key.",
+     "start": 15.5,
+     "end": 19.35
+    },
+    {
+     "id": "hm5s_5",
+     "text": "The key is new, so line five starts an empty list for it. Line six adds the word.",
+     "start": 20.1,
+     "end": 25.46
+    },
+    {
+     "id": "hm5s_6",
+     "text": "Tea. Sorted, it is also A, E, T. The same key. So it joins the same list.",
+     "start": 26.21,
+     "end": 31.29
+    },
+    {
+     "id": "hm5s_7",
+     "text": "Tan. Sorted: A, N, T. A new key, so a new list.",
+     "start": 32.04,
+     "end": 35.42
+    },
+    {
+     "id": "hm5s_8",
+     "text": "Ate. What is its key, and which list does it join?",
+     "start": 36.17,
+     "end": 39.01
+    },
+    {
+     "id": "hm5s_9",
+     "text": "A, E, T. It joins eat and tea.",
+     "start": 40.21,
+     "end": 41.97
+    },
+    {
+     "id": "hm5s_10",
+     "text": "Line eight returns the lists. Two groups.",
+     "start": 42.72,
+     "end": 45.25
+    },
+    {
+     "id": "hm5s_11",
+     "text": "One pass over the words. Sorting the letters of a short word is a small, fixed cost. O of n words.",
+     "start": 46.35,
+     "end": 53.2
+    },
+    {
+     "id": "hm5s_12",
+     "text": "The map holds every word once. O of n space.",
+     "start": 53.95,
+     "end": 57.3
+    },
+    {
+     "id": "hm5s_13",
+     "text": "Your photo app groups pictures the same way. Each photo gets a label, its date, and a map collects the groups.",
+     "start": 58.05,
+     "end": 64.85
+    }
+   ],
+   "pauses": [
+    {
+     "id": "hm5s-q",
+     "t": 39.21
+    }
+   ]
+  },
+  "hm6i": {
+   "src": "videos/hm6i.mp4",
+   "title": "The Longest Chain",
+   "duration": 21.61,
+   "lines": [
+    {
+     "id": "hm6i_1",
+     "text": "These parcels are numbered, and scattered. Somewhere in there is a chain: two, three, four, five.",
+     "start": 0.2,
+     "end": 6
+    },
+    {
+     "id": "hm6i_2",
+     "text": "Return the length of the longest run of consecutive numbers. Without sorting.",
+     "start": 6.7,
+     "end": 11.34
+    },
+    {
+     "id": "hm6i_3",
+     "text": "With a set, asking is this number here takes one step.",
+     "start": 12.04,
+     "end": 15.25
+    },
+    {
+     "id": "hm6i_4",
+     "text": "So how can you tell that a number is the start of a chain? Your turn.",
+     "start": 15.95,
+     "end": 20.01
+    }
+   ],
+   "pauses": []
+  },
+  "hm6s": {
+   "src": "videos/hm6s.mp4",
+   "title": "Only count from a start",
+   "duration": 68.57,
+   "lines": [
+    {
+     "id": "hm6s_1",
+     "text": "Put every number in a set. Then asking, is this number here, takes one step.",
+     "start": 0.2,
+     "end": 5.02
+    },
+    {
+     "id": "hm6s_2",
+     "text": "A number starts a chain only if the number just below it is missing. Count upward from starts only.",
+     "start": 5.77,
+     "end": 11.9
+    },
+    {
+     "id": "hm6s_3",
+     "text": "Line two puts every number into a set.",
+     "start": 12.65,
+     "end": 15.14
+    },
+    {
+     "id": "hm6s_4",
+     "text": "Five. Is four in the set? Yes. So five is not a start. Line five skips it.",
+     "start": 15.89,
+     "end": 21.13
+    },
+    {
+     "id": "hm6s_5",
+     "text": "Two. Is one in the set? No. So two starts a chain.",
+     "start": 21.88,
+     "end": 25.12
+    },
+    {
+     "id": "hm6s_6",
+     "text": "Line seven counts upward. Three is here. Four is here. Five is here. Six is not. The chain is four long.",
+     "start": 25.87,
+     "end": 32.81
+    },
+    {
+     "id": "hm6s_7",
+     "text": "Line eight. Best is four.",
+     "start": 33.56,
+     "end": 35.02
+    },
+    {
+     "id": "hm6s_8",
+     "text": "Nine. Eight is not in the set, so nine is a start. How long is its chain?",
+     "start": 35.77,
+     "end": 40.06
+    },
+    {
+     "id": "hm6s_9",
+     "text": "One. Ten is not there. Best stays four.",
+     "start": 41.26,
+     "end": 43.87
+    },
+    {
+     "id": "hm6s_10",
+     "text": "Three and four are not starts, so both are skipped. Line ten returns four.",
+     "start": 44.62,
+     "end": 49.18
+    },
+    {
+     "id": "hm6s_11",
+     "text": "Each number is counted only inside the one chain it belongs to. So the total is O of n.",
+     "start": 50.28,
+     "end": 56.09
+    },
+    {
+     "id": "hm6s_12",
+     "text": "The set holds every number. O of n space.",
+     "start": 56.84,
+     "end": 59.76
+    },
+    {
+     "id": "hm6s_13",
+     "text": "A streaming app finds your longest run of days in a row like this, even when the days arrive out of order.",
+     "start": 60.51,
+     "end": 66.97
+    }
+   ],
+   "pauses": [
+    {
+     "id": "hm6s-q",
+     "t": 40.26
+    }
+   ]
+  },
+  "sw1i": {
+   "src": "videos/sw1i.mp4",
+   "title": "The Best Three",
+   "duration": 17.88,
+   "lines": [
+    {
+     "id": "sw1i_1",
+     "text": "Pip may open three doors in a row, and wants the most seeds.",
+     "start": 0.2,
+     "end": 4.02
+    },
+    {
+     "id": "sw1i_2",
+     "text": "Return the biggest sum of k neighbouring doors.",
+     "start": 4.72,
+     "end": 7.45
+    },
+    {
+     "id": "sw1i_3",
+     "text": "Adding up every window from the start repeats a lot of work.",
+     "start": 8.15,
+     "end": 11.82
+    },
+    {
+     "id": "sw1i_4",
+     "text": "When the window slides one step, what really changes? Your turn.",
+     "start": 12.52,
+     "end": 16.28
+    }
+   ],
+   "pauses": []
+  },
+  "sw1s": {
+   "src": "videos/sw1s.mp4",
+   "title": "One leaves, one enters",
+   "duration": 62.45,
+   "lines": [
+    {
+     "id": "sw1s_1",
+     "text": "Neighbouring windows share all their doors but two. One leaves, and one enters.",
+     "start": 0.2,
+     "end": 5.19
+    },
+    {
+     "id": "sw1s_2",
+     "text": "So keep one running sum. Subtract the door that leaves, and add the door that enters.",
+     "start": 5.94,
+     "end": 11.33
+    },
+    {
+     "id": "sw1s_3",
+     "text": "Lines two and three add up the first window. Two, one, five. Eight.",
+     "start": 12.08,
+     "end": 16.2
+    },
+    {
+     "id": "sw1s_4",
+     "text": "Line four. That is the best so far.",
+     "start": 16.95,
+     "end": 19.11
+    },
+    {
+     "id": "sw1s_5",
+     "text": "Right moves to door three. Line six adds the door that enters, one, and removes the door that left, two. Seven.",
+     "start": 19.86,
+     "end": 27.44
+    },
+    {
+     "id": "sw1s_6",
+     "text": "Line seven. Seven does not beat eight.",
+     "start": 28.19,
+     "end": 30.68
+    },
+    {
+     "id": "sw1s_7",
+     "text": "Slide again. Three enters, one leaves. What is the sum?",
+     "start": 31.43,
+     "end": 34.8
+    },
+    {
+     "id": "sw1s_8",
+     "text": "Nine. A new best.",
+     "start": 36,
+     "end": 37.27
+    },
+    {
+     "id": "sw1s_9",
+     "text": "The last slide. Two enters, five leaves. Six. Not better.",
+     "start": 38.02,
+     "end": 41.89
+    },
+    {
+     "id": "sw1s_10",
+     "text": "Line nine returns the best. Nine.",
+     "start": 42.64,
+     "end": 44.99
+    },
+    {
+     "id": "sw1s_11",
+     "text": "Each slide is two steps, however wide the window is. O of n time.",
+     "start": 46.09,
+     "end": 50.23
+    },
+    {
+     "id": "sw1s_12",
+     "text": "Two numbers. O of one space.",
+     "start": 50.98,
+     "end": 53
+    },
+    {
+     "id": "sw1s_13",
+     "text": "A weather app finds the warmest three days in a row by sliding a window over the forecast, exactly like this.",
+     "start": 53.75,
+     "end": 60.85
+    }
+   ],
+   "pauses": [
+    {
+     "id": "sw1s-q",
+     "t": 35
+    }
+   ]
+  },
+  "sw2i": {
+   "src": "videos/sw2i.mp4",
+   "title": "Buy Low, Sell High",
+   "duration": 21.71,
+   "lines": [
+    {
+     "id": "sw2i_1",
+     "text": "The price of seeds changes every day. Pip wants to buy low, and sell high.",
+     "start": 0.2,
+     "end": 4.68
+    },
+    {
+     "id": "sw2i_2",
+     "text": "Return the most profit from one buy and one later sell. If nothing makes money, return zero.",
+     "start": 5.38,
+     "end": 11.5
+    },
+    {
+     "id": "sw2i_3",
+     "text": "Trying every pair of days is O of n squared.",
+     "start": 12.2,
+     "end": 15.04
+    },
+    {
+     "id": "sw2i_4",
+     "text": "If you had to sell today, which earlier day would you have bought on? Your turn.",
+     "start": 15.74,
+     "end": 20.11
+    }
+   ],
+   "pauses": []
+  },
+  "sw2s": {
+   "src": "videos/sw2s.mp4",
+   "title": "Remember the lowest so far",
+   "duration": 60.76,
+   "lines": [
+    {
+     "id": "sw2s_1",
+     "text": "To sell on some day for the most profit, you want to have bought at the lowest price before it.",
+     "start": 0.2,
+     "end": 5.25
+    },
+    {
+     "id": "sw2s_2",
+     "text": "So walk once, remember the lowest price so far, and try selling on every day.",
+     "start": 6,
+     "end": 11.1
+    },
+    {
+     "id": "sw2s_3",
+     "text": "Low starts at infinity, so that any price beats it. Best starts at zero.",
+     "start": 11.85,
+     "end": 16.78
+    },
+    {
+     "id": "sw2s_4",
+     "text": "Day zero. Seven is lower than anything so far. Low is seven.",
+     "start": 17.53,
+     "end": 21.64
+    },
+    {
+     "id": "sw2s_5",
+     "text": "Day one. One is lower. Low becomes one.",
+     "start": 22.39,
+     "end": 25.16
+    },
+    {
+     "id": "sw2s_6",
+     "text": "Day two. Five is not lower. So line six asks: what if we sold today? Five minus one. Four.",
+     "start": 25.91,
+     "end": 32.59
+    },
+    {
+     "id": "sw2s_7",
+     "text": "Day three. Three. Sell today, and the profit is two. Does best change?",
+     "start": 33.34,
+     "end": 37.53
+    },
+    {
+     "id": "sw2s_8",
+     "text": "No. Two does not beat four.",
+     "start": 38.73,
+     "end": 40.4
+    },
+    {
+     "id": "sw2s_9",
+     "text": "Day four. Six minus one. Five. A new best.",
+     "start": 41.15,
+     "end": 44.18
+    },
+    {
+     "id": "sw2s_10",
+     "text": "Line eight returns the best. Five.",
+     "start": 44.93,
+     "end": 47.13
+    },
+    {
+     "id": "sw2s_11",
+     "text": "One walk. O of n time.",
+     "start": 48.23,
+     "end": 49.79
+    },
+    {
+     "id": "sw2s_12",
+     "text": "Two numbers. O of one space.",
+     "start": 50.54,
+     "end": 52.56
+    },
+    {
+     "id": "sw2s_13",
+     "text": "This is the classic question about a price chart. The best day to buy, before the best day to sell.",
+     "start": 53.31,
+     "end": 59.16
+    }
+   ],
+   "pauses": [
+    {
+     "id": "sw2s-q",
+     "t": 37.73
+    }
+   ]
+  },
+  "sw3i": {
+   "src": "videos/sw3i.mp4",
+   "title": "Light the Dark Lamps",
+   "duration": 21.92,
+   "lines": [
+    {
+     "id": "sw3i_1",
+     "text": "A row of lamps. Some are lit, some are dark. You may light one dark lamp.",
+     "start": 0.2,
+     "end": 4.83
+    },
+    {
+     "id": "sw3i_2",
+     "text": "Return the longest unbroken run of lit lamps you can get, lighting at most k dark ones.",
+     "start": 5.53,
+     "end": 11.52
+    },
+    {
+     "id": "sw3i_3",
+     "text": "Said another way: find the longest stretch with at most k zeros in it.",
+     "start": 12.22,
+     "end": 16.52
+    },
+    {
+     "id": "sw3i_4",
+     "text": "What do you need to count as the stretch grows? Your turn.",
+     "start": 17.22,
+     "end": 20.32
+    }
+   ],
+   "pauses": []
+  },
+  "sw3s": {
+   "src": "videos/sw3s.mp4",
+   "title": "At most k zeros inside",
+   "duration": 74.62,
+   "lines": [
+    {
+     "id": "sw3s_1",
+     "text": "Lighting at most k dark lamps is the same as finding the longest stretch with at most k zeros.",
+     "start": 0.2,
+     "end": 6.11
+    },
+    {
+     "id": "sw3s_2",
+     "text": "Grow on the right. When there are too many zeros, shrink on the left.",
+     "start": 6.86,
+     "end": 10.52
+    },
+    {
+     "id": "sw3s_3",
+     "text": "Moss holds the left edge at door zero. No dark lamps counted yet.",
+     "start": 11.27,
+     "end": 15.61
+    },
+    {
+     "id": "sw3s_4",
+     "text": "Pip grows the window to door zero. A lit lamp. The window is one wide.",
+     "start": 16.36,
+     "end": 20.98
+    },
+    {
+     "id": "sw3s_5",
+     "text": "Door one is dark. Zeros becomes one. We are allowed one, so the window is fine. Two wide.",
+     "start": 21.73,
+     "end": 27.76
+    },
+    {
+     "id": "sw3s_6",
+     "text": "Two more lit lamps. The window grows to four wide.",
+     "start": 28.51,
+     "end": 31.73
+    },
+    {
+     "id": "sw3s_7",
+     "text": "Door four is dark. Zeros is two. Too many.",
+     "start": 32.48,
+     "end": 35.38
+    },
+    {
+     "id": "sw3s_8",
+     "text": "Line seven shrinks from the left until the rule holds again. Where does Moss stop?",
+     "start": 36.13,
+     "end": 41.19
+    },
+    {
+     "id": "sw3s_9",
+     "text": "Door zero leaves. Then door one leaves, and it was dark, so zeros drops to one. Moss stops on door two.",
+     "start": 42.39,
+     "end": 49.34
+    },
+    {
+     "id": "sw3s_10",
+     "text": "Pip adds door five. Four wide again. That ties the best.",
+     "start": 50.09,
+     "end": 53.56
+    },
+    {
+     "id": "sw3s_11",
+     "text": "Line thirteen returns the best. Four.",
+     "start": 54.31,
+     "end": 56.91
+    },
+    {
+     "id": "sw3s_12",
+     "text": "Each door enters the window once, and leaves at most once. O of n time.",
+     "start": 58.01,
+     "end": 63.04
+    },
+    {
+     "id": "sw3s_13",
+     "text": "Three numbers. O of one space.",
+     "start": 63.79,
+     "end": 65.93
+    },
+    {
+     "id": "sw3s_14",
+     "text": "A network tool finds the longest stretch of good signal the same way, allowing for a few dropped moments.",
+     "start": 66.68,
+     "end": 73.02
+    }
+   ],
+   "pauses": [
+    {
+     "id": "sw3s-q",
+     "t": 41.39
+    }
+   ]
+  },
+  "sw4i": {
+   "src": "videos/sw4i.mp4",
+   "title": "No Letter Twice",
+   "duration": 18.01,
+   "lines": [
+    {
+     "id": "sw4i_1",
+     "text": "Find a stretch of this word where every letter is different.",
+     "start": 0.2,
+     "end": 3.57
+    },
+    {
+     "id": "sw4i_2",
+     "text": "Return the length of the longest one.",
+     "start": 4.27,
+     "end": 6.32
+    },
+    {
+     "id": "sw4i_3",
+     "text": "A window can grow, until a letter shows up that is already inside it.",
+     "start": 7.02,
+     "end": 11.34
+    },
+    {
+     "id": "sw4i_4",
+     "text": "Then what has to leave? And what remembers what is inside? Your turn.",
+     "start": 12.04,
+     "end": 16.41
+    }
+   ],
+   "pauses": []
+  },
+  "sw4s": {
+   "src": "videos/sw4s.mp4",
+   "title": "Shrink until the repeat is gone",
+   "duration": 71.66,
+   "lines": [
+    {
+     "id": "sw4s_1",
+     "text": "Keep a window that never holds the same letter twice. A set remembers what is inside it.",
+     "start": 0.2,
+     "end": 5.73
+    },
+    {
+     "id": "sw4s_2",
+     "text": "Grow on the right. If the new letter is already inside, shrink on the left until it is gone.",
+     "start": 6.48,
+     "end": 12.23
+    },
+    {
+     "id": "sw4s_3",
+     "text": "An empty set, Moss on the left edge, and best at zero.",
+     "start": 12.98,
+     "end": 16.32
+    },
+    {
+     "id": "sw4s_4",
+     "text": "Pip reads A. Not in the set. Add it. The window is one wide.",
+     "start": 17.07,
+     "end": 20.96
+    },
+    {
+     "id": "sw4s_5",
+     "text": "B and C are new as well. The window grows to three.",
+     "start": 21.71,
+     "end": 25.07
+    },
+    {
+     "id": "sw4s_6",
+     "text": "Next is B. Line six checks the set. B is already inside the window.",
+     "start": 25.82,
+     "end": 30.3
+    },
+    {
+     "id": "sw4s_7",
+     "text": "So the window shrinks from the left until that B is gone. How many letters leave?",
+     "start": 31.05,
+     "end": 36.14
+    },
+    {
+     "id": "sw4s_8",
+     "text": "Two. A leaves, then the old B leaves. Moss stops on C.",
+     "start": 37.34,
+     "end": 40.99
+    },
+    {
+     "id": "sw4s_9",
+     "text": "Now the new B can enter. The window is C, B.",
+     "start": 41.74,
+     "end": 44.78
+    },
+    {
+     "id": "sw4s_10",
+     "text": "D is new. Three wide. That ties the best.",
+     "start": 45.53,
+     "end": 48.28
+    },
+    {
+     "id": "sw4s_11",
+     "text": "Line thirteen returns the best. Three.",
+     "start": 49.03,
+     "end": 51.6
+    },
+    {
+     "id": "sw4s_12",
+     "text": "Each door enters the window once, and leaves at most once. O of n time.",
+     "start": 52.7,
+     "end": 57.72
+    },
+    {
+     "id": "sw4s_13",
+     "text": "The set holds at most one of each letter. O of n space at most.",
+     "start": 58.47,
+     "end": 62.47
+    },
+    {
+     "id": "sw4s_14",
+     "text": "A playlist shuffler uses this idea. No song may repeat inside the window of recently played songs.",
+     "start": 63.22,
+     "end": 70.06
+    }
+   ],
+   "pauses": [
+    {
+     "id": "sw4s-q",
+     "t": 36.34
+    }
+   ]
+  },
+  "sw5i": {
+   "src": "videos/sw5i.mp4",
+   "title": "The Shortest That Reaches",
+   "duration": 23.46,
+   "lines": [
+    {
+     "id": "sw5i_1",
+     "text": "Pip needs at least seven seeds, from as few neighbouring doors as possible.",
+     "start": 0.2,
+     "end": 4.8
+    },
+    {
+     "id": "sw5i_2",
+     "text": "Return the length of the shortest stretch whose sum is at least the target. If none reaches it, return zero.",
+     "start": 5.5,
+     "end": 11.91
+    },
+    {
+     "id": "sw5i_3",
+     "text": "Last time the window shrank when it broke a rule. This time it is the other way round.",
+     "start": 12.61,
+     "end": 17.79
+    },
+    {
+     "id": "sw5i_4",
+     "text": "Once the window has enough, how do you make it shorter? Your turn.",
+     "start": 18.49,
+     "end": 21.86
+    }
+   ],
+   "pauses": []
+  },
+  "sw5s": {
+   "src": "videos/sw5s.mp4",
+   "title": "Grow until enough, then shrink",
+   "duration": 79.33,
+   "lines": [
+    {
+     "id": "sw5s_1",
+     "text": "Grow the window until the sum is big enough. Then shrink it from the left, for as long as it stays big enough.",
+     "start": 0.2,
+     "end": 6.74
+    },
+    {
+     "id": "sw5s_2",
+     "text": "Every time it is big enough, measure it. The smallest measurement wins.",
+     "start": 7.49,
+     "end": 11.78
+    },
+    {
+     "id": "sw5s_3",
+     "text": "Moss on the left edge. Sum is zero. Best starts at infinity, so that any real window beats it.",
+     "start": 12.53,
+     "end": 19.08
+    },
+    {
+     "id": "sw5s_4",
+     "text": "Pip adds two, then one. Sum is three. Not enough yet.",
+     "start": 19.83,
+     "end": 23.28
+    },
+    {
+     "id": "sw5s_5",
+     "text": "Five enters. Sum is eight. That reaches seven.",
+     "start": 24.03,
+     "end": 26.85
+    },
+    {
+     "id": "sw5s_6",
+     "text": "Line eight records the width. Three doors.",
+     "start": 27.6,
+     "end": 30.37
+    },
+    {
+     "id": "sw5s_7",
+     "text": "Now try to make it shorter. The left door leaves. Sum is six. Not enough any more.",
+     "start": 31.12,
+     "end": 36.53
+    },
+    {
+     "id": "sw5s_8",
+     "text": "So Pip grows again. Two enters. Eight. Three wide. No better.",
+     "start": 37.28,
+     "end": 41.05
+    },
+    {
+     "id": "sw5s_9",
+     "text": "Shrink. One leaves. Sum is seven. Is that still enough?",
+     "start": 41.8,
+     "end": 44.84
+    },
+    {
+     "id": "sw5s_10",
+     "text": "Yes. Seven reaches seven. And the window is only two wide. A new best.",
+     "start": 46.04,
+     "end": 50.76
+    },
+    {
+     "id": "sw5s_11",
+     "text": "Shrink once more. Five leaves. Sum is two. The inner loop stops.",
+     "start": 51.51,
+     "end": 55.64
+    },
+    {
+     "id": "sw5s_12",
+     "text": "Three enters. Five. Not enough, and the row is finished.",
+     "start": 56.39,
+     "end": 59.64
+    },
+    {
+     "id": "sw5s_13",
+     "text": "Line thirteen returns the best. Two.",
+     "start": 60.39,
+     "end": 62.88
+    },
+    {
+     "id": "sw5s_14",
+     "text": "Each door enters the window once, and leaves at most once. O of n time.",
+     "start": 63.98,
+     "end": 69.01
+    },
+    {
+     "id": "sw5s_15",
+     "text": "Three numbers. O of one space.",
+     "start": 69.76,
+     "end": 71.91
+    },
+    {
+     "id": "sw5s_16",
+     "text": "A sales dashboard asks this. What is the fewest days in a row that reached the target?",
+     "start": 72.66,
+     "end": 77.73
+    }
+   ],
+   "pauses": [
+    {
+     "id": "sw5s-q",
+     "t": 45.04
+    }
+   ]
+  },
+  "sw6i": {
+   "src": "videos/sw6i.mp4",
+   "title": "Two Kinds Only",
+   "duration": 19.67,
+   "lines": [
+    {
+     "id": "sw6i_1",
+     "text": "Hazel has two baskets, and each basket holds one kind of letter.",
+     "start": 0.2,
+     "end": 4.44
+    },
+    {
+     "id": "sw6i_2",
+     "text": "Return the length of the longest stretch that uses at most two different letters.",
+     "start": 5.14,
+     "end": 9.85
+    },
+    {
+     "id": "sw6i_3",
+     "text": "The window grows, until a third kind shows up.",
+     "start": 10.55,
+     "end": 13.49
+    },
+    {
+     "id": "sw6i_4",
+     "text": "How do you know when a kind has left the window completely? Your turn.",
+     "start": 14.19,
+     "end": 18.07
+    }
+   ],
+   "pauses": []
+  },
+  "sw6s": {
+   "src": "videos/sw6s.mp4",
+   "title": "Count the kinds inside",
+   "duration": 71.33,
+   "lines": [
+    {
+     "id": "sw6s_1",
+     "text": "Keep a window with at most two kinds of letter. A map counts how many of each kind are inside.",
+     "start": 0.2,
+     "end": 5.44
+    },
+    {
+     "id": "sw6s_2",
+     "text": "Grow on the right. With three kinds, shrink on the left until one kind is gone completely.",
+     "start": 6.19,
+     "end": 11.48
+    },
+    {
+     "id": "sw6s_3",
+     "text": "An empty count map, and Moss on the left edge.",
+     "start": 12.23,
+     "end": 15.28
+    },
+    {
+     "id": "sw6s_4",
+     "text": "A enters. One kind.",
+     "start": 16.03,
+     "end": 17.49
+    },
+    {
+     "id": "sw6s_5",
+     "text": "B enters. Two kinds. Still allowed.",
+     "start": 18.24,
+     "end": 20.51
+    },
+    {
+     "id": "sw6s_6",
+     "text": "Another A. Still two kinds. Three wide.",
+     "start": 21.26,
+     "end": 23.83
+    },
+    {
+     "id": "sw6s_7",
+     "text": "C enters. Now the map has three kinds. Too many.",
+     "start": 24.58,
+     "end": 27.91
+    },
+    {
+     "id": "sw6s_8",
+     "text": "So shrink. The left A leaves. Its count drops to one. Still three kinds.",
+     "start": 28.66,
+     "end": 33.07
+    },
+    {
+     "id": "sw6s_9",
+     "text": "B leaves next. Its count drops to zero. What must happen to B in the map?",
+     "start": 33.82,
+     "end": 38.57
+    },
+    {
+     "id": "sw6s_10",
+     "text": "It is deleted. Otherwise the map would still say three kinds. Now the window is A, C.",
+     "start": 39.77,
+     "end": 45.47
+    },
+    {
+     "id": "sw6s_11",
+     "text": "Another C. Three wide. That ties the best.",
+     "start": 46.22,
+     "end": 48.88
+    },
+    {
+     "id": "sw6s_12",
+     "text": "Line fifteen returns the best. Three.",
+     "start": 49.63,
+     "end": 52.19
+    },
+    {
+     "id": "sw6s_13",
+     "text": "Each door enters the window once, and leaves at most once. O of n time.",
+     "start": 53.29,
+     "end": 58.32
+    },
+    {
+     "id": "sw6s_14",
+     "text": "The map never holds more than three kinds. O of one space.",
+     "start": 59.07,
+     "end": 62.96
+    },
+    {
+     "id": "sw6s_15",
+     "text": "The same window finds the longest stretch of an activity log that involves at most two users.",
+     "start": 63.71,
+     "end": 69.73
+    }
+   ],
+   "pauses": [
+    {
+     "id": "sw6s-q",
+     "t": 38.77
+    }
+   ]
+  },
+  "ll1i": {
+   "src": "videos/ll1i.mp4",
+   "title": "Turn the List Around",
+   "duration": 22.62,
+   "lines": [
+    {
+     "id": "ll1i_1",
+     "text": "Three nodes, each pointing to the next. Pip wants the whole list turned around.",
+     "start": 0.2,
+     "end": 4.53
+    },
+    {
+     "id": "ll1i_2",
+     "text": "Reverse the list and return its new head. Use the nodes you have, and only re-point their arrows.",
+     "start": 5.23,
+     "end": 11.74
+    },
+    {
+     "id": "ll1i_3",
+     "text": "Turn the first arrow around, and you can no longer reach the second node.",
+     "start": 12.44,
+     "end": 16.74
+    },
+    {
+     "id": "ll1i_4",
+     "text": "So what do you need to save, before you turn an arrow? Your turn.",
+     "start": 17.44,
+     "end": 21.02
+    }
+   ],
+   "pauses": []
+  },
+  "ll1s": {
+   "src": "videos/ll1s.mp4",
+   "title": "Save, flip, step",
+   "duration": 76.02,
+   "lines": [
+    {
+     "id": "ll1s_1",
+     "text": "Reversing a list does not move any node. It only turns every arrow around.",
+     "start": 0.2,
+     "end": 5
+    },
+    {
+     "id": "ll1s_2",
+     "text": "But the moment you turn an arrow, you lose the way forward. So save it first.",
+     "start": 5.75,
+     "end": 10.81
+    },
+    {
+     "id": "ll1s_3",
+     "text": "Prev starts as null, because nothing is behind the first node yet. Curr starts on the first node.",
+     "start": 11.56,
+     "end": 17.49
+    },
+    {
+     "id": "ll1s_4",
+     "text": "Line five saves the rest of the list in next, before we touch any arrow.",
+     "start": 18.24,
+     "end": 22.55
+    },
+    {
+     "id": "ll1s_5",
+     "text": "Line six flips the arrow. One now points back to prev, which is null.",
+     "start": 23.3,
+     "end": 27.75
+    },
+    {
+     "id": "ll1s_6",
+     "text": "Lines seven and eight step both markers forward.",
+     "start": 28.5,
+     "end": 31.24
+    },
+    {
+     "id": "ll1s_7",
+     "text": "Again. Save next. Then flip. Two now points back to one.",
+     "start": 31.99,
+     "end": 35.68
+    },
+    {
+     "id": "ll1s_8",
+     "text": "Step forward.",
+     "start": 36.43,
+     "end": 37.51
+    },
+    {
+     "id": "ll1s_9",
+     "text": "Curr is on three, the last node. Line five saves next. What is it?",
+     "start": 38.26,
+     "end": 42.93
+    },
+    {
+     "id": "ll1s_10",
+     "text": "Null. Nothing comes after three. Then line six flips its arrow back to two.",
+     "start": 44.13,
+     "end": 49.01
+    },
+    {
+     "id": "ll1s_11",
+     "text": "Step forward. Prev is three. Curr is null, so the loop ends.",
+     "start": 49.76,
+     "end": 53.8
+    },
+    {
+     "id": "ll1s_12",
+     "text": "Line ten returns prev. The old last node is the new head.",
+     "start": 54.55,
+     "end": 58.7
+    },
+    {
+     "id": "ll1s_13",
+     "text": "One pass, and a few steps per node. O of n time.",
+     "start": 59.8,
+     "end": 63.09
+    },
+    {
+     "id": "ll1s_14",
+     "text": "Three markers, and no new nodes. O of one space.",
+     "start": 63.84,
+     "end": 67.18
+    },
+    {
+     "id": "ll1s_15",
+     "text": "A music player turns its play queue around like this when you ask for reverse order. No song is copied.",
+     "start": 67.93,
+     "end": 74.42
+    }
+   ],
+   "pauses": [
+    {
+     "id": "ll1s-q",
+     "t": 43.13
+    }
+   ]
+  },
+  "ll2i": {
+   "src": "videos/ll2i.mp4",
+   "title": "The Middle Node",
+   "duration": 20.04,
+   "lines": [
+    {
+     "id": "ll2i_1",
+     "text": "Pip needs the node in the middle of this list.",
+     "start": 0.2,
+     "end": 2.92
+    },
+    {
+     "id": "ll2i_2",
+     "text": "Return the middle node. With an even number of nodes, return the second of the two middle ones.",
+     "start": 3.62,
+     "end": 9.46
+    },
+    {
+     "id": "ll2i_3",
+     "text": "There is no index to jump to, and nobody told you the length.",
+     "start": 10.16,
+     "end": 13.88
+    },
+    {
+     "id": "ll2i_4",
+     "text": "What if one walker moves twice as fast as the other? Your turn.",
+     "start": 14.58,
+     "end": 18.44
+    }
+   ],
+   "pauses": []
+  },
+  "ll2s": {
+   "src": "videos/ll2s.mp4",
+   "title": "Two walkers, two speeds",
+   "duration": 53.3,
+   "lines": [
+    {
+     "id": "ll2s_1",
+     "text": "You cannot jump to the middle of a list. And you do not know its length without walking it.",
+     "start": 0.2,
+     "end": 4.78
+    },
+    {
+     "id": "ll2s_2",
+     "text": "So send two walkers. One at double speed. When the fast one finishes, the slow one is halfway.",
+     "start": 5.53,
+     "end": 11.8
+    },
+    {
+     "id": "ll2s_3",
+     "text": "Both markers start on the first node.",
+     "start": 12.55,
+     "end": 14.64
+    },
+    {
+     "id": "ll2s_4",
+     "text": "Line four checks that fast can take two more steps. It can.",
+     "start": 15.39,
+     "end": 19.18
+    },
+    {
+     "id": "ll2s_5",
+     "text": "Slow takes one step. Fast takes two.",
+     "start": 19.93,
+     "end": 22.43
+    },
+    {
+     "id": "ll2s_6",
+     "text": "Again. Slow takes one step, and fast takes two. Where is fast now?",
+     "start": 23.18,
+     "end": 27.36
+    },
+    {
+     "id": "ll2s_7",
+     "text": "On the last node. And slow is on three.",
+     "start": 28.56,
+     "end": 31.23
+    },
+    {
+     "id": "ll2s_8",
+     "text": "Line four again. Fast has no next node. So the loop stops.",
+     "start": 31.98,
+     "end": 36.1
+    },
+    {
+     "id": "ll2s_9",
+     "text": "Line eight returns slow. The node holding three. The middle.",
+     "start": 36.85,
+     "end": 40.66
+    },
+    {
+     "id": "ll2s_10",
+     "text": "One pass. O of n time.",
+     "start": 41.76,
+     "end": 43.52
+    },
+    {
+     "id": "ll2s_11",
+     "text": "Two markers. O of one space.",
+     "start": 44.27,
+     "end": 46.23
+    },
+    {
+     "id": "ll2s_12",
+     "text": "Finding the middle without counting is how merge sort splits a linked list in two.",
+     "start": 46.98,
+     "end": 51.7
+    }
+   ],
+   "pauses": [
+    {
+     "id": "ll2s-q",
+     "t": 27.56
+    }
+   ]
+  },
+  "ll3i": {
+   "src": "videos/ll3i.mp4",
+   "title": "Round and Round",
+   "duration": 21.55,
+   "lines": [
+    {
+     "id": "ll3i_1",
+     "text": "The last node of this list points back into the middle. Follow the arrows, and you never stop.",
+     "start": 0.2,
+     "end": 5.5
+    },
+    {
+     "id": "ll3i_2",
+     "text": "Return true if the list has a loop, and false if it ends at null.",
+     "start": 6.2,
+     "end": 10.27
+    },
+    {
+     "id": "ll3i_3",
+     "text": "You could remember every node you visit. But that costs memory.",
+     "start": 10.97,
+     "end": 14.83
+    },
+    {
+     "id": "ll3i_4",
+     "text": "What happens to two runners on a round track, if one is faster? Your turn.",
+     "start": 15.53,
+     "end": 19.95
+    }
+   ],
+   "pauses": []
+  },
+  "ll3s": {
+   "src": "videos/ll3s.mp4",
+   "title": "The fast one catches up",
+   "duration": 60.92,
+   "lines": [
+    {
+     "id": "ll3s_1",
+     "text": "In a list with a loop, a walker never reaches null. It goes round for ever.",
+     "start": 0.2,
+     "end": 5.04
+    },
+    {
+     "id": "ll3s_2",
+     "text": "So send a slow walker and a fast one. Inside a loop, the fast one must catch the slow one from behind.",
+     "start": 5.79,
+     "end": 12.25
+    },
+    {
+     "id": "ll3s_3",
+     "text": "Both markers start on the first node.",
+     "start": 13,
+     "end": 15.09
+    },
+    {
+     "id": "ll3s_4",
+     "text": "Slow steps once, to two. Fast steps twice, to three. Not the same node.",
+     "start": 15.84,
+     "end": 20.66
+    },
+    {
+     "id": "ll3s_5",
+     "text": "Slow steps to three. Fast steps to four, and then follows the arrow back round, to two.",
+     "start": 21.41,
+     "end": 27.06
+    },
+    {
+     "id": "ll3s_6",
+     "text": "Once more. Slow moves to four. Fast takes two steps from two. Where does it land?",
+     "start": 27.81,
+     "end": 33.25
+    },
+    {
+     "id": "ll3s_7",
+     "text": "On four. Fast has caught slow from behind. Line seven sees the same node, and returns true.",
+     "start": 34.45,
+     "end": 40.51
+    },
+    {
+     "id": "ll3s_8",
+     "text": "Fast gains one node on slow at every step, so it catches up within one lap. O of n time.",
+     "start": 41.61,
+     "end": 48.15
+    },
+    {
+     "id": "ll3s_9",
+     "text": "Two markers, and no set of visited nodes. O of one space.",
+     "start": 48.9,
+     "end": 52.89
+    },
+    {
+     "id": "ll3s_10",
+     "text": "This catches a real bug. A chain of redirects that leads back to itself would loop for ever.",
+     "start": 53.64,
+     "end": 59.32
+    }
+   ],
+   "pauses": [
+    {
+     "id": "ll3s-q",
+     "t": 33.45
+    }
+   ]
+  },
+  "ll4i": {
+   "src": "videos/ll4i.mp4",
+   "title": "Zip Two Lists",
+   "duration": 20.01,
+   "lines": [
+    {
+     "id": "ll4i_1",
+     "text": "Two sorted lists. They should become one sorted list.",
+     "start": 0.2,
+     "end": 3.65
+    },
+    {
+     "id": "ll4i_2",
+     "text": "Join them by re-hooking the nodes, and return the head of the result.",
+     "start": 4.35,
+     "end": 8.3
+    },
+    {
+     "id": "ll4i_3",
+     "text": "You have merged two sorted arrays before. The idea is the same.",
+     "start": 9,
+     "end": 12.99
+    },
+    {
+     "id": "ll4i_4",
+     "text": "But which node is the head of the answer? Could a fake first node help? Your turn.",
+     "start": 13.69,
+     "end": 18.41
+    }
+   ],
+   "pauses": []
+  },
+  "ll4s": {
+   "src": "videos/ll4s.mp4",
+   "title": "Hook on the smaller front",
+   "duration": 71.07,
+   "lines": [
+    {
+     "id": "ll4s_1",
+     "text": "The same idea as merging two sorted arrays. The smallest unused node is at the front of one of the lists.",
+     "start": 0.2,
+     "end": 6.96
+    },
+    {
+     "id": "ll4s_2",
+     "text": "But nothing is copied. Each node is simply hooked onto the end of the new list.",
+     "start": 7.71,
+     "end": 12.62
+    },
+    {
+     "id": "ll4s_3",
+     "text": "Line two makes a dummy node. A fake first node, so that the real first node needs no special case. Tail marks the end of the new list.",
+     "start": 13.37,
+     "end": 22.12
+    },
+    {
+     "id": "ll4s_4",
+     "text": "Compare the two fronts. One and two. One is smaller. Line six hooks it onto tail, and a moves on.",
+     "start": 22.87,
+     "end": 29.2
+    },
+    {
+     "id": "ll4s_5",
+     "text": "Four against two. Two is hooked on, and b moves on.",
+     "start": 29.95,
+     "end": 33.37
+    },
+    {
+     "id": "ll4s_6",
+     "text": "Four against three. Which node is hooked on next?",
+     "start": 34.12,
+     "end": 37.32
+    },
+    {
+     "id": "ll4s_7",
+     "text": "Three. And now b has run out, so the loop stops.",
+     "start": 38.52,
+     "end": 41.46
+    },
+    {
+     "id": "ll4s_8",
+     "text": "Line fourteen hooks on whatever is left. The rest of a. Four and seven come along in one step, because they are already linked.",
+     "start": 42.21,
+     "end": 50.09
+    },
+    {
+     "id": "ll4s_9",
+     "text": "Line fifteen returns dummy dot next. The real first node.",
+     "start": 50.84,
+     "end": 54.8
+    },
+    {
+     "id": "ll4s_10",
+     "text": "One step per node. O of n plus m time.",
+     "start": 55.9,
+     "end": 58.93
+    },
+    {
+     "id": "ll4s_11",
+     "text": "No new nodes, except the dummy. O of one space.",
+     "start": 59.68,
+     "end": 62.86
+    },
+    {
+     "id": "ll4s_12",
+     "text": "Re-hooking nodes like this is the heart of merge sort on a linked list. Nothing is copied.",
+     "start": 63.61,
+     "end": 69.47
+    }
+   ],
+   "pauses": [
+    {
+     "id": "ll4s-q",
+     "t": 37.52
+    }
+   ]
+  },
+  "ll5i": {
+   "src": "videos/ll5i.mp4",
+   "title": "Second From the End",
+   "duration": 20.33,
+   "lines": [
+    {
+     "id": "ll5i_1",
+     "text": "One node has to go. The second one, counted from the end.",
+     "start": 0.2,
+     "end": 3.69
+    },
+    {
+     "id": "ll5i_2",
+     "text": "Remove the k-th node from the end, and return the head. In one pass.",
+     "start": 4.39,
+     "end": 9.17
+    },
+    {
+     "id": "ll5i_3",
+     "text": "You cannot walk backwards. And you do not know how long the list is.",
+     "start": 9.87,
+     "end": 13.78
+    },
+    {
+     "id": "ll5i_4",
+     "text": "What if two markers walk together, a fixed distance apart? Your turn.",
+     "start": 14.48,
+     "end": 18.73
+    }
+   ],
+   "pauses": []
+  },
+  "ll5s": {
+   "src": "videos/ll5s.mp4",
+   "title": "Two markers, a fixed gap",
+   "duration": 68.6,
+   "lines": [
+    {
+     "id": "ll5s_1",
+     "text": "To remove a node, you must stand on the node just before it. But counting from the end needs the length.",
+     "start": 0.2,
+     "end": 6.33
+    },
+    {
+     "id": "ll5s_2",
+     "text": "So send one marker k nodes ahead, and then walk both together. When the leader reaches the end, the follower is in place.",
+     "start": 7.08,
+     "end": 14.83
+    },
+    {
+     "id": "ll5s_3",
+     "text": "A dummy node, D, goes in front, so that even the first real node has a node before it. Both markers start there.",
+     "start": 15.58,
+     "end": 23.09
+    },
+    {
+     "id": "ll5s_4",
+     "text": "Line five sends lead ahead by k nodes. K is two.",
+     "start": 23.84,
+     "end": 27.42
+    },
+    {
+     "id": "ll5s_5",
+     "text": "Now they walk together, one step each. The gap stays at two.",
+     "start": 28.17,
+     "end": 31.98
+    },
+    {
+     "id": "ll5s_6",
+     "text": "Another step. Lead is now on the last node. Where is trail?",
+     "start": 32.73,
+     "end": 36.43
+    },
+    {
+     "id": "ll5s_7",
+     "text": "Just before the node to remove. Exactly where we need to stand.",
+     "start": 37.63,
+     "end": 41.59
+    },
+    {
+     "id": "ll5s_8",
+     "text": "Line ten points trail past the next node, straight to the one after it. Three is no longer in the list.",
+     "start": 42.34,
+     "end": 48.77
+    },
+    {
+     "id": "ll5s_9",
+     "text": "Line eleven returns dummy dot next. The real head.",
+     "start": 49.52,
+     "end": 53.01
+    },
+    {
+     "id": "ll5s_10",
+     "text": "One pass. O of n time.",
+     "start": 54.11,
+     "end": 55.87
+    },
+    {
+     "id": "ll5s_11",
+     "text": "Two markers and a dummy. O of one space.",
+     "start": 56.62,
+     "end": 59.5
+    },
+    {
+     "id": "ll5s_12",
+     "text": "Keeping the last few lines of a long log works like this. One marker runs a fixed distance ahead of the other.",
+     "start": 60.25,
+     "end": 67
+    }
+   ],
+   "pauses": [
+    {
+     "id": "ll5s-q",
+     "t": 36.63
+    }
+   ]
+  },
+  "ll6i": {
+   "src": "videos/ll6i.mp4",
+   "title": "No Repeats",
+   "duration": 19.09,
+   "lines": [
+    {
+     "id": "ll6i_1",
+     "text": "A sorted list, with some values written twice.",
+     "start": 0.2,
+     "end": 3.18
+    },
+    {
+     "id": "ll6i_2",
+     "text": "Remove the repeats, so that each value appears once. Return the head.",
+     "start": 3.88,
+     "end": 8.2
+    },
+    {
+     "id": "ll6i_3",
+     "text": "Because the list is sorted, a repeat is always right behind its twin.",
+     "start": 8.9,
+     "end": 13.24
+    },
+    {
+     "id": "ll6i_4",
+     "text": "Standing on a node, how do you unhook the one after it? Your turn.",
+     "start": 13.94,
+     "end": 17.49
+    }
+   ],
+   "pauses": []
+  },
+  "ll6s": {
+   "src": "videos/ll6s.mp4",
+   "title": "Point past the repeat",
+   "duration": 59.91,
+   "lines": [
+    {
+     "id": "ll6s_1",
+     "text": "The list is sorted, so repeats sit right next to each other.",
+     "start": 0.2,
+     "end": 3.82
+    },
+    {
+     "id": "ll6s_2",
+     "text": "And removing a node from a list is one move. Point the node before it, past it.",
+     "start": 4.57,
+     "end": 9.38
+    },
+    {
+     "id": "ll6s_3",
+     "text": "Curr starts on the first node.",
+     "start": 10.13,
+     "end": 11.78
+    },
+    {
+     "id": "ll6s_4",
+     "text": "Line four compares this node with the next one. One and one. A repeat.",
+     "start": 12.53,
+     "end": 17.08
+    },
+    {
+     "id": "ll6s_5",
+     "text": "Line five points curr past the repeat. Curr itself does not move, because the node after might be a repeat too.",
+     "start": 17.83,
+     "end": 24.84
+    },
+    {
+     "id": "ll6s_6",
+     "text": "Now the next node holds two. Different. So line seven moves curr forward.",
+     "start": 25.59,
+     "end": 30.31
+    },
+    {
+     "id": "ll6s_7",
+     "text": "Two and three are different as well. Move on.",
+     "start": 31.06,
+     "end": 33.8
+    },
+    {
+     "id": "ll6s_8",
+     "text": "Three and three. What happens?",
+     "start": 34.55,
+     "end": 36.38
+    },
+    {
+     "id": "ll6s_9",
+     "text": "The arrow skips the repeat, and now points to null.",
+     "start": 37.59,
+     "end": 40.45
+    },
+    {
+     "id": "ll6s_10",
+     "text": "Curr has no next node, so the loop ends. Line ten returns the same head.",
+     "start": 41.2,
+     "end": 45.97
+    },
+    {
+     "id": "ll6s_11",
+     "text": "One pass. O of n time.",
+     "start": 47.07,
+     "end": 48.82
+    },
+    {
+     "id": "ll6s_12",
+     "text": "Nothing new is built. O of one space.",
+     "start": 49.57,
+     "end": 52.21
+    },
+    {
+     "id": "ll6s_13",
+     "text": "A sorted contact list is cleaned of repeats like this, just by re-pointing arrows.",
+     "start": 52.96,
+     "end": 58.31
+    }
+   ],
+   "pauses": [
+    {
+     "id": "ll6s-q",
+     "t": 36.59
+    }
+   ]
+  },
+  "tr1i": {
+   "src": "videos/tr1i.mp4",
+   "title": "Count the Nests",
+   "duration": 18.27,
+   "lines": [
+    {
+     "id": "tr1i_1",
+     "text": "A tree of nests. Pip is handed only the top one, the root.",
+     "start": 0.2,
+     "end": 3.92
+    },
+    {
+     "id": "tr1i_2",
+     "text": "Return how many nests there are in the whole tree.",
+     "start": 4.62,
+     "end": 7.29
+    },
+    {
+     "id": "tr1i_3",
+     "text": "Look at the left child. It has nests below it too. It is the root of a smaller tree.",
+     "start": 8,
+     "end": 13.31
+    },
+    {
+     "id": "tr1i_4",
+     "text": "So who could count that side for you? Your turn.",
+     "start": 14.01,
+     "end": 16.67
+    }
+   ],
+   "pauses": []
+  },
+  "tr1s": {
+   "src": "videos/tr1s.mp4",
+   "title": "One, plus the two sides",
+   "duration": 72.13,
+   "lines": [
+    {
+     "id": "tr1s_1",
+     "text": "A child is the root of a smaller tree. So the same function can count each side.",
+     "start": 0.2,
+     "end": 4.92
+    },
+    {
+     "id": "tr1s_2",
+     "text": "The count is one, for this node, plus the count of the left side, plus the count of the right side.",
+     "start": 5.67,
+     "end": 11.4
+    },
+    {
+     "id": "tr1s_3",
+     "text": "The first call stands on the root. Five. It is not null. Line three asks for the count of the left side, and waits.",
+     "start": 12.15,
+     "end": 19.38
+    },
+    {
+     "id": "tr1s_4",
+     "text": "The call on three does the same. It goes left, to the one.",
+     "start": 20.13,
+     "end": 23.69
+    },
+    {
+     "id": "tr1s_5",
+     "text": "One has no children. Its left is null. What does the call on null return?",
+     "start": 24.44,
+     "end": 29.47
+    },
+    {
+     "id": "tr1s_6",
+     "text": "Zero. Line two. Both sides of the one are empty. So it returns one, plus zero, plus zero. One.",
+     "start": 30.67,
+     "end": 37.43
+    },
+    {
+     "id": "tr1s_7",
+     "text": "The four is the same. One. So the three returns one, plus one, plus one. Three.",
+     "start": 38.18,
+     "end": 44.46
+    },
+    {
+     "id": "tr1s_8",
+     "text": "The right side. Eight has no left child, and the nine counts one. So eight returns two.",
+     "start": 45.21,
+     "end": 50.94
+    },
+    {
+     "id": "tr1s_9",
+     "text": "Back at the root. One, plus three, plus two. Six.",
+     "start": 51.69,
+     "end": 55.06
+    },
+    {
+     "id": "tr1s_10",
+     "text": "Every node is visited once. O of n time.",
+     "start": 56.16,
+     "end": 59.17
+    },
+    {
+     "id": "tr1s_11",
+     "text": "The waiting calls go as deep as the tree is tall. O of height space.",
+     "start": 59.92,
+     "end": 64.22
+    },
+    {
+     "id": "tr1s_12",
+     "text": "Counting every file in a folder and all its subfolders is this exact recursion.",
+     "start": 64.97,
+     "end": 70.53
+    }
+   ],
+   "pauses": [
+    {
+     "id": "tr1s-q",
+     "t": 29.67
+    }
+   ]
+  },
+  "tr2i": {
+   "src": "videos/tr2i.mp4",
+   "title": "How Tall Is the Tree?",
+   "duration": 18.32,
+   "lines": [
+    {
+     "id": "tr2i_1",
+     "text": "Moss wants to know how tall this tree is.",
+     "start": 0.2,
+     "end": 2.58
+    },
+    {
+     "id": "tr2i_2",
+     "text": "Return the number of nodes on the longest path from the root down to a leaf.",
+     "start": 3.28,
+     "end": 7.65
+    },
+    {
+     "id": "tr2i_3",
+     "text": "Suppose somebody told you how tall the left side is, and how tall the right side is.",
+     "start": 8.35,
+     "end": 13.18
+    },
+    {
+     "id": "tr2i_4",
+     "text": "What would you do with those two numbers? Your turn.",
+     "start": 13.88,
+     "end": 16.71
+    }
+   ],
+   "pauses": []
+  },
+  "tr2s": {
+   "src": "videos/tr2s.mp4",
+   "title": "One, plus the taller side",
+   "duration": 62.65,
+   "lines": [
+    {
+     "id": "tr2s_1",
+     "text": "The height of a tree is one, for the root, plus the height of its taller side.",
+     "start": 0.2,
+     "end": 4.5
+    },
+    {
+     "id": "tr2s_2",
+     "text": "And each side is a smaller tree. So the same function measures it.",
+     "start": 5.25,
+     "end": 9.41
+    },
+    {
+     "id": "tr2s_3",
+     "text": "The first call stands on the root, five. Line three asks for the height of the left side, and waits.",
+     "start": 10.16,
+     "end": 16.04
+    },
+    {
+     "id": "tr2s_4",
+     "text": "Now on three. Its left side is empty. Line two answers zero.",
+     "start": 16.79,
+     "end": 21.13
+    },
+    {
+     "id": "tr2s_5",
+     "text": "Its right child is four. A leaf. Both of its sides are empty. One, plus the larger of zero and zero. One.",
+     "start": 21.88,
+     "end": 29.39
+    },
+    {
+     "id": "tr2s_6",
+     "text": "Back on three. Left is zero. Right is one. What does this call return?",
+     "start": 30.14,
+     "end": 34.75
+    },
+    {
+     "id": "tr2s_7",
+     "text": "Two. The three itself, plus its taller side.",
+     "start": 35.95,
+     "end": 38.57
+    },
+    {
+     "id": "tr2s_8",
+     "text": "The right side of the root. Eight is a leaf. One.",
+     "start": 39.32,
+     "end": 42.14
+    },
+    {
+     "id": "tr2s_9",
+     "text": "Back at the root. One, plus the larger of two and one. Three.",
+     "start": 42.89,
+     "end": 46.68
+    },
+    {
+     "id": "tr2s_10",
+     "text": "Every node is visited once. O of n time.",
+     "start": 47.78,
+     "end": 50.79
+    },
+    {
+     "id": "tr2s_11",
+     "text": "The waiting calls are as deep as the tree is tall. O of height space.",
+     "start": 51.54,
+     "end": 55.72
+    },
+    {
+     "id": "tr2s_12",
+     "text": "How deep is the deepest folder on a disk? The same function answers it.",
+     "start": 56.47,
+     "end": 61.05
+    }
+   ],
+   "pauses": [
+    {
+     "id": "tr2s-q",
+     "t": 34.95
+    }
+   ]
+  },
+  "tr3i": {
+   "src": "videos/tr3i.mp4",
+   "title": "The Tree in the Pond",
+   "duration": 19.78,
+   "lines": [
+    {
+     "id": "tr3i_1",
+     "text": "Hazel sees the tree in the pond. Everything on the left is on the right.",
+     "start": 0.2,
+     "end": 4.64
+    },
+    {
+     "id": "tr3i_2",
+     "text": "Mirror the tree. At every node, the two children swap places. Return the root.",
+     "start": 5.34,
+     "end": 10.72
+    },
+    {
+     "id": "tr3i_3",
+     "text": "Swapping the two children of the root is one small step.",
+     "start": 11.42,
+     "end": 14.65
+    },
+    {
+     "id": "tr3i_4",
+     "text": "What still has to happen below them? Your turn.",
+     "start": 15.35,
+     "end": 18.18
+    }
+   ],
+   "pauses": []
+  },
+  "tr3s": {
+   "src": "videos/tr3s.mp4",
+   "title": "Mirror each side, then swap",
+   "duration": 71.24,
+   "lines": [
+    {
+     "id": "tr3s_1",
+     "text": "To mirror a tree, mirror its left side, mirror its right side, and swap the two.",
+     "start": 0.2,
+     "end": 5.18
+    },
+    {
+     "id": "tr3s_2",
+     "text": "Each side is a smaller tree. The same function mirrors it. An empty spot is already its own mirror.",
+     "start": 5.93,
+     "end": 12.25
+    },
+    {
+     "id": "tr3s_3",
+     "text": "The first call stands on the root, five. Line three sends the left side off to be mirrored, and waits.",
+     "start": 13,
+     "end": 19.21
+    },
+    {
+     "id": "tr3s_4",
+     "text": "Now on three. Its children, one and four, are leaves. A leaf has nothing to swap. It comes back unchanged.",
+     "start": 19.96,
+     "end": 27.18
+    },
+    {
+     "id": "tr3s_5",
+     "text": "Lines five and six swap them. One and four become four and one.",
+     "start": 27.93,
+     "end": 32.01
+    },
+    {
+     "id": "tr3s_6",
+     "text": "The right side. On eight, the same thing. Seven and nine become nine and seven.",
+     "start": 32.76,
+     "end": 37.87
+    },
+    {
+     "id": "tr3s_7",
+     "text": "Back at the root. Both sides are mirrored inside. What do lines five and six do now?",
+     "start": 38.62,
+     "end": 43.87
+    },
+    {
+     "id": "tr3s_8",
+     "text": "They swap the two whole sides. The eight, with everything under it, goes left. The three goes right.",
+     "start": 45.07,
+     "end": 51.11
+    },
+    {
+     "id": "tr3s_9",
+     "text": "Line seven returns the root.",
+     "start": 51.86,
+     "end": 53.63
+    },
+    {
+     "id": "tr3s_10",
+     "text": "Every node is visited once. O of n time.",
+     "start": 54.73,
+     "end": 57.73
+    },
+    {
+     "id": "tr3s_11",
+     "text": "The waiting calls are as deep as the tree is tall. O of height space.",
+     "start": 58.48,
+     "end": 62.67
+    },
+    {
+     "id": "tr3s_12",
+     "text": "Flipping a page layout for a right to left language mirrors its tree of boxes, just like this.",
+     "start": 63.42,
+     "end": 69.64
+    }
+   ],
+   "pauses": [
+    {
+     "id": "tr3s-q",
+     "t": 44.07
+    }
+   ]
+  },
+  "tr4i": {
+   "src": "videos/tr4i.mp4",
+   "title": "Its Own Mirror?",
+   "duration": 19.73,
+   "lines": [
+    {
+     "id": "tr4i_1",
+     "text": "Fold this tree down the middle. Do the two halves match?",
+     "start": 0.2,
+     "end": 3.33
+    },
+    {
+     "id": "tr4i_2",
+     "text": "Return true if the left side is the mirror image of the right side.",
+     "start": 4.03,
+     "end": 8.16
+    },
+    {
+     "id": "tr4i_3",
+     "text": "One marker is not enough here. You need two, one on each side, moving together.",
+     "start": 8.86,
+     "end": 13.9
+    },
+    {
+     "id": "tr4i_4",
+     "text": "When one goes left, which way must the other go? Your turn.",
+     "start": 14.6,
+     "end": 18.13
+    }
+   ],
+   "pauses": []
+  },
+  "tr4s": {
+   "src": "videos/tr4s.mp4",
+   "title": "Two markers, opposite ways",
+   "duration": 68.57,
+   "lines": [
+    {
+     "id": "tr4s_1",
+     "text": "Two subtrees are mirrors when their roots hold the same value, and their children match crosswise.",
+     "start": 0.2,
+     "end": 5.78
+    },
+    {
+     "id": "tr4s_2",
+     "text": "So the recursion walks two nodes at once. When a goes left, b goes right.",
+     "start": 6.53,
+     "end": 11.25
+    },
+    {
+     "id": "tr4s_3",
+     "text": "Line eight starts the helper on the two children of the root. A on the left two. B on the right two. Equal.",
+     "start": 12,
+     "end": 18.67
+    },
+    {
+     "id": "tr4s_4",
+     "text": "Line six. First the outer pair. The left of a, with the right of b. Three and three.",
+     "start": 19.42,
+     "end": 24.82
+    },
+    {
+     "id": "tr4s_5",
+     "text": "Their children are all empty. Null and null. Line three says true.",
+     "start": 25.57,
+     "end": 29.82
+    },
+    {
+     "id": "tr4s_6",
+     "text": "Now the inner pair. The right of a, with the left of b. Four and four, and nothing below them. What does same return?",
+     "start": 30.57,
+     "end": 37.78
+    },
+    {
+     "id": "tr4s_7",
+     "text": "True. The values match, and the empty spots match.",
+     "start": 38.98,
+     "end": 42.19
+    },
+    {
+     "id": "tr4s_8",
+     "text": "Back on the two twos. The outer pair is true, and the inner pair is true.",
+     "start": 42.94,
+     "end": 47.25
+    },
+    {
+     "id": "tr4s_9",
+     "text": "Line eight returns true. The tree is its own mirror.",
+     "start": 48,
+     "end": 51.36
+    },
+    {
+     "id": "tr4s_10",
+     "text": "Every node is visited once. O of n time.",
+     "start": 52.46,
+     "end": 55.46
+    },
+    {
+     "id": "tr4s_11",
+     "text": "The waiting calls are as deep as the tree is tall. O of height space.",
+     "start": 56.21,
+     "end": 60.4
+    },
+    {
+     "id": "tr4s_12",
+     "text": "A design tool checks that a shape is symmetrical by comparing its two halves, node against node.",
+     "start": 61.15,
+     "end": 66.97
+    }
+   ],
+   "pauses": [
+    {
+     "id": "tr4s-q",
+     "t": 37.98
+    }
+   ]
+  },
+  "tr5i": {
+   "src": "videos/tr5i.mp4",
+   "title": "Floor by Floor",
+   "duration": 21.68,
+   "lines": [
+    {
+     "id": "tr5i_1",
+     "text": "Hazel is delivering letters to the tree, one floor at a time.",
+     "start": 0.2,
+     "end": 4.17
+    },
+    {
+     "id": "tr5i_2",
+     "text": "Return the values level by level. The top level first, each level from left to right.",
+     "start": 4.87,
+     "end": 10.54
+    },
+    {
+     "id": "tr5i_3",
+     "text": "Going deep first would mix the floors up.",
+     "start": 11.24,
+     "end": 13.5
+    },
+    {
+     "id": "tr5i_4",
+     "text": "But if you hold every nest on one floor, you can find the whole next floor. How? Your turn.",
+     "start": 14.2,
+     "end": 20.08
+    }
+   ],
+   "pauses": []
+  },
+  "tr5s": {
+   "src": "videos/tr5s.mp4",
+   "title": "One level lines up the next",
+   "duration": 68.85,
+   "lines": [
+    {
+     "id": "tr5s_1",
+     "text": "Level by level. That is the signal for breadth first search, with a queue.",
+     "start": 0.2,
+     "end": 4.56
+    },
+    {
+     "id": "tr5s_2",
+     "text": "The queue holds one whole level. Its nodes line up their children, and that is the next level.",
+     "start": 5.31,
+     "end": 10.98
+    },
+    {
+     "id": "tr5s_3",
+     "text": "Line three. The queue starts with just the root. Five.",
+     "start": 11.73,
+     "end": 14.94
+    },
+    {
+     "id": "tr5s_4",
+     "text": "Line six writes down the values in the queue. That is level one.",
+     "start": 15.69,
+     "end": 19.65
+    },
+    {
+     "id": "tr5s_5",
+     "text": "Lines seven to ten. Each node in the queue puts its children into next. Three, then eight.",
+     "start": 20.4,
+     "end": 26.44
+    },
+    {
+     "id": "tr5s_6",
+     "text": "Line eleven makes that the new queue. And line six writes level two.",
+     "start": 27.19,
+     "end": 31.41
+    },
+    {
+     "id": "tr5s_7",
+     "text": "Now the children. Three has one and four. Eight has no left child, only nine. What is the next level?",
+     "start": 32.16,
+     "end": 38.72
+    },
+    {
+     "id": "tr5s_8",
+     "text": "One, four, nine. The missing child is simply not added.",
+     "start": 39.92,
+     "end": 43.45
+    },
+    {
+     "id": "tr5s_9",
+     "text": "Line six writes level three.",
+     "start": 44.2,
+     "end": 45.99
+    },
+    {
+     "id": "tr5s_10",
+     "text": "None of them has a child. Next is empty, the loop ends, and line thirteen returns the answer.",
+     "start": 46.74,
+     "end": 52.89
+    },
+    {
+     "id": "tr5s_11",
+     "text": "Every node enters the queue once. O of n time.",
+     "start": 53.99,
+     "end": 57.16
+    },
+    {
+     "id": "tr5s_12",
+     "text": "The queue holds one level at a time. O of the widest level.",
+     "start": 57.91,
+     "end": 61.68
+    },
+    {
+     "id": "tr5s_13",
+     "text": "An org chart is read this way. The boss, then the managers, then their teams.",
+     "start": 62.43,
+     "end": 67.25
+    }
+   ],
+   "pauses": [
+    {
+     "id": "tr5s-q",
+     "t": 38.92
+    }
+   ]
+  },
+  "tr6i": {
+   "src": "videos/tr6i.mp4",
+   "title": "A Path That Adds Up",
+   "duration": 20.54,
+   "lines": [
+    {
+     "id": "tr6i_1",
+     "text": "Pip walks down from the root, picking up the number in every nest.",
+     "start": 0.2,
+     "end": 4.18
+    },
+    {
+     "id": "tr6i_2",
+     "text": "Return true if some path from the root to a leaf adds up to the target. Here, twelve.",
+     "start": 4.88,
+     "end": 10.46
+    },
+    {
+     "id": "tr6i_3",
+     "text": "Pip starts on the five. Twelve was needed. Five is in the bag.",
+     "start": 11.16,
+     "end": 15.2
+    },
+    {
+     "id": "tr6i_4",
+     "text": "So what should Pip ask the nests below? Your turn.",
+     "start": 15.9,
+     "end": 18.94
+    }
+   ],
+   "pauses": []
+  },
+  "tr6s": {
+   "src": "videos/tr6s.mp4",
+   "title": "Carry down what is still needed",
+   "duration": 66.74,
+   "lines": [
+    {
+     "id": "tr6s_1",
+     "text": "Each node takes its own value off the target, and passes the rest down to its children.",
+     "start": 0.2,
+     "end": 5.62
+    },
+    {
+     "id": "tr6s_2",
+     "text": "On a leaf, the path worked if nothing is left to find.",
+     "start": 6.37,
+     "end": 9.57
+    },
+    {
+     "id": "tr6s_3",
+     "text": "The root. Five. The target is twelve. So seven is still needed.",
+     "start": 10.32,
+     "end": 14.23
+    },
+    {
+     "id": "tr6s_4",
+     "text": "Five is not a leaf. Line six asks the left child for seven. On three, four is still needed.",
+     "start": 14.98,
+     "end": 21.1
+    },
+    {
+     "id": "tr6s_5",
+     "text": "Left again, to the one. Three is still needed. And one is a leaf. What does line five return?",
+     "start": 21.85,
+     "end": 27.84
+    },
+    {
+     "id": "tr6s_6",
+     "text": "False. The path ended, with three still needed.",
+     "start": 29.04,
+     "end": 31.65
+    },
+    {
+     "id": "tr6s_7",
+     "text": "So the or, on line six, tries the right child. Four. Nothing is left, and four is a leaf. True.",
+     "start": 32.4,
+     "end": 38.74
+    },
+    {
+     "id": "tr6s_8",
+     "text": "True travels back up. An or stops at the first true. The right side of the root is never visited.",
+     "start": 39.49,
+     "end": 45.74
+    },
+    {
+     "id": "tr6s_9",
+     "text": "The answer is true. Five, three, four.",
+     "start": 46.49,
+     "end": 48.98
+    },
+    {
+     "id": "tr6s_10",
+     "text": "At worst, every node is visited once. O of n time.",
+     "start": 50.08,
+     "end": 53.59
+    },
+    {
+     "id": "tr6s_11",
+     "text": "The waiting calls are as deep as the tree is tall. O of height space.",
+     "start": 54.34,
+     "end": 58.53
+    },
+    {
+     "id": "tr6s_12",
+     "text": "A route planner asks this. Does any route from the start to an exit cost exactly my budget?",
+     "start": 59.28,
+     "end": 65.14
+    }
+   ],
+   "pauses": [
+    {
+     "id": "tr6s-q",
+     "t": 28.04
+    }
+   ]
+  },
+  "tr7i": {
+   "src": "videos/tr7i.mp4",
+   "title": "The Longest Walk",
+   "duration": 21.32,
+   "lines": [
+    {
+     "id": "tr7i_1",
+     "text": "Moss wants the longest walk in the tree, from any nest to any other.",
+     "start": 0.2,
+     "end": 4.3
+    },
+    {
+     "id": "tr7i_2",
+     "text": "Return the number of steps on the longest path between two nodes.",
+     "start": 5,
+     "end": 8.77
+    },
+    {
+     "id": "tr7i_3",
+     "text": "Every path climbs up to one highest nest, and comes down the other side.",
+     "start": 9.47,
+     "end": 13.88
+    },
+    {
+     "id": "tr7i_4",
+     "text": "At that nest, how long is the path, if you know how tall each side is? Your turn.",
+     "start": 14.58,
+     "end": 19.72
+    }
+   ],
+   "pauses": []
+  },
+  "tr7s": {
+   "src": "videos/tr7s.mp4",
+   "title": "Left height plus right height",
+   "duration": 76.12,
+   "lines": [
+    {
+     "id": "tr7s_1",
+     "text": "Every path has a highest node, where it turns. The longest path turning there is the left height plus the right height.",
+     "start": 0.2,
+     "end": 7.03
+    },
+    {
+     "id": "tr7s_2",
+     "text": "The height function already visits every node, and knows both heights. So it can keep the best turn it sees.",
+     "start": 7.78,
+     "end": 14.1
+    },
+    {
+     "id": "tr7s_3",
+     "text": "Best starts at zero. Line ten starts the height helper on the root, and it goes down the left side.",
+     "start": 14.85,
+     "end": 20.85
+    },
+    {
+     "id": "tr7s_4",
+     "text": "The one is a leaf. Left is zero, right is zero. A turn here is zero steps. It returns height one.",
+     "start": 21.6,
+     "end": 28.51
+    },
+    {
+     "id": "tr7s_5",
+     "text": "The four is the same. Back on three. Left is one, right is one. A path turning here has two steps. Best is two.",
+     "start": 29.26,
+     "end": 36.77
+    },
+    {
+     "id": "tr7s_6",
+     "text": "And three returns its height. One, plus one. Two.",
+     "start": 37.52,
+     "end": 40.76
+    },
+    {
+     "id": "tr7s_7",
+     "text": "The right side. On eight, left is zero, and right is one, for the nine. A turn of one. Its height is two.",
+     "start": 41.51,
+     "end": 48.07
+    },
+    {
+     "id": "tr7s_8",
+     "text": "Back at the root. Left is two. Right is two. What does best become?",
+     "start": 48.82,
+     "end": 52.89
+    },
+    {
+     "id": "tr7s_9",
+     "text": "Four. One, three, five, eight, nine. Four steps.",
+     "start": 54.09,
+     "end": 57.04
+    },
+    {
+     "id": "tr7s_10",
+     "text": "Line eleven returns best.",
+     "start": 57.79,
+     "end": 59.64
+    },
+    {
+     "id": "tr7s_11",
+     "text": "One walk of the tree. O of n time.",
+     "start": 60.74,
+     "end": 63.16
+    },
+    {
+     "id": "tr7s_12",
+     "text": "The waiting calls are as deep as the tree is tall. O of height space.",
+     "start": 63.91,
+     "end": 68.1
+    },
+    {
+     "id": "tr7s_13",
+     "text": "Network engineers look for the longest path between two points. It tells them the worst delay.",
+     "start": 68.85,
+     "end": 74.52
+    }
+   ],
+   "pauses": [
+    {
+     "id": "tr7s-q",
+     "t": 53.09
+    }
+   ]
+  },
+  "tr8i": {
+   "src": "videos/tr8i.mp4",
+   "title": "Where Two Paths Meet",
+   "duration": 20.43,
+   "lines": [
+    {
+     "id": "tr8i_1",
+     "text": "Pip is in one nest. Moss is in another. Both climb up towards the root.",
+     "start": 0.2,
+     "end": 4.85
+    },
+    {
+     "id": "tr8i_2",
+     "text": "Return the nest where their two paths first meet. The lowest nest that has both below it.",
+     "start": 5.55,
+     "end": 10.29
+    },
+    {
+     "id": "tr8i_3",
+     "text": "Stand on any nest and ask each side one question. Did you find one of them?",
+     "start": 10.99,
+     "end": 15.62
+    },
+    {
+     "id": "tr8i_4",
+     "text": "What do the two answers tell you? Your turn.",
+     "start": 16.32,
+     "end": 18.83
+    }
+   ],
+   "pauses": []
+  },
+  "tr8s": {
+   "src": "videos/tr8s.mp4",
+   "title": "One found on each side",
+   "duration": 72.48,
+   "lines": [
+    {
+     "id": "tr8s_1",
+     "text": "Each call reports what it found in its subtree. One of the two nodes, the meeting point, or nothing.",
+     "start": 0.2,
+     "end": 5.87
+    },
+    {
+     "id": "tr8s_2",
+     "text": "If the left side found one, and the right side found the other, this node is where they meet.",
+     "start": 6.62,
+     "end": 11.97
+    },
+    {
+     "id": "tr8s_3",
+     "text": "Looking for one and four. The root is five. Neither of them. Line four searches the left side.",
+     "start": 12.72,
+     "end": 18.4
+    },
+    {
+     "id": "tr8s_4",
+     "text": "Three. Neither. It searches its own left side.",
+     "start": 19.15,
+     "end": 21.96
+    },
+    {
+     "id": "tr8s_5",
+     "text": "One. That is a. Line three returns this node.",
+     "start": 22.71,
+     "end": 25.39
+    },
+    {
+     "id": "tr8s_6",
+     "text": "Then the right side of three. Four. That is b. Reported too.",
+     "start": 26.14,
+     "end": 29.76
+    },
+    {
+     "id": "tr8s_7",
+     "text": "Back on three. The left side found something. The right side found something. What does line six return?",
+     "start": 30.51,
+     "end": 37.04
+    },
+    {
+     "id": "tr8s_8",
+     "text": "The three itself. One on each side. This is where the paths meet.",
+     "start": 38.24,
+     "end": 42.33
+    },
+    {
+     "id": "tr8s_9",
+     "text": "Back at the root. The left side reported three. The right side holds neither, and reports null. Line seven passes the three up.",
+     "start": 43.08,
+     "end": 51.35
+    },
+    {
+     "id": "tr8s_10",
+     "text": "The answer is the node three.",
+     "start": 52.1,
+     "end": 53.81
+    },
+    {
+     "id": "tr8s_11",
+     "text": "At worst, every node is visited once. O of n time.",
+     "start": 54.91,
+     "end": 58.42
+    },
+    {
+     "id": "tr8s_12",
+     "text": "The waiting calls are as deep as the tree is tall. O of height space.",
+     "start": 59.17,
+     "end": 63.36
+    },
+    {
+     "id": "tr8s_13",
+     "text": "In a family tree, this finds the closest common ancestor. In Git, it finds the commit two branches share.",
+     "start": 64.11,
+     "end": 70.89
+    }
+   ],
+   "pauses": [
+    {
+     "id": "tr8s-q",
+     "t": 37.24
+    }
+   ]
+  },
+  "bt1i": {
+   "src": "videos/bt1i.mp4",
+   "title": "Is It in the Tree?",
+   "duration": 18.61,
+   "lines": [
+    {
+     "id": "bt1i_1",
+     "text": "This tree keeps the rule. Smaller on the left, bigger on the right.",
+     "start": 0.2,
+     "end": 3.96
+    },
+    {
+     "id": "bt1i_2",
+     "text": "Return true if the target is somewhere in the tree. And look at very few nests.",
+     "start": 4.66,
+     "end": 9.57
+    },
+    {
+     "id": "bt1i_3",
+     "text": "Pip stands on the root. Eight. Pip wants six.",
+     "start": 10.27,
+     "end": 13.11
+    },
+    {
+     "id": "bt1i_4",
+     "text": "Which side of the eight is even worth a look? Your turn.",
+     "start": 13.81,
+     "end": 17
+    }
+   ],
+   "pauses": []
+  },
+  "bt1s": {
+   "src": "videos/bt1s.mp4",
+   "title": "Compare, pick a side, go down",
+   "duration": 63.73,
+   "lines": [
+    {
+     "id": "bt1s_1",
+     "text": "Left is smaller, right is bigger. So one comparison tells you which side the target must be on.",
+     "start": 0.2,
+     "end": 6.45
+    },
+    {
+     "id": "bt1s_2",
+     "text": "The other side is thrown away without a look. This is binary search, on a tree.",
+     "start": 7.2,
+     "end": 11.95
+    },
+    {
+     "id": "bt1s_3",
+     "text": "Looking for six. The marker starts on the root. Eight. Not equal.",
+     "start": 12.7,
+     "end": 16.74
+    },
+    {
+     "id": "bt1s_4",
+     "text": "Six is smaller than eight. So it can only be on the left. The whole right side is thrown away.",
+     "start": 17.49,
+     "end": 23.18
+    },
+    {
+     "id": "bt1s_5",
+     "text": "Now on three. Not equal. Six is bigger than three. Which way?",
+     "start": 23.93,
+     "end": 27.88
+    },
+    {
+     "id": "bt1s_6",
+     "text": "Right. Line six. The one, on the left, is thrown away.",
+     "start": 29.08,
+     "end": 32.39
+    },
+    {
+     "id": "bt1s_7",
+     "text": "The marker is on six. Equal. Line four returns true.",
+     "start": 33.14,
+     "end": 36.74
+    },
+    {
+     "id": "bt1s_8",
+     "text": "And for a value that is not there, the marker falls off the bottom, onto null. The loop ends, and line eight returns false.",
+     "start": 37.84,
+     "end": 45.69
+    },
+    {
+     "id": "bt1s_9",
+     "text": "Each look goes one level down. O of height. In a balanced tree, that is log n.",
+     "start": 46.44,
+     "end": 51.63
+    },
+    {
+     "id": "bt1s_10",
+     "text": "One marker. O of one space.",
+     "start": 52.38,
+     "end": 54.38
+    },
+    {
+     "id": "bt1s_11",
+     "text": "A database index is an ordered tree like this. That is how it finds one row among millions in a few steps.",
+     "start": 55.13,
+     "end": 62.13
+    }
+   ],
+   "pauses": [
+    {
+     "id": "bt1s-q",
+     "t": 28.08
+    }
+   ]
+  },
+  "bt2i": {
+   "src": "videos/bt2i.mp4",
+   "title": "Does It Keep the Rule?",
+   "duration": 21.2,
+   "lines": [
+    {
+     "id": "bt2i_1",
+     "text": "Somebody built this tree, and says it keeps the rule. Hazel is not so sure.",
+     "start": 0.2,
+     "end": 4.93
+    },
+    {
+     "id": "bt2i_2",
+     "text": "Return true only if every node has smaller values on its whole left side, and bigger on its right.",
+     "start": 5.63,
+     "end": 11.98
+    },
+    {
+     "id": "bt2i_3",
+     "text": "Each nest here looks fine next to its own children.",
+     "start": 12.68,
+     "end": 15.66
+    },
+    {
+     "id": "bt2i_4",
+     "text": "But look at the nine. Whose left side is it in? Your turn.",
+     "start": 16.36,
+     "end": 19.59
+    }
+   ],
+   "pauses": []
+  },
+  "bt2s": {
+   "src": "videos/bt2s.mp4",
+   "title": "Every node has a range",
+   "duration": 72.13,
+   "lines": [
+    {
+     "id": "bt2s_1",
+     "text": "Comparing a node with its two children is not enough. A node must respect every ancestor above it.",
+     "start": 0.2,
+     "end": 6.43
+    },
+    {
+     "id": "bt2s_2",
+     "text": "So each call carries a range. The value must be above low, and below high. Going down narrows it.",
+     "start": 7.18,
+     "end": 13.6
+    },
+    {
+     "id": "bt2s_3",
+     "text": "The root. Eight. Its range is everything. Minus infinity, to infinity. Fine.",
+     "start": 14.35,
+     "end": 19.19
+    },
+    {
+     "id": "bt2s_4",
+     "text": "Line four goes left, and passes eight as the new high. Three must be below eight. It is.",
+     "start": 19.94,
+     "end": 25.88
+    },
+    {
+     "id": "bt2s_5",
+     "text": "Left again. The one must be below three. Fine. And its empty sides are fine.",
+     "start": 26.63,
+     "end": 31.59
+    },
+    {
+     "id": "bt2s_6",
+     "text": "Now the right child of three. Nine. Going right, three becomes the low. The high is still eight. Is nine allowed?",
+     "start": 32.34,
+     "end": 39.4
+    },
+    {
+     "id": "bt2s_7",
+     "text": "No. Nine is bigger than its parent, which looks right. But it sits on the left side of eight, and it is not below eight.",
+     "start": 40.6,
+     "end": 47.22
+    },
+    {
+     "id": "bt2s_8",
+     "text": "False travels back up. The and, on line five, stops at once. The right side of the root is never checked.",
+     "start": 47.97,
+     "end": 54.58
+    },
+    {
+     "id": "bt2s_9",
+     "text": "At worst, every node is visited once. O of n time.",
+     "start": 55.68,
+     "end": 59.19
+    },
+    {
+     "id": "bt2s_10",
+     "text": "The waiting calls are as deep as the tree is tall. O of height space.",
+     "start": 59.94,
+     "end": 64.12
+    },
+    {
+     "id": "bt2s_11",
+     "text": "After a crash, a database checks its index this way, to be sure the order still holds.",
+     "start": 64.87,
+     "end": 70.53
+    }
+   ],
+   "pauses": [
+    {
+     "id": "bt2s-q",
+     "t": 39.6
+    }
+   ]
+  },
+  "bt3i": {
+   "src": "videos/bt3i.mp4",
+   "title": "The Third Smallest",
+   "duration": 19.39,
+   "lines": [
+    {
+     "id": "bt3i_1",
+     "text": "Hazel wants the third smallest number in the tree.",
+     "start": 0.2,
+     "end": 2.97
+    },
+    {
+     "id": "bt3i_2",
+     "text": "Return the k-th smallest value. The tree keeps the rule, so do not sort anything.",
+     "start": 3.67,
+     "end": 9.13
+    },
+    {
+     "id": "bt3i_3",
+     "text": "The smallest is easy to find. Keep going left until you cannot.",
+     "start": 9.83,
+     "end": 13.95
+    },
+    {
+     "id": "bt3i_4",
+     "text": "And then, which nest is the next smallest? Your turn.",
+     "start": 14.65,
+     "end": 17.79
+    }
+   ],
+   "pauses": []
+  },
+  "bt3s": {
+   "src": "videos/bt3s.mp4",
+   "title": "Left, node, right: count to k",
+   "duration": 72.68,
+   "lines": [
+    {
+     "id": "bt3s_1",
+     "text": "Left side, then the node, then the right side. On a search tree, that walk meets the values in sorted order.",
+     "start": 0.2,
+     "end": 6.91
+    },
+    {
+     "id": "bt3s_2",
+     "text": "So count the nodes as the walk meets them, and stop at number k.",
+     "start": 7.66,
+     "end": 11.62
+    },
+    {
+     "id": "bt3s_3",
+     "text": "K is three. The walk starts on the root, eight. Line six goes left first, and waits.",
+     "start": 12.37,
+     "end": 17.79
+    },
+    {
+     "id": "bt3s_4",
+     "text": "On three, left first again. On one, its left is empty. So one is the first node to be counted.",
+     "start": 18.54,
+     "end": 24.98
+    },
+    {
+     "id": "bt3s_5",
+     "text": "One has no right side. Back on three. Its left side is finished. So three is counted now.",
+     "start": 25.73,
+     "end": 31.76
+    },
+    {
+     "id": "bt3s_6",
+     "text": "Line nine goes to its right side. Six. Its left is empty, so six is counted. What happens on line eight?",
+     "start": 32.51,
+     "end": 39.76
+    },
+    {
+     "id": "bt3s_7",
+     "text": "Seen is three. That equals k. The answer is six.",
+     "start": 40.96,
+     "end": 44.25
+    },
+    {
+     "id": "bt3s_8",
+     "text": "From now on, line five stops every call at once. The eight, the ten, the fourteen are never counted.",
+     "start": 45,
+     "end": 51.54
+    },
+    {
+     "id": "bt3s_9",
+     "text": "Line twelve returns the answer.",
+     "start": 52.29,
+     "end": 54.24
+    },
+    {
+     "id": "bt3s_10",
+     "text": "The walk goes down the height, then counts k nodes. O of height plus k.",
+     "start": 55.34,
+     "end": 59.69
+    },
+    {
+     "id": "bt3s_11",
+     "text": "The waiting calls are as deep as the tree is tall. O of height space.",
+     "start": 60.44,
+     "end": 64.63
+    },
+    {
+     "id": "bt3s_12",
+     "text": "Who is in third place? A ranking kept in an ordered tree answers by walking it in order.",
+     "start": 65.38,
+     "end": 71.08
+    }
+   ],
+   "pauses": [
+    {
+     "id": "bt3s-q",
+     "t": 39.96
+    }
+   ]
+  },
+  "bt4i": {
+   "src": "videos/bt4i.mp4",
+   "title": "Where the Paths Split",
+   "duration": 24.11,
+   "lines": [
+    {
+     "id": "bt4i_1",
+     "text": "Pip is going to nest one. Moss is going to nest six. They start together, at the root.",
+     "start": 0.2,
+     "end": 5.66
+    },
+    {
+     "id": "bt4i_2",
+     "text": "Return the nest where their paths split. The lowest nest that has both below it.",
+     "start": 6.36,
+     "end": 11.05
+    },
+    {
+     "id": "bt4i_3",
+     "text": "In an ordinary tree, you had to search both sides. This tree keeps the rule.",
+     "start": 11.75,
+     "end": 16.75
+    },
+    {
+     "id": "bt4i_4",
+     "text": "Standing on the eight, can you tell where one and six are, without looking? Your turn.",
+     "start": 17.45,
+     "end": 22.51
+    }
+   ],
+   "pauses": []
+  },
+  "bt4s": {
+   "src": "videos/bt4s.mp4",
+   "title": "Walk until they part",
+   "duration": 53.29,
+   "lines": [
+    {
+     "id": "bt4s_1",
+     "text": "In a search tree, comparing with the node tells you which side each value is on. No searching needed.",
+     "start": 0.2,
+     "end": 6.34
+    },
+    {
+     "id": "bt4s_2",
+     "text": "While both are on the same side, walk that way. Where they part, that node is the answer.",
+     "start": 7.09,
+     "end": 12.47
+    },
+    {
+     "id": "bt4s_3",
+     "text": "Looking for one and six. The marker starts on the root. Eight.",
+     "start": 13.22,
+     "end": 16.8
+    },
+    {
+     "id": "bt4s_4",
+     "text": "One is smaller than eight. Six is smaller than eight. Both are on the left. So walk left.",
+     "start": 17.55,
+     "end": 23.3
+    },
+    {
+     "id": "bt4s_5",
+     "text": "Now on three. One is smaller than three. Six is bigger. What does the code do?",
+     "start": 24.05,
+     "end": 29.02
+    },
+    {
+     "id": "bt4s_6",
+     "text": "Not both smaller. Not both bigger. So they are on different sides, and the paths part here.",
+     "start": 30.22,
+     "end": 35.84
+    },
+    {
+     "id": "bt4s_7",
+     "text": "Line six returns the node three.",
+     "start": 36.59,
+     "end": 38.55
+    },
+    {
+     "id": "bt4s_8",
+     "text": "One walk down from the root. O of height.",
+     "start": 39.65,
+     "end": 42.23
+    },
+    {
+     "id": "bt4s_9",
+     "text": "One marker, and no waiting calls. O of one space.",
+     "start": 42.98,
+     "end": 46.47
+    },
+    {
+     "id": "bt4s_10",
+     "text": "In an ordered index, this finds the smallest branch that covers two keys.",
+     "start": 47.22,
+     "end": 51.69
+    }
+   ],
+   "pauses": [
+    {
+     "id": "bt4s-q",
+     "t": 29.22
+    }
+   ]
+  },
+  "bs1i": {
+   "src": "videos/bs1i.mp4",
+   "title": "Find the Door",
+   "duration": 21.34,
+   "lines": [
+    {
+     "id": "bs1i_1",
+     "text": "Seven sorted doors. Behind one of them is sixteen.",
+     "start": 0.2,
+     "end": 3.73
+    },
+    {
+     "id": "bs1i_2",
+     "text": "Return the index of the target, or minus one if it is not there.",
+     "start": 4.43,
+     "end": 8.55
+    },
+    {
+     "id": "bs1i_3",
+     "text": "Walking door by door works. But the row is sorted, and that is worth a lot.",
+     "start": 9.25,
+     "end": 14.04
+    },
+    {
+     "id": "bs1i_4",
+     "text": "Look at the middle door first. What does it tell you about half the row? Your turn.",
+     "start": 14.74,
+     "end": 19.74
+    }
+   ],
+   "pauses": []
+  },
+  "bs1s": {
+   "src": "videos/bs1s.mp4",
+   "title": "Throw away half",
+   "duration": 71.41,
+   "lines": [
+    {
+     "id": "bs1s_1",
+     "text": "The row is sorted. So one look at the middle door tells you which half the target cannot be in.",
+     "start": 0.2,
+     "end": 6.01
+    },
+    {
+     "id": "bs1s_2",
+     "text": "Keep two markers around the part that is still possible, and halve it until the target is found.",
+     "start": 6.76,
+     "end": 12.28
+    },
+    {
+     "id": "bs1s_3",
+     "text": "Lines two and three. Low is the first door. High is the last. The target is somewhere between them.",
+     "start": 13.03,
+     "end": 19.28
+    },
+    {
+     "id": "bs1s_4",
+     "text": "Line five finds the middle. Zero plus six, divided by two. Door three.",
+     "start": 20.03,
+     "end": 25.46
+    },
+    {
+     "id": "bs1s_5",
+     "text": "Door three holds twelve. Too small. And so is everything to its left. Line seven moves low past the middle.",
+     "start": 26.21,
+     "end": 33.37
+    },
+    {
+     "id": "bs1s_6",
+     "text": "The middle of four and six is five. Door five holds twenty three. Which marker moves?",
+     "start": 34.12,
+     "end": 39.93
+    },
+    {
+     "id": "bs1s_7",
+     "text": "High. Twenty three is too big, and so is everything to its right. Line eight moves high to door four.",
+     "start": 41.13,
+     "end": 47.2
+    },
+    {
+     "id": "bs1s_8",
+     "text": "Low and high are both on door four. The middle is door four. Sixteen. Line six returns its index.",
+     "start": 47.95,
+     "end": 54.61
+    },
+    {
+     "id": "bs1s_9",
+     "text": "Every look halves what is left. O of log n time.",
+     "start": 55.71,
+     "end": 58.96
+    },
+    {
+     "id": "bs1s_10",
+     "text": "Three markers, and nothing else. O of one space.",
+     "start": 59.71,
+     "end": 62.95
+    },
+    {
+     "id": "bs1s_11",
+     "text": "Your phone finds one name among thousands of sorted contacts like this. A handful of looks.",
+     "start": 63.7,
+     "end": 69.81
+    }
+   ],
+   "pauses": [
+    {
+     "id": "bs1s-q",
+     "t": 40.13
+    }
+   ]
+  },
+  "bs2i": {
+   "src": "videos/bs2i.mp4",
+   "title": "Where Would It Go?",
+   "duration": 20.69,
+   "lines": [
+    {
+     "id": "bs2i_1",
+     "text": "Three doors hold a five. Pip wants the first of them.",
+     "start": 0.2,
+     "end": 3.6
+    },
+    {
+     "id": "bs2i_2",
+     "text": "Return the first index whose number is the target, or more.",
+     "start": 4.3,
+     "end": 7.9
+    },
+    {
+     "id": "bs2i_3",
+     "text": "Finding a five is not enough. There may be another one to its left.",
+     "start": 8.6,
+     "end": 12.58
+    },
+    {
+     "id": "bs2i_4",
+     "text": "You are looking for a boundary. Too small on one side, big enough on the other. Your turn.",
+     "start": 13.28,
+     "end": 19.09
+    }
+   ],
+   "pauses": []
+  },
+  "bs2s": {
+   "src": "videos/bs2s.mp4",
+   "title": "Find the boundary",
+   "duration": 72.23,
+   "lines": [
+    {
+     "id": "bs2s_1",
+     "text": "The row splits into two parts. Numbers that are too small, and numbers that are big enough. We want the first of the second part.",
+     "start": 0.2,
+     "end": 8.05
+    },
+    {
+     "id": "bs2s_2",
+     "text": "So when the middle door is big enough, it might be the answer. Keep it. Only throw away what is certainly wrong.",
+     "start": 8.8,
+     "end": 15.06
+    },
+    {
+     "id": "bs2s_3",
+     "text": "Low starts at zero. High starts at seven, one past the last door, because the answer could be after everything.",
+     "start": 15.81,
+     "end": 23.08
+    },
+    {
+     "id": "bs2s_4",
+     "text": "The middle of zero and seven is three. Door three holds five. Not smaller than the target. So it might be the answer. High moves onto it.",
+     "start": 23.83,
+     "end": 32.44
+    },
+    {
+     "id": "bs2s_5",
+     "text": "The middle of zero and three is one. Door one holds three. Too small. Low moves past it.",
+     "start": 33.19,
+     "end": 39.25
+    },
+    {
+     "id": "bs2s_6",
+     "text": "The middle of two and three is two. Door two holds five. Which marker moves?",
+     "start": 40,
+     "end": 45.13
+    },
+    {
+     "id": "bs2s_7",
+     "text": "High. It moves onto door two. Now low and high are equal, and the loop ends.",
+     "start": 46.33,
+     "end": 51.13
+    },
+    {
+     "id": "bs2s_8",
+     "text": "Line nine returns low. Two. The first door that is big enough.",
+     "start": 51.88,
+     "end": 56
+    },
+    {
+     "id": "bs2s_9",
+     "text": "Every look halves what is left. O of log n time.",
+     "start": 57.1,
+     "end": 60.34
+    },
+    {
+     "id": "bs2s_10",
+     "text": "Three markers, and nothing else. O of one space.",
+     "start": 61.09,
+     "end": 64.34
+    },
+    {
+     "id": "bs2s_11",
+     "text": "A database finds where a new record belongs in a sorted index, exactly like this.",
+     "start": 65.09,
+     "end": 70.63
+    }
+   ],
+   "pauses": [
+    {
+     "id": "bs2s-q",
+     "t": 45.33
+    }
+   ]
+  },
+  "bs3i": {
+   "src": "videos/bs3i.mp4",
+   "title": "How Many of Them?",
+   "duration": 18.78,
+   "lines": [
+    {
+     "id": "bs3i_1",
+     "text": "The fives in this sorted row sit together in one block.",
+     "start": 0.2,
+     "end": 3.66
+    },
+    {
+     "id": "bs3i_2",
+     "text": "Return how many times the target appears.",
+     "start": 4.36,
+     "end": 7.01
+    },
+    {
+     "id": "bs3i_3",
+     "text": "Counting them one by one is a walk. In a million doors, the block could be huge.",
+     "start": 7.71,
+     "end": 12.69
+    },
+    {
+     "id": "bs3i_4",
+     "text": "What two positions would tell you the size of the block? Your turn.",
+     "start": 13.39,
+     "end": 17.18
+    }
+   ],
+   "pauses": []
+  },
+  "bs3s": {
+   "src": "videos/bs3s.mp4",
+   "title": "Two edges, one subtraction",
+   "duration": 62.16,
+   "lines": [
+    {
+     "id": "bs3s_1",
+     "text": "In a sorted row, the copies of a value form one block. So the count is where the block ends, minus where it starts.",
+     "start": 0.2,
+     "end": 7.46
+    },
+    {
+     "id": "bs3s_2",
+     "text": "Both edges are boundaries. And you already know how to find a boundary in a few looks.",
+     "start": 8.21,
+     "end": 13.39
+    },
+    {
+     "id": "bs3s_3",
+     "text": "Lines two to eleven are the boundary search from the last puzzle, as a helper. First of x: the first door holding x or more.",
+     "start": 14.14,
+     "end": 22.48
+    },
+    {
+     "id": "bs3s_4",
+     "text": "Line twelve calls it twice. First of five finds where the fives start. Door two.",
+     "start": 23.23,
+     "end": 28.67
+    },
+    {
+     "id": "bs3s_5",
+     "text": "Now first of six. No door holds six. So what does it return?",
+     "start": 29.42,
+     "end": 33.59
+    },
+    {
+     "id": "bs3s_6",
+     "text": "Five. The first door holding six or more is the eight. And that is exactly the door after the last five.",
+     "start": 34.79,
+     "end": 41.01
+    },
+    {
+     "id": "bs3s_7",
+     "text": "Five minus two. Three fives.",
+     "start": 41.76,
+     "end": 44
+    },
+    {
+     "id": "bs3s_8",
+     "text": "Two searches, each halving. O of log n, however big the block is.",
+     "start": 45.1,
+     "end": 49.42
+    },
+    {
+     "id": "bs3s_9",
+     "text": "Three markers, and nothing else. O of one space.",
+     "start": 50.17,
+     "end": 53.42
+    },
+    {
+     "id": "bs3s_10",
+     "text": "How many orders on one date? A sorted table answers with two binary searches and a subtraction.",
+     "start": 54.17,
+     "end": 60.56
+    }
+   ],
+   "pauses": [
+    {
+     "id": "bs3s-q",
+     "t": 33.79
+    }
+   ]
+  },
+  "bs4i": {
+   "src": "videos/bs4i.mp4",
+   "title": "The Square Root",
+   "duration": 22.83,
+   "lines": [
+    {
+     "id": "bs4i_1",
+     "text": "Which whole number, squared, comes closest to eight without going over?",
+     "start": 0.2,
+     "end": 4.19
+    },
+    {
+     "id": "bs4i_2",
+     "text": "Return the largest x whose square is n or less. No square root function.",
+     "start": 4.89,
+     "end": 9.44
+    },
+    {
+     "id": "bs4i_3",
+     "text": "There is no row of data here. But the possible answers, zero to eight, are in order.",
+     "start": 10.14,
+     "end": 15.19
+    },
+    {
+     "id": "bs4i_4",
+     "text": "For each one you can ask: does it fit? How do those answers line up? Your turn.",
+     "start": 15.89,
+     "end": 21.23
+    }
+   ],
+   "pauses": []
+  },
+  "bs4s": {
+   "src": "videos/bs4s.mp4",
+   "title": "Search the possible answers",
+   "duration": 68.38,
+   "lines": [
+    {
+     "id": "bs4s_1",
+     "text": "The answer is somewhere from zero to n. Small candidates fit, because their square is at most n. Big ones do not.",
+     "start": 0.2,
+     "end": 7.62
+    },
+    {
+     "id": "bs4s_2",
+     "text": "Yes, then no. That flips once. So binary search the candidates, for the last one that fits.",
+     "start": 8.37,
+     "end": 14.55
+    },
+    {
+     "id": "bs4s_3",
+     "text": "The candidates are zero to eight. Low is on zero. High is on eight.",
+     "start": 15.3,
+     "end": 19.69
+    },
+    {
+     "id": "bs4s_4",
+     "text": "The middle candidate is four. Four squared is sixteen. More than eight. Too big.",
+     "start": 20.44,
+     "end": 25.6
+    },
+    {
+     "id": "bs4s_5",
+     "text": "So four is out, and everything above it. Line seven moves high to three.",
+     "start": 26.35,
+     "end": 30.79
+    },
+    {
+     "id": "bs4s_6",
+     "text": "The middle of zero and three, rounded up, is two. Two squared is four. Does it fit?",
+     "start": 31.54,
+     "end": 36.78
+    },
+    {
+     "id": "bs4s_7",
+     "text": "It fits. So the answer is two, or more. Low moves onto two.",
+     "start": 37.98,
+     "end": 42.04
+    },
+    {
+     "id": "bs4s_8",
+     "text": "The middle of two and three, rounded up, is three. Nine. Too big. High moves to two.",
+     "start": 42.79,
+     "end": 48.15
+    },
+    {
+     "id": "bs4s_9",
+     "text": "Low and high have met. Line nine returns two.",
+     "start": 48.9,
+     "end": 51.84
+    },
+    {
+     "id": "bs4s_10",
+     "text": "The candidates halve at every test. O of log n time.",
+     "start": 52.94,
+     "end": 56.54
+    },
+    {
+     "id": "bs4s_11",
+     "text": "Three markers, and nothing else. O of one space.",
+     "start": 57.29,
+     "end": 60.54
+    },
+    {
+     "id": "bs4s_12",
+     "text": "Calculators find square roots by halving a range of possible answers, just like this.",
+     "start": 61.29,
+     "end": 66.78
+    }
+   ],
+   "pauses": [
+    {
+     "id": "bs4s-q",
+     "t": 36.98
+    }
+   ]
+  },
+  "bs5i": {
+   "src": "videos/bs5i.mp4",
+   "title": "The Top of the Hill",
+   "duration": 18.88,
+   "lines": [
+    {
+     "id": "bs5i_1",
+     "text": "Moss is climbing a hill. The path goes up, reaches one top, and then goes down.",
+     "start": 0.2,
+     "end": 5.18
+    },
+    {
+     "id": "bs5i_2",
+     "text": "Return the index of the top.",
+     "start": 5.88,
+     "end": 7.58
+    },
+    {
+     "id": "bs5i_3",
+     "text": "This row is not sorted. But it is not random either.",
+     "start": 8.28,
+     "end": 11.62
+    },
+    {
+     "id": "bs5i_4",
+     "text": "Stand on any door, and look at the next one. What does that tell you? Your turn.",
+     "start": 12.32,
+     "end": 17.28
+    }
+   ],
+   "pauses": []
+  },
+  "bs5s": {
+   "src": "videos/bs5s.mp4",
+   "title": "Uphill or downhill?",
+   "duration": 68.72,
+   "lines": [
+    {
+     "id": "bs5s_1",
+     "text": "Stand on a door and look at the next one. If it is higher, you are going uphill, and the top is to the right.",
+     "start": 0.2,
+     "end": 6.21
+    },
+    {
+     "id": "bs5s_2",
+     "text": "If it is lower, you are at the top, or past it. Uphill, then downhill. That flips once, so you can halve it.",
+     "start": 6.96,
+     "end": 13.42
+    },
+    {
+     "id": "bs5s_3",
+     "text": "Low on the first door. High on the last.",
+     "start": 14.17,
+     "end": 16.66
+    },
+    {
+     "id": "bs5s_4",
+     "text": "The middle is door two. It holds six, and the next door holds eight. Higher. So we are going uphill.",
+     "start": 17.41,
+     "end": 23.32
+    },
+    {
+     "id": "bs5s_5",
+     "text": "The top is to the right. Low moves past the middle, to door three.",
+     "start": 24.07,
+     "end": 28.01
+    },
+    {
+     "id": "bs5s_6",
+     "text": "The middle of three and five is four. It holds five, and the next door holds two. Which marker moves?",
+     "start": 28.76,
+     "end": 34.95
+    },
+    {
+     "id": "bs5s_7",
+     "text": "High. We are going downhill, so the top is here, or to the left. High moves onto door four.",
+     "start": 36.15,
+     "end": 42.05
+    },
+    {
+     "id": "bs5s_8",
+     "text": "The middle of three and four is three. Eight, then five. Downhill. High moves onto three, and meets low.",
+     "start": 42.8,
+     "end": 49.07
+    },
+    {
+     "id": "bs5s_9",
+     "text": "Line nine returns low. Door three. The top.",
+     "start": 49.82,
+     "end": 52.77
+    },
+    {
+     "id": "bs5s_10",
+     "text": "Every look halves what is left. O of log n time.",
+     "start": 53.87,
+     "end": 57.11
+    },
+    {
+     "id": "bs5s_11",
+     "text": "Three markers, and nothing else. O of one space.",
+     "start": 57.86,
+     "end": 61.11
+    },
+    {
+     "id": "bs5s_12",
+     "text": "Tuning a setting whose result rises and then falls uses this same uphill test.",
+     "start": 61.86,
+     "end": 67.12
+    }
+   ],
+   "pauses": [
+    {
+     "id": "bs5s-q",
+     "t": 35.15
+    }
+   ]
+  },
+  "bs6i": {
+   "src": "videos/bs6i.mp4",
+   "title": "The Turned Row",
+   "duration": 20.8,
+   "lines": [
+    {
+     "id": "bs6i_1",
+     "text": "This row was sorted. Then someone moved the front part to the back.",
+     "start": 0.2,
+     "end": 4.07
+    },
+    {
+     "id": "bs6i_2",
+     "text": "Return the smallest number.",
+     "start": 4.77,
+     "end": 6.37
+    },
+    {
+     "id": "bs6i_3",
+     "text": "It is two sorted pieces, stuck together. Every number in the first piece is bigger than every number in the second.",
+     "start": 7.07,
+     "end": 14.13
+    },
+    {
+     "id": "bs6i_4",
+     "text": "Compare the middle door with the last door. Which piece are you in? Your turn.",
+     "start": 14.82,
+     "end": 19.2
+    }
+   ],
+   "pauses": []
+  },
+  "bs6s": {
+   "src": "videos/bs6s.mp4",
+   "title": "Which piece am I in?",
+   "duration": 73.22,
+   "lines": [
+    {
+     "id": "bs6s_1",
+     "text": "The row is two sorted pieces. Every number in the left piece is bigger than the last door. Every number in the right piece is not.",
+     "start": 0.2,
+     "end": 8.28
+    },
+    {
+     "id": "bs6s_2",
+     "text": "So comparing the middle with the last door tells you which piece you are in. The smallest number is the first door of the right piece.",
+     "start": 9.03,
+     "end": 16.75
+    },
+    {
+     "id": "bs6s_3",
+     "text": "Low on the first door. High on the last.",
+     "start": 17.5,
+     "end": 19.99
+    },
+    {
+     "id": "bs6s_4",
+     "text": "The middle is door three. It holds seven. The last door holds three. Seven is bigger, so we are in the left piece.",
+     "start": 20.74,
+     "end": 27.97
+    },
+    {
+     "id": "bs6s_5",
+     "text": "The smallest number is to the right. Low moves past the middle, to door four.",
+     "start": 28.72,
+     "end": 33.38
+    },
+    {
+     "id": "bs6s_6",
+     "text": "The middle of four and six is five. It holds two. The last door holds three. Which piece is this, and who moves?",
+     "start": 34.13,
+     "end": 41.22
+    },
+    {
+     "id": "bs6s_7",
+     "text": "The right piece. Two might be the smallest, so high moves onto it.",
+     "start": 42.42,
+     "end": 46.47
+    },
+    {
+     "id": "bs6s_8",
+     "text": "The middle of four and five is four. One. Not bigger than two. High moves onto four, and meets low.",
+     "start": 47.22,
+     "end": 53.58
+    },
+    {
+     "id": "bs6s_9",
+     "text": "Line nine returns the number under low. One.",
+     "start": 54.33,
+     "end": 57.17
+    },
+    {
+     "id": "bs6s_10",
+     "text": "Every look halves what is left. O of log n time.",
+     "start": 58.27,
+     "end": 61.52
+    },
+    {
+     "id": "bs6s_11",
+     "text": "Three markers, and nothing else. O of one space.",
+     "start": 62.27,
+     "end": 65.51
+    },
+    {
+     "id": "bs6s_12",
+     "text": "A log that wraps around when it is full is a turned row. This finds where it begins.",
+     "start": 66.26,
+     "end": 71.62
+    }
+   ],
+   "pauses": [
+    {
+     "id": "bs6s-q",
+     "t": 41.42
+    }
+   ]
+  },
+  "bs7i": {
+   "src": "videos/bs7i.mp4",
+   "title": "Just Fast Enough",
+   "duration": 23.55,
+   "lines": [
+    {
+     "id": "bs7i_1",
+     "text": "Four piles of seeds, and eight hours before winter. Each hour, Pip eats from one pile.",
+     "start": 0.2,
+     "end": 5.78
+    },
+    {
+     "id": "bs7i_2",
+     "text": "Return the slowest eating speed that still finishes every pile in time.",
+     "start": 6.48,
+     "end": 10.86
+    },
+    {
+     "id": "bs7i_3",
+     "text": "You cannot read the answer off the piles. But you can test any speed you like.",
+     "start": 11.56,
+     "end": 15.96
+    },
+    {
+     "id": "bs7i_4",
+     "text": "Too slow, too slow, then fast enough. Where have you seen that pattern? Your turn.",
+     "start": 16.66,
+     "end": 21.95
+    }
+   ],
+   "pauses": []
+  },
+  "bs7s": {
+   "src": "videos/bs7s.mp4",
+   "title": "The slowest speed that fits",
+   "duration": 88.05,
+   "lines": [
+    {
+     "id": "bs7s_1",
+     "text": "The answer is a speed, somewhere from one up to the biggest pile. Slow speeds fail. Fast speeds work. And it flips only once.",
+     "start": 0.2,
+     "end": 8.54
+    },
+    {
+     "id": "bs7s_2",
+     "text": "So write a test, fits, and binary search the speeds for the first one that passes.",
+     "start": 9.29,
+     "end": 14.3
+    },
+    {
+     "id": "bs7s_3",
+     "text": "Lines two to six are the test. For a speed, add up the hours each pile takes, rounded up, and compare with the hours we have.",
+     "start": 15.05,
+     "end": 23.11
+    },
+    {
+     "id": "bs7s_4",
+     "text": "The speeds worth trying are one to eight, the biggest pile. Low is on one. High is on eight.",
+     "start": 23.86,
+     "end": 29.7
+    },
+    {
+     "id": "bs7s_5",
+     "text": "The middle speed is four. The piles of three, six, seven and eight take one, two, two and two hours. Seven hours. That fits in eight.",
+     "start": 30.45,
+     "end": 39.12
+    },
+    {
+     "id": "bs7s_6",
+     "text": "So the answer is four, or slower. High moves onto four.",
+     "start": 39.87,
+     "end": 43.58
+    },
+    {
+     "id": "bs7s_7",
+     "text": "The middle of one and four is two. At speed two, the piles take two, three, four and four hours. Thirteen. What happens?",
+     "start": 44.33,
+     "end": 52.22
+    },
+    {
+     "id": "bs7s_8",
+     "text": "Too slow. Two is out, and so is one. Low moves to three.",
+     "start": 53.42,
+     "end": 57.29
+    },
+    {
+     "id": "bs7s_9",
+     "text": "The middle of three and four is three. One, two, three and three hours. Nine. Still too slow. Low moves to four, and meets high.",
+     "start": 58.04,
+     "end": 66.26
+    },
+    {
+     "id": "bs7s_10",
+     "text": "Line fourteen returns low. Speed four.",
+     "start": 67.01,
+     "end": 69.72
+    },
+    {
+     "id": "bs7s_11",
+     "text": "About log of the biggest pile tests, and each test walks the piles once. O of n log m.",
+     "start": 70.82,
+     "end": 77.11
+    },
+    {
+     "id": "bs7s_12",
+     "text": "A few numbers. O of one space.",
+     "start": 77.86,
+     "end": 80.14
+    },
+    {
+     "id": "bs7s_13",
+     "text": "Programmers hunt a bug this way. Which version first broke? Test the middle one, and halve.",
+     "start": 80.89,
+     "end": 86.45
+    }
+   ],
+   "pauses": [
+    {
+     "id": "bs7s-q",
+     "t": 52.42
+    }
+   ]
+  },
+  "my1i": {
+   "src": "videos/my1i.mp4",
+   "title": "Boxes Inside Boxes",
+   "duration": 19.39,
+   "lines": [
+    {
+     "id": "my1i_1",
+     "text": "A box of parcels. But some of the parcels are boxes too, with more inside.",
+     "start": 0.2,
+     "end": 5.07
+    },
+    {
+     "id": "my1i_2",
+     "text": "Return the sum of every number, however deep it is.",
+     "start": 5.77,
+     "end": 9.1
+    },
+    {
+     "id": "my1i_3",
+     "text": "When you open an inner box, what you find looks just like what you started with.",
+     "start": 9.8,
+     "end": 14.38
+    },
+    {
+     "id": "my1i_4",
+     "text": "So what should the function do with it? Your turn.",
+     "start": 15.08,
+     "end": 17.79
+    }
+   ],
+   "pauses": []
+  },
+  "my1s": {
+   "src": "videos/my1s.mp4",
+   "title": "An inner box is the same problem",
+   "duration": 68.1,
+   "lines": [
+    {
+     "id": "my1s_1",
+     "text": "An inner array is a smaller copy of the same problem. So the function can call itself on it.",
+     "start": 0.2,
+     "end": 6.02
+    },
+    {
+     "id": "my1s_2",
+     "text": "A plain number is the simplest item. It needs no call at all. That is the base case, hiding in the else.",
+     "start": 6.77,
+     "end": 13.46
+    },
+    {
+     "id": "my1s_3",
+     "text": "The first call. Total is zero.",
+     "start": 14.21,
+     "end": 16.22
+    },
+    {
+     "id": "my1s_4",
+     "text": "The first item is one. A number. Line five adds it.",
+     "start": 16.97,
+     "end": 20.54
+    },
+    {
+     "id": "my1s_5",
+     "text": "The second item is an array. Line four calls nested sum on it, and waits.",
+     "start": 21.29,
+     "end": 26.12
+    },
+    {
+     "id": "my1s_6",
+     "text": "Inside that call, two is added. Then there is another array, three. One more call. What does that innermost call return?",
+     "start": 26.87,
+     "end": 34.47
+    },
+    {
+     "id": "my1s_7",
+     "text": "Three. So the middle call returns two plus three. Five.",
+     "start": 35.67,
+     "end": 39.12
+    },
+    {
+     "id": "my1s_8",
+     "text": "Back in the first call. One plus five is six.",
+     "start": 39.87,
+     "end": 43
+    },
+    {
+     "id": "my1s_9",
+     "text": "The last item is four. Ten.",
+     "start": 43.75,
+     "end": 45.77
+    },
+    {
+     "id": "my1s_10",
+     "text": "Line seven returns the total. Ten.",
+     "start": 46.52,
+     "end": 49.02
+    },
+    {
+     "id": "my1s_11",
+     "text": "Every number and every array is visited once. O of n, counting everything inside.",
+     "start": 50.12,
+     "end": 55.92
+    },
+    {
+     "id": "my1s_12",
+     "text": "The call stack is as deep as the nesting. O of depth.",
+     "start": 56.67,
+     "end": 59.79
+    },
+    {
+     "id": "my1s_13",
+     "text": "The total size of a folder is worked out like this. Folders inside folders, to any depth.",
+     "start": 60.54,
+     "end": 66.5
+    }
+   ],
+   "pauses": [
+    {
+     "id": "my1s-q",
+     "t": 34.67
+    }
+   ]
+  },
+  "my2i": {
+   "src": "videos/my2i.mp4",
+   "title": "The Smallest Boat",
+   "duration": 22.88,
+   "lines": [
+    {
+     "id": "my2i_1",
+     "text": "Four parcels to ship, in this order, and only two days to do it.",
+     "start": 0.2,
+     "end": 4.2
+    },
+    {
+     "id": "my2i_2",
+     "text": "One boat sails each day. Return the smallest boat that gets everything shipped in time.",
+     "start": 4.9,
+     "end": 10.12
+    },
+    {
+     "id": "my2i_3",
+     "text": "You cannot read the answer off the parcels. But you can test any size of boat.",
+     "start": 10.82,
+     "end": 15.36
+    },
+    {
+     "id": "my2i_4",
+     "text": "Too small, too small, then big enough. What does that remind you of? Your turn.",
+     "start": 16.06,
+     "end": 21.28
+    }
+   ],
+   "pauses": []
+  },
+  "my2s": {
+   "src": "videos/my2s.mp4",
+   "title": "The first capacity that fits",
+   "duration": 82.97,
+   "lines": [
+    {
+     "id": "my2s_1",
+     "text": "The answer is a capacity. Small boats fail, big boats work, and it flips only once. That is the signal.",
+     "start": 0.2,
+     "end": 7.5
+    },
+    {
+     "id": "my2s_2",
+     "text": "So write a test, days for a capacity, and binary search the capacities.",
+     "start": 8.25,
+     "end": 12.79
+    },
+    {
+     "id": "my2s_3",
+     "text": "Lines two to ten are the test. Load the parcels in order. When the next one does not fit, start a new day.",
+     "start": 13.54,
+     "end": 20.18
+    },
+    {
+     "id": "my2s_4",
+     "text": "The smallest boat worth trying carries the heaviest parcel. Four. The largest carries everything. Ten.",
+     "start": 20.93,
+     "end": 27.51
+    },
+    {
+     "id": "my2s_5",
+     "text": "The middle is seven. Day one takes two and three. Four does not fit, so day two takes four and one. Two days. It fits.",
+     "start": 28.26,
+     "end": 35.95
+    },
+    {
+     "id": "my2s_6",
+     "text": "So the answer is seven, or smaller. High moves onto seven.",
+     "start": 36.7,
+     "end": 40.66
+    },
+    {
+     "id": "my2s_7",
+     "text": "The middle of four and seven is five. Two and three fill day one exactly. Four and one fill day two. Does five fit?",
+     "start": 41.41,
+     "end": 49.01
+    },
+    {
+     "id": "my2s_8",
+     "text": "Yes. Two days. High moves onto five.",
+     "start": 50.21,
+     "end": 52.89
+    },
+    {
+     "id": "my2s_9",
+     "text": "The middle of four and five is four. Two. Then three. Then four. Then one. Four days. Too many. Low moves to five, and meets high.",
+     "start": 53.64,
+     "end": 61.92
+    },
+    {
+     "id": "my2s_10",
+     "text": "Line eighteen returns low. Capacity five.",
+     "start": 62.67,
+     "end": 65.72
+    },
+    {
+     "id": "my2s_11",
+     "text": "About log of the total weight tests, and each test walks the parcels once.",
+     "start": 66.82,
+     "end": 71.62
+    },
+    {
+     "id": "my2s_12",
+     "text": "A few numbers. O of one space.",
+     "start": 72.37,
+     "end": 74.65
+    },
+    {
+     "id": "my2s_13",
+     "text": "A delivery company sizes its trucks this way. The smallest truck that still ships everything in time.",
+     "start": 75.4,
+     "end": 81.38
+    }
+   ],
+   "pauses": [
+    {
+     "id": "my2s-q",
+     "t": 49.21
+    }
+   ]
+  },
+  "my3i": {
+   "src": "videos/my3i.mp4",
+   "title": "Two to a Boat",
+   "duration": 20.71,
+   "lines": [
+    {
+     "id": "my3i_1",
+     "text": "Four animals want to cross the river. A boat takes two at most, and only so much weight.",
+     "start": 0.2,
+     "end": 5.76
+    },
+    {
+     "id": "my3i_2",
+     "text": "Return the fewest boats needed to carry everyone.",
+     "start": 6.46,
+     "end": 9.3
+    },
+    {
+     "id": "my3i_3",
+     "text": "Think about the heaviest animal. If anyone can share its boat, it is the lightest one.",
+     "start": 10,
+     "end": 15.27
+    },
+    {
+     "id": "my3i_4",
+     "text": "So what order should the animals be in? Your turn.",
+     "start": 15.97,
+     "end": 19.11
+    }
+   ],
+   "pauses": []
+  },
+  "my3s": {
+   "src": "videos/my3s.mp4",
+   "title": "Heaviest with lightest",
+   "duration": 66.97,
+   "lines": [
+    {
+     "id": "my3s_1",
+     "text": "The heaviest animal needs a boat anyway. If anyone can share it, the lightest one can. So try that pair.",
+     "start": 0.2,
+     "end": 6.88
+    },
+    {
+     "id": "my3s_2",
+     "text": "Heaviest and lightest are easy to find in a sorted row. So sort first, then walk in from both ends.",
+     "start": 7.63,
+     "end": 14.42
+    },
+    {
+     "id": "my3s_3",
+     "text": "Line two sorts the weights. One, two, two, three.",
+     "start": 15.17,
+     "end": 18.42
+    },
+    {
+     "id": "my3s_4",
+     "text": "Pip marks the lightest. Moss marks the heaviest. No boats yet.",
+     "start": 19.17,
+     "end": 23.07
+    },
+    {
+     "id": "my3s_5",
+     "text": "One plus three is four. Over the limit. So the three sails alone. Moss moves in. One boat.",
+     "start": 23.82,
+     "end": 30.28
+    },
+    {
+     "id": "my3s_6",
+     "text": "One plus two is three. Within the limit. What happens to the two markers?",
+     "start": 31.03,
+     "end": 35.8
+    },
+    {
+     "id": "my3s_7",
+     "text": "They share a boat. Both markers move in. Two boats.",
+     "start": 37,
+     "end": 40.18
+    },
+    {
+     "id": "my3s_8",
+     "text": "Both markers are on the last animal. Two plus two is over the limit, so it sails alone. Three boats.",
+     "start": 40.93,
+     "end": 47.63
+    },
+    {
+     "id": "my3s_9",
+     "text": "Light has passed heavy. Line eleven returns three.",
+     "start": 48.38,
+     "end": 51.64
+    },
+    {
+     "id": "my3s_10",
+     "text": "The sort costs n log n. The walk after it is one pass.",
+     "start": 52.74,
+     "end": 56.3
+    },
+    {
+     "id": "my3s_11",
+     "text": "The sorted copy. O of n space.",
+     "start": 57.05,
+     "end": 59.42
+    },
+    {
+     "id": "my3s_12",
+     "text": "A lift or a ferry is loaded like this. Pair the heaviest with the lightest that still fits.",
+     "start": 60.17,
+     "end": 65.37
+    }
+   ],
+   "pauses": [
+    {
+     "id": "my3s-q",
+     "t": 36
+    }
+   ]
+  },
+  "my4i": {
+   "src": "videos/my4i.mp4",
+   "title": "One More Booking",
+   "duration": 22.56,
+   "lines": [
+    {
+     "id": "my4i_1",
+     "text": "The booking list is tidy. Sorted, and nothing overlaps. Then one more booking arrives.",
+     "start": 0.2,
+     "end": 5.95
+    },
+    {
+     "id": "my4i_2",
+     "text": "Add it, merging it with anything it overlaps. Return the new tidy list.",
+     "start": 6.65,
+     "end": 11.1
+    },
+    {
+     "id": "my4i_3",
+     "text": "Compared with the new booking, every old one is in one of three groups.",
+     "start": 11.8,
+     "end": 16.26
+    },
+    {
+     "id": "my4i_4",
+     "text": "Entirely before it. Touching it. Or entirely after it. Your turn.",
+     "start": 16.96,
+     "end": 20.96
+    }
+   ],
+   "pauses": []
+  },
+  "my4s": {
+   "src": "videos/my4s.mp4",
+   "title": "Before, touching, after",
+   "duration": 70.39,
+   "lines": [
+    {
+     "id": "my4s_1",
+     "text": "Things with a start and an end, already sorted. So one sweep is enough.",
+     "start": 0.2,
+     "end": 4.58
+    },
+    {
+     "id": "my4s_2",
+     "text": "The old bookings come in three groups. Before the new one. Overlapping it. And after it.",
+     "start": 5.33,
+     "end": 10.85
+    },
+    {
+     "id": "my4s_3",
+     "text": "Line three unpacks the new booking. Start two, end five.",
+     "start": 11.6,
+     "end": 15.29
+    },
+    {
+     "id": "my4s_4",
+     "text": "The first loop copies bookings that end before the new one starts. One to three ends at three. That is not before two. So nothing is copied.",
+     "start": 16.04,
+     "end": 24.92
+    },
+    {
+     "id": "my4s_5",
+     "text": "The second loop takes bookings that start before the new one ends. One to three starts at one. Does it overlap?",
+     "start": 25.67,
+     "end": 32.56
+    },
+    {
+     "id": "my4s_6",
+     "text": "Yes. So the new booking swallows it. The start becomes one. The end stays five.",
+     "start": 33.76,
+     "end": 38.95
+    },
+    {
+     "id": "my4s_7",
+     "text": "Next, six to nine. It starts at six, after five. No overlap. The second loop stops.",
+     "start": 39.7,
+     "end": 45.84
+    },
+    {
+     "id": "my4s_8",
+     "text": "Line thirteen pushes the merged booking. One to five.",
+     "start": 46.59,
+     "end": 50.11
+    },
+    {
+     "id": "my4s_9",
+     "text": "Line fourteen copies everything that is left. Six to nine.",
+     "start": 50.86,
+     "end": 54.67
+    },
+    {
+     "id": "my4s_10",
+     "text": "Each booking is looked at once. No sorting needed. O of n.",
+     "start": 55.77,
+     "end": 59.69
+    },
+    {
+     "id": "my4s_11",
+     "text": "The output list. O of n space.",
+     "start": 60.44,
+     "end": 62.77
+    },
+    {
+     "id": "my4s_12",
+     "text": "Adding a meeting to a tidy calendar does exactly this. Before, touching, after.",
+     "start": 63.52,
+     "end": 68.79
+    }
+   ],
+   "pauses": [
+    {
+     "id": "my4s-q",
+     "t": 32.76
+    }
+   ]
+  },
+  "my5i": {
+   "src": "videos/my5i.mp4",
+   "title": "Most Common First",
+   "duration": 20.78,
+   "lines": [
+    {
+     "id": "my5i_1",
+     "text": "The letters of this word should be lined up by how often they appear.",
+     "start": 0.2,
+     "end": 3.79
+    },
+    {
+     "id": "my5i_2",
+     "text": "Return the letters, most frequent first. Copies of a letter stay together.",
+     "start": 4.49,
+     "end": 9.02
+    },
+    {
+     "id": "my5i_3",
+     "text": "This one needs two tools, one after the other.",
+     "start": 9.72,
+     "end": 12.64
+    },
+    {
+     "id": "my5i_4",
+     "text": "First you need to know something about each letter. Then you need to put something in order. Your turn.",
+     "start": 13.34,
+     "end": 19.18
+    }
+   ],
+   "pauses": []
+  },
+  "my5s": {
+   "src": "videos/my5s.mp4",
+   "title": "Count, then sort by the count",
+   "duration": 55.49,
+   "lines": [
+    {
+     "id": "my5s_1",
+     "text": "How often does each letter appear? That is a counting question. A map.",
+     "start": 0.2,
+     "end": 4.55
+    },
+    {
+     "id": "my5s_2",
+     "text": "Then the different letters need to be in order of their counts. That is a sort with a rule.",
+     "start": 5.3,
+     "end": 10.58
+    },
+    {
+     "id": "my5s_3",
+     "text": "Lines two to five count the letters. T, one. R, one. E, two.",
+     "start": 11.33,
+     "end": 15.84
+    },
+    {
+     "id": "my5s_4",
+     "text": "Line six lists the different letters. T, R, E. Only three things to sort, not four.",
+     "start": 16.59,
+     "end": 22.28
+    },
+    {
+     "id": "my5s_5",
+     "text": "Line seven sorts them with a rule. The count of b, minus the count of a. Which letter ends up first?",
+     "start": 23.03,
+     "end": 29.64
+    },
+    {
+     "id": "my5s_6",
+     "text": "E. It has the biggest count.",
+     "start": 30.84,
+     "end": 32.39
+    },
+    {
+     "id": "my5s_7",
+     "text": "Line eight repeats each letter by its count, and joins them. E, E, T, R.",
+     "start": 33.14,
+     "end": 38
+    },
+    {
+     "id": "my5s_8",
+     "text": "One pass to count, and a sort of the different letters. At most twenty six of those.",
+     "start": 39.1,
+     "end": 44.19
+    },
+    {
+     "id": "my5s_9",
+     "text": "The map and the answer. O of n space.",
+     "start": 44.94,
+     "end": 47.58
+    },
+    {
+     "id": "my5s_10",
+     "text": "A keyboard that suggests your most used emoji first counts them, then sorts by the count.",
+     "start": 48.33,
+     "end": 53.89
+    }
+   ],
+   "pauses": [
+    {
+     "id": "my5s-q",
+     "t": 29.84
+    }
+   ]
+  },
+  "my6i": {
+   "src": "videos/my6i.mp4",
+   "title": "Find It in the Turned Row",
+   "duration": 22.82,
+   "lines": [
+    {
+     "id": "my6i_1",
+     "text": "A sorted row, turned. The front part was moved to the back.",
+     "start": 0.2,
+     "end": 3.99
+    },
+    {
+     "id": "my6i_2",
+     "text": "Return the index of the target, or minus one. And open very few doors.",
+     "start": 4.69,
+     "end": 9.72
+    },
+    {
+     "id": "my6i_3",
+     "text": "Cut the row at the middle. One of the two halves is always properly sorted.",
+     "start": 10.42,
+     "end": 14.99
+    },
+    {
+     "id": "my6i_4",
+     "text": "And in a sorted half, you can tell at once whether the target is inside. Your turn.",
+     "start": 15.69,
+     "end": 21.22
+    }
+   ],
+   "pauses": []
+  },
+  "my6s": {
+   "src": "videos/my6s.mp4",
+   "title": "One half is always sorted",
+   "duration": 69.87,
+   "lines": [
+    {
+     "id": "my6s_1",
+     "text": "Nearly sorted, and looking for one thing. That is the binary search signal, even though the row is turned.",
+     "start": 0.2,
+     "end": 6.56
+    },
+    {
+     "id": "my6s_2",
+     "text": "Cut at the middle, and one half is always in order. In that half, the two end doors tell you whether the target is inside.",
+     "start": 7.31,
+     "end": 14.79
+    },
+    {
+     "id": "my6s_3",
+     "text": "Low on the first door. High on the last. The target is zero.",
+     "start": 15.54,
+     "end": 19.24
+    },
+    {
+     "id": "my6s_4",
+     "text": "The middle is door three. Seven. Not the target.",
+     "start": 19.99,
+     "end": 22.86
+    },
+    {
+     "id": "my6s_5",
+     "text": "Line seven. Is the left half sorted? Four is not more than seven. Yes. It runs from four to seven.",
+     "start": 23.61,
+     "end": 30.24
+    },
+    {
+     "id": "my6s_6",
+     "text": "Is the target, zero, between four and seven? No. So what do we throw away?",
+     "start": 30.99,
+     "end": 35.9
+    },
+    {
+     "id": "my6s_7",
+     "text": "The whole left half. Low moves to door four.",
+     "start": 37.1,
+     "end": 39.88
+    },
+    {
+     "id": "my6s_8",
+     "text": "The middle of four and six is five. One. Not the target. The left part, zero to one, is sorted, and zero is inside it. High moves to four.",
+     "start": 40.63,
+     "end": 49.82
+    },
+    {
+     "id": "my6s_9",
+     "text": "The middle is door four. Zero. Line six returns its index.",
+     "start": 50.57,
+     "end": 55.03
+    },
+    {
+     "id": "my6s_10",
+     "text": "Every look halves what is left. O of log n time.",
+     "start": 56.13,
+     "end": 59.37
+    },
+    {
+     "id": "my6s_11",
+     "text": "Three markers. O of one space.",
+     "start": 60.12,
+     "end": 62.18
+    },
+    {
+     "id": "my6s_12",
+     "text": "A log that wraps around is a turned row. Finding one entry in it uses this search.",
+     "start": 62.93,
+     "end": 68.27
+    }
+   ],
+   "pauses": [
+    {
+     "id": "my6s-q",
+     "t": 36.1
+    }
+   ]
+  },
+  "my7i": {
+   "src": "videos/my7i.mp4",
+   "title": "Zip, Without a Loop",
+   "duration": 18.85,
+   "lines": [
+    {
+     "id": "my7i_1",
+     "text": "Two sorted lists to zip together. You have done it before, with a loop.",
+     "start": 0.2,
+     "end": 4.3
+    },
+    {
+     "id": "my7i_2",
+     "text": "Do it again, and return the head. But this time, no loop.",
+     "start": 5,
+     "end": 8.47
+    },
+    {
+     "id": "my7i_3",
+     "text": "The first node of the answer is easy. It is the smaller of the two heads.",
+     "start": 9.17,
+     "end": 13.64
+    },
+    {
+     "id": "my7i_4",
+     "text": "And once you have taken it, what is left? Your turn.",
+     "start": 14.34,
+     "end": 17.25
+    }
+   ],
+   "pauses": []
+  },
+  "my7s": {
+   "src": "videos/my7s.mp4",
+   "title": "Pick one node, trust the rest",
+   "duration": 66.68,
+   "lines": [
+    {
+     "id": "my7s_1",
+     "text": "The head of the answer is the smaller of the two heads. After that, what is left is the same problem, one node smaller.",
+     "start": 0.2,
+     "end": 7.49
+    },
+    {
+     "id": "my7s_2",
+     "text": "A smaller copy of the same problem. That is recursion. And an empty list is the base case.",
+     "start": 8.23,
+     "end": 14.3
+    },
+    {
+     "id": "my7s_3",
+     "text": "The first call. One against two. One is smaller, so it will be the head. Line five asks the function to zip the rest, and waits.",
+     "start": 15.05,
+     "end": 23.43
+    },
+    {
+     "id": "my7s_4",
+     "text": "The next call. Four against two. Two is smaller. Line eight asks for the rest.",
+     "start": 24.18,
+     "end": 29.22
+    },
+    {
+     "id": "my7s_5",
+     "text": "Four against three. Three is taken. Now list b has run out. What does the next call return?",
+     "start": 29.97,
+     "end": 35.82
+    },
+    {
+     "id": "my7s_6",
+     "text": "Line three. When b is empty, the answer is simply the rest of a. The four.",
+     "start": 37.02,
+     "end": 41.86
+    },
+    {
+     "id": "my7s_7",
+     "text": "Each waiting call hooks that answer onto its node, and returns. The first call returns the head. One.",
+     "start": 42.61,
+     "end": 49.3
+    },
+    {
+     "id": "my7s_8",
+     "text": "One call per node. O of n plus m time.",
+     "start": 50.4,
+     "end": 53.34
+    },
+    {
+     "id": "my7s_9",
+     "text": "Every call waits on the stack. O of n plus m space. The loop version needed O of one.",
+     "start": 54.09,
+     "end": 60.05
+    },
+    {
+     "id": "my7s_10",
+     "text": "Merging two sorted streams of events, newest by newest, is this zip.",
+     "start": 60.8,
+     "end": 65.08
+    }
+   ],
+   "pauses": [
+    {
+     "id": "my7s-q",
+     "t": 36.02
+    }
+   ]
+  },
+  "my8i": {
+   "src": "videos/my8i.mp4",
+   "title": "Everyone But Me",
+   "duration": 22.29,
+   "lines": [
+    {
+     "id": "my8i_1",
+     "text": "For every door, Pip wants the product of all the other doors.",
+     "start": 0.2,
+     "end": 3.96
+    },
+    {
+     "id": "my8i_2",
+     "text": "Return that for every position. Without dividing.",
+     "start": 4.66,
+     "end": 7.83
+    },
+    {
+     "id": "my8i_3",
+     "text": "For any one door, the others are in two groups. Everything to its left, and everything to its right.",
+     "start": 8.53,
+     "end": 14.57
+    },
+    {
+     "id": "my8i_4",
+     "text": "Where have you seen everything before this door, kept as one running value? Your turn.",
+     "start": 15.27,
+     "end": 20.69
+    }
+   ],
+   "pauses": []
+  },
+  "my8s": {
+   "src": "videos/my8s.mp4",
+   "title": "Left product \u00d7 right product",
+   "duration": 68.52,
+   "lines": [
+    {
+     "id": "my8s_1",
+     "text": "Everything except me, is everything to my left, times everything to my right.",
+     "start": 0.2,
+     "end": 5.08
+    },
+    {
+     "id": "my8s_2",
+     "text": "Everything before this door, as a running value. That is the prefix idea. Here it runs once from each side.",
+     "start": 5.83,
+     "end": 12.7
+    },
+    {
+     "id": "my8s_3",
+     "text": "Before starts at one. It holds the product of everything to the left.",
+     "start": 13.45,
+     "end": 17.66
+    },
+    {
+     "id": "my8s_4",
+     "text": "The first walk writes before into each slot, then multiplies the door in. One. One. Two. Six.",
+     "start": 18.41,
+     "end": 24.86
+    },
+    {
+     "id": "my8s_5",
+     "text": "Now after starts at one, and the second walk comes back from the right.",
+     "start": 25.61,
+     "end": 29.81
+    },
+    {
+     "id": "my8s_6",
+     "text": "Door three. Six times one. Six. Then after takes in the four.",
+     "start": 30.56,
+     "end": 34.71
+    },
+    {
+     "id": "my8s_7",
+     "text": "Door two. Its slot holds two. After is four. What is written?",
+     "start": 35.46,
+     "end": 39.08
+    },
+    {
+     "id": "my8s_8",
+     "text": "Eight. Left times right. Then after becomes twelve.",
+     "start": 40.28,
+     "end": 43.35
+    },
+    {
+     "id": "my8s_9",
+     "text": "Door one. One times twelve. Twelve. And door zero. One times twenty four.",
+     "start": 44.1,
+     "end": 49.41
+    },
+    {
+     "id": "my8s_10",
+     "text": "Line thirteen returns the answer.",
+     "start": 50.16,
+     "end": 52.42
+    },
+    {
+     "id": "my8s_11",
+     "text": "Two walks. O of n time.",
+     "start": 53.52,
+     "end": 55.14
+    },
+    {
+     "id": "my8s_12",
+     "text": "Apart from the answer row, two numbers. O of one extra space.",
+     "start": 55.89,
+     "end": 60.28
+    },
+    {
+     "id": "my8s_13",
+     "text": "A spreadsheet works out each share of a total without dividing by using what is left and right of it.",
+     "start": 61.03,
+     "end": 66.92
+    }
+   ],
+   "pauses": [
+    {
+     "id": "my8s-q",
+     "t": 39.28
+    }
+   ]
+  },
+  "my9i": {
+   "src": "videos/my9i.mp4",
+   "title": "A Messy Mirror",
+   "duration": 20.82,
+   "lines": [
+    {
+     "id": "my9i_1",
+     "text": "A mirror word, with a mess in it. A capital here. A comma there.",
+     "start": 0.2,
+     "end": 4.03
+    },
+    {
+     "id": "my9i_2",
+     "text": "Return true if it reads the same both ways, ignoring capitals and anything that is not a letter.",
+     "start": 4.73,
+     "end": 11.21
+    },
+    {
+     "id": "my9i_3",
+     "text": "You have checked a mirror word before. Twice.",
+     "start": 11.91,
+     "end": 14.75
+    },
+    {
+     "id": "my9i_4",
+     "text": "What has to change, when a marker lands on a comma? Your turn.",
+     "start": 15.45,
+     "end": 19.22
+    }
+   ],
+   "pauses": []
+  },
+  "my9s": {
+   "src": "videos/my9s.mp4",
+   "title": "Skip the mess, compare the letters",
+   "duration": 62.16,
+   "lines": [
+    {
+     "id": "my9s_1",
+     "text": "Two ends, walking in. The same pattern as the mirror word in chapter two.",
+     "start": 0.2,
+     "end": 5.08
+    },
+    {
+     "id": "my9s_2",
+     "text": "With one addition. A marker standing on something that is not a letter just steps past it.",
+     "start": 5.83,
+     "end": 11.38
+    },
+    {
+     "id": "my9s_3",
+     "text": "Line two is a helper. A letter is something whose lower case and upper case differ. A comma has no case.",
+     "start": 12.13,
+     "end": 19.37
+    },
+    {
+     "id": "my9s_4",
+     "text": "Pip on the first character. Moss on the last.",
+     "start": 20.12,
+     "end": 22.99
+    },
+    {
+     "id": "my9s_5",
+     "text": "Both are letters. Capital A, and small a. In lower case they are the same. Both markers move in.",
+     "start": 23.74,
+     "end": 30.13
+    },
+    {
+     "id": "my9s_6",
+     "text": "B and b. The same. Both move in. Now Pip stands on the comma. What happens?",
+     "start": 30.88,
+     "end": 36.59
+    },
+    {
+     "id": "my9s_7",
+     "text": "The two markers have met. The loop ends before the comma is ever looked at. Every pair matched.",
+     "start": 37.79,
+     "end": 43.67
+    },
+    {
+     "id": "my9s_8",
+     "text": "Line fifteen returns true.",
+     "start": 44.42,
+     "end": 46.19
+    },
+    {
+     "id": "my9s_9",
+     "text": "Each character is passed once. O of n time.",
+     "start": 47.29,
+     "end": 50.31
+    },
+    {
+     "id": "my9s_10",
+     "text": "Two markers, and no copy of the text. O of one space.",
+     "start": 51.06,
+     "end": 54.85
+    },
+    {
+     "id": "my9s_11",
+     "text": "A phrase checker ignores spaces, commas and capitals, exactly like this.",
+     "start": 55.6,
+     "end": 60.56
+    }
+   ],
+   "pauses": [
+    {
+     "id": "my9s-q",
+     "t": 36.79
+    }
+   ]
+  },
+  "my10i": {
+   "src": "videos/my10i.mp4",
+   "title": "One Arrow, Many Balloons",
+   "duration": 21.51,
+   "lines": [
+    {
+     "id": "my10i_1",
+     "text": "Balloons are stuck along a wall. Each one covers a stretch of it.",
+     "start": 0.2,
+     "end": 4.25
+    },
+    {
+     "id": "my10i_2",
+     "text": "An arrow bursts every balloon it passes through. Return the fewest arrows that burst them all.",
+     "start": 4.95,
+     "end": 10.4
+    },
+    {
+     "id": "my10i_3",
+     "text": "Take the balloon that ends first. It has to be burst somewhere.",
+     "start": 11.1,
+     "end": 14.9
+    },
+    {
+     "id": "my10i_4",
+     "text": "Where along it should you shoot, to catch as many others as you can? Your turn.",
+     "start": 15.6,
+     "end": 19.91
+    }
+   ],
+   "pauses": []
+  },
+  "my10s": {
+   "src": "videos/my10s.mp4",
+   "title": "Shoot where the first one ends",
+   "duration": 72.19,
+   "lines": [
+    {
+     "id": "my10s_1",
+     "text": "Things with a start and an end. So sort them, and sweep. Here, by where they end.",
+     "start": 0.2,
+     "end": 5.02
+    },
+    {
+     "id": "my10s_2",
+     "text": "The balloon that ends first must be burst. Shooting at its very end catches the most other balloons.",
+     "start": 5.77,
+     "end": 11.82
+    },
+    {
+     "id": "my10s_3",
+     "text": "Line two sorts by end. One to six. Two to eight. Seven to twelve. Ten to sixteen.",
+     "start": 12.57,
+     "end": 18.4
+    },
+    {
+     "id": "my10s_4",
+     "text": "No arrows yet. At is the position of the last arrow. Minus infinity.",
+     "start": 19.15,
+     "end": 23.99
+    },
+    {
+     "id": "my10s_5",
+     "text": "One to six. It starts after the last arrow. So it needs a new one, shot at its end. Six.",
+     "start": 24.74,
+     "end": 30.9
+    },
+    {
+     "id": "my10s_6",
+     "text": "Two to eight. It starts at two. The arrow is at six. Does this balloon need a new arrow?",
+     "start": 31.65,
+     "end": 36.97
+    },
+    {
+     "id": "my10s_7",
+     "text": "No. Two is not after six. The arrow at six passes straight through it.",
+     "start": 38.17,
+     "end": 42.43
+    },
+    {
+     "id": "my10s_8",
+     "text": "Seven to twelve. It starts after six. A new arrow, at twelve.",
+     "start": 43.18,
+     "end": 47.4
+    },
+    {
+     "id": "my10s_9",
+     "text": "Ten to sixteen. Ten is not after twelve. Already burst.",
+     "start": 48.15,
+     "end": 52.18
+    },
+    {
+     "id": "my10s_10",
+     "text": "Line eleven returns the arrows. Two.",
+     "start": 52.93,
+     "end": 55.48
+    },
+    {
+     "id": "my10s_11",
+     "text": "The sort costs n log n. The sweep is one pass.",
+     "start": 56.58,
+     "end": 59.64
+    },
+    {
+     "id": "my10s_12",
+     "text": "The sorted copy. O of n space.",
+     "start": 60.39,
+     "end": 62.76
+    },
+    {
+     "id": "my10s_13",
+     "text": "A cleaner who must visit every booked room picks times this way. One visit, timed to cover as many as possible.",
+     "start": 63.51,
+     "end": 70.59
+    }
+   ],
+   "pauses": [
+    {
+     "id": "my10s-q",
+     "t": 37.17
+    }
+   ]
+  },
+  "hp1i": {
+   "src": "videos/hp1i.mp4",
+   "title": "A New Arrival",
+   "duration": 21.8,
+   "lines": [
+    {
+     "id": "hp1i_1",
+     "text": "This heap keeps its rule. Every parent is smaller than its children. Now a one arrives.",
+     "start": 0.2,
+     "end": 5.83
+    },
+    {
+     "id": "hp1i_2",
+     "text": "Add the value, keep the rule, and return the array.",
+     "start": 6.53,
+     "end": 9.38
+    },
+    {
+     "id": "hp1i_3",
+     "text": "There is only one spot that leaves no gap. The next free place, at the end.",
+     "start": 10.08,
+     "end": 14.39
+    },
+    {
+     "id": "hp1i_4",
+     "text": "But down there, the one is smaller than its parent. What would fix that? Your turn.",
+     "start": 15.09,
+     "end": 20.2
+    }
+   ],
+   "pauses": []
+  },
+  "hp1s": {
+   "src": "videos/hp1s.mp4",
+   "title": "Add at the end, sift up",
+   "duration": 66.86,
+   "lines": [
+    {
+     "id": "hp1s_1",
+     "text": "The new value goes in the next free spot, at the end of the array. Here, the one, at position five.",
+     "start": 0.2,
+     "end": 6.11
+    },
+    {
+     "id": "hp1s_2",
+     "text": "Then, while it is smaller than its parent, swap the two. It climbs until the rule holds.",
+     "start": 6.86,
+     "end": 12.24
+    },
+    {
+     "id": "hp1s_3",
+     "text": "Line two pushes the one. Line three remembers where it is. Position five.",
+     "start": 12.99,
+     "end": 18.1
+    },
+    {
+     "id": "hp1s_4",
+     "text": "Line five finds the parent. Five minus one, divided by two. Position two. That is the three.",
+     "start": 18.85,
+     "end": 25.64
+    },
+    {
+     "id": "hp1s_5",
+     "text": "Is three smaller than one? No. So line seven swaps them, and i moves up to position two.",
+     "start": 26.39,
+     "end": 32.82
+    },
+    {
+     "id": "hp1s_6",
+     "text": "Again. The parent of position two is position zero. The two. And the two is bigger than the one. What happens?",
+     "start": 33.57,
+     "end": 40.79
+    },
+    {
+     "id": "hp1s_7",
+     "text": "Another swap. The one is the root, and i is zero.",
+     "start": 41.99,
+     "end": 45.29
+    },
+    {
+     "id": "hp1s_8",
+     "text": "The loop needs i above zero. It ends, and line ten returns the heap.",
+     "start": 46.04,
+     "end": 50.55
+    },
+    {
+     "id": "hp1s_9",
+     "text": "At most one swap per level, and there are only log n levels.",
+     "start": 51.65,
+     "end": 55.51
+    },
+    {
+     "id": "hp1s_10",
+     "text": "Two numbers. O of one extra space.",
+     "start": 56.26,
+     "end": 58.91
+    },
+    {
+     "id": "hp1s_11",
+     "text": "Every new job handed to a task scheduler is pushed onto a heap, exactly like this.",
+     "start": 59.66,
+     "end": 65.26
+    }
+   ],
+   "pauses": [
+    {
+     "id": "hp1s-q",
+     "t": 40.99
+    }
+   ]
+  },
+  "hp2i": {
+   "src": "videos/hp2i.mp4",
+   "title": "Take the Smallest",
+   "duration": 21.87,
+   "lines": [
+    {
+     "id": "hp2i_1",
+     "text": "Hazel takes the smallest value. It is always on top.",
+     "start": 0.2,
+     "end": 3.77
+    },
+    {
+     "id": "hp2i_2",
+     "text": "Remove it, return it, and leave a valid heap behind.",
+     "start": 4.47,
+     "end": 7.65
+    },
+    {
+     "id": "hp2i_3",
+     "text": "Taking the top leaves a hole. Only one value can fill it without leaving a gap. The last one.",
+     "start": 8.35,
+     "end": 14.32
+    },
+    {
+     "id": "hp2i_4",
+     "text": "But the last one is big, and now it is on top. How does it get back down? Your turn.",
+     "start": 15.02,
+     "end": 20.27
+    }
+   ],
+   "pauses": []
+  },
+  "hp2s": {
+   "src": "videos/hp2s.mp4",
+   "title": "Last to the top, sift down",
+   "duration": 68.63,
+   "lines": [
+    {
+     "id": "hp2s_1",
+     "text": "The smallest is the root. Take it, and fill the hole with the last value in the array. The shape stays right.",
+     "start": 0.2,
+     "end": 6.8
+    },
+    {
+     "id": "hp2s_2",
+     "text": "Then let that value sink. Swap it with its smaller child, until no child is smaller.",
+     "start": 7.55,
+     "end": 13.08
+    },
+    {
+     "id": "hp2s_3",
+     "text": "Line two remembers the top. One.",
+     "start": 13.83,
+     "end": 16.12
+    },
+    {
+     "id": "hp2s_4",
+     "text": "Line three takes the last value, three, off the end. Line five puts it on top.",
+     "start": 16.87,
+     "end": 21.98
+    },
+    {
+     "id": "hp2s_5",
+     "text": "Small starts as i. Lines nine to twelve look at both children. Five, and two. Two is the smallest of the three.",
+     "start": 22.73,
+     "end": 29.99
+    },
+    {
+     "id": "hp2s_6",
+     "text": "Small is not i. So line fourteen swaps the three with the two, and i moves down to position two.",
+     "start": 30.74,
+     "end": 37.47
+    },
+    {
+     "id": "hp2s_7",
+     "text": "Again. The children of position two would be at positions five and six. But the array now has only five values. What happens?",
+     "start": 38.22,
+     "end": 46.52
+    },
+    {
+     "id": "hp2s_8",
+     "text": "No children. Small is still i. The three has found its place. Line thirteen returns the top. One.",
+     "start": 47.72,
+     "end": 54.37
+    },
+    {
+     "id": "hp2s_9",
+     "text": "At most one swap per level. O of log n.",
+     "start": 55.47,
+     "end": 58.29
+    },
+    {
+     "id": "hp2s_10",
+     "text": "A few numbers. O of one extra space.",
+     "start": 59.04,
+     "end": 61.93
+    },
+    {
+     "id": "hp2s_11",
+     "text": "A clinic calls its most urgent patient next. That is a pop from a heap.",
+     "start": 62.68,
+     "end": 67.03
+    }
+   ],
+   "pauses": [
+    {
+     "id": "hp2s-q",
+     "t": 46.72
+    }
+   ]
+  },
+  "hp3i": {
+   "src": "videos/hp3i.mp4",
+   "title": "The Runner-Up",
+   "duration": 20.18,
+   "lines": [
+    {
+     "id": "hp3i_1",
+     "text": "The numbers arrive one at a time. Pip wants the second largest.",
+     "start": 0.2,
+     "end": 4.14
+    },
+    {
+     "id": "hp3i_2",
+     "text": "Return the k-th largest number. Here, k is two.",
+     "start": 4.84,
+     "end": 8.33
+    },
+    {
+     "id": "hp3i_3",
+     "text": "You never need more than the k largest numbers seen so far.",
+     "start": 9.03,
+     "end": 12.83
+    },
+    {
+     "id": "hp3i_4",
+     "text": "When one more arrives, which one do you throw out? And what hands it to you? Your turn.",
+     "start": 13.53,
+     "end": 18.58
+    }
+   ],
+   "pauses": []
+  },
+  "hp3s": {
+   "src": "videos/hp3s.mp4",
+   "title": "A heap that holds only k",
+   "duration": 64.5,
+   "lines": [
+    {
+     "id": "hp3s_1",
+     "text": "Keep only the k largest numbers seen so far. The smallest of those is the k-th largest.",
+     "start": 0.2,
+     "end": 6.48
+    },
+    {
+     "id": "hp3s_2",
+     "text": "When there is one too many, the smallest must go. A min heap has it on top.",
+     "start": 7.23,
+     "end": 11.91
+    },
+    {
+     "id": "hp3s_3",
+     "text": "K is two. Line two makes a heap with the smallest on top. Five is pushed.",
+     "start": 12.66,
+     "end": 17.83
+    },
+    {
+     "id": "hp3s_4",
+     "text": "Two is pushed. The heap holds two values. That is not more than k.",
+     "start": 18.58,
+     "end": 22.82
+    },
+    {
+     "id": "hp3s_5",
+     "text": "Nine is pushed. Three values. One too many. Line five pops the smallest. The two.",
+     "start": 23.57,
+     "end": 29.56
+    },
+    {
+     "id": "hp3s_6",
+     "text": "One is pushed. The heap holds one, five, nine. Which value does line five pop?",
+     "start": 30.31,
+     "end": 35.41
+    },
+    {
+     "id": "hp3s_7",
+     "text": "The one. It went straight back out.",
+     "start": 36.61,
+     "end": 38.33
+    },
+    {
+     "id": "hp3s_8",
+     "text": "Seven is pushed. Five, seven, nine. The five is popped.",
+     "start": 39.08,
+     "end": 42.53
+    },
+    {
+     "id": "hp3s_9",
+     "text": "The heap holds the two largest. Seven and nine. Line seven returns the top.",
+     "start": 43.28,
+     "end": 48.31
+    },
+    {
+     "id": "hp3s_10",
+     "text": "n pushes, on a heap that never holds more than k plus one values. O of n log k.",
+     "start": 49.41,
+     "end": 55.73
+    },
+    {
+     "id": "hp3s_11",
+     "text": "The heap. O of k space.",
+     "start": 56.48,
+     "end": 58.2
+    },
+    {
+     "id": "hp3s_12",
+     "text": "A streaming site keeps its top ten of the day with a heap of size ten.",
+     "start": 58.95,
+     "end": 62.9
+    }
+   ],
+   "pauses": [
+    {
+     "id": "hp3s-q",
+     "t": 35.61
+    }
+   ]
+  },
+  "hp4i": {
+   "src": "videos/hp4i.mp4",
+   "title": "Tying the Ropes",
+   "duration": 20.46,
+   "lines": [
+    {
+     "id": "hp4i_1",
+     "text": "Four ropes, to be tied into one. Tying two together costs their lengths, added up.",
+     "start": 0.2,
+     "end": 5.25
+    },
+    {
+     "id": "hp4i_2",
+     "text": "Return the smallest total cost of joining them all.",
+     "start": 5.95,
+     "end": 8.75
+    },
+    {
+     "id": "hp4i_3",
+     "text": "A rope that is tied in early is paid for again, in every join after that.",
+     "start": 9.45,
+     "end": 14.21
+    },
+    {
+     "id": "hp4i_4",
+     "text": "So which two should go first? And what about the new rope? Your turn.",
+     "start": 14.91,
+     "end": 18.86
+    }
+   ],
+   "pauses": []
+  },
+  "hp4s": {
+   "src": "videos/hp4s.mp4",
+   "title": "Always the two shortest",
+   "duration": 63.42,
+   "lines": [
+    {
+     "id": "hp4s_1",
+     "text": "A rope joined early is counted again in every later join. So the short ones should go first.",
+     "start": 0.2,
+     "end": 5.91
+    },
+    {
+     "id": "hp4s_2",
+     "text": "The two shortest, again and again, while new ropes keep arriving. That is the signal for a heap.",
+     "start": 6.66,
+     "end": 12.5
+    },
+    {
+     "id": "hp4s_3",
+     "text": "Line three pushes every rope into a min heap. Two is on top.",
+     "start": 13.25,
+     "end": 17.34
+    },
+    {
+     "id": "hp4s_4",
+     "text": "Line six pops the two shortest. Two and three. Joined, five. The cost is five. Line eight pushes the new rope back.",
+     "start": 18.09,
+     "end": 25.58
+    },
+    {
+     "id": "hp4s_5",
+     "text": "Again. The two shortest are now four, and the five we just made. What is the cost after this join?",
+     "start": 26.33,
+     "end": 32.61
+    },
+    {
+     "id": "hp4s_6",
+     "text": "Nine. The cost becomes fourteen. The nine goes back in.",
+     "start": 33.81,
+     "end": 37.57
+    },
+    {
+     "id": "hp4s_7",
+     "text": "Two ropes left. Six and nine. Fifteen. The cost is twenty nine.",
+     "start": 38.32,
+     "end": 42.72
+    },
+    {
+     "id": "hp4s_8",
+     "text": "One rope left. The loop ends, and line ten returns the cost.",
+     "start": 43.47,
+     "end": 47.62
+    },
+    {
+     "id": "hp4s_9",
+     "text": "About n joins, each a few heap operations. O of n log n.",
+     "start": 48.72,
+     "end": 52.82
+    },
+    {
+     "id": "hp4s_10",
+     "text": "The heap. O of n space.",
+     "start": 53.57,
+     "end": 55.21
+    },
+    {
+     "id": "hp4s_11",
+     "text": "File compression starts like this. It joins the two rarest symbols first, again and again.",
+     "start": 55.96,
+     "end": 61.82
+    }
+   ],
+   "pauses": [
+    {
+     "id": "hp4s-q",
+     "t": 32.81
+    }
+   ]
+  },
+  "hp5i": {
+   "src": "videos/hp5i.mp4",
+   "title": "Many Queues, One Line",
+   "duration": 20.99,
+   "lines": [
+    {
+     "id": "hp5i_1",
+     "text": "Several queues, each already in order, must become one line.",
+     "start": 0.2,
+     "end": 4
+    },
+    {
+     "id": "hp5i_2",
+     "text": "Return one sorted array with all the numbers. However many lists there are.",
+     "start": 4.7,
+     "end": 9.14
+    },
+    {
+     "id": "hp5i_3",
+     "text": "The next smallest number is always at the front of one of the lists.",
+     "start": 9.84,
+     "end": 13.73
+    },
+    {
+     "id": "hp5i_4",
+     "text": "So how many candidates do you ever need to compare? And what holds them? Your turn.",
+     "start": 14.43,
+     "end": 19.39
+    }
+   ],
+   "pauses": []
+  },
+  "hp5s": {
+   "src": "videos/hp5s.mp4",
+   "title": "One candidate per list",
+   "duration": 69.21,
+   "lines": [
+    {
+     "id": "hp5s_1",
+     "text": "The next smallest number is always at the front of one of the lists. So there is one candidate per list.",
+     "start": 0.2,
+     "end": 6.4
+    },
+    {
+     "id": "hp5s_2",
+     "text": "Keep the candidates in a min heap. Pop the smallest, and replace it with the next one from the same list.",
+     "start": 7.15,
+     "end": 13.42
+    },
+    {
+     "id": "hp5s_3",
+     "text": "Lines three to five push the front of every list. Each entry remembers its list, and its position.",
+     "start": 14.17,
+     "end": 20.36
+    },
+    {
+     "id": "hp5s_4",
+     "text": "Line eight pops the smallest. One, from list A. It goes to the output. And line twelve pushes the next of A. Six.",
+     "start": 21.11,
+     "end": 28.52
+    },
+    {
+     "id": "hp5s_5",
+     "text": "Pop again. Two, from list B. Output. The next of B is three.",
+     "start": 29.27,
+     "end": 33.32
+    },
+    {
+     "id": "hp5s_6",
+     "text": "The heap holds three and six. Three is popped. But list B has nothing after it. What does the heap hold now?",
+     "start": 34.07,
+     "end": 40.62
+    },
+    {
+     "id": "hp5s_7",
+     "text": "Only the six. Nothing is pushed when a list has run out.",
+     "start": 41.82,
+     "end": 45.23
+    },
+    {
+     "id": "hp5s_8",
+     "text": "Six is popped. The heap is empty, and line fifteen returns the output.",
+     "start": 45.98,
+     "end": 50.75
+    },
+    {
+     "id": "hp5s_9",
+     "text": "Every number is pushed and popped once, on a heap of k candidates. O of n log k.",
+     "start": 51.85,
+     "end": 57.74
+    },
+    {
+     "id": "hp5s_10",
+     "text": "The heap holds k entries. The output holds n.",
+     "start": 58.49,
+     "end": 61.62
+    },
+    {
+     "id": "hp5s_11",
+     "text": "Merging many sorted log files into one timeline uses this heap of fronts.",
+     "start": 62.37,
+     "end": 67.61
+    }
+   ],
+   "pauses": [
+    {
+     "id": "hp5s-q",
+     "t": 40.82
+    }
+   ]
+  },
+  "hp6i": {
+   "src": "videos/hp6i.mp4",
+   "title": "The Middle, All the Time",
+   "duration": 22.29,
+   "lines": [
+    {
+     "id": "hp6i_1",
+     "text": "Numbers keep arriving, and after each one Moss wants the middle value.",
+     "start": 0.2,
+     "end": 4.49
+    },
+    {
+     "id": "hp6i_2",
+     "text": "Return the median after every arrival.",
+     "start": 5.19,
+     "end": 7.52
+    },
+    {
+     "id": "hp6i_3",
+     "text": "Sorting again each time is far too slow. And you only ever need the one or two values in the middle.",
+     "start": 8.22,
+     "end": 14.2
+    },
+    {
+     "id": "hp6i_4",
+     "text": "Cut the numbers into a small half and a big half. Which value of each half matters? Your turn.",
+     "start": 14.9,
+     "end": 20.69
+    }
+   ],
+   "pauses": []
+  },
+  "hp6s": {
+   "src": "videos/hp6s.mp4",
+   "title": "Two heaps, meeting in the middle",
+   "duration": 89.46,
+   "lines": [
+    {
+     "id": "hp6s_1",
+     "text": "Keep the small half of the numbers in one heap, and the big half in another.",
+     "start": 0.2,
+     "end": 4.57
+    },
+    {
+     "id": "hp6s_2",
+     "text": "Low keeps its biggest on top. High keeps its smallest on top. So the middle is always at the two tops.",
+     "start": 5.32,
+     "end": 12.03
+    },
+    {
+     "id": "hp6s_3",
+     "text": "Line two. Low is a max heap. The comparison is turned around, b minus a. Line three. High is an ordinary min heap.",
+     "start": 12.78,
+     "end": 20.81
+    },
+    {
+     "id": "hp6s_4",
+     "text": "Five arrives. It goes into low. Low hands its biggest to high. Then high is the bigger one, so it hands it back. Low holds the five.",
+     "start": 21.56,
+     "end": 30.17
+    },
+    {
+     "id": "hp6s_5",
+     "text": "Low is bigger. So the median is its top. Five.",
+     "start": 30.92,
+     "end": 33.99
+    },
+    {
+     "id": "hp6s_6",
+     "text": "Two arrives. Into low. Low hands its biggest, the five, to high. Now they are equal. The median is the average of the two tops.",
+     "start": 34.74,
+     "end": 43.41
+    },
+    {
+     "id": "hp6s_7",
+     "text": "Eight arrives. Into low. Low hands its biggest, the eight, to high. Now high holds two values, and low holds one. What does line eight do?",
+     "start": 44.16,
+     "end": 53.09
+    },
+    {
+     "id": "hp6s_8",
+     "text": "It moves the smallest of high, the five, back to low. Low is bigger again. The median is its top. Five.",
+     "start": 54.29,
+     "end": 61.2
+    },
+    {
+     "id": "hp6s_9",
+     "text": "One arrives. Into low. Low hands its biggest, the five, to high. Equal again. Two plus five, divided by two.",
+     "start": 61.95,
+     "end": 69.68
+    },
+    {
+     "id": "hp6s_10",
+     "text": "Line twelve returns the medians.",
+     "start": 70.43,
+     "end": 72.52
+    },
+    {
+     "id": "hp6s_11",
+     "text": "Each arrival is a few heap operations. O of n log n in total.",
+     "start": 73.62,
+     "end": 78.18
+    },
+    {
+     "id": "hp6s_12",
+     "text": "The two heaps hold every number. O of n space.",
+     "start": 78.93,
+     "end": 82.07
+    },
+    {
+     "id": "hp6s_13",
+     "text": "A dashboard that shows the median response time, live, keeps these two heaps.",
+     "start": 82.82,
+     "end": 87.86
+    }
+   ],
+   "pauses": [
+    {
+     "id": "hp6s-q",
+     "t": 53.29
+    }
+   ]
+  },
+  "rc1i": {
+   "src": "videos/rc1i.mp4",
+   "title": "Add Them Up",
+   "duration": 20.93,
+   "lines": [
+    {
+     "id": "rc1i_1",
+     "text": "Add up the numbers from one to four. Easy with a loop. But this time, no loop.",
+     "start": 0.2,
+     "end": 5.11
+    },
+    {
+     "id": "rc1i_2",
+     "text": "Return one plus two, all the way up to n. The function must call itself.",
+     "start": 5.81,
+     "end": 10.45
+    },
+    {
+     "id": "rc1i_3",
+     "text": "Suppose somebody handed you the sum up to three. Six.",
+     "start": 11.15,
+     "end": 14.51
+    },
+    {
+     "id": "rc1i_4",
+     "text": "What would be left for you to do? And when does the asking stop? Your turn.",
+     "start": 15.21,
+     "end": 19.33
+    }
+   ],
+   "pauses": []
+  },
+  "rc1s": {
+   "src": "videos/rc1s.mp4",
+   "title": "Ask for the smaller sum",
+   "duration": 77.57,
+   "lines": [
+    {
+     "id": "rc1s_1",
+     "text": "The sum up to four is four, plus the sum up to three. The same question, one size smaller.",
+     "start": 0.2,
+     "end": 5.9
+    },
+    {
+     "id": "rc1s_2",
+     "text": "And the sum up to zero needs no thinking. It is zero. That is where the chain stops.",
+     "start": 6.65,
+     "end": 12.04
+    },
+    {
+     "id": "rc1s_3",
+     "text": "The first call. N is four. Not zero. So line three needs sum to three, and has to wait for it.",
+     "start": 12.79,
+     "end": 18.88
+    },
+    {
+     "id": "rc1s_4",
+     "text": "So a new call starts, with n three. It waits too, for sum to two.",
+     "start": 19.63,
+     "end": 23.76
+    },
+    {
+     "id": "rc1s_5",
+     "text": "Two waits for one. One waits for zero. Four calls are now waiting on the call stack.",
+     "start": 24.51,
+     "end": 29.76
+    },
+    {
+     "id": "rc1s_6",
+     "text": "N is zero. Line two. The base case. It returns zero straight away, without asking anyone.",
+     "start": 30.51,
+     "end": 36.69
+    },
+    {
+     "id": "rc1s_7",
+     "text": "Now the answers travel back up. The call with n one was waiting. One plus zero. It returns one.",
+     "start": 37.44,
+     "end": 44.08
+    },
+    {
+     "id": "rc1s_8",
+     "text": "The call with n two was waiting for that. What does it return?",
+     "start": 44.83,
+     "end": 48.47
+    },
+    {
+     "id": "rc1s_9",
+     "text": "Three. Two, plus the one that came back.",
+     "start": 49.67,
+     "end": 52.01
+    },
+    {
+     "id": "rc1s_10",
+     "text": "Three plus three is six. Four plus six is ten. Every waiting call has finished.",
+     "start": 52.76,
+     "end": 58.13
+    },
+    {
+     "id": "rc1s_11",
+     "text": "One call for each number from n down to zero. O of n time.",
+     "start": 59.23,
+     "end": 63.32
+    },
+    {
+     "id": "rc1s_12",
+     "text": "And all of them wait on the call stack at the same moment. O of n space.",
+     "start": 64.07,
+     "end": 68.5
+    },
+    {
+     "id": "rc1s_13",
+     "text": "The size of a folder is worked out like this. Its own files, plus the size of every folder inside it.",
+     "start": 69.25,
+     "end": 75.97
+    }
+   ],
+   "pauses": [
+    {
+     "id": "rc1s-q",
+     "t": 48.67
+    }
+   ]
+  },
+  "rc2i": {
+   "src": "videos/rc2i.mp4",
+   "title": "Powers in a Hurry",
+   "duration": 21.44,
+   "lines": [
+    {
+     "id": "rc2i_1",
+     "text": "Two, times two, times two, times two, times two. Five twos.",
+     "start": 0.2,
+     "end": 4.38
+    },
+    {
+     "id": "rc2i_2",
+     "text": "Return base to the power exp. And it must stay fast when exp is in the billions.",
+     "start": 5.08,
+     "end": 10.01
+    },
+    {
+     "id": "rc2i_3",
+     "text": "Multiplying one at a time takes exp steps.",
+     "start": 10.71,
+     "end": 13.45
+    },
+    {
+     "id": "rc2i_4",
+     "text": "But if you knew two to the power two, how quickly could you reach the power four? Your turn.",
+     "start": 14.15,
+     "end": 19.84
+    }
+   ],
+   "pauses": []
+  },
+  "rc2s": {
+   "src": "videos/rc2s.mp4",
+   "title": "Half the exponent, then square",
+   "duration": 78.2,
+   "lines": [
+    {
+     "id": "rc2s_1",
+     "text": "Two to the power four is two squared, times two squared. So work out half the exponent once, and multiply it by itself.",
+     "start": 0.2,
+     "end": 8.12
+    },
+    {
+     "id": "rc2s_2",
+     "text": "An odd exponent leaves one extra base. Multiply it in at the end.",
+     "start": 8.87,
+     "end": 13.33
+    },
+    {
+     "id": "rc2s_3",
+     "text": "Power of two to the five. Line three asks for half the exponent. Five divided by two, rounded down. Two.",
+     "start": 14.08,
+     "end": 21.25
+    },
+    {
+     "id": "rc2s_4",
+     "text": "That call asks for half of two. One. And that one asks for half of one, which rounds down to zero.",
+     "start": 22,
+     "end": 28.46
+    },
+    {
+     "id": "rc2s_5",
+     "text": "Exponent zero. The base case. It returns one.",
+     "start": 29.21,
+     "end": 32.36
+    },
+    {
+     "id": "rc2s_6",
+     "text": "Back in the call with exponent one. Half is one. One is odd, so line five multiplies in a base. One times one times two. Two.",
+     "start": 33.11,
+     "end": 41.96
+    },
+    {
+     "id": "rc2s_7",
+     "text": "Back in the call with exponent two. Half is two, and two is even. What does line four return?",
+     "start": 42.71,
+     "end": 48.86
+    },
+    {
+     "id": "rc2s_8",
+     "text": "Four. Half times half.",
+     "start": 50.06,
+     "end": 51.38
+    },
+    {
+     "id": "rc2s_9",
+     "text": "And the first call. Half is four. Five is odd. Four times four times two. Thirty two.",
+     "start": 52.13,
+     "end": 58.27
+    },
+    {
+     "id": "rc2s_10",
+     "text": "The exponent halves at every call. So even two billion needs only about thirty calls. O of log n.",
+     "start": 59.37,
+     "end": 66.3
+    },
+    {
+     "id": "rc2s_11",
+     "text": "Those calls wait on the stack. O of log n space.",
+     "start": 67.05,
+     "end": 70.48
+    },
+    {
+     "id": "rc2s_12",
+     "text": "Fast powers like this are used every time your browser sets up a secure connection.",
+     "start": 71.23,
+     "end": 76.6
+    }
+   ],
+   "pauses": [
+    {
+     "id": "rc2s-q",
+     "t": 49.06
+    }
+   ]
+  },
+  "rc3i": {
+   "src": "videos/rc3i.mp4",
+   "title": "The Mirror, Again",
+   "duration": 18.25,
+   "lines": [
+    {
+     "id": "rc3i_1",
+     "text": "You have checked a mirror word before, with two markers and a loop.",
+     "start": 0.2,
+     "end": 3.89
+    },
+    {
+     "id": "rc3i_2",
+     "text": "Do it again. Return true for a mirror word. But this time, no loop.",
+     "start": 4.59,
+     "end": 8.85
+    },
+    {
+     "id": "rc3i_3",
+     "text": "If the two ends match, what is left is a smaller word.",
+     "start": 9.55,
+     "end": 12.99
+    },
+    {
+     "id": "rc3i_4",
+     "text": "What do you ask about that smaller word? Your turn.",
+     "start": 13.69,
+     "end": 16.65
+    }
+   ],
+   "pauses": []
+  },
+  "rc3s": {
+   "src": "videos/rc3s.mp4",
+   "title": "Match the ends, ask the inside",
+   "duration": 64.41,
+   "lines": [
+    {
+     "id": "rc3s_1",
+     "text": "A word is a mirror if its two ends match, and the part between them is a mirror too.",
+     "start": 0.2,
+     "end": 5.31
+    },
+    {
+     "id": "rc3s_2",
+     "text": "The part between them is a smaller copy of the same question. That is the recursive step.",
+     "start": 6.06,
+     "end": 11.68
+    },
+    {
+     "id": "rc3s_3",
+     "text": "The first call. Line one fills in left and right by itself. Zero, and four.",
+     "start": 12.43,
+     "end": 17.79
+    },
+    {
+     "id": "rc3s_4",
+     "text": "Line three compares the ends. L and L. They match. So line four asks about the inside.",
+     "start": 18.54,
+     "end": 24.25
+    },
+    {
+     "id": "rc3s_5",
+     "text": "A new call, with left one and right three. E and E match. Ask about the inside again.",
+     "start": 25,
+     "end": 30.47
+    },
+    {
+     "id": "rc3s_6",
+     "text": "Now left is two, and right is two. Which line answers?",
+     "start": 31.22,
+     "end": 34.73
+    },
+    {
+     "id": "rc3s_7",
+     "text": "Line two. Left has reached right. Nothing is left to compare. True.",
+     "start": 35.93,
+     "end": 40
+    },
+    {
+     "id": "rc3s_8",
+     "text": "That true travels straight back up. Each waiting call returns what it was given.",
+     "start": 40.75,
+     "end": 45.59
+    },
+    {
+     "id": "rc3s_9",
+     "text": "One call for every pair of letters. O of n time.",
+     "start": 46.69,
+     "end": 49.93
+    },
+    {
+     "id": "rc3s_10",
+     "text": "Those calls wait on the stack. O of n space. The loop version needed only O of one.",
+     "start": 50.68,
+     "end": 56.2
+    },
+    {
+     "id": "rc3s_11",
+     "text": "Checking the outside, then asking about the inside, is how a program checks nested data.",
+     "start": 56.95,
+     "end": 62.81
+    }
+   ],
+   "pauses": [
+    {
+     "id": "rc3s-q",
+     "t": 34.93
+    }
+   ]
+  },
+  "rc4i": {
+   "src": "videos/rc4i.mp4",
+   "title": "Up the Stairs",
+   "duration": 17.28,
+   "lines": [
+    {
+     "id": "rc4i_1",
+     "text": "Pip hops up a staircase. One step at a time, or two.",
+     "start": 0.2,
+     "end": 3.67
+    },
+    {
+     "id": "rc4i_2",
+     "text": "Return the number of different ways to reach step n.",
+     "start": 4.37,
+     "end": 7.03
+    },
+    {
+     "id": "rc4i_3",
+     "text": "Think about the very last hop onto the top step. It was a one, or a two.",
+     "start": 7.73,
+     "end": 12.06
+    },
+    {
+     "id": "rc4i_4",
+     "text": "So where could Pip have been, just before? Your turn.",
+     "start": 12.76,
+     "end": 15.68
+    }
+   ],
+   "pauses": []
+  },
+  "rc4s": {
+   "src": "videos/rc4s.mp4",
+   "title": "The last hop was 1 or 2",
+   "duration": 87.12,
+   "lines": [
+    {
+     "id": "rc4s_1",
+     "text": "The last hop onto step n was one step, or two. So the ways to reach n are the ways to reach n minus one, plus the ways to reach n minus two.",
+     "start": 0.2,
+     "end": 9.64
+    },
+    {
+     "id": "rc4s_2",
+     "text": "But the same small staircase gets asked about again and again. So write each answer down the first time. That note is a memo.",
+     "start": 10.39,
+     "end": 18.51
+    },
+    {
+     "id": "rc4s_3",
+     "text": "Stairs of four. Not a base case, and not in the memo. So line four asks for stairs of three, and stairs of two.",
+     "start": 19.26,
+     "end": 26.48
+    },
+    {
+     "id": "rc4s_4",
+     "text": "Stairs of three asks the same kind of question. Stairs of two, plus stairs of one.",
+     "start": 27.23,
+     "end": 32.63
+    },
+    {
+     "id": "rc4s_5",
+     "text": "Stairs of two. Stairs of one, plus stairs of zero. Both are base cases, one each. So two ways.",
+     "start": 33.38,
+     "end": 40.44
+    },
+    {
+     "id": "rc4s_6",
+     "text": "Line five writes that answer into the memo, before returning it.",
+     "start": 41.19,
+     "end": 45.12
+    },
+    {
+     "id": "rc4s_7",
+     "text": "Back in stairs of three. Two, plus stairs of one, which is one. Three. Into the memo.",
+     "start": 45.87,
+     "end": 51.94
+    },
+    {
+     "id": "rc4s_8",
+     "text": "Back in stairs of four. It still needs stairs of two. Does it work that out again?",
+     "start": 52.69,
+     "end": 57.69
+    },
+    {
+     "id": "rc4s_9",
+     "text": "No. Line three finds it in the memo. Two. No further calls at all.",
+     "start": 58.89,
+     "end": 63.14
+    },
+    {
+     "id": "rc4s_10",
+     "text": "Three plus two. Five ways.",
+     "start": 63.89,
+     "end": 65.98
+    },
+    {
+     "id": "rc4s_11",
+     "text": "With the memo, each n is worked out once. O of n time. Without it, the calls roughly double at every level.",
+     "start": 67.08,
+     "end": 74.14
+    },
+    {
+     "id": "rc4s_12",
+     "text": "The memo and the call stack each hold up to n entries. O of n space.",
+     "start": 74.89,
+     "end": 79.4
+    },
+    {
+     "id": "rc4s_13",
+     "text": "Counting ways with a memo is how an app counts the possible routes across a city grid.",
+     "start": 80.15,
+     "end": 85.52
+    }
+   ],
+   "pauses": [
+    {
+     "id": "rc4s-q",
+     "t": 57.89
+    }
+   ]
+  },
+  "mz1i": {
+   "src": "videos/mz1i.mp4",
+   "title": "The Sum Tree",
+   "duration": 17.94,
+   "lines": [
+    {
+     "id": "mz1i_1",
+     "text": "A sum, written as a tree. The numbers are on the leaves. The signs are above them.",
+     "start": 0.2,
+     "end": 5.32
+    },
+    {
+     "id": "mz1i_2",
+     "text": "Return the value of the whole tree.",
+     "start": 6.02,
+     "end": 7.86
+    },
+    {
+     "id": "mz1i_3",
+     "text": "The plus at the top cannot be worked out yet. It needs to know what its left side is worth.",
+     "start": 8.56,
+     "end": 13.65
+    },
+    {
+     "id": "mz1i_4",
+     "text": "And who can tell it that? Your turn.",
+     "start": 14.35,
+     "end": 16.34
+    }
+   ],
+   "pauses": []
+  },
+  "mz1s": {
+   "src": "videos/mz1s.mp4",
+   "title": "Each side first, then the sign",
+   "duration": 64.35,
+   "lines": [
+    {
+     "id": "mz1s_1",
+     "text": "An operator needs the value of its two sides. And each side is a smaller tree of the same kind.",
+     "start": 0.2,
+     "end": 6.32
+    },
+    {
+     "id": "mz1s_2",
+     "text": "So ask the same function for each side, then apply the sign. A leaf is simply its number.",
+     "start": 7.07,
+     "end": 12.93
+    },
+    {
+     "id": "mz1s_3",
+     "text": "The first call stands on the plus. Not a number. So line three asks for the value of the left side.",
+     "start": 13.68,
+     "end": 19.62
+    },
+    {
+     "id": "mz1s_4",
+     "text": "The times node. Not a number either. It asks its own left side. The two is a leaf. Line two returns two.",
+     "start": 20.37,
+     "end": 27.57
+    },
+    {
+     "id": "mz1s_5",
+     "text": "Its right side. Three. A leaf. Back on the times node, left is two, and right is three. What does it return?",
+     "start": 28.32,
+     "end": 35.25
+    },
+    {
+     "id": "mz1s_6",
+     "text": "Six. This whole side is worth six.",
+     "start": 36.45,
+     "end": 38.61
+    },
+    {
+     "id": "mz1s_7",
+     "text": "Back on the plus. Now the right side. Four. A leaf.",
+     "start": 39.36,
+     "end": 42.55
+    },
+    {
+     "id": "mz1s_8",
+     "text": "Left is six. Right is four. The sign is plus. Ten.",
+     "start": 43.3,
+     "end": 46.58
+    },
+    {
+     "id": "mz1s_9",
+     "text": "Every node is visited once. O of n time.",
+     "start": 47.68,
+     "end": 50.68
+    },
+    {
+     "id": "mz1s_10",
+     "text": "The waiting calls are as deep as the tree is tall. O of height space.",
+     "start": 51.43,
+     "end": 55.62
+    },
+    {
+     "id": "mz1s_11",
+     "text": "A spreadsheet works out a formula this way. Every formula is a small tree of numbers and signs.",
+     "start": 56.37,
+     "end": 62.75
+    }
+   ],
+   "pauses": [
+    {
+     "id": "mz1s-q",
+     "t": 35.45
+    }
+   ]
+  },
+  "mz2i": {
+   "src": "videos/mz2i.mp4",
+   "title": "The Nearest Way Out",
+   "duration": 20.97,
+   "lines": [
+    {
+     "id": "mz2i_1",
+     "text": "Moss wants the nearest way out of the tree. The closest leaf to the root.",
+     "start": 0.2,
+     "end": 4.47
+    },
+    {
+     "id": "mz2i_2",
+     "text": "Return the number of nodes on the shortest path from the root to a leaf.",
+     "start": 5.17,
+     "end": 9.11
+    },
+    {
+     "id": "mz2i_3",
+     "text": "Going deep would find the leaves at the bottom left first. They are not the nearest.",
+     "start": 9.81,
+     "end": 14.66
+    },
+    {
+     "id": "mz2i_4",
+     "text": "Which way of walking a tree meets the nearest things first? Your turn.",
+     "start": 15.36,
+     "end": 19.37
+    }
+   ],
+   "pauses": []
+  },
+  "mz2s": {
+   "src": "videos/mz2s.mp4",
+   "title": "The first leaf, level by level",
+   "duration": 56.29,
+   "lines": [
+    {
+     "id": "mz2s_1",
+     "text": "The nearest leaf. Nearest is the signal for going level by level.",
+     "start": 0.2,
+     "end": 4.55
+    },
+    {
+     "id": "mz2s_2",
+     "text": "Level by level meets the shallow nodes first. So the first leaf it meets is the answer.",
+     "start": 5.3,
+     "end": 10.65
+    },
+    {
+     "id": "mz2s_3",
+     "text": "The queue starts with the root. Depth is one.",
+     "start": 11.4,
+     "end": 14
+    },
+    {
+     "id": "mz2s_4",
+     "text": "Five has children, so it is not a leaf. Lines nine and ten line up three and eight for the next level.",
+     "start": 14.75,
+     "end": 21.42
+    },
+    {
+     "id": "mz2s_5",
+     "text": "Line twelve moves to that level. Depth is two. First the three. It has children. They are lined up.",
+     "start": 22.17,
+     "end": 28.66
+    },
+    {
+     "id": "mz2s_6",
+     "text": "Then the eight. It has no left child, and no right child. What does line eight do?",
+     "start": 29.41,
+     "end": 34.39
+    },
+    {
+     "id": "mz2s_7",
+     "text": "It returns the depth. Two. The one and the four were lined up, but never visited.",
+     "start": 35.59,
+     "end": 40.74
+    },
+    {
+     "id": "mz2s_8",
+     "text": "At worst every node. But it stops at the first leaf, which can be much sooner.",
+     "start": 41.84,
+     "end": 46.73
+    },
+    {
+     "id": "mz2s_9",
+     "text": "The queue holds one level at a time.",
+     "start": 47.48,
+     "end": 49.51
+    },
+    {
+     "id": "mz2s_10",
+     "text": "A game finds the nearest exit from where you stand by searching level by level.",
+     "start": 50.26,
+     "end": 54.69
+    }
+   ],
+   "pauses": [
+    {
+     "id": "mz2s-q",
+     "t": 34.59
+    }
+   ]
+  },
+  "mz3i": {
+   "src": "videos/mz3i.mp4",
+   "title": "Only the Middle Ones",
+   "duration": 22.92,
+   "lines": [
+    {
+     "id": "mz3i_1",
+     "text": "This tree keeps the rule. Smaller on the left, bigger on the right.",
+     "start": 0.2,
+     "end": 3.96
+    },
+    {
+     "id": "mz3i_2",
+     "text": "Return the sum of every value from low to high. Here, from five to ten.",
+     "start": 4.66,
+     "end": 9.27
+    },
+    {
+     "id": "mz3i_3",
+     "text": "Adding up the whole tree and filtering would work. But most of the tree cannot matter.",
+     "start": 9.97,
+     "end": 14.82
+    },
+    {
+     "id": "mz3i_4",
+     "text": "Stand on the three. It is too small. So what about everything on its left? Your turn.",
+     "start": 15.52,
+     "end": 21.32
+    }
+   ],
+   "pauses": []
+  },
+  "mz3s": {
+   "src": "videos/mz3s.mp4",
+   "title": "Skip the sides that cannot matter",
+   "duration": 61.85,
+   "lines": [
+    {
+     "id": "mz3s_1",
+     "text": "An ordered tree. So a node that is too small tells you its whole left side is too small as well.",
+     "start": 0.2,
+     "end": 6.25
+    },
+    {
+     "id": "mz3s_2",
+     "text": "Only a node inside the range needs both of its sides.",
+     "start": 7,
+     "end": 10.64
+    },
+    {
+     "id": "mz3s_3",
+     "text": "The range is five to ten. The root is eight. Inside. So it counts, and both sides are searched.",
+     "start": 11.39,
+     "end": 17.4
+    },
+    {
+     "id": "mz3s_4",
+     "text": "Left. Three. It is smaller than five. What does line three do?",
+     "start": 18.15,
+     "end": 21.89
+    },
+    {
+     "id": "mz3s_5",
+     "text": "It skips the three, and its whole left side. Only the right side can hold something big enough.",
+     "start": 23.09,
+     "end": 28.51
+    },
+    {
+     "id": "mz3s_6",
+     "text": "Six. Inside the range. It counts.",
+     "start": 29.26,
+     "end": 31.52
+    },
+    {
+     "id": "mz3s_7",
+     "text": "Now the right side of the root. Ten. Inside. It counts. Its right child, fourteen, is too big, so line four looks only to its left. Nothing there.",
+     "start": 32.27,
+     "end": 42.18
+    },
+    {
+     "id": "mz3s_8",
+     "text": "Back at the root. Eight, plus six, plus ten.",
+     "start": 42.93,
+     "end": 45.76
+    },
+    {
+     "id": "mz3s_9",
+     "text": "The height of the tree, plus the nodes that are inside the range.",
+     "start": 46.86,
+     "end": 50.66
+    },
+    {
+     "id": "mz3s_10",
+     "text": "The waiting calls. O of height space.",
+     "start": 51.41,
+     "end": 53.71
+    },
+    {
+     "id": "mz3s_11",
+     "text": "An ordered index sums the sales between two dates like this, without touching the other months.",
+     "start": 54.46,
+     "end": 60.25
+    }
+   ],
+   "pauses": [
+    {
+     "id": "mz3s-q",
+     "t": 22.09
+    }
+   ]
+  },
+  "mz4i": {
+   "src": "videos/mz4i.mp4",
+   "title": "The Most Popular",
+   "duration": 20.3,
+   "lines": [
+    {
+     "id": "mz4i_1",
+     "text": "Votes are coming in. Pip wants to know the two most popular numbers.",
+     "start": 0.2,
+     "end": 4.56
+    },
+    {
+     "id": "mz4i_2",
+     "text": "Return the k numbers that appear most often. The most frequent one first.",
+     "start": 5.26,
+     "end": 10.04
+    },
+    {
+     "id": "mz4i_3",
+     "text": "This needs two tools, one after the other.",
+     "start": 10.74,
+     "end": 13.42
+    },
+    {
+     "id": "mz4i_4",
+     "text": "First, something about every number. Then, the k biggest of those. Your turn.",
+     "start": 14.12,
+     "end": 18.7
+    }
+   ],
+   "pauses": []
+  },
+  "mz4s": {
+   "src": "videos/mz4s.mp4",
+   "title": "Count, then keep the k biggest",
+   "duration": 63.82,
+   "lines": [
+    {
+     "id": "mz4s_1",
+     "text": "How often does each number appear? That is a counting question. A map.",
+     "start": 0.2,
+     "end": 4.48
+    },
+    {
+     "id": "mz4s_2",
+     "text": "Then, the k pairs with the biggest counts. That is the heap of size k, with the smallest count on top.",
+     "start": 5.23,
+     "end": 11.62
+    },
+    {
+     "id": "mz4s_3",
+     "text": "Lines two and three count. Four appears three times. One, twice. Two, once.",
+     "start": 12.37,
+     "end": 17.52
+    },
+    {
+     "id": "mz4s_4",
+     "text": "Line four makes a heap of pairs, ordered by the count. The pair for four is pushed. Then the pair for one. Two pairs. That is k.",
+     "start": 18.27,
+     "end": 26.28
+    },
+    {
+     "id": "mz4s_5",
+     "text": "The pair for two is pushed. Three pairs. One too many. Which pair does line seven pop?",
+     "start": 27.03,
+     "end": 32.52
+    },
+    {
+     "id": "mz4s_6",
+     "text": "The pair for two. It has the smallest count.",
+     "start": 33.72,
+     "end": 36.27
+    },
+    {
+     "id": "mz4s_7",
+     "text": "Line ten empties the heap. The least frequent comes out first, so each number goes to the front. One. Then four, in front of it.",
+     "start": 37.02,
+     "end": 45.01
+    },
+    {
+     "id": "mz4s_8",
+     "text": "Line eleven returns the answer.",
+     "start": 45.76,
+     "end": 47.85
+    },
+    {
+     "id": "mz4s_9",
+     "text": "One pass to count. Then each different number goes through a heap of size k.",
+     "start": 48.95,
+     "end": 53.46
+    },
+    {
+     "id": "mz4s_10",
+     "text": "The map holds every different number.",
+     "start": 54.21,
+     "end": 56.27
+    },
+    {
+     "id": "mz4s_11",
+     "text": "A trending list is exactly this. Count everything, then keep only the top few.",
+     "start": 57.02,
+     "end": 62.22
+    }
+   ],
+   "pauses": [
+    {
+     "id": "mz4s-q",
+     "t": 32.72
+    }
+   ]
+  },
+  "mz5i": {
+   "src": "videos/mz5i.mp4",
+   "title": "Built Letter by Letter",
+   "duration": 21.23,
+   "lines": [
+    {
+     "id": "mz5i_1",
+     "text": "Hazel builds words one letter at a time. Every step on the way must be a word too.",
+     "start": 0.2,
+     "end": 5.33
+    },
+    {
+     "id": "mz5i_2",
+     "text": "Return the longest word that can be built like that.",
+     "start": 6.03,
+     "end": 9.18
+    },
+    {
+     "id": "mz5i_3",
+     "text": "A, then a p, then a p p. Every beginning is in the list.",
+     "start": 9.88,
+     "end": 13.61
+    },
+    {
+     "id": "mz5i_4",
+     "text": "But what about bat? What would have to be in the list? And how do you check quickly? Your turn.",
+     "start": 14.31,
+     "end": 19.63
+    }
+   ],
+   "pauses": []
+  },
+  "mz5s": {
+   "src": "videos/mz5s.mp4",
+   "title": "Every beginning must be known",
+   "duration": 63.64,
+   "lines": [
+    {
+     "id": "mz5s_1",
+     "text": "For each word, every shorter beginning must be in the list. That is a question of, have I got this?",
+     "start": 0.2,
+     "end": 6.03
+    },
+    {
+     "id": "mz5s_2",
+     "text": "So put the words in a set, and each check is instant. Beginnings made you think of a trie. Here, a set is enough.",
+     "start": 6.78,
+     "end": 13.47
+    },
+    {
+     "id": "mz5s_3",
+     "text": "Line two puts every word in a set. Best starts empty.",
+     "start": 14.22,
+     "end": 17.87
+    },
+    {
+     "id": "mz5s_4",
+     "text": "The word a. It has no shorter beginning, so it can be built. It is longer than nothing. Best is a.",
+     "start": 18.62,
+     "end": 25.03
+    },
+    {
+     "id": "mz5s_5",
+     "text": "A p. Its beginning, a, is in the set. Best is a p. Then a p p. A, and a p, are both there. Best is a p p.",
+     "start": 25.78,
+     "end": 33.34
+    },
+    {
+     "id": "mz5s_6",
+     "text": "The word b. It can be built. But it is shorter than the best. Line nine skips it.",
+     "start": 34.09,
+     "end": 39.18
+    },
+    {
+     "id": "mz5s_7",
+     "text": "Bat. Its beginnings are b, and b a. B is in the set. Is b a?",
+     "start": 39.93,
+     "end": 44.12
+    },
+    {
+     "id": "mz5s_8",
+     "text": "No. So bat cannot be built, and line nine skips it.",
+     "start": 45.32,
+     "end": 48.57
+    },
+    {
+     "id": "mz5s_9",
+     "text": "Line twelve returns the best.",
+     "start": 49.32,
+     "end": 51.18
+    },
+    {
+     "id": "mz5s_10",
+     "text": "Every beginning of every word is looked up once.",
+     "start": 52.28,
+     "end": 55.27
+    },
+    {
+     "id": "mz5s_11",
+     "text": "The set holds every word.",
+     "start": 56.02,
+     "end": 57.58
+    },
+    {
+     "id": "mz5s_12",
+     "text": "A word game checks this when you build a word one tile at a time.",
+     "start": 58.33,
+     "end": 62.04
+    }
+   ],
+   "pauses": [
+    {
+     "id": "mz5s-q",
+     "t": 44.32
+    }
+   ]
+  },
+  "mz6i": {
+   "src": "videos/mz6i.mp4",
+   "title": "Two Nests That Add Up",
+   "duration": 20.68,
+   "lines": [
+    {
+     "id": "mz6i_1",
+     "text": "Pip is looking for two nests whose numbers add up to twelve.",
+     "start": 0.2,
+     "end": 3.8
+    },
+    {
+     "id": "mz6i_2",
+     "text": "Return true if two different nodes add up to the target.",
+     "start": 4.5,
+     "end": 7.75
+    },
+    {
+     "id": "mz6i_3",
+     "text": "You have solved this before. On a row of doors, in the hash map chapter.",
+     "start": 8.45,
+     "end": 12.8
+    },
+    {
+     "id": "mz6i_4",
+     "text": "The numbers now sit in a tree. What stays the same, and what changes? Your turn.",
+     "start": 13.5,
+     "end": 19.08
+    }
+   ],
+   "pauses": []
+  },
+  "mz6s": {
+   "src": "videos/mz6s.mp4",
+   "title": "The partner I need: seen before?",
+   "duration": 56.65,
+   "lines": [
+    {
+     "id": "mz6s_1",
+     "text": "Have I seen the partner I need? That is the hash set question from chapter three.",
+     "start": 0.2,
+     "end": 5.01
+    },
+    {
+     "id": "mz6s_2",
+     "text": "The only new part is the walk. Visit every node, deep first, and ask the question at each one.",
+     "start": 5.76,
+     "end": 11.68
+    },
+    {
+     "id": "mz6s_3",
+     "text": "The target is twelve. The root is five. It needs a seven. Nothing is seen yet. So five is added.",
+     "start": 12.43,
+     "end": 18.79
+    },
+    {
+     "id": "mz6s_4",
+     "text": "Left. Three needs a nine. Not seen. Added.",
+     "start": 19.54,
+     "end": 22.15
+    },
+    {
+     "id": "mz6s_5",
+     "text": "One needs eleven. Four needs eight. Neither is seen. Both are added.",
+     "start": 22.9,
+     "end": 26.91
+    },
+    {
+     "id": "mz6s_6",
+     "text": "The left side found nothing. So the or, on line seven, tries the right side. Eight. It needs a four. What does line five do?",
+     "start": 27.66,
+     "end": 35.58
+    },
+    {
+     "id": "mz6s_7",
+     "text": "Four is in the set. Eight plus four is twelve. True. The nine is never visited.",
+     "start": 36.78,
+     "end": 42.09
+    },
+    {
+     "id": "mz6s_8",
+     "text": "At worst every node once. O of n time.",
+     "start": 43.19,
+     "end": 46.02
+    },
+    {
+     "id": "mz6s_9",
+     "text": "The set can hold every value. O of n space.",
+     "start": 46.77,
+     "end": 49.91
+    },
+    {
+     "id": "mz6s_10",
+     "text": "Do any two items in the basket add up to the voucher? One walk, and a set.",
+     "start": 50.66,
+     "end": 55.05
+    }
+   ],
+   "pauses": [
+    {
+     "id": "mz6s-q",
+     "t": 35.78
+    }
+   ]
+  },
+  "mz7i": {
+   "src": "videos/mz7i.mp4",
+   "title": "A Tree from a Sorted Row",
+   "duration": 22.64,
+   "lines": [
+    {
+     "id": "mz7i_1",
+     "text": "A sorted row of numbers. Hazel wants them in a search tree. A short, bushy one.",
+     "start": 0.2,
+     "end": 5.59
+    },
+    {
+     "id": "mz7i_2",
+     "text": "Build the shortest possible search tree, and return its root.",
+     "start": 6.29,
+     "end": 9.98
+    },
+    {
+     "id": "mz7i_3",
+     "text": "Whatever goes on top splits the rest in two. The smaller values to its left, the bigger to its right.",
+     "start": 10.68,
+     "end": 16.88
+    },
+    {
+     "id": "mz7i_4",
+     "text": "So which value should go on top? And then what? Your turn.",
+     "start": 17.58,
+     "end": 21.04
+    }
+   ],
+   "pauses": []
+  },
+  "mz7s": {
+   "src": "videos/mz7s.mp4",
+   "title": "The middle goes on top",
+   "duration": 79.32,
+   "lines": [
+    {
+     "id": "mz7s_1",
+     "text": "The root splits the rest in two. To keep the tree short, the two sides should be the same size. So the root is the middle value.",
+     "start": 0.2,
+     "end": 8.07
+    },
+    {
+     "id": "mz7s_2",
+     "text": "Each side is then a smaller sorted stretch. The same problem. So the function calls itself on each.",
+     "start": 8.82,
+     "end": 15.25
+    },
+    {
+     "id": "mz7s_3",
+     "text": "The first call covers the whole row. Low is zero, high is four. The middle is position two. Six becomes the root.",
+     "start": 16,
+     "end": 23.33
+    },
+    {
+     "id": "mz7s_4",
+     "text": "Line five builds its left side from the stretch before the middle. Positions zero to one. The middle is position zero. One becomes the left child of six.",
+     "start": 24.08,
+     "end": 34.1
+    },
+    {
+     "id": "mz7s_5",
+     "text": "Left of the one, there is nothing. Low is above high. Line two returns null. To its right is the three.",
+     "start": 34.85,
+     "end": 41.4
+    },
+    {
+     "id": "mz7s_6",
+     "text": "Back at the root. Line six builds the right side, from positions three to four. Which position is the middle?",
+     "start": 42.15,
+     "end": 49.04
+    },
+    {
+     "id": "mz7s_7",
+     "text": "Three. So eight is the right child of six. And ten, to its right, becomes the right child of eight.",
+     "start": 50.24,
+     "end": 56.06
+    },
+    {
+     "id": "mz7s_8",
+     "text": "Line seven returns the root. Six on top. Three levels for five values.",
+     "start": 56.81,
+     "end": 62.08
+    },
+    {
+     "id": "mz7s_9",
+     "text": "One node is made per value. O of n time.",
+     "start": 63.18,
+     "end": 65.97
+    },
+    {
+     "id": "mz7s_10",
+     "text": "The waiting calls are log n deep, because every call halves its stretch.",
+     "start": 66.72,
+     "end": 71.19
+    },
+    {
+     "id": "mz7s_11",
+     "text": "A database builds a fresh index from sorted data this way, so that it starts out balanced.",
+     "start": 71.94,
+     "end": 77.72
+    }
+   ],
+   "pauses": [
+    {
+     "id": "mz7s-q",
+     "t": 49.24
+    }
+   ]
+  },
+  "mz8i": {
+   "src": "videos/mz8i.mp4",
+   "title": "The Last Stone",
+   "duration": 20.42,
+   "lines": [
+    {
+     "id": "mz8i_1",
+     "text": "Moss smashes stones together. Always the two heaviest.",
+     "start": 0.2,
+     "end": 3.74
+    },
+    {
+     "id": "mz8i_2",
+     "text": "Return the weight of the last stone left, or zero if there is none.",
+     "start": 4.44,
+     "end": 8.37
+    },
+    {
+     "id": "mz8i_3",
+     "text": "After each smash, a smaller stone may come back into the pile.",
+     "start": 9.07,
+     "end": 12.93
+    },
+    {
+     "id": "mz8i_4",
+     "text": "So the two heaviest keep changing. What hands them to you each time? Your turn.",
+     "start": 13.63,
+     "end": 18.82
+    }
+   ],
+   "pauses": []
+  },
+  "mz8s": {
+   "src": "videos/mz8s.mp4",
+   "title": "The two heaviest, each time",
+   "duration": 55.95,
+   "lines": [
+    {
+     "id": "mz8s_1",
+     "text": "The two heaviest, again and again, while new stones come back. That is the signal for a heap.",
+     "start": 0.2,
+     "end": 5.7
+    },
+    {
+     "id": "mz8s_2",
+     "text": "This time the biggest must be on top. So the comparison is turned around. b minus a.",
+     "start": 6.45,
+     "end": 12.29
+    },
+    {
+     "id": "mz8s_3",
+     "text": "Line three pushes every stone. Seven is on top.",
+     "start": 13.04,
+     "end": 16.45
+    },
+    {
+     "id": "mz8s_4",
+     "text": "Lines five and six pop the two heaviest. Seven and four. They differ. So line seven pushes the difference. Three.",
+     "start": 17.2,
+     "end": 24.59
+    },
+    {
+     "id": "mz8s_5",
+     "text": "Again. The two heaviest are three, and three. What does line seven do?",
+     "start": 25.34,
+     "end": 29.58
+    },
+    {
+     "id": "mz8s_6",
+     "text": "Nothing. Equal stones destroy each other. Only the one is left.",
+     "start": 30.78,
+     "end": 34.64
+    },
+    {
+     "id": "mz8s_7",
+     "text": "One stone left. The loop ends, and line nine returns it.",
+     "start": 35.39,
+     "end": 39.21
+    },
+    {
+     "id": "mz8s_8",
+     "text": "Every smash removes at least one stone, and costs a few heap operations. O of n log n.",
+     "start": 40.31,
+     "end": 46.64
+    },
+    {
+     "id": "mz8s_9",
+     "text": "The heap. O of n space.",
+     "start": 47.39,
+     "end": 49.03
+    },
+    {
+     "id": "mz8s_10",
+     "text": "A tournament where the two strongest always play next is run with a max heap.",
+     "start": 49.78,
+     "end": 54.35
+    }
+   ],
+   "pauses": [
+    {
+     "id": "mz8s-q",
+     "t": 29.78
+    }
+   ]
+  },
+  "tt1i": {
+   "src": "videos/tt1i.mp4",
+   "title": "A New Word",
+   "duration": 19.75,
+   "lines": [
+    {
+     "id": "tt1i_1",
+     "text": "This trie holds three words. Car, cat, and do. Now Hazel wants to add dot.",
+     "start": 0.2,
+     "end": 5.33
+    },
+    {
+     "id": "tt1i_2",
+     "text": "Add the word, and return the root.",
+     "start": 6.03,
+     "end": 7.98
+    },
+    {
+     "id": "tt1i_3",
+     "text": "Follow the letters from the top. The d is already there. So is the o.",
+     "start": 8.68,
+     "end": 12.96
+    },
+    {
+     "id": "tt1i_4",
+     "text": "What about the t? And how will anyone know that a word ends there? Your turn.",
+     "start": 13.66,
+     "end": 18.15
+    }
+   ],
+   "pauses": []
+  },
+  "tt1s": {
+   "src": "videos/tt1s.mp4",
+   "title": "Follow, or make the node",
+   "duration": 65.78,
+   "lines": [
+    {
+     "id": "tt1s_1",
+     "text": "Walk down the trie, letter by letter. If the letter already has a node, follow it.",
+     "start": 0.2,
+     "end": 5.21
+    },
+    {
+     "id": "tt1s_2",
+     "text": "If it does not, make the node. And after the last letter, mark that a word ends here.",
+     "start": 5.96,
+     "end": 11.01
+    },
+    {
+     "id": "tt1s_3",
+     "text": "Adding dot. The green nodes are where a word ends. Car, cat, and do. The marker starts on the root.",
+     "start": 11.76,
+     "end": 18.06
+    },
+    {
+     "id": "tt1s_4",
+     "text": "The letter d. The root already has a child d. So line seven just follows it.",
+     "start": 18.81,
+     "end": 23.94
+    },
+    {
+     "id": "tt1s_5",
+     "text": "The letter o. Already there, too. Follow it.",
+     "start": 24.69,
+     "end": 27.25
+    },
+    {
+     "id": "tt1s_6",
+     "text": "The letter t. There is a t in the trie, under the a. But does this node, the o, have a child t?",
+     "start": 28,
+     "end": 33.7
+    },
+    {
+     "id": "tt1s_7",
+     "text": "No. That other t belongs to cat. So line five makes a new node, under the o, and the marker moves into it.",
+     "start": 34.9,
+     "end": 41.95
+    },
+    {
+     "id": "tt1s_8",
+     "text": "The word is finished. Line nine marks the end of a word here.",
+     "start": 42.7,
+     "end": 46.39
+    },
+    {
+     "id": "tt1s_9",
+     "text": "Line ten returns the root. Dot is in the trie.",
+     "start": 47.14,
+     "end": 50.36
+    },
+    {
+     "id": "tt1s_10",
+     "text": "One step per letter. O of the length of the word.",
+     "start": 51.46,
+     "end": 54.33
+    },
+    {
+     "id": "tt1s_11",
+     "text": "At most one new node per letter.",
+     "start": 55.08,
+     "end": 57.02
+    },
+    {
+     "id": "tt1s_12",
+     "text": "Every contact you save is added to a structure like this, so your phone can search by first letters.",
+     "start": 57.77,
+     "end": 64.18
+    }
+   ],
+   "pauses": [
+    {
+     "id": "tt1s-q",
+     "t": 33.9
+    }
+   ]
+  },
+  "tt2i": {
+   "src": "videos/tt2i.mp4",
+   "title": "Is It a Word?",
+   "duration": 19.7,
+   "lines": [
+    {
+     "id": "tt2i_1",
+     "text": "Moss asks the trie a question. Is c, a, a word?",
+     "start": 0.2,
+     "end": 3.58
+    },
+    {
+     "id": "tt2i_2",
+     "text": "Return true only if the word was added as a whole word.",
+     "start": 4.28,
+     "end": 7.63
+    },
+    {
+     "id": "tt2i_3",
+     "text": "Follow the letters down. C is there. A is there. The whole path exists.",
+     "start": 8.33,
+     "end": 12.78
+    },
+    {
+     "id": "tt2i_4",
+     "text": "So why should the answer still be false? And how can the code tell? Your turn.",
+     "start": 13.48,
+     "end": 18.09
+    }
+   ],
+   "pauses": []
+  },
+  "tt2s": {
+   "src": "videos/tt2s.mp4",
+   "title": "Walk down, then check the mark",
+   "duration": 60.17,
+   "lines": [
+    {
+     "id": "tt2s_1",
+     "text": "Walk down, one letter at a time. A missing letter means the word is not there.",
+     "start": 0.2,
+     "end": 5.17
+    },
+    {
+     "id": "tt2s_2",
+     "text": "And when every letter is found, one more check. Does a word end on this node?",
+     "start": 5.92,
+     "end": 10.6
+    },
+    {
+     "id": "tt2s_3",
+     "text": "Looking up c, a. The green nodes are where a word ends. The marker starts on the root.",
+     "start": 11.35,
+     "end": 16.57
+    },
+    {
+     "id": "tt2s_4",
+     "text": "The letter c. The root has a child c. Line five follows it.",
+     "start": 17.32,
+     "end": 20.88
+    },
+    {
+     "id": "tt2s_5",
+     "text": "The letter a. There too. Follow it.",
+     "start": 21.63,
+     "end": 23.72
+    },
+    {
+     "id": "tt2s_6",
+     "text": "The letters are used up. The marker is on the a. Car and cat both pass through here. What does line seven return?",
+     "start": 24.47,
+     "end": 31.12
+    },
+    {
+     "id": "tt2s_7",
+     "text": "False. The path exists, but no word ends on this node.",
+     "start": 32.32,
+     "end": 35.61
+    },
+    {
+     "id": "tt2s_8",
+     "text": "And for a word like dog, line four stops earlier. The o has no child g, so it returns false at once.",
+     "start": 36.71,
+     "end": 43.95
+    },
+    {
+     "id": "tt2s_9",
+     "text": "One step per letter. O of the length of the word, however many words are stored.",
+     "start": 44.7,
+     "end": 49.7
+    },
+    {
+     "id": "tt2s_10",
+     "text": "One marker. O of one space.",
+     "start": 50.45,
+     "end": 52.46
+    },
+    {
+     "id": "tt2s_11",
+     "text": "A spell checker asks exactly this. The path may exist. But is it a whole word?",
+     "start": 53.21,
+     "end": 58.57
+    }
+   ],
+   "pauses": [
+    {
+     "id": "tt2s-q",
+     "t": 31.32
+    }
+   ]
+  },
+  "tt3i": {
+   "src": "videos/tt3i.mp4",
+   "title": "Finish My Word",
+   "duration": 21.63,
+   "lines": [
+    {
+     "id": "tt3i_1",
+     "text": "Pip types a c. The search box should offer every word that starts with it.",
+     "start": 0.2,
+     "end": 4.45
+    },
+    {
+     "id": "tt3i_2",
+     "text": "Return all the words in the trie that begin with the prefix, in alphabetical order.",
+     "start": 5.15,
+     "end": 10.53
+    },
+    {
+     "id": "tt3i_3",
+     "text": "Every one of those words passes through the same node. The one you reach by following the prefix.",
+     "start": 11.23,
+     "end": 16.89
+    },
+    {
+     "id": "tt3i_4",
+     "text": "So get there first. And then? Your turn.",
+     "start": 17.59,
+     "end": 20.03
+    }
+   ],
+   "pauses": []
+  },
+  "tt3s": {
+   "src": "videos/tt3s.mp4",
+   "title": "Down the prefix, then all below",
+   "duration": 73.41,
+   "lines": [
+    {
+     "id": "tt3s_1",
+     "text": "Every word that starts with the prefix lives below one node. The node you reach by following the prefix.",
+     "start": 0.2,
+     "end": 6.45
+    },
+    {
+     "id": "tt3s_2",
+     "text": "So walk down the prefix. Then visit everything below it, depth first, carrying the letters so far.",
+     "start": 7.2,
+     "end": 13.62
+    },
+    {
+     "id": "tt3s_3",
+     "text": "The prefix is c. Lines two to six walk down it, exactly like a lookup. The marker lands on the c.",
+     "start": 14.37,
+     "end": 21.08
+    },
+    {
+     "id": "tt3s_4",
+     "text": "Line fourteen starts the walk here, with the text c. No word ends on c. So line eleven goes to its child, a, with the text c, a.",
+     "start": 21.83,
+     "end": 30.64
+    },
+    {
+     "id": "tt3s_5",
+     "text": "No word ends on a, either. Its children, in sorted order, are r, and t. First r. The text is now car. What does line nine do?",
+     "start": 31.39,
+     "end": 40.14
+    },
+    {
+     "id": "tt3s_6",
+     "text": "A word ends here. So car goes into the output.",
+     "start": 41.34,
+     "end": 44.46
+    },
+    {
+     "id": "tt3s_7",
+     "text": "Back up, and into the t. The text is cat. A word ends here too.",
+     "start": 45.21,
+     "end": 49.27
+    },
+    {
+     "id": "tt3s_8",
+     "text": "Nothing is left below the c. The d side was never visited. Line fifteen returns the output.",
+     "start": 50.02,
+     "end": 56.47
+    },
+    {
+     "id": "tt3s_9",
+     "text": "The length of the prefix, plus every node below it.",
+     "start": 57.57,
+     "end": 60.59
+    },
+    {
+     "id": "tt3s_10",
+     "text": "The output, and the waiting calls, as deep as the longest word.",
+     "start": 61.34,
+     "end": 65.29
+    },
+    {
+     "id": "tt3s_11",
+     "text": "This is autocomplete. Type c, a, and your phone offers every word below that node.",
+     "start": 66.04,
+     "end": 71.81
+    }
+   ],
+   "pauses": [
+    {
+     "id": "tt3s-q",
+     "t": 40.34
+    }
+   ]
+  },
+  "gr1i": {
+   "src": "videos/gr1i.mp4",
+   "title": "Count the Islands",
+   "duration": 23.97,
+   "lines": [
+    {
+     "id": "gr1i_1",
+     "text": "Pip looks down at the sea. Ones are land. Zeros are water.",
+     "start": 0.2,
+     "end": 4.09
+    },
+    {
+     "id": "gr1i_2",
+     "text": "Return the number of islands. Land that touches side to side is one island.",
+     "start": 4.79,
+     "end": 9.48
+    },
+    {
+     "id": "gr1i_3",
+     "text": "Scan the squares one by one, and you will meet the same island many times.",
+     "start": 10.18,
+     "end": 15.02
+    },
+    {
+     "id": "gr1i_4",
+     "text": "So when you find a piece of land, what could you do, so that you never count that island again? Your turn.",
+     "start": 15.72,
+     "end": 22.37
+    }
+   ],
+   "pauses": []
+  },
+  "gr1s": {
+   "src": "videos/gr1s.mp4",
+   "title": "Find land, sink the island",
+   "duration": 73.79,
+   "lines": [
+    {
+     "id": "gr1s_1",
+     "text": "Scan every square. The first time you touch an island, count it.",
+     "start": 0.2,
+     "end": 4.09
+    },
+    {
+     "id": "gr1s_2",
+     "text": "Then sink the whole island, so no other square of it can be counted. Deep first, through the four neighbours.",
+     "start": 4.84,
+     "end": 11.31
+    },
+    {
+     "id": "gr1s_3",
+     "text": "The scan starts at the top left. It is land. Line twelve counts one island, and calls sink.",
+     "start": 12.06,
+     "end": 17.83
+    },
+    {
+     "id": "gr1s_4",
+     "text": "Sink turns this square into water, and calls itself on the four neighbours. The land to the right, and the land below, are sunk the same way.",
+     "start": 18.58,
+     "end": 26.76
+    },
+    {
+     "id": "gr1s_5",
+     "text": "For water, or a square outside the grid, lines three and four return at once. That is what stops the walk.",
+     "start": 27.51,
+     "end": 34.2
+    },
+    {
+     "id": "gr1s_6",
+     "text": "The scan goes on. Every square it meets is water now, until this one. Land. What happens to count?",
+     "start": 34.95,
+     "end": 41.82
+    },
+    {
+     "id": "gr1s_7",
+     "text": "Two. A second island. Sink removes it. This square, the one below it, and the one beside that.",
+     "start": 43.02,
+     "end": 48.95
+    },
+    {
+     "id": "gr1s_8",
+     "text": "The scan finishes. No land is left. Line fifteen returns two.",
+     "start": 49.7,
+     "end": 54.3
+    },
+    {
+     "id": "gr1s_9",
+     "text": "Every square is looked at by the scan, and sunk at most once. O of rows times columns.",
+     "start": 55.4,
+     "end": 61.27
+    },
+    {
+     "id": "gr1s_10",
+     "text": "The waiting calls can be as deep as one whole island.",
+     "start": 62.02,
+     "end": 64.89
+    },
+    {
+     "id": "gr1s_11",
+     "text": "A photo app finds the separate objects in a picture this way. Each blob of touching pixels is one island.",
+     "start": 65.64,
+     "end": 72.19
+    }
+   ],
+   "pauses": [
+    {
+     "id": "gr1s-q",
+     "t": 42.02
+    }
+   ]
+  },
+  "gr2i": {
+   "src": "videos/gr2i.mp4",
+   "title": "The Paint Bucket",
+   "duration": 20.7,
+   "lines": [
+    {
+     "id": "gr2i_1",
+     "text": "Hazel clicks the paint bucket on the top left square.",
+     "start": 0.2,
+     "end": 3.1
+    },
+    {
+     "id": "gr2i_2",
+     "text": "Give the new colour to that square, and to every connected square of the same old colour.",
+     "start": 3.79,
+     "end": 9.07
+    },
+    {
+     "id": "gr2i_3",
+     "text": "The one at the bottom has the same colour too. But it does not touch the others.",
+     "start": 9.77,
+     "end": 14.46
+    },
+    {
+     "id": "gr2i_4",
+     "text": "You sank an island a moment ago. What is different here? Your turn.",
+     "start": 15.16,
+     "end": 19.1
+    }
+   ],
+   "pauses": []
+  },
+  "gr2s": {
+   "src": "videos/gr2s.mp4",
+   "title": "Spread while the colour matches",
+   "duration": 65.35,
+   "lines": [
+    {
+     "id": "gr2s_1",
+     "text": "This is sinking an island again. The island is every connected square of the old colour.",
+     "start": 0.2,
+     "end": 5.58
+    },
+    {
+     "id": "gr2s_2",
+     "text": "Painting a square also marks it as done. It no longer has the old colour, so it is never visited twice.",
+     "start": 6.33,
+     "end": 13.22
+    },
+    {
+     "id": "gr2s_3",
+     "text": "Line two remembers the old colour of the starting square. One.",
+     "start": 13.97,
+     "end": 17.87
+    },
+    {
+     "id": "gr2s_4",
+     "text": "Line seven paints it nine. Then the four neighbours. Below is a one. It is painted too.",
+     "start": 18.62,
+     "end": 24.25
+    },
+    {
+     "id": "gr2s_5",
+     "text": "From there, below again. This square holds a three. What does line six do?",
+     "start": 25,
+     "end": 29.68
+    },
+    {
+     "id": "gr2s_6",
+     "text": "It returns. A different colour is a wall for the paint.",
+     "start": 30.88,
+     "end": 34.29
+    },
+    {
+     "id": "gr2s_7",
+     "text": "Back at the start, and to the right. A one. Painted. Its own neighbours are twos, or already nine.",
+     "start": 35.04,
+     "end": 41.02
+    },
+    {
+     "id": "gr2s_8",
+     "text": "The one at the bottom was never reached. It does not touch the others. Line twelve returns the grid.",
+     "start": 41.77,
+     "end": 47.76
+    },
+    {
+     "id": "gr2s_9",
+     "text": "Each square is painted at most once. O of rows times columns.",
+     "start": 48.86,
+     "end": 53.14
+    },
+    {
+     "id": "gr2s_10",
+     "text": "The waiting calls can be as deep as the painted region.",
+     "start": 53.89,
+     "end": 56.94
+    },
+    {
+     "id": "gr2s_11",
+     "text": "This is the paint bucket in every drawing program. Click, and the colour spreads to everything connected.",
+     "start": 57.69,
+     "end": 63.75
+    }
+   ],
+   "pauses": [
+    {
+     "id": "gr2s-q",
+     "t": 29.88
+    }
+   ]
+  },
+  "gr3i": {
+   "src": "videos/gr3i.mp4",
+   "title": "Out of the Maze",
+   "duration": 20.63,
+   "lines": [
+    {
+     "id": "gr3i_1",
+     "text": "Pip is in the top left corner of a maze. The way out is the bottom right.",
+     "start": 0.2,
+     "end": 4.66
+    },
+    {
+     "id": "gr3i_2",
+     "text": "Return the fewest steps to get there, or minus one if there is no way.",
+     "start": 5.36,
+     "end": 9.64
+    },
+    {
+     "id": "gr3i_3",
+     "text": "Going deep first would find some way out. Not always the shortest.",
+     "start": 10.34,
+     "end": 14.34
+    },
+    {
+     "id": "gr3i_4",
+     "text": "Which way of exploring reaches the nearest squares first? Your turn.",
+     "start": 15.04,
+     "end": 19.03
+    }
+   ],
+   "pauses": []
+  },
+  "gr3s": {
+   "src": "videos/gr3s.mp4",
+   "title": "Level by level counts the steps",
+   "duration": 70.93,
+   "lines": [
+    {
+     "id": "gr3s_1",
+     "text": "The fewest steps. That is the signal for going level by level.",
+     "start": 0.2,
+     "end": 4.09
+    },
+    {
+     "id": "gr3s_2",
+     "text": "Level zero is the start. Level one is every square one step away. The level that holds the goal is the answer.",
+     "start": 4.84,
+     "end": 12.41
+    },
+    {
+     "id": "gr3s_3",
+     "text": "Line four. The first level holds only the start. Line five marks it, so it is never added again. Steps is zero.",
+     "start": 13.16,
+     "end": 20.91
+    },
+    {
+     "id": "gr3s_4",
+     "text": "Lines eleven to fifteen look at its four neighbours. Below is a wall. To the right is open. It is marked, and goes into next.",
+     "start": 21.66,
+     "end": 29.78
+    },
+    {
+     "id": "gr3s_5",
+     "text": "That square has one open neighbour, below it. That is level two.",
+     "start": 30.53,
+     "end": 34.49
+    },
+    {
+     "id": "gr3s_6",
+     "text": "Now from that square. Left is a wall. Below is a wall. Above is already marked. Which squares make level three?",
+     "start": 35.24,
+     "end": 42.6
+    },
+    {
+     "id": "gr3s_7",
+     "text": "Only the square on its right. Level three.",
+     "start": 43.8,
+     "end": 46.39
+    },
+    {
+     "id": "gr3s_8",
+     "text": "Its open neighbour is the corner below. Level four. And when that square is taken out, line ten sees the goal, and returns steps.",
+     "start": 47.14,
+     "end": 55.46
+    },
+    {
+     "id": "gr3s_9",
+     "text": "Every square enters a level at most once. O of rows times columns.",
+     "start": 56.56,
+     "end": 61.24
+    },
+    {
+     "id": "gr3s_10",
+     "text": "Two levels are held at a time.",
+     "start": 61.99,
+     "end": 63.78
+    },
+    {
+     "id": "gr3s_11",
+     "text": "A game character finds the shortest way through a map like this, level by level.",
+     "start": 64.53,
+     "end": 69.33
+    }
+   ],
+   "pauses": [
+    {
+     "id": "gr3s-q",
+     "t": 42.8
+    }
+   ]
+  },
+  "gr4i": {
+   "src": "videos/gr4i.mp4",
+   "title": "Can You Get There?",
+   "duration": 23.59,
+   "lines": [
+    {
+     "id": "gr4i_1",
+     "text": "Six burrows, and the tunnels between them. Pip is in burrow three.",
+     "start": 0.2,
+     "end": 4.27
+    },
+    {
+     "id": "gr4i_2",
+     "text": "Return true if there is a way from one burrow to another. Here, from three to two.",
+     "start": 4.97,
+     "end": 9.92
+    },
+    {
+     "id": "gr4i_3",
+     "text": "The tunnels arrive as a list of pairs. That is awkward to walk through.",
+     "start": 10.62,
+     "end": 14.95
+    },
+    {
+     "id": "gr4i_4",
+     "text": "Standing in a burrow, what do you want to know at once? And how do you avoid going in circles? Your turn.",
+     "start": 15.65,
+     "end": 21.99
+    }
+   ],
+   "pauses": []
+  },
+  "gr4s": {
+   "src": "videos/gr4s.mp4",
+   "title": "Neighbour lists, then walk",
+   "duration": 73.37,
+   "lines": [
+    {
+     "id": "gr4s_1",
+     "text": "First, turn the list of pairs into neighbour lists. Then every node knows who is next door.",
+     "start": 0.2,
+     "end": 5.72
+    },
+    {
+     "id": "gr4s_2",
+     "text": "Then walk, deep first, like a tree. With one addition. A set of nodes already seen.",
+     "start": 6.47,
+     "end": 11.79
+    },
+    {
+     "id": "gr4s_3",
+     "text": "Lines two to six build the lists. Each edge is added both ways. Zero is next to one and two. One is next to zero and three.",
+     "start": 12.54,
+     "end": 21.13
+    },
+    {
+     "id": "gr4s_4",
+     "text": "Line fourteen starts on three. Not the target. Not seen. It is marked seen.",
+     "start": 21.88,
+     "end": 26.97
+    },
+    {
+     "id": "gr4s_5",
+     "text": "Its only neighbour is one. Marked seen.",
+     "start": 27.72,
+     "end": 30.02
+    },
+    {
+     "id": "gr4s_6",
+     "text": "One is next to zero, and three. Zero first. Marked seen.",
+     "start": 30.77,
+     "end": 34.58
+    },
+    {
+     "id": "gr4s_7",
+     "text": "Zero is next to one, and two. One first. But one is already seen. What does the call on one return?",
+     "start": 35.33,
+     "end": 42.02
+    },
+    {
+     "id": "gr4s_8",
+     "text": "False, at once. So the walk tries the next neighbour. Two. That is the target. Line nine returns true.",
+     "start": 43.22,
+     "end": 49.71
+    },
+    {
+     "id": "gr4s_9",
+     "text": "Four and five were never reached. From three, there is no way to them.",
+     "start": 50.81,
+     "end": 55.08
+    },
+    {
+     "id": "gr4s_10",
+     "text": "Every node is visited once, and every edge is looked at twice. O of nodes plus edges.",
+     "start": 55.83,
+     "end": 61.81
+    },
+    {
+     "id": "gr4s_11",
+     "text": "The lists, and the seen set. O of nodes plus edges.",
+     "start": 62.56,
+     "end": 66
+    },
+    {
+     "id": "gr4s_12",
+     "text": "Can this computer reach that server? A network tool asks exactly this question.",
+     "start": 66.75,
+     "end": 71.77
+    }
+   ],
+   "pauses": [
+    {
+     "id": "gr4s-q",
+     "t": 42.22
+    }
+   ]
+  },
+  "gr5i": {
+   "src": "videos/gr5i.mp4",
+   "title": "How Many Groups?",
+   "duration": 17.46,
+   "lines": [
+    {
+     "id": "gr5i_1",
+     "text": "Six burrows again. But this time, they are not all joined up.",
+     "start": 0.2,
+     "end": 3.84
+    },
+    {
+     "id": "gr5i_2",
+     "text": "Return the number of separate groups.",
+     "start": 4.54,
+     "end": 6.75
+    },
+    {
+     "id": "gr5i_3",
+     "text": "You counted separate pieces a moment ago. They were made of land.",
+     "start": 7.45,
+     "end": 11.2
+    },
+    {
+     "id": "gr5i_4",
+     "text": "What is the land here? And what does it mean to sink a group? Your turn.",
+     "start": 11.9,
+     "end": 15.86
+    }
+   ],
+   "pauses": []
+  },
+  "gr5s": {
+   "src": "videos/gr5s.mp4",
+   "title": "Islands, on a graph",
+   "duration": 61.81,
+   "lines": [
+    {
+     "id": "gr5s_1",
+     "text": "This is counting islands. A node that is not seen yet is new land.",
+     "start": 0.2,
+     "end": 4.34
+    },
+    {
+     "id": "gr5s_2",
+     "text": "Count it, then walk everything it is joined to, marking it seen. That sinks the whole group.",
+     "start": 5.09,
+     "end": 10.49
+    },
+    {
+     "id": "gr5s_3",
+     "text": "The loop on line fourteen starts at node zero. Not seen. So line fifteen counts one group, and visits it.",
+     "start": 11.24,
+     "end": 18.25
+    },
+    {
+     "id": "gr5s_4",
+     "text": "The visit spreads to its neighbours. One, and two. All three are seen now.",
+     "start": 19,
+     "end": 23.62
+    },
+    {
+     "id": "gr5s_5",
+     "text": "The loop moves on. One is seen. Two is seen. Then three. It is not seen, and it has no edges at all. What happens?",
+     "start": 24.37,
+     "end": 31.76
+    },
+    {
+     "id": "gr5s_6",
+     "text": "It counts. A group of one. Two groups.",
+     "start": 32.96,
+     "end": 35.5
+    },
+    {
+     "id": "gr5s_7",
+     "text": "Four is not seen. Three groups. The visit marks four, and five.",
+     "start": 36.25,
+     "end": 40.31
+    },
+    {
+     "id": "gr5s_8",
+     "text": "Five is seen. The loop ends, and line seventeen returns three.",
+     "start": 41.06,
+     "end": 45.23
+    },
+    {
+     "id": "gr5s_9",
+     "text": "Every node is visited once, every edge looked at twice. O of nodes plus edges.",
+     "start": 46.33,
+     "end": 51.91
+    },
+    {
+     "id": "gr5s_10",
+     "text": "The lists, and the seen set.",
+     "start": 52.66,
+     "end": 54.22
+    },
+    {
+     "id": "gr5s_11",
+     "text": "A social app finds separate circles of friends this way. Each group is one circle.",
+     "start": 54.97,
+     "end": 60.21
+    }
+   ],
+   "pauses": [
+    {
+     "id": "gr5s-q",
+     "t": 31.96
+    }
+   ]
+  },
+  "gr6i": {
+   "src": "videos/gr6i.mp4",
+   "title": "The Fewest Hops",
+   "duration": 17.36,
+   "lines": [
+    {
+     "id": "gr6i_1",
+     "text": "Pip is in burrow zero, and wants to reach burrow five.",
+     "start": 0.2,
+     "end": 3.45
+    },
+    {
+     "id": "gr6i_2",
+     "text": "Return the fewest tunnels Pip has to cross.",
+     "start": 4.15,
+     "end": 6.71
+    },
+    {
+     "id": "gr6i_3",
+     "text": "There is more than one way round. One of them is shorter.",
+     "start": 7.41,
+     "end": 10.6
+    },
+    {
+     "id": "gr6i_4",
+     "text": "You found the fewest steps in a maze. What changes on a graph? Your turn.",
+     "start": 11.3,
+     "end": 15.76
+    }
+   ],
+   "pauses": []
+  },
+  "gr6s": {
+   "src": "videos/gr6s.mp4",
+   "title": "Rings around the start",
+   "duration": 64.41,
+   "lines": [
+    {
+     "id": "gr6s_1",
+     "text": "The fewest hops. Level by level again. Exactly as in the maze.",
+     "start": 0.2,
+     "end": 4.73
+    },
+    {
+     "id": "gr6s_2",
+     "text": "The levels are rings around the start. Everything one hop away. Then two. The ring that holds the target is the answer.",
+     "start": 5.48,
+     "end": 12.99
+    },
+    {
+     "id": "gr6s_3",
+     "text": "The first level holds only the start. Zero. Hops is zero. Five is not in this level.",
+     "start": 13.74,
+     "end": 19.98
+    },
+    {
+     "id": "gr6s_4",
+     "text": "Lines eight to thirteen collect the unseen neighbours of zero. One, and two. That is the next level.",
+     "start": 20.73,
+     "end": 27.26
+    },
+    {
+     "id": "gr6s_5",
+     "text": "Five is not in it. So the next level. One is next to zero, three, and five. Two is next to zero, and four. Which nodes are added?",
+     "start": 28.01,
+     "end": 36.9
+    },
+    {
+     "id": "gr6s_6",
+     "text": "Three, five, and four. Zero is skipped, because it is seen.",
+     "start": 38.1,
+     "end": 41.81
+    },
+    {
+     "id": "gr6s_7",
+     "text": "Back to line six. This level includes five. So it returns hops. Two.",
+     "start": 42.56,
+     "end": 47.24
+    },
+    {
+     "id": "gr6s_8",
+     "text": "Every node enters a level once, every edge is looked at twice. O of nodes plus edges.",
+     "start": 48.34,
+     "end": 54.34
+    },
+    {
+     "id": "gr6s_9",
+     "text": "The seen set, and two levels.",
+     "start": 55.09,
+     "end": 56.9
+    },
+    {
+     "id": "gr6s_10",
+     "text": "How many introductions from you to a stranger? Social apps count the hops like this.",
+     "start": 57.65,
+     "end": 62.81
+    }
+   ],
+   "pauses": [
+    {
+     "id": "gr6s-q",
+     "t": 37.1
+    }
+   ]
+  },
+  "gr7i": {
+   "src": "videos/gr7i.mp4",
+   "title": "Is There a Loop?",
+   "duration": 24.62,
+   "lines": [
+    {
+     "id": "gr7i_1",
+     "text": "Moss is worried about walking in circles. Is there a loop in these tunnels?",
+     "start": 0.2,
+     "end": 4.79
+    },
+    {
+     "id": "gr7i_2",
+     "text": "Return true if you can leave a burrow and come back to it, without using a tunnel twice.",
+     "start": 5.49,
+     "end": 10.72
+    },
+    {
+     "id": "gr7i_3",
+     "text": "Walk deep first, and remember what you have seen. Sooner or later you look at a burrow you have seen before.",
+     "start": 11.42,
+     "end": 17.98
+    },
+    {
+     "id": "gr7i_4",
+     "text": "Is that always a loop? Think about the burrow you just came from. Your turn.",
+     "start": 18.68,
+     "end": 23.02
+    }
+   ],
+   "pauses": []
+  },
+  "gr7s": {
+   "src": "videos/gr7s.mp4",
+   "title": "Seen, and not where I came from",
+   "duration": 71.32,
+   "lines": [
+    {
+     "id": "gr7s_1",
+     "text": "Walk deep first. If a neighbour is already seen, the walk has found a second way to reach it. That is a loop.",
+     "start": 0.2,
+     "end": 7.02
+    },
+    {
+     "id": "gr7s_2",
+     "text": "With one exception. The node you just came from is always seen. So each call remembers it, and skips it.",
+     "start": 7.77,
+     "end": 14.09
+    },
+    {
+     "id": "gr7s_3",
+     "text": "Line seventeen starts on node zero, coming from nowhere. Zero is marked seen. Its only neighbour is one.",
+     "start": 14.84,
+     "end": 21.86
+    },
+    {
+     "id": "gr7s_4",
+     "text": "On one, coming from zero. Its neighbours are zero, two and three. Zero is where it came from. Skipped. Then two.",
+     "start": 22.61,
+     "end": 29.85
+    },
+    {
+     "id": "gr7s_5",
+     "text": "On two, coming from one. One is skipped. Its other neighbour is three.",
+     "start": 30.6,
+     "end": 34.97
+    },
+    {
+     "id": "gr7s_6",
+     "text": "On three, coming from two. Two is skipped. Its other neighbour is one. One is seen, and it is not where we came from. What does line twelve do?",
+     "start": 35.72,
+     "end": 44.94
+    },
+    {
+     "id": "gr7s_7",
+     "text": "It returns true. One, two, three, and back to one. A loop.",
+     "start": 46.14,
+     "end": 49.89
+    },
+    {
+     "id": "gr7s_8",
+     "text": "And true travels straight back up through every waiting call.",
+     "start": 50.99,
+     "end": 54.03
+    },
+    {
+     "id": "gr7s_9",
+     "text": "Every node is visited once, every edge looked at twice. O of nodes plus edges.",
+     "start": 54.78,
+     "end": 60.35
+    },
+    {
+     "id": "gr7s_10",
+     "text": "The lists, the seen set, and the waiting calls.",
+     "start": 61.1,
+     "end": 63.75
+    },
+    {
+     "id": "gr7s_11",
+     "text": "A spreadsheet warns you about a circular reference by finding a loop, just like this.",
+     "start": 64.5,
+     "end": 69.72
+    }
+   ],
+   "pauses": [
+    {
+     "id": "gr7s-q",
+     "t": 45.14
+    }
+   ]
+  },
   "mq1i": {
    "src": "videos/mq1i.mp4",
    "title": "The Damp Spreads",
@@ -21024,117 +24027,6 @@ window.BURROW = {
     }
    ]
   },
-  "gd0": {
-   "src": "videos/gd0.mp4",
-   "title": "Take the Best, Right Now",
-   "duration": 36.56,
-   "lines": [
-    {
-     "id": "ga1",
-     "text": "Chapter twenty three. Greedy.",
-     "start": 0.2,
-     "end": 2.11
-    },
-    {
-     "id": "ga2",
-     "text": "Backtracking tries every choice, and takes it back. A greedy method never looks back. At each step, it takes what looks best right now.",
-     "start": 2.81,
-     "end": 11.06
-    },
-    {
-     "id": "ga3",
-     "text": "That is fast. One pass. But it is only correct, when the choice that looks best now can never hurt you later.",
-     "start": 11.96,
-     "end": 18.87
-    },
-    {
-     "id": "ga4",
-     "text": "So the real skill is knowing when it is safe. One lesson, and four puzzles.",
-     "start": 19.77,
-     "end": 24.41
-    },
-    {
-     "id": "ga5",
-     "text": "A cashier gives change this way, biggest coin first. A planner picks the meeting that ends first. And a file compressor always joins the two rarest symbols.",
-     "start": 25.31,
-     "end": 34.96
-    }
-   ],
-   "pauses": []
-  },
-  "gdt1": {
-   "src": "videos/gdt1.mp4",
-   "title": "When Is the Greedy Choice Safe?",
-   "duration": 69.46,
-   "lines": [
-    {
-     "id": "gb1",
-     "text": "Pip owes forty one seeds, and wants to pay with as few bags as possible. The bags hold twenty five, ten, five, and one.",
-     "start": 0.2,
-     "end": 8.29
-    },
-    {
-     "id": "gb2",
-     "text": "The greedy idea. Always take the biggest bag that still fits.",
-     "start": 9.19,
-     "end": 13.35
-    },
-    {
-     "id": "gb3",
-     "text": "Twenty five. Sixteen left. Ten. Six left. Five. One left. One. Four bags. And that really is the fewest.",
-     "start": 14.25,
-     "end": 21.64
-    },
-    {
-     "id": "gb4",
-     "text": "Now change the bags. Four, three, and one. And Pip owes six.",
-     "start": 22.64,
-     "end": 26.42
-    },
-    {
-     "id": "gb5",
-     "text": "Greedy takes the four. Then a one. And another one. Three bags. Can you do better?",
-     "start": 27.32,
-     "end": 32.5
-    },
-    {
-     "id": "gb6",
-     "text": "Three, and three. Two bags. Greedy was wrong.",
-     "start": 33.7,
-     "end": 36.43
-    },
-    {
-     "id": "gb7",
-     "text": "So when can you trust it? When the best looking choice can never block a better answer later.",
-     "start": 37.43,
-     "end": 43.1
-    },
-    {
-     "id": "gb8",
-     "text": "Here is a test. Take any answer that does not start with the greedy choice. Can you swap the greedy choice in, without making it worse? If you always can, greedy is safe.",
-     "start": 44,
-     "end": 54.25
-    },
-    {
-     "id": "gb9",
-     "text": "With meetings, the one that ends first leaves the most room for the rest. Swapping it in never hurts. So greedy works there.",
-     "start": 55.25,
-     "end": 62.77
-    },
-    {
-     "id": "gb10",
-     "text": "Greedy. One pass, and no going back. But only when the choice is safe.",
-     "start": 63.67,
-     "end": 67.86
-    }
-   ],
-   "pauses": [
-    {
-     "id": "gdt1-q1",
-     "t": 32.7
-    }
-   ]
-  },
   "bk1i": {
    "src": "videos/bk1i.mp4",
    "title": "Words from Keys",
@@ -21990,178 +24882,6 @@ window.BURROW = {
     }
    ]
   },
-  "dp0": {
-   "src": "videos/dp0.mp4",
-   "title": "Small Answers First",
-   "duration": 43.48,
-   "lines": [
-    {
-     "id": "da1",
-     "text": "Chapter twenty four. Dynamic programming. The name is strange. The idea is not.",
-     "start": 0.2,
-     "end": 5.56
-    },
-    {
-     "id": "da2",
-     "text": "You have met it already. Counting the ways up the stairs, the same small questions came back again and again. A memo fixed that.",
-     "start": 6.26,
-     "end": 14.34
-    },
-    {
-     "id": "da3",
-     "text": "Dynamic programming turns that around. Answer the small questions first. Write each answer in a table. Then every bigger answer is one look back.",
-     "start": 15.24,
-     "end": 24.57
-    },
-    {
-     "id": "da4",
-     "text": "Two lessons, and eight puzzles. This is the pattern that interviews like the most.",
-     "start": 25.47,
-     "end": 30.63
-    },
-    {
-     "id": "da5",
-     "text": "A spell checker measures how far a typo is from a real word this way. A map adds up the best time to each corner. And a shop works out the best you can buy with what is left.",
-     "start": 31.53,
-     "end": 41.88
-    }
-   ],
-   "pauses": []
-  },
-  "dpt1": {
-   "src": "videos/dpt1.mp4",
-   "title": "From a Memo to a Table",
-   "duration": 57.98,
-   "lines": [
-    {
-     "id": "db1",
-     "text": "Six stairs. One or two steps at a time. How many ways to the top? You solved this with recursion, and a memo.",
-     "start": 0.2,
-     "end": 7.42
-    },
-    {
-     "id": "db2",
-     "text": "The memo was filled in a strange order. From the top call, down, and back up again.",
-     "start": 8.32,
-     "end": 13.19
-    },
-    {
-     "id": "db3",
-     "text": "Fill it in a plain order instead. Start with what you know. One way to stand at the bottom. One way to reach step one.",
-     "start": 14.09,
-     "end": 21.25
-    },
-    {
-     "id": "db4",
-     "text": "Step two. You arrive from step one, or from step zero. One plus one. Two ways.",
-     "start": 22.15,
-     "end": 27.91
-    },
-    {
-     "id": "db5",
-     "text": "Step three. From step two, or from step one. Two plus one. Three.",
-     "start": 28.81,
-     "end": 33.2
-    },
-    {
-     "id": "db6",
-     "text": "Step four. Three plus two. Five. So what goes under step five?",
-     "start": 34.1,
-     "end": 38.08
-    },
-    {
-     "id": "db7",
-     "text": "Eight. Five plus three. And step six. Thirteen.",
-     "start": 39.28,
-     "end": 42.43
-    },
-    {
-     "id": "db8",
-     "text": "No recursion. No waiting calls. One loop, and one row of numbers. Each entry looks back at the two before it.",
-     "start": 43.33,
-     "end": 50.41
-    },
-    {
-     "id": "db9",
-     "text": "That is dynamic programming. Small answers first. Written down. And reused.",
-     "start": 51.31,
-     "end": 56.38
-    }
-   ],
-   "pauses": [
-    {
-     "id": "dpt1-q1",
-     "t": 38.28
-    }
-   ]
-  },
-  "dpt2": {
-   "src": "videos/dpt2.mp4",
-   "title": "The Recipe: Meaning, Choice, Start",
-   "duration": 65.06,
-   "lines": [
-    {
-     "id": "dc1",
-     "text": "Four burrows in a row. Five, one, one, and five seeds. Moss may empty some of them. But never two that are side by side. What is the most Moss can collect?",
-     "start": 0.2,
-     "end": 10.44
-    },
-    {
-     "id": "dc2",
-     "text": "Here is a recipe. Question one. What does one entry of the table mean? Here: the most seeds, using only the burrows up to this one.",
-     "start": 11.34,
-     "end": 20.22
-    },
-    {
-     "id": "dc3",
-     "text": "Question two. The choice. For the last burrow, Moss either skips it, or takes it.",
-     "start": 21.12,
-     "end": 26.23
-    },
-    {
-     "id": "dc4",
-     "text": "Skip it, and the answer is the entry just before. Take it, and the answer is its seeds, plus the entry two before.",
-     "start": 27.13,
-     "end": 34.34
-    },
-    {
-     "id": "dc5",
-     "text": "Question three. The start. With one burrow, take it. Five. With two, take the bigger one. Still five.",
-     "start": 35.23,
-     "end": 41.58
-    },
-    {
-     "id": "dc6",
-     "text": "Burrow two. Skipping keeps five. Taking gives one, plus five. Six.",
-     "start": 42.48,
-     "end": 46.97
-    },
-    {
-     "id": "dc7",
-     "text": "Burrow three. Skipping keeps six. Taking gives five, plus five. So what goes in the table?",
-     "start": 47.87,
-     "end": 53.93
-    },
-    {
-     "id": "dc8",
-     "text": "Ten. The first burrow, and the last.",
-     "start": 55.13,
-     "end": 57.21
-    },
-    {
-     "id": "dc9",
-     "text": "What an entry means. The choice. The start. Get those three right, and the loop writes itself.",
-     "start": 58.11,
-     "end": 63.46
-    }
-   ],
-   "pauses": [
-    {
-     "id": "dpt2-q1",
-     "t": 54.13
-    }
-   ]
-  },
   "gd1i": {
    "src": "videos/gd1i.mp4",
    "title": "Stepping Stones",
@@ -22621,184 +25341,6 @@ window.BURROW = {
     {
      "id": "gd4s-q",
      "t": 32.98
-    }
-   ]
-  },
-  "dq0": {
-   "src": "videos/dq0.mp4",
-   "title": "A Table with Two Sides",
-   "duration": 43.03,
-   "lines": [
-    {
-     "id": "ea1",
-     "text": "Chapter twenty five. Dynamic programming, with a table that has two sides.",
-     "start": 0.2,
-     "end": 5.16
-    },
-    {
-     "id": "ea2",
-     "text": "Some answers depend on two things at once. A row, and a column. Or a place in one word, and a place in another.",
-     "start": 5.86,
-     "end": 13.2
-    },
-    {
-     "id": "ea3",
-     "text": "Then the table becomes a grid. And every entry looks at its neighbours. Above. To the left. And sometimes, the diagonal.",
-     "start": 14.1,
-     "end": 22.04
-    },
-    {
-     "id": "ea4",
-     "text": "The recipe does not change. Meaning, choice, start. Two lessons, and seven puzzles.",
-     "start": 22.94,
-     "end": 28.36
-    },
-    {
-     "id": "ea5",
-     "text": "A spell checker counts the changes between your typo and a real word like this. A tool that compares two versions of a file finds the lines they share. And a game counts the routes across a board.",
-     "start": 29.26,
-     "end": 41.43
-    }
-   ],
-   "pauses": []
-  },
-  "dqt1": {
-   "src": "videos/dqt1.mp4",
-   "title": "From Above, and from the Left",
-   "duration": 62.44,
-   "lines": [
-    {
-     "id": "eb1",
-     "text": "Pip stands in the top left corner of a field, and wants to reach the bottom right. Pip may only step right, or down. How many different routes are there?",
-     "start": 0.2,
-     "end": 8.93
-    },
-    {
-     "id": "eb2",
-     "text": "Count them by hand, and you will lose track. So make a table. One entry for every square. The number of routes that reach it.",
-     "start": 9.83,
-     "end": 17.48
-    },
-    {
-     "id": "eb3",
-     "text": "The top row is easy. There is only one way. Straight along. And the left column is the same. Straight down.",
-     "start": 18.38,
-     "end": 25.02
-    },
-    {
-     "id": "eb4",
-     "text": "Now any other square. Pip arrives from above, or from the left. So its routes are the routes from above, plus the routes from the left.",
-     "start": 25.92,
-     "end": 33.77
-    },
-    {
-     "id": "eb5",
-     "text": "One plus one. Two. Then one plus two. Three. Then four.",
-     "start": 34.67,
-     "end": 38.55
-    },
-    {
-     "id": "eb6",
-     "text": "The next row. Three. Then three plus three. Six. So what goes in the last square?",
-     "start": 39.45,
-     "end": 44.64
-    },
-    {
-     "id": "eb7",
-     "text": "Ten. Four from above, and six from the left.",
-     "start": 45.84,
-     "end": 48.34
-    },
-    {
-     "id": "eb8",
-     "text": "It is the same recipe as before. Meaning, choice, start. The table just has two sides now.",
-     "start": 49.24,
-     "end": 55.08
-    },
-    {
-     "id": "eb9",
-     "text": "Fill it row by row. Every entry looks at its neighbours above, and to the left.",
-     "start": 55.98,
-     "end": 60.84
-    }
-   ],
-   "pauses": [
-    {
-     "id": "dqt1-q1",
-     "t": 44.84
-    }
-   ]
-  },
-  "dqt2": {
-   "src": "videos/dqt2.mp4",
-   "title": "Two Words, One Table",
-   "duration": 71.88,
-   "lines": [
-    {
-     "id": "ec1",
-     "text": "Two words. Tap, and apt. What is the longest run of letters they share, in the same order? Letters may be skipped.",
-     "start": 0.2,
-     "end": 7.29
-    },
-    {
-     "id": "ec2",
-     "text": "Make a table with two sides. The letters of tap run down the side. The letters of apt run along the top.",
-     "start": 8.19,
-     "end": 14.87
-    },
-    {
-     "id": "ec3",
-     "text": "One entry answers a smaller question. The longest shared part, of the two beginnings that end at this row, and at this column.",
-     "start": 15.77,
-     "end": 23.83
-    },
-    {
-     "id": "ec4",
-     "text": "When the two letters are the same, they extend whatever was shared before them. That is the entry up, and to the left. Plus one.",
-     "start": 24.73,
-     "end": 32.41
-    },
-    {
-     "id": "ec5",
-     "text": "When they differ, one of the two letters is not needed. So take the better of the entry above, and the entry on the left.",
-     "start": 33.31,
-     "end": 40.33
-    },
-    {
-     "id": "ec6",
-     "text": "The row for t. T matches only the last column. Zero, zero, one.",
-     "start": 41.23,
-     "end": 45.76
-    },
-    {
-     "id": "ec7",
-     "text": "The row for a. A matches the first column. One. And it stays one along the row.",
-     "start": 46.66,
-     "end": 52
-    },
-    {
-     "id": "ec8",
-     "text": "The row for p. First, a one from above. Then p against p. The same letter. So what goes here?",
-     "start": 52.9,
-     "end": 59.1
-    },
-    {
-     "id": "ec9",
-     "text": "Two. A, p. And the last entry keeps the two.",
-     "start": 60.3,
-     "end": 63.12
-    },
-    {
-     "id": "ec10",
-     "text": "Two words, one table. Same letters: the diagonal, plus one. Different letters: the better neighbour.",
-     "start": 64.02,
-     "end": 70.28
-    }
-   ],
-   "pauses": [
-    {
-     "id": "dqt2-q1",
-     "t": 59.3
     }
    ]
   },
@@ -23708,2666 +26250,6 @@ window.BURROW = {
     }
    ]
   },
-  "ka0": {
-   "src": "videos/ka0.mp4",
-   "title": "Be the Computer",
-   "duration": 41.3,
-   "lines": [
-    {
-     "id": "ja1",
-     "text": "Thinking in code. Warm up A. Be the computer.",
-     "start": 0.2,
-     "end": 3.2
-    },
-    {
-     "id": "ja2",
-     "text": "When code goes wrong, most people stare at it, and hope. There is a better habit. Run it in your head. One line at a time.",
-     "start": 3.9,
-     "end": 11.36
-    },
-    {
-     "id": "ja3",
-     "text": "The computer never guesses. It does exactly one small thing. Then the next. If you do the same, on paper, you see what it sees.",
-     "start": 12.26,
-     "end": 20.99
-    },
-    {
-     "id": "ja4",
-     "text": "Three lessons, and four puzzles. In every puzzle, the code is nearly right. Your job is to find out why it is not.",
-     "start": 21.89,
-     "end": 29.19
-    },
-    {
-     "id": "ja5",
-     "text": "Every working programmer does this. Reading a bug report. Reviewing a teammate's change. Or sitting in an interview, with no computer to run anything.",
-     "start": 30.09,
-     "end": 39.7
-    }
-   ],
-   "pauses": []
-  },
-  "kat1": {
-   "src": "videos/kat1.mp4",
-   "title": "The Trace Table",
-   "duration": 59.54,
-   "lines": [
-    {
-     "id": "jb1",
-     "text": "What does this code return? Do not guess. Become the computer.",
-     "start": 0.2,
-     "end": 3.92
-    },
-    {
-     "id": "jb2",
-     "text": "Make a table. One box for every variable. Total. And i.",
-     "start": 4.82,
-     "end": 8.56
-    },
-    {
-     "id": "jb3",
-     "text": "Line one. Total is zero. Write it down.",
-     "start": 9.46,
-     "end": 12.1
-    },
-    {
-     "id": "jb4",
-     "text": "Line two starts the loop. I is one. Is one at most three? Yes. So go in.",
-     "start": 13,
-     "end": 18.33
-    },
-    {
-     "id": "jb5",
-     "text": "Line three. One times two is two. Zero plus two. Total is two. Cross out the old value. Write the new one.",
-     "start": 19.23,
-     "end": 26.55
-    },
-    {
-     "id": "jb6",
-     "text": "Back to the top. I becomes two. Still at most three. Line three. Two times two is four. Total is six.",
-     "start": 27.55,
-     "end": 34.28
-    },
-    {
-     "id": "jb7",
-     "text": "I becomes three. Line three again. So what is total now?",
-     "start": 35.28,
-     "end": 38.58
-    },
-    {
-     "id": "jb8",
-     "text": "Twelve. Three times two is six, and six plus six is twelve. Now i becomes four. Is four at most three? No. The loop ends.",
-     "start": 39.78,
-     "end": 48.11
-    },
-    {
-     "id": "jb9",
-     "text": "Line five returns twelve. You did not guess. You know.",
-     "start": 49.11,
-     "end": 52.72
-    },
-    {
-     "id": "jb10",
-     "text": "One line at a time. Every change written down. That is a dry run.",
-     "start": 53.62,
-     "end": 57.94
-    }
-   ],
-   "pauses": [
-    {
-     "id": "kat1-q1",
-     "t": 38.78
-    }
-   ]
-  },
-  "kat2": {
-   "src": "videos/kat2.mp4",
-   "title": "Where Loops Begin and End",
-   "duration": 72.7,
-   "lines": [
-    {
-     "id": "jc1",
-     "text": "This loop should visit every door, in a row of four. On its last turn, it reads something that is not there. Why?",
-     "start": 0.2,
-     "end": 7.09
-    },
-    {
-     "id": "jc2",
-     "text": "Four doors. But look at their numbers. Zero, one, two, three. The last door is number three. Not four.",
-     "start": 8,
-     "end": 14.58
-    },
-    {
-     "id": "jc3",
-     "text": "The loop says: go on, while i is at most four. So i takes five values. Zero, one, two, three, four.",
-     "start": 15.48,
-     "end": 22.53
-    },
-    {
-     "id": "jc4",
-     "text": "Door four does not exist. Reading it gives undefined. This mistake is so common it has a name. Off by one.",
-     "start": 23.43,
-     "end": 30.92
-    },
-    {
-     "id": "jc5",
-     "text": "The fix. Go on while i is less than the length. Zero to three. Four turns.",
-     "start": 31.92,
-     "end": 37
-    },
-    {
-     "id": "jc6",
-     "text": "Before you trust any loop, ask three questions. Where does it start? When does it stop? And how many turns is that?",
-     "start": 37.9,
-     "end": 44.81
-    },
-    {
-     "id": "jc7",
-     "text": "Try it. I starts at one, and the loop goes on while i is less than four. How many turns?",
-     "start": 45.81,
-     "end": 51.81
-    },
-    {
-     "id": "jc8",
-     "text": "Three. One, two, three. And door zero was never visited.",
-     "start": 53.01,
-     "end": 56.79
-    },
-    {
-     "id": "jc9",
-     "text": "Going backwards, the same three questions. Start at length minus one. Go on while i is at least zero.",
-     "start": 57.69,
-     "end": 64.12
-    },
-    {
-     "id": "jc10",
-     "text": "Start. Stop. Count. And always check the first turn, and the last one. That is where loops break.",
-     "start": 65.02,
-     "end": 71.1
-    }
-   ],
-   "pauses": [
-    {
-     "id": "kat2-q1",
-     "t": 52.01
-    }
-   ]
-  },
-  "kat3": {
-   "src": "videos/kat3.mp4",
-   "title": "The Order of a Condition",
-   "duration": 72.1,
-   "lines": [
-    {
-     "id": "jd1",
-     "text": "Two checks, joined by and. Does it matter which one comes first? It can be the difference between working, and crashing.",
-     "start": 0.2,
-     "end": 7.45
-    },
-    {
-     "id": "jd2",
-     "text": "And means: both must be true. Or means: at least one.",
-     "start": 8.35,
-     "end": 11.8
-    },
-    {
-     "id": "jd3",
-     "text": "Here is the useful part. The computer reads left to right. And it stops, as soon as it knows the answer.",
-     "start": 12.7,
-     "end": 19.19
-    },
-    {
-     "id": "jd4",
-     "text": "With and, if the first check is false, the whole thing is false. So the second check is never run.",
-     "start": 20.09,
-     "end": 26.07
-    },
-    {
-     "id": "jd5",
-     "text": "Moss walks a row of words, looking for the first long one. Go on, while i is inside the row, and this word is short.",
-     "start": 26.97,
-     "end": 34.33
-    },
-    {
-     "id": "jd6",
-     "text": "No word here is long. So i reaches four. Is four inside the row? No. The computer stops right there. Word four is never touched.",
-     "start": 35.33,
-     "end": 43.83
-    },
-    {
-     "id": "jd7",
-     "text": "Now swap the two checks. Ask the word for its length first. Then ask whether it exists. When i is four, what happens?",
-     "start": 44.83,
-     "end": 52.41
-    },
-    {
-     "id": "jd8",
-     "text": "It asks for the length of a word that is not there. And the program crashes.",
-     "start": 53.61,
-     "end": 58.41
-    },
-    {
-     "id": "jd9",
-     "text": "So the check that keeps you safe, goes first. Is it inside? Is it not null? Only then, use it.",
-     "start": 59.31,
-     "end": 65.5
-    },
-    {
-     "id": "jd10",
-     "text": "Left to right. Stop when the answer is known. The guard goes first.",
-     "start": 66.4,
-     "end": 70.5
-    }
-   ],
-   "pauses": [
-    {
-     "id": "kat3-q1",
-     "t": 52.61
-    }
-   ]
-  },
-  "kb0": {
-   "src": "videos/kb0.mp4",
-   "title": "Who Else Is Holding This?",
-   "duration": 42.52,
-   "lines": [
-    {
-     "id": "je1",
-     "text": "Thinking in code. Warm up B. Values, copies, and changes.",
-     "start": 0.2,
-     "end": 4.14
-    },
-    {
-     "id": "je2",
-     "text": "You change one list. And another list changes too. You never touched it. It is the most confusing bug there is. Until you see what a name really is.",
-     "start": 4.84,
-     "end": 14.26
-    },
-    {
-     "id": "je3",
-     "text": "A name is not the thing. A name is a label, tied to the thing. And two labels can be tied to the same thing.",
-     "start": 15.16,
-     "end": 21.91
-    },
-    {
-     "id": "je4",
-     "text": "Two lessons, and four puzzles. In each puzzle, something changes that should not. Or does not change, when it should.",
-     "start": 22.81,
-     "end": 29.73
-    },
-    {
-     "id": "je5",
-     "text": "This is why editing a draft can change your saved settings by accident. Why an undo button needs a real copy. And why two screens showing one shopping cart always agree.",
-     "start": 30.63,
-     "end": 40.92
-    }
-   ],
-   "pauses": []
-  },
-  "kbt1": {
-   "src": "videos/kbt1.mp4",
-   "title": "A Name Is a Label",
-   "duration": 69.51,
-   "lines": [
-    {
-     "id": "jf1",
-     "text": "Line three changes b. So what is in a, afterwards? Most people say one, two, three. Let us see.",
-     "start": 0.2,
-     "end": 6.78
-    },
-    {
-     "id": "jf2",
-     "text": "Line one makes one array, and ties the label a to it.",
-     "start": 7.68,
-     "end": 11.14
-    },
-    {
-     "id": "jf3",
-     "text": "Line two does not make a second array. It ties a second label to the same one. One array. Two labels.",
-     "start": 12.04,
-     "end": 18.99
-    },
-    {
-     "id": "jf4",
-     "text": "So line three pushes a four into the only array there is. A sees it. B sees it.",
-     "start": 19.89,
-     "end": 25.25
-    },
-    {
-     "id": "jf5",
-     "text": "To get a real second array, you have to ask for a copy. The three dots spread the items into a new one.",
-     "start": 26.15,
-     "end": 32.2
-    },
-    {
-     "id": "jf6",
-     "text": "Now c has its own array. Push a five to c, and a does not change.",
-     "start": 33.1,
-     "end": 37.33
-    },
-    {
-     "id": "jf7",
-     "text": "One warning. That copy is one level deep. If the items are arrays themselves, the copy holds the very same inner arrays. So change an inner item through c. Does a see it?",
-     "start": 38.23,
-     "end": 49.62
-    },
-    {
-     "id": "jf8",
-     "text": "Yes. The outer lists are separate. But the inner ones are still shared.",
-     "start": 50.82,
-     "end": 54.84
-    },
-    {
-     "id": "jf9",
-     "text": "Numbers, text, true and false are different. Copy one, and you get a separate value. Every time.",
-     "start": 55.74,
-     "end": 61.78
-    },
-    {
-     "id": "jf10",
-     "text": "So before you change anything, ask one question. Who else holds a label to this?",
-     "start": 62.68,
-     "end": 67.91
-    }
-   ],
-   "pauses": [
-    {
-     "id": "kbt1-q1",
-     "t": 49.82
-    }
-   ]
-  },
-  "kbt2": {
-   "src": "videos/kbt2.mp4",
-   "title": "Functions That Change Things",
-   "duration": 71.62,
-   "lines": [
-    {
-     "id": "jg1",
-     "text": "You hand your list to a function. When it comes back, is your list still the same? It depends on one thing.",
-     "start": 0.2,
-     "end": 6.39
-    },
-    {
-     "id": "jg2",
-     "text": "Passing an array to a function ties one more label to it. The function's own name for it. No copy is made.",
-     "start": 7.29,
-     "end": 14.42
-    },
-    {
-     "id": "jg3",
-     "text": "So if the function pushes, it pushes into your array. That is called a side effect. A change you can see from outside.",
-     "start": 15.32,
-     "end": 22.62
-    },
-    {
-     "id": "jg4",
-     "text": "Sometimes that is exactly what you want. Sort this list in place. Fill in this grid.",
-     "start": 23.52,
-     "end": 29.33
-    },
-    {
-     "id": "jg5",
-     "text": "And sometimes it is a bug. The task said: return a new list, and do not touch the input.",
-     "start": 30.23,
-     "end": 36
-    },
-    {
-     "id": "jg6",
-     "text": "The safe version makes a new array, and returns it. Your list is untouched.",
-     "start": 36.9,
-     "end": 41.68
-    },
-    {
-     "id": "jg7",
-     "text": "One trap. Inside a function, you write: list equals a new array. Does the caller's list change?",
-     "start": 42.58,
-     "end": 48.79
-    },
-    {
-     "id": "jg8",
-     "text": "No. That line moves the function's own label to a new array. The caller's label still points at the old one.",
-     "start": 49.99,
-     "end": 56.4
-    },
-    {
-     "id": "jg9",
-     "text": "So there are two different things. Changing the thing a label is tied to. And moving the label.",
-     "start": 57.3,
-     "end": 63.05
-    },
-    {
-     "id": "jg10",
-     "text": "Read every task for this. Change it in place? Or return a new one? Then do exactly that.",
-     "start": 63.95,
-     "end": 70.02
-    }
-   ],
-   "pauses": [
-    {
-     "id": "kbt2-q1",
-     "t": 48.99
-    }
-   ]
-  },
-  "ka1i": {
-   "src": "videos/ka1i.mp4",
-   "title": "One Turn Short",
-   "duration": 22.63,
-   "lines": [
-    {
-     "id": "ka1i_1",
-     "text": "Pip wants every even number, from two, up to and including n. For six, that is two, four, and six.",
-     "start": 0.2,
-     "end": 6.54
-    },
-    {
-     "id": "ka1i_2",
-     "text": "The code is already written. But it is not quite right. Find the mistake, and fix it.",
-     "start": 7.24,
-     "end": 12.39
-    },
-    {
-     "id": "ka1i_3",
-     "text": "It returns two and four. The six is missing.",
-     "start": 13.09,
-     "end": 15.98
-    },
-    {
-     "id": "ka1i_4",
-     "text": "Do not stare at it. Trace it. What is i, when the loop stops? Your turn.",
-     "start": 16.68,
-     "end": 21.03
-    }
-   ],
-   "pauses": []
-  },
-  "ka1s": {
-   "src": "videos/ka1s.mp4",
-   "title": "The last turn never ran",
-   "duration": 61.55,
-   "lines": [
-    {
-     "id": "ka1s_1",
-     "text": "Do not guess where the bug is. Run the loop by hand, and watch i.",
-     "start": 0.2,
-     "end": 4.05
-    },
-    {
-     "id": "ka1s_2",
-     "text": "A missing last item usually means the loop stopped one turn too early.",
-     "start": 4.8,
-     "end": 9.3
-    },
-    {
-     "id": "ka1s_3",
-     "text": "N is six. Line three starts i at two. Push it.",
-     "start": 10.05,
-     "end": 13.47
-    },
-    {
-     "id": "ka1s_4",
-     "text": "I becomes four. Push it.",
-     "start": 14.22,
-     "end": 15.73
-    },
-    {
-     "id": "ka1s_5",
-     "text": "I becomes six. Now the check. The old code asked: is six less than six? What is the answer?",
-     "start": 16.48,
-     "end": 22.68
-    },
-    {
-     "id": "ka1s_6",
-     "text": "No. So the loop stopped, one turn too early. The six was never pushed.",
-     "start": 23.88,
-     "end": 28.35
-    },
-    {
-     "id": "ka1s_7",
-     "text": "The task said: up to, and including. So the check must be: at most. Six is at most six. Push it.",
-     "start": 29.1,
-     "end": 35.46
-    },
-    {
-     "id": "ka1s_8",
-     "text": "I becomes eight. Not at most six. The loop ends, and line six returns two, four, six.",
-     "start": 36.21,
-     "end": 42.03
-    },
-    {
-     "id": "ka1s_9",
-     "text": "The habit. Before you trust a loop, test its last turn by hand.",
-     "start": 43.13,
-     "end": 47.09
-    },
-    {
-     "id": "ka1s_10",
-     "text": "Including the end means, at most. Stopping before the end means, less than.",
-     "start": 47.84,
-     "end": 52.56
-    },
-    {
-     "id": "ka1s_11",
-     "text": "A report that should run from the first to the thirty first, and stops at the thirtieth, has exactly this bug.",
-     "start": 53.31,
-     "end": 59.95
-    }
-   ],
-   "pauses": [
-    {
-     "id": "ka1s-q",
-     "t": 22.88
-    }
-   ]
-  },
-  "ka2i": {
-   "src": "videos/ka2i.mp4",
-   "title": "Backwards",
-   "duration": 23.51,
-   "lines": [
-    {
-     "id": "ka2i_1",
-     "text": "Moss wants a word written backwards. Moss, becomes s, s, o, m.",
-     "start": 0.2,
-     "end": 4.39
-    },
-    {
-     "id": "ka2i_2",
-     "text": "The code walks the word from the end. But it has two small mistakes. Find them both.",
-     "start": 5.09,
-     "end": 10.63
-    },
-    {
-     "id": "ka2i_3",
-     "text": "Four letters. So the last one sits at position three. Not four.",
-     "start": 11.33,
-     "end": 15.49
-    },
-    {
-     "id": "ka2i_4",
-     "text": "Trace the first turn. Then the last turn. Which doors does the code open? Your turn.",
-     "start": 16.19,
-     "end": 21.91
-    }
-   ],
-   "pauses": []
-  },
-  "ka2s": {
-   "src": "videos/ka2s.mp4",
-   "title": "Both ends were wrong",
-   "duration": 71.93,
-   "lines": [
-    {
-     "id": "ka2s_1",
-     "text": "A loop has two ends. Its first turn, and its last turn. Check both by hand.",
-     "start": 0.2,
-     "end": 5.49
-    },
-    {
-     "id": "ka2s_2",
-     "text": "Going backwards, the first turn is the last position. Length minus one. And the last turn is position zero.",
-     "start": 6.24,
-     "end": 13.13
-    },
-    {
-     "id": "ka2s_3",
-     "text": "Four letters, at positions zero to three. The old code started at word dot length. Four. What is at position four?",
-     "start": 13.88,
-     "end": 21.67
-    },
-    {
-     "id": "ka2s_4",
-     "text": "Nothing. So the answer began with the word, undefined. The first fix. Start at length minus one. Three.",
-     "start": 22.87,
-     "end": 29.84
-    },
-    {
-     "id": "ka2s_5",
-     "text": "Position three. S. Then two. S. Then one. O.",
-     "start": 30.59,
-     "end": 33.84
-    },
-    {
-     "id": "ka2s_6",
-     "text": "Now i is zero. The old code asked: is zero greater than zero? No. It stopped, and the m was lost.",
-     "start": 34.59,
-     "end": 41.24
-    },
-    {
-     "id": "ka2s_7",
-     "text": "The second fix. Go on while i is at least zero. So position zero is read too. M.",
-     "start": 41.99,
-     "end": 48.1
-    },
-    {
-     "id": "ka2s_8",
-     "text": "I becomes minus one. The loop ends. Line six returns s, s, o, m.",
-     "start": 48.85,
-     "end": 53.83
-    },
-    {
-     "id": "ka2s_9",
-     "text": "Going backwards. Start at length minus one. Stop after zero.",
-     "start": 54.93,
-     "end": 58.79
-    },
-    {
-     "id": "ka2s_10",
-     "text": "Two mistakes, and both were at the ends. That is where to look first.",
-     "start": 59.54,
-     "end": 63.58
-    },
-    {
-     "id": "ka2s_11",
-     "text": "Your messages, newest first. Or an undo list. Both are a loop that walks backwards like this.",
-     "start": 64.33,
-     "end": 70.33
-    }
-   ],
-   "pauses": [
-    {
-     "id": "ka2s-q",
-     "t": 21.87
-    }
-   ]
-  },
-  "ka3i": {
-   "src": "videos/ka3i.mp4",
-   "title": "The First Long Word",
-   "duration": 24.57,
-   "lines": [
-    {
-     "id": "ka3i_1",
-     "text": "Pip is looking for the first word with more than three letters. Sun, and oak. Neither is long enough.",
-     "start": 0.2,
-     "end": 6.4
-    },
-    {
-     "id": "ka3i_2",
-     "text": "So the answer should be null. But this code crashes instead. Find out why.",
-     "start": 7.1,
-     "end": 11.84
-    },
-    {
-     "id": "ka3i_3",
-     "text": "It works fine when a long word exists. It only breaks when there is none.",
-     "start": 12.54,
-     "end": 16.93
-    },
-    {
-     "id": "ka3i_4",
-     "text": "Trace it. After two turns, i is two. What does the code ask first? Your turn.",
-     "start": 17.63,
-     "end": 22.97
-    }
-   ],
-   "pauses": []
-  },
-  "ka3s": {
-   "src": "videos/ka3s.mp4",
-   "title": "The guard goes first",
-   "duration": 66.64,
-   "lines": [
-    {
-     "id": "ka3s_1",
-     "text": "With and, the computer checks the left side first. If it is false, it never looks at the right side.",
-     "start": 0.2,
-     "end": 6.24
-    },
-    {
-     "id": "ka3s_2",
-     "text": "So the check that keeps you safe, must come first.",
-     "start": 6.99,
-     "end": 9.79
-    },
-    {
-     "id": "ka3s_3",
-     "text": "N is three. I starts at zero. Sun has three letters. Not more than three. So i moves on.",
-     "start": 10.54,
-     "end": 16.88
-    },
-    {
-     "id": "ka3s_4",
-     "text": "Oak. Three letters as well. I moves on, to two.",
-     "start": 17.63,
-     "end": 20.56
-    },
-    {
-     "id": "ka3s_5",
-     "text": "Now i is two. There is no word at position two. The old code asked for its length first. What happens?",
-     "start": 21.31,
-     "end": 28.16
-    },
-    {
-     "id": "ka3s_6",
-     "text": "It crashes. You cannot ask nothing, for its length.",
-     "start": 29.36,
-     "end": 32.3
-    },
-    {
-     "id": "ka3s_7",
-     "text": "The fix is only the order. First ask: is i still inside the row? Two is not less than two. The computer stops right there. The second check never runs.",
-     "start": 33.05,
-     "end": 43.53
-    },
-    {
-     "id": "ka3s_8",
-     "text": "Line six sees that i is past the end, and returns null.",
-     "start": 44.28,
-     "end": 48.02
-    },
-    {
-     "id": "ka3s_9",
-     "text": "Left to right. Stop when the answer is known. So the guard goes first.",
-     "start": 49.12,
-     "end": 53.6
-    },
-    {
-     "id": "ka3s_10",
-     "text": "The same order protects you from null, and from empty lists.",
-     "start": 54.35,
-     "end": 58.14
-    },
-    {
-     "id": "ka3s_11",
-     "text": "Real code is full of this. User, and user dot name. Check that it exists. Then use it.",
-     "start": 58.89,
-     "end": 65.04
-    }
-   ],
-   "pauses": [
-    {
-     "id": "ka3s-q",
-     "t": 28.36
-    }
-   ]
-  },
-  "ka4i": {
-   "src": "videos/ka4i.mp4",
-   "title": "One Too Many",
-   "duration": 24.27,
-   "lines": [
-    {
-     "id": "ka4i_1",
-     "text": "Three numbers in a row. Pip wants the gaps between neighbours. Five minus three. Then nine minus five.",
-     "start": 0.2,
-     "end": 6.99
-    },
-    {
-     "id": "ka4i_2",
-     "text": "Two, and four. But this code returns three items. And the last one is not even a number.",
-     "start": 7.69,
-     "end": 13.65
-    },
-    {
-     "id": "ka4i_3",
-     "text": "It is nearly right. One thing is off.",
-     "start": 14.35,
-     "end": 16.61
-    },
-    {
-     "id": "ka4i_4",
-     "text": "Three numbers. How many gaps? And how many turns does the loop make? Your turn.",
-     "start": 17.31,
-     "end": 22.67
-    }
-   ],
-   "pauses": []
-  },
-  "ka4s": {
-   "src": "videos/ka4s.mp4",
-   "title": "Looking ahead? Stop early",
-   "duration": 59.99,
-   "lines": [
-    {
-     "id": "ka4s_1",
-     "text": "Count first. Three numbers have two gaps. So the loop should make two turns.",
-     "start": 0.2,
-     "end": 5.05
-    },
-    {
-     "id": "ka4s_2",
-     "text": "The body reads the door after i. So on the very last door, there is nothing to read.",
-     "start": 5.8,
-     "end": 10.93
-    },
-    {
-     "id": "ka4s_3",
-     "text": "I is zero. Five minus three. Two.",
-     "start": 11.68,
-     "end": 13.95
-    },
-    {
-     "id": "ka4s_4",
-     "text": "I is one. Nine minus five. Four.",
-     "start": 14.7,
-     "end": 16.92
-    },
-    {
-     "id": "ka4s_5",
-     "text": "The old code went on, to i equals two. It asked for the number after the nine. What did it get?",
-     "start": 17.67,
-     "end": 23.59
-    },
-    {
-     "id": "ka4s_6",
-     "text": "Undefined. And undefined minus nine, is not a number. That was the extra item.",
-     "start": 24.79,
-     "end": 30.43
-    },
-    {
-     "id": "ka4s_7",
-     "text": "The body looks one door ahead. So the loop must stop one door early. Less than length, minus one.",
-     "start": 31.18,
-     "end": 37.23
-    },
-    {
-     "id": "ka4s_8",
-     "text": "Two turns. Line six returns two, and four.",
-     "start": 37.98,
-     "end": 41.03
-    },
-    {
-     "id": "ka4s_9",
-     "text": "Whenever the body reads i plus one, the loop stops at length minus one.",
-     "start": 42.13,
-     "end": 46.72
-    },
-    {
-     "id": "ka4s_10",
-     "text": "Count the turns you expect. Then check that the loop makes exactly that many.",
-     "start": 47.47,
-     "end": 52.09
-    },
-    {
-     "id": "ka4s_11",
-     "text": "A chart of daily change, today minus yesterday, has one bar fewer than there are days.",
-     "start": 52.84,
-     "end": 58.39
-    }
-   ],
-   "pauses": [
-    {
-     "id": "ka4s-q",
-     "t": 23.79
-    }
-   ]
-  },
-  "kc0": {
-   "src": "videos/kc0.mp4",
-   "title": "Where Do You Even Start?",
-   "duration": 37.7,
-   "lines": [
-    {
-     "id": "jh1",
-     "text": "Thinking in code. Warm up C. From words, to code.",
-     "start": 0.2,
-     "end": 3.45
-    },
-    {
-     "id": "jh2",
-     "text": "A task arrives as a paragraph of words. And the blank editor just sits there. Where do you even start?",
-     "start": 4.15,
-     "end": 10.4
-    },
-    {
-     "id": "jh3",
-     "text": "Not with code. With three questions. What goes in? What comes out? And what are the rules?",
-     "start": 11.3,
-     "end": 16.65
-    },
-    {
-     "id": "jh4",
-     "text": "Then you solve one tiny example by hand, and write down the steps you took. Two lessons, and four puzzles.",
-     "start": 17.55,
-     "end": 24.48
-    },
-    {
-     "id": "jh5",
-     "text": "A cook reads the whole recipe before touching a pan. A builder draws the plan before buying bricks. And a programmer writes the steps in plain words, before writing code.",
-     "start": 25.38,
-     "end": 36.1
-    }
-   ],
-   "pauses": []
-  },
-  "kct1": {
-   "src": "videos/kct1.mp4",
-   "title": "In, Out, and the Rules",
-   "duration": 66.95,
-   "lines": [
-    {
-     "id": "ji1",
-     "text": "Here is a task. Given the minutes a film lasts, return a label, like two h, zero five, min. Do not write code yet.",
-     "start": 0.2,
-     "end": 7.65
-    },
-    {
-     "id": "ji2",
-     "text": "Question one. What goes in? One number. The minutes. Say, one hundred and twenty five.",
-     "start": 8.55,
-     "end": 14.09
-    },
-    {
-     "id": "ji3",
-     "text": "Question two. What comes out? A piece of text. Two h, zero five, min.",
-     "start": 14.99,
-     "end": 19.68
-    },
-    {
-     "id": "ji4",
-     "text": "Question three. What are the rules? Look closely at the example. The minutes always have two digits. Five is written as zero five.",
-     "start": 20.58,
-     "end": 28.76
-    },
-    {
-     "id": "ji5",
-     "text": "Now say the task back, in your own words. Split the minutes into whole hours, and what is left. Show what is left with two digits.",
-     "start": 29.76,
-     "end": 37.76
-    },
-    {
-     "id": "ji6",
-     "text": "Then do one example by hand. One hundred and twenty five. Sixty goes in twice. That is two hours. And five are left.",
-     "start": 38.76,
-     "end": 46.71
-    },
-    {
-     "id": "ji7",
-     "text": "Now a nasty one. Exactly sixty minutes. What should the label say?",
-     "start": 47.71,
-     "end": 52.06
-    },
-    {
-     "id": "ji8",
-     "text": "One h, zero zero, min. You found that case before writing a single line. That is the point.",
-     "start": 53.26,
-     "end": 59.17
-    },
-    {
-     "id": "ji9",
-     "text": "In. Out. Rules. Say it back. One example by hand. Then, and only then, code.",
-     "start": 60.07,
-     "end": 65.35
-    }
-   ],
-   "pauses": [
-    {
-     "id": "kct1-q1",
-     "t": 52.26
-    }
-   ]
-  },
-  "kct2": {
-   "src": "videos/kct2.mp4",
-   "title": "Steps First, Code Last",
-   "duration": 62.21,
-   "lines": [
-    {
-     "id": "jj1",
-     "text": "You understand the task. But the editor is still blank. Now what? Now you write the steps. In plain words.",
-     "start": 0.2,
-     "end": 7.01
-    },
-    {
-     "id": "jj2",
-     "text": "Step one. Work out the whole hours. Step two. Work out the minutes left over.",
-     "start": 7.91,
-     "end": 12.63
-    },
-    {
-     "id": "jj3",
-     "text": "Step three. Make the left over minutes two digits long. Step four. Join the pieces into the label.",
-     "start": 13.53,
-     "end": 19.62
-    },
-    {
-     "id": "jj4",
-     "text": "Each step is small enough that you already know how to do it. That is the test of a good step.",
-     "start": 20.52,
-     "end": 25.7
-    },
-    {
-     "id": "jj5",
-     "text": "And if a step still feels hard, break that step into smaller ones.",
-     "start": 26.6,
-     "end": 30.72
-    },
-    {
-     "id": "jj6",
-     "text": "Notice the order. Step three uses the result of step two. And step four? What does it need, before it can run?",
-     "start": 31.62,
-     "end": 38.85
-    },
-    {
-     "id": "jj7",
-     "text": "The hours, and the two digits. So it has to come last. The order comes from what each step needs.",
-     "start": 40.05,
-     "end": 45.99
-    },
-    {
-     "id": "jj8",
-     "text": "Now the code is almost a translation. One step. One line.",
-     "start": 46.89,
-     "end": 51.06
-    },
-    {
-     "id": "jj9",
-     "text": "And when something breaks, you know which step to look at.",
-     "start": 52.06,
-     "end": 55.01
-    },
-    {
-     "id": "jj10",
-     "text": "Words first. Small steps. In the order they need each other. Then translate.",
-     "start": 55.91,
-     "end": 60.61
-    }
-   ],
-   "pauses": [
-    {
-     "id": "kct2-q1",
-     "t": 39.05
-    }
-   ]
-  },
-  "kb1i": {
-   "src": "videos/kb1i.mp4",
-   "title": "Sorted, Hands Off",
-   "duration": 21.58,
-   "lines": [
-    {
-     "id": "kb1i_1",
-     "text": "Pip has a row of numbers. Three, one, two. Moss wants them sorted.",
-     "start": 0.2,
-     "end": 4.58
-    },
-    {
-     "id": "kb1i_2",
-     "text": "Return a new, sorted row. And leave the row you were given exactly as it is.",
-     "start": 5.28,
-     "end": 10.36
-    },
-    {
-     "id": "kb1i_3",
-     "text": "The code returns one, two, three. That looks right. But the test still fails.",
-     "start": 11.06,
-     "end": 16.17
-    },
-    {
-     "id": "kb1i_4",
-     "text": "What happened to the row that was handed in? Your turn.",
-     "start": 16.87,
-     "end": 19.98
-    }
-   ],
-   "pauses": []
-  },
-  "kb1s": {
-   "src": "videos/kb1s.mp4",
-   "title": "Copy first, then change",
-   "duration": 55.13,
-   "lines": [
-    {
-     "id": "kb1s_1",
-     "text": "Sort does not make a new array. It re-orders the array it is called on.",
-     "start": 0.2,
-     "end": 4.6
-    },
-    {
-     "id": "kb1s_2",
-     "text": "And nums is the caller's array. So make a real copy first, and sort that.",
-     "start": 5.35,
-     "end": 10.02
-    },
-    {
-     "id": "kb1s_3",
-     "text": "The old code called sort on nums. Whose array is that?",
-     "start": 10.77,
-     "end": 14.25
-    },
-    {
-     "id": "kb1s_4",
-     "text": "The caller's. No copy was made. So their row became one, two, three, behind their back.",
-     "start": 15.45,
-     "end": 21.05
-    },
-    {
-     "id": "kb1s_5",
-     "text": "The fix starts on line two. The three dots spread the numbers into a new array.",
-     "start": 21.8,
-     "end": 26.55
-    },
-    {
-     "id": "kb1s_6",
-     "text": "Line three sorts the copy. Only the copy.",
-     "start": 27.3,
-     "end": 30.13
-    },
-    {
-     "id": "kb1s_7",
-     "text": "Line four returns it. And the original row is untouched.",
-     "start": 30.88,
-     "end": 34.6
-    },
-    {
-     "id": "kb1s_8",
-     "text": "Sort, reverse, push, pop and splice all change the array they are called on.",
-     "start": 35.7,
-     "end": 40.3
-    },
-    {
-     "id": "kb1s_9",
-     "text": "If you must not change the input, copy before you touch it.",
-     "start": 41.05,
-     "end": 44.64
-    },
-    {
-     "id": "kb1s_10",
-     "text": "A table on a web page that you sort by price. If the code sorts the original list, every other view of that list changes too.",
-     "start": 45.39,
-     "end": 53.53
-    }
-   ],
-   "pauses": [
-    {
-     "id": "kb1s-q",
-     "t": 14.45
-    }
-   ]
-  },
-  "kb2i": {
-   "src": "videos/kb2i.mp4",
-   "title": "A Grid of Zeros",
-   "duration": 19.41,
-   "lines": [
-    {
-     "id": "kb2i_1",
-     "text": "Pip needs a grid of zeros. Two rows, two columns.",
-     "start": 0.2,
-     "end": 3.82
-    },
-    {
-     "id": "kb2i_2",
-     "text": "The code builds it, and it looks perfect. Until someone writes a seven into the top left square.",
-     "start": 4.52,
-     "end": 10.29
-    },
-    {
-     "id": "kb2i_3",
-     "text": "Then the square below it turns into a seven as well.",
-     "start": 10.99,
-     "end": 14.04
-    },
-    {
-     "id": "kb2i_4",
-     "text": "How many rows did the code really make? Your turn.",
-     "start": 14.74,
-     "end": 17.81
-    }
-   ],
-   "pauses": []
-  },
-  "kb2s": {
-   "src": "videos/kb2s.mp4",
-   "title": "One row, shown twice",
-   "duration": 59.76,
-   "lines": [
-    {
-     "id": "kb2s_1",
-     "text": "The old code made one row. Then it filled the grid with that same row, again and again.",
-     "start": 0.2,
-     "end": 5.54
-    },
-    {
-     "id": "kb2s_2",
-     "text": "So the grid does not hold two rows. It holds two labels, tied to one row.",
-     "start": 6.29,
-     "end": 11.27
-    },
-    {
-     "id": "kb2s_3",
-     "text": "It looks like a grid of four zeros. Now write a seven into the top left square. What does the grid show?",
-     "start": 12.02,
-     "end": 18.19
-    },
-    {
-     "id": "kb2s_4",
-     "text": "Both rows show the seven. Because there is only one row.",
-     "start": 19.39,
-     "end": 22.95
-    },
-    {
-     "id": "kb2s_5",
-     "text": "The fix. A loop that runs once per row. And inside it, line four creates a brand new array, every turn.",
-     "start": 23.7,
-     "end": 30.58
-    },
-    {
-     "id": "kb2s_6",
-     "text": "The second turn makes a second, separate row.",
-     "start": 31.33,
-     "end": 33.98
-    },
-    {
-     "id": "kb2s_7",
-     "text": "Now the seven lands in one square only.",
-     "start": 34.73,
-     "end": 36.99
-    },
-    {
-     "id": "kb2s_8",
-     "text": "Fill with a number is fine. Numbers are copied. Fill with an array is a trap. The same array goes everywhere.",
-     "start": 38.09,
-     "end": 44.99
-    },
-    {
-     "id": "kb2s_9",
-     "text": "Anything that must be separate, has to be created separately. Once per turn.",
-     "start": 45.74,
-     "end": 50.45
-    },
-    {
-     "id": "kb2s_10",
-     "text": "A calendar that copies one empty week into every row. Add a meeting on Monday, and it shows up in every week.",
-     "start": 51.2,
-     "end": 58.16
-    }
-   ],
-   "pauses": [
-    {
-     "id": "kb2s-q",
-     "t": 18.39
-    }
-   ]
-  },
-  "kb3i": {
-   "src": "videos/kb3i.mp4",
-   "title": "One More Point",
-   "duration": 18.92,
-   "lines": [
-    {
-     "id": "kb3i_1",
-     "text": "A player card. Name, Pip. Score, two.",
-     "start": 0.2,
-     "end": 2.7
-    },
-    {
-     "id": "kb3i_2",
-     "text": "Return a new card, with the score one higher. And leave the old card as it was.",
-     "start": 3.4,
-     "end": 8.56
-    },
-    {
-     "id": "kb3i_3",
-     "text": "The code hands back a card with score three. But the old card says three as well.",
-     "start": 9.26,
-     "end": 14.12
-    },
-    {
-     "id": "kb3i_4",
-     "text": "How many cards are there, really? Your turn.",
-     "start": 14.81,
-     "end": 17.32
-    }
-   ],
-   "pauses": []
-  },
-  "kb3s": {
-   "src": "videos/kb3s.mp4",
-   "title": "A new card, not the old one",
-   "duration": 62,
-   "lines": [
-    {
-     "id": "kb3s_1",
-     "text": "The old code wrote into the card it was given. And handed the same card back.",
-     "start": 0.2,
-     "end": 5.11
-    },
-    {
-     "id": "kb3s_2",
-     "text": "Make a second card instead. Copy every field. Then set the one that changes.",
-     "start": 5.86,
-     "end": 11.15
-    },
-    {
-     "id": "kb3s_3",
-     "text": "The old code wrote the new score into player. So what does the caller's card say now?",
-     "start": 11.9,
-     "end": 16.85
-    },
-    {
-     "id": "kb3s_4",
-     "text": "Three. It is the same card. The old score is gone.",
-     "start": 18.05,
-     "end": 21.29
-    },
-    {
-     "id": "kb3s_5",
-     "text": "The fix. The curly brackets on line two make a new object. The three dots copy every field of the old one into it.",
-     "start": 22.04,
-     "end": 29.74
-    },
-    {
-     "id": "kb3s_6",
-     "text": "Then score is written again, after the copy. Two plus one. It replaces the copied two.",
-     "start": 30.49,
-     "end": 35.98
-    },
-    {
-     "id": "kb3s_7",
-     "text": "The new card is returned. And the old one still says two.",
-     "start": 36.73,
-     "end": 40.22
-    },
-    {
-     "id": "kb3s_8",
-     "text": "Curly brackets with three dots copy an object, one level deep. Just like the square brackets do for an array.",
-     "start": 41.32,
-     "end": 48.1
-    },
-    {
-     "id": "kb3s_9",
-     "text": "Later fields win. So the changed field goes after the spread.",
-     "start": 48.85,
-     "end": 52.83
-    },
-    {
-     "id": "kb3s_10",
-     "text": "An undo button depends on this. If every change makes a new object, the old one is still there to go back to.",
-     "start": 53.58,
-     "end": 60.4
-    }
-   ],
-   "pauses": [
-    {
-     "id": "kb3s-q",
-     "t": 17.05
-    }
-   ]
-  },
-  "kb4i": {
-   "src": "videos/kb4i.mp4",
-   "title": "Clear the Row",
-   "duration": 21.97,
-   "lines": [
-    {
-     "id": "kb4i_1",
-     "text": "A row of three numbers. This time, the task is to change the row itself.",
-     "start": 0.2,
-     "end": 4.79
-    },
-    {
-     "id": "kb4i_2",
-     "text": "Set every item to zero. Return nothing.",
-     "start": 5.49,
-     "end": 8.26
-    },
-    {
-     "id": "kb4i_3",
-     "text": "The code loops over the row, and sets x to zero each time. No error. And nothing changes.",
-     "start": 8.96,
-     "end": 15.22
-    },
-    {
-     "id": "kb4i_4",
-     "text": "So what is x? And what does x equals zero really change? Your turn.",
-     "start": 15.92,
-     "end": 20.37
-    }
-   ],
-   "pauses": []
-  },
-  "kb4s": {
-   "src": "videos/kb4s.mp4",
-   "title": "Write through the index",
-   "duration": 61.71,
-   "lines": [
-    {
-     "id": "kb4s_1",
-     "text": "In the old loop, x was not a door of the row. It was a new variable, holding a copy of the number.",
-     "start": 0.2,
-     "end": 6.58
-    },
-    {
-     "id": "kb4s_2",
-     "text": "To change the row, you have to write into the row. Through its index.",
-     "start": 7.33,
-     "end": 11.36
-    },
-    {
-     "id": "kb4s_3",
-     "text": "The old loop. X receives a copy of the first number. Four.",
-     "start": 12.11,
-     "end": 15.93
-    },
-    {
-     "id": "kb4s_4",
-     "text": "Then x is set to zero. What is in the row now?",
-     "start": 16.68,
-     "end": 19.84
-    },
-    {
-     "id": "kb4s_5",
-     "text": "Still four. Only the copy changed. The row was never written to.",
-     "start": 21.04,
-     "end": 25.17
-    },
-    {
-     "id": "kb4s_6",
-     "text": "The fix. Loop with an index. Line three writes zero into door i, of the row itself.",
-     "start": 25.92,
-     "end": 31.38
-    },
-    {
-     "id": "kb4s_7",
-     "text": "Then door one. And door two.",
-     "start": 32.13,
-     "end": 33.99
-    },
-    {
-     "id": "kb4s_8",
-     "text": "The function returns nothing. The caller's own row is now all zeros.",
-     "start": 34.74,
-     "end": 39.4
-    },
-    {
-     "id": "kb4s_9",
-     "text": "A loop variable holding a number is a copy. Assigning to it changes nothing outside.",
-     "start": 40.5,
-     "end": 45.86
-    },
-    {
-     "id": "kb4s_10",
-     "text": "In place means: write through the index, or call a method that changes the array.",
-     "start": 46.61,
-     "end": 51.52
-    },
-    {
-     "id": "kb4s_11",
-     "text": "Marking every notification as read. If the code only changes its own copies, the little red badge never goes away.",
-     "start": 52.27,
-     "end": 60.11
-    }
-   ],
-   "pauses": [
-    {
-     "id": "kb4s-q",
-     "t": 20.04
-    }
-   ]
-  },
-  "kd0": {
-   "src": "videos/kd0.mp4",
-   "title": "It Worked on the Example",
-   "duration": 39.55,
-   "lines": [
-    {
-     "id": "jk1",
-     "text": "Thinking in code. Warm up D. Test it, break it, fix it.",
-     "start": 0.2,
-     "end": 3.8
-    },
-    {
-     "id": "jk2",
-     "text": "Your code works on the example. So it is finished? Not yet. The example is the easy case.",
-     "start": 4.5,
-     "end": 10.45
-    },
-    {
-     "id": "jk3",
-     "text": "Good programmers try to break their own code, before someone else does. Empty input. A single item. The very ends.",
-     "start": 11.35,
-     "end": 19.18
-    },
-    {
-     "id": "jk4",
-     "text": "And when it does break, they do not guess. They find the first value that is wrong. Two lessons, and four puzzles.",
-     "start": 20.08,
-     "end": 27.21
-    },
-    {
-     "id": "jk5",
-     "text": "A cash machine, asked for zero. A form, sent with an empty name. A list with exactly one item. Real users find these cases on the first day.",
-     "start": 28.11,
-     "end": 37.95
-    }
-   ],
-   "pauses": []
-  },
-  "kdt1": {
-   "src": "videos/kdt1.mp4",
-   "title": "Try to Break It",
-   "duration": 66.97,
-   "lines": [
-    {
-     "id": "jl1",
-     "text": "This function returns the average of a list. Two, four, six. It says four. Correct. So are we done?",
-     "start": 0.2,
-     "end": 6.71
-    },
-    {
-     "id": "jl2",
-     "text": "One passing example proves very little. Now try to break it. There is a short list of inputs that break most code.",
-     "start": 7.61,
-     "end": 14.65
-    },
-    {
-     "id": "jl3",
-     "text": "First. Nothing at all. An empty list.",
-     "start": 15.55,
-     "end": 17.95
-    },
-    {
-     "id": "jl4",
-     "text": "Zero, divided by zero. The answer is, not a number. The function is broken. And the example never showed it.",
-     "start": 18.85,
-     "end": 26.11
-    },
-    {
-     "id": "jl5",
-     "text": "Second. Exactly one item. Third. The ends. The first item, the last item, and the limit itself.",
-     "start": 27.11,
-     "end": 33.48
-    },
-    {
-     "id": "jl6",
-     "text": "Fourth. Repeats, zeros, and negative numbers.",
-     "start": 34.38,
-     "end": 37.71
-    },
-    {
-     "id": "jl7",
-     "text": "Try one. This function finds the largest number. It starts with best equals zero. Which input breaks it?",
-     "start": 38.61,
-     "end": 45.52
-    },
-    {
-     "id": "jl8",
-     "text": "Only negative numbers. Every one of them is below zero. So it answers zero, which is not even in the list.",
-     "start": 46.72,
-     "end": 53.74
-    },
-    {
-     "id": "jl9",
-     "text": "The fix is to start with the first item, instead of a made up number.",
-     "start": 54.64,
-     "end": 58.8
-    },
-    {
-     "id": "jl10",
-     "text": "Empty. One. The ends. Repeats and negatives. Test those, before anyone else does.",
-     "start": 59.7,
-     "end": 65.37
-    }
-   ],
-   "pauses": [
-    {
-     "id": "kdt1-q1",
-     "t": 45.72
-    }
-   ]
-  },
-  "kdt2": {
-   "src": "videos/kdt2.mp4",
-   "title": "Find the First Wrong Value",
-   "duration": 65.39,
-   "lines": [
-    {
-     "id": "jm1",
-     "text": "This should return the last word, in capitals. Instead, it crashes on line three. So the bug is on line three. Right?",
-     "start": 0.2,
-     "end": 7.78
-    },
-    {
-     "id": "jm2",
-     "text": "Not necessarily. A crash only tells you where the damage showed up. Not where it started.",
-     "start": 8.68,
-     "end": 14.29
-    },
-    {
-     "id": "jm3",
-     "text": "So do not guess. Walk the values, from the top. And check each one against what you expect.",
-     "start": 15.19,
-     "end": 20.72
-    },
-    {
-     "id": "jm4",
-     "text": "Line one. The words. Pip, likes, seeds. Three words. Exactly what we expect. Good.",
-     "start": 21.62,
-     "end": 27.44
-    },
-    {
-     "id": "jm5",
-     "text": "Line two. Last should be seeds. What does it actually hold?",
-     "start": 28.34,
-     "end": 31.92
-    },
-    {
-     "id": "jm6",
-     "text": "Undefined. Three words sit at positions zero to two. Position three is empty.",
-     "start": 33.12,
-     "end": 38.64
-    },
-    {
-     "id": "jm7",
-     "text": "That is the first wrong value. So the bug is on line two. Line three was only where it blew up.",
-     "start": 39.54,
-     "end": 45.71
-    },
-    {
-     "id": "jm8",
-     "text": "Fix line two. Length, minus one. Now last is seeds. And line three works, without any change.",
-     "start": 46.61,
-     "end": 52.85
-    },
-    {
-     "id": "jm9",
-     "text": "The method. Say what each value should be. Look at what it is. Stop at the first one that differs.",
-     "start": 53.75,
-     "end": 59.69
-    },
-    {
-     "id": "jm10",
-     "text": "Do not fix the crash. Fix the first wrong value.",
-     "start": 60.59,
-     "end": 63.79
-    }
-   ],
-   "pauses": [
-    {
-     "id": "kdt2-q1",
-     "t": 32.12
-    }
-   ]
-  },
-  "kd1i": {
-   "src": "videos/kd1i.mp4",
-   "title": "The Average of Nothing",
-   "duration": 22.85,
-   "lines": [
-    {
-     "id": "kd1i_1",
-     "text": "The average of two, four and six. Twelve, divided by three. Four.",
-     "start": 0.2,
-     "end": 4.8
-    },
-    {
-     "id": "kd1i_2",
-     "text": "The code gets that right. And the task adds one sentence. For an empty list, the answer is zero.",
-     "start": 5.5,
-     "end": 11.72
-    },
-    {
-     "id": "kd1i_3",
-     "text": "So the example passes. That does not mean the code is finished.",
-     "start": 12.42,
-     "end": 16.39
-    },
-    {
-     "id": "kd1i_4",
-     "text": "Empty. One item. The ends. Which input have you not tried? Your turn.",
-     "start": 17.09,
-     "end": 21.25
-    }
-   ],
-   "pauses": []
-  },
-  "kd1s": {
-   "src": "videos/kd1s.mp4",
-   "title": "Answer the empty case first",
-   "duration": 61.91,
-   "lines": [
-    {
-     "id": "kd1s_1",
-     "text": "The example works. So try the inputs nobody thinks of. First on the list. Nothing at all.",
-     "start": 0.2,
-     "end": 6.69
-    },
-    {
-     "id": "kd1s_2",
-     "text": "Dividing by the length is the dangerous line. What if the length is zero?",
-     "start": 7.44,
-     "end": 11.97
-    },
-    {
-     "id": "kd1s_3",
-     "text": "With two, four and six, total reaches twelve, and twelve divided by three is four.",
-     "start": 12.72,
-     "end": 18.09
-    },
-    {
-     "id": "kd1s_4",
-     "text": "Now the empty list. The loop never runs. Total stays zero. And the length is zero. So what does the last line compute?",
-     "start": 18.84,
-     "end": 26.6
-    },
-    {
-     "id": "kd1s_5",
-     "text": "Not a number. No crash. No warning. Just a wrong answer, handed back quietly.",
-     "start": 27.8,
-     "end": 33.28
-    },
-    {
-     "id": "kd1s_6",
-     "text": "The fix goes at the very top. If the list is empty, answer zero, and stop there.",
-     "start": 34.03,
-     "end": 39.39
-    },
-    {
-     "id": "kd1s_7",
-     "text": "Every other input still takes the old path, unchanged.",
-     "start": 40.14,
-     "end": 43.71
-    },
-    {
-     "id": "kd1s_8",
-     "text": "Whenever you divide, ask whether the bottom can be zero.",
-     "start": 44.81,
-     "end": 48.22
-    },
-    {
-     "id": "kd1s_9",
-     "text": "Handle the odd case first, at the top. Then the main path stays simple.",
-     "start": 48.97,
-     "end": 53.52
-    },
-    {
-     "id": "kd1s_10",
-     "text": "A product page with no reviews yet. Without this check, it proudly shows a rating of, not a number.",
-     "start": 54.27,
-     "end": 60.31
-    }
-   ],
-   "pauses": [
-    {
-     "id": "kd1s-q",
-     "t": 26.8
-    }
-   ]
-  },
-  "kd2i": {
-   "src": "videos/kd2i.mp4",
-   "title": "The Largest",
-   "duration": 19.08,
-   "lines": [
-    {
-     "id": "kd2i_1",
-     "text": "Three numbers, all below zero. Minus five, minus two, minus nine.",
-     "start": 0.2,
-     "end": 4.49
-    },
-    {
-     "id": "kd2i_2",
-     "text": "Return the largest. That is minus two.",
-     "start": 5.19,
-     "end": 7.65
-    },
-    {
-     "id": "kd2i_3",
-     "text": "The code works for three, nine and two. For this list, it answers zero.",
-     "start": 8.35,
-     "end": 12.9
-    },
-    {
-     "id": "kd2i_4",
-     "text": "Zero is not even in the list. So where did it come from? Your turn.",
-     "start": 13.6,
-     "end": 17.48
-    }
-   ],
-   "pauses": []
-  },
-  "kd2s": {
-   "src": "videos/kd2s.mp4",
-   "title": "Start from real data",
-   "duration": 60.45,
-   "lines": [
-    {
-     "id": "kd2s_1",
-     "text": "The old code started with best equals zero. A number it made up.",
-     "start": 0.2,
-     "end": 4.32
-    },
-    {
-     "id": "kd2s_2",
-     "text": "A made up start is only safe if the data can never be on the other side of it.",
-     "start": 5.07,
-     "end": 9.67
-    },
-    {
-     "id": "kd2s_3",
-     "text": "Trace the old code. Best is zero. Is minus five bigger than zero? No.",
-     "start": 10.42,
-     "end": 15.24
-    },
-    {
-     "id": "kd2s_4",
-     "text": "Minus two. Bigger than zero? No. Minus nine? No. So what did the old code return?",
-     "start": 15.99,
-     "end": 21.7
-    },
-    {
-     "id": "kd2s_5",
-     "text": "Zero. The number it invented. Not a number from the list.",
-     "start": 22.9,
-     "end": 26.46
-    },
-    {
-     "id": "kd2s_6",
-     "text": "The fix. Start with the first number of the list. Minus five.",
-     "start": 27.21,
-     "end": 30.87
-    },
-    {
-     "id": "kd2s_7",
-     "text": "Minus two is bigger than minus five. Best becomes minus two. Minus nine is not bigger.",
-     "start": 31.62,
-     "end": 37.83
-    },
-    {
-     "id": "kd2s_8",
-     "text": "Line six returns minus two.",
-     "start": 38.58,
-     "end": 40.5
-    },
-    {
-     "id": "kd2s_9",
-     "text": "For a largest, or a smallest, start from the first item. Not from zero.",
-     "start": 41.6,
-     "end": 46.17
-    },
-    {
-     "id": "kd2s_10",
-     "text": "Always test with only negatives. And with a zero in the list.",
-     "start": 46.92,
-     "end": 50.8
-    },
-    {
-     "id": "kd2s_11",
-     "text": "A weather app that shows the warmest day of the week. In January, every day is below zero. And the app says zero.",
-     "start": 51.55,
-     "end": 58.85
-    }
-   ],
-   "pauses": [
-    {
-     "id": "kd2s-q",
-     "t": 21.9
-    }
-   ]
-  },
-  "kd3i": {
-   "src": "videos/kd3i.mp4",
-   "title": "Count the Word",
-   "duration": 20.77,
-   "lines": [
-    {
-     "id": "kd3i_1",
-     "text": "Three words. The, with a capital. Then. And the.",
-     "start": 0.2,
-     "end": 2.83
-    },
-    {
-     "id": "kd3i_2",
-     "text": "Count how often the word, the, appears. As a whole word. And ignoring capitals.",
-     "start": 3.53,
-     "end": 8.83
-    },
-    {
-     "id": "kd3i_3",
-     "text": "The first, and the third. Two. Then, does not count.",
-     "start": 9.53,
-     "end": 12.64
-    },
-    {
-     "id": "kd3i_4",
-     "text": "The task has two rules, hidden in two short phrases. Does the code obey both? Your turn.",
-     "start": 13.34,
-     "end": 19.17
-    }
-   ],
-   "pauses": []
-  },
-  "kd3s": {
-   "src": "videos/kd3s.mp4",
-   "title": "One test for each rule",
-   "duration": 68.7,
-   "lines": [
-    {
-     "id": "kd3s_1",
-     "text": "The task has two rules. Whole words. And capitals ignored. Each rule needs its own test.",
-     "start": 0.2,
-     "end": 6.02
-    },
-    {
-     "id": "kd3s_2",
-     "text": "The old code asked whether the word includes the letters. That obeys neither rule.",
-     "start": 6.77,
-     "end": 11.79
-    },
-    {
-     "id": "kd3s_3",
-     "text": "The first word. The, with a capital T. The old code looked for small t, h, e, inside it. Not found. So it was skipped.",
-     "start": 12.54,
-     "end": 20.91
-    },
-    {
-     "id": "kd3s_4",
-     "text": "The second word. Then. Does it include t, h, e?",
-     "start": 21.66,
-     "end": 24.82
-    },
-    {
-     "id": "kd3s_5",
-     "text": "Yes. So then was counted. One word missed, one word wrongly counted. And the total still came out as two.",
-     "start": 26.02,
-     "end": 32.71
-    },
-    {
-     "id": "kd3s_6",
-     "text": "The fix. Make both sides small letters. And compare whole words, with three equals signs.",
-     "start": 33.46,
-     "end": 39.3
-    },
-    {
-     "id": "kd3s_7",
-     "text": "Then is not equal to the. Skipped. The last word matches. Two.",
-     "start": 40.05,
-     "end": 44.04
-    },
-    {
-     "id": "kd3s_8",
-     "text": "Line seven returns two. This time, for the right reasons.",
-     "start": 44.79,
-     "end": 48.73
-    },
-    {
-     "id": "kd3s_9",
-     "text": "Write one small test for each rule in the task. On its own.",
-     "start": 49.83,
-     "end": 53.59
-    },
-    {
-     "id": "kd3s_10",
-     "text": "A right answer can hide two wrong steps. So test the steps, not just the total.",
-     "start": 54.34,
-     "end": 59.18
-    },
-    {
-     "id": "kd3s_11",
-     "text": "Search inside a document. Whole word, on or off. Match case, on or off. Those two switches are these two rules.",
-     "start": 59.93,
-     "end": 67.1
-    }
-   ],
-   "pauses": [
-    {
-     "id": "kd3s-q",
-     "t": 25.02
-    }
-   ]
-  },
-  "kd4i": {
-   "src": "videos/kd4i.mp4",
-   "title": "The Last Word, Loudly",
-   "duration": 22.1,
-   "lines": [
-    {
-     "id": "kd4i_1",
-     "text": "Pip likes seeds. Moss wants the last word, shouted. Seeds, in capitals, with an exclamation mark.",
-     "start": 0.2,
-     "end": 6.69
-    },
-    {
-     "id": "kd4i_2",
-     "text": "The code crashes. And the error message points at its last line.",
-     "start": 7.39,
-     "end": 11.37
-    },
-    {
-     "id": "kd4i_3",
-     "text": "But the last line looks fine.",
-     "start": 12.07,
-     "end": 13.74
-    },
-    {
-     "id": "kd4i_4",
-     "text": "So do not stare at the crash. Walk the values from the top. Which one goes wrong first? Your turn.",
-     "start": 14.44,
-     "end": 20.5
-    }
-   ],
-   "pauses": []
-  },
-  "kd4s": {
-   "src": "videos/kd4s.mp4",
-   "title": "Fix the first wrong value",
-   "duration": 69.64,
-   "lines": [
-    {
-     "id": "kd4s_1",
-     "text": "A crash tells you where the damage showed up. Not where it began.",
-     "start": 0.2,
-     "end": 3.9
-    },
-    {
-     "id": "kd4s_2",
-     "text": "So say what each value should be. Then look at what it is. Stop at the first difference.",
-     "start": 4.65,
-     "end": 9.92
-    },
-    {
-     "id": "kd4s_3",
-     "text": "Line two. The words. Pip, likes, seeds. That is what we expect. Good.",
-     "start": 10.67,
-     "end": 14.96
-    },
-    {
-     "id": "kd4s_4",
-     "text": "Line three. Last should be seeds. The old code read position words dot length. Three. What is there?",
-     "start": 15.71,
-     "end": 22.45
-    },
-    {
-     "id": "kd4s_5",
-     "text": "Undefined. Quietly. No error yet. That is the first wrong value. So the bug is here, on line three.",
-     "start": 23.65,
-     "end": 30.46
-    },
-    {
-     "id": "kd4s_6",
-     "text": "The fix. Length minus one. Position two. Seeds.",
-     "start": 31.21,
-     "end": 34.66
-    },
-    {
-     "id": "kd4s_7",
-     "text": "And line four, which crashed before, now works without a single change.",
-     "start": 35.41,
-     "end": 39.83
-    },
-    {
-     "id": "kd4s_8",
-     "text": "One more walk, with spaces around the sentence. Split then gives empty words at the ends. So line two trims the sentence first.",
-     "start": 40.93,
-     "end": 49.09
-    },
-    {
-     "id": "kd4s_9",
-     "text": "Do not fix the line that crashed. Fix the line that made the first wrong value.",
-     "start": 49.84,
-     "end": 54.44
-    },
-    {
-     "id": "kd4s_10",
-     "text": "After every fix, run all the tests again. One bug often hides another.",
-     "start": 55.19,
-     "end": 60.05
-    },
-    {
-     "id": "kd4s_11",
-     "text": "An error report from a real app names the line that blew up. The real mistake is usually a few lines above it.",
-     "start": 60.8,
-     "end": 68.04
-    }
-   ],
-   "pauses": [
-    {
-     "id": "kd4s-q",
-     "t": 22.65
-    }
-   ]
-  },
-  "kc1i": {
-   "src": "videos/kc1i.mp4",
-   "title": "The Film Label",
-   "duration": 27.22,
-   "lines": [
-    {
-     "id": "kc1i_1",
-     "text": "A film lasts one hundred and twenty five minutes. Pip wants a label for the poster.",
-     "start": 0.2,
-     "end": 5.34
-    },
-    {
-     "id": "kc1i_2",
-     "text": "Two h, zero five, min. Whole hours first. Then the minutes that are left, always with two digits.",
-     "start": 6.04,
-     "end": 12.18
-    },
-    {
-     "id": "kc1i_3",
-     "text": "Sixty goes into one hundred and twenty five twice. Five are left. And five is written as zero five.",
-     "start": 12.88,
-     "end": 19.65
-    },
-    {
-     "id": "kc1i_4",
-     "text": "Do not start typing. What goes in? What comes out? What are the steps? Your turn.",
-     "start": 20.35,
-     "end": 25.62
-    }
-   ],
-   "pauses": []
-  },
-  "kc1s": {
-   "src": "videos/kc1s.mp4",
-   "title": "Four steps, four lines",
-   "duration": 58.73,
-   "lines": [
-    {
-     "id": "kc1s_1",
-     "text": "In, one number. Out, a text. The rule, two digits for the minutes.",
-     "start": 0.2,
-     "end": 4.48
-    },
-    {
-     "id": "kc1s_2",
-     "text": "Four steps. The hours. What is left. Make it two digits. Join.",
-     "start": 5.23,
-     "end": 9.05
-    },
-    {
-     "id": "kc1s_3",
-     "text": "Step one, on line two. How many whole sixties fit into one hundred and twenty five? Two.",
-     "start": 9.8,
-     "end": 15.66
-    },
-    {
-     "id": "kc1s_4",
-     "text": "Step two, on line three. What is left over? The percent sign gives the remainder. Five.",
-     "start": 16.41,
-     "end": 22.16
-    },
-    {
-     "id": "kc1s_5",
-     "text": "Step three. The rule said two digits. Five has only one. What does pad start do with it?",
-     "start": 22.91,
-     "end": 28.86
-    },
-    {
-     "id": "kc1s_6",
-     "text": "It puts a zero in front. Zero five.",
-     "start": 30.06,
-     "end": 32.7
-    },
-    {
-     "id": "kc1s_7",
-     "text": "Step four joins the pieces. It needs the hours from step one, and the two digits from step three. So it comes last.",
-     "start": 33.45,
-     "end": 41.28
-    },
-    {
-     "id": "kc1s_8",
-     "text": "Each step became one line. That is what good steps look like.",
-     "start": 42.38,
-     "end": 46.18
-    },
-    {
-     "id": "kc1s_9",
-     "text": "And the order came from need. Join needs the others. So join is last.",
-     "start": 46.93,
-     "end": 51.44
-    },
-    {
-     "id": "kc1s_10",
-     "text": "Every screen that shows a duration does this. A film. A flight. A song.",
-     "start": 52.19,
-     "end": 57.13
-    }
-   ],
-   "pauses": [
-    {
-     "id": "kc1s-q",
-     "t": 29.06
-    }
-   ]
-  },
-  "kc2i": {
-   "src": "videos/kc2i.mp4",
-   "title": "Initials",
-   "duration": 17.31,
-   "lines": [
-    {
-     "id": "kc2i_1",
-     "text": "A name, written in small letters. Pip the rabbit.",
-     "start": 0.2,
-     "end": 3.05
-    },
-    {
-     "id": "kc2i_2",
-     "text": "Return its initials. The first letter of each word, as a capital, with a dot after it.",
-     "start": 3.75,
-     "end": 9.36
-    },
-    {
-     "id": "kc2i_3",
-     "text": "P. T. R.",
-     "start": 10.06,
-     "end": 10.98
-    },
-    {
-     "id": "kc2i_4",
-     "text": "You just did it in your head. What was your very first move? Your turn.",
-     "start": 11.68,
-     "end": 15.71
-    }
-   ],
-   "pauses": []
-  },
-  "kc2s": {
-   "src": "videos/kc2s.mp4",
-   "title": "Split, then one word at a time",
-   "duration": 59.98,
-   "lines": [
-    {
-     "id": "kc2s_1",
-     "text": "By hand, you first saw three separate words. That is step one. Split the text into words.",
-     "start": 0.2,
-     "end": 6.24
-    },
-    {
-     "id": "kc2s_2",
-     "text": "Then the same small job for every word. First letter. Capital. Dot.",
-     "start": 6.99,
-     "end": 11.52
-    },
-    {
-     "id": "kc2s_3",
-     "text": "Line three splits the name at the spaces. Three words.",
-     "start": 12.27,
-     "end": 15.87
-    },
-    {
-     "id": "kc2s_4",
-     "text": "The first word. Its first letter is p. As a capital, P. Add a dot.",
-     "start": 16.62,
-     "end": 21.19
-    },
-    {
-     "id": "kc2s_5",
-     "text": "The second word. T, and a dot.",
-     "start": 21.94,
-     "end": 24.04
-    },
-    {
-     "id": "kc2s_6",
-     "text": "The third word. R, and a dot. Line eight returns the result.",
-     "start": 24.79,
-     "end": 29.17
-    },
-    {
-     "id": "kc2s_7",
-     "text": "Now the nasty input. An empty name. Splitting it gives one word, which is empty. What is the first letter of an empty word?",
-     "start": 29.92,
-     "end": 37.99
-    },
-    {
-     "id": "kc2s_8",
-     "text": "There is none. So line two answers the empty name, before anything else runs.",
-     "start": 39.19,
-     "end": 44.31
-    },
-    {
-     "id": "kc2s_9",
-     "text": "A big task became three small ones. Split. Loop. Build.",
-     "start": 45.41,
-     "end": 49.26
-    },
-    {
-     "id": "kc2s_10",
-     "text": "The nasty input was found by asking: what if there is nothing?",
-     "start": 50.01,
-     "end": 53.9
-    },
-    {
-     "id": "kc2s_11",
-     "text": "The circle with your initials in a chat app is made like this.",
-     "start": 54.65,
-     "end": 58.38
-    }
-   ],
-   "pauses": [
-    {
-     "id": "kc2s-q",
-     "t": 38.19
-    }
-   ]
-  },
-  "kc3i": {
-   "src": "videos/kc3i.mp4",
-   "title": "The Receipt",
-   "duration": 21.59,
-   "lines": [
-    {
-     "id": "kc3i_1",
-     "text": "A receipt with two lines. Two items at twenty. Three items at five.",
-     "start": 0.2,
-     "end": 4.65
-    },
-    {
-     "id": "kc3i_2",
-     "text": "Add everything up. And if the total is fifty or more, take one tenth off.",
-     "start": 5.35,
-     "end": 9.83
-    },
-    {
-     "id": "kc3i_3",
-     "text": "Forty, plus fifteen. Fifty five. One tenth is five. So fifty to pay.",
-     "start": 10.53,
-     "end": 15.19
-    },
-    {
-     "id": "kc3i_4",
-     "text": "Two rules, in one task. Which number do you need first? Your turn.",
-     "start": 15.89,
-     "end": 19.99
-    }
-   ],
-   "pauses": []
-  },
-  "kc3s": {
-   "src": "videos/kc3s.mp4",
-   "title": "First the total, then the rule",
-   "duration": 54.6,
-   "lines": [
-    {
-     "id": "kc3s_1",
-     "text": "Two tasks are hiding in one. Add up the lines. And decide about the discount.",
-     "start": 0.2,
-     "end": 5.12
-    },
-    {
-     "id": "kc3s_2",
-     "text": "The discount depends on the total. So the total comes first.",
-     "start": 5.87,
-     "end": 9.69
-    },
-    {
-     "id": "kc3s_3",
-     "text": "Total starts at zero.",
-     "start": 10.44,
-     "end": 11.93
-    },
-    {
-     "id": "kc3s_4",
-     "text": "The first line. Twenty times two. Forty.",
-     "start": 12.68,
-     "end": 15.25
-    },
-    {
-     "id": "kc3s_5",
-     "text": "The second line. Five times three. Fifteen. Total, fifty five.",
-     "start": 16,
-     "end": 20.11
-    },
-    {
-     "id": "kc3s_6",
-     "text": "The loop is finished. Only now, line six asks about the discount. Fifty five is at least fifty. What is one tenth, rounded down?",
-     "start": 20.86,
-     "end": 29.24
-    },
-    {
-     "id": "kc3s_7",
-     "text": "Five. So line seven takes five off. Fifty.",
-     "start": 30.44,
-     "end": 33.35
-    },
-    {
-     "id": "kc3s_8",
-     "text": "Line nine returns fifty.",
-     "start": 34.1,
-     "end": 35.78
-    },
-    {
-     "id": "kc3s_9",
-     "text": "When one rule depends on a number, work out that number completely first.",
-     "start": 36.88,
-     "end": 41.43
-    },
-    {
-     "id": "kc3s_10",
-     "text": "Test just below and just at the limit. Forty nine, and fifty.",
-     "start": 42.18,
-     "end": 46.14
-    },
-    {
-     "id": "kc3s_11",
-     "text": "Every online shop does these two steps at the checkout. Add up the basket. Then apply the offer.",
-     "start": 46.89,
-     "end": 53
-    }
-   ],
-   "pauses": [
-    {
-     "id": "kc3s-q",
-     "t": 29.44
-    }
-   ]
-  },
-  "kc4i": {
-   "src": "videos/kc4i.mp4",
-   "title": "The Report Card",
-   "duration": 20.34,
-   "lines": [
-    {
-     "id": "kc4i_1",
-     "text": "Three scores. Pip, seventy. Moss, forty. Hazel, ninety.",
-     "start": 0.2,
-     "end": 3.87
-    },
-    {
-     "id": "kc4i_2",
-     "text": "Return three things at once. How many passed. How many failed. And who was the best.",
-     "start": 4.57,
-     "end": 9.8
-    },
-    {
-     "id": "kc4i_3",
-     "text": "Two passed. One failed. And the best was Hazel.",
-     "start": 10.5,
-     "end": 13.62
-    },
-    {
-     "id": "kc4i_4",
-     "text": "That sounds like a lot. How many small tasks is it, really? Your turn.",
-     "start": 14.32,
-     "end": 18.74
-    }
-   ],
-   "pauses": []
-  },
-  "kc4s": {
-   "src": "videos/kc4s.mp4",
-   "title": "Three small tasks, one walk",
-   "duration": 59.54,
-   "lines": [
-    {
-     "id": "kc4s_1",
-     "text": "Three answers. So three small tasks. Count the passes. Count the fails. And remember the best.",
-     "start": 0.2,
-     "end": 6.03
-    },
-    {
-     "id": "kc4s_2",
-     "text": "Each one needs only one or two variables. And all three can be done in the same walk.",
-     "start": 6.78,
-     "end": 12.03
-    },
-    {
-     "id": "kc4s_3",
-     "text": "Lines two to five set up the memory. Two counters. And the best so far, which is nobody yet.",
-     "start": 12.78,
-     "end": 18.85
-    },
-    {
-     "id": "kc4s_4",
-     "text": "Pip, seventy. At least fifty. A pass. And seventy beats the best so far.",
-     "start": 19.6,
-     "end": 24.35
-    },
-    {
-     "id": "kc4s_5",
-     "text": "Moss, forty. Below fifty. A fail. Does forty beat seventy?",
-     "start": 25.1,
-     "end": 29
-    },
-    {
-     "id": "kc4s_6",
-     "text": "No. So the best stays Pip.",
-     "start": 30.2,
-     "end": 31.81
-    },
-    {
-     "id": "kc4s_7",
-     "text": "Hazel, ninety. A pass. And ninety beats seventy.",
-     "start": 32.56,
-     "end": 35.79
-    },
-    {
-     "id": "kc4s_8",
-     "text": "Line fourteen packs the three answers into one object.",
-     "start": 36.54,
-     "end": 40.15
-    },
-    {
-     "id": "kc4s_9",
-     "text": "A task that sounds big is often several small tasks, side by side.",
-     "start": 41.25,
-     "end": 45.89
-    },
-    {
-     "id": "kc4s_10",
-     "text": "For each small task, ask: what do I need to remember?",
-     "start": 46.64,
-     "end": 50.06
-    },
-    {
-     "id": "kc4s_11",
-     "text": "The summary at the top of any dashboard is built this way. A few counters, and a best, in one pass over the data.",
-     "start": 50.81,
-     "end": 57.94
-    }
-   ],
-   "pauses": [
-    {
-     "id": "kc4s-q",
-     "t": 29.2
-    }
-   ]
-  },
-  "bi0": {
-   "src": "videos/bi0.mp4",
-   "title": "Switches Inside a Number",
-   "duration": 36.3,
-   "lines": [
-    {
-     "id": "bv1",
-     "text": "Chapter twenty six. Bit tricks.",
-     "start": 0.2,
-     "end": 2.41
-    },
-    {
-     "id": "bv2",
-     "text": "Under every number is a row of switches. Each one is on, or off. Here, they are lamps.",
-     "start": 3.11,
-     "end": 8.87
-    },
-    {
-     "id": "bv3",
-     "text": "Each lamp is worth double the one on its right. Eight, four, two, one. Five is the four lamp, and the one lamp.",
-     "start": 9.77,
-     "end": 16.79
-    },
-    {
-     "id": "bv4",
-     "text": "A few puzzles become a single line, once you look at the lamps. One lesson, and three puzzles.",
-     "start": 17.68,
-     "end": 24.01
-    },
-    {
-     "id": "bv5",
-     "text": "A file can be read, written, or run. Three lamps. An app keeps many on and off settings in one number. And every colour on your screen is twenty four lamps.",
-     "start": 24.91,
-     "end": 34.7
-    }
-   ],
-   "pauses": []
-  },
-  "bit1": {
-   "src": "videos/bit1.mp4",
-   "title": "Lamps, and Three Small Tools",
-   "duration": 69.25,
-   "lines": [
-    {
-     "id": "bz1",
-     "text": "Here is five. And here is three. As lamps. Three small tools compare two rows of lamps, one column at a time.",
-     "start": 0.2,
-     "end": 7.49
-    },
-    {
-     "id": "bz2",
-     "text": "And. A lamp comes on, only if it is on in both rows. That is just the one lamp. So five and three, is one.",
-     "start": 8.39,
-     "end": 15.73
-    },
-    {
-     "id": "bz3",
-     "text": "Or. A lamp comes on, if it is on in at least one row. Four, two, one. Seven.",
-     "start": 16.63,
-     "end": 22.34
-    },
-    {
-     "id": "bz4",
-     "text": "X or. A lamp comes on, only where the two rows differ. Four and two. Six.",
-     "start": 23.24,
-     "end": 28.72
-    },
-    {
-     "id": "bz5",
-     "text": "Now x or five, with five. The two rows are the same. So how many lamps come on?",
-     "start": 29.62,
-     "end": 35.08
-    },
-    {
-     "id": "bz6",
-     "text": "None. A number, x or itself, is always zero. Pairs cancel.",
-     "start": 36.28,
-     "end": 40.51
-    },
-    {
-     "id": "bz7",
-     "text": "Two more tools. And with one, keeps only the last lamp. If it is on, the number is odd.",
-     "start": 41.41,
-     "end": 47.08
-    },
-    {
-     "id": "bz8",
-     "text": "And shift right, moves every lamp one place to the right. The last one falls off. Five becomes two.",
-     "start": 47.98,
-     "end": 54.38
-    },
-    {
-     "id": "bz9",
-     "text": "So remember three things. X or cancels pairs. And with one reads the last lamp. Shift brings the next lamp in.",
-     "start": 55.28,
-     "end": 62.97
-    },
-    {
-     "id": "bz10",
-     "text": "When a puzzle says, use no extra memory. Look at the lamps.",
-     "start": 63.87,
-     "end": 67.65
-    }
-   ],
-   "pauses": [
-    {
-     "id": "bit1-q1",
-     "t": 35.28
-    }
-   ]
-  },
   "dq1i": {
    "src": "videos/dq1i.mp4",
    "title": "Routes Across the Field",
@@ -27180,494 +27062,6 @@ window.BURROW = {
      "t": 34.87
     }
    ]
-  },
-  "bi1i": {
-   "src": "videos/bi1i.mp4",
-   "title": "The Odd One Out",
-   "duration": 20.7,
-   "lines": [
-    {
-     "id": "bi1i_1",
-     "text": "Three numbers. Four, seven, four. Every number has a twin. Except one.",
-     "start": 0.2,
-     "end": 4.72
-    },
-    {
-     "id": "bi1i_2",
-     "text": "Return the one without a twin. And use no extra memory. No set. No sorting.",
-     "start": 5.42,
-     "end": 10.99
-    },
-    {
-     "id": "bi1i_3",
-     "text": "The fours are a pair. So the answer is seven.",
-     "start": 11.69,
-     "end": 14.54
-    },
-    {
-     "id": "bi1i_4",
-     "text": "Which operation makes two equal numbers disappear? Your turn.",
-     "start": 15.24,
-     "end": 19.1
-    }
-   ],
-   "pauses": []
-  },
-  "bi1s": {
-   "src": "videos/bi1s.mp4",
-   "title": "Pairs cancel",
-   "duration": 61.86,
-   "lines": [
-    {
-     "id": "bi1s_1",
-     "text": "X or switches a lamp on only where two numbers differ. So a number, x or itself, is zero.",
-     "start": 0.2,
-     "end": 6.22
-    },
-    {
-     "id": "bi1s_2",
-     "text": "X or them all together. Every pair cancels. The one without a twin is left.",
-     "start": 6.97,
-     "end": 11.91
-    },
-    {
-     "id": "bi1s_3",
-     "text": "X starts at zero.",
-     "start": 12.66,
-     "end": 14
-    },
-    {
-     "id": "bi1s_4",
-     "text": "The four. In lamps, one, zero, zero. Zero x or four is four.",
-     "start": 14.75,
-     "end": 19.21
-    },
-    {
-     "id": "bi1s_5",
-     "text": "The seven. One, one, one. Where do one zero zero, and one one one, differ? In the last two lamps. So x is three.",
-     "start": 19.96,
-     "end": 27.78
-    },
-    {
-     "id": "bi1s_6",
-     "text": "X is three. That is neither of them. Now the second four arrives. What is zero one one, x or one zero zero?",
-     "start": 28.53,
-     "end": 35.98
-    },
-    {
-     "id": "bi1s_7",
-     "text": "One, one, one. Seven. The two fours have cancelled each other, even though the seven stood between them.",
-     "start": 37.18,
-     "end": 43.55
-    },
-    {
-     "id": "bi1s_8",
-     "text": "Line six returns seven.",
-     "start": 44.3,
-     "end": 45.94
-    },
-    {
-     "id": "bi1s_9",
-     "text": "One pass. O of n.",
-     "start": 47.04,
-     "end": 48.54
-    },
-    {
-     "id": "bi1s_10",
-     "text": "One number. O of one space. No set needed.",
-     "start": 49.29,
-     "end": 52.4
-    },
-    {
-     "id": "bi1s_11",
-     "text": "Storage systems use this to rebuild a lost disk. X or the disks that are left, and the missing one appears.",
-     "start": 53.15,
-     "end": 60.26
-    }
-   ],
-   "pauses": [
-    {
-     "id": "bi1s-q",
-     "t": 36.18
-    }
-   ]
-  },
-  "bi2i": {
-   "src": "videos/bi2i.mp4",
-   "title": "Count the Lamps",
-   "duration": 17.42,
-   "lines": [
-    {
-     "id": "bi2i_1",
-     "text": "The number six, as lamps. One, one, zero. The four lamp, and the two lamp.",
-     "start": 0.2,
-     "end": 5.13
-    },
-    {
-     "id": "bi2i_2",
-     "text": "Return how many lamps are on.",
-     "start": 5.83,
-     "end": 7.6
-    },
-    {
-     "id": "bi2i_3",
-     "text": "Two.",
-     "start": 8.3,
-     "end": 8.9
-    },
-    {
-     "id": "bi2i_4",
-     "text": "A program only sees the number six. How can it read the last lamp? And then the next? Your turn.",
-     "start": 9.6,
-     "end": 15.82
-    }
-   ],
-   "pauses": []
-  },
-  "bi2s": {
-   "src": "videos/bi2s.mp4",
-   "title": "Read the last lamp, then shift",
-   "duration": 60.92,
-   "lines": [
-    {
-     "id": "bi2s_1",
-     "text": "And with one, reads the last lamp. It gives one if the lamp is on, and zero if it is off.",
-     "start": 0.2,
-     "end": 5.94
-    },
-    {
-     "id": "bi2s_2",
-     "text": "Then shift everything one place to the right. The next lamp is now the last one.",
-     "start": 6.69,
-     "end": 11.32
-    },
-    {
-     "id": "bi2s_3",
-     "text": "N is six. One, one, zero. Count is zero.",
-     "start": 12.07,
-     "end": 14.99
-    },
-    {
-     "id": "bi2s_4",
-     "text": "The last lamp is off. So and with one gives zero. Count stays zero.",
-     "start": 15.74,
-     "end": 20.31
-    },
-    {
-     "id": "bi2s_5",
-     "text": "Line five shifts to the right. The last lamp drops off. N is one, one. That is three.",
-     "start": 21.06,
-     "end": 27.15
-    },
-    {
-     "id": "bi2s_6",
-     "text": "Now the last lamp is on. What does and with one give?",
-     "start": 27.9,
-     "end": 31.45
-    },
-    {
-     "id": "bi2s_7",
-     "text": "One. So count is one. Shift again. N is just one.",
-     "start": 32.66,
-     "end": 35.8
-    },
-    {
-     "id": "bi2s_8",
-     "text": "The last lamp is on again. Count is two. One more shift, and n is zero. The loop ends.",
-     "start": 36.55,
-     "end": 42.65
-    },
-    {
-     "id": "bi2s_9",
-     "text": "Line seven returns two.",
-     "start": 43.4,
-     "end": 45.02
-    },
-    {
-     "id": "bi2s_10",
-     "text": "One turn per lamp. A number n has about log n lamps.",
-     "start": 46.12,
-     "end": 50.08
-    },
-    {
-     "id": "bi2s_11",
-     "text": "One counter.",
-     "start": 50.83,
-     "end": 51.79
-    },
-    {
-     "id": "bi2s_12",
-     "text": "A file with permissions read, write and run stores them as three lamps. Counting the lamps says how much is allowed.",
-     "start": 52.54,
-     "end": 59.32
-    }
-   ],
-   "pauses": [
-    {
-     "id": "bi2s-q",
-     "t": 31.65
-    }
-   ]
-  },
-  "bi3i": {
-   "src": "videos/bi3i.mp4",
-   "title": "A Single Lamp",
-   "duration": 21.26,
-   "lines": [
-    {
-     "id": "bi3i_1",
-     "text": "The number eight, as lamps. One, zero, zero, zero.",
-     "start": 0.2,
-     "end": 3.65
-    },
-    {
-     "id": "bi3i_2",
-     "text": "Return true if a number is a power of two. One, two, four, eight, and so on.",
-     "start": 4.35,
-     "end": 9.22
-    },
-    {
-     "id": "bi3i_3",
-     "text": "In lamps, every one of them has exactly one lamp on.",
-     "start": 9.92,
-     "end": 13.38
-    },
-    {
-     "id": "bi3i_4",
-     "text": "Now take one away from eight. Seven. What does seven look like, in lamps? Your turn.",
-     "start": 14.08,
-     "end": 19.66
-    }
-   ],
-   "pauses": []
-  },
-  "bi3s": {
-   "src": "videos/bi3s.mp4",
-   "title": "One lamp on, and nothing else",
-   "duration": 61.3,
-   "lines": [
-    {
-     "id": "bi3s_1",
-     "text": "A power of two has exactly one lamp on.",
-     "start": 0.2,
-     "end": 2.92
-    },
-    {
-     "id": "bi3s_2",
-     "text": "Take one away. That lamp goes off. And every lamp to its right comes on. So the two rows share no lamp.",
-     "start": 3.67,
-     "end": 10.45
-    },
-    {
-     "id": "bi3s_3",
-     "text": "Eight. One, zero, zero, zero.",
-     "start": 11.2,
-     "end": 13.1
-    },
-    {
-     "id": "bi3s_4",
-     "text": "Eight minus one is seven. Zero, one, one, one.",
-     "start": 13.85,
-     "end": 17.16
-    },
-    {
-     "id": "bi3s_5",
-     "text": "Now and them. A lamp stays on only if it is on in both rows. Is there any such lamp?",
-     "start": 17.91,
-     "end": 23.97
-    },
-    {
-     "id": "bi3s_6",
-     "text": "None. The result is zero. So eight is a power of two.",
-     "start": 25.17,
-     "end": 28.63
-    },
-    {
-     "id": "bi3s_7",
-     "text": "Try six. One, one, zero. Six minus one is five. One, zero, one. The first lamp is on in both. Not zero. So six is not.",
-     "start": 29.73,
-     "end": 38.69
-    },
-    {
-     "id": "bi3s_8",
-     "text": "And the first check, n above zero, rules out zero and the negative numbers.",
-     "start": 39.44,
-     "end": 44.27
-    },
-    {
-     "id": "bi3s_9",
-     "text": "No loop at all. One subtraction, and one and. O of one.",
-     "start": 45.02,
-     "end": 48.82
-    },
-    {
-     "id": "bi3s_10",
-     "text": "No extra memory.",
-     "start": 49.57,
-     "end": 50.88
-    },
-    {
-     "id": "bi3s_11",
-     "text": "Memory sizes are powers of two. Sixteen, thirty two, sixty four. A program checks a size with exactly this line.",
-     "start": 51.63,
-     "end": 59.7
-    }
-   ],
-   "pauses": [
-    {
-     "id": "bi3s-q",
-     "t": 24.17
-    }
-   ]
-  },
-  "cm0": {
-   "src": "videos/cm0.mp4",
-   "title": "One Tool Is Rarely Enough",
-   "duration": 35.01,
-   "lines": [
-    {
-     "id": "cv1",
-     "text": "Chapter twenty seven. Combining tools.",
-     "start": 0.2,
-     "end": 2.74
-    },
-    {
-     "id": "cv2",
-     "text": "So far, each puzzle needed one tool. A map. A stack. A binary search.",
-     "start": 3.44,
-     "end": 8.67
-    },
-    {
-     "id": "cv3",
-     "text": "Real problems rarely stop there. One tool gets the data ready. And a second tool answers the question.",
-     "start": 9.57,
-     "end": 16.21
-    },
-    {
-     "id": "cv4",
-     "text": "The skill is to see both steps. One lesson, and eight puzzles.",
-     "start": 17.11,
-     "end": 20.98
-    },
-    {
-     "id": "cv5",
-     "text": "A search box sorts its words once. Then it finds yours by halving. A bank groups payments by account. Then it looks up a day. A map app builds its roads once. Then it walks them.",
-     "start": 21.88,
-     "end": 33.41
-    }
-   ],
-   "pauses": []
-  },
-  "cmt1": {
-   "src": "videos/cmt1.mp4",
-   "title": "Prepare Once, Answer Fast",
-   "duration": 68.85,
-   "lines": [
-    {
-     "id": "cz1",
-     "text": "A thousand scores. And a thousand questions, each asking: how many scores are below this number? Checking every score, for every question, is a million looks.",
-     "start": 0.2,
-     "end": 10.45
-    },
-    {
-     "id": "cz2",
-     "text": "So split the work in two. First ask: what could I do once, so that every question becomes easy?",
-     "start": 11.35,
-     "end": 17.55
-    },
-    {
-     "id": "cz3",
-     "text": "Sort the scores. Once.",
-     "start": 18.45,
-     "end": 19.97
-    },
-    {
-     "id": "cz4",
-     "text": "Then ask: what answers one question fast? In a sorted row, a binary search. Ten looks, instead of a thousand.",
-     "start": 20.87,
-     "end": 28.26
-    },
-    {
-     "id": "cz5",
-     "text": "The same split shows up again and again. How many sacks fit in a budget? Running totals first. Then a binary search.",
-     "start": 29.16,
-     "end": 36.49
-    },
-    {
-     "id": "cz6",
-     "text": "What did a nut cost on day eight? Group the changes by name first. Then look up the nut, and search its days.",
-     "start": 37.39,
-     "end": 44.29
-    },
-    {
-     "id": "cz7",
-     "text": "Now you. Many questions ask for the sum of a block of a grid. Which pair of tools fits?",
-     "start": 45.19,
-     "end": 50.74
-    },
-    {
-     "id": "cz8",
-     "text": "Running totals, over the whole grid. After that, any block is four lookups.",
-     "start": 51.94,
-     "end": 56.77
-    },
-    {
-     "id": "cz9",
-     "text": "So, for every hard puzzle, ask two things. What do I prepare once? And what answers one question fast?",
-     "start": 57.67,
-     "end": 64.39
-    },
-    {
-     "id": "cz10",
-     "text": "Prepare once. Answer fast.",
-     "start": 65.29,
-     "end": 67.25
-    }
-   ],
-   "pauses": [
-    {
-     "id": "cmt1-q1",
-     "t": 50.94
-    }
-   ]
-  },
-  "mk0": {
-   "src": "videos/mk0.mp4",
-   "title": "How the Mock Interviews Work",
-   "duration": 42.16,
-   "lines": [
-    {
-     "id": "mv1",
-     "text": "The last stop. Mock interviews.",
-     "start": 0.2,
-     "end": 2.49
-    },
-    {
-     "id": "mv2",
-     "text": "Ten puzzles. No labels. No lesson first. Nothing tells you which tool to use.",
-     "start": 3.19,
-     "end": 8.41
-    },
-    {
-     "id": "mv3",
-     "text": "A clock runs for each one. Aim for twenty minutes. Hints, and the solution, are allowed. But they are counted.",
-     "start": 9.31,
-     "end": 15.98
-    },
-    {
-     "id": "mv4",
-     "text": "At the end, a report shows your strengths, and what to practise next. And before you type anything, say your plan out loud.",
-     "start": 16.88,
-     "end": 24.39
-    },
-    {
-     "id": "mv5",
-     "text": "A real interview goes like this. The first five minutes are talking. Say the task back. Ask about empty input. Then work an example by hand, and say your plan, and its cost. Only then, write the code. And test it with a tiny input.",
-     "start": 25.29,
-     "end": 40.56
-    }
-   ],
-   "pauses": []
   },
   "cm1i": {
    "src": "videos/cm1i.mp4",
@@ -29703,705 +29097,1311 @@ window.BURROW = {
     }
    ]
   },
-  "ar1i": {
-   "src": "videos/ar1i.mp4",
-   "title": "Turn the Row Around",
-   "duration": 20.47,
+  "ka1i": {
+   "src": "videos/ka1i.mp4",
+   "title": "One Turn Short",
+   "duration": 22.63,
    "lines": [
     {
-     "id": "ar1i_1",
-     "text": "Five parcels are in the wrong order. Back to front.",
+     "id": "ka1i_1",
+     "text": "Pip wants every even number, from two, up to and including n. For six, that is two, four, and six.",
      "start": 0.2,
-     "end": 3.3
+     "end": 6.54
     },
     {
-     "id": "ar1i_2",
-     "text": "Reverse the row in place. Change this array, and do not build a second one.",
-     "start": 4,
-     "end": 8.77
+     "id": "ka1i_2",
+     "text": "The code is already written. But it is not quite right. Find the mistake, and fix it.",
+     "start": 7.24,
+     "end": 12.39
     },
     {
-     "id": "ar1i_3",
-     "text": "The first parcel belongs in the last door. And the last one belongs in the first.",
-     "start": 9.47,
-     "end": 14.31
+     "id": "ka1i_3",
+     "text": "It returns two and four. The six is missing.",
+     "start": 13.09,
+     "end": 15.98
     },
     {
-     "id": "ar1i_4",
-     "text": "So which two doors trade places first? And then? Your turn.",
-     "start": 15.01,
-     "end": 18.87
+     "id": "ka1i_4",
+     "text": "Do not stare at it. Trace it. What is i, when the loop stops? Your turn.",
+     "start": 16.68,
+     "end": 21.03
     }
    ],
    "pauses": []
   },
-  "ar1s": {
-   "src": "videos/ar1s.mp4",
-   "title": "The two ends trade places",
-   "duration": 75.75,
+  "ka1s": {
+   "src": "videos/ka1s.mp4",
+   "title": "The last turn never ran",
+   "duration": 61.55,
    "lines": [
     {
-     "id": "ar1s_1",
-     "text": "In a reversed row, the first number and the last number have traded places. So have the second, and the second to last.",
+     "id": "ka1s_1",
+     "text": "Do not guess where the bug is. Run the loop by hand, and watch i.",
      "start": 0.2,
-     "end": 7.84
+     "end": 4.05
     },
     {
-     "id": "ar1s_2",
-     "text": "So put a marker on each end, swap, and walk both markers inward.",
-     "start": 8.59,
-     "end": 12.79
+     "id": "ka1s_2",
+     "text": "A missing last item usually means the loop stopped one turn too early.",
+     "start": 4.8,
+     "end": 9.3
     },
     {
-     "id": "ar1s_3",
-     "text": "Lines two and three place the markers. Pip on the first door, Moss on the last.",
-     "start": 13.54,
-     "end": 18.36
+     "id": "ka1s_3",
+     "text": "N is six. Line three starts i at two. Push it.",
+     "start": 10.05,
+     "end": 13.47
     },
     {
-     "id": "ar1s_4",
-     "text": "Line five puts the left number aside, in keep. Otherwise the next line would destroy it.",
-     "start": 19.11,
-     "end": 24.32
+     "id": "ka1s_4",
+     "text": "I becomes four. Push it.",
+     "start": 14.22,
+     "end": 15.73
     },
     {
-     "id": "ar1s_5",
-     "text": "Line six copies the right number into the left door. Line seven puts the kept number into the right door.",
-     "start": 25.07,
-     "end": 31.72
+     "id": "ka1s_5",
+     "text": "I becomes six. Now the check. The old code asked: is six less than six? What is the answer?",
+     "start": 16.48,
+     "end": 22.68
     },
     {
-     "id": "ar1s_6",
-     "text": "Lines eight and nine step both markers inward.",
-     "start": 32.47,
-     "end": 35.27
+     "id": "ka1s_6",
+     "text": "No. So the loop stopped, one turn too early. The six was never pushed.",
+     "start": 23.88,
+     "end": 28.35
     },
     {
-     "id": "ar1s_7",
-     "text": "One is less than three, so the loop runs again. Which two doors swap now?",
-     "start": 36.02,
-     "end": 40.46
+     "id": "ka1s_7",
+     "text": "The task said: up to, and including. So the check must be: at most. Six is at most six. Push it.",
+     "start": 29.1,
+     "end": 35.46
     },
     {
-     "id": "ar1s_8",
-     "text": "Doors one and three. Two and four trade places.",
-     "start": 41.66,
-     "end": 44.76
+     "id": "ka1s_8",
+     "text": "I becomes eight. Not at most six. The loop ends, and line six returns two, four, six.",
+     "start": 36.21,
+     "end": 42.03
     },
     {
-     "id": "ar1s_9",
-     "text": "Step inward. Both markers stand on door two. Two is not less than two, so the loop ends.",
-     "start": 45.51,
-     "end": 51.4
+     "id": "ka1s_9",
+     "text": "The habit. Before you trust a loop, test its last turn by hand.",
+     "start": 43.13,
+     "end": 47.09
     },
     {
-     "id": "ar1s_10",
-     "text": "The middle door has no partner, and stays where it is. The row is reversed.",
-     "start": 52.15,
-     "end": 56.74
+     "id": "ka1s_10",
+     "text": "Including the end means, at most. Stopping before the end means, less than.",
+     "start": 47.84,
+     "end": 52.56
     },
     {
-     "id": "ar1s_11",
-     "text": "Each round fixes two doors, so n over two rounds. O of n time.",
-     "start": 57.84,
-     "end": 62.35
-    },
-    {
-     "id": "ar1s_12",
-     "text": "Two markers and one spare variable. O of one space. That is what in place means.",
-     "start": 63.1,
-     "end": 68.7
-    },
-    {
-     "id": "ar1s_13",
-     "text": "Flipping a photo left to right does exactly this, to every row of pixels.",
-     "start": 69.45,
-     "end": 74.15
+     "id": "ka1s_11",
+     "text": "A report that should run from the first to the thirty first, and stops at the thirtieth, has exactly this bug.",
+     "start": 53.31,
+     "end": 59.95
     }
    ],
    "pauses": [
     {
-     "id": "ar1s-q",
-     "t": 40.66
+     "id": "ka1s-q",
+     "t": 22.88
     }
    ]
   },
-  "ar2i": {
-   "src": "videos/ar2i.mp4",
-   "title": "The Biggest Parcel",
-   "duration": 16.28,
+  "ka2i": {
+   "src": "videos/ka2i.mp4",
+   "title": "Backwards",
+   "duration": 23.51,
    "lines": [
     {
-     "id": "ar2i_1",
-     "text": "Five parcels, five weights. Moss wants the heaviest.",
+     "id": "ka2i_1",
+     "text": "Moss wants a word written backwards. Moss, becomes s, s, o, m.",
      "start": 0.2,
-     "end": 3.58
+     "end": 4.39
     },
     {
-     "id": "ar2i_2",
-     "text": "Return the largest number in the row.",
-     "start": 4.29,
-     "end": 6.47
+     "id": "ka2i_2",
+     "text": "The code walks the word from the end. But it has two small mistakes. Find them both.",
+     "start": 5.09,
+     "end": 10.63
     },
     {
-     "id": "ar2i_3",
-     "text": "You cannot know which is biggest without looking at every door once.",
-     "start": 7.17,
-     "end": 11.09
+     "id": "ka2i_3",
+     "text": "Four letters. So the last one sits at position three. Not four.",
+     "start": 11.33,
+     "end": 15.49
     },
     {
-     "id": "ar2i_4",
-     "text": "So what do you carry with you as you walk? Your turn.",
-     "start": 11.79,
-     "end": 14.68
+     "id": "ka2i_4",
+     "text": "Trace the first turn. Then the last turn. Which doors does the code open? Your turn.",
+     "start": 16.19,
+     "end": 21.91
     }
    ],
    "pauses": []
   },
-  "ar2s": {
-   "src": "videos/ar2s.mp4",
-   "title": "Remember the best so far",
-   "duration": 55.67,
+  "ka2s": {
+   "src": "videos/ka2s.mp4",
+   "title": "Both ends were wrong",
+   "duration": 71.93,
    "lines": [
     {
-     "id": "ar2s_1",
-     "text": "The biggest number could be behind any door. So every door has to be looked at once.",
+     "id": "ka2s_1",
+     "text": "A loop has two ends. Its first turn, and its last turn. Check both by hand.",
      "start": 0.2,
-     "end": 5.57
+     "end": 5.49
     },
     {
-     "id": "ar2s_2",
-     "text": "Carry one number as you walk: the best so far. Replace it whenever you see a bigger one.",
-     "start": 6.32,
-     "end": 12.16
+     "id": "ka2s_2",
+     "text": "Going backwards, the first turn is the last position. Length minus one. And the last turn is position zero.",
+     "start": 6.24,
+     "end": 13.13
     },
     {
-     "id": "ar2s_3",
-     "text": "Line two takes the first number as the best so far. Three.",
-     "start": 12.91,
-     "end": 16.68
+     "id": "ka2s_3",
+     "text": "Four letters, at positions zero to three. The old code started at word dot length. Four. What is at position four?",
+     "start": 13.88,
+     "end": 21.67
     },
     {
-     "id": "ar2s_4",
-     "text": "The walk starts at door one. Eight is bigger than three, so best becomes eight.",
-     "start": 17.43,
-     "end": 22.2
+     "id": "ka2s_4",
+     "text": "Nothing. So the answer began with the word, undefined. The first fix. Start at length minus one. Three.",
+     "start": 22.87,
+     "end": 29.84
     },
     {
-     "id": "ar2s_5",
-     "text": "Door two. Two is not bigger than eight. Nothing changes.",
-     "start": 22.95,
-     "end": 26.44
+     "id": "ka2s_5",
+     "text": "Position three. S. Then two. S. Then one. O.",
+     "start": 30.59,
+     "end": 33.84
     },
     {
-     "id": "ar2s_6",
-     "text": "Door three holds nine. What happens to best?",
-     "start": 27.19,
-     "end": 29.98
+     "id": "ka2s_6",
+     "text": "Now i is zero. The old code asked: is zero greater than zero? No. It stopped, and the m was lost.",
+     "start": 34.59,
+     "end": 41.24
     },
     {
-     "id": "ar2s_7",
-     "text": "It becomes nine.",
+     "id": "ka2s_7",
+     "text": "The second fix. Go on while i is at least zero. So position zero is read too. M.",
+     "start": 41.99,
+     "end": 48.1
+    },
+    {
+     "id": "ka2s_8",
+     "text": "I becomes minus one. The loop ends. Line six returns s, s, o, m.",
+     "start": 48.85,
+     "end": 53.83
+    },
+    {
+     "id": "ka2s_9",
+     "text": "Going backwards. Start at length minus one. Stop after zero.",
+     "start": 54.93,
+     "end": 58.79
+    },
+    {
+     "id": "ka2s_10",
+     "text": "Two mistakes, and both were at the ends. That is where to look first.",
+     "start": 59.54,
+     "end": 63.58
+    },
+    {
+     "id": "ka2s_11",
+     "text": "Your messages, newest first. Or an undo list. Both are a loop that walks backwards like this.",
+     "start": 64.33,
+     "end": 70.33
+    }
+   ],
+   "pauses": [
+    {
+     "id": "ka2s-q",
+     "t": 21.87
+    }
+   ]
+  },
+  "ka3i": {
+   "src": "videos/ka3i.mp4",
+   "title": "The First Long Word",
+   "duration": 24.57,
+   "lines": [
+    {
+     "id": "ka3i_1",
+     "text": "Pip is looking for the first word with more than three letters. Sun, and oak. Neither is long enough.",
+     "start": 0.2,
+     "end": 6.4
+    },
+    {
+     "id": "ka3i_2",
+     "text": "So the answer should be null. But this code crashes instead. Find out why.",
+     "start": 7.1,
+     "end": 11.84
+    },
+    {
+     "id": "ka3i_3",
+     "text": "It works fine when a long word exists. It only breaks when there is none.",
+     "start": 12.54,
+     "end": 16.93
+    },
+    {
+     "id": "ka3i_4",
+     "text": "Trace it. After two turns, i is two. What does the code ask first? Your turn.",
+     "start": 17.63,
+     "end": 22.97
+    }
+   ],
+   "pauses": []
+  },
+  "ka3s": {
+   "src": "videos/ka3s.mp4",
+   "title": "The guard goes first",
+   "duration": 66.64,
+   "lines": [
+    {
+     "id": "ka3s_1",
+     "text": "With and, the computer checks the left side first. If it is false, it never looks at the right side.",
+     "start": 0.2,
+     "end": 6.24
+    },
+    {
+     "id": "ka3s_2",
+     "text": "So the check that keeps you safe, must come first.",
+     "start": 6.99,
+     "end": 9.79
+    },
+    {
+     "id": "ka3s_3",
+     "text": "N is three. I starts at zero. Sun has three letters. Not more than three. So i moves on.",
+     "start": 10.54,
+     "end": 16.88
+    },
+    {
+     "id": "ka3s_4",
+     "text": "Oak. Three letters as well. I moves on, to two.",
+     "start": 17.63,
+     "end": 20.56
+    },
+    {
+     "id": "ka3s_5",
+     "text": "Now i is two. There is no word at position two. The old code asked for its length first. What happens?",
+     "start": 21.31,
+     "end": 28.16
+    },
+    {
+     "id": "ka3s_6",
+     "text": "It crashes. You cannot ask nothing, for its length.",
+     "start": 29.36,
+     "end": 32.3
+    },
+    {
+     "id": "ka3s_7",
+     "text": "The fix is only the order. First ask: is i still inside the row? Two is not less than two. The computer stops right there. The second check never runs.",
+     "start": 33.05,
+     "end": 43.53
+    },
+    {
+     "id": "ka3s_8",
+     "text": "Line six sees that i is past the end, and returns null.",
+     "start": 44.28,
+     "end": 48.02
+    },
+    {
+     "id": "ka3s_9",
+     "text": "Left to right. Stop when the answer is known. So the guard goes first.",
+     "start": 49.12,
+     "end": 53.6
+    },
+    {
+     "id": "ka3s_10",
+     "text": "The same order protects you from null, and from empty lists.",
+     "start": 54.35,
+     "end": 58.14
+    },
+    {
+     "id": "ka3s_11",
+     "text": "Real code is full of this. User, and user dot name. Check that it exists. Then use it.",
+     "start": 58.89,
+     "end": 65.04
+    }
+   ],
+   "pauses": [
+    {
+     "id": "ka3s-q",
+     "t": 28.36
+    }
+   ]
+  },
+  "ka4i": {
+   "src": "videos/ka4i.mp4",
+   "title": "One Too Many",
+   "duration": 24.27,
+   "lines": [
+    {
+     "id": "ka4i_1",
+     "text": "Three numbers in a row. Pip wants the gaps between neighbours. Five minus three. Then nine minus five.",
+     "start": 0.2,
+     "end": 6.99
+    },
+    {
+     "id": "ka4i_2",
+     "text": "Two, and four. But this code returns three items. And the last one is not even a number.",
+     "start": 7.69,
+     "end": 13.65
+    },
+    {
+     "id": "ka4i_3",
+     "text": "It is nearly right. One thing is off.",
+     "start": 14.35,
+     "end": 16.61
+    },
+    {
+     "id": "ka4i_4",
+     "text": "Three numbers. How many gaps? And how many turns does the loop make? Your turn.",
+     "start": 17.31,
+     "end": 22.67
+    }
+   ],
+   "pauses": []
+  },
+  "ka4s": {
+   "src": "videos/ka4s.mp4",
+   "title": "Looking ahead? Stop early",
+   "duration": 59.99,
+   "lines": [
+    {
+     "id": "ka4s_1",
+     "text": "Count first. Three numbers have two gaps. So the loop should make two turns.",
+     "start": 0.2,
+     "end": 5.05
+    },
+    {
+     "id": "ka4s_2",
+     "text": "The body reads the door after i. So on the very last door, there is nothing to read.",
+     "start": 5.8,
+     "end": 10.93
+    },
+    {
+     "id": "ka4s_3",
+     "text": "I is zero. Five minus three. Two.",
+     "start": 11.68,
+     "end": 13.95
+    },
+    {
+     "id": "ka4s_4",
+     "text": "I is one. Nine minus five. Four.",
+     "start": 14.7,
+     "end": 16.92
+    },
+    {
+     "id": "ka4s_5",
+     "text": "The old code went on, to i equals two. It asked for the number after the nine. What did it get?",
+     "start": 17.67,
+     "end": 23.59
+    },
+    {
+     "id": "ka4s_6",
+     "text": "Undefined. And undefined minus nine, is not a number. That was the extra item.",
+     "start": 24.79,
+     "end": 30.43
+    },
+    {
+     "id": "ka4s_7",
+     "text": "The body looks one door ahead. So the loop must stop one door early. Less than length, minus one.",
      "start": 31.18,
-     "end": 32.28
+     "end": 37.23
     },
     {
-     "id": "ar2s_8",
-     "text": "Door four. Four is not bigger. And the row is finished.",
-     "start": 33.03,
-     "end": 36.45
+     "id": "ka4s_8",
+     "text": "Two turns. Line six returns two, and four.",
+     "start": 37.98,
+     "end": 41.03
     },
     {
-     "id": "ar2s_9",
-     "text": "Line six returns best. Nine.",
-     "start": 37.2,
-     "end": 39.52
+     "id": "ka4s_9",
+     "text": "Whenever the body reads i plus one, the loop stops at length minus one.",
+     "start": 42.13,
+     "end": 46.72
     },
     {
-     "id": "ar2s_10",
-     "text": "One walk, one comparison per door. O of n time.",
-     "start": 40.62,
-     "end": 43.98
+     "id": "ka4s_10",
+     "text": "Count the turns you expect. Then check that the loop makes exactly that many.",
+     "start": 47.47,
+     "end": 52.09
     },
     {
-     "id": "ar2s_11",
-     "text": "One remembered number. O of one space.",
-     "start": 44.73,
-     "end": 47.56
-    },
-    {
-     "id": "ar2s_12",
-     "text": "A game keeps its high score this way. One number, replaced whenever a better score comes in.",
-     "start": 48.31,
-     "end": 54.07
+     "id": "ka4s_11",
+     "text": "A chart of daily change, today minus yesterday, has one bar fewer than there are days.",
+     "start": 52.84,
+     "end": 58.39
     }
    ],
    "pauses": [
     {
-     "id": "ar2s-q",
-     "t": 30.18
+     "id": "ka4s-q",
+     "t": 23.79
     }
    ]
   },
-  "ar3i": {
-   "src": "videos/ar3i.mp4",
-   "title": "Make Room",
-   "duration": 18.55,
+  "kb1i": {
+   "src": "videos/kb1i.mp4",
+   "title": "Sorted, Hands Off",
+   "duration": 21.58,
    "lines": [
     {
-     "id": "ar3i_1",
-     "text": "A parcel arrived late. It belongs in the middle of the row.",
+     "id": "kb1i_1",
+     "text": "Pip has a row of numbers. Three, one, two. Moss wants them sorted.",
+     "start": 0.2,
+     "end": 4.58
+    },
+    {
+     "id": "kb1i_2",
+     "text": "Return a new, sorted row. And leave the row you were given exactly as it is.",
+     "start": 5.28,
+     "end": 10.36
+    },
+    {
+     "id": "kb1i_3",
+     "text": "The code returns one, two, three. That looks right. But the test still fails.",
+     "start": 11.06,
+     "end": 16.17
+    },
+    {
+     "id": "kb1i_4",
+     "text": "What happened to the row that was handed in? Your turn.",
+     "start": 16.87,
+     "end": 19.98
+    }
+   ],
+   "pauses": []
+  },
+  "kb1s": {
+   "src": "videos/kb1s.mp4",
+   "title": "Copy first, then change",
+   "duration": 55.13,
+   "lines": [
+    {
+     "id": "kb1s_1",
+     "text": "Sort does not make a new array. It re-orders the array it is called on.",
+     "start": 0.2,
+     "end": 4.6
+    },
+    {
+     "id": "kb1s_2",
+     "text": "And nums is the caller's array. So make a real copy first, and sort that.",
+     "start": 5.35,
+     "end": 10.02
+    },
+    {
+     "id": "kb1s_3",
+     "text": "The old code called sort on nums. Whose array is that?",
+     "start": 10.77,
+     "end": 14.25
+    },
+    {
+     "id": "kb1s_4",
+     "text": "The caller's. No copy was made. So their row became one, two, three, behind their back.",
+     "start": 15.45,
+     "end": 21.05
+    },
+    {
+     "id": "kb1s_5",
+     "text": "The fix starts on line two. The three dots spread the numbers into a new array.",
+     "start": 21.8,
+     "end": 26.55
+    },
+    {
+     "id": "kb1s_6",
+     "text": "Line three sorts the copy. Only the copy.",
+     "start": 27.3,
+     "end": 30.13
+    },
+    {
+     "id": "kb1s_7",
+     "text": "Line four returns it. And the original row is untouched.",
+     "start": 30.88,
+     "end": 34.6
+    },
+    {
+     "id": "kb1s_8",
+     "text": "Sort, reverse, push, pop and splice all change the array they are called on.",
+     "start": 35.7,
+     "end": 40.3
+    },
+    {
+     "id": "kb1s_9",
+     "text": "If you must not change the input, copy before you touch it.",
+     "start": 41.05,
+     "end": 44.64
+    },
+    {
+     "id": "kb1s_10",
+     "text": "A table on a web page that you sort by price. If the code sorts the original list, every other view of that list changes too.",
+     "start": 45.39,
+     "end": 53.53
+    }
+   ],
+   "pauses": [
+    {
+     "id": "kb1s-q",
+     "t": 14.45
+    }
+   ]
+  },
+  "kb2i": {
+   "src": "videos/kb2i.mp4",
+   "title": "A Grid of Zeros",
+   "duration": 19.41,
+   "lines": [
+    {
+     "id": "kb2i_1",
+     "text": "Pip needs a grid of zeros. Two rows, two columns.",
      "start": 0.2,
      "end": 3.82
     },
     {
-     "id": "ar3i_2",
-     "text": "Insert x at index i, and shift everything after it one door to the right.",
+     "id": "kb2i_2",
+     "text": "The code builds it, and it looks perfect. Until someone writes a seven into the top left square.",
      "start": 4.52,
-     "end": 9.27
+     "end": 10.29
     },
     {
-     "id": "ar3i_3",
-     "text": "If you start shifting at the wrong end, a parcel gets overwritten.",
-     "start": 9.97,
-     "end": 13.75
+     "id": "kb2i_3",
+     "text": "Then the square below it turns into a seven as well.",
+     "start": 10.99,
+     "end": 14.04
     },
     {
-     "id": "ar3i_4",
-     "text": "Which parcel must move first? Your turn.",
-     "start": 14.45,
-     "end": 16.95
+     "id": "kb2i_4",
+     "text": "How many rows did the code really make? Your turn.",
+     "start": 14.74,
+     "end": 17.81
     }
    ],
    "pauses": []
   },
-  "ar3s": {
-   "src": "videos/ar3s.mp4",
-   "title": "Shift from the back",
-   "duration": 62.1,
+  "kb2s": {
+   "src": "videos/kb2s.mp4",
+   "title": "One row, shown twice",
+   "duration": 59.76,
    "lines": [
     {
-     "id": "ar3s_1",
-     "text": "To open a gap, everything after it moves one door to the right.",
+     "id": "kb2s_1",
+     "text": "The old code made one row. Then it filled the grid with that same row, again and again.",
      "start": 0.2,
-     "end": 4.13
+     "end": 5.54
     },
     {
-     "id": "ar3s_2",
-     "text": "Start from the back. Each number moves into a door that is already free, so nothing is lost.",
-     "start": 4.88,
-     "end": 10.99
+     "id": "kb2s_2",
+     "text": "So the grid does not hold two rows. It holds two labels, tied to one row.",
+     "start": 6.29,
+     "end": 11.27
     },
     {
-     "id": "ar3s_3",
-     "text": "Line two starts j on a new door at the end of the row. Door four. It is empty.",
-     "start": 11.74,
-     "end": 17.16
+     "id": "kb2s_3",
+     "text": "It looks like a grid of four zeros. Now write a seven into the top left square. What does the grid show?",
+     "start": 12.02,
+     "end": 18.19
     },
     {
-     "id": "ar3s_4",
-     "text": "Line three copies the number from the door on its left. Five moves into door four.",
-     "start": 17.91,
-     "end": 23.26
+     "id": "kb2s_4",
+     "text": "Both rows show the seven. Because there is only one row.",
+     "start": 19.39,
+     "end": 22.95
     },
     {
-     "id": "ar3s_5",
-     "text": "J moves left, to door three. Four moves into it.",
-     "start": 24.01,
-     "end": 27.16
+     "id": "kb2s_5",
+     "text": "The fix. A loop that runs once per row. And inside it, line four creates a brand new array, every turn.",
+     "start": 23.7,
+     "end": 30.58
     },
     {
-     "id": "ar3s_6",
-     "text": "J moves to door two. The loop test is j greater than i. Is two greater than two?",
-     "start": 27.91,
-     "end": 33.42
+     "id": "kb2s_6",
+     "text": "The second turn makes a second, separate row.",
+     "start": 31.33,
+     "end": 33.98
     },
     {
-     "id": "ar3s_7",
-     "text": "No. The loop stops. Door two still shows the old four, but its copy is safe next door.",
-     "start": 34.62,
-     "end": 40.32
+     "id": "kb2s_7",
+     "text": "Now the seven lands in one square only.",
+     "start": 34.73,
+     "end": 36.99
     },
     {
-     "id": "ar3s_8",
-     "text": "Line five writes x into door two. Three.",
-     "start": 41.07,
-     "end": 43.82
+     "id": "kb2s_8",
+     "text": "Fill with a number is fine. Numbers are copied. Fill with an array is a trap. The same array goes everywhere.",
+     "start": 38.09,
+     "end": 44.99
     },
     {
-     "id": "ar3s_9",
-     "text": "Inserting at the front moves every number. So in the worst case, O of n time.",
-     "start": 44.92,
-     "end": 50.05
+     "id": "kb2s_9",
+     "text": "Anything that must be separate, has to be created separately. Once per turn.",
+     "start": 45.74,
+     "end": 50.45
     },
     {
-     "id": "ar3s_10",
-     "text": "No second array. O of one extra space.",
-     "start": 50.8,
-     "end": 53.85
-    },
-    {
-     "id": "ar3s_11",
-     "text": "Type a letter in the middle of a line, and a simple text editor shifts the rest, just like this.",
-     "start": 54.6,
-     "end": 60.5
+     "id": "kb2s_10",
+     "text": "A calendar that copies one empty week into every row. Add a meeting on Monday, and it shows up in every week.",
+     "start": 51.2,
+     "end": 58.16
     }
    ],
    "pauses": [
     {
-     "id": "ar3s-q",
-     "t": 33.62
+     "id": "kb2s-q",
+     "t": 18.39
     }
    ]
   },
-  "ar4i": {
-   "src": "videos/ar4i.mp4",
-   "title": "The Missing Number",
-   "duration": 22.13,
+  "kb3i": {
+   "src": "videos/kb3i.mp4",
+   "title": "One More Point",
+   "duration": 18.92,
    "lines": [
     {
-     "id": "ar4i_1",
-     "text": "Parcels numbered zero to three were posted. Only three of the four arrived.",
+     "id": "kb3i_1",
+     "text": "A player card. Name, Pip. Score, two.",
      "start": 0.2,
-     "end": 4.73
+     "end": 2.7
     },
     {
-     "id": "ar4i_2",
-     "text": "The row holds the numbers zero to n, with one missing. Return the missing number.",
-     "start": 5.43,
-     "end": 10.71
+     "id": "kb3i_2",
+     "text": "Return a new card, with the score one higher. And leave the old card as it was.",
+     "start": 3.4,
+     "end": 8.56
     },
     {
-     "id": "ar4i_3",
-     "text": "Looking for each number in turn means walking the row again and again.",
-     "start": 11.41,
-     "end": 15.56
+     "id": "kb3i_3",
+     "text": "The code hands back a card with score three. But the old card says three as well.",
+     "start": 9.26,
+     "end": 14.12
     },
     {
-     "id": "ar4i_4",
-     "text": "What should all the numbers add up to? And what do they add up to? Your turn.",
-     "start": 16.26,
-     "end": 20.53
+     "id": "kb3i_4",
+     "text": "How many cards are there, really? Your turn.",
+     "start": 14.81,
+     "end": 17.32
     }
    ],
    "pauses": []
   },
-  "ar4s": {
-   "src": "videos/ar4s.mp4",
-   "title": "Expected minus actual",
-   "duration": 54.16,
+  "kb3s": {
+   "src": "videos/kb3s.mp4",
+   "title": "A new card, not the old one",
+   "duration": 62,
    "lines": [
     {
-     "id": "ar4s_1",
-     "text": "If nothing were missing, the numbers would add up to a total we can work out in advance.",
+     "id": "kb3s_1",
+     "text": "The old code wrote into the card it was given. And handed the same card back.",
      "start": 0.2,
-     "end": 5.67
+     "end": 5.11
     },
     {
-     "id": "ar4s_2",
-     "text": "The real total is smaller, by exactly the number that is missing.",
-     "start": 6.42,
-     "end": 10.41
+     "id": "kb3s_2",
+     "text": "Make a second card instead. Copy every field. Then set the one that changes.",
+     "start": 5.86,
+     "end": 11.15
     },
     {
-     "id": "ar4s_3",
-     "text": "Two totals, both starting at zero. Expected, and actual.",
-     "start": 11.16,
-     "end": 15.07
+     "id": "kb3s_3",
+     "text": "The old code wrote the new score into player. So what does the caller's card say now?",
+     "start": 11.9,
+     "end": 16.85
     },
     {
-     "id": "ar4s_4",
-     "text": "Door zero. Line five adds i plus one to expected. One. Line six adds the door, three, to actual.",
-     "start": 15.82,
-     "end": 22.91
+     "id": "kb3s_4",
+     "text": "Three. It is the same card. The old score is gone.",
+     "start": 18.05,
+     "end": 21.29
     },
     {
-     "id": "ar4s_5",
-     "text": "Door one. Expected gains two. Actual gains zero.",
-     "start": 23.66,
-     "end": 27.36
+     "id": "kb3s_5",
+     "text": "The fix. The curly brackets on line two make a new object. The three dots copy every field of the old one into it.",
+     "start": 22.04,
+     "end": 29.74
     },
     {
-     "id": "ar4s_6",
-     "text": "Door two. Expected gains three. Actual gains one. What are the two totals?",
-     "start": 28.11,
-     "end": 33.38
+     "id": "kb3s_6",
+     "text": "Then score is written again, after the copy. Two plus one. It replaces the copied two.",
+     "start": 30.49,
+     "end": 35.98
     },
     {
-     "id": "ar4s_7",
-     "text": "Six, and four.",
-     "start": 34.58,
-     "end": 35.67
+     "id": "kb3s_7",
+     "text": "The new card is returned. And the old one still says two.",
+     "start": 36.73,
+     "end": 40.22
     },
     {
-     "id": "ar4s_8",
-     "text": "Line eight subtracts. Six minus four. The missing number is two.",
-     "start": 36.42,
-     "end": 40.55
+     "id": "kb3s_8",
+     "text": "Curly brackets with three dots copy an object, one level deep. Just like the square brackets do for an array.",
+     "start": 41.32,
+     "end": 48.1
     },
     {
-     "id": "ar4s_9",
-     "text": "One walk. O of n time.",
-     "start": 41.65,
-     "end": 43.22
+     "id": "kb3s_9",
+     "text": "Later fields win. So the changed field goes after the spread.",
+     "start": 48.85,
+     "end": 52.83
     },
     {
-     "id": "ar4s_10",
-     "text": "Two totals. O of one space.",
-     "start": 43.97,
-     "end": 46.03
-    },
-    {
-     "id": "ar4s_11",
-     "text": "Checksums use the same trick. Add everything up, and compare it with what the total should be.",
-     "start": 46.78,
-     "end": 52.56
+     "id": "kb3s_10",
+     "text": "An undo button depends on this. If every change makes a new object, the old one is still there to go back to.",
+     "start": 53.58,
+     "end": 60.4
     }
    ],
    "pauses": [
     {
-     "id": "ar4s-q",
-     "t": 33.58
+     "id": "kb3s-q",
+     "t": 17.05
     }
    ]
   },
-  "ar5i": {
-   "src": "videos/ar5i.mp4",
-   "title": "Add One",
-   "duration": 16.58,
+  "kb4i": {
+   "src": "videos/kb4i.mp4",
+   "title": "Clear the Row",
+   "duration": 21.97,
    "lines": [
     {
-     "id": "ar5i_1",
-     "text": "A number, written one digit per door. One hundred and ninety nine.",
+     "id": "kb4i_1",
+     "text": "A row of three numbers. This time, the task is to change the row itself.",
      "start": 0.2,
-     "end": 4.14
+     "end": 4.79
     },
     {
-     "id": "ar5i_2",
-     "text": "Add one to it, and return the digits of the answer.",
-     "start": 4.84,
-     "end": 7.99
+     "id": "kb4i_2",
+     "text": "Set every item to zero. Return nothing.",
+     "start": 5.49,
+     "end": 8.26
     },
     {
-     "id": "ar5i_3",
-     "text": "On paper you start at the right, and a nine makes you carry.",
-     "start": 8.69,
-     "end": 12.15
+     "id": "kb4i_3",
+     "text": "The code loops over the row, and sets x to zero each time. No error. And nothing changes.",
+     "start": 8.96,
+     "end": 15.22
     },
     {
-     "id": "ar5i_4",
-     "text": "Where does the carrying stop? Your turn.",
-     "start": 12.85,
-     "end": 14.98
+     "id": "kb4i_4",
+     "text": "So what is x? And what does x equals zero really change? Your turn.",
+     "start": 15.92,
+     "end": 20.37
     }
    ],
    "pauses": []
   },
-  "ar5s": {
-   "src": "videos/ar5s.mp4",
-   "title": "Carry from the back",
-   "duration": 59.38,
+  "kb4s": {
+   "src": "videos/kb4s.mp4",
+   "title": "Write through the index",
+   "duration": 61.71,
    "lines": [
     {
-     "id": "ar5s_1",
-     "text": "Adding one starts at the last digit, just like on paper.",
+     "id": "kb4s_1",
+     "text": "In the old loop, x was not a door of the row. It was a new variable, holding a copy of the number.",
      "start": 0.2,
-     "end": 3.71
+     "end": 6.58
     },
     {
-     "id": "ar5s_2",
-     "text": "A nine turns into zero and passes the one along. Any other digit takes the one, and we are finished.",
-     "start": 4.46,
-     "end": 10.91
+     "id": "kb4s_2",
+     "text": "To change the row, you have to write into the row. Through its index.",
+     "start": 7.33,
+     "end": 11.36
     },
     {
-     "id": "ar5s_3",
-     "text": "Line two starts at the last door. Door two.",
-     "start": 11.66,
-     "end": 14.53
+     "id": "kb4s_3",
+     "text": "The old loop. X receives a copy of the first number. Four.",
+     "start": 12.11,
+     "end": 15.93
     },
     {
-     "id": "ar5s_4",
-     "text": "Line three asks: is this digit less than nine? No. It is a nine.",
-     "start": 15.28,
-     "end": 19.46
+     "id": "kb4s_4",
+     "text": "Then x is set to zero. What is in the row now?",
+     "start": 16.68,
+     "end": 19.84
     },
     {
-     "id": "ar5s_5",
-     "text": "So line seven turns it into zero. The one is carried to the left.",
-     "start": 20.21,
-     "end": 24.2
+     "id": "kb4s_5",
+     "text": "Still four. Only the copy changed. The row was never written to.",
+     "start": 21.04,
+     "end": 25.17
     },
     {
-     "id": "ar5s_6",
-     "text": "Door one. Another nine. Zero again, and the carry moves on.",
-     "start": 24.95,
-     "end": 28.91
+     "id": "kb4s_6",
+     "text": "The fix. Loop with an index. Line three writes zero into door i, of the row itself.",
+     "start": 25.92,
+     "end": 31.38
     },
     {
-     "id": "ar5s_7",
-     "text": "Door zero holds a one. Is one less than nine?",
-     "start": 29.66,
-     "end": 32.67
+     "id": "kb4s_7",
+     "text": "Then door one. And door two.",
+     "start": 32.13,
+     "end": 33.99
     },
     {
-     "id": "ar5s_8",
-     "text": "Yes. Line four makes it two, and line five returns straight away.",
-     "start": 33.88,
-     "end": 38.12
+     "id": "kb4s_8",
+     "text": "The function returns nothing. The caller's own row is now all zeros.",
+     "start": 34.74,
+     "end": 39.4
     },
     {
-     "id": "ar5s_9",
-     "text": "At most one visit per digit. O of n time. Usually far less, because the carry stops early.",
-     "start": 39.22,
-     "end": 45.32
+     "id": "kb4s_9",
+     "text": "A loop variable holding a number is a copy. Assigning to it changes nothing outside.",
+     "start": 40.5,
+     "end": 45.86
     },
     {
-     "id": "ar5s_10",
-     "text": "The digits are changed in place. Only all nines need one extra door.",
-     "start": 46.07,
-     "end": 50.63
+     "id": "kb4s_10",
+     "text": "In place means: write through the index, or call a method that changes the array.",
+     "start": 46.61,
+     "end": 51.52
     },
     {
-     "id": "ar5s_11",
-     "text": "Numbers too big for one box are stored as a row of digits, and added with a carry, just like this.",
-     "start": 51.38,
-     "end": 57.78
+     "id": "kb4s_11",
+     "text": "Marking every notification as read. If the code only changes its own copies, the little red badge never goes away.",
+     "start": 52.27,
+     "end": 60.11
     }
    ],
    "pauses": [
     {
-     "id": "ar5s-q",
-     "t": 32.88
+     "id": "kb4s-q",
+     "t": 20.04
     }
    ]
   },
-  "ar6i": {
-   "src": "videos/ar6i.mp4",
-   "title": "The Longest Streak",
-   "duration": 18.99,
+  "kd1i": {
+   "src": "videos/kd1i.mp4",
+   "title": "The Average of Nothing",
+   "duration": 22.85,
    "lines": [
     {
-     "id": "ar6i_1",
-     "text": "Pip writes a one for every sunny day, and a zero for rain.",
+     "id": "kd1i_1",
+     "text": "The average of two, four and six. Twelve, divided by three. Four.",
      "start": 0.2,
-     "end": 3.8
+     "end": 4.8
     },
     {
-     "id": "ar6i_2",
-     "text": "Return the length of the longest unbroken run of ones.",
-     "start": 4.5,
-     "end": 8.12
+     "id": "kd1i_2",
+     "text": "The code gets that right. And the task adds one sentence. For an empty list, the answer is zero.",
+     "start": 5.5,
+     "end": 11.72
     },
     {
-     "id": "ar6i_3",
-     "text": "A zero ends the current streak. But an earlier streak might still be the longest.",
-     "start": 8.82,
-     "end": 13.65
+     "id": "kd1i_3",
+     "text": "So the example passes. That does not mean the code is finished.",
+     "start": 12.42,
+     "end": 16.39
     },
     {
-     "id": "ar6i_4",
-     "text": "So how many numbers do you need to keep? Your turn.",
-     "start": 14.35,
-     "end": 17.39
+     "id": "kd1i_4",
+     "text": "Empty. One item. The ends. Which input have you not tried? Your turn.",
+     "start": 17.09,
+     "end": 21.25
     }
    ],
    "pauses": []
   },
-  "ar6s": {
-   "src": "videos/ar6s.mp4",
-   "title": "Current streak, best streak",
-   "duration": 56.13,
+  "kd1s": {
+   "src": "videos/kd1s.mp4",
+   "title": "Answer the empty case first",
+   "duration": 61.91,
    "lines": [
     {
-     "id": "ar6s_1",
-     "text": "Walk the row once, counting the current streak. A zero sets it back to nothing.",
+     "id": "kd1s_1",
+     "text": "The example works. So try the inputs nobody thinks of. First on the list. Nothing at all.",
      "start": 0.2,
-     "end": 4.87
+     "end": 6.69
     },
     {
-     "id": "ar6s_2",
-     "text": "And remember the longest streak seen so far, because a later zero must not erase it.",
-     "start": 5.62,
-     "end": 10.94
+     "id": "kd1s_2",
+     "text": "Dividing by the length is the dangerous line. What if the length is zero?",
+     "start": 7.44,
+     "end": 11.97
     },
     {
-     "id": "ar6s_3",
-     "text": "Run and best both start at zero.",
-     "start": 11.69,
-     "end": 13.62
+     "id": "kd1s_3",
+     "text": "With two, four and six, total reaches twelve, and twelve divided by three is four.",
+     "start": 12.72,
+     "end": 18.09
     },
     {
-     "id": "ar6s_4",
-     "text": "Door zero is a one. Run is one. Best is one.",
-     "start": 14.37,
-     "end": 17.66
+     "id": "kd1s_4",
+     "text": "Now the empty list. The loop never runs. Total stays zero. And the length is zero. So what does the last line compute?",
+     "start": 18.84,
+     "end": 26.6
     },
     {
-     "id": "ar6s_5",
-     "text": "Another one. Run is two. Best is two.",
-     "start": 18.41,
-     "end": 20.87
+     "id": "kd1s_5",
+     "text": "Not a number. No crash. No warning. Just a wrong answer, handed back quietly.",
+     "start": 27.8,
+     "end": 33.28
     },
     {
-     "id": "ar6s_6",
-     "text": "A zero. Line six sets run back to zero. But best keeps its two.",
-     "start": 21.62,
-     "end": 26.17
+     "id": "kd1s_6",
+     "text": "The fix goes at the very top. If the list is empty, answer zero, and stop there.",
+     "start": 34.03,
+     "end": 39.39
     },
     {
-     "id": "ar6s_7",
-     "text": "A one. Run is one. That does not beat two.",
-     "start": 26.92,
-     "end": 29.67
+     "id": "kd1s_7",
+     "text": "Every other input still takes the old path, unchanged.",
+     "start": 40.14,
+     "end": 43.71
     },
     {
-     "id": "ar6s_8",
-     "text": "Another one. What are run and best now?",
-     "start": 30.42,
-     "end": 32.65
+     "id": "kd1s_8",
+     "text": "Whenever you divide, ask whether the bottom can be zero.",
+     "start": 44.81,
+     "end": 48.22
     },
     {
-     "id": "ar6s_9",
-     "text": "Run is two. Best stays two.",
-     "start": 33.85,
-     "end": 35.79
+     "id": "kd1s_9",
+     "text": "Handle the odd case first, at the top. Then the main path stays simple.",
+     "start": 48.97,
+     "end": 53.52
     },
     {
-     "id": "ar6s_10",
-     "text": "The last door. Run is three, and that beats two. Best is three.",
-     "start": 36.54,
-     "end": 40.54
-    },
-    {
-     "id": "ar6s_11",
-     "text": "Line nine returns best. Three.",
-     "start": 41.29,
-     "end": 43.46
-    },
-    {
-     "id": "ar6s_12",
-     "text": "One walk. O of n time.",
-     "start": 44.56,
-     "end": 46.12
-    },
-    {
-     "id": "ar6s_13",
-     "text": "Two numbers. O of one space.",
-     "start": 46.87,
-     "end": 48.89
-    },
-    {
-     "id": "ar6s_14",
-     "text": "A habit app that shows your longest streak of days counts it exactly like this.",
-     "start": 49.64,
-     "end": 54.53
+     "id": "kd1s_10",
+     "text": "A product page with no reviews yet. Without this check, it proudly shows a rating of, not a number.",
+     "start": 54.27,
+     "end": 60.31
     }
    ],
    "pauses": [
     {
-     "id": "ar6s-q",
-     "t": 32.85
+     "id": "kd1s-q",
+     "t": 26.8
+    }
+   ]
+  },
+  "kd2i": {
+   "src": "videos/kd2i.mp4",
+   "title": "The Largest",
+   "duration": 19.08,
+   "lines": [
+    {
+     "id": "kd2i_1",
+     "text": "Three numbers, all below zero. Minus five, minus two, minus nine.",
+     "start": 0.2,
+     "end": 4.49
+    },
+    {
+     "id": "kd2i_2",
+     "text": "Return the largest. That is minus two.",
+     "start": 5.19,
+     "end": 7.65
+    },
+    {
+     "id": "kd2i_3",
+     "text": "The code works for three, nine and two. For this list, it answers zero.",
+     "start": 8.35,
+     "end": 12.9
+    },
+    {
+     "id": "kd2i_4",
+     "text": "Zero is not even in the list. So where did it come from? Your turn.",
+     "start": 13.6,
+     "end": 17.48
+    }
+   ],
+   "pauses": []
+  },
+  "kd2s": {
+   "src": "videos/kd2s.mp4",
+   "title": "Start from real data",
+   "duration": 60.45,
+   "lines": [
+    {
+     "id": "kd2s_1",
+     "text": "The old code started with best equals zero. A number it made up.",
+     "start": 0.2,
+     "end": 4.32
+    },
+    {
+     "id": "kd2s_2",
+     "text": "A made up start is only safe if the data can never be on the other side of it.",
+     "start": 5.07,
+     "end": 9.67
+    },
+    {
+     "id": "kd2s_3",
+     "text": "Trace the old code. Best is zero. Is minus five bigger than zero? No.",
+     "start": 10.42,
+     "end": 15.24
+    },
+    {
+     "id": "kd2s_4",
+     "text": "Minus two. Bigger than zero? No. Minus nine? No. So what did the old code return?",
+     "start": 15.99,
+     "end": 21.7
+    },
+    {
+     "id": "kd2s_5",
+     "text": "Zero. The number it invented. Not a number from the list.",
+     "start": 22.9,
+     "end": 26.46
+    },
+    {
+     "id": "kd2s_6",
+     "text": "The fix. Start with the first number of the list. Minus five.",
+     "start": 27.21,
+     "end": 30.87
+    },
+    {
+     "id": "kd2s_7",
+     "text": "Minus two is bigger than minus five. Best becomes minus two. Minus nine is not bigger.",
+     "start": 31.62,
+     "end": 37.83
+    },
+    {
+     "id": "kd2s_8",
+     "text": "Line six returns minus two.",
+     "start": 38.58,
+     "end": 40.5
+    },
+    {
+     "id": "kd2s_9",
+     "text": "For a largest, or a smallest, start from the first item. Not from zero.",
+     "start": 41.6,
+     "end": 46.17
+    },
+    {
+     "id": "kd2s_10",
+     "text": "Always test with only negatives. And with a zero in the list.",
+     "start": 46.92,
+     "end": 50.8
+    },
+    {
+     "id": "kd2s_11",
+     "text": "A weather app that shows the warmest day of the week. In January, every day is below zero. And the app says zero.",
+     "start": 51.55,
+     "end": 58.85
+    }
+   ],
+   "pauses": [
+    {
+     "id": "kd2s-q",
+     "t": 21.9
+    }
+   ]
+  },
+  "kd3i": {
+   "src": "videos/kd3i.mp4",
+   "title": "Count the Word",
+   "duration": 20.77,
+   "lines": [
+    {
+     "id": "kd3i_1",
+     "text": "Three words. The, with a capital. Then. And the.",
+     "start": 0.2,
+     "end": 2.83
+    },
+    {
+     "id": "kd3i_2",
+     "text": "Count how often the word, the, appears. As a whole word. And ignoring capitals.",
+     "start": 3.53,
+     "end": 8.83
+    },
+    {
+     "id": "kd3i_3",
+     "text": "The first, and the third. Two. Then, does not count.",
+     "start": 9.53,
+     "end": 12.64
+    },
+    {
+     "id": "kd3i_4",
+     "text": "The task has two rules, hidden in two short phrases. Does the code obey both? Your turn.",
+     "start": 13.34,
+     "end": 19.17
+    }
+   ],
+   "pauses": []
+  },
+  "kd3s": {
+   "src": "videos/kd3s.mp4",
+   "title": "One test for each rule",
+   "duration": 68.7,
+   "lines": [
+    {
+     "id": "kd3s_1",
+     "text": "The task has two rules. Whole words. And capitals ignored. Each rule needs its own test.",
+     "start": 0.2,
+     "end": 6.02
+    },
+    {
+     "id": "kd3s_2",
+     "text": "The old code asked whether the word includes the letters. That obeys neither rule.",
+     "start": 6.77,
+     "end": 11.79
+    },
+    {
+     "id": "kd3s_3",
+     "text": "The first word. The, with a capital T. The old code looked for small t, h, e, inside it. Not found. So it was skipped.",
+     "start": 12.54,
+     "end": 20.91
+    },
+    {
+     "id": "kd3s_4",
+     "text": "The second word. Then. Does it include t, h, e?",
+     "start": 21.66,
+     "end": 24.82
+    },
+    {
+     "id": "kd3s_5",
+     "text": "Yes. So then was counted. One word missed, one word wrongly counted. And the total still came out as two.",
+     "start": 26.02,
+     "end": 32.71
+    },
+    {
+     "id": "kd3s_6",
+     "text": "The fix. Make both sides small letters. And compare whole words, with three equals signs.",
+     "start": 33.46,
+     "end": 39.3
+    },
+    {
+     "id": "kd3s_7",
+     "text": "Then is not equal to the. Skipped. The last word matches. Two.",
+     "start": 40.05,
+     "end": 44.04
+    },
+    {
+     "id": "kd3s_8",
+     "text": "Line seven returns two. This time, for the right reasons.",
+     "start": 44.79,
+     "end": 48.73
+    },
+    {
+     "id": "kd3s_9",
+     "text": "Write one small test for each rule in the task. On its own.",
+     "start": 49.83,
+     "end": 53.59
+    },
+    {
+     "id": "kd3s_10",
+     "text": "A right answer can hide two wrong steps. So test the steps, not just the total.",
+     "start": 54.34,
+     "end": 59.18
+    },
+    {
+     "id": "kd3s_11",
+     "text": "Search inside a document. Whole word, on or off. Match case, on or off. Those two switches are these two rules.",
+     "start": 59.93,
+     "end": 67.1
+    }
+   ],
+   "pauses": [
+    {
+     "id": "kd3s-q",
+     "t": 25.02
+    }
+   ]
+  },
+  "kd4i": {
+   "src": "videos/kd4i.mp4",
+   "title": "The Last Word, Loudly",
+   "duration": 22.1,
+   "lines": [
+    {
+     "id": "kd4i_1",
+     "text": "Pip likes seeds. Moss wants the last word, shouted. Seeds, in capitals, with an exclamation mark.",
+     "start": 0.2,
+     "end": 6.69
+    },
+    {
+     "id": "kd4i_2",
+     "text": "The code crashes. And the error message points at its last line.",
+     "start": 7.39,
+     "end": 11.37
+    },
+    {
+     "id": "kd4i_3",
+     "text": "But the last line looks fine.",
+     "start": 12.07,
+     "end": 13.74
+    },
+    {
+     "id": "kd4i_4",
+     "text": "So do not stare at the crash. Walk the values from the top. Which one goes wrong first? Your turn.",
+     "start": 14.44,
+     "end": 20.5
+    }
+   ],
+   "pauses": []
+  },
+  "kd4s": {
+   "src": "videos/kd4s.mp4",
+   "title": "Fix the first wrong value",
+   "duration": 69.64,
+   "lines": [
+    {
+     "id": "kd4s_1",
+     "text": "A crash tells you where the damage showed up. Not where it began.",
+     "start": 0.2,
+     "end": 3.9
+    },
+    {
+     "id": "kd4s_2",
+     "text": "So say what each value should be. Then look at what it is. Stop at the first difference.",
+     "start": 4.65,
+     "end": 9.92
+    },
+    {
+     "id": "kd4s_3",
+     "text": "Line two. The words. Pip, likes, seeds. That is what we expect. Good.",
+     "start": 10.67,
+     "end": 14.96
+    },
+    {
+     "id": "kd4s_4",
+     "text": "Line three. Last should be seeds. The old code read position words dot length. Three. What is there?",
+     "start": 15.71,
+     "end": 22.45
+    },
+    {
+     "id": "kd4s_5",
+     "text": "Undefined. Quietly. No error yet. That is the first wrong value. So the bug is here, on line three.",
+     "start": 23.65,
+     "end": 30.46
+    },
+    {
+     "id": "kd4s_6",
+     "text": "The fix. Length minus one. Position two. Seeds.",
+     "start": 31.21,
+     "end": 34.66
+    },
+    {
+     "id": "kd4s_7",
+     "text": "And line four, which crashed before, now works without a single change.",
+     "start": 35.41,
+     "end": 39.83
+    },
+    {
+     "id": "kd4s_8",
+     "text": "One more walk, with spaces around the sentence. Split then gives empty words at the ends. So line two trims the sentence first.",
+     "start": 40.93,
+     "end": 49.09
+    },
+    {
+     "id": "kd4s_9",
+     "text": "Do not fix the line that crashed. Fix the line that made the first wrong value.",
+     "start": 49.84,
+     "end": 54.44
+    },
+    {
+     "id": "kd4s_10",
+     "text": "After every fix, run all the tests again. One bug often hides another.",
+     "start": 55.19,
+     "end": 60.05
+    },
+    {
+     "id": "kd4s_11",
+     "text": "An error report from a real app names the line that blew up. The real mistake is usually a few lines above it.",
+     "start": 60.8,
+     "end": 68.04
+    }
+   ],
+   "pauses": [
+    {
+     "id": "kd4s-q",
+     "t": 22.65
     }
    ]
   }

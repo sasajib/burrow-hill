@@ -11,6 +11,8 @@ window.CHAPTER = {
   "href": "chapter.html?c=backtrack",
   "label": "Chapter 22: Backtracking"
  },
+ "mock": false,
+ "target": null,
  "stages": [
   {
    "id": "w",
@@ -93,8 +95,8 @@ window.CHAPTER = {
    "num": 1,
    "title": "Stepping Stones",
    "fn": "canReach",
-   "ask": "You stand on the first stone. The number on a stone is the <b>longest jump</b> you may take from it (shorter jumps are allowed). Return <b>true</b> if you can reach the last stone.",
-   "spec": "canReach([2, 3, 1, 1, 4]) → true      canReach([3, 2, 1, 0, 4]) → false",
+   "ask": "You stand on the first stone. The number on a stone is the <b>longest jump</b> you may take from it, counted in stones: a 2 lets you move 1 or 2 stones forward. Return <b>true</b> if you can reach the last stone.",
+   "spec": "canReach([2, 3, 1, 1, 4]) → true      (stone 0 → stone 1 → stone 4)      canReach([3, 2, 1, 0, 4]) → false      (every way ends on stone 3, which allows no jump)",
    "start": "// hops[i] is the longest jump allowed from stone i.\nfunction canReach(hops) {\n  // your code here\n}\n",
    "plan": [
     "You could try every sequence of jumps. What would that cost?",
@@ -196,6 +198,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "The code never decides which jump to take. Why is it still certain that a way exists when it returns true?",
+   "topic": null,
    "world": "A chain of radio towers works like this. Each has its own range. Will the signal reach the last one?",
    "view": {
     "row": [
@@ -577,6 +580,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "Why is it never better to give the least hungry animal a bigger snack than the smallest one that is enough?",
+   "topic": null,
    "world": "A cloud service places jobs on machines like this. The smallest machine that is big enough gets the smallest job.",
    "view": {
     "row": [
@@ -963,6 +967,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "The loop stops one stone before the end. What would go wrong if it also ran for the last stone?",
+   "topic": null,
    "world": "A long drive is planned like this. How far does one tank reach? And from anywhere in that range, how far the next?",
    "view": {
     "row": [
@@ -1396,6 +1401,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "The loop never walks the part of the lap before the start. Why is it still sure that Pip gets through it?",
+   "topic": null,
    "world": "An electric delivery van on a round trip. At which stop should it begin, so that the battery never runs flat?",
    "view": {
     "row": [

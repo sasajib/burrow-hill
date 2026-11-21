@@ -11,6 +11,8 @@ window.CHAPTER = {
   "href": "chapter.html?c=think1",
   "label": "Warm-up A: Be the Computer"
  },
+ "mock": false,
+ "target": null,
  "stages": [
   {
    "id": "w",
@@ -113,7 +115,7 @@ window.CHAPTER = {
    "num": 1,
    "title": "Sorted, Hands Off",
    "fn": "sortedCopy",
-   "ask": "Return the numbers <b>sorted, smallest first, as a new array</b>. The array you were given <b>must not change</b>. The code below returns the right answer, and still fails. Why?",
+   "ask": "Return the numbers <b>sorted, smallest first, as a new array</b>. The array you were given <b>must not change</b>. The code below returns the right answer, and still fails. Find out what else it changes, then <b>fix it</b>.",
    "spec": "sortedCopy([3, 1, 2]) → [1, 2, 3]      and the array that was passed in is still [3, 1, 2]",
    "start": "// This code is nearly right. Work out what it changes before you edit anything.\nfunction sortedCopy(nums) {\n  nums.sort((a, b) => a - b);\n  return nums;\n}\n",
    "plan": [
@@ -232,6 +234,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "The old code returned the right values. Describe a program in which its hidden change would cause a real bug.",
+   "topic": null,
    "world": "A table on a web page that you sort by price. If the code sorts the original list, every other view of that list changes too.",
    "view": {
     "row": [
@@ -585,6 +588,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "fill(0) with a number is fine, but fill(row) with an array is not. What is the difference?",
+   "topic": null,
    "world": "A calendar that copies one empty week into every row. Add a meeting on Monday, and it shows up in every week.",
    "view": {
     "row": [],
@@ -911,6 +915,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "In { ...player, score: player.score + 1 } the order matters. What happens if the spread comes last?",
+   "topic": null,
    "world": "An undo button depends on this. If every change makes a new object, the old one is still there to go back to.",
    "view": {
     "row": [
@@ -1143,7 +1148,7 @@ window.CHAPTER = {
    "num": 4,
    "title": "Clear the Row",
    "fn": "clearAll",
-   "ask": "This time you <b>must change the array you were given</b>: set every item to 0, and return nothing. The code below runs without an error and changes nothing. Why?",
+   "ask": "This time you <b>must change the array you were given</b>: set every item to 0, and return nothing. The code below runs without an error and changes nothing. Find out why, then <b>fix it</b>.",
    "spec": "const a = [4, 7, 1]; clearAll(a);      afterwards a is [0, 0, 0]",
    "start": "// This code is nearly right. Work out what it changes before you edit anything.\nfunction clearAll(nums) {\n  for (let x of nums) {\n    x = 0;\n  }\n}\n",
    "plan": [
@@ -1230,6 +1235,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "With an array of objects, for (const p of players) p.score = 0 DOES change the objects. Why does it work there and not with numbers?",
+   "topic": null,
    "world": "Marking every notification as read. If the code only changes its own copies, the little red badge never goes away.",
    "view": {
     "row": [

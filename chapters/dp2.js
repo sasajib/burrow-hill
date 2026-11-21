@@ -11,6 +11,8 @@ window.CHAPTER = {
   "href": "chapter.html?c=dp1",
   "label": "Chapter 24: Dynamic Programming, One Row"
  },
+ "mock": false,
+ "target": null,
  "stages": [
   {
    "id": "w",
@@ -226,6 +228,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "Why must the table be filled row by row (or column by column), and not in any order you like?",
+   "topic": null,
    "world": "A robot in a warehouse counts its possible routes between two shelves like this.",
    "view": {
     "row": [],
@@ -648,6 +651,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "In chapter 21 a field like this needed a heap. What is different here, so that a plain table is enough?",
+   "topic": null,
    "world": "A printer plans the cheapest path of its head across a page in this way.",
    "view": {
     "row": [],
@@ -1082,6 +1086,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "A rock in the top row leaves every square to its right in that row with 0 routes. Which lines make that happen without a special case?",
+   "topic": null,
    "world": "A delivery robot counts its routes around closed aisles in exactly this way.",
    "view": {
     "row": [],
@@ -1368,8 +1373,8 @@ window.CHAPTER = {
    "num": 4,
    "title": "What Two Words Share",
    "fn": "longestShared",
-   "ask": "Return the length of the longest run of letters that appears in <b>both</b> words <b>in the same order</b>. Letters may be skipped in either word.",
-   "spec": "longestShared(\"sea\", \"eat\") → 2      (\"ea\")      longestShared(\"abcde\", \"ace\") → 3",
+   "ask": "Pick letters from word a, <b>keeping their order</b>; you may skip letters. Do the same in word b. Return the <b>largest number of letters</b> you can pick so that both picks spell the same thing. The picked letters do not have to be side by side.",
+   "spec": "longestShared(\"abcde\", \"ace\") → 3      (\"a\", \"c\", \"e\": skip b and d)      longestShared(\"sea\", \"eat\") → 2      (\"ea\")",
    "start": "function longestShared(a, b) {\n  // your code here\n}\n",
    "plan": [
     "What should the entry for row i and column j mean?",
@@ -1457,6 +1462,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "When the letters differ, why is it safe to look only above and to the left, and not at the diagonal?",
+   "topic": null,
    "world": "A tool that compares two versions of a file finds the lines they share like this. Everything else is shown as changed.",
    "view": {
     "row": [],
@@ -1844,6 +1850,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "Each of the three neighbours stands for one kind of change. Which neighbour is \"replace\", which is \"delete\", which is \"insert\"?",
+   "topic": null,
    "world": "A spell checker ranks its suggestions this way. The word with the fewest changes from your typo comes first.",
    "view": {
     "row": [],
@@ -2289,6 +2296,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "Line 6 reads from prev, the row above, and not from the row being filled. What would go wrong otherwise?",
+   "topic": null,
    "world": "An airline loads cargo like this. The most valuable set of crates that stays under the weight limit.",
    "view": {
     "row": [],
@@ -2782,6 +2790,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "Why the smallest of the three neighbours, and not the largest?",
+   "topic": null,
    "world": "A map tool finds the largest square plot of free land on a grid map like this.",
    "view": {
     "row": [],

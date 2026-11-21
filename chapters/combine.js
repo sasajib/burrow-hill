@@ -512,8 +512,8 @@ window.CHAPTER = {
    "num": 2,
    "title": "How Many Sacks Fit",
    "fn": "fitCount",
-   "ask": "Sacks are loaded onto a cart <b>from the front of the row, in order</b>. <code>sizes</code> holds their sizes (all above 0). For <b>each</b> budget in <code>budgets</code>, return how many sacks fit before the cart is full. There can be very many budgets.",
-   "spec": "fitCount([2, 3, 1, 4], [5, 0, 10, 6]) → [2, 0, 4, 3]",
+   "ask": "<code>sizes</code> holds the sizes of the sacks in a row (all above 0). Each number in <code>budgets</code> is the <b>total size one cart can hold</b>. For each cart, load sacks <b>from the front of the row, in order</b>, and stop at the first sack that does not fit. A sack that fills the cart exactly still fits. Return an array with the <b>number of sacks loaded</b> for each budget, in the same order. There can be very many budgets.",
+   "spec": "fitCount([2, 3, 1, 4], [5, 0, 10, 6]) → [2, 0, 4, 3]      (budget 5: 2 + 3 fits, the next sack does not)",
    "start": "function fitCount(sizes, budgets) {\n  // your code here\n}\n",
    "plan": [
     "Two tools are needed here. First: what could you prepare once, so that the question becomes easy?",
@@ -2225,8 +2225,8 @@ window.CHAPTER = {
    "num": 6,
    "title": "Sums of Blocks",
    "fn": "blockSums",
-   "ask": "For each block <code>[r1, c1, r2, c2]</code> (top-left and bottom-right square, both included), return the <b>sum of the grid values inside it</b>. There can be very many blocks, so do not add each block up square by square.",
-   "spec": "blockSums([[1, 2, 3], [4, 5, 6], [7, 8, 9]], [[1, 1, 2, 2]]) → [28]",
+   "ask": "Each block is <code>[r1, c1, r2, c2]</code>: the <b>row and column</b> of its top-left square, then the row and column of its bottom-right square. Rows and columns count from 0, and both corners are included. For each block, return the <b>sum of the grid values inside it</b>, in the same order. There can be very many blocks, so do not add each block up square by square.",
+   "spec": "blockSums([[1, 2, 3], [4, 5, 6], [7, 8, 9]], [[1, 1, 2, 2]]) → [28]      (5 + 6 + 8 + 9)",
    "start": "// grid is an array of rows. A block is [r1, c1, r2, c2], both corners included.\nfunction blockSums(grid, blocks) {\n  // your code here\n}\n",
    "plan": [
     "Two tools are needed here. First: what could you prepare once, so that the question becomes easy?",

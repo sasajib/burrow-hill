@@ -411,7 +411,7 @@ function specHTML(spec) {
   const safe = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
   const parts = String(spec).split(/\n|\s{3,}/).map((s) => s.trim()).filter(Boolean);
   if (!parts.length || !parts.every((p) => p.includes('→') || /^\(.*\)$/.test(p))) return `<pre class="spec">${safe(spec)}</pre>`;
-  return `<div class="exs">${parts.map((p) => { const k = p.indexOf('→'); return k < 0 ? `<div><span style="color:var(--ink2)">${safe(p)}</span></div>` : `<div><span>${safe(p.slice(0, k).trim())}</span><b>${safe(p.slice(k + 1).trim())}</b></div>`; }).join('')}</div>`;
+  return `<div class="exs">${parts.map((p) => { const k = /^\(.*\)$/.test(p) ? -1 : p.indexOf('→'); return k < 0 ? `<div><span style="color:var(--ink2)">${safe(p)}</span></div>` : `<div><span>${safe(p.slice(0, k).trim())}</span><b>${safe(p.slice(k + 1).trim())}</b></div>`; }).join('')}</div>`;
 }
 function drawTrail() {
   const t = $('#trail'); t.innerHTML = ''; t.style.gridTemplateColumns = innerWidth > 700 ? `repeat(${Math.min(STAGES.length, 7)},minmax(0,1fr))` : '';

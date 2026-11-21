@@ -11,6 +11,8 @@ window.CHAPTER = {
   "href": "chapter.html?c=bst",
   "label": "Chapter 15: Search trees"
  },
+ "mock": false,
+ "target": null,
  "stages": [
   {
    "id": "w",
@@ -276,6 +278,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "After a swap, why is it enough to look at the new parent only, and not at the sibling or the children?",
+   "topic": null,
    "world": "Every new job handed to a task scheduler is pushed onto a heap, exactly like this.",
    "view": {
     "row": [],
@@ -318,6 +321,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -335,6 +339,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -356,6 +361,7 @@ window.CHAPTER = {
      ],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -376,6 +382,7 @@ window.CHAPTER = {
      ],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -399,6 +406,7 @@ window.CHAPTER = {
       5
      ],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": [
       5,
@@ -422,6 +430,7 @@ window.CHAPTER = {
      ],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -446,6 +455,7 @@ window.CHAPTER = {
       0
      ],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": [
       2,
@@ -466,6 +476,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -483,6 +494,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -500,6 +512,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -517,6 +530,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -709,6 +723,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "Why must the sinking value swap with its SMALLER child?",
+   "topic": null,
    "world": "A clinic calls its most urgent patient next. That is a pop from a heap.",
    "view": {
     "row": [],
@@ -752,6 +767,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -769,6 +785,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -788,6 +805,7 @@ window.CHAPTER = {
      ],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -809,6 +827,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": {
       "0": 3
      },
@@ -834,6 +853,7 @@ window.CHAPTER = {
      ],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -857,6 +877,7 @@ window.CHAPTER = {
       0
      ],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": [
       0,
@@ -879,6 +900,7 @@ window.CHAPTER = {
      ],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -903,6 +925,7 @@ window.CHAPTER = {
       4
      ],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -920,6 +943,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -937,6 +961,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -954,6 +979,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -971,7 +997,7 @@ window.CHAPTER = {
    "num": 3,
    "title": "The Runner-Up",
    "fn": "kthLargest",
-   "ask": "Return the <b>k-th largest</b> number in the array (k = 1 is the largest; duplicates count separately). Use the provided <b>Heap</b>, and never let it hold more than k + 1 values.",
+   "ask": "Return the <b>k-th largest</b> number in the array (k = 1 is the largest; duplicates count separately). Use the provided <b>Heap</b>, and never let it hold more than k + 1 values. You can assume 1 ≤ k ≤ the number of values.",
    "spec": "kthLargest([5, 2, 9, 1, 7], 2) → 7",
    "start": "// A Heap class is provided. new Heap((a, b) => a - b) keeps the SMALLEST on top;\n// new Heap((a, b) => b - a) keeps the biggest on top.\n// heap.push(x) · heap.pop() removes and returns the top · heap.peek() reads the top · heap.size\nfunction kthLargest(nums, k) {\n  // your code here\n}\n",
    "plan": [
@@ -1086,6 +1112,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "To find the k LARGEST, the heap keeps the SMALLEST on top. Why?",
+   "topic": null,
    "world": "A streaming site keeps its top ten of the day with a heap of size ten.",
    "view": {
     "row": [
@@ -1128,6 +1155,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -1145,6 +1173,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -1166,6 +1195,7 @@ window.CHAPTER = {
      ],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -1189,6 +1219,7 @@ window.CHAPTER = {
      ],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -1215,6 +1246,7 @@ window.CHAPTER = {
      "bad": [
       1
      ],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -1239,6 +1271,7 @@ window.CHAPTER = {
      ],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -1262,6 +1295,7 @@ window.CHAPTER = {
      "bad": [
       3
      ],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -1288,6 +1322,7 @@ window.CHAPTER = {
      "bad": [
       0
      ],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -1311,6 +1346,7 @@ window.CHAPTER = {
       4
      ],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -1328,6 +1364,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -1345,6 +1382,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -1362,6 +1400,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -1475,6 +1514,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "Why does joining the two SHORTEST ropes first give the smallest total?",
+   "topic": null,
    "world": "File compression starts like this. It joins the two rarest symbols first, again and again.",
    "view": {
     "row": [
@@ -1513,6 +1553,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -1530,6 +1571,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -1552,6 +1594,7 @@ window.CHAPTER = {
      ],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -1579,6 +1622,7 @@ window.CHAPTER = {
       2,
       1
      ],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -1604,6 +1648,7 @@ window.CHAPTER = {
      ],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -1623,6 +1668,7 @@ window.CHAPTER = {
      "bad": [
       0
      ],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -1647,6 +1693,7 @@ window.CHAPTER = {
      "bad": [
       3
      ],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -1668,6 +1715,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -1685,6 +1733,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -1702,6 +1751,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -1719,6 +1769,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -1888,6 +1939,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "With k lists and n numbers in total, why is this O(n log k) and not O(n log n)?",
+   "topic": null,
    "world": "Merging many sorted log files into one timeline uses this heap of fronts.",
    "view": {
     "row": [
@@ -1925,6 +1977,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -1942,6 +1995,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -1962,6 +2016,7 @@ window.CHAPTER = {
      ],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -1986,6 +2041,7 @@ window.CHAPTER = {
       0
      ],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -2010,6 +2066,7 @@ window.CHAPTER = {
       "d0"
      ],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -2032,6 +2089,7 @@ window.CHAPTER = {
       "d1"
      ],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -2049,6 +2107,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -2070,6 +2129,7 @@ window.CHAPTER = {
       1
      ],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -2087,6 +2147,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -2104,6 +2165,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -2121,6 +2183,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -2256,6 +2319,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "Every new number goes into low and then low's biggest moves to high. Why not simply push it into whichever heap is smaller?",
+   "topic": null,
    "world": "A dashboard that shows the median response time, live, keeps these two heaps.",
    "view": {
     "row": [
@@ -2302,6 +2366,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -2319,6 +2384,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -2336,6 +2402,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -2360,6 +2427,7 @@ window.CHAPTER = {
      ],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -2382,6 +2450,7 @@ window.CHAPTER = {
       "d0"
      ],
      "bad": [],
+     "free": [],
      "set": {
       "d0": 5
      },
@@ -2407,6 +2476,7 @@ window.CHAPTER = {
       "d1"
      ],
      "bad": [],
+     "free": [],
      "set": {
       "d1": 3.5
      },
@@ -2433,6 +2503,7 @@ window.CHAPTER = {
      ],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -2455,6 +2526,7 @@ window.CHAPTER = {
       "d2"
      ],
      "bad": [],
+     "free": [],
      "set": {
       "d2": 5
      },
@@ -2483,6 +2555,7 @@ window.CHAPTER = {
       "d3"
      ],
      "bad": [],
+     "free": [],
      "set": {
       "d3": 3.5
      },
@@ -2505,6 +2578,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -2522,6 +2596,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -2539,6 +2614,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -2556,6 +2632,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,

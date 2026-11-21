@@ -11,6 +11,8 @@ window.CHAPTER = {
   "href": "chapter.html?c=mixed4",
   "label": "Mixed set 4"
  },
+ "mock": false,
+ "target": null,
  "stages": [
   {
    "id": "w",
@@ -266,6 +268,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "There is no line that undoes a choice. Why is none needed here?",
+   "topic": null,
    "world": "Old phones did this. Press two keys, and they listed every word those keys could spell.",
    "view": {
     "row": [],
@@ -844,6 +847,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "Change line 6 to out.push(path). Every group in the answer comes out empty. Why?",
+   "topic": null,
    "world": "A shop does this when it lists every bundle you could build from a few add-ons.",
    "view": {
     "row": [],
@@ -1187,7 +1191,7 @@ window.CHAPTER = {
    "num": 3,
    "title": "Every Order",
    "fn": "allOrders",
-   "ask": "Return <b>every order</b> in which the numbers (all different) can be arranged. Any order of the answers.",
+   "ask": "Return <b>every order</b> in which the numbers (all different) can be arranged. Any order of the answers. (No numbers at all gives one empty order: [[]].)",
    "spec": "allOrders([1, 2, 3]) → [[1, 2, 3], [1, 3, 2], [2, 1, 3], [2, 3, 1], [3, 1, 2], [3, 2, 1]]",
    "start": "// nums is an array of different numbers.\nfunction allOrders(nums) {\n  // your code here\n}\n",
    "plan": [
@@ -1526,6 +1530,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "Two things are undone after build() returns, on lines 15 and 16. What goes wrong if you forget line 16?",
+   "topic": null,
    "world": "A delivery planner with only a few stops can simply try every order of the stops, like this.",
    "view": {
     "row": [
@@ -1842,7 +1847,7 @@ window.CHAPTER = {
    "num": 4,
    "title": "Exactly the Weight",
    "fn": "sumTo",
-   "ask": "The weights are all different and positive, and <b>each may be used as many times as you like</b>. Return every group of weights that adds up to <b>exactly target</b>. The same group in a different order counts only once.",
+   "ask": "The weights are all different and positive, and <b>each may be used as many times as you like</b>. Return every group of weights that adds up to <b>exactly target</b>. The same group in a different order counts only once. Any order is accepted. If no group works, return [].",
    "spec": "sumTo([2, 3], 6) → [[2, 2, 2], [3, 3]]      sumTo([2, 3, 5], 8) → [[2, 2, 2, 2], [2, 3, 3], [3, 5]]",
    "start": "// nums is an array of different positive numbers.\nfunction sumTo(nums, target) {\n  // your code here\n}\n",
    "plan": [
@@ -2003,6 +2008,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "Line 12 passes i, not i + 1 and not 0. What would each of those two changes do to the answers?",
+   "topic": null,
    "world": "A cash machine lists the ways to pay out an amount with the notes it holds, like this.",
    "view": {
     "row": [
@@ -2313,7 +2319,7 @@ window.CHAPTER = {
    "num": 5,
    "title": "Brackets That Close",
    "fn": "brackets",
-   "ask": "Return every text made of exactly <b>n pairs</b> of round brackets in which every bracket is <b>properly closed</b>. Any order.",
+   "ask": "Return every text made of exactly <b>n pairs</b> of round brackets in which every bracket is <b>properly closed</b>. Any order. (0 pairs gives one empty text: [\"\"].)",
    "spec": "brackets(2) → [\"(())\", \"()()\"]      brackets(1) → [\"()\"]",
    "start": "function brackets(n) {\n  // your code here\n}\n",
    "plan": [
@@ -2408,6 +2414,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "No finished text is ever checked for being valid. Why is that not needed?",
+   "topic": null,
    "world": "A code editor uses the same two rules when it decides whether it may close a bracket for you.",
    "view": {
     "row": [
@@ -2899,6 +2906,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "Line 8 puts the letter back even when the word was found. When does it matter that a dead end puts its letter back?",
+   "topic": null,
    "world": "A word game checks your swipe across the letter grid in exactly this way.",
    "view": {
     "row": [],
@@ -3252,6 +3260,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "Why do all the squares of one diagonal share the same value of r - c (or r + c)?",
+   "topic": null,
    "world": "A timetable planner works like this. Place a lesson, check the clashes, and take it back if a later one cannot fit.",
    "view": {
     "row": [],

@@ -11,6 +11,8 @@ window.CHAPTER = {
   "href": "foundations.html",
   "label": "Part 0: Foundations"
  },
+ "mock": false,
+ "target": null,
  "stages": [
   {
    "id": "w",
@@ -204,6 +206,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "evens(7) was already right before your fix. Why did that test not show the bug?",
+   "topic": null,
    "world": "A report that should run from the first to the thirty first, and stops at the thirtieth, has exactly this bug.",
    "view": {
     "row": [
@@ -456,7 +459,7 @@ window.CHAPTER = {
    "num": 2,
    "title": "Backwards",
    "fn": "backwards",
-   "ask": "Return the word with its letters in <b>reverse order</b>. The code below walks the word from the end, but it has <b>two small mistakes</b>. Trace it for \"moss\".",
+   "ask": "Return the word with its letters in <b>reverse order</b>. The code below walks the word from the end, but it has <b>two small mistakes</b>. Trace it for \"moss\". Find both, and <b>fix them</b>.",
    "spec": "backwards(\"moss\") → \"ssom\"      backwards(\"\") → \"\"",
    "start": "// This code is nearly right. Trace it by hand before you change anything.\nfunction backwards(word) {\n  let out = '';\n  for (let i = word.length; i > 0; i--) {\n    out += word[i];\n  }\n  return out;\n}\n",
    "plan": [
@@ -517,6 +520,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "Fix only the start and run it. Then fix only the stop. What does each half-fix return for \"moss\"?",
+   "topic": null,
    "world": "Your messages, newest first. Or an undo list. Both are a loop that walks backwards like this.",
    "view": {
     "row": [
@@ -775,7 +779,7 @@ window.CHAPTER = {
    "num": 3,
    "title": "The First Long Word",
    "fn": "firstLong",
-   "ask": "Return the <b>first word with more than n letters</b>, or <b>null</b> if there is none. The code below works when a long word exists, and <b>crashes</b> when there is none. Trace it for [\"sun\", \"oak\"] and n = 3.",
+   "ask": "Return the <b>first word with more than n letters</b>, or <b>null</b> if there is none. The code below works when a long word exists, and <b>crashes</b> when there is none. Trace it for [\"sun\", \"oak\"] and n = 3. Find out why, and <b>fix it</b>.",
    "spec": "firstLong([\"sun\", \"moss\", \"burrow\"], 4) → \"burrow\"      firstLong([\"sun\", \"oak\"], 3) → null",
    "start": "// This code is nearly right. Trace it by hand before you change anything.\nfunction firstLong(words, n) {\n  let i = 0;\n  while (words[i].length <= n && i < words.length) {\n    i++;\n  }\n  return i < words.length ? words[i] : null;\n}\n",
    "plan": [
@@ -865,6 +869,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "Nothing was added or removed, only moved. Why does the order of two checks change what the program does?",
+   "topic": null,
    "world": "Real code is full of this. User, and user dot name. Check that it exists. Then use it.",
    "view": {
     "row": [
@@ -1115,7 +1120,7 @@ window.CHAPTER = {
    "num": 4,
    "title": "One Too Many",
    "fn": "gaps",
-   "ask": "Return the <b>differences between neighbours</b>: the second number minus the first, the third minus the second, and so on. The code below returns <b>one item too many</b>. Trace it for [3, 5, 9].",
+   "ask": "Return the <b>differences between neighbours</b>: the second number minus the first, the third minus the second, and so on. The code below returns <b>one item too many</b>. Trace it for [3, 5, 9]. Find out why, and <b>fix it</b>.",
    "spec": "gaps([3, 5, 9]) → [2, 4]      gaps([7]) → []",
    "start": "// This code is nearly right. Trace it by hand before you change anything.\nfunction gaps(nums) {\n  const out = [];\n  for (let i = 0; i < nums.length; i++) {\n    out.push(nums[i + 1] - nums[i]);\n  }\n  return out;\n}\n",
    "plan": [
@@ -1199,6 +1204,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "For an empty array, nums.length - 1 is -1. Trace the fixed loop: does it still behave?",
+   "topic": null,
    "world": "A chart of daily change, today minus yesterday, has one bar fewer than there are days.",
    "view": {
     "row": [

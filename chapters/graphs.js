@@ -11,6 +11,8 @@ window.CHAPTER = {
   "href": "chapter.html?c=mixed3",
   "label": "Mixed set 3"
  },
+ "mock": false,
+ "target": null,
  "stages": [
   {
    "id": "w",
@@ -143,7 +145,7 @@ window.CHAPTER = {
    "num": 1,
    "title": "Count the Islands",
    "fn": "countIslands",
-   "ask": "The grid shows a sea: <b>1 is land, 0 is water</b>. Squares of land that touch <b>side to side</b> (not diagonally) belong to the same island. Return the <b>number of islands</b>. You may change the grid.",
+   "ask": "The grid shows a sea: <b>1 is land, 0 is water</b>. Squares of land that touch <b>side to side</b> (not diagonally) belong to the same island. Return the <b>number of islands</b>. The grid may have no rows at all: that is 0 islands. You may change the grid.",
    "spec": "countIslands([[1, 1, 0, 0], [1, 0, 0, 1], [0, 0, 1, 1]]) → 2",
    "start": "// grid is an array of rows. 1 = land, 0 = water.\nfunction countIslands(grid) {\n  // your code here\n}\n",
    "plan": [
@@ -276,6 +278,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "Line 5 turns the land into water before the four calls. What would happen if it came after them?",
+   "topic": null,
    "world": "A photo app finds the separate objects in a picture this way. Each blob of touching pixels is one island.",
    "view": {
     "row": [],
@@ -330,6 +333,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -347,6 +351,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -368,6 +373,7 @@ window.CHAPTER = {
      ],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -391,6 +397,7 @@ window.CHAPTER = {
       4
      ],
      "bad": [],
+     "free": [],
      "set": {
       "0": 0,
       "1": 0,
@@ -412,6 +419,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -433,6 +441,7 @@ window.CHAPTER = {
      ],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -454,6 +463,7 @@ window.CHAPTER = {
       10
      ],
      "bad": [],
+     "free": [],
      "set": {
       "7": 0,
       "10": 0,
@@ -477,6 +487,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -494,6 +505,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -511,6 +523,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -528,6 +541,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -545,7 +559,7 @@ window.CHAPTER = {
    "num": 2,
    "title": "The Paint Bucket",
    "fn": "floodFill",
-   "ask": "Like the paint bucket in a drawing program: starting at square (r, c), give <b>color</b> to that square and to every square of the <b>same old colour</b> connected to it side to side. Return the grid.",
+   "ask": "Like the paint bucket in a drawing program: start at the square in <b>row r, column c</b> (both counted from 0). Give <b>color</b> to that square and to every square of the <b>same old colour</b> connected to it side to side. Return the grid.",
    "spec": "floodFill([[1, 1, 2], [1, 2, 2], [3, 1, 2]], 0, 0, 9) → [[9, 9, 2], [9, 2, 2], [3, 1, 2]]",
    "start": "// grid is an array of rows of colour numbers. (r, c) is the starting square.\nfunction floodFill(grid, r, c, color) {\n  // your code here\n}\n",
    "plan": [
@@ -756,6 +770,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "Remove line 3 and call floodFill on a grid that is all 5s, with color 5. What happens, and why?",
+   "topic": null,
    "world": "This is the paint bucket in every drawing program. Click, and the colour spreads to everything connected.",
    "view": {
     "row": [],
@@ -807,6 +822,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -824,6 +840,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -845,6 +862,7 @@ window.CHAPTER = {
      ],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -869,6 +887,7 @@ window.CHAPTER = {
       3
      ],
      "bad": [],
+     "free": [],
      "set": {
       "0": 9,
       "3": 9
@@ -893,6 +912,7 @@ window.CHAPTER = {
      ],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -912,6 +932,7 @@ window.CHAPTER = {
      "bad": [
       6
      ],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -933,6 +954,7 @@ window.CHAPTER = {
       1
      ],
      "bad": [],
+     "free": [],
      "set": {
       "1": 9
      },
@@ -954,6 +976,7 @@ window.CHAPTER = {
      ],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -971,6 +994,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -988,6 +1012,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -1005,6 +1030,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -1179,6 +1205,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "Line 14 marks a square the moment it is added to next, not later when it is taken out. Why does that matter?",
+   "topic": null,
    "world": "A game character finds the shortest way through a map like this, level by level.",
    "view": {
     "row": [],
@@ -1225,6 +1252,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -1242,6 +1270,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -1261,6 +1290,7 @@ window.CHAPTER = {
       0
      ],
      "bad": [],
+     "free": [],
      "set": {
       "0": 0
      },
@@ -1284,6 +1314,7 @@ window.CHAPTER = {
      ],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": {
       "1": 1
      },
@@ -1309,6 +1340,7 @@ window.CHAPTER = {
       1
      ],
      "bad": [],
+     "free": [],
      "set": {
       "4": 2
      },
@@ -1332,6 +1364,7 @@ window.CHAPTER = {
      ],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -1353,6 +1386,7 @@ window.CHAPTER = {
       4
      ],
      "bad": [],
+     "free": [],
      "set": {
       "5": 3
      },
@@ -1377,6 +1411,7 @@ window.CHAPTER = {
       8
      ],
      "bad": [],
+     "free": [],
      "set": {
       "8": 4
      },
@@ -1398,6 +1433,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -1415,6 +1451,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -1432,6 +1469,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -1624,6 +1662,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "Delete line 10 and run it on a graph with a loop that does not contain the target. What happens?",
+   "topic": null,
    "world": "Can this computer reach that server? A network tool asks exactly this question.",
    "view": {
     "row": [],
@@ -1708,6 +1747,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -1725,6 +1765,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -1742,6 +1783,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -1763,6 +1805,7 @@ window.CHAPTER = {
       3
      ],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -1784,6 +1827,7 @@ window.CHAPTER = {
       1
      ],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -1805,6 +1849,7 @@ window.CHAPTER = {
       0
      ],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -1824,6 +1869,7 @@ window.CHAPTER = {
      ],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -1845,6 +1891,7 @@ window.CHAPTER = {
       2
      ],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -1865,6 +1912,7 @@ window.CHAPTER = {
       4,
       5
      ],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -1882,6 +1930,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -1899,6 +1948,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -1916,6 +1966,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -2065,6 +2116,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "This is the islands solution again. Which line here does the job of \"turn the land into water\"?",
+   "topic": null,
    "world": "A social app finds separate circles of friends this way. Each group is one circle.",
    "view": {
     "row": [],
@@ -2147,6 +2199,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -2164,6 +2217,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -2185,6 +2239,7 @@ window.CHAPTER = {
      ],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -2208,6 +2263,7 @@ window.CHAPTER = {
       2
      ],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -2229,6 +2285,7 @@ window.CHAPTER = {
      ],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -2248,6 +2305,7 @@ window.CHAPTER = {
       3
      ],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -2272,6 +2330,7 @@ window.CHAPTER = {
       5
      ],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -2293,6 +2352,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -2310,6 +2370,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -2327,6 +2388,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -2344,6 +2406,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -2558,6 +2621,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "A deep-first walk from 0 might reach 5 through 2 and 4 first. Why can that not happen here?",
+   "topic": null,
    "world": "How many introductions from you to a stranger? Social apps count the hops like this.",
    "view": {
     "row": [],
@@ -2651,6 +2715,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -2668,6 +2733,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -2687,6 +2753,7 @@ window.CHAPTER = {
      ],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -2711,6 +2778,7 @@ window.CHAPTER = {
       0
      ],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -2730,6 +2798,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -2754,6 +2823,7 @@ window.CHAPTER = {
       2
      ],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -2775,6 +2845,7 @@ window.CHAPTER = {
       5
      ],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -2792,6 +2863,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -2809,6 +2881,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -2826,6 +2899,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -3006,6 +3080,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "Why is the neighbour you came from skipped on line 11?",
+   "topic": null,
    "world": "A spreadsheet warns you about a circular reference by finding a loop, just like this.",
    "view": {
     "row": [],
@@ -3080,6 +3155,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -3097,6 +3173,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -3118,6 +3195,7 @@ window.CHAPTER = {
       0
      ],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -3139,6 +3217,7 @@ window.CHAPTER = {
       1
      ],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -3160,6 +3239,7 @@ window.CHAPTER = {
       2
      ],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -3183,6 +3263,7 @@ window.CHAPTER = {
       3
      ],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -3204,6 +3285,7 @@ window.CHAPTER = {
      ],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -3221,6 +3303,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -3238,6 +3321,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -3255,6 +3339,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,
@@ -3272,6 +3357,7 @@ window.CHAPTER = {
      "hot": [],
      "ok": [],
      "bad": [],
+     "free": [],
      "set": null,
      "swap": null,
      "move": null,

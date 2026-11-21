@@ -11,6 +11,8 @@ window.CHAPTER = {
   "href": "chapter.html?c=think3",
   "label": "Warm-up C: From Words to Code"
  },
+ "mock": false,
+ "target": null,
  "stages": [
   {
    "id": "w",
@@ -185,6 +187,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "Three of the five tests passed before your fix. Which kind of input did each of the three stand for?",
+   "topic": null,
    "world": "A product page with no reviews yet. Without this check, it proudly shows a rating of, not a number.",
    "view": {
     "row": [
@@ -495,6 +498,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "The task promises at least one number. What would nums[0] be if that promise were broken, and what would the function return?",
+   "topic": null,
    "world": "A weather app that shows the warmest day of the week. In January, every day is below zero. And the app says zero.",
    "view": {
     "row": [
@@ -835,6 +839,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "On \"The then the\" the old code returned 2, the right number, for the wrong reasons. Why is a test like that dangerous?",
+   "topic": null,
    "world": "Search inside a document. Whole word, on or off. Match case, on or off. Those two switches are these two rules.",
    "view": {
     "row": [
@@ -1100,7 +1105,7 @@ window.CHAPTER = {
    "num": 4,
    "title": "The Last Word, Loudly",
    "fn": "shoutLast",
-   "ask": "Return the <b>last word</b> of the sentence <b>in capitals, followed by \"!\"</b>. Spaces at the start or end of the sentence must be ignored. The code below crashes. The crash is on one line; the mistake is on another.",
+   "ask": "Return the <b>last word</b> of the sentence <b>in capitals, followed by \"!\"</b>. Spaces at the start or end of the sentence must be ignored. The code below crashes. The crash is on one line; the mistake is on another. Find the mistake and <b>fix it</b>, then check that spaces at the start or end are handled too.",
    "spec": "shoutLast(\"pip likes seeds\") → \"SEEDS!\"      shoutLast(\"  hello moss  \") → \"MOSS!\"",
    "start": "// This code crashes on its last line. Do not guess: walk the values from the top\n// and find the FIRST one that is not what you expect.\nfunction shoutLast(sentence) {\n  const words = sentence.split(' ');\n  const last = words[words.length];\n  return last.toUpperCase() + '!';\n}\n",
    "plan": [
@@ -1159,6 +1164,7 @@ window.CHAPTER = {
     "}"
    ],
    "why": "The crash message pointed at the last line, which you never changed. What does that tell you about reading error messages?",
+   "topic": null,
    "world": "An error report from a real app names the line that blew up. The real mistake is usually a few lines above it.",
    "view": {
     "row": [
