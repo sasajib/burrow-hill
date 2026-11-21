@@ -424,7 +424,7 @@ const PUZZLE = {
       'Do it by hand on [4, 9, 6, 1] with target 10. Standing on the 4, which weight are you hoping to find?',
       'The slow way compares every pair. Where is the wasted work? You keep re-reading parcels you already passed.',
       'What could remember the parcels you passed, so that one question replaces a search?'],
-    ask: 'Two parcels must weigh exactly <b>target</b> together. Return the two door numbers as an array, like <code>[0, 2]</code>. A parcel cannot be used twice. Every test has an answer.',
+    ask: 'Two parcels must weigh exactly <b>target</b> together. Return their two <b>door numbers</b> (their positions in the array, counting from 0) as an array, like <code>[0, 2]</code>. Either order is fine. A parcel cannot be used twice. Every test has an answer.',
     spec: 'findPair([4, 9, 6, 1], 10)  →  [0, 2]     (4 + 6 = 10)',
     start: '// weights is an array of numbers, target is a number.\n// Return the two door numbers whose weights add up to target.\nfunction findPair(weights, target) {\n  // your code here\n}\n',
     tests: [[[4, 9, 6, 1], 10], [[2, 7, 11, 15], 9], [[3, 2, 4], 6], [[3, 3], 6], [[1, 5, 8, 3, 9, 2], 17]],
